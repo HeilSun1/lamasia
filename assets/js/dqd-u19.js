@@ -105,15 +105,9 @@
 
   /* 把实时抓到的原始数据归一化成与缓存一致的形状 */
   function normalizeLive(playersJson, lastJson, nextJson) {
-    // 出场/进球/助攻 来自每日缓存（避免实时逐球员请求）；实时数据只带身价
-    const cachePlayers = {};
-    const cc = window.DQD_U19_CACHE;
-    if (cc && cc.players) cc.players.forEach(function (cp) { cachePlayers[cp.id] = cp; });
-
     const players = ((playersJson && playersJson.players) || []).map(function (p) {
       const pr = p.player;
       const id = String(pr.id);
-      const cached = cachePlayers[id];
       let injury = null;
       if (pr && pr.injury) {
         const i = pr.injury;
@@ -126,12 +120,10 @@
       return {
         name: pr.name, id: id, pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
+        nation: pr.country ? pr.country.name : "",
         photo: "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
         age: calcAge(pr.dateOfBirth),
         value: valueZh(pr.proposedMarketValue),
-        app: cached ? (cached.app || "") : "",
-        goals: cached ? (cached.goals || "") : "",
-        assists: cached ? (cached.assists || "") : "",
         injury: injury
       };
     });
@@ -228,12 +220,7 @@
     const zhMap = buildZhMap();
 
     function statsNote(p) {
-      const parts = [];
-      if (p.app !== undefined && p.app !== "") parts.push("出场 " + p.app);
-      if (p.goals !== undefined && p.goals !== "") parts.push("进球 " + p.goals);
-      if (p.assists !== undefined && p.assists !== "") parts.push("助攻 " + p.assists);
-      if (p.value) parts.push("身价(欧) " + p.value);
-      return parts.join(" · ");
+      return p.value ? "身价(欧) " + p.value : "";
     }
 
     let total = 0;
@@ -287,7 +274,7 @@
             '<span class="pl-name"><span class="zh">' + esc(display) + injBadge + teamTag + "</span>" +
             '<span class="en">' + esc(p.name || "") + "</span></span>" +
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + "</span>" +
-            '<span class="pl-nation">' + (p.pos || "") + "</span>" +
+            '<span class="pl-nation">' + esc(p.nation || "") + "</span>" +
             '<span class="pl-dob">' + esc(p.age || "") + "</span>" +
             '<span class="pl-note">' + esc([statsNote(p), zh.note].filter(Boolean).join(" · ")) + "</span>" +
           "</div>";
