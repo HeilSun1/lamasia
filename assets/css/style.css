@@ -446,10 +446,12 @@ a:hover { color: #0d54b8; }
 /* ── 主视觉 ── */
 .hm-hero {
   position: relative; overflow: hidden;
-  background: #0c1a38;
+  background-color: #0c1a38;
   background-image:
-    radial-gradient(62% 130% at 82% -12%, rgba(165, 0, 68, 0.38), transparent 62%),
-    radial-gradient(48% 110% at 6% 115%, rgba(13, 43, 107, 0.95), transparent 60%);
+    radial-gradient(62% 130% at 82% -12%, rgba(165, 0, 68, 0.34), transparent 62%),
+    radial-gradient(48% 110% at 6% 115%, rgba(13, 43, 107, 0.9), transparent 60%),
+    linear-gradient(90deg, rgba(12, 26, 56, 0.97) 18%, rgba(12, 26, 56, 0.66) 62%, rgba(12, 26, 56, 0.4) 100%),
+    url("../img/players/ebrima-tunkara.jpg") center 26% / cover no-repeat;
   color: #fff; padding: 104px 0 132px;
 }
 .hm-hero::before {
@@ -481,6 +483,31 @@ a:hover { color: #0d54b8; }
   font-size: 12px; letter-spacing: 0.02em; color: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.04);
   padding: 7px 15px; border-radius: 999px;
+}
+
+/* ── 全宽照片横幅 ── */
+.hm-banner {
+  position: relative; overflow: hidden;
+  background-color: #0c1a38;
+  background-size: cover; background-position: center 28%;
+  padding: 112px 0;
+}
+.hm-banner::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 26, 56, 0.9), rgba(12, 26, 56, 0.68)),
+    linear-gradient(90deg, rgba(12, 26, 56, 0.25), rgba(12, 26, 56, 0.5));
+}
+.hm-banner .container { position: relative; z-index: 1; text-align: center; }
+.hm-banner blockquote {
+  margin: 0 auto; max-width: 760px;
+  font-size: clamp(22px, 3.4vw, 34px); font-weight: 700; line-height: 1.55;
+  color: #fff; letter-spacing: 0.01em;
+}
+.hm-banner blockquote .hm-bq-accent { color: #d9a400; }
+.hm-banner-sub {
+  margin-top: 20px; font-size: 12.5px; color: rgba(255, 255, 255, 0.62);
+  letter-spacing: 0.24em; text-transform: uppercase;
 }
 
 /* ── 照片滚动条 ── */
