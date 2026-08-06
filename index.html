@@ -213,6 +213,7 @@
   </footer>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/dqd-barca-atletic-cache.js"></script>
   <script src="assets/js/dqd-u19-cache.js"></script>
   <script src="assets/js/dqd-u18-cache.js"></script>
   <script src="assets/js/dqd-u16-cache.js"></script>
@@ -259,21 +260,40 @@
     ];
 
     function marqueeItems() {
-      const items = [];
+      const pools = [];
+      // U19 / U18 / U16（Sofascore 缓存）
       [window.DQD_U19_CACHE, window.DQD_U18_CACHE, window.DQD_U16_CACHE].forEach(function (c) {
+        const arr = [];
         if (c && c.players) {
           c.players.forEach(function (p) {
             if (p.photo && p.name) {
-              items.push({ img: p.photo, name: zhMap[normKey(p.name)] || p.name, value: p.value || "" });
+              arr.push({ img: p.photo, name: zhMap[normKey(p.name)] || p.name, value: p.value || "" });
             }
           });
         }
+        pools.push(arr);
       });
-      // 优先有身价的代表球员，取前 18 名
-      const valued = items.filter(function (i) { return i.value; });
-      const others = items.filter(function (i) { return !i.value; });
-      const curated = valued.concat(others).slice(0, 18);
-      return curated.length ? curated : marqueeFallback;
+      // B队（懂球帝缓存，照片为本地；排除教练组）
+      const bArr = [];
+      const b = window.DQD_BARCA_ATLETIC;
+      if (b && b.roster && b.roster.data && b.roster.data.list) {
+        b.roster.data.list.forEach(function (g) {
+          if (g.type === "coach") return;
+          (g.data || []).forEach(function (p) {
+            if (p.person_logo && p.person_name) bArr.push({ img: p.person_logo, name: p.person_name, value: "" });
+          });
+        });
+      }
+      pools.push(bArr);
+
+      // 每队取前 6 名（有身价的优先），均衡展示四个梯队
+      const items = [];
+      pools.forEach(function (pool) {
+        const valued = pool.filter(function (i) { return i.value; });
+        const others = pool.filter(function (i) { return !i.value; });
+        items.push.apply(items, valued.concat(others).slice(0, 6));
+      });
+      return items.length ? items : marqueeFallback;
     }
 
     const marqueePhotos = marqueeItems();
