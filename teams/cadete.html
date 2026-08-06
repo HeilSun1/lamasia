@@ -58,13 +58,47 @@
       </div>
     </div>
 
+    <!-- ═══ Sofascore 实时数据（dqd-u16.js 渲染；缓存优先 + 实时刷新） ═══ -->
+    <div id="u16-status" class="note-box blue">
+      <span>📡 正在连接 Sofascore，加载最新数据…</span>
+    </div>
+
     <div class="panel">
       <div class="panel-title-row">
-        <h3>📋 球员大名单</h3>
-        <span class="badge gray">2025-26 赛季末</span>
+        <h3>🤕 伤病名单 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
       </div>
-      <p class="p-desc">来源：巴萨官网 Cadete A 名单（2026 年 5 月更新）。</p>
-      <div class="p-body" id="roster-cadete">
+      <div id="u16-injuries" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载伤病数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
+        <span class="badge blue" id="u16-count-badge">加载中…</span>
+      </div>
+      <p class="p-desc">Sofascore 当前阵容（已与官方名单合并中文名与备注）。点击照片可放大。</p>
+      <div id="u16-roster" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📅 赛程与结果 <span class="tag">Sofascore 数据源 · 自动更新</span></h3>
+      </div>
+      <div id="u16-schedule" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>🏟 球队信息 <span class="tag">Sofascore 数据源</span></h3>
+        <img id="u16-team-logo" alt="" referrerpolicy="no-referrer" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
+      </div>
+      <div id="u16-team" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
       </div>
     </div>
 
@@ -75,7 +109,7 @@
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>名单说明：</b>本页名单为 2025-26 赛季末版本，2026-27 完整名单官方尚未公布。</span></div>
+    <div class="note-box"><span><b>名单说明：</b>本页名单为 <b>Sofascore 实时阵容</b>（已与官方名单合并中文名与备注），伤病与赛程每日自动更新。2026-27 完整官方名单尚未公布，请以 fcbarcelona.com 为准。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -93,6 +127,7 @@
 
   <script src="../assets/js/data.js"></script>
   <script src="../assets/js/roster.js"></script>
-  <script>LAMASIA_RENDER.playerList('cadete', 'roster-cadete', '../assets/img/players/');</script>
+  <script src="../assets/js/dqd-u16-cache.js"></script>
+  <script src="../assets/js/dqd-u16.js"></script>
 </body>
 </html>

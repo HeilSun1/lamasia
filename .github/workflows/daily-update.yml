@@ -41,12 +41,18 @@ jobs:
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_u18_sofascore.ps1
 
+      - name: Update U16 cache (Sofascore)
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_u16_sofascore.ps1
+
       - name: Commit updated caches
         shell: powershell
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/img/players/dqd
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/img/players/dqd
           if (git diff --cached --quiet) {
             Write-Host "缓存无变化，跳过提交"
           } else {
