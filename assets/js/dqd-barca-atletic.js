@@ -178,12 +178,17 @@
       const score  = played ? (esc(m.fs_A || "0") + " : " + esc(m.fs_B || "0")) : "vs";
       const comp   = m.competition_name ? esc(m.competition_name) : "";
       const round  = m.round_name ? '<span style="color:var(--faint);font-size:12px">' + esc(m.round_name) + "</span>" : "";
+      const teamCell = function (name, logo) {
+        return '<td><span class="match-team">' +
+          '<img class="match-logo" src="' + esc(logo || "") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
+          esc(name || "") + "</span></td>";
+      };
       return "<tr>" +
         '<td class="num">' + esc((m.start_play || "").replace(" ", " ").slice(0, 16)) + "</td>" +
         "<td>" + comp + round + "</td>" +
-        "<td>" + esc(m.team_A_name || "") + "</td>" +
+        teamCell(m.team_A_name, m.team_A_logo) +
         '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
-        "<td>" + esc(m.team_B_name || "") + "</td>" +
+        teamCell(m.team_B_name, m.team_B_logo) +
         "<td>" + pill(m) + "</td>" +
         "</tr>";
     }

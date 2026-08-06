@@ -398,6 +398,10 @@ a:hover { color: #0d54b8; }
 .dqd-group:not([open]) > summary .dqd-state::after { content: "展开 ▾"; }
 .dqd-group .dqd-body { padding: 4px 12px 12px; }
 
+/* 赛程对阵队标 */
+.match-team { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.match-logo { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; border-radius: 4px; background: var(--surface-2); vertical-align: middle; }
+
 /* ═══ 懂球帝数据源：伤病标记与伤病名单 ═══ */
 .pl-inj {
   display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 5px;

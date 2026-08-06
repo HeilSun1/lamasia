@@ -260,12 +260,17 @@
     function row(m) {
       const playedNow = m.status === "Ended";
       const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
+      const teamCell = function (name, id) {
+        return '<td><span class="match-team">' +
+          '<img class="match-logo" src="' + esc("https://img.sofascore.com/api/v1/team/" + id + "/image") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
+          esc(name || "") + "</span></td>";
+      };
       return "<tr>" +
         '<td class="num">' + esc(fmtTime(m.start)) + "</td>" +
         "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
-        "<td>" + esc(m.home || "") + "</td>" +
+        teamCell(m.home, m.homeId) +
         '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
-        "<td>" + esc(m.away || "") + "</td>" +
+        teamCell(m.away, m.awayId) +
         "<td>" + pill(m) + "</td>" +
         "</tr>";
     }
