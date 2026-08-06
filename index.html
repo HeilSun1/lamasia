@@ -213,6 +213,9 @@
   </footer>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/dqd-u19-cache.js"></script>
+  <script src="assets/js/dqd-u18-cache.js"></script>
+  <script src="assets/js/dqd-u16-cache.js"></script>
   <script>
     // 梯队卡片渲染（从 data.js 读取）
     const grid = document.getElementById('hmGrid');
@@ -227,8 +230,21 @@
       }).join('');
     }
 
-    // 照片滚动条（本地球员照片，复制一份实现无缝循环）
-    const marqueePhotos = [
+    // 照片滚动条：从每日更新的 Sofascore 缓存取当前球员（实时）；兜底本地球员照片
+    function normKey(s) {
+      return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+    }
+    function buildZhMap() {
+      const map = {};
+      ["juvenil-a", "juvenil-b", "cadete"].forEach(function (key) {
+        const list = window.LAMASIA_DATA && window.LAMASIA_DATA.players && window.LAMASIA_DATA.players[key];
+        if (list) list.forEach(function (p) { if (p.zh) map[normKey(p.name)] = p.zh; });
+      });
+      return map;
+    }
+    const zhMap = buildZhMap();
+
+    const marqueeFallback = [
       { img: "assets/img/players/ebrima-tunkara.jpg", name: "埃布里马·通卡拉" },
       { img: "assets/img/players/hamza-abdelkarim.jpg", name: "哈姆扎·阿卜杜勒卡里姆" },
       { img: "assets/img/players/shane-kluivert.jpg", name: "肖恩·克鲁伊维特" },
@@ -241,10 +257,30 @@
       { img: "assets/img/players/ismael-ziani.jpg", name: "伊斯梅尔·齐亚尼" },
       { img: "assets/img/players/artem-rybak.jpg", name: "阿尔乔姆·雷巴克" }
     ];
+
+    function marqueeItems() {
+      const items = [];
+      [window.DQD_U19_CACHE, window.DQD_U18_CACHE, window.DQD_U16_CACHE].forEach(function (c) {
+        if (c && c.players) {
+          c.players.forEach(function (p) {
+            if (p.photo && p.name) {
+              items.push({ img: p.photo, name: zhMap[normKey(p.name)] || p.name, value: p.value || "" });
+            }
+          });
+        }
+      });
+      // 优先有身价的代表球员，取前 18 名
+      const valued = items.filter(function (i) { return i.value; });
+      const others = items.filter(function (i) { return !i.value; });
+      const curated = valued.concat(others).slice(0, 18);
+      return curated.length ? curated : marqueeFallback;
+    }
+
+    const marqueePhotos = marqueeItems();
     const mq = document.getElementById('hmMarquee');
     if (mq) {
       const items = marqueePhotos.concat(marqueePhotos).map(function (p) {
-        return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" loading="lazy"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
+        return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" referrerpolicy="no-referrer"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
       }).join('');
       mq.innerHTML = items;
     }
