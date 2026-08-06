@@ -1,0 +1,2 @@
+# 保护 .ps1 的 UTF-8 BOM 与换行，禁止 git 做行尾转换（否则 PowerShell 可能解析失败）
+*.ps1 -text

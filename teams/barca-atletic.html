@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barça Atlètic（预备队）— 拉玛西亚 · La Masia</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="crest">🟡🔵</span>
+        <span>拉玛西亚<small>LA MASIA · FC BARCELONA</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">首页</a>
+        <a class="active" href="index.html">梯队</a>
+        <a href="../matches.html">比赛信息</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container"><div class="crumbs"><a href="../index.html">首页</a><span class="sep">/</span><a href="index.html">梯队</a><span class="sep">/</span><span>Barça Atlètic</span></div></div>
+
+  <div class="page-head container">
+    <span class="ph-kicker">预备队 · 一线储备</span>
+    <h1>Barça Atlètic 巴萨竞技</h1>
+    <div class="ph-meta">
+      <span>🏆 联赛：<b>Segunda Federación · G2</b></span>
+      <span>🧑‍🏫 主教练：<b>Juliano Belletti</b></span>
+      <span>🏟 主场：<b>克鲁伊夫球场</b></span>
+      <span>⏱ 2026-27 季前</span>
+    </div>
+  </div>
+
+  <section class="container" style="padding-top:20px">
+
+    <div class="panel">
+      <div class="stats-row">
+        <div class="stat-tile"><div class="st-label">联赛级别</div><div class="st-value accent">第 4 级</div><div class="st-note">Segunda Federación · 2026-27 在 G2</div></div>
+        <div class="stat-tile"><div class="st-label">阵容规模</div><div class="st-value">25–26 人</div><div class="st-note">平均年龄约 18.8 岁</div></div>
+        <div class="stat-tile"><div class="st-label">2025-26 首季</div><div class="st-value accent">42 人启用</div><div class="st-note">21 人上演处子秀</div></div>
+        <div class="stat-tile"><div class="st-label">主教练</div><div class="st-value" style="font-size:20px">Belletti</div><div class="st-note">2026-27 执教第二季 · 官方续约</div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row"><h3>🏟 定位与背景</h3></div>
+      <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
+        <p><b style="color:var(--ink-900)">Barça Atlètic</b> 是巴塞罗那的预备队（B 队），介于青训与一线队之间的最后一级，也是拉玛西亚体系的顶端——每赛季都有大量青训毕业生从这里晋升一线队。</p>
+        <p>比赛主场在甘伯体育城与克鲁伊夫球场。2026-27 赛季季前自 7 月 20 日体检启动，8 月 2–9 日在 Vall d'en Bas 集训；新援包括自 U19 升入的埃及前锋 <b>Hamza Abdelkarim</b> 等多名青训尖子。</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row"><h3>🚀 与青训梯队的关系</h3><a href="index.html" style="font-size:13px;font-weight:700">返回梯队总览 →</a></div>
+      <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:8px">
+        <p>⬆️ 常见晋升路径：U19 A（Juvenil A）→ Barça Atlètic → 一线队。2026-27 季前已有 Max Bonfill、Hamza Abdelkarim、Shane Kluivert、Dani Ávila、Nuhu Fofana 等多名 U19 球员确定或预计升入。</p>
+        <p>⚽ 一线队季前训练征调的青训球员（部分进入巴萨竞技而非 U19）：Guille Fernández、Toni Fernández、Ebrima Tunkara、Orian Goren、Álex González、Ibrahim Diarra 等。</p>
+      </div>
+    </div>
+
+    <!-- ═══ 懂球帝实时数据（dqd-barca-atletic.js 渲染；离线时回退本地缓存） ═══ -->
+    <div id="dqd-status" class="note-box blue">
+      <span>📡 正在连接懂球帝，加载最新数据…</span>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>🤕 伤病名单 <span class="tag">懂球帝数据源 · 每日更新</span></h3>
+      </div>
+      <div id="dqd-injuries" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载伤病数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>🎽 球员名单 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
+        <span class="badge blue" id="dqd-count-badge">加载中…</span>
+      </div>
+      <div id="dqd-roster" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载懂球帝数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📅 赛程与结果 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
+      </div>
+      <div id="dqd-schedule" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载懂球帝数据…</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>🏟 球队信息 <span class="tag">懂球帝数据源</span></h3>
+        <img id="dqd-team-logo" alt="" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
+      </div>
+      <div id="dqd-teaminfo" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载懂球帝数据…</div>
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>说明：</b>Barça Atlètic 属职业预备队（非严格意义的青训梯队），球员大名单随转会窗口频繁变动。本站的名单、照片与赛程已接入<b>懂球帝数据源</b>，联网时每次打开页面自动拉取最新数据，并每日定时生成本地缓存以支持离线查看。最终以 fcbarcelona.com 官方发布为准。</span></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div class="foot-brand"><span class="crest">🟡🔵</span> 拉玛西亚 · La Masia 信息站</div>
+      <p>非官方球迷资料站。FC Barcelona、La Masia 均为 FC Barcelona 所有。本站仅用于球迷信息整理与学习用途。</p>
+      <p style="margin-top:10px;font-size:11.5px;color:rgba(255,255,255,0.42)">⚖️ <b>版权与合规声明：</b>球员照片版权归原出处/摄影师所有，本站已为每张照片标注来源链接；本站为<b>非商用</b>球迷资料站，图片仅以低分辨率缩略图形式使用。若您是版权方并希望移除某张图片，请联系本站，我们将立即删除。本站与 FC Barcelona 无官方关联。</p><div class="foot-links">
+        <a href="../index.html">首页</a>
+        <a href="index.html">梯队</a>
+        <a href="../matches.html">比赛信息</a>
+        <a href="https://www.fcbarcelona.com" target="_blank" rel="noopener">官方网站</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/roster.js"></script>
+  <script src="../assets/js/dqd-barca-atletic-cache.js"></script>
+  <script src="../assets/js/dqd-barca-atletic.js"></script>
+</body>
+</html>

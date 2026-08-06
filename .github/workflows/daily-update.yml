@@ -1,0 +1,47 @@
+name: Daily update caches
+
+# 每天自动更新懂球帝（B队）与 Sofascore（U19）的本地缓存并提交，
+# Netlify 连接本仓库后会自动重新部署，保证线上站点数据每日刷新。
+# 触发时间：每天 01:07 UTC（北京时间 09:07，B队/U19 错峰略晚于本机计划任务）。
+
+on:
+  schedule:
+    - cron: "7 1 * * *"
+  workflow_dispatch: {}   # 也可在 Actions 页手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: windows-latest          # Windows 运行器自带 Edge（Sofascore 反爬需要真浏览器指纹）
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Update B team cache (dongqiudi)
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_barca_atletic.ps1
+
+      - name: Update U19 cache (Sofascore)
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_u19_sofascore.ps1
+
+      - name: Commit updated caches
+        shell: powershell
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-u19-cache.js assets/img/players/dqd
+          if (git diff --cached --quiet) {
+            Write-Host "缓存无变化，跳过提交"
+          } else {
+            git commit -m "chore: 每日更新懂球帝/Sofascore 数据缓存"
+            git push
+          }

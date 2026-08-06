@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>梯队总览 — 拉玛西亚 · La Masia</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="crest">🟡🔵</span>
+        <span>拉玛西亚<small>LA MASIA · FC BARCELONA</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">首页</a>
+        <a class="active" href="index.html">梯队</a>
+        <a href="../matches.html">比赛信息</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container"><div class="crumbs"><a href="../index.html">首页</a><span class="sep">/</span><span>梯队总览</span></div></div>
+
+  <div class="page-head container">
+    <span class="ph-kicker">YOUTH TEAMS · 15 SQUADS</span>
+    <h1>梯队总览</h1>
+    <div class="ph-meta">
+      <span>🎯 男足梯队 <b>15 支</b>（6 支 11 人制 + 9 支 7 人制）</span>
+      <span>🧑‍💼 青训总监 <b>José Ramón Alexanco</b></span>
+      <span>🏟 基地 <b>甘伯体育城</b></span>
+    </div>
+  </div>
+
+  <section class="container" style="padding-top:20px">
+
+    <div class="panel">
+      <div class="panel-title-row"><h3>🗂 各梯队入口</h3><span class="badge gray">点击卡片进入</span></div>
+      <div class="p-body">
+        <div class="team-grid" id="teamGrid"><!-- data.js 渲染 --></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row"><h3>⛰ 结构一览</h3><span class="badge gray">按年龄段</span></div>
+      <div class="p-body">
+        <div class="pyramid">
+          <div class="pyramid-block-title">⚽ 预备队 · 11 人制</div>
+          <div class="pyramid-row"><div class="pr-age">预备队</div><div><div class="pr-name">Barça Atlètic</div><div class="pr-desc">Segunda Federación G2 · 主教练 Juliano Belletti</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U19</div><div><div class="pr-name">U19 A · Juvenil A</div><div class="pr-desc">División de Honor Juvenil · Pol Planas</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U19</div><div><div class="pr-name">U19 B · Juvenil B</div><div class="pr-desc">Liga Nacional Juvenil · Cesc Bosch</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U16</div><div><div class="pr-name">U16 · Cadete A</div><div class="pr-desc">División de Honor Cadete · Àlex Fernández</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U15</div><div><div class="pr-name">U15 · Cadete B</div><div class="pr-desc">Preferente Cadete · Albert Peris</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U14</div><div><div class="pr-name">U14 · Infantil A</div><div class="pr-desc">División de Honor Infantil · Adrià Monràs</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U13</div><div><div class="pr-name">U13 · Infantil B</div><div class="pr-desc">Preferente Infantil · Jordi Pérez</div></div></div>
+
+          <div class="pyramid-block-title" style="margin-top:20px">🥅 7 人制（U12 及以下）</div>
+          <div class="pyramid-row"><div class="pr-age">U12</div><div><div class="pr-name">Alevín A</div><div class="pr-desc">Juanan Gil · 越级踢 Preferente Infantil U13</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U11</div><div><div class="pr-name">Alevín B / C</div><div class="pr-desc">Àlvar Acosta · Paco Revert</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U10</div><div><div class="pr-name">Benjamín A / B</div><div class="pr-desc">Albert Ametller · Dani Segovia</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U9</div><div><div class="pr-name">Benjamín C / D</div><div class="pr-desc">Mario Jordano · Albert Moratalla</div></div></div>
+          <div class="pyramid-row"><div class="pr-age">U8</div><div><div class="pr-name">Prebenjamín A / B</div><div class="pr-desc">Albert Batalla · Oriol Juan</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>说明：</b>梯队命名与教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单（2026-07 发布）；联赛归属以西班牙足协（RFEF）与加泰足协（FCF）为准，部分 2026-27 分组尚未完全公布。</span></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div class="foot-brand"><span class="crest">🟡🔵</span> 拉玛西亚 · La Masia 信息站</div>
+      <p>非官方球迷资料站。FC Barcelona、La Masia 均为 FC Barcelona 所有。本站仅用于球迷信息整理与学习用途。</p>
+      <p style="margin-top:10px;font-size:11.5px;color:rgba(255,255,255,0.42)">⚖️ <b>版权与合规声明：</b>球员照片版权归原出处/摄影师所有，本站已为每张照片标注来源链接；本站为<b>非商用</b>球迷资料站，图片仅以低分辨率缩略图形式使用。若您是版权方并希望移除某张图片，请联系本站，我们将立即删除。本站与 FC Barcelona 无官方关联。</p><div class="foot-links">
+        <a href="../index.html">首页</a>
+        <a href="index.html">梯队</a>
+        <a href="../matches.html">比赛信息</a>
+        <a href="https://www.fcbarcelona.com" target="_blank" rel="noopener">官方网站</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script>
+    const grid = document.getElementById('teamGrid');
+    if (grid && window.LAMASIA_DATA && LAMASIA_DATA.teams) {
+      // data.js 的 href 以站点根为基准（teams/xxx.html），本页位于 teams/ 目录下需去掉前缀
+      grid.innerHTML = LAMASIA_DATA.teams.map(t => `
+        <a class="team-card" href="${t.href.replace('teams/', '')}">
+          <span class="t-age">${t.age}</span>
+          <span class="t-name">${t.name}</span>
+          <span class="t-league">${t.league}</span>
+          <span class="t-foot"><span class="t-count">${t.desc}</span><span class="t-go">进入 →</span></span>
+        </a>`).join('');
+    }
+  </script>
+</body>
+</html>
