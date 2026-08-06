@@ -419,6 +419,18 @@ a:hover { color: #0d54b8; }
 .dqd-inj-row .dqd-inj-type { font-size: 12.5px; color: var(--red); font-weight: 600; margin-top: 1px; }
 .dqd-inj-row .dqd-inj-meta { font-size: 11.5px; color: var(--faint); margin-top: 1px; }
 
+/* 悬停提示（球员行完整内容） */
+.pl-tooltip {
+  position: fixed; z-index: 2000; pointer-events: none;
+  max-width: 320px; padding: 8px 12px;
+  background: rgba(20, 27, 40, 0.95); color: #fff;
+  font-size: 12.5px; line-height: 1.6; border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  display: none; white-space: normal;
+}
+.pl-tooltip b { color: #fff; }
+.pl-tooltip .pl-inj { color: #ff7a9e; }
+
 /* 懂球帝/Sofascore 数据源：球员所属队小标签 */
 .u19-team-tag {
   display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 5px;

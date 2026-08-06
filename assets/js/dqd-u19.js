@@ -76,6 +76,14 @@
     return a + "岁";
   }
 
+  /* 身价（欧元）→ 中文缩写（3300000 → "330万"） */
+  function valueZh(v) {
+    const n = parseFloat(v);
+    if (!isFinite(n) || n <= 0) return "";
+    if (n >= 100000000) return (Math.round(n / 100000000 * 10) / 10) + "亿";
+    return Math.round(n / 10000) + "万";
+  }
+
   /* 姓名归一化（去变音符、统一小写）用于和官方名单匹配中文名 */
   function normKey(s) {
     return String(s || "").toLowerCase()
@@ -97,8 +105,15 @@
 
   /* 把实时抓到的原始数据归一化成与缓存一致的形状 */
   function normalizeLive(playersJson, lastJson, nextJson) {
+    // 出场/进球/助攻 来自每日缓存（避免实时逐球员请求）；实时数据只带身价
+    const cachePlayers = {};
+    const cc = window.DQD_U19_CACHE;
+    if (cc && cc.players) cc.players.forEach(function (cp) { cachePlayers[cp.id] = cp; });
+
     const players = ((playersJson && playersJson.players) || []).map(function (p) {
       const pr = p.player;
+      const id = String(pr.id);
+      const cached = cachePlayers[id];
       let injury = null;
       if (pr && pr.injury) {
         const i = pr.injury;
@@ -109,10 +124,14 @@
         };
       }
       return {
-        name: pr.name, id: String(pr.id), pos: pr.position || "",
+        name: pr.name, id: id, pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
         photo: "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
         age: calcAge(pr.dateOfBirth),
+        value: valueZh(pr.proposedMarketValue),
+        app: cached ? (cached.app || "") : "",
+        goals: cached ? (cached.goals || "") : "",
+        assists: cached ? (cached.assists || "") : "",
         injury: injury
       };
     });
@@ -208,8 +227,40 @@
     }
     const zhMap = buildZhMap();
 
+    function statsNote(p) {
+      const parts = [];
+      if (p.app !== undefined && p.app !== "") parts.push("出场 " + p.app);
+      if (p.goals !== undefined && p.goals !== "") parts.push("进球 " + p.goals);
+      if (p.assists !== undefined && p.assists !== "") parts.push("助攻 " + p.assists);
+      if (p.value) parts.push("身价(欧) " + p.value);
+      return parts.join(" · ");
+    }
+
     let total = 0;
     let html = "";
+
+    // 教练组（置顶，顺序：教练→前锋→中场→后卫→门将，与 B 队一致）
+    const coach = (data && data.coach) || (window.DQD_U19_CACHE && window.DQD_U19_CACHE.coach) || null;
+    if (coach && coach.name) {
+      const c = coach;
+      const ini = esc(initials(c.name)) || "·";
+      const avatar = '<span class="pl-avatar">' +
+        (c.photo ? '<img src="' + esc(c.photo) + '" alt="' + esc(c.name) + '" loading="lazy" referrerpolicy="no-referrer"' +
+          ' data-zh="' + esc(c.name) + '" data-credit="Sofascore" data-src-url="' + esc(c.photo) + '"' +
+          ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
+        '<span class="pl-init" style="' + (c.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
+      html += '<div class="pl-group">🧑‍🏫 教练组 <span style="opacity:.55;font-weight:600">· 1 人</span></div>' +
+        '<div class="pl-row">' +
+          '<span class="pl-num">—</span>' + avatar +
+          '<span class="pl-name"><span class="zh">' + esc(c.name) + '</span><span class="en">主教练 · Head Coach</span></span>' +
+          '<span class="pl-pos other">教练</span>' +
+          '<span class="pl-nation">西班牙</span>' +
+          '<span class="pl-dob"></span>' +
+          '<span class="pl-note">主教练</span>' +
+        "</div>";
+      total++;
+    }
+
     POS_ORDER.forEach(function (code) {
       const ps = players.filter(function (p) { return p.pos === code; });
       if (!ps.length) return;
@@ -238,7 +289,7 @@
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + "</span>" +
             '<span class="pl-nation">' + (p.pos || "") + "</span>" +
             '<span class="pl-dob">' + esc(p.age || "") + "</span>" +
-            '<span class="pl-note">' + esc(zh.note || "") + "</span>" +
+            '<span class="pl-note">' + esc([statsNote(p), zh.note].filter(Boolean).join(" · ")) + "</span>" +
           "</div>";
       });
     });

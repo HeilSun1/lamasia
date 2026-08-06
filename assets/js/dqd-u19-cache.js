@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-06 19:31 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-06 19:55 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-06 19:31:12",
+    "updated":  "2026-08-06 19:55:16",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -8,6 +8,11 @@ window.DQD_U19_CACHE = {
                  "country":  "Spain",
                  "logo":  "https://img.sofascore.com/api/v1/team/90128/image"
              },
+    "coach":  {
+                  "name":  "Pol Planas",
+                  "id":  "813788",
+                  "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
+              },
     "players":  [
                     {
                         "name":  "Òscar Gistau",
@@ -17,6 +22,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
                         "age":  "18岁",
+                        "value":  "5万",
+                        "app":  "2",
+                        "goals":  "2",
+                        "assists":  "1",
                         "injury":  null
                     },
                     {
@@ -27,6 +36,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1982217/image",
                         "age":  "18岁",
+                        "value":  "31万",
+                        "app":  "4",
+                        "goals":  "0",
+                        "assists":  "1",
                         "injury":  null
                     },
                     {
@@ -37,6 +50,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/1861694/image",
                         "age":  "16岁",
+                        "value":  "",
+                        "app":  "1",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -47,6 +64,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2048405/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "5",
+                        "goals":  "2",
+                        "assists":  "1",
                         "injury":  null
                     },
                     {
@@ -57,6 +78,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "4",
+                        "goals":  "1",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -67,6 +92,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "2",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -77,6 +106,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U18",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405472/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -87,6 +120,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -97,6 +134,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1544614/image",
                         "age":  "18岁",
+                        "value":  "330万",
+                        "app":  "4",
+                        "goals":  "2",
+                        "assists":  "2",
                         "injury":  {
                                        "reason":  "大腿伤势",
                                        "reasonEn":  "Thigh Injury",
@@ -112,6 +153,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
                         "age":  "16岁",
+                        "value":  "520万",
+                        "app":  "7",
+                        "goals":  "3",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -122,6 +167,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "8",
+                        "goals":  "2",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -132,6 +181,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "8",
+                        "goals":  "1",
+                        "assists":  "2",
                         "injury":  null
                     },
                     {
@@ -142,6 +195,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076883/image",
                         "age":  "18岁",
+                        "value":  "9万",
+                        "app":  "8",
+                        "goals":  "1",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -152,6 +209,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U18",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128103/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "3",
+                        "goals":  "1",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -162,6 +223,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U18",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076887/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -172,6 +237,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1590760/image",
                         "age":  "19岁",
+                        "value":  "28万",
+                        "app":  "1",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  {
                                        "reason":  "膝盖伤势",
                                        "reasonEn":  "Knee Injury",
@@ -187,6 +256,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926117/image",
                         "age":  "18岁",
+                        "value":  "46万",
+                        "app":  "6",
+                        "goals":  "0",
+                        "assists":  "1",
                         "injury":  null
                     },
                     {
@@ -197,6 +270,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076894/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "5",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -207,6 +284,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1590920/image",
                         "age":  "19岁",
+                        "value":  "54万",
+                        "app":  "8",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -217,6 +298,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -227,6 +312,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "3",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -237,6 +326,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "7",
+                        "goals":  "0",
+                        "assists":  "1",
                         "injury":  null
                     },
                     {
@@ -247,6 +340,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229084/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "2",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -257,6 +354,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2607840/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "2",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -267,6 +368,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U18",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "2",
+                        "goals":  "1",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -277,6 +382,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
                         "age":  "19岁",
+                        "value":  "5万",
+                        "app":  "3",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -287,6 +396,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -297,6 +410,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
                         "age":  "18岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -307,6 +424,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2048364/image",
                         "age":  "17岁",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     },
                     {
@@ -317,6 +438,10 @@ window.DQD_U19_CACHE = {
                         "team":  "Barcelona U19",
                         "photo":  "https://img.sofascore.com/api/v1/player/2604387/image",
                         "age":  "",
+                        "value":  "",
+                        "app":  "0",
+                        "goals":  "0",
+                        "assists":  "0",
                         "injury":  null
                     }
                 ],

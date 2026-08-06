@@ -116,5 +116,51 @@
     );
   });
 
+  /* ── 悬停提示：鼠标悬停球员行时，显示该行完整内容 ── */
+  let tipEl = null;
+  function ensureTip() {
+    if (!tipEl) {
+      tipEl = document.createElement("div");
+      tipEl.className = "pl-tooltip";
+      document.body.appendChild(tipEl);
+    }
+    return tipEl;
+  }
+  document.addEventListener("mouseover", function (e) {
+    const row = e.target.closest ? e.target.closest(".pl-row") : null;
+    if (!row) { if (tipEl) tipEl.style.display = "none"; return; }
+    const tip = ensureTip();
+    const pick = function (sel) { const el = row.querySelector(sel); return el ? el.innerText.trim() : ""; };
+    const num = pick(".pl-num");
+    const name = pick(".pl-name").replace(/\s+/g, " ");
+    const pos = pick(".pl-pos");
+    const nation = pick(".pl-nation");
+    const dob = pick(".pl-dob");
+    const note = pick(".pl-note");
+    const lines = [];
+    lines.push("<b>" + esc(name || "球员") + "</b>");
+    if (pos) lines.push(pos);
+    if (num && num !== "—") lines.push("号码 " + num);
+    if (nation) lines.push("国籍 " + nation);
+    if (dob) lines.push("年龄 " + dob);
+    if (note) lines.push(note);
+    tip.innerHTML = lines.join(" · ");
+    tip.style.display = "block";
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (!tipEl || tipEl.style.display === "none") return;
+    const pad = 14, r = tipEl.getBoundingClientRect();
+    let x = e.clientX + pad, y = e.clientY + pad;
+    if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - pad;
+    if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - pad;
+    tipEl.style.left = x + "px";
+    tipEl.style.top = y + "px";
+  });
+  document.addEventListener("mouseout", function (e) {
+    if (!tipEl) return;
+    const to = e.relatedTarget;
+    if (!to || !(to.closest ? to.closest(".pl-row") : null)) tipEl.style.display = "none";
+  });
+
   window.LAMASIA_RENDER = { playerList: render, lightbox: { open: openLightbox, close: closeLightbox } };
 })();

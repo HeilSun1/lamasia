@@ -118,6 +118,74 @@ function Get-Age($dob) {
   return "$($age)岁"
 }
 
+# 身价（欧元）→ 中文缩写（如 3300000 → "330万"，3亿+ → "X.X亿"）
+function Get-ValueZh($v) {
+  if ($null -eq $v) { return "" }
+  try { $n = [double]$v } catch { return "" }
+  if ($n -le 0) { return "" }
+  if ($n -ge 100000000) { return ("{0}亿" -f [math]::Round($n / 100000000, 1)) }
+  return ("{0}万" -f [math]::Round($n / 10000, 0))
+}
+
+# 一次 Edge 抓取所有球员的本赛季统计（出场/进球/助攻）
+# 用 wrapper 页在浏览器里并发 fetch 各球员 /statistics，输出 "id:app:goals:assists|..." 供解析。
+function Get-AllPlayerStats($playerIds) {
+  $statsMap = @{}
+  if (-not $playerIds -or @($playerIds).Count -eq 0) { return $statsMap }
+  $idsJson = (@($playerIds) | ForEach-Object { '"' + $_ + '"' }) -join ","
+  $html = @'
+<!DOCTYPE html><html><body>
+<script>
+var ids = [__IDS__];
+var out = []; var done = 0;
+function collect(id, d){
+  var app=0,goals=0,assists=0;
+  if(d && d.seasons && d.seasons.length){
+    var maxY="";
+    d.seasons.forEach(function(s){ if(s.season && s.season.year && String(s.season.year)>maxY) maxY=String(s.season.year); });
+    d.seasons.forEach(function(s){ if(s.season && String(s.season.year)===maxY && s.statistics){
+      app+=(s.statistics.appearances||0); goals+=(s.statistics.goals||0); assists+=(s.statistics.assists||0);
+    }});
+  }
+  out.push(id+":"+app+":"+goals+":"+assists);
+  done++; if(done===ids.length) document.body.innerHTML=out.join("|");
+}
+ids.forEach(function(id){
+  fetch("https://api.sofascore.com/api/v1/player/"+id+"/statistics")
+    .then(function(r){ if(!r.ok) return null; return r.json(); })
+    .then(function(d){ collect(id,d); })
+    .catch(function(){ collect(id,null); });
+});
+</script>
+</body></html>
+'@
+  $html = $html.Replace("__IDS__", $idsJson)
+  $tmp = Join-Path $env:TEMP ("stats_" + [guid]::NewGuid().ToString("N") + ".html")
+  [System.IO.File]::WriteAllText($tmp, $html, (New-Object System.Text.UTF8Encoding($false)))
+  $fileUrl = "file:///" + ($tmp -replace '\\', '/')
+  $prevEAP = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  try {
+    $dump = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
+        "--user-data-dir=$Profile" --virtual-time-budget=30000 --dump-dom $fileUrl 2>$null | Out-String)
+  } finally {
+    $ErrorActionPreference = $prevEAP
+  }
+  Remove-Item $tmp -Force -ErrorAction SilentlyContinue
+  $m = [regex]::Match($dump, '<body>(.*)</body>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+  if ($m.Success) {
+    foreach ($seg in ($m.Groups[1].Value -split '\|')) {
+      $parts = $seg -split ':'
+      if ($parts.Count -ge 4) {
+        $statsMap[$parts[0]] = [pscustomobject]@{
+          app = $parts[1]; goals = $parts[2]; assists = $parts[3]
+        }
+      }
+    }
+  }
+  return $statsMap
+}
+
 Log "开始 U19 更新（Sofascore 团队 $TeamId）……"
 
 # ── 1. 抓取原始数据 ─────────────────────────────────────────────
@@ -131,11 +199,15 @@ if (-not $players -and -not $lastEv -and -not $nextEv) {
   exit 1
 }
 
-# ── 2. 归一化球员（名单 + 照片 + 伤病） ─────────────────────────
+# ── 2. 归一化球员（名单 + 照片 + 伤病 + 身价 + 赛季统计） ───────
 $playersOut = @()
+$statsMap = @{}
 if ($players -and $players.players) {
+  $playerIds = @(@($players.players) | ForEach-Object { [string]$_.player.id })
+  $statsMap = Get-AllPlayerStats $playerIds
   foreach ($p in @($players.players)) {
     $pr = $p.player
+    $playerId = [string]$pr.id
     $inj = $null
     if ($pr.injury) {
       $inj = [pscustomobject]@{
@@ -147,15 +219,20 @@ if ($players -and $players.players) {
         } else { "" }
       }
     }
+    $st = if ($statsMap.ContainsKey($playerId)) { $statsMap[$playerId] } else { $null }
     $playersOut += [pscustomobject]@{
-      name  = [string]$pr.name
-      id    = [string]$pr.id
-      pos   = [string]$pr.position
-      shirt = [string]$p.shirtNumber
-      team  = [string]$pr.team.name
-      photo = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
-      age   = Get-Age $pr.dateOfBirth
-      injury = $inj
+      name    = [string]$pr.name
+      id      = $playerId
+      pos     = [string]$pr.position
+      shirt   = [string]$p.shirtNumber
+      team    = [string]$pr.team.name
+      photo   = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
+      age     = Get-Age $pr.dateOfBirth
+      value   = Get-ValueZh $pr.proposedMarketValue
+      app     = if ($st) { [string]$st.app } else { "" }
+      goals   = if ($st) { [string]$st.goals } else { "" }
+      assists = if ($st) { [string]$st.assists } else { "" }
+      injury  = $inj
     }
   }
 }
@@ -196,6 +273,13 @@ $cache = [ordered]@{
     country = if ($team -and $team.team -and $team.team.country) { [string]$team.team.country.name } else { "" }
     logo    = "https://img.sofascore.com/api/v1/team/$TeamId/image"
   }
+  coach   = if ($team -and $team.team -and $team.team.manager) {
+    [pscustomobject]@{
+      name  = [string]$team.team.manager.name
+      id    = [string]$team.team.manager.id
+      photo = "https://img.sofascore.com/api/v1/manager/$($team.team.manager.id)/image"
+    }
+  } else { $null }
   players = $playersOut
   matches = $matches
 }
