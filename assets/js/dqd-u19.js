@@ -168,7 +168,7 @@
       const display = zh.zh || p.name || "";
       const ini = esc(initials(p.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
-        (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy"' +
+        (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
           ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
         '<span class="pl-init" style="' + (p.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
       html +=
@@ -213,7 +213,7 @@
         const teamTag = p.team && p.team !== "Barcelona U19"
           ? '<span class="u19-team-tag" title="Sofascore 当前所属球队">' + esc(p.team.replace("Barcelona ", "巴萨")) + "</span>" : "";
         const avatar = '<span class="pl-avatar">' +
-          (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy"' +
+          (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
             ' data-zh="' + esc(display) + '" data-credit="Sofascore" data-src-url="' + esc(p.photo) + '"' +
             ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
           '<span class="pl-init" style="' + (p.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
