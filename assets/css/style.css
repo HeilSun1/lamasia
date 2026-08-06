@@ -230,7 +230,7 @@ a:hover { color: #0d54b8; }
 .pl-pos.df { background: rgba(37,99,235,0.12); color: var(--pos-df); }
 .pl-pos.mf { background: rgba(210,52,92,0.12); color: var(--pos-mf); }
 .pl-pos.fw { background: rgba(14,159,92,0.12); color: var(--pos-fw); }
-.pl-nation { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+.pl-nation { font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pl-dob { font-size: 12px; color: var(--faint); white-space: nowrap; }
 .pl-note { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .pl-credits {

@@ -16,7 +16,7 @@
   const API     = "https://pc.dongqiudi.com";
   const IMG_BASE = "../assets/img/players/dqd/"; // 本地照片目录（相对本页面所在 teams/ 目录）
 
-  const POS_ORDER = ["goalkeeper", "defender", "midfielder", "attacker", "coach"];
+  const POS_ORDER = ["coach", "attacker", "midfielder", "defender", "goalkeeper"];
   const POS_TITLE = { goalkeeper: "🧤 门将", defender: "🛡 后卫", midfielder: "⚙️ 中场", attacker: "🎯 前锋", coach: "🧑‍🏫 教练组" };
   const POS_CLASS = { goalkeeper: "gk", defender: "df", midfielder: "mf", attacker: "fw", coach: "other" };
   const POS_ZH    = { goalkeeper: "门将", defender: "后卫", midfielder: "中场", attacker: "前锋", coach: "教练" };

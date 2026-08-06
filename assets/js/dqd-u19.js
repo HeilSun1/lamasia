@@ -14,7 +14,7 @@
   const TEAM_ID = "90128";                       // Sofascore 巴萨 U19
   const API     = "https://api.sofascore.com/api/v1";
 
-  const POS_ORDER = ["G", "D", "M", "F"];
+  const POS_ORDER = ["F", "M", "D", "G"];
   const POS_TITLE = { G: "🧤 门将", D: "🛡 后卫", M: "⚙️ 中场", F: "🎯 前锋" };
   const POS_CLASS = { G: "gk", D: "df", M: "mf", F: "fw" };
   const POS_ZH    = { G: "门将", D: "后卫", M: "中场", F: "前锋" };
