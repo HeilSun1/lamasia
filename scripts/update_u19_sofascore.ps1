@@ -103,6 +103,21 @@ function Get-CompZh([string]$en) {
   return $en
 }
 
+# 出生日期 → 年龄（如 "2008-06-18T00:00:00+00:00" → "18岁"）。
+# ConvertFrom-Json 可能把 ISO 日期解析成 [datetime]，这里两种都兼容。
+function Get-Age($dob) {
+  if ($null -eq $dob) { return "" }
+  if ($dob -is [datetime]) {
+    $y = $dob.Year; $m = $dob.Month; $d = $dob.Day
+  } elseif ([string]$dob -match '^(\d{4})-(\d{2})-(\d{2})') {
+    $y = [int]$Matches[1]; $m = [int]$Matches[2]; $d = [int]$Matches[3]
+  } else { return "" }
+  $now = Get-Date
+  $age = $now.Year - $y
+  if ($now.Month -lt $m -or ($now.Month -eq $m -and $now.Day -lt $d)) { $age-- }
+  return "$($age)岁"
+}
+
 Log "开始 U19 更新（Sofascore 团队 $TeamId）……"
 
 # ── 1. 抓取原始数据 ─────────────────────────────────────────────
@@ -139,6 +154,7 @@ if ($players -and $players.players) {
       shirt = [string]$p.shirtNumber
       team  = [string]$pr.team.name
       photo = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
+      age   = Get-Age $pr.dateOfBirth
       injury = $inj
     }
   }

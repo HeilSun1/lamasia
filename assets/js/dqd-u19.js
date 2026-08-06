@@ -65,6 +65,17 @@
     return en || "";
   }
 
+  /* 出生日期 → 年龄（如 "2008-06-18T00:00:00+00:00" → "18岁"） */
+  function calcAge(dob) {
+    const m = String(dob || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return "";
+    const by = parseInt(m[1], 10), bm = parseInt(m[2], 10), bd = parseInt(m[3], 10);
+    const now = new Date();
+    let a = now.getFullYear() - by;
+    if (now.getMonth() + 1 < bm || (now.getMonth() + 1 === bm && now.getDate() < bd)) a--;
+    return a + "岁";
+  }
+
   /* 姓名归一化（去变音符、统一小写）用于和官方名单匹配中文名 */
   function normKey(s) {
     return String(s || "").toLowerCase()
@@ -101,6 +112,7 @@
         name: pr.name, id: String(pr.id), pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
         photo: "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
+        age: calcAge(pr.dateOfBirth),
         injury: injury
       };
     });
@@ -225,7 +237,7 @@
             '<span class="en">' + esc(p.name || "") + "</span></span>" +
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + "</span>" +
             '<span class="pl-nation">' + (p.pos || "") + "</span>" +
-            '<span class="pl-dob">U19</span>' +
+            '<span class="pl-dob">' + esc(p.age || "") + "</span>" +
             '<span class="pl-note">' + esc(zh.note || "") + "</span>" +
           "</div>";
       });
