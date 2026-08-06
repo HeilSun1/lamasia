@@ -129,22 +129,17 @@
   document.addEventListener("mouseover", function (e) {
     const row = e.target.closest ? e.target.closest(".pl-row") : null;
     if (!row) { if (tipEl) tipEl.style.display = "none"; return; }
+    // 仅当行内某段文字被省略号截断时，才弹出提示显示完整内容（其余情况不弹）
+    const full = [];
+    row.querySelectorAll(".pl-name .en, .pl-nation, .pl-note").forEach(function (el) {
+      if (el.scrollWidth > el.clientWidth + 2) {
+        const t = el.innerText.trim();
+        if (t) full.push(t);
+      }
+    });
+    if (!full.length) { if (tipEl) tipEl.style.display = "none"; return; }
     const tip = ensureTip();
-    const pick = function (sel) { const el = row.querySelector(sel); return el ? el.innerText.trim() : ""; };
-    const num = pick(".pl-num");
-    const name = pick(".pl-name").replace(/\s+/g, " ");
-    const pos = pick(".pl-pos");
-    const nation = pick(".pl-nation");
-    const dob = pick(".pl-dob");
-    const note = pick(".pl-note");
-    const lines = [];
-    lines.push("<b>" + esc(name || "球员") + "</b>");
-    if (pos) lines.push(pos);
-    if (num && num !== "—") lines.push("号码 " + num);
-    if (nation) lines.push("国籍 " + nation);
-    if (dob) lines.push("年龄 " + dob);
-    if (note) lines.push(note);
-    tip.innerHTML = lines.join(" · ");
+    tip.innerHTML = esc(full.join(" · "));
     tip.style.display = "block";
   });
   document.addEventListener("mousemove", function (e) {
