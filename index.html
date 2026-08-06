@@ -259,7 +259,23 @@
       { img: "assets/img/players/artem-rybak.jpg", name: "阿尔乔姆·雷巴克" }
     ];
 
-    function marqueeItems() {
+    // 已知无头像占位图（懂球帝通用头像），不放进滚动条
+    const PLACEHOLDER_MARK = "ChOxM1xC37CADGDCAAANHjH55fo314.png";
+    function isPlaceholder(url) {
+      return String(url || "").indexOf(PLACEHOLDER_MARK) !== -1;
+    }
+    function loadable(url) {
+      return new Promise(function (resolve) {
+        const im = new Image();
+        im.referrerPolicy = "no-referrer";
+        im.onload = function () { resolve(true); };
+        im.onerror = function () { resolve(false); };
+        im.src = url;
+      });
+    }
+
+    // 从每日缓存取当前球员（排除占位图），并检测照片真能加载才展示
+    async function buildMarquee() {
       const pools = [];
       // U19 / U18 / U16（Sofascore 缓存）
       [window.DQD_U19_CACHE, window.DQD_U18_CACHE, window.DQD_U16_CACHE].forEach(function (c) {
@@ -273,37 +289,45 @@
         }
         pools.push(arr);
       });
-      // B队（懂球帝缓存，照片为本地；排除教练组）
+      // B队（懂球帝缓存，照片为本地；排除教练组与占位图）
       const bArr = [];
       const b = window.DQD_BARCA_ATLETIC;
       if (b && b.roster && b.roster.data && b.roster.data.list) {
         b.roster.data.list.forEach(function (g) {
           if (g.type === "coach") return;
           (g.data || []).forEach(function (p) {
-            if (p.person_logo && p.person_name) bArr.push({ img: p.person_logo, name: p.person_name, value: "" });
+            const orig = p.person_logo_url || p.person_logo || "";
+            if (p.person_logo && p.person_name && !isPlaceholder(orig)) {
+              bArr.push({ img: p.person_logo, name: p.person_name, value: "" });
+            }
           });
         });
       }
       pools.push(bArr);
 
-      // 每队取前 6 名（有身价的优先），均衡展示四个梯队
+      // 逐队：多取候选 → 检测照片真能加载（排除 404/占位）→ 每队留 6 个
       const items = [];
-      pools.forEach(function (pool) {
+      for (let pi = 0; pi < pools.length; pi++) {
+        const pool = pools[pi];
         const valued = pool.filter(function (i) { return i.value; });
         const others = pool.filter(function (i) { return !i.value; });
-        items.push.apply(items, valued.concat(others).slice(0, 6));
-      });
-      return items.length ? items : marqueeFallback;
-    }
+        const candidates = valued.concat(others).slice(0, 18);
+        const results = await Promise.all(candidates.map(function (c) {
+          return loadable(c.img).then(function (ok) { return ok ? c : null; });
+        }));
+        const good = results.filter(Boolean);
+        items.push.apply(items, good.slice(0, 6));
+      }
 
-    const marqueePhotos = marqueeItems();
-    const mq = document.getElementById('hmMarquee');
-    if (mq) {
-      const items = marqueePhotos.concat(marqueePhotos).map(function (p) {
-        return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" referrerpolicy="no-referrer"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
-      }).join('');
-      mq.innerHTML = items;
+      const mq = document.getElementById('hmMarquee');
+      if (mq) {
+        const all = items.length ? items : marqueeFallback;
+        mq.innerHTML = all.concat(all).map(function (p) {
+          return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" referrerpolicy="no-referrer"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
+        }).join('');
+      }
     }
+    buildMarquee();
 
     // 滚动显现动画
     const io = new IntersectionObserver(function (entries) {
