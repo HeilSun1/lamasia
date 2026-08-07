@@ -481,6 +481,14 @@ a:hover { color: #0d54b8; }
 .weekly-album__note { font-size: 12px; opacity: .85; }
 .weekly-album:hover { opacity: .92; }
 
+/* 动态聚合：来源徽标 */
+.news-item__src {
+  padding: 1px 6px; border-radius: 5px; font-size: 11px; font-weight: 700; line-height: 1.6;
+}
+.news-item__src--b { background: var(--barca-blue); color: #fff; }
+.news-item__src--u { background: var(--gold-500); color: #fff; }
+.news-item__src--w { background: var(--barca-red); color: #fff; }
+
 /* 页内导航：固定右侧目录 + 回到顶部 */
 .page-toc {
   position: fixed; top: 96px; right: 16px; z-index: 40;
