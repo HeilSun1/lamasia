@@ -3,3 +3,5 @@ scripts/*.log
 # 临时文件
 *.tmp
 desktop-backup/
+# 本地工具（周报录入等，仅本机使用，不部署）
+tools/
