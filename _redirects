@@ -1,2 +1,6 @@
-# 阻止公开访问更新脚本与日志
-/scripts/*  /404.html  404
+# 阻止公开访问更新脚本、git 内部文件等
+# 注意：Cloudflare 状态码仅支持 200/301/302/303/307/308，不能用 404（Netlify 才支持 404）
+/.git/*  /404.html  302
+/.github/*  /404.html  302
+/.wrangler/*  /404.html  302
+/scripts/*  /404.html  302
