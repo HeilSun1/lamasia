@@ -84,6 +84,12 @@
     return Math.round(n / 10000) + "万";
   }
 
+  /* 国籍英文 → 中文（映射表见 data.js 的 LAMASIA_DATA.nationZh；未收录则保持原文） */
+  function nationZh(en) {
+    const map = (window.LAMASIA_DATA && window.LAMASIA_DATA.nationZh) || {};
+    return map[en] || en || "";
+  }
+
   /* 姓名归一化（去变音符、统一小写）用于和官方名单匹配中文名 */
   function normKey(s) {
     return String(s || "").toLowerCase()
@@ -91,16 +97,44 @@
       .replace(/[^a-z0-9]+/g, "");
   }
 
-  /* 从 data.js 的官方 U19 名单建立 英文名→中文名/备注 映射，避免页面出现两份名单 */
-  function buildZhMap() {
+  /* 姓名分词：转小写、去变音符，按非字母数字拆成词（"Pedro Rodríguez Iglesias" → ["pedro","rodriguez","iglesias"]） */
+  function nameTokens(s) {
+    return String(s || "").toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .split(/[^a-z0-9]+/).filter(Boolean);
+  }
+
+  /* 从 data.js 全部年龄组名单建立 英文名→中文名/备注 映射，避免页面出现两份名单。
+     Sofascore 的 U19/U18/U16 队伍边界与本站年龄组不完全一致，跨队球员也能匹配到中文名。 */
+  function buildZhMap(ownTeamId) {
     const map = {};
-    const list = window.LAMASIA_DATA && window.LAMASIA_DATA.players && window.LAMASIA_DATA.players["juvenil-a"];
-    if (!list) return map;
-    list.forEach(function (p) {
-      const k = normKey(p.name);
-      if (k) map[k] = { zh: p.zh || "", note: p.note || "" };
+    const all = window.LAMASIA_DATA && window.LAMASIA_DATA.players;
+    if (!all) return map;
+    const order = ownTeamId ? [ownTeamId].concat(Object.keys(all).filter(function (t) { return t !== ownTeamId; })) : Object.keys(all);
+    order.forEach(function (teamId) {
+      (all[teamId] || []).forEach(function (p) {
+        const k = normKey(p.name);
+        if (k && !map[k]) map[k] = { zh: p.zh || "", note: p.note || "", toks: nameTokens(p.name) };
+      });
     });
     return map;
+  }
+
+  /* 名单查找：先精确匹配全名；失败则按「名+姓」前缀兜底（Sofascore 常用简写，
+     如 "Pedro Rodriguez" 对应全名 "Pedro Rodríguez Iglesias"），仅当双方首词相同才尝试 */
+  function lookupZh(name, map) {
+    if (!name || !map) return null;
+    const hit = map[normKey(name)];
+    if (hit) return hit;
+    const a = nameTokens(name);
+    if (a.length < 2) return null;
+    for (const key in map) {
+      const b = map[key].toks;
+      if (!b || b.length < 2 || a[0] !== b[0]) continue;
+      if (a.length <= b.length && a.join(" ") === b.slice(0, a.length).join(" ")) return map[key];
+      if (b.length <= a.length && b.join(" ") === a.slice(0, b.length).join(" ")) return map[key];
+    }
+    return null;
   }
 
   /* 把实时抓到的原始数据归一化成与缓存一致的形状 */
@@ -165,7 +199,7 @@
         '<div class="stat-tile"><div class="st-label">球队</div><div class="st-value" style="font-size:20px">' + esc(t.name || "FC Barcelona U19") + "</div></div>" +
         '<div class="stat-tile"><div class="st-label">联赛</div><div class="st-value" style="font-size:20px">西青甲 G3</div><div class="st-note">División de Honor Juvenil · Group 3</div></div>' +
         '<div class="stat-tile"><div class="st-label">欧洲赛事</div><div class="st-value" style="font-size:20px">青年欧冠</div><div class="st-note">UEFA Youth League</div></div>' +
-        (t.country ? '<div class="stat-tile"><div class="st-label">国家</div><div class="st-value" style="font-size:20px">' + esc(t.country) + "</div></div>" : "") +
+        (t.country ? '<div class="stat-tile"><div class="st-label">国家</div><div class="st-value" style="font-size:20px">' + esc(nationZh(t.country)) + "</div></div>" : "") +
       "</div>";
   }
 
@@ -176,7 +210,7 @@
     const players = (data && data.players) || [];
     const injured = players.filter(function (p) { return p.injury && p.injury.status === "out"; });
     const updated = (data && data.updated) || "";
-    const zhMap = buildZhMap();
+    const zhMap = buildZhMap("juvenil-a");
 
     if (!injured.length) {
       el.innerHTML = '<div class="match-list-empty">✅ 目前无伤缺球员' +
@@ -187,7 +221,7 @@
 
     let html = '<div class="pl-group">🤕 伤病名单 · ' + injured.length + " 人</div>";
     injured.forEach(function (p) {
-      const zh = zhMap[normKey(p.name)] || {};
+      const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
       const ini = esc(initials(p.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
@@ -217,7 +251,7 @@
       if (badge) badge.textContent = "暂无";
       return;
     }
-    const zhMap = buildZhMap();
+    const zhMap = buildZhMap("juvenil-a");
 
     function statsNote(p) {
       return p.value ? "身价(欧) " + p.value : "";
@@ -254,7 +288,7 @@
       total += ps.length;
       html += '<div class="pl-group">' + POS_TITLE[code] + ' <span style="opacity:.55;font-weight:600">· ' + ps.length + " 人</span></div>";
       ps.forEach(function (p) {
-        const zh = zhMap[normKey(p.name)] || {};
+        const zh = lookupZh(p.name, zhMap) || {};
         const display = zh.zh || p.name || "";          // 优先官方名单的中文名
         const ini  = esc(initials(p.name)) || "·";
         const injBadge = (p.injury && p.injury.status === "out")
@@ -274,7 +308,7 @@
             '<span class="pl-name"><span class="zh">' + esc(display) + injBadge + teamTag + "</span>" +
             '<span class="en">' + esc(p.name || "") + "</span></span>" +
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + "</span>" +
-            '<span class="pl-nation">' + esc(p.nation || "") + "</span>" +
+            '<span class="pl-nation">' + esc(nationZh(p.nation)) + "</span>" +
             '<span class="pl-dob">' + esc(p.age || "") + "</span>" +
             '<span class="pl-note">' + esc([statsNote(p), zh.note].filter(Boolean).join(" · ")) + "</span>" +
           "</div>";

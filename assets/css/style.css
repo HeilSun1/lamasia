@@ -432,7 +432,7 @@ a:hover { color: #0d54b8; }
 .pl-tooltip .pl-inj { color: #ff7a9e; }
 
 /* 懂球帝/Sofascore 数据源：球员所属队小标签 */
-.u19-team-tag {
+.u19-team-tag, .u18-team-tag, .u16-team-tag {
   display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 5px;
   background: var(--surface-3); color: var(--muted);
   font-size: 10px; font-weight: 700; line-height: 1.5; vertical-align: 1px;
