@@ -35,7 +35,18 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
+
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-positions">📊 位置分布</a>
+      <a class="page-toc__link" href="#sec-changes">🔄 赛季变动</a>
+      <a class="page-toc__link" href="#sec-injuries">🤕 伤病</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
+      <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
 
     <div class="panel">
       <div class="stats-row">
@@ -47,7 +58,7 @@
     </div>
 
     <!-- 位置分布 -->
-    <div class="panel">
+    <div class="panel" id="sec-positions">
       <div class="panel-title-row"><h3>阵容位置分布</h3><span class="badge gray">共 27 名球员</span></div>
       <div class="p-body">
         <div class="pos-bars">
@@ -60,7 +71,7 @@
     </div>
 
     <!-- 2026-27 变动 -->
-    <div class="panel">
+    <div class="panel" id="sec-changes">
       <div class="panel-title-row"><h3>🔄 2026-27 赛季变动 <span class="tag">截至 2026-08-06</span></h3></div>
       <div class="p-body" style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
         <div>
@@ -91,7 +102,7 @@
       <span>📡 正在连接 Sofascore，加载最新数据…</span>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-injuries">
       <div class="panel-title-row">
         <h3>🤕 伤病名单 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
       </div>
@@ -100,7 +111,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-roster">
       <div class="panel-title-row">
         <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
         <span class="badge blue" id="u19-count-badge">加载中…</span>
@@ -111,7 +122,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-schedule">
       <div class="panel-title-row">
         <h3>📅 赛程与结果 <span class="tag">Sofascore 数据源 · 自动更新</span></h3>
       </div>
@@ -120,7 +131,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-teaminfo">
       <div class="panel-title-row">
         <h3>🏟 球队信息 <span class="tag">Sofascore 数据源</span></h3>
         <img id="u19-team-logo" alt="" referrerpolicy="no-referrer" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
@@ -150,5 +161,6 @@
   <script src="../assets/js/roster.js"></script>
   <script src="../assets/js/dqd-u19-cache.js"></script>
   <script src="../assets/js/dqd-u19.js"></script>
+  <script src="../assets/js/page-nav.js"></script>
 </body>
 </html>
