@@ -47,7 +47,12 @@ window.LAMASIA_DATA = {
       { num: "—",  name: "Ajay Tavares",         zh: "阿杰伊·塔瓦雷斯", pos: "FW", nation: "英格兰",       dob: "2009-12-28", note: "自诺维奇城 · 英格兰 U17 国脚", img: "ajay-tavares.jpg", imgCredit: "zerozero.pt", imgUrl: "https://www.zerozero.pt/jogador/ajay-tavares/1820493" },
       { num: "—",  name: "Álex González Yanes",  zh: "亚历克斯·冈萨雷斯", pos: "FW", nation: "西班牙",       dob: "2007-02-02", note: "自 Damm · 随一线队季前",       img: "" },
       { num: "—",  name: "Lovro Chelfi",         zh: "洛夫罗·切尔菲", pos: "FW", nation: "克罗地亚",     dob: "2007-01-30", note: "自 Kustošija · 克罗地亚 U19 国脚", img: "lovro-chelfi.jpg", imgCredit: "Transfermarkt", imgUrl: "https://www.transfermarkt.com/lovro-chelfi/profil/spieler/1277252" },
-      { num: "—",  name: "Hamza Abdelkarim",     zh: "哈姆扎·阿卜杜勒卡里姆", pos: "FW", nation: "埃及",         dob: "2008-01-01", note: "已升巴萨竞技 · 埃及国家队",   img: "hamza-abdelkarim.jpg", imgCredit: "Transfermarkt", imgUrl: "https://www.transfermarkt.com/hamza-abdelkarim/profil/spieler/1259085" }
+      { num: "—",  name: "Hamza Abdelkarim",     zh: "哈姆扎·阿卜杜勒卡里姆", pos: "FW", nation: "埃及",         dob: "2008-01-01", note: "已升巴萨竞技 · 埃及国家队",   img: "hamza-abdelkarim.jpg", imgCredit: "Transfermarkt", imgUrl: "https://www.transfermarkt.com/hamza-abdelkarim/profil/spieler/1259085" },
+      { num: "—",  name: "Òscar Gistau",         zh: "奥斯卡·吉斯陶", pos: "FW", nation: "西班牙", dob: "—", note: "Sofascore 归属巴萨竞技", img: "" },
+      { num: "—",  name: "Sama Nomoko",          zh: "萨马·诺莫科", pos: "FW", nation: "西班牙", dob: "—", note: "Sofascore 归属巴萨竞技", img: "" },
+      { num: "—",  name: "Guillermo Fernández",  zh: "吉列尔莫·费尔南德斯", pos: "MF", nation: "西班牙", dob: "—", note: "Sofascore 归属巴萨竞技", img: "" },
+      { num: "—",  name: "Landry Farré",         zh: "兰德里·法雷", pos: "DF", nation: "西班牙", dob: "—", note: "Sofascore 归属巴萨竞技", img: "" },
+      { num: "—",  name: "Eder Aller",           zh: "埃德尔·阿莱尔", pos: "GK", nation: "西班牙", dob: "—", note: "Sofascore 归属巴萨竞技", img: "" }
     ],
 
     "juvenil-b": [
@@ -74,7 +79,8 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Ïu Martínez",         zh: "伊乌·马丁内斯", pos: "FW", nation: "西班牙", dob: "—", note: "冠军杯决赛被罚下", img: "" },
       { num: "—", name: "Byron Mendoza",       zh: "拜伦·门多萨", pos: "FW", nation: "—",     dob: "—", note: "—", img: "" },
       { num: "—", name: "Alejandro Pastor",    zh: "亚历杭德罗·帕斯托尔", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Ismael Ziani",        zh: "伊斯梅尔·齐亚尼", pos: "FW", nation: "—",     dob: "—", note: "—", img: "ismael-ziani.jpg", imgCredit: "al-ain.com", imgUrl: "https://al-ain.com/article/ismael-ziani-lopez-miracle-bar-a" }
+      { num: "—", name: "Ismael Ziani",        zh: "伊斯梅尔·齐亚尼", pos: "FW", nation: "—",     dob: "—", note: "—", img: "ismael-ziani.jpg", imgCredit: "al-ain.com", imgUrl: "https://al-ain.com/article/ismael-ziani-lopez-miracle-bar-a" },
+      { num: "—", name: "Genís Oya",           zh: "赫尼斯·奥亚", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" }
     ],
 
     "cadete": [
@@ -99,8 +105,10 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Marc Armada",           zh: "马克·阿马达", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
       { num: "—", name: "Alejandro Fernández",   zh: "亚历杭德罗·费尔南德斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
       { num: "—", name: "Noah Garcia",           zh: "诺亚·加西亚", pos: "FW", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Pau Miguel Mateos",     zh: "保·米格尔·马特奥斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Ruslan Mba",            zh: "鲁斯兰·姆巴", pos: "FW", nation: "西班牙/赤道几内亚", dob: "2010-02-27", note: "职业合同至 2029 · 人称迷你拉菲尼亚", img: "" }
+      { num: "—", name: "Pau Miguel Mateos",     zh: "保·米格尔·马特奥斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", nameAlias: "Paumi Mateos", img: "" },
+      { num: "—", name: "Ruslan Mba",            zh: "鲁斯兰·姆巴", pos: "FW", nation: "西班牙/赤道几内亚", dob: "2010-02-27", note: "职业合同至 2029 · 人称迷你拉菲尼亚", img: "" },
+      { num: "—", name: "Héctor Néstor Asumu",   zh: "埃克托尔·内斯托尔·阿苏穆", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Lucas Bernal",          zh: "卢卡斯·贝尔纳尔", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" }
     ],
 
     "infantil": [

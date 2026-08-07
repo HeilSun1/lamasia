@@ -113,8 +113,14 @@
     const order = ownTeamId ? [ownTeamId].concat(Object.keys(all).filter(function (t) { return t !== ownTeamId; })) : Object.keys(all);
     order.forEach(function (teamId) {
       (all[teamId] || []).forEach(function (p) {
+        const entry = { zh: p.zh || "", note: p.note || "", toks: nameTokens(p.name) };
         const k = normKey(p.name);
-        if (k && !map[k]) map[k] = { zh: p.zh || "", note: p.note || "", toks: nameTokens(p.name) };
+        if (k && !map[k]) map[k] = entry;
+        // 别名：Sofascore 常用昵称/简称（如 "Paumi Mateos" → "Pau Miguel Mateos"）
+        String(p.nameAlias || "").split(",").forEach(function (al) {
+          const ak = normKey(al);
+          if (ak && !map[ak]) map[ak] = entry;
+        });
       });
     });
     return map;
