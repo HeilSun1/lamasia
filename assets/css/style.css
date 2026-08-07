@@ -468,6 +468,19 @@ a:hover { color: #0d54b8; }
 }
 .news-more:hover { background: var(--surface-3); }
 
+/* 周报页：系列合集入口 */
+.weekly-album {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; margin-bottom: 14px;
+  background: linear-gradient(135deg, var(--barca-blue), #0a3d7a); color: #fff;
+  border-radius: 10px; text-decoration: none;
+}
+.weekly-album__icon { font-size: 22px; }
+.weekly-album__body { display: flex; flex-direction: column; gap: 3px; }
+.weekly-album__title { font-size: 15px; font-weight: 700; }
+.weekly-album__note { font-size: 12px; opacity: .85; }
+.weekly-album:hover { opacity: .92; }
+
 /* 页内导航：固定右侧目录 + 回到顶部 */
 .page-toc {
   position: fixed; top: 96px; right: 16px; z-index: 40;

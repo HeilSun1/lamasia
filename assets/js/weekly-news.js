@@ -16,6 +16,12 @@
        url: "https://mp.weixin.qq.com/s/……",
        date: "2026-08-07", issue: "185" }
    ═══════════════════════════════════════════════════════════════ */
+window.WEEKLY_ALBUM = {
+  title: "拉玛西亚新闻合集",
+  url: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NDY1NzEzMw==&action=getalbum&album_id=1966224830458920962&scene=126#wechat_redirect",
+  note: "博主「飞翔的拉杆箱」全部拉玛西亚新闻 · 点击进入合集"
+};
+
 window.WEEKLY_NEWS = [
   { title: "【拉玛西亚新闻#199】一线队季前赛多名小将亮相；巴萨竞技与一线队整合", url: "https://mp.weixin.qq.com/s/N2wa93KU9zw4FrMa19mDuQ", date: "2026-08-07", issue: "199" }
 ];
