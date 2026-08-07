@@ -23,5 +23,5 @@ window.WEEKLY_ALBUM = {
 };
 
 window.WEEKLY_NEWS = [
-  { title: "【拉玛西亚新闻#199】一线队季前赛多名小将亮相；巴萨竞技与一线队整合", url: "https://mp.weixin.qq.com/s/N2wa93KU9zw4FrMa19mDuQ", date: "2026-08-07", issue: "199" }
+  /* 每期在这里加一条： */
 ];
