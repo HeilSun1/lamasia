@@ -35,7 +35,19 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
+
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-intro">🏟 定位</a>
+      <a class="page-toc__link" href="#sec-relation">🚀 梯队关系</a>
+      <a class="page-toc__link" href="#sec-injuries">🤕 伤病</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
+      <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
+      <a class="page-toc__link" href="#sec-news">📰 球队资讯</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
 
     <div class="panel">
       <div class="stats-row">
@@ -46,7 +58,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-intro">
       <div class="panel-title-row"><h3>🏟 定位与背景</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
         <p><b style="color:var(--ink-900)">Barça Atlètic</b> 是巴塞罗那的预备队（B 队），介于青训与一线队之间的最后一级，也是拉玛西亚体系的顶端——每赛季都有大量青训毕业生从这里晋升一线队。</p>
@@ -54,7 +66,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-relation">
       <div class="panel-title-row"><h3>🚀 与青训梯队的关系</h3><a href="index.html" style="font-size:13px;font-weight:700">返回梯队总览 →</a></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:8px">
         <p>⬆️ 常见晋升路径：U19 A（Juvenil A）→ Barça Atlètic → 一线队。2026-27 季前已有 Max Bonfill、Hamza Abdelkarim、Shane Kluivert、Dani Ávila、Nuhu Fofana 等多名 U19 球员确定或预计升入。</p>
@@ -67,7 +79,7 @@
       <span>📡 正在连接懂球帝，加载最新数据…</span>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-injuries">
       <div class="panel-title-row">
         <h3>🤕 伤病名单 <span class="tag">懂球帝数据源 · 每日更新</span></h3>
       </div>
@@ -76,7 +88,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-roster">
       <div class="panel-title-row">
         <h3>🎽 球员名单 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
         <span class="badge blue" id="dqd-count-badge">加载中…</span>
@@ -86,7 +98,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-schedule">
       <div class="panel-title-row">
         <h3>📅 赛程与结果 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
       </div>
@@ -95,7 +107,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-teaminfo">
       <div class="panel-title-row">
         <h3>🏟 球队信息 <span class="tag">懂球帝数据源</span></h3>
         <img id="dqd-team-logo" alt="" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
@@ -105,7 +117,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-news">
       <div class="panel-title-row">
         <h3>📰 球队资讯 <span class="tag">懂球帝数据源 · 每日更新</span></h3>
       </div>
@@ -137,5 +149,6 @@
   <script src="../assets/js/dqd-barca-atletic.js"></script>
   <script src="../assets/js/dqd-barca-news-cache.js"></script>
   <script src="../assets/js/dqd-barca-news.js"></script>
+  <script src="../assets/js/page-nav.js"></script>
 </body>
 </html>

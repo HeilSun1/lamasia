@@ -468,6 +468,28 @@ a:hover { color: #0d54b8; }
 }
 .news-more:hover { background: var(--surface-3); }
 
+/* 页内导航：固定右侧目录 + 回到顶部 */
+.page-toc {
+  position: fixed; top: 96px; right: 16px; z-index: 40;
+  width: 150px; padding: 10px 0 8px;
+  background: var(--surface); border: 1px solid var(--border-soft);
+  border-radius: var(--radius); box-shadow: var(--shadow-md);
+  display: flex; flex-direction: column; gap: 1px;
+}
+.page-toc__title {
+  padding: 0 12px 8px; font-size: 12px; font-weight: 700;
+  color: var(--muted); border-bottom: 1px solid var(--border-soft);
+}
+.page-toc__link {
+  padding: 6px 12px; font-size: 12.5px; line-height: 1.4;
+  color: var(--ink-700); text-decoration: none;
+  border-left: 2px solid transparent;
+}
+.page-toc__link:hover { color: var(--blue-600); background: var(--surface-2); }
+.page-toc__link.active { color: var(--blue-600); border-left-color: var(--blue-600); font-weight: 700; }
+.page-toc__top { margin-top: 6px; border-top: 1px solid var(--border-soft); padding-top: 8px; color: var(--faint); font-size: 12px; }
+@media (max-width: 1199px) { .page-toc { display: none; } }
+
 /* ══════════════════════════════════════════════════════════════
    首页美化（hm-*：编辑风格，减少装饰性 emoji）
    ══════════════════════════════════════════════════════════════ */
