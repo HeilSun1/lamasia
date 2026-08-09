@@ -124,6 +124,12 @@ if ($merged.Count -gt $MaxNews) {
 
 Log "合并后共 $($merged.Count) 条（本次新增 $($rows.Count) 条，上限 $MaxNews）"
 
+# 防空覆盖：没抓到任何新闻时不要写空缓存
+if ($merged.Count -eq 0) {
+  Log "  ✗ 本次未抓到新闻且无旧数据，跳过写入。"
+  exit 0
+}
+
 $updated = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
 
 # 生成缓存 JS（手动拼字符串，避免 ConvertTo-Json 把中文转成 \uXXXX）

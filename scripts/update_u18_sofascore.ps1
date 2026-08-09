@@ -227,6 +227,12 @@ $cache = [ordered]@{
   matches = $matches
 }
 
+# 防空覆盖：Sofascore 抓取失败时球员/赛程为空，用空数据覆盖旧缓存会导致页面空白
+if ($playersOut.Count -eq 0 -and $matches.Count -eq 0) {
+  Log "  ✗ 本次未抓到球员和赛程（Sofascore 限流/被风控），保留旧缓存不覆盖。"
+  exit 0
+}
+
 try {
   $json = $cache | ConvertTo-Json -Depth 10
   $js   = "/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：Sofascore */`r`nwindow.DQD_U18_CACHE = $json;`r`n"

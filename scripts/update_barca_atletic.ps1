@@ -157,6 +157,11 @@ $cache = @{
   injuries_map  = $injuriesMap
   injuries_list = $injuriesList
 }
+# 防空覆盖：懂球帝抓取失败时名单为空，用空数据覆盖旧缓存会导致页面空白
+if (@($roster).Count -eq 0) {
+  Log "  ✗ 本次未抓到球员名单（懂球帝变动/被拦），保留旧缓存不覆盖。"
+  exit 0
+}
 try {
   $json = $cache | ConvertTo-Json -Depth 20
   $js   = "/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：懂球帝 */`r`nwindow.DQD_BARCA_ATLETIC = $json;`r`n"
