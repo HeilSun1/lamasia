@@ -1,8 +1,10 @@
 name: Daily update caches
 
-# 每天自动更新懂球帝（B队）与 Sofascore（U19）的本地缓存并提交，
-# Netlify 连接本仓库后会自动重新部署，保证线上站点数据每日刷新。
-# 触发时间：每天 01:07 UTC（北京时间 09:07，B队/U19 错峰略晚于本机计划任务）。
+# 每天自动更新懂球帝（B队/U19新闻）与 Sofascore（U19/U18/U16）的缓存并提交，
+# GitHub Pages 监听 main 分支，推送后自动重新部署，保证线上站点数据每日刷新。
+# 触发时间：每天 01:07 UTC（北京时间 09:07，与 本机计划任务错峰）。
+# 注：U18/U16 步骤 continue-on-error —— Sofascore 对运行器 IP 有频率限制，
+#     单个步骤失败不应阻断提交（否则线上永远停在旧数据）。
 
 on:
   schedule:
@@ -50,14 +52,18 @@ jobs:
           & .\scripts\update_u19_news.ps1
 
       - name: Update U18 cache (Sofascore)
+        continue-on-error: true   # 失败不中断：保证下方提交步骤始终执行
         shell: powershell
         run: |
+          Start-Sleep -Seconds 20   # 与上一步错峰，降低 Sofascore 频率限制
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_u18_sofascore.ps1
 
       - name: Update U16 cache (Sofascore)
+        continue-on-error: true   # 失败不中断：保证下方提交步骤始终执行
         shell: powershell
         run: |
+          Start-Sleep -Seconds 20
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_u16_sofascore.ps1
 

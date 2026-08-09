@@ -42,30 +42,33 @@ function Log([string]$msg) {
   Write-Host $line
 }
 
-# 用 Edge 无头抓 JSON：返回 ConvertFrom-Json 的对象，失败返回 $null
+# 用 Edge 无头抓 JSON：返回 ConvertFrom-Json 的对象，失败返回 $null。
+# Sofascore 对高频请求有限流，失败时自动重试（最多 3 次，间隔 6 秒）。
 function Get-SfJson([string]$url, [string]$what) {
-  try {
-    $tmp = Join-Path $env:TEMP ("sf_" + [guid]::NewGuid().ToString("N") + ".html")
-    # 脚本全局是 ErrorActionPreference=Stop，而 Edge 无头会往 stderr 写一堆无害警告，
-    # 在 PS 5.1 下会被当成终止错误抛出。这里在函数作用域内临时改为 Continue。
-    $prevEAP = $ErrorActionPreference
-    $ErrorActionPreference = "Continue"
-    $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
-        "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
-    $ErrorActionPreference = $prevEAP
-    [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
-    $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
-    Remove-Item $tmp -Force -ErrorAction SilentlyContinue
-    $m = [regex]::Match($txt, '<pre>(.*)</pre>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-    if ($m.Success -and $m.Groups[1].Value.Trim() -like '{*') {
-      return ($m.Groups[1].Value | ConvertFrom-Json)
+  for ($attempt = 1; $attempt -le 3; $attempt++) {
+    try {
+      $tmp = Join-Path $env:TEMP ("sf_" + [guid]::NewGuid().ToString("N") + ".html")
+      # 脚本全局是 ErrorActionPreference=Stop，而 Edge 无头会往 stderr 写一堆无害警告，
+      # 在 PS 5.1 下会被当成终止错误抛出。这里在函数作用域内临时改为 Continue。
+      $prevEAP = $ErrorActionPreference
+      $ErrorActionPreference = "Continue"
+      $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
+          "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
+      $ErrorActionPreference = $prevEAP
+      [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
+      $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
+      Remove-Item $tmp -Force -ErrorAction SilentlyContinue
+      $m = [regex]::Match($txt, '<pre>(.*)</pre>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+      if ($m.Success -and $m.Groups[1].Value.Trim() -like '{*') {
+        return ($m.Groups[1].Value | ConvertFrom-Json)
+      }
+      Log "  ✗ $what 第 $attempt 次返回非 JSON（可能被风控或结构变化）"
+    } catch {
+      Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
     }
-    Log "  ✗ $what 返回非 JSON（可能被风控或结构变化）"
-    return $null
-  } catch {
-    Log "  ✗ $what 抓取失败：$($_.Exception.Message)"
-    return $null
+    if ($attempt -lt 3) { Start-Sleep -Seconds 6 }
   }
+  return $null
 }
 
 # 常见伤病英文 → 中文
