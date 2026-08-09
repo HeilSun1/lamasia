@@ -37,26 +37,18 @@
 
   <section class="container" style="padding-top:20px">
 
-    <!-- 即将到来 -->
+    <!-- 即将到来：各梯队未开赛汇总（按时间排序，每日自动更新） -->
     <div class="panel">
       <div class="panel-title-row">
-        <h3>⚽ 即将到来的比赛 <span class="tag">2026-27 · 季前</span></h3>
+        <h3>⚽ 即将到来的比赛 <span class="tag">各梯队 · 按时间排序</span></h3>
         <span class="badge gold">SEASON 2026-27</span>
       </div>
-      <p class="p-desc">2026-27 赛季尚处季前备战期，各队正式赛程随赛季临近公布。以下为本赛季已确认的关键时间节点。</p>
-      <div class="p-body">
-        <div class="match-card featured">
-          <div class="mc-teams"><div class="mc-team">FC Barcelona Juvenil A</div><div class="mc-venue">主场 · 克鲁伊夫球场</div></div>
-          <div class="mc-center">
-            <div class="mc-date">2026-09-06</div>
-            <div class="mc-vs">VS</div>
-            <div class="mc-status">对手待定</div>
-          </div>
-          <div class="mc-teams"><div class="mc-team">待定</div><div class="mc-venue">División de Honor Juvenil · G3 首轮</div></div>
-        </div>
-
-        <div class="note-box blue">🔔 <span><b>欧冠联赛阶段抽签 8 月 27 日</b>进行。巴萨 U19 将以"欧冠路径"参加 2026-27 青年欧冠（UEFA Youth League）36 队联赛阶段，首轮对手将在抽签后确定，本站届时更新。</span></div>
+      <p class="p-desc">按时间顺序汇总 B队 / Juvenil A / Juvenil B / Cadete A 已公布的未开赛赛程（数据每日自动更新）。</p>
+      <div id="upcoming-list" class="p-body" style="margin-top:12px">
+        <div class="match-list-empty">正在加载各梯队赛程…</div>
       </div>
+
+      <div class="note-box blue" style="margin-top:12px">🔔 <span><b>欧冠联赛阶段抽签 8 月 27 日</b>进行。巴萨 U19 将以"欧冠路径"参加 2026-27 青年欧冠（UEFA Youth League）36 队联赛阶段，首轮对手将在抽签后确定，本站届时更新。</span></div>
     </div>
 
     <!-- B队赛程：懂球帝实时数据（复用 dqd-barca-atletic.js 的赛程渲染，已完场置顶、点击可折叠） -->
@@ -242,5 +234,7 @@
   <script src="assets/js/dqd-u19.js"></script>
   <script src="assets/js/dqd-u18-cache.js"></script>
   <script src="assets/js/dqd-u18.js"></script>
+  <script src="assets/js/dqd-u16-cache.js"></script>
+  <script src="assets/js/matches-upcoming.js"></script>
 </body>
 </html>
