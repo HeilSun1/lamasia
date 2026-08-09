@@ -35,10 +35,22 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
+
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-upcoming">⚽ 即将到来</a>
+      <a class="page-toc__link" href="#sec-b-team">🟡🔵 B队赛程</a>
+      <a class="page-toc__link" href="#sec-u19">🎓 U19赛程</a>
+      <a class="page-toc__link" href="#sec-u18">🎓 U19B赛程</a>
+      <a class="page-toc__link" href="#sec-juvenil-a">📊 Juvenil A</a>
+      <a class="page-toc__link" href="#sec-juvenil-b">📊 Juvenil B</a>
+      <a class="page-toc__link" href="#sec-cadete">📊 Cadete A</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
 
     <!-- 即将到来：各梯队未开赛汇总（按时间排序，每日自动更新） -->
-    <div class="panel">
+    <div class="panel" id="sec-upcoming">
       <div class="panel-title-row">
         <h3>⚽ 即将到来的比赛 <span class="tag">各梯队 · 按时间排序</span></h3>
         <span class="badge gold">SEASON 2026-27</span>
@@ -52,7 +64,7 @@
     </div>
 
     <!-- B队赛程：懂球帝实时数据（复用 dqd-barca-atletic.js 的赛程渲染，已完场置顶、点击可折叠） -->
-    <div class="panel">
+    <div class="panel" id="sec-b-team">
       <div class="panel-title-row">
         <h3>⚽ Barça Atlètic（B队）赛程与结果 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
         <span class="badge blue">联网实时 · 已完场置顶</span>
@@ -64,7 +76,7 @@
     </div>
 
     <!-- U19赛程：Sofascore 数据（缓存每日更新，点击可折叠） -->
-    <div class="panel">
+    <div class="panel" id="sec-u19">
       <div class="panel-title-row">
         <h3>🎓 Juvenil A（U19）赛程与结果 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
         <span class="badge blue">已完场置顶 · 点击可折叠</span>
@@ -76,7 +88,7 @@
     </div>
 
     <!-- U18/U19B 赛程：Sofascore 数据（缓存每日更新，点击可折叠） -->
-    <div class="panel">
+    <div class="panel" id="sec-u18">
       <div class="panel-title-row">
         <h3>🎓 Juvenil B（U19B / U18）赛程与结果 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
         <span class="badge blue">已完场置顶 · 点击可折叠</span>
@@ -88,7 +100,7 @@
     </div>
 
     <!-- Juvenil A -->
-    <div class="panel">
+    <div class="panel" id="sec-juvenil-a">
       <div class="panel-title-row">
         <h3>🎓 Juvenil A（U19 一线青年队）</h3>
         <span class="badge blue">2025-26 小组冠军</span>
@@ -128,7 +140,7 @@
     </div>
 
     <!-- Juvenil B -->
-    <div class="panel">
+    <div class="panel" id="sec-juvenil-b">
       <div class="panel-title-row">
         <h3>🎓 Juvenil B（U19 二队）</h3>
         <span class="badge blue">2025-26 G7 升级区</span>
@@ -145,7 +157,7 @@
     </div>
 
     <!-- Cadete A -->
-    <div class="panel">
+    <div class="panel" id="sec-cadete">
       <div class="panel-title-row">
         <h3>🎓 Cadete A（U16 少年A队）</h3>
         <span class="badge green">2025-26 27胜1平2负</span>
@@ -236,5 +248,6 @@
   <script src="assets/js/dqd-u18.js"></script>
   <script src="assets/js/dqd-u16-cache.js"></script>
   <script src="assets/js/matches-upcoming.js"></script>
+  <script src="assets/js/page-nav.js"></script>
 </body>
 </html>
