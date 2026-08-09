@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-09 13:32 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-09 14:58 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-08-09 13:32:57",
+    "updated":  "2026-08-09 14:58:54",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -39,18 +39,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Héctor Néstor Asumu",
-                        "id":  "2447155",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
-                        "age":  "15岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Alejandro Fernández",
                         "id":  "2410987",
                         "pos":  "F",
@@ -59,6 +47,18 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410987/image",
                         "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Héctor Néstor Asumu",
+                        "id":  "2447155",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
+                        "age":  "15岁",
                         "value":  "",
                         "injury":  null
                     },
