@@ -85,11 +85,21 @@
         "<thead><tr><th>时间(北京)</th><th>梯队</th><th>赛事</th><th>主队</th><th></th><th>客队</th></tr></thead>" +
         "<tbody>" + items.map(row).join("") + "</tbody></table></div>";
     }
-    const LIMIT = 15;
-    let html = table(list.slice(0, LIMIT));
-    if (list.length > LIMIT) {
-      html += '<details class="dqd-group" style="margin-top:10px"><summary><span>查看全部 ' + list.length + " 场未开赛</span>" +
-        '<span class="dqd-side"><span class="dqd-state"></span></span></summary>' + table(list.slice(LIMIT)) + "</details>";
+    // 默认只展示未来 7 天，其余折叠
+    const WEEK = 7 * 24 * 3600 * 1000;
+    const weekEnd = now() + WEEK;
+    const week = list.filter(function (x) { return x.start <= weekEnd; });
+    const rest = list.filter(function (x) { return x.start > weekEnd; });
+
+    let html = "";
+    if (week.length) {
+      html += '<div class="p-desc" style="margin-bottom:8px">📅 未来 7 天 · ' + week.length + " 场</div>" + table(week);
+    } else {
+      html += '<div class="match-list-empty">未来 7 天内暂无已公布的比赛</div>';
+    }
+    if (rest.length) {
+      html += '<details class="dqd-group" style="margin-top:10px"><summary><span>更远的赛程（' + rest.length + " 场）</span>" +
+        '<span class="dqd-side"><span class="dqd-state"></span></span></summary>' + table(rest) + "</details>";
     }
     el.innerHTML = html;
   }
