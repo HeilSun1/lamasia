@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-07 11:10:18 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-09 06:00:40 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-08-07 11:10:18",
+    "updated":  "2026-08-09 06:00:40",
     "source":  "dongqiudi",
-    "count":  14,
+    "count":  15,
     "news":  [
+        {
+            "id":  "6139638", "title":  "每体：弗里克下周一将大规模筛选，部分青训球员要回归B队",
+            "url":  "https://www.dongqiudi.com/articles/6139638.html", "time":  "2026-08-08 08:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F0/2D/280x210/crop/-/rBXRDGp2eH6ABB0qAAGYB_pYm4w101.jpg" },
         {
             "id":  "6129962", "title":  "世体：弗里克看好巴萨3小将，埃斯帕特最有望留队",
             "url":  "https://www.dongqiudi.com/articles/6129962.html", "time":  "2026-08-06 15:01",
