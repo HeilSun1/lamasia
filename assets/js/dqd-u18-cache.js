@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-09 14:58 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-10 09:00 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-09 14:58:46",
+    "updated":  "2026-08-10 09:00:54",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -356,51 +356,6 @@ window.DQD_U18_CACHE = {
                         "as":  "0",
                         "status":  "Ended",
                         "code":  "100",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "16750040",
-                        "comp":  "U18 BEST Cup, Fase de Liga",
-                        "round":  "1",
-                        "start":  "1786639500",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Club Madrid City U18",
-                        "homeId":  "933330",
-                        "awayId":  "1255044",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "16755294",
-                        "comp":  "U18 BEST Cup, Fase de Liga",
-                        "round":  "2",
-                        "start":  "1786695300",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Como 1907 U18",
-                        "homeId":  "933330",
-                        "awayId":  "1160068",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "16755312",
-                        "comp":  "U18 BEST Cup, Fase de Liga",
-                        "round":  "3",
-                        "start":  "1786721400",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Atlético de Madrid U18",
-                        "homeId":  "933330",
-                        "awayId":  "1255049",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
                         "isHome":  true
                     }
                 ]
