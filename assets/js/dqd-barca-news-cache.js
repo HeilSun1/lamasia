@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-10 06:01:07 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-11 09:00:25 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-10 06:01:07",
+    "updated":  "2026-08-11 09:00:25",
     "source":  "dongqiudi",
-    "count":  16,
+    "count":  17,
     "news":  [
+        {
+            "id":  "6151543", "title":  "世体：巴萨仅科尔特斯、哈姆扎两名梯队球员随一线队训练",
+            "url":  "https://www.dongqiudi.com/articles/6151543.html", "time":  "2026-08-10 18:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/B2/280x210/crop/-/rBXRn2p5pQGAfB23AAA60DPbv08048.jpg" },
         {
             "id":  "6139638", "title":  "每体：弗里克下周一将大规模筛选，部分青训球员要回归B队",
             "url":  "https://www.dongqiudi.com/articles/6139638.html", "time":  "2026-08-08 08:37",

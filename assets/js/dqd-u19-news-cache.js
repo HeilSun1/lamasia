@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-10 06:01:39 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-11 09:00:54 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-08-10 06:01:39",
+    "updated":  "2026-08-11 09:00:54",
     "source":  "dongqiudi",
-    "count":  15,
+    "count":  16,
     "news":  [
+        {
+            "id":  "6154423", "title":  "每体：拉波尔塔会面经纪人扎哈维，消息人士否认与转会有关",
+            "url":  "https://www.dongqiudi.com/articles/6154423.html", "time":  "2026-08-11 04:13",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/EC/280x210/crop/-/rBXRn2p6LeOAZN2gAAF3HTjAwYE440.jpg" },
         {
             "id":  "6139638", "title":  "每体：弗里克下周一将大规模筛选，部分青训球员要回归B队",
             "url":  "https://www.dongqiudi.com/articles/6139638.html", "time":  "2026-08-08 08:37",
