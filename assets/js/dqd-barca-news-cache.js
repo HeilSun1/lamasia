@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-11 04:55:44 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-12 10:13:33 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-11 04:55:44",
+    "updated":  "2026-08-12 10:13:33",
     "source":  "dongqiudi",
-    "count":  17,
+    "count":  20,
     "news":  [
+        {
+            "id":  "6157102", "title":  "每体：巴萨18岁新援凯塞多即将报到，曾表示偶像是巴尔德",
+            "url":  "https://www.dongqiudi.com/articles/6157102.html", "time":  "2026-08-11 18:12",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DC/280x210/crop/-/rBXRDGp69O-ABZy6AAISX67t-g0045.jpg" },
+        {
+            "id":  "6156088", "title":  "每体：弗里克尝试让肖恩-克鲁伊维特踢中锋，其特点与父亲不同",
+            "url":  "https://www.dongqiudi.com/articles/6156088.html", "time":  "2026-08-11 14:57",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/48/280x210/crop/-/rBXRDGp6r5uADxDHAAHGri-yE1c325.jpg" },
+        {
+            "id":  "6155772", "title":  "每体：弗里克尝试让肖恩-克鲁伊维特踢中锋",
+            "url":  "https://www.dongqiudi.com/articles/6155772.html", "time":  "2026-08-11 13:20",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/48/280x210/crop/-/rBXRDGp6r5uADxDHAAHGri-yE1c325.jpg" },
         {
             "id":  "6151543", "title":  "世体：巴萨仅科尔特斯、哈姆扎两名梯队球员随一线队训练",
             "url":  "https://www.dongqiudi.com/articles/6151543.html", "time":  "2026-08-10 18:19",

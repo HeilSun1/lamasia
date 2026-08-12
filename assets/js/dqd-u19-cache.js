@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-11 09:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-12 10:14 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-11 09:00:54",
+    "updated":  "2026-08-12 10:14:08",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -94,18 +94,6 @@ window.DQD_U19_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405472/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Byron Mendoza",
-                        "id":  "2446943",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
                         "age":  "17岁",
                         "value":  "",
                         "injury":  null

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-11 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-12 10:15 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-08-11 09:01:52",
+    "updated":  "2026-08-12 10:15:02",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -14,18 +14,6 @@ window.DQD_U16_CACHE = {
                   "photo":  ""
               },
     "players":  [
-                    {
-                        "name":  "Ruslan Mba",
-                        "id":  "2128111",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
                     {
                         "name":  "Paumi Mateos",
                         "id":  "2272366",
@@ -99,18 +87,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Artem Rybak",
-                        "id":  "2080974",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Ukraine",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2080974/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Róbert Oliveras",
                         "id":  "2407338",
                         "pos":  "M",
@@ -171,18 +147,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Ignasi Bassas",
-                        "id":  "2410976",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2410976/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "José Alfredo Rodríguez",
                         "id":  "2407332",
                         "pos":  "D",
@@ -190,30 +154,6 @@ window.DQD_U16_CACHE = {
                         "team":  "Barcelona U16",
                         "nation":  "Honduras",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Lucas Bernal",
-                        "id":  "2447157",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
-                        "age":  "15岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Roc Martínez",
-                        "id":  "2342517",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2342517/image",
                         "age":  "16岁",
                         "value":  "",
                         "injury":  null

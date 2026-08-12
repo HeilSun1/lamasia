@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-11 04:56:17 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-12 10:14:08 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-08-11 04:56:17",
+    "updated":  "2026-08-12 10:14:08",
     "source":  "dongqiudi",
-    "count":  16,
+    "count":  17,
     "news":  [
+        {
+            "id":  "6157536", "title":  "世体：雅各比什维利将离开巴萨，其经纪人已与拉波尔塔会面",
+            "url":  "https://www.dongqiudi.com/articles/6157536.html", "time":  "2026-08-11 19:48",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/14/280x210/crop/-/rBXRDGp7C9KAEzo0AADgLMDBXk8104.jpg" },
         {
             "id":  "6154423", "title":  "每体：拉波尔塔会面经纪人扎哈维，消息人士否认与转会有关",
             "url":  "https://www.dongqiudi.com/articles/6154423.html", "time":  "2026-08-11 04:13",
