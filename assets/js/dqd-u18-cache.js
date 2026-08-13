@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-12 10:14 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-13 09:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-12 10:14:44",
+    "updated":  "2026-08-13 09:01:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -27,90 +27,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Alieu Drammeh",
-                        "id":  "2109019",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Gambia",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2109019/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Ïu Martínez",
-                        "id":  "2405472",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405472/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Ismael Ziani",
-                        "id":  "2046476",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Morocco",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2046476/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pol Mancheño",
-                        "id":  "2405470",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405470/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Alejandro Pastor",
-                        "id":  "2405425",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405425/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Genís Oya",
-                        "id":  "2405447",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405447/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Byron Mendoza",
-                        "id":  "2446943",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Daniel da Lima",
                         "id":  "2271424",
                         "pos":  "F",
@@ -118,18 +34,6 @@ window.DQD_U18_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Portugal",
                         "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
-                        "age":  "15岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Divine Ikenna Ejiofor",
-                        "id":  "2690301",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
                         "age":  "15岁",
                         "value":  "",
                         "injury":  null
@@ -147,38 +51,14 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Michał Żuk",
-                        "id":  "2128103",
-                        "pos":  "M",
+                        "name":  "Divine Ikenna Ejiofor",
+                        "id":  "2690301",
+                        "pos":  "F",
                         "shirt":  "",
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128103/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Ibrahim Babayev",
-                        "id":  "1990908",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Azerbaijan",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1990908/image",
-                        "age":  "18岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Adam Argemí",
-                        "id":  "2076887",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076887/image",
-                        "age":  "18岁",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
+                        "age":  "15岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -207,18 +87,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Gorka Buil",
-                        "id":  "2272317",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2272317/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Ignasi Bassas",
                         "id":  "2410976",
                         "pos":  "M",
@@ -227,18 +95,6 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410976/image",
                         "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pau Sarrià",
-                        "id":  "2533245",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2533245/image",
-                        "age":  "15岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -275,42 +131,6 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
                         "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Jordi Pesquer",
-                        "id":  "2128094",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128094/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Sergi Mayans",
-                        "id":  "2128115",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Adrián Cuadrado",
-                        "id":  "2082119",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Ecuador",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2082119/image",
-                        "age":  "17岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -387,18 +207,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pau Bergés",
-                        "id":  "2405426",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405426/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Victor Lao",
                         "id":  "2690244",
                         "pos":  "D",
@@ -431,30 +239,6 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229083/image",
                         "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Elyott Daussy",
-                        "id":  "2410989",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "France",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2410989/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pau Espi",
-                        "id":  "2405708",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2405708/image",
-                        "age":  "17岁",
                         "value":  "",
                         "injury":  null
                     },

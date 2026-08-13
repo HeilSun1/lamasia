@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-12 06:05:14 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-13 09:01:11 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-08-12 06:05:14",
+    "updated":  "2026-08-13 09:01:11",
     "source":  "dongqiudi",
-    "count":  17,
+    "count":  18,
     "news":  [
+        {
+            "id":  "6161528", "title":  "每体：伊克尔将留在巴萨担任三门，内部有人拿他比作巴尔德斯",
+            "url":  "https://www.dongqiudi.com/articles/6161528.html", "time":  "2026-08-12 15:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FE/B2/280x210/crop/-/rBXRn2p8He-AC7y-AACinpuHThE069.jpg" },
         {
             "id":  "6157536", "title":  "世体：雅各比什维利将离开巴萨，其经纪人已与拉波尔塔会面",
             "url":  "https://www.dongqiudi.com/articles/6157536.html", "time":  "2026-08-11 19:48",

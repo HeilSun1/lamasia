@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-12 06:04:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-13 09:00:36 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-12 06:04:43",
+    "updated":  "2026-08-13 09:00:36",
     "source":  "dongqiudi",
-    "count":  20,
+    "count":  21,
     "news":  [
+        {
+            "id":  "6164104", "title":  "官方：霍苏埃-凯塞多与巴萨正式签约，已参加巴萨竞技训练",
+            "url":  "https://www.dongqiudi.com/articles/6164104.html", "time":  "2026-08-13 01:14",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FF/E3/280x210/crop/-/rBXRn2p8qUWALamDAApDrK4CM3c801.jpg" },
         {
             "id":  "6157102", "title":  "每体：巴萨18岁新援凯塞多即将报到，曾表示偶像是巴尔德",
             "url":  "https://www.dongqiudi.com/articles/6157102.html", "time":  "2026-08-11 18:12",
