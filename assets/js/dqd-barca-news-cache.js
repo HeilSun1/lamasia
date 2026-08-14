@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-13 06:06:21 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-14 09:00:24 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-13 06:06:21",
+    "updated":  "2026-08-14 09:00:24",
     "source":  "dongqiudi",
-    "count":  21,
+    "count":  23,
     "news":  [
+        {
+            "id":  "6168877", "title":  "世体：弗里克尚未决定本赛季哈姆扎是否留在巴萨一线队",
+            "url":  "https://www.dongqiudi.com/articles/6168877.html", "time":  "2026-08-14 08:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DA/280x210/crop/-/rBXRDGp68_aAVdbMAAF_FUFq4X4457.jpg" },
+        {
+            "id":  "6166455", "title":  "每体：通卡拉表现亮眼，弗里克或将他作为中锋和前腰使用",
+            "url":  "https://www.dongqiudi.com/articles/6166455.html", "time":  "2026-08-13 15:56",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/01/F9/280x210/crop/-/rBXRn2p9d6OAbKm3AAHFcDSmzO8336.jpg" },
         {
             "id":  "6164104", "title":  "官方：霍苏埃-凯塞多与巴萨正式签约，已参加巴萨竞技训练",
             "url":  "https://www.dongqiudi.com/articles/6164104.html", "time":  "2026-08-13 01:14",

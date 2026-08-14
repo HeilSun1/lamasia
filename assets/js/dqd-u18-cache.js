@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-13 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-14 09:00 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-13 09:01:41",
+    "updated":  "2026-08-14 09:00:38",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -23,6 +23,18 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
                         "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Byron Mendoza",
+                        "id":  "2446943",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
+                        "age":  "17岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -99,6 +111,18 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Pau Sarrià",
+                        "id":  "2533245",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2533245/image",
+                        "age":  "15岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Arnau Casas",
                         "id":  "2690276",
                         "pos":  "M",
@@ -171,18 +195,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Luca Pérez",
-                        "id":  "2412372",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Lucas Bernal",
                         "id":  "2447157",
                         "pos":  "D",
@@ -191,6 +203,18 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
                         "age":  "15岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Luca Pérez",
+                        "id":  "2412372",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "age":  "16岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -355,10 +379,10 @@ window.DQD_U18_CACHE = {
                         "away":  "Chinese Football Boy U18",
                         "homeId":  "933330",
                         "awayId":  "1255046",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "1",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
