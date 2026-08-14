@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-14 09:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-14 09:09 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-14 09:00:38",
+    "updated":  "2026-08-14 09:09:02",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -280,96 +280,6 @@ window.DQD_U18_CACHE = {
                     }
                 ],
     "matches":  [
-                    {
-                        "id":  "15267686",
-                        "comp":  "U18 世俱杯 - Group B",
-                        "round":  "1",
-                        "start":  "1756717200",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Benfica U18",
-                        "homeId":  "933330",
-                        "awayId":  "157252",
-                        "hs":  "1",
-                        "as":  "0",
-                        "status":  "Ended",
-                        "code":  "100",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "15267689",
-                        "comp":  "U18 世俱杯 - Group B",
-                        "round":  "2",
-                        "start":  "1756837800",
-                        "home":  "Como 1907 U18",
-                        "away":  "FC Barcelona U18",
-                        "homeId":  "1160068",
-                        "awayId":  "933330",
-                        "hs":  "2",
-                        "as":  "3",
-                        "status":  "Ended",
-                        "code":  "100",
-                        "isHome":  false
-                    },
-                    {
-                        "id":  "15178566",
-                        "comp":  "U18 世俱杯 - Group B",
-                        "round":  "4",
-                        "start":  "1757008800",
-                        "home":  "FC Barcelona U18",
-                        "away":  "River Plate U18",
-                        "homeId":  "933330",
-                        "awayId":  "1156319",
-                        "hs":  "1",
-                        "as":  "1",
-                        "status":  "Ended",
-                        "code":  "100",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "15178571",
-                        "comp":  "U18 世俱杯 - Knockout",
-                        "round":  "27",
-                        "start":  "1757189700",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Corinthians U17",
-                        "homeId":  "933330",
-                        "awayId":  "504366",
-                        "hs":  "6",
-                        "as":  "4",
-                        "status":  "AP",
-                        "code":  "120",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "15178575",
-                        "comp":  "U18 世俱杯 - Knockout",
-                        "round":  "28",
-                        "start":  "1757358000",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Palmeiras U17",
-                        "homeId":  "933330",
-                        "awayId":  "481344",
-                        "hs":  "6",
-                        "as":  "4",
-                        "status":  "AP",
-                        "code":  "120",
-                        "isHome":  true
-                    },
-                    {
-                        "id":  "15178576",
-                        "comp":  "U18 世俱杯 - Knockout",
-                        "round":  "29",
-                        "start":  "1757534400",
-                        "home":  "FC Barcelona U18",
-                        "away":  "Racing Club U18",
-                        "homeId":  "933330",
-                        "awayId":  "1156322",
-                        "hs":  "1",
-                        "as":  "0",
-                        "status":  "Ended",
-                        "code":  "100",
-                        "isHome":  true
-                    },
                     {
                         "id":  "16792416",
                         "comp":  "U18 BEST Cup, Fase de Liga",

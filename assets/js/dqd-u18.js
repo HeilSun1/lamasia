@@ -328,7 +328,8 @@
   function renderSchedule(data) {
     const el = $("u18-schedule");
     if (!el) return;
-    const matches = (data && data.matches) || [];
+    const MIN_START = Date.UTC(2026, 0, 1) / 1000;   // 仅保留 2026-01-01 起（与 update_u18_sofascore.ps1 一致）
+    const matches = ((data && data.matches) || []).filter(function (m) { return parseInt(m.start, 10) >= MIN_START; });
     if (!matches.length) { el.innerHTML = '<div class="match-list-empty">暂无赛程数据</div>'; return; }
 
     const played   = matches.filter(function (m) { return m.status !== "Not started"; })
