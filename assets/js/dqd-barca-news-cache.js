@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-14 09:00:24 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-14 06:05:36 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-14 09:00:24",
+    "updated":  "2026-08-14 06:05:36",
     "source":  "dongqiudi",
-    "count":  23,
+    "count":  24,
     "news":  [
+        {
+            "id":  "6170999", "title":  "世体：巴萨对于通卡拉的规划是多打比赛，不必急于提拔一线队",
+            "url":  "https://www.dongqiudi.com/articles/6170999.html", "time":  "2026-08-14 13:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/04/E1/280x210/crop/-/rBXRn2p-oviAYitZAAE1TUE0L2k005.jpg" },
         {
             "id":  "6168877", "title":  "世体：弗里克尚未决定本赛季哈姆扎是否留在巴萨一线队",
             "url":  "https://www.dongqiudi.com/articles/6168877.html", "time":  "2026-08-14 08:37",
