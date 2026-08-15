@@ -332,6 +332,10 @@
       return true;
     });
     if (cnt) cnt.textContent = list.length + " 人";
+    if (!players.length) {
+      grid.innerHTML = '<div class="match-list-empty" style="color:var(--red)">⚠ 球员数据未能加载（可能是网络拦截了脚本）。请刷新重试；或直接双击本地文件 barca-lamasia\\formation.html 打开（完全离线可用）。</div>';
+      return;
+    }
     grid.innerHTML = list.map(function (p) {
       return '<button class="fb-player' + (activeKey === p.key ? " active" : "") + (uk[p.key] ? " used" : "") + '" draggable="true" data-key="' + esc(p.key) + '" title="' + esc(p.zh || p.en) + (p.note ? " · " + esc(p.note) : "") + '">' +
         avatarHtml(p) +
