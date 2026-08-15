@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>排兵布阵 — 拉玛西亚 · La Masia</title>
+  <meta name="description" content="拉玛西亚全梯队球员排兵布阵：从预备队到 U14 的球员池里选人，摆到竖式阵型上，支持多种阵型与拖拽放置。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="crest">🟡🔵</span>
+        <span>拉玛西亚<small>LA MASIA · FC BARCELONA</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="teams/index.html">梯队</a>
+        <a class="active" href="formation.html">排兵布阵</a>
+        <a href="matches.html">比赛信息</a>
+        <a href="weekly.html">周报</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container"><div class="crumbs"><a href="index.html">首页</a><span class="sep">/</span><span>排兵布阵</span></div></div>
+
+  <div class="page-head container">
+    <span class="ph-kicker">FORMATION BUILDER · 竖式阵型</span>
+    <h1>排兵布阵</h1>
+    <div class="ph-meta">
+      <span>🎽 全梯队球员池 <b id="fb-total">…</b> 人</span>
+      <span>🟢 点击球员 → 点击槽位放置</span>
+      <span>💾 本地自动保存</span>
+    </div>
+  </div>
+
+  <section class="container" style="padding-top:20px">
+
+    <!-- 阵型与操作 -->
+    <div class="panel">
+      <div class="panel-title-row"><h3>🧭 选择阵型</h3><span class="badge gray" id="fb-count">已放 0/11</span></div>
+      <div class="fb-formation-tabs" id="fb-formation-tabs"><!-- formation.js 渲染 --></div>
+      <div class="fb-actions">
+        <button id="fb-random" class="btn">🎲 随机首发</button>
+        <button id="fb-clear" class="btn ghost">🗑 清空</button>
+        <button id="fb-copy" class="btn ghost">📋 复制首发</button>
+        <span id="fb-copy-msg"></span>
+      </div>
+    </div>
+
+    <div class="fb-layout">
+
+      <!-- 球员池 -->
+      <div class="panel fb-pool-panel">
+        <div class="panel-title-row"><h3>🎽 球员池</h3><span class="badge gray" id="fb-pool-count">…</span></div>
+        <div class="fb-filter">
+          <input id="fb-search" type="search" placeholder="🔍 搜索球员 / 队名…" autocomplete="off">
+          <div class="fb-team-tabs" id="fb-team-tabs"><!-- formation.js 渲染 --></div>
+          <div class="fb-pos-chips" id="fb-pos-chips"><!-- formation.js 渲染 --></div>
+        </div>
+        <div class="fb-players" id="fb-players"><!-- formation.js 渲染 --></div>
+      </div>
+
+      <!-- 球场与首发 -->
+      <div class="fb-pitch-col">
+        <div class="panel fb-pitch-panel">
+          <div class="panel-title-row"><h3>🟢 阵型图</h3><span class="badge gray">点击槽位可移除</span></div>
+          <div class="fb-pitch-wrap">
+            <div class="fb-pitch" id="fb-pitch"><!-- formation.js 渲染 --></div>
+          </div>
+          <div class="fb-active" id="fb-active" hidden></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title-row"><h3>📋 首发名单</h3><span class="badge gray">点击 ✕ 移除</span></div>
+          <div class="fb-lineup" id="fb-lineup"><!-- formation.js 渲染 --></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note-box">📌 <span><b>数据说明：</b>球员池合并了本站全部梯队名单：预备队（懂球帝）、U19 A / U19 B（本地名单 + Sofascore U19/U18 缓存）、U16（本地名单 + Sofascore U16 缓存）、U14（本地名单）。U15、U13 及七人制梯队暂未收录名单，待后续更新补充。数据更新于每日缓存，球员照片如无法加载会自动回退为首字母头像。排兵结果自动保存在本地浏览器。</span></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div class="foot-brand"><span class="crest">🟡🔵</span> 拉玛西亚 · La Masia 信息站</div>
+      <p>非官方球迷资料站。FC Barcelona、La Masia 均为 FC Barcelona 所有。本站仅用于球迷信息整理与学习用途。</p>
+      <p style="margin-top:10px;font-size:11.5px;color:rgba(255,255,255,0.42)">⚖️ <b>版权与合规声明：</b>球员照片版权归原出处/摄影师所有，本站已为每张照片标注来源链接；本站为<b>非商用</b>球迷资料站，图片仅以低分辨率缩略图形式使用。若您是版权方并希望移除某张图片，请联系本站，我们将立即删除。本站与 FC Barcelona 无官方关联。</p><div class="foot-links">
+        <a href="index.html">首页</a>
+        <a href="teams/index.html">梯队</a>
+        <a href="formation.html">排兵布阵</a>
+        <a href="matches.html">比赛信息</a>
+        <a href="weekly.html">周报</a>
+        <a href="https://www.fcbarcelona.com" target="_blank" rel="noopener">官方网站</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/dqd-barca-atletic-cache.js"></script>
+  <script src="assets/js/dqd-u19-cache.js"></script>
+  <script src="assets/js/dqd-u18-cache.js"></script>
+  <script src="assets/js/dqd-u16-cache.js"></script>
+  <script src="assets/js/formation.js"></script>
+</body>
+</html>
