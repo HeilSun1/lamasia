@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-14 09:09 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-15 09:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-14 09:09:02",
+    "updated":  "2026-08-15 09:01:42",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -135,18 +135,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Unai Balmón",
-                        "id":  "2690278",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690278/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Samuel Borniquel",
                         "id":  "2690304",
                         "pos":  "M",
@@ -154,6 +142,18 @@ window.DQD_U18_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
+                        "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Unai Balmón",
+                        "id":  "2690278",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690278/image",
                         "age":  "16岁",
                         "value":  "",
                         "injury":  null
@@ -304,11 +304,26 @@ window.DQD_U18_CACHE = {
                         "away":  "AD Unión Adarve U18",
                         "homeId":  "933330",
                         "awayId":  "1258579",
+                        "hs":  "6",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "16834498",
+                        "comp":  "U18 BEST Cup, Playoffs",
+                        "round":  "28",
+                        "start":  "1786814100",
+                        "home":  "Espanyol U18",
+                        "away":  "FC Barcelona U18",
+                        "homeId":  "154814",
+                        "awayId":  "933330",
                         "hs":  "",
                         "as":  "",
                         "status":  "Not started",
                         "code":  "0",
-                        "isHome":  true
+                        "isHome":  false
                     }
                 ]
 };

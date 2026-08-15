@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-14 06:05:36 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-15 09:00:26 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-14 06:05:36",
+    "updated":  "2026-08-15 09:00:26",
     "source":  "dongqiudi",
-    "count":  24,
+    "count":  25,
     "news":  [
+        {
+            "id":  "6174995", "title":  "每体：巴萨今夏卖人已入账近7000万欧元",
+            "url":  "https://www.dongqiudi.com/articles/6174995.html", "time":  "2026-08-15 05:55",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/2E/280x210/crop/-/rBXRn2p_jViAQ7tXAAHlMUeY99o907.jpg" },
         {
             "id":  "6170999", "title":  "世体：巴萨对于通卡拉的规划是多打比赛，不必急于提拔一线队",
             "url":  "https://www.dongqiudi.com/articles/6170999.html", "time":  "2026-08-14 13:09",
