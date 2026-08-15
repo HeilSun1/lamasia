@@ -49,12 +49,21 @@
     <div class="panel">
       <div class="panel-title-row"><h3>📌 关于本队</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
-        <p>Infantil B 是儿童组的第二梯队，与 Infantil A（U14）同属 11 人制。加泰足协（FCF）重组赛制后，原"U14 B"更名为 <b>U13</b>。</p>
-        <p>U13 及以下梯队官方一般不公开完整球员大名单，本站未逐一收录。本队是通往更高梯队的重要跳板。</p>
+        <p>Infantil B 是儿童组的第二梯队，与 Infantil A（U14）同属 11 人制。加泰足协（FCF）重组赛制后，原"U14 B"更名为 <b>U13</b>。本队是通往更高梯队的重要跳板。</p>
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单。本队球员名单未公开收录，请以官方渠道为准。</span></div>
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📋 球员大名单</h3>
+        <span class="badge gray">2026-27</span>
+      </div>
+      <p class="p-desc">来源：巴萨官网 Infantil B 名单（南木维基汇编，2026-05-23 更新）。部分球员姓名存在多来源转写差异。</p>
+      <div class="p-body" id="roster-infantil-b">
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单；球员名单为 2026-27 赛季版本（南木维基整理自官网），以 fcbarcelona.com 为准。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -72,5 +81,8 @@
     </div>
   </footer>
 
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/roster.js"></script>
+  <script>LAMASIA_RENDER.playerList('infantil-b', 'roster-infantil-b', '../assets/img/players/');</script>
 </body>
 </html>

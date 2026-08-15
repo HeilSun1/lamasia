@@ -399,7 +399,7 @@
   function buildPosChips() {
     const el = $("fb-pos-chips");
     if (!el) return;
-    const chips = [["全部", ""], ["门将", "GK"], ["后卫", "DF"], ["中场", "MF"], ["前锋", "FW"]];
+    const chips = [["全部", "全部"], ["门将", "GK"], ["后卫", "DF"], ["中场", "MF"], ["前锋", "FW"]];
     el.innerHTML = chips.map(function (c) {
       const on = currentPos === c[1];
       return '<button class="fb-chip' + (on ? " active" : "") + '" data-kind="pos" data-val="' + c[1] + '">' + c[0] + "</button>";

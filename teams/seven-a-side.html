@@ -71,7 +71,37 @@
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单。各队联赛分组以加泰足协（FCF）官方赛程为准，2026-27 详细分组尚未完全公布。低龄梯队官方不公开球员大名单。</span></div>
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📋 Alevín A 球员名单（U12）</h3>
+        <span class="badge gray">2026-27</span>
+      </div>
+      <p class="p-desc">来源：巴萨官网 Alevín A 名单（南木维基汇编，2026-05-23 更新）。低龄球员中文译名为直译，仅供参考。</p>
+      <div class="p-body" id="roster-alevin">
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📋 Benjamín A 球员名单（U10）</h3>
+        <span class="badge gray">2026-27</span>
+      </div>
+      <p class="p-desc">来源：巴萨官网 Benjamín A 名单（南木维基汇编，2026-05-23 更新）。低龄球员中文译名为直译，仅供参考。</p>
+      <div class="p-body" id="roster-benjamin">
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title-row">
+        <h3>📋 Prebenjamín A 球员名单（U8）</h3>
+        <span class="badge gray">2026-27</span>
+      </div>
+      <p class="p-desc">来源：巴萨官网 Prebenjamín A 名单（南木维基汇编，2026-05-23 更新）。低龄球员中文译名为直译，仅供参考。</p>
+      <div class="p-body" id="roster-prebenjamin">
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单；球员名单为 2026-27 赛季版本（南木维基整理自官网，官网仅公布 A 队名单）。各队联赛分组以加泰足协（FCF）官方赛程为准，2026-27 详细分组尚未完全公布。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -89,5 +119,12 @@
     </div>
   </footer>
 
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/roster.js"></script>
+  <script>
+    LAMASIA_RENDER.playerList('alevin', 'roster-alevin', '../assets/img/players/');
+    LAMASIA_RENDER.playerList('benjamin', 'roster-benjamin', '../assets/img/players/');
+    LAMASIA_RENDER.playerList('prebenjamin', 'roster-prebenjamin', '../assets/img/players/');
+  </script>
 </body>
 </html>
