@@ -162,7 +162,7 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Divine Ejiofor John",  zh: "迪瓦因·埃吉奥福", pos: "FW", nation: "—",     dob: "约2011", note: "—", img: "" },
       { num: "—", name: "Mamadou Keita",        zh: "马马杜·凯塔", pos: "FW", nation: "—",     dob: "约2011", note: "—", img: "" },
       { num: "—", name: "Jan Rizos",            zh: "扬·里索斯", pos: "FW", nation: "—",     dob: "约2011", note: "—", img: "" },
-      { num: "—", name: "Li Haoyan",            zh: "李昊炎", pos: "FW", nation: "中国",     dob: "2012", note: "拉玛西亚 46 年首位中国籍球员 · 跨龄入 U15 · 2026-08 注册", img: "" }
+      { num: "—", name: "Li Haoyan",            zh: "李昊炎", pos: "FW", nation: "中国",     dob: "2012", note: "拉玛西亚 46 年首位中国籍球员 · 跨龄入 U15 · 2026-08 注册", img: "li-haoyan.jpg", imgCredit: "董路微博（凤凰网转载）", imgUrl: "https://news.ifeng.com/c/8tiRW4qt087" }
     ],
 
     "infantil-b": [
