@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-15 09:00:26 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-15 03:22:11 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-15 09:00:26",
+    "updated":  "2026-08-15 03:22:11",
     "source":  "dongqiudi",
-    "count":  25,
+    "count":  26,
     "news":  [
+        {
+            "id":  "6175392", "title":  "每体：巴萨今夏已通过出售球员获利7000万欧，目标突破1亿欧",
+            "url":  "https://www.dongqiudi.com/articles/6175392.html", "time":  "2026-08-15 09:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/BB/280x210/crop/-/rBXRDGp_vNOAAj3OAAIZ4Z-CFac896.jpg" },
         {
             "id":  "6174995", "title":  "每体：巴萨今夏卖人已入账近7000万欧元",
             "url":  "https://www.dongqiudi.com/articles/6174995.html", "time":  "2026-08-15 05:55",
