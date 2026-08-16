@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-16 09:00:20 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-16 03:36:24 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-16 09:00:20",
+    "updated":  "2026-08-16 03:36:24",
     "source":  "dongqiudi",
     "count":  28,
     "news":  [
