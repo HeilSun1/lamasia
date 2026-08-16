@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-15 03:22 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-16 09:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
     "injuries_map":  {
                          "50817432":  {
@@ -1295,19 +1295,19 @@ window.DQD_BARCA_ATLETIC = {
                                       "team_B_name":  "巴塞罗那竞技",
                                       "team_A_logo":  "https://sd.qunliao.info/fastdfs4/M00/F5/46/ChNLkl34kJ2Ade0sAABQjvGnz2k039.png",
                                       "team_B_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
-                                      "fs_A":  "",
-                                      "fs_B":  "",
+                                      "fs_A":  "1",
+                                      "fs_B":  "2",
                                       "ps_A":  "",
                                       "ps_B":  "",
                                       "start_play":  "2026-08-15 17:00:00",
                                       "suretime":  "1",
-                                      "status":  "Fixture",
-                                      "playing_time":  "",
+                                      "status":  "Played",
+                                      "playing_time":  "90",
                                       "scheme":  "dongqiudi:///game/54560845",
                                       "round_name":  "",
-                                      "minute":  "",
-                                      "minute_extra":  "",
-                                      "score_color":  "",
+                                      "minute":  "90",
+                                      "minute_extra":  "4",
+                                      "score_color":  "#f12b2b",
                                       "match_title":  "友谊赛"
                                   },
                                   {
@@ -2200,5 +2200,5 @@ window.DQD_BARCA_ATLETIC = {
     "injuries_list":  [
 
                       ],
-    "updated":  "2026-08-15 03:22:09"
+    "updated":  "2026-08-16 09:00:20"
 };
