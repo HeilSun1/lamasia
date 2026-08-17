@@ -72,6 +72,32 @@ function Get-SfJson([string]$url, [string]$what) {
   return $null
 }
 
+# 同 Get-SfJson（带重试），但返回原始 JSON 文本（比赛详情直接嵌入缓存，避免 ConvertTo-Json 深嵌套序列化问题）
+function Get-SfRaw([string]$url, [string]$what) {
+  for ($attempt = 1; $attempt -le 3; $attempt++) {
+    try {
+      $tmp = Join-Path $env:TEMP ("sf_" + [guid]::NewGuid().ToString("N") + ".html")
+      $prevEAP = $ErrorActionPreference
+      $ErrorActionPreference = "Continue"
+      $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
+          "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
+      $ErrorActionPreference = $prevEAP
+      [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
+      $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
+      Remove-Item $tmp -Force -ErrorAction SilentlyContinue
+      $m = [regex]::Match($txt, '<pre>(.*)</pre>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+      if ($m.Success -and $m.Groups[1].Value.Trim() -like '{*') {
+        return $m.Groups[1].Value.Trim()
+      }
+      Log "  ✗ $what 第 $attempt 次返回非 JSON（可能被风控或结构变化）"
+    } catch {
+      Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
+    }
+    if ($attempt -lt 3) { Start-Sleep -Seconds 6 }
+  }
+  return $null
+}
+
 # 常见伤病英文 → 中文
 function Get-InjuryZh([string]$en) {
   $map = @{
@@ -137,8 +163,11 @@ Log "开始 U18 更新（Sofascore 团队 $TeamId）……"
 
 # ── 1. 抓取原始数据 ─────────────────────────────────────────────
 $players = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/players" "球员名单"
+Start-Sleep -Seconds 3
 $lastEv  = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/events/last/0" "已完赛程"
+Start-Sleep -Seconds 3
 $nextEv  = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/events/next/0" "未来赛程"
+Start-Sleep -Seconds 3
 $team    = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId" "球队信息"
 
 if (-not $players -and -not $lastEv -and -not $nextEv) {
@@ -179,12 +208,12 @@ if ($players -and $players.players) {
 }
 
 # ── 3. 归一化赛程 ───────────────────────────────────────────────
-$matches = @()
+$matchList = @()
 foreach ($src in @($lastEv, $nextEv)) {
   if (-not $src -or -not $src.events) { continue }
   foreach ($e in @($src.events)) {
     $isHome = ([string]$e.homeTeam.id -eq $TeamId)
-    $matches += [pscustomobject]@{
+    $matchList += [pscustomobject]@{
       id     = [string]$e.id
       comp   = Get-CompZh ([string]$e.tournament.name)
       round  = if ($e.roundInfo -and $e.roundInfo.round) { [string]$e.roundInfo.round } else { "" }
@@ -204,7 +233,53 @@ foreach ($src in @($lastEv, $nextEv)) {
 # 只保留 2026 年及以后赛程（2026-01-01 00:00 UTC = 1767225600；旧赛季归档不展示）
 $CutoffUnix = 1767225600
 # 已完场按时间倒序、未开赛按时间正序（页面渲染时也处理，这里只合并）
-$matches = @($matches | Where-Object { [int64]$_.start -ge $CutoffUnix } | Sort-Object { [int64]$_.start })
+$matchList = @($matchList | Where-Object { [int64]$_.start -ge $CutoffUnix } | Sort-Object { [int64]$_.start })
+
+# ── 3.5 抓取最近 8 场已完场的比赛详情（阵容/进程/技术统计/交锋） ──
+# 详情弹窗（match-detail.js）优先读独立的详情缓存文件；线上 GitHub Pages 域直连 Sofascore 会被反爬拦截，
+# 因此详情必须在每日抓取阶段一并入库。
+# 详情以原始 JSON 文本直接嵌入缓存（不用 ConvertTo-Json 处理深层嵌套，绕开 PS5.1 序列化 bug）。
+$DetailsFile = Join-Path $Root "assets\js\dqd-u18-details-cache.js"
+$detailList = @()
+if ($lastEv -and $lastEv.events) {
+  $detailList = @($lastEv.events | Where-Object { $_.status.description -match '^(Ended|AP)' } |
+    Sort-Object { [int64]$_.startTimestamp } -Descending | Select-Object -First 8)
+}
+$detailsParts = @()
+if ($detailList.Count) {
+  $i = 0
+  foreach ($dm in $detailList) {
+    $i++
+    $eid = [string]$dm.id
+    Log "  · 详情 $i/$($detailList.Count) 场 #$eid $($dm.homeTeam.name) vs $($dm.awayTeam.name)"
+    $rawL = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/lineups" "阵容"
+    $rawC = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/incidents" "比赛进程"
+    $rawS = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/statistics" "技术统计"
+    $rawH = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/h2h" "交锋"
+    $ln = if ($rawL) { $rawL } else { "null" }
+    $cn = if ($rawC) { $rawC } else { "null" }
+    $sn = if ($rawS) { $rawS } else { "null" }
+    $hn = if ($rawH) { $rawH } else { "null" }
+    $detailsParts += ('  "' + $eid + '": {' +
+      '"lineups": ' + $ln + ', ' +
+      '"incidents": ' + $cn + ', ' +
+      '"statistics": ' + $sn + ', ' +
+      '"h2h": ' + $hn + '}')
+    if ($i -lt $detailList.Count) { Start-Sleep -Seconds 2 }   # 错峰，降低风控
+  }
+  $detailsJs = "/* 自动生成，请勿手动编辑 —— 比赛详情缓存（match-detail.js 读取） */`r`n" +
+    "window.DQD_U18_DETAILS_CACHE = {`r`n" +
+    ($detailsParts -join ",`r`n") + "`r`n};`r`n"
+  $utf8 = New-Object System.Text.UTF8Encoding($false)
+  try {
+    [System.IO.File]::WriteAllText($DetailsFile, $detailsJs, $utf8)
+    Log "  ✓ 已抓取并写入 $($detailsParts.Count) 场比赛详情"
+  } catch {
+    Log "  ✗ 写入详情缓存失败：$($_.Exception.Message)"
+  }
+} else {
+  Log "  · 本次无已完场可抓详情"
+}
 
 # ── 4. 生成缓存 ─────────────────────────────────────────────────
 $cache = [ordered]@{
@@ -227,11 +302,11 @@ $cache = [ordered]@{
     [pscustomobject]@{ name = "Cesc Bosch"; id = ""; photo = "" }
   }
   players = $playersOut
-  matches = $matches
+  matches = $matchList
 }
 
 # 防空覆盖：Sofascore 抓取失败时球员/赛程为空，用空数据覆盖旧缓存会导致页面空白
-if ($playersOut.Count -eq 0 -and $matches.Count -eq 0) {
+if ($playersOut.Count -eq 0 -and $matchList.Count -eq 0) {
   Log "  ✗ 本次未抓到球员和赛程（Sofascore 限流/被风控），保留旧缓存不覆盖。"
   exit 0
 }
@@ -241,7 +316,7 @@ try {
   $js   = "/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：Sofascore */`r`nwindow.DQD_U18_CACHE = $json;`r`n"
   $utf8 = New-Object System.Text.UTF8Encoding($false)
   [System.IO.File]::WriteAllText($CacheFile, $js, $utf8)
-  Log "  ✓ 球员 $($playersOut.Count) 人，赛程 $($matches.Count) 场，缓存已写入 $CacheFile"
+  Log "  ✓ 球员 $($playersOut.Count) 人，赛程 $($matchList.Count) 场，缓存已写入 $CacheFile"
 } catch {
   Log "  ✗ 写入缓存失败：$($_.Exception.Message)"
   exit 1

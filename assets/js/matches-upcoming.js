@@ -61,7 +61,7 @@
         if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
         if (!window.LAMASIA_MATCHES[key]) {
           window.LAMASIA_MATCHES[key] = {
-            source: "sofascore", id: m.id, comp: m.comp, round: m.round, start: m.start,
+            source: "sofascore", cacheRef: cfg.key, id: m.id, comp: m.comp, round: m.round, start: m.start,
             home: m.home, away: m.away, homeId: m.homeId, awayId: m.awayId,
             hs: m.hs, as: m.as, status: m.status, isHome: m.isHome,
             homeLogo: "https://img.sofascore.com/api/v1/team/" + (m.homeId || 0) + "/image",

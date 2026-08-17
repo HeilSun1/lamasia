@@ -6,9 +6,11 @@
    行为：
      1. 点击带 [data-match-key] 的比赛行 → 弹出该场详情
      2. 头部信息立即从注册表渲染（离线可用）
-     3. sofascore 场次实时拉取 阵容 / 比赛进程 / 技术统计 / 近期交锋
-     4. dqd 场次显示对阵信息 + 「在懂球帝查看」外链
-     5. 任一详情接口失败 → 保留头部，提示需联网
+     3. sofascore 场次优先读每日缓存中的详情（线上/离线均可用；
+        线上 GitHub Pages 域直连 Sofascore 会被反爬拦截，故详情须来自缓存）
+     4. 缓存无该场时尽力实时拉取（本地 file:// 等可直连场合生效），
+        失败则保留头部 + 显示提示 + 原站外链
+     5. dqd 场次显示对阵信息 + 「在懂球帝查看」外链
    关闭：✕ 按钮 / 遮罩点击 / Esc（与照片灯箱交互一致）
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -59,6 +61,8 @@
       return r.json();
     });
   }
+
+  /* 缓存里的详情各块以对象字面量嵌入（PS 侧原始 JSON 直接写入），直接用即可 */
 
   /* ═══ 弹窗骨架 ═══ */
   function ensureModal() {
@@ -166,29 +170,37 @@
   }
 
   /* ═══ 比赛进程 ═══ */
-  var REASON_ZH = { "Penalty": "点球", "Own goal": "乌龙球", "Header": "头球", "Free kick": "任意球", "Normal": "", "Kick": "" };
+  var REASON_ZH = { "Penalty": "点球", "Own goal": "乌龙球", "Header": "头球", "Free kick": "任意球", "Normal": "", "Kick": "", "Counter attack": "反击" };
+  var GOAL_CLASS_ZH = { "penalty": "点球", "own_goal": "乌龙球", "header": "头球", "free_kick": "任意球", "direct_freekick": "任意球", "counter_attack": "反击", "shot": "" };
   function incidentIcon(x) {
-    switch (x.incidentType) {
-      case "goal": return "⚽";
-      case "penalty": return "⚽";
-      case "yellowcard": return "🟨";
-      case "yellowredcard": return "🟨🟥";
-      case "redcard": return "🟥";
-      case "substitution": return "🔁";
-      default: return "•";
+    var t = x.incidentType;
+    if (t === "goal" || t === "penalty") return "⚽";
+    if (t === "card") {
+      var c = String(x.incidentClass || x.reason || "").toLowerCase();
+      if (c.indexOf("red") !== -1) return c.indexOf("yellow") !== -1 ? "🟨🟥" : "🟥";
+      return "🟨";
     }
+    if (t === "yellowcard") return "🟨";
+    if (t === "yellowredcard") return "🟨🟥";
+    if (t === "redcard") return "🟥";
+    if (t === "substitution") return "🔁";
+    return "•";
   }
   function incidentText(x) {
     var p = x.player && x.player.name;
-    if (x.incidentType === "goal") {
+    if (x.incidentType === "goal" || x.incidentType === "penalty") {
+      var why = "";
+      if (x.reason && REASON_ZH[x.reason] != null) why = REASON_ZH[x.reason];
+      else if (x.incidentClass && GOAL_CLASS_ZH[x.incidentClass] != null) why = GOAL_CLASS_ZH[x.incidentClass];
+      else if (x.reason && x.reason !== "Normal" && x.reason !== "Kick") why = String(x.reason);
       var t = p || "";
       var sc = (x.homeScore != null && x.awayScore != null) ? " " + x.homeScore + "-" + x.awayScore : "";
-      var why = REASON_ZH[x.reason] != null ? REASON_ZH[x.reason] : x.reason;
-      if (why) t += "（" + esc(why) + "）";
-      return t + sc;
+      return t + (why ? "（" + esc(why) + "）" : "") + sc;
     }
-    if (x.incidentType === "penalty") {
-      return (p || "点球") + (x.reason ? "（" + esc(x.reason) + "）" : "");
+    if (x.incidentType === "card") {
+      var c = String(x.incidentClass || x.reason || "").toLowerCase();
+      var lbl = c.indexOf("red") !== -1 ? "红牌" : "黄牌";
+      return (p || "") + " · " + lbl;
     }
     if (x.incidentType === "substitution") {
       var pin = x.playerIn && x.playerIn.name;
@@ -233,15 +245,39 @@
     "Accurate crosses": "传中成功", "Saves": "扑救", "Goal kicks": "球门球"
   };
   var GROUP_ZH = {
-    "Match stats": "全场数据", "Team stats": "球队数据", "Attack": "进攻", "Discipline": "纪律",
-    "Passes": "传球", "Defence": "防守", "Fair play": "公平竞赛", "Other": "其他"
+    "Match stats": "全场数据", "Match overview": "全场数据", "Team stats": "球队数据", "Attack": "进攻",
+    "Discipline": "纪律", "Passes": "传球", "Defence": "防守", "Fair play": "公平竞赛", "Other": "其他"
   };
+  /* 归一化技术统计为 [{name, items:[{name,home,away}]}]，兼容真实接口
+     形状 { statistics:[ {period, groups:[{groupName, statisticsItems:[...]}]} ] } 与旧假设形状 */
+  function normalizeStats(s) {
+    var groups = [];
+    if (!s) return groups;
+    if (Array.isArray(s)) {
+      s.forEach(function (per) {
+        if (per && Array.isArray(per.statistics)) {
+          per.statistics.forEach(function (g) {
+            if (g && g.groupName) groups.push({ name: g.groupName, items: g.statistics });
+          });
+        } else if (per && per.groupName) {
+          groups.push({ name: per.groupName, items: per.statisticsItems || per.statistics });
+        }
+      });
+    } else if (Array.isArray(s.statistics)) {
+      s.statistics.forEach(function (per) {
+        (per.groups || []).forEach(function (g) {
+          if (g && g.groupName) groups.push({ name: g.groupName, items: g.statisticsItems });
+        });
+      });
+    }
+    return groups;
+  }
   function statsHtml(s) {
-    var sections = s.map(function (g) {
-      var stats = (g && g.statistics) || [];
-      stats = stats.filter(function (st) { return st && st.name; });
+    var groups = normalizeStats(s);
+    var sections = groups.map(function (g) {
+      var stats = (g.items || []).filter(function (st) { return st && st.name; });
       if (!stats.length) return "";
-      var gname = GROUP_ZH[g.groupName] || g.groupName || "";
+      var gname = GROUP_ZH[g.name] || g.name || "";
       var rows = stats.map(function (st) {
         return "<tr>" +
           '<td class="md-st-v">' + esc(st.home == null ? "-" : st.home) + "</td>" +
@@ -256,29 +292,43 @@
 
   /* ═══ 近期交锋 ═══ */
   function h2hHtml(h) {
+    var html = "";
+    // 交锋战绩（真实接口返回 teamDuel：主队胜/平/客队胜）
+    if (h && h.teamDuel) {
+      var td = h.teamDuel;
+      var hw = td.homeWins != null ? td.homeWins : 0;
+      var aw = td.awayWins != null ? td.awayWins : 0;
+      var dr = td.draws != null ? td.draws : 0;
+      if (hw + aw + dr > 0) {
+        html += '<div class="md-h2h-duel">近年双方：主队胜 <b>' + esc(hw) + "</b> · 平 <b>" + esc(dr) +
+                "</b> · 客队胜 <b>" + esc(aw) + "</b></div>";
+      }
+    }
+    // 交锋列表（兼容 {home.matches}/{away.matches} 形状）
     var list = null;
     if (h && Array.isArray(h.matches)) list = h.matches;
     else if (h && h.home && Array.isArray(h.home.matches)) list = h.home.matches;
     else if (h && h.away && Array.isArray(h.away.matches)) list = h.away.matches;
-    if (!list || !list.length) return "";
-    var rows = list.slice(0, 6).map(function (e) {
-      var ht = e.homeTeam || {}, at = e.awayTeam || {};
-      var hs = (e.homeScore && e.homeScore.current) || 0;
-      var as = (e.awayScore && e.awayScore.current) || 0;
-      var tn = (e.tournament && e.tournament.name) || "";
-      return "<tr>" +
-        '<td class="num">' + esc(bj(e.startTimestamp)) + "</td>" +
-        "<td>" + esc(tn) + "</td>" +
-        "<td>" + esc(ht.name || "") + "</td>" +
-        '<td class="num" style="text-align:center;width:52px">' + esc(hs) + ":" + esc(as) + "</td>" +
-        "<td>" + esc(at.name || "") + "</td></tr>";
-    }).join("");
-    return '<section class="md-sec"><h4>🤝 近期交锋</h4>' +
-      '<div class="table-wrap"><table class="roster-table"><thead><tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th></tr></thead><tbody>' +
-      rows + "</tbody></table></div></section>";
+    if (list && list.length) {
+      var rows = list.slice(0, 6).map(function (e) {
+        var ht = e.homeTeam || {}, at = e.awayTeam || {};
+        var hs = (e.homeScore && e.homeScore.current) || 0;
+        var as = (e.awayScore && e.awayScore.current) || 0;
+        var tn = (e.tournament && e.tournament.name) || "";
+        return "<tr>" +
+          '<td class="num">' + esc(bj(e.startTimestamp)) + "</td>" +
+          "<td>" + esc(tn) + "</td>" +
+          "<td>" + esc(ht.name || "") + "</td>" +
+          '<td class="num" style="text-align:center;width:52px">' + esc(hs) + ":" + esc(as) + "</td>" +
+          "<td>" + esc(at.name || "") + "</td></tr>";
+      }).join("");
+      html += '<div class="table-wrap"><table class="roster-table"><thead><tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th></tr></thead><tbody>' +
+        rows + "</tbody></table></div>";
+    }
+    return html ? '<section class="md-sec"><h4>🤝 交锋</h4>' + html + "</section>" : "";
   }
 
-  /* 拉取结果 → 填充 #md-load */
+  /* 拉取结果 → 填充 #md-load；无任何分区时显示友好提示 */
   function applyDetail(res, body) {
     var load = body.querySelector(".md-load");
     if (!load) return;
@@ -288,18 +338,16 @@
     if (lu) { html += lu; any = true; }
     var inc = i ? incidentsHtml(i) : "";
     if (inc) { html += inc; any = true; }
-    var st = s && Array.isArray(s) ? statsHtml(s) : "";
+    var st = s ? statsHtml(s) : "";
     if (st) { html += st; any = true; }
     var hh = h ? h2hHtml(h) : "";
     if (hh) { html += hh; any = true; }
     load.innerHTML = any
       ? html
-      : '<div class="note-box" style="margin-top:18px">⚠️ <span><b>详情需联网。</b>当前仅显示本地缓存的该场对阵信息；联网后重新点击比赛，即可加载首发阵容、进球与换人、技术统计等完整数据。</span></div>';
+      : '<div class="note-box" style="margin-top:18px">📋 <span><b>该场详情暂不可用。</b>当前仅显示对阵信息。每日自动更新最近若干场的阵容与比赛进程，明天刷新后即可查看；也可点击下方链接在原站查看。</span></div>';
   }
 
-  function loadSofascoreDetail(m, body) {
-    var id = m.id;
-    if (detailCache[id]) { applyDetail(detailCache[id], body); return; }
+  function liveFetch(id, body) {
     var no = function () { return Promise.resolve(null); };
     Promise.all([
       getJson(API + "/event/" + id + "/lineups").catch(no),
@@ -311,6 +359,61 @@
       applyDetail(res, body);
     }).catch(function () {
       applyDetail([null, null, null, null], body);
+    });
+  }
+
+  /* 详情缓存文件名 / 全局名推导：cacheRef "DQD_U19_CACHE" → 文件 "dqd-u19-details-cache.js"、
+     全局 window.DQD_U19_DETAILS_CACHE。按需懒加载，避免每页都下载详情数据。 */
+  function detailsFileName(m) {
+    return m.cacheRef.toLowerCase().replace(/_/g, "-").replace(/-cache$/, "-details-cache") + ".js";
+  }
+  function detailsGlobal(m) {
+    return (m.cacheRef || "").replace(/CACHE$/, "DETAILS_CACHE");
+  }
+  function detailsFileBase() {
+    var src = "";
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i++) {
+      var s = scripts[i].getAttribute("src") || "";
+      if (s.indexOf("match-detail.js") !== -1) { src = s; break; }
+    }
+    return src.replace(/match-detail\.js.*$/, "");
+  }
+  function loadDetailCache(m) {
+    var name = detailsGlobal(m);
+    if (window[name]) return Promise.resolve(window[name]);
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = detailsFileBase() + detailsFileName(m);
+      s.onload = function () { resolve(window[name] || null); };
+      s.onerror = function () { reject(new Error("detail cache load failed")); };
+      document.head.appendChild(s);
+    });
+  }
+  function fallbackToLive(id, body) {
+    var load = body.querySelector(".md-load");
+    if (load) load.innerHTML = '<div class="md-loading">正在获取该场详情…</div>';
+    liveFetch(id, body);
+  }
+  function loadSofascoreDetail(m, body) {
+    var id = m.id;
+    if (detailCache[id]) { applyDetail(detailCache[id], body); return; }
+    // ① 优先读每日详情缓存（线上/离线均可用）
+    loadDetailCache(m).then(function (dc) {
+      var d = dc ? dc[id] : null;
+      if (d) {
+        detailCache[id] = [
+          d.lineups || null, d.incidents || null,
+          d.statistics || null, d.h2h || null
+        ];
+        applyDetail(detailCache[id], body);
+        return;
+      }
+      // ② 无该场缓存 → 尽力实时拉取（本地 file:// 等可直连场合生效）
+      fallbackToLive(id, body);
+    }).catch(function () {
+      // ③ 详情缓存文件加载失败（离线等）→ 尽力实时拉取
+      fallbackToLive(id, body);
     });
   }
 
