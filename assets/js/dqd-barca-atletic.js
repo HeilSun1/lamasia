@@ -41,12 +41,16 @@
 
   /* 照片地址归一化：缓存模式是"assets/img/players/dqd/x.jpg"（根目录相对），
      需换算成相对本页面的路径；实时模式是 CDN 绝对地址，原样使用。
-     手动补的照片（photo-tool 写入 / manual-photos.js 上线）优先覆盖。 */
+     手动补的照片（photo-tool 写入 / manual-photos.js 上线）优先覆盖，
+     存于 assets/img/players/manual/，同样换算成相对 teams/ 页面的路径。 */
   function photoSrc(p) {
     const manual = (window.ManualPhoto && window.ManualPhoto("barca:" + p.person_id)) || "";
     const pl = manual || p.person_logo || "";
     if (pl.indexOf("assets/img/players/dqd/") === 0) {
       return IMG_BASE + pl.split("/").pop();
+    }
+    if (pl.indexOf("assets/img/players/manual/") === 0) {
+      return "../assets/img/players/manual/" + pl.split("/").pop();
     }
     return pl;
   }

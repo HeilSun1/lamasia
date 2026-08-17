@@ -11,5 +11,8 @@ window.MANUAL_PHOTOS = {
   "alumni:puyol": "assets/img/players/manual/puyol.jpg",
   "alumni:roberto": "assets/img/players/manual/roberto.jpg",
   "alumni:xavi": "assets/img/players/manual/xavi.jpg",
-  "alumni:yamal": "assets/img/players/manual/yamal.jpg"
+  "alumni:yamal": "assets/img/players/manual/yamal.jpg",
+  "barca:51050111": "assets/img/players/manual/barca-51050111.jpg",
+  "barca:51210430": "assets/img/players/manual/barca-51210430.jpg",
+  "barca:51246092": "assets/img/players/manual/barca-51246092.jpg"
 };
