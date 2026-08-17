@@ -78,7 +78,7 @@
       "</div>";
     document.body.appendChild(el);
     el.addEventListener("click", function (e) {
-      if (e.target === el) close();
+      if (e.target === el || (e.target.classList && e.target.classList.contains("match-detail-close"))) close();
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") close();
