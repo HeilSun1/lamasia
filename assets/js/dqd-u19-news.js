@@ -22,8 +22,9 @@
   function renderItems(items) {
     let html = "";
     items.forEach(function (n) {
+      const nkey = n.id || n.url;
       html +=
-        '<a class="news-item" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
+        '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
           (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +
           '<span class="news-item__body">' +
             '<span class="news-item__title">' + esc(n.title) + '</span>' +
@@ -35,6 +36,7 @@
         '</a>';
     });
     el.innerHTML = html;
+    if (window.NewsRead) NewsRead.decorate(el);
   }
 
   const data = window.DQD_U19_NEWS;

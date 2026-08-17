@@ -441,6 +441,7 @@ a:hover { color: #0d54b8; }
 
 /* 懂球帝数据源：球队资讯列表 */
 .news-item {
+  position: relative;
   display: flex; gap: 12px; align-items: flex-start;
   padding: 11px 0; border-bottom: 1px solid var(--border-soft); text-decoration: none;
 }
@@ -488,6 +489,41 @@ a:hover { color: #0d54b8; }
 .news-item__src--b { background: var(--barca-blue); color: #fff; }
 .news-item__src--u { background: var(--gold-500); color: #fff; }
 .news-item__src--w { background: var(--barca-red); color: #fff; }
+
+/* 新闻未读：条目小红点 */
+.news-item__dot {
+  position: absolute; top: 14px; right: 12px;
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 3px var(--surface);
+  pointer-events: none;
+  animation: news-dot-pop .25s cubic-bezier(.4,0,.2,1);
+}
+@keyframes news-dot-pop { from { transform: scale(.4); opacity: .4; } to { transform: scale(1); opacity: 1; } }
+
+/* 新闻未读：面板标题行徽标（未读数） */
+.news-unread {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 19px; height: 19px; padding: 0 6px;
+  border-radius: 999px; background: var(--red); color: #fff;
+  font-size: 11px; font-weight: 700; line-height: 1;
+  vertical-align: 2px; margin-left: 6px;
+}
+.news-unread::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor; margin-right: 4px; flex-shrink: 0;
+}
+
+/* 新闻未读：全部已读按钮 */
+.news-markall {
+  margin-left: 10px; padding: 3px 10px;
+  border: 1px solid var(--border-soft); border-radius: 999px;
+  background: var(--surface-2); color: var(--blue-600);
+  font-size: 11.5px; font-weight: 700; cursor: pointer;
+  transition: background var(--transition);
+  vertical-align: 2px;
+}
+.news-markall:hover { background: var(--surface-3); }
 
 /* 页内导航：固定右侧目录 + 回到顶部 */
 .page-toc {
@@ -951,6 +987,13 @@ body.fb-dragging .fb-slot.empty { pointer-events: auto; }
 .md-st tbody tr:last-child td { border-bottom: none; }
 .md-st-v { text-align: center; font-weight: 700; width: 84px; }
 .md-st-n { text-align: center; color: var(--muted); }
+
+/* 交锋战绩 */
+.md-h2h-duel {
+  font-size: 13px; color: var(--text-2); padding: 9px 12px; margin-bottom: 10px;
+  background: var(--surface-2); border: 1px solid var(--border-soft); border-radius: var(--radius-sm);
+}
+.md-h2h-duel b { color: var(--barca-blue); }
 
 /* 底部外链 */
 .md-foot { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--border-soft); text-align: center; }

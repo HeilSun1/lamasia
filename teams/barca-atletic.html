@@ -121,7 +121,10 @@
 
     <div class="panel" id="sec-news">
       <div class="panel-title-row">
-        <h3>📰 球队资讯 <span class="tag">懂球帝数据源 · 每日更新</span></h3>
+        <h3>📰 球队资讯 <span class="tag">懂球帝数据源 · 每日更新</span>
+          <span class="news-unread" data-count-for="#barca-news" style="display:none"></span>
+          <button class="news-markall" type="button" data-markall-for="#barca-news">全部已读</button>
+        </h3>
       </div>
       <div id="barca-news-status" class="note-box" style="display:none"></div>
       <div id="barca-news" class="p-body" style="margin-top:10px">
@@ -152,6 +155,7 @@
   <script src="../assets/js/dqd-barca-atletic-cache.js"></script>
   <script src="../assets/js/dqd-barca-atletic.js"></script>
   <script src="../assets/js/dqd-barca-news-cache.js"></script>
+  <script src="../assets/js/news-read.js"></script>
   <script src="../assets/js/dqd-barca-news.js"></script>
   <script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
