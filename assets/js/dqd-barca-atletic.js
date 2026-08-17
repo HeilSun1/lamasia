@@ -227,6 +227,16 @@
   }
 
   /* ── 球队信息 ── */
+  /* 懂球帝球场名过时：迷你球场（Mini Estadi）已于 2019 年拆除，
+     原址重建为克鲁伊夫球场（Estadi Johan Cruyff），容量约 6000。
+     实时拉取与每日缓存都会带回旧名，故在渲染处统一纠正。 */
+  function fixVenue(name, cap) {
+    if (typeof name === "string" && name.indexOf("迷你") !== -1) {
+      return { name: "克鲁伊夫球场", cap: "6000" };
+    }
+    return { name: name, cap: cap };
+  }
+
   function renderTeamInfo(info) {
     const el = $("dqd-teaminfo");
     if (!el) return;
@@ -235,10 +245,11 @@
     if (logo && b.team_logo) { logo.src = b.team_logo; logo.style.display = "block"; }
     if (logo && b.team_name) logo.alt = b.team_name;
 
+    const venue = fixVenue(b.venue_name, b.venue_capacity);
     const tiles = [
       b.founded      && { l: "成立年份", v: b.founded, n: "" },
       b.city         && { l: "所在城市", v: b.city, n: "" },
-      b.venue_name   && { l: "主场", v: b.venue_name, n: b.venue_capacity ? "可容纳 " + b.venue_capacity + " 人" : "" },
+      venue.name     && { l: "主场", v: venue.name, n: venue.cap ? "可容纳 " + venue.cap + " 人" : "" },
       b.country      && { l: "国家/地区", v: b.country, n: "" }
     ].filter(Boolean);
 
