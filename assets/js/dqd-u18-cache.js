@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-16 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-17 09:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-16 09:01:24",
+    "updated":  "2026-08-17 09:01:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -39,18 +39,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Mahdi El Maimouni",
-                        "id":  "2690302",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Morocco",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Daniel da Lima",
                         "id":  "2271424",
                         "pos":  "F",
@@ -59,6 +47,18 @@ window.DQD_U18_CACHE = {
                         "nation":  "Portugal",
                         "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
                         "age":  "15岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Mahdi El Maimouni",
+                        "id":  "2690302",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Morocco",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
+                        "age":  "17岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -135,18 +135,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Unai Balmón",
-                        "id":  "2690278",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690278/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Samuel Borniquel",
                         "id":  "2690304",
                         "pos":  "M",
@@ -154,6 +142,18 @@ window.DQD_U18_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
+                        "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Unai Balmón",
+                        "id":  "2690278",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690278/image",
                         "age":  "16岁",
                         "value":  "",
                         "injury":  null
@@ -183,18 +183,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pere Villacorta",
-                        "id":  "2410975",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Lucas Bernal",
                         "id":  "2447157",
                         "pos":  "D",
@@ -203,6 +191,18 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
                         "age":  "15岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pere Villacorta",
+                        "id":  "2410975",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
+                        "age":  "16岁",
                         "value":  "",
                         "injury":  null
                     },
@@ -321,6 +321,21 @@ window.DQD_U18_CACHE = {
                         "awayId":  "933330",
                         "hs":  "1",
                         "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  false
+                    },
+                    {
+                        "id":  "16844411",
+                        "comp":  "U18 BEST Cup, Playoffs",
+                        "round":  "50",
+                        "start":  "1786892400",
+                        "home":  "Real Madrid U18",
+                        "away":  "FC Barcelona U18",
+                        "homeId":  "154810",
+                        "awayId":  "933330",
+                        "hs":  "0",
+                        "as":  "1",
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  false

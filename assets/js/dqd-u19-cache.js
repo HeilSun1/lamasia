@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-16 09:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-17 09:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-16 09:00:52",
+    "updated":  "2026-08-17 09:01:05",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,30 +14,6 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
-                    {
-                        "name":  "Òscar Gistau",
-                        "id":  "1539491",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
-                        "age":  "18岁",
-                        "value":  "5万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Sama Nomoko",
-                        "id":  "1982217",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1982217/image",
-                        "age":  "18岁",
-                        "value":  "31万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ajay Tavares",
                         "id":  "1861694",
@@ -111,47 +87,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Guillermo Fernández",
-                        "id":  "1544614",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1544614/image",
-                        "age":  "18岁",
-                        "value":  "330万",
-                        "injury":  {
-                                       "reason":  "大腿伤势",
-                                       "reasonEn":  "Thigh Injury",
-                                       "status":  "out",
-                                       "expected":  "2026年6月"
-                                   }
-                    },
-                    {
-                        "name":  "Ebrima Tunkara",
-                        "id":  "2128084",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
-                        "age":  "16岁",
-                        "value":  "520万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Orian Goren",
-                        "id":  "1973312",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Israel",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
-                        "age":  "17岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Pedro Rodriguez",
                         "id":  "1649171",
                         "pos":  "M",
@@ -161,18 +96,6 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
                         "age":  "18岁",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pedro Villar",
-                        "id":  "2076883",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076883/image",
-                        "age":  "18岁",
-                        "value":  "9万",
                         "injury":  null
                     },
                     {
@@ -209,35 +132,6 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2272317/image",
                         "age":  "16岁",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Landry Farré",
-                        "id":  "1590760",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1590760/image",
-                        "age":  "19岁",
-                        "value":  "28万",
-                        "injury":  {
-                                       "reason":  "膝盖伤势",
-                                       "reasonEn":  "Knee Injury",
-                                       "status":  "out",
-                                       "expected":  "2026年6月"
-                                   }
-                    },
-                    {
-                        "name":  "Alex Campos",
-                        "id":  "1926117",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926117/image",
-                        "age":  "18岁",
-                        "value":  "46万",
                         "injury":  null
                     },
                     {
@@ -334,18 +228,6 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Eder Aller",
-                        "id":  "1929977",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
-                        "age":  "19岁",
-                        "value":  "5万",
                         "injury":  null
                     },
                     {

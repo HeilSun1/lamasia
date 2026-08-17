@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-16 03:36:24 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-17 09:00:31 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-16 03:36:24",
+    "updated":  "2026-08-17 09:00:31",
     "source":  "dongqiudi",
-    "count":  28,
+    "count":  31,
     "news":  [
+        {
+            "id":  "6184910", "title":  "每体：哈姆扎季前赛已打进3球，已成为巴萨9号位现实选择",
+            "url":  "https://www.dongqiudi.com/articles/6184910.html", "time":  "2026-08-17 02:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0D/8B/280x210/crop/-/rBXRn2qB_22AcNh-AAIlUO9iGZo658.jpg" },
+        {
+            "id":  "6182086", "title":  "每体：巴萨公布友谊赛对阵巴塞尔大名单，亚马尔等人回归",
+            "url":  "https://www.dongqiudi.com/articles/6182086.html", "time":  "2026-08-16 16:40",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0C/29/280x210/crop/-/rBXRDGqBdruAbdA1AACaUoN84Bo173.jpg" },
+        {
+            "id":  "6182152", "title":  "每体：巴萨青训法里尼亚斯、通卡拉、戈伦新赛季将获机会",
+            "url":  "https://www.dongqiudi.com/articles/6182152.html", "time":  "2026-08-16 16:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0C/10/280x210/crop/-/rBXRn2qBcY6AZfIXAAMJvK7M83I481.jpg" },
         {
             "id":  "6179292", "title":  "巴萨战巴塞尔大名单：亚马尔领衔，加维、佩德里缺席",
             "url":  "https://www.dongqiudi.com/articles/6179292.html", "time":  "2026-08-16 00:23",
