@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-17 09:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-17 03:37 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
     "injuries_map":  {
                          "50817432":  {
@@ -2474,5 +2474,5 @@ window.DQD_BARCA_ATLETIC = {
     "injuries_list":  [
 
                       ],
-    "updated":  "2026-08-17 09:00:30"
+    "updated":  "2026-08-17 03:37:26"
 };
