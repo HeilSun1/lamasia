@@ -92,5 +92,7 @@
       '</a>';
   });
   el.innerHTML = html;
-  if (window.NewsRead) NewsRead.decorate(el);
+  if (window.NewsRead) {
+    NewsRead.visit(el, items.map(function (n) { return n.id || n.url; }));
+  }
 })();

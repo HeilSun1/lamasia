@@ -36,7 +36,6 @@
         '</a>';
     });
     el.innerHTML = html;
-    if (window.NewsRead) NewsRead.decorate(el);
   }
 
   const data = window.DQD_U19_NEWS;
@@ -56,6 +55,9 @@
   }
 
   renderItems(news.slice(0, INITIAL));
+  if (window.NewsRead) {
+    NewsRead.visit(el, news.map(function (n) { return n.id || n.url; }));
+  }
   if (news.length > INITIAL) {
     const more = document.createElement("button");
     more.className = "news-more";
@@ -63,6 +65,7 @@
     more.textContent = "查看更多（还有 " + (news.length - INITIAL) + " 条）";
     more.addEventListener("click", function () {
       renderItems(news);
+      if (window.NewsRead) NewsRead.decorate(el);
       more.remove();
     });
     el.appendChild(more);

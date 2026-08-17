@@ -501,30 +501,6 @@ a:hover { color: #0d54b8; }
 }
 @keyframes news-dot-pop { from { transform: scale(.4); opacity: .4; } to { transform: scale(1); opacity: 1; } }
 
-/* 新闻未读：面板标题行徽标（未读数） */
-.news-unread {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-width: 19px; height: 19px; padding: 0 6px;
-  border-radius: 999px; background: var(--red); color: #fff;
-  font-size: 11px; font-weight: 700; line-height: 1;
-  vertical-align: 2px; margin-left: 6px;
-}
-.news-unread::before {
-  content: ""; width: 6px; height: 6px; border-radius: 50%;
-  background: currentColor; margin-right: 4px; flex-shrink: 0;
-}
-
-/* 新闻未读：全部已读按钮 */
-.news-markall {
-  margin-left: 10px; padding: 3px 10px;
-  border: 1px solid var(--border-soft); border-radius: 999px;
-  background: var(--surface-2); color: var(--blue-600);
-  font-size: 11.5px; font-weight: 700; cursor: pointer;
-  transition: background var(--transition);
-  vertical-align: 2px;
-}
-.news-markall:hover { background: var(--surface-3); }
-
 /* 页内导航：固定右侧目录 + 回到顶部 */
 .page-toc {
   position: fixed; top: 96px; right: 16px; z-index: 40;
