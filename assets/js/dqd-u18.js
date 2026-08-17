@@ -356,7 +356,17 @@
           '<img class="match-logo" src="' + esc("https://img.sofascore.com/api/v1/team/" + id + "/image") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
           esc(name || "") + "</span></td>";
       };
-      return "<tr>" +
+      // 注册到比赛详情注册表，供 match-detail.js 弹窗使用
+      const key = "sofascore:" + m.id;
+      if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+      window.LAMASIA_MATCHES[key] = {
+        source: "sofascore", id: m.id, comp: m.comp, round: m.round, start: m.start,
+        home: m.home, away: m.away, homeId: m.homeId, awayId: m.awayId,
+        hs: m.hs, as: m.as, status: m.status, isHome: m.isHome,
+        homeLogo: "https://img.sofascore.com/api/v1/team/" + m.homeId + "/image",
+        awayLogo: "https://img.sofascore.com/api/v1/team/" + m.awayId + "/image"
+      };
+      return '<tr data-match-key="' + key + '" class="match-row" title="点击查看详情">' +
         '<td class="num">' + esc(fmtTime(m.start)) + "</td>" +
         "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
         teamCell(m.home, m.homeId) +

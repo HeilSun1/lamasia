@@ -183,7 +183,18 @@
           '<img class="match-logo" src="' + esc(logo || "") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
           esc(name || "") + "</span></td>";
       };
-      return "<tr>" +
+      // 注册到比赛详情注册表，供 match-detail.js 弹窗使用（懂球帝只显示对阵+外链）
+      const key = "dqd:" + m.match_id;
+      if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+      window.LAMASIA_MATCHES[key] = {
+        source: "dqd", match_id: m.match_id, id: m.match_id,
+        comp: m.competition_name || m.match_title || "", round: m.round_name || m.gameweek || "",
+        startText: m.start_play || "",
+        home: m.team_A_name || "", away: m.team_B_name || "",
+        homeLogo: m.team_A_logo || "", awayLogo: m.team_B_logo || "",
+        hs: m.fs_A || "", as: m.fs_B || "", status: m.status
+      };
+      return '<tr data-match-key="' + key + '" class="match-row" title="点击查看详情">' +
         '<td class="num">' + esc((m.start_play || "").replace(" ", " ").slice(0, 16)) + "</td>" +
         "<td>" + comp + round + "</td>" +
         teamCell(m.team_A_name, m.team_A_logo) +

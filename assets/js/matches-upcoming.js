@@ -22,8 +22,22 @@
         if (String(m.status) !== "Fixture") return;
         const t = new Date(String(m.start_play || "").replace(" ", "T") + "+08:00").getTime();
         if (!t || t < now() - 3600e3) return; // 剔除已过期
+        // 注册详情（仅当赛程渲染器未注册过，保留更完整的对象）
+        const key = "dqd:" + m.match_id;
+        if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+        if (!window.LAMASIA_MATCHES[key]) {
+          window.LAMASIA_MATCHES[key] = {
+            source: "dqd", match_id: m.match_id, id: m.match_id,
+            comp: m.competition_name || m.match_title || "", round: m.round_name || m.gameweek || "",
+            startText: m.start_play || "",
+            home: m.team_A_name || "", away: m.team_B_name || "",
+            homeLogo: m.team_A_logo || "", awayLogo: m.team_B_logo || "",
+            hs: m.fs_A || "", as: m.fs_B || "", status: m.status
+          };
+        }
         out.push({
           team: "B队", href: "teams/barca-atletic.html",
+          key: key,
           start: t, comp: m.competition_name || m.match_title || "", round: m.round_name || "",
           home: m.team_A_name || "", away: m.team_B_name || "",
           homeLogo: m.team_A_logo || "", awayLogo: m.team_B_logo || "",
@@ -42,8 +56,20 @@
         if (String(m.status) !== "Not started") return;
         const t = parseInt(m.start, 10) * 1000;
         if (!t || t < now() - 3600e3) return;
+        // 注册详情（仅当赛程渲染器未注册过，保留更完整的对象）
+        const key = "sofascore:" + m.id;
+        if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+        if (!window.LAMASIA_MATCHES[key]) {
+          window.LAMASIA_MATCHES[key] = {
+            source: "sofascore", id: m.id, comp: m.comp, round: m.round, start: m.start,
+            home: m.home, away: m.away, homeId: m.homeId, awayId: m.awayId,
+            hs: m.hs, as: m.as, status: m.status, isHome: m.isHome,
+            homeLogo: "https://img.sofascore.com/api/v1/team/" + (m.homeId || 0) + "/image",
+            awayLogo: "https://img.sofascore.com/api/v1/team/" + (m.awayId || 0) + "/image"
+          };
+        }
         out.push({
-          team: cfg.team, href: cfg.href,
+          team: cfg.team, href: cfg.href, key: key,
           start: t, comp: m.comp || "", round: m.round || "",
           home: m.home || "", away: m.away || "",
           homeLogo: "https://img.sofascore.com/api/v1/team/" + (m.homeId || 0) + "/image",
@@ -64,7 +90,7 @@
       esc(name || "") + "</span></td>";
   }
   function row(x) {
-    return "<tr>" +
+    return '<tr data-match-key="' + esc(x.key || "") + '" class="match-row" title="点击查看详情">' +
       '<td class="num">' + esc(bj(x.start)) + "</td>" +
       "<td>" + teamBadge(x) + "</td>" +
       "<td>" + esc(x.comp || "") + (x.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(x.round) + "</span>" : "") + "</td>" +
