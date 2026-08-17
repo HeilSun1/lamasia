@@ -221,6 +221,8 @@
   <script src="assets/js/dqd-u19-cache.js"></script>
   <script src="assets/js/dqd-u18-cache.js"></script>
   <script src="assets/js/dqd-u16-cache.js"></script>
+  <script src="assets/js/manual-photos-hook.js"></script>
+  <script src="assets/js/manual-photos.js"></script>
   <script>
     // 梯队卡片渲染（从 data.js 读取）
     const grid = document.getElementById('hmGrid');
@@ -340,6 +342,65 @@
       });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  </script>
+
+  <script>
+    // 名人堂卡片自动补照片：读取 ManualPhoto("alumni:xxx")（本机工具写入或上线文件），
+    // 有则用照片替换字母缩写。
+    (function () {
+      var slug = {
+        "梅西": "alumni:messi", "哈维": "alumni:xavi", "伊涅斯塔": "alumni:iniesta",
+        "普约尔": "alumni:puyol", "瓜迪奥拉": "alumni:guardiola", "布斯克茨": "alumni:busquets",
+        "皮克": "alumni:pique", "罗贝托": "alumni:roberto", "亚马尔": "alumni:yamal",
+        "加维": "alumni:gavi"
+      };
+      document.querySelectorAll(".hm-alum").forEach(function (card) {
+        var nameEl = card.querySelector(".hm-alum-name");
+        if (!nameEl) return;
+        var key = slug[nameEl.textContent.trim()];
+        if (!key || !window.ManualPhoto) return;
+        var src = window.ManualPhoto(key);
+        if (!src) return;
+        var init = card.querySelector(".hm-alum-initial");
+        if (init) init.remove();
+        var img = document.createElement("img");
+        img.className = "hm-alum-photo";
+        img.src = src;
+        img.alt = nameEl.textContent;
+        img.title = "点击查看大图";
+        img.loading = "lazy";
+        img.referrerPolicy = "no-referrer";
+        card.insertBefore(img, nameEl);
+      });
+    })();
+
+    // 名人堂照片点击放大（复用站点 lightbox 样式）
+    function openLb(src, alt){
+      var lb = document.getElementById("lamasia-lightbox");
+      if (!lb) {
+        lb = document.createElement("div");
+        lb.id = "lamasia-lightbox";
+        lb.className = "lightbox";
+        lb.innerHTML = '<div class="lightbox-inner">' +
+          '<button class="lightbox-close" title="关闭">✕</button>' +
+          '<img alt="">' +
+          '<div class="lightbox-caption"></div></div>';
+        document.body.appendChild(lb);
+        lb.addEventListener("click", function (ev) {
+          if (ev.target === lb || ev.target.classList.contains("lightbox-close")) lb.classList.remove("open");
+        });
+        document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") lb.classList.remove("open"); });
+      }
+      lb.querySelector("img").src = src;
+      lb.querySelector(".lightbox-caption").textContent = alt || "";
+      lb.classList.add("open");
+    }
+    document.addEventListener("click", function (e) {
+      var img = e.target.closest ? e.target.closest(".hm-alum-photo") : null;
+      if (!img) return;
+      e.preventDefault();
+      openLb(img.src, img.alt);
+    });
   </script>
 </body>
 </html>

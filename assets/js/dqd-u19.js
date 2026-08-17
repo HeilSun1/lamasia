@@ -161,7 +161,7 @@
         name: pr.name, id: id, pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
         nation: pr.country ? pr.country.name : "",
-        photo: "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
+        photo: (window.ManualPhoto && window.ManualPhoto("u19:" + id)) || "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
         age: calcAge(pr.dateOfBirth),
         value: valueZh(pr.proposedMarketValue),
         injury: injury
@@ -229,6 +229,7 @@
     injured.forEach(function (p) {
       const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
+      if (window.ManualPhoto) { const m = window.ManualPhoto("u19:" + p.id); if (m) p.photo = m; }
       const ini = esc(initials(p.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
         (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
@@ -270,6 +271,7 @@
     const coach = (data && data.coach) || (window.DQD_U19_CACHE && window.DQD_U19_CACHE.coach) || null;
     if (coach && coach.name) {
       const c = coach;
+      if (window.ManualPhoto) { const m = window.ManualPhoto("u19:coach-" + c.id); if (m) c.photo = m; }
       const ini = esc(initials(c.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
         (c.photo ? '<img src="' + esc(c.photo) + '" alt="' + esc(c.name) + '" loading="lazy" referrerpolicy="no-referrer"' +
@@ -296,6 +298,7 @@
       ps.forEach(function (p) {
         const zh = lookupZh(p.name, zhMap) || {};
         const display = zh.zh || p.name || "";          // 优先官方名单的中文名
+        if (window.ManualPhoto) { const m = window.ManualPhoto("u19:" + p.id); if (m) p.photo = m; }
         const ini  = esc(initials(p.name)) || "·";
         const injBadge = (p.injury && p.injury.status === "out")
           ? '<span class="pl-inj" title="伤病：' + esc(p.injury.reason) +

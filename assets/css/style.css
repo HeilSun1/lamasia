@@ -678,6 +678,12 @@ a:hover { color: #0d54b8; }
   width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
   background: #0d1b3d; color: #d9a400; font-weight: 800; font-size: 15px; margin-bottom: 14px;
 }
+/* 名人堂卡片：手动补的照片 */
+.hm-alum-photo {
+  width: 56px; height: 56px; border-radius: 50%; object-fit: cover; display: block;
+  margin-bottom: 14px; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(13, 27, 61, 0.14);
+  cursor: pointer;
+}
 .hm-alum-name { font-size: 14.5px; font-weight: 700; color: #0d1b3d; }
 .hm-alum-era { font-size: 11.5px; color: #9aa1b3; margin-top: 3px; display: block; }
 .hm-alum-pos {
