@@ -222,8 +222,10 @@ foreach ($src in @($lastEv, $nextEv)) {
     }
   }
 }
+# 只保留 2026-06-01 起的赛程（2026-06-01 00:00 东八区 = 1780243200；旧赛季归档不展示）
+$CutoffUnix = 1780243200
 # 已完场按时间倒序、未开赛按时间正序（页面渲染时也处理，这里只合并）
-$matchList = @($matchList | Sort-Object { [int64]$_.start })
+$matchList = @($matchList | Where-Object { [int64]$_.start -ge $CutoffUnix } | Sort-Object { [int64]$_.start })
 
 # ── 3.5 抓取最近 8 场已完场的比赛详情（阵容/进程/技术统计/交锋） ──
 # 详情弹窗（match-detail.js）优先读独立的详情缓存文件；线上 GitHub Pages 域直连 Sofascore 会被反爬拦截，

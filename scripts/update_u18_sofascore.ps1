@@ -230,8 +230,8 @@ foreach ($src in @($lastEv, $nextEv)) {
     }
   }
 }
-# 只保留 2026 年及以后赛程（2026-01-01 00:00 UTC = 1767225600；旧赛季归档不展示）
-$CutoffUnix = 1767225600
+# 只保留 2026-06-01 起的赛程（2026-06-01 00:00 东八区 = 1780243200；旧赛季归档不展示）
+$CutoffUnix = 1780243200
 # 已完场按时间倒序、未开赛按时间正序（页面渲染时也处理，这里只合并）
 $matchList = @($matchList | Where-Object { [int64]$_.start -ge $CutoffUnix } | Sort-Object { [int64]$_.start })
 

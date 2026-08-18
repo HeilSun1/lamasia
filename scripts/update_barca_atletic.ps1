@@ -68,6 +68,12 @@ if (-not $roster -and -not $schedule -and -not $teamInfo) {
   exit 1
 }
 
+# 只保留 2026-06-01 起的赛程（start_play 为东八区字符串，直接字符串比较）
+if ($schedule -and $schedule.data) {
+  $schedule.data = @($schedule.data | Where-Object { [string]$_.start_play -ge "2026-06-01" })
+  Log "  ✓ 赛程已过滤为 2026-06-01 起：$($schedule.data.Count) 场。"
+}
+
 # ── 2. 下载照片 + 拉取每位球员伤病 ───────────────────────────────
 $downloaded    = 0
 $playerCount   = 0
