@@ -68,7 +68,8 @@
   const TEAM_OF = {
     "juvenil-a": "U19 A", "juvenil-b": "U19 B", "cadete": "U16",
     "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13",
-    "alevin": "U12", "benjamin": "U10", "prebenjamin": "U8"
+    "alevin": "U12", "u11a": "U11 A", "u11b": "U11 B",
+    "u10a": "U10 A", "u10b": "U10 B", "u9a": "U9 A", "u9b": "U9 B"
   };
   const local = (window.LAMASIA_DATA && window.LAMASIA_DATA.players) || {};
   Object.keys(TEAM_OF).forEach(function (tid) {
@@ -126,7 +127,7 @@
   }
 
   // 转数组并排序（梯队顺序 → 姓名）
-  const TEAM_ORDER = ["预备队", "U19 A", "U19 B", "U16", "U15", "U14", "U13", "U12", "U10", "U8"];
+  const TEAM_ORDER = ["预备队", "U19 A", "U19 B", "U16", "U15", "U14", "U13", "U12", "U11 A", "U11 B", "U10 A", "U10 B", "U9 A", "U9 B"];
   const players = Object.keys(pool).map(function (k) { return pool[k]; });
   players.sort(function (a, b) {
     const ti = TEAM_ORDER.indexOf(a.team), tj = TEAM_ORDER.indexOf(b.team);

@@ -206,32 +206,91 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Henri Yeboah",      zh: "亨利·耶博阿", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
     ],
 
-    "benjamin": [
-      { num: "—", name: "Quim Anglada",          zh: "基姆·安格拉达", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Yago Villavicencio",    zh: "亚戈·比利亚维森西奥", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Edwar Encarnación",     zh: "爱德华·恩卡纳西翁", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Noah Ezeagu",           zh: "诺亚·埃泽阿古", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Edgar Guerri",          zh: "埃德加·格里", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Martí Prat",            zh: "马尔蒂·普拉特", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Izan Rodríguez",        zh: "伊桑·罗德里格斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Martí Sánchez",         zh: "马尔蒂·桑切斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Yarei Cortés",          zh: "亚雷·科尔特斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Youssef El Mir",        zh: "优素福·埃尔米尔", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Hoossam Bnihich",       zh: "胡萨姆·布尼希", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Soulaimane L'Khamal",   zh: "苏莱曼·哈马尔", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
+    "u11a": [
+      { num: "—", name: "Yago Villavicencio", zh: "亚戈·比利亚维森西奥", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Luca Yakunin",       zh: "卢卡·亚库宁", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Edwar Encarnación",  zh: "爱德华·恩卡纳西翁", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Martí Prat",         zh: "马尔蒂·普拉特", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Sekou Bayo",         zh: "塞库·巴约", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Izan Rodríguez",     zh: "伊桑·罗德里格斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Youssef El Mir",     zh: "优素福·埃尔米尔", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Yarei Cortés",       zh: "亚雷·科尔特斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Thiago Claverías",   zh: "蒂亚戈·克拉韦里亚斯", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Soulaimane L'Khamal",zh: "苏莱曼·哈马尔", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Amadou Diakate",     zh: "阿马杜·迪亚卡特", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Hoossam Bnihich",    zh: "胡萨姆·布尼希", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
     ],
 
-    "prebenjamin": [
+    "u11b": [
+      { num: "—", name: "Quim Anglada",     zh: "基姆·安格拉达", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Martín Guarnido",  zh: "马丁·瓜尔尼多", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mamadi Diallo",    zh: "马马迪·迪亚洛", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Martí Giral",      zh: "马尔蒂·希拉尔", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Youssef El Abaal", zh: "优素福·埃尔阿巴勒", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Martí Sánchez",    zh: "马尔蒂·桑切斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Edgar Guerri",     zh: "埃德加·格里", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Bruno López",      zh: "布鲁诺·洛佩斯", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Leo Rizo",         zh: "莱奥·里索", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Daniel Ezzeddine", zh: "丹尼尔·埃泽丁", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Adonai Patilla",   zh: "阿多奈·帕蒂利亚", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Noah Chima",       zh: "诺亚·奇马", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
+    ],
+
+    "u10a": [
+      { num: "—", name: "Daniel Talavera",     zh: "丹尼尔·塔拉韦拉", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Enzo Rubio",          zh: "恩佐·鲁维奥", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Álvaro Vives",        zh: "阿尔瓦罗·比韦斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Leo Martínez",        zh: "莱奥·马丁内斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Alan Pi",             zh: "阿兰·皮", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Esteban Henao",       zh: "埃斯特万·埃纳奥", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mateo Romero",        zh: "马特奥·罗梅罗", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Natán Satinski",      zh: "纳坦·萨廷斯基", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Soulaiman Essalama",  zh: "苏莱曼·埃萨拉马", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Noah Arechabaleta",   zh: "诺亚·阿雷查巴莱塔", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Salim El Madi",       zh: "萨利姆·埃尔马迪", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Adrián Martínez",     zh: "阿德里安·马丁内斯", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
+    ],
+
+    "u10b": [
+      { num: "—", name: "Simón Murciano",  zh: "西蒙·穆尔西亚诺", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Xevi Papaseit",   zh: "谢维·帕帕塞特", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mamadou Diallo",  zh: "马马杜·迪亚洛", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Derrick Reyes",   zh: "德里克·雷耶斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Víctor Méndez",   zh: "维克托·门德斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mario Gómez",     zh: "马里奥·戈麦斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Eric García",     zh: "埃里克·加西亚", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mateo Canillo",   zh: "马特奥·卡尼略", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Luca Millet",     zh: "卢卡·米列特", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Thiago Martínez", zh: "蒂亚戈·马丁内斯", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Toni Montes",     zh: "托尼·蒙特斯", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
+    ],
+
+    "u9a": [
       { num: "—", name: "Arnau Carbonell",    zh: "阿瑙·卡沃内利", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Mahir Abrimu",       zh: "马希尔·阿布里穆", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Thiago Acevedo",     zh: "蒂亚戈·阿塞维多", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Josué Cortés",       zh: "霍苏埃·科尔特斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Aday Segovia",       zh: "阿代·塞戈维亚", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Jordán Pérez",       zh: "霍尔丹·佩雷斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Àlex Morillas",      zh: "亚历克斯·莫里利亚斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
       { num: "—", name: "Alan Zorrilla",      zh: "阿兰·索里利亚", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Thiago Acevedo",     zh: "蒂亚戈·阿塞维多", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Àlex Caballero",     zh: "亚历克斯·卡瓦列罗", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Allou Balde",        zh: "阿卢·巴尔德", pos: "MF", nation: "—", dob: "—", note: "OCR 待确认（Allou/Lluc）", img: "" },
       { num: "—", name: "Haroun Azzougouagh", zh: "哈龙·阿祖古阿", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Lancine Diallo",     zh: "兰西内·迪亚洛", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "David López",        zh: "大卫·洛佩斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Àlex Garrido",       zh: "亚历克斯·加里多", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Hugo Castro",        zh: "乌戈·卡斯特罗", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" }
+    ],
+
+    "u9b": [
+      { num: "—", name: "Harrison Bayo",    zh: "哈里森·巴约", pos: "GK", nation: "—", dob: "—", note: "OCR 待确认（Harrison Bay?）", img: "" },
+      { num: "—", name: "John Cuevas",      zh: "约翰·奎瓦斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Jairo Peña",       zh: "哈伊罗·佩尼亚", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Gerard Cervilla",  zh: "杰拉德·塞尔维利亚", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mahir Abrimou",    zh: "马希尔·阿布里穆", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "David López",      zh: "大卫·洛佩斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Teo González",     zh: "特奥·冈萨雷斯", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Hugo Padilla",     zh: "乌戈·帕迪利亚", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Josué Cortés",     zh: "霍苏埃·科尔特斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Adam Haddan",      zh: "亚当·哈丹", pos: "FW", nation: "—", dob: "—", note: "OCR 待确认（Haddan/Haddani）", img: "" },
+      { num: "—", name: "Akram Boutajar",   zh: "阿克拉姆·布塔哈尔", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
     ]
   },
 
