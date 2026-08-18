@@ -21,6 +21,7 @@
         <a href="formation.html">排兵布阵</a>
         <a href="matches.html">比赛信息</a>
         <a href="weekly.html">周报</a>
+        <a href="search.html">🔍 搜索</a>
       </nav>
     </div>
   </header>
@@ -211,6 +212,7 @@
         <a href="formation.html">排兵布阵</a>
         <a href="matches.html">比赛信息</a>
         <a href="weekly.html">周报</a>
+        <a href="search.html">🔍 搜索</a>
         <a href="https://www.fcbarcelona.com" target="_blank" rel="noopener">官方网站</a>
       </div>
     </div>
@@ -280,8 +282,28 @@
       });
     }
 
-    // 从每日缓存取当前球员（排除占位图），并检测照片真能加载才展示
+    // 每天随机：以当天日期为种子洗牌 → 当日固定、隔天换一批
+    function daySeed() {
+      const d = new Date();
+      return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+    }
+    function seededShuffle(arr, seed) {
+      const a = arr.slice();
+      let s = seed >>> 0;
+      const rand = function () {
+        s = (s * 1664525 + 1013904223) >>> 0; // LCG 伪随机
+        return s / 4294967296;
+      };
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(rand() * (i + 1));
+        const t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+      return a;
+    }
+
+    // 从每日缓存取当前球员（排除占位图），按日期种子随机挑选一批并检测照片能加载
     async function buildMarquee() {
+      const seed = daySeed();
       const pools = [];
       // U19 / U18 / U16（Sofascore 缓存）
       [window.DQD_U19_CACHE, window.DQD_U18_CACHE, window.DQD_U16_CACHE].forEach(function (c) {
@@ -311,13 +333,11 @@
       }
       pools.push(bArr);
 
-      // 逐队：多取候选 → 检测照片真能加载（排除 404/占位）→ 每队留 6 个
+      // 逐队：按日期种子随机洗牌「有头像」球员 → 检测照片能加载（排除 404/占位）→ 每队留 6 个
       const items = [];
       for (let pi = 0; pi < pools.length; pi++) {
-        const pool = pools[pi];
-        const valued = pool.filter(function (i) { return i.value; });
-        const others = pool.filter(function (i) { return !i.value; });
-        const candidates = valued.concat(others).slice(0, 18);
+        const pool = seededShuffle(pools[pi], seed + pi);
+        const candidates = pool.slice(0, 18);
         const results = await Promise.all(candidates.map(function (c) {
           return loadable(c.img).then(function (ok) { return ok ? c : null; });
         }));
@@ -327,7 +347,7 @@
 
       const mq = document.getElementById('hmMarquee');
       if (mq) {
-        const all = items.length ? items : marqueeFallback;
+        const all = items.length ? items : seededShuffle(marqueeFallback, seed);
         mq.innerHTML = all.concat(all).map(function (p) {
           return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" referrerpolicy="no-referrer"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
         }).join('');
