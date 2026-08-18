@@ -56,7 +56,8 @@
 
   renderItems(news.slice(0, INITIAL));
   if (window.NewsRead) {
-    NewsRead.visit(el, news.map(function (n) { return n.id || n.url; }));
+    NewsRead.visit(el, news.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
+    NewsRead.attachReadAll(el.closest(".panel"), el, news.map(function (n) { return n.id || n.url; }));
   }
   if (news.length > INITIAL) {
     const more = document.createElement("button");

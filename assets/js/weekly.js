@@ -93,6 +93,7 @@
   });
   el.innerHTML = html;
   if (window.NewsRead) {
-    NewsRead.visit(el, items.map(function (n) { return n.id || n.url; }));
+    NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
+    NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));
   }
 })();

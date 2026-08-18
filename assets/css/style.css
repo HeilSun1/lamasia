@@ -469,6 +469,16 @@ a:hover { color: #0d54b8; }
 }
 .news-more:hover { background: var(--surface-3); }
 
+/* 球队资讯：一键已读按钮（面板标题行右侧，仅当有新红点时显示） */
+.news-readall {
+  border: 1px solid var(--border-soft); border-radius: var(--radius-sm);
+  background: var(--surface-2); color: var(--blue-600);
+  font-size: 12px; font-weight: 700; padding: 4px 10px;
+  cursor: pointer; transition: background var(--transition);
+}
+.news-readall:hover { background: var(--surface-3); }
+.news-readall:active { transform: scale(.96); }
+
 /* 周报页：系列合集入口 */
 .weekly-album {
   display: flex; align-items: center; gap: 12px;
