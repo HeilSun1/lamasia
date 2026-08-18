@@ -273,14 +273,13 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Alan Zorrilla",      zh: "阿兰·索里利亚", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
       { num: "—", name: "Thiago Acevedo",     zh: "蒂亚戈·阿塞维多", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Àlex Caballero",     zh: "亚历克斯·卡瓦列罗", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Allou Balde",        zh: "阿卢·巴尔德", pos: "MF", nation: "—", dob: "—", note: "OCR 待确认（Allou/Lluc）", img: "" },
       { num: "—", name: "Haroun Azzougouagh", zh: "哈龙·阿祖古阿", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Àlex Garrido",       zh: "亚历克斯·加里多", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Hugo Castro",        zh: "乌戈·卡斯特罗", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" }
     ],
 
     "u9b": [
-      { num: "—", name: "Harrison Bayo",    zh: "哈里森·巴约", pos: "GK", nation: "—", dob: "—", note: "OCR 待确认（Harrison Bay?）", img: "" },
+      { num: "—", name: "Harrison Baya",    zh: "哈里森·巴亚", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "John Cuevas",      zh: "约翰·奎瓦斯", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Jairo Peña",       zh: "哈伊罗·佩尼亚", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Gerard Cervilla",  zh: "杰拉德·塞尔维利亚", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
@@ -289,7 +288,7 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Teo González",     zh: "特奥·冈萨雷斯", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Hugo Padilla",     zh: "乌戈·帕迪利亚", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Josué Cortés",     zh: "霍苏埃·科尔特斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Adam Haddan",      zh: "亚当·哈丹", pos: "FW", nation: "—", dob: "—", note: "OCR 待确认（Haddan/Haddani）", img: "" },
+      { num: "—", name: "Adam Haddani",     zh: "亚当·哈达尼", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Akram Boutajar",   zh: "阿克拉姆·布塔哈尔", pos: "FW", nation: "—", dob: "—", note: "—", img: "" }
     ]
   },
