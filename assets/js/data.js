@@ -273,6 +273,7 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Alan Zorrilla",      zh: "阿兰·索里利亚", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
       { num: "—", name: "Thiago Acevedo",     zh: "蒂亚戈·阿塞维多", pos: "DF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Àlex Caballero",     zh: "亚历克斯·卡瓦列罗", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Fallou Balde",       zh: "法卢·巴尔德", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Haroun Azzougouagh", zh: "哈龙·阿祖古阿", pos: "MF", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Àlex Garrido",       zh: "亚历克斯·加里多", pos: "FW", nation: "—", dob: "—", note: "—", img: "" },
       { num: "—", name: "Hugo Castro",        zh: "乌戈·卡斯特罗", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" }
