@@ -565,10 +565,10 @@ a:hover { color: #0d54b8; }
   position: relative; overflow: hidden;
   background-color: #0c1a38;
   background-image:
-    radial-gradient(62% 130% at 82% -12%, rgba(165, 0, 68, 0.32), transparent 62%),
-    radial-gradient(48% 110% at 6% 115%, rgba(13, 43, 107, 0.85), transparent 60%),
-    linear-gradient(90deg, rgba(12, 26, 56, 0.92) 22%, rgba(12, 26, 56, 0.5) 62%, rgba(12, 26, 56, 0.22) 100%),
-    url("../img/players/hero-bg.jpg") center 30% / cover no-repeat;
+    radial-gradient(62% 130% at 82% -12%, rgba(165, 0, 68, 0.34), transparent 62%),
+    radial-gradient(48% 110% at 6% 115%, rgba(13, 43, 107, 0.9), transparent 60%),
+    linear-gradient(90deg, rgba(12, 26, 56, 0.97) 18%, rgba(12, 26, 56, 0.66) 62%, rgba(12, 26, 56, 0.4) 100%),
+    url("../img/players/ebrima-tunkara.jpg") center 26% / cover no-repeat;
   color: #fff; padding: 104px 0 132px;
 }
 .hm-hero::before {
