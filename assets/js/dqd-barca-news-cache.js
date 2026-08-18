@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-17 03:37:29 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-18 09:00:21 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-17 03:37:29",
+    "updated":  "2026-08-18 09:00:21",
     "source":  "dongqiudi",
-    "count":  31,
+    "count":  33,
     "news":  [
+        {
+            "id":  "6189888", "title":  "官方：巴萨与23岁B队前锋阿兰-戈多伊解约",
+            "url":  "https://www.dongqiudi.com/articles/6189888.html", "time":  "2026-08-18 01:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/BC/280x210/crop/-/rBXRDGqDNayADN40AABNH6RG4GA984.jpg" },
+        {
+            "id":  "6188245", "title":  "官方：布斯克茨担任巴萨竞技助理教练，将完成教练员课程",
+            "url":  "https://www.dongqiudi.com/articles/6188245.html", "time":  "2026-08-17 18:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/00/280x210/crop/-/rBXRDGqC5DWAUztjAAGsdQl2zCM802.jpg" },
         {
             "id":  "6184910", "title":  "每体：哈姆扎季前赛已打进3球，已成为巴萨9号位现实选择",
             "url":  "https://www.dongqiudi.com/articles/6184910.html", "time":  "2026-08-17 02:22",

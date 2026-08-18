@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-17 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-18 09:09 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-17 09:01:40",
+    "updated":  "2026-08-18 09:09:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -111,6 +111,18 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Samuel Borniquel",
+                        "id":  "2690304",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
+                        "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Pau Sarrià",
                         "id":  "2533245",
                         "pos":  "M",
@@ -130,18 +142,6 @@ window.DQD_U18_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690276/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Samuel Borniquel",
-                        "id":  "2690304",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
                         "age":  "16岁",
                         "value":  "",
                         "injury":  null
@@ -171,18 +171,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Guiu Xuclà",
-                        "id":  "2447156",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
-                        "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Lucas Bernal",
                         "id":  "2447157",
                         "pos":  "D",
@@ -202,6 +190,18 @@ window.DQD_U18_CACHE = {
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
+                        "age":  "16岁",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Guiu Xuclà",
+                        "id":  "2447156",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
                         "age":  "16岁",
                         "value":  "",
                         "injury":  null
