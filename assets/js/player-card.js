@@ -62,6 +62,11 @@
     if (/^https?:\/\//.test(src)) return src;
     return BASE + src.replace(/^\.\.\//, "");
   }
+  // 手动补照片（manual-photos-hook.js 的 ManualPhoto，键形如 barca:50924320 / u19:123）
+  function manualPhoto(key) {
+    if (!window.ManualPhoto || !key) return "";
+    return photoUrl(window.ManualPhoto(key));
+  }
 
   var INDEX = {};   // key -> 球员卡片记录
   var built = false;
@@ -87,7 +92,7 @@
         var isStaff = !/^(attacker|defender|midfielder|goalkeeper)$/.test(type);   // 教练/工作人员
         add("b:" + id, {
           tier: "b",
-          photo: photoUrl(p.person_logo),
+          photo: manualPhoto("barca:" + id) || photoUrl(p.person_logo),
           nameZh: p.person_name || "",
           nameEn: p.person_en_name || "",
           nation: bio.nation || p.nationality_name || "",
@@ -123,7 +128,7 @@
       var local = zhMap ? zhMap[norm(p.name)] : null;
       add("sf:" + s.k + ":" + p.id, {
         tier: s.k,
-        photo: photoUrl(p.photo),
+        photo: manualPhoto(s.k + ":" + p.id) || photoUrl(p.photo),
         nameZh: (local && local.zh) || "",
         nameEn: p.name || "",
         nation: p.nation || "",
@@ -213,7 +218,7 @@
   function renderCard(r) {
     var ini = initials(r.nameEn || r.nameZh || "?");
     document.getElementById("pc-avatar").innerHTML = r.photo
-      ? '<img src="' + esc(r.photo) + '" alt="' + esc(r.nameZh || r.nameEn) + '" loading="lazy" referrerpolicy="no-referrer" ' +
+      ? '<img src="' + esc(r.photo) + '" alt="' + esc(r.nameZh || r.nameEn) + '" data-zh="' + esc(r.nameZh || r.nameEn) + '" title="点击查看大图" loading="lazy" referrerpolicy="no-referrer" ' +
         'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
         '<span class="pc-init" style="display:none">' + esc(ini) + "</span>"
       : '<span class="pc-init">' + esc(ini) + "</span>";
@@ -269,6 +274,42 @@
     if (!key) return;
     e.preventDefault();
     open(key);
+  });
+
+  /* ── 卡片照片点击 → 放大（复用站点 .lightbox 样式） ── */
+  var lbEl = null;
+  function cardLightbox(img) {
+    if (!img || !img.src) return;
+    if (!lbEl) {
+      lbEl = document.createElement("div");
+      lbEl.className = "lightbox";
+      lbEl.innerHTML =
+        '<div class="lightbox-inner">' +
+        '<button class="lightbox-close" title="关闭">✕</button>' +
+        '<img alt="">' +
+        '<div class="lightbox-caption"></div>' +
+        "</div>";
+      document.body.appendChild(lbEl);
+      lbEl.addEventListener("click", function (e) {
+        if (e.target === lbEl || (e.target.classList && e.target.classList.contains("lightbox-close"))) {
+          lbEl.classList.remove("open");
+          document.body.style.overflow = "";
+        }
+      });
+    }
+    var zh = img.getAttribute("data-zh") || "";
+    var credit = /img\.sofascore\.com/.test(img.src) ? "Sofascore" : "";
+    lbEl.querySelector("img").src = img.src;
+    lbEl.querySelector(".lightbox-caption").innerHTML = esc(zh) + (credit ? " · " + esc(credit) : "");
+    lbEl.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  document.addEventListener("click", function (e) {
+    var img = e.target && e.target.closest ? e.target.closest(".pc-avatar img") : null;
+    if (!img) return;
+    e.preventDefault();
+    e.stopPropagation();
+    cardLightbox(img);
   });
 
   window.PC_NORM = norm;
