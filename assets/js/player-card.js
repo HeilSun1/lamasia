@@ -67,6 +67,20 @@
     if (!window.ManualPhoto || !key) return "";
     return photoUrl(window.ManualPhoto(key));
   }
+  // 中文名匹配：先精确，再近似（包含/被包含；短名≥8位才近似，防误配）
+  function findZh(name, zhMap) {
+    var k = norm(name);
+    if (!k || !zhMap) return null;
+    if (zhMap[k]) return zhMap[k];
+    var hit = null;
+    Object.keys(zhMap).forEach(function (ek) {
+      if (ek === k) return;
+      var a = ek, b = k;
+      if (a.length < 8 || b.length < 8) return;   // 太短易误配
+      if (a.indexOf(b) > -1 || b.indexOf(a) > -1) { if (!hit) hit = zhMap[ek]; }
+    });
+    return hit;
+  }
 
   var INDEX = {};   // key -> 球员卡片记录
   var built = false;
@@ -118,14 +132,20 @@
     { k: "u16", c: window.DQD_U16_CACHE, dt: "cadete" }
   ].forEach(function (s) {
     if (!s.c || !s.c.players) return;
+    // 中文名用全部 data.js 梯队匹配（2026-27 阵容调整，同一球员可能在 data.js 里登记在别的梯队）
     var zhMap = null;
-    if (window.LAMASIA_DATA && LAMASIA_DATA.players && LAMASIA_DATA.players[s.dt]) {
+    if (window.LAMASIA_DATA && LAMASIA_DATA.players) {
       zhMap = {};
-      LAMASIA_DATA.players[s.dt].forEach(function (lp) { zhMap[norm(lp.name)] = lp; });
+      Object.keys(LAMASIA_DATA.players).forEach(function (t) {
+        LAMASIA_DATA.players[t].forEach(function (lp) {
+          var lk = norm(lp.name);
+          if (lk && !zhMap[lk]) zhMap[lk] = lp;
+        });
+      });
     }
     s.c.players.forEach(function (p) {
       if (!p || !p.id) return;
-      var local = zhMap ? zhMap[norm(p.name)] : null;
+      var local = findZh(p.name, zhMap);
       add("sf:" + s.k + ":" + p.id, {
         tier: s.k,
         photo: manualPhoto(s.k + ":" + p.id) || photoUrl(p.photo),
@@ -163,7 +183,7 @@
     }
     sfb.players.forEach(function (p) {
       if (!p || !p.id) return;
-      var local = bzhMap ? bzhMap[norm(p.name)] : null;
+      var local = findZh(p.name, bzhMap);
       add("sf:b:" + p.id, {
         tier: "b",
         photo: photoUrl(p.photo),
@@ -259,8 +279,9 @@
         'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
         '<span class="pc-init" style="display:none">' + esc(ini) + "</span>"
       : '<span class="pc-init">' + esc(ini) + "</span>";
+    // 无中文名时只显示一次英文（大字），避免重复
     document.getElementById("pc-zh").textContent = r.nameZh || r.nameEn;
-    document.getElementById("pc-en").textContent = r.nameEn || "";
+    document.getElementById("pc-en").textContent = r.nameZh ? (r.nameEn || "") : "";
     document.getElementById("pc-team").textContent = r.team;
 
     // 信息网格：有才显示
@@ -350,5 +371,5 @@
   });
 
   window.PC_NORM = norm;
-  window.PlayerCard = { open: open, close: close, findByKey: function (k) { buildIndex(); return INDEX[k] || null; } };
+  window.PlayerCard = { open: open, close: close, findByKey: function (k) { buildIndex(); return INDEX[k] || null; }, INDEX: INDEX };
 })();
