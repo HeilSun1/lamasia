@@ -39,13 +39,14 @@
       .replace(/[^a-z0-9]+/g, "");
   }
 
-  function add(en, zh, pos, team, url) {
+  function add(en, zh, pos, team, url, key) {
     var k = norm(en);
     if (k && seen[k]) {
       if (zh && !seen[k].zh) seen[k].zh = zh;   // 补上中文名（Sofascore 球员无中文）
+      if (key && !seen[k].key) seen[k].key = key;   // 补上球员卡片键
       return;
     }
-    var rec = { en: en || "", zh: zh || "", pos: pos || "", team: team, url: url };
+    var rec = { en: en || "", zh: zh || "", pos: pos || "", team: team, url: url, key: key || "" };
     if (k) seen[k] = rec;
     pool.push(rec);
   }
@@ -56,7 +57,7 @@
     Object.keys(TEAM).forEach(function (k) {
       var info = TEAM[k];
       (local[k] || []).forEach(function (p) {
-        add(p.name, p.zh, p.pos, info.t, info.u);
+        add(p.name, p.zh, p.pos, info.t, info.u, "local:" + k + ":" + norm(p.name));
       });
     });
   }
@@ -67,20 +68,20 @@
     b.roster.data.list.forEach(function (g) {
       (g.data || []).forEach(function (p) {
         if (!p.person_name && !p.person_en_name) return;
-        add(p.person_en_name || "", p.person_name || "", "", "预备队 · Barça Atlètic", "teams/barca-atletic.html#sec-roster");
+        add(p.person_en_name || "", p.person_name || "", "", "预备队 · Barça Atlètic", "teams/barca-atletic.html#sec-roster", "b:" + (p.person_id || ""));
       });
     });
   }
 
   // ── 3) Sofascore 缓存（U19/U18/U16，补 data.js 没有的球员） ──
   [
-    { c: window.DQD_U19_CACHE, t: "U19 · Juvenil A", u: "teams/juvenil-a.html#sec-roster" },
-    { c: window.DQD_U18_CACHE, t: "U18 · Juvenil B", u: "teams/juvenil-b.html" },
-    { c: window.DQD_U16_CACHE, t: "U16 · Cadete A",  u: "teams/cadete.html" }
+    { c: window.DQD_U19_CACHE, t: "U19 · Juvenil A", u: "teams/juvenil-a.html#sec-roster", k: "u19" },
+    { c: window.DQD_U18_CACHE, t: "U18 · Juvenil B", u: "teams/juvenil-b.html", k: "u18" },
+    { c: window.DQD_U16_CACHE, t: "U16 · Cadete A",  u: "teams/cadete.html", k: "u16" }
   ].forEach(function (s) {
     if (!s.c || !s.c.players) return;
     s.c.players.forEach(function (p) {
-      if (p.name) add(p.name, "", p.pos, s.t, s.u);
+      if (p.name) add(p.name, "", p.pos, s.t, s.u, "sf:" + s.k + ":" + p.id);
     });
   });
 
@@ -134,7 +135,7 @@
     }
 
     results.innerHTML = hits.map(function (r) {
-      return '<a class="search-hit" href="' + esc(r.url) + '">' +
+      return '<a class="search-hit" href="' + esc(r.url) + '"' + (r.key ? ' data-player-key="' + esc(r.key) + '"' : "") + '>' +
         '<span class="sh-name">' +
           '<span class="zh">' + esc(r.zh || r.en) + '</span>' +
           '<span class="en">' + esc(r.en) + '</span>' +

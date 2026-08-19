@@ -15,6 +15,10 @@
   function initials(name) {
     return name.split(/[\s.]+/).filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join("");
   }
+  // 球员卡片索引键（与 player-card.js 的 norm 一致）
+  function normKey(s) {
+    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+  }
 
   function esc(s) {
     return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -46,7 +50,7 @@
           <div class="pl-row">
             <span class="pl-num">${esc(p.num || "—")}</span>
             <span class="pl-avatar">${avatar}</span>
-            <span class="pl-name">
+            <span class="pl-name" data-player-key="local:${teamId}:${normKey(p.name)}" title="点击查看球员卡片">
               <span class="zh">${esc(p.zh || p.name)}</span>
               <span class="en">${esc(p.name)}</span>
             </span>

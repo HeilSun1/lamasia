@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-19 09:25 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-19 15:15 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-08-19 09:25:27",
+    "updated":  "2026-08-19 15:15:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -23,6 +23,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
                         "age":  "16岁",
+                        "birthday":  "2010-03-29",
+                        "foot":  "右脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -35,18 +38,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410987/image",
                         "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Héctor Néstor Asumu",
-                        "id":  "2447155",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
-                        "age":  "15岁",
+                        "birthday":  "2010-01-09",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -59,6 +53,24 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410977/image",
                         "age":  "16岁",
+                        "birthday":  "2010-03-10",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Héctor Néstor Asumu",
+                        "id":  "2447155",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -71,6 +83,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2411453/image",
                         "age":  "16岁",
+                        "birthday":  "2010-02-07",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -83,6 +98,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405402/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-11",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -95,6 +113,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Mexico",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407338/image",
                         "age":  "15岁",
+                        "birthday":  "2010-11-23",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -107,6 +128,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Poland",
                         "photo":  "https://img.sofascore.com/api/v1/player/2411452/image",
                         "age":  "15岁",
+                        "birthday":  "2010-11-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -119,6 +143,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Lebanon",
                         "photo":  "https://img.sofascore.com/api/v1/player/2411487/image",
                         "age":  "16岁",
+                        "birthday":  "2010-02-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -131,6 +158,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407333/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -143,6 +173,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410997/image",
                         "age":  "16岁",
+                        "birthday":  "2010-07-15",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -155,6 +188,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Honduras",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-31",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -167,6 +203,9 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410974/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-02",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     }

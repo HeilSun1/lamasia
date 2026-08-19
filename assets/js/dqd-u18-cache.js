@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-19 09:24 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-19 15:14 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-19 09:24:48",
+    "updated":  "2026-08-19 15:14:42",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -23,6 +23,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
                         "age":  "16岁",
+                        "birthday":  "2010-02-27",
+                        "foot":  "左脚",
+                        "height":  "165",
                         "value":  "",
                         "injury":  null
                     },
@@ -35,6 +38,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
                         "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "左脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -47,6 +53,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Portugal",
                         "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
                         "age":  "15岁",
+                        "birthday":  "2010-09-19",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -59,6 +68,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Morocco",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
                         "age":  "17岁",
+                        "birthday":  "2009-07-12",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -71,6 +83,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
                         "age":  "15岁",
+                        "birthday":  "2011-04-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -83,6 +98,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405402/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-11",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -95,6 +113,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Ukraine",
                         "photo":  "https://img.sofascore.com/api/v1/player/2080974/image",
                         "age":  "16岁",
+                        "birthday":  "2010-04-17",
+                        "foot":  "左脚",
+                        "height":  "164",
                         "value":  "",
                         "injury":  null
                     },
@@ -107,6 +128,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410976/image",
                         "age":  "16岁",
+                        "birthday":  "2010-02-04",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -119,6 +143,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-20",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -131,6 +158,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2533245/image",
                         "age":  "15岁",
+                        "birthday":  "2011-01-22",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -143,6 +173,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690276/image",
                         "age":  "16岁",
+                        "birthday":  "2010-06-22",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -155,6 +188,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690278/image",
                         "age":  "16岁",
+                        "birthday":  "2010-04-30",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -167,6 +203,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2342525/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-12",
+                        "foot":  "左脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -179,6 +218,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-17",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -191,6 +233,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
                         "age":  "15岁",
+                        "birthday":  "2011-01-30",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -203,18 +248,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
                         "age":  "16岁",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Luca Pérez",
-                        "id":  "2412372",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
-                        "age":  "16岁",
+                        "birthday":  "2010-04-06",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -227,6 +263,24 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2342517/image",
                         "age":  "16岁",
+                        "birthday":  "2010-03-04",
+                        "foot":  "右脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Luca Pérez",
+                        "id":  "2412372",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-10",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -239,6 +293,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690244/image",
                         "age":  "15岁",
+                        "birthday":  "2011-08-08",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -251,6 +308,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690246/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-16",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -263,6 +323,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229083/image",
                         "age":  "16岁",
+                        "birthday":  "2010-03-25",
+                        "foot":  "右脚",
+                        "height":  "170",
                         "value":  "",
                         "injury":  null
                     },
@@ -275,6 +338,9 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690247/image",
                         "age":  "16岁",
+                        "birthday":  "2010-01-13",
+                        "foot":  "左脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     }

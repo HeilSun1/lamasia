@@ -103,7 +103,7 @@
           '<div class="pl-row">' +
             '<span class="pl-num">' + esc(num) + '</span>' +
             avatar +
-            '<span class="pl-name"><span class="zh">' + esc(name) + injBadge + '</span><span class="en">' + esc(en) + '</span></span>' +
+            '<span class="pl-name" data-player-key="b:' + esc(p.person_id) + '" title="点击查看球员卡片"><span class="zh">' + esc(name) + injBadge + '</span><span class="en">' + esc(en) + '</span></span>' +
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + '</span>' +
             '<span class="pl-nation">' + esc(p.nationality_name || "") + '</span>' +
             '<span class="pl-dob">' + esc(p.age || "") + '</span>' +

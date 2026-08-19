@@ -79,6 +79,7 @@ $downloaded    = 0
 $playerCount   = 0
 $injuriesMap   = @{}      # person_id -> 伤病摘要（合并进名单行用）
 $injuriesList  = @()      # 当前伤缺球员列表（伤病名单面板用）
+$bioMap        = @{}      # person_id -> 球员卡片生物信息（惯用脚/生日/国籍/身高/体重/合同）
 $today         = Get-Date -Format "yyyy.MM.dd"
 
 if ($roster) {
@@ -106,10 +107,20 @@ if ($roster) {
           $p.person_logo = "assets/img/players/dqd/$personId$ext"
         }
 
-        # ── 2b. 伤病：拉取球员详情，取最近一条伤病记录
+        # ── 2b. 球员详情：取伤病 + 球员卡片生物信息（惯用脚/生日/国籍/身高/体重/合同）
+        # 懂球帝 detail 接口一次返回以上全部，已每天请求，顺带提取不新增请求。
         if ($personId) {
           $detail = Get-Json "$BaseUrl/api/data/v1/detail/person/${personId}?app=dqd&lang=zh-cn" "伤病($($p.person_name))"
-          if ($detail) {
+          if ($detail -and $detail.base_info) {
+            $bi = $detail.base_info
+            $bioMap[$personId] = @{
+              foot     = [string]$bi.foot
+              birth    = [string]$bi.date_of_birth
+              nation   = [string]$bi.nationality
+              height   = [string]$bi.height
+              weight   = [string]$bi.weight
+              contract = [string]$bi.contract
+            }
             $hist = @()
             if ($detail.injury_records -and $detail.injury_records.history) {
               $hist = @($detail.injury_records.history)
@@ -162,6 +173,7 @@ $cache = @{
   schedule      = $schedule
   injuries_map  = $injuriesMap
   injuries_list = $injuriesList
+  bio           = $bioMap
 }
 # 防空覆盖：懂球帝抓取失败时名单为空，用空数据覆盖旧缓存会导致页面空白
 if (@($roster).Count -eq 0) {

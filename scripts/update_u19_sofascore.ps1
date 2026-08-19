@@ -151,6 +151,24 @@ function Get-ValueZh($v) {
   return ("{0}万" -f [math]::Round($n / 10000, 0))
 }
 
+# 惯用脚英文 → 中文（Right/Left/Both）
+function Get-FootZh([string]$en) {
+  switch ($en) {
+    "Right" { return "右脚" }
+    "Left"  { return "左脚" }
+    "Both"  { return "双脚" }
+    default { return $en }
+  }
+}
+
+# 出生日期 → "YYYY-MM-DD"（dateOfBirth 可能是 [datetime] 或 ISO 字符串）
+function Get-Birth($dob) {
+  if ($null -eq $dob) { return "" }
+  if ($dob -is [datetime]) { return $dob.ToString("yyyy-MM-dd") }
+  if ([string]$dob -match '^(\d{4})-(\d{2})-(\d{2})') { return $Matches[0] }
+  return ""
+}
+
 Log "开始 U19 更新（Sofascore 团队 $TeamId）……"
 
 # ── 1. 抓取原始数据 ─────────────────────────────────────────────
@@ -191,9 +209,12 @@ if ($players -and $players.players) {
       shirt   = [string]$p.shirtNumber
       team    = [string]$pr.team.name
       nation  = if ($pr.country) { [string]$pr.country.name } else { "" }
-      photo   = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
-      age     = Get-Age $pr.dateOfBirth
-      value   = Get-ValueZh $pr.proposedMarketValue
+      photo    = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
+      age      = Get-Age $pr.dateOfBirth
+      birthday = Get-Birth $pr.dateOfBirth
+      foot     = Get-FootZh ([string]$pr.preferredFoot)
+      height   = [string]$pr.height
+      value    = Get-ValueZh $pr.proposedMarketValue
       injury  = $inj
     }
   }

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-19 09:24 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-19 15:14 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-19 09:24:10",
+    "updated":  "2026-08-19 15:14:07",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -23,6 +23,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "England",
                         "photo":  "https://img.sofascore.com/api/v1/player/1861694/image",
                         "age":  "16岁",
+                        "birthday":  "2009-12-28",
+                        "foot":  "右脚",
+                        "height":  "170",
                         "value":  "",
                         "injury":  null
                     },
@@ -35,6 +38,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2048405/image",
                         "age":  "18岁",
+                        "birthday":  "2008-05-13",
+                        "foot":  "右脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -47,6 +53,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
                         "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "右脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -59,6 +68,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
                         "age":  "18岁",
+                        "birthday":  "2008-07-29",
+                        "foot":  "左脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -71,6 +83,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405472/image",
                         "age":  "17岁",
+                        "birthday":  "2009-04-27",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -83,6 +98,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
                         "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "左脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -95,6 +113,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
                         "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
                         "value":  "",
                         "injury":  null
                     },
@@ -107,6 +128,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128103/image",
                         "age":  "17岁",
+                        "birthday":  "2009-01-02",
+                        "foot":  "双脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -119,6 +143,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076887/image",
                         "age":  "18岁",
+                        "birthday":  "2008-02-04",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -131,6 +158,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2272317/image",
                         "age":  "16岁",
+                        "birthday":  "2010-03-19",
+                        "foot":  "左脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -143,6 +173,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076894/image",
                         "age":  "17岁",
+                        "birthday":  "2009-02-23",
+                        "foot":  "左脚",
+                        "height":  "180",
                         "value":  "",
                         "injury":  null
                     },
@@ -155,6 +188,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1590920/image",
                         "age":  "19岁",
+                        "birthday":  "2007-05-03",
+                        "foot":  "右脚",
+                        "height":  "177",
                         "value":  "54万",
                         "injury":  null
                     },
@@ -167,6 +203,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Argentina",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
                         "age":  "18岁",
+                        "birthday":  "2008-02-13",
+                        "foot":  "左脚",
+                        "height":  "183",
                         "value":  "",
                         "injury":  null
                     },
@@ -179,6 +218,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
                         "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
                         "value":  "",
                         "injury":  null
                     },
@@ -191,6 +233,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
                         "age":  "18岁",
+                        "birthday":  "2008-01-05",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },
@@ -203,6 +248,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229084/image",
                         "age":  "18岁",
+                        "birthday":  "2008-03-26",
+                        "foot":  "左脚",
+                        "height":  "175",
                         "value":  "",
                         "injury":  null
                     },
@@ -215,6 +263,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2607840/image",
                         "age":  "17岁",
+                        "birthday":  "2009-04-26",
+                        "foot":  "右脚",
+                        "height":  "174",
                         "value":  "",
                         "injury":  null
                     },
@@ -227,6 +278,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
+                        "birthday":  "2009-01-29",
+                        "foot":  "左脚",
+                        "height":  "184",
                         "value":  "",
                         "injury":  null
                     },
@@ -239,6 +293,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
                         "age":  "18岁",
+                        "birthday":  "2008-02-22",
+                        "foot":  "右脚",
+                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     },
@@ -251,6 +308,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
                         "age":  "18岁",
+                        "birthday":  "2008-01-25",
+                        "foot":  "右脚",
+                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     },
@@ -263,6 +323,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2048364/image",
                         "age":  "17岁",
+                        "birthday":  "2009-01-20",
+                        "foot":  "右脚",
+                        "height":  "188",
                         "value":  "",
                         "injury":  null
                     },
@@ -275,6 +338,9 @@ window.DQD_U19_CACHE = {
                         "nation":  "",
                         "photo":  "https://img.sofascore.com/api/v1/player/2604387/image",
                         "age":  "",
+                        "birthday":  "",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     }

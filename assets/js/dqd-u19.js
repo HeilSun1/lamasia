@@ -314,7 +314,7 @@
           '<div class="pl-row">' +
             '<span class="pl-num">' + esc(p.shirt || "—") + "</span>" +
             avatar +
-            '<span class="pl-name"><span class="zh">' + esc(display) + injBadge + teamTag + "</span>" +
+            '<span class="pl-name" data-player-key="sf:u19:' + esc(p.id) + '" title="点击查看球员卡片"><span class="zh">' + esc(display) + injBadge + teamTag + "</span>" +
             '<span class="en">' + esc(p.name || "") + "</span></span>" +
             '<span class="pl-pos ' + (POS_CLASS[code] || "other") + '">' + (POS_ZH[code] || "") + "</span>" +
             '<span class="pl-nation">' + esc(nationZh(p.nation)) + "</span>" +
