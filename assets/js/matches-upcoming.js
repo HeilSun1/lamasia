@@ -15,14 +15,41 @@
 
   function collect() {
     const out = [];
-    // B队：懂球帝，status === "Fixture"（赛程在 schedule.data 数组里）
+    // B队：优先 Sofascore（与 B队赛程一致，可弹详情），懂球帝兜底
+    const S = window.DQD_BARCA_ATLETIC_SF_CACHE;
     const B = window.DQD_BARCA_ATLETIC;
-    if (B && B.schedule && Array.isArray(B.schedule.data)) {
+    if (S && Array.isArray(S.matches)) {
+      S.matches.forEach(function (m) {
+        if (String(m.status) !== "Not started") return;
+        const t = parseInt(m.start, 10) * 1000;
+        if (!t || t < now() - 3600e3) return; // 剔除已过期
+        const logoA = "https://img.sofascore.com/api/v1/team/" + (m.homeId || "") + "/image";
+        const logoB = "https://img.sofascore.com/api/v1/team/" + (m.awayId || "") + "/image";
+        const key = "sfb:" + m.id;
+        if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+        if (!window.LAMASIA_MATCHES[key]) {
+          window.LAMASIA_MATCHES[key] = {
+            source: "sofascore", cacheRef: "DQD_BARCA_ATLETIC_SF_CACHE", id: m.id,
+            comp: m.comp || "", round: m.round || "", startText: m.start || "",
+            home: m.home || "", away: m.away || "",
+            homeLogo: logoA, awayLogo: logoB,
+            hs: m.hs || "", as: m.as || "", status: m.status
+          };
+        }
+        out.push({
+          team: "B队", href: "teams/barca-atletic.html",
+          key: key,
+          start: t, comp: m.comp || "", round: m.round || "",
+          home: m.home || "", away: m.away || "",
+          homeLogo: logoA, awayLogo: logoB,
+        });
+      });
+    } else if (B && B.schedule && Array.isArray(B.schedule.data)) {
+      // 懂球帝兜底
       B.schedule.data.forEach(function (m) {
         if (String(m.status) !== "Fixture") return;
         const t = new Date(String(m.start_play || "").replace(" ", "T") + "+08:00").getTime();
         if (!t || t < now() - 3600e3) return; // 剔除已过期
-        // 注册详情（仅当赛程渲染器未注册过，保留更完整的对象）
         const key = "dqd:" + m.match_id;
         if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
         if (!window.LAMASIA_MATCHES[key]) {
