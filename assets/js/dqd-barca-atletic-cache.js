@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-18 09:18 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-19 09:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
     "injuries_map":  {
                          "50817432":  {
@@ -8,14 +8,6 @@ window.DQD_BARCA_ATLETIC = {
                                           "days":  "19",
                                           "status":  "ok",
                                           "games_missed":  "1"
-                                      },
-                         "50523049":  {
-                                          "date_until":  "2025.05.02",
-                                          "date_from":  "2025.03.15",
-                                          "injury":  "腘绳肌损伤",
-                                          "days":  "50",
-                                          "status":  "ok",
-                                          "games_missed":  "7"
                                       },
                          "50876730":  {
                                           "date_until":  "2026.04.20",
@@ -57,14 +49,6 @@ window.DQD_BARCA_ATLETIC = {
                                           "status":  "ok",
                                           "games_missed":  "1"
                                       },
-                         "50696636":  {
-                                          "date_until":  "2026.06.30",
-                                          "date_from":  "2026.01.30",
-                                          "injury":  "半月板撕裂",
-                                          "days":  "153",
-                                          "status":  "ok",
-                                          "games_missed":  "14"
-                                      },
                          "50818134":  {
                                           "date_until":  "2026.03.01",
                                           "date_from":  "2026.02.03",
@@ -72,6 +56,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "days":  "28",
                                           "status":  "ok",
                                           "games_missed":  "4"
+                                      },
+                         "50696636":  {
+                                          "date_until":  "2026.06.30",
+                                          "date_from":  "2026.01.30",
+                                          "injury":  "半月板撕裂",
+                                          "days":  "153",
+                                          "status":  "ok",
+                                          "games_missed":  "14"
                                       }
                      },
     "teamId":  "50001839",
@@ -227,7 +219,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                  ],
                                                                   "person_id":  "51199202",
                                                                   "person_logo":  "assets/img/players/dqd/51199202.png",
-                                                                  "person_name":  "Marc Guitart",
+                                                                  "person_name":  "马克-吉塔特",
                                                                   "scheme":  "dongqiudi:///coach/51199202",
                                                                   "transfer_data":  null,
                                                                   "type":  "体能教练",
@@ -406,18 +398,18 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/AA/E8/rBUBsmbYOH2AE_YqAAAazc9KhIM387.jpg"
                                                               },
                                                               {
-                                                                  "age":  "23岁",
+                                                                  "age":  "19岁",
                                                                   "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
-                                                                  "nationality_name":  "西班牙",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/74/ChOxM1xC2EOAbUHIAAAOg6JpgzM729.png",
+                                                                  "nationality_name":  "克罗地亚/阿尔及利亚",
                                                                   "other_logo":  [
 
                                                                                  ],
-                                                                  "person_en_name":  "Alan Godoy",
-                                                                  "person_id":  "50523049",
-                                                                  "person_logo":  "assets/img/players/dqd/50523049.jpg",
-                                                                  "person_name":  "阿兰-戈多伊",
-                                                                  "scheme":  "dongqiudi:///player/50523049",
+                                                                  "person_en_name":  "Lovro Chelfi",
+                                                                  "person_id":  "51040856",
+                                                                  "person_logo":  "assets/img/players/dqd/51040856.jpg",
+                                                                  "person_name":  "洛夫罗-谢尔菲",
+                                                                  "scheme":  "dongqiudi:///player/51040856",
                                                                   "statistic":  [
                                                                                     {
                                                                                         "出场":  "-"
@@ -429,13 +421,13 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "-"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "30万"
+                                                                                        "身价(欧)":  "-"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
                                                                   "type":  "attacker",
                                                                   "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs6/M00/4B/DC/rBUCgGFn8AaAJyy-AAAZL8kR-Qk472.jpg"
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuwLuAPIYJAAAkxUH9G-g055.jpg"
                                                               },
                                                               {
                                                                   "age":  "18岁",
@@ -448,7 +440,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_en_name":  "Joni Hernández",
                                                                   "person_id":  "51246092",
                                                                   "person_logo":  "assets/img/players/dqd/51246092.png",
-                                                                  "person_name":  "Joni Hernández",
+                                                                  "person_name":  "霍尼-埃尔南德斯",
                                                                   "scheme":  "dongqiudi:///player/51246092",
                                                                   "statistic":  [
                                                                                     {
@@ -596,38 +588,6 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "type":  "attacker",
                                                                   "weekly_salary":  "",
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs3/M00/B5/98/ChOxM1xC37CADGDCAAANHjH55fo314.png"
-                                                              },
-                                                              {
-                                                                  "age":  "19岁",
-                                                                  "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/74/ChOxM1xC2EOAbUHIAAAOg6JpgzM729.png",
-                                                                  "nationality_name":  "克罗地亚/阿尔及利亚",
-                                                                  "other_logo":  [
-
-                                                                                 ],
-                                                                  "person_en_name":  "Lovro Chelfi",
-                                                                  "person_id":  "51040856",
-                                                                  "person_logo":  "assets/img/players/dqd/51040856.jpg",
-                                                                  "person_name":  "洛夫罗-谢尔菲",
-                                                                  "scheme":  "dongqiudi:///player/51040856",
-                                                                  "statistic":  [
-                                                                                    {
-                                                                                        "出场":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "进球":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "助攻":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "身价(欧)":  "-"
-                                                                                    }
-                                                                                ],
-                                                                  "transfer_data":  null,
-                                                                  "type":  "attacker",
-                                                                  "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuwLuAPIYJAAAkxUH9G-g055.jpg"
                                                               }
                                                           ],
                                                  "show_type":  1,
@@ -781,7 +741,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_en_name":  "Juan Ybarra",
                                                                   "person_id":  "50917373",
                                                                   "person_logo":  "assets/img/players/dqd/50917373.png",
-                                                                  "person_name":  "Juan Ybarra",
+                                                                  "person_name":  "胡安-伊瓦拉",
                                                                   "scheme":  "dongqiudi:///player/50917373",
                                                                   "statistic":  [
                                                                                     {
@@ -1054,7 +1014,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_en_name":  "Javi Castro",
                                                                   "person_id":  "51246752",
                                                                   "person_logo":  "assets/img/players/dqd/51246752.png",
-                                                                  "person_name":  "Javi Castro",
+                                                                  "person_name":  "哈维-卡斯特罗",
                                                                   "scheme":  "dongqiudi:///player/51246752",
                                                                   "statistic":  [
                                                                                     {
@@ -1570,6 +1530,32 @@ window.DQD_BARCA_ATLETIC = {
                                       "match_title":  "友谊赛"
                                   },
                                   {
+                                      "match_id":  "54566158",
+                                      "competition_id":  "643",
+                                      "competition_name":  "友谊赛",
+                                      "gameweek":  "",
+                                      "team_A_id":  "50001839",
+                                      "team_B_id":  "50006482",
+                                      "team_A_name":  "巴塞罗那竞技",
+                                      "team_B_name":  "欧罗巴",
+                                      "team_A_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
+                                      "team_B_logo":  "https://sd.qunliao.info/fastdfs7/M00/96/A6/rBUBsmaeHBmABtgHAABu_jAs9Iw849.png",
+                                      "fs_A":  "",
+                                      "fs_B":  "",
+                                      "ps_A":  "",
+                                      "ps_B":  "",
+                                      "start_play":  "2026-08-19 08:00:00",
+                                      "suretime":  "1",
+                                      "status":  "Fixture",
+                                      "playing_time":  "",
+                                      "scheme":  "dongqiudi:///game/54566158",
+                                      "round_name":  "",
+                                      "minute":  "",
+                                      "minute_extra":  "",
+                                      "score_color":  "",
+                                      "match_title":  "友谊赛"
+                                  },
+                                  {
                                       "match_id":  "54500622",
                                       "competition_id":  "5542",
                                       "competition_name":  "西协乙",
@@ -1584,7 +1570,7 @@ window.DQD_BARCA_ATLETIC = {
                                       "fs_B":  "",
                                       "ps_A":  "",
                                       "ps_B":  "",
-                                      "start_play":  "2026-09-06 15:00:00",
+                                      "start_play":  "2026-09-06 17:00:00",
                                       "suretime":  "1",
                                       "status":  "Fixture",
                                       "playing_time":  "",
@@ -2459,5 +2445,5 @@ window.DQD_BARCA_ATLETIC = {
     "injuries_list":  [
 
                       ],
-    "updated":  "2026-08-18 09:18:32"
+    "updated":  "2026-08-19 09:00:24"
 };

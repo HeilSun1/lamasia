@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-18 09:04:54 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-08-19 09:05:18 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-08-18 09:04:54",
+    "updated":  "2026-08-19 09:05:18",
     "source":  "dongqiudi",
-    "count":  23,
+    "count":  24,
     "news":  [
+        {
+            "id":  "6192089", "title":  "费尔明：小蜘蛛适合巴萨但他还是马竞球员；我一直很喜欢7号",
+            "url":  "https://www.dongqiudi.com/articles/6192089.html", "time":  "2026-08-18 14:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/BD/280x210/crop/-/rBXRn2qD-eSAe_INAAC2F6sCh1o587.jpg" },
         {
             "id":  "6188074", "title":  "世体：很多欧洲顶级俱乐部有意通卡拉，他决心在巴萨取得成功",
             "url":  "https://www.dongqiudi.com/articles/6188074.html", "time":  "2026-08-17 18:10",

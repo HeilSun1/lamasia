@@ -1,9 +1,37 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-18 09:00:21 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-19 09:00:25 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-18 09:00:21",
+    "updated":  "2026-08-19 09:00:25",
     "source":  "dongqiudi",
-    "count":  33,
+    "count":  40,
     "news":  [
+        {
+            "id":  "6195639", "title":  "普约尔：有穆里尼奥皇马可能更强；罗德里非常适合巴萨",
+            "url":  "https://www.dongqiudi.com/articles/6195639.html", "time":  "2026-08-19 07:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/EC/280x210/crop/-/rBXRDGqE0A-AViqoAAGIFoS3W5Q126.jpg" },
+        {
+            "id":  "6194843", "title":  "罗德里：我还收到过其他报价，但巴萨是我的首选",
+            "url":  "https://www.dongqiudi.com/articles/6194843.html", "time":  "2026-08-19 01:26",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/33/280x210/crop/-/rBXRn2qElA2AQa-ZAADRiffFu0U950.jpg" },
+        {
+            "id":  "6193388", "title":  "阿姆帕杜：续约？利兹有家的感觉；会看很多罗德里的视频学习",
+            "url":  "https://www.dongqiudi.com/articles/6193388.html", "time":  "2026-08-18 19:33",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/9E/280x210/crop/-/rBXRDGqD6EmAHcAmAAPNrRCV8yk404.jpg" },
+        {
+            "id":  "6192234", "title":  "队报：18岁前锋哈姆扎季前赛发挥出色，有望填补锋线空缺",
+            "url":  "https://www.dongqiudi.com/articles/6192234.html", "time":  "2026-08-18 15:03",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/DA/280x210/crop/-/rBXRDGqEARWAadIFAAKG_bQ9SPw227.jpg" },
+        {
+            "id":  "6192251", "title":  "世体：巴萨队内会开玩笑地用哈兰德的调子喊哈姆扎的名字",
+            "url":  "https://www.dongqiudi.com/articles/6192251.html", "time":  "2026-08-18 14:59",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/82/280x210/crop/-/rBXRn2qD4pCAXyFrAABUNjnYjq0153.jpg" },
+        {
+            "id":  "6192089", "title":  "费尔明：小蜘蛛适合巴萨但他还是马竞球员；我一直很喜欢7号",
+            "url":  "https://www.dongqiudi.com/articles/6192089.html", "time":  "2026-08-18 14:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/BD/280x210/crop/-/rBXRn2qD-eSAe_INAAC2F6sCh1o587.jpg" },
+        {
+            "id":  "6191726", "title":  "每体：布斯克茨任巴萨竞技助教，商业版图达5000万美元",
+            "url":  "https://www.dongqiudi.com/articles/6191726.html", "time":  "2026-08-18 12:03",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/A3/280x210/crop/-/rBXRDGohrMuAB1A-AAFpsZf6qbA257.jpg" },
         {
             "id":  "6189888", "title":  "官方：巴萨与23岁B队前锋阿兰-戈多伊解约",
             "url":  "https://www.dongqiudi.com/articles/6189888.html", "time":  "2026-08-18 01:06",
