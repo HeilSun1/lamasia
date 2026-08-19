@@ -186,6 +186,9 @@
       });
     });
     matches.sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });
+    // 只保留 2026-06-01 起的赛程（与每日脚本一致，旧赛季不在页面展示）
+    var CUTOFF = 1780243200;
+    matches = matches.filter(function (m) { return parseInt(m.start, 10) >= CUTOFF; });
 
     return {
       updated: stamp(new Date()), source: "sofascore", team: { name: "FC Barcelona U19", id: TEAM_ID, country: "Spain" },
