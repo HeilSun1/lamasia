@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-19 09:00:25 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-19 03:34:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-19 09:00:25",
+    "updated":  "2026-08-19 03:34:01",
     "source":  "dongqiudi",
-    "count":  40,
+    "count":  43,
     "news":  [
+        {
+            "id":  "6196423", "title":  "给这组合起个名字吧，巴萨中场时隔16年再现世界杯冠军组合",
+            "url":  "https://www.dongqiudi.com/articles/6196423.html", "time":  "2026-08-19 11:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/B9/280x210/crop/-/rBXRn2qFHdqAE95gAALwytqbnN8813.jpg" },
+        {
+            "id":  "6196243", "title":  "世体：拉菲尼亚周二训练时担任中锋；罗德里周三入队参加训练",
+            "url":  "https://www.dongqiudi.com/articles/6196243.html", "time":  "2026-08-19 10:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/9B/280x210/crop/-/rBXRn2qFEx2AOkNOAAE0FsGgI5M513.jpg" },
+        {
+            "id":  "6196018", "title":  "北京时间今天16:00对阵欧罗巴，布斯克茨将迎教练生涯首秀",
+            "url":  "https://www.dongqiudi.com/articles/6196018.html", "time":  "2026-08-19 09:05",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/75/280x210/crop/-/rBXRDGqFATCAe_CwAAB1FsMUFdQ594.jpg" },
         {
             "id":  "6195639", "title":  "普约尔：有穆里尼奥皇马可能更强；罗德里非常适合巴萨",
             "url":  "https://www.dongqiudi.com/articles/6195639.html", "time":  "2026-08-19 07:09",
