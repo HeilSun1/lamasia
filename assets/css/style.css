@@ -1094,3 +1094,6 @@ tr.match-row:hover { background: var(--surface-3); }
 /* 名单里的球员名可点击提示 */
 .pl-name[data-player-key] { cursor: pointer; }
 .pl-name[data-player-key] .zh:hover { color: var(--blue); }
+/* 比赛详情里的球员名（进球/红牌/阵容）可点击提示 */
+.pc-link { cursor: pointer; border-bottom: 1px dashed var(--faint); }
+.pc-link:hover { color: var(--blue); border-bottom-color: var(--blue); }

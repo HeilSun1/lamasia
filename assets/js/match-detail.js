@@ -139,6 +139,21 @@
     return (pos && pos.translated) ? pos.translated : "";
   }
 
+  /* ═══ 球员卡片入口（阵容/比赛进程里的巴萨球员名可点击弹卡）═══ */
+  var curTier = "";   // 当前比赛的梯队（由 m.cacheRef 推出）
+  function sfKey(pid) {
+    return (curTier && pid) ? "sf:" + curTier + ":" + pid : "";
+  }
+  // 若该球员在本站卡片索引中（巴萨球员），包装成可点击入口；否则返回纯文本
+  function cardA(pid, name) {
+    var key = sfKey(pid);
+    var txt = esc(name || "");
+    if (key && window.PlayerCard && window.PlayerCard.findByKey(key)) {
+      return '<span class="pc-link" data-player-key="' + esc(key) + '" title="点击查看球员卡片">' + txt + "</span>";
+    }
+    return txt;
+  }
+
   function lineupSide(list) {
     if (!list || !list.length) return null;
     var starters = list.filter(function (x) { return !x.substitute; });
@@ -149,7 +164,7 @@
       return '<div class="md-lu-item">' +
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
         '<span class="md-lu-av">' + ini + "</span>" +
-        '<span class="md-lu-name">' + esc(p.name || "") + "</span>" +
+        '<span class="md-lu-name">' + cardA(p.id, p.name) + "</span>" +
         '<span class="md-lu-pos">' + esc(posZh(x.position)) + "</span>" +
       "</div>";
     }
@@ -187,27 +202,27 @@
     return "•";
   }
   function incidentText(x) {
-    var p = x.player && x.player.name;
+    var pn = cardA(x.player && x.player.id, x.player && x.player.name);
     if (x.incidentType === "goal" || x.incidentType === "penalty") {
       var why = "";
       if (x.reason && REASON_ZH[x.reason] != null) why = REASON_ZH[x.reason];
       else if (x.incidentClass && GOAL_CLASS_ZH[x.incidentClass] != null) why = GOAL_CLASS_ZH[x.incidentClass];
       else if (x.reason && x.reason !== "Normal" && x.reason !== "Kick") why = String(x.reason);
-      var t = p || "";
+      var t = pn;
       var sc = (x.homeScore != null && x.awayScore != null) ? " " + x.homeScore + "-" + x.awayScore : "";
       return t + (why ? "（" + esc(why) + "）" : "") + sc;
     }
     if (x.incidentType === "card") {
       var c = String(x.incidentClass || x.reason || "").toLowerCase();
       var lbl = c.indexOf("red") !== -1 ? "红牌" : "黄牌";
-      return (p || "") + " · " + lbl;
+      return pn + " · " + lbl;
     }
     if (x.incidentType === "substitution") {
-      var pin = x.playerIn && x.playerIn.name;
-      var pout = x.playerOut && x.playerOut.name;
-      return (pout ? "↓ " + esc(pout) : "") + (pin ? " ↑ " + esc(pin) : "");
+      var pin = cardA(x.playerIn && x.playerIn.id, x.playerIn && x.playerIn.name);
+      var pout = cardA(x.playerOut && x.playerOut.id, x.playerOut && x.playerOut.name);
+      return (pout ? "↓ " + pout : "") + (pin ? " ↑ " + pin : "");
     }
-    return p || "";
+    return pn;
   }
   function incidentMin(x) {
     var t = x.time;
@@ -420,6 +435,7 @@
   function open(key) {
     var m = REG[key];
     if (!m) return;
+    curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16" }[m.cacheRef] || "";
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
     body.innerHTML = headerHtml(m) +
