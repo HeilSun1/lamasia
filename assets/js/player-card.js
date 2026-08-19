@@ -64,7 +64,14 @@
   }
 
   var INDEX = {};   // key -> 球员卡片记录
+  var built = false;
   function add(key, rec) { if (key && rec) INDEX[key] = rec; }
+
+  // 索引延迟构建：player-card.js 在 data.js 之后、各梯队缓存之前加载，
+  // 必须等所有脚本就绪（DOMContentLoaded）后再合并，否则缓存未定义导致索引为空。
+  function buildIndex() {
+    if (built) return;
+    built = true;
 
   /* ── 1) B队（懂球帝）：roster + bio（惯用脚/生日/国籍/身高/体重/合同） ── */
   var b = window.DQD_BARCA_ATLETIC;
@@ -75,8 +82,9 @@
         var id = String(p.person_id || "");
         if (!id) return;
         var type = String(p.type || "");
-        if (!/^(attacker|defender|midfielder|goalkeeper)$/.test(type)) return;   // 排除教练/工作人员
+        if (/^(成立时间|所在地区|球队主场)$/.test(type)) return;   // 俱乐部信息记录，非人，跳过
         var bio = bios[id] || {};
+        var isStaff = !/^(attacker|defender|midfielder|goalkeeper)$/.test(type);   // 教练/工作人员
         add("b:" + id, {
           tier: "b",
           photo: photoUrl(p.person_logo),
@@ -85,7 +93,7 @@
           nation: bio.nation || p.nationality_name || "",
           birth: bio.birth || "",
           pos: type,
-          posZh: posZh(type),
+          posZh: isStaff ? "教练" : posZh(type),
           foot: bio.foot || "",
           height: bio.height || "",
           weight: bio.weight || "",
@@ -159,6 +167,14 @@
       });
     });
   }
+  }   // buildIndex 结束
+
+  // 所有缓存脚本就绪后构建索引（player-card.js 加载早于各梯队缓存）
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", buildIndex);
+  } else {
+    buildIndex();
+  }
 
   /* ── 卡片弹窗 ─────────────────────────────────────────────── */
   function ensureModal() {
@@ -231,6 +247,7 @@
   }
 
   function open(key) {
+    buildIndex();   // 兜底：确保索引已构建
     var r = INDEX[key];
     if (!r) return;
     ensureModal();
@@ -255,5 +272,5 @@
   });
 
   window.PC_NORM = norm;
-  window.PlayerCard = { open: open, close: close, findByKey: function (k) { return INDEX[k] || null; } };
+  window.PlayerCard = { open: open, close: close, findByKey: function (k) { buildIndex(); return INDEX[k] || null; } };
 })();
