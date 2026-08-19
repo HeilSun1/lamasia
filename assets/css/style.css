@@ -341,7 +341,7 @@ a:hover { color: #0d54b8; }
 
 /* ═══ 照片灯箱（点击放大）═══ */
 .lightbox {
-  position: fixed; inset: 0; z-index: 1000;
+  position: fixed; inset: 0; z-index: 1200;   /* 高于球员卡片弹窗(.pc-mask 1100)，保证从卡片里点开的照片可见 */
   background: rgba(6, 12, 24, 0.85);
   display: none; align-items: center; justify-content: center;
   padding: 28px; cursor: zoom-out;
