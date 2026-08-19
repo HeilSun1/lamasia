@@ -240,14 +240,47 @@ $matchList = @($matchList | Where-Object { [int64]$_.start -ge $CutoffUnix } | S
 # 详情弹窗（match-detail.js）优先读独立的详情缓存文件；线上 GitHub Pages 域直连 Sofascore 会被反爬拦截，
 # 因此详情必须在每日抓取阶段一并入库。
 # 详情以原始 JSON 文本直接嵌入缓存（不用 ConvertTo-Json 处理深层嵌套，绕开 PS5.1 序列化 bug）。
+# 只抓「未缓存过」且 2026-06-01 起的详情：已完赛详情是静态的，以前每天重抓同一批旧赛季比赛，
+# 曾把每日更新拖慢到 ~15 分钟；现在抓过的就跳过，旧赛季比赛也不再碰。
 $DetailsFile = Join-Path $Root "assets\js\dqd-u16-details-cache.js"
+
+# 3.5a 读已有详情缓存，按事件 ID 保留旧条目（每条详情以行首缩进 + "id": { 开头）
+$oldParts = @{}
+if (Test-Path $DetailsFile) {
+  $oldTxt = Get-Content $DetailsFile -Raw -ErrorAction SilentlyContinue
+  if ($oldTxt) {
+    foreach ($m in [regex]::Matches($oldTxt, '(?m)^\s{2}("(\d+)":\s*\{.*)$')) {
+      $id   = $m.Groups[2].Value
+      $line = $m.Groups[1].Value.TrimEnd().TrimEnd(',')
+      $oldParts[$id] = $line
+    }
+  }
+}
+
+# 3.5b 旧条目只保留当前展示赛程内的（不在赛程里的旧赛季详情不保留，避免缓存膨胀）
+$dirty = $false
+if ($matchList.Count) {
+  $keep = @{}
+  foreach ($m in $matchList) { $keep[[string]$m.id] = $true }
+  foreach ($k in @($oldParts.Keys)) {
+    if (-not $keep.ContainsKey($k)) { $oldParts.Remove($k); $dirty = $true }
+  }
+}
+
+# 3.5c 新抓候选 = 已完场 + 未缓存 + 2026-06-01 起
 $detailList = @()
 if ($lastEv -and $lastEv.events) {
-  $detailList = @($lastEv.events | Where-Object { $_.status.description -match '^(Ended|AP)' } |
+  $detailList = @($lastEv.events | Where-Object {
+      $_.status.description -match '^(Ended|AP)' -and
+      -not $oldParts.ContainsKey([string]$_.id) -and
+      [int64]$_.startTimestamp -ge $CutoffUnix
+    } |
     Sort-Object { [int64]$_.startTimestamp } -Descending | Select-Object -First 8)
 }
-$detailsParts = @()
+
+# 3.5d 抓新 + 合并旧条目写回
 if ($detailList.Count) {
+  Log "  · 已缓存 $($oldParts.Count) 场，需新抓详情 $($detailList.Count) 场"
   $i = 0
   foreach ($dm in $detailList) {
     $i++
@@ -261,25 +294,30 @@ if ($detailList.Count) {
     $cn = if ($rawC) { $rawC } else { "null" }
     $sn = if ($rawS) { $rawS } else { "null" }
     $hn = if ($rawH) { $rawH } else { "null" }
-    $detailsParts += ('  "' + $eid + '": {' +
+    $oldParts[$eid] = ('  "' + $eid + '": {' +
       '"lineups": ' + $ln + ', ' +
       '"incidents": ' + $cn + ', ' +
       '"statistics": ' + $sn + ', ' +
       '"h2h": ' + $hn + '}')
     if ($i -lt $detailList.Count) { Start-Sleep -Seconds 2 }   # 错峰，降低风控
   }
+  $dirty = $true
+}
+
+if ($dirty) {
+  $detailsParts = @($oldParts.Values)
   $detailsJs = "/* 自动生成，请勿手动编辑 —— 比赛详情缓存（match-detail.js 读取） */`r`n" +
     "window.DQD_U16_DETAILS_CACHE = {`r`n" +
     ($detailsParts -join ",`r`n") + "`r`n};`r`n"
   $utf8 = New-Object System.Text.UTF8Encoding($false)
   try {
     [System.IO.File]::WriteAllText($DetailsFile, $detailsJs, $utf8)
-    Log "  ✓ 已抓取并写入 $($detailsParts.Count) 场比赛详情"
+    Log "  ✓ 已写入 $($detailsParts.Count) 场比赛详情"
   } catch {
     Log "  ✗ 写入详情缓存失败：$($_.Exception.Message)"
   }
 } else {
-  Log "  · 本次无已完场可抓详情"
+  Log "  · 无新完赛详情，缓存保持不变（已缓存 $($oldParts.Count) 场）"
 }
 
 # ── 4. 生成缓存 ─────────────────────────────────────────────────
