@@ -163,9 +163,14 @@
     function item(x) {
       var p = x.player || {};
       var ini = esc(initials(p.name)) || "·";
+      // 阵容头像：Sofascore 球员头像，加载失败回退首字母
+      var av = p.id
+        ? '<img src="https://img.sofascore.com/api/v1/player/' + esc(p.id) + '/image" alt="' + esc(p.name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
+          '<span class="md-lu-ini" style="display:none">' + ini + "</span>"
+        : '<span class="md-lu-ini">' + ini + "</span>";
       return '<div class="md-lu-item">' +
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
-        '<span class="md-lu-av">' + ini + "</span>" +
+        '<span class="md-lu-av">' + av + "</span>" +
         '<span class="md-lu-name">' + cardA(p.id, p.name) + "</span>" +
         '<span class="md-lu-pos">' + esc(posZh(x.position)) + "</span>" +
       "</div>";

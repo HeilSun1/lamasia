@@ -982,7 +982,9 @@ body.fb-dragging .fb-slot.empty { pointer-events: auto; }
 .md-lu-item { display: flex; align-items: center; gap: 8px; padding: 7px 12px; font-size: 13px; border-bottom: 1px solid var(--border-soft); }
 .md-lu-item:last-child { border-bottom: none; }
 .md-lu-num { width: 26px; flex-shrink: 0; text-align: center; font-weight: 800; color: var(--barca-blue); font-size: 12px; }
-.md-lu-av { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; background: var(--surface-3); color: var(--text-2); font-size: 10.5px; font-weight: 800; display: grid; place-items: center; }
+.md-lu-av { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; background: var(--surface-3); color: var(--text-2); font-size: 10.5px; font-weight: 800; display: grid; place-items: center; overflow: hidden; }
+.md-lu-av img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.md-lu-ini { display: grid; place-items: center; width: 100%; height: 100%; font-size: 10.5px; font-weight: 800; color: var(--text-2); }
 .md-lu-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
 .md-lu-pos { flex-shrink: 0; font-size: 11.5px; color: var(--muted); }
 
