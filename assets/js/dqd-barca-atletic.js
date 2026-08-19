@@ -232,6 +232,86 @@
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
   }
 
+  /* ── 赛程（Sofascore 版本：B队赛程优先用它，与 U19/18/16 一致） ──
+     数据来自 DQD_BARCA_ATLETIC_SF_CACHE（update_barca_atletic_sf.ps1 每日更新）；
+     注册到比赛详情注册表 source:"sofascore"，弹窗可显示阵容/进球/统计。
+     无 Sofascore 赛程时返回 false，由调用方回退懂球帝。 */
+  function renderScheduleSf() {
+    const el = $("dqd-schedule");
+    if (!el) return false;
+    const sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    const matches = (sf && sf.matches) || [];
+    if (!matches.length) return false;
+
+    function fmt(ts) {
+      const d = new Date(parseInt(ts, 10) * 1000);
+      if (isNaN(d.getTime())) return "";
+      const pad = function (n) { return String(n).padStart(2, "0"); };
+      return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()) +
+             " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+    }
+    function barIsA(m) { return String(m.homeId) === "24343"; }
+    function pill(m) {
+      const st = String(m.status || "");
+      if (/Ended|Awarded/i.test(st)) {
+        const a = parseInt(m.hs, 10), b = parseInt(m.as, 10);
+        if (a === b) return '<span class="pos-pill other">平</span>';
+        const win = barIsA(m) ? a > b : b > a;
+        return win ? '<span class="pos-pill fw">胜</span>' : '<span class="pos-pill other">负</span>';
+      }
+      if (/Live/i.test(st)) return '<span class="pos-pill mf">进行中</span>';
+      return '<span class="pos-pill other">未开赛</span>';
+    }
+    const logoOf = function (id) { return "https://img.sofascore.com/api/v1/team/" + (id || "") + "/image"; };
+    function row(m) {
+      const played = /Ended|Awarded/i.test(String(m.status));
+      const score = played ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
+      const teamCell = function (name, logo) {
+        return '<td><span class="match-team">' +
+          '<img class="match-logo" src="' + esc(logo || "") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
+          esc(name || "") + "</span></td>";
+      };
+      const key = "sfb:" + m.id;
+      if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+      window.LAMASIA_MATCHES[key] = {
+        source: "sofascore", cacheRef: "DQD_BARCA_ATLETIC_SF_CACHE", id: m.id,
+        comp: m.comp || "", round: m.round || "",
+        startText: fmt(m.start),
+        home: m.home || "", away: m.away || "",
+        homeLogo: logoOf(m.homeId), awayLogo: logoOf(m.awayId),
+        hs: m.hs || "", as: m.as || "", status: m.status
+      };
+      const compHtml = (m.comp ? esc(m.comp) : "") +
+        (m.round ? ' <span style="color:var(--faint);font-size:12px">' + esc(m.round) + "</span>" : "");
+      return '<tr data-match-key="' + key + '" class="match-row" title="点击查看详情">' +
+        '<td class="num">' + esc(fmt(m.start)) + "</td>" +
+        "<td>" + compHtml + "</td>" +
+        teamCell(m.home, logoOf(m.homeId)) +
+        '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
+        teamCell(m.away, logoOf(m.awayId)) +
+        "<td>" + pill(m) + "</td>" +
+        "</tr>";
+    }
+    const played = matches.filter(function (m) { return /Ended|Awarded/i.test(String(m.status)); })
+                          .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
+    const upcoming = matches.filter(function (m) { return !/Ended|Awarded/i.test(String(m.status)); })
+                            .sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });
+    function group(title, rows, open, headLabel) {
+      return '<details class="dqd-group"' + (open ? " open" : "") + ">" +
+        "<summary><span>" + title + "</span>" +
+        '<span class="dqd-side"><span class="dqd-count">' + rows.length + " 场</span>" +
+        '<span class="dqd-state"></span></span></summary>' +
+        '<div class="dqd-body"><div class="table-wrap"><table class="roster-table">' +
+        "<thead><tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th><th>" + headLabel + "</th></tr></thead>" +
+        "<tbody>" + rows.map(row).join("") + "</tbody></table></div></div></details>";
+    }
+    let html = "";
+    if (played.length)   html += group("🏁 已完场", played, true, "结果");
+    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态");
+    el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
+    return true;
+  }
+
   /* ── 球队信息 ── */
   /* 懂球帝球场名过时：迷你球场（Mini Estadi）已于 2019 年拆除，
      原址重建为克鲁伊夫球场（Estadi Johan Cruyff），容量约 6000。
@@ -309,7 +389,7 @@
       }));
       renderRoster(results[0].data);
       renderInjuries();
-      renderSchedule(results[1]);
+      if (!renderScheduleSf()) renderSchedule(results[1]);
       renderTeamInfo(results[2]);
       setStatus("live", stamp(new Date()));
     } catch (err) {
@@ -317,7 +397,7 @@
       if (c && c.roster) {
         renderRoster(c.roster);
         renderInjuries();
-        renderSchedule(c.schedule);
+        if (!renderScheduleSf()) renderSchedule(c.schedule);
         renderTeamInfo(c.teamInfo);
         setStatus("cache", c.updated);
       } else {

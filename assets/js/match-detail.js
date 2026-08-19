@@ -155,6 +155,8 @@
   }
 
   function lineupSide(list) {
+    // Sofascore 阵容结构：home/away 是 { players:[...] } 对象，兼容直接传数组
+    if (list && !Array.isArray(list) && list.players) list = list.players;
     if (!list || !list.length) return null;
     var starters = list.filter(function (x) { return !x.substitute; });
     var bench = list.filter(function (x) { return x.substitute; });
@@ -435,7 +437,7 @@
   function open(key) {
     var m = REG[key];
     if (!m) return;
-    curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16" }[m.cacheRef] || "";
+    curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16", DQD_BARCA_ATLETIC_SF_CACHE: "b" }[m.cacheRef] || "";
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
     body.innerHTML = headerHtml(m) +

@@ -148,6 +148,43 @@
     });
   });
 
+  /* ── 2b) B队（Sofascore）：sf:b: 卡片，中文名从懂球帝名单按英文名匹配 ── */
+  var sfb = window.DQD_BARCA_ATLETIC_SF_CACHE;
+  if (sfb && sfb.players) {
+    var bzhMap = null;
+    if (window.DQD_BARCA_ATLETIC && window.DQD_BARCA_ATLETIC.roster && window.DQD_BARCA_ATLETIC.roster.data) {
+      bzhMap = {};
+      window.DQD_BARCA_ATLETIC.roster.data.list.forEach(function (g) {
+        (g.data || []).forEach(function (pp) {
+          var en = String(pp.person_en_name || "").trim();
+          if (en) bzhMap[norm(en)] = { zh: pp.person_name || "" };
+        });
+      });
+    }
+    sfb.players.forEach(function (p) {
+      if (!p || !p.id) return;
+      var local = bzhMap ? bzhMap[norm(p.name)] : null;
+      add("sf:b:" + p.id, {
+        tier: "b",
+        photo: photoUrl(p.photo),
+        nameZh: (local && local.zh) || "",
+        nameEn: p.name || "",
+        nation: p.nation || "",
+        birth: p.birthday || "",
+        age: p.age || "",
+        pos: p.pos || "",
+        posZh: posZh(p.pos),
+        foot: p.foot || "",
+        height: p.height || "",
+        shirt: p.shirt || "",
+        value: p.value || "",
+        injury: p.injury || null,
+        team: teamLabel("b"),
+        teamHref: teamHref("b")
+      });
+    });
+  }
+
   /* ── 3) data.js 低龄梯队官方名单 ── */
   if (window.LAMASIA_DATA && LAMASIA_DATA.players) {
     Object.keys(LAMASIA_DATA.players).forEach(function (tier) {
