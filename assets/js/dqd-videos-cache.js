@@ -1,7 +1,11 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-20 23:50 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-20 16:18 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-20 23:50:28",
-    "searchedMatches": [],
+    "updated":  "2026-08-20 16:18:53",
+    "searchedMatches":  [
+                            "sfb:16696837",
+                            "sfb:16832369",
+                            "sfb:16866862"
+                        ],
     "matches":  {
                     "sfb:16696837":  [
                                          {
@@ -51,6 +55,44 @@ window.DQD_VIDEOS_CACHE = {
                                      ]
                 },
     "players":  {
+                    "sf:b:1457200":  [
+                                         {
+                                             "videoId":  "6dMcTTnlsb0",
+                                             "title":  "⚽️ Aziz’s winner for Barça Atletic in their 1-0 win over CE Europa. #lamasia #fcbarcelona #shorts",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-19",
+                                             "durationSec":  ""
+                                         }
+                                     ],
+                    "sf:b:1544614":  [
+                                         {
+                                             "videoId":  "LJXywdp3dmE",
+                                             "title":  "Guille Fernandez vs Udinese | 08/08/2026 | 2026-2027",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-08",
+                                             "durationSec":  ""
+                                         },
+                                         {
+                                             "videoId":  "v1iaKF-EBjU",
+                                             "title":  "Toni Fernandez vs Udinese | 08/08/2026 | 2026-2027",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-08",
+                                             "durationSec":  ""
+                                         }
+                                     ],
+                    "sf:b:1977602":  [
+                                         {
+                                             "videoId":  "-xRAJTjKdQI",
+                                             "title":  "Jordi Pesquer vs FC Basel | 16/08/2026 | 2026-2027",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-16",
+                                             "durationSec":  ""
+                                         }
+                                     ],
                     "sf:b:2076883":  [
                                          {
                                              "videoId":  "BV1FSM666EfS",
@@ -62,6 +104,46 @@ window.DQD_VIDEOS_CACHE = {
                                              "site":  "bili",
                                              "pic":  "https://i1.hdslb.com/bfs/archive/029671a9e80d25323e365be4b4e606b266d0d44b.jpg"
                                          }
-                                     ]
+                                     ],
+                    "sf:b:2128084":  [
+                                         {
+                                             "videoId":  "9eOLL88phHU",
+                                             "title":  "Ebrima Tunkara vs Udinese | 08/08/2026 | 2026-2027",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-08",
+                                             "durationSec":  ""
+                                         }
+                                     ],
+                    "sf:u19:2048364":  [
+                                           {
+                                               "videoId":  "uJCDQgM6DPM",
+                                               "title":  "Gerard Valls - La Masia\u0027s Shot-Stopping Goalkeeper",
+                                               "channel":  "ArsenKveFCB",
+                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                               "published":  "2026-08-14",
+                                               "durationSec":  ""
+                                           }
+                                       ],
+                    "sf:u19:2229916":  [
+                                           {
+                                               "videoId":  "uJCDQgM6DPM",
+                                               "title":  "Gerard Valls - La Masia\u0027s Shot-Stopping Goalkeeper",
+                                               "channel":  "ArsenKveFCB",
+                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                               "published":  "2026-08-14",
+                                               "durationSec":  ""
+                                           }
+                                       ],
+                    "sf:u19:2272317":  [
+                                           {
+                                               "videoId":  "xBYmwtF7gxg",
+                                               "title":  "Gorka Buil - La Masia\u0027s Hidden Gem",
+                                               "channel":  "ArsenKveFCB",
+                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                               "published":  "2026-08-12",
+                                               "durationSec":  ""
+                                           }
+                                       ]
                 }
 };
