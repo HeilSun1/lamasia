@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-20 11:34:07 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-20 15:12:00 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-20 11:34:07",
+    "updated":  "2026-08-20 15:12:00",
     "source":  "dongqiudi",
-    "count":  48,
+    "count":  49,
     "news":  [
+        {
+            "id":  "6202740", "title":  "世体：18岁哈姆扎季前赛3场4球，队友对其十分认可",
+            "url":  "https://www.dongqiudi.com/articles/6202740.html", "time":  "2026-08-20 17:20",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1A/3F/280x210/crop/-/rBXRDGqGxf6AbS4sAAB1F5mDTio929.jpg" },
         {
             "id":  "6200764", "title":  "哈姆扎：萨拉赫经常联系我，他是所有埃及人的榜样",
             "url":  "https://www.dongqiudi.com/articles/6200764.html", "time":  "2026-08-20 06:31",

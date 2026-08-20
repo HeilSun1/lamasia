@@ -1,13 +1,60 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_youtube.ps1 每日更新，数据源：YouTube 搜索/RSS
-   window.DQD_VIDEOS_CACHE.matches：比赛键 -> 全场集锦
-       比赛键 = "sfb:{Sofascore eventId}"（B队）/ "sofascore:{eventId}"（U19）
-   window.DQD_VIDEOS_CACHE.players：球员键 -> 按场个人集锦
-       球员键 = "sf:b:{球员SofascoreID}" / "sf:u19:{球员SofascoreID}"
-   每条视频：{ videoId, title, channel, channelId, published, durationSec }
-   人工 pin / 否决请编辑 assets/js/videos-data.js */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-20 15:13 数据源：YouTube 搜索/RSS */
 window.DQD_VIDEOS_CACHE = {
-  "updated": "",
-  "searchedMatches": [],
-  "matches": {},
-  "players": {}
+    "updated":  "2026-08-20 15:13:46",
+    "searchedMatches":  [
+                            "sfb:16696837",
+                            "sfb:16832369",
+                            "sfb:16866862"
+                        ],
+    "matches":  {
+                    "sfb:16696837":  [
+                                         {
+                                             "videoId":  "jNseSHsotwM",
+                                             "title":  "Barça Atlètic vs UE Tona | Full Match | 2026-2027 Pre-Season",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "",
+                                             "published":  "2026-08-06",
+                                             "durationSec":  "6412"
+                                         },
+                                         {
+                                             "videoId":  "zw6c7QSbUtA",
+                                             "title":  "WATCH LIVE FOOTBALL | Club Friendly 2026 | Tona vs Barcelona Atlètic | Live Score \u0026 Highlights",
+                                             "channel":  "NewsHoundLive",
+                                             "channelId":  "",
+                                             "published":  "2026-08-06",
+                                             "durationSec":  "1495"
+                                         }
+                                     ],
+                    "sfb:16832369":  [
+                                         {
+                                             "videoId":  "Xq_eJSAKKak",
+                                             "title":  "Resum CE L\u0027Hospitalet 1-2 Barça Atlètic ",
+                                             "channel":  "CE L\u0027Hospitalet",
+                                             "channelId":  "",
+                                             "published":  "2026-08-17",
+                                             "durationSec":  "235"
+                                         }
+                                     ],
+                    "sfb:16866862":  [
+                                         {
+                                             "videoId":  "j43cmG024-4",
+                                             "title":  "💣 BARÇA ATLÈTIC VICTORY: Highlights (1-0) and Aziz goal against Europa ⚽ and the return of Tunkar...",
+                                             "channel":  "Mundo Deportivo",
+                                             "channelId":  "",
+                                             "published":  "2026-08-19",
+                                             "durationSec":  "375"
+                                         },
+                                         {
+                                             "videoId":  "mWJpAKMIeuo",
+                                             "title":  "HIGHLIGHTS: Barça Atlètic vs CE Europa",
+                                             "channel":  "Spanish Football News in English",
+                                             "channelId":  "",
+                                             "published":  "",
+                                             "durationSec":  "222"
+                                         }
+                                     ]
+                },
+    "players":  {
+
+                }
 };
