@@ -234,6 +234,21 @@ function Get-YtSearchResults([string]$q, [string]$what) {
   return @($items)
 }
 
+# 快速连通性探测：YouTube 不可达（国内无代理）时直接跳过，
+# 省去多次 Edge 无头调用各 20s+ 的慢超时。结果缓存，只探测一次。
+$ytProbe = $null
+function Test-YtProbe {
+  if ($null -ne $script:ytProbe) { return $script:ytProbe }
+  try {
+    $null = Invoke-WebRequest -Uri "https://www.youtube.com" -UseBasicParsing -Method Head -TimeoutSec 8
+    $script:ytProbe = $true
+  } catch {
+    $script:ytProbe = $false
+    Log "✗ YouTube 不可达（本机需代理/TUN 模式），本次跳过视频抓取，下次自动重试。"
+  }
+  return $script:ytProbe
+}
+
 # 频道 RSS 订阅（免 key 官方端点）→ 视频列表 {videoId,title,channel,channelId,published}
 function Get-ChannelRss([string]$channelId) {
   $out = @()
@@ -358,6 +373,7 @@ foreach ($cfg in @(
     try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
     if (($nowUtc - $mDate).TotalDays -gt $MatchWithinDays) { continue }
     if ($searched.ContainsKey($key) -and -not $reSearch.ContainsKey($key)) { continue }
+    if (-not (Test-YtProbe)) { break }   # 不可达：整体跳过，不标记已搜
     $searched[$key] = $true
     $newMatchList += $m | Add-Member -PassThru -NotePropertyName _cfg -NotePropertyValue $cfg
 
@@ -467,7 +483,7 @@ if ($newMatchList.Count) {
     }
   }
 } else {
-  Log "  · 无新完赛比赛，本次不搜索球员集锦。"
+  Log "  · 无新完赛比赛（或 YouTube 不可达），本次不搜索球员集锦。"
 }
 
 # ════════════ C. 合并写回 ════════════
