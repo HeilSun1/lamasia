@@ -278,6 +278,24 @@ function Test-YtProbe {
   return $script:ytProbe
 }
 
+# 解析油管频道 ID（handle 需带 @）：先正则抓原始 HTML 的 externalId/channelId，再兜底 ytInitialData
+function Get-YtChannelId([string]$handle) {
+  $h = $handle.TrimStart('@')
+  $url = "https://www.youtube.com/@$h"
+  $html = Get-YtDom $url "解析频道 @$h"
+  if ($html) {
+    foreach ($pat in @('"externalId":"(UC[^"]+)"', '"channelId":"(UC[^"]+)"', '"browseId":"(UC[^"]+)"')) {
+      $mm = [regex]::Match($html, $pat)
+      if ($mm.Success) { return $mm.Groups[1].Value }
+    }
+  }
+  $data = Get-YtData $url "解析频道 @$h"
+  if ($data) {
+    try { return [string]$data.metadata.channelMetadataRenderer.externalId } catch {}
+  }
+  return ""
+}
+
 # 频道 RSS 订阅（免 key 官方端点）→ 视频列表 {videoId,title,channel,channelId,published}
 function Get-ChannelRss([string]$channelId) {
   $out = @()
@@ -545,65 +563,64 @@ if ($newMatchList.Count -and $ytOk) {
   }
 }
 
-# ════════════ B. 球员按场个人集锦（频道 RSS，只搜本次新比赛阵容里的球员） ════════════
+# ════════════ B. 球员按场个人集锦（油管频道 RSS，覆盖全部在队球员） ════════════
 if ($newMatchList.Count -and $ytOk) {
-  # 解析频道 ID（仅在有新比赛时）
+  # 解析频道 ID（handle 需带 @）
   $channelId = ""
   foreach ($handle in $PlayerChannelHandles) {
-    $data = Get-YtData "https://www.youtube.com/$handle" "解析频道 $handle"
-    if ($data) {
-      try {
-        $channelId = [string]$data.metadata.channelMetadataRenderer.externalId
-      } catch {}
-    }
-    if (-not $channelId) { Log "✗ 未能从 @$handle 页面解析频道 ID，跳过球员集锦。" }
+    $channelId = Get-YtChannelId $handle
+    if (-not $channelId) { Log "✗ 未能从 @$handle 页面解析频道 ID，跳过油管球员集锦。" }
     else { break }
   }
 
   if ($channelId) {
-    Log "  · 球员集锦频道 $($PlayerChannelHandles[0]) = $channelId；拉取 RSS……"
+    $zhMap = Build-ZhMap
+    # 球员池：用当前名单（与 B站 一致），覆盖面广
+    $pool = @{}
+    foreach ($cfg in @(
+      @{ cache = $sfb; tier = "b" },
+      @{ cache = $u19; tier = "u19" }
+    )) {
+      if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
+      foreach ($p in @($cfg.cache.players)) {
+        $plid = [string]$p.id
+        $pname = [string]$p.name
+        if (-not $plid -or -not $pname) { continue }
+        $pkey = "sf:$($cfg.tier):$plid"
+        if ($pool.ContainsKey($pkey)) { continue }
+        $zh = ""
+        $nz = Norm $pname
+        if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
+        $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; tokens = @(TeamTokens $pname) }
+      }
+    }
+    Log "  · 油管频道 @$($PlayerChannelHandles[0]) = $channelId；拉取 RSS……"
     $rss = @(Get-ChannelRss $channelId)
-    Log "  · RSS 共 $($rss.Count) 条上传"
-    if ($rss.Count) {
-      foreach ($nm in $newMatchList) {
-        $m = $nm
-        $cfg = $nm._cfg
-        $eid = [string]$m.id
-        $det = $null
-        if ($cfg.details) { $det = $cfg.details.$eid }
-        if (-not $det -or -not $det.lineups) { continue }
-        $side = if ([string]$m.homeId -eq $cfg.teamId) { "home" } else { "away" }
-        $lu = $det.lineups.$side
-        $players = @($lu.players)
-        if (-not $players.Count) { continue }
-        try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
-        $lo = $mDate.AddDays(-$PubAfterDays).Date
-        $hi = $mDate.AddDays($PubAfterDays).Date
-        Log "  · 球员集锦：$($m.home) vs $($m.away)（巴萨 $side 侧 $($players.Count) 人）"
-        foreach ($luP in $players) {
-          $plid = [string]$luP.player.id
-          $pname = [string]$luP.player.name
-          if (-not $plid -or -not $pname) { continue }
-          $pkey = "sf:$($cfg.tier):$plid"
-          if ($playerKeys.ContainsKey($pkey)) { continue }
-          $playerKeys[$pkey] = $true
-          $nameTk = @(TeamTokens $pname)
-          # RSS 里标题含球员名 token 且发布于本场 ±PubAfterDays 天
-          $new = @($rss | Where-Object {
-            $_.published -and (HasToken (Norm $_.title) $nameTk) -and
-            ([datetime]$_.published -ge $lo -and [datetime]$_.published -le $hi)
-          } | Sort-Object { [datetime]$_.published } -Descending | Select-Object -First 2 |
-            ForEach-Object { New-Video $_.videoId $_.title $_.channel $_.channelId $_.published "" })
-          if ($new.Count) {
-            $outPlayers[$pkey] = @(Merge-Videos ($outPlayers[$pkey] | Where-Object { $_ }) $new $MaxPlayerVideos)
-            Log "    ✓ $pname +$($new.Count) 条"
-          }
+    Log "  · RSS 共 $($rss.Count) 条上传；匹配池 $($pool.Count) 名球员"
+    foreach ($it in $rss) {
+      # 时间过滤：只要 2026-06-01 起的上传
+      $pubT = Get-UcDate ([string]$it.published)
+      if (-not $pubT) { continue }
+      if ($pubT -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }
+      $titleN = Norm $it.title
+      $bestScore = 0
+      $bestKeys = @()
+      foreach ($pk in @($pool.Keys)) {
+        $sc = PlayerScore $titleN $pool[$pk]
+        if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
+        elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
+      }
+      if ($bestScore -gt 0) {
+        foreach ($pk in $bestKeys) {
+          $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
+          $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
         }
+        Log "    ✓ 油管球员匹配：$($it.title)"
       }
     }
   }
 } else {
-  Log "  · 无新完赛比赛（或 YouTube 不可达），本次不搜索球员集锦。"
+  Log "  · 无新完赛比赛（或 YouTube 不可达），本次不搜油管球员集锦。"
 }
 
 # ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」） ════════════

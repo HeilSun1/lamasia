@@ -1,11 +1,7 @@
 /* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-20 23:50 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
     "updated":  "2026-08-20 23:50:28",
-    "searchedMatches": [
-                            "sfb:16696837",
-                            "sfb:16832369",
-                            "sfb:16866862"
-                        ],
+    "searchedMatches": [],
     "matches":  {
                     "sfb:16696837":  [
                                          {
