@@ -36,6 +36,8 @@ $PubAfterDays         = 15                 # 比赛结束后 N 天内的上传�
 $MaxRelDays           = 25                 # 搜索结果"发布于 N 天前"的上限（防误配旧场次）
 $BTeamId              = "24343"            # Sofascore 巴萨竞技
 $U19TeamId            = "90128"            # Sofascore 巴萨 U19
+
+$U18TeamId            = "933330"           # Sofascore 巴萨 U18（Juvenil B）
 $CutoffUnix           = 1780243200         # 只收 2026-06-01 起（与站点数据一致）
 
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
@@ -107,8 +109,19 @@ function TeamTokens([string]$name) {
   foreach ($t in ($n -split '[^a-z0-9]+' | Where-Object { $_ -and $_.Length -ge 3 })) {
     if ($STOP -notcontains $t) { $tokens += $t }
   }
-  if (-not $tokens.Count) { $tokens = @($n) }
+  if (-not $tokens.Count) { $tokens = @($n -split '[^a-z0-9]+' | Where-Object { $_ -and $_.Length -ge 3 }) }
   return @($tokens | Select-Object -Unique)
+}
+
+# 青年队别名：油管标题可能用 Juvenil B / JB / U19B 等，补进队名 token
+function TeamAliases([string]$name) {
+  $n = Norm $name
+  $out = @()
+  if ($n -match 'u18|juvenil.?b') { $out += @("jb", "juvenilb", "u19b") }
+  if ($n -match 'u19|juvenil.?a') { $out += @("juvenila") }
+  if ($n -match 'u16|cadete')      { $out += @("cadete") }
+  if ($n -match 'atletic')         { $out += @("atletic") }
+  return @($out | Select-Object -Unique)
 }
 
 function HasToken([string]$titleNorm, [string[]]$tokens) {
@@ -417,8 +430,10 @@ if ($vd -and $vd.reSearch) { foreach ($k in @($vd.reSearch)) { $reSearch[[string
 # ── 解析输入缓存 ──
 $sfb = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-sf-cache.js")
 $u19 = Read-CacheJs (Join-Path $Root "assets\js\dqd-u19-cache.js")
+$u18 = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-cache.js")
 $sfbDetails = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-sf-details-cache.js")
 $u19Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u19-details-cache.js")
+$u18Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-details-cache.js")
 
 $outMatches = @{}   # 比赛键 -> 视频列表
 $outPlayers = @{}   # 球员键 -> 视频列表
@@ -465,7 +480,8 @@ function Merge-Videos($existing, $incoming, [int]$cap) {
 $currentEnded = @{}
 foreach ($cfg in @(
   @{ cache = $sfb; prefix = "sfb:" },
-  @{ cache = $u19; prefix = "sofascore:" }
+  @{ cache = $u19; prefix = "sofascore:" },
+  @{ cache = $u18; prefix = "sofascore:" }
 )) {
   if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
   foreach ($m in @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })) {
@@ -486,7 +502,8 @@ $nowUtc = [datetime]::UtcNow
 $matchSeen = @{}
 foreach ($cfg in @(
   @{ cache = $sfb; prefix = "sfb:"; details = $sfbDetails; teamId = $BTeamId; tier = "b" },
-  @{ cache = $u19; prefix = "sofascore:"; details = $u19Details; teamId = $U19TeamId; tier = "u19" }
+  @{ cache = $u19; prefix = "sofascore:"; details = $u19Details; teamId = $U19TeamId; tier = "u19" },
+  @{ cache = $u18; prefix = "sofascore:"; details = $u18Details; teamId = $U18TeamId; tier = "u18" }
 )) {
   if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
   foreach ($m in @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })) {
@@ -515,8 +532,8 @@ if ($newMatchList.Count -and $ytOk) {
     $searched[$key] = $true
     try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
 
-    $homeTk = @(TeamTokens ([string]$m.home))
-    $awayTk = @(TeamTokens ([string]$m.away))
+    $homeTk = @((TeamTokens ([string]$m.home)) + (TeamAliases ([string]$m.home)) | Select-Object -Unique)
+    $awayTk = @((TeamTokens ([string]$m.away)) + (TeamAliases ([string]$m.away)) | Select-Object -Unique)
     $lo = $mDate.AddDays(-$PubAfterDays)
     Log "  · 整场集锦（新比赛）：$($m.home) vs $($m.away)（$($mDate.ToString('yyyy-MM-dd'))）"
 
@@ -579,7 +596,8 @@ if ($newMatchList.Count -and $ytOk) {
     $pool = @{}
     foreach ($cfg in @(
       @{ cache = $sfb; tier = "b" },
-      @{ cache = $u19; tier = "u19" }
+      @{ cache = $u19; tier = "u19" },
+      @{ cache = $u18; tier = "u18" }
     )) {
       if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
       foreach ($p in @($cfg.cache.players)) {
@@ -631,7 +649,8 @@ if ($newMatchList.Count -and $BiliUids.Count) {
   $allPlayers = @{}
   foreach ($cfg in @(
     @{ cache = $sfb; tier = "b" },
-    @{ cache = $u19; tier = "u19" }
+    @{ cache = $u19; tier = "u19" },
+    @{ cache = $u18; tier = "u18" }
   )) {
     if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
     foreach ($p in @($cfg.cache.players)) {
@@ -650,7 +669,8 @@ if ($newMatchList.Count -and $BiliUids.Count) {
   $endedList = @()
   foreach ($cfg in @(
     @{ cache = $sfb; prefix = "sfb:" },
-    @{ cache = $u19; prefix = "sofascore:" }
+    @{ cache = $u19; prefix = "sofascore:" },
+    @{ cache = $u18; prefix = "sofascore:" }
   )) {
     if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
     foreach ($m in @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })) {
@@ -658,8 +678,8 @@ if ($newMatchList.Count -and $BiliUids.Count) {
       try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
       $endedList += [pscustomobject]@{
         key = $cfg.prefix + $eid
-        homeTk = @(TeamTokens ([string]$m.home))
-        awayTk = @(TeamTokens ([string]$m.away))
+        homeTk = @((TeamTokens ([string]$m.home)) + (TeamAliases ([string]$m.home)) | Select-Object -Unique)
+        awayTk = @((TeamTokens ([string]$m.away)) + (TeamAliases ([string]$m.away)) | Select-Object -Unique)
         mDate = $mDate
       }
     }
