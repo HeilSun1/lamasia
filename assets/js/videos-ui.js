@@ -44,11 +44,15 @@
         title: (base && base.title) || a.title || "",
         channel: a.channel || "",
         published: a.published || "",
-        durationSec: a.durationSec || ""
+        durationSec: a.durationSec || "",
+        site: (base && base.site) || a.site || "yt",   // "yt" / "bili"
+        pic: a.pic || ""
       });
     }
     (Array.isArray(cur[key]) ? cur[key] : []).forEach(function (v) { if (v && v.videoId) push(v.videoId, v); });
     autoList.forEach(function (v) { if (v && v.videoId) push(v.videoId, null); });
+    // B站（国内直连可播放）排在 YouTube 前
+    out.sort(function (x, y) { return (x.site === "bili" ? 0 : 1) - (y.site === "bili" ? 0 : 1); });
     return out;
   }
 
@@ -61,19 +65,29 @@
     return h ? h + ":" + pad(m) + ":" + pad(s) : m + ":" + pad(s);
   }
 
+  var YT_THUMB = "https://i.ytimg.com/vi/{id}/hqdefault.jpg";
+  var YT_WATCH = "https://www.youtube.com/watch?v={id}";
+  var BILI_WATCH = "https://www.bilibili.com/video/{id}";
+
   function videoCardHtml(v) {
     var id = esc(v.videoId);
     var dur = fmtDur(v.durationSec);
-    return '<div class="vid-card" data-video-id="' + id + '" title="点击在本站播放">' +
-      '<span class="vid-thumb">' +
-        '<img src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt="' + esc(v.title || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'noimg\')">' +
+    var isBili = v.site === "bili";
+    var thumb = isBili ? (v.pic || "") : YT_THUMB.replace("{id}", id);
+    var watch = (isBili ? BILI_WATCH : YT_WATCH).replace("{id}", id);
+    var badge = isBili ? '<span class="vid-badge bili">B站</span>' : '<span class="vid-badge">YT</span>';
+    var thumbHtml = thumb
+      ? '<img src="' + esc(thumb) + '" alt="' + esc(v.title || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'noimg\')">'
+      : '<span class="vid-noimg">▶</span>';
+    return '<div class="vid-card' + (isBili ? " vid-bili" : "") + '" data-video-id="' + id + '" data-video-site="' + (isBili ? "bili" : "yt") + '" title="点击在本站播放">' +
+      '<span class="vid-thumb">' + thumbHtml +
         (dur ? '<span class="vid-dur">' + dur + "</span>" : "") +
-        '<span class="vid-play">▶</span>' +
+        '<span class="vid-play">▶</span>' + badge +
       "</span>" +
       '<span class="vid-title">' + esc(v.title || "视频") + "</span>" +
       '<span class="vid-row">' +
-        '<span class="vid-channel">' + esc(v.channel || "YouTube") + (v.published ? " · " + esc(v.published) : "") + "</span>" +
-        '<a class="vid-ext" href="https://www.youtube.com/watch?v=' + id + '" target="_blank" rel="noopener" title="在 YouTube 打开">↗</a>' +
+        '<span class="vid-channel">' + esc(v.channel || (isBili ? "B站" : "YouTube")) + (v.published ? " · " + esc(v.published) : "") + "</span>" +
+        '<a class="vid-ext" href="' + esc(watch) + '" target="_blank" rel="noopener" title="在' + (isBili ? "B站" : "YouTube") + '打开">↗</a>' +
       "</span>" +
     "</div>";
   }
@@ -87,9 +101,16 @@
     "</div>";
   }
 
-  /* ═══ 本站内嵌播放器灯箱 ═══ */
+  /* ═══ 本站内嵌播放器灯箱（YouTube / B站） ═══ */
   var playerEl = null;
-  function openPlayer(videoId) {
+  function embedSrc(videoId, site) {
+    if (site === "bili") {
+      return "https://player.bilibili.com/player.html?bvid=" + encodeURIComponent(videoId) + "&page=1&autoplay=1";
+    }
+    return "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId) + "?rel=0&modestbranding=1";
+  }
+  function openPlayer(videoId, site) {
+    site = site || "yt";
     if (!videoId) return;
     if (!playerEl) {
       playerEl = document.createElement("div");
@@ -106,11 +127,13 @@
       });
       document.addEventListener("keydown", function (e) { if (e.key === "Escape") closePlayer(); });
     }
+    var siteLabel = site === "bili" ? "B站" : "YouTube";
+    var watch = (site === "bili" ? BILI_WATCH : YT_WATCH).replace("{id}", encodeURIComponent(videoId));
     playerEl.querySelector(".vid-frame").innerHTML =
-      '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) +
-      '?rel=0&modestbranding=1" title="YouTube 集锦" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+      '<iframe src="' + embedSrc(videoId, site) + '" title="集锦" loading="lazy" ' +
+      'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     playerEl.querySelector(".vid-player-ext").innerHTML =
-      '<a href="https://www.youtube.com/watch?v=' + encodeURIComponent(videoId) + '" target="_blank" rel="noopener">在 YouTube 打开 →</a>';
+      '<a href="' + esc(watch) + '" target="_blank" rel="noopener">在' + siteLabel + '打开 →</a>';
     playerEl.classList.add("open");
     document.body.style.overflow = "hidden";
   }
@@ -127,7 +150,7 @@
     var card = e.target.closest ? e.target.closest(".vid-card") : null;
     if (!card) return;
     e.preventDefault();
-    openPlayer(card.getAttribute("data-video-id"));
+    openPlayer(card.getAttribute("data-video-id"), card.getAttribute("data-video-site") || "yt");
   });
 
   window.VideosUI = {

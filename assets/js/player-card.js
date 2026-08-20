@@ -304,12 +304,10 @@
     rows.push(pair("备注", r.note, "full"));
     document.getElementById("pc-grid").innerHTML = rows.join("");
 
-    // 🎥 个人集锦（dqd-videos-cache.js + videos-data.js，videos-ui.js 渲染）
+    // 🎥 个人集锦：按梯队分组（同一球员不同梯队的按场集锦分开呈现）
     var videosEl = document.getElementById("pc-videos");
     if (videosEl) {
-      videosEl.innerHTML = (window.VideosUI && curKey)
-        ? window.VideosUI.groupHtml(window.VideosUI.resolve("players", curKey), "🎥 个人集锦")
-        : "";
+      videosEl.innerHTML = (window.VideosUI && curKey) ? tieredVideosHtml(curKey) : "";
     }
 
     var foot = document.getElementById("pc-foot");
@@ -317,6 +315,50 @@
     if (r.teamHref) links.push('<a href="' + esc(r.teamHref) + '">查看 ' + esc(r.team) + " →</a>");
     if (r.imgUrl) links.push('<a href="' + esc(r.imgUrl) + '" target="_blank" rel="noopener">照片来源' + (r.imgCredit ? "（" + esc(r.imgCredit) + "）" : "") + " →</a>");
     foot.innerHTML = links.join("");
+  }
+
+  /* 🎥 按梯队分组的个人集锦：
+     同一 Sofascore 球员 id 可能出现在多个梯队名单（如 U19 与 B队），
+     各梯队的按场集锦分别成组；没匹配到赛程的视频也照常显示在卡片里。 */
+  function tieredVideosHtml(key) {
+    var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
+    if (!m) {
+      // 非 Sofascore 键（data.js 本地球员）：直接显示该键视频
+      var solo = window.VideosUI.resolve("players", key);
+      return solo.length ? window.VideosUI.groupHtml(solo, "🎥 个人集锦") : "";
+    }
+    var curTier = m[1], id = m[2];
+    var groups = [], seen = {};
+    function pushTier(t) {
+      if (!t || seen[t]) return;
+      seen[t] = true;
+      var list = window.VideosUI.resolve("players", "sf:" + t + ":" + id);
+      if (list.length) groups.push({ label: teamLabel(t), list: list });
+    }
+    pushTier(curTier);
+    // 其它 Sofascore 梯队缓存里找同一球员 id
+    var caches = {
+      b: window.DQD_BARCA_ATLETIC_SF_CACHE,
+      u19: window.DQD_U19_CACHE, u18: window.DQD_U18_CACHE, u16: window.DQD_U16_CACHE
+    };
+    Object.keys(caches).forEach(function (t) {
+      var c = caches[t];
+      if (!c || !c.players) return;
+      var has = false;
+      for (var i = 0; i < c.players.length; i++) { if (String(c.players[i].id) === id) { has = true; break; } }
+      if (has) pushTier(t);
+    });
+    if (!groups.length) return "";
+    var total = groups.reduce(function (n, g) { return n + g.list.length; }, 0);
+    return '<div class="vid-block">' +
+      '<div class="vid-block-title">🎥 个人集锦 <span class="vid-count">' + total + "</span></div>" +
+      groups.map(function (g) {
+        return '<div class="pc-vid-group">' +
+          '<div class="pc-vid-tier">' + esc(g.label) + "</div>" +
+          '<div class="vid-grid">' + g.list.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
+        "</div>";
+      }).join("") +
+    "</div>";
   }
 
   function open(key) {

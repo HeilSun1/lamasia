@@ -9,7 +9,9 @@
      · reSearch：把比赛键放进来 → 下次跑 update_youtube.ps1 会强制重搜（旧视频保留合并）
    比赛键  = "sfb:{Sofascore eventId}"（B队）/ "sofascore:{eventId}"（U19）
    球员键  = "sf:b:{球员SofascoreID}" / "sf:u19:{球员SofascoreID}"
-   视频格式：{ videoId: "xxxx", title: "（可选，留空用 YouTube 原标题）" }
+   视频格式：{ videoId: "xxxx", title: "（可选，留空用原标题）", site: "yt" }
+     · YouTube 视频 id 形如 "abc123xyz"，B站 视频 id 是 BV 号（如 "BV1xx..."）
+     · pin B站 视频时加 site: "bili"（默认 yt）
    ═══════════════════════════════════════════════════════════════ */
 window.VIDEOS_DATA = {
   matches: {

@@ -20,10 +20,11 @@
 - 数据写入 `assets/js/dqd-videos-cache.js`（`window.DQD_VIDEOS_CACHE`）
 
 抓取方式（均免 key）：
-- **全场集锦**：Edge 无头抓 YouTube 搜索结果页 `/results`，解析内嵌 JSON（与抓 Sofascore 同一套技术；YouTube 反爬时优雅跳过该场、下次重试）
-- **球员按场集锦**：拉取 @ArsenKveFCB 频道的公开 RSS 订阅流（`youtube.com/feeds/videos.xml`），按球员名 + 比赛日期匹配
+- **全场集锦（YouTube）**：Edge 无头抓 YouTube 搜索结果页 `/results`，解析内嵌 JSON（与抓 Sofascore 同一套技术；YouTube 反爬时优雅跳过该场、下次重试）
+- **球员按场集锦（YouTube）**：拉取 @ArsenKveFCB 频道的公开 RSS 订阅流（`youtube.com/feeds/videos.xml`），按球员名 + 比赛日期匹配
+- **B站 兜底源（国内直连可播放）**：Edge 无头渲染 B站 UP 空间页取投稿 bvid，再用 view 接口拿元数据；按「球员关键词」进球员卡片、按「双方队名+日期」进全场集锦。默认 UP：口菐(470189)、「B站一直吞我评论」(1515150312)；视频在卡片带 B站 角标，站内播放器走 bilibili 嵌入
 
-想换/加球员集锦频道：改 `scripts/update_youtube.ps1` 头部 `$PlayerChannelHandles`。
+配置（`scripts/update_youtube.ps1` 头部）：`$PlayerChannelHandles` 改 YouTube 球员集锦频道、`$BiliUids` 改 B站 UP 主 UID、`$MaxBiliVideos` 控制每 UP 取最近投稿条数。
 
 > ⚠️ 国内访问 YouTube 需代理：本机跑更新时若无代理会记日志跳过（不标记已搜、下次自动重试）；GitHub Actions 在美区运行器，是更可靠的自动路径。视频缩略图加载失败时卡片保留文字，不影响点击播放/跳转。
 

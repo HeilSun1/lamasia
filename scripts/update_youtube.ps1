@@ -27,6 +27,8 @@ $UTF8       = New-Object System.Text.UTF8Encoding($false)
 
 # ── 配置 ────────────────────────────────────────────────────────
 $PlayerChannelHandles = @("ArsenKveFCB")   # 球员"按场个人集锦"来源频道（可改/可加）
+$BiliUids             = @("470189", "1515150312")   # B站 UP主：优先口菐，其次「B站一直吞我评论」
+$MaxBiliVideos        = 14                 # 每 UP 取最近 N 个 bvid
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
 $MaxMatchVideos       = 3                  # 每场保留条数
 $MaxPlayerVideos      = 6                  # 每名球员累积上限
@@ -34,6 +36,7 @@ $PubAfterDays         = 15                 # 比赛结束后 N 天内的上传�
 $MaxRelDays           = 25                 # 搜索结果"发布于 N 天前"的上限（防误配旧场次）
 $BTeamId              = "24343"            # Sofascore 巴萨竞技
 $U19TeamId            = "90128"            # Sofascore 巴萨 U19
+$CutoffUnix           = 1780243200         # 只收 2026-06-01 起（与站点数据一致）
 
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
 $EdgeCfg = Join-Path $PSScriptRoot "sofascore-edge-path.txt"
@@ -69,12 +72,35 @@ function Read-CacheJs([string]$file) {
 function Norm([string]$s) {
   $s = [string]$s
   $s = $s.ToLowerInvariant()
+  $s = $s.Normalize([System.Text.NormalizationForm]::FormD)   # "Rodríguez"→"rodriguez"
   $s = [regex]::Replace($s, '[\u0300-\u036f]', '')
   return $s
 }
 
 # 队名/人名 → 有区分度的 token（去掉常见前后缀/泛词）
 $STOP = @("u19","u18","u16","u17","u15","fc","cf","cd","ue","ce","de","el","la","los","las","del","club","barca","barcelona","atletic","atletico","reserva","b","a","real","the","of","vs","deportivo","femenino","juvenil")
+# 中文名匹配评分：分段（· 分隔）命中取最长匹配长度；前缀≥3 字取 3（通用前缀分数低，多 Pedro 时长的优先）
+function ZhScore([string]$titleNorm, [string]$zh) {
+  $zn = Norm $zh
+  $parts = @($zn -split '·' | Where-Object { $_.Length -ge 2 })
+  if (-not $parts.Count) { $parts = @($zn) }
+  $best = 0
+  foreach ($part in $parts) {
+    $p = [regex]::Replace($part, '[^一-鿿]', '')
+    if (-not $p) { continue }
+    if ($titleNorm.IndexOf($p) -ge 0) { if ($p.Length -gt $best) { $best = $p.Length } }
+    elseif ($p.Length -ge 4 -and $titleNorm.IndexOf($p.Substring(0, 4)) -ge 0) { if (4 -gt $best) { $best = 4 } }
+    elseif ($p.Length -ge 3 -and $titleNorm.IndexOf($p.Substring(0, 3)) -ge 0) { if (3 -gt $best) { $best = 3 } }
+  }
+  return $best
+}
+# 球员-视频匹配分：英文 token 命中 1000+；中文走 ZhScore（0 = 不匹配）
+function PlayerScore([string]$titleNorm, $pl) {
+  foreach ($t in @($pl.tokens)) { if ($titleNorm.IndexOf($t) -ge 0) { return 1000 + $t.Length } }
+  if ($pl.zh) { return ZhScore $titleNorm $pl.zh }
+  return 0
+}
+
 function TeamTokens([string]$name) {
   $n = Norm $name
   $tokens = @()
@@ -133,13 +159,16 @@ function Get-RelDays([string]$s) {
 
 # ── Edge 无头抓取 ──────────────────────────────────────────────
 $ScrapeFail = 0
-function Get-YtDom([string]$url, [string]$what) {
+# Budget>0 时加 --virtual-time-budget（等异步 JS 渲染完，B站 空间页需要；YouTube 搜索结果页不需要）
+function Get-YtDom([string]$url, [string]$what, [int]$Budget = 0) {
   try {
     $tmp = Join-Path $env:TEMP ("yt_" + [guid]::NewGuid().ToString("N") + ".html")
     $prevEAP = $ErrorActionPreference
     $ErrorActionPreference = "Continue"
-    $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions --lang=en-US `
-        "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
+    $edgeArgs = @("--headless=new", "--disable-gpu", "--no-first-run", "--disable-extensions", "--lang=en-US", "--user-data-dir=$Profile")
+    if ($Budget -gt 0) { $edgeArgs += "--virtual-time-budget=$Budget" }
+    $edgeArgs += @("--dump-dom", $url)
+    $html = (& $Edge @edgeArgs 2>$null | Out-String)
     $ErrorActionPreference = $prevEAP
     [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
     $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
@@ -279,7 +308,74 @@ function Get-ChannelRss([string]$channelId) {
   return @($out)
 }
 
-Log "开始 YouTube 集锦更新（免 key：搜索抓取 + 频道 RSS）……"
+# ── B站：渲染 UP 空间页取 bvid（反爬用 Edge 无头 + 虚拟时间等异步渲染完，失败重试） ──
+function Get-BiliBvids([string]$uid) {
+  $bvids = @()
+  foreach ($attempt in 1..5) {
+    if ($ScrapeFail -ge 3) { break }
+    $url = "https://space.bilibili.com/$uid/video"
+    $html = Get-YtDom $url "B站UP空间 $uid" 20000
+    if ($html) {
+      $ids = @([regex]::Matches($html, 'video/(BV[a-zA-Z0-9]+)') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
+      if ($ids.Count) { $bvids = @($ids); break }
+    }
+    Start-Sleep -Milliseconds 800
+  }
+  if (-not $bvids.Count) { Log "  · B站 UP $uid 未取到投稿（渲染失败或被风控）" }
+  return $bvids
+}
+
+# B站 view 接口：bvid → 元数据（无需 WBI，任意 buvid cookie 可通）
+function Get-BiliVideoInfo([string]$bvid) {
+  try {
+    $uri = "https://api.bilibili.com/x/web-interface/view?bvid=$bvid"
+    $headers = @{
+      "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
+      "Referer"    = "https://space.bilibili.com/"
+      "Cookie"     = "buvid3=lamasia"
+    }
+    $res = Invoke-RestMethod -Uri $uri -Method Get -Headers $headers -TimeoutSec 15
+    if ($res -and $res.code -eq 0 -and $res.data) {
+      $d = $res.data
+      return [pscustomobject]@{
+        bvid     = $bvid
+        title    = [string]$d.title
+        pic      = [string]$d.pic
+        pubdate  = [string]$d.pubdate
+        duration = [string]$d.duration
+        owner    = [string]$d.owner.name
+      }
+    }
+  } catch {
+    Log "  ✗ B站视频 $bvid 元数据失败：$($_.Exception.Message)"
+  }
+  return $null
+}
+
+# ── 中文名映射：English(norm) → zh（来自 data.js + 懂球帝 B队名单） ──
+function Build-ZhMap {
+  $map = @{}
+  $dataJs = Read-CacheJs (Join-Path $Root "assets\js\data.js")
+  if ($dataJs -and $dataJs.players) {
+    foreach ($tier in @($dataJs.players.PSObject.Properties)) {
+      foreach ($p in @($tier.Value)) {
+        if ($p.name -and $p.zh) { $k = Norm ([string]$p.name); if ($k) { $map[$k] = [string]$p.zh } }
+      }
+    }
+  }
+  $bteam = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-cache.js")
+  if ($bteam -and $bteam.roster -and $bteam.roster.data -and $bteam.roster.data.list) {
+    foreach ($g in @($bteam.roster.data.list)) {
+      foreach ($p in @($g.data)) {
+        $en = [string]$p.person_en_name; $zh = [string]$p.person_name
+        if ($en -and $zh) { $k = Norm $en; if ($k -and -not $map.ContainsKey($k)) { $map[$k] = $zh } }
+      }
+    }
+  }
+  return $map
+}
+
+Log "开始 YouTube 集锦更新（免 key：搜索抓取 + 频道 RSS + B站 UP 空间）……"
 
 # ── 读旧缓存（合并保留用） ──
 $old = Read-CacheJs $OutFile
@@ -323,6 +419,17 @@ function New-Video($videoId, $title, $channel, $channelId, [string]$published, [
   }
 }
 
+# B站视频对象：在标准字段上附加 site="bili" 与封面 pic（https 化）
+function New-BiliVideo($info, [string]$published) {
+  $pic = [string]$info.pic
+  if ($pic -match '^//') { $pic = "https:" + $pic }
+  elseif ($pic -match '^http://') { $pic = $pic -replace '^http:', 'https:' }
+  $o = New-Video $info.bvid $info.title $info.owner "" $published ([string]$info.duration)
+  $o | Add-Member -NotePropertyName site -NotePropertyValue "bili" -Force
+  $o | Add-Member -NotePropertyName pic -NotePropertyValue $pic -Force
+  return $o
+}
+
 function Merge-Videos($existing, $incoming, [int]$cap) {
   $seen = @{}
   $out = @()
@@ -355,17 +462,16 @@ foreach ($k in @($oldSearched.Keys)) {
   if ($currentEnded.ContainsKey($k)) { $searched[$k] = $true }
 }
 
-# ════════════ A. 整场集锦：搜索抓取，只搜「新出现的已完赛」 ════════════
+# ════════════ A. 整场集锦（YouTube 搜索抓取） ════════════
 $nowUtc = [datetime]::UtcNow
+# A0. 先收集「新出现的已完赛」——YouTube 不可达也要收集，B站 匹配仍可用
 $matchSeen = @{}
 foreach ($cfg in @(
   @{ cache = $sfb; prefix = "sfb:"; details = $sfbDetails; teamId = $BTeamId; tier = "b" },
   @{ cache = $u19; prefix = "sofascore:"; details = $u19Details; teamId = $U19TeamId; tier = "u19" }
 )) {
   if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
-  $ended = @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })
-  foreach ($m in $ended) {
-    if ($ScrapeFail -ge 3) { Log "  · 搜索抓取已被风控，停止整场集锦搜索。"; break }
+  foreach ($m in @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })) {
     $eid = [string]$m.id
     if (-not $eid -or $matchSeen.ContainsKey($eid)) { continue }
     $matchSeen[$eid] = $true
@@ -373,9 +479,23 @@ foreach ($cfg in @(
     try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
     if (($nowUtc - $mDate).TotalDays -gt $MatchWithinDays) { continue }
     if ($searched.ContainsKey($key) -and -not $reSearch.ContainsKey($key)) { continue }
-    if (-not (Test-YtProbe)) { break }   # 不可达：整体跳过，不标记已搜
-    $searched[$key] = $true
     $newMatchList += $m | Add-Member -PassThru -NotePropertyName _cfg -NotePropertyValue $cfg
+  }
+}
+# A1. YouTube 整场集锦搜索（探测不可达则跳过，B站 不受影响）
+$ytOk = Test-YtProbe
+if ($newMatchList.Count -and -not $ytOk) {
+  Log "  · 有 $($newMatchList.Count) 场新比赛，但 YouTube 不可达：仅做 B站 匹配。"
+}
+if ($newMatchList.Count -and $ytOk) {
+  foreach ($nm in $newMatchList) {
+    if ($ScrapeFail -ge 3) { Log "  · 搜索抓取已被风控，停止整场集锦搜索。"; break }
+    $m = $nm
+    $cfg = $nm._cfg
+    $eid = [string]$m.id
+    $key = $cfg.prefix + $eid
+    $searched[$key] = $true
+    try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
 
     $homeTk = @(TeamTokens ([string]$m.home))
     $awayTk = @(TeamTokens ([string]$m.away))
@@ -426,7 +546,7 @@ foreach ($cfg in @(
 }
 
 # ════════════ B. 球员按场个人集锦（频道 RSS，只搜本次新比赛阵容里的球员） ════════════
-if ($newMatchList.Count) {
+if ($newMatchList.Count -and $ytOk) {
   # 解析频道 ID（仅在有新比赛时）
   $channelId = ""
   foreach ($handle in $PlayerChannelHandles) {
@@ -461,10 +581,10 @@ if ($newMatchList.Count) {
         $hi = $mDate.AddDays($PubAfterDays).Date
         Log "  · 球员集锦：$($m.home) vs $($m.away)（巴萨 $side 侧 $($players.Count) 人）"
         foreach ($luP in $players) {
-          $pid = [string]$luP.player.id
+          $plid = [string]$luP.player.id
           $pname = [string]$luP.player.name
-          if (-not $pid -or -not $pname) { continue }
-          $pkey = "sf:$($cfg.tier):$pid"
+          if (-not $plid -or -not $pname) { continue }
+          $pkey = "sf:$($cfg.tier):$plid"
           if ($playerKeys.ContainsKey($pkey)) { continue }
           $playerKeys[$pkey] = $true
           $nameTk = @(TeamTokens $pname)
@@ -484,6 +604,93 @@ if ($newMatchList.Count) {
   }
 } else {
   Log "  · 无新完赛比赛（或 YouTube 不可达），本次不搜索球员集锦。"
+}
+
+# ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」） ════════════
+# 独立于 YouTube 探测：国内 B站 可直连，无代理也能拉到
+if ($newMatchList.Count -and $BiliUids.Count) {
+  $zhMap = Build-ZhMap
+  # 球员池：用当前名单（B队 SF + U19 名单），覆盖面广，任何在队球员的视频都能按名匹配
+  $allPlayers = @{}
+  foreach ($cfg in @(
+    @{ cache = $sfb; tier = "b" },
+    @{ cache = $u19; tier = "u19" }
+  )) {
+    if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
+    foreach ($p in @($cfg.cache.players)) {
+      $plid = [string]$p.id
+      $pname = [string]$p.name
+      if (-not $plid -or -not $pname) { continue }
+      $pkey = "sf:$($cfg.tier):$plid"
+      if ($allPlayers.ContainsKey($pkey)) { continue }
+      $zh = ""
+      $nz = Norm $pname
+      if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
+      $allPlayers[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; tokens = @(TeamTokens $pname) }
+    }
+  }
+  # 已完赛列表（含双方队名 token + 时间窗），供全场集锦匹配
+  $endedList = @()
+  foreach ($cfg in @(
+    @{ cache = $sfb; prefix = "sfb:" },
+    @{ cache = $u19; prefix = "sofascore:" }
+  )) {
+    if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
+    foreach ($m in @($cfg.cache.matches | Where-Object { $_.status -eq 'Ended' })) {
+      $eid = [string]$m.id
+      try { $mDate = [DateTimeOffset]::FromUnixTimeSeconds([int64]$m.start).UtcDateTime } catch { continue }
+      $endedList += [pscustomobject]@{
+        key = $cfg.prefix + $eid
+        homeTk = @(TeamTokens ([string]$m.home))
+        awayTk = @(TeamTokens ([string]$m.away))
+        mDate = $mDate
+      }
+    }
+  }
+  Log "  · B站 匹配池：$($allPlayers.Count) 名在队球员 / $($endedList.Count) 场已完赛"
+  foreach ($uid in $BiliUids) {
+    $bvids = @(Get-BiliBvids $uid)
+    $count = [Math]::Min($bvids.Count, $MaxBiliVideos)
+    if (-not $count) { continue }
+    Log "  · B站 UP $uid：检查最近 $count 条投稿"
+    $i = 0
+    foreach ($bvid in $bvids) {
+      if ($i -ge $count) { break }
+      $i++
+      $info = Get-BiliVideoInfo $bvid
+      if (-not $info) { continue }
+      try { $pubDt = [DateTimeOffset]::FromUnixTimeSeconds([int64]$info.pubdate).UtcDateTime } catch { continue }
+      if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
+      $titleN = Norm $info.title
+      $addedPlayer = $false
+      # ① 球员关键词匹配 → 该球员的按场集锦（评分制：只给最长匹配者，防「佩德罗」这种通用前缀误配多个人）
+      $bestScore = 0
+      $bestKeys = @()
+      foreach ($pk in @($allPlayers.Keys)) {
+        $sc = PlayerScore $titleN $allPlayers[$pk]
+        if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
+        elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
+      }
+      if ($bestScore -gt 0) {
+        foreach ($pk in $bestKeys) {
+          $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+          $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+        }
+        $addedPlayer = $true
+      }
+      # ② 比赛关键词匹配 → 全场集锦（标题含双方队名且发布于比赛 ±PubAfterDays 天）
+      foreach ($em in $endedList) {
+        if (-not (HasToken $titleN $em.homeTk) -or -not (HasToken $titleN $em.awayTk)) { continue }
+        $lo = $em.mDate.AddDays(-$PubAfterDays)
+        $hi = $em.mDate.AddDays($PubAfterDays)
+        if ($pubDt -lt $lo -or $pubDt -gt $hi) { continue }
+        $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+        $outMatches[$em.key] = @(Merge-Videos ($outMatches[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
+      }
+      if ($addedPlayer) { Log "    ✓ B站匹配球员：$($info.title)" }
+    }
+    Start-Sleep -Milliseconds 500
+  }
 }
 
 # ════════════ C. 合并写回 ════════════
@@ -519,7 +726,7 @@ if ($coreJson -eq $oldCoreJson) {
   $newCache.searchedMatches = $core.searchedMatches
   $newCache.matches = $core.matches
   $newCache.players = $core.players
-  $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：YouTube 搜索/RSS */`r`nwindow.DQD_VIDEOS_CACHE = $($newCache | ConvertTo-Json -Depth 10);`r`n"
+  $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：YouTube 搜索/RSS + B站 UP 空间 */`r`nwindow.DQD_VIDEOS_CACHE = $($newCache | ConvertTo-Json -Depth 10);`r`n"
   try {
     [System.IO.File]::WriteAllText($OutFile, $js, $UTF8)
     Log "  ✓ 已写入：$($core.matches.Count) 场比赛、$($core.players.Count) 名球员的集锦缓存（本次新增搜索 $($newMatchList.Count) 场）"
