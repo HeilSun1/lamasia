@@ -1099,3 +1099,78 @@ tr.match-row:hover { background: var(--surface-3); }
 /* 比赛详情里的球员名（进球/红牌/阵容）可点击提示 */
 .pc-link { cursor: pointer; border-bottom: 1px dashed var(--faint); }
 .pc-link:hover { color: var(--blue); border-bottom-color: var(--blue); }
+
+/* ═══ YouTube 视频集锦（videos-ui.js）═══ */
+.vid-block { margin-top: 20px; }
+.vid-block-title { font-size: 15px; margin-bottom: 10px; color: var(--text); font-weight: 700; }
+.vid-count { font-size: 11.5px; font-weight: 700; color: var(--muted); }
+.vid-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;
+}
+.vid-card {
+  display: flex; flex-direction: column; gap: 6px; cursor: pointer;
+  background: var(--surface-2); border: 1px solid var(--border-soft);
+  border-radius: 10px; padding: 8px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.vid-card:hover { border-color: var(--barca-blue); transform: translateY(-1px); }
+.vid-thumb {
+  position: relative; border-radius: 7px; overflow: hidden;
+  background: var(--surface-3); aspect-ratio: 16 / 9;
+  display: grid; place-items: center;
+}
+.vid-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vid-dur {
+  position: absolute; right: 5px; bottom: 5px; font-size: 11px; font-weight: 700;
+  background: rgba(6, 12, 24, 0.8); color: #fff; padding: 1px 6px; border-radius: 5px;
+}
+.vid-play {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(6, 12, 24, 0.62); color: #fff; font-size: 13px;
+  display: grid; place-items: center; border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+.vid-title {
+  font-size: 12.5px; font-weight: 700; color: var(--text); line-height: 1.35;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.vid-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.vid-channel { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vid-ext { color: var(--faint); text-decoration: none; font-size: 13px; flex-shrink: 0; }
+.vid-card:hover .vid-ext { color: var(--blue); }
+
+/* 站内播放器灯箱 */
+.vid-player {
+  position: fixed; inset: 0; z-index: 1500;
+  background: rgba(6, 12, 24, 0.85); backdrop-filter: blur(4px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.vid-player.open { display: flex; }
+.vid-player-inner { position: relative; width: min(880px, 100%); }
+.vid-player-close {
+  position: absolute; top: -42px; right: 0;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff; font-size: 17px; cursor: pointer; display: grid; place-items: center;
+}
+.vid-player-close:hover { background: rgba(255, 255, 255, 0.26); }
+.vid-frame { border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.vid-frame iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+.vid-player-foot { margin-top: 12px; text-align: right; }
+.vid-player-foot a { color: var(--blue); font-size: 13.5px; text-decoration: none; }
+.vid-player-foot a:hover { text-decoration: underline; }
+
+/* 比赛弹窗 · 本场球员个人集锦 */
+.md-pv-player { margin-bottom: 14px; }
+.md-pv-player:last-child { margin-bottom: 0; }
+.md-pv-name { font-size: 13px; font-weight: 800; color: var(--text); margin-bottom: 7px; }
+.md-pv-name .pc-link { cursor: pointer; }
+.md-pv-name .pc-link:hover { color: var(--blue); }
+
+/* 球员卡片 · 个人集锦分隔 */
+.pc-videos { margin-top: 12px; border-top: 1px solid var(--border-soft); padding-top: 10px; }
+.pc-videos .vid-block { margin-top: 0; }
+
+@media (max-width: 680px) {
+  .vid-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 9px; }
+}

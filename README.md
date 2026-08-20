@@ -11,6 +11,22 @@
 
 > 注意：Sofascore 有 TLS 指纹反爬（curl 一律 403），所以 U19 脚本用本机/运行器上自带的 Edge `--headless --dump-dom` 取 JSON；GitHub Actions 的 `windows-latest` 自带 Edge，可直接跑这两个 PowerShell 脚本。
 
+## YouTube 视频集锦（可选功能）
+
+已完赛比赛自动搜「全场集锦」，并在球员集锦频道（默认 @ArsenKveFCB）里给上场球员搜「按场个人集锦」。**无需任何 API key / 账号**：
+- 比赛弹窗显示 🎥 全场集锦 + ⭐ 本场球员个人集锦（点击卡片本站内播放，↗ 直达 YouTube）
+- 球员卡片显示 🎥 个人集锦（点击阵容里的球员名弹出）
+- **只在有新完赛比赛时搜索**，不每天跑；人工可在 `assets/js/videos-data.js` pin 视频 / 否决错误匹配 / `reSearch` 强制重搜
+- 数据写入 `assets/js/dqd-videos-cache.js`（`window.DQD_VIDEOS_CACHE`）
+
+抓取方式（均免 key）：
+- **全场集锦**：Edge 无头抓 YouTube 搜索结果页 `/results`，解析内嵌 JSON（与抓 Sofascore 同一套技术；YouTube 反爬时优雅跳过该场、下次重试）
+- **球员按场集锦**：拉取 @ArsenKveFCB 频道的公开 RSS 订阅流（`youtube.com/feeds/videos.xml`），按球员名 + 比赛日期匹配
+
+想换/加球员集锦频道：改 `scripts/update_youtube.ps1` 头部 `$PlayerChannelHandles`。
+
+> ⚠️ 国内访问 YouTube 需代理：本机跑更新时若无代理会记日志跳过（不标记已搜、下次自动重试）；GitHub Actions 在美区运行器，是更可靠的自动路径。视频缩略图加载失败时卡片保留文字，不影响点击播放/跳转。
+
 ## 目录
 
 ```

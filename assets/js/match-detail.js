@@ -141,6 +141,7 @@
 
   /* ═══ 球员卡片入口（阵容/比赛进程里的巴萨球员名可点击弹卡）═══ */
   var curTier = "";   // 当前比赛的梯队（由 m.cacheRef 推出）
+  var curMatch = null; // 当前比赛对象（视频/球员集锦用）
   function sfKey(pid) {
     return (curTier && pid) ? "sf:" + curTier + ":" + pid : "";
   }
@@ -350,6 +351,55 @@
     return html ? '<section class="md-sec"><h4>🤝 交锋</h4>' + html + "</section>" : "";
   }
 
+  /* ═══ 视频集锦（videos-ui.js）═══ */
+
+  /* 巴萨梯队对应的 Sofascore 团队 id（判断本场巴萨是主/客） */
+  var TIER_TEAM = { b: "24343", u19: "90128", u18: "", u16: "" };
+
+  /* 🎥 全场集锦：同步渲染 + 本场球员个人集锦占位（lineups 加载后填充） */
+  function matchVideosHtml(key) {
+    if (!window.VideosUI) return "";
+    var html = window.VideosUI.groupHtml(window.VideosUI.resolve("matches", key), "🎥 全场集锦");
+    return html + '<div id="md-player-videos"></div>';
+  }
+
+  /* ⭐ 本场球员个人集锦：取巴萨侧阵容球员，查其按场集锦（发布于本场 ±14 天内） */
+  function fillMatchPlayerVideos(lineups, body) {
+    var wrap = body.querySelector("#md-player-videos");
+    if (!wrap || !curMatch || !window.VideosUI) return;
+    var teamId = TIER_TEAM[curTier] || "";
+    var side = null;
+    if (teamId && lineups) {
+      if (String(curMatch.homeId) === teamId) side = lineups.home;
+      else if (String(curMatch.awayId) === teamId) side = lineups.away;
+    }
+    var list = (side && side.players) || null;
+    if (!list) return;
+    var startMs = parseInt(curMatch.start, 10) * 1000;
+    if (!startMs) return;
+    var lo = startMs - 14 * 864e5, hi = startMs + 14 * 864e5;
+    var html = "", any = false;
+    list.forEach(function (x) {
+      var p = (x && x.player) || {};
+      var pid = p.id;
+      var pkey = pid ? sfKey(pid) : "";
+      if (!pkey) return;
+      var vids = window.VideosUI.resolve("players", pkey).filter(function (v) {
+        var t = Date.parse(v.published + "T00:00:00Z");
+        return t >= lo && t <= hi;
+      });
+      if (!vids.length) return;
+      any = true;
+      html += '<div class="md-pv-player">' +
+        '<div class="md-pv-name">' + cardA(pid, p.name) + "</div>" +
+        '<div class="vid-grid">' + vids.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
+      "</div>";
+    });
+    wrap.innerHTML = any
+      ? '<section class="md-sec"><h4>⭐ 本场球员个人集锦</h4>' + html + "</section>"
+      : "";
+  }
+
   /* 拉取结果 → 填充 #md-load；无任何分区时显示友好提示 */
   function applyDetail(res, body) {
     var load = body.querySelector(".md-load");
@@ -367,6 +417,7 @@
     load.innerHTML = any
       ? html
       : '<div class="note-box" style="margin-top:18px">📋 <span><b>该场详情暂不可用。</b>当前仅显示对阵信息。每日自动更新最近若干场的阵容与比赛进程，明天刷新后即可查看；也可点击下方链接在原站查看。</span></div>';
+    fillMatchPlayerVideos(res[0], body);   // ⭐ 本场球员个人集锦（依赖阵容数据）
   }
 
   function liveFetch(id, body) {
@@ -443,9 +494,11 @@
     var m = REG[key];
     if (!m) return;
     curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16", DQD_BARCA_ATLETIC_SF_CACHE: "b" }[m.cacheRef] || "";
+    curMatch = m;
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
     body.innerHTML = headerHtml(m) +
+      matchVideosHtml(key) +
       '<div class="md-load"><div class="md-loading">正在加载比赛详情…</div></div>' +
       footerHtml(m);
     modal.classList.add("open");

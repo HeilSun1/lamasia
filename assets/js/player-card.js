@@ -84,6 +84,7 @@
 
   var INDEX = {};   // key -> 球员卡片记录
   var built = false;
+  var curKey = "";  // 当前打开的卡片键（个人集锦查询用）
   function add(key, rec) { if (key && rec) INDEX[key] = rec; }
 
   // 索引延迟构建：player-card.js 在 data.js 之后、各梯队缓存之前加载，
@@ -257,6 +258,7 @@
           '<span class="pc-team" id="pc-team"></span>' +
         "</div>" +
         '<div class="pc-grid" id="pc-grid"></div>' +
+        '<div class="pc-videos" id="pc-videos"></div>' +
         '<div class="pc-foot" id="pc-foot"></div>' +
       "</div>";
     document.body.appendChild(mask);
@@ -302,6 +304,14 @@
     rows.push(pair("备注", r.note, "full"));
     document.getElementById("pc-grid").innerHTML = rows.join("");
 
+    // 🎥 个人集锦（dqd-videos-cache.js + videos-data.js，videos-ui.js 渲染）
+    var videosEl = document.getElementById("pc-videos");
+    if (videosEl) {
+      videosEl.innerHTML = (window.VideosUI && curKey)
+        ? window.VideosUI.groupHtml(window.VideosUI.resolve("players", curKey), "🎥 个人集锦")
+        : "";
+    }
+
     var foot = document.getElementById("pc-foot");
     var links = [];
     if (r.teamHref) links.push('<a href="' + esc(r.teamHref) + '">查看 ' + esc(r.team) + " →</a>");
@@ -313,6 +323,7 @@
     buildIndex();   // 兜底：确保索引已构建
     var r = INDEX[key];
     if (!r) return;
+    curKey = key;
     ensureModal();
     renderCard(r);
     document.getElementById("pc-mask").hidden = false;
