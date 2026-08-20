@@ -96,9 +96,11 @@ function ZhScore([string]$titleNorm, [string]$zh) {
   }
   return $best
 }
-# 球员-视频匹配分：英文 token 命中 1000+；中文走 ZhScore（0 = 不匹配）
+# 球员-视频匹配分：英文 token 按「命中数×1000 + 命中总长」计（全名命中优先于共享姓氏），中文走 ZhScore（0 = 不匹配）
 function PlayerScore([string]$titleNorm, $pl) {
-  foreach ($t in @($pl.tokens)) { if ($titleNorm.IndexOf($t) -ge 0) { return 1000 + $t.Length } }
+  $cnt = 0; $tot = 0
+  foreach ($t in @($pl.tokens)) { if ($titleNorm.IndexOf($t) -ge 0) { $cnt++; $tot += $t.Length } }
+  if ($cnt -gt 0) { return 1000 * $cnt + $tot }
   if ($pl.zh) { return ZhScore $titleNorm $pl.zh }
   return 0
 }
