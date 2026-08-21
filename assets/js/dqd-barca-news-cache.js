@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-21 19:10:06 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-21 21:00:56 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-21 19:10:06",
+    "updated":  "2026-08-21 21:00:56",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6208434", "title":  "记者：巴萨将涨薪续约哈姆扎，解约金升至1.5亿欧",
+            "url":  "https://www.dongqiudi.com/articles/6208434.html", "time":  "2026-08-21 19:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/C8/280x210/crop/-/rBXRn2qIMjqAROk-AAMjCIihGLY167.jpg" },
         {
             "id":  "6207015", "title":  "世体：巴萨西甲战埃尔切首发初定，埃斯帕特、贝尔纳尔将先发",
             "url":  "https://www.dongqiudi.com/articles/6207015.html", "time":  "2026-08-21 13:54",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6106257", "title":  "哈姆扎：我渴望创造更多的进球机会，为球队做出贡献",
             "url":  "https://www.dongqiudi.com/articles/6106257.html", "time":  "2026-08-01 06:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/5F/280x210/crop/-/rBXRn2ptHI2ACWJlAARiaJ9K3vI204.jpg" },
-        {
-            "id":  "6103777", "title":  "通卡拉和佩斯克尔在训练场上颠球。",
-            "url":  "https://www.dongqiudi.com/articles/6103777.html", "time":  "2026-07-31 18:14",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/07/31/aa1dcba51316ce8552e75ba1e4994983nBy720_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/5F/280x210/crop/-/rBXRn2ptHI2ACWJlAARiaJ9K3vI204.jpg" }
     ]
 };
