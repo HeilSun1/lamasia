@@ -26,7 +26,9 @@ $OutFile    = Join-Path $Root "assets\js\dqd-videos-cache.js"
 $UTF8       = New-Object System.Text.UTF8Encoding($false)
 
 # ── 配置 ────────────────────────────────────────────────────────
-$PlayerChannelHandles = @("ArsenKveFCB", "BCNBEST")   # 球员"按场个人集锦"来源频道（可改/可加）；BCNBEST 常发 U18 各场集锦
+$PlayerChannelHandles = @("ArsenKveFCB")   # 常规球员集锦频道（可改/可加；仅新比赛/重搜时拉取）
+$OneTimeChannelHandles = @("BCNBEST")      # 一次性频道（杯赛主办方，只发该杯赛集锦）：只抓这一次
+$OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $BiliUids             = @("470189", "1515150312")   # B站 UP主：优先口菐，其次「B站一直吞我评论」
 $MaxBiliVideos        = 14                 # 每 UP 取最近 N 个 bvid
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
@@ -611,11 +613,14 @@ foreach ($cfg in @(
   }
 }
 
-# 频道 RSS 每天都拉（哪怕没有新完赛比赛）：能及时收到已完赛场次的新上传集锦（如 BCNBEST 的 U18 集锦）
-if ($ytOk) {
-  # 解析全部频道 ID（handle 需带 @），逐个拉取 RSS（不止第一个可用的频道）
+# 频道 RSS 仅在出现新完赛比赛 / reSearch 重搜 / 有未抓的一次性频道时拉取，不每日抓
+$oneTimeDone = @()
+if (Test-Path $OneTimeDoneFile) { $oneTimeDone = @(Get-Content $OneTimeDoneFile) }
+$pendingOneTime = @($OneTimeChannelHandles | Where-Object { $oneTimeDone -notcontains $_ })
+if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
+  # 解析全部频道 ID（常规 + 一次性），逐个拉取 RSS（不止第一个可用的频道）
   $channelIds = @()
-  foreach ($handle in $PlayerChannelHandles) {
+  foreach ($handle in @($PlayerChannelHandles + $pendingOneTime)) {
     $cid = Get-YtChannelId $handle
     if (-not $cid) { Log "✗ 未能从 @$handle 页面解析频道 ID，跳过该频道。" }
     else { $channelIds += $cid; Log "  · 已解析频道 @$handle = $cid" }
@@ -682,9 +687,14 @@ if ($ytOk) {
       }
     }
     }
+    # 一次性频道只抓这一次：拉完写进记录文件，下次不再抓
+    if ($pendingOneTime.Count) {
+      Add-Content $OneTimeDoneFile ($pendingOneTime | ForEach-Object { "youtube:$($_)" })
+      Log "  · 已记录一次性频道 @$($pendingOneTime -join ', @')，下次不再抓取"
+    }
   }
 } else {
-  Log "  · YouTube 不可达，跳过油管频道集锦。"
+  Log "  · 无新完赛比赛且无待抓的一次性频道（或 YouTube 不可达），跳过油管频道集锦。"
 }
 
 # ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」） ════════════
