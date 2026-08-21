@@ -28,6 +28,10 @@ window.VIDEOS_DATA = {
   blocked: {
     "sf:b:1977602": ["-xRAJTjKdQI"],   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配，已拉黑
     "sf:b:2128084": ["9eOLL88phHU"],   // "Ebrima Tunkara vs Udinese"（08/08）实为 U18 比赛，已转挂 sf:u18:2128084
+    "sf:b:2014710": ["4_Aj5crS8X0"],   // "Juvenil B vs CF Damm 2021/22 全场回放"误配给现役球员
+    "sf:b:1926082": ["4_Aj5crS8X0"],
+    "sf:u19:2014710": ["4_Aj5crS8X0"],
+    "sf:u19:1926082": ["4_Aj5crS8X0"],
     "sfb:16866862": ["xC6XHDscPt4", "l_QEkeC1KJA", "WbP4hvDJ3Pw"],  // 三条 07-30 发布、4-1/训练视频，本场是 08-19 的 1-0，误配
     "sfb:16696837": ["zw6c7QSbUtA"]    // Tona 场"WATCH LIVE FOOTBALL"直播流，非本场集锦，误配
   },

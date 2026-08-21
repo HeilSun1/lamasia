@@ -99,6 +99,13 @@ function ZhScore([string]$titleNorm, [string]$zh) {
   }
   return $best
 }
+# 全场/直播/旧赛季内容判定：这类不该配到「球员个人集锦」名下（但全场集锦仍可匹配到比赛）
+function IsPlayerIrrelevant([string]$titleNorm) {
+  if ($titleNorm -match 'full\s*match|full\s*game|live\s*stream|watch\s*live|全场|完整|回放|比赛录像') { return $true }
+  if ($titleNorm -match '20(0[0-9]|1[0-9]|2[0-5])') { return $true }   # 旧赛季年份（≤2025），当前赛季 2026-27
+  return $false
+}
+
 # 球员-视频匹配分：英文 token 按「命中数×1000 + 命中总长」计（全名命中优先于共享姓氏），中文走 ZhScore（0 = 不匹配）
 function PlayerScore([string]$titleNorm, $pl) {
   $cnt = 0; $tot = 0
@@ -668,20 +675,22 @@ if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
       if (-not $pubT) { continue }
       if ($pubT -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }
       $titleN = Norm $it.title
-      # ① 球员关键词匹配 → 该球员按场集锦
-      $bestScore = 0
-      $bestKeys = @()
-      foreach ($pk in @($pool.Keys)) {
-        $sc = PlayerScore $titleN $pool[$pk]
-        if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
-        elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
-      }
-      if ($bestScore -gt 0) {
-        foreach ($pk in $bestKeys) {
-          $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
-          $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+      # ① 球员关键词匹配 → 该球员按场集锦（全场/直播/旧赛季内容不配给球员个人集锦）
+      if (-not (IsPlayerIrrelevant $titleN)) {
+        $bestScore = 0
+        $bestKeys = @()
+        foreach ($pk in @($pool.Keys)) {
+          $sc = PlayerScore $titleN $pool[$pk]
+          if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
+          elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
         }
-        Log "    ✓ 油管球员匹配：$($it.title)"
+        if ($bestScore -gt 0) {
+          foreach ($pk in $bestKeys) {
+            $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
+            $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+          }
+          Log "    ✓ 油管球员匹配：$($it.title)"
+        }
       }
       # ② 比赛关键词匹配 → 全场集锦（标题含双方队名、非直播/训练类，发布于开赛 -1 天到赛后 PubAfterDays 天）
       $nonMatchLike = $titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
@@ -748,20 +757,23 @@ if ($newMatchList.Count -and $BiliUids.Count) {
       if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
       $titleN = Norm $info.title
       $addedPlayer = $false
-      # ① 球员关键词匹配 → 该球员的按场集锦（评分制：只给最长匹配者，防「佩德罗」这种通用前缀误配多个人）
-      $bestScore = 0
-      $bestKeys = @()
-      foreach ($pk in @($allPlayers.Keys)) {
-        $sc = PlayerScore $titleN $allPlayers[$pk]
-        if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
-        elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
-      }
-      if ($bestScore -gt 0) {
-        foreach ($pk in $bestKeys) {
-          $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
-          $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+      # ① 球员关键词匹配 → 该球员的按场集锦（评分制：只给最长匹配者，防「佩德罗」这种通用前缀误配多个人；
+      #    全场/直播/旧赛季内容不配给球员个人集锦）
+      if (-not (IsPlayerIrrelevant $titleN)) {
+        $bestScore = 0
+        $bestKeys = @()
+        foreach ($pk in @($allPlayers.Keys)) {
+          $sc = PlayerScore $titleN $allPlayers[$pk]
+          if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
+          elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
         }
-        $addedPlayer = $true
+        if ($bestScore -gt 0) {
+          foreach ($pk in $bestKeys) {
+            $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+            $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+          }
+          $addedPlayer = $true
+        }
       }
       # ② 比赛关键词匹配 → 全场集锦（标题含双方队名、非直播/训练类，发布于开赛 -1 天到赛后 PubAfterDays 天）
       $nonMatchLike = $titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
