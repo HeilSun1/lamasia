@@ -1108,13 +1108,14 @@ tr.match-row:hover { background: var(--surface-3); }
 .vid-block { margin-top: 20px; }
 .vid-block-title { font-size: 15px; margin-bottom: 10px; color: var(--text); font-weight: 700; }
 .vid-count { font-size: 11.5px; font-weight: 700; color: var(--muted); }
-/* 比赛弹窗顶部"全场集锦"默认折叠为一条，展开才显示视频卡片 */
+/* 比赛弹窗里"⭐ 本场球员个人集锦"默认折叠为一条，展开才显示视频卡片 */
 .md-vids-fold { margin-top: 16px; border: 1px solid var(--border-soft); border-radius: var(--radius); overflow: hidden; }
 .md-vids-fold > summary { cursor: pointer; list-style: none; padding: 9px 12px; font-size: 13.5px; font-weight: 700; color: var(--text); background: var(--surface-2); display: flex; align-items: center; gap: 7px; user-select: none; }
 .md-vids-fold > summary::-webkit-details-marker { display: none; }
 .md-vids-fold > summary::before { content: "▸"; font-size: 12px; color: var(--muted); transition: transform .15s ease; }
 .md-vids-fold[open] > summary::before { transform: rotate(90deg); }
-.md-vids-fold .vid-grid { padding: 12px; }
+.md-sec .md-vids-fold { margin-top: 0; }   /* 在详情分区内时由 .md-sec 控制上间距 */
+.md-vids-fold-body { padding: 12px; }
 .vid-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;
 }

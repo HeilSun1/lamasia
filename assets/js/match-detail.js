@@ -360,17 +360,10 @@
   /* 巴萨梯队对应的 Sofascore 团队 id（判断本场巴萨是主/客） */
   var TIER_TEAM = { b: "24343", u19: "90128", u18: "", u16: "" };
 
-  /* 🎥 全场集锦：默认折叠成一条（省空间），点开才展开视频卡片；
-     下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
+  /* 🎥 全场集锦：直接展开显示；下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
   function matchVideosHtml(key) {
     if (!window.VideosUI) return "";
-    var list = window.VideosUI.resolve("matches", key);
-    var html = "";
-    if (list && list.length) {
-      html = '<details class="md-vids-fold"><summary>🎥 全场集锦 <span class="vid-count">' +
-        list.length + "</span></summary>" +
-        '<div class="vid-grid">' + list.map(window.VideosUI.videoCardHtml).join("") + "</div></details>";
-    }
+    var html = window.VideosUI.groupHtml(window.VideosUI.resolve("matches", key), "🎥 全场集锦");
     return html + '<div id="md-player-videos"></div>';
   }
 
@@ -406,7 +399,7 @@
     });
   }
 
-  /* ⭐ 本场球员个人集锦：复用 computeMatchPlayerVideos 算好的映射渲染分区 */
+  /* ⭐ 本场球员个人集锦：复用 computeMatchPlayerVideos 算好的映射渲染分区（默认折叠为一条） */
   function fillMatchPlayerVideos(lineups, body) {
     var wrap = body.querySelector("#md-player-videos");
     if (!wrap) return;
@@ -420,7 +413,10 @@
       "</div>";
     });
     wrap.innerHTML = any
-      ? '<section class="md-sec"><h4>⭐ 本场球员个人集锦</h4>' + html + "</section>"
+      ? '<section class="md-sec"><details class="md-vids-fold">' +
+          "<summary>⭐ 本场球员个人集锦</summary>" +
+          '<div class="md-vids-fold-body">' + html + "</div>" +
+        "</details></section>"
       : "";
   }
 
