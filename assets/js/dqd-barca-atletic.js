@@ -276,8 +276,9 @@
       window.LAMASIA_MATCHES[key] = {
         source: "sofascore", cacheRef: "DQD_BARCA_ATLETIC_SF_CACHE", id: m.id,
         comp: m.comp || "", round: m.round || "",
-        startText: fmt(m.start),
+        start: m.start, startText: fmt(m.start),
         home: m.home || "", away: m.away || "",
+        homeId: m.homeId, awayId: m.awayId,
         homeLogo: logoOf(m.homeId), awayLogo: logoOf(m.awayId),
         hs: m.hs || "", as: m.as || "", status: m.status
       };

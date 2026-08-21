@@ -30,8 +30,10 @@
         if (!window.LAMASIA_MATCHES[key]) {
           window.LAMASIA_MATCHES[key] = {
             source: "sofascore", cacheRef: "DQD_BARCA_ATLETIC_SF_CACHE", id: m.id,
-            comp: m.comp || "", round: m.round || "", startText: m.start || "",
+            comp: m.comp || "", round: m.round || "",
+            start: m.start, startText: m.start || "",
             home: m.home || "", away: m.away || "",
+            homeId: m.homeId, awayId: m.awayId,
             homeLogo: logoA, awayLogo: logoB,
             hs: m.hs || "", as: m.as || "", status: m.status
           };
