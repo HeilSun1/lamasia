@@ -360,10 +360,22 @@
   /* 巴萨梯队对应的 Sofascore 团队 id（判断本场巴萨是主/客） */
   var TIER_TEAM = { b: "24343", u19: "90128", u18: "", u16: "" };
 
-  /* 🎥 全场集锦：直接展开显示；下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
+  /* 🎥 全场集锦：直接展开显示；发布时间的逻辑校验——
+     全场集锦必须在本场"开赛 ±2 天"到"赛后 14 天"内发布，否则判定为别的比赛 / 旧视频 / 直播流，不显示。
+     下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
   function matchVideosHtml(key) {
     if (!window.VideosUI) return "";
-    var html = window.VideosUI.groupHtml(window.VideosUI.resolve("matches", key), "🎥 全场集锦");
+    var list = window.VideosUI.resolve("matches", key);
+    var startMs = curMatch ? parseInt(curMatch.start, 10) * 1000 : 0;
+    if (list.length && startMs) {
+      var lo = startMs - 2 * 864e5, hi = startMs + 14 * 864e5;
+      list = list.filter(function (v) {
+        if (!v.published) return true;                       // 无发布时间的保守保留
+        var t = Date.parse(v.published + "T00:00:00Z");
+        return t >= lo && t <= hi;
+      });
+    }
+    var html = window.VideosUI.groupHtml(list, "🎥 全场集锦");
     return html + '<div id="md-player-videos"></div>';
   }
 

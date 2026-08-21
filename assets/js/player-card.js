@@ -257,8 +257,12 @@
           "</div>" +
           '<span class="pc-team" id="pc-team"></span>' +
         "</div>" +
-        '<div class="pc-grid" id="pc-grid"></div>' +
-        '<div class="pc-videos" id="pc-videos"></div>' +
+        '<div class="pc-tabs">' +
+          '<button type="button" class="pc-tab active" data-pc-tab="info">📋 资料</button>' +
+          '<button type="button" class="pc-tab" data-pc-tab="videos">🎥 集锦</button>' +
+        "</div>" +
+        '<div class="pc-page active" data-pc-page="info"><div class="pc-grid" id="pc-grid"></div></div>' +
+        '<div class="pc-page" data-pc-page="videos"><div class="pc-videos" id="pc-videos"></div></div>' +
         '<div class="pc-foot" id="pc-foot"></div>' +
       "</div>";
     document.body.appendChild(mask);
@@ -304,10 +308,21 @@
     rows.push(pair("备注", r.note, "full"));
     document.getElementById("pc-grid").innerHTML = rows.join("");
 
-    // 🎥 个人集锦：按梯队分组（同一球员不同梯队的按场集锦分开呈现）
+    // 🎥 个人集锦：第二页，按该球员参加过的比赛分类（异步加载详情缓存）
+    var vTab = document.querySelector('[data-pc-tab="videos"]');
+    var vCount = (window.VideosUI && curKey) ? videoCountFor(curKey) : 0;
+    if (vTab) vTab.textContent = "🎥 集锦" + (vCount ? " (" + vCount + ")" : "");
+    switchTab("info");   // 每次打开回到资料页
     var videosEl = document.getElementById("pc-videos");
     if (videosEl) {
-      videosEl.innerHTML = (window.VideosUI && curKey) ? tieredVideosHtml(curKey) : "";
+      if (window.VideosUI && curKey) {
+        videosEl.innerHTML = '<div class="pc-vid-loading">正在加载集锦分类…</div>';
+        matchVideosHtml(curKey, function (html) {
+          videosEl.innerHTML = html || '<div class="pc-vid-none">暂无个人集锦</div>';
+        });
+      } else {
+        videosEl.innerHTML = "";
+      }
     }
 
     var foot = document.getElementById("pc-foot");
@@ -317,48 +332,159 @@
     foot.innerHTML = links.join("");
   }
 
-  /* 🎥 按梯队分组的个人集锦：
-     同一 Sofascore 球员 id 可能出现在多个梯队名单（如 U19 与 B队），
-     各梯队的按场集锦分别成组；没匹配到赛程的视频也照常显示在卡片里。 */
-  function tieredVideosHtml(key) {
+  /* ═══ 个人集锦 · 第二页：按该球员参加过的比赛分类 ═══
+     通过各梯队"赛程 + 详情缓存里的阵容"确定球员参加过哪些比赛，
+     每场取其 ±14 天内发布的个人集锦成组；不在已知赛程里的归入"其他"。 */
+  var TIER_CFG = {
+    b:   { cache: "DQD_BARCA_ATLETIC_SF_CACHE", details: "DQD_BARCA_ATLETIC_SF_DETAILS_CACHE", file: "dqd-barca-atletic-sf-details-cache.js" },
+    u19: { cache: "DQD_U19_CACHE", details: "DQD_U19_DETAILS_CACHE", file: "dqd-u19-details-cache.js" },
+    u18: { cache: "DQD_U18_CACHE", details: "DQD_U18_DETAILS_CACHE", file: "dqd-u18-details-cache.js" },
+    u16: { cache: "DQD_U16_CACHE", details: "DQD_U16_DETAILS_CACHE", file: "dqd-u16-details-cache.js" }
+  };
+  var SF_CACHES = { b: window.DQD_BARCA_ATLETIC_SF_CACHE, u19: window.DQD_U19_CACHE, u18: window.DQD_U18_CACHE, u16: window.DQD_U16_CACHE };
+
+  /* 比赛时间 → "MM-DD"（北京时间，与赛程显示一致） */
+  function fmtMd(ts) {
+    var d = new Date(parseInt(ts, 10) * 1000 + 8 * 3600 * 1000);
+    function pad(n) { return (n < 10 ? "0" : "") + n; }
+    return pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate());
+  }
+  function matchLabel(mt) {
+    var sc = (mt.hs != null && mt.as != null) ? " " + esc(mt.hs) + ":" + esc(mt.as) : "";
+    return (mt.comp ? mt.comp + " · " : "") + fmtMd(mt.start) + " · " +
+      (mt.home || "") + sc + " " + (mt.away || "");
+  }
+
+  /* 该球员 id 出现在哪些 Sofascore 梯队名单里（决定查哪几个梯队的数据） */
+  function playerTiers(curTier, id) {
+    var tiers = [curTier];
+    Object.keys(SF_CACHES).forEach(function (t) {
+      if (t === curTier) return;
+      var c = SF_CACHES[t];
+      if (!c || !c.players) return;
+      for (var i = 0; i < c.players.length; i++) {
+        if (String(c.players[i].id) === String(id)) { tiers.push(t); return; }
+      }
+    });
+    return tiers;
+  }
+
+  /* 懒加载某梯队详情缓存（脚本注入，与 match-detail.js 同机制），返回 Promise<object|null> */
+  function loadTierDetails(tier) {
+    var cfg = TIER_CFG[tier];
+    if (!cfg) return Promise.resolve(null);
+    if (window[cfg.details]) return Promise.resolve(window[cfg.details]);
+    return new Promise(function (resolve) {
+      var s = document.createElement("script");
+      s.src = BASE + "assets/js/" + cfg.file;
+      s.onload = function () { resolve(window[cfg.details] || null); };
+      s.onerror = function () { resolve(null); };
+      document.head.appendChild(s);
+    });
+  }
+
+  /* 某梯队内：球员参加过的比赛分组 + 未匹配视频。
+     每条视频只归到一场比赛（取发布日 ±14 天内最近的比赛），避免一条视频被多场比赛重复显示。 */
+  function tierMatchGroups(tier, id, det) {
+    var cfg = TIER_CFG[tier];
+    var sched = window[cfg.cache];
+    var matches = (sched && Array.isArray(sched.matches)) ? sched.matches : [];
+    var all = window.VideosUI.resolve("players", "sf:" + tier + ":" + id);
+
+    // ① 该球员参加过的比赛（详情缓存阵容里出现过）
+    var played = [];
+    matches.forEach(function (mt) {
+      if (!mt || mt.id == null) return;
+      var startMs = parseInt(mt.start, 10) * 1000;
+      if (!startMs) return;
+      var lu = (det && det[mt.id] && det[mt.id].lineups) || null;
+      if (!lu) return;
+      var ps = [];
+      [lu.home, lu.away].forEach(function (side) { if (side && Array.isArray(side.players)) ps = ps.concat(side.players); });
+      var inLineup = ps.some(function (x) { return x && x.player && String(x.player.id) === String(id); });
+      if (inLineup) played.push({ start: startMs, match: mt });
+    });
+
+    // ② 每条视频 → 归属最近的一场比赛（±14 天内取最小间隔；不在任何窗口内 → 未匹配）
+    var assign = {}, unmatched = [];
+    all.forEach(function (v) {
+      var vd = Date.parse(v.published + "T00:00:00Z");
+      if (!vd) { unmatched.push(v); return; }
+      var best = null, bestDiff = Infinity;
+      played.forEach(function (pm) {
+        var diff = Math.abs(pm.start - vd);
+        if (diff <= 14 * 864e5 && diff < bestDiff) { bestDiff = diff; best = pm; }
+      });
+      if (best) assign[v.videoId] = best;
+      else unmatched.push(v);
+    });
+
+    // ③ 按比赛分组
+    var groups = [];
+    played.forEach(function (pm) {
+      var list = all.filter(function (v) { return assign[v.videoId] === pm; });
+      if (!list.length) return;
+      groups.push({ start: pm.match.start, label: matchLabel(pm.match), list: list });
+    });
+    return { groups: groups, unmatched: unmatched };
+  }
+
+  /* 该球员集锦总数（页签角标，同步可算） */
+  function videoCountFor(key) {
+    if (!window.VideosUI || !key) return 0;
+    var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
+    if (!m) return window.VideosUI.resolve("players", key).length;
+    var id = m[2];
+    return playerTiers(m[1], id).reduce(function (n, t) {
+      return n + window.VideosUI.resolve("players", "sf:" + t + ":" + id).length;
+    }, 0);
+  }
+
+  /* 组装第二页 HTML（异步：需先加载各梯队详情缓存） */
+  function matchVideosHtml(key, done) {
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
     if (!m) {
-      // 非 Sofascore 键（data.js 本地球员）：直接显示该键视频
       var solo = window.VideosUI.resolve("players", key);
-      return solo.length ? window.VideosUI.groupHtml(solo, "🎥 个人集锦") : "";
+      done(solo.length ? window.VideosUI.groupHtml(solo, "🎥 个人集锦") : "");
+      return;
     }
-    var curTier = m[1], id = m[2];
-    var groups = [], seen = {};
-    function pushTier(t) {
-      if (!t || seen[t]) return;
-      seen[t] = true;
-      var list = window.VideosUI.resolve("players", "sf:" + t + ":" + id);
-      if (list.length) groups.push({ label: teamLabel(t), list: list });
-    }
-    pushTier(curTier);
-    // 其它 Sofascore 梯队缓存里找同一球员 id
-    var caches = {
-      b: window.DQD_BARCA_ATLETIC_SF_CACHE,
-      u19: window.DQD_U19_CACHE, u18: window.DQD_U18_CACHE, u16: window.DQD_U16_CACHE
-    };
-    Object.keys(caches).forEach(function (t) {
-      var c = caches[t];
-      if (!c || !c.players) return;
-      var has = false;
-      for (var i = 0; i < c.players.length; i++) { if (String(c.players[i].id) === id) { has = true; break; } }
-      if (has) pushTier(t);
+    var id = m[2];
+    var tiers = playerTiers(m[1], id);
+    Promise.all(tiers.map(loadTierDetails)).then(function (dets) {
+      var groups = [], unmatched = [];
+      tiers.forEach(function (t, i) {
+        var res = tierMatchGroups(t, id, dets[i]);
+        groups = groups.concat(res.groups);
+        unmatched = unmatched.concat(res.unmatched);
+      });
+      var seen = {}, du = [];
+      unmatched.forEach(function (v) { if (!seen[v.videoId]) { seen[v.videoId] = true; du.push(v); } });
+      groups.sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
+      if (!groups.length && !du.length) { done(""); return; }
+      var html = "";
+      groups.forEach(function (g) {
+        html += '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + g.label + "</div>" +
+          '<div class="vid-grid">' + g.list.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+      });
+      if (du.length) {
+        html += '<div class="pc-mv-match"><div class="pc-mv-title">' +
+          (groups.length ? "📹 其他 / 未匹配到赛程" : "🎥 个人集锦") + "</div>" +
+          '<div class="vid-grid">' + du.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+      }
+      done(html);
+    }).catch(function () { done(""); });
+  }
+
+  /* 卡片页签切换（资料 / 集锦） */
+  function switchTab(name) {
+    var mask = document.getElementById("pc-mask");
+    if (!mask) return;
+    Array.prototype.forEach.call(mask.querySelectorAll(".pc-tab"), function (t) {
+      t.classList.toggle("active", t.getAttribute("data-pc-tab") === name);
     });
-    if (!groups.length) return "";
-    var total = groups.reduce(function (n, g) { return n + g.list.length; }, 0);
-    return '<div class="vid-block">' +
-      '<div class="vid-block-title">🎥 个人集锦 <span class="vid-count">' + total + "</span></div>" +
-      groups.map(function (g) {
-        return '<div class="pc-vid-group">' +
-          '<div class="pc-vid-tier">' + esc(g.label) + "</div>" +
-          '<div class="vid-grid">' + g.list.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
-        "</div>";
-      }).join("") +
-    "</div>";
+    Array.prototype.forEach.call(mask.querySelectorAll(".pc-page"), function (p) {
+      p.classList.toggle("active", p.getAttribute("data-pc-page") === name);
+    });
   }
 
   function open(key) {
@@ -385,6 +511,13 @@
     if (!key) return;
     e.preventDefault();
     open(key);
+  });
+
+  // 卡片页签切换（资料 / 集锦）
+  document.addEventListener("click", function (e) {
+    var tab = e.target && e.target.closest ? e.target.closest("[data-pc-tab]") : null;
+    if (!tab) return;
+    switchTab(tab.getAttribute("data-pc-tab"));
   });
 
   /* ── 卡片照片点击 → 放大（复用站点 .lightbox 样式） ── */

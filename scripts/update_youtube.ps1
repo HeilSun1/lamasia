@@ -555,14 +555,22 @@ if ($newMatchList.Count -and $ytOk) {
     $items = @($r)
     if (-not $items.Count) { Log "    ↳ 无搜索候选（该场 YouTube 可能无集锦）。"; continue }
 
-    # 候选过滤：标题含双方 token + 相对发布 ≤ MaxRelDays + 时长 90–7200 秒
+    # 候选过滤：标题含双方 token + 相对发布 ≤ MaxRelDays + 时长 90–7200 秒 + 逻辑校验
     $cand = @()
     foreach ($it in $items) {
       $titleN = Norm ([string]$it.title)
       if (-not (HasToken $titleN $homeTk)) { continue }
       if (-not (HasToken $titleN $awayTk)) { continue }
+      # 非整场集锦的标题词：直播流 / 训练 / 发布会 / 访谈 / 前瞻 / 反应等
+      if ($titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访') { continue }
       $rel = Get-RelDays ([string]$it.publishedRel)
       if ($rel -ge 0 -and $rel -gt $MaxRelDays) { continue }
+      # 逻辑校验：整场集锦发布时间必须 ≥ 本场开赛（-1 天容差，兼容当天上传），≤ 赛后 PubAfterDays 天；
+      # 杜绝把比赛之前发布的旧比赛视频 / 直播流配到本场
+      if ($rel -ge 0) {
+        $pubDt = $nowUtc.AddDays(-$rel)
+        if ($pubDt -lt $mDate.AddDays(-1) -or $pubDt -gt $mDate.AddDays($PubAfterDays)) { continue }
+      }
       $dur = Get-LenSec ([string]$it.lengthText)
       if ($dur -gt 0 -and ($dur -lt 90 -or $dur -gt 7200)) { continue }
       $score = (ChannelScore ([string]$it.channel)) + 2 + 2
@@ -717,14 +725,17 @@ if ($newMatchList.Count -and $BiliUids.Count) {
         }
         $addedPlayer = $true
       }
-      # ② 比赛关键词匹配 → 全场集锦（标题含双方队名且发布于比赛 ±PubAfterDays 天）
-      foreach ($em in $endedList) {
-        if (-not (HasToken $titleN $em.homeTk) -or -not (HasToken $titleN $em.awayTk)) { continue }
-        $lo = $em.mDate.AddDays(-$PubAfterDays)
-        $hi = $em.mDate.AddDays($PubAfterDays)
-        if ($pubDt -lt $lo -or $pubDt -gt $hi) { continue }
-        $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
-        $outMatches[$em.key] = @(Merge-Videos ($outMatches[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
+      # ② 比赛关键词匹配 → 全场集锦（标题含双方队名、非直播/训练类，发布于开赛 -1 天到赛后 PubAfterDays 天）
+      $nonMatchLike = $titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
+      if (-not $nonMatchLike) {
+        foreach ($em in $endedList) {
+          if (-not (HasToken $titleN $em.homeTk) -or -not (HasToken $titleN $em.awayTk)) { continue }
+          $lo = $em.mDate.AddDays(-1)
+          $hi = $em.mDate.AddDays($PubAfterDays)
+          if ($pubDt -lt $lo -or $pubDt -gt $hi) { continue }
+          $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+          $outMatches[$em.key] = @(Merge-Videos ($outMatches[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
+        }
       }
       if ($addedPlayer) { Log "    ✓ B站匹配球员：$($info.title)" }
     }
