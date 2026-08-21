@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-20 11:34 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-21 09:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-20 11:34:48",
+    "updated":  "2026-08-21 09:01:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -255,21 +255,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Raúl Expósito",
-                        "id":  "2607840",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2607840/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-04-26",
-                        "foot":  "右脚",
-                        "height":  "174",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -281,6 +266,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-01-29",
                         "foot":  "左脚",
                         "height":  "184",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Raúl Expósito",
+                        "id":  "2607840",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2607840/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-04-26",
+                        "foot":  "右脚",
+                        "height":  "174",
                         "value":  "",
                         "injury":  null
                     },
@@ -471,7 +471,7 @@ window.DQD_U19_CACHE = {
                         "comp":  "西青甲 G3",
                         "round":  "9",
                         "start":  "1794153600",
-                        "home":  "UE Sant Andreu",
+                        "home":  "UE Sant Andreu U19",
                         "away":  "Barcelona U19",
                         "homeId":  "24363",
                         "awayId":  "90128",
@@ -697,7 +697,7 @@ window.DQD_U19_CACHE = {
                         "round":  "24",
                         "start":  "1805040000",
                         "home":  "Barcelona U19",
-                        "away":  "UE Sant Andreu",
+                        "away":  "UE Sant Andreu U19",
                         "homeId":  "90128",
                         "awayId":  "24363",
                         "hs":  "",

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-20 11:34 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-21 09:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-20 11:34:06",
+    "updated":  "2026-08-21 09:00:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -30,6 +30,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Shane Kluivert",
+                        "id":  "1657202",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Netherlands",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1657202/image",
+                        "age":  "18岁",
+                        "birthday":  "2007-09-24",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "46万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Juan Hernández",
                         "id":  "1493491",
                         "pos":  "F",
@@ -48,21 +63,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                                        "status":  "out",
                                        "expected":  "2026年12月"
                                    }
-                    },
-                    {
-                        "name":  "Shane Kluivert",
-                        "id":  "1657202",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Netherlands",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1657202/image",
-                        "age":  "18岁",
-                        "birthday":  "2007-09-24",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "46万",
-                        "injury":  null
                     },
                     {
                         "name":  "Álex González",
@@ -185,6 +185,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Ebrima Tunkara",
+                        "id":  "2128084",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-10",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "520万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Guillermo Fernández",
                         "id":  "1544614",
                         "pos":  "M",
@@ -203,21 +218,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                                        "status":  "out",
                                        "expected":  "2026年6月"
                                    }
-                    },
-                    {
-                        "name":  "Ebrima Tunkara",
-                        "id":  "2128084",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-10",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "520万",
-                        "injury":  null
                     },
                     {
                         "name":  "Abdul Aziz Issah",
