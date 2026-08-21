@@ -20,13 +20,14 @@ window.VIDEOS_DATA = {
     // ]
   },
   players: {
-    // "sf:u19:1861694": [
-    //   { videoId: "qrstuvwxyz", title: "Ajay Tavares vs Espanyol U19" }
-    // ]
+    // 08-08 vs Udinese 是 U18 比赛：Tunkara 这条从 B 队键转到 U18 键（B 队键已拉黑）
+    "sf:u18:2128084": [
+      { videoId: "9eOLL88phHU", title: "Ebrima Tunkara vs Udinese | 08/08/2026 | U18 友谊赛" }
+    ]
   },
   blocked: {
     "sf:b:1977602": ["-xRAJTjKdQI"],   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配，已拉黑
-    "sf:b:2128084": ["9eOLL88phHU"],   // "Ebrima Tunkara vs Udinese"（08/08）实为 U18 比赛，误配到 B 队，已拉黑
+    "sf:b:2128084": ["9eOLL88phHU"],   // "Ebrima Tunkara vs Udinese"（08/08）实为 U18 比赛，已转挂 sf:u18:2128084
     "sfb:16866862": ["xC6XHDscPt4", "l_QEkeC1KJA", "WbP4hvDJ3Pw"],  // 三条 07-30 发布、4-1/训练视频，本场是 08-19 的 1-0，误配
     "sfb:16696837": ["zw6c7QSbUtA"]    // Tona 场"WATCH LIVE FOOTBALL"直播流，非本场集锦，误配
   },

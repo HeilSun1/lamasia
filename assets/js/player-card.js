@@ -85,6 +85,7 @@
   var INDEX = {};   // key -> 球员卡片记录
   var built = false;
   var curKey = "";  // 当前打开的卡片键（个人集锦查询用）
+  var dqdToSf = {}; // B队 懂球帝 person_id → Sofascore id（名单页键 b:，视频键 sf:b:）
   function add(key, rec) { if (key && rec) INDEX[key] = rec; }
 
   // 索引延迟构建：player-card.js 在 data.js 之后、各梯队缓存之前加载，
@@ -175,11 +176,18 @@
     var bzhMap = null;
     if (window.DQD_BARCA_ATLETIC && window.DQD_BARCA_ATLETIC.roster && window.DQD_BARCA_ATLETIC.roster.data) {
       bzhMap = {};
+      var dqdById = {};
       window.DQD_BARCA_ATLETIC.roster.data.list.forEach(function (g) {
         (g.data || []).forEach(function (pp) {
           var en = String(pp.person_en_name || "").trim();
           if (en) bzhMap[norm(en)] = { zh: pp.person_name || "" };
+          if (en) dqdById[norm(en)] = String(pp.person_id);
         });
+      });
+      // 名单页卡片键是 b:{懂球帝id}，视频键是 sf:b:{Sofascore id}：按英文名桥接
+      sfb.players.forEach(function (p) {
+        var en = norm(String(p.name || ""));
+        if (en && dqdById[en]) dqdToSf[dqdById[en]] = String(p.id);
       });
     }
     sfb.players.forEach(function (p) {
@@ -309,15 +317,16 @@
     document.getElementById("pc-grid").innerHTML = rows.join("");
 
     // 🎥 个人集锦：第二页，按该球员参加过的比赛分类（异步加载详情缓存）
+    var vKey = videoKeyFor(curKey);
     var vTab = document.querySelector('[data-pc-tab="videos"]');
-    var vCount = (window.VideosUI && curKey) ? videoCountFor(curKey) : 0;
+    var vCount = (window.VideosUI && vKey) ? videoCountFor(vKey) : 0;
     if (vTab) vTab.textContent = "🎥 集锦" + (vCount ? " (" + vCount + ")" : "");
     switchTab("info");   // 每次打开回到资料页
     var videosEl = document.getElementById("pc-videos");
     if (videosEl) {
-      if (window.VideosUI && curKey) {
+      if (window.VideosUI && vKey) {
         videosEl.innerHTML = '<div class="pc-vid-loading">正在加载集锦分类…</div>';
-        matchVideosHtml(curKey, function (html) {
+        matchVideosHtml(vKey, function (html) {
           videosEl.innerHTML = html || '<div class="pc-vid-none">暂无个人集锦</div>';
         });
       } else {
@@ -355,16 +364,16 @@
       (mt.home || "") + sc + " " + (mt.away || "");
   }
 
-  /* 该球员 id 出现在哪些 Sofascore 梯队名单里（决定查哪几个梯队的数据） */
+  /* 该球员涉及哪些 Sofascore 梯队：在名单里 或 有按该梯队键挂的视频（如 U18 比赛误挂、手动转挂）
+     决定查哪几个梯队的数据。 */
   function playerTiers(curTier, id) {
     var tiers = [curTier];
     Object.keys(SF_CACHES).forEach(function (t) {
       if (t === curTier) return;
       var c = SF_CACHES[t];
-      if (!c || !c.players) return;
-      for (var i = 0; i < c.players.length; i++) {
-        if (String(c.players[i].id) === String(id)) { tiers.push(t); return; }
-      }
+      var inRoster = !!(c && c.players && c.players.some(function (p) { return String(p.id) === String(id); }));
+      var hasVids = !!(window.VideosUI && window.VideosUI.resolve("players", "sf:" + t + ":" + id).length);
+      if (inRoster || hasVids) tiers.push(t);
     });
     return tiers;
   }
@@ -427,6 +436,13 @@
       groups.push({ start: pm.match.start, label: matchLabel(pm.match), list: list });
     });
     return { groups: groups, unmatched: unmatched };
+  }
+
+  /* B队名单键 b:{懂球帝id} → 视频用的 sf:b:{Sofascore id}（名单页点开的卡片能读到集锦） */
+  function videoKeyFor(key) {
+    var m = /^b:(\d+)$/.exec(key);
+    if (m && dqdToSf[m[1]]) return "sf:b:" + dqdToSf[m[1]];
+    return key;
   }
 
   /* 该球员集锦总数（页签角标，同步可算） */
