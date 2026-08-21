@@ -1,5 +1,5 @@
 ﻿# ═══════════════════════════════════════════════════════════════
-#   注册 Windows 计划任务：每天 09:00 本机更新全部缓存 + SSH 推送
+#   注册 Windows 计划任务：每天 09:00 / 15:00 / 21:00 本机更新全部缓存 + SSH 推送
 #   替换旧的 LaMasia_BarcaB_Update / LaMasia_U19_Update 两个任务。
 #   删除任务：
 #     schtasks /Delete /TN "LaMasia_Local_Daily_Update" /F
@@ -19,13 +19,17 @@ foreach ($old in @("LaMasia_BarcaB_Update", "LaMasia_U19_Update")) {
 
 $action    = New-ScheduledTaskAction -Execute "powershell.exe" `
               -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$script`""
-$trigger   = New-ScheduledTaskTrigger -Daily -At 09:00
+$triggers  = @(
+  (New-ScheduledTaskTrigger -Daily -At 09:00),
+  (New-ScheduledTaskTrigger -Daily -At 15:00),
+  (New-ScheduledTaskTrigger -Daily -At 21:00)
+)
 $settings  = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2)
 
 try {
-  Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Settings $settings `
-    -Description "每日 09:00 本机更新拉玛西亚全部缓存（B队/U19/U18/U16/新闻）并 SSH 推送上线；运行器工作流作兜底" -Force | Out-Null
-  Write-Host "计划任务已注册：$taskName（每天 09:00，开机错过会补跑）"
+  Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $triggers -Settings $settings `
+    -Description "每日 09:00/15:00/21:00 本机更新拉玛西亚全部缓存（B队/U19/U18/U16/新闻/视频）并 SSH 推送上线；运行器工作流兜底" -Force | Out-Null
+  Write-Host "计划任务已注册：$taskName（每天 09:00 / 15:00 / 21:00，开机错过会补跑）"
 } catch {
   Write-Host "注册失败：$_"
   exit 1
