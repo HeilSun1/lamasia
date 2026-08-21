@@ -360,10 +360,17 @@
   /* 巴萨梯队对应的 Sofascore 团队 id（判断本场巴萨是主/客） */
   var TIER_TEAM = { b: "24343", u19: "90128", u18: "", u16: "" };
 
-  /* 🎥 全场集锦：同步渲染 + 本场球员个人集锦占位（lineups 加载后填充） */
+  /* 🎥 全场集锦：默认折叠成一条（省空间），点开才展开视频卡片；
+     下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
   function matchVideosHtml(key) {
     if (!window.VideosUI) return "";
-    var html = window.VideosUI.groupHtml(window.VideosUI.resolve("matches", key), "🎥 全场集锦");
+    var list = window.VideosUI.resolve("matches", key);
+    var html = "";
+    if (list && list.length) {
+      html = '<details class="md-vids-fold"><summary>🎥 全场集锦 <span class="vid-count">' +
+        list.length + "</span></summary>" +
+        '<div class="vid-grid">' + list.map(window.VideosUI.videoCardHtml).join("") + "</div></details>";
+    }
     return html + '<div id="md-player-videos"></div>';
   }
 
@@ -520,6 +527,7 @@
       '<div class="md-load"><div class="md-loading">正在加载比赛详情…</div></div>' +
       footerHtml(m);
     modal.classList.add("open");
+    modal.scrollTop = 0;   // 弹窗复用：每次打开新比赛都回到最上方，不残留上次关闭时的滚动位置
     if (m.source === "sofascore") {
       loadSofascoreDetail(m, body);
     } else {

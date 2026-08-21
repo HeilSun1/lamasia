@@ -25,7 +25,7 @@ window.VIDEOS_DATA = {
     // ]
   },
   blocked: {
-    // "sofascore:16541418": ["误配的视频id"]
+    "sf:b:1977602": ["-xRAJTjKdQI"]   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配，已拉黑
   },
   reSearch: [
     // "sfb:16696837"   // 强制重搜（下次跑 update_youtube.ps1 生效）
