@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-21 11:06 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-21 19:10 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-21 11:06:17",
+    "updated":  "2026-08-21 19:10:06",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -345,21 +345,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                                    }
                     },
                     {
-                        "name":  "David Oduro",
-                        "id":  "1457390",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Ghana",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1457390/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-06-12",
-                        "foot":  "左脚",
-                        "height":  "174",
-                        "value":  "20万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Alex Campos",
                         "id":  "1926117",
                         "pos":  "D",
@@ -372,6 +357,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "185",
                         "value":  "46万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "David Oduro",
+                        "id":  "1457390",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Ghana",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1457390/image",
+                        "age":  "20岁",
+                        "birthday":  "2006-06-12",
+                        "foot":  "左脚",
+                        "height":  "174",
+                        "value":  "20万",
                         "injury":  null
                     },
                     {

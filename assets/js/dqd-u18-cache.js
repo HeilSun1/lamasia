@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-21 11:07 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-21 19:11 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-21 11:07:42",
+    "updated":  "2026-08-21 19:11:23",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -45,21 +45,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Mahdi El Maimouni",
-                        "id":  "2690302",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Morocco",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-07-12",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Daniel da Lima",
                         "id":  "2271424",
                         "pos":  "F",
@@ -69,6 +54,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
                         "age":  "15岁",
                         "birthday":  "2010-09-19",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Mahdi El Maimouni",
+                        "id":  "2690302",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Morocco",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-07-12",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

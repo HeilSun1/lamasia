@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-21 11:06:18 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-21 19:10:06 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-21 11:06:18",
+    "updated":  "2026-08-21 19:10:06",
     "source":  "dongqiudi",
-    "count":  49,
+    "count":  50,
     "news":  [
+        {
+            "id":  "6207015", "title":  "世体：巴萨西甲战埃尔切首发初定，埃斯帕特、贝尔纳尔将先发",
+            "url":  "https://www.dongqiudi.com/articles/6207015.html", "time":  "2026-08-21 13:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/16/280x210/crop/-/rBXRDGqH5kqASohbAAB848mB2RU803.jpg" },
         {
             "id":  "6202740", "title":  "世体：18岁哈姆扎季前赛3场4球，队友对其十分认可",
             "url":  "https://www.dongqiudi.com/articles/6202740.html", "time":  "2026-08-20 17:20",
