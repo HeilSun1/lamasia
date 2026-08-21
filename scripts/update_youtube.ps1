@@ -29,6 +29,7 @@ $UTF8       = New-Object System.Text.UTF8Encoding($false)
 $PlayerChannelHandles = @("ArsenKveFCB")   # 常规球员集锦频道（可改/可加；仅新比赛/重搜时拉取）
 $OneTimeChannelHandles = @("BCNBEST")      # 一次性频道（杯赛主办方，只发该杯赛集锦）：只抓这一次
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
+$OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
 $BiliUids             = @("470189", "1515150312")   # B站 UP主：优先口菐，其次「B站一直吞我评论」
 $MaxBiliVideos        = 14                 # 每 UP 取最近 N 个 bvid
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
@@ -110,11 +111,14 @@ function PlayerScore([string]$titleNorm, $pl) {
 function TeamTokens([string]$name) {
   $n = Norm $name
   $tokens = @()
-  foreach ($t in ($n -split '[^a-z0-9]+' | Where-Object { $_ -and $_.Length -ge 3 })) {
-    if ($STOP -notcontains $t) { $tokens += $t }
-  }
-  if (-not $tokens.Count) { $tokens = @($n -split '[^a-z0-9]+' | Where-Object { $_ -and $_.Length -ge 3 }) }
-  return @($tokens | Select-Object -Unique)
+  if ($n) { $tokens += $n }
+  if ($n -match '^fc(.+)$') { $tokens += $Matches[1] }            # 去 FC 前缀：FC Barcelona U18 → barcelonau18
+  if ($n -match '^(.+)u(1[0-9])$') { $tokens += $Matches[1] }     # 去 U 年龄段后缀：→ fcbarcelona
+  if ($n -match 'barcelona') { $tokens += @("barcelona", "barca") }
+  if ($n -match 'realmadrid') { $tokens += @("realmadrid", "madrid") }
+  if ($n -match 'espanyol') { $tokens += @("espanyol", "espanol") }
+  if ($n -match 'atletic') { $tokens += @("atletic", "barca") }
+  return @($tokens | Where-Object { $_ -and $_.Length -ge 3 } | Select-Object -Unique)
 }
 
 # 青年队别名：油管标题可能用 Juvenil B / JB / U19B 等，补进队名 token
@@ -652,6 +656,12 @@ if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
       Log "  · 频道 $cid 拉取 RSS……"
       $rss = @(Get-ChannelRss $cid)
       Log "  · 频道 $cid RSS 共 $($rss.Count) 条上传；匹配池 $($pool.Count) 名球员"
+      # 一次性频道的原始条目落盘，随 Actions 提交回来供诊断
+      if ($pendingOneTime.Count -and $rss.Count) {
+        Set-Content $OneTimeDumpFile (("## $cid " + $nowUtc.ToString('yyyy-MM-dd HH:mm') + " items=" + $rss.Count))
+        foreach ($it in $rss) { Add-Content $OneTimeDumpFile ("  " + $it.published + " | " + $it.channel + " | " + $it.title) }
+        Log "  · 已把一次性频道 $cid 的 $($rss.Count) 条原始条目写入 $OneTimeDumpFile"
+      }
     foreach ($it in $rss) {
       # 时间过滤：只要 2026-06-01 起的上传
       $pubT = Get-UcDate ([string]$it.published)

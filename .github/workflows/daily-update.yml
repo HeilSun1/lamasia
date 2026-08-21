@@ -82,7 +82,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # checkout 默认可能停在 detached HEAD，确保回到 main 分支
           if (-not (git symbolic-ref -q HEAD)) { git checkout -B main }
-          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/img/players/dqd scripts/one-time-channels.txt
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
             Write-Host "No cache changes, skip commit"
