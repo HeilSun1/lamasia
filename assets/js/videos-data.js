@@ -15,9 +15,9 @@
    ═══════════════════════════════════════════════════════════════ */
 window.VIDEOS_DATA = {
   matches: {
-    // "sfb:16696837": [
-    //   { videoId: "abcdefghijk", title: "UE Tona 1-2 Barcelona Atletico | Highlights" }
-    // ]
+    "sofascore:16792416": [
+      { videoId: "A2UjVF7vI3A", title: "FC Barcelona U18 vs Chinese Football Boy U18 | BEST CUP 2026 | 集锦" }
+    ]
   },
   players: {
     // 08-08 vs Udinese 是 U18 比赛：Tunkara 这条从 B 队键转到 U18 键（B 队键已拉黑）
