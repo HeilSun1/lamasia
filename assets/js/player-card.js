@@ -20,6 +20,13 @@
       .normalize("NFD").replace(/[̀-ͯ]/g, "")
       .replace(/[^a-z0-9]+/g, "");
   }
+  // 名字拆词（去重音后按非字母切分），用于昵称/全名差异的桥接匹配
+  function nameTokens(s) {
+    var t = String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-z]+/);
+    var out = [];
+    for (var i = 0; i < t.length; i++) if (t[i].length >= 3) out.push(t[i]);
+    return out;
+  }
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
@@ -177,16 +184,18 @@
     if (window.DQD_BARCA_ATLETIC && window.DQD_BARCA_ATLETIC.roster && window.DQD_BARCA_ATLETIC.roster.data) {
       bzhMap = {};
       var dqdByNorm = {};
+      var dqdRaw = [];   // {id, tokens}，供词元重叠匹配
       window.DQD_BARCA_ATLETIC.roster.data.list.forEach(function (g) {
         (g.data || []).forEach(function (pp) {
           var en = String(pp.person_en_name || "").trim();
           var n = norm(en);
           if (en) bzhMap[n] = { zh: pp.person_name || "" };
           if (en && !dqdByNorm[n]) dqdByNorm[n] = String(pp.person_id);
+          if (en) dqdRaw.push({ id: String(pp.person_id), tokens: nameTokens(en) });
         });
       });
       // 名单页卡片键是 b:{懂球帝id}，视频键是 sf:b:{Sofascore id}：
-      // 先按英文名精确匹配，再按「子串包含且唯一」匹配（覆盖昵称/全名差异，如 Aziz Issah ↔ Abdul Aziz Issah）
+      // ① 精确匹配 ② 子串包含且唯一 ③ 词元重叠且唯一（覆盖 Aziz Issah↔Abdul Aziz Issah、Alex↔Alexander Walton 等）
       sfb.players.forEach(function (p) {
         var en = norm(String(p.name || ""));
         if (!en) return;
@@ -200,6 +209,18 @@
           var uniq = [];
           hits.forEach(function (h) { if (uniq.indexOf(h) === -1) uniq.push(h); });
           if (uniq.length === 1) dq = uniq[0];              // 必须唯一，歧义不桥接
+        }
+        if (!dq) {
+          var st = nameTokens(p.name);
+          var cands = [];
+          dqdRaw.forEach(function (dr) {
+            for (var i = 0; i < dr.tokens.length; i++) {
+              if (dr.tokens[i].length >= 5 && st.indexOf(dr.tokens[i]) > -1) { cands.push(dr.id); break; }
+            }
+          });
+          var uc = [];
+          cands.forEach(function (c) { if (uc.indexOf(c) === -1) uc.push(c); });
+          if (uc.length === 1) dq = uc[0];                  // 唯一才桥接
         }
         if (dq) dqdToSf[dq] = String(p.id);
       });
