@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-21 01:32 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-21 02:28 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-21 01:32:51",
+    "updated":  "2026-08-21 02:28:27",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -64,7 +64,43 @@ window.DQD_VIDEOS_CACHE = {
                                              "published":  "2026-07-30",
                                              "durationSec":  "157"
                                          }
-                                     ]
+                                     ],
+                    "sofascore:16834498":  [
+                                               {
+                                                   "videoId":  "n6D4tNqYJr8",
+                                                   "title":  "RCD Espanyol \u0026 FC Barcelona | Highlights | BEST CUP 2026",
+                                                   "channel":  "BCNBEST",
+                                                   "channelId":  "UCHv-uRbzfZd3Ao5JcZS1o0g",
+                                                   "published":  "2026-08-16",
+                                                   "durationSec":  ""
+                                               },
+                                               {
+                                                   "videoId":  "w9ESpfJbZk8",
+                                                   "title":  "BEST CUP 26 I RCD Espanyol - FC Barcelona",
+                                                   "channel":  "BCNBEST",
+                                                   "channelId":  "UCHv-uRbzfZd3Ao5JcZS1o0g",
+                                                   "published":  "2026-08-15",
+                                                   "durationSec":  ""
+                                               }
+                                           ],
+                    "sofascore:16844411":  [
+                                               {
+                                                   "videoId":  "VLQKkZ-6bSw",
+                                                   "title":  "Real Madrid - FC Barcelona I highlights I BEST CUP 2026",
+                                                   "channel":  "BCNBEST",
+                                                   "channelId":  "UCHv-uRbzfZd3Ao5JcZS1o0g",
+                                                   "published":  "2026-08-18",
+                                                   "durationSec":  ""
+                                               },
+                                               {
+                                                   "videoId":  "AP3tTAmA3XM",
+                                                   "title":  "BEST CUP 26 - 3º \u0026 4º I Real Madrid CF - FC Barcelona",
+                                                   "channel":  "BCNBEST",
+                                                   "channelId":  "UCHv-uRbzfZd3Ao5JcZS1o0g",
+                                                   "published":  "2026-08-16",
+                                                   "durationSec":  ""
+                                               }
+                                           ]
                 },
     "players":  {
                     "sf:b:1457200":  [
