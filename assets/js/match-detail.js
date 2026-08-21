@@ -173,6 +173,10 @@
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
         '<span class="md-lu-av">' + av + "</span>" +
         '<span class="md-lu-name">' + cardA(p.id, p.name) + "</span>" +
+        // 🎬 徽标：该球员本场有个人集锦，可点击直接播放
+        (matchPlayerVids[p.id]
+          ? '<button class="md-lu-hl" type="button" data-hl-pid="' + esc(p.id) + '" title="本场有个人集锦，点击播放">🎬</button>'
+          : "") +
         '<span class="md-lu-pos">' + esc(posZh(x.position)) + "</span>" +
       "</div>";
     }
@@ -363,10 +367,13 @@
     return html + '<div id="md-player-videos"></div>';
   }
 
-  /* ⭐ 本场球员个人集锦：取巴萨侧阵容球员，查其按场集锦（发布于本场 ±14 天内） */
-  function fillMatchPlayerVideos(lineups, body) {
-    var wrap = body.querySelector("#md-player-videos");
-    if (!wrap || !curMatch || !window.VideosUI) return;
+  /* 本场球员个人集锦映射：Sofascore 球员 id → { name, vids:[...] }。
+     取巴萨侧阵容球员，查其按场集锦（发布于本场 ±14 天内）。
+     先算好 → 阵容里的 🎬 徽标 与底部"本场球员个人集锦"分区共用。 */
+  var matchPlayerVids = {};
+  function computeMatchPlayerVideos(lineups) {
+    matchPlayerVids = {};
+    if (!curMatch || !window.VideosUI) return;
     var teamId = TIER_TEAM[curTier] || "";
     var side = null;
     if (teamId && lineups) {
@@ -378,7 +385,6 @@
     var startMs = parseInt(curMatch.start, 10) * 1000;
     if (!startMs) return;
     var lo = startMs - 14 * 864e5, hi = startMs + 14 * 864e5;
-    var html = "", any = false;
     list.forEach(function (x) {
       var p = (x && x.player) || {};
       var pid = p.id;
@@ -389,10 +395,21 @@
         return t >= lo && t <= hi;
       });
       if (!vids.length) return;
+      matchPlayerVids[pid] = { name: p.name || "", vids: vids };
+    });
+  }
+
+  /* ⭐ 本场球员个人集锦：复用 computeMatchPlayerVideos 算好的映射渲染分区 */
+  function fillMatchPlayerVideos(lineups, body) {
+    var wrap = body.querySelector("#md-player-videos");
+    if (!wrap) return;
+    var html = "", any = false;
+    Object.keys(matchPlayerVids).forEach(function (pid) {
+      var rec = matchPlayerVids[pid];
       any = true;
       html += '<div class="md-pv-player">' +
-        '<div class="md-pv-name">' + cardA(pid, p.name) + "</div>" +
-        '<div class="vid-grid">' + vids.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
+        '<div class="md-pv-name">' + cardA(pid, rec.name) + "</div>" +
+        '<div class="vid-grid">' + rec.vids.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
       "</div>";
     });
     wrap.innerHTML = any
@@ -405,6 +422,7 @@
     var load = body.querySelector(".md-load");
     if (!load) return;
     var l = res[0], i = res[1], s = res[2], h = res[3];
+    computeMatchPlayerVideos(l);   // 先算个人集锦映射（阵容里的 🎬 徽标需要它）
     var html = "", any = false;
     var lu = l ? lineupsHtml(l) : "";
     if (lu) { html += lu; any = true; }
@@ -521,6 +539,17 @@
       e.preventDefault();
       open(key);
     }
+  });
+
+  /* 🎬 阵容里的个人集锦徽标点击 → 直接播放该球员本场第一条集锦 */
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest ? e.target.closest("[data-hl-pid]") : null;
+    if (!b) return;
+    var rec = matchPlayerVids[b.getAttribute("data-hl-pid")];
+    if (!rec || !rec.vids.length || !window.VideosUI) return;
+    e.preventDefault();
+    var v = rec.vids[0];
+    window.VideosUI.openPlayer(v.videoId, v.site);
   });
 
   window.LAMASIA_MATCH_DETAIL = { open: open, close: close };
