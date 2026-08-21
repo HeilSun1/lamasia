@@ -11,10 +11,12 @@ $taskName = "LaMasia_Local_Daily_Update"
 
 if (-not (Test-Path $script)) { Write-Host "找不到脚本：$script"; exit 1 }
 
-# 删除旧的单队任务（B队、U19），统一成一个
+# 删除旧的单队任务（B队、U19，若还存在），统一成一个
 foreach ($old in @("LaMasia_BarcaB_Update", "LaMasia_U19_Update")) {
-  schtasks /Delete /TN $old /F 2>$null | Out-Null
-  Write-Host "已删除旧任务：$old"
+  if (Get-ScheduledTask -TaskName $old -ErrorAction SilentlyContinue) {
+    schtasks /Delete /TN $old /F 2>$null | Out-Null
+    Write-Host "已删除旧任务：$old"
+  }
 }
 
 $action    = New-ScheduledTaskAction -Execute "powershell.exe" `
