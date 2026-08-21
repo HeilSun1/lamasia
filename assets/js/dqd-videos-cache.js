@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-20 16:31 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-21 01:32 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-20 16:31:13",
+    "updated":  "2026-08-21 01:32:51",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -95,6 +95,16 @@ window.DQD_VIDEOS_CACHE = {
                                              "durationSec":  ""
                                          }
                                      ],
+                    "sf:b:1926082":  [
+                                         {
+                                             "videoId":  "4_Aj5crS8X0",
+                                             "title":  "FC Barcelona Juvenil B (U18) vs CF Damm | Full Match | 2021/2022 Season",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-21",
+                                             "durationSec":  ""
+                                         }
+                                     ],
                     "sf:b:1977602":  [
                                          {
                                              "videoId":  "-xRAJTjKdQI",
@@ -102,6 +112,16 @@ window.DQD_VIDEOS_CACHE = {
                                              "channel":  "ArsenKveFCB",
                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                              "published":  "2026-08-16",
+                                             "durationSec":  ""
+                                         }
+                                     ],
+                    "sf:b:2014710":  [
+                                         {
+                                             "videoId":  "4_Aj5crS8X0",
+                                             "title":  "FC Barcelona Juvenil B (U18) vs CF Damm | Full Match | 2021/2022 Season",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-08-21",
                                              "durationSec":  ""
                                          }
                                      ],
@@ -127,6 +147,26 @@ window.DQD_VIDEOS_CACHE = {
                                              "durationSec":  ""
                                          }
                                      ],
+                    "sf:u19:1926082":  [
+                                           {
+                                               "videoId":  "4_Aj5crS8X0",
+                                               "title":  "FC Barcelona Juvenil B (U18) vs CF Damm | Full Match | 2021/2022 Season",
+                                               "channel":  "ArsenKveFCB",
+                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                               "published":  "2026-08-21",
+                                               "durationSec":  ""
+                                           }
+                                       ],
+                    "sf:u19:2014710":  [
+                                           {
+                                               "videoId":  "4_Aj5crS8X0",
+                                               "title":  "FC Barcelona Juvenil B (U18) vs CF Damm | Full Match | 2021/2022 Season",
+                                               "channel":  "ArsenKveFCB",
+                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                               "published":  "2026-08-21",
+                                               "durationSec":  ""
+                                           }
+                                       ],
                     "sf:u19:2048364":  [
                                            {
                                                "videoId":  "uJCDQgM6DPM",
