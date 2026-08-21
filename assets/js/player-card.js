@@ -176,18 +176,32 @@
     var bzhMap = null;
     if (window.DQD_BARCA_ATLETIC && window.DQD_BARCA_ATLETIC.roster && window.DQD_BARCA_ATLETIC.roster.data) {
       bzhMap = {};
-      var dqdById = {};
+      var dqdByNorm = {};
       window.DQD_BARCA_ATLETIC.roster.data.list.forEach(function (g) {
         (g.data || []).forEach(function (pp) {
           var en = String(pp.person_en_name || "").trim();
-          if (en) bzhMap[norm(en)] = { zh: pp.person_name || "" };
-          if (en) dqdById[norm(en)] = String(pp.person_id);
+          var n = norm(en);
+          if (en) bzhMap[n] = { zh: pp.person_name || "" };
+          if (en && !dqdByNorm[n]) dqdByNorm[n] = String(pp.person_id);
         });
       });
-      // 名单页卡片键是 b:{懂球帝id}，视频键是 sf:b:{Sofascore id}：按英文名桥接
+      // 名单页卡片键是 b:{懂球帝id}，视频键是 sf:b:{Sofascore id}：
+      // 先按英文名精确匹配，再按「子串包含且唯一」匹配（覆盖昵称/全名差异，如 Aziz Issah ↔ Abdul Aziz Issah）
       sfb.players.forEach(function (p) {
         var en = norm(String(p.name || ""));
-        if (en && dqdById[en]) dqdToSf[dqdById[en]] = String(p.id);
+        if (!en) return;
+        var dq = dqdByNorm[en];
+        if (!dq) {
+          var hits = [];
+          Object.keys(dqdByNorm).forEach(function (k) {
+            if (k.length < 4) return;                       // 太短易误配
+            if (en.indexOf(k) > -1 || k.indexOf(en) > -1) hits.push(dqdByNorm[k]);
+          });
+          var uniq = [];
+          hits.forEach(function (h) { if (uniq.indexOf(h) === -1) uniq.push(h); });
+          if (uniq.length === 1) dq = uniq[0];              // 必须唯一，歧义不桥接
+        }
+        if (dq) dqdToSf[dq] = String(p.id);
       });
     }
     sfb.players.forEach(function (p) {
