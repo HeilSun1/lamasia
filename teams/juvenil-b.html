@@ -38,7 +38,18 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
+
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-positions">📊 位置分布</a>
+      <a class="page-toc__link" href="#sec-changes">🔄 赛季变动</a>
+      <a class="page-toc__link" href="#sec-injuries">🤕 伤病</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
+      <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
 
     <div class="panel">
       <div class="stats-row">
@@ -49,7 +60,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-positions">
       <div class="panel-title-row"><h3>阵容位置分布</h3><span class="badge gray">共 24 名球员</span></div>
       <div class="p-body">
         <div class="pos-bars">
@@ -61,51 +72,7 @@
       </div>
     </div>
 
-    <!-- ═══ Sofascore 实时数据（dqd-u18.js 渲染；缓存优先 + 实时刷新） ═══ -->
-    <div id="u18-status" class="note-box blue">
-      <span>📡 正在连接 Sofascore，加载最新数据…</span>
-    </div>
-
-    <div class="panel">
-      <div class="panel-title-row">
-        <h3>🤕 伤病名单 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
-      </div>
-      <div id="u18-injuries" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载伤病数据…</div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-title-row">
-        <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
-        <span class="badge blue" id="u18-count-badge">加载中…</span>
-      </div>
-      <p class="p-desc">Sofascore 当前阵容（已与官方名单合并中文名与备注）。点击照片可放大。</p>
-      <div id="u18-roster" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-title-row">
-        <h3>📅 赛程与结果 <span class="tag">Sofascore 数据源 · 自动更新</span></h3>
-      </div>
-      <div id="u18-schedule" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-title-row">
-        <h3>🏟 球队信息 <span class="tag">Sofascore 数据源</span></h3>
-        <img id="u18-team-logo" alt="" referrerpolicy="no-referrer" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
-      </div>
-      <div id="u18-team" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
-      </div>
-    </div>
-
-    <div class="panel">
+    <div class="panel" id="sec-changes">
       <div class="panel-title-row"><h3>🔄 2026-27 赛季变动 <span class="tag">截至 2026-08-06</span></h3></div>
       <div class="p-body" style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
         <div>
@@ -122,6 +89,50 @@
             <li>Pol Mancheño → 比利亚雷亚尔 Juvenil A</li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <!-- ═══ Sofascore 实时数据（dqd-u18.js 渲染；缓存优先 + 实时刷新） ═══ -->
+    <div id="u18-status" class="note-box blue">
+      <span>📡 正在连接 Sofascore，加载最新数据…</span>
+    </div>
+
+    <div class="panel" id="sec-injuries">
+      <div class="panel-title-row">
+        <h3>🤕 伤病名单 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
+      </div>
+      <div id="u18-injuries" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载伤病数据…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-roster">
+      <div class="panel-title-row">
+        <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
+        <span class="badge blue" id="u18-count-badge">加载中…</span>
+      </div>
+      <p class="p-desc">Sofascore 当前阵容（已与官方名单合并中文名与备注）。点击照片可放大。</p>
+      <div id="u18-roster" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-schedule">
+      <div class="panel-title-row">
+        <h3>📅 赛程与结果 <span class="tag">Sofascore 数据源 · 自动更新</span></h3>
+      </div>
+      <div id="u18-schedule" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-teaminfo">
+      <div class="panel-title-row">
+        <h3>🏟 球队信息 <span class="tag">Sofascore 数据源</span></h3>
+        <img id="u18-team-logo" alt="" referrerpolicy="no-referrer" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
+      </div>
+      <div id="u18-team" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
       </div>
     </div>
 
@@ -154,6 +165,7 @@
   <script src="../assets/js/manual-photos-hook.js"></script>
   <script src="../assets/js/manual-photos.js"></script>
   <script src="../assets/js/dqd-u18.js"></script>
+  <script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
 </body>
 </html>
