@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-22 16:13:58 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-22 21:00:38 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-22 16:13:58",
+    "updated":  "2026-08-22 21:00:38",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6213894", "title":  "弗里克：穆帅是我的克星？又不是要踢皇马，还是谈谈埃尔切吧",
+            "url":  "https://www.dongqiudi.com/articles/6213894.html", "time":  "2026-08-22 20:08",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/6B/280x210/crop/-/rBXRn2qJkRyAWiqoAAD5NVByq94426.jpg" },
+        {
+            "id":  "6213830", "title":  "官方：法乙阿讷西签下巴萨后卫大卫-奥杜罗",
+            "url":  "https://www.dongqiudi.com/articles/6213830.html", "time":  "2026-08-22 18:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/21/280x210/crop/-/rBXRn2qJeDuAe_8VAAOxP0Br60c101.jpg" },
+        {
+            "id":  "6213822", "title":  "弗里克：罗德里是出色的领袖，我们必须用胜利开启新赛季",
+            "url":  "https://www.dongqiudi.com/articles/6213822.html", "time":  "2026-08-22 18:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/1D/280x210/crop/-/rBXRn2qJdoCAOeWuAADoAxb60Hc636.jpg" },
         {
             "id":  "6211100", "title":  "凯塔-巴尔德：劳塔罗很适合巴萨，他让我想起了阿圭罗",
             "url":  "https://www.dongqiudi.com/articles/6211100.html", "time":  "2026-08-22 08:05",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6110391", "title":  "比西武：我是一个享受踢球的人，会努力争取进入巴萨一线队",
             "url":  "https://www.dongqiudi.com/articles/6110391.html", "time":  "2026-08-02 01:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/4A/280x210/crop/-/rBXRDGpuJh2ACnHiAAE3GGBhVuQ400.jpg" },
-        {
-            "id":  "6109730", "title":  "比西武：内马尔一直是我的偶像，我喜欢控球和一对一突破",
-            "url":  "https://www.dongqiudi.com/articles/6109730.html", "time":  "2026-08-01 23:05",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D9/EC/280x210/crop/-/rBXRn2puB-iAEiV5AACWXrnpseo396.jpg" },
-        {
-            "id":  "6107716", "title":  "世体：18岁埃及前锋哈姆扎正准备冲击巴萨锋线主力",
-            "url":  "https://www.dongqiudi.com/articles/6107716.html", "time":  "2026-08-01 16:31",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D8/DD/280x210/crop/-/rBXRn2ptqRyACrNUAASHMrC5s50742.jpg" },
-        {
-            "id":  "6106285", "title":  "弗里克：拉什福德？俱乐部的实际情况让有些决定变得并不容易",
-            "url":  "https://www.dongqiudi.com/articles/6106285.html", "time":  "2026-08-01 06:24",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/71/280x210/crop/-/rBXRDGptHw6AV9SeAALv4kLyXcM036.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/4A/280x210/crop/-/rBXRDGpuJh2ACnHiAAE3GGBhVuQ400.jpg" }
     ]
 };
