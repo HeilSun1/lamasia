@@ -345,9 +345,20 @@
         items.push.apply(items, good.slice(0, 6));
       }
 
+      // 去重：同一名球员可能同时出现在两支梯队缓存里（跨级升训 / 注册重叠），
+      // 否则同一张头像会被各梯队各自选中，在滚动条中出现两次。
+      const seenImg = {};
+      const unique = [];
+      items.forEach(function (p) {
+        const k = normKey(p.img);
+        if (seenImg[k]) return;
+        seenImg[k] = true;
+        unique.push(p);
+      });
+
       const mq = document.getElementById('hmMarquee');
       if (mq) {
-        const all = items.length ? items : seededShuffle(marqueeFallback, seed);
+        const all = unique.length ? unique : seededShuffle(marqueeFallback, seed);
         mq.innerHTML = all.concat(all).map(function (p) {
           return '<div class="hm-mq-item"><figure class="hm-mq-photo"><img src="' + p.img + '" alt="' + p.name + '" referrerpolicy="no-referrer"></figure><span class="hm-mq-name">' + p.name + '</span></div>';
         }).join('');
