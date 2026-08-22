@@ -122,7 +122,7 @@
         if (String(m.status) !== "Not started") return;
         var t = parseInt(m.start, 10) * 1000;
         if (!t || t < now() - 3600e3) return;
-        var key = "fcb:" + m.id;
+        var key = m.id;   // 缓存 id 已带 "fcb:" 前缀
         if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
         if (!window.LAMASIA_MATCHES[key]) {
           window.LAMASIA_MATCHES[key] = {

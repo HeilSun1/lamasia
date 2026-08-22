@@ -59,7 +59,7 @@
   function row(m, tierSlug) {
     const playedNow = m.status === "Ended";
     const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
-    const key = "fcb:" + m.id;
+    const key = m.id;   // 缓存 id 已带 "fcb:" 前缀（如 "fcb:cadete:2"）
     // 注册最小详情（无 Sofascore 阵容/统计 → match-detail 只显示基本信息 + 官网外链）
     if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
     if (!window.LAMASIA_MATCHES[key]) {

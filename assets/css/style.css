@@ -1404,3 +1404,57 @@ tr.match-row:hover { background: var(--surface-3); }
   .nav-links { display: none; }
   body.has-mb-nav { padding-bottom: calc(54px + env(safe-area-inset-bottom)); }
 }
+
+/* ═══ 手机端：名单单行 + 集锦名称截断 ═══ */
+@media (max-width: 680px) {
+  /* 名单每行只占一行（隐藏备注/国籍/生日，详情在球员卡片里） */
+  .pl-row { grid-template-columns: 26px 38px minmax(0, 1fr) 56px; }
+  .pl-note, .pl-nation, .pl-dob { display: none; }
+  .pl-avatar { width: 34px; height: 34px; }
+
+  /* 集锦：球员名过长时截断，不把卡片撑宽 */
+  .hl-player > summary .hl-left { flex: 1 1 auto; min-width: 0; }
+  .hl-player > summary .hl-name-btn {
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .hl-player > summary .dqd-side { flex-shrink: 0; }
+  .hl-player > summary .hl-tier { max-width: 40vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+/* ═══ 手机端：赛程卡片更紧凑（队名单行截断，不撑高） ═══ */
+@media (max-width: 680px) {
+  .dqd-body .roster-table tr,
+  #upcoming-list .roster-table tr { padding: 8px 2px; gap: 1px 8px; }
+  .dqd-body .roster-table .match-team,
+  #upcoming-list .roster-table .match-team {
+    display: inline-flex; min-width: 0; max-width: 100%;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .dqd-body .roster-table tr > td:nth-child(2),
+  #upcoming-list .roster-table tr > td:nth-child(3) {
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 11px;
+  }
+  .dqd-body .roster-table .match-logo,
+  #upcoming-list .roster-table .match-logo { width: 16px; height: 16px; }
+  #upcoming-list .roster-table tr > td:nth-child(2) a { font-size: 11px; }
+}
+
+/* ═══ 手机端：赛程卡片行高修正（防 grid 自动撑高） ═══ */
+@media (max-width: 680px) {
+  .dqd-body .roster-table tr,
+  #upcoming-list .roster-table tr {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    line-height: 1.25;
+    padding: 6px 2px;
+  }
+  .dqd-body .roster-table tr > td,
+  #upcoming-list .roster-table tr > td { line-height: 1.25; padding: 0; }
+  .dqd-body .roster-table tr > td:nth-child(1),
+  #upcoming-list .roster-table tr > td:nth-child(1) { font-size: 11.5px; }
+  .dqd-body .roster-table tr > td:nth-child(3),
+  .dqd-body .roster-table tr > td:nth-child(5),
+  #upcoming-list .roster-table tr > td:nth-child(4),
+  #upcoming-list .roster-table tr > td:nth-child(6) { font-size: 12.5px; }
+}
