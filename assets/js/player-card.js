@@ -484,7 +484,10 @@
   function videoCountFor(key) {
     if (!window.VideosUI || !key) return 0;
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
-    if (!m) return window.VideosUI.resolve("players", key).length;
+    if (!m) {
+      return window.VideosUI.resolve("players", key).length +
+        window.VideosUI.feedFor(key).reduce(function (n, g) { return n + g.videos.length; }, 0);
+    }
     var id = m[2];
     return playerTiers(m[1], id).reduce(function (n, t) {
       var k = "sf:" + t + ":" + id;
@@ -497,8 +500,24 @@
   function matchVideosHtml(key, done) {
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
     if (!m) {
+      // 非 Sofascore 键（懂球帝 b:{id} / data.js local:{tier}:{name}）：个人集锦 + 非赛程折叠块
       var solo = window.VideosUI.resolve("players", key);
-      done(solo.length ? window.VideosUI.groupHtml(solo, "🎥 个人集锦") : "");
+      var feedG = window.VideosUI.feedFor(key);
+      var html = "";
+      if (solo.length) html += window.VideosUI.groupHtml(solo, "🎥 个人集锦");
+      if (feedG.length) {
+        var fn = 0;
+        feedG.forEach(function (g) { fn += g.videos.length; });
+        html += '<details class="md-vids-fold pc-vids-fold">' +
+          "<summary>📹 非赛程集锦 <span class=\"vid-count\">" + fn + "</span></summary>" +
+          '<div class="md-vids-fold-body">' +
+            feedG.map(function (g) {
+              return '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + g.label + "</div>" +
+                '<div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+            }).join("") +
+          "</div></details>";
+      }
+      done(html || "");
       return;
     }
     var id = m[2];

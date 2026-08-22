@@ -32,6 +32,9 @@ window.VIDEOS_DATA = {
     "sf:b:1926082": ["4_Aj5crS8X0"],
     "sf:u19:2014710": ["4_Aj5crS8X0"],
     "sf:u19:1926082": ["4_Aj5crS8X0"],
+    "sf:b:2679424": ["BV1qt8A61E5G"],   // "哈维·埃斯帕特季前赛集锦"实为其他球员（同名前缀撞车），误配给 Javi Castro
+    "b:50935584": ["BV19fbC6XEbZ"],   // "乔纳森·埃尔南德斯（Barca Atletic 新援）"实为乔纳森，非胡安，误配
+    "local:cadete:rocmartinez": ["BV1FDuv6bESg"],   // "塞尔吉奥·马丁内斯（桑坦德竞技转会目标）"非罗克，误配
     "sfb:16866862": ["xC6XHDscPt4", "l_QEkeC1KJA", "WbP4hvDJ3Pw"],  // 三条 07-30 发布、4-1/训练视频，本场是 08-19 的 1-0，误配
     "sfb:16696837": ["zw6c7QSbUtA"]    // Tona 场"WATCH LIVE FOOTBALL"直播流，非本场集锦，误配
   },

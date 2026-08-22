@@ -90,7 +90,7 @@ $STOP = @("u19","u18","u16","u17","u15","fc","cf","cd","ue","ce","de","el","la",
 # 中文名匹配评分：分段（· 分隔）命中取最长匹配长度；前缀≥3 字取 3（通用前缀分数低，多 Pedro 时长的优先）
 function ZhScore([string]$titleNorm, [string]$zh) {
   $zn = Norm $zh
-  $parts = @($zn -split '·' | Where-Object { $_.Length -ge 2 })
+  $parts = @($zn -split '[·-]' | Where-Object { $_.Length -ge 2 })   # 兼容 data.js「·」与懂球帝「-」分隔
   if (-not $parts.Count) { $parts = @($zn) }
   $best = 0
   foreach ($part in $parts) {
@@ -98,7 +98,7 @@ function ZhScore([string]$titleNorm, [string]$zh) {
     if (-not $p) { continue }
     if ($titleNorm.IndexOf($p) -ge 0) { if ($p.Length -gt $best) { $best = $p.Length } }
     elseif ($p.Length -ge 4 -and $titleNorm.IndexOf($p.Substring(0, 4)) -ge 0) { if (4 -gt $best) { $best = 4 } }
-    elseif ($p.Length -ge 3 -and $titleNorm.IndexOf($p.Substring(0, 3)) -ge 0) { if (3 -gt $best) { $best = 3 } }
+    # 不做 3 字前缀匹配：防「罗德里」误配「罗德里格斯」这类前缀撞车
   }
   return $best
 }
@@ -109,13 +109,129 @@ function IsPlayerIrrelevant([string]$titleNorm) {
   return $false
 }
 
-# 球员-视频匹配分：英文 token 按「命中数×1000 + 命中总长」计（全名命中优先于共享姓氏），中文走 ZhScore（0 = 不匹配）
+# 词元归一（JS 风格：小写 + 去重音 + 去所有非字母数字），与 player-card.js 的 norm() 一致
+function Norm-Key([string]$s) {
+  $s = $s.ToLowerInvariant()
+  $s = $s.Normalize([System.Text.NormalizationForm]::FormD)
+  $s = [regex]::Replace($s, '[̀-ͯ]', '')
+  return [regex]::Replace($s, '[^a-z0-9]', '')
+}
+
+# 名字 → 词元（≥4 字符），供词元匹配（兼容简称/部分名）
+function Name-Tokens([string]$name) {
+  $base = (Norm $name) -replace '[^a-z0-9 ]', ' '
+  return @(($base -split '\s+' | Where-Object { $_.Length -ge 4 } | Select-Object -Unique))
+}
+
+# 球员-视频匹配分：
+#   · 标题含任一全名（含懂球帝别名）→ 最高分（200000 + 命中总长）
+#   · 命中 ≥2 个词元 → 100000 + 1000×词元数 + 总长
+#   · 命中 1 个词元 + 1 个前缀（≥5 字符简称，如 Guille→Guillermo）→ 90000 + …
+#   · 中文 → ZhScore（0 = 不匹配）
+# 不做纯前缀/单常用姓氏匹配：防「罗德里」误配「罗德里格斯」这类撞车
 function PlayerScore([string]$titleNorm, $pl) {
-  $cnt = 0; $tot = 0
-  foreach ($t in @($pl.tokens)) { if ($titleNorm.IndexOf($t) -ge 0) { $cnt++; $tot += $t.Length } }
-  if ($cnt -gt 0) { return 1000 * $cnt + $tot }
+  $fullHit = $false; $cnt = 0; $tot = 0; $pref = 0
+  foreach ($f in @($pl.fullNorms)) { if ($titleNorm.IndexOf($f) -ge 0) { $fullHit = $true; break } }
+  foreach ($t in @($pl.tokens)) {
+    if ($titleNorm.IndexOf($t) -ge 0) { $cnt++; $tot += $t.Length }
+  }
+  if ($fullHit) { return 200000 + $tot }
+  if ($cnt -ge 2) { return 100000 + 1000 * $cnt + $tot }
+  if ($cnt -ge 1) {
+    foreach ($t in @($pl.tokens)) {
+      # 仅当完整词元不在标题、但其 5 字前缀在时算前缀命中（如 Guille→Guillermo；排除自前缀）
+      if ($t.Length -ge 5 -and $titleNorm.IndexOf($t) -lt 0 -and $titleNorm.IndexOf($t.Substring(0, 5)) -ge 0) { $pref = 1; break }
+    }
+    if ($pref) { return 90000 + 1000 * $cnt + $tot }
+  }
   if ($pl.zh) { return ZhScore $titleNorm $pl.zh }
   return 0
+}
+
+# data.js 高梯队球员（正则抽取 name/zh；data.js 是非严格 JSON，Read-CacheJs 读不了）
+function Read-DataJsPlayers([string[]]$tiers) {
+  $out = @{}
+  $path = Join-Path $Root "assets\js\data.js"
+  if (-not (Test-Path $path)) { return $out }
+  $txt = [System.IO.File]::ReadAllText((Resolve-Path $path), $UTF8)
+  foreach ($tier in $tiers) {
+    $m = [regex]::Match($txt, '"' + [regex]::Escape($tier) + '"\s*:\s*\[(.*?)\n\s*\],?\n', 'Singleline')
+    if (-not $m.Success) { continue }
+    $list = @()
+    foreach ($em in [regex]::Matches($m.Groups[1].Value, '\{[^{}]*name:\s*"([^"]*)"[^{}]*zh:\s*"([^"]*)"')) {
+      $list += [pscustomobject]@{ name = $em.Groups[1].Value; zh = $em.Groups[2].Value }
+    }
+    $out[$tier] = $list
+  }
+  return $out
+}
+
+# 构建全量球员匹配池：
+#   Sofascore 四队(b/u19/u18/u16) → sf:{tier}:{id}
+#   懂球帝 B队：能唯一对应到 sf:b 的并入该条目（别名，视频统一存 sf:b），否则单开 b:{person_id}
+#   data.js 高梯队(juvenil-a/b/cadete) → local:{tier}:{Norm-Key name}
+function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
+  $pool = @{}
+  foreach ($cfg in @(
+    @{ cache = $sfb; tier = "b" },
+    @{ cache = $u19; tier = "u19" },
+    @{ cache = $u18; tier = "u18" },
+    @{ cache = $u16; tier = "u16" }
+  )) {
+    if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
+    foreach ($p in @($cfg.cache.players)) {
+      $plid = [string]$p.id; $pname = [string]$p.name
+      if (-not $plid -or -not $pname) { continue }
+      $pkey = "sf:$($cfg.tier):$plid"
+      if ($pool.ContainsKey($pkey)) { continue }
+      $zh = ""
+      $nz = Norm $pname
+      if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
+      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; fullNorms = @($nz); tokens = @(Name-Tokens $pname) }
+    }
+  }
+  $dqd = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-cache.js")
+  if ($dqd -and $dqd.roster -and $dqd.roster.data -and $dqd.roster.data.list) {
+    $sfbKeys = @($pool.Keys | Where-Object { $_ -like 'sf:b:*' })
+    foreach ($g in @($dqd.roster.data.list)) {
+      if ("$($g.type)" -notmatch '^(attacker|defender|midfielder|goalkeeper)$') { continue }
+      foreach ($p in @($g.data)) {
+        $plid = [string]$p.person_id; $pname = [string]$p.person_en_name
+        if (-not $plid -or -not $pname) { continue }
+        $dtk = @(Name-Tokens $pname)
+        # 用「最稀有词元」在 sf:b 里定位（覆盖 Aziz Issah↔Abdul Aziz Issah、Alex Walton↔Alexander Walton）：
+        # 取命中 sf:b 数最少的词元，若唯一对应则桥接
+        $bestFreq = [int]::MaxValue
+        $bestTok = ""
+        foreach ($tk in $dtk) {
+          $freq = @($sfbKeys | Where-Object { $pool[$_].tokens -contains $tk }).Count
+          if ($freq -gt 0 -and $freq -lt $bestFreq) { $bestFreq = $freq; $bestTok = $tk }
+        }
+        $hits = @()
+        if ($bestTok) { $hits = @($sfbKeys | Where-Object { $pool[$_].tokens -contains $bestTok }) }
+        if ($hits.Count -eq 1) {
+          $e = $pool[$hits[0]]
+          $e.fullNorms = @(@($e.fullNorms) + (Norm $pname) | Select-Object -Unique)
+          $e.tokens = @(@($e.tokens) + $dtk | Select-Object -Unique)
+          continue
+        }
+        # 无唯一 sf:b 对应 → dqd-only（如 Hamza、Eder Aller），单开 b: 键
+        if ($pool.ContainsKey("b:$plid")) { continue }
+        $pool["b:$plid"] = [pscustomobject]@{ name = $pname; zh = [string]$p.person_name; fullNorms = @((Norm $pname)); tokens = @($dtk) }
+      }
+    }
+  }
+  $dataJs = Read-DataJsPlayers @("juvenil-a", "juvenil-b", "cadete")
+  foreach ($tier in @("juvenil-a", "juvenil-b", "cadete")) {
+    foreach ($p in @($dataJs[$tier])) {
+      $pname = [string]$p.name
+      if (-not $pname) { continue }
+      $pkey = "local:${tier}:$(Norm-Key $pname)"
+      if ($pool.ContainsKey($pkey)) { continue }
+      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = [string]$p.zh; fullNorms = @((Norm $pname)); tokens = @(Name-Tokens $pname) }
+    }
+  }
+  return $pool
 }
 
 function TeamTokens([string]$name) {
@@ -453,6 +569,7 @@ if ($vd -and $vd.reSearch) { foreach ($k in @($vd.reSearch)) { $reSearch[[string
 $sfb = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-sf-cache.js")
 $u19 = Read-CacheJs (Join-Path $Root "assets\js\dqd-u19-cache.js")
 $u18 = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-cache.js")
+$u16 = Read-CacheJs (Join-Path $Root "assets\js\dqd-u16-cache.js")
 $sfbDetails = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-sf-details-cache.js")
 $u19Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u19-details-cache.js")
 $u18Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-details-cache.js")
@@ -761,13 +878,22 @@ foreach ($cfg in @(
 }
 Log "  · 已完赛 $($endedList.Count) 场 / 对手候选 $($oppPool.Count) 个"
 
-# 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）
+# 构建全量匹配池（B/B2 段复用；0.5 段先用于旧 feed 重校验）
+$zhMap = Build-ZhMap
+$pool  = Build-PlayerPool $sfb $u19 $u18 $u16 $zhMap
+Log "  · 匹配池 $($pool.Count) 名球员"
+
+# 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）；
+# 同时重校验该视频是否仍匹配该球员（清掉 Rodri 误配这类过期归属）
 $refeed = 0
 foreach ($fk in @($oldFeed.Keys)) {
+  $pe = $pool[$fk]
+  if (-not $pe) { continue }   # 球员已不在池（离开名单）
   foreach ($g in $oldFeed[$fk]) {
     foreach ($v in @($g.videos)) {
       if (-not $v -or -not $v.videoId) { continue }
       $titleNorm = Norm ([string]$v.title)
+      if ((PlayerScore $titleNorm $pe) -le 0) { continue }   # 不再匹配该球员
       $pubT = Get-UcDate ([string]$v.published)
       Add-FeedVideo $outFeed $fk $v $titleNorm $oppPool $pubT
       $refeed++
@@ -817,27 +943,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
   }
 
   if ($channelIds.Count) {
-    $zhMap = Build-ZhMap
-    # 球员池：用当前名单（与 B站 一致），覆盖面广
-    $pool = @{}
-    foreach ($cfg in @(
-      @{ cache = $sfb; tier = "b" },
-      @{ cache = $u19; tier = "u19" },
-      @{ cache = $u18; tier = "u18" }
-    )) {
-      if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
-      foreach ($p in @($cfg.cache.players)) {
-        $plid = [string]$p.id
-        $pname = [string]$p.name
-        if (-not $plid -or -not $pname) { continue }
-        $pkey = "sf:$($cfg.tier):$plid"
-        if ($pool.ContainsKey($pkey)) { continue }
-        $zh = ""
-        $nz = Norm $pname
-        if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
-        $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; tokens = @(TeamTokens $pname) }
-      }
-    }
+    # 球员池已在 0.5 段构建（$pool），此处复用
     foreach ($cid in $channelIds) {
       Log "  · 频道 $cid 拉取 RSS……"
       $rss = @(Get-ChannelRss $cid)
@@ -875,27 +981,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
 # ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」 / 473683296） ════════════
 # 独立于 YouTube 探测：国内 B站 可直连，无代理也能拉到；非赛程集锦全 UP 扫描（不依赖新赛程）
 if ($BiliUids.Count) {
-  $zhMap = Build-ZhMap
-  # 球员池：用当前名单（B队 SF + U19 名单），覆盖面广，任何在队球员的视频都能按名匹配
-  $allPlayers = @{}
-  foreach ($cfg in @(
-    @{ cache = $sfb; tier = "b" },
-    @{ cache = $u19; tier = "u19" },
-    @{ cache = $u18; tier = "u18" }
-  )) {
-    if (-not $cfg.cache -or -not $cfg.cache.players) { continue }
-    foreach ($p in @($cfg.cache.players)) {
-      $plid = [string]$p.id
-      $pname = [string]$p.name
-      if (-not $plid -or -not $pname) { continue }
-      $pkey = "sf:$($cfg.tier):$plid"
-      if ($allPlayers.ContainsKey($pkey)) { continue }
-      $zh = ""
-      $nz = Norm $pname
-      if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
-      $allPlayers[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; tokens = @(TeamTokens $pname) }
-    }
-  }
+  $allPlayers = $pool   # 全量匹配池（0.5 段构建）
   # （$endedList 已在 B 段开头构建，供全场集锦匹配）
   Log "  · B站 匹配池：$($allPlayers.Count) 名在队球员 / $($endedList.Count) 场已完赛"
   foreach ($uid in $BiliUids) {

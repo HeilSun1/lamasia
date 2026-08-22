@@ -21,25 +21,39 @@
   if (!wrap || !window.DQD_VIDEOS_CACHE || !window.VideosUI) return;
 
   var feed = (window.DQD_VIDEOS_CACHE.feed && window.DQD_VIDEOS_CACHE.feed.players) || {};
-  var TIER_ORDER = { b: 0, u19: 1, u18: 2, u16: 3 };
+  var TIER_ORDER = { b: 0, u19: 1, u18: 2, u16: 3, u15: 4, u14: 5, other: 9 };
   var TIER_LABEL = {
     b: "预备队 · Barça Atlètic",
     u19: "U19 · Juvenil A",
     u18: "U18 · Juvenil B",
-    u16: "U16 · Cadete A"
+    u16: "U16 · Cadete A",
+    u15: "U15 · Cadete B",
+    u14: "U14 · Infantil A",
+    other: "其他"
   };
+  var LOCAL_TIER = {
+    "juvenil-a": "u19", "juvenil-b": "u18", cadete: "u16",
+    "cadete-b": "u15", infantil: "u14", "infantil-b": "u14"
+  };
+  /* feed 键 → 展示梯队：sf:{tier}:{id} / b:{id} / local:{tier}:{name} */
+  function tierOf(k) {
+    var m = /^sf:([a-z0-9]+):\d+$/.exec(k);
+    if (m) return m[1];
+    if (/^b:\d+$/.test(k)) return "b";
+    var l = /^local:([a-z0-9-]+):/.exec(k);
+    if (l) return LOCAL_TIER[l[1]] || "other";
+    return "other";
+  }
 
   // ① 收集每个 feed 键的信息
   var entries = [];
   Object.keys(feed).forEach(function (k) {
     var groups = window.VideosUI.feedFor(k);
     if (!groups.length) return;
-    var m = /^sf:([a-z0-9]+):(\d+)$/.exec(k);
-    var tier = m ? m[1] : "";
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
     entries.push({
       key: k,
-      tier: tier,
+      tier: tierOf(k),
       groups: groups,
       nameZh: (rec && rec.nameZh) || "",
       nameEn: (rec && rec.nameEn) || k,
