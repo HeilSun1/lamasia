@@ -152,6 +152,12 @@ function Test-ZhSegment([string]$titleNorm, [string]$part) {
   return $false
 }
 
+# 两个中文名是否有共享字符（判断译名变体：乔迪/约尔迪 共享「迪」；埃里克/诺亚 无共享）
+function Chars-Share([string]$x, [string]$y) {
+  foreach ($c in $x.ToCharArray()) { if ($y.IndexOf($c) -ge 0) { return $true } }
+  return $false
+}
+
 function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
   $zhP = @($pl.zhParts)
   # 中文：给定名后紧跟汉字（塞尔吉→塞尔吉奥）→ 标题里是另一个更长名字 → 拒绝
@@ -163,12 +169,16 @@ function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
   # 中文：标题里的「名·姓」对校验——
   #   ① 给定名一致但姓氏不同 → 另一人（哈维·埃斯帕特 ≠ 哈维·卡斯特罗）
   #   ② 本队姓氏出现在「名」位 → 标题是另一人（维克托·齐甘科夫：维克托是吉列姆的姓却当名用）
-  #   注意：给定名是译名变体（乔迪≈约尔迪）不算冲突，交给唯一性判定
+  #   ③ 本队姓氏在「姓」位但给定名不同 → 需给定名与球员名有字符关联（译名变体 乔迪≈约尔迪），否则是另一人（埃里克·加西亚 ≠ 诺亚·加西亚）
   if ($zhP.Count -ge 2) {
+    $given = $zhP[0]; $sur = $zhP[1]
     foreach ($pm in [regex]::Matches($titleNorm, '([一-鿿]{2,4})·([一-鿿]{2,6})')) {
       $a = $pm.Groups[1].Value; $b = $pm.Groups[2].Value
-      if (($a -eq $zhP[0] -and $b -ne $zhP[1]) -or ($b -eq $zhP[0] -and $a -ne $zhP[1])) { return 0 }
-      if ($a -eq $zhP[1] -and $b -ne $zhP[0]) { return 0 }
+      $ownPair = ($a -eq $given -and $b -eq $sur) -or ($a -eq $sur -and $b -eq $given)
+      if ($ownPair) { continue }
+      if (($a -eq $given -and $b -ne $sur) -or ($b -eq $given -and $a -ne $sur)) { return 0 }
+      if ($a -eq $sur) { return 0 }
+      if ($b -eq $sur -and -not (Chars-Share $a $given)) { return 0 }
     }
   }
   foreach ($f in @($pl.fullNorms)) { if ($f -and $titleNorm.IndexOf($f) -ge 0) { return 200000 + $f.Length } }

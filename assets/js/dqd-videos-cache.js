@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:47 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:50 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 11:47:18",
+    "updated":  "2026-08-22 11:50:03",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,21 +162,6 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "",
-                                                        "label":  "08-16 · 集锦",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "WA-IyOyleG8",
-                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-16",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-08-16",
                                                         "opp":  "FC Basel",
                                                         "label":  "vs FC Basel · 08-16",
                                                         "videos":  [
@@ -189,27 +174,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "durationSec":  ""
                                                                        }
                                                                    ]
+                                                    },
+                                                    {
+                                                        "date":  "2026-08-16",
+                                                        "opp":  "",
+                                                        "label":  "08-16 · 集锦",
+                                                        "videos":  [
+                                                                       {
+                                                                           "videoId":  "WA-IyOyleG8",
+                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
+                                                                           "channel":  "ArsenKveFCB",
+                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                           "published":  "2026-08-16",
+                                                                           "durationSec":  ""
+                                                                       }
+                                                                   ]
                                                     }
                                                 ],
-                                 "local:cadete:noahgarcia":  [
-                                                                 {
-                                                                     "date":  "2026-08-16",
-                                                                     "opp":  "",
-                                                                     "label":  "08-16 · 集锦",
-                                                                     "videos":  [
-                                                                                    {
-                                                                                        "videoId":  "BV1MTb96uEBd",
-                                                                                        "title":  "埃里克·加西亚",
-                                                                                        "channel":  "口菐",
-                                                                                        "channelId":  "",
-                                                                                        "published":  "2026-08-16",
-                                                                                        "durationSec":  "556",
-                                                                                        "site":  "bili",
-                                                                                        "pic":  "https://i0.hdslb.com/bfs/archive/711b22630452ffa40215a7b5bcfa54dbaca0a4df.jpg"
-                                                                                    }
-                                                                                ]
-                                                                 }
-                                                             ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
@@ -386,25 +367,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "495",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/769f45dccdd576cf800d8fb18c2668175e6ecf8d.jpg"
-                                                                         }
-                                                                     ]
-                                                      }
-                                                  ],
-                                 "sf:b:2219071":  [
-                                                      {
-                                                          "date":  "2026-06-19",
-                                                          "opp":  "",
-                                                          "label":  "06-19 · 集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1vgjk6WEF4",
-                                                                             "title":  "巴萨 B 队 厄瓜多尔左边翼卫 荷塞·凯塞多",
-                                                                             "channel":  "13站一直吞我評論",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-06-19",
-                                                                             "durationSec":  "193",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/a1bff3dfad03a2cf37f18792ae5ceceb76739a5f.jpg"
                                                                          }
                                                                      ]
                                                       }
