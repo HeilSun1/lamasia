@@ -32,7 +32,8 @@ $FeedScanAll          = $true  # 非赛程集锦：YouTube 可达即全频道扫
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
 $BiliUids             = @("470189", "1515150312", "473683296", "1946872922")   # B站 UP主：口菐 /「B站一直吞我评论」/ 473683296 / 1946872922
-$MaxBiliVideos        = 60                 # 每 UP 取最近 N 个 bvid（口菐等日更 UP 发稿多，30 会漏）
+$MaxBiliVideos        = 90                 # 每 UP 取最近 N 个 bvid（口菐等日更 UP 发稿多，30 会漏）
+$BiliExtraPages       = 3                  # 空间页 DOM 只渲染最近 ~40 条；再用 arc/search 补抓 pn=2..N 更早投稿（限流则跳过）
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
 $MaxMatchVideos       = 3                  # 每场保留条数
 $MaxPlayerVideos      = 6                  # 每名球员赛程集锦累积上限
@@ -45,6 +46,12 @@ $U19TeamId            = "90128"            # Sofascore 巴萨 U19
 
 $U18TeamId            = "933330"           # Sofascore 巴萨 U18（Juvenil B）
 $CutoffUnix           = 1780243200         # 只收 2026-06-01 起（与站点数据一致）
+
+# ── 中文译名变体（同一球员在站点/B站/媒体的中文写法不一致，补进中文段匹配，防漏配） ──
+# key = 球员池键；zh = 额外可匹配的中文段。例：霍尔迪·佩斯克尔，口菐写"佩斯科尔"，另有"帕斯奎尔"写法。
+$ZhAliases = @(
+  @{ key = "local:juvenil-b:jordipesquer"; zh = @("佩斯科尔", "帕斯奎尔") }
+)
 
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
 $EdgeCfg = Join-Path $PSScriptRoot "sofascore-edge-path.txt"
@@ -559,6 +566,50 @@ function Get-BiliBvids([string]$uid) {
   return $bvids
 }
 
+# B站空间页 DOM 只渲染最近 ~40 条；用 arc/search 分页补抓更早投稿（pn=2..N）。
+# 该接口有频率限制（-799/风控验证页，且为 IP 级：一 UP 失败通常全 IP 失败）。
+# 重试一次不成就判定 IP 被风控，跳过后续所有分页（$script:BiliExtraBlocked），不影响主流程。
+function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap) {
+  if ($script:BiliExtraBlocked) { return @() }
+  $extra = @()
+  for ($pn = 2; $pn -le $maxPages; $pn++) {
+    $got = $false
+    for ($att = 1; $att -le 2; $att++) {
+      try {
+        $uri = "https://api.bilibili.com/x/space/arc/search?mid=$uid&ps=30&pn=$pn&order=pubdate"
+        $headers = @{
+          "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
+          "Referer"    = "https://space.bilibili.com/"
+          "Cookie"     = "buvid3=lamasia"
+        }
+        $res = Invoke-RestMethod -Uri $uri -Method Get -Headers $headers -TimeoutSec 20
+        if ($res -and $res.code -eq 0 -and $res.data -and $res.data.list -and $res.data.list.vlist) {
+          foreach ($v in @($res.data.list.vlist)) {
+            $b = [string]$v.bvid
+            if ($b -and $extra -notcontains $b) { $extra += $b }
+            if ($extra.Count -ge $cap) { break }
+          }
+          Log "  · B站 UP $uid 分页补抓 pn=$pn 成功（累计 $($extra.Count) 条更早投稿）"
+          $got = $true
+          break
+        } elseif ($res -and $res.code -ne 0) {
+          Log "  · B站 UP $uid 分页 pn=$pn 被限流（code=$($res.code)）"
+        }
+      } catch {
+        Log "  · B站 UP $uid 分页 pn=$pn 请求异常"
+      }
+      Start-Sleep -Seconds 30
+    }
+    if (-not $got) {
+      $script:BiliExtraBlocked = $true
+      Log "  · B站 分页补抓被风控，本次跳过后续 UP 分页（已抓 $($extra.Count) 条更早投稿）"
+      break
+    }
+    if ($extra.Count -ge $cap) { break }
+  }
+  return @($extra)
+}
+
 # B站 view 接口：bvid → 元数据（无需 WBI，任意 buvid cookie 可通）
 function Get-BiliVideoInfo([string]$bvid) {
   # 元数据接口偶发超时/风控：重试 3 次，超时加长到 25s（避免把视频整条漏掉）
@@ -964,6 +1015,15 @@ Log "  · 已完赛 $($endedList.Count) 场 / 对手候选 $($oppPool.Count) 个
 # 构建全量匹配池（B/B2 段复用；0.5 段先用于旧 feed 重校验）
 $zhMap = Build-ZhMap
 $pool  = Build-PlayerPool $sfb $u19 $u18 $u16 $zhMap
+# 译名变体补丁：追加中文匹配段（须在 Build-PartIndex 之前，否则词元索引里没有这些段）
+foreach ($al in $ZhAliases) {
+  if ($pool.ContainsKey($al.key)) {
+    $pool[$al.key].zhParts = @(@($pool[$al.key].zhParts) + @($al.zh) | Select-Object -Unique)
+    Log "  · 译名变体：$($al.key) ← $($al.zh -join ' / ')"
+  } else {
+    Log "  · 译名变体跳过（不在匹配池）：$($al.key)"
+  }
+}
 $partPlayers = Build-PartIndex $pool
 Log "  · 匹配池 $($pool.Count) 名球员 / 词元索引 $($partPlayers.Count) 项"
 
@@ -1072,6 +1132,8 @@ if ($BiliUids.Count) {
   Log "  · B站 匹配池：$($allPlayers.Count) 名在队球员 / $($endedList.Count) 场已完赛"
   foreach ($uid in $BiliUids) {
     $bvids = @(Get-BiliBvids $uid)
+    # DOM 只渲染最近 ~40 条，用 arc/search 补抓更早投稿（合并去重；限流失败不影响）
+    $bvids = @(@($bvids) + @(Get-BiliBvidsExtra $uid $BiliExtraPages $MaxBiliVideos) | Select-Object -Unique)
     $count = [Math]::Min($bvids.Count, $MaxBiliVideos)
     if (-not $count) { continue }
     Log "  · B站 UP $uid：检查最近 $count 条投稿"

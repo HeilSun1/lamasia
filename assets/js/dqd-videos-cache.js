@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 16:15 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 16:21 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 16:15:48",
+    "updated":  "2026-08-22 16:21:44",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,12 +162,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "",
-                                                        "label":  "08-16 · 集锦",
+                                                        "opp":  "FC Basel",
+                                                        "label":  "vs FC Basel · 08-16",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "WA-IyOyleG8",
-                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
+                                                                           "videoId":  "wVE07sxsR1Y",
+                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
@@ -177,12 +177,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
+                                                        "opp":  "",
+                                                        "label":  "08-16 · 集锦",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
+                                                                           "videoId":  "WA-IyOyleG8",
+                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
@@ -261,6 +261,40 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "durationSec":  "131",
                                                                                              "site":  "bili",
                                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-19",
+                                                                          "opp":  "开罗国民",
+                                                                          "label":  "vs 开罗国民 · 08-19",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1fhbd68Ein",
+                                                                                             "title":  "佩斯科尔VS开罗国民",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-19",
+                                                                                             "durationSec":  "131",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/559d3665c4a5ba950aeda29cb6ed99bc0e291e91.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-16",
+                                                                          "opp":  "巴塞尔",
+                                                                          "label":  "vs 巴塞尔 · 08-16",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1oGbR69EEn",
+                                                                                             "title":  "佩斯科尔VS巴塞尔",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-16",
+                                                                                             "durationSec":  "128",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/b36dc2ab5458b609c67d80342c3d0415f8d26e62.jpg"
                                                                                          }
                                                                                      ]
                                                                       },
