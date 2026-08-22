@@ -74,26 +74,51 @@
     return;
   }
 
-  items.forEach(function (n) {
+  // 单条渲染
+  function itemHtml(n) {
     var srcClass = n.source === "U19" ? "u" : (n.source === "B队" ? "b" : "w");
     var nkey = n.id || n.url;
-    html +=
-      '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
-        (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +
-        '<span class="news-item__body">' +
-          '<span class="news-item__title">' + esc(n.title) + '</span>' +
-          '<span class="news-item__meta">' +
-            '<span class="news-item__src news-item__src--' + srcClass + '">' + esc(n.source) + '</span>' +
-            (n.issue ? '<span class="news-item__tag">第 ' + esc(n.issue) + ' 期</span>' : '') +
-            (n.tag && n.tag !== "足球" ? '<span class="news-item__tag">' + esc(n.tag) + '</span>' : '') +
-            '<span class="news-item__time">' + esc(n.time) + '</span>' +
-          '</span>' +
+    return '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
+      (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +
+      '<span class="news-item__body">' +
+        '<span class="news-item__title">' + esc(n.title) + '</span>' +
+        '<span class="news-item__meta">' +
+          '<span class="news-item__src news-item__src--' + srcClass + '">' + esc(n.source) + '</span>' +
+          (n.issue ? '<span class="news-item__tag">第 ' + esc(n.issue) + ' 期</span>' : '') +
+          (n.tag && n.tag !== "足球" ? '<span class="news-item__tag">' + esc(n.tag) + '</span>' : '') +
+          '<span class="news-item__time">' + esc(n.time) + '</span>' +
         '</span>' +
-      '</a>';
-  });
-  el.innerHTML = html;
-  if (window.NewsRead) {
-    NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
-    NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));
+      '</span>' +
+    '</a>';
+  }
+
+  function render() {
+    el.innerHTML = html;
+    if (window.NewsRead) {
+      NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
+      NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));
+    }
+  }
+
+  // 默认显示前 10 条，点「查看更多」展开全部
+  var INITIAL = 10;
+  html += items.slice(0, INITIAL).map(itemHtml).join('');
+  var rest = items.slice(INITIAL);
+
+  if (rest.length) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'news-more';
+    btn.textContent = '查看更多（还有 ' + rest.length + ' 条）';
+    btn.addEventListener('click', function () {
+      html += rest.map(itemHtml).join('');
+      render();
+      btn.remove();
+      if (window.NewsRead) NewsRead.decorate(el);   // 展开后补红点
+    });
+    render();
+    el.appendChild(btn);
+  } else {
+    render();
   }
 })();
