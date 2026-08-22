@@ -139,6 +139,19 @@ function Test-Word([string]$titleNorm, [string]$t) {
   return [regex]::IsMatch($titleNorm, '\b' + [regex]::Escape($t) + '\b')
 }
 
+# 中文段按「完整段」匹配：前后不能是汉字（避免 克尔 命中 佩斯克尔 内部）
+function Test-ZhSegment([string]$titleNorm, [string]$part) {
+  if (-not $part) { return $false }
+  $idx = 0
+  while (($idx = $titleNorm.IndexOf($part, $idx)) -ge 0) {
+    $before = if ($idx -gt 0) { $titleNorm[$idx - 1] } else { "" }
+    $after = if ($idx + $part.Length -lt $titleNorm.Length) { $titleNorm[$idx + $part.Length] } else { "" }
+    if (($before -notmatch '[一-鿿]') -and ($after -notmatch '[一-鿿]')) { return $true }
+    $idx++
+  }
+  return $false
+}
+
 function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
   $zhP = @($pl.zhParts)
   # 中文：给定名后紧跟汉字（塞尔吉→塞尔吉奥）→ 标题里是另一个更长名字 → 拒绝
@@ -147,18 +160,21 @@ function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
     $gEnd = $gIdx + $zhP[0].Length
     if ($gEnd -lt $titleNorm.Length -and $titleNorm[$gEnd] -match '[一-鿿]') { return 0 }
   }
-  # 中文：标题里的「名·姓」对必须与球员一致（防 维克托·齐甘科夫≠吉列姆·维克托 / 哈维·埃斯帕特≠哈维·卡斯特罗）
+  # 中文：标题里的「名·姓」对校验——
+  #   ① 给定名一致但姓氏不同 → 另一人（哈维·埃斯帕特 ≠ 哈维·卡斯特罗）
+  #   ② 本队姓氏出现在「名」位 → 标题是另一人（维克托·齐甘科夫：维克托是吉列姆的姓却当名用）
+  #   注意：给定名是译名变体（乔迪≈约尔迪）不算冲突，交给唯一性判定
   if ($zhP.Count -ge 2) {
     foreach ($pm in [regex]::Matches($titleNorm, '([一-鿿]{2,4})·([一-鿿]{2,6})')) {
       $a = $pm.Groups[1].Value; $b = $pm.Groups[2].Value
-      $mine = ($a -eq $zhP[0] -and $b -eq $zhP[1]) -or ($a -eq $zhP[1] -and $b -eq $zhP[0])
-      if (-not $mine -and (@($zhP) -contains $a -or @($zhP) -contains $b)) { return 0 }
+      if (($a -eq $zhP[0] -and $b -ne $zhP[1]) -or ($b -eq $zhP[0] -and $a -ne $zhP[1])) { return 0 }
+      if ($a -eq $zhP[1] -and $b -ne $zhP[0]) { return 0 }
     }
   }
   foreach ($f in @($pl.fullNorms)) { if ($f -and $titleNorm.IndexOf($f) -ge 0) { return 200000 + $f.Length } }
   $matched = @()
   foreach ($t in @($pl.tokens)) { if (Test-Word $titleNorm $t) { $matched += $t } }
-  foreach ($s in @($zhP)) { if ($s -and $titleNorm.IndexOf($s) -ge 0) { $matched += $s } }
+  foreach ($s in @($zhP)) { if (Test-ZhSegment $titleNorm $s) { $matched += $s } }
   if (-not $matched.Count) { return 0 }
   $cands = $null
   foreach ($p in $matched) {

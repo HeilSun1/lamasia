@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:34 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:47 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 11:34:30",
+    "updated":  "2026-08-22 11:47:18",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,21 +162,6 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-16",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-08-16",
                                                         "opp":  "",
                                                         "label":  "08-16 · 集锦",
                                                         "videos":  [
@@ -189,8 +174,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "durationSec":  ""
                                                                        }
                                                                    ]
+                                                    },
+                                                    {
+                                                        "date":  "2026-08-16",
+                                                        "opp":  "FC Basel",
+                                                        "label":  "vs FC Basel · 08-16",
+                                                        "videos":  [
+                                                                       {
+                                                                           "videoId":  "wVE07sxsR1Y",
+                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
+                                                                           "channel":  "ArsenKveFCB",
+                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                           "published":  "2026-08-16",
+                                                                           "durationSec":  ""
+                                                                       }
+                                                                   ]
                                                     }
                                                 ],
+                                 "local:cadete:noahgarcia":  [
+                                                                 {
+                                                                     "date":  "2026-08-16",
+                                                                     "opp":  "",
+                                                                     "label":  "08-16 · 集锦",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "BV1MTb96uEBd",
+                                                                                        "title":  "埃里克·加西亚",
+                                                                                        "channel":  "口菐",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-16",
+                                                                                        "durationSec":  "556",
+                                                                                        "site":  "bili",
+                                                                                        "pic":  "https://i0.hdslb.com/bfs/archive/711b22630452ffa40215a7b5bcfa54dbaca0a4df.jpg"
+                                                                                    }
+                                                                                ]
+                                                                 }
+                                                             ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
@@ -206,23 +225,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                               "durationSec":  "461",
                                                                                               "site":  "bili",
                                                                                               "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
-                                                                                          }
-                                                                                      ]
-                                                                       },
-                                                                       {
-                                                                           "date":  "2026-08-03",
-                                                                           "opp":  "",
-                                                                           "label":  "08-03 · 训练",
-                                                                           "videos":  [
-                                                                                          {
-                                                                                              "videoId":  "BV1YKMX6tEEn",
-                                                                                              "title":  "通卡拉训练赛踢伪9",
-                                                                                              "channel":  "13站一直吞我評論",
-                                                                                              "channelId":  "",
-                                                                                              "published":  "2026-08-03",
-                                                                                              "durationSec":  "30",
-                                                                                              "site":  "bili",
-                                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
                                                                                           }
                                                                                       ]
                                                                        },
@@ -280,6 +282,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
                                                                                          }
                                                                                      ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-06-05",
+                                                                          "opp":  "",
+                                                                          "label":  "06-05 · 集锦",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1Lc7y6cE7T",
+                                                                                             "title":  "拉玛西亚左边卫 乔迪·佩斯克尔 Euro U17 集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-06-05",
+                                                                                             "durationSec":  "251",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5921658f1ae639c740a48976c6b25a14fd8450f4.jpg"
+                                                                                         }
+                                                                                     ]
                                                                       }
                                                                   ],
                                  "local:juvenil-b:sergimayans":  [
@@ -301,55 +320,21 @@ window.DQD_VIDEOS_CACHE = {
                                                                                     ]
                                                                      }
                                                                  ],
-                                 "sf:b:1977602":  [
+                                 "sf:b:1542744":  [
                                                       {
-                                                          "date":  "2026-08-20",
+                                                          "date":  "2026-08-15",
                                                           "opp":  "",
-                                                          "label":  "08-20 · 季前赛/友谊赛",
+                                                          "label":  "08-15 · 个人集锦",
                                                           "videos":  [
                                                                          {
-                                                                             "videoId":  "BV11Fbf6EEJg",
-                                                                             "title":  "巴萨季前赛 佩斯克尔 本场集锦",
-                                                                             "channel":  "13站一直吞我評論",
+                                                                             "videoId":  "BV17qb26vEaP",
+                                                                             "title":  "易布拉欣·迪亚拉 | Barca Atletic | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
                                                                              "channelId":  "",
-                                                                             "published":  "2026-08-20",
-                                                                             "durationSec":  "131",
+                                                                             "published":  "2026-08-15",
+                                                                             "durationSec":  "308",
                                                                              "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-06-05",
-                                                          "opp":  "",
-                                                          "label":  "06-05 · 集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1Lc7y6cE7T",
-                                                                             "title":  "拉玛西亚左边卫 乔迪·佩斯克尔 Euro U17 集锦",
-                                                                             "channel":  "13站一直吞我評論",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-06-05",
-                                                                             "durationSec":  "251",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5921658f1ae639c740a48976c6b25a14fd8450f4.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-06-02",
-                                                          "opp":  "",
-                                                          "label":  "06-02 · 集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1w4VB6jEAv",
-                                                                             "title":  "巴萨关注目标 博多闪耀中锋 米克尔·布罗·汉森 集锦",
-                                                                             "channel":  "13站一直吞我評論",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-06-02",
-                                                                             "durationSec":  "443",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/f3141e72752175d6a4c5f0fbf7e2ab32af54227b.jpg"
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/e24edf8ef209732b5a8047a854f936221b636ccc.jpg"
                                                                          }
                                                                      ]
                                                       }
@@ -388,23 +373,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       },
                                                       {
-                                                          "date":  "2026-08-03",
-                                                          "opp":  "",
-                                                          "label":  "08-03 · 训练",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1YKMX6tEEn",
-                                                                             "title":  "通卡拉训练赛踢伪9",
-                                                                             "channel":  "13站一直吞我評論",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-08-03",
-                                                                             "durationSec":  "30",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
                                                           "date":  "2026-07-24",
                                                           "opp":  "",
                                                           "label":  "07-24 · 个人集锦",
@@ -418,6 +386,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "495",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/769f45dccdd576cf800d8fb18c2668175e6ecf8d.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:2219071":  [
+                                                      {
+                                                          "date":  "2026-06-19",
+                                                          "opp":  "",
+                                                          "label":  "06-19 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1vgjk6WEF4",
+                                                                             "title":  "巴萨 B 队 厄瓜多尔左边翼卫 荷塞·凯塞多",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-06-19",
+                                                                             "durationSec":  "193",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/a1bff3dfad03a2cf37f18792ae5ceceb76739a5f.jpg"
                                                                          }
                                                                      ]
                                                       }
