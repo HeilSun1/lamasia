@@ -13,10 +13,10 @@ window.LAMASIA_DATA = {
     { id: "barca-atletic", age: "预备队",  name: "Barça Atlètic",        league: "Segunda Federación · G2",                 href: "teams/barca-atletic.html", desc: "一线储备队 · 体系顶端" },
     { id: "juvenil-a",     age: "U19",      name: "U19 A · Juvenil A",    league: "División de Honor Juvenil · G3",          href: "teams/juvenil-a.html",     desc: "一线青年队 · 精英组" },
     { id: "juvenil-b",     age: "U19",      name: "U19 B · Juvenil B",    league: "Liga Nacional Juvenil",                   href: "teams/juvenil-b.html",     desc: "二线青年队" },
-    { id: "cadete",        age: "U16",      name: "U16 · Cadete A",       league: "División de Honor Cadete",                href: "teams/cadete.html",        desc: "少年梯队最高组" },
-    { id: "cadete-b",      age: "U15",      name: "U15 · Cadete B",       league: "Preferente Cadete",                       href: "teams/cadete-b.html",      desc: "少年B队" },
-    { id: "infantil",      age: "U14",      name: "U14 · Infantil A",     league: "División de Honor Infantil",              href: "teams/infantil.html",      desc: "技术打磨关键期" },
-    { id: "infantil-b",    age: "U13",      name: "U13 · Infantil B",     league: "Preferente Infantil",                     href: "teams/infantil-b.html",    desc: "儿童B队" },
+    { id: "cadete",        age: "U16",      name: "U16 · Cadete A",       league: "División de Honor Catalana Cadete",       href: "teams/cadete.html",        desc: "少年梯队最高组" },
+    { id: "cadete-b",      age: "U15",      name: "U15 · Cadete B",       league: "Preferente Catalana Cadete G.1",           href: "teams/cadete-b.html",      desc: "少年B队" },
+    { id: "infantil",      age: "U14",      name: "U14 · Infantil A",     league: "División de Honor Catalana Infantil",     href: "teams/infantil.html",      desc: "技术打磨关键期" },
+    { id: "infantil-b",    age: "U13",      name: "U13 · Infantil B",     league: "Preferente Catalana Infantil G.1",         href: "teams/infantil-b.html",    desc: "儿童B队" },
     { id: "seven",         age: "U12–U8",   name: "七人制梯队",            league: "Alevín · Benjamín · Prebenjamín",         href: "teams/seven-a-side.html",  desc: "9 支 7 人制梯队" }
   ],
 

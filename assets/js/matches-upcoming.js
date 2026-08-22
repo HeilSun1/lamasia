@@ -106,6 +106,35 @@
         });
       });
     });
+    // 官方站四队（Cadete A 仅在 Sofascore 赛程为空时启用，防重复）
+    [
+      { tier: "cadete",     team: "Cadete A",   href: "teams/cadete.html",     skipIfSf: "DQD_U16_CACHE" },
+      { tier: "cadete-b",   team: "Cadete B",   href: "teams/cadete-b.html" },
+      { tier: "infantil",   team: "Infantil A", href: "teams/infantil.html" },
+      { tier: "infantil-b", team: "Infantil B", href: "teams/infantil-b.html" }
+    ].forEach(function (cfg) {
+      if (cfg.skipIfSf && window[cfg.skipIfSf] && Array.isArray(window[cfg.skipIfSf].matches) && window[cfg.skipIfSf].matches.length) return;
+      var arr = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches[cfg.tier]) || [];
+      if (!Array.isArray(arr)) return;
+      arr.forEach(function (m) {
+        if (String(m.status) !== "Not started") return;
+        var t = parseInt(m.start, 10) * 1000;
+        if (!t || t < now() - 3600e3) return;
+        var key = "fcb:" + m.id;
+        if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+        if (!window.LAMASIA_MATCHES[key]) {
+          window.LAMASIA_MATCHES[key] = {
+            source: "fcb", id: m.id, slug: cfg.tier, comp: m.comp || "", round: m.round || "",
+            start: m.start, date: m.date || "", tbd: m.tbd,
+            home: m.home || "", away: m.away || "", hs: m.hs || "", as: m.as || "", status: m.status,
+            venue: m.venue || "", homeLogo: "", awayLogo: ""
+          };
+        }
+        out.push({ team: cfg.team, href: cfg.href, key: key, start: t,
+          comp: m.comp || "", round: m.round || "", home: m.home || "", away: m.away || "",
+          homeLogo: "", awayLogo: "", tbd: m.tbd, date: m.date || "" });
+      });
+    });
     out.sort(function (a, b) { return a.start - b.start; });
     return out;
   }
@@ -120,7 +149,7 @@
   }
   function row(x) {
     return '<tr data-match-key="' + esc(x.key || "") + '" class="match-row" title="点击查看详情">' +
-      '<td class="num">' + esc(bj(x.start)) + "</td>" +
+      '<td class="num">' + esc(x.tbd ? (x.date + " 待定") : bj(x.start)) + "</td>" +
       "<td>" + teamBadge(x) + "</td>" +
       "<td>" + esc(x.comp || "") + (x.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(x.round) + "</span>" : "") + "</td>" +
       teamCell(x.home, x.homeLogo) +

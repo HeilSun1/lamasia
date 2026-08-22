@@ -32,15 +32,25 @@
     <span class="ph-kicker">U13 · 儿童B队</span>
     <h1>Infantil B 儿童B队</h1>
     <div class="ph-meta">
-      <span>🏆 联赛：<b>Preferente Infantil</b></span>
+      <span>🏆 联赛：<b>Preferente Catalana Infantil G.1</b></span>
       <span>🧑‍🏫 主教练：<b>Jordi Pérez</b></span>
       <span>📅 2026-27 赛季</span>
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
 
-    <div class="panel">
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-positions">📊 位置分布</a>
+      <a class="page-toc__link" href="#sec-about">📌 关于本队</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
+      <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
+
+    <div class="panel" id="sec-positions">
       <div class="stats-row">
         <div class="stat-tile"><div class="st-label">年龄段</div><div class="st-value">U13</div><div class="st-note">12–13 岁</div></div>
         <div class="stat-tile"><div class="st-label">联赛</div><div class="st-value accent">Preferente</div><div class="st-note">加泰 Infantil 第二级别</div></div>
@@ -60,16 +70,21 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-about">
       <div class="panel-title-row"><h3>📌 关于本队</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
         <p>Infantil B 是儿童组的第二梯队，与 Infantil A（U14）同属 11 人制。加泰足协（FCF）重组赛制后，原"U14 B"更名为 <b>U13</b>。本队是通往更高梯队的重要跳板。</p>
       </div>
     </div>
 
-    <div class="panel">
+    <!-- ═══ 官方站赛程（fcb-youth-render.js 渲染） ═══ -->
+    <div id="fcb-status" class="note-box blue">
+      <span>📡 正在加载 FC Barcelona 官方赛程…</span>
+    </div>
+
+    <div class="panel" id="sec-roster">
       <div class="panel-title-row">
-        <h3>📋 球员大名单</h3>
+        <h3>📋 球员大名单 <span class="tag">官方名单 · 静态维护</span></h3>
         <span class="badge gray">2026-27</span>
       </div>
       <p class="p-desc">来源：巴萨官网 Infantil B 名单（南木维基汇编，2026-05-23 更新）。部分球员姓名存在多来源转写差异。</p>
@@ -77,7 +92,24 @@
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单；球员名单为 2026-27 赛季版本（南木维基整理自官网）。出生年份仅收录已确认信息，未知一律留空；以 fcbarcelona.com 为准。</span></div>
+    <div class="panel" id="sec-schedule">
+      <div class="panel-title-row">
+        <h3>📅 赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+      </div>
+      <div id="fcb-schedule" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 FC Barcelona 官方赛程…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-teaminfo">
+      <div class="panel-title-row">
+        <h3>🏟 球队信息 <span class="tag">官方数据源</span></h3>
+      </div>
+      <div id="fcb-teaminfo" class="p-body" style="margin-top:10px">
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>说明：</b>教练信息依据 fcbarcelona.com 官方 2026/27 青训教练名单；球员名单为 2026-27 赛季版本（南木维基整理自官网）。<b>赛程与结果来自 FC Barcelona 官网 calendario，每日自动抓取。</b>出生年份仅收录已确认信息，未知一律留空；以 fcbarcelona.com 为准。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -104,5 +136,15 @@
   <script src="../assets/js/videos-ui.js"></script>
   <script src="../assets/js/roster.js"></script>
   <script>LAMASIA_RENDER.playerList('infantil-b', 'roster-infantil-b', '../assets/img/players/');</script>
+  <script src="../assets/js/fcb-youth-schedules.js"></script>
+  <script src="../assets/js/fcb-youth-render.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      window.LAMASIA_SCHEDULE_RENDER.render('infantil-b', 'fcb-schedule', { statusEl: 'fcb-status', tierSlug: 'infantil-b' });
+      window.LAMASIA_SCHEDULE_RENDER.renderTeamInfo('infantil-b', 'fcb-teaminfo');
+    });
+  </script>
+  <script src="../assets/js/page-nav.js"></script>
+  <script src="../assets/js/match-detail.js"></script>
 </body>
 </html>

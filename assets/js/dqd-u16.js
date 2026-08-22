@@ -21,6 +21,9 @@
 
   const $ = function (id) { return document.getElementById(id); };
 
+  /* Sofascore 赛程为空时是否已回退到官方站数据（fcb-youth-render.js） */
+  var scheduleFellBack = false;
+
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
@@ -335,7 +338,18 @@
     const el = $("u16-schedule");
     if (!el) return;
     const matches = (data && data.matches) || [];
-    if (!matches.length) { el.innerHTML = '<div class="match-list-empty">暂无赛程数据</div>'; return; }
+    if (!matches.length) {
+      // Sofascore 尚未加载新赛季赛程 → 回退到官方站数据（fcb-youth-schedules.js）
+      if (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches.cadete && window.LAMASIA_SCHEDULE_RENDER) {
+        scheduleFellBack = true;
+        window.LAMASIA_SCHEDULE_RENDER.render("cadete", "u16-schedule", { tierSlug: "cadete-a" });
+        return;
+      }
+      scheduleFellBack = false;
+      el.innerHTML = '<div class="match-list-empty">暂无赛程数据</div>';
+      return;
+    }
+    scheduleFellBack = false;
 
     const played   = matches.filter(function (m) { return m.status !== "Not started"; })
                             .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
@@ -401,6 +415,14 @@
   function setStatus(mode, updated) {
     const el = $("u16-status");
     if (!el) return;
+    if (scheduleFellBack) {
+      // Sofascore 赛程暂缺、已用官方站数据兜底
+      el.className = "note-box blue";
+      el.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（Sofascore 赛程暂缺，已用官方数据兜底' +
+        ((window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.updated) ? " · 更新于 " + esc(window.LAMASIA_SCHEDULES.updated) : "") +
+        "）。</span>";
+      return;
+    }
     if (mode === "live") {
       el.className = "note-box blue";
       el.innerHTML = '<span>📡 <b>数据来源：Sofascore</b>（实时拉取）· 更新于 ' + esc(updated) + "。</span>";

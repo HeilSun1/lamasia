@@ -102,7 +102,8 @@
 
   function headerHtml(m) {
     var roundTxt = m.round ? " · R" + esc(m.round) : "";
-    var kickoff = m.source === "dqd" ? (m.startText || "") : bj(m.start);
+    var kickoff = m.source === "dqd" ? (m.startText || "")
+      : (m.source === "fcb" ? (m.tbd ? (m.date + " 待定") : bj(m.start)) : bj(m.start));
     return '<div class="md-head">' +
       '<div class="md-scorebar">' +
         teamSide(m, "home") +
@@ -121,7 +122,10 @@
 
   function footerHtml(m) {
     var url, label;
-    if (m.source === "dqd") {
+    if (m.source === "fcb") {
+      url = "https://www.fcbarcelona.es/es/futbol/formativo-masculino/" + esc(m.slug || "") + "/calendario";
+      label = "在巴塞罗那官网查看赛程";
+    } else if (m.source === "dqd") {
       url = "https://www.dongqiudi.com/match/" + esc(m.match_id || m.id);
       label = "在懂球帝查看完整比赛";
     } else {
@@ -538,6 +542,9 @@
     modal.scrollTop = 0;   // 弹窗复用：每次打开新比赛都回到最上方，不残留上次关闭时的滚动位置
     if (m.source === "sofascore") {
       loadSofascoreDetail(m, body);
+    } else if (m.source === "fcb") {
+      var load = body.querySelector(".md-load");
+      load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场赛程来自 FC Barcelona 官网。</b>本站未收录青年梯队逐场阵容/统计详情，请到原站查看赛程与比分。</span></div>';
     } else {
       var load = body.querySelector(".md-load");
       load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场比赛详情请在懂球帝查看。</b>本站每日缓存仅含对阵、比分与时间等基本信息。</span></div>';

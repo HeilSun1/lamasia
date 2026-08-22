@@ -39,9 +39,19 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" id="page-top" style="padding-top:20px">
 
-    <div class="panel">
+    <nav class="page-toc" id="page-toc" aria-label="本页导航">
+      <div class="page-toc__title">📑 本页导航</div>
+      <a class="page-toc__link" href="#sec-positions">📊 位置分布</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-featured">💎 值得关注</a>
+      <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
+      <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
+      <a class="page-toc__link page-toc__top" href="#page-top">⬆ 回到顶部</a>
+    </nav>
+
+    <div class="panel" id="sec-positions">
       <div class="stats-row">
         <div class="stat-tile"><div class="st-label">年龄段</div><div class="st-value">U14</div><div class="st-note">2011–2012 出生为主</div></div>
         <div class="stat-tile"><div class="st-label">梯队定位</div><div class="st-value accent">技术关键期</div><div class="st-note">技术打磨与比赛理解</div></div>
@@ -61,9 +71,14 @@
       </div>
     </div>
 
-    <div class="panel">
+    <!-- ═══ 官方站赛程（fcb-youth-render.js 渲染） ═══ -->
+    <div id="fcb-status" class="note-box blue">
+      <span>📡 正在加载 FC Barcelona 官方赛程…</span>
+    </div>
+
+    <div class="panel" id="sec-roster">
       <div class="panel-title-row">
-        <h3>📋 球员大名单</h3>
+        <h3>📋 球员大名单 <span class="tag">官方名单 · 静态维护</span></h3>
         <span class="badge gray">2025-26 赛季末</span>
       </div>
       <p class="p-desc">来源：巴萨官网 Infantil A 名单（2026 年 5 月更新）。</p>
@@ -71,7 +86,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-featured">
       <div class="panel-title-row"><h3>💎 值得关注</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
         <p><b style="color:var(--ink-900)">Fode Diallo</b>：2012 年 6 月生于 Sabadell，西班牙/几内亚裔中锋。在 U12 年龄段曾单赛季 30 场打进 97 球，被誉为拉玛西亚新一代"进球机器"，当前为 Infantil A 锋线核心。</p>
@@ -79,7 +94,24 @@
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>名单说明：</b>本页名单为 2025-26 赛季末版本，2026-27 完整名单官方尚未公布。</span></div>
+    <div class="panel" id="sec-schedule">
+      <div class="panel-title-row">
+        <h3>📅 赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+      </div>
+      <div id="fcb-schedule" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载 FC Barcelona 官方赛程…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-teaminfo">
+      <div class="panel-title-row">
+        <h3>🏟 球队信息 <span class="tag">官方数据源</span></h3>
+      </div>
+      <div id="fcb-teaminfo" class="p-body" style="margin-top:10px">
+      </div>
+    </div>
+
+    <div class="note-box">📌 <span><b>名单说明：</b>本页名单为 2025-26 赛季末版本，2026-27 完整名单官方尚未公布。<b>赛程与结果来自 FC Barcelona 官网 calendario，每日自动抓取。</b></span></div>
   </section>
 
   <footer class="site-footer">
@@ -106,5 +138,15 @@
   <script src="../assets/js/videos-ui.js"></script>
   <script src="../assets/js/roster.js"></script>
   <script>LAMASIA_RENDER.playerList('infantil', 'roster-infantil', '../assets/img/players/');</script>
+  <script src="../assets/js/fcb-youth-schedules.js"></script>
+  <script src="../assets/js/fcb-youth-render.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      window.LAMASIA_SCHEDULE_RENDER.render('infantil', 'fcb-schedule', { statusEl: 'fcb-status', tierSlug: 'infantil-a' });
+      window.LAMASIA_SCHEDULE_RENDER.renderTeamInfo('infantil', 'fcb-teaminfo');
+    });
+  </script>
+  <script src="../assets/js/page-nav.js"></script>
+  <script src="../assets/js/match-detail.js"></script>
 </body>
 </html>
