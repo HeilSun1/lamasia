@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:21 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:34 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 11:21:28",
+    "updated":  "2026-08-22 11:34:30",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,12 +162,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "",
-                                                        "label":  "08-16 · 集锦",
+                                                        "opp":  "FC Basel",
+                                                        "label":  "vs FC Basel · 08-16",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "WA-IyOyleG8",
-                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
+                                                                           "videoId":  "wVE07sxsR1Y",
+                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
@@ -177,12 +177,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
+                                                        "opp":  "",
+                                                        "label":  "08-16 · 集锦",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
+                                                                           "videoId":  "WA-IyOyleG8",
+                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
@@ -282,6 +282,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-b:sergimayans":  [
+                                                                     {
+                                                                         "date":  "2026-06-05",
+                                                                         "opp":  "",
+                                                                         "label":  "06-05 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1e27y6hEcS",
+                                                                                            "title":  "拉玛西亚左脚中卫 塞尔吉·马扬斯 Euro U17 集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-06-05",
+                                                                                            "durationSec":  "250",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/c4e096db13e14205d00859a012f2b697118dd0fb.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     }
+                                                                 ],
                                  "sf:b:1977602":  [
                                                       {
                                                           "date":  "2026-08-20",
@@ -297,6 +316,40 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "131",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-06-05",
+                                                          "opp":  "",
+                                                          "label":  "06-05 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1Lc7y6cE7T",
+                                                                             "title":  "拉玛西亚左边卫 乔迪·佩斯克尔 Euro U17 集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-06-05",
+                                                                             "durationSec":  "251",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5921658f1ae639c740a48976c6b25a14fd8450f4.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-06-02",
+                                                          "opp":  "",
+                                                          "label":  "06-02 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1w4VB6jEAv",
+                                                                             "title":  "巴萨关注目标 博多闪耀中锋 米克尔·布罗·汉森 集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-06-02",
+                                                                             "durationSec":  "443",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/f3141e72752175d6a4c5f0fbf7e2ab32af54227b.jpg"
                                                                          }
                                                                      ]
                                                       }

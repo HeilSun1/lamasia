@@ -26,7 +26,7 @@ window.VIDEOS_DATA = {
     ]
   },
   blocked: {
-    "sf:b:1977602": ["-xRAJTjKdQI"],   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配，已拉黑
+    "sf:b:1977602": ["-xRAJTjKdQI", "BV1w4VB6jEAv"],   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配；"米克尔·布罗·汉森"为转会目标，非本队球员
     "sf:b:2128084": ["9eOLL88phHU"],   // "Ebrima Tunkara vs Udinese"（08/08）实为 U18 比赛，已转挂 sf:u18:2128084
     "sf:b:2014710": ["4_Aj5crS8X0"],   // "Juvenil B vs CF Damm 2021/22 全场回放"误配给现役球员
     "sf:b:1926082": ["4_Aj5crS8X0"],

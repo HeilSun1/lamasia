@@ -32,7 +32,7 @@ $FeedScanAll          = $true  # 非赛程集锦：YouTube 可达即全频道扫
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
 $BiliUids             = @("470189", "1515150312", "473683296", "1946872922")   # B站 UP主：口菐 /「B站一直吞我评论」/ 473683296 / 1946872922
-$MaxBiliVideos        = 30                 # 每 UP 取最近 N 个 bvid（覆盖 6 月起）
+$MaxBiliVideos        = 60                 # 每 UP 取最近 N 个 bvid（口菐等日更 UP 发稿多，30 会漏）
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
 $MaxMatchVideos       = 3                  # 每场保留条数
 $MaxPlayerVideos      = 6                  # 每名球员赛程集锦累积上限
@@ -535,27 +535,32 @@ function Get-BiliBvids([string]$uid) {
 
 # B站 view 接口：bvid → 元数据（无需 WBI，任意 buvid cookie 可通）
 function Get-BiliVideoInfo([string]$bvid) {
-  try {
-    $uri = "https://api.bilibili.com/x/web-interface/view?bvid=$bvid"
-    $headers = @{
-      "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
-      "Referer"    = "https://space.bilibili.com/"
-      "Cookie"     = "buvid3=lamasia"
-    }
-    $res = Invoke-RestMethod -Uri $uri -Method Get -Headers $headers -TimeoutSec 15
-    if ($res -and $res.code -eq 0 -and $res.data) {
-      $d = $res.data
-      return [pscustomobject]@{
-        bvid     = $bvid
-        title    = [string]$d.title
-        pic      = [string]$d.pic
-        pubdate  = [string]$d.pubdate
-        duration = [string]$d.duration
-        owner    = [string]$d.owner.name
+  # 元数据接口偶发超时/风控：重试 3 次，超时加长到 25s（避免把视频整条漏掉）
+  for ($attempt = 1; $attempt -le 3; $attempt++) {
+    try {
+      $uri = "https://api.bilibili.com/x/web-interface/view?bvid=$bvid"
+      $headers = @{
+        "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
+        "Referer"    = "https://space.bilibili.com/"
+        "Cookie"     = "buvid3=lamasia"
       }
+      $res = Invoke-RestMethod -Uri $uri -Method Get -Headers $headers -TimeoutSec 25
+      if ($res -and $res.code -eq 0 -and $res.data) {
+        $d = $res.data
+        return [pscustomobject]@{
+          bvid     = $bvid
+          title    = [string]$d.title
+          pic      = [string]$d.pic
+          pubdate  = [string]$d.pubdate
+          duration = [string]$d.duration
+          owner    = [string]$d.owner.name
+        }
+      }
+      return $null   # 请求成功但数据异常，无需重试
+    } catch {
+      if ($attempt -lt 3) { Start-Sleep -Milliseconds 1200; continue }
+      Log "  ✗ B站视频 $bvid 元数据失败：$($_.Exception.Message)"
     }
-  } catch {
-    Log "  ✗ B站视频 $bvid 元数据失败：$($_.Exception.Message)"
   }
   return $null
 }
