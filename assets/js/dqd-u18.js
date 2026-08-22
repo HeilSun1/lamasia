@@ -21,6 +21,9 @@
 
   const $ = function (id) { return document.getElementById(id); };
 
+  /* Sofascore 赛程为空时是否已回退到官方站数据（fcb-youth-render.js） */
+  var scheduleFellBack = false;
+
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
@@ -336,7 +339,19 @@
     if (!el) return;
     const MIN_START = Date.UTC(2026, 0, 1) / 1000;   // 仅保留 2026-01-01 起（与 update_u18_sofascore.ps1 一致）
     const matches = ((data && data.matches) || []).filter(function (m) { return parseInt(m.start, 10) >= MIN_START; });
-    if (!matches.length) { el.innerHTML = '<div class="match-list-empty">暂无赛程数据</div>'; return; }
+    // Sofascore 无「未开赛」（新赛季未排）→ 回退到官方站数据（fcb-youth-schedules.js 的 juvenil-b）
+    const hasUpcoming = matches.some(function (m) { return m.status === "Not started"; });
+    if (!hasUpcoming) {
+      if (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches['juvenil-b'] && window.LAMASIA_SCHEDULE_RENDER) {
+        scheduleFellBack = true;
+        window.LAMASIA_SCHEDULE_RENDER.render('juvenil-b', 'u18-schedule', { tierSlug: 'juvenil-b' });
+        return;
+      }
+      scheduleFellBack = false;
+      el.innerHTML = '<div class="match-list-empty">暂无赛程数据</div>';
+      return;
+    }
+    scheduleFellBack = false;
 
     const played   = matches.filter(function (m) { return m.status !== "Not started"; })
                             .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
@@ -402,6 +417,14 @@
   function setStatus(mode, updated) {
     const el = $("u18-status");
     if (!el) return;
+    if (scheduleFellBack) {
+      // Sofascore 赛程暂缺、已用官方站数据兜底
+      el.className = "note-box blue";
+      el.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（Sofascore 赛程暂缺，已用官方数据兜底' +
+        ((window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.updated) ? " · 更新于 " + esc(window.LAMASIA_SCHEDULES.updated) : "") +
+        "）。</span>";
+      return;
+    }
     if (mode === "live") {
       el.className = "note-box blue";
       el.innerHTML = '<span>📡 <b>数据来源：Sofascore</b>（实时拉取）· 更新于 ' + esc(updated) + "。</span>";

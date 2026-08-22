@@ -1,5 +1,5 @@
 ﻿# ═══════════════════════════════════════════════════════════════
-#   拉玛西亚信息站 · 官方站青年梯队赛程（CadeteA/B、InfantilA/B）每日更新
+#   拉玛西亚信息站 · 官方站青年梯队赛程（JuvenilB、CadeteA/B、InfantilA/B）每日更新
 #
 #   Edge 无头渲染 fcbarcelona.es 各梯队 calendario 页面，解析赛程，
 #   归一化为本站 match 形状，写 assets/js/fcb-youth-schedules.js。
@@ -24,7 +24,8 @@ $Tiers = @(
   @{ id = "cadete";     slug = "cadete-a";   comp = "加泰荣誉联赛 Cadete";   compEn = "División de Honor Catalana Cadete" },
   @{ id = "cadete-b";   slug = "cadete-b";   comp = "加泰优选联赛 Cadete G1"; compEn = "Preferente Catalana Cadete G.1" },
   @{ id = "infantil";   slug = "infantil-a"; comp = "加泰荣誉联赛 Infantil";  compEn = "División de Honor Catalana Infantil" },
-  @{ id = "infantil-b"; slug = "infantil-b"; comp = "加泰优选联赛 Infantil G1";compEn = "Preferente Catalana Infantil G.1" }
+  @{ id = "infantil-b"; slug = "infantil-b"; comp = "加泰优选联赛 Infantil G1";compEn = "Preferente Catalana Infantil G.1" },
+  @{ id = "juvenil-b";  slug = "juvenil-b";  comp = "西青乙 G7";               compEn = "Liga Nacional Grupo 7" }
 )
 
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────

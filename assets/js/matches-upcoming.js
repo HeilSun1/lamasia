@@ -108,14 +108,16 @@
         });
       });
     });
-    // 官方站四队（Cadete A 仅在 Sofascore 赛程为空时启用，防重复）
+    // 官方站五队（仅在 Sofascore 无「未开赛」时启用，防重复）
     [
       { tier: "cadete",     team: "Cadete A",   href: "teams/cadete.html",     skipIfSf: "DQD_U16_CACHE" },
       { tier: "cadete-b",   team: "Cadete B",   href: "teams/cadete-b.html" },
       { tier: "infantil",   team: "Infantil A", href: "teams/infantil.html" },
-      { tier: "infantil-b", team: "Infantil B", href: "teams/infantil-b.html" }
+      { tier: "infantil-b", team: "Infantil B", href: "teams/infantil-b.html" },
+      { tier: "juvenil-b",  team: "Juvenil B",  href: "teams/juvenil-b.html",  skipIfSf: "DQD_U18_CACHE" }
     ].forEach(function (cfg) {
-      if (cfg.skipIfSf && window[cfg.skipIfSf] && Array.isArray(window[cfg.skipIfSf].matches) && window[cfg.skipIfSf].matches.length) return;
+      if (cfg.skipIfSf && window[cfg.skipIfSf] && Array.isArray(window[cfg.skipIfSf].matches) &&
+          window[cfg.skipIfSf].matches.some(function (m) { return String(m.status) === "Not started"; })) return;
       var arr = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches[cfg.tier]) || [];
       if (!Array.isArray(arr)) return;
       arr.forEach(function (m) {
