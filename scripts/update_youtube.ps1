@@ -731,12 +731,15 @@ function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $
   $kind = Get-VideoKind $titleNorm
   if ($kind -eq "match" -and -not $opp) { $kind = "other" }
   $dateStr = $pubT.ToString("yyyy-MM-dd")
-  $key = (Norm $opp) + "|" + $dateStr
+  # 分组键：比赛类按日期（同场中文/英文视频合并，如 开罗国民 / Al Ahly 归一组）；非比赛类按 类型|日期
+  $key = if ($kind -eq "match") { "M|$dateStr" } else { "$kind|$dateStr" }
   $grp = $null
   foreach ($g in $groups) { if ([string]$g.key -eq $key) { $grp = $g; break } }
   if ($null -eq $grp) {
     $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; kind = $kind; videos = @() }
     [void]$groups.Add($grp)
+  } elseif ($grp.kind -eq "match" -and -not $grp.opp -and $opp) {
+    $grp.opp = $opp   # 比赛组补充对手名（同场合并时）
   }
   foreach ($x in $grp.videos) { if ([string]$x.videoId -eq [string]$v.videoId) { return } }
   if (@($grp.videos).Count -lt $MaxFeedVideosPerGroup) { $grp.videos = @($grp.videos) + $v }
@@ -943,6 +946,7 @@ foreach ($fk in @($oldFeed.Keys)) {
     foreach ($v in @($g.videos)) {
       if (-not $v -or -not $v.videoId) { continue }
       $titleNorm = Norm ([string]$v.title)
+      if (IsPlayerIrrelevant $titleNorm) { continue }   # 全场/直播不进个人集锦
       if ((PlayerScore $titleNorm $pe $pool $partPlayers) -le 0) { continue }   # 不再匹配该球员
       $pubT = Get-UcDate ([string]$v.published)
       Add-FeedVideo $outFeed $fk $v $titleNorm $oppPool $pubT
@@ -958,6 +962,7 @@ foreach ($k in @($oldPlayers.Keys)) {
   foreach ($v in @($oldPlayers[$k])) {
     if (-not $v -or -not $v.videoId) { continue }
     $titleNorm = Norm ([string]$v.title)
+    if (IsPlayerIrrelevant $titleNorm) { continue }   # 全场/直播不进个人集锦
     $pubT = Get-UcDate ([string]$v.published)
     $em = $null
     if ($null -ne $pubT) { $em = Find-EndedMatch $titleNorm $pubT $endedList }

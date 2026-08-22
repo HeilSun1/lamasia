@@ -89,10 +89,19 @@
         var hit = null;
         for (var i = 0; i < groups.length; i++) if (groups[i].label === best.label) { hit = groups[i]; break; }
         if (hit) hit.videos.push(v);
-        else groups.push({ date: best.dateStr, label: best.label, videos: [v] });
+        else groups.push({ date: best.dateStr, label: best.label, match: true, videos: [v] });
       } else unmatched.push(v);
     });
     return { groups: groups, unmatched: unmatched };
+  }
+
+  // 全场/直播类不进个人集锦（数据侧已过滤，这里兜底）
+  function isFullMatch(t) {
+    t = String(t || "").toLowerCase();
+    return /全场|回放|完整|比赛录像|full ?match|full ?game|live ?stream|watch ?live/.test(t);
+  }
+  function cleanVideos(list) {
+    return (list || []).filter(function (v) { return !isFullMatch(v.title); });
   }
 
   // ① 收集条目（feed 段 + players 段）
@@ -101,12 +110,16 @@
   function addEntry(k) {
     if (!k || seenKey[k]) return;
     seenKey[k] = true;
-    var groups = window.VideosUI.feedFor(k).slice();
+    var groups = [];
+    window.VideosUI.feedFor(k).forEach(function (g) {
+      var list = cleanVideos(g.videos);
+      if (list.length) groups.push({ date: g.date, label: g.label, match: !!g.opp, videos: list });
+    });
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(k);
     if (m) {
-      var sg = groupSched(window.VideosUI.resolve("players", k), m[1]);
+      var sg = groupSched(cleanVideos(window.VideosUI.resolve("players", k)), m[1]);
       groups = groups.concat(sg.groups);
-      if (sg.unmatched.length) groups.push({ date: "", label: "📹 其他 / 未匹配到赛程", videos: sg.unmatched });
+      if (sg.unmatched.length) groups.push({ date: "", label: "📹 其他 / 未匹配到赛程", match: false, videos: sg.unmatched });
     }
     if (!groups.length) return;
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
@@ -152,10 +165,24 @@
         if (out[i].label === g.label) { hit = out[i]; break; }
       }
       if (hit) hit.videos = hit.videos.concat(list);
-      else out.push({ date: g.date || "", label: g.label, videos: list });
+      else out.push({ date: g.date || "", label: g.label, match: !!g.match, videos: list });
     });
-    out.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
-    return out;
+    // 同日比赛组合并（中文/英文同场：开罗国民 与 Al Ahly 归一组）
+    var merged = [];
+    out.forEach(function (g) {
+      var hit = null;
+      if (g.match) {
+        for (var i = 0; i < merged.length; i++) {
+          if (merged[i].match && merged[i].date === g.date) { hit = merged[i]; break; }
+        }
+      }
+      if (hit) {
+        if (g.videos.length > hit.videos.length) hit.label = g.label;   // 标签用视频多的那组
+        hit.videos = hit.videos.concat(g.videos);
+      } else merged.push(g);
+    });
+    merged.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+    return merged;
   }
 
   // ④ 按主梯队分组
