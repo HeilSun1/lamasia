@@ -74,12 +74,23 @@
       </div>
     </div>
 
-    <nav class="team-tabs" id="team-tabs" data-default="roster"
+    <nav class="team-tabs" id="team-tabs" data-default="news"
+         data-tt-news="#sec-news"
          data-tt-roster="#sec-roster"
          data-tt-team="#sec-about,#sec-schedule,#sec-teaminfo">
-      <button class="tt-tab active" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab active" data-tt="news">📰 新闻</button>
+      <button class="tt-tab" data-tt="roster">🎽 球员名单</button>
       <button class="tt-tab" data-tt="team">🏟 球队信息</button>
     </nav>
+
+    <div class="panel" id="sec-news">
+      <div class="panel-title-row">
+        <h3>📰 拉玛西亚资讯 <span class="tag">懂球帝 B队/U19A · 每日更新</span></h3>
+      </div>
+      <div id="news-feed" class="p-body" style="margin-top:10px">
+        <div class="match-list-empty">正在加载资讯…</div>
+      </div>
+    </div>
     <div class="panel" id="sec-about">
       <div class="panel-title-row"><h3>📌 关于本队</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
@@ -156,7 +167,10 @@
       window.LAMASIA_SCHEDULE_RENDER.renderTeamInfo('cadete-b', 'fcb-teaminfo');
     });
   </script>
-    <script src="../assets/js/team-tabs.js"></script>
+    <script src="../assets/js/dqd-barca-news-cache.js"></script>
+  <script src="../assets/js/dqd-u19-news-cache.js"></script>
+  <script src="../assets/js/news-feed.js"></script>
+  <script src="../assets/js/team-tabs.js"></script>
 <script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
     <script src="../assets/js/mobile-nav.js"></script>
