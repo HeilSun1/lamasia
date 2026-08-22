@@ -1287,3 +1287,120 @@ tr.match-row:hover { background: var(--surface-3); }
   #upcoming-list .roster-table tr > td:nth-child(5) { grid-area: score; text-align: center; font-weight: 800; color: var(--barca-blue); }
   #upcoming-list .roster-table tr > td:nth-child(6) { grid-area: away; font-size: 13px; text-align: right; }
 }
+
+/* ═══ 手机端：足球 App 式紧凑布局（Sofascore/OneFootball 风格密度） ═══ */
+@media (max-width: 680px) {
+  /* 容器与基础 */
+  .container { padding: 0 12px; }
+  body { font-size: 14px; }
+
+  /* 顶部导航压缩 */
+  .site-nav .nav-inner { height: 48px; gap: 8px; }
+  .brand { font-size: 14px; gap: 7px; }
+  .brand .crest { font-size: 13px; }
+  .nav-links { gap: 1px; }
+  .nav-links a { font-size: 12px; padding: 6px 7px; }
+
+  .crumbs { padding: 10px 0 0; font-size: 11.5px; }
+
+  /* 页头 */
+  .page-head { padding: 14px 0 6px; }
+  .page-head h1 { font-size: 21px; }
+  .ph-kicker { font-size: 10.5px; }
+  .ph-meta { font-size: 12px; gap: 6px 12px; }
+
+  /* 首页主视觉压缩 */
+  .hm-hero { padding: 22px 0 26px; }
+  .hm-hero::after { display: none; }
+  .hm-hero-title { font-size: 24px; }
+  .hm-hero-title .hm-hero-accent { display: block; font-size: 15px; margin-top: 2px; }
+  .hm-hero-lede { font-size: 13px; margin-top: 10px; }
+  .hm-hero-kicker { font-size: 10px; margin-bottom: 12px; }
+  .hm-hero-meta { flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .hm-chip { font-size: 11px; padding: 4px 10px; }
+  /* 首页各分区压缩 */
+  .hm-section { padding: 40px 0; }
+  .hm-sechead { margin-bottom: 16px; }
+  .hm-sechead h2 { font-size: 21px; }
+  .hm-stat { padding: 20px 14px 18px; }
+  .hm-stat .hm-stat-num { font-size: 34px; }
+  .hm-more { margin-top: 12px; }
+  /* 团队网格手机 2 列紧凑（足球 App 风格） */
+  .hm-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .hm-card { padding: 14px 12px; }
+  .hm-card .hm-card-name { font-size: 15px; }
+  .hm-card .hm-card-league { font-size: 12px; }
+  .hm-card .hm-card-kicker { font-size: 10px; }
+
+  /* 面板 */
+  .panel { padding: 14px 12px; margin-bottom: 12px; }
+  .panel-title-row { gap: 8px; }
+  .panel h3 { font-size: 15px; }
+  .panel h3 .tag { font-size: 10.5px; }
+  .panel .p-desc { font-size: 12.5px; }
+
+  /* 统计瓦片 */
+  .stats-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat-tile { padding: 10px 12px; }
+  .stat-tile .st-label { font-size: 11px; }
+  .stat-tile .st-value { font-size: 20px; }
+  .stat-tile .st-note { font-size: 10.5px; }
+
+  /* 球队卡片 */
+  .team-card { padding: 12px; }
+  .team-card .t-name { font-size: 15px; }
+  .team-card .t-league { font-size: 11.5px; }
+  .team-card .t-go { font-size: 12px; }
+  .team-card .t-count { font-size: 11px; }
+
+  /* 名单行 */
+  .pl-group { font-size: 13px; margin-top: 10px; }
+  .pl-row { gap: 7px; padding: 8px 4px; }
+  .pl-name .zh { font-size: 13.5px; }
+  .pl-name .en { font-size: 10.5px; }
+  .pl-num { font-size: 12px; }
+  .pl-pos { font-size: 10px; padding: 1px 6px; }
+  .pl-note { font-size: 11px; }
+  .pl-nation { font-size: 12px; }
+
+  /* 位置分布 */
+  .pos-bar .pb-label, .pos-bar .pb-num { font-size: 11.5px; }
+
+  /* 比赛卡片 */
+  .match-card { padding: 10px 8px; gap: 8px; }
+  .match-card .mc-team { font-size: 12px; }
+
+  /* 伤病 / 资讯 */
+  .dqd-inj-row { padding: 8px 0; gap: 10px; }
+  .news-item { padding: 10px 0; }
+  .news-item__title { font-size: 13.5px; }
+
+  /* 页脚 */
+  .site-footer .foot-inner { padding: 16px 12px; }
+  .site-footer p { font-size: 11px; }
+}
+
+/* ═══ 手机端：底部导航栏（足球 App 风格） ═══ */
+.mb-nav {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+  background: var(--surface); border-top: 1px solid var(--border);
+  grid-template-columns: repeat(5, 1fr);
+  padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+}
+.mb-link {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  color: var(--muted); text-decoration: none; font-size: 10.5px; font-weight: 600;
+  padding: 3px 0; border-radius: 10px; -webkit-tap-highlight-color: transparent;
+}
+.mb-link .mb-ico { font-size: 19px; line-height: 1; }
+.mb-link.active { color: var(--barca-blue); font-weight: 800; }
+.mb-link:active { transform: scale(0.96); }
+
+@media (max-width: 680px) {
+  .mb-nav { display: grid; }
+  /* 顶部导航链接被底部栏取代（仅移动端隐藏链接、保留品牌） */
+  .nav-links { display: none; }
+  body.has-mb-nav { padding-bottom: calc(54px + env(safe-area-inset-bottom)); }
+}
