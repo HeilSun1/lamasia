@@ -3,10 +3,10 @@
    ---------------------------------------------------------------
    · 安装时预缓存全部 HTML/CSS/JS/图标 → 首屏后离线可看
    · HTML 导航：网络优先（保证每日数据最新），离线回退缓存
-   · 静态资源：stale-while-revalidate（先用缓存秒开，后台拉新）
+   · 静态资源：网络优先（在线永远最新），离线回退缓存
    · 更新：改下方 CACHE 版本号 → 下次打开自动换新缓存
    ============================================================= */
-var CACHE = 'lamasia-v3';
+var CACHE = 'lamasia-v4';
 var PRECACHE = [
     "404.html",
     "assets/css/style.css",
@@ -101,14 +101,13 @@ self.addEventListener('fetch', function (e) {
     );
     return;
   }
-  // 静态资源：stale-while-revalidate
+  // 静态资源：网络优先（在线永远最新，离线回退缓存）
   e.respondWith(
-    caches.match(req).then(function (cached) {
-      var fresh = fetch(req).then(function (res) {
-        if (res && res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req, copy); }); }
-        return res;
-      }).catch(function () { return cached; });
-      return cached || fresh;
+    fetch(req).then(function (res) {
+      if (res && res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req, copy); }); }
+      return res;
+    }).catch(function () {
+      return caches.match(req, { ignoreSearch: true }).then(function (m) { return m; });
     })
   );
 });
