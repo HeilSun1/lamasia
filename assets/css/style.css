@@ -1132,18 +1132,18 @@ tr.match-row:hover { background: var(--surface-3); }
 #hl-list .pc-mv-match { margin-top: 10px; }
 #hl-list .pc-mv-title { font-size: 13px; }
 
-/* ── 首页「球员集锦」入口卡 ── */
-.hl-entry {
-  display: flex; align-items: center; gap: 16px; max-width: 480px;
-  padding: 22px 24px; background: #fff; border: 1px solid #e5e1d6; border-radius: 12px;
-  text-decoration: none; color: inherit;
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+/* 集锦页：按梯队分节 */
+.hl-tier-section { margin-bottom: 22px; }
+.hl-tier-title {
+  font-size: 11.5px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--accent, #a50044); margin: 6px 2px 10px;
 }
-.hl-entry:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(13, 27, 61, .10); border-color: #c99a00; }
-.hl-entry-icon { font-size: 30px; flex-shrink: 0; }
-.hl-entry-txt { display: flex; flex-direction: column; gap: 3px; }
-.hl-entry-title { font-size: 16.5px; font-weight: 800; color: #0d1b3d; }
-.hl-entry-sub { font-size: 12.5px; color: #7a8296; }
+/* 球员名按钮：点击弹球员卡片 */
+.hl-name-btn {
+  border: 0; background: none; padding: 0; cursor: pointer;
+  font-size: 13.5px; font-weight: 800; color: var(--text); text-align: left;
+}
+.hl-name-btn:hover { color: var(--accent, #a50044); text-decoration: underline; }
 .vid-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;
 }
