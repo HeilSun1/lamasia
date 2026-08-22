@@ -480,14 +480,16 @@
     return key;
   }
 
-  /* 该球员集锦总数（页签角标，同步可算） */
+  /* 该球员集锦总数（页签角标，同步可算；含非赛程 feed） */
   function videoCountFor(key) {
     if (!window.VideosUI || !key) return 0;
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
     if (!m) return window.VideosUI.resolve("players", key).length;
     var id = m[2];
     return playerTiers(m[1], id).reduce(function (n, t) {
-      return n + window.VideosUI.resolve("players", "sf:" + t + ":" + id).length;
+      var k = "sf:" + t + ":" + id;
+      var feedN = window.VideosUI.feedFor(k).reduce(function (m2, g) { return m2 + g.videos.length; }, 0);
+      return n + window.VideosUI.resolve("players", k).length + feedN;
     }, 0);
   }
 
@@ -511,16 +513,39 @@
       var seen = {}, du = [];
       unmatched.forEach(function (v) { if (!seen[v.videoId]) { seen[v.videoId] = true; du.push(v); } });
       groups.sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
-      if (!groups.length && !du.length) { done(""); return; }
+
+      // 非赛程集锦（折叠块）：feed 分组（跨梯队按 videoId 去重）+ players 里仍未归到赛程的「其他」
+      var fseen = {}, nonSched = [];
+      tiers.forEach(function (t) {
+        window.VideosUI.feedFor("sf:" + t + ":" + id).forEach(function (g) {
+          g.videos = g.videos.filter(function (v) {
+            if (fseen[v.videoId]) return false;
+            fseen[v.videoId] = true;
+            return true;
+          });
+          if (g.videos.length) nonSched.push(g);
+        });
+      });
+      if (du.length) nonSched.push({ label: "📹 其他 / 未匹配到赛程", opp: "", date: "", videos: du });
+      var feedCount = 0;
+      nonSched.forEach(function (g) { feedCount += g.videos.length; });
+
+      if (!groups.length && !nonSched.length) { done(""); return; }
       var html = "";
       groups.forEach(function (g) {
         html += '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + g.label + "</div>" +
           '<div class="vid-grid">' + g.list.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
       });
-      if (du.length) {
-        html += '<div class="pc-mv-match"><div class="pc-mv-title">' +
-          (groups.length ? "📹 其他 / 未匹配到赛程" : "🎥 个人集锦") + "</div>" +
-          '<div class="vid-grid">' + du.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+      if (nonSched.length) {
+        html += '<details class="md-vids-fold pc-vids-fold">' +
+          '<summary>📹 非赛程集锦 <span class="vid-count">' + feedCount + "</span></summary>" +
+          '<div class="md-vids-fold-body">' +
+            nonSched.map(function (g) {
+              return '<div class="pc-mv-match"><div class="pc-mv-title">' +
+                (g.label.indexOf("📹") === 0 ? "" : "⚽ ") + g.label + "</div>" +
+                '<div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+            }).join("") +
+          "</div></details>";
       }
       done(html);
     }).catch(function () { done(""); });

@@ -26,15 +26,18 @@ $OutFile    = Join-Path $Root "assets\js\dqd-videos-cache.js"
 $UTF8       = New-Object System.Text.UTF8Encoding($false)
 
 # ── 配置 ────────────────────────────────────────────────────────
-$PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt")   # 常规球员集锦频道（可改/可加；仅新比赛/重搜时拉取）
-$OneTimeChannelHandles = @("bcnbest786")   # 一次性频道（巴萨 U18 杯赛集锦）：只抓这一次
+$PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt", "bcnbest786")   # 常规球员集锦频道（可改/可加；非赛程集锦全频道扫描）
+$OneTimeChannelHandles = @()   # 一次性频道（已并入常规；未来如有个别一次性频道再加）
+$FeedScanAll          = $true  # 非赛程集锦：YouTube 可达即全频道扫描，不依赖「有新赛程」
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
-$BiliUids             = @("470189", "1515150312")   # B站 UP主：优先口菐，其次「B站一直吞我评论」
-$MaxBiliVideos        = 14                 # 每 UP 取最近 N 个 bvid
+$BiliUids             = @("470189", "1515150312", "473683296", "1946872922")   # B站 UP主：口菐 /「B站一直吞我评论」/ 473683296 / 1946872922
+$MaxBiliVideos        = 30                 # 每 UP 取最近 N 个 bvid（覆盖 6 月起）
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
 $MaxMatchVideos       = 3                  # 每场保留条数
-$MaxPlayerVideos      = 6                  # 每名球员累积上限
+$MaxPlayerVideos      = 6                  # 每名球员赛程集锦累积上限
+$MaxFeedVideosPerGroup = 4                 # 非赛程集锦：每个「比赛分组」视频上限
+$MaxFeedGroupsPerPlayer = 10               # 非赛程集锦：每名球员分组上限
 $PubAfterDays         = 15                 # 比赛结束后 N 天内的上传才算
 $MaxRelDays           = 25                 # 搜索结果"发布于 N 天前"的上限（防误配旧场次）
 $BTeamId              = "24343"            # Sofascore 巴萨竞技
@@ -428,6 +431,7 @@ $old = Read-CacheJs $OutFile
 $oldMatches = @{}
 $oldPlayers = @{}
 $oldSearched = @{}
+$oldFeed = @{}
 if ($old) {
   if ($old.matches) {
     foreach ($p in $old.matches.PSObject.Properties) { $oldMatches[$p.Name] = @($p.Value) }
@@ -436,6 +440,9 @@ if ($old) {
     foreach ($p in $old.players.PSObject.Properties) { $oldPlayers[$p.Name] = @($p.Value) }
   }
   foreach ($k in @($old.searchedMatches)) { $oldSearched[[string]$k] = $true }
+  if ($old.feed -and $old.feed.players) {
+    foreach ($p in $old.feed.players.PSObject.Properties) { $oldFeed[$p.Name] = @($p.Value) }
+  }
 }
 # 人工 reSearch 列表（videos-data.js）→ 强制重搜
 $reSearch = @{}
@@ -451,10 +458,20 @@ $u19Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u19-details-cache.js"
 $u18Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-details-cache.js")
 
 $outMatches = @{}   # 比赛键 -> 视频列表
-$outPlayers = @{}   # 球员键 -> 视频列表
+$outPlayers = @{}   # 球员键 -> 赛程相关视频列表
+$outFeed    = @{}   # 球员键 -> 非赛程集锦分组（feed.players）
 $searched    = @{}  # 已搜索的比赛键集合
 $newMatchList = @() # 本次新搜索的比赛（其阵容球员需要搜按场集锦）
 $playerKeys  = @{}  # 本次已处理过的球员键（同一人只搜一次）
+# 旧 feed 分组载入（内部带 key 便于归并；key = 规范化对手|日期）
+foreach ($fk in @($oldFeed.Keys)) {
+  $gs = [System.Collections.Generic.List[object]]::new()
+  foreach ($g in $oldFeed[$fk]) {
+    $d = [string]$g.date; $o = [string]$g.opp
+    $gs.Add([pscustomobject]@{ key = (Norm $o) + "|" + $d; date = $d; opp = $o; label = [string]$g.label; videos = @(@($g.videos)) })
+  }
+  $outFeed[$fk] = $gs
+}
 
 function New-Video($videoId, $title, $channel, $channelId, [string]$published, [string]$durationSec) {
   return [pscustomobject]@{
@@ -491,6 +508,78 @@ function Merge-Videos($existing, $incoming, [int]$cap) {
   return $out
 }
 
+# ── 非赛程集锦：比赛 / 对手分类辅助 ─────────────────────────────
+# 在已完赛列表里找「标题含双方 token + 发布日在窗口内」的比赛；返回 endedList 项或 $null
+function Find-EndedMatch($titleNorm, $pubT, $endedList) {
+  foreach ($em in $endedList) {
+    if (-not (HasToken $titleNorm $em.homeTk) -or -not (HasToken $titleNorm $em.awayTk)) { continue }
+    $lo = $em.mDate.AddDays(-1); $hi = $em.mDate.AddDays($PubAfterDays)
+    if ($pubT -lt $lo -or $pubT -gt $hi) { continue }
+    return $em
+  }
+  return $null
+}
+
+# 从标题提取对手名：对手候选池里最长 token 命中（token 已含空格/缩写）
+function Find-Opponent([string]$titleNorm, $oppPool) {
+  $best = ""; $bestLen = 0
+  foreach ($o in $oppPool) {
+    foreach ($tk in @($o.tokens)) {
+      if ($tk.Length -lt 4) { continue }
+      if ($titleNorm.IndexOf($tk) -ge 0 -and $tk.Length -gt $bestLen) { $bestLen = $tk.Length; $best = $o.name }
+    }
+  }
+  return $best
+}
+
+# 非赛程视频 → feed.players[sfKey]：按（对手名, 发布日）分组，组内 videoId 去重 + 上限
+function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $pubT) {
+  if ($null -eq $pubT) { return }
+  if (-not $feed.ContainsKey($pkey)) { $feed[$pkey] = [System.Collections.Generic.List[object]]::new() }
+  $groups = $feed[$pkey]
+  $opp = Find-Opponent $titleNorm $oppPool
+  $dateStr = $pubT.ToString("yyyy-MM-dd")
+  $key = (Norm $opp) + "|" + $dateStr
+  $grp = $null
+  foreach ($g in $groups) { if ([string]$g.key -eq $key) { $grp = $g; break } }
+  if ($null -eq $grp) {
+    $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; videos = @() }
+    [void]$groups.Add($grp)
+  }
+  foreach ($x in $grp.videos) { if ([string]$x.videoId -eq [string]$v.videoId) { return } }
+  if (@($grp.videos).Count -lt $MaxFeedVideosPerGroup) { $grp.videos = @($grp.videos) + $v }
+}
+
+# 一条频道上传的统一定位：
+#   · 命中赛程比赛 → matches[key]（全场集锦）
+#   · 命中球员关键词 → 同时命中赛程 → players[sfKey]；仅球员命中 → feed.players[sfKey]（非赛程）
+# 返回是否命中赛程（供日志用）
+function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $endedList, $oppPool, $matchMap, $playerMap, $feedMap) {
+  $isMatchLike = $titleNorm -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
+  $em = $null
+  if (-not $isMatchLike -and $null -ne $pubT) {
+    $em = Find-EndedMatch $titleNorm $pubT $endedList
+  }
+  if ($em) {
+    $matchMap[$em.key] = @(Merge-Videos ($matchMap[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
+  }
+  if (-not (IsPlayerIrrelevant $titleNorm)) {
+    $bestScore = 0; $bestKeys = @()
+    foreach ($pk in @($pool.Keys)) {
+      $sc = PlayerScore $titleNorm $pool[$pk]
+      if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
+      elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
+    }
+    if ($bestScore -gt 0) {
+      foreach ($pk in $bestKeys) {
+        if ($em) { $playerMap[$pk] = @(Merge-Videos ($playerMap[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos) }
+        else { Add-FeedVideo $feedMap $pk $v $titleNorm $oppPool $pubT }
+      }
+    }
+  }
+  return @{ match = ($null -ne $em); player = ($bestScore -gt 0) }
+}
+
 # ════════════ 0. 当前全部已完赛（用于视频保留与 searchedMatches 裁剪） ════════════
 $currentEnded = @{}
 foreach ($cfg in @(
@@ -506,7 +595,7 @@ foreach ($cfg in @(
 foreach ($k in @($oldMatches.Keys)) {
   if ($currentEnded.ContainsKey($k)) { $outMatches[$k] = @($oldMatches[$k]) }
 }
-foreach ($k in @($oldPlayers.Keys)) { $outPlayers[$k] = @($oldPlayers[$k]) }
+# 旧 players 不直接整体搬入——待构建完 endedList 后逐条迁移：赛程→players，非赛程→feed（见「0.5 迁移」）
 foreach ($k in @($oldSearched.Keys)) {
   if ($currentEnded.ContainsKey($k)) { $searched[$k] = $true }
 }
@@ -603,8 +692,8 @@ if ($newMatchList.Count -and $ytOk) {
   }
 }
 
-# ════════════ B. 球员按场个人集锦（油管频道 RSS + B站，覆盖全部在队球员） ════════════
-# 已完赛列表（双方队名 token + 时间窗），供全场集锦匹配
+# ════════════ 0.5 已完赛列表 + 对手候选池 + 旧球员迁移 ════════════
+# 已完赛列表（双方队名 token + 时间窗），供全场集锦 / 球员集锦分类匹配
 $endedList = @()
 foreach ($cfg in @(
   @{ cache = $sfb; prefix = "sfb:" },
@@ -624,11 +713,60 @@ foreach ($cfg in @(
   }
 }
 
-# 频道 RSS 仅在出现新完赛比赛 / reSearch 重搜 / 有未抓的一次性频道时拉取，不每日抓
+# 对手候选池：赛程里所有非巴萨侧队名 → token（供非赛程视频提取对手名）
+$oppPool = @()
+$oppSeen = @{}
+foreach ($cfg in @(
+  @{ cache = $sfb },
+  @{ cache = $u19 },
+  @{ cache = $u18 }
+)) {
+  if (-not $cfg.cache -or -not $cfg.cache.matches) { continue }
+  foreach ($m in @($cfg.cache.matches)) {
+    foreach ($nm in @([string]$m.home, [string]$m.away)) {
+      $nn = Norm $nm
+      if (-not $nn) { continue }
+      if ($nn -match 'barcelona|barca|atletic|juvenil') { continue }   # 巴萨本方梯队，非对手
+      if ($oppSeen.ContainsKey($nn)) { continue }
+      $oppSeen[$nn] = $true
+      $oppPool += [pscustomobject]@{ name = $nm; tokens = @(TeamTokens $nm) }
+    }
+  }
+}
+Log "  · 已完赛 $($endedList.Count) 场 / 对手候选 $($oppPool.Count) 个"
+
+# 旧 players 逐条迁移：命中赛程 → players（保留）；未命中 → feed（非赛程）
+$migratedPlayers = 0; $migratedFeed = 0
+foreach ($k in @($oldPlayers.Keys)) {
+  foreach ($v in @($oldPlayers[$k])) {
+    if (-not $v -or -not $v.videoId) { continue }
+    $titleNorm = Norm ([string]$v.title)
+    $pubT = Get-UcDate ([string]$v.published)
+    $em = $null
+    if ($null -ne $pubT) { $em = Find-EndedMatch $titleNorm $pubT $endedList }
+    if ($null -ne $em) {
+      $outPlayers[$k] = @(Merge-Videos ($outPlayers[$k] | Where-Object { $_ }) $v $MaxPlayerVideos)
+      $migratedPlayers++
+    } elseif ($null -eq $pubT) {
+      # 无发布时间无法判定：保留在 players（旧行为）
+      $outPlayers[$k] = @(Merge-Videos ($outPlayers[$k] | Where-Object { $_ }) $v $MaxPlayerVideos)
+      $migratedPlayers++
+    } else {
+      Add-FeedVideo $outFeed $k $v $titleNorm $oppPool $pubT
+      $migratedFeed++
+    }
+  }
+}
+if ($migratedPlayers -or $migratedFeed) {
+  Log "  · 旧球员视频迁移：赛程保留 $migratedPlayers 条 / 非赛程 feed $migratedFeed 条"
+}
+
+# ════════════ B. 球员按场个人集锦（油管频道 RSS + B站，覆盖全部在队球员） ════════════
+# 非赛程集锦全频道扫描：YouTube 可达即拉 RSS（不依赖新赛程）
 $oneTimeDone = @()
 if (Test-Path $OneTimeDoneFile) { $oneTimeDone = @(Get-Content $OneTimeDoneFile) }
 $pendingOneTime = @($OneTimeChannelHandles | Where-Object { $oneTimeDone -notcontains $_ })
-if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
+if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $FeedScanAll)) {
   # 解析全部频道 ID（常规 + 一次性），逐个拉取 RSS（不止第一个可用的频道）
   $channelIds = @()
   foreach ($handle in @($PlayerChannelHandles + $pendingOneTime)) {
@@ -675,34 +813,11 @@ if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
       if (-not $pubT) { continue }
       if ($pubT -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }
       $titleN = Norm $it.title
-      # ① 球员关键词匹配 → 该球员按场集锦（全场/直播/旧赛季内容不配给球员个人集锦）
-      if (-not (IsPlayerIrrelevant $titleN)) {
-        $bestScore = 0
-        $bestKeys = @()
-        foreach ($pk in @($pool.Keys)) {
-          $sc = PlayerScore $titleN $pool[$pk]
-          if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
-          elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
-        }
-        if ($bestScore -gt 0) {
-          foreach ($pk in $bestKeys) {
-            $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
-            $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
-          }
-          Log "    ✓ 油管球员匹配：$($it.title)"
-        }
-      }
-      # ② 比赛关键词匹配 → 全场集锦（标题含双方队名、非直播/训练类，发布于开赛 -1 天到赛后 PubAfterDays 天）
-      $nonMatchLike = $titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
-      if (-not $nonMatchLike) {
-        foreach ($em in $endedList) {
-          if (-not (HasToken $titleN $em.homeTk) -or -not (HasToken $titleN $em.awayTk)) { continue }
-          $lo = $em.mDate.AddDays(-1)
-          $hi = $em.mDate.AddDays($PubAfterDays)
-          if ($pubT -lt $lo -or $pubT -gt $hi) { continue }
-          $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
-          $outMatches[$em.key] = @(Merge-Videos ($outMatches[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
-        }
+      $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
+      # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
+      $st = Classify-Video $v $pubT $titleN $pool $endedList $oppPool $outMatches $outPlayers $outFeed
+      if ($st.match -or $st.player) {
+        Log "    ✓ 油管分类：$($it.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
       }
     }
     }
@@ -713,12 +828,12 @@ if (($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0) -and $ytOk) {
     }
   }
 } else {
-  Log "  · 无新完赛比赛且无待抓的一次性频道（或 YouTube 不可达），跳过油管频道集锦。"
+  Log "  · YouTube 不可达，跳过油管频道集锦（B站 匹配不受影响）。"
 }
 
-# ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」） ════════════
-# 独立于 YouTube 探测：国内 B站 可直连，无代理也能拉到
-if ($newMatchList.Count -and $BiliUids.Count) {
+# ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」 / 473683296） ════════════
+# 独立于 YouTube 探测：国内 B站 可直连，无代理也能拉到；非赛程集锦全 UP 扫描（不依赖新赛程）
+if ($BiliUids.Count) {
   $zhMap = Build-ZhMap
   # 球员池：用当前名单（B队 SF + U19 名单），覆盖面广，任何在队球员的视频都能按名匹配
   $allPlayers = @{}
@@ -756,38 +871,12 @@ if ($newMatchList.Count -and $BiliUids.Count) {
       try { $pubDt = [DateTimeOffset]::FromUnixTimeSeconds([int64]$info.pubdate).UtcDateTime } catch { continue }
       if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
       $titleN = Norm $info.title
-      $addedPlayer = $false
-      # ① 球员关键词匹配 → 该球员的按场集锦（评分制：只给最长匹配者，防「佩德罗」这种通用前缀误配多个人；
-      #    全场/直播/旧赛季内容不配给球员个人集锦）
-      if (-not (IsPlayerIrrelevant $titleN)) {
-        $bestScore = 0
-        $bestKeys = @()
-        foreach ($pk in @($allPlayers.Keys)) {
-          $sc = PlayerScore $titleN $allPlayers[$pk]
-          if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
-          elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
-        }
-        if ($bestScore -gt 0) {
-          foreach ($pk in $bestKeys) {
-            $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
-            $outPlayers[$pk] = @(Merge-Videos ($outPlayers[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
-          }
-          $addedPlayer = $true
-        }
+      $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+      # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
+      $st = Classify-Video $v $pubDt $titleN $allPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
+      if ($st.match -or $st.player) {
+        Log "    ✓ B站分类：$($info.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
       }
-      # ② 比赛关键词匹配 → 全场集锦（标题含双方队名、非直播/训练类，发布于开赛 -1 天到赛后 PubAfterDays 天）
-      $nonMatchLike = $titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
-      if (-not $nonMatchLike) {
-        foreach ($em in $endedList) {
-          if (-not (HasToken $titleN $em.homeTk) -or -not (HasToken $titleN $em.awayTk)) { continue }
-          $lo = $em.mDate.AddDays(-1)
-          $hi = $em.mDate.AddDays($PubAfterDays)
-          if ($pubDt -lt $lo -or $pubDt -gt $hi) { continue }
-          $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
-          $outMatches[$em.key] = @(Merge-Videos ($outMatches[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
-        }
-      }
-      if ($addedPlayer) { Log "    ✓ B站匹配球员：$($info.title)" }
     }
     Start-Sleep -Milliseconds 500
   }
@@ -798,9 +887,23 @@ $core = [ordered]@{
   searchedMatches = @($searched.Keys | Sort-Object)
   matches = [ordered]@{}
   players = [ordered]@{}
+  feed = [ordered]@{ players = [ordered]@{} }
 }
 foreach ($k in @($outMatches.Keys | Sort-Object)) { $core.matches[$k] = @($outMatches[$k]) }
 foreach ($k in @($outPlayers.Keys | Sort-Object)) { $core.players[$k] = @($outPlayers[$k]) }
+# 非赛程集锦：分组按日期倒序、生成标签、限组数
+foreach ($k in @($outFeed.Keys | Sort-Object)) {
+  $gs = @()
+  foreach ($g in $outFeed[$k]) {
+    if (-not @($g.videos).Count) { continue }
+    $mm = ""
+    if ($g.date -match '^\d{4}-(\d{2}-\d{2})') { $mm = $Matches[1] }
+    $label = if ($g.opp) { "vs $($g.opp) · $mm" } else { "$mm · 未识别对手" }
+    $gs += [ordered]@{ date = $g.date; opp = $g.opp; label = $label; videos = @($g.videos) }
+  }
+  $gs = @($gs | Sort-Object -Property @{ Expression = { $_["date"] }; Descending = $true } | Select-Object -First $MaxFeedGroupsPerPlayer)
+  if ($gs.Count) { $core.feed.players[$k] = @($gs) }
+}
 $coreJson = $core | ConvertTo-Json -Depth 10
 
 # 与旧缓存的核心数据比较（忽略 updated 时间戳），内容没变就不写，避免每日空 diff
@@ -808,12 +911,15 @@ $oldCoreJson = ""
 if (Test-Path $OutFile) {
   $oldObj = Read-CacheJs $OutFile
   if ($oldObj) {
-    $oc = [ordered]@{ searchedMatches = @($oldObj.searchedMatches); matches = [ordered]@{}; players = [ordered]@{} }
+    $oc = [ordered]@{ searchedMatches = @($oldObj.searchedMatches); matches = [ordered]@{}; players = [ordered]@{}; feed = [ordered]@{ players = [ordered]@{} } }
     if ($oldObj.matches) {
       foreach ($p in $oldObj.matches.PSObject.Properties) { $oc.matches[$p.Name] = @($p.Value) }
     }
     if ($oldObj.players) {
       foreach ($p in $oldObj.players.PSObject.Properties) { $oc.players[$p.Name] = @($p.Value) }
+    }
+    if ($oldObj.feed -and $oldObj.feed.players) {
+      foreach ($p in $oldObj.feed.players.PSObject.Properties) { $oc.feed.players[$p.Name] = @($p.Value) }
     }
     $oldCoreJson = $oc | ConvertTo-Json -Depth 10
   }
@@ -826,10 +932,15 @@ if ($coreJson -eq $oldCoreJson) {
   $newCache.searchedMatches = $core.searchedMatches
   $newCache.matches = $core.matches
   $newCache.players = $core.players
+  $newCache.feed = $core.feed
+  $feedCount = 0
+  foreach ($pp in @($core.feed.players.Keys)) {
+    foreach ($grp in @($core.feed.players[$pp])) { $feedCount += @($grp.videos).Count }
+  }
   $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：YouTube 搜索/RSS + B站 UP 空间 */`r`nwindow.DQD_VIDEOS_CACHE = $($newCache | ConvertTo-Json -Depth 10);`r`n"
   try {
     [System.IO.File]::WriteAllText($OutFile, $js, $UTF8)
-    Log "  ✓ 已写入：$($core.matches.Count) 场比赛、$($core.players.Count) 名球员的集锦缓存（本次新增搜索 $($newMatchList.Count) 场）"
+    Log "  ✓ 已写入：$($core.matches.Count) 场比赛、$($core.players.Count) 名球员赛程集锦、$feedCount 条非赛程集锦（本次新增搜索 $($newMatchList.Count) 场）"
   } catch {
     Log "  ✗ 写入缓存失败：$($_.Exception.Message)"
   }

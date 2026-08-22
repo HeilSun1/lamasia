@@ -1116,6 +1116,10 @@ tr.match-row:hover { background: var(--surface-3); }
 .md-vids-fold[open] > summary::before { transform: rotate(90deg); }
 .md-sec .md-vids-fold { margin-top: 0; }   /* 在详情分区内时由 .md-sec 控制上间距 */
 .md-vids-fold-body { padding: 12px; }
+
+/* 球员卡片内非赛程集锦折叠块（复用 .md-vids-fold） */
+.pc-vids-fold { margin-top: 10px; }
+.pc-vids-fold .vid-count { margin-left: auto; }   /* 条数靠右，便于一眼看到数量 */
 .vid-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;
 }

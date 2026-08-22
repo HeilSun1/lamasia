@@ -56,6 +56,33 @@
     return out;
   }
 
+  /* 非赛程集锦分组（feed.players）解析：读自动缓存，套用 blocked 拉黑，
+     返回 [{label, opp, date, videos:[…]}]，空组过滤。 */
+  function feedFor(key) {
+    if (!key) return [];
+    var feed = (VIDEOS.feed && VIDEOS.feed.players) ? (VIDEOS.feed.players[key] || []) : [];
+    if (!feed.length) return [];
+    var blocked = (DATA.blocked || {})[key] || [];
+    var blockedSet = {};
+    blocked.forEach(function (id) { blockedSet[id] = true; });
+    return feed.map(function (g) {
+      var list = [];
+      (g.videos || []).forEach(function (v) {
+        if (!v || !v.videoId || blockedSet[v.videoId]) return;
+        list.push({
+          videoId: v.videoId,
+          title: v.title || "",
+          channel: v.channel || "",
+          published: v.published || "",
+          durationSec: v.durationSec || "",
+          site: v.site || "yt",
+          pic: v.pic || ""
+        });
+      });
+      return { label: g.label || "", opp: g.opp || "", date: g.date || "", videos: list };
+    }).filter(function (g) { return g.videos.length; });
+  }
+
   /* 秒 → "m:ss" / "h:mm:ss" */
   function fmtDur(sec) {
     sec = parseInt(sec, 10);
@@ -155,6 +182,7 @@
 
   window.VideosUI = {
     resolve: resolve,
+    feedFor: feedFor,
     videoCardHtml: videoCardHtml,
     groupHtml: groupHtml,
     openPlayer: openPlayer,
