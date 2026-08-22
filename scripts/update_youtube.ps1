@@ -26,7 +26,7 @@ $OutFile    = Join-Path $Root "assets\js\dqd-videos-cache.js"
 $UTF8       = New-Object System.Text.UTF8Encoding($false)
 
 # ── 配置 ────────────────────────────────────────────────────────
-$PlayerChannelHandles = @("ArsenKveFCB")   # 常规球员集锦频道（可改/可加；仅新比赛/重搜时拉取）
+$PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt")   # 常规球员集锦频道（可改/可加；仅新比赛/重搜时拉取）
 $OneTimeChannelHandles = @("bcnbest786")   # 一次性频道（巴萨 U18 杯赛集锦）：只抓这一次
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
