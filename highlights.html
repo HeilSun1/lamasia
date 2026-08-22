@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>搜索球员 — 拉玛西亚 · La Masia</title>
-  <meta name="description" content="全局搜索巴塞罗那青训各梯队球员：支持中文/英文名，点击定位到所在梯队页面。">
+  <title>集锦 — 拉玛西亚 · La Masia</title>
+  <meta name="description" content="拉玛西亚球员集锦汇总：各频道上传的非赛程比赛个人集锦，按比赛分类，点击即可播放。">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -21,40 +21,36 @@
         <a href="matches.html">比赛信息</a>
         <a href="weekly.html">周报</a>
         <a href="formation.html">排兵布阵</a>
-        <a href="highlights.html">🎥 集锦</a>
-        <a class="active" href="search.html">🔍 搜索</a>
+        <a class="active" href="highlights.html">🎥 集锦</a>
+        <a href="search.html">🔍 搜索</a>
       </nav>
     </div>
   </header>
 
-  <div class="container"><div class="crumbs"><a href="index.html">首页</a><span class="sep">/</span><span>搜索球员</span></div></div>
+  <div class="container"><div class="crumbs"><a href="index.html">首页</a><span class="sep">/</span><span>集锦</span></div></div>
 
   <div class="page-head container">
-    <span class="ph-kicker">PLAYER SEARCH</span>
-    <h1>全局球员搜索</h1>
+    <span class="ph-kicker">HIGHLIGHTS</span>
+    <h1>球员集锦</h1>
     <div class="ph-meta">
-      <span>🔍 输入球员<b>中文名或英文名</b></span>
-      <span>🎽 覆盖 B队 / U19–U9 各梯队</span>
+      <span>🎥 各频道上传的<b>非赛程比赛</b>个人集锦汇总</span>
+      <span>📆 收录 2026-06 月起 · 按比赛分类</span>
     </div>
   </div>
 
   <section class="container" style="padding-top:0">
     <div class="panel">
       <div class="panel-title-row">
-        <h3>🔍 搜索球员</h3>
-        <span class="badge gray" id="search-count"></span>
+        <h3>🎥 非赛程球员集锦</h3>
+        <span class="badge gray" id="hl-count"></span>
       </div>
-      <div class="p-body" style="margin-top:10px">
-        <input type="search" id="search-input"
-          placeholder="输入球员名，如：亚马尔 / Yamal / 卡沃内利 / Carbonell"
-          autocomplete="off" autocapitalize="off" spellcheck="false">
-        <div id="search-results" class="search-results" style="margin-top:14px">
-          <div class="match-list-empty">输入球员中文名或英文名开始搜索</div>
-        </div>
+      <div class="p-body" style="margin-top:12px">
+        <div id="hl-list"></div>
+        <div id="hl-empty" class="match-list-empty" style="display:none">暂无非赛程集锦，等每日频道扫描更新后再来看看。</div>
       </div>
     </div>
 
-    <div class="note-box">📌 <span><b>说明：</b>数据来自本站各梯队名单（官网/懂球帝/Sofascore 缓存，每日更新）。点击结果跳转到对应梯队页面；低龄梯队（U12 及以下）会定位到对应分区。</span></div>
+    <div class="note-box">📌 <span><b>说明：</b>这里汇总的是<b>未出现在赛程信息里</b>的比赛集锦（友谊赛 / 非正式对阵等），来自站点配置的 YouTube 频道与 B站 UP 主，每日自动抓取并按比赛归类；点击视频卡片即可在本站播放。赛程比赛的集锦请在「比赛信息」页查看。若某条视频匹配错误，可在 <code>assets/js/videos-data.js</code> 的 blocked 里拉黑。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -68,7 +64,7 @@
         <a href="matches.html">比赛信息</a>
         <a href="weekly.html">周报</a>
         <a href="formation.html">排兵布阵</a>
-        <a href="highlights.html">🎥 集锦</a>
+        <a href="highlights.html">集锦</a>
         <a href="search.html">搜索球员</a>
         <a href="https://www.fcbarcelona.com" target="_blank" rel="noopener">官方网站</a>
       </div>
@@ -78,14 +74,15 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/manual-photos.js"></script>
   <script src="assets/js/manual-photos-hook.js"></script>
+  <script src="assets/js/dqd-barca-atletic-cache.js"></script>
+  <script src="assets/js/dqd-barca-atletic-sf-cache.js"></script>
+  <script src="assets/js/dqd-u19-cache.js"></script>
+  <script src="assets/js/dqd-u18-cache.js"></script>
+  <script src="assets/js/dqd-u16-cache.js"></script>
   <script src="assets/js/player-card.js"></script>
   <script src="assets/js/videos-data.js"></script>
   <script src="assets/js/dqd-videos-cache.js"></script>
   <script src="assets/js/videos-ui.js"></script>
-  <script src="assets/js/dqd-barca-atletic-cache.js"></script>
-  <script src="assets/js/dqd-u19-cache.js"></script>
-  <script src="assets/js/dqd-u18-cache.js"></script>
-  <script src="assets/js/dqd-u16-cache.js"></script>
-  <script src="assets/js/search.js"></script>
+  <script src="assets/js/highlights.js"></script>
 </body>
 </html>
