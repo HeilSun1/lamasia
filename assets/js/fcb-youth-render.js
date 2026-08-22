@@ -34,6 +34,17 @@
     return n;
   }
 
+  /* 官方队徽（resources.fcbarcelona.pulselive.com）；对手徽章常被防盗链 403 → 回退默认徽章 */
+  function badgeUrl(id) {
+    return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : "";
+  }
+  function teamCell(name, id) {
+    const b = badgeUrl(id);
+    return '<td><span class="match-team">' +
+      (b ? '<img class="match-logo" src="' + esc(b) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'https://resources.fcbarcelona.pulselive.com/badges/club/40/default.png\'">' : "") +
+      esc(disp(name)) + "</span></td>";
+  }
+
   function pill(m) {
     if (m.status === "Ended") {
       const a = parseInt(m.hs, 10), b = parseInt(m.as, 10);
@@ -58,15 +69,15 @@
         start: m.start, date: m.date || "", tbd: m.tbd,
         home: m.home || "", away: m.away || "",
         hs: m.hs || "", as: m.as || "", status: m.status, isHome: m.isHome,
-        venue: m.venue || "", homeLogo: "", awayLogo: ""
+        venue: m.venue || "", homeLogo: badgeUrl(m.homeId), awayLogo: badgeUrl(m.awayId)
       };
     }
     return '<tr data-match-key="' + key + '" class="match-row" title="点击查看（官方赛程 · 无阵容详情）">' +
       '<td class="num">' + esc(fmtKick(m)) + "</td>" +
       "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
-      '<td><span class="match-team">' + esc(disp(m.home)) + "</span></td>" +
+      teamCell(m.home, m.homeId) +
       '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
-      '<td><span class="match-team">' + esc(disp(m.away)) + "</span></td>" +
+      teamCell(m.away, m.awayId) +
       "<td>" + pill(m) + "</td>" +
       "</tr>";
   }

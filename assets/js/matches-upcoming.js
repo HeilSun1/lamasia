@@ -12,6 +12,8 @@
     return pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()) + " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
   }
   function now() { return Date.now(); }
+  // 官方队徽（本地梯队用）；对手徽章常被防盗链 403 → 失败由 img onerror 隐藏
+  function fcbBadge(id) { return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : ""; }
 
   function collect() {
     const out = [];
@@ -127,12 +129,12 @@
             source: "fcb", id: m.id, slug: cfg.tier, comp: m.comp || "", round: m.round || "",
             start: m.start, date: m.date || "", tbd: m.tbd,
             home: m.home || "", away: m.away || "", hs: m.hs || "", as: m.as || "", status: m.status,
-            venue: m.venue || "", homeLogo: "", awayLogo: ""
+            venue: m.venue || "", homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId)
           };
         }
         out.push({ team: cfg.team, href: cfg.href, key: key, start: t,
           comp: m.comp || "", round: m.round || "", home: m.home || "", away: m.away || "",
-          homeLogo: "", awayLogo: "", tbd: m.tbd, date: m.date || "" });
+          homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId), tbd: m.tbd, date: m.date || "" });
       });
     });
     out.sort(function (a, b) { return a.start - b.start; });
