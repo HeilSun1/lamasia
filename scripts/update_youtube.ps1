@@ -123,28 +123,57 @@ function Name-Tokens([string]$name) {
   return @(($base -split '\s+' | Where-Object { $_.Length -ge 4 } | Select-Object -Unique))
 }
 
-# 球员-视频匹配分：
-#   · 标题含任一全名（含懂球帝别名）→ 最高分（200000 + 命中总长）
-#   · 命中 ≥2 个词元 → 100000 + 1000×词元数 + 总长
-#   · 命中 1 个词元 + 1 个前缀（≥5 字符简称，如 Guille→Guillermo）→ 90000 + …
-#   · 中文 → ZhScore（0 = 不匹配）
-# 不做纯前缀/单常用姓氏匹配：防「罗德里」误配「罗德里格斯」这类撞车
-function PlayerScore([string]$titleNorm, $pl) {
-  $fullHit = $false; $cnt = 0; $tot = 0; $pref = 0
-  foreach ($f in @($pl.fullNorms)) { if ($titleNorm.IndexOf($f) -ge 0) { $fullHit = $true; break } }
-  foreach ($t in @($pl.tokens)) {
-    if ($titleNorm.IndexOf($t) -ge 0) { $cnt++; $tot += $t.Length }
+# 中文名分段（按 · 或 - 拆），供中文匹配
+function Get-ZhParts([string]$zh) {
+  if (-not $zh) { return @() }
+  return @((Norm $zh) -split '[·-]' | Where-Object { $_.Length -ge 2 })
+}
+
+# 球员-视频匹配分（唯一性判定：命中的名字部分必须能唯一确定该球员）
+#   · 标题含全名 → 200000 + 长度
+#   · 否则命中词元/中文段：对这些部分做「球员集合求交集」，交集落点必须全部是同名球员 → 100000 + 命中总长
+#   · 只命中共享姓氏/名字（多名球员）→ 拒绝（0）
+# 这样「哈维·埃斯帕特」不会配到哈维·卡斯特罗、「乔纳森·埃尔南德斯」不会配到胡安·埃尔南德斯
+# 英文词元按整词匹配（\b 边界），避免 jose 命中 josep / alex 命中 alexander
+function Test-Word([string]$titleNorm, [string]$t) {
+  return [regex]::IsMatch($titleNorm, '\b' + [regex]::Escape($t) + '\b')
+}
+
+function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
+  $zhP = @($pl.zhParts)
+  # 中文：给定名后紧跟汉字（塞尔吉→塞尔吉奥）→ 标题里是另一个更长名字 → 拒绝
+  if ($zhP.Count -ge 2 -and $titleNorm.IndexOf($zhP[0]) -ge 0) {
+    $gIdx = $titleNorm.IndexOf($zhP[0])
+    $gEnd = $gIdx + $zhP[0].Length
+    if ($gEnd -lt $titleNorm.Length -and $titleNorm[$gEnd] -match '[一-鿿]') { return 0 }
   }
-  if ($fullHit) { return 200000 + $tot }
-  if ($cnt -ge 2) { return 100000 + 1000 * $cnt + $tot }
-  if ($cnt -ge 1) {
-    foreach ($t in @($pl.tokens)) {
-      # 仅当完整词元不在标题、但其 5 字前缀在时算前缀命中（如 Guille→Guillermo；排除自前缀）
-      if ($t.Length -ge 5 -and $titleNorm.IndexOf($t) -lt 0 -and $titleNorm.IndexOf($t.Substring(0, 5)) -ge 0) { $pref = 1; break }
+  # 中文：标题里的「名·姓」对必须与球员一致（防 维克托·齐甘科夫≠吉列姆·维克托 / 哈维·埃斯帕特≠哈维·卡斯特罗）
+  if ($zhP.Count -ge 2) {
+    foreach ($pm in [regex]::Matches($titleNorm, '([一-鿿]{2,4})·([一-鿿]{2,6})')) {
+      $a = $pm.Groups[1].Value; $b = $pm.Groups[2].Value
+      $mine = ($a -eq $zhP[0] -and $b -eq $zhP[1]) -or ($a -eq $zhP[1] -and $b -eq $zhP[0])
+      if (-not $mine -and (@($zhP) -contains $a -or @($zhP) -contains $b)) { return 0 }
     }
-    if ($pref) { return 90000 + 1000 * $cnt + $tot }
   }
-  if ($pl.zh) { return ZhScore $titleNorm $pl.zh }
+  foreach ($f in @($pl.fullNorms)) { if ($f -and $titleNorm.IndexOf($f) -ge 0) { return 200000 + $f.Length } }
+  $matched = @()
+  foreach ($t in @($pl.tokens)) { if (Test-Word $titleNorm $t) { $matched += $t } }
+  foreach ($s in @($zhP)) { if ($s -and $titleNorm.IndexOf($s) -ge 0) { $matched += $s } }
+  if (-not $matched.Count) { return 0 }
+  $cands = $null
+  foreach ($p in $matched) {
+    $set = @($partPlayers[$p])
+    if (-not $set.Count) { return 0 }
+    if ($null -eq $cands) { $cands = $set }
+    else { $cands = @($cands | Where-Object { $set -contains $_ }) }
+    if (-not $cands.Count) { return 0 }
+  }
+  $names = @($cands | ForEach-Object { Norm $pool[$_].name } | Select-Object -Unique)
+  $myName = Norm $pl.name
+  if ($names.Count -eq 1 -and $names[0] -eq $myName) {
+    $sum = 0; foreach ($p in $matched) { $sum += $p.Length }
+    return 100000 + $sum
+  }
   return 0
 }
 
@@ -187,7 +216,7 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
       $zh = ""
       $nz = Norm $pname
       if ($zhMap.ContainsKey($nz)) { $zh = $zhMap[$nz] }
-      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; fullNorms = @($nz); tokens = @(Name-Tokens $pname) }
+      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = $zh; fullNorms = @($nz); tokens = @(Name-Tokens $pname); zhParts = @(Get-ZhParts $zh) }
     }
   }
   $dqd = Read-CacheJs (Join-Path $Root "assets\js\dqd-barca-atletic-cache.js")
@@ -213,11 +242,12 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
           $e = $pool[$hits[0]]
           $e.fullNorms = @(@($e.fullNorms) + (Norm $pname) | Select-Object -Unique)
           $e.tokens = @(@($e.tokens) + $dtk | Select-Object -Unique)
+          $e.zhParts = @(@($e.zhParts) + @(Get-ZhParts ([string]$p.person_name)) | Select-Object -Unique)
           continue
         }
         # 无唯一 sf:b 对应 → dqd-only（如 Hamza、Eder Aller），单开 b: 键
         if ($pool.ContainsKey("b:$plid")) { continue }
-        $pool["b:$plid"] = [pscustomobject]@{ name = $pname; zh = [string]$p.person_name; fullNorms = @((Norm $pname)); tokens = @($dtk) }
+        $pool["b:$plid"] = [pscustomobject]@{ name = $pname; zh = [string]$p.person_name; fullNorms = @((Norm $pname)); tokens = @($dtk); zhParts = @(Get-ZhParts ([string]$p.person_name)) }
       }
     }
   }
@@ -228,10 +258,23 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
       if (-not $pname) { continue }
       $pkey = "local:${tier}:$(Norm-Key $pname)"
       if ($pool.ContainsKey($pkey)) { continue }
-      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = [string]$p.zh; fullNorms = @((Norm $pname)); tokens = @(Name-Tokens $pname) }
+      $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = [string]$p.zh; fullNorms = @((Norm $pname)); tokens = @(Name-Tokens $pname); zhParts = @(Get-ZhParts ([string]$p.zh)) }
     }
   }
   return $pool
+}
+
+# 词元/中文段 → 拥有该部分的球员键索引（供唯一性交集判定）
+function Build-PartIndex($pool) {
+  $idx = @{}
+  foreach ($pk in @($pool.Keys)) {
+    $e = $pool[$pk]
+    foreach ($p in @(@($e.tokens) + @($e.zhParts) | Select-Object -Unique)) {
+      if (-not $idx.ContainsKey($p)) { $idx[$p] = @() }
+      $idx[$p] = @($idx[$p]) + $pk
+    }
+  }
+  return $idx
 }
 
 function TeamTokens([string]$name) {
@@ -697,7 +740,7 @@ function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $
 #   · 命中赛程比赛 → matches[key]（全场集锦）
 #   · 命中球员关键词 → 同时命中赛程 → players[sfKey]；仅球员命中 → feed.players[sfKey]（非赛程）
 # 返回是否命中赛程（供日志用）
-function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $endedList, $oppPool, $matchMap, $playerMap, $feedMap) {
+function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $partPlayers, $endedList, $oppPool, $matchMap, $playerMap, $feedMap) {
   $isMatchLike = $titleNorm -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访'
   $em = $null
   if (-not $isMatchLike -and $null -ne $pubT) {
@@ -709,7 +752,7 @@ function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $endedList, $oppPo
   if (-not (IsPlayerIrrelevant $titleNorm)) {
     $bestScore = 0; $bestKeys = @()
     foreach ($pk in @($pool.Keys)) {
-      $sc = PlayerScore $titleNorm $pool[$pk]
+      $sc = PlayerScore $titleNorm $pool[$pk] $pool $partPlayers
       if ($sc -gt $bestScore) { $bestScore = $sc; $bestKeys = @($pk) }
       elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
     }
@@ -881,7 +924,8 @@ Log "  · 已完赛 $($endedList.Count) 场 / 对手候选 $($oppPool.Count) 个
 # 构建全量匹配池（B/B2 段复用；0.5 段先用于旧 feed 重校验）
 $zhMap = Build-ZhMap
 $pool  = Build-PlayerPool $sfb $u19 $u18 $u16 $zhMap
-Log "  · 匹配池 $($pool.Count) 名球员"
+$partPlayers = Build-PartIndex $pool
+Log "  · 匹配池 $($pool.Count) 名球员 / 词元索引 $($partPlayers.Count) 项"
 
 # 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）；
 # 同时重校验该视频是否仍匹配该球员（清掉 Rodri 误配这类过期归属）
@@ -893,7 +937,7 @@ foreach ($fk in @($oldFeed.Keys)) {
     foreach ($v in @($g.videos)) {
       if (-not $v -or -not $v.videoId) { continue }
       $titleNorm = Norm ([string]$v.title)
-      if ((PlayerScore $titleNorm $pe) -le 0) { continue }   # 不再匹配该球员
+      if ((PlayerScore $titleNorm $pe $pool $partPlayers) -le 0) { continue }   # 不再匹配该球员
       $pubT = Get-UcDate ([string]$v.published)
       Add-FeedVideo $outFeed $fk $v $titleNorm $oppPool $pubT
       $refeed++
@@ -962,7 +1006,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
       $titleN = Norm $it.title
       $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
       # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
-      $st = Classify-Video $v $pubT $titleN $pool $endedList $oppPool $outMatches $outPlayers $outFeed
+      $st = Classify-Video $v $pubT $titleN $pool $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
       if ($st.match -or $st.player) {
         Log "    ✓ 油管分类：$($it.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
       }
@@ -1000,7 +1044,7 @@ if ($BiliUids.Count) {
       $titleN = Norm $info.title
       $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
       # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
-      $st = Classify-Video $v $pubDt $titleN $allPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
+      $st = Classify-Video $v $pubDt $titleN $allPlayers $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
       if ($st.match -or $st.player) {
         Log "    ✓ B站分类：$($info.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
       }
