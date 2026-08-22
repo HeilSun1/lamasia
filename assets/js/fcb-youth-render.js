@@ -22,9 +22,17 @@
     return t.getFullYear() + "-" + pad(t.getMonth() + 1) + "-" + pad(t.getDate()) + " " + pad(t.getHours()) + ":" + pad(t.getMinutes());
   }
 
-  /* 时间待定 → 只显示日期 + 「待定」 */
+  /* 时间待定 → 只显示日期 + 「待定」；日期统一 "MM-DD" 紧凑格式（赛季内年号省略） */
+  function shortDate(dateStr) {
+    const m = String(dateStr || "").match(/^\d{4}-(\d{2})-(\d{2})/);
+    return m ? m[1] + "-" + m[2] : String(dateStr || "").trim();
+  }
   function fmtKick(m) {
-    return m.tbd ? (String(m.date || "").trim() + " 待定") : fmtTime(m.start);
+    if (m.tbd) return shortDate(m.date) + " 待定";
+    const t = new Date(parseInt(m.start, 10) * 1000);
+    if (isNaN(t.getTime())) return shortDate(m.date);
+    const pad = function (n) { return String(n).padStart(2, "0"); };
+    return pad(t.getMonth() + 1) + "-" + pad(t.getDate()) + " " + pad(t.getHours()) + ":" + pad(t.getMinutes());
   }
 
   /* 显示层队名：官方站本队写作 "FC Barcelona A"，省宽度显示「巴萨 A」 */

@@ -1458,3 +1458,12 @@ tr.match-row:hover { background: var(--surface-3); }
   #upcoming-list .roster-table tr > td:nth-child(4),
   #upcoming-list .roster-table tr > td:nth-child(6) { font-size: 12.5px; }
 }
+
+/* ═══ 手机端：球员卡片名字换行 + 紧凑 ═══ */
+.pc-zh, .pc-en { overflow-wrap: break-word; word-break: break-word; }
+@media (max-width: 680px) {
+  .pc-card { padding: 14px 14px 12px; }
+  .pc-zh { font-size: 17px; }
+  .pc-en { font-size: 12px; }
+  .pc-avatar { width: 52px; height: 52px; }
+}
