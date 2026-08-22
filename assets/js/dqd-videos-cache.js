@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 10:37 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 10:43 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 10:37:41",
+    "updated":  "2026-08-22 10:43:57",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -129,8 +129,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "b:51126194":  [
                                                     {
                                                         "date":  "2026-08-19",
-                                                        "opp":  "",
-                                                        "label":  "08-19 · 未识别对手",
+                                                        "opp":  "开罗国民",
+                                                        "label":  "vs 开罗国民 · 08-19",
                                                         "videos":  [
                                                                        {
                                                                            "videoId":  "BV1fhbd68Et2",
@@ -149,7 +149,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                        {
                                                                            "date":  "2026-08-19",
                                                                            "opp":  "",
-                                                                           "label":  "08-19 · 未识别对手",
+                                                                           "label":  "08-19 · 集锦",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV1Q48J6nEed",
@@ -166,7 +166,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                        {
                                                                            "date":  "2026-08-03",
                                                                            "opp":  "",
-                                                                           "label":  "08-03 · 未识别对手",
+                                                                           "label":  "08-03 · 训练",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV1YKMX6tEEn",
@@ -201,8 +201,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "local:juvenil-a:hamzaabdelkarim":  [
                                                                          {
                                                                              "date":  "2026-08-19",
-                                                                             "opp":  "",
-                                                                             "label":  "08-19 · 未识别对手",
+                                                                             "opp":  "开罗国民",
+                                                                             "label":  "vs 开罗国民 · 08-19",
                                                                              "videos":  [
                                                                                             {
                                                                                                 "videoId":  "BV1fhbd68Et2",
@@ -221,7 +221,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                       {
                                                                           "date":  "2026-08-20",
                                                                           "opp":  "",
-                                                                          "label":  "08-20 · 未识别对手",
+                                                                          "label":  "08-20 · 季前赛/友谊赛",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV11Fbf6EEJg",
@@ -240,7 +240,7 @@ window.DQD_VIDEOS_CACHE = {
                                                       {
                                                           "date":  "2026-08-19",
                                                           "opp":  "",
-                                                          "label":  "08-19 · 未识别对手",
+                                                          "label":  "08-19 · 集锦",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1Q48J6nEed",
@@ -272,7 +272,7 @@ window.DQD_VIDEOS_CACHE = {
                                                       {
                                                           "date":  "2026-08-03",
                                                           "opp":  "",
-                                                          "label":  "08-03 · 未识别对手",
+                                                          "label":  "08-03 · 训练",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1YKMX6tEEn",

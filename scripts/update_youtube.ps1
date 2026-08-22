@@ -697,13 +697,14 @@ function Find-Opponent([string]$titleNorm, $oppPool) {
     }
   }
   if ($best) { return $best }
-  $m = [regex]::Match($titleNorm, '\bvs\s+([a-z0-9]+(?:\s+[a-z0-9]+)*)')
+  # 标题「vs/VS 对手」提取（支持中文对手与无空格，如 哈姆扎VS开罗国民 → 开罗国民）
+  $m = [regex]::Match($titleNorm, '(?<![a-z0-9])vs\.?\s*([一-鿿]+|[a-z0-9]+(?:\s+[a-z0-9]+)*)')
   if ($m.Success) {
     $raw = $m.Groups[1].Value.Trim()
     $raw = $raw -replace '\s+\d{1,4}(/\d{1,4})*$', ''        # 尾部日期/年份
     $raw = $raw -replace '\s+u\d+$', ''                      # 尾部年龄组
     $raw = $raw -replace '\s+(full|highlights|match|game|goals|1st|2nd)$', ''
-    if ($raw -notmatch '[a-z0-9]{3,}') { return "" }         # 过短无实义
+    if ($raw.Length -lt 2) { return "" }                     # 过短无实义
     $nn = Norm $raw
     if ($nn -and $nn -notmatch 'barcelona|barca|atletic|juvenil') {   # 排除本方梯队
       return (To-PropCase $raw)
@@ -712,10 +713,13 @@ function Find-Opponent([string]$titleNorm, $oppPool) {
   return ""
 }
 
-# 判断是否「个人集锦」标题（无对手的比赛/集锦，如 个人精彩 / Hidden Gem / skills）
-function Test-ReelTitle([string]$titleNorm) {
-  if ($titleNorm -match '\bvs\b') { return $false }
-  return ($titleNorm -match '个人|精彩集锦|reel|skills|hidden gem|shot.stop|best of|top \d+|compilation|highlight reel')
+# 视频类型：match(有对阵) / preseason(季前/友谊) / training(训练) / reel(个人集锦) / other
+function Get-VideoKind([string]$titleNorm) {
+  if ($titleNorm -match '\bvs\b|vs[一-鿿]') { return "match" }
+  if ($titleNorm -match '季前|友谊|本场|preseason|friendly') { return "preseason" }
+  if ($titleNorm -match '训练') { return "training" }
+  if ($titleNorm -match '个人|精彩|reel|skills|hidden gem|shot.stop|best of|top \d+|compilation|highlight reel|goalkeeper') { return "reel" }
+  return "other"
 }
 
 # 非赛程视频 → feed.players[sfKey]：按（对手名, 发布日）分组，组内 videoId 去重 + 上限
@@ -724,12 +728,14 @@ function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $
   if (-not $feed.ContainsKey($pkey)) { $feed[$pkey] = [System.Collections.Generic.List[object]]::new() }
   $groups = $feed[$pkey]
   $opp = Find-Opponent $titleNorm $oppPool
+  $kind = Get-VideoKind $titleNorm
+  if ($kind -eq "match" -and -not $opp) { $kind = "other" }
   $dateStr = $pubT.ToString("yyyy-MM-dd")
   $key = (Norm $opp) + "|" + $dateStr
   $grp = $null
   foreach ($g in $groups) { if ([string]$g.key -eq $key) { $grp = $g; break } }
   if ($null -eq $grp) {
-    $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; reel = (Test-ReelTitle $titleNorm); videos = @() }
+    $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; kind = $kind; videos = @() }
     [void]$groups.Add($grp)
   }
   foreach ($x in $grp.videos) { if ([string]$x.videoId -eq [string]$v.videoId) { return } }
@@ -1069,7 +1075,13 @@ foreach ($k in @($outFeed.Keys | Sort-Object)) {
     if (-not @($g.videos).Count) { continue }
     $mm = ""
     if ($g.date -match '^\d{4}-(\d{2}-\d{2})') { $mm = $Matches[1] }
-    $label = if ($g.opp) { "vs $($g.opp) · $mm" } elseif ($g.reel) { "$mm · 个人集锦" } else { "$mm · 未识别对手" }
+    $label = switch ($g.kind) {
+      "match"     { "vs $($g.opp) · $mm" }
+      "reel"      { "$mm · 个人集锦" }
+      "training"  { "$mm · 训练" }
+      "preseason" { "$mm · 季前赛/友谊赛" }
+      default     { "$mm · 集锦" }
+    }
     $gs += [ordered]@{ date = $g.date; opp = $g.opp; label = $label; videos = @($g.videos) }
   }
   $gs = @($gs | Sort-Object -Property @{ Expression = { $_["date"] }; Descending = $true } | Select-Object -First $MaxFeedGroupsPerPlayer)
