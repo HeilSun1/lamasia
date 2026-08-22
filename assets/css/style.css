@@ -1145,8 +1145,15 @@ tr.match-row:hover { background: var(--surface-3); }
 }
 .hl-name-btn:hover { color: var(--accent, #a50044); text-decoration: underline; }
 .vid-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;
+  display: flex; gap: 12px; overflow-x: auto;
+  padding-bottom: 8px; margin-bottom: -8px;   /* 给滚动条留空间，不撑高 */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
 }
+.vid-grid .vid-card { flex: 0 0 auto; width: 172px; scroll-snap-align: start; }
+.vid-grid::-webkit-scrollbar { height: 6px; }
+.vid-grid::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, .16); border-radius: 3px; }
+.vid-grid::-webkit-scrollbar-track { background: transparent; }
 .vid-card {
   display: flex; flex-direction: column; gap: 6px; cursor: pointer;
   background: var(--surface-2); border: 1px solid var(--border-soft);
