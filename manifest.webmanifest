@@ -1,0 +1,18 @@
+{
+  "name": "拉玛西亚 · La Masia 信息站",
+  "short_name": "拉玛西亚",
+  "description": "FC Barcelona 青训（La Masia）非官方信息站：各梯队名单、赛程、伤病、集锦。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ee",
+  "theme_color": "#004d98",
+  "categories": ["sports", "news"],
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
