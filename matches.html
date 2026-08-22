@@ -46,6 +46,10 @@
       <a class="page-toc__link" href="#sec-b-team">🟡🔵 B队赛程</a>
       <a class="page-toc__link" href="#sec-u19">🎓 U19赛程</a>
       <a class="page-toc__link" href="#sec-u18">🎓 U19B赛程</a>
+      <a class="page-toc__link" href="#sec-fcb-cadete">🎓 Cadete A赛程</a>
+      <a class="page-toc__link" href="#sec-fcb-cadete-b">🎓 Cadete B赛程</a>
+      <a class="page-toc__link" href="#sec-fcb-infantil">🎓 Infantil A赛程</a>
+      <a class="page-toc__link" href="#sec-fcb-infantil-b">🎓 Infantil B赛程</a>
       <a class="page-toc__link" href="#sec-juvenil-a">📊 Juvenil A</a>
       <a class="page-toc__link" href="#sec-juvenil-b">📊 Juvenil B</a>
       <a class="page-toc__link" href="#sec-cadete">📊 Cadete A</a>
@@ -58,7 +62,7 @@
         <h3>⚽ 即将到来的比赛 <span class="tag">各梯队 · 按时间排序</span></h3>
         <span class="badge gold">SEASON 2026-27</span>
       </div>
-      <p class="p-desc">按时间顺序汇总 B队 / Juvenil A / Juvenil B / Cadete A 已公布的未开赛赛程（数据每日自动更新）。</p>
+      <p class="p-desc">按时间顺序汇总 B队 / Juvenil A / Juvenil B / Cadete A / Cadete B / Infantil A / Infantil B 已公布的未开赛赛程（数据每日自动更新）。</p>
       <div id="upcoming-list" class="p-body" style="margin-top:12px">
         <div class="match-list-empty">正在加载各梯队赛程…</div>
       </div>
@@ -99,6 +103,51 @@
       <p class="p-desc">U18 名单、伤病与赛程完整版见 <a href="teams/juvenil-b.html">Juvenil B 专属页 →</a></p>
       <div id="u18-schedule" class="p-body" style="margin-top:12px">
         <div class="match-list-empty">正在加载 Sofascore 数据…</div>
+      </div>
+    </div>
+
+    <!-- 官方站四队赛程：Cadete A/B、Infantil A/B（fcb-youth-render.js 渲染） -->
+    <div class="panel" id="sec-fcb-cadete">
+      <div class="panel-title-row">
+        <h3>🎓 Cadete A（U16）赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+        <span class="badge blue">已完场置顶 · 点击可折叠</span>
+      </div>
+      <p class="p-desc">完整版见 <a href="teams/cadete.html">Cadete A 专属页 →</a></p>
+      <div id="fcb-cadete" class="p-body" style="margin-top:12px">
+        <div class="match-list-empty">正在加载官方赛程…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-fcb-cadete-b">
+      <div class="panel-title-row">
+        <h3>🎓 Cadete B（U15）赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+        <span class="badge blue">已完场置顶 · 点击可折叠</span>
+      </div>
+      <p class="p-desc">完整版见 <a href="teams/cadete-b.html">Cadete B 专属页 →</a></p>
+      <div id="fcb-cadete-b" class="p-body" style="margin-top:12px">
+        <div class="match-list-empty">正在加载官方赛程…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-fcb-infantil">
+      <div class="panel-title-row">
+        <h3>🎓 Infantil A（U14）赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+        <span class="badge blue">已完场置顶 · 点击可折叠</span>
+      </div>
+      <p class="p-desc">完整版见 <a href="teams/infantil.html">Infantil A 专属页 →</a></p>
+      <div id="fcb-infantil" class="p-body" style="margin-top:12px">
+        <div class="match-list-empty">正在加载官方赛程…</div>
+      </div>
+    </div>
+
+    <div class="panel" id="sec-fcb-infantil-b">
+      <div class="panel-title-row">
+        <h3>🎓 Infantil B（U13）赛程与结果 <span class="tag">官方数据源 · 每日更新</span></h3>
+        <span class="badge blue">已完场置顶 · 点击可折叠</span>
+      </div>
+      <p class="p-desc">完整版见 <a href="teams/infantil-b.html">Infantil B 专属页 →</a></p>
+      <div id="fcb-infantil-b" class="p-body" style="margin-top:12px">
+        <div class="match-list-empty">正在加载官方赛程…</div>
       </div>
     </div>
 
@@ -210,7 +259,18 @@
   <script src="assets/js/dqd-u18.js"></script>
   <script src="assets/js/dqd-u16-cache.js"></script>
   <script src="assets/js/fcb-youth-schedules.js"></script>
+  <script src="assets/js/fcb-youth-render.js"></script>
   <script src="assets/js/matches-upcoming.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var R = window.LAMASIA_SCHEDULE_RENDER;
+      if (!R) return;
+      R.render('cadete', 'fcb-cadete', { tierSlug: 'cadete-a' });
+      R.render('cadete-b', 'fcb-cadete-b', { tierSlug: 'cadete-b' });
+      R.render('infantil', 'fcb-infantil', { tierSlug: 'infantil-a' });
+      R.render('infantil-b', 'fcb-infantil-b', { tierSlug: 'infantil-b' });
+    });
+  </script>
   <script src="assets/js/page-nav.js"></script>
   <script src="assets/js/match-detail.js"></script>
 </body>

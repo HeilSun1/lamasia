@@ -1247,3 +1247,43 @@ tr.match-row:hover { background: var(--surface-3); }
 @media (max-width: 680px) {
   .vid-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 9px; }
 }
+
+/* ═══ 手机端：赛程表格卡片化（限赛程分组 dqd-group 与"即将到来"列表） ═══ */
+@media (max-width: 680px) {
+  .dqd-body .table-wrap,
+  #upcoming-list .table-wrap { overflow-x: visible; }
+  .dqd-body .roster-table thead,
+  #upcoming-list .roster-table thead { display: none; }
+  .dqd-body .roster-table, .dqd-body .roster-table tbody,
+  #upcoming-list .roster-table, #upcoming-list .roster-table tbody { display: block; width: 100%; min-width: 0; }
+  .dqd-body .roster-table tr,
+  #upcoming-list .roster-table tr {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      "time time pill"
+      "home score away"
+      "comp comp comp";
+    gap: 2px 8px;
+    padding: 10px 2px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .dqd-body .roster-table tr > td,
+  #upcoming-list .roster-table tr > td { border: none; padding: 0; white-space: normal; }
+  .dqd-body .roster-table .match-team,
+  #upcoming-list .roster-table .match-team { white-space: normal; }
+  .dqd-body .roster-table tr > td:nth-child(1) { grid-area: time; font-weight: 800; color: var(--barca-blue); font-size: 12.5px; }
+  .dqd-body .roster-table tr > td:nth-child(2) { grid-area: comp; }
+  .dqd-body .roster-table tr > td:nth-child(3) { grid-area: home; font-size: 13px; }
+  .dqd-body .roster-table tr > td:nth-child(4) { grid-area: score; text-align: center; font-weight: 800; color: var(--barca-blue); font-size: 13px; }
+  .dqd-body .roster-table tr > td:nth-child(5) { grid-area: away; font-size: 13px; text-align: right; }
+  .dqd-body .roster-table tr > td:nth-child(6) { grid-area: pill; text-align: right; }
+  .dqd-body .roster-table .match-logo { width: 18px; height: 18px; }
+  /* 即将到来：td2=梯队徽章(右上)、td3=赛事(底部)、td4/5/6=主队/vs/客队 */
+  #upcoming-list .roster-table tr > td:nth-child(1) { grid-area: time; font-weight: 800; color: var(--barca-blue); font-size: 12.5px; }
+  #upcoming-list .roster-table tr > td:nth-child(2) { grid-area: pill; text-align: right; }
+  #upcoming-list .roster-table tr > td:nth-child(3) { grid-area: comp; }
+  #upcoming-list .roster-table tr > td:nth-child(4) { grid-area: home; font-size: 13px; }
+  #upcoming-list .roster-table tr > td:nth-child(5) { grid-area: score; text-align: center; font-weight: 800; color: var(--barca-blue); }
+  #upcoming-list .roster-table tr > td:nth-child(6) { grid-area: away; font-size: 13px; text-align: right; }
+}
