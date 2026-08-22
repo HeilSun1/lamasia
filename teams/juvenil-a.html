@@ -66,6 +66,15 @@
       </div>
     </div>
 
+    <nav class="team-tabs" id="team-tabs" data-default="news"
+         data-tt-news="#sec-news"
+         data-tt-roster="#sec-positions,#sec-injuries,#sec-roster"
+         data-tt-team="#sec-changes,#sec-schedule,#sec-teaminfo">
+      <button class="tt-tab active" data-tt="news">📰 新闻</button>
+      <button class="tt-tab" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab" data-tt="team">🏟 球队信息</button>
+    </nav>
+
     <!-- 位置分布 -->
     <div class="panel" id="sec-positions">
       <div class="panel-title-row"><h3>阵容位置分布</h3><span class="badge gray">共 27 名球员</span></div>
@@ -193,7 +202,8 @@
   <script src="../assets/js/dqd-u19-news-cache.js"></script>
   <script src="../assets/js/news-read.js"></script>
   <script src="../assets/js/dqd-u19-news.js"></script>
-  <script src="../assets/js/page-nav.js"></script>
+    <script src="../assets/js/team-tabs.js"></script>
+<script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
     <script src="../assets/js/mobile-nav.js"></script>
 <script src="../assets/js/sw-register.js"></script>

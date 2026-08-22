@@ -71,7 +71,14 @@
       <span>📡 正在连接 Sofascore，加载最新数据…</span>
     </div>
 
-    <div class="panel">
+    <nav class="team-tabs" id="team-tabs" data-default="roster"
+         data-tt-roster="#sec-injuries,#sec-roster"
+         data-tt-team="#sec-schedule,#sec-teaminfo">
+      <button class="tt-tab active" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab" data-tt="team">🏟 球队信息</button>
+    </nav>
+
+    <div class="panel" id="sec-injuries">
       <div class="panel-title-row">
         <h3>🤕 伤病名单 <span class="tag">Sofascore 数据源 · 每日更新</span></h3>
       </div>
@@ -80,7 +87,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-roster">
       <div class="panel-title-row">
         <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
         <span class="badge blue" id="u16-count-badge">加载中…</span>
@@ -91,7 +98,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-schedule">
       <div class="panel-title-row">
         <h3>📅 赛程与结果 <span class="tag">Sofascore / 官方数据 · 自动更新</span></h3>
       </div>
@@ -100,7 +107,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-teaminfo">
       <div class="panel-title-row">
         <h3>🏟 球队信息 <span class="tag">Sofascore 数据源</span></h3>
         <img id="u16-team-logo" alt="" referrerpolicy="no-referrer" style="display:none;width:36px;height:36px;object-fit:contain" loading="lazy">
@@ -152,5 +159,6 @@
   <script src="../assets/js/match-detail.js"></script>
     <script src="../assets/js/mobile-nav.js"></script>
 <script src="../assets/js/sw-register.js"></script>
+  <script src="../assets/js/team-tabs.js"></script>
 </body>
 </html>

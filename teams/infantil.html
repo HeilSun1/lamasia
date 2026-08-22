@@ -76,6 +76,12 @@
     </div>
 
     <!-- ═══ 官方站赛程（fcb-youth-render.js 渲染） ═══ -->
+    <nav class="team-tabs" id="team-tabs" data-default="roster"
+         data-tt-roster="#sec-roster"
+         data-tt-team="#sec-featured,#sec-schedule,#sec-teaminfo">
+      <button class="tt-tab active" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab" data-tt="team">🏟 球队信息</button>
+    </nav>
     <div id="fcb-status" class="note-box blue">
       <span>📡 正在加载 FC Barcelona 官方赛程…</span>
     </div>
@@ -150,7 +156,8 @@
       window.LAMASIA_SCHEDULE_RENDER.renderTeamInfo('infantil', 'fcb-teaminfo');
     });
   </script>
-  <script src="../assets/js/page-nav.js"></script>
+    <script src="../assets/js/team-tabs.js"></script>
+<script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
     <script src="../assets/js/mobile-nav.js"></script>
 <script src="../assets/js/sw-register.js"></script>

@@ -74,6 +74,12 @@
       </div>
     </div>
 
+    <nav class="team-tabs" id="team-tabs" data-default="roster"
+         data-tt-roster="#sec-roster"
+         data-tt-team="#sec-about,#sec-schedule,#sec-teaminfo">
+      <button class="tt-tab active" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab" data-tt="team">🏟 球队信息</button>
+    </nav>
     <div class="panel" id="sec-about">
       <div class="panel-title-row"><h3>📌 关于本队</h3></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600);display:grid;gap:10px">
@@ -148,7 +154,8 @@
       window.LAMASIA_SCHEDULE_RENDER.renderTeamInfo('infantil-b', 'fcb-teaminfo');
     });
   </script>
-  <script src="../assets/js/page-nav.js"></script>
+    <script src="../assets/js/team-tabs.js"></script>
+<script src="../assets/js/page-nav.js"></script>
   <script src="../assets/js/match-detail.js"></script>
     <script src="../assets/js/mobile-nav.js"></script>
 <script src="../assets/js/sw-register.js"></script>
