@@ -7,6 +7,7 @@
   var p = inTeams ? '../' : '';
   var tabs = [
     { href: p + 'index.html',               ico: '🏠', label: '首页',   test: /(^|\/)index\.html$/ },
+    { href: p + 'weekly.html',              ico: '📰', label: '新闻',   test: /\/weekly\.html$/ },
     { href: (inTeams ? '' : 'teams/') + 'index.html', ico: '⚽', label: '梯队', test: /\/teams\// },
     { href: p + 'matches.html',             ico: '📅', label: '比赛',   test: /\/matches\.html$/ },
     { href: p + 'highlights.html',          ico: '🎥', label: '集锦',   test: /\/highlights\.html$/ },

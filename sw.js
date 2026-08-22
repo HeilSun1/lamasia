@@ -3,10 +3,10 @@
    ---------------------------------------------------------------
    · 安装时预缓存全部 HTML/CSS/JS/图标 → 首屏后离线可看
    · HTML 导航：网络优先（保证每日数据最新），离线回退缓存
-   · 静态资源：网络优先（在线永远最新），离线回退缓存
+   · 静态资源：stale-while-revalidate（先用缓存秒开，后台拉新）
    · 更新：改下方 CACHE 版本号 → 下次打开自动换新缓存
    ============================================================= */
-var CACHE = 'lamasia-v4';
+var CACHE = 'lamasia-v6';
 var PRECACHE = [
     "404.html",
     "assets/css/style.css",
@@ -40,7 +40,6 @@ var PRECACHE = [
     "assets/js/match-detail.js",
     "assets/js/matches-upcoming.js",
     "assets/js/mobile-nav.js",
-    "assets/js/news-feed.js",
     "assets/js/news-read.js",
     "assets/js/page-nav.js",
     "assets/js/player-card.js",
