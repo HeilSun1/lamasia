@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-21 17:52:04 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-22 09:00:43 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-21 17:52:04",
+    "updated":  "2026-08-22 09:00:43",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6211100", "title":  "凯塔-巴尔德：劳塔罗很适合巴萨，他让我想起了阿圭罗",
+            "url":  "https://www.dongqiudi.com/articles/6211100.html", "time":  "2026-08-22 08:05",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1F/2F/280x210/crop/-/rBXRn2qIvBmACofCAAEUAzX3iFE723.jpg" },
         {
             "id":  "6208434", "title":  "记者：巴萨将涨薪续约哈姆扎，解约金升至1.5亿欧",
             "url":  "https://www.dongqiudi.com/articles/6208434.html", "time":  "2026-08-21 19:17",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6106285", "title":  "弗里克：拉什福德？俱乐部的实际情况让有些决定变得并不容易",
             "url":  "https://www.dongqiudi.com/articles/6106285.html", "time":  "2026-08-01 06:24",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/71/280x210/crop/-/rBXRDGptHw6AV9SeAALv4kLyXcM036.jpg" },
-        {
-            "id":  "6106257", "title":  "哈姆扎：我渴望创造更多的进球机会，为球队做出贡献",
-            "url":  "https://www.dongqiudi.com/articles/6106257.html", "time":  "2026-08-01 06:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/5F/280x210/crop/-/rBXRn2ptHI2ACWJlAARiaJ9K3vI204.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/71/280x210/crop/-/rBXRDGptHw6AV9SeAALv4kLyXcM036.jpg" }
     ]
 };
