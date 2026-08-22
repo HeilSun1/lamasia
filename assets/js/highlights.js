@@ -135,8 +135,9 @@
         "</summary>" +
         '<div class="dqd-body">' +
           p.groups.map(function (g) {
-            return '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + esc(g.label) + "</div>" +
-              '<div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+            return '<details class="md-vids-fold hl-match">' +
+              "<summary>⚽ " + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
+              '<div class="md-vids-fold-body"><div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
           }).join("") +
         "</div>" +
       "</details>";

@@ -496,6 +496,14 @@
     }, 0);
   }
 
+  /* 单场比赛组折叠块（默认收起，避免很多比赛时展开过高） */
+  function matchFold(label, videos) {
+    var pre = label.indexOf("📹") === 0 ? "" : "⚽ ";
+    return '<details class="md-vids-fold hl-match">' +
+      "<summary>" + pre + label + ' <span class="vid-count">' + videos.length + "</span></summary>" +
+      '<div class="md-vids-fold-body"><div class="vid-grid">' + videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
+  }
+
   /* 组装第二页 HTML（异步：需先加载各梯队详情缓存） */
   function matchVideosHtml(key, done) {
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(key);
@@ -511,10 +519,7 @@
         html += '<details class="md-vids-fold pc-vids-fold">' +
           "<summary>📹 非赛程集锦 <span class=\"vid-count\">" + fn + "</span></summary>" +
           '<div class="md-vids-fold-body">' +
-            feedG.map(function (g) {
-              return '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + g.label + "</div>" +
-                '<div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
-            }).join("") +
+            feedG.map(function (g) { return matchFold(g.label, g.videos); }).join("") +
           "</div></details>";
       }
       done(html || "");
@@ -552,18 +557,13 @@
       if (!groups.length && !nonSched.length) { done(""); return; }
       var html = "";
       groups.forEach(function (g) {
-        html += '<div class="pc-mv-match"><div class="pc-mv-title">⚽ ' + g.label + "</div>" +
-          '<div class="vid-grid">' + g.list.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
+        html += matchFold(g.label, g.list);
       });
       if (nonSched.length) {
         html += '<details class="md-vids-fold pc-vids-fold">' +
           '<summary>📹 非赛程集锦 <span class="vid-count">' + feedCount + "</span></summary>" +
           '<div class="md-vids-fold-body">' +
-            nonSched.map(function (g) {
-              return '<div class="pc-mv-match"><div class="pc-mv-title">' +
-                (g.label.indexOf("📹") === 0 ? "" : "⚽ ") + g.label + "</div>" +
-                '<div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div>";
-            }).join("") +
+            nonSched.map(function (g) { return matchFold(g.label, g.videos); }).join("") +
           "</div></details>";
       }
       done(html);

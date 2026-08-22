@@ -1121,6 +1121,11 @@ tr.match-row:hover { background: var(--surface-3); }
 .pc-vids-fold { margin-top: 10px; }
 .pc-vids-fold .vid-count { margin-left: auto; }   /* 条数靠右，便于一眼看到数量 */
 
+/* 单场比赛组折叠块（嵌套在球员内，默认收起，避免很多比赛时展开过高） */
+.hl-match { margin-top: 8px; }
+.hl-match > summary { padding: 7px 10px; font-size: 12.5px; }
+.hl-match > summary .vid-count { margin-left: auto; font-weight: 700; color: var(--muted); }
+
 /* ── 集锦汇总页（highlights.html） ── */
 .hl-player { margin-bottom: 12px; }
 .hl-player > summary .hl-left { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
