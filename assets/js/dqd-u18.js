@@ -342,9 +342,22 @@
     // Sofascore 无「未开赛」（新赛季未排）→ 回退到官方站数据（fcb-youth-schedules.js 的 juvenil-b）
     const hasUpcoming = matches.some(function (m) { return m.status === "Not started"; });
     if (!hasUpcoming) {
-      if (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches['juvenil-b'] && window.LAMASIA_SCHEDULE_RENDER) {
+      const local = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches['juvenil-b']) || [];
+      if (local.length && window.LAMASIA_SCHEDULE_RENDER) {
         scheduleFellBack = true;
-        window.LAMASIA_SCHEDULE_RENDER.render('juvenil-b', 'u18-schedule', { tierSlug: 'juvenil-b' });
+        // 已完场：Sofascore 的友谊赛保留显示（group/row 为函数声明，此处可用）
+        const played = matches.filter(function (m) { return m.status !== "Not started"; })
+                              .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
+        let html = "";
+        if (played.length) html += group("🏁 已完场", played, true, "结果");
+        // 未开赛：官方站 Juvenil B 联赛（fcb-youth-render 渲染）
+        const tmp = document.createElement('div');
+        tmp.id = 'u18-fb-tmp';
+        el.appendChild(tmp);   // 挂到 DOM 后 render 才能 getElementById
+        window.LAMASIA_SCHEDULE_RENDER.render('juvenil-b', tmp.id, {});
+        html += tmp.innerHTML;
+        tmp.remove();
+        el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
         return;
       }
       scheduleFellBack = false;

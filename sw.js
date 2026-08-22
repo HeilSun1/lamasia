@@ -6,7 +6,7 @@
    · 静态资源：stale-while-revalidate（先用缓存秒开，后台拉新）
    · 更新：改下方 CACHE 版本号 → 下次打开自动换新缓存
    ============================================================= */
-var CACHE = 'lamasia-v8';
+var CACHE = 'lamasia-v9';
 var PRECACHE = [
     "404.html",
     "assets/css/style.css",
