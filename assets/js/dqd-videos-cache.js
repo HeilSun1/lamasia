@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 09:18 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 09:43 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 09:18:26",
+    "updated":  "2026-08-22 09:43:58",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -129,8 +129,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "sf:b:1544614":  [
                                                       {
                                                           "date":  "2026-08-08",
-                                                          "opp":  "",
-                                                          "label":  "08-08 · 未识别对手",
+                                                          "opp":  "Udinese",
+                                                          "label":  "vs Udinese · 08-08",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "LJXywdp3dmE",
@@ -171,8 +171,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "sf:b:1977602":  [
                                                       {
                                                           "date":  "2026-08-16",
-                                                          "opp":  "",
-                                                          "label":  "08-16 · 未识别对手",
+                                                          "opp":  "FC Basel",
+                                                          "label":  "vs FC Basel · 08-16",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "-xRAJTjKdQI",
@@ -224,8 +224,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "sf:b:2128084":  [
                                                       {
                                                           "date":  "2026-08-08",
-                                                          "opp":  "",
-                                                          "label":  "08-08 · 未识别对手",
+                                                          "opp":  "Udinese",
+                                                          "label":  "vs Udinese · 08-08",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "9eOLL88phHU",
@@ -240,7 +240,7 @@ window.DQD_VIDEOS_CACHE = {
                                                       {
                                                           "date":  "2026-07-24",
                                                           "opp":  "",
-                                                          "label":  "07-24 · 未识别对手",
+                                                          "label":  "07-24 · 个人集锦",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1oCgY6EEWc",
@@ -259,7 +259,7 @@ window.DQD_VIDEOS_CACHE = {
                                                       {
                                                           "date":  "2026-07-31",
                                                           "opp":  "",
-                                                          "label":  "07-31 · 未识别对手",
+                                                          "label":  "07-31 · 个人集锦",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1j4GA6vEpQ",
@@ -312,7 +312,7 @@ window.DQD_VIDEOS_CACHE = {
                                                         {
                                                             "date":  "2026-08-14",
                                                             "opp":  "",
-                                                            "label":  "08-14 · 未识别对手",
+                                                            "label":  "08-14 · 个人集锦",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "uJCDQgM6DPM",
@@ -329,7 +329,7 @@ window.DQD_VIDEOS_CACHE = {
                                                         {
                                                             "date":  "2026-08-12",
                                                             "opp":  "",
-                                                            "label":  "08-12 · 未识别对手",
+                                                            "label":  "08-12 · 个人集锦",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "xBYmwtF7gxg",
@@ -346,7 +346,7 @@ window.DQD_VIDEOS_CACHE = {
                                                         {
                                                             "date":  "2026-07-31",
                                                             "opp":  "",
-                                                            "label":  "07-31 · 未识别对手",
+                                                            "label":  "07-31 · 个人集锦",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "BV1j4GA6vEpQ",

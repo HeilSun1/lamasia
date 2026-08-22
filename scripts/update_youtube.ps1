@@ -459,19 +459,10 @@ $u18Details = Read-CacheJs (Join-Path $Root "assets\js\dqd-u18-details-cache.js"
 
 $outMatches = @{}   # 比赛键 -> 视频列表
 $outPlayers = @{}   # 球员键 -> 赛程相关视频列表
-$outFeed    = @{}   # 球员键 -> 非赛程集锦分组（feed.players）
+$outFeed    = @{}   # 球员键 -> 非赛程集锦分组（feed.players；0.5 段用增强对手提取重建）
 $searched    = @{}  # 已搜索的比赛键集合
 $newMatchList = @() # 本次新搜索的比赛（其阵容球员需要搜按场集锦）
 $playerKeys  = @{}  # 本次已处理过的球员键（同一人只搜一次）
-# 旧 feed 分组载入（内部带 key 便于归并；key = 规范化对手|日期）
-foreach ($fk in @($oldFeed.Keys)) {
-  $gs = [System.Collections.Generic.List[object]]::new()
-  foreach ($g in $oldFeed[$fk]) {
-    $d = [string]$g.date; $o = [string]$g.opp
-    $gs.Add([pscustomobject]@{ key = (Norm $o) + "|" + $d; date = $d; opp = $o; label = [string]$g.label; videos = @(@($g.videos)) })
-  }
-  $outFeed[$fk] = $gs
-}
 
 function New-Video($videoId, $title, $channel, $channelId, [string]$published, [string]$durationSec) {
   return [pscustomobject]@{
@@ -520,7 +511,23 @@ function Find-EndedMatch($titleNorm, $pubT, $endedList) {
   return $null
 }
 
-# 从标题提取对手名：对手候选池里最长 token 命中（token 已含空格/缩写）
+# 专有名词首字母大写；常见俱乐部缩写（FC/CF/CE/CD/UE…）保持全大写
+function To-PropCase([string]$s) {
+  if ([string]::IsNullOrWhiteSpace($s)) { return "" }
+  $ti = (Get-Culture).TextInfo
+  $words = @($s.Trim() -split '\s+' | Where-Object { $_ })
+  $out = @()
+  foreach ($w in $words) {
+    $uw = $w.ToUpperInvariant()
+    if ($uw -match '^(FC|CF|CE|CD|UE|CA|UD|SD|AO|AC|SS|AS|SC|RB|RC|AD|PSV|RB)$') { $out += $uw }
+    else { $out += $ti.ToTitleCase($w) }
+  }
+  return ($out -join ' ')
+}
+
+# 从标题提取对手名：
+#   ① 对手候选池里最长 token 命中（赛程已知对手 → 显示规范名，如 CF Damm U19）
+#   ② 兜底：标题 "vs 对手" 结构直接提取（覆盖赛程外对手，如友谊赛 vs Udinese / FC Basel）
 function Find-Opponent([string]$titleNorm, $oppPool) {
   $best = ""; $bestLen = 0
   foreach ($o in $oppPool) {
@@ -529,7 +536,26 @@ function Find-Opponent([string]$titleNorm, $oppPool) {
       if ($titleNorm.IndexOf($tk) -ge 0 -and $tk.Length -gt $bestLen) { $bestLen = $tk.Length; $best = $o.name }
     }
   }
-  return $best
+  if ($best) { return $best }
+  $m = [regex]::Match($titleNorm, '\bvs\s+([a-z0-9]+(?:\s+[a-z0-9]+)*)')
+  if ($m.Success) {
+    $raw = $m.Groups[1].Value.Trim()
+    $raw = $raw -replace '\s+\d{1,4}(/\d{1,4})*$', ''        # 尾部日期/年份
+    $raw = $raw -replace '\s+u\d+$', ''                      # 尾部年龄组
+    $raw = $raw -replace '\s+(full|highlights|match|game|goals|1st|2nd)$', ''
+    if ($raw -notmatch '[a-z0-9]{3,}') { return "" }         # 过短无实义
+    $nn = Norm $raw
+    if ($nn -and $nn -notmatch 'barcelona|barca|atletic|juvenil') {   # 排除本方梯队
+      return (To-PropCase $raw)
+    }
+  }
+  return ""
+}
+
+# 判断是否「个人集锦」标题（无对手的比赛/集锦，如 个人精彩 / Hidden Gem / skills）
+function Test-ReelTitle([string]$titleNorm) {
+  if ($titleNorm -match '\bvs\b') { return $false }
+  return ($titleNorm -match '个人|精彩集锦|reel|skills|hidden gem|shot.stop|best of|top \d+|compilation|highlight reel')
 }
 
 # 非赛程视频 → feed.players[sfKey]：按（对手名, 发布日）分组，组内 videoId 去重 + 上限
@@ -543,7 +569,7 @@ function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $
   $grp = $null
   foreach ($g in $groups) { if ([string]$g.key -eq $key) { $grp = $g; break } }
   if ($null -eq $grp) {
-    $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; videos = @() }
+    $grp = [pscustomobject]@{ key = $key; date = $dateStr; opp = $opp; reel = (Test-ReelTitle $titleNorm); videos = @() }
     [void]$groups.Add($grp)
   }
   foreach ($x in $grp.videos) { if ([string]$x.videoId -eq [string]$v.videoId) { return } }
@@ -735,6 +761,21 @@ foreach ($cfg in @(
 }
 Log "  · 已完赛 $($endedList.Count) 场 / 对手候选 $($oppPool.Count) 个"
 
+# 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）
+$refeed = 0
+foreach ($fk in @($oldFeed.Keys)) {
+  foreach ($g in $oldFeed[$fk]) {
+    foreach ($v in @($g.videos)) {
+      if (-not $v -or -not $v.videoId) { continue }
+      $titleNorm = Norm ([string]$v.title)
+      $pubT = Get-UcDate ([string]$v.published)
+      Add-FeedVideo $outFeed $fk $v $titleNorm $oppPool $pubT
+      $refeed++
+    }
+  }
+}
+if ($refeed) { Log "  · 旧 feed 重归类 $refeed 条（刷新对手识别）" }
+
 # 旧 players 逐条迁移：命中赛程 → players（保留）；未命中 → feed（非赛程）
 $migratedPlayers = 0; $migratedFeed = 0
 foreach ($k in @($oldPlayers.Keys)) {
@@ -898,7 +939,7 @@ foreach ($k in @($outFeed.Keys | Sort-Object)) {
     if (-not @($g.videos).Count) { continue }
     $mm = ""
     if ($g.date -match '^\d{4}-(\d{2}-\d{2})') { $mm = $Matches[1] }
-    $label = if ($g.opp) { "vs $($g.opp) · $mm" } else { "$mm · 未识别对手" }
+    $label = if ($g.opp) { "vs $($g.opp) · $mm" } elseif ($g.reel) { "$mm · 个人集锦" } else { "$mm · 未识别对手" }
     $gs += [ordered]@{ date = $g.date; opp = $g.opp; label = $label; videos = @($g.videos) }
   }
   $gs = @($gs | Sort-Object -Property @{ Expression = { $_["date"] }; Descending = $true } | Select-Object -First $MaxFeedGroupsPerPlayer)
