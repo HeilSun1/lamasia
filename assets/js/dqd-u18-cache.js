@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-22 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-22 16:14 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-22 09:01:17",
+    "updated":  "2026-08-22 16:14:42",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -255,21 +255,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Roc Martínez",
-                        "id":  "2342517",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2342517/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-04",
-                        "foot":  "右脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Luca Pérez",
                         "id":  "2412372",
                         "pos":  "D",
@@ -279,6 +264,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
                         "age":  "16岁",
                         "birthday":  "2010-01-10",
+                        "foot":  "右脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Roc Martínez",
+                        "id":  "2342517",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2342517/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-04",
                         "foot":  "右脚",
                         "height":  "",
                         "value":  "",

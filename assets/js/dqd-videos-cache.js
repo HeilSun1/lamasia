@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 11:50 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 16:15 数据源：YouTube 搜索/RSS + B站 UP 空间 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 11:50:03",
+    "updated":  "2026-08-22 16:15:48",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,12 +162,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
+                                                        "opp":  "",
+                                                        "label":  "08-16 · 集锦",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
+                                                                           "videoId":  "WA-IyOyleG8",
+                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
@@ -177,12 +177,12 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "",
-                                                        "label":  "08-16 · 集锦",
+                                                        "opp":  "FC Basel",
+                                                        "label":  "vs FC Basel · 08-16",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "WA-IyOyleG8",
-                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
+                                                                           "videoId":  "wVE07sxsR1Y",
+                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
                                                                            "channel":  "ArsenKveFCB",
                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                            "published":  "2026-08-16",
