@@ -1,10 +1,11 @@
 /* ═══════════════════════════════════════════════════════════════
    拉玛西亚信息站 · 集锦汇总页渲染（highlights.html）
    ─────────────────────────────────────────────────────────────
-   遍历 DQD_VIDEOS_CACHE.feed.players（非赛程集锦，每日更新）。
-   按梯队分节；同一球员跨梯队（如 B队+U19）合并为一组；
-   视频按 videoId 去重、同比赛分组合并；点球员名弹球员卡片。
-   复用：VideosUI.feedFor / videoCardHtml（videos-ui.js）、
+   汇总每位球员的「赛程相关个人集锦」（players 段，按已完赛分组）
+   与「非赛程集锦」（feed.players 段），按梯队分节。
+   同一球员跨梯队（如 B队+U19）合并；视频按 videoId 去重、同比赛合并；
+   点球员名弹球员卡片。
+   复用：VideosUI.feedFor / resolve / videoCardHtml（videos-ui.js）、
          PlayerCard.findByKey / open（player-card.js）。
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -16,11 +17,26 @@
   function normKey(s) {
     return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
   }
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function fmtMd(ts) {
+    var d = new Date(parseInt(ts, 10) * 1000 + 8 * 3600 * 1000);
+    return pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate());
+  }
+  function matchDateStr(ts) {
+    var d = new Date(parseInt(ts, 10) * 1000 + 8 * 3600 * 1000);
+    return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate());
+  }
+  function matchLabel(mt) {
+    var sc = (mt.hs != null && mt.as != null && mt.hs !== "" && mt.as !== "") ? " " + mt.hs + ":" + mt.as : "";
+    return (mt.comp ? mt.comp + " · " : "") + fmtMd(mt.start) + " · " + (mt.home || "") + sc + " " + (mt.away || "");
+  }
 
   var wrap = document.getElementById("hl-list");
   if (!wrap || !window.DQD_VIDEOS_CACHE || !window.VideosUI) return;
+  var CACHE = window.DQD_VIDEOS_CACHE;
+  var feed = (CACHE.feed && CACHE.feed.players) || {};
+  var schedPlayers = CACHE.players || {};
 
-  var feed = (window.DQD_VIDEOS_CACHE.feed && window.DQD_VIDEOS_CACHE.feed.players) || {};
   var TIER_ORDER = { b: 0, u19: 1, u18: 2, u16: 3, u15: 4, u14: 5, other: 9 };
   var TIER_LABEL = {
     b: "预备队 · Barça Atlètic",
@@ -35,7 +51,7 @@
     "juvenil-a": "u19", "juvenil-b": "u18", cadete: "u16",
     "cadete-b": "u15", infantil: "u14", "infantil-b": "u14"
   };
-  /* feed 键 → 展示梯队：sf:{tier}:{id} / b:{id} / local:{tier}:{name} */
+  /* 键 → 展示梯队：sf:{tier}:{id} / b:{id} / local:{tier}:{name} */
   function tierOf(k) {
     var m = /^sf:([a-z0-9]+):\d+$/.exec(k);
     if (m) return m[1];
@@ -45,10 +61,53 @@
     return "other";
   }
 
-  // ① 收集每个 feed 键的信息
+  // 已完赛列表（Sofascore 缓存），供赛程集锦按最近比赛分组
+  var SF_CFG = { b: "DQD_BARCA_ATLETIC_SF_CACHE", u19: "DQD_U19_CACHE", u18: "DQD_U18_CACHE", u16: "DQD_U16_CACHE" };
+  var ended = [];
+  Object.keys(SF_CFG).forEach(function (tier) {
+    var c = window[SF_CFG[tier]];
+    (c && Array.isArray(c.matches) ? c.matches : []).forEach(function (mt) {
+      if (mt.status === "Ended" && mt.start) {
+        ended.push({ tier: tier, start: parseInt(mt.start, 10) * 1000, label: matchLabel(mt), dateStr: matchDateStr(mt.start) });
+      }
+    });
+  });
+
+  // 赛程相关个人视频 → 按 ±14 天内最近的已完赛分组
+  function groupSched(videos, tier) {
+    var groups = [], unmatched = [];
+    videos.forEach(function (v) {
+      var vd = Date.parse(v.published + "T00:00:00Z");
+      if (!vd) { unmatched.push(v); return; }
+      var best = null, bestDiff = Infinity;
+      ended.forEach(function (em) {
+        if (em.tier !== tier) return;
+        var diff = Math.abs(em.start - vd);
+        if (diff <= 14 * 864e5 && diff < bestDiff) { bestDiff = diff; best = em; }
+      });
+      if (best) {
+        var hit = null;
+        for (var i = 0; i < groups.length; i++) if (groups[i].label === best.label) { hit = groups[i]; break; }
+        if (hit) hit.videos.push(v);
+        else groups.push({ date: best.dateStr, label: best.label, videos: [v] });
+      } else unmatched.push(v);
+    });
+    return { groups: groups, unmatched: unmatched };
+  }
+
+  // ① 收集条目（feed 段 + players 段）
   var entries = [];
-  Object.keys(feed).forEach(function (k) {
-    var groups = window.VideosUI.feedFor(k);
+  var seenKey = {};
+  function addEntry(k) {
+    if (!k || seenKey[k]) return;
+    seenKey[k] = true;
+    var groups = window.VideosUI.feedFor(k).slice();
+    var m = /^sf:([a-z0-9]+):(\d+)$/.exec(k);
+    if (m) {
+      var sg = groupSched(window.VideosUI.resolve("players", k), m[1]);
+      groups = groups.concat(sg.groups);
+      if (sg.unmatched.length) groups.push({ date: "", label: "📹 其他 / 未匹配到赛程", videos: sg.unmatched });
+    }
     if (!groups.length) return;
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
     entries.push({
@@ -59,7 +118,9 @@
       nameEn: (rec && rec.nameEn) || k,
       team: (rec && rec.team) || ""
     });
-  });
+  }
+  Object.keys(feed).forEach(addEntry);
+  Object.keys(schedPlayers).forEach(addEntry);
 
   // ② 按规范化英文名合并同一球员（跨梯队去重）
   var byName = {};
@@ -135,8 +196,9 @@
         "</summary>" +
         '<div class="dqd-body">' +
           p.groups.map(function (g) {
+            var pre = g.label.indexOf("📹") === 0 ? "" : "⚽ ";
             return '<details class="md-vids-fold hl-match">' +
-              "<summary>⚽ " + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
+              "<summary>" + pre + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
               '<div class="md-vids-fold-body"><div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
           }).join("") +
         "</div>" +
