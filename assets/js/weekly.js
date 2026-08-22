@@ -56,14 +56,14 @@
 
   var html = "";
 
-  // 合集入口（常驻顶部）
+  // 合集入口（常驻顶部）；当前页打开，返回键即可回站
   if (album && album.url) {
     html +=
-      '<a class="weekly-album" href="' + esc(album.url) + '" target="_blank" rel="noopener">' +
+      '<a class="weekly-album" href="' + esc(album.url) + '" rel="noopener">' +
         '<span class="weekly-album__icon">📚</span>' +
         '<span class="weekly-album__body">' +
           '<span class="weekly-album__title">' + esc(album.title) + '</span>' +
-          '<span class="weekly-album__note">' + esc(album.note || "点击进入合集") + '</span>' +
+          '<span class="weekly-album__note">' + esc(album.note || "点击进入合集 · 返回按浏览器返回键") + '</span>' +
         '</span>' +
       '</a>';
   }
