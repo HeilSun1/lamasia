@@ -35,10 +35,13 @@
     return pad(t.getMonth() + 1) + "-" + pad(t.getDate()) + " " + pad(t.getHours()) + ":" + pad(t.getMinutes());
   }
 
-  /* 显示层队名：官方站本队写作 "FC Barcelona A"，省宽度显示「巴萨 A」 */
-  function disp(name) {
+  /* 各梯队 U 年龄段（对应 fcb-youth-schedules 的 tier 键） */
+  var U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "juvenil-b": "U19B" };
+
+  /* 显示层队名：官方站本队写作 "FC Barcelona A"，按梯队显示「巴萨 U16/U15…」（与 U19 命名一致） */
+  function disp(name, tier) {
     const n = String(name || "").trim();
-    if (/^FC Barcelona/.test(n)) return "巴萨 A";
+    if (/^FC Barcelona/.test(n)) return "巴萨 " + (U_AGE[tier] || "A");
     return n;
   }
 
@@ -46,11 +49,11 @@
   function badgeUrl(id) {
     return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : "";
   }
-  function teamCell(name, id) {
+  function teamCell(name, id, tier) {
     const b = badgeUrl(id);
     return '<td><span class="match-team">' +
       (b ? '<img class="match-logo" src="' + esc(b) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'https://resources.fcbarcelona.pulselive.com/badges/club/40/default.png\'">' : "") +
-      esc(disp(name)) + "</span></td>";
+      esc(disp(name, tier)) + "</span></td>";
   }
 
   function pill(m) {
@@ -64,7 +67,7 @@
     return '<span class="pos-pill other">未开赛</span>';
   }
 
-  function row(m, tierSlug) {
+  function row(m, tier, tierSlug) {
     const playedNow = m.status === "Ended";
     const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
     const key = m.id;   // 缓存 id 已带 "fcb:" 前缀（如 "fcb:cadete:2"）
@@ -72,7 +75,7 @@
     if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
     if (!window.LAMASIA_MATCHES[key]) {
       window.LAMASIA_MATCHES[key] = {
-        source: "fcb", id: m.id, slug: tierSlug,
+        source: "fcb", id: m.id, slug: tierSlug || tier,
         comp: m.comp || "", round: m.round || "",
         start: m.start, date: m.date || "", tbd: m.tbd,
         home: m.home || "", away: m.away || "",
@@ -83,21 +86,21 @@
     return '<tr data-match-key="' + key + '" class="match-row" title="点击查看（官方赛程 · 无阵容详情）">' +
       '<td class="num">' + esc(fmtKick(m)) + "</td>" +
       "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
-      teamCell(m.home, m.homeId) +
+      teamCell(m.home, m.homeId, tier) +
       '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
-      teamCell(m.away, m.awayId) +
+      teamCell(m.away, m.awayId, tier) +
       "<td>" + pill(m) + "</td>" +
       "</tr>";
   }
 
-  function group(title, rows, open, headLabel) {
+  function group(title, rows, open, headLabel, tier, tierSlug) {
     return '<details class="dqd-group"' + (open ? " open" : "") + ">" +
       "<summary><span>" + title + "</span>" +
       '<span class="dqd-side"><span class="dqd-count">' + rows.length + " 场</span>" +
       '<span class="dqd-state"></span></span></summary>' +
       '<div class="dqd-body"><div class="table-wrap"><table class="roster-table">' +
       "<thead><tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th><th>" + headLabel + "</th></tr></thead>" +
-      "<tbody>" + rows.map(row).join("") + "</tbody></table></div></div></details>";
+      "<tbody>" + rows.map(function (m) { return row(m, tier, tierSlug); }).join("") + "</tbody></table></div></div></details>";
   }
 
   function data() {
@@ -118,9 +121,10 @@
                             .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
     const upcoming = matches.filter(function (m) { return m.status === "Not started"; })
                             .sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });
+    const tierSlug = (opts && opts.tierSlug) || tier;
     let html = "";
-    if (played.length)   html += group("🏁 已完场", played, true, "结果");
-    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态");
+    if (played.length)   html += group("🏁 已完场", played, true, "结果", tier, tierSlug);
+    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态", tier, tierSlug);
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
 
     if (opts.statusEl) {

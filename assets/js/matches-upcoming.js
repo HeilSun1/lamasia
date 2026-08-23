@@ -14,6 +14,13 @@
   function now() { return Date.now(); }
   // 官方队徽（本地梯队用）；对手徽章常被防盗链 403 → 失败由 img onerror 隐藏
   function fcbBadge(id) { return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : ""; }
+  /* 官方站本队名 "FC Barcelona A/B" → 按梯队显示「巴萨 U16/U15…」（与赛程区一致） */
+  var FCB_U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "juvenil-b": "U19B" };
+  function dispFcb(name, tier) {
+    var n = String(name || "").trim();
+    if (/^FC Barcelona/.test(n)) return "巴萨 " + (FCB_U_AGE[tier] || "A");
+    return n;
+  }
 
   function collect() {
     const out = [];
@@ -125,17 +132,18 @@
         var t = parseInt(m.start, 10) * 1000;
         if (!t || t < now() - 3600e3) return;
         var key = m.id;   // 缓存 id 已带 "fcb:" 前缀
+        var homeD = dispFcb(m.home, cfg.tier), awayD = dispFcb(m.away, cfg.tier);
         if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
         if (!window.LAMASIA_MATCHES[key]) {
           window.LAMASIA_MATCHES[key] = {
             source: "fcb", id: m.id, slug: cfg.tier, comp: m.comp || "", round: m.round || "",
             start: m.start, date: m.date || "", tbd: m.tbd,
-            home: m.home || "", away: m.away || "", hs: m.hs || "", as: m.as || "", status: m.status,
+            home: homeD, away: awayD, hs: m.hs || "", as: m.as || "", status: m.status,
             venue: m.venue || "", homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId)
           };
         }
         out.push({ team: cfg.team, href: cfg.href, key: key, start: t,
-          comp: m.comp || "", round: m.round || "", home: m.home || "", away: m.away || "",
+          comp: m.comp || "", round: m.round || "", home: homeD, away: awayD,
           homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId), tbd: m.tbd, date: m.date || "" });
       });
     });
