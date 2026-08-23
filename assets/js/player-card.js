@@ -363,6 +363,7 @@
         videosEl.innerHTML = '<div class="pc-vid-loading">正在加载集锦分类…</div>';
         matchVideosHtml(vKey, function (html) {
           videosEl.innerHTML = html || '<div class="pc-vid-none">暂无个人集锦</div>';
+          if (window.VideosUI && window.VideosUI.attachReadAll) window.VideosUI.attachReadAll(videosEl);
         });
       } else {
         videosEl.innerHTML = "";

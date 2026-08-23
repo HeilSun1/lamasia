@@ -9,6 +9,8 @@
 #                   （与抓 Sofascore 同一套技术；YouTube 可能反爬，失败则优雅跳过）
 #     B. 球员集锦   用 YouTube 公开 RSS 订阅流 /feeds/videos.xml?channel_id=…
 #                   拉取集锦频道（默认 @ArsenKveFCB）的最新上传，按球员名+比赛日期匹配
+#     C. 微博集锦   免登录 Edge 无头渲染账号主页（默认董路 1189615035），
+#                   取带视频的帖子，按球员名匹配（李昊炎等；无登录只渲染最近一页，每日积累）
 #   生成 assets/js/dqd-videos-cache.js（window.DQD_VIDEOS_CACHE，
 #   由 match-detail.js / player-card.js 读取）。
 #
@@ -47,10 +49,18 @@ $U19TeamId            = "90128"            # Sofascore 巴萨 U19
 $U18TeamId            = "933330"           # Sofascore 巴萨 U18（Juvenil B）
 $CutoffUnix           = 1780243200         # 只收 2026-06-01 起（与站点数据一致）
 
+# ── 微博视频集锦源 ────────────────────────────────────────────
+# 无登录只能渲染账号主页最近一页（约 8-12 条），本机每日更新每天抓一次、按球员关键词积累；
+# 关键球员（如李昊炎）的视频通常在最新几条内出现。加账号改这里即可。
+$WeiboUids           = @("1189615035")   # 微博账号 UID：董路（中国足球小将）—— 仅抓此账号
+$WeiboChannelLabel   = "董路微博"         # 视频 channel 显示名
+$WeiboPostsPerRun    = 15                # 每账号取最近 N 条视频帖（实际由微博渲染页数决定）
+
 # ── 中文译名变体（同一球员在站点/B站/媒体的中文写法不一致，补进中文段匹配，防漏配） ──
 # key = 球员池键；zh = 额外可匹配的中文段。例：霍尔迪·佩斯克尔，口菐写"佩斯科尔"，另有"帕斯奎尔"写法。
 $ZhAliases = @(
-  @{ key = "local:juvenil-b:jordipesquer"; zh = @("佩斯科尔", "帕斯奎尔") }
+  @{ key = "local:juvenil-b:jordipesquer"; zh = @("佩斯科尔", "帕斯奎尔") },
+  @{ key = "local:cadete-b:lihaoyan"; zh = @("昊炎") }   # 李昊炎：微博常写"昊炎"（省姓）
 )
 
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
@@ -146,7 +156,10 @@ function Test-Word([string]$titleNorm, [string]$t) {
   return [regex]::IsMatch($titleNorm, '\b' + [regex]::Escape($t) + '\b')
 }
 
-# 中文段按「完整段」匹配：前后不能是汉字（避免 克尔 命中 佩斯克尔 内部）
+# 中文段按「完整段」匹配：前后不能是汉字（避免 克尔 命中 佩斯克尔 内部）。
+# 例外：段后紧跟汉字但「段+后续汉字」整词不是池里任一球员的更长的名字时仍算命中——
+# 中文正文常无空格紧贴队名/地点（如「李昊炎拉玛西亚首秀」，拉玛西亚不是球员名），
+# 若一律拒绝会漏配。$script:allZh = 池内全部中文名（含全长），供整词比对。
 function Test-ZhSegment([string]$titleNorm, [string]$part) {
   if (-not $part) { return $false }
   $idx = 0
@@ -154,6 +167,10 @@ function Test-ZhSegment([string]$titleNorm, [string]$part) {
     $before = if ($idx -gt 0) { $titleNorm[$idx - 1] } else { "" }
     $after = if ($idx + $part.Length -lt $titleNorm.Length) { $titleNorm[$idx + $part.Length] } else { "" }
     if (($before -notmatch '[一-鿿]') -and ($after -notmatch '[一-鿿]')) { return $true }
+    if (($before -notmatch '[一-鿿]') -and ($after -match '[一-鿿]') -and $script:allZh) {
+      $wm = [regex]::Match($titleNorm.Substring($idx), '^[一-鿿]+')
+      if ($wm.Success -and $wm.Value.Length -gt $part.Length -and -not $script:allZh.ContainsKey($wm.Value)) { return $true }
+    }
     $idx++
   }
   return $false
@@ -167,11 +184,17 @@ function Chars-Share([string]$x, [string]$y) {
 
 function PlayerScore([string]$titleNorm, $pl, $pool, $partPlayers) {
   $zhP = @($pl.zhParts)
-  # 中文：给定名后紧跟汉字（塞尔吉→塞尔吉奥）→ 标题里是另一个更长名字 → 拒绝
+  # 中文：给定名后紧跟汉字（塞尔吉→塞尔吉奥）→ 标题里是另一个更长名字 → 拒绝。
+  # 但仅当「段+后续汉字」构成池里已知的更长球员名才拒绝（如塞尔吉奥）；
+  # 李昊炎后跟拉玛西亚（不是球员名）则放行，交给 Test-ZhSegment 的整词判定。
   if ($zhP.Count -ge 2 -and $titleNorm.IndexOf($zhP[0]) -ge 0) {
     $gIdx = $titleNorm.IndexOf($zhP[0])
     $gEnd = $gIdx + $zhP[0].Length
-    if ($gEnd -lt $titleNorm.Length -and $titleNorm[$gEnd] -match '[一-鿿]') { return 0 }
+    if ($gEnd -lt $titleNorm.Length -and $titleNorm[$gEnd] -match '[一-鿿]') {
+      $wm = [regex]::Match($titleNorm.Substring($gIdx), '^[一-鿿]+')
+      if (-not $wm.Success -or $wm.Value.Length -le $zhP[0].Length) { return 0 }
+      if ($script:allZh -and $script:allZh.ContainsKey($wm.Value)) { return 0 }
+    }
   }
   # 中文：标题里的「名·姓」对校验——
   #   ① 给定名一致但姓氏不同 → 另一人（哈维·埃斯帕特 ≠ 哈维·卡斯特罗）
@@ -284,8 +307,8 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
       }
     }
   }
-  $dataJs = Read-DataJsPlayers @("juvenil-a", "juvenil-b", "cadete")
-  foreach ($tier in @("juvenil-a", "juvenil-b", "cadete")) {
+  $dataJs = Read-DataJsPlayers @("juvenil-a", "juvenil-b", "cadete", "cadete-b")
+  foreach ($tier in @("juvenil-a", "juvenil-b", "cadete", "cadete-b")) {
     foreach ($p in @($dataJs[$tier])) {
       $pname = [string]$p.name
       if (-not $pname) { continue }
@@ -391,7 +414,15 @@ function Get-YtDom([string]$url, [string]$what, [int]$Budget = 0) {
     $edgeArgs = @("--headless=new", "--disable-gpu", "--no-first-run", "--disable-extensions", "--lang=en-US", "--user-data-dir=$Profile")
     if ($Budget -gt 0) { $edgeArgs += "--virtual-time-budget=$Budget" }
     $edgeArgs += @("--dump-dom", $url)
-    $html = (& $Edge @edgeArgs 2>$null | Out-String)
+    # Edge 输出是 UTF-8 字节流；若不临时切编码，PowerShell 会按控制台代码页（中文 Windows=GBK）
+    # 错误解码，中文文本（微博帖文/标题）会变乱码。捕获后还原。
+    $prevOEnc = [Console]::OutputEncoding
+    try {
+      [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+      $html = (& $Edge @edgeArgs 2>$null | Out-String)
+    } finally {
+      [Console]::OutputEncoding = $prevOEnc
+    }
     $ErrorActionPreference = $prevEAP
     [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
     $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
@@ -640,6 +671,72 @@ function Get-BiliVideoInfo([string]$bvid) {
     }
   }
   return $null
+}
+
+# ── 微博：Edge 无头渲染账号主页取视频帖（免登录；微博访客页只能渲染最近一页，约 8-12 条） ──
+function Get-WeiboPosts([string]$uid) {
+  $posts = @()
+  foreach ($attempt in 1..3) {
+    if ($ScrapeFail -ge 3) { break }
+    $url = "https://m.weibo.cn/u/$uid"
+    $html = Get-YtDom $url "微博账号 $uid" 15000
+    if ($html) {
+      # 按 card-wrap 分块解析（每块一篇帖子；只收带视频 fid 的）
+      $cards = @($html -split '<div class="card-wrap' | Select-Object -Skip 1)
+      foreach ($card in $cards) {
+        $mFid = [regex]::Match($card, 'fid=1034:(\d+)')
+        if (-not $mFid.Success) { continue }
+        $mText = [regex]::Match($card, '<div class="weibo-text"[^>]*>(.*?)</div>', 'Singleline')
+        $text = ""
+        if ($mText.Success) { $text = [regex]::Replace($mText.Groups[1].Value, '<[^>]+>', '').Trim() }
+        if (-not $text) { continue }
+        # 帖内多个 class="time"（可能是 span 或 div）：时长形如 "0:44"，相对时间形如 "2小时前" / "昨天 23:52"
+        $rel = ""; $dur = ""
+        foreach ($tm in [regex]::Matches($card, 'class="time"[^>]*>\s*([^<]{1,24}?)\s*</[^>]+>')) {
+          $c = $tm.Groups[1].Value.Trim()
+          if ($c -match '^\d{1,2}:\d{2}$') { if (-not $dur) { $dur = $c } }
+          elseif (-not $rel) { $rel = $c }
+        }
+        $mThumb = [regex]::Match($card, 'https?://(?:wx|tvax)[12]?\.sinaimg\.cn/[^"''<]+')
+        $thumb = if ($mThumb.Success) { $mThumb.Groups[1].Value -replace '&amp;', '&' } else { "" }
+        $posts += [pscustomobject]@{ fid = $mFid.Groups[1].Value; text = $text; rel = $rel; dur = $dur; thumb = $thumb }
+      }
+      if ($posts.Count) { break }
+    }
+    Start-Sleep -Milliseconds 800
+  }
+  if (-not $posts.Count) { Log "  · 微博 $uid 未取到视频帖（渲染失败或被风控）" }
+  return @($posts)
+}
+
+# 微博相对时间 → UTC DateTime（"刚刚"/"N分钟前"/"N小时前"/"今天 HH:MM"/"昨天 HH:MM"/"MM-DD"）
+function Parse-WeiboTime([string]$rel, $nowLocal) {
+  if (-not $rel) { return $null }
+  $r = $rel.Trim()
+  if ($r -eq "刚刚") { return $nowLocal.ToUniversalTime() }
+  if ($r -match '^(\d+)分钟前$') { return $nowLocal.AddMinutes(-[int]$Matches[1]).ToUniversalTime() }
+  if ($r -match '^(\d+)小时前$') { return $nowLocal.AddHours(-[int]$Matches[1]).ToUniversalTime() }
+  if ($r -match '^今天\s*(\d{1,2}):(\d{2})') { $d = $nowLocal.Date.AddHours([int]$Matches[1]).AddMinutes([int]$Matches[2]); return $d.ToUniversalTime() }
+  if ($r -match '^昨天\s*(\d{1,2}):(\d{2})?') {
+    $d = $nowLocal.Date.AddDays(-1)
+    if ($Matches[1] -and $Matches[2]) { $d = $d.AddHours([int]$Matches[1]).AddMinutes([int]$Matches[2]) }
+    return $d.ToUniversalTime()
+  }
+  if ($r -match '^前天') { return $nowLocal.Date.AddDays(-2).ToUniversalTime() }
+  if ($r -match '^(\d{1,2})-(\d{1,2})(?:\s|$)') {
+    $y = $nowLocal.Year; if ($nowLocal.Month -lt [int]$Matches[1]) { $y-- }   # 跨年
+    return ([datetime]::new($y, [int]$Matches[1], [int]$Matches[2])).ToUniversalTime()
+  }
+  if ($r -match '^(\d{4})-(\d{1,2})-(\d{1,2})') { return ([datetime]::new([int]$Matches[1], [int]$Matches[2], [int]$Matches[3])).ToUniversalTime() }
+  return $null
+}
+
+# 微博视频对象：标准字段 + site="weibo" + 封面 pic（videoId 用完整 fid "1034:xxx"，可直接嵌入 tv/show）
+function New-WeiboVideo($post, [string]$published) {
+  $o = New-Video ("1034:" + [string]$post.fid) ([string]$post.text) $WeiboChannelLabel "" $published ([string]$post.dur)
+  $o | Add-Member -NotePropertyName site -NotePropertyValue "weibo" -Force
+  if ([string]$post.thumb) { $o | Add-Member -NotePropertyName pic -NotePropertyValue ([string]$post.thumb) -Force }
+  return $o
 }
 
 # ── 中文名映射：English(norm) → zh（来自 data.js + 懂球帝 B队名单） ──
@@ -1025,6 +1122,16 @@ foreach ($al in $ZhAliases) {
   }
 }
 $partPlayers = Build-PartIndex $pool
+# 全部中文名集合（含全长）：供 Test-ZhSegment 判定「段后跟的汉字词」是否为更长球员名
+$script:allZh = @{}
+foreach ($pk in @($pool.Keys)) {
+  foreach ($zp in @($pool[$pk].zhParts)) {
+    $k = ([string]$zp) -replace '[^一-鿿]', ''
+    if ($k.Length -ge 2) { $script:allZh[$k] = $true }
+  }
+  $f = ([string]$pool[$pk].zh) -replace '[^一-鿿]', ''
+  if ($f.Length -ge 2) { $script:allZh[$f] = $true }
+}
 Log "  · 匹配池 $($pool.Count) 名球员 / 词元索引 $($partPlayers.Count) 项"
 
 # 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）；
@@ -1157,6 +1264,36 @@ if ($BiliUids.Count) {
   }
 }
 
+# ════════════ B3. 微博账号视频集锦（董路·中国足球小将） ════════════
+# 微博无登录只能渲染最近一页（约 8-12 条），随本机每日更新每天抓一次、按球员关键词积累；
+# 关键球员（如李昊炎）的视频通常在最新几条内出现。非赛程集锦 → feed.players。
+if ($WeiboUids.Count) {
+  Log "  · 微博账号 $($WeiboUids -join ', ')（$WeiboChannelLabel）：抓取最近视频帖"
+  $nowLocal = Get-Date
+  foreach ($uid in $WeiboUids) {
+    $posts = @(Get-WeiboPosts $uid)
+    if (-not $posts.Count) { continue }
+    Log "  · 微博 $uid 取到 $($posts.Count) 条视频帖"
+    $i = 0
+    foreach ($post in $posts) {
+      if ($i -ge $WeiboPostsPerRun) { break }
+      $i++
+      $pubDt = Parse-WeiboTime ([string]$post.rel) $nowLocal
+      if (-not $pubDt) { Log "    · 跳：时间无法解析（$($post.rel)）"; continue }
+      if ($pubDt -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }   # 只收 2026-06-01 起
+      $titleN = Norm ([string]$post.text)
+      $v = New-WeiboVideo $post $pubDt.ToString("yyyy-MM-dd")
+      # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
+      $st = Classify-Video $v $pubDt $titleN $pool $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
+      if ($st.match -or $st.player) {
+        $snip = ([string]$post.text).Substring(0, [Math]::Min(40, ([string]$post.text).Length))
+        Log "    ✓ 微博分类：$snip（$(if ($st.match) {'赛程'} else {'非赛程'})）"
+      }
+    }
+    Start-Sleep -Milliseconds 500
+  }
+}
+
 # ════════════ C. 合并写回 ════════════
 $core = [ordered]@{
   searchedMatches = @($searched.Keys | Sort-Object)
@@ -1218,7 +1355,7 @@ if ($coreJson -eq $oldCoreJson) {
   foreach ($pp in @($core.feed.players.Keys)) {
     foreach ($grp in @($core.feed.players[$pp])) { $feedCount += @($grp.videos).Count }
   }
-  $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：YouTube 搜索/RSS + B站 UP 空间 */`r`nwindow.DQD_VIDEOS_CACHE = $($newCache | ConvertTo-Json -Depth 10);`r`n"
+  $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */`r`nwindow.DQD_VIDEOS_CACHE = $($newCache | ConvertTo-Json -Depth 10);`r`n"
   try {
     [System.IO.File]::WriteAllText($OutFile, $js, $UTF8)
     Log "  ✓ 已写入：$($core.matches.Count) 场比赛、$($core.players.Count) 名球员赛程集锦、$feedCount 条非赛程集锦（本次新增搜索 $($newMatchList.Count) 场）"

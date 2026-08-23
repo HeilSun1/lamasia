@@ -51,8 +51,9 @@
     }
     (Array.isArray(cur[key]) ? cur[key] : []).forEach(function (v) { if (v && v.videoId) push(v.videoId, v); });
     autoList.forEach(function (v) { if (v && v.videoId) push(v.videoId, null); });
-    // B站（国内直连可播放）排在 YouTube 前
-    out.sort(function (x, y) { return (x.site === "bili" ? 0 : 1) - (y.site === "bili" ? 0 : 1); });
+    // 国内直连可播放（B站/微博）排在 YouTube 前
+    var domFirst = function (s) { return (s === "bili" || s === "weibo") ? 0 : 1; };
+    out.sort(function (x, y) { return domFirst(x.site) - domFirst(y.site); });
     return out;
   }
 
@@ -95,26 +96,86 @@
   var YT_THUMB = "https://i.ytimg.com/vi/{id}/hqdefault.jpg";
   var YT_WATCH = "https://www.youtube.com/watch?v={id}";
   var BILI_WATCH = "https://www.bilibili.com/video/{id}";
+  var WEIBO_WATCH = "https://weibo.com/tv/show/{id}";
+
+  /* ═══ 集锦「新更新」红点 + 一键已读（与新闻红点同语义） ═══
+     今天/昨天发布且未点开的视频卡片弹红点，点击该卡即消失并持久化；
+     容器（集锦页/球员卡片/比赛弹窗）可调 VideosUI.attachReadAll(container) 加「一键已读」。 */
+  var VIDREAD_KEY = "lamasia-videos-seen-v1";
+  var vSeen = {};
+  try {
+    var vRaw = localStorage.getItem(VIDREAD_KEY);
+    if (vRaw) { var vParsed = JSON.parse(vRaw); if (vParsed && vParsed.seen) vSeen = vParsed.seen; }
+  } catch (e) { vSeen = {}; }
+  function vSave() {
+    try { localStorage.setItem(VIDREAD_KEY, JSON.stringify({ seen: vSeen })); } catch (e) {}
+  }
+  function vIsNew(published, videoId) {
+    if (!videoId || vSeen[videoId]) return false;
+    var m = String(published || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return false;
+    var d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+    var diff = Math.round((new Date() - d) / 86400000);
+    return diff >= 0 && diff <= 1;
+  }
+  function vDismiss(videoId) {
+    if (!videoId || vSeen[videoId]) return;
+    vSeen[videoId] = true; vSave();
+  }
+  function vMarkAllRead(container) {
+    if (!container) return;
+    var n = 0;
+    Array.prototype.forEach.call(container.querySelectorAll(".vid-card[data-video-id]"), function (c) {
+      var id = c.getAttribute("data-video-id");
+      var dot = c.querySelector(".vid-dot");
+      if (dot) dot.remove();
+      if (id && !vSeen[id]) { vSeen[id] = true; n++; }
+    });
+    if (n) vSave();
+  }
+  function vHasNewIn(container) {
+    if (!container) return false;
+    var has = false;
+    Array.prototype.forEach.call(container.querySelectorAll(".vid-card[data-video-id]"), function (c) {
+      if (c.querySelector(".vid-dot")) has = true;
+    });
+    return has;
+  }
+  function vAttachReadAll(container) {
+    if (!container || !vHasNewIn(container)) return;
+    var bar = document.createElement("button");
+    bar.type = "button";
+    bar.className = "news-readall vid-readall";
+    bar.textContent = "一键已读";
+    bar.title = "标记当前全部集锦视频为已读";
+    bar.addEventListener("click", function () {
+      vMarkAllRead(container);
+      bar.remove();
+    });
+    container.parentNode.insertBefore(bar, container);
+  }
 
   function videoCardHtml(v) {
     var id = esc(v.videoId);
     var dur = fmtDur(v.durationSec);
     var isBili = v.site === "bili";
-    var thumb = isBili ? (v.pic || "") : YT_THUMB.replace("{id}", id);
-    var watch = (isBili ? BILI_WATCH : YT_WATCH).replace("{id}", id);
-    var badge = isBili ? '<span class="vid-badge bili">B站</span>' : '<span class="vid-badge">YT</span>';
+    var isWb = v.site === "weibo";
+    var thumb = (isBili || isWb) ? (v.pic || "") : YT_THUMB.replace("{id}", id);
+    var watch = (isWb ? WEIBO_WATCH : (isBili ? BILI_WATCH : YT_WATCH)).replace("{id}", id);
+    var badge = isBili ? '<span class="vid-badge bili">B站</span>' : (isWb ? '<span class="vid-badge wb">微博</span>' : '<span class="vid-badge">YT</span>');
+    var dotHtml = vIsNew(v.published, v.videoId) ? '<span class="vid-dot" aria-label="新更新"></span>' : "";
     var thumbHtml = thumb
       ? '<img src="' + esc(thumb) + '" alt="' + esc(v.title || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.parentElement.classList.add(\'noimg\')">'
       : '<span class="vid-noimg">▶</span>';
-    return '<div class="vid-card' + (isBili ? " vid-bili" : "") + '" data-video-id="' + id + '" data-video-site="' + (isBili ? "bili" : "yt") + '" title="点击在本站播放">' +
+    return '<div class="vid-card' + (isBili ? " vid-bili" : (isWb ? " vid-wb" : "")) + '" data-video-id="' + id + '" data-video-site="' + (isBili ? "bili" : (isWb ? "weibo" : "yt")) + '" title="点击在本站播放">' +
       '<span class="vid-thumb">' + thumbHtml +
         (dur ? '<span class="vid-dur">' + dur + "</span>" : "") +
-        '<span class="vid-play">▶</span>' + badge +
+        '<span class="vid-play">▶</span>' + badge + dotHtml +
       "</span>" +
       '<span class="vid-title">' + esc(v.title || "视频") + "</span>" +
       '<span class="vid-row">' +
-        '<span class="vid-channel">' + esc(v.channel || (isBili ? "B站" : "YouTube")) + (v.published ? " · " + esc(v.published) : "") + "</span>" +
-        '<a class="vid-ext" href="' + esc(watch) + '" target="_blank" rel="noopener" title="在' + (isBili ? "B站" : "YouTube") + '打开">↗</a>' +
+        '<span class="vid-channel">' + esc(v.channel || (isWb ? "微博" : (isBili ? "B站" : "YouTube"))) + (v.published ? " · " + esc(v.published) : "") + "</span>" +
+        '<a class="vid-ext" href="' + esc(watch) + '" target="_blank" rel="noopener" title="在' + (isWb ? "微博" : (isBili ? "B站" : "YouTube")) + '打开">↗</a>' +
       "</span>" +
     "</div>";
   }
@@ -133,6 +194,9 @@
   function embedSrc(videoId, site) {
     if (site === "bili") {
       return "https://player.bilibili.com/player.html?bvid=" + encodeURIComponent(videoId) + "&page=1&autoplay=1";
+    }
+    if (site === "weibo") {
+      return "https://weibo.com/tv/show/" + encodeURIComponent(videoId);
     }
     return "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId) + "?rel=0&modestbranding=1";
   }
@@ -154,8 +218,9 @@
       });
       document.addEventListener("keydown", function (e) { if (e.key === "Escape") closePlayer(); });
     }
-    var siteLabel = site === "bili" ? "B站" : "YouTube";
-    var watch = (site === "bili" ? BILI_WATCH : YT_WATCH).replace("{id}", encodeURIComponent(videoId));
+    var isWb = site === "weibo";
+    var siteLabel = isWb ? "微博" : (site === "bili" ? "B站" : "YouTube");
+    var watch = (isWb ? WEIBO_WATCH : (site === "bili" ? BILI_WATCH : YT_WATCH)).replace("{id}", encodeURIComponent(videoId));
     playerEl.querySelector(".vid-frame").innerHTML =
       '<iframe src="' + embedSrc(videoId, site) + '" title="集锦" loading="lazy" ' +
       'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -171,13 +236,17 @@
     document.body.style.overflow = "";
   }
 
-  /* 委托点击：↗ 外链不拦截；其余落在 .vid-card 上 → 站内播放 */
+  /* 委托点击：↗ 外链不拦截；其余落在 .vid-card 上 → 站内播放 + 消红点 */
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest(".vid-ext")) return;
     var card = e.target.closest ? e.target.closest(".vid-card") : null;
     if (!card) return;
     e.preventDefault();
-    openPlayer(card.getAttribute("data-video-id"), card.getAttribute("data-video-site") || "yt");
+    var vid = card.getAttribute("data-video-id");
+    var dot = card.querySelector(".vid-dot");
+    if (dot) dot.remove();
+    vDismiss(vid);
+    openPlayer(vid, card.getAttribute("data-video-site") || "yt");
   });
 
   window.VideosUI = {
@@ -186,6 +255,9 @@
     videoCardHtml: videoCardHtml,
     groupHtml: groupHtml,
     openPlayer: openPlayer,
-    closePlayer: closePlayer
+    closePlayer: closePlayer,
+    markAllRead: vMarkAllRead,
+    attachReadAll: vAttachReadAll,
+    vidIsNew: vIsNew
   };
 })();

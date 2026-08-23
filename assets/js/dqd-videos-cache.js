@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-23 09:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-23 09:23 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-23 09:06:18",
+    "updated":  "2026-08-23 09:23:25",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -191,6 +191,33 @@ window.DQD_VIDEOS_CACHE = {
                                                                    ]
                                                     }
                                                 ],
+                                 "local:cadete-b:lihaoyan":  [
+                                                                 {
+                                                                     "date":  "2026-08-22",
+                                                                     "opp":  "",
+                                                                     "label":  "08-22 · 集锦",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "1034:5334863021277283",
+                                                                                        "title":  "昊炎，11号球衣，首发出场！巴萨U15 对萨瓦德尔U16 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-22",
+                                                                                        "durationSec":  "0:13",
+                                                                                        "site":  "weibo"
+                                                                                    },
+                                                                                    {
+                                                                                        "videoId":  "1034:5334873498386470",
+                                                                                        "title":  "现场中国同胞拍到#中国足球小将# 李昊炎拉玛西亚首秀，第一个进球！ 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-22",
+                                                                                        "durationSec":  "0:44",
+                                                                                        "site":  "weibo"
+                                                                                    }
+                                                                                ]
+                                                                 }
+                                                             ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
@@ -206,6 +233,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                               "durationSec":  "461",
                                                                                               "site":  "bili",
                                                                                               "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                                       {
+                                                                           "date":  "2026-08-03",
+                                                                           "opp":  "",
+                                                                           "label":  "08-03 · 训练",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "BV1YKMX6tEEn",
+                                                                                              "title":  "通卡拉训练赛踢伪9",
+                                                                                              "channel":  "13站一直吞我評論",
+                                                                                              "channelId":  "",
+                                                                                              "published":  "2026-08-03",
+                                                                                              "durationSec":  "30",
+                                                                                              "site":  "bili",
+                                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
                                                                                           }
                                                                                       ]
                                                                        },
@@ -246,6 +290,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         ]
                                                                          }
                                                                      ],
+                                 "local:juvenil-a:nicomarcipar":  [
+                                                                      {
+                                                                          "date":  "2026-08-14",
+                                                                          "opp":  "",
+                                                                          "label":  "08-14 · 集锦",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1N8gA62Egh",
+                                                                                             "title":  "巴萨关注目标 布鲁日中锋 尼科洛·特雷索尔迪  集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-14",
+                                                                                             "durationSec":  "236",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/98404e2882cf0f81defa418d33e491e10d4afc28.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
                                  "local:juvenil-b:jordipesquer":  [
                                                                       {
                                                                           "date":  "2026-08-20",
@@ -318,6 +381,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                   ],
                                  "local:juvenil-b:sergimayans":  [
                                                                      {
+                                                                         "date":  "2026-08-11",
+                                                                         "opp":  "",
+                                                                         "label":  "08-11 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1FDuv6bESg",
+                                                                                            "title":  "巴萨 B 队转会目标 桑坦德竞技 19 岁中场 塞尔吉奥·马丁内斯  集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-08-11",
+                                                                                            "durationSec":  "173",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/dc91671e7f470e241a55adc0a74455cf976828f5.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-06-05",
                                                                          "opp":  "",
                                                                          "label":  "06-05 · 集锦",
@@ -335,6 +415,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                     ]
                                                                      }
                                                                  ],
+                                 "sf:b:1457200":  [
+                                                      {
+                                                          "date":  "2026-08-21",
+                                                          "opp":  "",
+                                                          "label":  "08-21 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1cz8i67E2j",
+                                                                             "title":  "巴萨竞技队1-0 CE欧罗巴  阿齐兹破门 ⚽🎯",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-08-21",
+                                                                             "durationSec":  "222",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/a13cea8d1bbeacaafd1182ff9918e6e278138351.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
                                  "sf:b:1542744":  [
                                                       {
                                                           "date":  "2026-08-15",

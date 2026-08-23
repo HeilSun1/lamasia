@@ -238,6 +238,7 @@
   var countEl = document.getElementById("hl-count");
   if (totalP) {
     wrap.innerHTML = html;
+    if (window.VideosUI && window.VideosUI.attachReadAll) window.VideosUI.attachReadAll(wrap);
     if (empty) empty.style.display = "none";
     if (countEl) countEl.textContent = totalP + " 名球员 · " + totalV + " 条视频";
   } else if (empty) {
