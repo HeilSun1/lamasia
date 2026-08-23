@@ -230,8 +230,10 @@
         '<div class="dqd-body">' +
           p.groups.map(function (g) {
             var pre = g.label.indexOf("📹") === 0 ? "" : "⚽ ";
-            return '<details class="md-vids-fold hl-match">' +
-              "<summary>" + pre + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
+            // 分组里含未读新视频 → 分组标题弹红点，展开即知是哪天的
+            var gNew = g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
+            return '<details class="md-vids-fold hl-match"' + (gNew ? ' data-gnew="1"' : "") + ">" +
+              "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + pre + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
               '<div class="md-vids-fold-body"><div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
           }).join("") +
         "</div>" +

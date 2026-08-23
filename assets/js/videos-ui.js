@@ -132,13 +132,33 @@
       if (id && !vSeen[id]) { vSeen[id] = true; n++; }
     });
     if (n) vSave();
-    if (window.requestAnimationFrame) window.requestAnimationFrame(function () { refreshPlayerDots(container); });
-    else refreshPlayerDots(container);
+    if (window.requestAnimationFrame) window.requestAnimationFrame(function () { refreshAllDots(container); });
+    else refreshAllDots(container);
+  }
+  /* 分组红点：该组（md-vids-fold）内还有未读新视频吗，有就保留/补点，没了就消点 */
+  function refreshGroupDot(group) {
+    if (!group) return;
+    var sum = group.querySelector("summary");
+    if (!sum) return;
+    var dot = group.querySelector(".vg-dot");
+    if (group.querySelector(".vid-dot")) {
+      if (!dot) {
+        dot = document.createElement("span");
+        dot.className = "vg-dot";
+        dot.setAttribute("aria-label", "有新集锦");
+        sum.insertBefore(dot, sum.firstChild);
+      }
+    } else if (dot) {
+      dot.remove();
+    }
   }
   /* 该球员名下还有未读新视频吗 → 刷新球员名字红点（点掉视频/一键已读后调用） */
   function refreshPlayerDots(container) {
     if (!container) return;
-    Array.prototype.forEach.call(container.querySelectorAll(".hl-player"), function (player) {
+    var players = [];
+    if (container.classList && container.classList.contains("hl-player")) players.push(container);
+    Array.prototype.forEach.call(container.querySelectorAll(".hl-player"), function (p) { players.push(p); });
+    players.forEach(function (player) {
       var btn = player.querySelector(".hl-name-btn");
       if (!btn) return;
       var stillNew = !!player.querySelector(".vid-dot");
@@ -158,6 +178,17 @@
         if (d) d.remove();
       }
     });
+  }
+  /* 统一刷新：单卡点掉后刷新所在分组+球员红点；容器则全刷 */
+  function refreshAllDots(el) {
+    if (!el) return;
+    if (el.classList && el.classList.contains("vid-card")) {
+      refreshGroupDot(el.closest ? el.closest(".md-vids-fold") : null);
+      refreshPlayerDots(el.closest ? el.closest(".hl-player") : null);
+      return;
+    }
+    Array.prototype.forEach.call(el.querySelectorAll(".md-vids-fold"), refreshGroupDot);
+    refreshPlayerDots(el);
   }
   function vHasNewIn(container) {
     if (!container) return false;
@@ -272,7 +303,7 @@
     var dot = card.querySelector(".vid-dot");
     if (dot) dot.remove();
     vDismiss(vid);
-    refreshPlayerDots(card);
+    refreshAllDots(card);
     openPlayer(vid, card.getAttribute("data-video-site") || "yt");
   });
 

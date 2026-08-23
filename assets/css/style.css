@@ -1211,6 +1211,12 @@ tr.match-row:hover { background: var(--surface-3); }
   border-radius: 50%; background: #ff4d4f; vertical-align: 1px;
   box-shadow: 0 0 0 1px rgba(255, 77, 79, 0.35);
 }
+/* 分组红点：该组（某天/某场）内有未读新集锦 */
+.vg-dot {
+  display: inline-block; width: 8px; height: 8px; margin-right: 6px;
+  border-radius: 50%; background: #ff4d4f; vertical-align: 1px;
+  box-shadow: 0 0 0 1px rgba(255, 77, 79, 0.35);
+}
 /* 集锦「一键已读」按钮条（复用 news-readall 样式，插入容器上方） */
 .vid-readall {
   display: inline-block; margin: 0 0 10px 2px; border: 1px solid var(--border-soft);

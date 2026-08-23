@@ -500,8 +500,11 @@
   /* 单场比赛组折叠块（默认收起，避免很多比赛时展开过高） */
   function matchFold(label, videos) {
     var pre = label.indexOf("📹") === 0 ? "" : "⚽ ";
-    return '<details class="md-vids-fold hl-match">' +
-      "<summary>" + pre + label + ' <span class="vid-count">' + videos.length + "</span></summary>" +
+    var gNew = (window.VideosUI && window.VideosUI.vidIsNew)
+      ? videos.some(function (v) { return window.VideosUI.vidIsNew(v.published, v.videoId); })
+      : false;
+    return '<details class="md-vids-fold hl-match"' + (gNew ? ' data-gnew="1"' : "") + ">" +
+      "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + pre + label + ' <span class="vid-count">' + videos.length + "</span></summary>" +
       '<div class="md-vids-fold-body"><div class="vid-grid">' + videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
   }
 
