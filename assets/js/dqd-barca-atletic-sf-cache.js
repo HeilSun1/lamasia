@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-22 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-23 09:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-22 21:00:37",
+    "updated":  "2026-08-23 09:00:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -357,21 +357,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "185",
                         "value":  "46万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "David Oduro",
-                        "id":  "1457390",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Ghana",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1457390/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-06-12",
-                        "foot":  "左脚",
-                        "height":  "174",
-                        "value":  "20万",
                         "injury":  null
                     },
                     {

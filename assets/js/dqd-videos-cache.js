@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-22 17:07 数据源：YouTube 搜索/RSS + B站 UP 空间 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-23 09:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-22 17:07:20",
+    "updated":  "2026-08-23 09:06:18",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -162,21 +162,6 @@ window.DQD_VIDEOS_CACHE = {
                                                     },
                                                     {
                                                         "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-16",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-08-16",
                                                         "opp":  "",
                                                         "label":  "08-16 · 集锦",
                                                         "videos":  [
@@ -189,8 +174,167 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "durationSec":  ""
                                                                        }
                                                                    ]
+                                                    },
+                                                    {
+                                                        "date":  "2026-08-16",
+                                                        "opp":  "FC Basel",
+                                                        "label":  "vs FC Basel · 08-16",
+                                                        "videos":  [
+                                                                       {
+                                                                           "videoId":  "wVE07sxsR1Y",
+                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
+                                                                           "channel":  "ArsenKveFCB",
+                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                           "published":  "2026-08-16",
+                                                                           "durationSec":  ""
+                                                                       }
+                                                                   ]
                                                     }
                                                 ],
+                                 "local:juvenil-a:ebrimatunkara":  [
+                                                                       {
+                                                                           "date":  "2026-08-19",
+                                                                           "opp":  "",
+                                                                           "label":  "08-19 · 集锦",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "BV1Q48J6nEed",
+                                                                                              "title":  "通卡拉",
+                                                                                              "channel":  "口菐",
+                                                                                              "channelId":  "",
+                                                                                              "published":  "2026-08-19",
+                                                                                              "durationSec":  "461",
+                                                                                              "site":  "bili",
+                                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                                       {
+                                                                           "date":  "2026-07-24",
+                                                                           "opp":  "",
+                                                                           "label":  "07-24 · 个人集锦",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "BV1oCgY6EEWc",
+                                                                                              "title":  "埃布里马·通卡拉 | 个人精彩",
+                                                                                              "channel":  "静静很甜美",
+                                                                                              "channelId":  "",
+                                                                                              "published":  "2026-07-24",
+                                                                                              "durationSec":  "495",
+                                                                                              "site":  "bili",
+                                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/769f45dccdd576cf800d8fb18c2668175e6ecf8d.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       }
+                                                                   ],
+                                 "local:juvenil-a:hamzaabdelkarim":  [
+                                                                         {
+                                                                             "date":  "2026-08-19",
+                                                                             "opp":  "开罗国民",
+                                                                             "label":  "vs 开罗国民 · 08-19",
+                                                                             "videos":  [
+                                                                                            {
+                                                                                                "videoId":  "BV1fhbd68Et2",
+                                                                                                "title":  "哈姆扎VS开罗国民",
+                                                                                                "channel":  "口菐",
+                                                                                                "channelId":  "",
+                                                                                                "published":  "2026-08-19",
+                                                                                                "durationSec":  "86",
+                                                                                                "site":  "bili",
+                                                                                                "pic":  "https://i0.hdslb.com/bfs/archive/04efe4b865c2a745e4f8e9c28a08e0441b2322a0.jpg"
+                                                                                            }
+                                                                                        ]
+                                                                         }
+                                                                     ],
+                                 "local:juvenil-b:jordipesquer":  [
+                                                                      {
+                                                                          "date":  "2026-08-20",
+                                                                          "opp":  "",
+                                                                          "label":  "08-20 · 季前赛/友谊赛",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV11Fbf6EEJg",
+                                                                                             "title":  "巴萨季前赛 佩斯克尔 本场集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-20",
+                                                                                             "durationSec":  "131",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-19",
+                                                                          "opp":  "开罗国民",
+                                                                          "label":  "vs 开罗国民 · 08-19",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1fhbd68Ein",
+                                                                                             "title":  "佩斯科尔VS开罗国民",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-19",
+                                                                                             "durationSec":  "131",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/559d3665c4a5ba950aeda29cb6ed99bc0e291e91.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-16",
+                                                                          "opp":  "巴塞尔",
+                                                                          "label":  "vs 巴塞尔 · 08-16",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1oGbR69EEn",
+                                                                                             "title":  "佩斯科尔VS巴塞尔",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-16",
+                                                                                             "durationSec":  "128",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/b36dc2ab5458b609c67d80342c3d0415f8d26e62.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-06-05",
+                                                                          "opp":  "",
+                                                                          "label":  "06-05 · 集锦",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1Lc7y6cE7T",
+                                                                                             "title":  "拉玛西亚左边卫 乔迪·佩斯克尔 Euro U17 集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-06-05",
+                                                                                             "durationSec":  "251",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5921658f1ae639c740a48976c6b25a14fd8450f4.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
+                                 "local:juvenil-b:sergimayans":  [
+                                                                     {
+                                                                         "date":  "2026-06-05",
+                                                                         "opp":  "",
+                                                                         "label":  "06-05 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1e27y6hEcS",
+                                                                                            "title":  "拉玛西亚左脚中卫 塞尔吉·马扬斯 Euro U17 集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-06-05",
+                                                                                            "durationSec":  "250",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/c4e096db13e14205d00859a012f2b697118dd0fb.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     }
+                                                                 ],
                                  "sf:b:1542744":  [
                                                       {
                                                           "date":  "2026-08-15",
@@ -212,23 +356,6 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:2128084":  [
                                                       {
-                                                          "date":  "2026-08-19",
-                                                          "opp":  "",
-                                                          "label":  "08-19 · 集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1Q48J6nEed",
-                                                                             "title":  "通卡拉",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-08-19",
-                                                                             "durationSec":  "461",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
                                                           "date":  "2026-08-08",
                                                           "opp":  "Udinese",
                                                           "label":  "vs Udinese · 08-08",
@@ -240,42 +367,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-08-08",
                                                                              "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-07-24",
-                                                          "opp":  "",
-                                                          "label":  "07-24 · 个人集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1oCgY6EEWc",
-                                                                             "title":  "埃布里马·通卡拉 | 个人精彩",
-                                                                             "channel":  "静静很甜美",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-07-24",
-                                                                             "durationSec":  "495",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/769f45dccdd576cf800d8fb18c2668175e6ecf8d.jpg"
-                                                                         }
-                                                                     ]
-                                                      }
-                                                  ],
-                                 "sf:b:2268815":  [
-                                                      {
-                                                          "date":  "2026-07-31",
-                                                          "opp":  "",
-                                                          "label":  "07-31 · 个人集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1j4GA6vEpQ",
-                                                                             "title":  "亚历克斯·冈萨雷斯 | Juvenil A | 个人精彩集锦",
-                                                                             "channel":  "静静很甜美",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-07-31",
-                                                                             "durationSec":  "305",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/7c28fde3be0550774290a2b854a6e8e5c5034f7c.jpg"
                                                                          }
                                                                      ]
                                                       }
@@ -310,25 +401,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-08-12",
                                                                                "durationSec":  ""
-                                                                           }
-                                                                       ]
-                                                        }
-                                                    ],
-                                 "sf:u19:2604387":  [
-                                                        {
-                                                            "date":  "2026-07-31",
-                                                            "opp":  "",
-                                                            "label":  "07-31 · 个人集锦",
-                                                            "videos":  [
-                                                                           {
-                                                                               "videoId":  "BV1j4GA6vEpQ",
-                                                                               "title":  "亚历克斯·冈萨雷斯 | Juvenil A | 个人精彩集锦",
-                                                                               "channel":  "静静很甜美",
-                                                                               "channelId":  "",
-                                                                               "published":  "2026-07-31",
-                                                                               "durationSec":  "305",
-                                                                               "site":  "bili",
-                                                                               "pic":  "https://i1.hdslb.com/bfs/archive/7c28fde3be0550774290a2b854a6e8e5c5034f7c.jpg"
                                                                            }
                                                                        ]
                                                         }
