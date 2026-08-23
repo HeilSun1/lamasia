@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-23 11:18 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-23 15:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-23 11:18:32",
+    "updated":  "2026-08-23 15:07:25",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -134,63 +134,6 @@ window.DQD_VIDEOS_CACHE = {
                 },
     "feed":  {
                  "players":  {
-                                 "b:51126194":  [
-                                                    {
-                                                        "date":  "2026-08-19",
-                                                        "opp":  "Al Ahly",
-                                                        "label":  "vs Al Ahly · 08-19",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "r5yjuyhYuRw",
-                                                                           "title":  "Hamza Abdelkarim vs Al Ahly",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-19",
-                                                                           "durationSec":  ""
-                                                                       },
-                                                                       {
-                                                                           "videoId":  "BV1fhbd68Et2",
-                                                                           "title":  "哈姆扎VS开罗国民",
-                                                                           "channel":  "口菐",
-                                                                           "channelId":  "",
-                                                                           "published":  "2026-08-19",
-                                                                           "durationSec":  "86",
-                                                                           "site":  "bili",
-                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/04efe4b865c2a745e4f8e9c28a08e0441b2322a0.jpg"
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-08-16",
-                                                        "opp":  "FC Basel",
-                                                        "label":  "vs FC Basel · 08-16",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "wVE07sxsR1Y",
-                                                                           "title":  "Hamza Abdelkarim vs FC Basel | 16/08/2026 | 2026-2027",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-16",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-08-16",
-                                                        "opp":  "",
-                                                        "label":  "08-16 · 集锦",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "WA-IyOyleG8",
-                                                                           "title":  "⚽️ Hamza Abdelkarim scores against FC Basel",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-08-16",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    }
-                                                ],
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
                                                                      "date":  "2026-08-22",
@@ -455,6 +398,23 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:2128084":  [
                                                       {
+                                                          "date":  "2026-08-19",
+                                                          "opp":  "",
+                                                          "label":  "08-19 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1Q48J6nEed",
+                                                                             "title":  "通卡拉",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-08-19",
+                                                                             "durationSec":  "461",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
                                                           "date":  "2026-08-08",
                                                           "opp":  "Udinese",
                                                           "label":  "vs Udinese · 08-08",
@@ -466,6 +426,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-08-08",
                                                                              "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-08-03",
+                                                          "opp":  "",
+                                                          "label":  "08-03 · 训练",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1YKMX6tEEn",
+                                                                             "title":  "通卡拉训练赛踢伪9",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-08-03",
+                                                                             "durationSec":  "30",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
                                                                          }
                                                                      ]
                                                       }
