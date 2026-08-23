@@ -504,6 +504,7 @@ a:hover { color: #0d54b8; }
 
 /* 周报页：系列合集入口 */
 .weekly-album {
+  position: relative;
   display: flex; align-items: center; gap: 12px;
   padding: 14px 16px; margin-bottom: 14px;
   background: linear-gradient(135deg, var(--barca-blue), #0a3d7a); color: #fff;
@@ -514,6 +515,12 @@ a:hover { color: #0d54b8; }
 .weekly-album__title { font-size: 15px; font-weight: 700; }
 .weekly-album__note { font-size: 12px; opacity: .85; }
 .weekly-album:hover { opacity: .92; }
+/* 合集入口「新更新」红点（右上角） */
+.weekly-album__dot {
+  position: absolute; right: 12px; top: 12px; width: 10px; height: 10px;
+  border-radius: 50%; background: #ff4d4f; border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.35); z-index: 3;
+}
 
 /* 动态聚合：来源徽标 */
 .news-item__src {
@@ -1197,6 +1204,12 @@ tr.match-row:hover { background: var(--surface-3); }
   position: absolute; right: 4px; top: 4px; width: 9px; height: 9px;
   border-radius: 50%; background: #ff4d4f; border: 1.5px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 0 1px rgba(255, 77, 79, 0.4); z-index: 3;
+}
+/* 集锦页球员名字红点（名下有未读新集锦） */
+.hl-name-btn .hl-dot {
+  display: inline-block; width: 8px; height: 8px; margin-left: 5px;
+  border-radius: 50%; background: #ff4d4f; vertical-align: 1px;
+  box-shadow: 0 0 0 1px rgba(255, 77, 79, 0.35);
 }
 /* 集锦「一键已读」按钮条（复用 news-readall 样式，插入容器上方） */
 .vid-readall {

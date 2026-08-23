@@ -132,6 +132,32 @@
       if (id && !vSeen[id]) { vSeen[id] = true; n++; }
     });
     if (n) vSave();
+    if (window.requestAnimationFrame) window.requestAnimationFrame(function () { refreshPlayerDots(container); });
+    else refreshPlayerDots(container);
+  }
+  /* 该球员名下还有未读新视频吗 → 刷新球员名字红点（点掉视频/一键已读后调用） */
+  function refreshPlayerDots(container) {
+    if (!container) return;
+    Array.prototype.forEach.call(container.querySelectorAll(".hl-player"), function (player) {
+      var btn = player.querySelector(".hl-name-btn");
+      if (!btn) return;
+      var stillNew = !!player.querySelector(".vid-dot");
+      if (stillNew) {
+        if (!btn.classList.contains("hl-new")) {
+          btn.classList.add("hl-new");
+          if (!btn.querySelector(".hl-dot")) {
+            var d = document.createElement("span");
+            d.className = "hl-dot";
+            d.setAttribute("aria-label", "有新集锦");
+            btn.appendChild(d);
+          }
+        }
+      } else {
+        btn.classList.remove("hl-new");
+        var d = btn.querySelector(".hl-dot");
+        if (d) d.remove();
+      }
+    });
   }
   function vHasNewIn(container) {
     if (!container) return false;
@@ -246,6 +272,7 @@
     var dot = card.querySelector(".vid-dot");
     if (dot) dot.remove();
     vDismiss(vid);
+    refreshPlayerDots(card);
     openPlayer(vid, card.getAttribute("data-video-site") || "yt");
   });
 

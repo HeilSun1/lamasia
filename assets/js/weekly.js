@@ -59,7 +59,7 @@
   // 合集入口（常驻顶部）；当前页打开，返回键即可回站
   if (album && album.url) {
     html +=
-      '<a class="weekly-album" href="' + esc(album.url) + '" rel="noopener">' +
+      '<a class="weekly-album" data-key="weekly" href="' + esc(album.url) + '" rel="noopener">' +
         '<span class="weekly-album__icon">📚</span>' +
         '<span class="weekly-album__body">' +
           '<span class="weekly-album__title">' + esc(album.title) + '</span>' +
@@ -95,8 +95,12 @@
   function render() {
     el.innerHTML = html;
     if (window.NewsRead) {
-      NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
-      NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));
+      // 合集入口并入红点/一键已读（key=album:weekly，time=updated）
+      var visitItems = items.map(function (n) { return { key: n.id || n.url, time: n.time }; });
+      var allKeys = items.map(function (n) { return n.id || n.url; });
+      if (album && album.updated) { visitItems.push({ key: "album:weekly", time: album.updated }); allKeys.push("album:weekly"); }
+      NewsRead.visit(el, visitItems);
+      NewsRead.attachReadAll(el.closest(".panel"), el, allKeys);
     }
   }
 

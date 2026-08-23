@@ -213,10 +213,16 @@
     html += '<div class="hl-tier-section"><div class="hl-tier-title">' + esc(TIER_LABEL[t]) + "</div>";
     players.forEach(function (p) {
       totalV += p.count;
-      html += '<details class="dqd-group hl-player">' +
+      // 该球员名下是否有未读新集锦 → 名字旁弹红点
+      var hasNew = p.groups.some(function (g) {
+        return g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
+      });
+      html += '<details class="dqd-group hl-player"' + (hasNew ? ' data-new="1"' : "") + ">" +
         "<summary>" +
           '<span class="hl-left">' +
-            '<button class="hl-name-btn" type="button" data-pc-open="' + esc(p.key) + '">' + esc(p.name) + "</button>" +
+            '<button class="hl-name-btn' + (hasNew ? " hl-new" : "") + '" type="button" data-pc-open="' + esc(p.key) + '">' +
+              esc(p.name) + (hasNew ? '<span class="hl-dot" aria-label="有新集锦"></span>' : "") +
+            "</button>" +
             (p.teams.length ? '<span class="hl-tier">' + esc(p.teams.join(" · ")) + "</span>" : "") +
           "</span>" +
           '<span class="dqd-side"><span class="dqd-count">' + p.count + ' 条</span><span class="dqd-state"></span></span>' +
