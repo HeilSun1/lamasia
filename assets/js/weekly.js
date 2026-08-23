@@ -56,10 +56,48 @@
 
   var html = "";
 
+  // 合集红点：自动期号对比（weekly-album-cache.js 由每日更新抓取）；无缓存时用手动 updated 日期兜底
+  var ALBUM_SEEN_KEY = "lamasia-album-seen";
+  var albumNew = false;
+  (function computeAlbumNew() {
+    if (!album) return;
+    var cache = window.WEEKLY_ALBUM_CACHE;
+    if (cache && cache.issue) {
+      var seen = 0;
+      try { seen = parseInt(localStorage.getItem(ALBUM_SEEN_KEY) || "0", 10) || 0; } catch (e) {}
+      albumNew = (parseInt(cache.issue, 10) || 0) > seen;
+      return;
+    }
+    if (album.updated) {   // 兜底：updated 今天/昨天 且未读过
+      var m = String(album.updated).match(/(\d{4})-(\d{2})-(\d{2})/);
+      if (m) {
+        var d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+        var diff = Math.round((new Date() - d) / 86400000);
+        var seenSet = {};
+        try { seenSet = (JSON.parse(localStorage.getItem("lamasia-news-seen-v3") || "{}").seen) || {}; } catch (e) {}
+        albumNew = diff >= 0 && diff <= 1 && !seenSet["album:weekly"];
+      }
+    }
+  })();
+  function dismissAlbum() {
+    albumNew = false;
+    var dot = document.querySelector(".weekly-album__dot");
+    if (dot) dot.remove();
+    var cache = window.WEEKLY_ALBUM_CACHE;
+    try {
+      if (cache && cache.issue) localStorage.setItem(ALBUM_SEEN_KEY, String(parseInt(cache.issue, 10) || 0));
+      var raw = JSON.parse(localStorage.getItem("lamasia-news-seen-v3") || "{}") || {};
+      raw.seen = raw.seen || {};
+      raw.seen["album:weekly"] = true;
+      localStorage.setItem("lamasia-news-seen-v3", JSON.stringify(raw));
+    } catch (e) {}
+  }
+
   // 合集入口（常驻顶部）；当前页打开，返回键即可回站
   if (album && album.url) {
     html +=
       '<a class="weekly-album" data-key="weekly" href="' + esc(album.url) + '" rel="noopener">' +
+        (albumNew ? '<span class="weekly-album__dot" aria-label="新更新"></span>' : "") +
         '<span class="weekly-album__icon">📚</span>' +
         '<span class="weekly-album__body">' +
           '<span class="weekly-album__title">' + esc(album.title) + '</span>' +
@@ -95,12 +133,16 @@
   function render() {
     el.innerHTML = html;
     if (window.NewsRead) {
-      // 合集入口并入红点/一键已读（key=album:weekly，time=updated）
-      var visitItems = items.map(function (n) { return { key: n.id || n.url, time: n.time }; });
-      var allKeys = items.map(function (n) { return n.id || n.url; });
-      if (album && album.updated) { visitItems.push({ key: "album:weekly", time: album.updated }); allKeys.push("album:weekly"); }
-      NewsRead.visit(el, visitItems);
-      NewsRead.attachReadAll(el.closest(".panel"), el, allKeys);
+      NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
+      NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));
+    }
+    // 合集：点击消红点；页面「一键已读」也一并消
+    var albEl = el.querySelector(".weekly-album");
+    if (albEl) {
+      albEl.addEventListener("click", dismissAlbum);
+      var panelEl = el.closest(".panel");
+      var readAllBtn = panelEl && panelEl.querySelector(".news-readall");
+      if (readAllBtn) readAllBtn.addEventListener("click", dismissAlbum);
     }
   }
 

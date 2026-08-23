@@ -78,19 +78,7 @@
     delete sessionNew[k];
   }
 
-  // 点某条 → 记已读并消红点（新闻条目 / 合集入口通用）
-  function bindDismiss(a, k, dotSel) {
-    if (!a || a.getAttribute("data-read-bound")) return;
-    a.setAttribute("data-read-bound", "1");
-    a.addEventListener("click", function () {
-      dismissKey(k);
-      var d = a.querySelector(dotSel);
-      if (d) d.remove();
-    });
-  }
-
-  // 给容器内可见条目补红点；点击该条立即消失并持久化为已读。
-  // 新闻条目 a.news-item[data-key]；合集入口 a.weekly-album[data-key]（key="album:weekly"，time=updated）。
+  // 给容器内可见条目补红点；点击该条立即消失并持久化为已读
   function decorate(container) {
     if (!container) return;
     Array.prototype.forEach.call(container.querySelectorAll("a.news-item[data-key]"), function (a) {
@@ -107,25 +95,16 @@
       } else if (dot) {
         dot.remove();
       }
-      bindDismiss(a, k, ".news-item__dot");
-    });
 
-    var album = container.querySelector("a.weekly-album[data-key]");
-    if (album) {
-      var ak = "album:" + album.getAttribute("data-key");
-      var adot = album.querySelector(".weekly-album__dot");
-      if (isNew(ak)) {
-        if (!adot) {
-          adot = document.createElement("span");
-          adot.className = "weekly-album__dot";
-          adot.setAttribute("aria-label", "新更新");
-          album.appendChild(adot);
-        }
-      } else if (adot) {
-        adot.remove();
+      if (!a.getAttribute("data-read-bound")) {
+        a.setAttribute("data-read-bound", "1");
+        a.addEventListener("click", function () {
+          dismissKey(k);
+          var d = a.querySelector(".news-item__dot");
+          if (d) d.remove();
+        });
       }
-      bindDismiss(album, ak, ".weekly-album__dot");
-    }
+    });
   }
 
   // 页面访问入口：算本次要弹的点，并保持到被点击/一键已读
@@ -148,7 +127,7 @@
     if (changed) save();
     (allKeys || []).forEach(function (k) { if (k) delete sessionNew[k]; });
     if (container) {
-      Array.prototype.forEach.call(container.querySelectorAll(".news-item__dot, .weekly-album__dot"), function (d) { d.remove(); });
+      Array.prototype.forEach.call(container.querySelectorAll(".news-item__dot"), function (d) { d.remove(); });
     }
   }
 
