@@ -1364,40 +1364,4 @@ if ($coreJson -eq $oldCoreJson) {
   }
 }
 
-# ════════════ D. 飞翔的拉杆箱公众号合集缓存（自动检测最新期号 → 合集红点） ════════════
-# Edge 无头渲染公众号合集页，解析最新一期期号（标题「【拉玛西亚新闻202】…」），
-# 写入 assets/js/weekly-album-cache.js；前端据此与「上次已读期号」比较弹红点。
-# 抓取失败则保留旧缓存（周报页可回退到 WEEKLY_ALBUM.updated 手动日期）。
-$WechatAlbumUrl = "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NDY1NzEzMw==&action=getalbum&album_id=1966224830458920962&scene=126#wechat_redirect"
-$AlbumOutFile = Join-Path $Root "assets\js\weekly-album-cache.js"
-
-function Get-WechatAlbumLatest {
-  $html = Get-YtDom $WechatAlbumUrl "飞翔的拉杆箱合集" 15000
-  if (-not $html) { return $null }
-  $m = [regex]::Match($html, 'data-title="(【拉玛西亚新闻#?(\d+)[^"]*)"')
-  if (-not $m.Success) { return $null }
-  return [pscustomobject]@{ issue = $m.Groups[2].Value; title = $m.Groups[1].Value }
-}
-
-$albumInfo = Get-WechatAlbumLatest
-if ($albumInfo -and $albumInfo.issue) {
-  $escTitle = ([string]$albumInfo.title) -replace '"', '\"'
-  $js = "/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 检测飞翔的拉杆箱合集最新一期 */`r`nwindow.WEEKLY_ALBUM_CACHE = { issue: `"$($albumInfo.issue)`", title: `"$escTitle`", checked: `"$(Get-Date -Format 'yyyy-MM-dd')`" };`r`n"
-  $needWrite = $true
-  if (Test-Path $AlbumOutFile) {
-    $oldTxt = [System.IO.File]::ReadAllText($AlbumOutFile, $UTF8)
-    if ($oldTxt -eq $js) { $needWrite = $false }
-  }
-  if ($needWrite) {
-    try {
-      [System.IO.File]::WriteAllText($AlbumOutFile, $js, $UTF8)
-      Log "  ✓ 合集缓存已更新：最新【拉玛西亚新闻$($albumInfo.issue)】"
-    } catch { Log "  ✗ 合集缓存写入失败：$($_.Exception.Message)" }
-  } else {
-    Log "  · 合集缓存无变化（最新仍为新闻$($albumInfo.issue)）"
-  }
-} else {
-  Log "  ✗ 合集抓取失败，保留旧缓存（周报页手动 updated 日期兜底）"
-}
-
 Log "YouTube 集锦更新完成 ✔"
