@@ -49,11 +49,14 @@ if ($LASTEXITCODE -ne 0) {
 & .\scripts\update_u18_sofascore.ps1
 & .\scripts\update_u16_sofascore.ps1
 & .\scripts\update_fcb_youth_schedules.ps1
+& .\scripts\update_fcb_news.ps1
+& .\scripts\update_sport_news.ps1
+& .\scripts\update_md_news.ps1
 & .\scripts\update_youtube.ps1
 & .\scripts\update_weekly_album.ps1
 
 # ── 2. 提交 + 推送缓存改动 ──
-git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-atletic-sf-cache.js assets/js/dqd-barca-atletic-sf-details-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd 2>$null
+git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-atletic-sf-cache.js assets/js/dqd-barca-atletic-sf-details-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/lamasia-official-news-cache.js assets/js/sport-news-cache.js assets/js/md-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd 2>$null
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {
   Log "  缓存无变化，跳过提交"

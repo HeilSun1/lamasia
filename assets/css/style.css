@@ -528,6 +528,11 @@ a:hover { color: #0d54b8; }
 }
 .news-item__src--b { background: var(--barca-blue); color: #fff; }
 .news-item__src--u { background: var(--gold-500); color: #fff; }
+.news-item__src--u18 { background: #7c5cff; color: #fff; }
+.news-item__src--u16 { background: #00a8a8; color: #fff; }
+.news-item__src--f { background: #0d54b8; color: #fff; }
+.news-item__src--s { background: #e2442c; color: #fff; }
+.news-item__src--m { background: #6b3fa0; color: #fff; }
 .news-item__src--w { background: var(--barca-red); color: #fff; }
 
 /* 新闻未读：条目小红点 */

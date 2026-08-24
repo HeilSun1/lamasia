@@ -67,6 +67,27 @@ jobs:
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_u16_news.ps1
 
+      - name: Update official news (fcbarcelona.com)
+        continue-on-error: true   # 官方站可能结构变化/网络不可达；失败不中断
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_fcb_news.ps1
+
+      - name: Update Sport.es news
+        continue-on-error: true
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_sport_news.ps1
+
+      - name: Update Mundo Deportivo news
+        continue-on-error: true
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_md_news.ps1
+
       - name: Update U18 cache (Sofascore)
         continue-on-error: true   # 失败不中断：保证下方提交步骤始终执行
         shell: powershell
@@ -106,7 +127,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # checkout 默认可能停在 detached HEAD，确保回到 main 分支
           if (-not (git symbolic-ref -q HEAD)) { git checkout -B main }
-          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/lamasia-official-news-cache.js assets/js/sport-news-cache.js assets/js/md-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
             Write-Host "No cache changes, skip commit"

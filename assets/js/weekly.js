@@ -2,11 +2,16 @@
    拉玛西亚信息站 · 拉玛西亚周报渲染（动态聚合）
    ─────────────────────────────────────────────────────────────
    数据：
-     window.WEEKLY_ALBUM        —— 公众号「飞翔的拉杆箱」系列合集入口（置顶）
-     window.DQD_BARCA_NEWS      —— 懂球帝 B队 球队资讯（每日更新）
-     window.DQD_U19_NEWS        —— 懂球帝 U19 球队资讯（每日更新）
-     window.WEEKLY_NEWS         —— 手动录入的公众号单篇周报
-   三路动态合并后按时间倒序展示。
+     window.WEEKLY_ALBUM          —— 公众号「飞翔的拉杆箱」系列合集入口（置顶）
+     window.DQD_BARCA_NEWS        —— 懂球帝 B队 球队资讯（每日更新）
+     window.DQD_U19_NEWS          —— 懂球帝 U19 球队资讯（每日更新）
+     window.DQD_U18_NEWS          —— 懂球帝 U18 球队资讯（每日更新）
+     window.DQD_U16_NEWS          —— 懂球帝 U16 球队资讯（每日更新）
+     window.LAMASIA_OFFICIAL_NEWS —— 官方站 B队/一队 新闻（每日更新）
+     window.SPORT_NEWS            —— Sport.es 足球基地（每日更新）
+     window.MD_NEWS               —— Mundo Deportivo La Masia（每日更新）
+     window.WEEKLY_NEWS           —— 手动录入的公众号单篇周报
+   多路动态合并后按时间倒序展示。
    仅用于 weekly.html
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -33,16 +38,30 @@
   var album = window.WEEKLY_ALBUM || null;
   var items = [];
 
+  function pushFrom(cache, label) {
+    var arr = cache && cache.news;
+    if (!arr) return;
+    arr.forEach(function (n) { items.push(withSource(n, label)); });
+  }
+
   // 手动周报（公众号单篇）
   (window.WEEKLY_NEWS || []).forEach(function (n) { items.push(withSource(n, "周报")); });
-  // 懂球帝 B队
-  var barca = window.DQD_BARCA_NEWS && window.DQD_BARCA_NEWS.news;
-  if (barca) barca.forEach(function (n) { items.push(withSource(n, "B队")); });
-  // 懂球帝 U19
-  var u19 = window.DQD_U19_NEWS && window.DQD_U19_NEWS.news;
-  if (u19) u19.forEach(function (n) { items.push(withSource(n, "U19")); });
+  // 懂球帝各梯队
+  pushFrom(window.DQD_BARCA_NEWS, "B队");
+  pushFrom(window.DQD_U19_NEWS, "U19");
+  pushFrom(window.DQD_U18_NEWS, "U18");
+  pushFrom(window.DQD_U16_NEWS, "U16");
+  // 官方站 B队/一队
+  var official = window.LAMASIA_OFFICIAL_NEWS && window.LAMASIA_OFFICIAL_NEWS.news;
+  if (official) {
+    (official.b || []).forEach(function (n) { items.push(withSource(n, "官方·B队")); });
+    (official.first || []).forEach(function (n) { items.push(withSource(n, "官方·一队")); });
+  }
+  // Sport.es / Mundo Deportivo
+  pushFrom(window.SPORT_NEWS, "Sport");
+  pushFrom(window.MD_NEWS, "MD");
 
-  // 按 URL 去重（同一篇新闻可能同时出现在 B队 与 U19 源）
+  // 按 URL 去重（同一篇新闻可能出现在多个源）
   var seen = {};
   items = items.filter(function (n) { if (seen[n.url]) return false; seen[n.url] = true; return true; });
 
@@ -50,7 +69,7 @@
   items.sort(function (a, b) { return String(b.time).localeCompare(String(a.time)); });
 
   if (statusEl) {
-    statusEl.innerHTML = '<span>💾 <b>动态聚合</b>：懂球帝 B队/U19 每日更新 + 公众号「飞翔的拉杆箱」周报。点击标题跳转原文。</span>';
+    statusEl.innerHTML = '<span>💾 <b>动态聚合</b>：懂球帝 B队/U19/U18/U16 + 官方站 + Sport.es + Mundo Deportivo 每日更新 + 公众号周报。点击标题跳转原文。</span>';
     statusEl.style.display = "block";
   }
 
@@ -113,8 +132,9 @@
   }
 
   // 单条渲染
+  var SRC_CLASS = { "B队": "b", "U19": "u", "U18": "u18", "U16": "u16", "官方·B队": "f", "官方·一队": "f", "Sport": "s", "MD": "m", "周报": "w" };
   function itemHtml(n) {
-    var srcClass = n.source === "U19" ? "u" : (n.source === "B队" ? "b" : "w");
+    var srcClass = SRC_CLASS[n.source] || "w";
     var nkey = n.id || n.url;
     return '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
       (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +

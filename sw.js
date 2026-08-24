@@ -6,7 +6,7 @@
    · 静态资源：stale-while-revalidate（先用缓存秒开，后台拉新）
    · 更新：改下方 CACHE 版本号 → 下次打开自动换新缓存
    ============================================================= */
-var CACHE = 'lamasia-v11';
+var CACHE = 'lamasia-v12';
 var PRECACHE = [
     "404.html",
     "assets/css/style.css",
@@ -40,16 +40,20 @@ var PRECACHE = [
     "assets/js/fcb-youth-schedules.js",
     "assets/js/formation.js",
     "assets/js/highlights.js",
+    "assets/js/lamasia-official-news-cache.js",
+    "assets/js/md-news-cache.js",
     "assets/js/manual-photos-hook.js",
     "assets/js/manual-photos.js",
     "assets/js/match-detail.js",
     "assets/js/matches-upcoming.js",
     "assets/js/mobile-nav.js",
     "assets/js/news-read.js",
+    "assets/js/official-news.js",
     "assets/js/page-nav.js",
     "assets/js/player-card.js",
     "assets/js/roster.js",
     "assets/js/search.js",
+    "assets/js/sport-news-cache.js",
     "assets/js/team-tabs.js",
     "assets/js/videos-data.js",
     "assets/js/videos-ui.js",
