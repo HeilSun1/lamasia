@@ -136,6 +136,31 @@ window.DQD_VIDEOS_CACHE = {
                  "players":  {
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
+                                                                     "date":  "2026-08-22",
+                                                                     "opp":  "",
+                                                                     "label":  "08-22 · 集锦",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "1034:5334863021277283",
+                                                                                        "title":  "昊炎，11号球衣，首发出场！巴萨U15 对萨瓦德尔U16 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-22",
+                                                                                        "durationSec":  "0:13",
+                                                                                        "site":  "weibo"
+                                                                                    },
+                                                                                    {
+                                                                                        "videoId":  "1034:5334873498386470",
+                                                                                        "title":  "现场中国同胞拍到#中国足球小将# 李昊炎拉玛西亚首秀，第一个进球！ 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-22",
+                                                                                        "durationSec":  "0:44",
+                                                                                        "site":  "weibo"
+                                                                                    }
+                                                                                ]
+                                                                 },
+                                                                 {
                                                                      "date":  "2026-08-23",
                                                                      "opp":  "",
                                                                      "label":  "08-23 · 集锦",
@@ -244,6 +269,40 @@ window.DQD_VIDEOS_CACHE = {
                                                                       }
                                                                   ],
                                  "local:juvenil-b:jordipesquer":  [
+                                                                      {
+                                                                          "date":  "2026-08-20",
+                                                                          "opp":  "",
+                                                                          "label":  "08-20 · 季前赛/友谊赛",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV11Fbf6EEJg",
+                                                                                             "title":  "巴萨季前赛 佩斯克尔 本场集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-20",
+                                                                                             "durationSec":  "131",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-16",
+                                                                          "opp":  "巴塞尔",
+                                                                          "label":  "vs 巴塞尔 · 08-16",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1oGbR69EEn",
+                                                                                             "title":  "佩斯科尔VS巴塞尔",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-16",
+                                                                                             "durationSec":  "128",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/b36dc2ab5458b609c67d80342c3d0415f8d26e62.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
                                                                       {
                                                                           "date":  "2026-08-23",
                                                                           "opp":  "",
