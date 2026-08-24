@@ -45,7 +45,16 @@
 
   <section class="container" style="padding-top:20px">
 
-    <div class="panel">
+    <nav class="team-tabs" id="team-tabs" data-default="news"
+         data-tt-news="#sec-news"
+         data-tt-roster="#sec-injuries,#sec-roster"
+         data-tt-team="#sec-overview,#sec-schedule,#sec-prevseason,#sec-teaminfo">
+      <button class="tt-tab active" data-tt="news">📰 新闻</button>
+      <button class="tt-tab" data-tt="roster">🎽 球员名单</button>
+      <button class="tt-tab" data-tt="team">🏟 球队信息</button>
+    </nav>
+
+    <div class="panel" id="sec-overview">
       <div class="stats-row">
         <div class="stat-tile"><div class="st-label">联赛级别</div><div class="st-value accent">加泰最高</div><div class="st-note">少年最高组别</div></div>
         <div class="stat-tile"><div class="st-label">2025-26 战绩</div><div class="st-value accent">27胜</div><div class="st-note">1平2负 · 30 轮</div></div>
@@ -110,7 +119,7 @@
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="sec-prevseason">
       <div class="panel-title-row"><h3>🏟 上赛季战绩</h3><a href="../matches.html" style="font-size:13px;font-weight:700">完整逐轮战绩 →</a></div>
       <div class="p-body" style="font-size:14px;color:var(--ink-600)">
         <p>2025-26 赛季 Divisió Honor Cadet G1，30 轮 <b style="color:var(--good)">27 胜 1 平 2 负</b>，仅在对阵 Girona A（1-1、1-2）与 Sant Cugat A（1-2）时丢分。2026-27 赛季主教练由 Àlex Fernández 接任（原执教 U15/Cadete B）。</p>
@@ -162,6 +171,7 @@
   <script src="../assets/js/dqd-u16-news-cache.js"></script>
   <script src="../assets/js/news-read.js"></script>
   <script src="../assets/js/dqd-u16-news.js"></script>
+  <script src="../assets/js/team-tabs.js"></script>
   <script src="../assets/js/match-detail.js"></script>
       <script src="../assets/js/external-links.js"></script>
 <script src="../assets/js/mobile-nav.js"></script>
