@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-24 09:17 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-24 15:05 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-24 09:17:33",
+    "updated":  "2026-08-24 15:05:12",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -136,6 +136,22 @@ window.DQD_VIDEOS_CACHE = {
                  "players":  {
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
+                                                                     "date":  "2026-08-23",
+                                                                     "opp":  "",
+                                                                     "label":  "08-23 · 集锦",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "1034:5335154055643159",
+                                                                                        "title":  "李昊炎3000套球星卡，8月12日起售，随着昨晚昊炎在巴萨首秀中的梅开二度，今天3000套已售罄，感谢大家对昊炎的支持! #中国足球小将# 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-08-23",
+                                                                                        "durationSec":  "0:31",
+                                                                                        "site":  "weibo"
+                                                                                    }
+                                                                                ]
+                                                                 },
+                                                                 {
                                                                      "date":  "2026-08-22",
                                                                      "opp":  "",
                                                                      "label":  "08-22 · 集锦",
@@ -156,22 +172,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         "channelId":  "",
                                                                                         "published":  "2026-08-22",
                                                                                         "durationSec":  "0:44",
-                                                                                        "site":  "weibo"
-                                                                                    }
-                                                                                ]
-                                                                 },
-                                                                 {
-                                                                     "date":  "2026-08-23",
-                                                                     "opp":  "",
-                                                                     "label":  "08-23 · 集锦",
-                                                                     "videos":  [
-                                                                                    {
-                                                                                        "videoId":  "1034:5335154055643159",
-                                                                                        "title":  "李昊炎3000套球星卡，8月12日起售，随着昨晚昊炎在巴萨首秀中的梅开二度，今天3000套已售罄，感谢大家对昊炎的支持! #中国足球小将# 董路的微博视频",
-                                                                                        "channel":  "董路微博",
-                                                                                        "channelId":  "",
-                                                                                        "published":  "2026-08-23",
-                                                                                        "durationSec":  "0:31",
                                                                                         "site":  "weibo"
                                                                                     }
                                                                                 ]
@@ -270,40 +270,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                   ],
                                  "local:juvenil-b:jordipesquer":  [
                                                                       {
-                                                                          "date":  "2026-08-20",
-                                                                          "opp":  "",
-                                                                          "label":  "08-20 · 季前赛/友谊赛",
-                                                                          "videos":  [
-                                                                                         {
-                                                                                             "videoId":  "BV11Fbf6EEJg",
-                                                                                             "title":  "巴萨季前赛 佩斯克尔 本场集锦",
-                                                                                             "channel":  "13站一直吞我評論",
-                                                                                             "channelId":  "",
-                                                                                             "published":  "2026-08-20",
-                                                                                             "durationSec":  "131",
-                                                                                             "site":  "bili",
-                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
-                                                                                         }
-                                                                                     ]
-                                                                      },
-                                                                      {
-                                                                          "date":  "2026-08-16",
-                                                                          "opp":  "巴塞尔",
-                                                                          "label":  "vs 巴塞尔 · 08-16",
-                                                                          "videos":  [
-                                                                                         {
-                                                                                             "videoId":  "BV1oGbR69EEn",
-                                                                                             "title":  "佩斯科尔VS巴塞尔",
-                                                                                             "channel":  "口菐",
-                                                                                             "channelId":  "",
-                                                                                             "published":  "2026-08-16",
-                                                                                             "durationSec":  "128",
-                                                                                             "site":  "bili",
-                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/b36dc2ab5458b609c67d80342c3d0415f8d26e62.jpg"
-                                                                                         }
-                                                                                     ]
-                                                                      },
-                                                                      {
                                                                           "date":  "2026-08-23",
                                                                           "opp":  "",
                                                                           "label":  "08-23 · 季前赛/友谊赛",
@@ -321,6 +287,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       },
                                                                       {
+                                                                          "date":  "2026-08-20",
+                                                                          "opp":  "",
+                                                                          "label":  "08-20 · 季前赛/友谊赛",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV11Fbf6EEJg",
+                                                                                             "title":  "巴萨季前赛 佩斯克尔 本场集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-20",
+                                                                                             "durationSec":  "131",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a74531fd7a6b6a3b47503a491eae0432c5f215e3.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
                                                                           "date":  "2026-08-19",
                                                                           "opp":  "开罗国民",
                                                                           "label":  "vs 开罗国民 · 08-19",
@@ -334,6 +317,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "durationSec":  "131",
                                                                                              "site":  "bili",
                                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/559d3665c4a5ba950aeda29cb6ed99bc0e291e91.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-08-16",
+                                                                          "opp":  "巴塞尔",
+                                                                          "label":  "vs 巴塞尔 · 08-16",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1oGbR69EEn",
+                                                                                             "title":  "佩斯科尔VS巴塞尔",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-16",
+                                                                                             "durationSec":  "128",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/b36dc2ab5458b609c67d80342c3d0415f8d26e62.jpg"
                                                                                          }
                                                                                      ]
                                                                       },
