@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-24 19:22:31 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-24 21:38:16 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-24 19:22:31",
+    "updated":  "2026-08-24 21:38:16",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6226983", "title":  "世体：通卡拉在巴萨竞技友谊赛脚踝受重击，预计伤缺5周",
+            "url":  "https://www.dongqiudi.com/articles/6226983.html", "time":  "2026-08-24 21:07",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/34/280x210/crop/-/rBXRn2qMQgiAbWCPAACcnxFQ-6U940.jpg" },
         {
             "id":  "6213894", "title":  "弗里克：穆帅是我的克星？又不是要踢皇马，还是谈谈埃尔切吧",
             "url":  "https://www.dongqiudi.com/articles/6213894.html", "time":  "2026-08-22 20:08",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6112501", "title":  "每体：阿贾克斯想先租后买托伦茨和法雷，已向巴萨报价",
             "url":  "https://www.dongqiudi.com/articles/6112501.html", "time":  "2026-08-02 15:32",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/8C/280x210/crop/-/rBXRDGpu8ouAHDanAAB4LWvYV10240.jpg" },
-        {
-            "id":  "6110391", "title":  "比西武：我是一个享受踢球的人，会努力争取进入巴萨一线队",
-            "url":  "https://www.dongqiudi.com/articles/6110391.html", "time":  "2026-08-02 01:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/4A/280x210/crop/-/rBXRDGpuJh2ACnHiAAE3GGBhVuQ400.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/8C/280x210/crop/-/rBXRDGpu8ouAHDanAAB4LWvYV10240.jpg" }
     ]
 };

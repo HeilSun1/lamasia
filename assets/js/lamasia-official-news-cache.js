@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-24 19:24:36 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-24 21:41:03 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-24 19:24:36",
+    "updated":  "2026-08-24 21:41:03",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,9 +103,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4565550", "title":  "Recovery session",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565550/recovery-session-after-beating-elche", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/39d9ff63-f3bd-46f7-91e8-d90120f02a75/image00010.jpeg" },
+                "id":  "4565550", "title":  "Gavi injury update",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565550/gavi-injury-update", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/93d99863-62d0-4bdc-b198-712eea55a7af/_MGA8980.jpg" },
+            {
+                "id":  "4565511", "title":  "Debut goal for Adeyemi",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565511/debut-goal-for-adeyemi", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/402b10c8-0487-40ea-9f92-65afeee86ca4/_MGA9241.jpg" },
             {
                 "id":  "4565520", "title":  "Anthony Gordon, instant impact",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565520/anthony-gordon-instant-impact", "time":  "",
@@ -187,16 +191,16 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562719/spotify-camp-nou-comes-alive-for-the-presentation-of-the-202627-barca-squad", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/5c0db7b5-387f-40b0-ba16-bc0acddd1240/_MGA6883.jpg" },
             {
-                "id":  "4561033", "title":  "GAMPER PREVIEW | Barça v Al Ahly",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561033/gamper-preview-fc-barcelona-v-al-ahly", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4561033", "title":  "GAMPER PREVIEW | Barça v Al Ahly",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561033/gamper-preview-fc-barcelona-v-al-ahly", "time":  "",
                 "tag":  "", "img":  "" }
         ]
     }
