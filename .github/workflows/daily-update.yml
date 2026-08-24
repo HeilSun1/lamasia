@@ -5,6 +5,8 @@ name: Daily update caches
 # 触发时间：每天 16:23 UTC（北京时间次日 00:23，避开本机计划任务 09/15/21 点，防 git 撞车）。
 # 注：U18/U16 步骤 continue-on-error —— Sofascore 对运行器 IP 有频率限制，
 #     单个步骤失败不应阻断提交（否则线上永远停在旧数据）。
+# 注：集锦缓存（dqd-videos-cache.js）只由本机计划任务维护（运行器抓不到 data.js/微博，
+#     每次生成的缓存都缺本地球员，会覆盖掉本机完整数据）——不要在本工作流恢复 update_youtube 步骤。
 
 on:
   schedule:
@@ -75,13 +77,6 @@ jobs:
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_fcb_youth_schedules.ps1
 
-      - name: Update YouTube highlights cache
-        continue-on-error: true   # 免 API key（Edge 抓取 + 频道 RSS）；美区运行器可稳定访问 YouTube
-        shell: powershell
-        run: |
-          Set-ExecutionPolicy -Scope Process Bypass -Force
-          & .\scripts\update_youtube.ps1
-
       - name: Update weekly album cache (飞翔的拉杆箱)
         continue-on-error: true   # 公众号合集页可能风控/结构变化；失败不中断
         shell: powershell
@@ -97,7 +92,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # checkout 默认可能停在 detached HEAD，确保回到 main 分支
           if (-not (git symbolic-ref -q HEAD)) { git checkout -B main }
-          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
             Write-Host "No cache changes, skip commit"
