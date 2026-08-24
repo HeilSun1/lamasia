@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-23 17:03 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-24 09:11 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-08-23 17:03:58",
+    "updated":  "2026-08-24 09:11:29",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -328,19 +328,19 @@ window.DQD_BARCA_ATLETIC = {
                                       "team_B_name":  "巴塞罗那竞技",
                                       "team_A_logo":  "https://sd.qunliao.info/fastdfs3/M00/B9/F9/ChOxM1xIEDOAbu7VAAAWn39BUY0523.png",
                                       "team_B_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
-                                      "fs_A":  "",
-                                      "fs_B":  "",
+                                      "fs_A":  "0",
+                                      "fs_B":  "0",
                                       "ps_A":  "",
                                       "ps_B":  "",
                                       "start_play":  "2026-08-23 17:00:00",
                                       "suretime":  "1",
-                                      "status":  "Fixture",
-                                      "playing_time":  "",
+                                      "status":  "Played",
+                                      "playing_time":  "90",
                                       "scheme":  "dongqiudi:///game/54573195",
                                       "round_name":  "",
-                                      "minute":  "",
-                                      "minute_extra":  "",
-                                      "score_color":  "",
+                                      "minute":  "90",
+                                      "minute_extra":  "3",
+                                      "score_color":  "#49c867",
                                       "match_title":  "友谊赛"
                                   },
                                   {

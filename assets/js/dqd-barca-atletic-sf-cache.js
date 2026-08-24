@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-23 15:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-24 09:12 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-23 15:00:40",
+    "updated":  "2026-08-24 09:12:32",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -580,10 +580,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Barcelona Atlètic",
                         "homeId":  "379316",
                         "awayId":  "24343",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -620,7 +620,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16741779",
                         "comp":  "西协乙",
                         "round":  "1",
-                        "start":  "1788706800",
+                        "start":  "1788714000",
                         "home":  "Barcelona Atlètic",
                         "away":  "Naxara CD",
                         "homeId":  "24343",
@@ -1020,6 +1020,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "16742332",
+                        "comp":  "西协乙",
+                        "round":  "28",
+                        "start":  "1806246000",
+                        "home":  "Terrassa FC",
+                        "away":  "Barcelona Atlètic",
+                        "homeId":  "2857",
+                        "awayId":  "24343",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     }
                 ]
 };
