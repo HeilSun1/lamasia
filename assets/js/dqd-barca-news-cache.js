@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-24 21:38:16 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-24 17:57:12 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-24 21:38:16",
+    "updated":  "2026-08-24 17:57:12",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6227404", "title":  "巴萨B队官方：通卡拉左脚踝韧带损伤，预计缺阵六周",
+            "url":  "https://www.dongqiudi.com/articles/6227404.html", "time":  "2026-08-24 22:42",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/69/280x210/crop/-/rBXRn2qMWGCACG7EAA02pkwdptE220.png" },
         {
             "id":  "6226983", "title":  "世体：通卡拉在巴萨竞技友谊赛脚踝受重击，预计伤缺5周",
             "url":  "https://www.dongqiudi.com/articles/6226983.html", "time":  "2026-08-24 21:07",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6113180", "title":  "巴托梅乌：哈姆扎天赋极高，未来会是俱乐部的重要球员",
             "url":  "https://www.dongqiudi.com/articles/6113180.html", "time":  "2026-08-02 19:16",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/F9/280x210/crop/-/rBXRDGpvHGuAElvaAAGa0VHOm1g236.jpg" },
-        {
-            "id":  "6112501", "title":  "每体：阿贾克斯想先租后买托伦茨和法雷，已向巴萨报价",
-            "url":  "https://www.dongqiudi.com/articles/6112501.html", "time":  "2026-08-02 15:32",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/8C/280x210/crop/-/rBXRDGpu8ouAHDanAAB4LWvYV10240.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/F9/280x210/crop/-/rBXRDGpvHGuAElvaAAGa0VHOm1g236.jpg" }
     ]
 };
