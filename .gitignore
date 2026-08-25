@@ -1,5 +1,7 @@
 # 运行日志（每日更新脚本产生，不入库）
 scripts/*.log
+# B站已抓但未收录记录（本地去重状态，不入库）
+scripts/bili-seen.txt
 # 临时文件
 *.tmp
 desktop-backup/

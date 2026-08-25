@@ -36,6 +36,8 @@ $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性
 $BiliUids             = @("470189", "1515150312", "473683296", "1946872922")   # B站 UP主：口菐 /「B站一直吞我评论」/ 473683296 / 1946872922
 $MaxBiliVideos        = 90                 # 每 UP 取最近 N 个 bvid（口菐等日更 UP 发稿多，30 会漏）
 $BiliExtraPages       = 3                  # 空间页 DOM 只渲染最近 ~40 条；再用 arc/search 补抓 pn=2..N 更早投稿（限流则跳过）
+$BiliSeenFile  = Join-Path $PSScriptRoot "bili-seen.txt"   # 已抓过但未收录的 bvid 记录（未配的也记，冷却期后重试）
+$BiliSeenDays  = 7                                          # 未收录投稿冷却天数：期间不再重复抓取
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
 $MaxMatchVideos       = 3                  # 每场保留条数
 $MaxPlayerVideos      = 6                  # 每名球员赛程集锦累积上限
@@ -403,6 +405,17 @@ function Get-RelDays([string]$s) {
   return -1
 }
 
+# 已抓过但未收录的 bvid：冷却期内返回 $true（7 天后重试，兜底新赛程/新球员出现时重新分类）
+function Seen-Fresh([string]$bvid, $seen, [int]$days) {
+  if (-not $seen -or -not $seen.ContainsKey($bvid)) { return $false }
+  try {
+    $d = [datetime]::ParseExact([string]$seen[$bvid], 'yyyy-MM-dd', $null)
+    return (([datetime]::Now.Date) - $d.Date).Days -lt $days
+  } catch {
+    return $true   # 日期解析失败视为 fresh（保守：跳过，避免反复抓）
+  }
+}
+
 # ── Edge 无头抓取 ──────────────────────────────────────────────
 $ScrapeFail = 0
 # Budget>0 时加 --virtual-time-budget（等异步 JS 渲染完，B站 空间页需要；YouTube 搜索结果页不需要）
@@ -600,11 +613,12 @@ function Get-BiliBvids([string]$uid) {
 # B站空间页 DOM 只渲染最近 ~40 条；用 arc/search 分页补抓更早投稿（pn=2..N）。
 # 该接口有频率限制（-799/风控验证页，且为 IP 级：一 UP 失败通常全 IP 失败）。
 # 重试一次不成就判定 IP 被风控，跳过后续所有分页（$script:BiliExtraBlocked），不影响主流程。
-function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap) {
+function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap, $known) {
   if ($script:BiliExtraBlocked) { return @() }
   $extra = @()
   for ($pn = 2; $pn -le $maxPages; $pn++) {
     $got = $false
+    $pageNew = 0   # 本页真正新投稿数（不在已知集合）
     for ($att = 1; $att -le 2; $att++) {
       try {
         $uri = "https://api.bilibili.com/x/space/arc/search?mid=$uid&ps=30&pn=$pn&order=pubdate"
@@ -617,7 +631,10 @@ function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap) {
         if ($res -and $res.code -eq 0 -and $res.data -and $res.data.list -and $res.data.list.vlist) {
           foreach ($v in @($res.data.list.vlist)) {
             $b = [string]$v.bvid
-            if ($b -and $extra -notcontains $b) { $extra += $b }
+            if ($b -and $extra -notcontains $b) {
+              if (-not $known -or -not $known.ContainsKey($b)) { $pageNew++ }   # 只计真正新投稿
+              $extra += $b
+            }
             if ($extra.Count -ge $cap) { break }
           }
           Log "  · B站 UP $uid 分页补抓 pn=$pn 成功（累计 $($extra.Count) 条更早投稿）"
@@ -634,6 +651,10 @@ function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap) {
     if (-not $got) {
       $script:BiliExtraBlocked = $true
       Log "  · B站 分页补抓被风控，本次跳过后续 UP 分页（已抓 $($extra.Count) 条更早投稿）"
+      break
+    }
+    if ($pageNew -eq 0) {   # 该页全部是已收录投稿 → 历史已回填完毕，不再翻更早页
+      Log "  · B站 UP $uid 分页 pn=$pn 无新投稿（历史已回填），提前停止分页"
       break
     }
     if ($extra.Count -ge $cap) { break }
@@ -782,6 +803,25 @@ if ($old) {
     foreach ($p in $old.feed.players.PSObject.Properties) { $oldFeed[$p.Name] = @($p.Value) }
   }
 }
+
+# ── 已知视频 ID 集合（已收录 → B站/RSS/微博 各源跳过重复抓取与分类，仅处理新投稿） ──
+$known = @{}
+foreach ($lst in @($oldMatches.Values) + @($oldPlayers.Values)) {
+  foreach ($v in @($lst)) { if ($v -and $v.videoId) { $known[[string]$v.videoId] = $true } }
+}
+foreach ($lst in @($oldFeed.Values)) {
+  foreach ($g in @($lst)) { foreach ($v in @($g.videos)) { if ($v -and $v.videoId) { $known[[string]$v.videoId] = $true } } }
+}
+Log "  · 已知视频 $($known.Count) 条（已收录，跳过重复抓取）"
+
+# ── 已抓过但未收录的 bvid（未配视频冷却期去重）：每行 bvid<TAB>yyyy-MM-dd ──
+$seenBili = @{}
+if (Test-Path $BiliSeenFile) {
+  foreach ($ln in @(Get-Content $BiliSeenFile -ErrorAction SilentlyContinue)) {
+    if ($ln -match '^([BV0-9a-zA-Z]+)\t(\d{4}-\d{2}-\d{2})') { $seenBili[$Matches[1]] = $Matches[2] }
+  }
+}
+
 # 人工 reSearch 列表（videos-data.js）→ 强制重搜
 $reSearch = @{}
 $vd = Read-CacheJs (Join-Path $Root "assets\js\videos-data.js")
@@ -1197,6 +1237,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
 
   if ($channelIds.Count) {
     # 球员池已在 0.5 段构建（$pool），此处复用
+    $skippedRss = 0   # 已收录跳过计数
     foreach ($cid in $channelIds) {
       Log "  · 频道 $cid 拉取 RSS……"
       $rss = @(Get-ChannelRss $cid)
@@ -1214,6 +1255,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
       if ($pubT -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }
       $titleN = Norm $it.title
       $v = New-Video $it.videoId $it.title $it.channel $it.channelId $it.published ""
+      if ($known.ContainsKey([string]$v.videoId)) { $skippedRss++; continue }   # 已收录，跳过重复分类
       # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
       $st = Classify-Video $v $pubT $titleN $pool $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
       if ($st.match -or $st.player) {
@@ -1221,6 +1263,7 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
       }
     }
     }
+    if ($skippedRss) { Log "  · 油管 RSS 跳过已收录 $skippedRss 条上传（不再重复分类）" }
     # 一次性频道只抓这一次：拉完写进记录文件，下次不再抓
     if ($pendingOneTime.Count) {
       Add-Content $OneTimeDoneFile ($pendingOneTime | ForEach-Object { "youtube:$($_)" })
@@ -1236,11 +1279,17 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
 if ($BiliUids.Count) {
   $allPlayers = $pool   # 全量匹配池（0.5 段构建）
   # （$endedList 已在 B 段开头构建，供全场集锦匹配）
+  $skippedBili = 0      # 已收录跳过计数（避免重复抓元数据/分类）
   Log "  · B站 匹配池：$($allPlayers.Count) 名在队球员 / $($endedList.Count) 场已完赛"
   foreach ($uid in $BiliUids) {
     $bvids = @(Get-BiliBvids $uid)
-    # DOM 只渲染最近 ~40 条，用 arc/search 补抓更早投稿（合并去重；限流失败不影响）
-    $bvids = @(@($bvids) + @(Get-BiliBvidsExtra $uid $BiliExtraPages $MaxBiliVideos) | Select-Object -Unique)
+    # DOM 只渲染最近 ~40 条。主页投稿全部已收录 → 历史已回填，新投稿总在最前，
+    # 无需翻页补抓（省掉限流等待）；等主页出现新投稿再补翻更早页。
+    # 主页抓取失败（空列表）时仍尝试分页兜底，维持旧行为。
+    $mainNew = @($bvids | Where-Object { $_ -and -not $known.ContainsKey($_) -and -not $seenBili.ContainsKey($_) }).Count
+    if ($bvids.Count -eq 0 -or $mainNew -gt 0) {
+      $bvids = @(@($bvids) + @(Get-BiliBvidsExtra $uid $BiliExtraPages $MaxBiliVideos $known) | Select-Object -Unique)
+    }
     $count = [Math]::Min($bvids.Count, $MaxBiliVideos)
     if (-not $count) { continue }
     Log "  · B站 UP $uid：检查最近 $count 条投稿"
@@ -1248,8 +1297,11 @@ if ($BiliUids.Count) {
     foreach ($bvid in $bvids) {
       if ($i -ge $count) { break }
       $i++
+      if ($known.ContainsKey($bvid)) { $skippedBili++; continue }   # 已收录，跳过抓元数据/分类
+      if (Seen-Fresh $bvid $seenBili $BiliSeenDays) { $skippedBili++; continue }   # 近期已抓过但未收录，冷却期内跳过
       $info = Get-BiliVideoInfo $bvid
       if (-not $info) { continue }
+      $seenBili[$bvid] = (Get-Date).ToString("yyyy-MM-dd")   # 抓到了就记 seen（即使未配，冷却期后再重试）
       try { $pubDt = [DateTimeOffset]::FromUnixTimeSeconds([int64]$info.pubdate).UtcDateTime } catch { continue }
       if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
       $titleN = Norm $info.title
@@ -1262,6 +1314,15 @@ if ($BiliUids.Count) {
     }
     Start-Sleep -Milliseconds 500
   }
+  if ($skippedBili) { Log "  · B站 跳过已收录/冷却期内 $skippedBili 条投稿（不再重复抓取）" }
+  # 写回 seen 记录（已匹配的交由 $known 集合处理，不占文件）
+  $seenLines = @()
+  foreach ($k in @($seenBili.Keys)) {
+    if ($known.ContainsKey($k)) { continue }
+    $seenLines += "$k`t$($seenBili[$k])"
+  }
+  if ($seenLines.Count) { Set-Content $BiliSeenFile $seenLines -Encoding UTF8 }
+  elseif (Test-Path $BiliSeenFile) { Remove-Item $BiliSeenFile -Force -ErrorAction SilentlyContinue }
 }
 
 # ════════════ B3. 微博账号视频集锦（董路·中国足球小将） ════════════
@@ -1270,6 +1331,7 @@ if ($BiliUids.Count) {
 if ($WeiboUids.Count) {
   Log "  · 微博账号 $($WeiboUids -join ', ')（$WeiboChannelLabel）：抓取最近视频帖"
   $nowLocal = Get-Date
+  $skippedWeibo = 0   # 已收录跳过计数
   foreach ($uid in $WeiboUids) {
     $posts = @(Get-WeiboPosts $uid)
     if (-not $posts.Count) { continue }
@@ -1283,6 +1345,7 @@ if ($WeiboUids.Count) {
       if ($pubDt -lt [DateTimeOffset]::FromUnixTimeSeconds($CutoffUnix).UtcDateTime) { continue }   # 只收 2026-06-01 起
       $titleN = Norm ([string]$post.text)
       $v = New-WeiboVideo $post $pubDt.ToString("yyyy-MM-dd")
+      if ($known.ContainsKey([string]$v.videoId)) { $skippedWeibo++; continue }   # 已收录，跳过重复分类
       # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
       $st = Classify-Video $v $pubDt $titleN $pool $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
       if ($st.match -or $st.player) {
@@ -1292,6 +1355,7 @@ if ($WeiboUids.Count) {
     }
     Start-Sleep -Milliseconds 500
   }
+  if ($skippedWeibo) { Log "  · 微博 跳过已收录 $skippedWeibo 条帖子（不再重复分类）" }
 }
 
 # ════════════ C. 合并写回 ════════════
