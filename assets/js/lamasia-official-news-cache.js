@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-25 15:04:07 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-25 21:02:52 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-25 15:04:07",
+    "updated":  "2026-08-25 21:02:52",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4566188", "title":  "Second to last session before Spotify Camp Nou league debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566188/second-to-last-session-before-spotify-camp-nou-league-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/5e1a4094-6af5-4e26-a759-9a6c3fb99f72/WhatsApp-Image-2026-08-25-at-12.25.02-3-.jpeg" },
+            {
+                "id":  "4565856", "title":  "When and where to watch Barça v Athletic",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565856/when-and-where-to-watch-fc-barcelona-v-athletic-club", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4565550", "title":  "Gavi injury update",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565550/gavi-injury-update", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/93d99863-62d0-4bdc-b198-712eea55a7af/_MGA8980.jpg" },
@@ -187,10 +195,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562674/hansi-flick-together-we-are-stronger", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/d3392d8e-4826-4d40-b84f-54d317117ba8/_MGA6642.jpg" },
             {
-                "id":  "4562719", "title":  "Stadium comes alive for squad presentation",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562719/spotify-camp-nou-comes-alive-for-the-presentation-of-the-202627-barca-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/5c0db7b5-387f-40b0-ba16-bc0acddd1240/_MGA6883.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -198,6 +202,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4562719", "title":  "Stadium comes alive for squad presentation",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562719/spotify-camp-nou-comes-alive-for-the-presentation-of-the-202627-barca-squad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/5c0db7b5-387f-40b0-ba16-bc0acddd1240/_MGA6883.jpg" },
             {
                 "id":  "4561033", "title":  "GAMPER PREVIEW | Barça v Al Ahly",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561033/gamper-preview-fc-barcelona-v-al-ahly", "time":  "",

@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 15:05:13 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 21:04:22 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-25 15:05:13",
+    "updated":  "2026-08-25 21:04:22",
     "source":  "sport",
-    "count":  36,
+    "count":  37,
     "news":  [
+        {
+            "id":  "133642304", "title":  "Oficial: El Barça renueva a Pedro Villar, el '6' más parecido a Rodri de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-pedro-villar-133642304", "time":  "2026-08-25 12:39",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/531e164f-4e86-4472-8150-02ffd11547f5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133624579", "title":  "Orian Goren, un regreso cantado al 'B' tras una experiencia mágica",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-regreso-cantado-b-133624579", "time":  "2026-08-25 06:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8a4c8a1b-4943-481b-88c4-a807ec1496e5_16-9-aspect-ratio_default_1500222.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8a4c8a1b-4943-481b-88c4-a807ec1496e5_16-9-aspect-ratio_640w_1500222.webp" },
         {
             "id":  "133622553", "title":  "El '9' del futuro impacta en Japón: Exhibición de Destiny Ejiofor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/9-futuro-impacta-japon-exhibicion-133622553", "time":  "2026-08-24 18:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133616896", "title":  "Hugo Garcés deslumbra en la Aqua Hotel Cup: MVP y campeón con el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hugo-garces-deslumbra-aqua-hotel-133616896", "time":  "2026-08-24 15:52",
