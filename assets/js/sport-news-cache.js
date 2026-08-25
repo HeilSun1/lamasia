@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 10:07:48 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 15:05:13 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-25 10:07:48",
+    "updated":  "2026-08-25 15:05:13",
     "source":  "sport",
-    "count":  35,
+    "count":  36,
     "news":  [
+        {
+            "id":  "133624579", "title":  "Orian Goren, un regreso cantado al 'B' tras una experiencia mágica",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-regreso-cantado-b-133624579", "time":  "2026-08-25 06:25",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8a4c8a1b-4943-481b-88c4-a807ec1496e5_16-9-aspect-ratio_default_1500222.webp" },
         {
             "id":  "133622553", "title":  "El '9' del futuro impacta en Japón: Exhibición de Destiny Ejiofor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/9-futuro-impacta-japon-exhibicion-133622553", "time":  "2026-08-24 18:24",
