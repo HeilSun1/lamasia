@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-25 21:04:24 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-25 17:51:39 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-25 21:04:24",
+    "updated":  "2026-08-25 17:51:39",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "title":  "El Barça renueva a Pedro Villar, otro gran talento de la Masia",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "time":  "2026-08-25 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/25/6a8d9d614aa73.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "title":  "Yaakobishvili ya disfruta con el Almería, su nuevo equipo",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "time":  "2026-08-17 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/opinion/20260717/1004207152/cule-sientete-orgulloso.html", "title":  "Culé, siéntete orgulloso",
             "url":  "https://www.mundodeportivo.com/opinion/20260717/1004207152/cule-sientete-orgulloso.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2022/10/06/633e8a7271f29.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/actualidad/20260717/1004207282/portada-mundo-deportivo-viernes-17-julio-2026.html", "title":  "Portada de Mundo Deportivo del viernes 17 de julio de 2026",
-            "url":  "https://www.mundodeportivo.com/actualidad/20260717/1004207282/portada-mundo-deportivo-viernes-17-julio-2026.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/17/6a5956d32bed7.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2022/10/06/633e8a7271f29.jpeg" }
     ]
 };

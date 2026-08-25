@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-25 21:00:47 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-25 17:51:11 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-25 21:00:47",
+    "updated":  "2026-08-25 17:51:11",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6232726", "title":  "官方：巴萨与18岁B队小将比利亚尔续约至2030年",
+            "url":  "https://www.dongqiudi.com/articles/6232726.html", "time":  "2026-08-25 21:53",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/2C/D1/280x210/crop/-/rBXRn2qNncqARqy2AAaHHPyp8Vc192.jpg" },
         {
             "id":  "6227404", "title":  "巴萨B队官方：通卡拉左脚踝韧带损伤，预计缺阵六周",
             "url":  "https://www.dongqiudi.com/articles/6227404.html", "time":  "2026-08-24 22:42",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6118090", "title":  "弗里克谈锋线引援：我们知道必须有所行动，但这也取决于费兰",
             "url":  "https://www.dongqiudi.com/articles/6118090.html", "time":  "2026-08-03 21:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E0/E9/280x210/crop/-/rBXRn2pwnOuAZaPxAAErU6UDjPA842.jpg" },
-        {
-            "id":  "6113180", "title":  "巴托梅乌：哈姆扎天赋极高，未来会是俱乐部的重要球员",
-            "url":  "https://www.dongqiudi.com/articles/6113180.html", "time":  "2026-08-02 19:16",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/F9/280x210/crop/-/rBXRDGpvHGuAElvaAAGa0VHOm1g236.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E0/E9/280x210/crop/-/rBXRn2pwnOuAZaPxAAErU6UDjPA842.jpg" }
     ]
 };
