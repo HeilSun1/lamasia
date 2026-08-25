@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-24 21:39 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-08-25 10:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-08-24 21:39:10",
+    "updated":  "2026-08-25 10:02:53",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -14,6 +14,21 @@ window.DQD_U16_CACHE = {
                   "photo":  ""
               },
     "players":  [
+                    {
+                        "name":  "Ruslan Mba",
+                        "id":  "2128111",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-02-27",
+                        "foot":  "左脚",
+                        "height":  "165",
+                        "value":  "",
+                        "injury":  null
+                    },
                     {
                         "name":  "Paumi Mateos",
                         "id":  "2272366",
@@ -208,9 +223,68 @@ window.DQD_U16_CACHE = {
                         "height":  "",
                         "value":  "",
                         "injury":  null
+                    },
+                    {
+                        "name":  "Pablo Peña",
+                        "id":  "2229083",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2229083/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-25",
+                        "foot":  "右脚",
+                        "height":  "170",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Elyott Andrea Daussy",
+                        "id":  "2690247",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690247/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-13",
+                        "foot":  "左脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Arnau Ribes",
+                        "id":  "2533243",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2533243/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-04-20",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
                     }
                 ],
     "matches":  [
-
+                    {
+                        "id":  "16909657",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "1",
+                        "start":  "1789821012",
+                        "home":  "Barcelona U16",
+                        "away":  "EC Granollers U16",
+                        "homeId":  "933329",
+                        "awayId":  "1213712",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
+                    }
                 ]
 };

@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-24 17:57:58 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 10:07:48 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-24 17:57:58",
+    "updated":  "2026-08-25 10:07:48",
     "source":  "sport",
-    "count":  34,
+    "count":  35,
     "news":  [
+        {
+            "id":  "133622553", "title":  "El '9' del futuro impacta en Japón: Exhibición de Destiny Ejiofor",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/9-futuro-impacta-japon-exhibicion-133622553", "time":  "2026-08-24 18:24",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133616896", "title":  "Hugo Garcés deslumbra en la Aqua Hotel Cup: MVP y campeón con el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hugo-garces-deslumbra-aqua-hotel-133616896", "time":  "2026-08-24 15:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6d3551c5-8943-4275-bec4-ec75d0579c9a_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6d3551c5-8943-4275-bec4-ec75d0579c9a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133551547", "title":  "Golazo de lujo del juvenil Genís Clua",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-golazo-genial-hugo-133551547", "time":  "2026-08-21 21:35",

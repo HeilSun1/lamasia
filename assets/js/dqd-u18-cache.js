@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-24 21:38 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-08-25 10:02 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-08-24 21:38:53",
+    "updated":  "2026-08-25 10:02:16",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -14,21 +14,6 @@ window.DQD_U18_CACHE = {
                   "photo":  ""
               },
     "players":  [
-                    {
-                        "name":  "Ruslan Mba",
-                        "id":  "2128111",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-02-27",
-                        "foot":  "左脚",
-                        "height":  "165",
-                        "value":  "",
-                        "injury":  null
-                    },
                     {
                         "name":  "Byron Mendoza",
                         "id":  "2446943",
@@ -310,36 +295,6 @@ window.DQD_U18_CACHE = {
                         "age":  "16岁",
                         "birthday":  "2010-01-16",
                         "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pablo Peña",
-                        "id":  "2229083",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2229083/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-25",
-                        "foot":  "右脚",
-                        "height":  "170",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Elyott Andrea Daussy",
-                        "id":  "2690247",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690247/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-13",
-                        "foot":  "左脚",
                         "height":  "",
                         "value":  "",
                         "injury":  null
