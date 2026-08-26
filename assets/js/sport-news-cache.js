@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-25 17:51:38 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-26 09:29:04 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-25 17:51:38",
+    "updated":  "2026-08-26 09:29:04",
     "source":  "sport",
     "count":  38,
     "news":  [
         {
             "id":  "133634800", "title":  "Sin Ebrima y con Pesquer: El 1x1 de las 5 joyas blaugranas de la Sub-18",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-pesquer-1x1-5-joyas-133634800", "time":  "2026-08-25 14:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a8e5e589-4fee-413d-bbe0-8e2f78920b71_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-pesquer-1x1-5-joyas-133634800", "time":  "2026-08-25 19:13",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a473701f-9ca8-4838-b03b-47df0483f744_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133642304", "title":  "Oficial: El Barça renueva a Pedro Villar, el '6' más parecido a Rodri de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-pedro-villar-133642304", "time":  "2026-08-25 13:21",
