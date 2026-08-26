@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-26 09:23 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-26 20:01 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-08-26 09:23:59",
+    "updated":  "2026-08-26 20:01:57",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -358,11 +358,37 @@ window.DQD_BARCA_ATLETIC = {
                                       "fs_B":  "",
                                       "ps_A":  "",
                                       "ps_B":  "",
-                                      "start_play":  "2026-08-26 18:00:00",
+                                      "start_play":  "2026-08-26 17:00:00",
                                       "suretime":  "1",
                                       "status":  "Fixture",
                                       "playing_time":  "",
                                       "scheme":  "dongqiudi:///game/54566687",
+                                      "round_name":  "",
+                                      "minute":  "",
+                                      "minute_extra":  "",
+                                      "score_color":  "",
+                                      "match_title":  "友谊赛"
+                                  },
+                                  {
+                                      "match_id":  "54576381",
+                                      "competition_id":  "643",
+                                      "competition_name":  "友谊赛",
+                                      "gameweek":  "",
+                                      "team_A_id":  "50001839",
+                                      "team_B_id":  "50007869",
+                                      "team_A_name":  "巴塞罗那竞技",
+                                      "team_B_name":  "科尔内利亚",
+                                      "team_A_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
+                                      "team_B_logo":  "https://sd.qunliao.info/fastdfs7/M00/9A/BA/rBUBsmarAbOAZhNBAAAWiPYA8KE085.png",
+                                      "fs_A":  "",
+                                      "fs_B":  "",
+                                      "ps_A":  "",
+                                      "ps_B":  "",
+                                      "start_play":  "2026-08-30 08:00:00",
+                                      "suretime":  "1",
+                                      "status":  "Fixture",
+                                      "playing_time":  "",
+                                      "scheme":  "dongqiudi:///game/54576381",
                                       "round_name":  "",
                                       "minute":  "",
                                       "minute_extra":  "",

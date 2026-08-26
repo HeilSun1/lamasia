@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-26 09:26 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-26 20:03 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-26 09:26:10",
+    "updated":  "2026-08-26 20:03:08",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",

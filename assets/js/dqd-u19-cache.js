@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-26 09:26 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-26 20:03 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-26 09:26:48",
+    "updated":  "2026-08-26 20:03:47",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",

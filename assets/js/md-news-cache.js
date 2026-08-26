@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-26 09:29:06 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-26 20:07:52 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-26 09:29:06",
+    "updated":  "2026-08-26 20:07:52",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html", "title":  "El Barça comienza siendo el mejor",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html", "time":  "2026-08-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/19/611e351c318a1.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "title":  "El Barça renueva a Pedro Villar, otro gran talento de la Masia",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "time":  "2026-08-25 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207241/masia-pelota.html", "title":  "La Masia tiene la pelota",
             "url":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207241/masia-pelota.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/16/6a593d3de34c9.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/opinion/20260717/1004207152/cule-sientete-orgulloso.html", "title":  "Culé, siéntete orgulloso",
-            "url":  "https://www.mundodeportivo.com/opinion/20260717/1004207152/cule-sientete-orgulloso.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2022/10/06/633e8a7271f29.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/16/6a593d3de34c9.jpeg" }
     ]
 };

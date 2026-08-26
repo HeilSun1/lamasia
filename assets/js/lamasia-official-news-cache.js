@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-26 09:29:01 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-26 20:06:47 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-26 09:29:01",
+    "updated":  "2026-08-26 20:06:47",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,9 +103,17 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4566822", "title":  "Final preparations ahead of home bow",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566822/final-preparations-ahead-of-first-home-match-at-the-spotify-camp-nou-against-athletic-club", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/284a5fb2-6caf-401f-8679-af42edf7e057/WhatsApp-Image-2026-08-26-at-13.09.59-1-.jpeg" },
+            {
+                "id":  "4566835", "title":  "'The team has a hunger to win'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566835/hansi-flick-the-team-has-a-hunger-to-win", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/89106a1d-5cce-4790-b3fc-bdcfccaa7aaa/_MGA0160.jpg" },
+            {
                 "id":  "4566178", "title":  "Interesting facts about Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566178/five-interesting-facts-about-barca-v-athletic-club", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/1dff740b-e603-4883-a224-5736d5a706d7/lamine-athletic.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/e3c8c410-bfa1-4351-914b-593af9b9162b/lamine-athletic.jpg" },
             {
                 "id":  "4566188", "title":  "Second to last session before Spotify Camp Nou league debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566188/second-to-last-session-before-spotify-camp-nou-league-debut", "time":  "",
@@ -187,14 +195,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563191/seven-players-make-spotify-camp-nou-debuts", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f274d17e-af0c-449a-81cd-dafc5543694d/_MGA7227.jpg" },
             {
-                "id":  "4562822", "title":  "Raphinha, Star Player of the 2026 Gamper",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562822/raphinha-star-player-of-the-2026-gamper", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/f245a862-480a-444e-a4b1-516c43605b60/DAG-117-_M1A1119.jpg" },
-            {
-                "id":  "4562739", "title":  "Barça 2-1 Al Ahly: Gamper stays at home",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562739/fc-barcelona-2-1-al-ahly-gamper-stays-at-home", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/89a25a7d-14b7-4b75-896d-006c2ae8297d/_MGA7316.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -202,6 +202,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4562822", "title":  "Raphinha, Star Player of the 2026 Gamper",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562822/raphinha-star-player-of-the-2026-gamper", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/f245a862-480a-444e-a4b1-516c43605b60/DAG-117-_M1A1119.jpg" },
+            {
+                "id":  "4562739", "title":  "Barça 2-1 Al Ahly: Gamper stays at home",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562739/fc-barcelona-2-1-al-ahly-gamper-stays-at-home", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/89a25a7d-14b7-4b75-896d-006c2ae8297d/_MGA7316.jpg" },
             {
                 "id":  "4562674", "title":  "Flick: 'Together we are stronger'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562674/hansi-flick-together-we-are-stronger", "time":  "",
