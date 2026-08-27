@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-27 15:02:47 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-27 21:00:55 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-27 15:02:47",
+    "updated":  "2026-08-27 21:00:55",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6243395", "title":  "巴萨战毕包大名单：亚马尔领衔，罗德里、巴尔德入选",
+            "url":  "https://www.dongqiudi.com/articles/6243395.html", "time":  "2026-08-27 19:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/33/37/280x210/crop/-/rBXRn2qQGx6AIYNiAAM8nU7pIzw545.jpg" },
         {
             "id":  "6237655", "title":  "普勒滕贝格：巴萨推进签下汉堡16岁小将米卡埃尔-巴扎",
             "url":  "https://www.dongqiudi.com/articles/6237655.html", "time":  "2026-08-26 19:57",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6129374", "title":  "世体：弗里克在寻找费兰离队后方案，奥尔莫、费尔明可打伪九",
             "url":  "https://www.dongqiudi.com/articles/6129374.html", "time":  "2026-08-06 11:25",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/CB/280x210/crop/-/rBXRDGpz_guAWViTAA-deNDQs9E050.jpg" },
-        {
-            "id":  "6119769", "title":  "阿斯：巴萨不执着于签中锋，确信现有进攻阵容足以应对新赛季",
-            "url":  "https://www.dongqiudi.com/articles/6119769.html", "time":  "2026-08-04 10:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E2/C0/280x210/crop/-/rBXRDGpxQ_uAGQdKAAJLxuBPD4g241.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/CB/280x210/crop/-/rBXRDGpz_guAWViTAA-deNDQs9E050.jpg" }
     ]
 };

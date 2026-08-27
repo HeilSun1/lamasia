@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-27 15:06:47 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-27 21:03:26 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-27 15:06:47",
+    "updated":  "2026-08-27 21:03:26",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4567003", "title":  "Rodri in squad for Barça v Athletic",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567003/rodri-in-squad-for-barca-v-athletic", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/9a86950b-c206-4702-adb2-f813ef235c1e/_MGA9555.jpg" },
+            {
+                "id":  "4566445", "title":  "Xavi Espart official first team squad member",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566445/xavi-espart-first-team-squad-member-with-the-number-12-jersey", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/7ede8acb-11e6-4d4f-a2bc-05b58345a109/WhatsApp-Image-2026-08-25-at-19.17.16.jpeg" },
+            {
+                "id":  "4566933", "title":  "Livaković is a new blaugrana player",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566933/dominik-livakovi-is-a-new-blaugrana-player", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" },
+            {
+                "id":  "4566224", "title":  "PREVIEW | Barça v Athletic",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566224/preview-fc-barcelona-v-athletic-club", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4566176", "title":  "Preview of the Champions League draw",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566176/all-you-need-to-know-about-the-uefa-champions-league-draw", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/778ca42b-e004-473c-9959-a1131c7a0c6a/GalaUEFAMillorJugadoradelAny20222023__sgb7879.jpg" },
@@ -175,6 +191,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563908/tommy-marques-moves-to-sc-braga", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f5996be3-c60f-49ba-a821-08343cf09faa/3200X2000-comiat-Tommy-Marque-s.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4564094", "title":  "First session for Rodrigo and Cancelo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564094/rodrigo-and-cancelo-train-at-the-ciutat-esportiva", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/21/1a8b5009-62a4-4e93-9191-83c0ca667a21/WhatsApp-Image-2026-08-21-at-12.31.58-1-.jpeg" },
@@ -190,14 +214,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4562497", "title":  "Cancelo back with Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562497/joao-cancelo-a-culer-until-2029", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/42849139-9fcc-4ca3-896c-8baed45ec666/3200x2000-CANCELO.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4563204", "title":  "Abdelkarim top scorer in preseason",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563204/hamza-abdelkarim-top-scores-for-barca-in-preseason", "time":  "",
