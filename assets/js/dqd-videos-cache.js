@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-24 15:05 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-27 09:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-24 15:05:12",
+    "updated":  "2026-08-27 09:06:13",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -431,23 +431,6 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:2128084":  [
                                                       {
-                                                          "date":  "2026-08-19",
-                                                          "opp":  "",
-                                                          "label":  "08-19 · 集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1Q48J6nEed",
-                                                                             "title":  "通卡拉",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-08-19",
-                                                                             "durationSec":  "461",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/cce257cd1917f69eb7d5bb0838db1bc5839acf82.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
                                                           "date":  "2026-08-08",
                                                           "opp":  "Udinese",
                                                           "label":  "vs Udinese · 08-08",
@@ -459,40 +442,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-08-08",
                                                                              "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-08-03",
-                                                          "opp":  "",
-                                                          "label":  "08-03 · 训练",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1YKMX6tEEn",
-                                                                             "title":  "通卡拉训练赛踢伪9",
-                                                                             "channel":  "13站一直吞我評論",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-08-03",
-                                                                             "durationSec":  "30",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-07-24",
-                                                          "opp":  "",
-                                                          "label":  "07-24 · 个人集锦",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1oCgY6EEWc",
-                                                                             "title":  "埃布里马·通卡拉 | 个人精彩",
-                                                                             "channel":  "静静很甜美",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-07-24",
-                                                                             "durationSec":  "495",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/769f45dccdd576cf800d8fb18c2668175e6ecf8d.jpg"
                                                                          }
                                                                      ]
                                                       }

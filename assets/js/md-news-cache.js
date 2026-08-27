@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-26 21:05:02 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-27 09:04:32 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-26 21:05:02",
+    "updated":  "2026-08-27 09:04:32",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "title":  "Un ex del Barça, refuerzo para volver a Primera",
+            "url":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "time":  "2026-08-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/04/6a48f521a0bcd.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "title":  "Flick confirma la vuelta de Balde pero le mete presión",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "time":  "2026-08-26 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260717/1004207136/camino-15-balones-oro-fabricados-masia.html", "title":  "¿Camino de los 15 Balones de Oro fabricados en La Masia?",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260717/1004207136/camino-15-balones-oro-fabricados-masia.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/08/07/6894be64f0db2.r_d.107-134-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/balonmano/20260717/1004207267/aljus-anzic-lamine-yamal-esloveno-destrono-espana-pudo-barca.html", "title":  "Aljus Anzic, el Lamine Yamal esloveno que destronó a España, pudo ser del Barça",
-            "url":  "https://www.mundodeportivo.com/balonmano/20260717/1004207267/aljus-anzic-lamine-yamal-esloveno-destrono-espana-pudo-barca.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/16/6a592d6f911e1.r_d.551-345-11111.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/08/07/6894be64f0db2.r_d.107-134-0.jpeg" }
     ]
 };

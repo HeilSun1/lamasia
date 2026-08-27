@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-26 21:03:33 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-27 09:04:26 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-26 21:03:33",
+    "updated":  "2026-08-27 09:04:26",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4566176", "title":  "Preview of the Champions League draw",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566176/all-you-need-to-know-about-the-uefa-champions-league-draw", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/778ca42b-e004-473c-9959-a1131c7a0c6a/GalaUEFAMillorJugadoradelAny20222023__sgb7879.jpg" },
+            {
                 "id":  "4566822", "title":  "Final preparations ahead of home bow",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566822/final-preparations-ahead-of-first-home-match-at-the-spotify-camp-nou-against-athletic-club", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/284a5fb2-6caf-401f-8679-af42edf7e057/WhatsApp-Image-2026-08-26-at-13.09.59-1-.jpeg" },
@@ -187,14 +191,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562497/joao-cancelo-a-culer-until-2029", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/42849139-9fcc-4ca3-896c-8baed45ec666/3200x2000-CANCELO.jpg" },
             {
-                "id":  "4563204", "title":  "Abdelkarim top scorer in preseason",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563204/hamza-abdelkarim-top-scores-for-barca-in-preseason", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/9516f3f8-3037-49ec-8b50-0d2c448482ca/DAG-052-_M1A9358.jpg" },
-            {
-                "id":  "4563191", "title":  "Seven Spotify Camp Nou debuts",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563191/seven-players-make-spotify-camp-nou-debuts", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f274d17e-af0c-449a-81cd-dafc5543694d/_MGA7227.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -202,6 +198,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4563204", "title":  "Abdelkarim top scorer in preseason",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563204/hamza-abdelkarim-top-scores-for-barca-in-preseason", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/9516f3f8-3037-49ec-8b50-0d2c448482ca/DAG-052-_M1A9358.jpg" },
+            {
+                "id":  "4563191", "title":  "Seven Spotify Camp Nou debuts",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563191/seven-players-make-spotify-camp-nou-debuts", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f274d17e-af0c-449a-81cd-dafc5543694d/_MGA7227.jpg" },
             {
                 "id":  "4562822", "title":  "Raphinha, Star Player of the 2026 Gamper",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562822/raphinha-star-player-of-the-2026-gamper", "time":  "",

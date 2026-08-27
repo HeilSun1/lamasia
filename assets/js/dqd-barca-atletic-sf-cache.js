@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-26 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-27 09:01 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-26 21:00:58",
+    "updated":  "2026-08-27 09:01:44",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -185,6 +185,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Jesse Bisiwu",
+                        "id":  "1506988",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Belgium",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-22",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "78万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ebrima Tunkara",
                         "id":  "2128084",
                         "pos":  "M",
@@ -218,6 +233,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                                        "status":  "out",
                                        "expected":  "2026年6月"
                                    }
+                    },
+                    {
+                        "name":  "Orian Goren",
+                        "id":  "1973312",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Israel",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-03-15",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
                     },
                     {
                         "name":  "Abdul Aziz Issah",
@@ -319,7 +349,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2488625/image",
                         "age":  "22岁",
                         "birthday":  "2004-01-19",
-                        "foot":  "",
+                        "foot":  "右脚",
                         "height":  "173",
                         "value":  "22万",
                         "injury":  null
@@ -595,6 +625,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Reus FC Reddis",
                         "homeId":  "24343",
                         "awayId":  "486292",
+                        "hs":  "2",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "16931022",
+                        "comp":  "友谊赛",
+                        "round":  "",
+                        "start":  "1787990400",
+                        "home":  "Barcelona Atlètic",
+                        "away":  "UE Cornellà",
+                        "homeId":  "24343",
+                        "awayId":  "167162",
                         "hs":  "",
                         "as":  "",
                         "status":  "Not started",
