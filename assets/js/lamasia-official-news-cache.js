@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-27 21:03:26 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-28 01:11:46 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-27 21:03:26",
+    "updated":  "2026-08-28 01:11:46",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4567875", "title":  "'I liked what I saw'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567875/hansi-flick-i-liked-what-i-saw", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/a214514c-403b-4531-b8e5-821c171721e8/_MGA0601.jpg" },
+            {
+                "id":  "4567837", "title":  "Rodri debuts with a win for Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567837/rodri-debuts-with-a-win-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/e39a5e0a-29bb-4a1f-a857-9746365ada08/DAG-057-_M1A0341.jpg" },
+            {
+                "id":  "4567808", "title":  "First home LaLiga win of season (2-0)",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567808/fc-barcelona-2-0-athletic-club-first-home-laliga-win-of-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d08a219f-1e49-4e98-8a47-9779834e9c63/_MGA0770.jpg" },
+            {
+                "id":  "4567685", "title":  "Barça's opponents in UCL league phase",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567685/fc-barcelona-opponents-in-league-phase-of-champions-league", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d30b8ce2-faee-4e4d-82fd-d255a6790305/web-sorteig.jpg" },
+            {
                 "id":  "4567003", "title":  "Rodri in squad for Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567003/rodri-in-squad-for-barca-v-athletic", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/9a86950b-c206-4702-adb2-f813ef235c1e/_MGA9555.jpg" },
@@ -115,7 +131,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566933/dominik-livakovi-is-a-new-blaugrana-player", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" },
             {
-                "id":  "4566224", "title":  "PREVIEW | Barça v Athletic",
+                "id":  "4566224", "title":  "PREVIEW | Barça v Athletic Club",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566224/preview-fc-barcelona-v-athletic-club", "time":  "",
                 "tag":  "", "img":  "" },
             {
@@ -175,6 +191,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564712/preview-elche-cf-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4564703", "title":  "Final session before La Liga opener",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564703/final-session-before-la-liga-opener", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/22/0e45877f-09f2-4070-b482-914374e7d886/WhatsApp-Image-2026-08-22-at-14.04.16-1-.jpeg" },
@@ -190,14 +214,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4563908", "title":  "Tommy Marqués moves to SC Braga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563908/tommy-marques-moves-to-sc-braga", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f5996be3-c60f-49ba-a821-08343cf09faa/3200X2000-comiat-Tommy-Marque-s.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4564094", "title":  "First session for Rodrigo and Cancelo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564094/rodrigo-and-cancelo-train-at-the-ciutat-esportiva", "time":  "",
