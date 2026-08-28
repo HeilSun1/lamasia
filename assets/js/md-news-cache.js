@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 15:05:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 21:07:56 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-28 15:05:42",
+    "updated":  "2026-08-28 21:07:56",
     "source":  "md",
     "count":  50,
     "news":  [
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "title":  "Espart, la inteligencia al servicio del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "time":  "2026-08-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a909d177cd54.r_d.2023-879-4239.jpeg" },
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a913afa8cc2f.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "title":  "Un ex del Barça, refuerzo para volver a Primera",
             "url":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "time":  "2026-08-26 12:00",

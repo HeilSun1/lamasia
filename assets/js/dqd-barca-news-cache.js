@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-28 15:02:02 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-28 21:02:41 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-28 15:02:02",
+    "updated":  "2026-08-28 21:02:41",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6249196", "title":  "跟队：利瓦科维奇参加巴萨训练，若及时注册可能出战巴列卡诺",
+            "url":  "https://www.dongqiudi.com/articles/6249196.html", "time":  "2026-08-28 19:03",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/36/B7/280x210/crop/-/rBXRDGqRasWAL5M5AAC9YuFMSMc496.jpg" },
         {
             "id":  "6243395", "title":  "巴萨战毕包大名单：亚马尔领衔，罗德里、巴尔德入选",
             "url":  "https://www.dongqiudi.com/articles/6243395.html", "time":  "2026-08-27 19:15",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6129962", "title":  "世体：弗里克看好巴萨3小将，埃斯帕特最有望留队",
             "url":  "https://www.dongqiudi.com/articles/6129962.html", "time":  "2026-08-06 15:01",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EA/3B/280x210/crop/-/rBXRn2p0L5OASLz5AABZcTq08eQ018.jpg" },
-        {
-            "id":  "6129374", "title":  "世体：弗里克在寻找费兰离队后方案，奥尔莫、费尔明可打伪九",
-            "url":  "https://www.dongqiudi.com/articles/6129374.html", "time":  "2026-08-06 11:25",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/CB/280x210/crop/-/rBXRDGpz_guAWViTAA-deNDQs9E050.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EA/3B/280x210/crop/-/rBXRn2p0L5OASLz5AABZcTq08eQ018.jpg" }
     ]
 };
