@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-28 21:07:52 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-28 21:59:43 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-28 21:07:52",
+    "updated":  "2026-08-28 21:59:43",
     "source":  "sport",
     "count":  39,
     "news":  [
         {
             "id":  "133682605", "title":  "Golazo de crack de Bisiwu con el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/golazo-crack-bisiwu-barca-atletic-133682605", "time":  "2026-08-26 19:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d93e625-8105-4b31-acd5-dad9ef7ca3b8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d93e625-8105-4b31-acd5-dad9ef7ca3b8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133634800", "title":  "Sin Ebrima y con Pesquer: El 1x1 de las 5 joyas blaugranas de la Sub-18",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-pesquer-1x1-5-joyas-133634800", "time":  "2026-08-25 19:13",

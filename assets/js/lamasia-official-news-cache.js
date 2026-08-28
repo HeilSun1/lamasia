@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-28 21:06:44 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-28 21:59:41 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-28 21:06:44",
+    "updated":  "2026-08-28 21:59:41",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4568142", "title":  "When and where to watch Barça v Rayo",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568142/when-and-where-to-watch-fc-barcelona-v-rayo-vallecano", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4568175", "title":  "Recovery session",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568175/recovery-day-after-win-at-spotify-camp-nou", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/1dbac71a-936d-4c29-ac63-193a36a91445/WhatsApp-Image-2026-08-28-at-12.50.13.jpeg" },
@@ -191,10 +195,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565259/elche-0-5-fc-barcelona-statement-of-intent", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/35fef44e-cd2e-43f1-84e6-ef80b072c61d/_MGA4974_1.jpg" },
             {
-                "id":  "4565285", "title":  "Special tributes pre-match",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565285/special-tributes-ahead-of-elche-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/ae6811a7-e56f-4dbc-9996-d137e677dbba/_MGA8957.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -202,6 +202,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4565285", "title":  "Special tributes pre-match",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565285/special-tributes-ahead-of-elche-v-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/ae6811a7-e56f-4dbc-9996-d137e677dbba/_MGA8957.jpg" },
             {
                 "id":  "4564872", "title":  "The squad for Elche",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564872/the-squad-for-elche", "time":  "",

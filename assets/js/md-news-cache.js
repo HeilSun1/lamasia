@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 21:07:56 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 21:59:45 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-28 21:07:56",
+    "updated":  "2026-08-28 21:59:45",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "title":  "Ignacio Alabart, nuevo capitán del Barça de hockey patines",
+            "url":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "time":  "2026-08-28 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a91ced9d9dbe.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "title":  "Espart, la inteligencia al servicio del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "time":  "2026-08-28 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/seleccion-espanola/20260718/1004207657/dia-messi-le-metio-cuatro-goles-fuente.html", "title":  "El día que Messi le metió cuatro goles a De la Fuente",
             "url":  "https://www.mundodeportivo.com/seleccion-espanola/20260718/1004207657/dia-messi-le-metio-cuatro-goles-fuente.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/18/6a5accfebd5f8.r_d.1562-1399-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207409/paranormal-coincidencia-messi-lamine-yamal-nombres.html", "title":  "Es paranormal: la coincidencia de Messi y Lamine Yamal con los nombres",
-            "url":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207409/paranormal-coincidencia-messi-lamine-yamal-nombres.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2024/07/18/669907c82628a.r_d.1085-756-0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/18/6a5accfebd5f8.r_d.1562-1399-4000.jpeg" }
     ]
 };
