@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-27 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-28 14:51 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-27 21:01:11",
+    "updated":  "2026-08-28 14:51:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -130,7 +130,7 @@ window.DQD_U19_CACHE = {
                         "age":  "17岁",
                         "birthday":  "2009-01-02",
                         "foot":  "双脚",
-                        "height":  "",
+                        "height":  "180",
                         "value":  "",
                         "injury":  null
                     },
@@ -471,7 +471,7 @@ window.DQD_U19_CACHE = {
                         "comp":  "西青甲 G3",
                         "round":  "9",
                         "start":  "1794153600",
-                        "home":  "UE Sant Andreu",
+                        "home":  "UE Sant Andreu U19",
                         "away":  "Barcelona U19",
                         "homeId":  "24363",
                         "awayId":  "90128",
@@ -697,7 +697,7 @@ window.DQD_U19_CACHE = {
                         "round":  "24",
                         "start":  "1805040000",
                         "home":  "Barcelona U19",
-                        "away":  "UE Sant Andreu",
+                        "away":  "UE Sant Andreu U19",
                         "homeId":  "90128",
                         "awayId":  "24363",
                         "hs":  "",

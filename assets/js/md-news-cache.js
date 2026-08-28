@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 01:11:49 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-28 14:54:27 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-28 01:11:49",
+    "updated":  "2026-08-28 14:54:27",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "title":  "Espart, la inteligencia al servicio del Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "time":  "2026-08-28 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a909d177cd54.r_d.2023-879-4239.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "title":  "Un ex del Barça, refuerzo para volver a Primera",
             "url":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "time":  "2026-08-26 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207409/paranormal-coincidencia-messi-lamine-yamal-nombres.html", "title":  "Es paranormal: la coincidencia de Messi y Lamine Yamal con los nombres",
             "url":  "https://www.mundodeportivo.com/futbol/mundial/20260717/1004207409/paranormal-coincidencia-messi-lamine-yamal-nombres.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2024/07/18/669907c82628a.r_d.1085-756-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260717/1004207136/camino-15-balones-oro-fabricados-masia.html", "title":  "¿Camino de los 15 Balones de Oro fabricados en La Masia?",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260717/1004207136/camino-15-balones-oro-fabricados-masia.html", "time":  "2026-07-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/08/07/6894be64f0db2.r_d.107-134-0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2024/07/18/669907c82628a.r_d.1085-756-0.jpeg" }
     ]
 };
