@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-29 15:06:25 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-29 21:04:07 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-29 15:06:25",
+    "updated":  "2026-08-29 21:04:07",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4568631", "title":  "Dates and times for UEFA CL league phase fixtures confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568631/dates-and-times-for-uefa-cl-league-phase-fixtures-confirmed", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/f2fc2878-c371-4f11-b76a-6b0aeb4e0d09/_MGA5037.jpg" },
+            {
+                "id":  "4568632", "title":  "Preparations for Barça v Rayo under way",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568632/preparations-for-barca-v-rayo-under-way", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/4b790afd-988c-4f26-ab7e-97eceb9564e1/WhatsApp-Image-2026-08-29-at-11.24.04-4-.jpeg" },
+            {
                 "id":  "4568142", "title":  "When and where to watch Barça v Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568142/when-and-where-to-watch-fc-barcelona-v-rayo-vallecano", "time":  "",
                 "tag":  "", "img":  "" },
@@ -187,14 +195,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565520/anthony-gordon-instant-impact", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/3ab3d698-2f2f-4ba3-bc59-fbc315660794/_MGA9134.jpg" },
             {
-                "id":  "4565349", "title":  "Raphinha and Fermín amongst the goals",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565349/raphinha-and-fermin-amongst-the-goals", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/dc175e6f-68d6-49e2-9862-398b3b5bdc12/_MGA4877.jpg" },
-            {
-                "id":  "4565259", "title":  "Statement of intent (0-5)",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565259/elche-0-5-fc-barcelona-statement-of-intent", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/35fef44e-cd2e-43f1-84e6-ef80b072c61d/_MGA4974_1.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -202,6 +202,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4565349", "title":  "Raphinha and Fermín amongst the goals",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565349/raphinha-and-fermin-amongst-the-goals", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/dc175e6f-68d6-49e2-9862-398b3b5bdc12/_MGA4877.jpg" },
+            {
+                "id":  "4565259", "title":  "Statement of intent (0-5)",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565259/elche-0-5-fc-barcelona-statement-of-intent", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/35fef44e-cd2e-43f1-84e6-ef80b072c61d/_MGA4974_1.jpg" },
             {
                 "id":  "4565285", "title":  "Special tributes pre-match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565285/special-tributes-ahead-of-elche-v-barca", "time":  "",

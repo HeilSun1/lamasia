@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-29 15:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-08-29 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-08-29 15:00:23",
+    "updated":  "2026-08-29 21:00:20",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -380,19 +380,19 @@ window.DQD_BARCA_ATLETIC = {
                                       "team_B_name":  "科尔内利亚",
                                       "team_A_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
                                       "team_B_logo":  "https://sd.qunliao.info/fastdfs7/M00/9A/BA/rBUBsmarAbOAZhNBAAAWiPYA8KE085.png",
-                                      "fs_A":  "",
-                                      "fs_B":  "",
+                                      "fs_A":  "1",
+                                      "fs_B":  "2",
                                       "ps_A":  "",
                                       "ps_B":  "",
-                                      "start_play":  "2026-08-29 08:00:00",
+                                      "start_play":  "2026-08-29 08:10:00",
                                       "suretime":  "1",
-                                      "status":  "Fixture",
-                                      "playing_time":  "",
+                                      "status":  "Played",
+                                      "playing_time":  "90",
                                       "scheme":  "dongqiudi:///game/54576381",
                                       "round_name":  "",
-                                      "minute":  "",
-                                      "minute_extra":  "",
-                                      "score_color":  "",
+                                      "minute":  "90",
+                                      "minute_extra":  "5",
+                                      "score_color":  "#1d9ff9",
                                       "match_title":  "友谊赛"
                                   },
                                   {

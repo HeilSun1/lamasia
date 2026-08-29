@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-27 09:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-29 21:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-27 09:06:13",
+    "updated":  "2026-08-29 21:07:07",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -264,6 +264,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "durationSec":  "236",
                                                                                              "site":  "bili",
                                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/98404e2882cf0f81defa418d33e491e10d4afc28.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
+                                 "local:juvenil-a:robertotomas":  [
+                                                                      {
+                                                                          "date":  "2026-08-29",
+                                                                          "opp":  "",
+                                                                          "label":  "08-29 · 季前赛/友谊赛",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV11r4y6TE31",
+                                                                                             "title":  "祖克传射 托马斯建功 I 西班牙 3-0 乌兹别克斯坦 I U18国际友谊赛  🔴",
+                                                                                             "channel":  "口菐",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-08-29",
+                                                                                             "durationSec":  "140",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/4c1fe03d269c9f5902668805e13912b8ec4c5a78.jpg"
                                                                                          }
                                                                                      ]
                                                                       }

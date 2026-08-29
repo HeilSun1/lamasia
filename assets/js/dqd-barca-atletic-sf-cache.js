@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-29 15:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-29 21:02 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-29 15:02:35",
+    "updated":  "2026-08-29 21:02:03",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -617,21 +617,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "isHome":  true
                     },
                     {
-                        "id":  "16931022",
-                        "comp":  "友谊赛",
-                        "round":  "",
-                        "start":  "1787990400",
-                        "home":  "Barcelona Atlètic",
-                        "away":  "UE Cornellà",
-                        "homeId":  "24343",
-                        "awayId":  "167162",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
-                        "isHome":  true
-                    },
-                    {
                         "id":  "16655584",
                         "comp":  "加泰罗尼亚杯",
                         "round":  "29",
@@ -1065,6 +1050,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "16742594",
+                        "comp":  "西协乙",
+                        "round":  "29",
+                        "start":  "1806850800",
+                        "home":  "Barcelona Atlètic",
+                        "away":  "UE Olot",
+                        "homeId":  "24343",
+                        "awayId":  "115059",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };
