@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-29 21:05:29 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-08-29 16:28:13 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-08-29 21:05:29",
+    "updated":  "2026-08-29 16:28:13",
     "source":  "sport",
-    "count":  39,
+    "count":  40,
     "news":  [
+        {
+            "id":  "133761340", "title":  "Los rivales y los horarios del FC Barcelona en la UEFA Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/rivales-horarios-fc-barcelona-uefa-133761340", "time":  "2026-08-29 13:20",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/627801c1-de92-42f4-94dd-a2f4f2892954_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133682605", "title":  "Golazo de crack de Bisiwu con el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/golazo-crack-bisiwu-barca-atletic-133682605", "time":  "2026-08-26 19:10",
