@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-28 21:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-29 09:02 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-28 21:02:41",
+    "updated":  "2026-08-29 09:02:27",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -233,21 +233,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                                        "status":  "out",
                                        "expected":  "2026年6月"
                                    }
-                    },
-                    {
-                        "name":  "Orian Goren",
-                        "id":  "1973312",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Israel",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-03-15",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
                     },
                     {
                         "name":  "Abdul Aziz Issah",

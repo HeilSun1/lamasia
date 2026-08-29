@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-28 21:03 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-29 09:03 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-28 21:03:22",
+    "updated":  "2026-08-29 09:03:12",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -101,6 +101,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-02-20",
                         "foot":  "左脚",
                         "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Orian Goren",
+                        "id":  "1973312",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Israel",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-03-15",
+                        "foot":  "右脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
