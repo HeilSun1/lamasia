@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-30 15:03:59 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-30 21:03:34 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-30 15:03:59",
+    "updated":  "2026-08-30 21:03:34",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4569011", "title":  "'Most important is how we play as a team'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569011/hansi-flick-most-important-is-how-we-play-as-a-team", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/918cbcb4-1215-48bf-a423-1aef795dd66e/_MGA1813.jpg" },
+            {
+                "id":  "4568965", "title":  "Last session ahead of visit of Rayo",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568965/last-session-ahead-of-visit-of-rayo", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/32133cf2-b685-4592-848f-760c59053706/WhatsApp-Image-2026-08-30-at-13.57.02.jpeg" },
+            {
+                "id":  "4568157", "title":  "Four facts ahead of Barça v Rayo",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568157/four-facts-ahead-of-fc-barcelona-v-rayo", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/2111e103-c435-407b-b386-4cced4c770db/rapha-rayo.jpg" },
+            {
                 "id":  "4568488", "title":  "Héctor Fort transferred to Real Sociedad",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568488/hector-fort-transferred-to-real-sociedad", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/886b7ab4-5137-4797-9a2c-fd54eafbdfba/3200X2000-comiat-Hector.jpg" },
@@ -183,6 +195,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566188/second-to-last-session-before-spotify-camp-nou-league-debut", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/5e1a4094-6af5-4e26-a759-9a6c3fb99f72/WhatsApp-Image-2026-08-25-at-12.25.02-3-.jpeg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4565856", "title":  "When and where to watch Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565856/when-and-where-to-watch-fc-barcelona-v-athletic-club", "time":  "",
                 "tag":  "", "img":  "" },
@@ -194,14 +214,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4565511", "title":  "Debut goal for Adeyemi",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565511/debut-goal-for-adeyemi", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/402b10c8-0487-40ea-9f92-65afeee86ca4/_MGA9241.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4565520", "title":  "Anthony Gordon, instant impact",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565520/anthony-gordon-instant-impact", "time":  "",

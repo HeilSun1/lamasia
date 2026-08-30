@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-30 15:04:40 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-30 21:04:40 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-30 15:04:40",
+    "updated":  "2026-08-30 21:04:40",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "title":  "El plan que Flick y el Barça le tienen reservado a Pesquer",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "time":  "2026-08-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a723e2daa11a.r_d.1411-842-4181.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "title":  "Otro sabio prematuro",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "time":  "2026-08-29 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207739/barca-quiere-evitar-caso-dro.html", "title":  "El Barça quiere evitar otro caso Dro",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207739/barca-quiere-evitar-caso-dro.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/02/11/698cccdff2b5a.r_d.3952-2310-1552.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207714/ocho-jugadores-barca-quieren-unir-flick-campeones-mundo.html", "title":  "Los ocho jugadores del Barça que quieren imitar a Flick y ganar un Mundial a Messi",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207714/ocho-jugadores-barca-quieren-unir-flick-campeones-mundo.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/01/6a1d6d759abe7.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/02/11/698cccdff2b5a.r_d.3952-2310-1552.jpeg" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-30 15:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-08-30 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-08-30 15:01:38",
+    "updated":  "2026-08-30 21:01:42",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -180,6 +180,36 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Genís Clua",
+                        "id":  "2722874",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2722874/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-01-02",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Xavi Miràngels",
+                        "id":  "2722893",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2722893/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-07-20",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Baba Kourouma",
                         "id":  "2076894",
                         "pos":  "D",
@@ -296,6 +326,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-04-26",
                         "foot":  "右脚",
                         "height":  "174",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Álvaro Gómez",
+                        "id":  "2722899",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2722899/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-05-15",
+                        "foot":  "右脚",
+                        "height":  "173",
                         "value":  "",
                         "injury":  null
                     },
@@ -486,7 +531,7 @@ window.DQD_U19_CACHE = {
                         "comp":  "西青甲 G3",
                         "round":  "9",
                         "start":  "1794153600",
-                        "home":  "UE Sant Andreu U19",
+                        "home":  "UE Sant Andreu",
                         "away":  "Barcelona U19",
                         "homeId":  "24363",
                         "awayId":  "90128",
@@ -712,7 +757,7 @@ window.DQD_U19_CACHE = {
                         "round":  "24",
                         "start":  "1805040000",
                         "home":  "Barcelona U19",
-                        "away":  "UE Sant Andreu U19",
+                        "away":  "UE Sant Andreu",
                         "homeId":  "90128",
                         "awayId":  "24363",
                         "hs":  "",
