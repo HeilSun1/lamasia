@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-29 21:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-30 15:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-29 21:07:07",
+    "updated":  "2026-08-30 15:06:11",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -91,6 +91,15 @@ window.DQD_VIDEOS_CACHE = {
                                                    "channelId":  "UCHv-uRbzfZd3Ao5JcZS1o0g",
                                                    "published":  "2026-08-15",
                                                    "durationSec":  ""
+                                               },
+                                               {
+                                                   "videoId":  "1034:5337628711780355",
+                                                   "title":  "昨晚比利亚雷尔U19B客场与西班牙人进行一场季前热身赛，#中国足球小将# 凯凯首发左边锋，58分钟被换下场，74分钟又被换上场，出任右后卫。表现不错！ 董路的微博视频",
+                                                   "channel":  "董路微博",
+                                                   "channelId":  "",
+                                                   "published":  "2026-08-30",
+                                                   "durationSec":  "1:26",
+                                                   "site":  "weibo"
                                                }
                                            ],
                     "sofascore:16844411":  [
