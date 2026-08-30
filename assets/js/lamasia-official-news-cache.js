@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-29 16:28:11 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-30 09:04:38 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-29 16:28:11",
+    "updated":  "2026-08-30 09:04:38",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4568488", "title":  "Héctor Fort transferred to Real Sociedad",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568488/hector-fort-transferred-to-real-sociedad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/886b7ab4-5137-4797-9a2c-fd54eafbdfba/3200X2000-comiat-Hector.jpg" },
+            {
                 "id":  "4568631", "title":  "Dates and times for UEFA CL league phase fixtures confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568631/dates-and-times-for-uefa-cl-league-phase-fixtures-confirmed", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/f2fc2878-c371-4f11-b76a-6b0aeb4e0d09/_MGA5037.jpg" },
@@ -191,10 +195,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565511/debut-goal-for-adeyemi", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/402b10c8-0487-40ea-9f92-65afeee86ca4/_MGA9241.jpg" },
             {
-                "id":  "4565520", "title":  "Anthony Gordon, instant impact",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565520/anthony-gordon-instant-impact", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/3ab3d698-2f2f-4ba3-bc59-fbc315660794/_MGA9134.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -202,6 +202,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4565520", "title":  "Anthony Gordon, instant impact",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565520/anthony-gordon-instant-impact", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/3ab3d698-2f2f-4ba3-bc59-fbc315660794/_MGA9134.jpg" },
             {
                 "id":  "4565349", "title":  "Raphinha and Fermín amongst the goals",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565349/raphinha-and-fermin-amongst-the-goals", "time":  "",
