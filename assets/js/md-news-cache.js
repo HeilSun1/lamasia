@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-30 16:28:08 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-08-31 22:14:31 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-08-30 16:28:08",
+    "updated":  "2026-08-31 22:14:31",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "title":  "El talento alemán Mirza Catovic llegará cedido al Barça Atlètic",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "time":  "2026-08-31 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a955b0f9285f.r_d.850-606-7500.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "title":  "La Masia deja un pastizal en ingresos en este 2026",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "time":  "2026-08-31 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/21/6a886001b6900.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "title":  "El plan que Flick y el Barça le tienen reservado a Pesquer",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "time":  "2026-08-30 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207864/emocionante-video-barca-messi-lamine-yamal-final-pasa-masia.html", "title":  "El emocionante vídeo del Barça con Messi y Lamine Yamal: La final pasa por La Masia",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207864/emocionante-video-barca-messi-lamine-yamal-final-pasa-masia.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/18/6a5bb0a588b20.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207792/barca-saca-pecho-gran-final-domingo.html", "title":  "El Barça saca pecho antes de la gran final del Mundial",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207792/barca-saca-pecho-gran-final-domingo.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/17/6a5a20f3c4068.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207739/barca-quiere-evitar-caso-dro.html", "title":  "El Barça quiere evitar otro caso Dro",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207739/barca-quiere-evitar-caso-dro.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/02/11/698cccdff2b5a.r_d.3952-2310-1552.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/18/6a5bb0a588b20.jpeg" }
     ]
 };
