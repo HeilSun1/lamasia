@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-31 22:09:23 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-08-31 16:27:59 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-08-31 22:09:23",
+    "updated":  "2026-08-31 16:27:59",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6268825", "title":  "去的有点早，世体：巴萨19岁梯队小将谢尔菲将加盟沙特迪里耶",
+            "url":  "https://www.dongqiudi.com/articles/6268825.html", "time":  "2026-08-31 22:48",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/70/280x210/crop/-/rBXRDGqVk_qAA3asAACKe09pliE611.jpg" },
         {
             "id":  "6267846", "title":  "巴萨战巴列卡诺大名单：亚马尔领衔，加维继续缺席",
             "url":  "https://www.dongqiudi.com/articles/6267846.html", "time":  "2026-08-31 19:30",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6151543", "title":  "世体：巴萨仅科尔特斯、哈姆扎两名梯队球员随一线队训练",
             "url":  "https://www.dongqiudi.com/articles/6151543.html", "time":  "2026-08-10 18:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/B2/280x210/crop/-/rBXRn2p5pQGAfB23AAA60DPbv08048.jpg" },
-        {
-            "id":  "6139638", "title":  "每体：弗里克下周一将大规模筛选，部分青训球员要回归B队",
-            "url":  "https://www.dongqiudi.com/articles/6139638.html", "time":  "2026-08-08 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F0/2D/280x210/crop/-/rBXRDGp2eH6ABB0qAAGYB_pYm4w101.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/B2/280x210/crop/-/rBXRn2p5pQGAfB23AAA60DPbv08048.jpg" }
     ]
 };
