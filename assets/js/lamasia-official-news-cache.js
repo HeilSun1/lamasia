@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 21:31:30 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 16:45:50 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-01 21:31:30",
+    "updated":  "2026-09-01 16:45:50",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,13 +103,21 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4570086", "title":  "More Brazilian goals",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570086/gabriel-jesus-another-brazilian-striker-ready-to-score-for-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" },
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4570156", "title":  "'I knew something nice would happen'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570156/gabriel-jesus-i-knew-something-nice-would-happen", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/2d50482d-2e0d-488e-b22b-d973d684b40d/_5DS8434.jpg" },
             {
                 "id":  "4570072", "title":  "Gabriel Jesus signs for Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
+            {
+                "id":  "4570086", "title":  "More Brazilian goals",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570086/gabriel-jesus-another-brazilian-striker-ready-to-score-for-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" },
             {
                 "id":  "4570028", "title":  "Raphinha rocketing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570028/raphinha-rocketing", "time":  "",
@@ -191,14 +199,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567837/rodri-debuts-with-a-win-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/e39a5e0a-29bb-4a1f-a857-9746365ada08/DAG-057-_M1A0341.jpg" },
             {
-                "id":  "4567808", "title":  "First home LaLiga win of season (2-0)",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567808/fc-barcelona-2-0-athletic-club-first-home-laliga-win-of-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d08a219f-1e49-4e98-8a47-9779834e9c63/_MGA0770.jpg" },
-            {
-                "id":  "4567685", "title":  "Barça's opponents in UCL league phase",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567685/fc-barcelona-opponents-in-league-phase-of-champions-league", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d30b8ce2-faee-4e4d-82fd-d255a6790305/web-sorteig.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -206,6 +206,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4567808", "title":  "First home LaLiga win of season (2-0)",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567808/fc-barcelona-2-0-athletic-club-first-home-laliga-win-of-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d08a219f-1e49-4e98-8a47-9779834e9c63/_MGA0770.jpg" },
+            {
+                "id":  "4567685", "title":  "Barça's opponents in UCL league phase",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567685/fc-barcelona-opponents-in-league-phase-of-champions-league", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d30b8ce2-faee-4e4d-82fd-d255a6790305/web-sorteig.jpg" },
             {
                 "id":  "4567003", "title":  "Rodri in squad for Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567003/rodri-in-squad-for-barca-v-athletic", "time":  "",
@@ -293,15 +301,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4563908", "title":  "Tommy Marqués moves to SC Braga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563908/tommy-marques-moves-to-sc-braga", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f5996be3-c60f-49ba-a821-08343cf09faa/3200X2000-comiat-Tommy-Marque-s.jpg" },
-            {
-                "id":  "4564094", "title":  "First session for Rodrigo and Cancelo",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564094/rodrigo-and-cancelo-train-at-the-ciutat-esportiva", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/21/1a8b5009-62a4-4e93-9191-83c0ca667a21/WhatsApp-Image-2026-08-21-at-12.31.58-1-.jpeg" },
-            {
-                "id":  "4564067", "title":  "Last 20 LaLiga openers",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564067/last-20-laliga-openers", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/21/6310990f-d87d-41c6-b6c5-594d6e6f84ae/_MGA9315.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f5996be3-c60f-49ba-a821-08343cf09faa/3200X2000-comiat-Tommy-Marque-s.jpg" }
         ]
     }
 };

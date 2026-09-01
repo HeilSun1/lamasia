@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-01 21:32:53 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-01 16:45:54 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-01 21:32:53",
+    "updated":  "2026-09-01 16:45:54",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "title":  "El traspaso de Marc Guiu deja un dinero extra al Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "time":  "2026-09-01 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a96a03f34d30.r_d.782-955-7500.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "title":  "El talento alemán Mirza Catovic llegará cedido al Barça Atlètic",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "time":  "2026-08-31 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207976/laporta-messi-dado-anos-gloria-momento-lamine.html", "title":  "Laporta: Messi nos ha dado años de gloria, pero ahora es el momento de Lamine",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207976/laporta-messi-dado-anos-gloria-momento-lamine.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5c8e509dc9f.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207864/emocionante-video-barca-messi-lamine-yamal-final-pasa-masia.html", "title":  "El emocionante vídeo del Barça con Messi y Lamine Yamal: La final pasa por La Masia",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260718/1004207864/emocionante-video-barca-messi-lamine-yamal-final-pasa-masia.html", "time":  "2026-07-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/18/6a5bb0a588b20.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5c8e509dc9f.jpeg" }
     ]
 };
