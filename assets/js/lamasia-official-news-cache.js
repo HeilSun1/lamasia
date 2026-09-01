@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-08-31 16:28:22 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 12:17:23 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-08-31 16:28:22",
+    "updated":  "2026-09-01 12:17:23",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,26 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4569807", "title":  "Hansi Flick: 'It's been a good start to the season'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569807/hansi-flick-its-been-a-good-start-to-the-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/c34c0c37-1e63-427c-b36b-90748a81ccaf/_MGA2257.jpg" },
+            {
+                "id":  "4569791", "title":  "Abdelkarim makes competitive debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569791/hamza-abdelkarim-makes-competitive-debut-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/96eb708c-395d-4d08-a68d-9a1ce37a55f3/_MGA2343.jpg" },
+            {
+                "id":  "4566867", "title":  "Christensen reaches 100 Barça appearances",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566867/christensen-reaches-100-fc-barcelona-appearances", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/ccf0a4a9-0974-473c-8fa1-b981317ffb59/3200x2000_MatchMilestone_Christensen_ENG_2026.jpg" },
+            {
+                "id":  "4569755", "title":  "Barça 5-2 Rayo: Three from three",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569755/fc-barcelona-5-2-rayo-vallecano-three-from-three", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/687b1f67-46f0-4500-9d48-f43dbd9c8fa6/_MGA2133-1-.jpg" },
+            {
+                "id":  "4569759", "title":  "Lamine Yamal, 50 goals with a work of art",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569759/lamine-yamal-reaches-50-goals-for-fc-barcelona-with-a-work-of-art", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/ad9ea0d4-03a6-415f-b7fc-a087ac9eea08/_MGA5128.jpg.jpeg" },
+            {
                 "id":  "4568230", "title":  "PREVIEW | Barça v Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568230/preview-fc-barcelona-v-rayo-vallecano", "time":  "",
                 "tag":  "", "img":  "" },
@@ -179,6 +199,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566933/dominik-livakovi-is-a-new-blaugrana-player", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4566224", "title":  "PREVIEW | Barça v Athletic Club",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566224/preview-fc-barcelona-v-athletic-club", "time":  "",
                 "tag":  "", "img":  "" },
@@ -194,14 +222,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4566835", "title":  "'The team has a hunger to win'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566835/hansi-flick-the-team-has-a-hunger-to-win", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/89106a1d-5cce-4790-b3fc-bdcfccaa7aaa/_MGA0160.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4566178", "title":  "Interesting facts about Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566178/five-interesting-facts-about-barca-v-athletic-club", "time":  "",
@@ -281,27 +301,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4563204", "title":  "Abdelkarim top scorer in preseason",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563204/hamza-abdelkarim-top-scores-for-barca-in-preseason", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/9516f3f8-3037-49ec-8b50-0d2c448482ca/DAG-052-_M1A9358.jpg" },
-            {
-                "id":  "4563191", "title":  "Seven Spotify Camp Nou debuts",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563191/seven-players-make-spotify-camp-nou-debuts", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f274d17e-af0c-449a-81cd-dafc5543694d/_MGA7227.jpg" },
-            {
-                "id":  "4562822", "title":  "Raphinha, Star Player of the 2026 Gamper",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562822/raphinha-star-player-of-the-2026-gamper", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/f245a862-480a-444e-a4b1-516c43605b60/DAG-117-_M1A1119.jpg" },
-            {
-                "id":  "4562739", "title":  "Barça 2-1 Al Ahly: Gamper stays at home",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562739/fc-barcelona-2-1-al-ahly-gamper-stays-at-home", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/89a25a7d-14b7-4b75-896d-006c2ae8297d/_MGA7316.jpg" },
-            {
-                "id":  "4562674", "title":  "Flick: 'Together we are stronger'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562674/hansi-flick-together-we-are-stronger", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/d3392d8e-4826-4d40-b84f-54d317117ba8/_MGA6642.jpg" },
-            {
-                "id":  "4562719", "title":  "Stadium comes alive for squad presentation",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562719/spotify-camp-nou-comes-alive-for-the-presentation-of-the-202627-barca-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/5c0db7b5-387f-40b0-ba16-bc0acddd1240/_MGA6883.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/9516f3f8-3037-49ec-8b50-0d2c448482ca/DAG-052-_M1A9358.jpg" }
         ]
     }
 };

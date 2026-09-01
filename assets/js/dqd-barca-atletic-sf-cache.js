@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-08-31 22:09 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-01 12:15 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-08-31 22:09:22",
+    "updated":  "2026-09-01 12:15:03",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -372,21 +372,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "185",
                         "value":  "46万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Patricio Pacifico",
-                        "id":  "1482410",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Uruguay",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-04-08",
-                        "foot":  "左脚",
-                        "height":  "187",
-                        "value":  "68万",
                         "injury":  null
                     },
                     {
