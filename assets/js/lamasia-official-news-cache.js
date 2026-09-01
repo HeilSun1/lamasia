@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 12:17:23 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 21:31:30 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-01 12:17:23",
+    "updated":  "2026-09-01 21:31:30",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -103,6 +103,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4570086", "title":  "More Brazilian goals",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570086/gabriel-jesus-another-brazilian-striker-ready-to-score-for-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" },
+            {
+                "id":  "4570072", "title":  "Gabriel Jesus signs for Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
+            {
+                "id":  "4570028", "title":  "Raphinha rocketing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570028/raphinha-rocketing", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/6699faaf-989f-4cfc-9b0c-8e3d0f18ed34/_MGA5152.jpg" },
+            {
                 "id":  "4569807", "title":  "Hansi Flick: 'It's been a good start to the season'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569807/hansi-flick-its-been-a-good-start-to-the-season", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/c34c0c37-1e63-427c-b36b-90748a81ccaf/_MGA2257.jpg" },
@@ -187,6 +199,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567685/fc-barcelona-opponents-in-league-phase-of-champions-league", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d30b8ce2-faee-4e4d-82fd-d255a6790305/web-sorteig.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4567003", "title":  "Rodri in squad for Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567003/rodri-in-squad-for-barca-v-athletic", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/9a86950b-c206-4702-adb2-f813ef235c1e/_MGA9555.jpg" },
@@ -198,14 +218,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4566933", "title":  "Livaković is a new blaugrana player",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566933/dominik-livakovi-is-a-new-blaugrana-player", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4566224", "title":  "PREVIEW | Barça v Athletic Club",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566224/preview-fc-barcelona-v-athletic-club", "time":  "",
@@ -289,19 +301,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4564067", "title":  "Last 20 LaLiga openers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564067/last-20-laliga-openers", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/21/6310990f-d87d-41c6-b6c5-594d6e6f84ae/_MGA9315.jpg" },
-            {
-                "id":  "4563626", "title":  "João Cancelo: 'I'm ready to play'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563626/joao-cancelo-im-ready-to-play", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/db81c6a8-aa7e-48b2-9b9a-1b6d950c1202/_MGA7559.jpg" },
-            {
-                "id":  "4562497", "title":  "Cancelo back with Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562497/joao-cancelo-a-culer-until-2029", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/42849139-9fcc-4ca3-896c-8baed45ec666/3200x2000-CANCELO.jpg" },
-            {
-                "id":  "4563204", "title":  "Abdelkarim top scorer in preseason",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563204/hamza-abdelkarim-top-scores-for-barca-in-preseason", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/19/9516f3f8-3037-49ec-8b50-0d2c448482ca/DAG-052-_M1A9358.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/21/6310990f-d87d-41c6-b6c5-594d6e6f84ae/_MGA9315.jpg" }
         ]
     }
 };

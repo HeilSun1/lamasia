@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-08-30 15:06 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-01 21:34 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-08-30 15:06:11",
+    "updated":  "2026-09-01 21:34:22",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -143,6 +143,25 @@ window.DQD_VIDEOS_CACHE = {
                 },
     "feed":  {
                  "players":  {
+                                 "local:cadete:lucasbernal":  [
+                                                                  {
+                                                                      "date":  "2026-09-01",
+                                                                      "opp":  "巴列卡诺",
+                                                                      "label":  "vs 巴列卡诺 · 09-01",
+                                                                      "videos":  [
+                                                                                     {
+                                                                                         "videoId":  "BV1rZt36gEGJ",
+                                                                                         "title":  "贝尔纳尔VS巴列卡诺",
+                                                                                         "channel":  "口菐",
+                                                                                         "channelId":  "",
+                                                                                         "published":  "2026-09-01",
+                                                                                         "durationSec":  "162",
+                                                                                         "site":  "bili",
+                                                                                         "pic":  "https://i1.hdslb.com/bfs/archive/3ee87974867df9a0d61442622dc632374f1bb134.jpg"
+                                                                                     }
+                                                                                 ]
+                                                                  }
+                                                              ],
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
                                                                      "date":  "2026-08-23",
@@ -186,6 +205,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                 ]
                                                                  }
                                                              ],
+                                 "local:cadete-b:lucasbernal":  [
+                                                                    {
+                                                                        "date":  "2026-09-01",
+                                                                        "opp":  "巴列卡诺",
+                                                                        "label":  "vs 巴列卡诺 · 09-01",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1rZt36gEGJ",
+                                                                                           "title":  "贝尔纳尔VS巴列卡诺",
+                                                                                           "channel":  "口菐",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-01",
+                                                                                           "durationSec":  "162",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i1.hdslb.com/bfs/archive/3ee87974867df9a0d61442622dc632374f1bb134.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
