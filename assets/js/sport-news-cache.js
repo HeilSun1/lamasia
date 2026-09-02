@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-02 21:54:31 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-02 16:34:34 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-02 21:54:31",
+    "updated":  "2026-09-02 16:34:34",
     "source":  "sport",
-    "count":  43,
+    "count":  44,
     "news":  [
+        {
+            "id":  "133877087", "title":  "A qué hora es el Barça Atlètic - Sabadell hoy y dónde ver la final de la Copa Catalunya gratis por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 15:11",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d74b9a85-47b4-4932-b693-cf8bdf08edec_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133872366", "title":  "Onstein, baja importante para el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-baja-importante-barca-atletic-133872366", "time":  "2026-09-02 11:56",
