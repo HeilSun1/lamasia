@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-01 16:45:54 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-02 21:54:33 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-01 16:45:54",
+    "updated":  "2026-09-02 21:54:33",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "title":  "Cómo ha convencido Fariñas a Flick",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "time":  "2026-09-02 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e67eeb876.r_d.1370-1000-4378.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "title":  "Oficial: Toni Fernández, al Venezia con una fórmula diferente",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "time":  "2026-09-01 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/01/6a97225a7da25.png" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222268/cifras-traspaso-guille-fernandez-mallorca.html", "title":  "Las cifras del traspaso de Guille Fernández al Mallorca",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222268/cifras-traspaso-guille-fernandez-mallorca.html", "time":  "2026-09-01 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a971b090358a.r_d.1285-774-8996.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "title":  "El traspaso de Marc Guiu deja un dinero extra al Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "time":  "2026-09-01 12:00",
@@ -191,18 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208062/mundial-espana-argentina-final-historia.html", "title":  "Modo mundial: España y Argentina, una final para la historia",
             "url":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208062/mundial-espana-argentina-final-historia.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5cb944d652a.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208010/laporta-hoy-sera-homenaje-barca-dado-futbol.html", "title":  "Laporta, ante la final del Mundial: Hoy será un homenaje a todo lo que el Barça ha dado al fútbol",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208010/laporta-hoy-sera-homenaje-barca-dado-futbol.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a59c72b83327.r_d.1002-693-6033.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207921/final-mundial-vista-dos-cracks-crecidos-club.html", "title":  "La final de Mundial jamás vista: los dos cracks crecidos en un mismo club",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207921/final-mundial-vista-dos-cracks-crecidos-club.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/16/6a593adb11799.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207976/laporta-messi-dado-anos-gloria-momento-lamine.html", "title":  "Laporta: Messi nos ha dado años de gloria, pero ahora es el momento de Lamine",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004207976/laporta-messi-dado-anos-gloria-momento-lamine.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5c8e509dc9f.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5cb944d652a.jpeg" }
     ]
 };

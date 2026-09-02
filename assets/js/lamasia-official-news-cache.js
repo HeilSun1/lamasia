@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-01 16:45:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-02 21:54:19 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-01 16:45:50",
+    "updated":  "2026-09-02 21:54:19",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4570214", "title":  "Mirza Catovic, new Barça Atlètic player",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4570214/mirza-catovic-new-barca-atletic-player", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/b42d8b33-fab2-4d9d-85a6-357ef36189ae/WhatsApp-Image-2026-09-01-at-18.34.46.jpeg" },
+            {
+                "id":  "4570301", "title":  "Agreement with RCD Mallorca for the transfer of Guille Fernández",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4570301/agreement-with-rcd-mallorca-for-the-transfer-of-guille-fernandez", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/e6c0018f-b386-4eac-a613-b455078d3cfc/WhatsApp-Image-2026-09-01-at-19.35.19.jpeg" },
             {
                 "id":  "4565217", "title":  "Control but no reward (0-0; 3-0)",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4565217/cf-vilanova-0-0-barca-atletic-control-but-no-reward-3-0-pens", "time":  "",
@@ -103,21 +111,45 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4569533", "title":  "Five games in fourteen days",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569533/plenty-in-store-for-september", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/ba21191f-3e77-4af2-90fc-0cc2f14a7d6c/3200X2000_Calendar-SEPT-ENG.jpg" },
+            {
+                "id":  "4570494", "title":  "Brian Fariñas registered as first team player in number '4' jersey",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570494/brian-farinas-registered-as-first-team-player-in-number-4-jersey", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/dbaddd13-a4fc-4269-9b67-2cb584c4df3c/WhatsApp-Image-2026-09-01-at-23.52.39.jpeg" },
+            {
+                "id":  "4570290", "title":  "Marc Casadó loaned to Deportivo A Coruña",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570290/marc-casado-loaned-to-deportivo-a-coruna", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/38a328b1-e8d3-4c60-b329-48f5ced3c50c/_MGA6770.jpg" },
+            {
+                "id":  "4570297", "title":  "Agreement with Antwerp for the transfer of Álvaro Cortés",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570297/agreement-with-royal-antwerp-for-the-transfer-of-alvaro-cortes", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4570303", "title":  "Agreement with Venezia FC for the transfer of Toni Fernández",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570303/agreement-with-venezia-fc-for-the-transfer-of-toni-fernandez", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cbe95f7b-1dd8-49f7-aa8a-bc9de8060d9b/3200X2000-comiat-Toni_Fern-ndez.jpg" },
+            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed", "time":  "",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
             {
                 "id":  "4570156", "title":  "'I knew something nice would happen'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570156/gabriel-jesus-i-knew-something-nice-would-happen", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/2d50482d-2e0d-488e-b22b-d973d684b40d/_5DS8434.jpg" },
             {
-                "id":  "4570072", "title":  "Gabriel Jesus signs for Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
+                "id":  "4570087", "title":  "10 things about Gabriel Jesus",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570087/10-things-about-gabriel-jesus", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/db151abb-b7c9-4bec-9fac-568a83b0c1a4/3200x2000_Mercato_GABRIEL_JESUS4.jpg" },
             {
                 "id":  "4570086", "title":  "More Brazilian goals",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570086/gabriel-jesus-another-brazilian-striker-ready-to-score-for-barca", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" },
+            {
+                "id":  "4570072", "title":  "Gabriel Jesus signs for Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
             {
                 "id":  "4570028", "title":  "Raphinha rocketing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570028/raphinha-rocketing", "time":  "",
@@ -175,6 +207,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568632/preparations-for-barca-v-rayo-under-way", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/4b790afd-988c-4f26-ab7e-97eceb9564e1/WhatsApp-Image-2026-08-29-at-11.24.04-4-.jpeg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4568142", "title":  "When and where to watch Barça v Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568142/when-and-where-to-watch-fc-barcelona-v-rayo-vallecano", "time":  "",
                 "tag":  "", "img":  "" },
@@ -198,10 +234,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4567837", "title":  "Rodri debuts with a win for Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567837/rodri-debuts-with-a-win-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/e39a5e0a-29bb-4a1f-a857-9746365ada08/DAG-057-_M1A0341.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
@@ -277,31 +309,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4565285", "title":  "Special tributes pre-match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565285/special-tributes-ahead-of-elche-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/ae6811a7-e56f-4dbc-9996-d137e677dbba/_MGA8957.jpg" },
-            {
-                "id":  "4564872", "title":  "The squad for Elche",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564872/the-squad-for-elche", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/22/31935b2a-30c0-43da-8a7a-4d2f13f39c86/WhatsApp-Image-2026-08-22-at-14.04.15-1-.jpeg" },
-            {
-                "id":  "4564712", "title":  "PREVIEW | Elche v FC Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564712/preview-elche-cf-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4564703", "title":  "Final session before La Liga opener",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4564703/final-session-before-la-liga-opener", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/22/0e45877f-09f2-4070-b482-914374e7d886/WhatsApp-Image-2026-08-22-at-14.04.16-1-.jpeg" },
-            {
-                "id":  "4540543", "title":  "An unusual start to La Liga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4540543/an-unusual-start-to-la-liga", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/22/66c9b2ae-ac5f-486a-ad90-4248b975592a/_MGA4754.jpg" },
-            {
-                "id":  "4562426", "title":  "When and were to watch Elche v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4562426/when-and-where-to-watch-elche-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4563908", "title":  "Tommy Marqués moves to SC Braga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4563908/tommy-marques-moves-to-sc-braga", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/20/f5996be3-c60f-49ba-a821-08343cf09faa/3200X2000-comiat-Tommy-Marque-s.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/ae6811a7-e56f-4dbc-9996-d137e677dbba/_MGA8957.jpg" }
         ]
     }
 };

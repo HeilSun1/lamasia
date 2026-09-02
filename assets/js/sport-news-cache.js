@@ -1,13 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-01 16:45:52 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-02 21:54:31 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-01 16:45:52",
+    "updated":  "2026-09-02 21:54:31",
     "source":  "sport",
-    "count":  40,
+    "count":  43,
     "news":  [
+        {
+            "id":  "133872366", "title":  "Onstein, baja importante para el Barça Atlètic",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-baja-importante-barca-atletic-133872366", "time":  "2026-09-02 11:56",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6635208b-0455-4f1d-9aaa-fb5fb946b690_16-9-discover-aspect-ratio_default_0_x1035y328.webp" },
+        {
+            "id":  "133819132", "title":  "El central revelación del Barça Atlètic se lesiona con la selección sub-18",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/central-revelacion-barca-atletic-lesiona-133819132", "time":  "2026-09-01 18:11",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a678acb9-9289-46b7-a5aa-8edfe343b45e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "133835458", "title":  "Copa Catalunya: Test de exigencia superior para el Barça Atlètic frente al Sabadell",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/copa-catalunya-test-exigencia-superior-133835458", "time":  "2026-09-01 17:15",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f67ec55e-ed20-4a86-a3a6-6f92bb7f14f7_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133761340", "title":  "Los rivales y los horarios del FC Barcelona en la UEFA Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/rivales-horarios-fc-barcelona-uefa-133761340", "time":  "2026-08-29 13:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/627801c1-de92-42f4-94dd-a2f4f2892954_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/627801c1-de92-42f4-94dd-a2f4f2892954_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133682605", "title":  "Golazo de crack de Bisiwu con el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/golazo-crack-bisiwu-barca-atletic-133682605", "time":  "2026-08-26 19:10",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-01 16:45:47 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-02 21:52:41 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-01 16:45:47",
+    "updated":  "2026-09-02 21:52:41",
     "source":  "dongqiudi",
-    "count":  24,
+    "count":  25,
     "news":  [
+        {
+            "id":  "6281356", "title":  "官方：巴萨签下汉堡16岁后卫米卡埃尔-巴扎；据悉费用50万欧",
+            "url":  "https://www.dongqiudi.com/articles/6281356.html", "time":  "2026-09-02 18:58",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/47/C9/280x210/crop/-/rBXRn2qYAVCAD85mAACveSBkHs8929.jpg" },
         {
             "id":  "6192089", "title":  "费尔明：小蜘蛛适合巴萨但他还是马竞球员；我一直很喜欢7号",
             "url":  "https://www.dongqiudi.com/articles/6192089.html", "time":  "2026-08-18 14:22",

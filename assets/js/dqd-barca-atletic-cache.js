@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-01 16:45 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-02 21:51 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-01 16:45:26",
+    "updated":  "2026-09-02 21:51:33",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1517,6 +1517,14 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "180",
                                  "birth":  "2007-03-22"
                              },
+                "51004660":  {
+                                 "nation":  "西班牙",
+                                 "contract":  "2027-06-30",
+                                 "foot":  "左脚",
+                                 "weight":  "",
+                                 "height":  "179",
+                                 "birth":  "2006-04-12"
+                             },
                 "51017492":  {
                                  "nation":  "西班牙",
                                  "contract":  "2029-06-30",
@@ -1525,6 +1533,14 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "185",
                                  "birth":  "2008-02-02"
                              },
+                "51009730":  {
+                                 "nation":  "德国",
+                                 "contract":  "2027-06-30",
+                                 "foot":  "左脚",
+                                 "weight":  "83",
+                                 "height":  "187",
+                                 "birth":  "2007-05-01"
+                             },
                 "50917373":  {
                                  "nation":  "西班牙",
                                  "contract":  "2028-06-30",
@@ -1532,14 +1548,6 @@ window.DQD_BARCA_ATLETIC = {
                                  "weight":  "",
                                  "height":  "",
                                  "birth":  "2004-01-19"
-                             },
-                "50936240":  {
-                                 "nation":  "西班牙",
-                                 "contract":  "2028-06-30",
-                                 "foot":  "左右脚",
-                                 "weight":  "75",
-                                 "height":  "178",
-                                 "birth":  "2007-01-07"
                              },
                 "50696636":  {
                                  "nation":  "西班牙",
@@ -1557,13 +1565,13 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "",
                                  "birth":  "1978-03-29"
                              },
-                "51004660":  {
+                "50936240":  {
                                  "nation":  "西班牙",
-                                 "contract":  "2027-06-30",
-                                 "foot":  "左脚",
-                                 "weight":  "",
-                                 "height":  "179",
-                                 "birth":  "2006-04-12"
+                                 "contract":  "2028-06-30",
+                                 "foot":  "左右脚",
+                                 "weight":  "75",
+                                 "height":  "178",
+                                 "birth":  "2007-01-07"
                              },
                 "51038135":  {
                                  "nation":  "西班牙",
@@ -2014,18 +2022,19 @@ window.DQD_BARCA_ATLETIC = {
                                              {
                                                  "data":  [
                                                               {
-                                                                  "age":  "18岁",
+                                                                  "age":  "22岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
                                                                   "other_logo":  [
-                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
+
                                                                                  ],
-                                                                  "person_en_name":  "Pedro Villar",
-                                                                  "person_id":  "51038135",
-                                                                  "person_logo":  "assets/img/players/dqd/51038135.jpg",
-                                                                  "person_name":  "佩德罗-比利亚尔",
-                                                                  "scheme":  "dongqiudi:///player/51038135",
+                                                                  "person_en_name":  "Roger Martínez",
+                                                                  "person_id":  "50696636",
+                                                                  "person_logo":  "assets/img/players/dqd/50696636.jpg",
+                                                                  "person_name":  "罗赫尔-马丁内斯",
+                                                                  "scheme":  "dongqiudi:///player/50696636",
+                                                                  "shirtnumber":  "6",
                                                                   "statistic":  [
                                                                                     {
                                                                                         "出场":  "-"
@@ -2037,13 +2046,13 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "-"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "10万"
+                                                                                        "身价(欧)":  "30万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
                                                                   "type":  "midfielder",
                                                                   "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuv06AGXH1AAAa--Q03RA265.jpg"
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs6/M00/63/8D/rBUCgGG5TeyADaeBAAAWvjdLs7Y317.jpg"
                                                               },
                                                               {
                                                                   "age":  "16岁",
@@ -2076,6 +2085,38 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "type":  "midfielder",
                                                                   "weekly_salary":  "",
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/52/1E/rBUBsmlBOzGAd0XZAAAcmWqEDcQ928.jpg"
+                                                              },
+                                                              {
+                                                                  "age":  "19岁",
+                                                                  "captain_logo":  "",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2JGAd79VAAAAyGVvoVQ975.png",
+                                                                  "nationality_name":  "德国/塞尔维亚",
+                                                                  "other_logo":  [
+
+                                                                                 ],
+                                                                  "person_en_name":  "Mirza Catovic",
+                                                                  "person_id":  "51009730",
+                                                                  "person_logo":  "assets/img/players/dqd/51009730.jpg",
+                                                                  "person_name":  "恰托维奇",
+                                                                  "scheme":  "dongqiudi:///player/51009730",
+                                                                  "statistic":  [
+                                                                                    {
+                                                                                        "出场":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "进球":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "助攻":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "身价(欧)":  "400万"
+                                                                                    }
+                                                                                ],
+                                                                  "transfer_data":  null,
+                                                                  "type":  "midfielder",
+                                                                  "weekly_salary":  "",
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/6F/CE/rBUBsmilmP6AJmR4AAAdsnbsIy0719.jpg"
                                                               },
                                                               {
                                                                   "age":  "19岁",
@@ -2174,19 +2215,18 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs3/M00/B5/98/ChOxM1xC37CADGDCAAANHjH55fo314.png"
                                                               },
                                                               {
-                                                                  "age":  "22岁",
+                                                                  "age":  "18岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
                                                                   "other_logo":  [
-
+                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
                                                                                  ],
-                                                                  "person_en_name":  "Roger Martínez",
-                                                                  "person_id":  "50696636",
-                                                                  "person_logo":  "assets/img/players/dqd/50696636.jpg",
-                                                                  "person_name":  "罗赫尔-马丁内斯",
-                                                                  "scheme":  "dongqiudi:///player/50696636",
-                                                                  "shirtnumber":  "6",
+                                                                  "person_en_name":  "Pedro Villar",
+                                                                  "person_id":  "51038135",
+                                                                  "person_logo":  "assets/img/players/dqd/51038135.jpg",
+                                                                  "person_name":  "佩德罗-比利亚尔",
+                                                                  "scheme":  "dongqiudi:///player/51038135",
                                                                   "statistic":  [
                                                                                     {
                                                                                         "出场":  "-"
@@ -2198,13 +2238,13 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "-"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "30万"
+                                                                                        "身价(欧)":  "10万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
                                                                   "type":  "midfielder",
                                                                   "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs6/M00/63/8D/rBUCgGG5TeyADaeBAAAWvjdLs7Y317.jpg"
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuv06AGXH1AAAa--Q03RA265.jpg"
                                                               }
                                                           ],
                                                  "show_type":  1,
@@ -2781,6 +2821,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "days":  "153",
                                           "status":  "ok",
                                           "games_missed":  "14"
+                                      },
+                         "51009730":  {
+                                          "date_until":  "2026.04.19",
+                                          "date_from":  "2026.04.11",
+                                          "injury":  "脚踝损伤",
+                                          "days":  "10",
+                                          "status":  "ok",
+                                          "games_missed":  "1"
                                       }
                      }
 };

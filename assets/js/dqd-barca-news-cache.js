@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-01 16:45:28 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-02 21:52:23 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-01 16:45:28",
+    "updated":  "2026-09-02 21:52:23",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6278987", "title":  "官方：斯图加特19岁中场恰托维奇租借加盟巴萨竞技，包含买断",
+            "url":  "https://www.dongqiudi.com/articles/6278987.html", "time":  "2026-09-02 08:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/46/9F/280x210/crop/-/rBXRn2qXb0KAYldaAAZGt_Paqyg406.jpg" },
         {
             "id":  "6272393", "title":  "塞尔：巴萨B队租借斯图加特18岁中场恰托维奇，含买断条款",
             "url":  "https://www.dongqiudi.com/articles/6272393.html", "time":  "2026-09-01 09:08",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6157102", "title":  "每体：巴萨18岁新援凯塞多即将报到，曾表示偶像是巴尔德",
             "url":  "https://www.dongqiudi.com/articles/6157102.html", "time":  "2026-08-11 18:12",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DC/280x210/crop/-/rBXRDGp69O-ABZy6AAISX67t-g0045.jpg" },
-        {
-            "id":  "6156088", "title":  "每体：弗里克尝试让肖恩-克鲁伊维特踢中锋，其特点与父亲不同",
-            "url":  "https://www.dongqiudi.com/articles/6156088.html", "time":  "2026-08-11 14:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/48/280x210/crop/-/rBXRDGp6r5uADxDHAAHGri-yE1c325.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DC/280x210/crop/-/rBXRDGp69O-ABZy6AAISX67t-g0045.jpg" }
     ]
 };
