@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-03 11:57:15 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-03 16:33:40 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-03 11:57:15",
+    "updated":  "2026-09-03 16:33:40",
     "source":  "dongqiudi",
-    "count":  25,
+    "count":  26,
     "news":  [
+        {
+            "id":  "6287285", "title":  "世体：约纳坦-塔表弟加盟巴萨青年队，体格令拉玛西亚惊讶",
+            "url":  "https://www.dongqiudi.com/articles/6287285.html", "time":  "2026-09-03 18:36",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/79/280x210/crop/-/rBXRDGqZTJyADV3qAAFBUczyaXw698.jpg" },
         {
             "id":  "6281356", "title":  "官方：巴萨签下汉堡16岁后卫米卡埃尔-巴扎；据悉费用50万欧",
             "url":  "https://www.dongqiudi.com/articles/6281356.html", "time":  "2026-09-02 18:58",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-03 11:59:17 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-03 16:33:46 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-03 11:59:17",
+    "updated":  "2026-09-03 16:33:46",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222876/primo-tah-asombra-barca-conoce-flick.html", "title":  "El primo de Tah asombra en el Barça por su físico y ya conoce a Flick",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222876/primo-tah-asombra-barca-conoce-flick.html", "time":  "2026-09-03 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/03/6a994ae273052.r_d.388-230-18377.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "title":  "El adiós de los primos Fernández",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "time":  "2026-09-02 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208244/emotivo-mensaje-lamine-yamal-oculto-cinta-pelo-argentina.html", "title":  "El emotivo mensaje de Lamine Yamal oculto en su cinta del pelo contra Argentina",
             "url":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208244/emotivo-mensaje-lamine-yamal-oculto-cinta-pelo-argentina.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/19/6a5d222d35775.r_d.1483-858-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208222/aitana-desvela-tecnica-mental-jugar-finales.html", "title":  "Aitana desvela su técnica mental antes de jugar finales",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208222/aitana-desvela-tecnica-mental-jugar-finales.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/05/23/6a11e33da3f7b.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/19/6a5d222d35775.r_d.1483-858-4000.jpeg" }
     ]
 };

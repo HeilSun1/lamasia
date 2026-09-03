@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-03 11:56:58 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-03 16:33:13 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-03 11:56:58",
+    "updated":  "2026-09-03 16:33:13",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6287228", "title":  "每体：比西武伤势无大碍，检查结果显示仅为右脚踝撞伤",
+            "url":  "https://www.dongqiudi.com/articles/6287228.html", "time":  "2026-09-03 18:23",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/67/280x210/crop/-/rBXRn2qZSleAZFBaAAGI8uBEZfQ728.jpg" },
+        {
+            "id":  "6286277", "title":  "官方：巴萨B队中场罗赫尔加盟卡塔尔二级联赛俱乐部马希亚",
+            "url":  "https://www.dongqiudi.com/articles/6286277.html", "time":  "2026-09-03 14:52",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/0B/280x210/crop/-/rBXRDGqZF6iAB9NxAAI-_DJAUbE900.jpg" },
         {
             "id":  "6285381", "title":  "每体：巴萨考察青年世俱杯，盯上3名巴西新星",
             "url":  "https://www.dongqiudi.com/articles/6285381.html", "time":  "2026-09-03 10:18",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6174995", "title":  "每体：巴萨今夏卖人已入账近7000万欧元",
             "url":  "https://www.dongqiudi.com/articles/6174995.html", "time":  "2026-08-15 05:55",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/2E/280x210/crop/-/rBXRn2p_jViAQ7tXAAHlMUeY99o907.jpg" },
-        {
-            "id":  "6170999", "title":  "世体：巴萨对于通卡拉的规划是多打比赛，不必急于提拔一线队",
-            "url":  "https://www.dongqiudi.com/articles/6170999.html", "time":  "2026-08-14 13:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/04/E1/280x210/crop/-/rBXRn2p-oviAYitZAAE1TUE0L2k005.jpg" },
-        {
-            "id":  "6168877", "title":  "世体：弗里克尚未决定本赛季哈姆扎是否留在巴萨一线队",
-            "url":  "https://www.dongqiudi.com/articles/6168877.html", "time":  "2026-08-14 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DA/280x210/crop/-/rBXRDGp68_aAVdbMAAF_FUFq4X4457.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/2E/280x210/crop/-/rBXRn2p_jViAQ7tXAAHlMUeY99o907.jpg" }
     ]
 };
