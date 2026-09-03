@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-02 16:33:48 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-03 11:56:58 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-02 16:33:48",
+    "updated":  "2026-09-03 11:56:58",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6285381", "title":  "每体：巴萨考察青年世俱杯，盯上3名巴西新星",
+            "url":  "https://www.dongqiudi.com/articles/6285381.html", "time":  "2026-09-03 10:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/EF/280x210/crop/-/rBXRDGqYizKAAu3yAAFeuTNbG6w841.jpg" },
+        {
+            "id":  "6283799", "title":  "世体：巴萨B队中卫昂斯坦左腿股二头肌受伤，将缺阵6至8周",
+            "url":  "https://www.dongqiudi.com/articles/6283799.html", "time":  "2026-09-03 03:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B4/280x210/crop/-/rBXRn2qYdiGAKVyUAAr-616vJZI371.jpg" },
+        {
+            "id":  "6283711", "title":  "世体：比西武代表巴萨B队比赛时右脚踝受伤，将接受医疗检查",
+            "url":  "https://www.dongqiudi.com/articles/6283711.html", "time":  "2026-09-03 02:59",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B9/280x210/crop/-/rBXRDGqYca2AcVj9AAWBL64KzS0245.jpg" },
         {
             "id":  "6278987", "title":  "官方：斯图加特19岁中场恰托维奇租借加盟巴萨竞技，包含买断",
             "url":  "https://www.dongqiudi.com/articles/6278987.html", "time":  "2026-09-02 08:37",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6168877", "title":  "世体：弗里克尚未决定本赛季哈姆扎是否留在巴萨一线队",
             "url":  "https://www.dongqiudi.com/articles/6168877.html", "time":  "2026-08-14 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DA/280x210/crop/-/rBXRDGp68_aAVdbMAAF_FUFq4X4457.jpg" },
-        {
-            "id":  "6166455", "title":  "每体：通卡拉表现亮眼，弗里克或将他作为中锋和前腰使用",
-            "url":  "https://www.dongqiudi.com/articles/6166455.html", "time":  "2026-08-13 15:56",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/01/F9/280x210/crop/-/rBXRn2p9d6OAbKm3AAHFcDSmzO8336.jpg" },
-        {
-            "id":  "6164104", "title":  "官方：霍苏埃-凯塞多与巴萨正式签约，已参加巴萨竞技训练",
-            "url":  "https://www.dongqiudi.com/articles/6164104.html", "time":  "2026-08-13 01:14",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FF/E3/280x210/crop/-/rBXRn2p8qUWALamDAApDrK4CM3c801.jpg" },
-        {
-            "id":  "6157102", "title":  "每体：巴萨18岁新援凯塞多即将报到，曾表示偶像是巴尔德",
-            "url":  "https://www.dongqiudi.com/articles/6157102.html", "time":  "2026-08-11 18:12",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DC/280x210/crop/-/rBXRDGp69O-ABZy6AAISX67t-g0045.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FB/DA/280x210/crop/-/rBXRDGp68_aAVdbMAAF_FUFq4X4457.jpg" }
     ]
 };

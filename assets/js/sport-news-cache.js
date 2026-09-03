@@ -1,17 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-02 16:34:34 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-03 11:59:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-02 16:34:34",
+    "updated":  "2026-09-03 11:59:14",
     "source":  "sport",
     "count":  44,
     "news":  [
         {
             "id":  "133877087", "title":  "A qué hora es el Barça Atlètic - Sabadell hoy y dónde ver la final de la Copa Catalunya gratis por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 15:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d74b9a85-47b4-4932-b693-cf8bdf08edec_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 19:18",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d74b9a85-47b4-4932-b693-cf8bdf08edec_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
         {
             "id":  "133872366", "title":  "Onstein, baja importante para el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-baja-importante-barca-atletic-133872366", "time":  "2026-09-02 11:56",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6635208b-0455-4f1d-9aaa-fb5fb946b690_16-9-discover-aspect-ratio_default_0_x1035y328.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6635208b-0455-4f1d-9aaa-fb5fb946b690_16-9-discover-aspect-ratio_640w_0_x1035y328.webp" },
         {
             "id":  "133819132", "title":  "El central revelación del Barça Atlètic se lesiona con la selección sub-18",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/central-revelacion-barca-atletic-lesiona-133819132", "time":  "2026-09-01 18:11",

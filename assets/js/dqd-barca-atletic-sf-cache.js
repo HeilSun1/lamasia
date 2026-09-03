@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-02 21:52 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-03 11:56 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-02 21:52:23",
+    "updated":  "2026-09-03 11:56:58",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -185,6 +185,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Orian Goren",
+                        "id":  "1973312",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Israel",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-03-15",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Abdul Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
@@ -260,21 +275,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Roger Martínez",
-                        "id":  "1085572",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1085572/image",
-                        "age":  "22岁",
-                        "birthday":  "2004-01-01",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "32万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Adam Argemí",
                         "id":  "2076887",
                         "pos":  "M",
@@ -302,6 +302,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "173",
                         "value":  "22万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Jordi Pesquer",
+                        "id":  "2128094",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128094/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-01-16",
+                        "foot":  "左脚",
+                        "height":  "183",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -590,10 +605,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Barcelona Atlètic",
                         "homeId":  "24335",
                         "awayId":  "24343",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "2",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -1030,6 +1045,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "16742128",
+                        "comp":  "西协乙",
+                        "round":  "30",
+                        "start":  "1807455600",
+                        "home":  "Girona B",
+                        "away":  "Barcelona Atlètic",
+                        "homeId":  "368693",
+                        "awayId":  "24343",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     }
                 ]
 };

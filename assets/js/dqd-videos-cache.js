@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-01 21:34 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-03 12:00 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-01 21:34:22",
+    "updated":  "2026-09-03 12:00:52",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -277,6 +277,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                                       ]
                                                                        }
                                                                    ],
+                                 "local:juvenil-a:hafizgariba":  [
+                                                                     {
+                                                                         "date":  "2026-09-03",
+                                                                         "opp":  "",
+                                                                         "label":  "09-03 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1XUt96jEej",
+                                                                                            "title":  "巴萨 B 队 加纳中卫 加里巴  加泰罗尼亚杯决赛集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-03",
+                                                                                            "durationSec":  "225",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/450995a103f5bf8ebc0eae4258e27e99de7774d1.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-02",
+                                                                         "opp":  "萨瓦德尔",
+                                                                         "label":  "vs 萨瓦德尔 · 09-02",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV13TtQ6qEdP",
+                                                                                            "title":  "加里巴VS萨瓦德尔",
+                                                                                            "channel":  "口菐",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-02",
+                                                                                            "durationSec":  "225",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/97ab3af4edc81ce58ad430e251c6b65a22d72fc4.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     }
+                                                                 ],
                                  "local:juvenil-a:hamzaabdelkarim":  [
                                                                          {
                                                                              "date":  "2026-08-19",
@@ -491,6 +527,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "308",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/e24edf8ef209732b5a8047a854f936221b636ccc.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:2076869":  [
+                                                      {
+                                                          "date":  "2026-09-03",
+                                                          "opp":  "",
+                                                          "label":  "09-03 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1XUt96jEej",
+                                                                             "title":  "巴萨 B 队 加纳中卫 加里巴  加泰罗尼亚杯决赛集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-03",
+                                                                             "durationSec":  "225",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/450995a103f5bf8ebc0eae4258e27e99de7774d1.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-02",
+                                                          "opp":  "萨瓦德尔",
+                                                          "label":  "vs 萨瓦德尔 · 09-02",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV13TtQ6qEdP",
+                                                                             "title":  "加里巴VS萨瓦德尔",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-02",
+                                                                             "durationSec":  "225",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/97ab3af4edc81ce58ad430e251c6b65a22d72fc4.jpg"
                                                                          }
                                                                      ]
                                                       }

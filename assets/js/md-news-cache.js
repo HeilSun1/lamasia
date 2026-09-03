@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-02 16:34:36 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-03 11:59:17 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-02 16:34:36",
+    "updated":  "2026-09-03 11:59:17",
     "source":  "md",
     "count":  50,
     "news":  [
         {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "title":  "El adiós de los primos Fernández",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "time":  "2026-09-02 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a981cc0351ab.r_d.521-780-10195.jpeg" },
+        {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "title":  "Cómo ha convencido Fariñas a Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "time":  "2026-09-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e67eeb876.r_d.1370-1000-4378.jpeg" },
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a985e661ab4a.r_d.370-132-12658.webp" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "title":  "Oficial: Toni Fernández, al Venezia con una fórmula diferente",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "time":  "2026-09-01 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208222/aitana-desvela-tecnica-mental-jugar-finales.html", "title":  "Aitana desvela su técnica mental antes de jugar finales",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260719/1004208222/aitana-desvela-tecnica-mental-jugar-finales.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/05/23/6a11e33da3f7b.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208062/mundial-espana-argentina-final-historia.html", "title":  "Modo mundial: España y Argentina, una final para la historia",
-            "url":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208062/mundial-espana-argentina-final-historia.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/19/6a5cb944d652a.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/05/23/6a11e33da3f7b.jpeg" }
     ]
 };

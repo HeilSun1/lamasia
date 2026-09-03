@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-02 16:34:33 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-03 11:59:09 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-02 16:34:33",
+    "updated":  "2026-09-03 11:59:09",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4571179", "title":  "Barça Atlètic 1-2 CE Sabadell: Copa Catalunya slips away",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4571179/barca-atletic-1-2-ce-sabadell-copa-catalunya-slips-away", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/4a78e0a0-082a-43f6-9c92-d642412f1ea1/DAG-082-_M1A8817.jpg" },
             {
                 "id":  "4570214", "title":  "Mirza Catovic, new Barça Atlètic player",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4570214/mirza-catovic-new-barca-atletic-player", "time":  "",
@@ -111,6 +115,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4570894", "title":  "2026/27 first team jersey numbers",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570894/202627-first-team-jersey-numbers-confirmed", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/f9bd6524-6acb-4881-96a8-98cdbb41a1e6/WhatsApp-Image-2026-09-02-at-18.55.08.jpeg" },
+            {
                 "id":  "4571124", "title":  "Three blaugranes nominated for LaLiga awards for August",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571124/three-blaugranes-nominated-for-laliga-awards-for-august", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/c12f0ef0-fc88-432d-a6c0-0c658bc032cf/_MGA2106.jpg" },
@@ -203,13 +211,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568488/hector-fort-transferred-to-real-sociedad", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/886b7ab4-5137-4797-9a2c-fd54eafbdfba/3200X2000-comiat-Hector.jpg" },
             {
-                "id":  "4568631", "title":  "Dates and times for UEFA CL league phase fixtures confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568631/dates-and-times-for-uefa-cl-league-phase-fixtures-confirmed", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/f2fc2878-c371-4f11-b76a-6b0aeb4e0d09/_MGA5037.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4568631", "title":  "Dates and times for UEFA CL league phase fixtures confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568631/dates-and-times-for-uefa-cl-league-phase-fixtures-confirmed", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/f2fc2878-c371-4f11-b76a-6b0aeb4e0d09/_MGA5037.jpg" },
             {
                 "id":  "4568632", "title":  "Preparations for Barça v Rayo under way",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568632/preparations-for-barca-v-rayo-under-way", "time":  "",
@@ -305,11 +313,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4565349", "title":  "Raphinha and Fermín amongst the goals",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565349/raphinha-and-fermin-amongst-the-goals", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/dc175e6f-68d6-49e2-9862-398b3b5bdc12/_MGA4877.jpg" },
-            {
-                "id":  "4565259", "title":  "Statement of intent (0-5)",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565259/elche-0-5-fc-barcelona-statement-of-intent", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/35fef44e-cd2e-43f1-84e6-ef80b072c61d/_MGA4974_1.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/23/dc175e6f-68d6-49e2-9862-398b3b5bdc12/_MGA4877.jpg" }
         ]
     }
 };
