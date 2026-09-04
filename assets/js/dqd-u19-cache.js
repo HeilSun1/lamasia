@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-03 11:57 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-04 12:04 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-03 11:57:14",
+    "updated":  "2026-09-04 12:04:56",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -395,21 +395,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pol Bernabéu",
-                        "id":  "2076871",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-05",
-                        "foot":  "左脚",
-                        "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mikael Baza",
                         "id":  "2311166",
                         "pos":  "D",
@@ -421,6 +406,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-01-12",
                         "foot":  "左脚",
                         "height":  "188",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pol Bernabéu",
+                        "id":  "2076871",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-05",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },
@@ -555,6 +555,21 @@ window.DQD_U19_CACHE = {
                         "away":  "Huesca U19",
                         "homeId":  "90128",
                         "awayId":  "333452",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "16990417",
+                        "comp":  "青年欧冠",
+                        "round":  "1",
+                        "start":  "1788948000",
+                        "home":  "Barcelona U19",
+                        "away":  "Feyenoord U19",
+                        "homeId":  "90128",
+                        "awayId":  "197177",
                         "hs":  "",
                         "as":  "",
                         "status":  "Not started",
@@ -980,21 +995,6 @@ window.DQD_U19_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
-                    },
-                    {
-                        "id":  "16541418",
-                        "comp":  "西青甲 G3",
-                        "round":  "30",
-                        "start":  "1809270000",
-                        "home":  "Barcelona U19",
-                        "away":  "Espanyol U19",
-                        "homeId":  "90128",
-                        "awayId":  "299636",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
-                        "isHome":  true
                     }
                 ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-03 12:00 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-04 12:08 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-03 12:00:52",
+    "updated":  "2026-09-04 12:08:58",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -279,6 +279,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                    ],
                                  "local:juvenil-a:hafizgariba":  [
                                                                      {
+                                                                         "date":  "2026-09-04",
+                                                                         "opp":  "萨瓦德尔",
+                                                                         "label":  "vs 萨瓦德尔 · 09-04",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1DJtv6WEXG",
+                                                                                            "title":  "加里巴VS萨瓦德尔 加泰杯决赛全触球集锦",
+                                                                                            "channel":  "口菐",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-04",
+                                                                                            "durationSec":  "477",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/638931137f1c1ccd7327d8e6c8617fc5bffccd0c.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-09-03",
                                                                          "opp":  "",
                                                                          "label":  "09-03 · 集锦",
@@ -370,6 +387,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-b:iumartinez":  [
+                                                                    {
+                                                                        "date":  "2026-09-03",
+                                                                        "opp":  "",
+                                                                        "label":  "09-03 · 个人集锦",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1Yztf6ZEuS",
+                                                                                           "title":  "伊乌·马丁内斯 | Juvenil A | 个人精彩集锦",
+                                                                                           "channel":  "静静很甜美",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-03",
+                                                                                           "durationSec":  "627",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i2.hdslb.com/bfs/archive/7631435e122d152ef71bd6b3c03a08c688a853b7.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:juvenil-b:jordipesquer":  [
                                                                       {
                                                                           "date":  "2026-08-23",
@@ -532,6 +568,23 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:2076869":  [
+                                                      {
+                                                          "date":  "2026-09-04",
+                                                          "opp":  "萨瓦德尔",
+                                                          "label":  "vs 萨瓦德尔 · 09-04",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1DJtv6WEXG",
+                                                                             "title":  "加里巴VS萨瓦德尔 加泰杯决赛全触球集锦",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-04",
+                                                                             "durationSec":  "477",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/638931137f1c1ccd7327d8e6c8617fc5bffccd0c.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-09-03",
                                                           "opp":  "",

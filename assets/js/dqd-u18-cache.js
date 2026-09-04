@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-03 11:57 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-04 12:05 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-09-03 11:57:31",
+    "updated":  "2026-09-04 12:05:13",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -30,21 +30,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Daniel da Lima",
-                        "id":  "2271424",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Portugal",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
-                        "age":  "15岁",
-                        "birthday":  "2010-09-19",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mahdi El Maimouni",
                         "id":  "2690302",
                         "pos":  "F",
@@ -54,6 +39,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2690302/image",
                         "age":  "17岁",
                         "birthday":  "2009-07-12",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Daniel da Lima",
+                        "id":  "2271424",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Portugal",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
+                        "age":  "15岁",
+                        "birthday":  "2010-09-19",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -240,21 +240,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Luca Pérez",
-                        "id":  "2412372",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-10",
-                        "foot":  "右脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Roc Martínez",
                         "id":  "2342517",
                         "pos":  "D",
@@ -264,6 +249,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2342517/image",
                         "age":  "16岁",
                         "birthday":  "2010-03-04",
+                        "foot":  "右脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Luca Pérez",
+                        "id":  "2412372",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-10",
                         "foot":  "右脚",
                         "height":  "",
                         "value":  "",

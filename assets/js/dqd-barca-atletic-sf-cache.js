@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-03 11:56 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-04 12:04 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-03 11:56:58",
+    "updated":  "2026-09-04 12:04:39",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -230,21 +230,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Dani Ávila",
-                        "id":  "1542727",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-03-22",
-                        "foot":  "右脚",
-                        "height":  "180",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mirza Ćatović",
                         "id":  "1937274",
                         "pos":  "M",
@@ -257,6 +242,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "190",
                         "value":  "360万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Dani Ávila",
+                        "id":  "1542727",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-03-22",
+                        "foot":  "右脚",
+                        "height":  "180",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -355,21 +355,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Patricio Pacifico",
-                        "id":  "1482410",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Uruguay",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-04-08",
-                        "foot":  "左脚",
-                        "height":  "187",
-                        "value":  "68万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Hafiz Gariba",
                         "id":  "2076869",
                         "pos":  "D",
@@ -382,6 +367,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "187",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Patricio Pacifico",
+                        "id":  "1482410",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Uruguay",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
+                        "age":  "20岁",
+                        "birthday":  "2006-04-08",
+                        "foot":  "左脚",
+                        "height":  "187",
+                        "value":  "68万",
                         "injury":  null
                     },
                     {

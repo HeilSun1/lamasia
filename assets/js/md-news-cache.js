@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-03 16:33:46 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-04 12:07:17 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-03 16:33:46",
+    "updated":  "2026-09-04 12:07:17",
     "source":  "md",
     "count":  50,
     "news":  [
         {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222876/primo-tah-asombra-barca-conoce-flick.html", "title":  "El primo de Tah asombra en el Barça por su físico y ya conoce a Flick",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222876/primo-tah-asombra-barca-conoce-flick.html", "time":  "2026-09-03 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/03/6a994ae273052.r_d.388-230-18377.png" },
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "title":  "Entradas a la venta para la exposición Iniesta Experience: (El Juego Interior)",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "time":  "2026-09-03 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/03/6a998ee626f71.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "title":  "El adiós de los primos Fernández",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "time":  "2026-09-02 12:00",

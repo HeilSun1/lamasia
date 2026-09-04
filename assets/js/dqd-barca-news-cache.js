@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-03 16:33:13 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-04 12:04:39 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-03 16:33:13",
+    "updated":  "2026-09-04 12:04:39",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6289101", "title":  "贝莱蒂谈比西武受伤：裁判应加强控制，避免类似情况再次发生",
+            "url":  "https://www.dongqiudi.com/articles/6289101.html", "time":  "2026-09-04 00:44",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4B/1D/280x210/crop/-/rBXRDGqZo5WAGFKzAADW25zMvw8063.jpg" },
         {
             "id":  "6287228", "title":  "每体：比西武伤势无大碍，检查结果显示仅为右脚踝撞伤",
             "url":  "https://www.dongqiudi.com/articles/6287228.html", "time":  "2026-09-03 18:23",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6175392", "title":  "每体：巴萨今夏已通过出售球员获利7000万欧，目标突破1亿欧",
             "url":  "https://www.dongqiudi.com/articles/6175392.html", "time":  "2026-08-15 09:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/BB/280x210/crop/-/rBXRDGp_vNOAAj3OAAIZ4Z-CFac896.jpg" },
-        {
-            "id":  "6174995", "title":  "每体：巴萨今夏卖人已入账近7000万欧元",
-            "url":  "https://www.dongqiudi.com/articles/6174995.html", "time":  "2026-08-15 05:55",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/2E/280x210/crop/-/rBXRn2p_jViAQ7tXAAHlMUeY99o907.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/BB/280x210/crop/-/rBXRDGp_vNOAAj3OAAIZ4Z-CFac896.jpg" }
     ]
 };
