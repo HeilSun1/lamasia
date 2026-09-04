@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-04 12:04:39 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-04 16:32:24 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-04 12:04:39",
+    "updated":  "2026-09-04 16:32:24",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6290727", "title":  "阿斯：巴萨竞技想签巴列西略，桑坦德坚持解约金",
+            "url":  "https://www.dongqiudi.com/articles/6290727.html", "time":  "2026-09-04 13:43",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4C/3C/280x210/crop/-/rBXRn2qaOdiAG4BxAALX8HFE6lQ516.jpg" },
         {
             "id":  "6289101", "title":  "贝莱蒂谈比西武受伤：裁判应加强控制，避免类似情况再次发生",
             "url":  "https://www.dongqiudi.com/articles/6289101.html", "time":  "2026-09-04 00:44",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6176463", "title":  "每体：18岁小将比西武通过弗里克考验，注册B队随一队训练",
             "url":  "https://www.dongqiudi.com/articles/6176463.html", "time":  "2026-08-15 15:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/08/96/280x210/crop/-/rBXRDGqAGbWAIKt8AACvEGFEJgc576.jpg" },
-        {
-            "id":  "6175392", "title":  "每体：巴萨今夏已通过出售球员获利7000万欧，目标突破1亿欧",
-            "url":  "https://www.dongqiudi.com/articles/6175392.html", "time":  "2026-08-15 09:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/BB/280x210/crop/-/rBXRDGp_vNOAAj3OAAIZ4Z-CFac896.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/08/96/280x210/crop/-/rBXRDGqAGbWAIKt8AACvEGFEJgc576.jpg" }
     ]
 };

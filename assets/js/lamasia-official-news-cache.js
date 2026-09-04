@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-04 12:07:11 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-04 16:32:50 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-04 12:07:11",
+    "updated":  "2026-09-04 16:32:50",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -119,6 +119,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4572031", "title":  "Second to last session before trip to Mestalla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" },
+            {
+                "id":  "4571115", "title":  "Last visit to Mestalla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571115/last-visit-to-mestalla-a-stadium-with-great-memories-for-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/f9174771-2b14-4d46-ac4e-48649a44b5ac/AthleticClub-FCBarcelona4-1CopadelRei20082009v4_pic__m3_9614.jpg" },
+            {
                 "id":  "4571558", "title":  "Gavi and Gabriel Jesus at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571558/gavi-and-gabriel-jesus-feature-in-return-to-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/03/466afcaf-cc25-4157-993b-844d1248147f/image00012.jpeg" },
@@ -203,6 +211,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568230/preview-fc-barcelona-v-rayo-vallecano", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4569083", "title":  "The squad to face Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569083/the-squad-to-face-rayo", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/fe8cb480-438f-4896-be4c-de0f24a0f3f5/WhatsApp-Image-2026-08-30-at-13.57.02-2-.jpeg" },
@@ -210,10 +222,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4569011", "title":  "'Most important is how we play as a team'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569011/hansi-flick-most-important-is-how-we-play-as-a-team", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/918cbcb4-1215-48bf-a423-1aef795dd66e/_MGA1813.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4568965", "title":  "Last session ahead of visit of Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568965/last-session-ahead-of-visit-of-rayo", "time":  "",
@@ -309,15 +317,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4565856", "title":  "When and where to watch Barça v Athletic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565856/when-and-where-to-watch-fc-barcelona-v-athletic-club", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4565550", "title":  "Gavi injury update",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565550/gavi-injury-update", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/93d99863-62d0-4bdc-b198-712eea55a7af/_MGA8980.jpg" },
-            {
-                "id":  "4565511", "title":  "Debut goal for Adeyemi",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565511/debut-goal-for-adeyemi", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/24/402b10c8-0487-40ea-9f92-65afeee86ca4/_MGA9241.jpg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };
