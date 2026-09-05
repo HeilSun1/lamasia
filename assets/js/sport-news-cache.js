@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-04 16:32:51 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-05 16:31:54 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-04 16:32:51",
+    "updated":  "2026-09-05 16:31:54",
     "source":  "sport",
-    "count":  44,
+    "count":  46,
     "news":  [
+        {
+            "id":  "133983831", "title":  "Barça Atlètic-Náxara CD: Arranca la operación ascenso en el Johan Cruyff",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-naxara-cd-arranca-133983831", "time":  "2026-09-05 14:59",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_default_0_x418y175.webp" },
+        {
+            "id":  "133981636", "title":  "El Barça Atlètic ya tiene a sus cuatro capitanes",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cuatro-capitanes-133981636", "time":  "2026-09-05 11:47",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "133877087", "title":  "A qué hora es el Barça Atlètic - Sabadell hoy y dónde ver la final de la Copa Catalunya gratis por TV y en directo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 19:18",

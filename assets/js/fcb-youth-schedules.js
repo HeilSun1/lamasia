@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-04 16:35；数据源：FC Barcelona 官网 calendario */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-05 16:34；数据源：FC Barcelona 官网 calendario */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-04 16:35:09",
+    "updated":  "2026-09-05 16:34:41",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -2364,7 +2364,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "3",
                                           "start":  "1791108000",
                                           "date":  "2026-10-04",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "FC Barcelona B",
                                           "away":  "Olot A",
                                           "homeId":  "11110",

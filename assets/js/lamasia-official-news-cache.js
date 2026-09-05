@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-04 16:32:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-05 16:31:53 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-04 16:32:50",
+    "updated":  "2026-09-05 16:31:53",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -119,6 +119,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4572395", "title":  "The squad for Valencia",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572395/the-squad-for-valencia", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/8aa0bbc0-b863-4277-af64-036898883d15/_MGA2532.jpg" },
+            {
+                "id":  "4572392", "title":  "Last session before Valencia",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572392/last-session-before-valencia", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/064266ff-1354-4dd5-bdfb-a05b839886d8/WhatsApp-Image-2026-09-05-at-12.51.57.jpeg" },
+            {
+                "id":  "4572396", "title":  "'A top quality squad'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572396/hansi-flick-we-have-a-very-high-quality-squad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/c2ee6f2d-b02f-402e-96d4-81ad458d3879/_MGA3779.jpg" },
+            {
+                "id":  "4572111", "title":  "Valencia v Barça: Did you know?",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572111/valencia-v-barca-did-you-knowx", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/902940c4-1672-4f32-b527-5828fe55df6b/_MGA8314.jpg" },
+            {
                 "id":  "4572031", "title":  "Second to last session before trip to Mestalla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" },
@@ -195,6 +211,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569791/hamza-abdelkarim-makes-competitive-debut-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/96eb708c-395d-4d08-a68d-9a1ce37a55f3/_MGA2343.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4566867", "title":  "Christensen reaches 100 Barça appearances",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566867/christensen-reaches-100-fc-barcelona-appearances", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/ccf0a4a9-0974-473c-8fa1-b981317ffb59/3200x2000_MatchMilestone_Christensen_ENG_2026.jpg" },
@@ -210,10 +230,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4568230", "title":  "PREVIEW | Barça v Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568230/preview-fc-barcelona-v-rayo-vallecano", "time":  "",
                 "tag":  "", "img":  "" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4569083", "title":  "The squad to face Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569083/the-squad-to-face-rayo", "time":  "",
@@ -301,23 +317,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4566822", "title":  "Final preparations ahead of home bow",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566822/final-preparations-ahead-of-first-home-match-at-the-spotify-camp-nou-against-athletic-club", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/284a5fb2-6caf-401f-8679-af42edf7e057/WhatsApp-Image-2026-08-26-at-13.09.59-1-.jpeg" },
-            {
-                "id":  "4566835", "title":  "'The team has a hunger to win'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566835/hansi-flick-the-team-has-a-hunger-to-win", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/89106a1d-5cce-4790-b3fc-bdcfccaa7aaa/_MGA0160.jpg" },
-            {
-                "id":  "4566178", "title":  "Interesting facts about Barça v Athletic",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566178/five-interesting-facts-about-barca-v-athletic-club", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/e3c8c410-bfa1-4351-914b-593af9b9162b/lamine-athletic.jpg" },
-            {
-                "id":  "4566188", "title":  "Second to last session before Spotify Camp Nou league debut",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566188/second-to-last-session-before-spotify-camp-nou-league-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/5e1a4094-6af5-4e26-a759-9a6c3fb99f72/WhatsApp-Image-2026-08-25-at-12.25.02-3-.jpeg" },
-            {
-                "id":  "4565856", "title":  "When and where to watch Barça v Athletic",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4565856/when-and-where-to-watch-fc-barcelona-v-athletic-club", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/284a5fb2-6caf-401f-8679-af42edf7e057/WhatsApp-Image-2026-08-26-at-13.09.59-1-.jpeg" }
         ]
     }
 };
