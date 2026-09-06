@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-05 16:31:54 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-06 18:25:21 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-05 16:31:54",
+    "updated":  "2026-09-06 18:25:21",
     "source":  "sport",
-    "count":  46,
+    "count":  49,
     "news":  [
+        {
+            "id":  "134005261", "title":  "Barça Atlètic - CD Náxara, en directo: partido de la 2ª RFEF, en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-naxara-directo-134005261", "time":  "2026-09-06 16:43",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_default_0_x430y146.webp" },
+        {
+            "id":  "134001813", "title":  "El Barça Atlètic ya tiene dorsales para la nueva temporada",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-dorsales-nueva-temporada-134001813", "time":  "2026-09-06 10:58",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a8ac08d2-eb61-444a-bb4b-17361b0fac11_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "133985068", "title":  "El canario Joni y Nil Vicens lideran una goleada impresionante del Juvenil A del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/canario-joni-nil-vicens-lideran-133985068", "time":  "2026-09-05 18:05",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
         {
             "id":  "133983831", "title":  "Barça Atlètic-Náxara CD: Arranca la operación ascenso en el Johan Cruyff",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-naxara-cd-arranca-133983831", "time":  "2026-09-05 14:59",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_default_0_x418y175.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" },
         {
             "id":  "133981636", "title":  "El Barça Atlètic ya tiene a sus cuatro capitanes",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cuatro-capitanes-133981636", "time":  "2026-09-05 11:47",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133877087", "title":  "A qué hora es el Barça Atlètic - Sabadell hoy y dónde ver la final de la Copa Catalunya gratis por TV y en directo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 19:18",

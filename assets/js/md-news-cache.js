@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-05 16:31:56 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-06 18:25:23 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-05 16:31:56",
+    "updated":  "2026-09-06 18:25:23",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "title":  "Pau Víctor y Tommy Marqués dan buen resultado al Braga",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "time":  "2026-09-06 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/09/6a78f39362bd1.r_d.1157-701-5376.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "title":  "Entradas a la venta para la exposición Iniesta Experience: (El Juego Interior)",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "time":  "2026-09-03 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260720/1004208500/emotivo-mensaje-gavi-conquistar-mundial.html", "title":  "El emotivo mensaje de Gavi tras conquistar el Mundial",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260720/1004208500/emotivo-mensaje-gavi-conquistar-mundial.html", "time":  "2026-07-20 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a5a4f270aa95.r_d.1517-1163-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208244/emotivo-mensaje-lamine-yamal-oculto-cinta-pelo-argentina.html", "title":  "El emotivo mensaje de Lamine Yamal oculto en su cinta del pelo contra Argentina",
-            "url":  "https://www.mundodeportivo.com/futbol/mundial/20260719/1004208244/emotivo-mensaje-lamine-yamal-oculto-cinta-pelo-argentina.html", "time":  "2026-07-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/19/6a5d222d35775.r_d.1483-858-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a5a4f270aa95.r_d.1517-1163-4000.jpeg" }
     ]
 };

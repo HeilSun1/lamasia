@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-05 16:31:53 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-06 18:25:19 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-05 16:31:53",
+    "updated":  "2026-09-06 18:25:19",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -119,6 +119,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" },
+            {
+                "id":  "4572837", "title":  "Valencia 0-5 Barça: High five!",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572837/valencia-cf-0-5-fc-barcelona-high-five", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/bced39c1-3b8d-4fc8-950a-c5fe38fa1aa1/_MGA5352.jpg" },
+            {
+                "id":  "4572267", "title":  "PREVIEW | Valencia v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572267/preview-valencia-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4572395", "title":  "The squad for Valencia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572395/the-squad-for-valencia", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/8aa0bbc0-b863-4277-af64-036898883d15/_MGA2532.jpg" },
@@ -199,6 +211,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4570028", "title":  "Raphinha rocketing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570028/raphinha-rocketing", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/6699faaf-989f-4cfc-9b0c-8e3d0f18ed34/_MGA5152.jpg" },
@@ -210,10 +226,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4569791", "title":  "Abdelkarim makes competitive debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569791/hamza-abdelkarim-makes-competitive-debut-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/96eb708c-395d-4d08-a68d-9a1ce37a55f3/_MGA2343.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4566867", "title":  "Christensen reaches 100 Barça appearances",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566867/christensen-reaches-100-fc-barcelona-appearances", "time":  "",
@@ -305,19 +317,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4566933", "title":  "Livaković is a new blaugrana player",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566933/dominik-livakovi-is-a-new-blaugrana-player", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" },
-            {
-                "id":  "4566224", "title":  "PREVIEW | Barça v Athletic Club",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566224/preview-fc-barcelona-v-athletic-club", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4566176", "title":  "Preview of the Champions League draw",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566176/all-you-need-to-know-about-the-uefa-champions-league-draw", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/25/778ca42b-e004-473c-9959-a1131c7a0c6a/GalaUEFAMillorJugadoradelAny20222023__sgb7879.jpg" },
-            {
-                "id":  "4566822", "title":  "Final preparations ahead of home bow",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566822/final-preparations-ahead-of-first-home-match-at-the-spotify-camp-nou-against-athletic-club", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/284a5fb2-6caf-401f-8679-af42edf7e057/WhatsApp-Image-2026-08-26-at-13.09.59-1-.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/26/4f02606a-ab07-4020-bbf9-d1e325fc295c/3200x2000_LIVAKOVIC.jpg" }
         ]
     }
 };

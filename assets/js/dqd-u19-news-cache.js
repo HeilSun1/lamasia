@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-05 16:31:49 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-06 18:25:15 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-05 16:31:49",
+    "updated":  "2026-09-06 18:25:15",
     "source":  "dongqiudi",
-    "count":  26,
+    "count":  27,
     "news":  [
+        {
+            "id":  "6303782", "title":  "约纳坦-塔祝贺16岁表弟巴扎加盟巴萨：为你感到非常骄傲",
+            "url":  "https://www.dongqiudi.com/articles/6303782.html", "time":  "2026-09-06 17:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/52/D7/280x210/crop/-/rBXRDGqdMcmAI6LyAAF_nXfYOEk337.jpg" },
         {
             "id":  "6287285", "title":  "世体：约纳坦-塔表弟加盟巴萨青年队，体格令拉玛西亚惊讶",
             "url":  "https://www.dongqiudi.com/articles/6287285.html", "time":  "2026-09-03 18:36",
