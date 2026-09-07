@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-06 18:25:23 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-07 20:01:34 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-06 18:25:23",
+    "updated":  "2026-09-07 20:01:34",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "title":  "Galifardeu y otras palabras que hablan catalán en el Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "time":  "2026-09-07 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9ea652e013b.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "title":  "Pau Víctor y Tommy Marqués dan buen resultado al Braga",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "time":  "2026-09-06 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/vaya-mundo/20260721/1004208728/jota-jordi-toca-fibra-madridismo-mundial-masia-campeona-mundo-dct.html", "title":  "Jota Jordi toca la fibra del madridismo tras el Mundial: La Masia es campeona del mundo",
             "url":  "https://www.mundodeportivo.com/vaya-mundo/20260721/1004208728/jota-jordi-toca-fibra-madridismo-mundial-masia-campeona-mundo-dct.html", "time":  "2026-07-21 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/12/01/692d369a566bd.r_d.343-193-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260720/1004208500/emotivo-mensaje-gavi-conquistar-mundial.html", "title":  "El emotivo mensaje de Gavi tras conquistar el Mundial",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260720/1004208500/emotivo-mensaje-gavi-conquistar-mundial.html", "time":  "2026-07-20 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a5a4f270aa95.r_d.1517-1163-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/12/01/692d369a566bd.r_d.343-193-0.jpeg" }
     ]
 };

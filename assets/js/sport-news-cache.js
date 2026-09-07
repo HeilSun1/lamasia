@@ -1,17 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-06 18:25:21 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-07 20:01:33 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-06 18:25:21",
+    "updated":  "2026-09-07 20:01:33",
     "source":  "sport",
-    "count":  49,
+    "count":  50,
     "news":  [
         {
+            "id":  "134045648", "title":  "Òscar Gistau apunta a la Youth League: el '9' más prometedor de La Masia quiere reivindicarse a base de goles",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oscar-gistau-apunta-youth-league-134045648", "time":  "2026-09-07 18:44",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_default_0_x1351y347.webp" },
+        {
+            "id":  "134039223", "title":  "El hijo de Pedro Rodríguez se suma al Sub-11 B del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-pedro-rodriguez-suma-sub-134039223", "time":  "2026-09-07 16:53",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/221fcb56-d51c-4d5b-a7a2-43fbc980e004_16-9-discover-aspect-ratio_640w_0_x558y121.webp" },
+        {
+            "id":  "134014200", "title":  "El cambio radical de Ignasi Quer: De la Lliga Elit a anotar un póker en el Johan",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cambio-radical-ignasi-quer-lliga-134014200", "time":  "2026-09-07 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/29ca953e-0a32-488d-bc55-ff4640a5b48f_16-9-discover-aspect-ratio_640w_0_x511y127.webp" },
+        {
+            "id":  "134005269", "title":  "Debut salvaje de Ignasi Quer: Cuatro goles del '9' del Barça Atlètic en un estreno soñado",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-salvaje-ignasi-quer-cuatro-134005269", "time":  "2026-09-06 20:21",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4ad43a0c-0fc9-4abd-9c36-437608b16f06_16-9-discover-aspect-ratio_640w_0_x732y110.webp" },
+        {
             "id":  "134005261", "title":  "Barça Atlètic - CD Náxara, en directo: partido de la 2ª RFEF, en vivo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-naxara-directo-134005261", "time":  "2026-09-06 16:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_default_0_x430y146.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-naxara-directo-134005261", "time":  "2026-09-06 18:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x430y146.webp" },
         {
             "id":  "134001813", "title":  "El Barça Atlètic ya tiene dorsales para la nueva temporada",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-dorsales-nueva-temporada-134001813", "time":  "2026-09-06 10:58",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a8ac08d2-eb61-444a-bb4b-17361b0fac11_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a8ac08d2-eb61-444a-bb4b-17361b0fac11_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "133985068", "title":  "El canario Joni y Nil Vicens lideran una goleada impresionante del Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/canario-joni-nil-vicens-lideran-133985068", "time":  "2026-09-05 18:05",
@@ -187,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "132808407", "title":  "Cambio de paradigma en el Barça Atlètic de Belletti",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cambio-paradigma-barca-atletic-juliano-belletti-132808407", "time":  "2026-07-25 20:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "132633005", "title":  "El Barça Atlètic vuelve con 27 jugadores y varias incógnitas",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-vuelve-27-jugadores-132633005", "time":  "2026-07-20 12:59",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5d026e49-54ce-40fe-b324-a40db70ec2a1_16-9-discover-aspect-ratio_640w_0_x600y250.webp" },
-        {
-            "id":  "132523881", "title":  "El Barça ficha a una joya belga-marroquí y a una kazaja",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-ficha-joya-belga-marroqui-132523881", "time":  "2026-07-16 17:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c7d8b35-c538-4d98-bb3e-d32053504c42_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "132466175", "title":  "Oficial: Àlex Campos renueva con el Barça hasta 2029",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-renueva-barca-2029-atletic-barcelona-oficial-132466175", "time":  "2026-07-16 09:56",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e0e798b8-8b86-4b8e-931c-c7864f0a6c45_16-9-discover-aspect-ratio_640w_0.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
