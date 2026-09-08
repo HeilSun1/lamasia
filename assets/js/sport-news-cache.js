@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-07 20:01:33 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-08 19:28:45 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-07 20:01:33",
+    "updated":  "2026-09-08 19:28:45",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134060176", "title":  "El Sub-19 del Barça inicia el camino para conquistar su cuarta Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sub-19-barca-inicia-camino-134060176", "time":  "2026-09-08 16:33",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6e71b0b3-3326-4f7a-97e4-535826afa412_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134045648", "title":  "Òscar Gistau apunta a la Youth League: el '9' más prometedor de La Masia quiere reivindicarse a base de goles",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oscar-gistau-apunta-youth-league-134045648", "time":  "2026-09-07 18:44",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "132631269", "title":  "Oficial: Nuevo (viejo) fichaje del Barça para el extremo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-aziz-issah-ficha-barca-132631269", "time":  "2026-07-27 17:59",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3e9875c7-7be0-42ef-807c-ee43e00b302e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "132808407", "title":  "Cambio de paradigma en el Barça Atlètic de Belletti",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cambio-paradigma-barca-atletic-juliano-belletti-132808407", "time":  "2026-07-25 20:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3e9875c7-7be0-42ef-807c-ee43e00b302e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-07 20:01:30 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-08 19:28:43 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-07 20:01:30",
+    "updated":  "2026-09-08 19:28:43",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -123,6 +123,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4573777", "title":  "Three nominated for the Ballon d'Or",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573777/three-nominated-for-the-ballon-dor", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4573727", "title":  "Training session ahead of European debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573727/training-session-ahead-of-european-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/275dc1a1-4dc2-4d3f-b9d2-12dec2c21eb4/WhatsApp-Image-2026-09-08-at-14.22.16-1-.jpeg" },
+            {
+                "id":  "4573719", "title":  "'There's no greater motivation'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573719/lamine-yamal-theres-no-greater-motivation", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/c6087526-203e-4a3e-98e4-82f138826900/_MGA5365.jpg" },
+            {
+                "id":  "4573711", "title":  "Hansi Flick: 'Everyone is ready'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573711/hansi-flick-everyone-is-ready", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7762876d-6e28-45b3-92df-90a1393b95b5/_MGA5298.jpg" },
+            {
                 "id":  "4573406", "title":  "When and where to watch Barça v Feyenoord",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573406/when-and-where-to-watch-fc-barcelona-v-feyenoord", "time":  "",
                 "tag":  "", "img":  "" },
@@ -199,6 +215,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570494/brian-farinas-registered-as-first-team-player-in-number-4-jersey", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/dbaddd13-a4fc-4269-9b67-2cb584c4df3c/WhatsApp-Image-2026-09-01-at-23.52.39.jpeg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4570290", "title":  "Marc Casadó loaned to Deportivo A Coruña",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570290/marc-casado-loaned-to-deportivo-a-coruna", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/38a328b1-e8d3-4c60-b329-48f5ced3c50c/_MGA6770.jpg" },
@@ -210,14 +234,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4570303", "title":  "Agreement with Venezia FC for the transfer of Toni Fernández",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570303/agreement-with-venezia-fc-for-the-transfer-of-toni-fernandez", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cbe95f7b-1dd8-49f7-aa8a-bc9de8060d9b/3200X2000-comiat-Toni_Fern-ndez.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4570156", "title":  "'I knew something nice would happen'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570156/gabriel-jesus-i-knew-something-nice-would-happen", "time":  "",
@@ -305,23 +321,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4568107", "title":  "10 things from the Champions League draw",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568107/10-things-from-the-champions-league-draw", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/5e1cf6a5-7989-4787-9edd-423cb17c0d2c/_MGA4116.jpg" },
-            {
-                "id":  "4567875", "title":  "'I liked what I saw'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567875/hansi-flick-i-liked-what-i-saw", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/a214514c-403b-4531-b8e5-821c171721e8/_MGA0601.jpg" },
-            {
-                "id":  "4567837", "title":  "Rodri debuts with a win for Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567837/rodri-debuts-with-a-win-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/e39a5e0a-29bb-4a1f-a857-9746365ada08/DAG-057-_M1A0341.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4567808", "title":  "First home LaLiga win of season (2-0)",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4567808/fc-barcelona-2-0-athletic-club-first-home-laliga-win-of-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/27/d08a219f-1e49-4e98-8a47-9779834e9c63/_MGA0770.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/5e1cf6a5-7989-4787-9edd-423cb17c0d2c/_MGA4116.jpg" }
         ]
     }
 };

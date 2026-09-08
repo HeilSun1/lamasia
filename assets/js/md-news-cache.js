@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-07 20:01:34 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-08 19:28:47 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-07 20:01:34",
+    "updated":  "2026-09-08 19:28:47",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "title":  "Xavi I de Holanda",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "time":  "2026-09-08 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224495/pere-romeu-celebra-suss-100-partidos-frente-barca-femenino-club-mi-vida.html", "title":  "Pere Romeu celebra sus 100 partidos al frente del Barça femenino: Es el club de mi vida",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224495/pere-romeu-celebra-suss-100-partidos-frente-barca-femenino-club-mi-vida.html", "time":  "2026-09-07 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9f116e26f92.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "title":  "Galifardeu y otras palabras que hablan catalán en el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "time":  "2026-09-07 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208949/89-goles-titulo-roja-llevan-sello-barca.html", "title":  "El 89% de los goles de título de la Roja llevan el sello del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208949/89-goles-titulo-roja-llevan-sello-barca.html", "time":  "2026-07-22 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/21/6a5fdef163501.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208964/argentina-comparan-salvada-cubarsi-parada-dibu-kolo-muani-2022.html", "title":  "En Argentina comparan la salvada de Cubarsí con la parada de Dibu a Kolo Muani en 2022",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208964/argentina-comparan-salvada-cubarsi-parada-dibu-kolo-muani-2022.html", "time":  "2026-07-22 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/20/6a5e2cdadc643.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/vaya-mundo/20260721/1004208728/jota-jordi-toca-fibra-madridismo-mundial-masia-campeona-mundo-dct.html", "title":  "Jota Jordi toca la fibra del madridismo tras el Mundial: La Masia es campeona del mundo",
-            "url":  "https://www.mundodeportivo.com/vaya-mundo/20260721/1004208728/jota-jordi-toca-fibra-madridismo-mundial-masia-campeona-mundo-dct.html", "time":  "2026-07-21 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/12/01/692d369a566bd.r_d.343-193-0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/21/6a5fdef163501.jpeg" }
     ]
 };

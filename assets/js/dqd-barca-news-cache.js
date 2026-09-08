@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-07 20:01:06 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-08 19:28:19 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-07 20:01:06",
+    "updated":  "2026-09-08 19:28:19",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6314677", "title":  "每体：巴萨改变出售青训球员的策略，保留回购权和二转分成",
+            "url":  "https://www.dongqiudi.com/articles/6314677.html", "time":  "2026-09-08 15:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/58/74/280x210/crop/-/rBXRDGqftmuAH-xbAAEZnl3CkBk409.jpg" },
         {
             "id":  "6290727", "title":  "阿斯：巴萨竞技想签巴列西略，桑坦德坚持解约金",
             "url":  "https://www.dongqiudi.com/articles/6290727.html", "time":  "2026-09-04 13:43",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6179292", "title":  "巴萨战巴塞尔大名单：亚马尔领衔，加维、佩德里缺席",
             "url":  "https://www.dongqiudi.com/articles/6179292.html", "time":  "2026-08-16 00:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/CD/280x210/crop/-/rBXRDGqAkniATrDoAA18Vda6Dic175.png" },
-        {
-            "id":  "6176463", "title":  "每体：18岁小将比西武通过弗里克考验，注册B队随一队训练",
-            "url":  "https://www.dongqiudi.com/articles/6176463.html", "time":  "2026-08-15 15:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/08/96/280x210/crop/-/rBXRDGqAGbWAIKt8AACvEGFEJgc576.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/CD/280x210/crop/-/rBXRDGqAkniATrDoAA18Vda6Dic175.png" }
     ]
 };
