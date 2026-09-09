@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-09 22:24:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-09 19:21:13 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-09 22:24:50",
+    "updated":  "2026-09-09 19:21:13",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -123,6 +123,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4574250", "title":  "Barça 5-1 Feyenoord: Dancing in the rain",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574250/fc-barcelona-5-1-feyenoord-dancing-in-the-rain", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/7cdd59f8-e876-418f-8be3-3077a83d5207/_MGA6940.jpg" },
+            {
+                "id":  "4574356", "title":  "First goal for Gabriel Jesus",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574356/first-goal-for-gabriel-jesus-with-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/49e1a248-588b-4305-9983-f274edc1af8a/_MGA7044.jpg" },
+            {
+                "id":  "4574000", "title":  "Kounde matches Abidal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574000/kounde-matches-abidal-as-the-frenchman-with-most-appearances-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
+            {
+                "id":  "4574300", "title":  "Round figures for Pedri and Joan Garcia",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574300/round-figures-for-pedri-and-joan-garcia", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/3e64478b-9e50-4fd4-85c2-ed53c3be6e1f/_MGA5786.jpg" },
+            {
                 "id":  "4573860", "title":  "Champions League squad",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573860/first-champions-league-squad-announced", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/5db40c71-7f51-4080-9f19-21914d8b0af0/WhatsApp-Image-2026-09-08-at-14.22.16-2-.jpeg" },
@@ -203,6 +219,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571115/last-visit-to-mestalla-a-stadium-with-great-memories-for-barca", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/f9174771-2b14-4d46-ac4e-48649a44b5ac/AthleticClub-FCBarcelona4-1CopadelRei20082009v4_pic__m3_9614.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4571558", "title":  "Gavi and Gabriel Jesus at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571558/gavi-and-gabriel-jesus-feature-in-return-to-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/03/466afcaf-cc25-4157-993b-844d1248147f/image00012.jpeg" },
@@ -214,14 +238,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4570894", "title":  "2026/27 first team jersey numbers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570894/202627-first-team-jersey-numbers-confirmed", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/f9bd6524-6acb-4881-96a8-98cdbb41a1e6/WhatsApp-Image-2026-09-02-at-18.55.08.jpeg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4571124", "title":  "Three blaugranes nominated for LaLiga awards for August",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571124/three-blaugranes-nominated-for-laliga-awards-for-august", "time":  "",
@@ -305,23 +321,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4568157", "title":  "Four facts ahead of Barça v Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568157/four-facts-ahead-of-fc-barcelona-v-rayo", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/2111e103-c435-407b-b386-4cced4c770db/rapha-rayo.jpg" },
-            {
-                "id":  "4568488", "title":  "Héctor Fort transferred to Real Sociedad",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568488/hector-fort-transferred-to-real-sociedad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/886b7ab4-5137-4797-9a2c-fd54eafbdfba/3200X2000-comiat-Hector.jpg" },
-            {
-                "id":  "4568631", "title":  "Dates and times for UEFA CL league phase fixtures confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568631/dates-and-times-for-uefa-cl-league-phase-fixtures-confirmed", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/f2fc2878-c371-4f11-b76a-6b0aeb4e0d09/_MGA5037.jpg" },
-            {
-                "id":  "4568632", "title":  "Preparations for Barça v Rayo under way",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568632/preparations-for-barca-v-rayo-under-way", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/29/4b790afd-988c-4f26-ab7e-97eceb9564e1/WhatsApp-Image-2026-08-29-at-11.24.04-4-.jpeg" },
-            {
-                "id":  "4568142", "title":  "When and where to watch Barça v Rayo",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568142/when-and-where-to-watch-fc-barcelona-v-rayo-vallecano", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/2111e103-c435-407b-b386-4cced4c770db/rapha-rayo.jpg" }
         ]
     }
 };
