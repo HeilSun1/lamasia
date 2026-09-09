@@ -29,11 +29,14 @@ Log "======== 开始本机每日更新 ========"
 git config user.name  "lamasia-local-updater" 2>$null
 git config user.email "lamasia-local-updater@local" 2>$null
 git fetch origin 2>&1 | Out-Null
+# 记录暂存前的 stash 数量，只还原"本次新建"的 stash（避免把历史残留 stash 误 pop 回来导致卡死停更）
+$stashCountBefore = (git stash list 2>$null | Measure-Object).Count
 git stash -u 2>$null | Out-Null    # 暂存未提交的手动改动（如周报）
+$stashMade = (git stash list 2>$null | Measure-Object).Count -gt $stashCountBefore
 git rebase origin/main 2>&1 | Out-Null
 if ($LASTEXITCODE -ne 0) {
   git rebase --abort 2>$null
-  git stash pop 2>$null
+  if ($stashMade) { git stash pop 2>$null }
   Log "✗ 与远端同步冲突，本次跳过推送（下次再试）"
   exit 0
 }
@@ -76,7 +79,10 @@ if ($LASTEXITCODE -eq 0) {
   }
 }
 
-# ── 3. 恢复手动改动 ──
-git stash pop 2>$null
+# ── 3. 恢复手动改动（只 pop 本次新建的 stash；没新建就不动，防误 pop 残留 stash） ──
+if ($stashMade) {
+  git stash pop 2>&1 | Out-Null
+  if ($LASTEXITCODE -ne 0) { Log "  ! 手动改动还原冲突，改动已留在 stash，需手动 git stash list / git stash pop 处理" }
+}
 
 Log "======== 本机每日更新结束 ========"
