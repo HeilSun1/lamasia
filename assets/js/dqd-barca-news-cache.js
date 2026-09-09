@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-08 19:28:19 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-09 22:18:44 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-08 19:28:19",
+    "updated":  "2026-09-09 22:18:44",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6321514", "title":  "官方：巴萨小将谢尔菲加盟沙特迪里耶，保留球员部分二转分成",
+            "url":  "https://www.dongqiudi.com/articles/6321514.html", "time":  "2026-09-09 19:40",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/E8/280x210/crop/-/rBXRDGqhRUuAVOOhAACbEibdhDs772.jpg" },
+        {
+            "id":  "6321324", "title":  "奥尔莫：10年的西班牙给我无数感动，如今我们也到了同样高度",
+            "url":  "https://www.dongqiudi.com/articles/6321324.html", "time":  "2026-09-09 18:36",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/AC/280x210/crop/-/rBXRn2qhMh-AI2aqAAzBX6x-dCI606.jpg" },
+        {
+            "id":  "6320800", "title":  "亨利：罗德里是另一个布斯克茨，他能彻底改变你的球队",
+            "url":  "https://www.dongqiudi.com/articles/6320800.html", "time":  "2026-09-09 15:33",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/55/280x210/crop/-/rBXRn2qhC7-ANH0RAAIfzYAOYkw886.jpg" },
         {
             "id":  "6314677", "title":  "每体：巴萨改变出售青训球员的策略，保留回购权和二转分成",
             "url":  "https://www.dongqiudi.com/articles/6314677.html", "time":  "2026-09-08 15:17",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6184910", "title":  "每体：哈姆扎季前赛已打进3球，已成为巴萨9号位现实选择",
             "url":  "https://www.dongqiudi.com/articles/6184910.html", "time":  "2026-08-17 02:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0D/8B/280x210/crop/-/rBXRn2qB_22AcNh-AAIlUO9iGZo658.jpg" },
-        {
-            "id":  "6182086", "title":  "每体：巴萨公布友谊赛对阵巴塞尔大名单，亚马尔等人回归",
-            "url":  "https://www.dongqiudi.com/articles/6182086.html", "time":  "2026-08-16 16:40",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0C/29/280x210/crop/-/rBXRDGqBdruAbdA1AACaUoN84Bo173.jpg" },
-        {
-            "id":  "6182152", "title":  "每体：巴萨青训法里尼亚斯、通卡拉、戈伦新赛季将获机会",
-            "url":  "https://www.dongqiudi.com/articles/6182152.html", "time":  "2026-08-16 16:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0C/10/280x210/crop/-/rBXRn2qBcY6AZfIXAAMJvK7M83I481.jpg" },
-        {
-            "id":  "6179292", "title":  "巴萨战巴塞尔大名单：亚马尔领衔，加维、佩德里缺席",
-            "url":  "https://www.dongqiudi.com/articles/6179292.html", "time":  "2026-08-16 00:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/CD/280x210/crop/-/rBXRDGqAkniATrDoAA18Vda6Dic175.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0D/8B/280x210/crop/-/rBXRn2qB_22AcNh-AAIlUO9iGZo658.jpg" }
     ]
 };

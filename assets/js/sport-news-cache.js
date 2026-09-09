@@ -1,17 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-08 19:28:45 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-09 22:24:54 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-08 19:28:45",
+    "updated":  "2026-09-09 22:24:54",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "134060176", "title":  "El Sub-19 del Barça inicia el camino para conquistar su cuarta Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sub-19-barca-inicia-camino-134060176", "time":  "2026-09-08 16:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6e71b0b3-3326-4f7a-97e4-535826afa412_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sub-19-barca-inicia-camino-134060176", "time":  "2026-09-09 07:47",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6e71b0b3-3326-4f7a-97e4-535826afa412_16-9-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134045648", "title":  "Òscar Gistau apunta a la Youth League: el '9' más prometedor de La Masia quiere reivindicarse a base de goles",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oscar-gistau-apunta-youth-league-134045648", "time":  "2026-09-07 18:44",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_default_0_x1351y347.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_640w_0_x1351y347.webp" },
         {
             "id":  "134039223", "title":  "El hijo de Pedro Rodríguez se suma al Sub-11 B del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-pedro-rodriguez-suma-sub-134039223", "time":  "2026-09-07 16:53",

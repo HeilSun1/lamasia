@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-04 12:04 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-09 22:19 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-04 12:04:56",
+    "updated":  "2026-09-09 22:19:07",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -15,36 +15,6 @@ window.DQD_U19_CACHE = {
               },
     "players":  [
                     {
-                        "name":  "Òscar Gistau",
-                        "id":  "1539491",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-03-08",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "5万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Sama Nomoko",
-                        "id":  "1982217",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1982217/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-03-20",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "31万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Ajay Tavares",
                         "id":  "1861694",
                         "pos":  "F",
@@ -56,6 +26,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-12-28",
                         "foot":  "右脚",
                         "height":  "170",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nuhu Fofana",
+                        "id":  "2229087",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2229087/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-07-28",
+                        "foot":  "双脚",
+                        "height":  "184",
                         "value":  "",
                         "injury":  null
                     },
@@ -135,66 +120,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Ebrima Tunkara",
-                        "id":  "2128084",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-10",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "520万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Orian Goren",
-                        "id":  "1973312",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Israel",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-03-15",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pedro Rodriguez",
-                        "id":  "1649171",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-20",
-                        "foot":  "右脚",
-                        "height":  "175",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pedro Villar",
-                        "id":  "2076883",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076883/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-11",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "9万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Michał Żuk",
                         "id":  "2128103",
                         "pos":  "M",
@@ -203,7 +128,7 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128103/image",
                         "age":  "17岁",
-                        "birthday":  "2009-01-02",
+                        "birthday":  "2009-01-01",
                         "foot":  "双脚",
                         "height":  "180",
                         "value":  "",
@@ -300,41 +225,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Landry Farré",
-                        "id":  "1590760",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1590760/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-01-07",
-                        "foot":  "双脚",
-                        "height":  "178",
-                        "value":  "28万",
-                        "injury":  {
-                                       "reason":  "膝盖伤势",
-                                       "reasonEn":  "Knee Injury",
-                                       "status":  "out",
-                                       "expected":  "2026年6月"
-                                   }
-                    },
-                    {
-                        "name":  "Alex Campos",
-                        "id":  "1926117",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926117/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-02",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "46万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Baba Kourouma",
                         "id":  "2076894",
                         "pos":  "D",
@@ -347,21 +237,6 @@ window.DQD_U19_CACHE = {
                         "foot":  "左脚",
                         "height":  "180",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Guillem Víctor",
-                        "id":  "1590920",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1590920/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-05-03",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "54万",
                         "injury":  null
                     },
                     {
@@ -463,7 +338,7 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
-                        "birthday":  "2009-01-29",
+                        "birthday":  "2009-01-30",
                         "foot":  "左脚",
                         "height":  "184",
                         "value":  "",
@@ -496,6 +371,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-05-15",
                         "foot":  "右脚",
                         "height":  "173",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Madou Murcia",
+                        "id":  "2738837",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2738837/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-26",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -555,17 +445,17 @@ window.DQD_U19_CACHE = {
                         "away":  "Huesca U19",
                         "homeId":  "90128",
                         "awayId":  "333452",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "6",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
                         "id":  "16990417",
                         "comp":  "青年欧冠",
                         "round":  "1",
-                        "start":  "1788948000",
+                        "start":  "1789025400",
                         "home":  "Barcelona U19",
                         "away":  "Feyenoord U19",
                         "homeId":  "90128",
@@ -595,7 +485,7 @@ window.DQD_U19_CACHE = {
                         "id":  "16539799",
                         "comp":  "西青甲 G3",
                         "round":  "3",
-                        "start":  "1789916400",
+                        "start":  "1789898400",
                         "home":  "Barcelona U19",
                         "away":  "Gimnastic Manresa U19",
                         "homeId":  "90128",
@@ -995,6 +885,21 @@ window.DQD_U19_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "16541418",
+                        "comp":  "西青甲 G3",
+                        "round":  "30",
+                        "start":  "1809270000",
+                        "home":  "Barcelona U19",
+                        "away":  "Espanyol U19",
+                        "homeId":  "90128",
+                        "awayId":  "299636",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };

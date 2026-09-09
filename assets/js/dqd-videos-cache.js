@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-04 12:08 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-09 22:26 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-04 12:08:58",
+    "updated":  "2026-09-09 22:26:39",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -224,6 +224,35 @@ window.DQD_VIDEOS_CACHE = {
                                                                                    ]
                                                                     }
                                                                 ],
+                                 "local:juvenil-a:alexcampos":  [
+                                                                    {
+                                                                        "date":  "2026-09-07",
+                                                                        "opp":  "纳哈拉",
+                                                                        "label":  "vs 纳哈拉 · 09-07",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1yWbA6sEtQ",
+                                                                                           "title":  "坎波斯VS纳哈拉",
+                                                                                           "channel":  "口菐",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-07",
+                                                                                           "durationSec":  "256",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/5692a578b14dbf5241aa55e9b20a4a8f3a54e885.jpg"
+                                                                                       },
+                                                                                       {
+                                                                                           "videoId":  "BV1Vxbw6NEgd",
+                                                                                           "title":  "亚历克斯·坎波斯 vs  CD Naxara | 个人精彩集锦",
+                                                                                           "channel":  "静静很甜美",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-07",
+                                                                                           "durationSec":  "256",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i2.hdslb.com/bfs/archive/5ce70c5b6b2a04d554aeb61b7334ddc4e78e7ef4.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
@@ -278,6 +307,33 @@ window.DQD_VIDEOS_CACHE = {
                                                                        }
                                                                    ],
                                  "local:juvenil-a:hafizgariba":  [
+                                                                     {
+                                                                         "date":  "2026-09-07",
+                                                                         "opp":  "纳哈拉",
+                                                                         "label":  "vs 纳哈拉 · 09-07",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yWbA6sE7a",
+                                                                                            "title":  "加里巴VS纳哈拉",
+                                                                                            "channel":  "口菐",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-07",
+                                                                                            "durationSec":  "295",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i2.hdslb.com/bfs/archive/0352b5797fce8ecf8dd408f1303474c658228930.jpg"
+                                                                                        },
+                                                                                        {
+                                                                                            "videoId":  "BV1gbbw6AE9p",
+                                                                                            "title":  "哈菲兹·加里巴 vs CD Naxara | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-07",
+                                                                                            "durationSec":  "295",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/a476ac04feace603f85bd1ca69adc74254af027c.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
                                                                      {
                                                                          "date":  "2026-09-04",
                                                                          "opp":  "萨瓦德尔",
@@ -387,6 +443,61 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-a:shanekluivert":  [
+                                                                       {
+                                                                           "date":  "2026-09-07",
+                                                                           "opp":  "CD Naxara",
+                                                                           "label":  "vs CD Naxara · 09-07",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "BV14dbc6REtB",
+                                                                                              "title":  "肖恩·克鲁伊维特 vs CD Naxara | 个人精彩集锦",
+                                                                                              "channel":  "静静很甜美",
+                                                                                              "channelId":  "",
+                                                                                              "published":  "2026-09-07",
+                                                                                              "durationSec":  "372",
+                                                                                              "site":  "bili",
+                                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/740422f8ede26952fafe74ab91fd2ade6d8a3ca8.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       }
+                                                                   ],
+                                 "local:juvenil-b:ismaelziani":  [
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1Q8YJ6FEtG",
+                                                                                            "title":  "拉玛西亚摩洛哥裔中锋 伊斯梅尔·齐亚尼 Cadet A 赛季集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/37b22e2bd3401cbdcf64179207d86b45daa6da75.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     }
+                                                                 ],
                                  "local:juvenil-b:iumartinez":  [
                                                                     {
                                                                         "date":  "2026-09-03",
@@ -407,6 +518,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                     }
                                                                 ],
                                  "local:juvenil-b:jordipesquer":  [
+                                                                      {
+                                                                          "date":  "2026-09-07",
+                                                                          "opp":  "CD Naxara",
+                                                                          "label":  "vs CD Naxara · 09-07",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV14dbc6REwA",
+                                                                                             "title":  "乔迪·佩斯克尔 vs CD Naxara | 个人精彩集锦",
+                                                                                             "channel":  "静静很甜美",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-09-07",
+                                                                                             "durationSec":  "132",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/d8b228ccec9f228ea03be0cbccfb82cce6520aad.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
                                                                       {
                                                                           "date":  "2026-08-23",
                                                                           "opp":  "",
@@ -531,6 +659,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                  ],
                                  "sf:b:1457200":  [
                                                       {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-07",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV13bbw6AEWt",
+                                                                             "title":  "阿齐兹·伊萨 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "126",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/810f7a720255da99176ffc7f3334e06923ed6390.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
                                                           "date":  "2026-08-21",
                                                           "opp":  "",
                                                           "label":  "08-21 · 集锦",
@@ -567,7 +712,127 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
+                                 "sf:b:1657202":  [
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-07",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV14dbc6REtB",
+                                                                             "title":  "肖恩·克鲁伊维特 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "372",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/740422f8ede26952fafe74ab91fd2ade6d8a3ca8.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1926117":  [
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "纳哈拉",
+                                                          "label":  "vs 纳哈拉 · 09-07",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1yWbA6sEtQ",
+                                                                             "title":  "坎波斯VS纳哈拉",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "256",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5692a578b14dbf5241aa55e9b20a4a8f3a54e885.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1937274":  [
+                                                      {
+                                                          "date":  "2026-09-01",
+                                                          "opp":  "",
+                                                          "label":  "09-01 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV15Stg6oEsr",
+                                                                             "title":  "米尔扎·卡托维奇 (Mirza Catovic)",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-01",
+                                                                             "durationSec":  "581",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/2e919acf563c6243ad04b42eb812ea8a3b4a1bec.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-08-31",
+                                                          "opp":  "",
+                                                          "label":  "08-31 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1Xst86CEDv",
+                                                                             "title":  "巴萨竞技队后腰引援米尔扎·卡托维奇(Mirza Catovic) 🇩🇪🔵🔴",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-08-31",
+                                                                             "durationSec":  "236",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/cccdb4215b6af493b4300b9d43af63e059b59d1a.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1977602":  [
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "",
+                                                          "label":  "09-07 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV127bA6bEog",
+                                                                             "title":  "克尔大四喜 冈萨雷斯建功 巴萨竞技队5:0纳哈拉",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "351",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/49ec96d5ea7911adbb0cbdf49da7d36378123b59.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
                                  "sf:b:2076869":  [
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "纳哈拉",
+                                                          "label":  "vs 纳哈拉 · 09-07",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1yWbA6sE7a",
+                                                                             "title":  "加里巴VS纳哈拉",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "295",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/0352b5797fce8ecf8dd408f1303474c658228930.jpg"
+                                                                         },
+                                                                         {
+                                                                             "videoId":  "BV1gbbw6AE9p",
+                                                                             "title":  "哈菲兹·加里巴 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "295",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a476ac04feace603f85bd1ca69adc74254af027c.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-09-04",
                                                           "opp":  "萨瓦德尔",

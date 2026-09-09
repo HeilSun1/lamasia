@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-04 12:05 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-09 22:19 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-09-04 12:05:13",
+    "updated":  "2026-09-09 22:19:24",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -135,6 +135,21 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Arnau Casas",
+                        "id":  "2690276",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690276/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-06-21",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Pau Sarrià",
                         "id":  "2533245",
                         "pos":  "M",
@@ -144,21 +159,6 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2533245/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-22",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Arnau Casas",
-                        "id":  "2690276",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690276/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-06-22",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -210,21 +210,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Lucas Bernal",
-                        "id":  "2447157",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-30",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Pere Villacorta",
                         "id":  "2410975",
                         "pos":  "D",
@@ -234,6 +219,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
                         "age":  "16岁",
                         "birthday":  "2010-04-06",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Lucas Bernal",
+                        "id":  "2447157",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-30",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

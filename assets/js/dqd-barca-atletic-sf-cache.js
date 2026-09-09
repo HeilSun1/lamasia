@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-04 12:04 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-09 22:18 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-04 12:04:39",
+    "updated":  "2026-09-09 22:18:44",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -185,21 +185,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Orian Goren",
-                        "id":  "1973312",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Israel",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-03-15",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Abdul Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
@@ -212,21 +197,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "164",
                         "value":  "10万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Lovro Chelfi",
-                        "id":  "1801391",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Croatia",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1801391/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-01-30",
-                        "foot":  "左脚",
-                        "height":  "172",
-                        "value":  "33万",
                         "injury":  null
                     },
                     {
@@ -332,12 +302,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "双脚",
                         "height":  "178",
                         "value":  "28万",
-                        "injury":  {
-                                       "reason":  "膝盖伤势",
-                                       "reasonEn":  "Knee Injury",
-                                       "status":  "out",
-                                       "expected":  "2026年6月"
-                                   }
+                        "injury":  null
                     },
                     {
                         "name":  "Alex Campos",
@@ -453,7 +418,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
-                        "birthday":  "2009-01-29",
+                        "birthday":  "2009-01-30",
                         "foot":  "左脚",
                         "height":  "184",
                         "value":  "",
@@ -620,10 +585,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Naxara CD",
                         "homeId":  "24343",
                         "awayId":  "55779",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "5",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
@@ -1060,6 +1025,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "16742571",
+                        "comp":  "西协乙",
+                        "round":  "31",
+                        "start":  "1808060400",
+                        "home":  "Barcelona Atlètic",
+                        "away":  "UD Logroñés B",
+                        "homeId":  "24343",
+                        "awayId":  "327368",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };
