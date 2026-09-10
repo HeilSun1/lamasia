@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-10 12:40 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-10 18:08 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-09-10 12:40:35",
+    "updated":  "2026-09-10 18:08:04",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -210,21 +210,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pere Villacorta",
-                        "id":  "2410975",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-04-06",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Lucas Bernal",
                         "id":  "2447157",
                         "pos":  "D",
@@ -234,6 +219,21 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-30",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pere Villacorta",
+                        "id":  "2410975",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2410975/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-04-06",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

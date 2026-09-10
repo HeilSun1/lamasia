@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-10 12:48 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-10 18:11 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-10 12:48:15",
+    "updated":  "2026-09-10 18:11:46",
     "searchedMatches":  [
                             "sfb:16696837",
                             "sfb:16832369",
@@ -485,23 +485,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1Q8YJ6FEtG",
-                                                                                            "title":  "拉玛西亚摩洛哥裔中锋 伊斯梅尔·齐亚尼 Cadet A 赛季集锦",
-                                                                                            "channel":  "13站一直吞我評論",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/37b22e2bd3401cbdcf64179207d86b45daa6da75.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 个人集锦",
                                                                          "videos":  [
                                                                                         {
@@ -513,6 +496,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  "355",
                                                                                             "site":  "bili",
                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1Q8YJ6FEtG",
+                                                                                            "title":  "拉玛西亚摩洛哥裔中锋 伊斯梅尔·齐亚尼 Cadet A 赛季集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/37b22e2bd3401cbdcf64179207d86b45daa6da75.jpg"
                                                                                         }
                                                                                     ]
                                                                      }

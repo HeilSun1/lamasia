@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-10 12:39:57 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-10 18:07:24 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-10 12:39:57",
+    "updated":  "2026-09-10 18:07:24",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6321645", "title":  "懂球译站 | 佩德里亲笔信：我的爷爷，是我见过最狂热的巴萨球迷",
+            "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2028-09-09 16:30",
+            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/59/47/280x210/crop/-/rBXRDGqgFSGAcJfwAAF6HJ6zI1k069.jpg" },
         {
             "id":  "6321514", "title":  "官方：巴萨小将谢尔菲加盟沙特迪里耶，保留球员部分二转分成",
             "url":  "https://www.dongqiudi.com/articles/6321514.html", "time":  "2026-09-09 19:40",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6188245", "title":  "官方：布斯克茨担任巴萨竞技助理教练，将完成教练员课程",
             "url":  "https://www.dongqiudi.com/articles/6188245.html", "time":  "2026-08-17 18:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/00/280x210/crop/-/rBXRDGqC5DWAUztjAAGsdQl2zCM802.jpg" },
-        {
-            "id":  "6184910", "title":  "每体：哈姆扎季前赛已打进3球，已成为巴萨9号位现实选择",
-            "url":  "https://www.dongqiudi.com/articles/6184910.html", "time":  "2026-08-17 02:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0D/8B/280x210/crop/-/rBXRn2qB_22AcNh-AAIlUO9iGZo658.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/00/280x210/crop/-/rBXRDGqC5DWAUztjAAGsdQl2zCM802.jpg" }
     ]
 };

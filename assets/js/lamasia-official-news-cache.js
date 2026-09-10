@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-10 12:46:29 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-10 18:09:48 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-10 12:46:29",
+    "updated":  "2026-09-10 18:09:48",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -123,6 +123,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4574558", "title":  "Raphinha continues to make history",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574558/raphinha-continues-to-make-history", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ebd9f393-492a-432d-bbb7-fdbc3b41d42f/_MGA6057.jpg" },
+            {
                 "id":  "4574250", "title":  "Barça 5-1 Feyenoord: Dancing in the rain",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574250/fc-barcelona-5-1-feyenoord-dancing-in-the-rain", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/7cdd59f8-e876-418f-8be3-3077a83d5207/_MGA6940.jpg" },
@@ -215,10 +219,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" },
             {
-                "id":  "4571115", "title":  "Last visit to Mestalla",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571115/last-visit-to-mestalla-a-stadium-with-great-memories-for-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/f9174771-2b14-4d46-ac4e-48649a44b5ac/AthleticClub-FCBarcelona4-1CopadelRei20082009v4_pic__m3_9614.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -226,6 +226,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4571115", "title":  "Last visit to Mestalla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571115/last-visit-to-mestalla-a-stadium-with-great-memories-for-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/f9174771-2b14-4d46-ac4e-48649a44b5ac/AthleticClub-FCBarcelona4-1CopadelRei20082009v4_pic__m3_9614.jpg" },
             {
                 "id":  "4571558", "title":  "Gavi and Gabriel Jesus at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571558/gavi-and-gabriel-jesus-feature-in-return-to-work", "time":  "",
@@ -317,11 +321,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4568965", "title":  "Last session ahead of visit of Rayo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568965/last-session-ahead-of-visit-of-rayo", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/32133cf2-b685-4592-848f-760c59053706/WhatsApp-Image-2026-08-30-at-13.57.02.jpeg" },
-            {
-                "id":  "4568157", "title":  "Four facts ahead of Barça v Rayo",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568157/four-facts-ahead-of-fc-barcelona-v-rayo", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/28/2111e103-c435-407b-b386-4cced4c770db/rapha-rayo.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/32133cf2-b685-4592-848f-760c59053706/WhatsApp-Image-2026-08-30-at-13.57.02.jpeg" }
         ]
     }
 };

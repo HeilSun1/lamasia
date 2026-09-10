@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-10 12:40 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-10 18:07 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-10 12:40:16",
+    "updated":  "2026-09-10 18:07:46",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,6 +14,21 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
+                    {
+                        "name":  "Òscar Gistau",
+                        "id":  "1539491",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-03-08",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "5万",
+                        "injury":  null
+                    },
                     {
                         "name":  "Ajay Tavares",
                         "id":  "1861694",
@@ -90,6 +105,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Joni Hernández",
+                        "id":  "2679425",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2679425/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-05-22",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "52万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ïu Martínez",
                         "id":  "2405472",
                         "pos":  "F",
@@ -160,7 +190,7 @@ window.DQD_U19_CACHE = {
                         "age":  "18岁",
                         "birthday":  "2008-02-04",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "190",
                         "value":  "",
                         "injury":  null
                     },
@@ -189,6 +219,21 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2722874/image",
                         "age":  "17岁",
                         "birthday":  "2009-01-02",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Samuel Borniquel",
+                        "id":  "2690304",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-20",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -360,6 +405,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Pau Bergés",
+                        "id":  "2405426",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2405426/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-01-21",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Álvaro Gómez",
                         "id":  "2722899",
                         "pos":  "D",
@@ -387,6 +447,21 @@ window.DQD_U19_CACHE = {
                         "foot":  "",
                         "height":  "",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Eder Aller",
+                        "id":  "1929977",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-04-04",
+                        "foot":  "右脚",
+                        "height":  "194",
+                        "value":  "5万",
                         "injury":  null
                     },
                     {
@@ -460,10 +535,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Feyenoord U19",
                         "homeId":  "90128",
                         "awayId":  "197177",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "1",
+                        "as":  "2",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {

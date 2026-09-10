@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-10 12:46:33 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-10 18:09:53 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-10 12:46:33",
+    "updated":  "2026-09-10 18:09:53",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134136699", "title":  "El Barça se queda a las puertas de la remontada en su estreno en la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-queda-puertas-remontada-estreno-134136699", "time":  "2026-09-10 09:35",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8c372849-4fc7-480f-8522-23b6908c5a74_16-9-discover-aspect-ratio_default_1505501.webp" },
+        {
+            "id":  "134131360", "title":  "Barcelona - Feyenoord, en directo: Youth League, Jornada 1 de la fase Liga, en vivo hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-feyenoord-directo-youth-league-134131360", "time":  "2026-09-10 07:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
         {
             "id":  "134060176", "title":  "El Sub-19 del Barça inicia el camino para conquistar su cuarta Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sub-19-barca-inicia-camino-134060176", "time":  "2026-09-09 07:47",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "132915245", "title":  "La final de la Copa Catalunya entre Barça Atlètic y CE Sabadell ya tiene fecha y sede",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/final-copa-catalunya-barca-atletic-sede-fecha-132915245", "time":  "2026-07-29 10:39",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8226233a-2d17-47b0-a21b-506b64bb4c61_16-9-discover-aspect-ratio_640w_1491734.webp" },
-        {
-            "id":  "132894728", "title":  "Landry Farré persigue su resurgir en el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-farre-persigue-resurgir-barca-132894728", "time":  "2026-07-29 06:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bc38db77-9b65-48f3-8b8a-1442e8b629c1_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "132631269", "title":  "Oficial: Nuevo (viejo) fichaje del Barça para el extremo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-aziz-issah-ficha-barca-132631269", "time":  "2026-07-27 17:59",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3e9875c7-7be0-42ef-807c-ee43e00b302e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8226233a-2d17-47b0-a21b-506b64bb4c61_16-9-discover-aspect-ratio_640w_1491734.webp" }
     ]
 };

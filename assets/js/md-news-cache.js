@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-10 12:46:36 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-10 18:10:00 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-10 12:46:36",
+    "updated":  "2026-09-10 18:10:00",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "title":  "El Como de Cesc Fàbregas se cita con la historia",
+            "url":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "time":  "2026-09-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/05/10/6a0071941ed4f.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "title":  "Xavi I de Holanda",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "time":  "2026-09-08 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004209114/gavi-barcelona-me-criaron.html", "title":  "Gavi: En Barcelona me criaron muy bien",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004209114/gavi-barcelona-me-criaron.html", "time":  "2026-07-22 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/22/6a60bd34e5286.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208949/89-goles-titulo-roja-llevan-sello-barca.html", "title":  "El 89% de los goles de título de la Roja llevan el sello del Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004208949/89-goles-titulo-roja-llevan-sello-barca.html", "time":  "2026-07-22 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/21/6a5fdef163501.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/22/6a60bd34e5286.jpeg" }
     ]
 };

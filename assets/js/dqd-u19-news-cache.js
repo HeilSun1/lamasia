@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-10 12:40:16 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-10 18:07:47 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-10 12:40:16",
+    "updated":  "2026-09-10 18:07:47",
     "source":  "dongqiudi",
-    "count":  27,
+    "count":  28,
     "news":  [
+        {
+            "id":  "6325434", "title":  "费耶诺德U19 2-1巴塞罗那U19，耶雷诺-沙肯破门，津哈格尔1射1传",
+            "url":  "https://www.dongqiudi.com/articles/6325434.html", "time":  "2026-09-10 17:27",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5E/96/280x210/crop/-/rBXRn2qifCaAQOGyAAGTyJVWSVY448.png" },
         {
             "id":  "6303782", "title":  "约纳坦-塔祝贺16岁表弟巴扎加盟巴萨：为你感到非常骄傲",
             "url":  "https://www.dongqiudi.com/articles/6303782.html", "time":  "2026-09-06 17:29",
