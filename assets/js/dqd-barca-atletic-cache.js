@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-10 22:01 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-10 19:09 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-10 22:01:06",
+    "updated":  "2026-09-10 19:09:52",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1565,14 +1565,6 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "",
                                  "birth":  "2004-01-19"
                              },
-                "51040856":  {
-                                 "nation":  "克罗地亚",
-                                 "contract":  "2027-06-30",
-                                 "foot":  "左脚",
-                                 "weight":  "",
-                                 "height":  "172",
-                                 "birth":  "2007-01-30"
-                             },
                 "51199202":  {
                                  "nation":  "西班牙",
                                  "contract":  "",
@@ -1703,39 +1695,6 @@ window.DQD_BARCA_ATLETIC = {
                                              },
                                              {
                                                  "data":  [
-                                                              {
-                                                                  "age":  "18岁",
-                                                                  "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7B/ChOxM1xC2N6AEWYMAAABPByVIVM465.png",
-                                                                  "nationality_name":  "荷兰",
-                                                                  "other_logo":  [
-
-                                                                                 ],
-                                                                  "person_en_name":  "Shane Kluivert",
-                                                                  "person_id":  "50924320",
-                                                                  "person_logo":  "assets/img/players/dqd/50924320.jpg",
-                                                                  "person_name":  "肖恩-克鲁伊维特",
-                                                                  "scheme":  "dongqiudi:///player/50924320",
-                                                                  "shirtnumber":  "11",
-                                                                  "statistic":  [
-                                                                                    {
-                                                                                        "出场":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "进球":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "助攻":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "身价(欧)":  "50万"
-                                                                                    }
-                                                                                ],
-                                                                  "transfer_data":  null,
-                                                                  "type":  "attacker",
-                                                                  "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/E4/9E/rBUC6GkuvCGAB2lIAAAcaiEEnas869.jpg"
-                                                              },
                                                               {
                                                                   "age":  "18岁",
                                                                   "captain_logo":  "",
@@ -1903,6 +1862,39 @@ window.DQD_BARCA_ATLETIC = {
                                                               {
                                                                   "age":  "18岁",
                                                                   "captain_logo":  "",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7B/ChOxM1xC2N6AEWYMAAABPByVIVM465.png",
+                                                                  "nationality_name":  "荷兰",
+                                                                  "other_logo":  [
+
+                                                                                 ],
+                                                                  "person_en_name":  "Shane Kluivert",
+                                                                  "person_id":  "50924320",
+                                                                  "person_logo":  "assets/img/players/dqd/50924320.jpg",
+                                                                  "person_name":  "肖恩-克鲁伊维特",
+                                                                  "scheme":  "dongqiudi:///player/50924320",
+                                                                  "shirtnumber":  "11",
+                                                                  "statistic":  [
+                                                                                    {
+                                                                                        "出场":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "进球":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "助攻":  "-"
+                                                                                    },
+                                                                                    {
+                                                                                        "身价(欧)":  "50万"
+                                                                                    }
+                                                                                ],
+                                                                  "transfer_data":  null,
+                                                                  "type":  "attacker",
+                                                                  "weekly_salary":  "",
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/E4/9E/rBUC6GkuvCGAB2lIAAAcaiEEnas869.jpg"
+                                                              },
+                                                              {
+                                                                  "age":  "18岁",
+                                                                  "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙/英格兰",
                                                                   "other_logo":  [
@@ -2031,38 +2023,6 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "type":  "attacker",
                                                                   "weekly_salary":  "",
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs3/M00/B5/98/ChOxM1xC37CADGDCAAANHjH55fo314.png"
-                                                              },
-                                                              {
-                                                                  "age":  "19岁",
-                                                                  "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/74/ChOxM1xC2EOAbUHIAAAOg6JpgzM729.png",
-                                                                  "nationality_name":  "克罗地亚/阿尔及利亚",
-                                                                  "other_logo":  [
-
-                                                                                 ],
-                                                                  "person_en_name":  "Lovro Chelfi",
-                                                                  "person_id":  "51040856",
-                                                                  "person_logo":  "assets/img/players/dqd/51040856.jpg",
-                                                                  "person_name":  "洛夫罗-谢尔菲",
-                                                                  "scheme":  "dongqiudi:///player/51040856",
-                                                                  "statistic":  [
-                                                                                    {
-                                                                                        "出场":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "进球":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "助攻":  "-"
-                                                                                    },
-                                                                                    {
-                                                                                        "身价(欧)":  "-"
-                                                                                    }
-                                                                                ],
-                                                                  "transfer_data":  null,
-                                                                  "type":  "attacker",
-                                                                  "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuwLuAPIYJAAAkxUH9G-g055.jpg"
                                                               }
                                                           ],
                                                  "show_type":  1,
