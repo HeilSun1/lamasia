@@ -1,12 +1,12 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-10 18:07:24 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-10 22:02:47 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-10 18:07:24",
+    "updated":  "2026-09-10 22:02:47",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
         {
             "id":  "6321645", "title":  "懂球译站 | 佩德里亲笔信：我的爷爷，是我见过最狂热的巴萨球迷",
-            "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2028-09-09 16:30",
+            "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2026-09-10 16:30",
             "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/59/47/280x210/crop/-/rBXRDGqgFSGAcJfwAAF6HJ6zI1k069.jpg" },
         {
             "id":  "6321514", "title":  "官方：巴萨小将谢尔菲加盟沙特迪里耶，保留球员部分二转分成",

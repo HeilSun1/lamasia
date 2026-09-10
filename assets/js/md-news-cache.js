@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-10 18:10:00 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-10 22:06:39 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-10 18:10:00",
+    "updated":  "2026-09-10 22:06:39",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "title":  "El Real Zaragoza blinda a su cantera",
+            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "time":  "2026-09-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/10/6aa26f4e77091.r_d.557-862-11111.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "title":  "El Como de Cesc Fàbregas se cita con la historia",
             "url":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "time":  "2026-09-10 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260723/1004208979/dilema-bisiwu.html", "title":  "El dilema con Bisiwu, un diamante por pulir",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260723/1004208979/dilema-bisiwu.html", "time":  "2026-07-23 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/05/06/69fafa0fb66c0.r_d.713-1073-8333.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004209114/gavi-barcelona-me-criaron.html", "title":  "Gavi: En Barcelona me criaron muy bien",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260722/1004209114/gavi-barcelona-me-criaron.html", "time":  "2026-07-22 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/22/6a60bd34e5286.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/05/06/69fafa0fb66c0.r_d.713-1073-8333.jpeg" }
     ]
 };

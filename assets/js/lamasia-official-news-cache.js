@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-10 18:09:48 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-10 22:06:30 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-10 18:09:48",
+    "updated":  "2026-09-10 22:06:30",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -123,9 +123,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4574625", "title":  "Five again",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574625/five-goals-in-four-out-of-five-games", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/10/d0ff9ed4-f998-4307-978d-ea22f2c251a8/_MGA7040.jpg" },
+            {
                 "id":  "4574558", "title":  "Raphinha continues to make history",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574558/raphinha-continues-to-make-history", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ebd9f393-492a-432d-bbb7-fdbc3b41d42f/_MGA6057.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/542e1c61-f7a8-418d-afe6-45c4031813f2/_MGA6057.jpg" },
             {
                 "id":  "4574250", "title":  "Barça 5-1 Feyenoord: Dancing in the rain",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574250/fc-barcelona-5-1-feyenoord-dancing-in-the-rain", "time":  "",
@@ -215,10 +219,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572111/valencia-v-barca-did-you-knowx", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/902940c4-1672-4f32-b527-5828fe55df6b/_MGA8314.jpg" },
             {
-                "id":  "4572031", "title":  "Second to last session before trip to Mestalla",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -226,6 +226,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4572031", "title":  "Second to last session before trip to Mestalla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" },
             {
                 "id":  "4571115", "title":  "Last visit to Mestalla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571115/last-visit-to-mestalla-a-stadium-with-great-memories-for-barca", "time":  "",
@@ -317,11 +321,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4569011", "title":  "'Most important is how we play as a team'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569011/hansi-flick-most-important-is-how-we-play-as-a-team", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/918cbcb4-1215-48bf-a423-1aef795dd66e/_MGA1813.jpg" },
-            {
-                "id":  "4568965", "title":  "Last session ahead of visit of Rayo",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4568965/last-session-ahead-of-visit-of-rayo", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/32133cf2-b685-4592-848f-760c59053706/WhatsApp-Image-2026-08-30-at-13.57.02.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/30/918cbcb4-1215-48bf-a423-1aef795dd66e/_MGA1813.jpg" }
         ]
     }
 };

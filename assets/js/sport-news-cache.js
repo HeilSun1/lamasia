@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-10 18:09:53 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-10 22:06:35 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-10 18:09:53",
+    "updated":  "2026-09-10 22:06:35",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134143125", "title":  "Nil Vicens: “Esto acaba de empezar”",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/nil-vicens-acaba-empezar-134143125", "time":  "2026-09-10 11:35",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134136699", "title":  "El Barça se queda a las puertas de la remontada en su estreno en la Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-queda-puertas-remontada-estreno-134136699", "time":  "2026-09-10 09:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8c372849-4fc7-480f-8522-23b6908c5a74_16-9-discover-aspect-ratio_default_1505501.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-queda-puertas-remontada-estreno-134136699", "time":  "2026-09-10 11:14",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8c372849-4fc7-480f-8522-23b6908c5a74_16-9-discover-aspect-ratio_640w_1505501.webp" },
         {
             "id":  "134131360", "title":  "Barcelona - Feyenoord, en directo: Youth League, Jornada 1 de la fase Liga, en vivo hoy",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-feyenoord-directo-youth-league-134131360", "time":  "2026-09-10 07:30",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "132928780", "title":  "Oficial: Joan Anaya deja el Barça y ficha por el Sant Andreu",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-joan-anaya-deja-barca-132928780", "time":  "2026-07-29 16:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/904ae5c5-1a5d-4fb9-8382-eb916b57d023_16-9-discover-aspect-ratio_640w_0.webp" },
-        {
-            "id":  "132915245", "title":  "La final de la Copa Catalunya entre Barça Atlètic y CE Sabadell ya tiene fecha y sede",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/final-copa-catalunya-barca-atletic-sede-fecha-132915245", "time":  "2026-07-29 10:39",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8226233a-2d17-47b0-a21b-506b64bb4c61_16-9-discover-aspect-ratio_640w_1491734.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/904ae5c5-1a5d-4fb9-8382-eb916b57d023_16-9-discover-aspect-ratio_640w_0.webp" }
     ]
 };
