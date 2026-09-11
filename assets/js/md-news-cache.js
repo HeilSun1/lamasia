@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-11 15:53:57 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-11 21:05:53 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-11 15:53:57",
+    "updated":  "2026-09-11 21:05:53",
     "source":  "md",
     "count":  50,
     "news":  [

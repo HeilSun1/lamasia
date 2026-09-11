@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-11 15:53；数据源：FC Barcelona 官网 calendario */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-11 21:04；数据源：FC Barcelona 官网 calendario */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-11 15:53:28",
+    "updated":  "2026-09-11 21:04:10",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {

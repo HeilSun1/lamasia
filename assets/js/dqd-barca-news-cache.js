@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-11 15:50:17 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-11 21:01:10 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-11 15:50:17",
+    "updated":  "2026-09-11 21:01:10",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6329537", "title":  "大巴黎三将专访（二）：法比安就像布斯克茨，是“球盲过滤器”",
+            "url":  "https://www.dongqiudi.com/articles/6329537.html", "time":  "2026-09-11 16:39",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/77/280x210/crop/-/rBXRDGqjviWAREehAANO1l7lCt0928.jpg" },
         {
             "id":  "6321645", "title":  "懂球译站 | 佩德里亲笔信：我的爷爷，是我见过最狂热的巴萨球迷",
             "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2026-09-10 16:30",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6189888", "title":  "官方：巴萨与23岁B队前锋阿兰-戈多伊解约",
             "url":  "https://www.dongqiudi.com/articles/6189888.html", "time":  "2026-08-18 01:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/BC/280x210/crop/-/rBXRDGqDNayADN40AABNH6RG4GA984.jpg" },
-        {
-            "id":  "6188245", "title":  "官方：布斯克茨担任巴萨竞技助理教练，将完成教练员课程",
-            "url":  "https://www.dongqiudi.com/articles/6188245.html", "time":  "2026-08-17 18:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/00/280x210/crop/-/rBXRDGqC5DWAUztjAAGsdQl2zCM802.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/BC/280x210/crop/-/rBXRDGqDNayADN40AABNH6RG4GA984.jpg" }
     ]
 };
