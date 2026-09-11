@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-11 21:05:53 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-11 19:12:45 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-11 21:05:53",
+    "updated":  "2026-09-11 19:12:45",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "title":  "Espectacular estreno goleador en Champions de la perla eslovena que descartó al Barça",
+            "url":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "time":  "2026-09-11 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/20/6a5e99cb1cd3f.r_d.1486-653-6424.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "title":  "El héroe del Gol Norte",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "time":  "2026-09-11 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004210006/kluivert-demuestra-calidad-primeros-minutos-barca-flick.html", "title":  "Kluivert demuestra su calidad en sus primeros minutos con el Barça de Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004210006/kluivert-demuestra-calidad-primeros-minutos-barca-flick.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a6483199a051.r_d.487-289-12526.png" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004208195/ebrima-tunkara-crack-viene.html", "title":  "Ebrima Tunkara, el crack que viene",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004208195/ebrima-tunkara-crack-viene.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/25/6a649f5188805.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a6483199a051.r_d.487-289-12526.png" }
     ]
 };

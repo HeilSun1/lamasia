@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-11 21:01:10 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-11 19:12:20 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-11 21:01:10",
+    "updated":  "2026-09-11 19:12:20",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6330564", "title":  "每体：斯图加特租将恰托维奇完成首秀，争取让巴萨将自己买断",
+            "url":  "https://www.dongqiudi.com/articles/6330564.html", "time":  "2026-09-11 21:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/FC/280x210/crop/-/rBXRDGqj-SuAKcgrAAEFY-zyukw159.jpg" },
         {
             "id":  "6329537", "title":  "大巴黎三将专访（二）：法比安就像布斯克茨，是“球盲过滤器”",
             "url":  "https://www.dongqiudi.com/articles/6329537.html", "time":  "2026-09-11 16:39",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6191726", "title":  "每体：布斯克茨任巴萨竞技助教，商业版图达5000万美元",
             "url":  "https://www.dongqiudi.com/articles/6191726.html", "time":  "2026-08-18 12:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/A3/280x210/crop/-/rBXRDGohrMuAB1A-AAFpsZf6qbA257.jpg" },
-        {
-            "id":  "6189888", "title":  "官方：巴萨与23岁B队前锋阿兰-戈多伊解约",
-            "url":  "https://www.dongqiudi.com/articles/6189888.html", "time":  "2026-08-18 01:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/BC/280x210/crop/-/rBXRDGqDNayADN40AABNH6RG4GA984.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/A3/280x210/crop/-/rBXRDGohrMuAB1A-AAFpsZf6qbA257.jpg" }
     ]
 };
