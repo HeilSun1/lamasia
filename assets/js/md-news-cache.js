@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-10 19:10:22 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-11 15:53:57 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-10 19:10:22",
+    "updated":  "2026-09-11 15:53:57",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "title":  "El héroe del Gol Norte",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "time":  "2026-09-11 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225765/cesc-fabregas-johan-cruyff-barca.html", "title":  "Cesc Fàbregas es para nosotros lo que Johan Cruyff fue para el Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225765/cesc-fabregas-johan-cruyff-barca.html", "time":  "2026-09-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/10/6aa306c9891e1.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "title":  "El Real Zaragoza blinda a su cantera",
             "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "time":  "2026-09-10 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004208195/ebrima-tunkara-crack-viene.html", "title":  "Ebrima Tunkara, el crack que viene",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004208195/ebrima-tunkara-crack-viene.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/25/6a649f5188805.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260724/1004209823/iker-bravo-formado-masia-pasado-madrid-encuentra-equipo.html", "title":  "Iker Bravo, formado en La Masia y con pasado en el Madrid, encuentra equipo",
-            "url":  "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260724/1004209823/iker-bravo-formado-masia-pasado-madrid-encuentra-equipo.html", "time":  "2026-07-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2025/10/04/68e198244f9b5.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260723/1004208979/dilema-bisiwu.html", "title":  "El dilema con Bisiwu, un diamante por pulir",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260723/1004208979/dilema-bisiwu.html", "time":  "2026-07-23 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/05/06/69fafa0fb66c0.r_d.713-1073-8333.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/25/6a649f5188805.jpeg" }
     ]
 };
