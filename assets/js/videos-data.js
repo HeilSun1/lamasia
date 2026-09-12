@@ -28,7 +28,7 @@ window.VIDEOS_DATA = {
   blocked: {
     "sf:b:1977602": ["-xRAJTjKdQI", "BV1w4VB6jEAv"],   // "Jordi Pesquer vs FC Basel"（16/08）实为 Ignasi Quer，误配；"米克尔·布罗·汉森"为转会目标，非本队球员
     "sf:b:2128084": ["9eOLL88phHU"],   // "Ebrima Tunkara vs Udinese"（08/08）实为 U18 比赛，已转挂 sf:u18:2128084
-    "local:cadete:lucasbernal": ["BV1rZt36gEGJ"],   // "贝尔纳尔VS巴列卡诺"（09-01）实为一线队 Marc Bernal vs Rayo（封面话题 #BarçaRayo），误配给 cadete 的 Lucas Bernal —— 池子里只有青年队，一线队马克·贝尔纳尔缺席，故「贝尔纳尔」唯一命中卢卡斯
+    "local:cadete:lucasbernal": ["BV1rZt36gEGJ"],   // "贝尔纳尔VS巴列卡诺"（09-01）实为一线队 Marc Bernal vs Rayo（封面话题 #BarçaRayo）。已加结构性防护（update_youtube.ps1 的 $FirstTeamNames），缓存里那条已清掉；此处保留作防回归兜底
     "local:juvenil-a:nicomarcipar": ["BV1N8gA62Egh"],   // "巴萨关注目标 尼科洛·特雷索尔迪"（布鲁日转会目标）误配给马西帕
     "local:juvenil-b:sergimayans": ["BV1FDuv6bESg"],    // "桑坦德竞技 塞尔吉奥·马丁内斯"（转会目标）误配给马扬斯
     "sf:b:1085572": ["BV1FDuv6bESg"],   // 同上（该视频在 GitHub Actions 版本曾挂此键，防回归）

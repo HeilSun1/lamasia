@@ -84,6 +84,20 @@ $ZhAliases = @(
   @{ key = "local:cadete-b:lihaoyan"; zh = @("昊炎") }   # 李昊炎：微博常写"昊炎"（省姓）
 )
 
+# ── 一线队同姓拦截 ──────────────────────────────────────────────
+# B站 UP（口菐 等）同时发一线队与青年队内容，且标题常只写姓氏（"贝尔纳尔VS巴列卡诺"）。
+# 匹配池只含青年队/巴竞技，一线队球员缺席 → 该姓氏在池内唯一命中同姓青年队球员，
+# PlayerScore 正常通过，于是把一线队集锦配到青年队球员名下。
+# 实测：BV1rZt36gEGJ「贝尔纳尔VS巴列卡诺」（封面 #BarçaRayo）是马克·贝尔纳尔，配给了卢卡斯·贝尔纳尔。
+#
+# 规则：标题命中 name、且要挂到 local: 青年队键时拒绝；但若标题出现该球员全名（full 里任一），
+#       说明指向明确，放行。挂错时仍可用 assets/js/videos-data.js 的 players 段人工 pin 纠正。
+# ⚠️ 只放**已确认为一线队**的姓名。2026-09-12 审计过 口菐 近期标题：加里巴（Hafiz Gariba）、
+#    坎波斯（Alex Campos）是真青年队球员，属合法视频，**不要**加进来。
+$FirstTeamNames = @(
+  @{ name = "贝尔纳尔"; full = @("卢卡斯·贝尔纳尔", "Lucas Bernal") }   # Marc Bernal（一线队）↔ Lucas Bernal（cadete）
+)
+
 # ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
 $EdgeCfg = Join-Path $PSScriptRoot "sofascore-edge-path.txt"
 $Edge = ""
@@ -1009,6 +1023,21 @@ function Add-FeedVideo($feed, [string]$pkey, $v, [string]$titleNorm, $oppPool, $
   if (@($grp.videos).Count -lt $MaxFeedVideosPerGroup) { $grp.videos = @($grp.videos) + $v }
 }
 
+# 一线队同姓拦截（规则与豁免见 $FirstTeamNames 的说明）
+function Test-FirstTeamCollision([string]$titleNorm, [string]$pkey) {
+  if ($pkey -notlike 'local:*') { return $false }   # 只拦青年队键；sf:/b: 是一线队预备与 Sofascore 现役，不适用
+  foreach ($e in $FirstTeamNames) {
+    $ftN = Norm ([string]$e.name)
+    if (-not $ftN -or $titleNorm.IndexOf($ftN) -lt 0) { continue }
+    foreach ($fn in @($e.full)) {
+      $fnN = Norm ([string]$fn)
+      if ($fnN -and $titleNorm.IndexOf($fnN) -ge 0) { return $false }   # 标题带全名 → 指向明确，放行
+    }
+    return $true
+  }
+  return $false
+}
+
 # 一条频道上传的统一定位：
 #   · 命中赛程比赛 → matches[key]（全场集锦）
 #   · 命中球员关键词 → 同时命中赛程 → players[sfKey]；仅球员命中 → feed.players[sfKey]（非赛程）
@@ -1034,7 +1063,9 @@ function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $partPlayers, $end
       elseif ($sc -eq $bestScore -and $sc -gt 0) { $bestKeys += $pk }
     }
     if ($bestScore -gt 0) {
-      foreach ($pk in $bestKeys) {
+      $ftHit = @($bestKeys | Where-Object { Test-FirstTeamCollision $titleNorm $_ })
+      if ($ftHit.Count) { Log "    · 跳过一线队同姓匹配（$($ftHit -join ', ')）：$([string]$v.title)" }
+      foreach ($pk in @($bestKeys | Where-Object { $ftHit -notcontains $_ })) {
         if ($em) {
           $playerMap[$pk] = @(Merge-Videos ($playerMap[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
           $targets += @{ t = "player"; k = $pk }
@@ -1272,6 +1303,7 @@ foreach ($fk in @($oldFeed.Keys)) {
       $titleNorm = Norm ([string]$v.title)
       if (IsPlayerIrrelevant $titleNorm) { continue }   # 全场/直播不进个人集锦
       if ((PlayerScore $titleNorm $pe $pool $partPlayers) -le 0) { continue }   # 不再匹配该球员
+      if (Test-FirstTeamCollision $titleNorm $fk) { continue }   # 一线队同姓（同 A1），旧缓存里的也一并清掉
       $pubT = Get-UcDate ([string]$v.published)
       Add-FeedVideo $outFeed $fk $v $titleNorm $oppPool $pubT
       $refeed++
@@ -1333,12 +1365,14 @@ if (-not $YouTubeOnly -and @($shard.items).Count) {
       }
       "player" {
         if (-not $pool.ContainsKey($k)) { $foldDrop++; continue }
+        if (Test-FirstTeamCollision $titleN $k) { $foldDrop++; continue }   # 一线队同姓，同 A1
         $outPlayers[$k] = @(Merge-Videos ($outPlayers[$k] | Where-Object { $_ }) $v $MaxPlayerVideos)
         $known[$vid] = $true; $foldP++
       }
       "feed" {
         $pubT = Get-UcDate ([string]$v.published)
         if (-not $pool.ContainsKey($k) -or $null -eq $pubT) { $foldDrop++; continue }
+        if (Test-FirstTeamCollision $titleN $k) { $foldDrop++; continue }   # 一线队同姓，同 A1
         Add-FeedVideo $outFeed $k $v $titleN $oppPool $pubT
         $known[$vid] = $true; $foldF++
       }
