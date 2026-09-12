@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-11 19:12:20 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-12 09:01:45 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-11 19:12:20",
+    "updated":  "2026-09-12 09:01:45",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6332543", "title":  "布斯克茨：希望巴萨本赛季夺得欧冠；小法未来有可能执教巴萨",
+            "url":  "https://www.dongqiudi.com/articles/6332543.html", "time":  "2026-09-12 06:51",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/63/1C/280x210/crop/-/rBXRn2qkhVqAWC2mAADmQMIRvlo409.jpg" },
         {
             "id":  "6330564", "title":  "每体：斯图加特租将恰托维奇完成首秀，争取让巴萨将自己买断",
             "url":  "https://www.dongqiudi.com/articles/6330564.html", "time":  "2026-09-11 21:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6192089", "title":  "费尔明：小蜘蛛适合巴萨但他还是马竞球员；我一直很喜欢7号",
             "url":  "https://www.dongqiudi.com/articles/6192089.html", "time":  "2026-08-18 14:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/BD/280x210/crop/-/rBXRn2qD-eSAe_INAAC2F6sCh1o587.jpg" },
-        {
-            "id":  "6191726", "title":  "每体：布斯克茨任巴萨竞技助教，商业版图达5000万美元",
-            "url":  "https://www.dongqiudi.com/articles/6191726.html", "time":  "2026-08-18 12:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/09/A3/280x210/crop/-/rBXRDGohrMuAB1A-AAFpsZf6qbA257.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/BD/280x210/crop/-/rBXRn2qD-eSAe_INAAC2F6sCh1o587.jpg" }
     ]
 };
