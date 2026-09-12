@@ -19,13 +19,26 @@
 #   人工覆盖层 assets/js/videos-data.js（VIDEOS_DATA）：可 pin 视频、否决错误匹配、reSearch 重搜。
 #   由 run_daily_update.ps1 调用；日志 scripts/youtube-update.log
 #   ⚠️ 自动匹配是"建议"性质，可能有误配，请用 videos-data.js 否决。
+#
+#   -YouTubeOnly（GitHub Actions 专用）：本机无代理抓不到 YouTube，运行器在美国可直连。
+#     该模式只跑 A0/A1 整场搜索与 B1 频道 RSS，跳过 B站/微博与主缓存写回，
+#     结果写成独立分片 scripts/dqd-videos-yt-shard.js，由本机下次运行时合并。
+#     ⚠️ 结构保证：本模式下代码路径不碰 assets/js/dqd-videos-cache.js，
+#        运行器不可能覆盖本机抓到的 B站/微博数据（不是靠合并逻辑兜底）。
 # ═══════════════════════════════════════════════════════════════
+param([switch]$YouTubeOnly)
+
 $ErrorActionPreference = "Stop"
 
 $Root       = Split-Path -Parent $PSScriptRoot
 $LogFile    = Join-Path $Root "scripts\youtube-update.log"
 $OutFile    = Join-Path $Root "assets\js\dqd-videos-cache.js"
 $UTF8       = New-Object System.Text.UTF8Encoding($false)
+
+# 运行器 → 本机的中间产物（放 scripts/ 供脚本间传递，前端不引用，故无需改 HTML/JS）。
+# 必须始终写合法文件、绝不删除：workflow 的 git add 是显式路径列表，缺文件会非零退出。
+$ShardFile     = Join-Path $PSScriptRoot "dqd-videos-yt-shard.js"
+$ShardKeepDays = 14   # 分片条目按写入日期保留 N 天（本机长期离线时防无限增长）
 
 # ── 配置 ────────────────────────────────────────────────────────
 $PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt", "bcnbest786")   # 常规球员集锦频道（可改/可加；非赛程集锦全频道扫描）
@@ -34,8 +47,7 @@ $FeedScanAll          = $true  # 非赛程集锦：YouTube 可达即全频道扫
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
 $BiliUids             = @("470189", "1515150312", "473683296", "1946872922")   # B站 UP主：口菐 /「B站一直吞我评论」/ 473683296 / 1946872922
-$MaxBiliVideos        = 90                 # 每 UP 取最近 N 个 bvid（口菐等日更 UP 发稿多，30 会漏）
-$BiliExtraPages       = 3                  # 空间页 DOM 只渲染最近 ~40 条；再用 arc/search 补抓 pn=2..N 更早投稿（限流则跳过）
+$MaxBiliVideos        = 40                 # 每 UP 取最近 N 个 bvid（主页 DOM 只渲染最近 ~40 条，此处为防御性上限）
 $BiliSeenFile  = Join-Path $PSScriptRoot "bili-seen.txt"   # 已抓过但未收录的 bvid 记录（未配的也记，冷却期后重试）
 $BiliSeenDays  = 7                                          # 未收录投稿冷却天数：期间不再重复抓取
 $MatchWithinDays      = 60                 # 只抓最近 N 天内新结束的比赛
@@ -93,6 +105,64 @@ function Read-CacheJs([string]$file) {
     $json = [regex]::Replace($txt, '(?s)^.*?=\s*(?={)', '') -replace ';\s*$', ''
     return ($json | ConvertFrom-Json)
   } catch { return $null }
+}
+
+# ── YouTube 分片（运行器 → 本机中间产物）读写 ──────────────────
+# 结构：{ version, updated, searched:[比赛键], items:[{at, src, t, k, v}] }
+#   t = match|player|feed（目标桶）；k = 该桶的键；v = 视频对象（New-Video 的 6 字段）
+function Read-Shard {
+  $s = Read-CacheJs $ShardFile
+  if (-not $s) { return [ordered]@{ version = 1; updated = ""; searched = @(); items = @() } }
+  return $s
+}
+
+# Mode=Merge   运行器用：旧条目按写入日期裁剪后，追加本轮新条目（按 videoId+桶+键 去重）
+# Mode=Consume 本机用：合并后把仍未进主缓存的条目写回，使分片消费即空
+function Write-Shard([string]$Mode, $Items = @(), $Searched = @(), $Known = $null) {
+  $old = Read-Shard
+  $keep = @()
+  if ($Mode -eq "Merge") {
+    $cut = (Get-Date).Date.AddDays(-$ShardKeepDays)
+    foreach ($it in @($old.items)) {
+      if (-not $it -or -not $it.v) { continue }
+      try { if ([datetime]::ParseExact([string]$it.at, 'yyyy-MM-dd', $null).Date -lt $cut) { continue } } catch { }
+      $keep += $it
+    }
+  } elseif ($Mode -eq "Consume") {
+    foreach ($it in @($old.items)) {
+      if (-not $it -or -not $it.v -or -not $it.v.videoId) { continue }
+      if ($Known -and $Known.ContainsKey([string]$it.v.videoId)) { continue }   # 已进主缓存，不再留
+      $keep += $it
+    }
+  }
+  $sig = @{}
+  foreach ($it in $keep) { if ($it.v) { $sig["$($it.v.videoId)|$($it.t)|$($it.k)"] = $true } }
+  $add = @()
+  foreach ($it in @($Items)) {
+    if (-not $it -or -not $it.v -or -not $it.v.videoId) { continue }
+    $sk = "$($it.v.videoId)|$($it.t)|$($it.k)"
+    if ($sig.ContainsKey($sk)) { continue }
+    $sig[$sk] = $true
+    $add += $it
+  }
+  $merged = @($add) + @($keep)
+
+  $searchedOut = @()
+  if ($Mode -eq "Merge") {
+    $sset = @{}
+    foreach ($k in @($old.searched)) { if ($k) { $sset[[string]$k] = $true } }
+    foreach ($k in @($Searched)) { if ($k) { $sset[[string]$k] = $true } }
+    $searchedOut = @($sset.Keys | Sort-Object)
+  }   # Consume：本机已折进主缓存，分片不再保留 searched
+
+  $obj = [ordered]@{ version = 1; updated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss"); searched = $searchedOut; items = @($merged) }
+  $js = "/* 自动生成，请勿手动编辑 —— update_youtube.ps1 -YouTubeOnly 产出、本机全量运行时合并。" + "`r`n   运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */`r`nwindow.DQD_VIDEOS_YT_SHARD = $($obj | ConvertTo-Json -Depth 10);`r`n"
+  try {
+    [System.IO.File]::WriteAllText($ShardFile, $js, $UTF8)
+    Log "  · 分片写入（$Mode）：$($merged.Count) 条 / searched $($searchedOut.Count) 场"
+  } catch {
+    Log "  ✗ 分片写入失败：$($_.Exception.Message)"
+  }
 }
 
 # ── 文本归一化：小写 + 去重音符号 ──
@@ -242,12 +312,18 @@ function Read-DataJsPlayers([string[]]$tiers) {
   if (-not (Test-Path $path)) { return $out }
   $txt = [System.IO.File]::ReadAllText((Resolve-Path $path), $UTF8)
   foreach ($tier in $tiers) {
-    $m = [regex]::Match($txt, '"' + [regex]::Escape($tier) + '"\s*:\s*\[(.*?)\n\s*\],?\n', 'Singleline')
-    if (-not $m.Success) { continue }
+    # 行尾容错 \r?\n：data.js 若被编辑器转成 CRLF，\n 终止符会永不命中，
+    # 整个梯队静默消失（2026-09-12 发生过：匹配池 209 → 104）。
+    $m = [regex]::Match($txt, '"' + [regex]::Escape($tier) + '"\s*:\s*\[(.*?)\r?\n\s*\],?\r?\n', 'Singleline')
+    if (-not $m.Success) {
+      Log "  ✗ 梯队 $tier 名单块未匹配到（data.js 结构或行尾变化？匹配池会因此缺人）"
+      continue
+    }
     $list = @()
     foreach ($em in [regex]::Matches($m.Groups[1].Value, '\{[^{}]*name:\s*"([^"]*)"[^{}]*zh:\s*"([^"]*)"')) {
       $list += [pscustomobject]@{ name = $em.Groups[1].Value; zh = $em.Groups[2].Value }
     }
+    if (-not $list.Count) { Log "  ✗ 梯队 $tier 名单解析为 0 人（匹配池会因此缺人）" }
     $out[$tier] = $list
   }
   return $out
@@ -310,6 +386,7 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
     }
   }
   $dataJs = Read-DataJsPlayers @("juvenil-a", "juvenil-b", "cadete", "cadete-b")
+  $localAdded = 0
   foreach ($tier in @("juvenil-a", "juvenil-b", "cadete", "cadete-b")) {
     foreach ($p in @($dataJs[$tier])) {
       $pname = [string]$p.name
@@ -317,8 +394,10 @@ function Build-PlayerPool($sfb, $u19, $u18, $u16, $zhMap) {
       $pkey = "local:${tier}:$(Norm-Key $pname)"
       if ($pool.ContainsKey($pkey)) { continue }
       $pool[$pkey] = [pscustomobject]@{ name = $pname; zh = [string]$p.zh; fullNorms = @((Norm $pname)); tokens = @(Name-Tokens $pname); zhParts = @(Get-ZhParts ([string]$p.zh)) }
+      $localAdded++
     }
   }
+  Log "  · 名单池：data.js 高梯队 $localAdded 人（juvenil-a/b · cadete · cadete-b）"
   return $pool
 }
 
@@ -606,61 +685,13 @@ function Get-BiliBvids([string]$uid) {
     }
     Start-Sleep -Milliseconds 800
   }
-  if (-not $bvids.Count) { Log "  · B站 UP $uid 未取到投稿（渲染失败或被风控）" }
+  if (-not $bvids.Count) { Log "  ✗ B站 UP $uid 未取到投稿，本次跳过该 UP（下次运行自动重试）" }
   return $bvids
 }
 
-# B站空间页 DOM 只渲染最近 ~40 条；用 arc/search 分页补抓更早投稿（pn=2..N）。
-# 该接口有频率限制（-799/风控验证页，且为 IP 级：一 UP 失败通常全 IP 失败）。
-# 重试一次不成就判定 IP 被风控，跳过后续所有分页（$script:BiliExtraBlocked），不影响主流程。
-function Get-BiliBvidsExtra([string]$uid, [int]$maxPages, [int]$cap, $known) {
-  if ($script:BiliExtraBlocked) { return @() }
-  $extra = @()
-  for ($pn = 2; $pn -le $maxPages; $pn++) {
-    $got = $false
-    $pageNew = 0   # 本页真正新投稿数（不在已知集合）
-    for ($att = 1; $att -le 2; $att++) {
-      try {
-        $uri = "https://api.bilibili.com/x/space/arc/search?mid=$uid&ps=30&pn=$pn&order=pubdate"
-        $headers = @{
-          "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
-          "Referer"    = "https://space.bilibili.com/"
-          "Cookie"     = "buvid3=lamasia"
-        }
-        $res = Invoke-RestMethod -Uri $uri -Method Get -Headers $headers -TimeoutSec 20
-        if ($res -and $res.code -eq 0 -and $res.data -and $res.data.list -and $res.data.list.vlist) {
-          foreach ($v in @($res.data.list.vlist)) {
-            $b = [string]$v.bvid
-            if ($b -and $extra -notcontains $b) {
-              if (-not $known -or -not $known.ContainsKey($b)) { $pageNew++ }   # 只计真正新投稿
-              $extra += $b
-            }
-            if ($extra.Count -ge $cap) { break }
-          }
-          Log "  · B站 UP $uid 分页补抓 pn=$pn 成功（累计 $($extra.Count) 条更早投稿）"
-          $got = $true
-          break
-        } elseif ($res -and $res.code -ne 0) {
-          Log "  · B站 UP $uid 分页 pn=$pn 被限流（code=$($res.code)）"
-        }
-      } catch {
-        Log "  · B站 UP $uid 分页 pn=$pn 请求异常"
-      }
-      Start-Sleep -Seconds 30
-    }
-    if (-not $got) {
-      $script:BiliExtraBlocked = $true
-      Log "  · B站 分页补抓被风控，本次跳过后续 UP 分页（已抓 $($extra.Count) 条更早投稿）"
-      break
-    }
-    if ($pageNew -eq 0) {   # 该页全部是已收录投稿 → 历史已回填完毕，不再翻更早页
-      Log "  · B站 UP $uid 分页 pn=$pn 无新投稿（历史已回填），提前停止分页"
-      break
-    }
-    if ($extra.Count -ge $cap) { break }
-  }
-  return @($extra)
-}
+# 已移除 arc/search 分页补抓（Get-BiliBvidsExtra）：该接口对本机 IP 长期 -799/风控页，
+# 且重试固定 Start-Sleep 30s×2 等于每轮白等 60-90 秒。主页 DOM 是最新在前的可靠路径，
+# 每日更新只需新投稿，DOM 窗口足够；更早的历史回填改为按需人工，不进每日路径。
 
 # B站 view 接口：bvid → 元数据（无需 WBI，任意 buvid cookie 可通）
 function Get-BiliVideoInfo([string]$bvid) {
@@ -813,6 +844,14 @@ foreach ($lst in @($oldFeed.Values)) {
   foreach ($g in @($lst)) { foreach ($v in @($g.videos)) { if ($v -and $v.videoId) { $known[[string]$v.videoId] = $true } } }
 }
 Log "  · 已知视频 $($known.Count) 条（已收录，跳过重复抓取）"
+
+# ── YouTube 分片：运行器在美区抓 YouTube 后留下的中间产物，本机负责合并 ──
+$shard = Read-Shard
+$shardItems = @()                 # -YouTubeOnly 时累积本轮新条目
+$todayStr = (Get-Date).ToString("yyyy-MM-dd")
+if (-not $YouTubeOnly -and @($shard.items).Count) {
+  Log "  · 待合并的分片：$(@($shard.items).Count) 条（运行器产出，本机合并后清空）"
+}
 
 # ── 已抓过但未收录的 bvid（未配视频冷却期去重）：每行 bvid<TAB>yyyy-MM-dd ──
 $seenBili = @{}
@@ -974,8 +1013,12 @@ function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $partPlayers, $end
   if (-not $isMatchLike -and $null -ne $pubT) {
     $em = Find-EndedMatch $titleNorm $pubT $endedList
   }
+  # targets：本视频归属的「桶 + 键」，仅供 -YouTubeOnly 分片记录用。
+  # 纯附加信息，不改变下面任何写出行为；现有调用点只读 .match/.player，不受影响。
+  $targets = @()
   if ($em) {
     $matchMap[$em.key] = @(Merge-Videos ($matchMap[$em.key] | Where-Object { $_ }) $v $MaxMatchVideos)
+    $targets += @{ t = "match"; k = $em.key }
   }
   if (-not (IsPlayerIrrelevant $titleNorm)) {
     $bestScore = 0; $bestKeys = @()
@@ -986,12 +1029,17 @@ function Classify-Video($v, $pubT, [string]$titleNorm, $pool, $partPlayers, $end
     }
     if ($bestScore -gt 0) {
       foreach ($pk in $bestKeys) {
-        if ($em) { $playerMap[$pk] = @(Merge-Videos ($playerMap[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos) }
-        else { Add-FeedVideo $feedMap $pk $v $titleNorm $oppPool $pubT }
+        if ($em) {
+          $playerMap[$pk] = @(Merge-Videos ($playerMap[$pk] | Where-Object { $_ }) $v $MaxPlayerVideos)
+          $targets += @{ t = "player"; k = $pk }
+        } else {
+          Add-FeedVideo $feedMap $pk $v $titleNorm $oppPool $pubT
+          $targets += @{ t = "feed"; k = $pk }
+        }
       }
     }
   }
-  return @{ match = ($null -ne $em); player = ($bestScore -gt 0) }
+  return @{ match = ($null -ne $em); player = ($bestScore -gt 0); targets = @($targets) }
 }
 
 # ════════════ 0. 当前全部已完赛（用于视频保留与 searchedMatches 裁剪） ════════════
@@ -1013,6 +1061,19 @@ foreach ($k in @($oldMatches.Keys)) {
 foreach ($k in @($oldSearched.Keys)) {
   if ($currentEnded.ContainsKey($k)) { $searched[$k] = $true }
 }
+# 分片带入的「运行器已搜过」比赛：必须在 A0 之前折入 $searched，
+# 否则本机每轮都会把它们当新比赛重搜（日志反复刷「有 N 场新比赛」）。
+if (-not $YouTubeOnly -and $shard.searched) {
+  $fromShard = 0
+  foreach ($k in @($shard.searched)) {
+    $kk = [string]$k
+    if ($currentEnded.ContainsKey($kk) -and -not $searched.ContainsKey($kk)) { $searched[$kk] = $true; $fromShard++ }
+  }
+  if ($fromShard) { Log "  · 分片带入已搜索比赛 $fromShard 场（运行器搜过，本机不再重复搜索）" }
+}
+# -YouTubeOnly：记下 A1 前的基线，收尾用差集得出「本轮真正搜过」的比赛写入分片
+$searchedBefore = @{}
+if ($YouTubeOnly) { foreach ($k in $searched.Keys) { $searchedBefore[$k] = $true } }
 
 # ════════════ A. 整场集锦（YouTube 搜索抓取） ════════════
 $nowUtc = [datetime]::UtcNow
@@ -1101,6 +1162,10 @@ if ($newMatchList.Count -and $ytOk) {
       New-Video $_.it.videoId $_.it.title $_.it.channel "" $pub ([string]$_.dur)
     })
     $outMatches[$key] = @(Merge-Videos ($outMatches[$key] | Where-Object { $_ }) $new $MaxMatchVideos)
+    # A1 不走 Classify-Video，手工记 target；忠实复刻现有行为：A1 结果只进 match 桶，从不进 players
+    if ($YouTubeOnly) {
+      foreach ($nv in @($new)) { $shardItems += [ordered]@{ at = $todayStr; src = "yt-search"; t = "match"; k = $key; v = $nv } }
+    }
     Log "    ✓ 收录 $($new.Count) 条：$((@($outMatches[$key]) | ForEach-Object { $_.title }) -join ' | ')"
     Start-Sleep -Milliseconds 600
   }
@@ -1174,6 +1239,11 @@ foreach ($pk in @($pool.Keys)) {
 }
 Log "  · 匹配池 $($pool.Count) 名球员 / 词元索引 $($partPlayers.Count) 项"
 
+# -YouTubeOnly 只产分片、不写主缓存：下面「旧 feed 重归类」与「旧 players 迁移」两段
+# 纯粹服务于主缓存重建，这里清空其数据源让两段空转（$known 已在上面建好，不受影响），
+# 省掉一轮全量重分类。不能用 continue 之类跳过——保持脚本单线执行、避免破坏后续段。
+if ($YouTubeOnly) { $oldFeed = @{}; $oldPlayers = @{} }
+
 # 旧 feed 重建：用增强的对手提取重新归类（把「未识别对手」尽量识别出具体对手）；
 # 同时重校验该视频是否仍匹配该球员（清掉 Rodri 误配这类过期归属）
 $refeed = 0
@@ -1221,6 +1291,47 @@ if ($migratedPlayers -or $migratedFeed) {
   Log "  · 旧球员视频迁移：赛程保留 $migratedPlayers 条 / 非赛程 feed $migratedFeed 条"
 }
 
+# ════════════ B0. 合并 YouTube 分片（运行器产出 → 本机主缓存） ════════════
+# 运行器在美区抓到 YouTube 后写成 scripts/dqd-videos-yt-shard.js；本机在这里把它折进
+# 主缓存的三个桶。复用本机的 Merge-Videos / Add-FeedVideo，因此条数上限、videoId 去重、
+# feed 分组键与 label 生成都以本机为准，不会因运行器版本差异产生不同结构。
+# 丢弃规则（有意为之）：match 键不在 $currentEnded、player/feed 键不在 $pool 的一律丢——
+# 与上面 searchedMatches / 旧 feed 的裁剪同源，不让过期分片复活已消失的比赛或离队球员。
+if (-not $YouTubeOnly -and @($shard.items).Count) {
+  $foldM = 0; $foldP = 0; $foldF = 0; $foldSkip = 0; $foldDrop = 0
+  foreach ($it in @($shard.items)) {
+    $v = $it.v
+    if (-not $v -or -not $v.videoId) { continue }
+    $vid = [string]$v.videoId
+    if ($known.ContainsKey($vid)) { $foldSkip++; continue }   # 幂等：已进主缓存（或本机已抓过）
+    $k = [string]$it.k
+    $titleN = Norm ([string]$v.title)
+    switch ([string]$it.t) {
+      "match" {
+        if (-not $currentEnded.ContainsKey($k)) { $foldDrop++; continue }
+        $outMatches[$k] = @(Merge-Videos ($outMatches[$k] | Where-Object { $_ }) $v $MaxMatchVideos)
+        $known[$vid] = $true; $foldM++
+      }
+      "player" {
+        if (-not $pool.ContainsKey($k)) { $foldDrop++; continue }
+        $outPlayers[$k] = @(Merge-Videos ($outPlayers[$k] | Where-Object { $_ }) $v $MaxPlayerVideos)
+        $known[$vid] = $true; $foldP++
+      }
+      "feed" {
+        $pubT = Get-UcDate ([string]$v.published)
+        if (-not $pool.ContainsKey($k) -or $null -eq $pubT) { $foldDrop++; continue }
+        Add-FeedVideo $outFeed $k $v $titleN $oppPool $pubT
+        $known[$vid] = $true; $foldF++
+      }
+      default { $foldDrop++ }
+    }
+  }
+  $msg = "  · YouTube 分片合并：赛程 $foldM / 球员 $foldP / 非赛程 $foldF 条"
+  if ($foldSkip) { $msg += "（已收录跳过 $foldSkip）" }
+  if ($foldDrop) { $msg += "（过期/离队丢弃 $foldDrop）" }
+  Log $msg
+}
+
 # ════════════ B. 球员按场个人集锦（油管频道 RSS + B站，覆盖全部在队球员） ════════════
 # 非赛程集锦全频道扫描：YouTube 可达即拉 RSS（不依赖新赛程）
 $oneTimeDone = @()
@@ -1261,6 +1372,13 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
       if ($st.match -or $st.player) {
         Log "    ✓ 油管分类：$($it.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
       }
+      # 分片：把该视频归属的桶与键记下来，供本机合并（本机再跑一遍 Merge/Add-FeedVideo，
+      # 条数上限、去重、feed 分组与 label 生成始终以本机为准）
+      if ($YouTubeOnly -and $st.targets) {
+        foreach ($tg in @($st.targets)) {
+          $shardItems += [ordered]@{ at = $todayStr; src = "yt-rss"; t = $tg.t; k = $tg.k; v = $v }
+        }
+      }
     }
     }
     if ($skippedRss) { Log "  · 油管 RSS 跳过已收录 $skippedRss 条上传（不再重复分类）" }
@@ -1276,40 +1394,37 @@ if ($ytOk -and ($newMatchList.Count -gt 0 -or $pendingOneTime.Count -gt 0 -or $F
 
 # ════════════ B2. B站 UP 主集锦（口菐 / 「B站一直吞我评论」 / 473683296） ════════════
 # 独立于 YouTube 探测：国内 B站 可直连，无代理也能拉到；非赛程集锦全 UP 扫描（不依赖新赛程）
-if ($BiliUids.Count) {
+if ($BiliUids.Count -and -not $YouTubeOnly) {
   $allPlayers = $pool   # 全量匹配池（0.5 段构建）
   # （$endedList 已在 B 段开头构建，供全场集锦匹配）
   $skippedBili = 0      # 已收录跳过计数（避免重复抓元数据/分类）
   Log "  · B站 匹配池：$($allPlayers.Count) 名在队球员 / $($endedList.Count) 场已完赛"
   foreach ($uid in $BiliUids) {
     $bvids = @(Get-BiliBvids $uid)
-    # DOM 只渲染最近 ~40 条。主页投稿全部已收录 → 历史已回填，新投稿总在最前，
-    # 无需翻页补抓（省掉限流等待）；等主页出现新投稿再补翻更早页。
-    # 主页抓取失败（空列表）时仍尝试分页兜底，维持旧行为。
-    $mainNew = @($bvids | Where-Object { $_ -and -not $known.ContainsKey($_) -and -not $seenBili.ContainsKey($_) }).Count
-    if ($bvids.Count -eq 0 -or $mainNew -gt 0) {
-      $bvids = @(@($bvids) + @(Get-BiliBvidsExtra $uid $BiliExtraPages $MaxBiliVideos $known) | Select-Object -Unique)
-    }
-    $count = [Math]::Min($bvids.Count, $MaxBiliVideos)
-    if (-not $count) { continue }
-    Log "  · B站 UP $uid：检查最近 $count 条投稿"
-    $i = 0
-    foreach ($bvid in $bvids) {
-      if ($i -ge $count) { break }
-      $i++
-      if ($known.ContainsKey($bvid)) { $skippedBili++; continue }   # 已收录，跳过抓元数据/分类
-      if (Seen-Fresh $bvid $seenBili $BiliSeenDays) { $skippedBili++; continue }   # 近期已抓过但未收录，冷却期内跳过
-      $info = Get-BiliVideoInfo $bvid
-      if (-not $info) { continue }
-      $seenBili[$bvid] = (Get-Date).ToString("yyyy-MM-dd")   # 抓到了就记 seen（即使未配，冷却期后再重试）
-      try { $pubDt = [DateTimeOffset]::FromUnixTimeSeconds([int64]$info.pubdate).UtcDateTime } catch { continue }
-      if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
-      $titleN = Norm $info.title
-      $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
-      # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
-      $st = Classify-Video $v $pubDt $titleN $allPlayers $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
-      if ($st.match -or $st.player) {
-        Log "    ✓ B站分类：$($info.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
+    # 只走主页 DOM（唯一可靠路径）；arc/search 分页补抓已移除，原因见 Get-BiliBvids 下方注释。
+    # DOM 列表最新在前：本次渲染失败则该 UP 本轮零产出，下次运行仍在 DOM 窗口内可自然补齐。
+    # 用 if 包裹而非 continue —— 让循环末尾的节流 sleep 始终执行，避免 4 个 UP 连续打 DOM 触发风控。
+    if ($bvids.Count) {
+      $count = [Math]::Min($bvids.Count, $MaxBiliVideos)
+      Log "  · B站 UP $uid：检查最近 $count 条投稿"
+      $i = 0
+      foreach ($bvid in $bvids) {
+        if ($i -ge $count) { break }
+        $i++
+        if ($known.ContainsKey($bvid)) { $skippedBili++; continue }   # 已收录，跳过抓元数据/分类
+        if (Seen-Fresh $bvid $seenBili $BiliSeenDays) { $skippedBili++; continue }   # 近期已抓过但未收录，冷却期内跳过
+        $info = Get-BiliVideoInfo $bvid
+        if (-not $info) { continue }
+        $seenBili[$bvid] = (Get-Date).ToString("yyyy-MM-dd")   # 抓到了就记 seen（即使未配，冷却期后再重试）
+        try { $pubDt = [DateTimeOffset]::FromUnixTimeSeconds([int64]$info.pubdate).UtcDateTime } catch { continue }
+        if ([int64]$info.pubdate -lt $CutoffUnix) { continue }   # 只要 2026-06-01 起
+        $titleN = Norm $info.title
+        $v = New-BiliVideo $info $pubDt.ToString("yyyy-MM-dd")
+        # 统一分类：赛程→matches / 球员+赛程→players / 球员且非赛程→feed（非赛程集锦）
+        $st = Classify-Video $v $pubDt $titleN $allPlayers $partPlayers $endedList $oppPool $outMatches $outPlayers $outFeed
+        if ($st.match -or $st.player) {
+          Log "    ✓ B站分类：$($info.title)（$(if ($st.match) {'赛程'} elseif ($st.player) {'非赛程'} else {'未配'})）"
+        }
       }
     }
     Start-Sleep -Milliseconds 500
@@ -1328,7 +1443,7 @@ if ($BiliUids.Count) {
 # ════════════ B3. 微博账号视频集锦（董路·中国足球小将） ════════════
 # 微博无登录只能渲染最近一页（约 8-12 条），随本机每日更新每天抓一次、按球员关键词积累；
 # 关键球员（如李昊炎）的视频通常在最新几条内出现。非赛程集锦 → feed.players。
-if ($WeiboUids.Count) {
+if ($WeiboUids.Count -and -not $YouTubeOnly) {
   Log "  · 微博账号 $($WeiboUids -join ', ')（$WeiboChannelLabel）：抓取最近视频帖"
   $nowLocal = Get-Date
   $skippedWeibo = 0   # 已收录跳过计数
@@ -1359,6 +1474,17 @@ if ($WeiboUids.Count) {
 }
 
 # ════════════ C. 合并写回 ════════════
+if ($YouTubeOnly) {
+  # 运行器模式：走到这里只写分片，**不触碰主缓存**（本段之后立即 return，下面所有行都不会执行）。
+  # 「本轮真正搜过」= 收尾时的 $searched 减去 A1 前基线：A1 里 :1050 设 $true、抓取失败时
+  # :1068 Remove，所以差集天然等于真正搜过的键，且不会把从主缓存继承的旧键重复塞进分片。
+  $newSearched = @($searched.Keys | Where-Object { -not $searchedBefore.ContainsKey($_) })
+  Write-Shard -Mode Merge -Items $shardItems -Searched $newSearched
+  Log "YouTube-only 完成：本轮新增分片 $($shardItems.Count) 条 / 新搜索 $($newSearched.Count) 场"
+  Log "  ⚠️ 本模式不写 assets/js/dqd-videos-cache.js —— 运行器结构上不可能覆盖本机抓到的数据"
+  return
+}
+
 $core = [ordered]@{
   searchedMatches = @($searched.Keys | Sort-Object)
   matches = [ordered]@{}
@@ -1427,5 +1553,9 @@ if ($coreJson -eq $oldCoreJson) {
     Log "  ✗ 写入缓存失败：$($_.Exception.Message)"
   }
 }
+
+# 分片消费：已进主缓存的条目不再保留，分片消费后即空。写入与「内容无变化跳过写入」
+# 两种情况都要执行，否则内容无变化的那一轮分片会白留一天。
+if (@($shard.items).Count) { Write-Shard -Mode Consume -Known $known }
 
 Log "YouTube 集锦更新完成 ✔"
