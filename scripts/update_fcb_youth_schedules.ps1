@@ -25,6 +25,7 @@ $Tiers = @(
   @{ id = "cadete-b";   slug = "cadete-b";   comp = "加泰优选联赛 Cadete G1"; compEn = "Preferente Catalana Cadete G.1" },
   @{ id = "infantil";   slug = "infantil-a"; comp = "加泰荣誉联赛 Infantil";  compEn = "División de Honor Catalana Infantil" },
   @{ id = "infantil-b"; slug = "infantil-b"; comp = "加泰优选联赛 Infantil G1";compEn = "Preferente Catalana Infantil G.1" },
+  @{ id = "infantil-c"; slug = "alevin-a";   comp = "加泰优选联赛 Alevín G1";  compEn = "Preferente Catalana Alevín G.1" },
   @{ id = "juvenil-b";  slug = "juvenil-b";  comp = "西青乙 G7";               compEn = "Liga Nacional Grupo 7" }
 )
 

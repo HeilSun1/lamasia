@@ -15,7 +15,7 @@
   // 官方队徽（本地梯队用）；对手徽章常被防盗链 403 → 失败由 img onerror 隐藏
   function fcbBadge(id) { return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : ""; }
   /* 官方站本队名 "FC Barcelona A/B" → 按梯队显示「巴萨 U16/U15…」（与赛程区一致） */
-  var FCB_U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "juvenil-b": "U19B" };
+  var FCB_U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "infantil-c": "U12", "juvenil-b": "U19B" };
   function dispFcb(name, tier) {
     var n = String(name || "").trim();
     if (/^FC Barcelona/.test(n)) return "巴萨 " + (FCB_U_AGE[tier] || "A");
@@ -121,6 +121,7 @@
       { tier: "cadete-b",   team: "Cadete B",   href: "teams/cadete-b.html" },
       { tier: "infantil",   team: "Infantil A", href: "teams/infantil.html" },
       { tier: "infantil-b", team: "Infantil B", href: "teams/infantil-b.html" },
+      { tier: "infantil-c", team: "Infantil C", href: "teams/infantil-c.html" },
       { tier: "juvenil-b",  team: "Juvenil B",  href: "teams/juvenil-b.html",  skipIfSf: "DQD_U18_CACHE" }
     ].forEach(function (cfg) {
       if (cfg.skipIfSf && window[cfg.skipIfSf] && Array.isArray(window[cfg.skipIfSf].matches) &&

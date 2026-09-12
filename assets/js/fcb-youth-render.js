@@ -36,7 +36,7 @@
   }
 
   /* 各梯队 U 年龄段（对应 fcb-youth-schedules 的 tier 键） */
-  var U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "juvenil-b": "U19B" };
+  var U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "infantil-c": "U12", "juvenil-b": "U19B" };
 
   /* 显示层队名：官方站本队写作 "FC Barcelona A"，按梯队显示「巴萨 U16/U15…」（与 U19 命名一致） */
   function disp(name, tier) {
