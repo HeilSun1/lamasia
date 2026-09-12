@@ -67,8 +67,8 @@
   // 1) 本地官方名单（优先级最高：含中文名与备注）
   const TEAM_OF = {
     "juvenil-a": "U19 A", "juvenil-b": "U19 B", "cadete": "U16",
-    "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13",
-    "alevin": "U12", "u11a": "U11 A", "u11b": "U11 B",
+    "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13 B",
+    "infantil-c": "U13 C", "u11a": "U11 A", "u11b": "U11 B",
     "u10a": "U10 A", "u10b": "U10 B", "u9a": "U9 A", "u9b": "U9 B"
   };
   const local = (window.LAMASIA_DATA && window.LAMASIA_DATA.players) || {};

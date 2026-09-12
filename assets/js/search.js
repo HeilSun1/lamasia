@@ -20,7 +20,7 @@
     "cadete-b":   { t: "U15 · Cadete B",   u: "teams/cadete-b.html#roster-cadete-b" },
     "infantil":   { t: "U14 · Infantil A", u: "teams/infantil.html#roster-infantil" },
     "infantil-b": { t: "U13 · Infantil B", u: "teams/infantil-b.html#roster-infantil-b" },
-    "alevin":     { t: "U12 · Alevín A",   u: "teams/seven-a-side.html#sec-roster-u12" },
+    "infantil-c": { t: "U13 · Infantil C", u: "teams/infantil-c.html#roster-infantil-c" },
     "u11a":       { t: "U11A · Alevín B",  u: "teams/seven-a-side.html#sec-roster-u11a" },
     "u11b":       { t: "U11B · Alevín C",  u: "teams/seven-a-side.html#sec-roster-u11b" },
     "u10a":       { t: "U10A · Benjamín A",u: "teams/seven-a-side.html#sec-roster-u10a" },

@@ -46,7 +46,7 @@
       u19: "U19 · Juvenil A", u18: "U18 · Juvenil B", u16: "U16 · Cadete A",
       "juvenil-a": "U19 · Juvenil A", "juvenil-b": "U18 · Juvenil B", cadete: "U16 · Cadete A",
       "cadete-b": "U15 · Cadete B", infantil: "U14 · Infantil A", "infantil-b": "U13 · Infantil B",
-      alevin: "U12 · Alevín A", u11a: "U11A · Alevín B", u11b: "U11B · Alevín C",
+      "infantil-c": "U13 · Infantil C", u11a: "U11A · Alevín B", u11b: "U11B · Alevín C",
       u10a: "U10A · Benjamín A", u10b: "U10B · Benjamín B", u9a: "U9A · Benjamín C", u9b: "U9B · Benjamín D"
     };
     return m[tier] || tier || "";
@@ -56,7 +56,7 @@
       b: "teams/barca-atletic.html#sec-roster",
       u19: "teams/juvenil-a.html#sec-roster", u18: "teams/juvenil-b.html", u16: "teams/cadete.html",
       "cadete-b": "teams/cadete-b.html#roster-cadete-b", infantil: "teams/infantil.html#roster-infantil",
-      "infantil-b": "teams/infantil-b.html#roster-infantil-b", alevin: "teams/seven-a-side.html#sec-roster-u12",
+      "infantil-b": "teams/infantil-b.html#roster-infantil-b", "infantil-c": "teams/infantil-c.html#roster-infantil-c",
       u11a: "teams/seven-a-side.html#sec-roster-u11a", u11b: "teams/seven-a-side.html#sec-roster-u11b",
       u10a: "teams/seven-a-side.html#sec-roster-u10a", u10b: "teams/seven-a-side.html#sec-roster-u10b",
       u9a: "teams/seven-a-side.html#sec-roster-u9a", u9b: "teams/seven-a-side.html#sec-roster-u9b"

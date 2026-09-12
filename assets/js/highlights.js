@@ -44,12 +44,12 @@
     u18: "U18 · Juvenil B",
     u16: "U16 · Cadete A",
     u15: "U15 · Cadete B",
-    u14: "U14 · Infantil A",
+    u14: "U14–U13 · Infantil A/B/C",
     other: "其他"
   };
   var LOCAL_TIER = {
     "juvenil-a": "u19", "juvenil-b": "u18", cadete: "u16",
-    "cadete-b": "u15", infantil: "u14", "infantil-b": "u14"
+    "cadete-b": "u15", infantil: "u14", "infantil-b": "u14", "infantil-c": "u14"
   };
   /* 键 → 展示梯队：sf:{tier}:{id} / b:{id} / local:{tier}:{name} */
   function tierOf(k) {

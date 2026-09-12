@@ -54,7 +54,7 @@
               <span class="zh">${esc(p.zh || p.name)}</span>
               <span class="en">${esc(p.name)}</span>
             </span>
-            <span class="pl-pos ${POS_CLASS[p.pos]}">${POS_ZH[p.pos]}</span>
+            <span class="pl-pos ${POS_CLASS[p.pos]}"${p.role ? ` title="${esc(p.role)}"` : ""}>${POS_ZH[p.pos]}${p.role ? `<span class="pl-role">${esc(p.role)}</span>` : ""}</span>
             <span class="pl-nation">${esc(p.nation)}</span>
             <span class="pl-dob">${esc(p.dob || "—")}</span>
             <span class="pl-note">${esc(p.note || "")}</span>

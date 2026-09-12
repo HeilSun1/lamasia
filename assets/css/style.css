@@ -201,7 +201,7 @@ a:hover { color: #0d54b8; }
 }
 .pl-row {
   display: grid;
-  grid-template-columns: 36px 42px minmax(0, 1.5fr) 62px 86px 88px minmax(0, 1fr);
+  grid-template-columns: 36px 42px minmax(0, 1.5fr) 82px 86px 88px minmax(0, 1fr);
   align-items: center; gap: 10px;
   padding: 9px 10px; border-radius: var(--radius-sm);
   transition: var(--transition);
@@ -230,6 +230,8 @@ a:hover { color: #0d54b8; }
 .pl-pos.df { background: rgba(37,99,235,0.12); color: var(--pos-df); }
 .pl-pos.mf { background: rgba(210,52,92,0.12); color: var(--pos-mf); }
 .pl-pos.fw { background: rgba(14,159,92,0.12); color: var(--pos-fw); }
+/* 细分位置（RB/CB/CDM/CAM/RW/ST/LW…）：附在位置徽标内，仅在名单来源给出时显示 */
+.pl-role { margin-left: 5px; font-size: 9.5px; font-weight: 700; opacity: .62; letter-spacing: .02em; }
 .pl-nation { font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pl-dob { font-size: 12px; color: var(--faint); white-space: nowrap; }
 .pl-note { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -759,7 +761,7 @@ a:hover { color: #0d54b8; }
 
 /* ═══ 响应式 ═══ */
 @media (max-width: 860px) {
-  .pl-row { grid-template-columns: 30px 40px minmax(0, 1fr) 58px 76px; }
+  .pl-row { grid-template-columns: 30px 40px minmax(0, 1fr) 76px 76px; }
   .pl-dob { display: none; }
 }
 @media (max-width: 680px) {
@@ -770,7 +772,7 @@ a:hover { color: #0d54b8; }
   .pyramid-row { grid-template-columns: 84px 1fr; }
   .match-card { grid-template-columns: 1fr auto 1fr; padding: 13px 10px; }
   .match-card .mc-team { font-size: 12.5px; }
-  .pl-row { grid-template-columns: 26px 38px minmax(0, 1fr) 56px; }
+  .pl-row { grid-template-columns: 26px 38px minmax(0, 1fr) 72px; }
   .pl-nation, .pl-dob { display: none; }
 }
 
@@ -1447,7 +1449,7 @@ tr.match-row:hover { background: var(--surface-3); }
 /* ═══ 手机端：名单单行 + 集锦名称截断 ═══ */
 @media (max-width: 680px) {
   /* 名单每行只占一行（隐藏备注/国籍/生日，详情在球员卡片里） */
-  .pl-row { grid-template-columns: 26px 38px minmax(0, 1fr) 56px; }
+  .pl-row { grid-template-columns: 26px 38px minmax(0, 1fr) 72px; }
   .pl-note, .pl-nation, .pl-dob { display: none; }
   .pl-avatar { width: 34px; height: 34px; }
 
