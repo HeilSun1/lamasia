@@ -172,7 +172,10 @@ a:hover { color: #0d54b8; }
 .panel h4 { color: var(--text-2); }
 
 /* ═══ 梯队卡片 ═══ */
-.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 14px; }
+/* 卡片行用 flex + 居中 + 限宽：卡片数不整除列数时，最后一行居中，
+   不会出现「孤零零一张卡贴左边」的断裂感（9 张卡时旧版是 4+4+1） */
+.team-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.team-grid > * { flex: 1 1 235px; max-width: 320px; }
 .team-card {
   display: flex; flex-direction: column; gap: 3px;
   background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--radius-lg);
@@ -551,7 +554,8 @@ a:hover { color: #0d54b8; }
 /* 页内导航：固定右侧目录 + 回到顶部 */
 .page-toc {
   position: fixed; top: 96px; right: 16px; z-index: 40;
-  width: 150px; padding: 10px 0 8px;
+  /* 宽度随最长条目自适应（150–200px），配合链接 nowrap：条目不会折成两行 */
+  width: max-content; min-width: 150px; max-width: 200px; padding: 10px 0 8px;
   background: var(--surface); border: 1px solid var(--border-soft);
   border-radius: var(--radius); box-shadow: var(--shadow-md);
   display: flex; flex-direction: column; gap: 1px;
@@ -564,6 +568,7 @@ a:hover { color: #0d54b8; }
   padding: 6px 12px; font-size: 12.5px; line-height: 1.4;
   color: var(--ink-700); text-decoration: none;
   border-left: 2px solid transparent;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .page-toc__link:hover { color: var(--blue-600); background: var(--surface-2); }
 .page-toc__link.active { color: var(--blue-600); border-left-color: var(--blue-600); font-weight: 700; }
@@ -692,7 +697,8 @@ a:hover { color: #0d54b8; }
 .hm-py-desc { font-size: 12px; color: #7a8296; margin-top: 2px; }
 
 /* ── 卡片 ── */
-.hm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.hm-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.hm-grid > * { flex: 1 1 240px; max-width: 330px; }
 .hm-card {
   position: relative; display: block; padding: 24px 22px; background: #fff;
   border: 1px solid #e5e1d6; border-radius: 12px; color: #0d1b3d; overflow: hidden;
@@ -1367,7 +1373,8 @@ tr.match-row:hover { background: var(--surface-3); }
   .hm-stat .hm-stat-num { font-size: 34px; }
   .hm-more { margin-top: 12px; }
   /* 团队网格手机 2 列紧凑（足球 App 风格） */
-  .hm-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .hm-grid { gap: 10px; }
+  .hm-grid > * { flex-basis: 150px; max-width: none; }
   .hm-card { padding: 14px 12px; }
   .hm-card .hm-card-name { font-size: 15px; }
   .hm-card .hm-card-league { font-size: 12px; }
