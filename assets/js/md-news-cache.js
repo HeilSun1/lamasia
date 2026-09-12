@@ -1,11 +1,15 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-12 15:04:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-12 21:06:25 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-12 15:04:42",
+    "updated":  "2026-09-12 21:06:25",
     "source":  "md",
     "count":  50,
     "news":  [
         {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "title":  "Preparen la palomitas",
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "title":  "Observatori Blaugrana: notable de los socios a la junta del Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "time":  "2026-09-12 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/16/69b742d65a68b.r_d.809-541-7500.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "title":  "Preparen las palomitas",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "time":  "2026-09-12 12:00",
             "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" },
         {
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210234/fuente-explica-repesca-eric-garcia-final-mundial.html", "title":  "De la Fuente explica con detalle la repesca de Eric Garcia para la final del Mundial",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210234/fuente-explica-repesca-eric-garcia-final-mundial.html", "time":  "2026-07-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/20/6a5d4c2cb6df4.r_d.797-1187-9002.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/mallorca/20260725/1004210057/confirma-fichaje-arnau-tenas.html", "title":  "Se confirma el fichaje de Arnau Tenas",
-            "url":  "https://www.mundodeportivo.com/futbol/mallorca/20260725/1004210057/confirma-fichaje-arnau-tenas.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a64a89f315d7.r_d.952-847-8996.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/20/6a5d4c2cb6df4.r_d.797-1187-9002.jpeg" }
     ]
 };

@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-12 15:04:39 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-12 21:06:23 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-12 15:04:39",
+    "updated":  "2026-09-12 21:06:23",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134213373", "title":  "Llegó la hora de Bisiwu",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-134213373", "time":  "2026-09-12 11:39",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c9207be2-461d-4af7-9bc3-9de4b63dd543_16-9-discover-aspect-ratio_default_0_x926y193.webp" },
+        {
+            "id":  "134202860", "title":  "La triple dimensión de Jordi Pesquer: ¿Primer equipo, Juvenil A o Barça B ?",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-dimension-jordi-pesquer-primer-134202860", "time":  "2026-09-12 10:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2ec9fa99-821c-466c-839a-e69b2a2d5a5e_16-9-discover-aspect-ratio_default_0_x575y207.webp" },
+        {
             "id":  "134143125", "title":  "Nil Vicens: “Esto acaba de empezar”",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/nil-vicens-acaba-empezar-134143125", "time":  "2026-09-10 11:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134136699", "title":  "El Barça se queda a las puertas de la remontada en su estreno en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-queda-puertas-remontada-estreno-134136699", "time":  "2026-09-10 11:14",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133009211", "title":  "Alexis Olmedo, rumbo al Celta",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alexis-olmedo-rumbo-celta-barcelona-133009211", "time":  "2026-08-01 11:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/faa51e5b-c388-4e0b-8227-e2803f098649_16-9-discover-aspect-ratio_640w_0.webp" },
-        {
-            "id":  "132933461", "title":  "El Barça blinda al juvenil Nuhu Fofana hasta 2030",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-blinda-juvenil-nuhu-fofana-132933461", "time":  "2026-08-01 12:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/df714e77-7294-4d18-8964-b771b0ac7dfe_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "132928780", "title":  "Oficial: Joan Anaya deja el Barça y ficha por el Sant Andreu",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-joan-anaya-deja-barca-132928780", "time":  "2026-07-29 16:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/904ae5c5-1a5d-4fb9-8382-eb916b57d023_16-9-discover-aspect-ratio_640w_0.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/faa51e5b-c388-4e0b-8227-e2803f098649_16-9-discover-aspect-ratio_640w_0.webp" }
     ]
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-12 15:03:17 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-12 21:04:25 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-12 15:03:17",
+    "updated":  "2026-09-12 21:04:25",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -123,6 +123,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4575546", "title":  "Ready for Levante v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575546/ready-for-levante-v-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" },
+            {
                 "id":  "4573423", "title":  "Raphinha, LaLiga MVP for August",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573423/raphinha-la-liga-player-of-the-month-for-august-202627", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/0e19a131-d633-4479-8d3e-32783319229c/_MGA5152.jpg" },
@@ -215,10 +219,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572837/valencia-cf-0-5-fc-barcelona-high-five", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/bced39c1-3b8d-4fc8-950a-c5fe38fa1aa1/_MGA5352.jpg" },
             {
-                "id":  "4572267", "title":  "PREVIEW | Valencia v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572267/preview-valencia-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -226,6 +226,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4572267", "title":  "PREVIEW | Valencia v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572267/preview-valencia-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4572395", "title":  "The squad for Valencia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572395/the-squad-for-valencia", "time":  "",
@@ -317,11 +321,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4566867", "title":  "Christensen reaches 100 Barça appearances",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4566867/christensen-reaches-100-fc-barcelona-appearances", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/ccf0a4a9-0974-473c-8fa1-b981317ffb59/3200x2000_MatchMilestone_Christensen_ENG_2026.jpg" },
-            {
-                "id":  "4569755", "title":  "Barça 5-2 Rayo: Three from three",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569755/fc-barcelona-5-2-rayo-vallecano-three-from-three", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/687b1f67-46f0-4500-9d48-f43dbd9c8fa6/_MGA2133-1-.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/ccf0a4a9-0974-473c-8fa1-b981317ffb59/3200x2000_MatchMilestone_Christensen_ENG_2026.jpg" }
         ]
     }
 };
