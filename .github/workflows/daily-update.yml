@@ -5,8 +5,12 @@ name: Daily update caches
 # 触发时间：每天 16:23 UTC（北京时间次日 00:23，避开本机计划任务 09/15/21 点，防 git 撞车）。
 # 注：U18/U16 步骤 continue-on-error —— Sofascore 对运行器 IP 有频率限制，
 #     单个步骤失败不应阻断提交（否则线上永远停在旧数据）。
-# 注：集锦缓存（dqd-videos-cache.js）只由本机计划任务维护（运行器抓不到 data.js/微博，
-#     每次生成的缓存都缺本地球员，会覆盖掉本机完整数据）——不要在本工作流恢复 update_youtube 步骤。
+# 注：集锦主缓存（dqd-videos-cache.js）仍只由本机计划任务维护 —— 运行器抓不到 B站/微博
+#     （国内源），且 scripts/bili-seen.txt 是本机专用去重状态（未入库）。
+#     所以这里的集锦步骤用 -YouTubeOnly 模式：只产出一份独立分片
+#     scripts/dqd-videos-yt-shard.js，由本机下一次运行时合并并清空。
+#     分片与主缓存物理隔离，运行器那条代码路径不碰 dqd-videos-cache.js ——
+#     结构上不可能覆盖本机抓到数据（不要改回直接跑全量模式）。
 
 on:
   schedule:
@@ -119,6 +123,17 @@ jobs:
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_weekly_album.ps1
 
+      # YouTube-only：本机无代理抓不到 YouTube，运行器在美区可直连。
+      # 只产出独立分片 scripts/dqd-videos-yt-shard.js，不写主缓存（见文件头注释）。
+      # 放在 Sofascore 步骤之后：A0 才能读到本次刚更新的赛程缓存。
+      - name: Update YouTube shard (YouTube-only)
+        continue-on-error: true
+        timeout-minutes: 20
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope Process Bypass -Force
+          & .\scripts\update_youtube.ps1 -YouTubeOnly
+
       - name: Commit updated caches
         shell: powershell
         run: |
@@ -127,7 +142,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # checkout 默认可能停在 detached HEAD，确保回到 main 分支
           if (-not (git symbolic-ref -q HEAD)) { git checkout -B main }
-          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/lamasia-official-news-cache.js assets/js/sport-news-cache.js assets/js/md-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt
+          git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/lamasia-official-news-cache.js assets/js/sport-news-cache.js assets/js/md-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/one-time-channels.txt scripts/one-time-dump.txt scripts/dqd-videos-yt-shard.js
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
             Write-Host "No cache changes, skip commit"
