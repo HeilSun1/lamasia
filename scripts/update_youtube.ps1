@@ -40,6 +40,13 @@ $UTF8       = New-Object System.Text.UTF8Encoding($false)
 $ShardFile     = Join-Path $PSScriptRoot "dqd-videos-yt-shard.js"
 $ShardKeepDays = 14   # 分片条目按写入日期保留 N 天（本机长期离线时防无限增长）
 
+# 青年队集锦的标题标记。TeamTokens 会从 "Barcelona U19" 派生出宽泛的 barcelona/barca，
+# HasToken 又是「任一 token 命中即通过」，于是同一对手的一线队集锦会被放行
+# （实测 U19 vs Feyenoord U19 青年欧冠 配上一线队 "FC BARCELONA 5 vs 1 FEYENOORD"）。
+# A1 搜索与分片合并两处都用这条规则——合并处也要校验，
+# 否则改动前产出的旧分片会绕过新过滤。
+$YouthPat = 'u1[5-9]|u-1[5-9]|youth|juvenil|academy|青年|青训|cadete|infantil|alevin'
+
 # ── 配置 ────────────────────────────────────────────────────────
 $PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt", "bcnbest786")   # 常规球员集锦频道（可改/可加；非赛程集锦全频道扫描）
 $OneTimeChannelHandles = @()   # 一次性频道（已并入常规；未来如有个别一次性频道再加）
@@ -1113,6 +1120,13 @@ if ($newMatchList.Count -and $ytOk) {
 
     $homeTk = @((TeamTokens ([string]$m.home)) + (TeamAliases ([string]$m.home)) | Select-Object -Unique)
     $awayTk = @((TeamTokens ([string]$m.away)) + (TeamAliases ([string]$m.away)) | Select-Object -Unique)
+    # 青年队场次（U19/U18/U16）额外要求标题带青年标记。
+    # 原因：TeamTokens("Barcelona U19") 会派生出宽泛的 barcelona/barca（见上面「去 U 年龄段后缀」），
+    # HasToken 又是「任一 token 命中即通过」，于是同一对手的一线队集锦会被放行——
+    # 实测 U19 vs Feyenoord U19（青年欧冠）配上了一线队的 "FC BARCELONA 5 vs 1 FEYENOORD
+    # | UEFA CHAMPIONS LEAGUE"。巴萨竞技（tier=b）是预备队、标题本就不含青年标记，故不约束。
+    $needYouth = ($cfg.tier -ne "b")
+    $youthDrop = 0
     $lo = $mDate.AddDays(-$PubAfterDays)
     Log "  · 整场集锦（新比赛）：$($m.home) vs $($m.away)（$($mDate.ToString('yyyy-MM-dd'))）"
 
@@ -1138,6 +1152,8 @@ if ($newMatchList.Count -and $ytOk) {
       $titleN = Norm ([string]$it.title)
       if (-not (HasToken $titleN $homeTk)) { continue }
       if (-not (HasToken $titleN $awayTk)) { continue }
+      # 青年队场次必须带青年标记，否则视为一线队同对手集锦（见上方 $needYouth 说明）
+      if ($needYouth -and $titleN -notmatch $YouthPat) { $youthDrop++; continue }
       # 非整场集锦的标题词：直播流 / 训练 / 发布会 / 访谈 / 前瞻 / 反应等
       if ($titleN -match 'watch\s*live|live\s*stream|live\s*score|training|press\s*conference|interview|preview|prediction|vlog|reaction|post.?match|直播|训练|发布会|前瞻|预告|采访') { continue }
       $rel = Get-RelDays ([string]$it.publishedRel)
@@ -1153,6 +1169,7 @@ if ($newMatchList.Count -and $ytOk) {
       $score = (ChannelScore ([string]$it.channel)) + 2 + 2
       $cand += [pscustomobject]@{ score=$score; it=$it; dur=$dur; rel=$rel }
     }
+    if ($youthDrop) { Log "    ↳ 青年标记过滤掉 $youthDrop 个候选（疑似一线队同对手集锦）。" }
     if (-not $cand.Count) { Log "    ↳ 候选 $($items.Count) 个，无一通过标题/时长过滤。"; continue }
 
     $scored = @($cand | Sort-Object -Property score -Descending | Select-Object -First $MaxMatchVideos)
@@ -1309,6 +1326,9 @@ if (-not $YouTubeOnly -and @($shard.items).Count) {
     switch ([string]$it.t) {
       "match" {
         if (-not $currentEnded.ContainsKey($k)) { $foldDrop++; continue }
+        # 青年队场次（sofascore: 前缀 = U19/U18/U16）同样要求标题带青年标记。
+        # 合并路径必须复校验：否则本规则生效前运行器产出的旧分片会绕过 A1 的过滤。
+        if ($k -like 'sofascore:*' -and $titleN -notmatch $YouthPat) { $foldDrop++; continue }
         $outMatches[$k] = @(Merge-Videos ($outMatches[$k] | Where-Object { $_ }) $v $MaxMatchVideos)
         $known[$vid] = $true; $foldM++
       }
