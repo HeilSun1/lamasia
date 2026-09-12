@@ -125,7 +125,7 @@ function Read-Shard {
 
 # Mode=Merge   运行器用：旧条目按写入日期裁剪后，追加本轮新条目（按 videoId+桶+键 去重）
 # Mode=Consume 本机用：合并后把仍未进主缓存的条目写回，使分片消费即空
-function Write-Shard([string]$Mode, $Items = @(), $Searched = @(), $Known = $null) {
+function Write-Shard([string]$Mode, $Items = @(), $Searched = @()) {
   $old = Read-Shard
   $keep = @()
   if ($Mode -eq "Merge") {
@@ -136,11 +136,10 @@ function Write-Shard([string]$Mode, $Items = @(), $Searched = @(), $Known = $nul
       $keep += $it
     }
   } elseif ($Mode -eq "Consume") {
-    foreach ($it in @($old.items)) {
-      if (-not $it -or -not $it.v -or -not $it.v.videoId) { continue }
-      if ($Known -and $Known.ContainsKey([string]$it.v.videoId)) { continue }   # 已进主缓存，不再留
-      $keep += $it
-    }
+    # 本机刚刚对旧分片的**每一条**都做过决策：并入主缓存（→$Known）、本来就在主缓存、
+    # 或被校验规则拒绝（比赛过期 / 球员离队 / 青年标记不合格）。三种都已了结，
+    # 所以整份清空即可——保留「不在 $Known 的」会恰好把被拒绝的条目留下来反复重试。
+    $keep = @()
   }
   $sig = @{}
   foreach ($it in $keep) { if ($it.v) { $sig["$($it.v.videoId)|$($it.t)|$($it.k)"] = $true } }
@@ -1576,6 +1575,6 @@ if ($coreJson -eq $oldCoreJson) {
 
 # 分片消费：已进主缓存的条目不再保留，分片消费后即空。写入与「内容无变化跳过写入」
 # 两种情况都要执行，否则内容无变化的那一轮分片会白留一天。
-if (@($shard.items).Count) { Write-Shard -Mode Consume -Known $known }
+if (@($shard.items).Count) { Write-Shard -Mode Consume }
 
 Log "YouTube 集锦更新完成 ✔"

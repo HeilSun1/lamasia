@@ -1,16 +1,32 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-12 11:13 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-12 11:27 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-12 11:13:34",
+    "updated":  "2026-09-12 11:27:27",
     "searchedMatches":  [
+                            "sfb:16655584",
                             "sfb:16696837",
+                            "sfb:16741779",
                             "sfb:16832369",
+                            "sfb:16858526",
                             "sfb:16866862",
+                            "sfb:16897314",
+                            "sofascore:16539670",
                             "sofascore:16792416",
                             "sofascore:16792525",
                             "sofascore:16834498",
-                            "sofascore:16844411"
+                            "sofascore:16844411",
+                            "sofascore:16990417"
                         ],
     "matches":  {
+                    "sfb:16655584":  [
+                                         {
+                                             "videoId":  "isnYihi-sMw",
+                                             "title":  "Hafiz Gariba 🇬🇭 vs CE Sabadell 🔥 | Barça Atlètic | Copa Catalunya 2025/26",
+                                             "channel":  "Furbolvibes",
+                                             "channelId":  "",
+                                             "published":  "2026-09-04",
+                                             "durationSec":  "225"
+                                         }
+                                     ],
                     "sfb:16696837":  [
                                          {
                                              "videoId":  "jNseSHsotwM",
