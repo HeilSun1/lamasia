@@ -46,7 +46,7 @@
       u19: "U19 · Juvenil A", u18: "U18 · Juvenil B", u16: "U16 · Cadete A",
       "juvenil-a": "U19 A · Juvenil A", "juvenil-b": "U19 B · Juvenil B", cadete: "U16 · Cadete A",
       "cadete-b": "U15 · Cadete B", infantil: "U14 · Infantil A", "infantil-b": "U13 · Infantil B",
-      "infantil-c": "Infantil C（官网未列出）", u11a: "SUB11 A · Alevín C", u11b: "SUB11 B · Alevín D",
+      "infantil-c": "U13 · Infantil C", u11a: "SUB11 A · Alevín C", u11b: "SUB11 B · Alevín D",
       u10a: "U10A · Benjamín A", u10b: "U10B · Benjamín B", u9a: "U9A · Benjamín C", u9b: "U9B · Benjamín D"
     };
     return m[tier] || tier || "";

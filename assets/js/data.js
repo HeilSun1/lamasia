@@ -27,7 +27,7 @@ window.LAMASIA_DATA = {
     { id: "cadete-b",      age: "U15",      name: "SUB15 · Cadete B",     league: "Preferente Catalana Cadete G.1",           href: "teams/cadete-b.html",      desc: "少年B队" },
     { id: "infantil",      age: "U14",      name: "SUB14 · Infantil A",   league: "División de Honor Catalana Infantil",     href: "teams/infantil.html",      desc: "技术打磨关键期" },
     { id: "infantil-b",    age: "U13",      name: "SUB13 · Infantil B",   league: "Preferente Catalana Infantil G.1",         href: "teams/infantil-b.html",    desc: "儿童B队" },
-    { id: "infantil-c",    age: "U13",      name: "Infantil C",           league: "联赛组别待核",                              href: "teams/infantil-c.html",    desc: "官网未列出的梯队 · 原 Alevín A 升入 11 人制" },
+    { id: "infantil-c",    age: "U13",      name: "U13 · Infantil C",     league: "联赛组别待核",                              href: "teams/infantil-c.html",    desc: "儿童C队 · 原 Alevín A 升入 11 人制" },
     { id: "seven",         age: "U11–U8",   name: "七人制梯队",            league: "SUB11 A – SUB8 B",                        href: "teams/seven-a-side.html",  desc: "8 支 7 人制梯队（SUB11 A–SUB8 B）" }
   ],
 
