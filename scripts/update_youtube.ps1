@@ -663,31 +663,51 @@ function Get-YtChannelId([string]$handle) {
 }
 
 # 频道 RSS 订阅（免 key 官方端点）→ 视频列表 {videoId,title,channel,channelId,published}
+# 两个端点都试：channel_id 订阅流 → 上传播放列表流（UC… → UU…）。
+# 原因：channel_id 端点近年会间歇性返回 404（平台侧问题，与频道 ID 是否正确无关——
+# 实测三个频道 ID 解析正确且 8 月能成功抓取，仍会被 404）。上传播放列表端点免 key、
+# XML 结构一致，作为回退。两条都失败才算抓取失败。
 function Get-ChannelRss([string]$channelId) {
   $out = @()
   if (-not $channelId) { return $out }
-  try {
-    $url = "https://www.youtube.com/feeds/videos.xml?channel_id=$channelId"
-    $resp = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 25
-    $xml = [xml]$resp.Content
-    foreach ($e in @($xml.feed.entry)) {
-      # 提取 <yt:videoId>（带命名空间前缀，按 LocalName 匹配最稳）
-      $vid = ""
-      foreach ($n in $e.ChildNodes) { if ($n.LocalName -eq "videoId") { $vid = $n.InnerText; break } }
-      if (-not $vid) { continue }
-      $pub = ""
-      try { $pub = (Get-UcDate ([string]$e.published)).ToString("yyyy-MM-dd") } catch {}
-      $out += [pscustomobject]@{
-        videoId = $vid
-        title   = [string]$e.title
-        channel = [string]$e.author.name
-        channelId = $channelId
-        published = $pub
-        durationSec = ""
+  $urls = @("https://www.youtube.com/feeds/videos.xml?channel_id=$channelId")
+  if ($channelId -like 'UC*') {
+    $urls += "https://www.youtube.com/feeds/videos.xml?playlist_id=UU$($channelId.Substring(2))"
+  }
+  # 带浏览器 UA：自动化 UA 更容易被 404/风控，Edge 走的路径本来就带真 UA
+  $ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+  $hdrs = @{ "Accept-Language" = "en-US,en;q=0.9" }
+  $errs = @()
+  for ($i = 0; $i -lt $urls.Count; $i++) {
+    try {
+      $resp = Invoke-WebRequest -Uri $urls[$i] -UseBasicParsing -TimeoutSec 25 -UserAgent $ua -Headers $hdrs
+      $xml = [xml]$resp.Content
+      foreach ($e in @($xml.feed.entry)) {
+        # 提取 <yt:videoId>（带命名空间前缀，按 LocalName 匹配最稳）
+        $vid = ""
+        foreach ($n in $e.ChildNodes) { if ($n.LocalName -eq "videoId") { $vid = $n.InnerText; break } }
+        if (-not $vid) { continue }
+        $pub = ""
+        try { $pub = (Get-UcDate ([string]$e.published)).ToString("yyyy-MM-dd") } catch {}
+        $out += [pscustomobject]@{
+          videoId = $vid
+          title   = [string]$e.title
+          channel = [string]$e.author.name
+          channelId = $channelId
+          published = $pub
+          durationSec = ""
+        }
       }
+      if ($out.Count) {
+        if ($i -gt 0) { Log "  · RSS 主端点失败，已回退上传播放列表端点（UU…）取到 $($out.Count) 条上传。" }
+        break
+      }
+    } catch {
+      $errs += "$(if ($i -eq 0) {'channel_id'} else {'playlist_id'}): $($_.Exception.Message)"
     }
-  } catch {
-    Log "  ✗ RSS 抓取失败：$($_.Exception.Message)"
+  }
+  if (-not $out.Count -and $errs.Count) {
+    Log "  ✗ RSS 抓取失败：$($errs -join ' / ')"
   }
   return @($out)
 }
