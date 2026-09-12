@@ -7,6 +7,12 @@
        —— 2026-27 名单（据俱乐部各梯队官方名单图整理，2026-09；
           低龄球员中文译名为直译仅供参考，出生年份未知一律留空）
      · Juvenil A / Juvenil B / Cadete A(U16) —— 仍为 2025-26 赛季名单，待更新
+   梯队命名（2026-09-12 核对 fcbarcelona.es «Fútbol – Formativo masculino»）：
+     · 官网用 SUB+年龄 命名：SUB16(Cadete A) / SUB15(Cadete B) / SUB14(Infantil A) /
+       SUB13(Infantil B) / SUB12(Alevín A) / SUB11 A(Alevín C) / SUB11 B(Alevín D) /
+       SUB10 A·B(Benjamín A·B) / SUB9 A·B(Benjamín C·D) / SUB8 A·B(Prebenjamín·Sub-8 B)，
+       另有 Juvenil A / Juvenil B。官方该板块共 15 支（11 人制 6 + 7 人制 9，不含巴萨竞技）。
+     · 官网男足**没有** Infantil C、也没有 Alevín B；本站的 Infantil C 依俱乐部名单图另收（官网未列出）
    球员字段：pos = GK/DF/MF/FW（渲染分组用）；role = 细分位置（RB/CB/LB/CDM/CM/CAM/RW/ST/LW，
    仅在名单图给出时填写）；img 为本地照片路径（assets/img/players/），无照片留空（用头像占位）
    ═══════════════════════════════════════════════ */
@@ -17,12 +23,12 @@ window.LAMASIA_DATA = {
     { id: "barca-atletic", age: "预备队",  name: "Barça Atlètic",        league: "Segunda Federación · G2",                 href: "teams/barca-atletic.html", desc: "一线储备队 · 体系顶端" },
     { id: "juvenil-a",     age: "U19",      name: "U19 A · Juvenil A",    league: "División de Honor Juvenil · G3",          href: "teams/juvenil-a.html",     desc: "一线青年队 · 精英组" },
     { id: "juvenil-b",     age: "U19",      name: "U19 B · Juvenil B",    league: "Liga Nacional Juvenil",                   href: "teams/juvenil-b.html",     desc: "二线青年队" },
-    { id: "cadete",        age: "U16",      name: "U16 · Cadete A",       league: "División de Honor Catalana Cadete",       href: "teams/cadete.html",        desc: "少年梯队最高组" },
-    { id: "cadete-b",      age: "U15",      name: "U15 · Cadete B",       league: "Preferente Catalana Cadete G.1",           href: "teams/cadete-b.html",      desc: "少年B队" },
-    { id: "infantil",      age: "U14",      name: "U14 · Infantil A",     league: "División de Honor Catalana Infantil",     href: "teams/infantil.html",      desc: "技术打磨关键期" },
-    { id: "infantil-b",    age: "U13",      name: "U13 · Infantil B",     league: "Preferente Catalana Infantil G.1",         href: "teams/infantil-b.html",    desc: "儿童B队" },
-    { id: "infantil-c",    age: "U13",      name: "U13 · Infantil C",     league: "Catalana Infantil · 组别待核",             href: "teams/infantil-c.html",    desc: "儿童C队 · 原 Alevín A 升入 11 人制" },
-    { id: "seven",         age: "U11–U8",   name: "七人制梯队",            league: "Alevín · Benjamín · Prebenjamín",         href: "teams/seven-a-side.html",  desc: "8 支 7 人制梯队" }
+    { id: "cadete",        age: "U16",      name: "SUB16 · Cadete A",     league: "División de Honor Catalana Cadete",       href: "teams/cadete.html",        desc: "少年梯队最高组" },
+    { id: "cadete-b",      age: "U15",      name: "SUB15 · Cadete B",     league: "Preferente Catalana Cadete G.1",           href: "teams/cadete-b.html",      desc: "少年B队" },
+    { id: "infantil",      age: "U14",      name: "SUB14 · Infantil A",   league: "División de Honor Catalana Infantil",     href: "teams/infantil.html",      desc: "技术打磨关键期" },
+    { id: "infantil-b",    age: "U13",      name: "SUB13 · Infantil B",   league: "Preferente Catalana Infantil G.1",         href: "teams/infantil-b.html",    desc: "儿童B队" },
+    { id: "infantil-c",    age: "U13",      name: "Infantil C",           league: "联赛组别待核",                              href: "teams/infantil-c.html",    desc: "官网未列出的梯队 · 原 Alevín A 升入 11 人制" },
+    { id: "seven",         age: "U11–U8",   name: "七人制梯队",            league: "SUB11 A – SUB8 B",                        href: "teams/seven-a-side.html",  desc: "8 支 7 人制梯队（SUB11 A–SUB8 B）" }
   ],
 
   /* 球员名单：pos = GK/DF/MF/FW（分组用）；role = 细分位置（名单图给出时填写）；img 为本地照片路径（assets/img/players/），无照片留空（用头像占位） */
