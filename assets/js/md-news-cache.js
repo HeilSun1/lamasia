@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-12 03:16:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-12 15:04:42 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-12 03:16:42",
+    "updated":  "2026-09-12 15:04:42",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "title":  "Preparen la palomitas",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "time":  "2026-09-12 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "title":  "Espectacular estreno goleador en Champions de la perla eslovena que descartó al Barça",
             "url":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "time":  "2026-09-11 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/mallorca/20260725/1004210057/confirma-fichaje-arnau-tenas.html", "title":  "Se confirma el fichaje de Arnau Tenas",
             "url":  "https://www.mundodeportivo.com/futbol/mallorca/20260725/1004210057/confirma-fichaje-arnau-tenas.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a64a89f315d7.r_d.952-847-8996.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004210006/kluivert-demuestra-calidad-primeros-minutos-barca-flick.html", "title":  "Kluivert demuestra su calidad en sus primeros minutos con el Barça de Flick",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260725/1004210006/kluivert-demuestra-calidad-primeros-minutos-barca-flick.html", "time":  "2026-07-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a6483199a051.r_d.487-289-12526.png" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/25/6a64a89f315d7.r_d.952-847-8996.jpeg" }
     ]
 };
