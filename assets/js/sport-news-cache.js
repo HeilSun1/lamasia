@@ -1,12 +1,12 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-12 21:06:23 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-12 18:29:50 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-12 21:06:23",
+    "updated":  "2026-09-12 18:29:50",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
-            "id":  "134213373", "title":  "Llegó la hora de Bisiwu",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-134213373", "time":  "2026-09-12 11:39",
+            "id":  "134213373", "title":  "Bisiwu y Quer son las grandes atracciones",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-quer-barca-atletic-logrono-134213373", "time":  "2026-09-12 18:20",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c9207be2-461d-4af7-9bc3-9de4b63dd543_16-9-discover-aspect-ratio_default_0_x926y193.webp" },
         {
             "id":  "134202860", "title":  "La triple dimensión de Jordi Pesquer: ¿Primer equipo, Juvenil A o Barça B ?",
