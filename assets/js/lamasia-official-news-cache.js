@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-13 22:07:04 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-13 18:50:48 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-13 22:07:04",
+    "updated":  "2026-09-13 18:50:48",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" },
+            {
+                "id":  "4575846", "title":  "Equal best ever start",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575846/equal-best-ever-start-to-a-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/ef348ca7-61fc-4573-b28c-57c72a91982f/_MGA7189.jpg" },
+            {
+                "id":  "4575849", "title":  "Xavi Espart opens goalscoring account",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575849/xavi-espart-scores-first-fc-barcelona-goal", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/646ba56e-2ea3-4396-a951-e0f4384ecba0/_MGA7160.jpg" },
+            {
                 "id":  "4575290", "title":  "PREVIEW | Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575290/preview-levante-ud-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
@@ -211,6 +223,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573406/when-and-where-to-watch-fc-barcelona-v-feyenoord", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4573254", "title":  "Champions League preparations begin",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573254/champions-league-preparations-begin", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/4526808a-d83c-4fae-8050-10484e871fde/image00016.jpeg" },
@@ -222,14 +242,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4573267", "title":  "Barça firepower",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573267/barca-firepower", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/04e3c7b4-9156-4b48-8921-35f2e7eabf23/_MGA5357.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
@@ -313,19 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4570086", "title":  "More Brazilian goals",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570086/gabriel-jesus-another-brazilian-striker-ready-to-score-for-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" },
-            {
-                "id":  "4570072", "title":  "Gabriel Jesus signs for Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570072/gabriel-jesus-signs-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/abd1c12b-72f4-4508-87a3-42380ca27d8c/3200x2000-Transfer_2026_07-GABRIEL_JESUS-st.jpg" },
-            {
-                "id":  "4570028", "title":  "Raphinha rocketing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570028/raphinha-rocketing", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/6699faaf-989f-4cfc-9b0c-8e3d0f18ed34/_MGA5152.jpg" },
-            {
-                "id":  "4569807", "title":  "Hansi Flick: 'It's been a good start to the season'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569807/hansi-flick-its-been-a-good-start-to-the-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/c34c0c37-1e63-427c-b36b-90748a81ccaf/_MGA2257.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/43202f70-f822-48ba-9417-d639b9127927/gabriel_jesus-st.jpg" }
         ]
     }
 };
