@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-12 21:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-13 09:04 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-12 21:07:03",
+    "updated":  "2026-09-13 09:04:46",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -25,6 +25,22 @@ window.DQD_VIDEOS_CACHE = {
                                              "channelId":  "",
                                              "published":  "2026-09-04",
                                              "durationSec":  "225"
+                                         },
+                                         {
+                                             "videoId":  "8A5W7Yx3aY0",
+                                             "title":  "⚽️ Hafiz Gariba’s equalizer against CE Sabadell. #lamasia #football #fcbarcelona",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-09-03",
+                                             "durationSec":  ""
+                                         },
+                                         {
+                                             "videoId":  "0nMu1yMHuNY",
+                                             "title":  "LIVE MATCH: Barça Atlètic vs CE Sabadell | English Commentary",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-09-02",
+                                             "durationSec":  ""
                                          }
                                      ],
                     "sfb:16696837":  [
@@ -135,6 +151,16 @@ window.DQD_VIDEOS_CACHE = {
                                                    "published":  "2026-08-16",
                                                    "durationSec":  ""
                                                }
+                                           ],
+                    "sofascore:16990417":  [
+                                               {
+                                                   "videoId":  "q8tHOSO8Ok8",
+                                                   "title":  "LIVE MATCH: Barcelona U19 vs Feyenoord U19 | 2026/2027 | English Commentary",
+                                                   "channel":  "ArsenKveFCB",
+                                                   "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                   "published":  "2026-09-10",
+                                                   "durationSec":  ""
+                                               }
                                            ]
                 },
     "players":  {
@@ -178,6 +204,40 @@ window.DQD_VIDEOS_CACHE = {
                                                                    ]
                                                     }
                                                 ],
+                                 "local:cadete:ahmedabarkane":  [
+                                                                    {
+                                                                        "date":  "2026-09-12",
+                                                                        "opp":  "",
+                                                                        "label":  "09-12 · 集锦",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1XRYR6fEUt",
+                                                                                           "title":  "阿巴尔坎(Ahmed Abarkane)-Aqua Hotel杯集锦👀埃斯帕特接班人？",
+                                                                                           "channel":  "口菐",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-12",
+                                                                                           "durationSec":  "222",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/90204a579d78de8a3737fa52d59dac9300c127e1.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                                    {
+                                                                        "date":  "2026-09-11",
+                                                                        "opp":  "",
+                                                                        "label":  "09-11 · 集锦",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "gu-_6sAps3Q",
+                                                                                           "title":  "Ahmed Abarkane - Aqua Hotel Cup Highlights",
+                                                                                           "channel":  "ArsenKveFCB",
+                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                           "published":  "2026-09-11",
+                                                                                           "durationSec":  ""
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
                                                                      "date":  "2026-08-23",
@@ -250,6 +310,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                    ]
                                                                     }
                                                                 ],
+                                 "local:juvenil-a:babakourouma":  [
+                                                                      {
+                                                                          "date":  "2026-09-10",
+                                                                          "opp":  "Feyenoord U19",
+                                                                          "label":  "vs Feyenoord U19 · 09-10",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "FRjIgWpFQaM",
+                                                                                             "title":  "Baba Kourouma vs Feyenoord U19",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-09-10",
+                                                                                             "durationSec":  ""
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
                                  "local:juvenil-a:ebrimatunkara":  [
                                                                        {
                                                                            "date":  "2026-08-19",
@@ -328,6 +405,21 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  "295",
                                                                                             "site":  "bili",
                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/a476ac04feace603f85bd1ca69adc74254af027c.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-06",
+                                                                         "opp":  "CD Naxara",
+                                                                         "label":  "vs CD Naxara · 09-06",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "8cq1BQiHvB4",
+                                                                                            "title":  "Hafiz Gariba vs CD Naxara",
+                                                                                            "channel":  "ArsenKveFCB",
+                                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                            "published":  "2026-09-06",
+                                                                                            "durationSec":  ""
                                                                                         }
                                                                                     ]
                                                                      },
@@ -444,23 +536,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1Q8YJ6FEtG",
-                                                                                            "title":  "拉玛西亚摩洛哥裔中锋 伊斯梅尔·齐亚尼 Cadet A 赛季集锦",
-                                                                                            "channel":  "13站一直吞我評論",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/37b22e2bd3401cbdcf64179207d86b45daa6da75.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 个人集锦",
                                                                          "videos":  [
                                                                                         {
@@ -472,6 +547,31 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  "355",
                                                                                             "site":  "bili",
                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1Q8YJ6FEtG",
+                                                                                            "title":  "拉玛西亚摩洛哥裔中锋 伊斯梅尔·齐亚尼 Cadet A 赛季集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/37b22e2bd3401cbdcf64179207d86b45daa6da75.jpg"
+                                                                                        },
+                                                                                        {
+                                                                                            "videoId":  "nJACDs7J5Ao",
+                                                                                            "title":  "Ismael Ziani - La Masia\u0027s Promising Striker",
+                                                                                            "channel":  "ArsenKveFCB",
+                                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  ""
                                                                                         }
                                                                                     ]
                                                                      }
@@ -650,6 +750,21 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "126",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/810f7a720255da99176ffc7f3334e06923ed6390.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-06",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-06",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "W7UKer-iT8A",
+                                                                             "title":  "Aziz vs CD Naxara",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-06",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       },
@@ -880,6 +995,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
+                                 "sf:u18:2342525":  [
+                                                        {
+                                                            "date":  "2026-09-12",
+                                                            "opp":  "",
+                                                            "label":  "09-12 · 集锦",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "BV1XRYR6fEUt",
+                                                                               "title":  "阿巴尔坎(Ahmed Abarkane)-Aqua Hotel杯集锦👀埃斯帕特接班人？",
+                                                                               "channel":  "口菐",
+                                                                               "channelId":  "",
+                                                                               "published":  "2026-09-12",
+                                                                               "durationSec":  "222",
+                                                                               "site":  "bili",
+                                                                               "pic":  "https://i0.hdslb.com/bfs/archive/90204a579d78de8a3737fa52d59dac9300c127e1.jpg"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:1539491":  [
+                                                        {
+                                                            "date":  "2026-09-10",
+                                                            "opp":  "Feyenoord U19",
+                                                            "label":  "vs Feyenoord U19 · 09-10",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "6KKd1ST628k",
+                                                                               "title":  "Oscar Gistau vs Feyenoord U19",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-10",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
                                  "sf:u19:2048364":  [
                                                         {
                                                             "date":  "2026-08-14",
@@ -897,6 +1048,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                        ]
                                                         }
                                                     ],
+                                 "sf:u19:2076871":  [
+                                                        {
+                                                            "date":  "2026-09-10",
+                                                            "opp":  "Feyenoord U19",
+                                                            "label":  "vs Feyenoord U19 · 09-10",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "7rf537SCUAU",
+                                                                               "title":  "Pol Bernabeu vs Feyenoord U19",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-10",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
                                  "sf:u19:2272317":  [
                                                         {
                                                             "date":  "2026-08-12",
@@ -909,6 +1077,55 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channel":  "ArsenKveFCB",
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-08-12",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2405472":  [
+                                                        {
+                                                            "date":  "2026-09-10",
+                                                            "opp":  "Feyenoord U19",
+                                                            "label":  "vs Feyenoord U19 · 09-10",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "0-IXSNIsZBU",
+                                                                               "title":  "Iu Martinez vs Feyenoord U19",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-10",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "date":  "2026-09-03",
+                                                            "opp":  "",
+                                                            "label":  "09-03 · 集锦",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "DoyIHrOTUYQ",
+                                                                               "title":  "Iu Martinez - La Masia\u0027s Prolific Winger",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-03",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2679425":  [
+                                                        {
+                                                            "date":  "2026-09-10",
+                                                            "opp":  "Feyenoord U19",
+                                                            "label":  "vs Feyenoord U19 · 09-10",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "IUGvsxxSJF4",
+                                                                               "title":  "Joni Hernandez vs Feyenoord U19",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-10",
                                                                                "durationSec":  ""
                                                                            }
                                                                        ]
