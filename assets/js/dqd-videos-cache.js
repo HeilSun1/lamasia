@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-13 15:10 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-13 22:08 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-13 15:10:21",
+    "updated":  "2026-09-13 22:08:13",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -69,6 +69,18 @@ window.DQD_VIDEOS_CACHE = {
                                              "durationSec":  "138",
                                              "site":  "bili",
                                              "pic":  "https://i1.hdslb.com/bfs/archive/c6e8867cd291b390946bc7f61991b48035ba7054.jpg"
+                                         }
+                                     ],
+                    "sfb:16741931":  [
+                                         {
+                                             "videoId":  "BV1ZXYi6EELK",
+                                             "title":  "米尔扎·卡托维奇 vs UD Logrones B | Barca Atletic | 个人精彩集锦",
+                                             "channel":  "静静很甜美",
+                                             "channelId":  "",
+                                             "published":  "2026-09-13",
+                                             "durationSec":  "165",
+                                             "site":  "bili",
+                                             "pic":  "https://i2.hdslb.com/bfs/archive/686976c7776b652158267647b7093bbfe8068ffb.jpg"
                                          }
                                      ],
                     "sfb:16832369":  [
@@ -186,6 +198,23 @@ window.DQD_VIDEOS_CACHE = {
     "feed":  {
                  "players":  {
                                  "b:50892327":  [
+                                                    {
+                                                        "date":  "2026-09-13",
+                                                        "opp":  "",
+                                                        "label":  "09-13 · 集锦",
+                                                        "videos":  [
+                                                                       {
+                                                                           "videoId":  "BV16CYi6sExx",
+                                                                           "title":  "巴萨 B 队比利时边锋 比西武 首秀集锦",
+                                                                           "channel":  "13站一直吞我評論",
+                                                                           "channelId":  "",
+                                                                           "published":  "2026-09-13",
+                                                                           "durationSec":  "158",
+                                                                           "site":  "bili",
+                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/5f7c969e187f99ea3c8df6e6be6df852e7a90200.jpg"
+                                                                       }
+                                                                   ]
+                                                    },
                                                     {
                                                         "date":  "2026-09-03",
                                                         "opp":  "",
@@ -536,6 +565,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "videos":  [
                                                                                         {
@@ -555,23 +601,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }

@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-13 15:09:43 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-13 22:07:39 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-13 15:09:43",
+    "updated":  "2026-09-13 22:07:39",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134236707", "title":  "El Barça Atlètic arranca un empate con polémica en Logroño",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-arranca-empate-polemica-134236707", "time":  "2026-09-13 12:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab46de8e-aef7-496a-921f-5008472894df_16-9-discover-aspect-ratio_default_0_x735y257.webp" },
+        {
+            "id":  "134143674", "title":  "UD Logroñés Promesas-Barça Atlètic, en directo: Sigue el partido de la jornada 2 de la Segunda RFEF, en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-logrones-promesas-barca-atletic-134143674", "time":  "2026-09-13 09:25",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_default_0_x622y138.webp" },
+        {
             "id":  "134213373", "title":  "Bisiwu y Quer son las grandes atracciones",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-quer-barca-atletic-logrono-134213373", "time":  "2026-09-12 18:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c9207be2-461d-4af7-9bc3-9de4b63dd543_16-9-discover-aspect-ratio_default_0_x926y193.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c9207be2-461d-4af7-9bc3-9de4b63dd543_16-9-discover-aspect-ratio_640w_0_x926y193.webp" },
         {
             "id":  "134202860", "title":  "La triple dimensión de Jordi Pesquer: ¿Primer equipo, Juvenil A o Barça B ?",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-dimension-jordi-pesquer-primer-134202860", "time":  "2026-09-12 10:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2ec9fa99-821c-466c-839a-e69b2a2d5a5e_16-9-discover-aspect-ratio_default_0_x575y207.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2ec9fa99-821c-466c-839a-e69b2a2d5a5e_16-9-discover-aspect-ratio_640w_0_x575y207.webp" },
         {
             "id":  "134143125", "title":  "Nil Vicens: “Esto acaba de empezar”",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/nil-vicens-acaba-empezar-134143125", "time":  "2026-09-10 11:35",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133043773", "title":  "El Barça Atlètic de Belletti deja buenas sensaciones pese a caer ante el Tona",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-belletti-deja-buenas-133043773", "time":  "2026-08-02 19:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/498ce504-7dcf-41c0-991b-2deb6381c66f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133024809", "title":  "La era Belletti 2.0 echa a rodar ante la UE Tona",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-2-0-echa-rodar-133024809", "time":  "2026-08-01 22:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a759f2b-ed36-4e68-a407-355e3539a4f2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133009211", "title":  "Alexis Olmedo, rumbo al Celta",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alexis-olmedo-rumbo-celta-barcelona-133009211", "time":  "2026-08-01 11:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/faa51e5b-c388-4e0b-8227-e2803f098649_16-9-discover-aspect-ratio_640w_0.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/498ce504-7dcf-41c0-991b-2deb6381c66f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

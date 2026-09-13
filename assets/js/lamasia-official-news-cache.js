@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-13 15:07:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-13 22:07:04 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-13 15:07:50",
+    "updated":  "2026-09-13 22:07:04",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4575792", "title":  "Another point (0-0)",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4575792/ud-logrones-b-0-0-barca-atletic-another-point", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/db88d28b-1cca-465e-afed-d6d971ad085d/WhatsApp-Image-2026-09-13-at-12.35.55.jpeg" },
             {
                 "id":  "4572927", "title":  "Barça Atlètic 5-0 Náxara: Strong start",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4572927/barca-atletic-5-0-cd-naxara-strong-start", "time":  "",
@@ -123,6 +127,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4575290", "title":  "PREVIEW | Levante v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575290/preview-levante-ud-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4575546", "title":  "Ready for Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575546/ready-for-levante-v-barca", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" },
@@ -215,10 +223,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573267/barca-firepower", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/04e3c7b4-9156-4b48-8921-35f2e7eabf23/_MGA5357.jpg" },
             {
-                "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -226,6 +230,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" },
             {
                 "id":  "4572837", "title":  "Valencia 0-5 Barça: High five!",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572837/valencia-cf-0-5-fc-barcelona-high-five", "time":  "",
@@ -317,11 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4569807", "title":  "Hansi Flick: 'It's been a good start to the season'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569807/hansi-flick-its-been-a-good-start-to-the-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/c34c0c37-1e63-427c-b36b-90748a81ccaf/_MGA2257.jpg" },
-            {
-                "id":  "4569791", "title":  "Abdelkarim makes competitive debut",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569791/hamza-abdelkarim-makes-competitive-debut-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/96eb708c-395d-4d08-a68d-9a1ce37a55f3/_MGA2343.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/31/c34c0c37-1e63-427c-b36b-90748a81ccaf/_MGA2257.jpg" }
         ]
     }
 };
