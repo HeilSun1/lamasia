@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-14 21:29:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-14 20:21:39 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-14 21:29:50",
+    "updated":  "2026-09-14 20:21:39",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -215,10 +215,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573819/gio-van-bronckhorst-barca-play-football-that-everyone-wants-to-watch", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7c038fbf-dde0-4e97-9e6c-764297e8011a/HRtfzoBbsAAaGSc.jpeg" },
             {
-                "id":  "4573777", "title":  "Three nominated for the Ballon d'Or",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573777/three-nominated-for-the-ballon-dor", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -226,6 +222,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4573777", "title":  "Three nominated for the Ballon d'Or",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573777/three-nominated-for-the-ballon-dor", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4573727", "title":  "Training session ahead of European debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573727/training-session-ahead-of-european-debut", "time":  "",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-14 21:30:14 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-14 20:21:42 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-14 21:30:14",
+    "updated":  "2026-09-14 20:21:42",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "title":  "Un mago en el Real Zaragoza: la primera exhibición de Jaume Jardí",
+            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "time":  "2026-09-14 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa80fead4663.r_d.594-685-10152.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "title":  "Observatori Blaugrana: notable de los socios a la junta del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "time":  "2026-09-12 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210414/balon-oro-ensalza-masia-escuela-cambio-historia-futbol.html", "title":  "El Balón de Oro ensalza a La Masia: la escuela que cambió la historia del fútbol",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210414/balon-oro-ensalza-masia-escuela-cambio-historia-futbol.html", "time":  "2026-07-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/26/6a6637c55cddf.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210234/fuente-explica-repesca-eric-garcia-final-mundial.html", "title":  "De la Fuente explica con detalle la repesca de Eric Garcia para la final del Mundial",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210234/fuente-explica-repesca-eric-garcia-final-mundial.html", "time":  "2026-07-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/20/6a5d4c2cb6df4.r_d.797-1187-9002.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/26/6a6637c55cddf.jpeg" }
     ]
 };

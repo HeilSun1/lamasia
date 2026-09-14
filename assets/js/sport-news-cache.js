@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-14 21:30:12 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-14 20:21:41 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-14 21:30:12",
+    "updated":  "2026-09-14 20:21:41",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -11,7 +11,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134236707", "title":  "El Barça Atlètic arranca un empate con polémica en Logroño",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-arranca-empate-polemica-134236707", "time":  "2026-09-13 12:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab46de8e-aef7-496a-921f-5008472894df_16-9-discover-aspect-ratio_default_0_x735y257.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab46de8e-aef7-496a-921f-5008472894df_16-9-discover-aspect-ratio_640w_0_x735y257.webp" },
         {
             "id":  "134143674", "title":  "UD Logroñés Promesas-Barça Atlètic, en directo: Sigue el partido de la jornada 2 de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-logrones-promesas-barca-atletic-134143674", "time":  "2026-09-13 09:25",

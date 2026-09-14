@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-14 21:26:29 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-14 20:21:15 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-14 21:26:29",
+    "updated":  "2026-09-14 20:21:15",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6345449", "title":  "每体：巴萨谨慎对待16岁中场通卡拉伤情，预计10月中旬复出",
+            "url":  "https://www.dongqiudi.com/articles/6345449.html", "time":  "2026-09-14 21:35",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6B/30/280x210/crop/-/rBXRn2qn-CGADj5lAAIwIbOXayI645.jpg" },
         {
             "id":  "6342294", "title":  "巴萨竞技战报 20260914",
             "url":  "https://www.dongqiudi.com/articles/6342294.html", "time":  "2026-09-14 09:34",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6192234", "title":  "队报：18岁前锋哈姆扎季前赛发挥出色，有望填补锋线空缺",
             "url":  "https://www.dongqiudi.com/articles/6192234.html", "time":  "2026-08-18 15:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/DA/280x210/crop/-/rBXRDGqEARWAadIFAAKG_bQ9SPw227.jpg" },
-        {
-            "id":  "6192251", "title":  "世体：巴萨队内会开玩笑地用哈兰德的调子喊哈姆扎的名字",
-            "url":  "https://www.dongqiudi.com/articles/6192251.html", "time":  "2026-08-18 14:59",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/82/280x210/crop/-/rBXRn2qD4pCAXyFrAABUNjnYjq0153.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/DA/280x210/crop/-/rBXRDGqEARWAadIFAAKG_bQ9SPw227.jpg" }
     ]
 };
