@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-13 18:50:52 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-14 12:11:43 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-13 18:50:52",
+    "updated":  "2026-09-14 12:11:43",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134248266", "title":  "Festival del Juvenil A del Barça de Pol Planas en Zaragoza",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/festival-juvenil-barca-pol-planas-134248266", "time":  "2026-09-13 19:29",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_default_0_x596y206.webp" },
         {
             "id":  "134236707", "title":  "El Barça Atlètic arranca un empate con polémica en Logroño",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-arranca-empate-polemica-134236707", "time":  "2026-09-13 12:31",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134143674", "title":  "UD Logroñés Promesas-Barça Atlètic, en directo: Sigue el partido de la jornada 2 de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-logrones-promesas-barca-atletic-134143674", "time":  "2026-09-13 09:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_default_0_x622y138.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
         {
             "id":  "134213373", "title":  "Bisiwu y Quer son las grandes atracciones",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-quer-barca-atletic-logrono-134213373", "time":  "2026-09-12 18:20",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133071578", "title":  "Rafa Yuste visita en el stage a un Barça Atlètic con Aziz Issah y ya sin Alexis Olmedo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/rafa-yuste-visita-stage-barca-atletic-vall-bas-133071578", "time":  "2026-08-03 19:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8f4f53b0-940b-44c2-b938-c3be0298a0fb_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133043773", "title":  "El Barça Atlètic de Belletti deja buenas sensaciones pese a caer ante el Tona",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-belletti-deja-buenas-133043773", "time":  "2026-08-02 19:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/498ce504-7dcf-41c0-991b-2deb6381c66f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8f4f53b0-940b-44c2-b938-c3be0298a0fb_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

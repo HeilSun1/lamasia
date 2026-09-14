@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-13 18:50:45 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-14 12:08:49 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-13 18:50:45",
+    "updated":  "2026-09-14 12:08:49",
     "source":  "dongqiudi",
-    "count":  29,
+    "count":  30,
     "news":  [
+        {
+            "id":  "6342294", "title":  "巴萨竞技战报 20260914",
+            "url":  "https://www.dongqiudi.com/articles/6342294.html", "time":  "2026-09-14 09:34",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/68/E9/280x210/crop/-/rBXRn2qm-f6ADC1oAAbMTClxZKs456.jpg" },
         {
             "id":  "6334342", "title":  "世体：巴萨有意多特15岁中场新星埃约达门，将再派球探考察",
             "url":  "https://www.dongqiudi.com/articles/6334342.html", "time":  "2026-09-12 18:38",

@@ -1,10 +1,11 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-13 22:08 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-14 12:12 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-13 22:08:13",
+    "updated":  "2026-09-14 12:12:37",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
                             "sfb:16741779",
+                            "sfb:16741931",
                             "sfb:16832369",
                             "sfb:16858526",
                             "sfb:16866862",
@@ -81,6 +82,14 @@ window.DQD_VIDEOS_CACHE = {
                                              "durationSec":  "165",
                                              "site":  "bili",
                                              "pic":  "https://i2.hdslb.com/bfs/archive/686976c7776b652158267647b7093bbfe8068ffb.jpg"
+                                         },
+                                         {
+                                             "videoId":  "yaAacjPYB_o",
+                                             "title":  "Jesse Bisiwu Official Barça Atlètic Debut vs UD Logroñés B",
+                                             "channel":  "ArsenKveFCB",
+                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                             "published":  "2026-09-13",
+                                             "durationSec":  ""
                                          }
                                      ],
                     "sfb:16832369":  [
@@ -565,23 +574,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "videos":  [
                                                                                         {
@@ -603,9 +595,43 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  ""
                                                                                         }
                                                                                     ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
                                                                      }
                                                                  ],
                                  "local:juvenil-b:iumartinez":  [
+                                                                    {
+                                                                        "date":  "2026-09-14",
+                                                                        "opp":  "UD Montecarlo U19",
+                                                                        "label":  "vs UD Montecarlo U19 · 09-14",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1gjYr6JEKa",
+                                                                                           "title":  "伊乌·马丁内斯 vs UD Montecarlo | Juvenil A | 个人精彩集锦",
+                                                                                           "channel":  "静静很甜美",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-09-14",
+                                                                                           "durationSec":  "94",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/e06e64614c0666aa0f2ce71170f0f681a910cc7b.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    },
                                                                     {
                                                                         "date":  "2026-09-03",
                                                                         "opp":  "",
@@ -728,6 +754,40 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-b:raulexposito":  [
+                                                                      {
+                                                                          "date":  "2026-09-14",
+                                                                          "opp":  "UD Montecarlo U19",
+                                                                          "label":  "vs UD Montecarlo U19 · 09-14",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV19UYr64Ed4",
+                                                                                             "title":  "劳尔·埃克斯波西托 vs UD Montecarlo | Juvenil A | 个人精彩集锦",
+                                                                                             "channel":  "静静很甜美",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-09-14",
+                                                                                             "durationSec":  "175",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/14cf79c700840b9a002056c350d49d2dbd1f41b2.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-09-13",
+                                                                          "opp":  "UD Montecarlo",
+                                                                          "label":  "vs UD Montecarlo · 09-13",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "mj-QOfx0WsY",
+                                                                                             "title":  "Raul Exposito vs UD Montecarlo",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-09-13",
+                                                                                             "durationSec":  ""
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
                                  "local:juvenil-b:sergimayans":  [
                                                                      {
                                                                          "date":  "2026-08-11",
@@ -836,6 +896,21 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:1657202":  [
                                                       {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "UD Logroñés B",
+                                                          "label":  "vs UD Logroñés B · 09-13",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "hxvAnj17BKI",
+                                                                             "title":  "Shane Kluivert 15-minute cameo vs UD Logroñés B",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
                                                           "date":  "2026-09-07",
                                                           "opp":  "CD Naxara",
                                                           "label":  "vs CD Naxara · 09-07",
@@ -849,6 +924,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "372",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/740422f8ede26952fafe74ab91fd2ade6d8a3ca8.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1926093":  [
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "",
+                                                          "label":  "09-13 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "feGGEKmVwok",
+                                                                             "title":  "🧤🔥 18yo Iker Rodriguez with incredible 2 saves for Barça Atlètic today. #football #lamasia",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       }
@@ -873,6 +965,21 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:1937274":  [
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "UD Logroñés B",
+                                                          "label":  "vs UD Logroñés B · 09-13",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "xs6SgFiLukM",
+                                                                             "title":  "Mirza Catovic vs UD Logroñés B",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-09-01",
                                                           "opp":  "",
@@ -1094,6 +1201,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                        ]
                                                         }
                                                     ],
+                                 "sf:u19:2229087":  [
+                                                        {
+                                                            "date":  "2026-09-13",
+                                                            "opp":  "UD Montecarlo",
+                                                            "label":  "vs UD Montecarlo · 09-13",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "xlM11M7tD9A",
+                                                                               "title":  "Nuhu Fofana vs UD Montecarlo",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-13",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
                                  "sf:u19:2272317":  [
                                                         {
                                                             "date":  "2026-08-12",
@@ -1112,6 +1236,21 @@ window.DQD_VIDEOS_CACHE = {
                                                         }
                                                     ],
                                  "sf:u19:2405472":  [
+                                                        {
+                                                            "date":  "2026-09-13",
+                                                            "opp":  "UD Montecarlo",
+                                                            "label":  "vs UD Montecarlo · 09-13",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "2NrfJiN-v4I",
+                                                                               "title":  "Iu Martinez vs UD Montecarlo",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-13",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
                                                         {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",

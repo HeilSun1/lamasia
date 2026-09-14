@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-13 18:50:21 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-14 12:08:18 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-13 18:50:21",
+    "updated":  "2026-09-14 12:08:18",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6342294", "title":  "巴萨竞技战报 20260914",
+            "url":  "https://www.dongqiudi.com/articles/6342294.html", "time":  "2026-09-14 09:34",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/68/E9/280x210/crop/-/rBXRn2qm-f6ADC1oAAbMTClxZKs456.jpg" },
         {
             "id":  "6332543", "title":  "布斯克茨：希望巴萨本赛季夺得欧冠；小法未来有可能执教巴萨",
             "url":  "https://www.dongqiudi.com/articles/6332543.html", "time":  "2026-09-12 06:51",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6192251", "title":  "世体：巴萨队内会开玩笑地用哈兰德的调子喊哈姆扎的名字",
             "url":  "https://www.dongqiudi.com/articles/6192251.html", "time":  "2026-08-18 14:59",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/82/280x210/crop/-/rBXRn2qD4pCAXyFrAABUNjnYjq0153.jpg" },
-        {
-            "id":  "6192089", "title":  "费尔明：小蜘蛛适合巴萨但他还是马竞球员；我一直很喜欢7号",
-            "url":  "https://www.dongqiudi.com/articles/6192089.html", "time":  "2026-08-18 14:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/BD/280x210/crop/-/rBXRn2qD-eSAe_INAAC2F6sCh1o587.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/82/280x210/crop/-/rBXRn2qD4pCAXyFrAABUNjnYjq0153.jpg" }
     ]
 };
