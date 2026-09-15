@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-15 12:10:29 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-15 18:05:09 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-15 12:10:29",
+    "updated":  "2026-09-15 18:05:09",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "title":  "Sergio Canales: Me quería fichar el Barça, fui con mis padres a La Masía y quería quedarme",
+            "url":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "time":  "2026-09-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c6075972e9.r_d.1470-830-4000.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227271/reclamo-yamal.html", "title":  "El reclamo de Yamal",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227271/reclamo-yamal.html", "time":  "2026-09-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "title":  "Un mago en el Real Zaragoza: la primera exhibición de Jaume Jardí",
             "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "time":  "2026-09-14 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/betis/20260730/1004211548/marc-bartra-le-dijeran-mi-hermano-no-seguia-barca-golpe-tremendo.html", "title":  "Marc Bartra: Que le dijeran a mi hermano que no seguía en el Barça fue un golpe tremendo",
             "url":  "https://www.mundodeportivo.com/futbol/betis/20260730/1004211548/marc-bartra-le-dijeran-mi-hermano-no-seguia-barca-golpe-tremendo.html", "time":  "2026-07-30 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6b01fbef998.r_d.1793-869-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/baloncesto/acb/20260728/1004210991/mohamed-dabone-espanol.html", "title":  "Mohamed Dabone ya es español",
-            "url":  "https://www.mundodeportivo.com/baloncesto/acb/20260728/1004210991/mohamed-dabone-espanol.html", "time":  "2026-07-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/28/6a68a735a6af3.r_d.961-676-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210414/balon-oro-ensalza-masia-escuela-cambio-historia-futbol.html", "title":  "El Balón de Oro ensalza a La Masia: la escuela que cambió la historia del fútbol",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260726/1004210414/balon-oro-ensalza-masia-escuela-cambio-historia-futbol.html", "time":  "2026-07-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/26/6a6637c55cddf.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6b01fbef998.r_d.1793-869-4000.jpeg" }
     ]
 };

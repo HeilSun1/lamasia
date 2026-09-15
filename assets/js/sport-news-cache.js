@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-15 12:10:26 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-15 18:05:06 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-15 12:10:26",
+    "updated":  "2026-09-15 18:05:06",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134275515", "title":  "Destiny se hincha a marcar goles en el torneo de Van Dijk",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-hincha-marcar-goles-torneo-134275515", "time":  "2026-09-15 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb537ca6-a7f4-4565-b852-2a8be455dbe2_16-9-discover-aspect-ratio_default_0_x640y305.webp" },
+        {
             "id":  "134248266", "title":  "Festival del Juvenil A del Barça de Pol Planas en Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/festival-juvenil-barca-pol-planas-134248266", "time":  "2026-09-13 19:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_default_0_x596y206.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_640w_0_x596y206.webp" },
         {
             "id":  "134236707", "title":  "El Barça Atlètic arranca un empate con polémica en Logroño",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-arranca-empate-polemica-134236707", "time":  "2026-09-13 12:31",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133100878", "title":  "La tensa espera de Josué Caicedo para vestir de azulgrana",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tensa-espera-josue-caicedo-vestir-azulgrana-ecuador-barcelona-133100878", "time":  "2026-08-04 19:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/945287ff-9c36-409d-8cf1-154a4a69b8b2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133071578", "title":  "Rafa Yuste visita en el stage a un Barça Atlètic con Aziz Issah y ya sin Alexis Olmedo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/rafa-yuste-visita-stage-barca-atletic-vall-bas-133071578", "time":  "2026-08-03 19:12",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8f4f53b0-940b-44c2-b938-c3be0298a0fb_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/945287ff-9c36-409d-8cf1-154a4a69b8b2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-15 12:03 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-15 18:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-15 12:03:05",
+    "updated":  "2026-09-15 18:00:15",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -170,6 +170,26 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Jesse Bisiwu",
+                        "id":  "1506988",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Belgium",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-22",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "78万",
+                        "injury":  {
+                                       "reason":  "大腿伤势",
+                                       "reasonEn":  "Thigh Injury",
+                                       "status":  "dayToDay",
+                                       "expected":  ""
+                                   }
+                    },
+                    {
                         "name":  "Ebrima Tunkara",
                         "id":  "2128084",
                         "pos":  "M",
@@ -185,6 +205,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Orian Goren",
+                        "id":  "1973312",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Israel",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-03-15",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Abdul Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
@@ -197,6 +232,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "164",
                         "value":  "10万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pedro Rodriguez",
+                        "id":  "1649171",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
+                        "value":  "",
                         "injury":  null
                     },
                     {

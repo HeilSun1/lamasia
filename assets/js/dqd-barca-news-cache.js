@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-15 12:03:05 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-15 18:00:16 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-15 12:03:05",
+    "updated":  "2026-09-15 18:00:16",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6348995", "title":  "罗德里：巴萨的训练方式让我很意外，第一天就直接上强度",
+            "url":  "https://www.dongqiudi.com/articles/6348995.html", "time":  "2026-09-15 17:39",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6D/96/280x210/crop/-/rBXRn2qpEHKAVwGpAAE-jWT_v-c048.jpg" },
         {
             "id":  "6345449", "title":  "每体：巴萨谨慎对待16岁中场通卡拉伤情，预计10月中旬复出",
             "url":  "https://www.dongqiudi.com/articles/6345449.html", "time":  "2026-09-14 21:35",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6193388", "title":  "阿姆帕杜：续约？利兹有家的感觉；会看很多罗德里的视频学习",
             "url":  "https://www.dongqiudi.com/articles/6193388.html", "time":  "2026-08-18 19:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/9E/280x210/crop/-/rBXRDGqD6EmAHcAmAAPNrRCV8yk404.jpg" },
-        {
-            "id":  "6192234", "title":  "队报：18岁前锋哈姆扎季前赛发挥出色，有望填补锋线空缺",
-            "url":  "https://www.dongqiudi.com/articles/6192234.html", "time":  "2026-08-18 15:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/DA/280x210/crop/-/rBXRDGqEARWAadIFAAKG_bQ9SPw227.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/9E/280x210/crop/-/rBXRDGqD6EmAHcAmAAPNrRCV8yk404.jpg" }
     ]
 };
