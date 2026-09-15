@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-14 21:30 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-15 12:11 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-14 21:30:32",
+    "updated":  "2026-09-15 12:11:05",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -11,6 +11,7 @@ window.DQD_VIDEOS_CACHE = {
                             "sfb:16866862",
                             "sfb:16897314",
                             "sofascore:16539670",
+                            "sofascore:16539731",
                             "sofascore:16792416",
                             "sofascore:16792525",
                             "sofascore:16834498",
@@ -128,6 +129,24 @@ window.DQD_VIDEOS_CACHE = {
                                              "durationSec":  "157"
                                          }
                                      ],
+                    "sofascore:16539731":  [
+                                               {
+                                                   "videoId":  "21oArMQejmc",
+                                                   "title":  "En Vivo | UD Montecarlo U19 vs Barcelona U19 | División de Honor Juvenil, Grupo 3",
+                                                   "channel":  "Coleman Glen",
+                                                   "channelId":  "",
+                                                   "published":  "",
+                                                   "durationSec":  "0"
+                                               },
+                                               {
+                                                   "videoId":  "yYtYg7gBTNQ",
+                                                   "title":  "Barça Juvenil A v UD Montecarlo | 9 - 0 | Hamza Abdelkarim Hat-trick | Division de Honor Juvenil",
+                                                   "channel":  "British Elite Scout",
+                                                   "channelId":  "",
+                                                   "published":  "",
+                                                   "durationSec":  "167"
+                                               }
+                                           ],
                     "sofascore:16834498":  [
                                                {
                                                    "videoId":  "n6D4tNqYJr8",
@@ -574,23 +593,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "videos":  [
                                                                                         {
@@ -610,6 +612,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
