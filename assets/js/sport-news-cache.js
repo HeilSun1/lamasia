@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-15 18:05:06 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-15 19:44:56 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-15 18:05:06",
+    "updated":  "2026-09-15 19:44:56",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134288206", "title":  "Mamadou Keita, otro extremo zurdo estilo Raphinha con alma de goleador",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 16:47",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f76460e1-b70c-4e3f-bfb6-1fb349f17aaf_16-9-discover-aspect-ratio_default_0_x539y167.webp" },
         {
             "id":  "134275515", "title":  "Destiny se hincha a marcar goles en el torneo de Van Dijk",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-hincha-marcar-goles-torneo-134275515", "time":  "2026-09-15 04:30",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133111929", "title":  "Oficial: Alexis Olmedo, traspasado al Celta",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-alexis-olmedo-traspasado-celta-133111929", "time":  "2026-08-05 10:50",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/76458717-7e20-4d84-a509-5b20b36115ab_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133100878", "title":  "La tensa espera de Josué Caicedo para vestir de azulgrana",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tensa-espera-josue-caicedo-vestir-azulgrana-ecuador-barcelona-133100878", "time":  "2026-08-04 19:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/945287ff-9c36-409d-8cf1-154a4a69b8b2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/76458717-7e20-4d84-a509-5b20b36115ab_16-9-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

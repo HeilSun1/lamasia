@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-15 18:04:38 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-15 19:44:53 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-15 18:04:38",
+    "updated":  "2026-09-15 19:44:53",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/a6bb2c7c-e09e-4d6a-9745-ad8095216816/_5DS8051.jpg" },
+            {
+                "id":  "4576708", "title":  "'I don't want to break records, I want to win matches'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576708/hansi-flick-i-dont-want-to-break-records-i-want-to-win-matches", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/fd76f279-5d55-439e-9204-17e4ba5b1ba4/_MGA8231.jpg" },
+            {
+                "id":  "4576693", "title":  "Last session before Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576693/last-session-before-racing", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/91ce7f02-8d2d-47d9-b124-24d8a0ede11a/WhatsApp-Image-2026-09-15-at-12.44.49.jpeg" },
+            {
                 "id":  "4576366", "title":  "When and where to watch Barça v Racing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576366/when-and-where-to-watch-fc-barcelona-v-racing-santander", "time":  "",
                 "tag":  "", "img":  "" },
@@ -203,6 +215,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574000/kounde-matches-abidal-as-the-frenchman-with-most-appearances-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4574300", "title":  "Round figures for Pedri and Joan Garcia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574300/round-figures-for-pedri-and-joan-garcia", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/3e64478b-9e50-4fd4-85c2-ed53c3be6e1f/_MGA5786.jpg" },
@@ -214,14 +234,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4573709", "title":  "UCL PREVIEW | Barça v Feyenoord",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573709/ucl-preview-fc-barcelona-v-feyenoord", "time":  "",
                 "tag":  "", "img":  "" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4573819", "title":  "Gio: 'Barça play football that everyone wants to watch'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573819/gio-van-bronckhorst-barca-play-football-that-everyone-wants-to-watch", "time":  "",
@@ -313,19 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4569533", "title":  "Five games in fourteen days",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569533/plenty-in-store-for-september", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/8615c08d-9b2f-4a92-afbf-b11538e46127/3200X2000_Calendar-SEPT-ENG.jpg" },
-            {
-                "id":  "4570494", "title":  "Brian Fariñas registered as first team player in number '4' jersey",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570494/brian-farinas-registered-as-first-team-player-in-number-4-jersey", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/dbaddd13-a4fc-4269-9b67-2cb584c4df3c/WhatsApp-Image-2026-09-01-at-23.52.39.jpeg" },
-            {
-                "id":  "4570290", "title":  "Marc Casadó loaned to Deportivo A Coruña",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570290/marc-casado-loaned-to-deportivo-a-coruna", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/38a328b1-e8d3-4c60-b329-48f5ced3c50c/_MGA6770.jpg" },
-            {
-                "id":  "4570297", "title":  "Agreement with Antwerp for the transfer of Álvaro Cortés",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570297/agreement-with-royal-antwerp-for-the-transfer-of-alvaro-cortes", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/8615c08d-9b2f-4a92-afbf-b11538e46127/3200X2000_Calendar-SEPT-ENG.jpg" }
         ]
     }
 };
