@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-16 12:39:38 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-16 19:36:26 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-16 12:39:38",
+    "updated":  "2026-09-16 19:36:26",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6353731", "title":  "前教练：07年出生这批球员，是拉玛西亚能力最全面的一代",
+            "url":  "https://www.dongqiudi.com/articles/6353731.html", "time":  "2026-09-16 12:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6F/B0/280x210/crop/-/rBXRn2qqINSAYa32AAKk8P6BIUY127.jpg" },
         {
             "id":  "6348995", "title":  "罗德里：巴萨的训练方式让我很意外，第一天就直接上强度",
             "url":  "https://www.dongqiudi.com/articles/6348995.html", "time":  "2026-09-15 17:39",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6194843", "title":  "罗德里：我还收到过其他报价，但巴萨是我的首选",
             "url":  "https://www.dongqiudi.com/articles/6194843.html", "time":  "2026-08-19 01:26",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/33/280x210/crop/-/rBXRn2qElA2AQa-ZAADRiffFu0U950.jpg" },
-        {
-            "id":  "6193388", "title":  "阿姆帕杜：续约？利兹有家的感觉；会看很多罗德里的视频学习",
-            "url":  "https://www.dongqiudi.com/articles/6193388.html", "time":  "2026-08-18 19:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/9E/280x210/crop/-/rBXRDGqD6EmAHcAmAAPNrRCV8yk404.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/33/280x210/crop/-/rBXRn2qElA2AQa-ZAADRiffFu0U950.jpg" }
     ]
 };

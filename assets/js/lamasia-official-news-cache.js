@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-16 12:41:37 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-16 19:36:48 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-16 12:41:37",
+    "updated":  "2026-09-16 19:36:48",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4577323", "title":  "The squad for Barça v Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577323/the-squad-for-barca-v-racing", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/75e74f2b-2437-487a-8146-8f2274ada03f/_MGA7255.jpg" },
+            {
+                "id":  "4576712", "title":  "PREVIEW | Barça v Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/a6bb2c7c-e09e-4d6a-9745-ad8095216816/_5DS8051.jpg" },
@@ -203,6 +211,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574558/raphinha-continues-to-make-history", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/542e1c61-f7a8-418d-afe6-45c4031813f2/_MGA6057.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4574250", "title":  "Barça 5-1 Feyenoord: Dancing in the rain",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574250/fc-barcelona-5-1-feyenoord-dancing-in-the-rain", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/7cdd59f8-e876-418f-8be3-3077a83d5207/_MGA6940.jpg" },
@@ -214,14 +230,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4574000", "title":  "Kounde matches Abidal",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574000/kounde-matches-abidal-as-the-frenchman-with-most-appearances-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4574300", "title":  "Round figures for Pedri and Joan Garcia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574300/round-figures-for-pedri-and-joan-garcia", "time":  "",
@@ -317,15 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4570894", "title":  "2026/27 first team jersey numbers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570894/202627-first-team-jersey-numbers-confirmed", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/f9bd6524-6acb-4881-96a8-98cdbb41a1e6/WhatsApp-Image-2026-09-02-at-18.55.08.jpeg" },
-            {
-                "id":  "4571124", "title":  "Three blaugranes nominated for LaLiga awards for August",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4571124/three-blaugranes-nominated-for-laliga-awards-for-august", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/c12f0ef0-fc88-432d-a6c0-0c658bc032cf/_MGA2106.jpg" },
-            {
-                "id":  "4569533", "title":  "Five games in fourteen days",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4569533/plenty-in-store-for-september", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/8615c08d-9b2f-4a92-afbf-b11538e46127/3200X2000_Calendar-SEPT-ENG.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/02/f9bd6524-6acb-4881-96a8-98cdbb41a1e6/WhatsApp-Image-2026-09-02-at-18.55.08.jpeg" }
         ]
     }
 };
