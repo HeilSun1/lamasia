@@ -1,12 +1,12 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-15 19:44:56 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-16 12:42:30 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-15 19:44:56",
+    "updated":  "2026-09-16 12:42:30",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "134288206", "title":  "Mamadou Keita, otro extremo zurdo estilo Raphinha con alma de goleador",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 16:47",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 22:06",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f76460e1-b70c-4e3f-bfb6-1fb349f17aaf_16-9-discover-aspect-ratio_default_0_x539y167.webp" },
         {
             "id":  "134275515", "title":  "Destiny se hincha a marcar goles en el torneo de Van Dijk",

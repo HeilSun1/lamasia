@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-15 18:05 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-16 12:43 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-15 18:05:39",
+    "updated":  "2026-09-16 12:43:38",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -557,23 +557,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "videos":  [
                                                                                         {
@@ -593,6 +576,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -773,6 +773,41 @@ window.DQD_VIDEOS_CACHE = {
                                                                   ],
                                  "local:juvenil-b:sergimayans":  [
                                                                      {
+                                                                         "date":  "2026-09-15",
+                                                                         "opp":  "",
+                                                                         "label":  "09-15 · 集锦",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "etBQbjo0PXU",
+                                                                                            "title":  "Sergi Mayans - La Masia\u0027s Most Promising Left Centre-Back",
+                                                                                            "channel":  "ArsenKveFCB",
+                                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                            "published":  "2026-09-15",
+                                                                                            "durationSec":  ""
+                                                                                        },
+                                                                                        {
+                                                                                            "videoId":  "BV1SbeH6aERN",
+                                                                                            "title":  "塞尔吉·马扬斯 - 正宗老拉玛西亚左脚中后卫",
+                                                                                            "channel":  "口菐",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-15",
+                                                                                            "durationSec":  "433",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/a9638fcea609ee1aad7deceb1d6b2d5de9ce8129.jpg"
+                                                                                        },
+                                                                                        {
+                                                                                            "videoId":  "BV14aeH68Eoa",
+                                                                                            "title":  "拉玛西亚左脚中卫 马扬斯 集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-15",
+                                                                                            "durationSec":  "433",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/7160ad434df39fc72de714714dcd2c931eb08f4e.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-08-11",
                                                                          "opp":  "",
                                                                          "label":  "08-11 · 集锦",
@@ -854,6 +889,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "222",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/a13cea8d1bbeacaafd1182ff9918e6e278138351.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1506988":  [
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "",
+                                                          "label":  "09-13 · 集锦",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV16CYi6sExx",
+                                                                             "title":  "巴萨 B 队比利时边锋 比西武 首秀集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  "158",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/5f7c969e187f99ea3c8df6e6be6df852e7a90200.jpg"
                                                                          }
                                                                      ]
                                                       }

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-15 18:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-16 12:39 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-15 18:00:15",
+    "updated":  "2026-09-16 12:39:37",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -182,12 +182,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "185",
                         "value":  "78万",
-                        "injury":  {
-                                       "reason":  "大腿伤势",
-                                       "reasonEn":  "Thigh Injury",
-                                       "status":  "dayToDay",
-                                       "expected":  ""
-                                   }
+                        "injury":  null
                     },
                     {
                         "name":  "Ebrima Tunkara",

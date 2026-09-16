@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-15 18:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-16 12:40 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-15 18:00:43",
+    "updated":  "2026-09-16 12:40:09",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -727,9 +727,9 @@ window.DQD_U19_CACHE = {
                         "round":  "10",
                         "start":  "1795363200",
                         "home":  "Barcelona U19",
-                        "away":  "CF Badalona U19",
+                        "away":  "Badalona U19",
                         "homeId":  "90128",
-                        "awayId":  "1248768",
+                        "awayId":  "456359",
                         "hs":  "",
                         "as":  "",
                         "status":  "Not started",
@@ -981,9 +981,9 @@ window.DQD_U19_CACHE = {
                         "comp":  "西青甲 G3",
                         "round":  "25",
                         "start":  "1805644800",
-                        "home":  "CF Badalona U19",
+                        "home":  "Badalona U19",
                         "away":  "Barcelona U19",
-                        "homeId":  "1248768",
+                        "homeId":  "456359",
                         "awayId":  "90128",
                         "hs":  "",
                         "as":  "",
