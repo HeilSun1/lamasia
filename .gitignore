@@ -5,7 +5,7 @@ scripts/*.log
 scripts/local-run-state.json
 scripts/watchdog-state.json
 # 冲突现场备份（临时保留，确认无碍后删）
-scripts/_conflict-backup-*/
+scripts/_conflict-backup*
 # B站已抓但未收录记录（本地去重状态，不入库）
 scripts/bili-seen.txt
 # 临时文件

@@ -20,10 +20,11 @@ if (-not (Test-Path $script)) { Write-Host "找不到脚本：$script"; exit 1 }
 $action = New-ScheduledTaskAction -Execute "powershell.exe" `
             -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$script`""
 
-# -RepetitionInterval 但不给 -RepetitionDuration = 无限重复
+# 只给 -RepetitionInterval、不给 -RepetitionDuration = 无限重复。
+# （别用 [TimeSpan]::MaxValue 充当时长：它生成的 P99999999DT23H59M59S
+#   超出任务计划 XML 的上限，注册会直接失败）
 $trigger = New-ScheduledTaskTrigger -Once -At 08:37 `
-             -RepetitionInterval (New-TimeSpan -Hours 4) `
-             -RepetitionDuration ([TimeSpan]::MaxValue)
+             -RepetitionInterval (New-TimeSpan -Hours 4)
 
 $settings = New-ScheduledTaskSettingsSet `
               -StartWhenAvailable `
