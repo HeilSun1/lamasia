@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-17 21:45:05 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-17 19:45:54 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-17 21:45:05",
+    "updated":  "2026-09-17 19:45:54",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6361806", "title":  "世体：若霍安不出战塞维，伊克尔-罗德里格斯可能会进大名单",
+            "url":  "https://www.dongqiudi.com/articles/6361806.html", "time":  "2026-09-18 00:41",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/73/80/280x210/crop/-/rBXRDGqsGDWAaqxLAAD99VHt61Y747.jpg" },
         {
             "id":  "6353731", "title":  "前教练：07年出生这批球员，是拉玛西亚能力最全面的一代",
             "url":  "https://www.dongqiudi.com/articles/6353731.html", "time":  "2026-09-16 12:54",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6195639", "title":  "普约尔：有穆里尼奥皇马可能更强；罗德里非常适合巴萨",
             "url":  "https://www.dongqiudi.com/articles/6195639.html", "time":  "2026-08-19 07:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/EC/280x210/crop/-/rBXRDGqE0A-AViqoAAGIFoS3W5Q126.jpg" },
-        {
-            "id":  "6194843", "title":  "罗德里：我还收到过其他报价，但巴萨是我的首选",
-            "url":  "https://www.dongqiudi.com/articles/6194843.html", "time":  "2026-08-19 01:26",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/33/280x210/crop/-/rBXRn2qElA2AQa-ZAADRiffFu0U950.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/EC/280x210/crop/-/rBXRDGqE0A-AViqoAAGIFoS3W5Q126.jpg" }
     ]
 };
