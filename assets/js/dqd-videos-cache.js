@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-16 12:43 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-17 11:57 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-16 12:43:38",
+    "updated":  "2026-09-17 11:57:13",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -211,7 +211,8 @@ window.DQD_VIDEOS_CACHE = {
                                              "channel":  "ArsenKveFCB",
                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                              "published":  "2026-08-19",
-                                             "durationSec":  ""
+                                             "durationSec":  "",
+                                             "matchKey":  "sfb:16866862"
                                          },
                                          {
                                              "videoId":  "kBDUejW-poI",
@@ -219,7 +220,8 @@ window.DQD_VIDEOS_CACHE = {
                                              "channel":  "Barca Nation",
                                              "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
                                              "published":  "2026-08-20",
-                                             "durationSec":  ""
+                                             "durationSec":  "",
+                                             "matchKey":  "sfb:16866862"
                                          }
                                      ]
                 },
@@ -230,6 +232,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                         "date":  "2026-09-12",
                                                                         "opp":  "",
                                                                         "label":  "09-12 · 集锦",
+                                                                        "matchKey":  "",
                                                                         "videos":  [
                                                                                        {
                                                                                            "videoId":  "BV1XRYR6fEUt",
@@ -247,6 +250,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                         "date":  "2026-09-11",
                                                                         "opp":  "",
                                                                         "label":  "09-11 · 集锦",
+                                                                        "matchKey":  "",
                                                                         "videos":  [
                                                                                        {
                                                                                            "videoId":  "gu-_6sAps3Q",
@@ -264,6 +268,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                      "date":  "2026-08-23",
                                                                      "opp":  "",
                                                                      "label":  "08-23 · 集锦",
+                                                                     "matchKey":  "",
                                                                      "videos":  [
                                                                                     {
                                                                                         "videoId":  "1034:5335154055643159",
@@ -280,6 +285,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                      "date":  "2026-08-22",
                                                                      "opp":  "",
                                                                      "label":  "08-22 · 集锦",
+                                                                     "matchKey":  "",
                                                                      "videos":  [
                                                                                     {
                                                                                         "videoId":  "1034:5334863021277283",
@@ -307,6 +313,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                         "date":  "2026-09-07",
                                                                         "opp":  "纳哈拉",
                                                                         "label":  "vs 纳哈拉 · 09-07",
+                                                                        "matchKey":  "sfb:16741779",
                                                                         "videos":  [
                                                                                        {
                                                                                            "videoId":  "BV1yWbA6sEtQ",
@@ -336,6 +343,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-09-10",
                                                                           "opp":  "Feyenoord U19",
                                                                           "label":  "vs Feyenoord U19 · 09-10",
+                                                                          "matchKey":  "sofascore:16990417",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "FRjIgWpFQaM",
@@ -353,6 +361,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "date":  "2026-08-19",
                                                                            "opp":  "",
                                                                            "label":  "08-19 · 集锦",
+                                                                           "matchKey":  "",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV1Q48J6nEed",
@@ -370,6 +379,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "date":  "2026-08-03",
                                                                            "opp":  "",
                                                                            "label":  "08-03 · 训练",
+                                                                           "matchKey":  "",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV1YKMX6tEEn",
@@ -387,6 +397,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "date":  "2026-07-24",
                                                                            "opp":  "",
                                                                            "label":  "07-24 · 个人集锦",
+                                                                           "matchKey":  "",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV1oCgY6EEWc",
@@ -406,6 +417,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-07",
                                                                          "opp":  "纳哈拉",
                                                                          "label":  "vs 纳哈拉 · 09-07",
+                                                                         "matchKey":  "sfb:16741779",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1yWbA6sE7a",
@@ -433,6 +445,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-06",
                                                                          "opp":  "CD Naxara",
                                                                          "label":  "vs CD Naxara · 09-06",
+                                                                         "matchKey":  "sfb:16741779",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "8cq1BQiHvB4",
@@ -448,6 +461,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-04",
                                                                          "opp":  "萨瓦德尔",
                                                                          "label":  "vs 萨瓦德尔 · 09-04",
+                                                                         "matchKey":  "sfb:16655584",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1DJtv6WEXG",
@@ -465,6 +479,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-03",
                                                                          "opp":  "",
                                                                          "label":  "09-03 · 集锦",
+                                                                         "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1XUt96jEej",
@@ -482,6 +497,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-02",
                                                                          "opp":  "萨瓦德尔",
                                                                          "label":  "vs 萨瓦德尔 · 09-02",
+                                                                         "matchKey":  "sfb:16655584",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV13TtQ6qEdP",
@@ -501,6 +517,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "date":  "2026-08-19",
                                                                              "opp":  "开罗国民",
                                                                              "label":  "vs 开罗国民 · 08-19",
+                                                                             "matchKey":  "",
                                                                              "videos":  [
                                                                                             {
                                                                                                 "videoId":  "BV1fhbd68Et2",
@@ -520,6 +537,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-08-14",
                                                                           "opp":  "",
                                                                           "label":  "08-14 · 集锦",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV1N8gA62Egh",
@@ -539,6 +557,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                            "date":  "2026-09-07",
                                                                            "opp":  "CD Naxara",
                                                                            "label":  "vs CD Naxara · 09-07",
+                                                                           "matchKey":  "sfb:16741779",
                                                                            "videos":  [
                                                                                           {
                                                                                               "videoId":  "BV14dbc6REtB",
@@ -557,7 +576,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
+                                                                         "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1Q8YJ6FEtG",
@@ -578,23 +616,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  ""
                                                                                         }
                                                                                     ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
                                                                      }
                                                                  ],
                                  "local:juvenil-b:iumartinez":  [
@@ -602,6 +623,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                         "date":  "2026-09-14",
                                                                         "opp":  "UD Montecarlo U19",
                                                                         "label":  "vs UD Montecarlo U19 · 09-14",
+                                                                        "matchKey":  "sofascore:16539731",
                                                                         "videos":  [
                                                                                        {
                                                                                            "videoId":  "BV1gjYr6JEKa",
@@ -619,6 +641,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                         "date":  "2026-09-03",
                                                                         "opp":  "",
                                                                         "label":  "09-03 · 个人集锦",
+                                                                        "matchKey":  "",
                                                                         "videos":  [
                                                                                        {
                                                                                            "videoId":  "BV1Yztf6ZEuS",
@@ -638,6 +661,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-09-07",
                                                                           "opp":  "CD Naxara",
                                                                           "label":  "vs CD Naxara · 09-07",
+                                                                          "matchKey":  "sfb:16741779",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV14dbc6REwA",
@@ -655,6 +679,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-08-23",
                                                                           "opp":  "",
                                                                           "label":  "08-23 · 季前赛/友谊赛",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV1yK8Y6GExH",
@@ -672,6 +697,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-08-20",
                                                                           "opp":  "",
                                                                           "label":  "08-20 · 季前赛/友谊赛",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV11Fbf6EEJg",
@@ -689,6 +715,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-08-19",
                                                                           "opp":  "开罗国民",
                                                                           "label":  "vs 开罗国民 · 08-19",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV1fhbd68Ein",
@@ -706,6 +733,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-08-16",
                                                                           "opp":  "巴塞尔",
                                                                           "label":  "vs 巴塞尔 · 08-16",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV1oGbR69EEn",
@@ -723,6 +751,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-06-05",
                                                                           "opp":  "",
                                                                           "label":  "06-05 · 集锦",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV1Lc7y6cE7T",
@@ -742,6 +771,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-09-14",
                                                                           "opp":  "UD Montecarlo U19",
                                                                           "label":  "vs UD Montecarlo U19 · 09-14",
+                                                                          "matchKey":  "sofascore:16539731",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "BV19UYr64Ed4",
@@ -759,6 +789,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                           "date":  "2026-09-13",
                                                                           "opp":  "UD Montecarlo",
                                                                           "label":  "vs UD Montecarlo · 09-13",
+                                                                          "matchKey":  "sofascore:16539731",
                                                                           "videos":  [
                                                                                          {
                                                                                              "videoId":  "mj-QOfx0WsY",
@@ -776,6 +807,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-09-15",
                                                                          "opp":  "",
                                                                          "label":  "09-15 · 集锦",
+                                                                         "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "etBQbjo0PXU",
@@ -811,6 +843,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-08-11",
                                                                          "opp":  "",
                                                                          "label":  "08-11 · 集锦",
+                                                                         "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1FDuv6bESg",
@@ -828,6 +861,7 @@ window.DQD_VIDEOS_CACHE = {
                                                                          "date":  "2026-06-05",
                                                                          "opp":  "",
                                                                          "label":  "06-05 · 集锦",
+                                                                         "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
                                                                                             "videoId":  "BV1e27y6hEcS",
@@ -847,6 +881,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-07",
                                                           "opp":  "CD Naxara",
                                                           "label":  "vs CD Naxara · 09-07",
+                                                          "matchKey":  "sfb:16741779",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV13bbw6AEWt",
@@ -864,6 +899,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-06",
                                                           "opp":  "CD Naxara",
                                                           "label":  "vs CD Naxara · 09-06",
+                                                          "matchKey":  "sfb:16741779",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "W7UKer-iT8A",
@@ -879,6 +915,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-08-21",
                                                           "opp":  "",
                                                           "label":  "08-21 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1cz8i67E2j",
@@ -898,6 +935,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-13",
                                                           "opp":  "",
                                                           "label":  "09-13 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV16CYi6sExx",
@@ -917,6 +955,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-08-15",
                                                           "opp":  "",
                                                           "label":  "08-15 · 个人集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV17qb26vEaP",
@@ -936,6 +975,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-13",
                                                           "opp":  "UD Logroñés B",
                                                           "label":  "vs UD Logroñés B · 09-13",
+                                                          "matchKey":  "sfb:16741931",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "hxvAnj17BKI",
@@ -951,6 +991,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-07",
                                                           "opp":  "CD Naxara",
                                                           "label":  "vs CD Naxara · 09-07",
+                                                          "matchKey":  "sfb:16741779",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV14dbc6REtB",
@@ -970,6 +1011,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-13",
                                                           "opp":  "",
                                                           "label":  "09-13 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "feGGEKmVwok",
@@ -987,6 +1029,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-07",
                                                           "opp":  "纳哈拉",
                                                           "label":  "vs 纳哈拉 · 09-07",
+                                                          "matchKey":  "sfb:16741779",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1yWbA6sEtQ",
@@ -1006,6 +1049,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-13",
                                                           "opp":  "UD Logroñés B",
                                                           "label":  "vs UD Logroñés B · 09-13",
+                                                          "matchKey":  "sfb:16741931",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "xs6SgFiLukM",
@@ -1021,6 +1065,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-01",
                                                           "opp":  "",
                                                           "label":  "09-01 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV15Stg6oEsr",
@@ -1038,6 +1083,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-08-31",
                                                           "opp":  "",
                                                           "label":  "08-31 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1Xst86CEDv",
@@ -1057,6 +1103,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-07",
                                                           "opp":  "",
                                                           "label":  "09-07 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV127bA6bEog",
@@ -1076,6 +1123,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-07",
                                                           "opp":  "纳哈拉",
                                                           "label":  "vs 纳哈拉 · 09-07",
+                                                          "matchKey":  "sfb:16741779",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1yWbA6sE7a",
@@ -1103,6 +1151,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-04",
                                                           "opp":  "萨瓦德尔",
                                                           "label":  "vs 萨瓦德尔 · 09-04",
+                                                          "matchKey":  "sfb:16655584",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1DJtv6WEXG",
@@ -1120,6 +1169,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-03",
                                                           "opp":  "",
                                                           "label":  "09-03 · 集锦",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV1XUt96jEej",
@@ -1137,6 +1187,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-09-02",
                                                           "opp":  "萨瓦德尔",
                                                           "label":  "vs 萨瓦德尔 · 09-02",
+                                                          "matchKey":  "sfb:16655584",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "BV13TtQ6qEdP",
@@ -1156,6 +1207,7 @@ window.DQD_VIDEOS_CACHE = {
                                                           "date":  "2026-08-08",
                                                           "opp":  "Udinese",
                                                           "label":  "vs Udinese · 08-08",
+                                                          "matchKey":  "",
                                                           "videos":  [
                                                                          {
                                                                              "videoId":  "9eOLL88phHU",
@@ -1173,6 +1225,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-12",
                                                             "opp":  "",
                                                             "label":  "09-12 · 集锦",
+                                                            "matchKey":  "",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "BV1XRYR6fEUt",
@@ -1192,6 +1245,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",
                                                             "label":  "vs Feyenoord U19 · 09-10",
+                                                            "matchKey":  "sofascore:16990417",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "6KKd1ST628k",
@@ -1209,6 +1263,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-08-14",
                                                             "opp":  "",
                                                             "label":  "08-14 · 个人集锦",
+                                                            "matchKey":  "",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "uJCDQgM6DPM",
@@ -1226,6 +1281,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",
                                                             "label":  "vs Feyenoord U19 · 09-10",
+                                                            "matchKey":  "sofascore:16990417",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "7rf537SCUAU",
@@ -1243,6 +1299,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-13",
                                                             "opp":  "UD Montecarlo",
                                                             "label":  "vs UD Montecarlo · 09-13",
+                                                            "matchKey":  "sofascore:16539731",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "xlM11M7tD9A",
@@ -1260,6 +1317,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-08-12",
                                                             "opp":  "",
                                                             "label":  "08-12 · 个人集锦",
+                                                            "matchKey":  "",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "xBYmwtF7gxg",
@@ -1277,6 +1335,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-13",
                                                             "opp":  "UD Montecarlo",
                                                             "label":  "vs UD Montecarlo · 09-13",
+                                                            "matchKey":  "sofascore:16539731",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "2NrfJiN-v4I",
@@ -1292,6 +1351,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",
                                                             "label":  "vs Feyenoord U19 · 09-10",
+                                                            "matchKey":  "sofascore:16990417",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "0-IXSNIsZBU",
@@ -1307,6 +1367,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-03",
                                                             "opp":  "",
                                                             "label":  "09-03 · 集锦",
+                                                            "matchKey":  "",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "DoyIHrOTUYQ",
@@ -1324,6 +1385,7 @@ window.DQD_VIDEOS_CACHE = {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",
                                                             "label":  "vs Feyenoord U19 · 09-10",
+                                                            "matchKey":  "sofascore:16990417",
                                                             "videos":  [
                                                                            {
                                                                                "videoId":  "IUGvsxxSJF4",
