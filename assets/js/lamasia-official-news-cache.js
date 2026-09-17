@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-17 11:56:35 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-17 21:48:11 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-17 11:56:35",
+    "updated":  "2026-09-17 21:48:11",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4577802", "title":  "Joan Garcia medical update",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" },
+            {
+                "id":  "4577770", "title":  "Recovery session with Sevilla match in mind",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/17f2f951-1a73-45fb-b110-108e34d69eb0/WhatsApp-Image-2026-09-17-at-13.51.04-3-.jpeg" },
+            {
+                "id":  "4577721", "title":  "Seven records set by the 7-2",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" },
+            {
+                "id":  "4577513", "title":  "João Cancelo and his rocket shots",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577513/joao-cancelo-and-his-rocket-shots", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/4e6bd827-4cf3-4a10-b121-8a77e5bf1f85/2026-09-16_FCBvsRACING_032.jpg" },
+            {
                 "id":  "4577547", "title":  "Flick: 'Always good to start well'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577547/hansi-flick-always-good-to-start-well", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/87287840-0819-489a-ab62-28089b8d050a/2026-09-16_FCBvsRACING_001.jpg" },
@@ -134,6 +150,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4577474", "title":  "A first time for 7 from 7",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577474/a-first-time-for-7-from-7", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9e6d8a55-86b3-481b-970b-1d06fcb31d89/_MGA7343.jpg" },
+            {
+                "id":  "4576807", "title":  "Tribute to Carles Naval for 40 years as delegate",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576807/tribute-to-carles-naval-for-40-years-as-delegate", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9cfa6075-cddd-42f3-83c7-c972f12203f8/_5DS0944-2.jpg" },
             {
                 "id":  "4577460", "title":  "Barça 7-2 Racing: The perfect storm",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
@@ -146,10 +166,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4576712", "title":  "PREVIEW | Barça v Racing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
                 "tag":  "", "img":  "" },
-            {
-                "id":  "4576807", "title":  "Tribute to Carles Naval for 40 years as delegate",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576807/tribute-to-carles-naval-for-40-years-as-delegate", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9cfa6075-cddd-42f3-83c7-c972f12203f8/_5DS0944-2.jpg" },
             {
                 "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
@@ -195,6 +211,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575290/preview-levante-ud-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4575546", "title":  "Ready for Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575546/ready-for-levante-v-barca", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" },
@@ -210,14 +234,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4575083", "title":  "When and where to watch Levante UD v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575083/when-and-where-to-watch-levante-ud-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4575126", "title":  "Barça preparing for Levante match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575126/barca-preparing-for-levante-match", "time":  "",
@@ -309,23 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4572395", "title":  "The squad for Valencia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572395/the-squad-for-valencia", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/8aa0bbc0-b863-4277-af64-036898883d15/_MGA2532.jpg" },
-            {
-                "id":  "4572392", "title":  "Last session before Valencia",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572392/last-session-before-valencia", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/064266ff-1354-4dd5-bdfb-a05b839886d8/WhatsApp-Image-2026-09-05-at-12.51.57.jpeg" },
-            {
-                "id":  "4572396", "title":  "'A top quality squad'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572396/hansi-flick-we-have-a-very-high-quality-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/c2ee6f2d-b02f-402e-96d4-81ad458d3879/_MGA3779.jpg" },
-            {
-                "id":  "4572111", "title":  "Valencia v Barça: Did you know?",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572111/valencia-v-barca-did-you-knowx", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/902940c4-1672-4f32-b527-5828fe55df6b/_MGA8314.jpg" },
-            {
-                "id":  "4572031", "title":  "Second to last session before trip to Mestalla",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572031/second-to-last-session-before-trip-to-mestalla", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/04/39a58539-2ce5-426f-9f36-868c8d5a40e8/image00015.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/05/8aa0bbc0-b863-4277-af64-036898883d15/_MGA2532.jpg" }
         ]
     }
 };
