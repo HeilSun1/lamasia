@@ -1,88 +1,411 @@
 ﻿# ═══════════════════════════════════════════════════════════════
 #   拉玛西亚信息站 · 本机每日更新 + SSH 自动推送
 #
-#   1. 运行全部缓存更新脚本（本机真实 IP 抓 Sofascore 稳定，可靠）
-#   2. git 提交 + SSH push 上线
+#   1. 自愈上一轮可能留下的冲突/锁残留（★ 绝不能省，见下）
+#   2. 运行全部缓存更新脚本（本机真实 IP 抓 Sofascore 稳定，可靠）
+#   3. git 提交 + SSH push 上线
 #
 #   GitHub 运行器上的 Sofascore 抓取常被限流返回空（防空缓存已保护，但数据可能过期），
 #   本机是主数据源，运行器工作流 daily-update.yml 作为兜底。
 #   由 Windows 计划任务每天调用（见 register_local_daily_task.ps1）。
 #   日志：scripts/local-daily-update.log
+#
+#   ★ 为什么必须有"自愈"这一步：
+#   2026-09-15 一轮运行进程被杀，在工作区留下带冲突标记的文件。
+#   此后每轮开头 rebase 都失败 → 旧版脚本 exit 0 跳过整轮 → 再也没人清理那些残留，
+#   于是每天静默跳过、自锁死，站点停更 3 天无人察觉（历史上该分支命中过 18 次，
+#   其中 2026-09-04→09-09 连续 6 天）。自愈步骤就是打破这个死循环的。
+#
+#   退出码：0 = 正常；2 = 降级（已自愈或非核心源失败，站点仍在更新）；
+#          1 = 需人工介入（源码冲突 / 推送失败 / 核心缓存未刷新）
 # ═══════════════════════════════════════════════════════════════
+param(
+  [string] $RepoRoot = "",
+  [switch] $SelfTest,        # 跳过抓取脚本，只跑 git 全流程（秒级，供自测）
+  [switch] $SimulateHang,    # 同步后挂起，供看门狗场景测试
+  [string] $TestFailScript = "",   # 指定脚本名视作失败，注入用
+  [string] $TestBogusAdd = ""      # 注入不存在的 add 路径，测"add 失败≠无变化"
+)
+
 $ErrorActionPreference = "Continue"   # 单个脚本失败不中断整体
-$Root = Split-Path -Parent $PSScriptRoot
+
+if (-not $RepoRoot) { $RepoRoot = Split-Path -Parent $PSScriptRoot }
+$Root = $RepoRoot
 Set-Location $Root
 
-$LogFile = Join-Path $Root "scripts\local-daily-update.log"
-function Log([string]$msg) {
-  $line = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  $msg"
-  Add-Content -Path $LogFile -Value $line -Encoding UTF8
-  Write-Host $line
-}
+. (Join-Path $PSScriptRoot "lib\lamasia-common.ps1")
+Set-LamAsiaLogFile (Join-Path $Root "scripts\local-daily-update.log")
+
+# ── 运行标识与心跳 ──
+$runId       = Get-Date -Format 'yyyyMMdd-HHmmss'
+$t0          = Get-Date
+$startedUtc  = (Get-Date).ToUniversalTime().ToString('o')
+$localState  = Join-Path $Root "scripts\local-run-state.json"
+$siteStatus  = Join-Path $Root "assets\data\status.json"
+
+$Healed          = New-Object System.Collections.ArrayList
+$Failures        = New-Object System.Collections.ArrayList
+$FailedScripts   = New-Object System.Collections.ArrayList
+$StaleCaches     = New-Object System.Collections.ArrayList
+$BlockedCodes    = New-Object System.Collections.ArrayList
+$script:SourceConflict = $false
+$script:AddFailed      = $false
+$script:PushOk         = $false
+
+# 心跳必须在最开头写：进程若被杀，看门狗只能靠"有 start 无 finish"来发现
+$hb = Read-JsonFile $localState
+if (-not $hb) { $hb = New-Object psobject }
+$hb | Add-Member -NotePropertyName runId          -NotePropertyValue $runId        -Force
+$hb | Add-Member -NotePropertyName runStartedUtc  -NotePropertyValue $startedUtc   -Force
+$hb | Add-Member -NotePropertyName runFinishedUtc -NotePropertyValue $null        -Force
+Write-JsonFile $localState $hb
+
+# 核心产物：这些没刷新说明主要数据源出问题了
+$CoreCaches = @(
+  'assets/js/dqd-u19-cache.js'
+  'assets/js/dqd-u18-cache.js'
+  'assets/js/dqd-u16-cache.js'
+  'assets/js/dqd-barca-atletic-cache.js'
+  'assets/js/fcb-youth-schedules.js'
+)
+# 非核心：允许失败/不刷新，只降级不报红
+$SoftCaches = @(
+  'assets/js/dqd-videos-cache.js'
+  'assets/js/weekly-album-cache.js'
+  'assets/js/sport-news-cache.js'
+  'assets/js/md-news-cache.js'
+  'assets/js/lamasia-official-news-cache.js'
+  'assets/js/dqd-barca-news-cache.js'
+  'assets/js/dqd-u19-news-cache.js'
+  'assets/js/dqd-u18-news-cache.js'
+  'assets/js/dqd-u16-news-cache.js'
+)
+$CoreScripts = @('update_u19_sofascore.ps1', 'update_u18_sofascore.ps1', 'update_u16_sofascore.ps1',
+                 'update_barca_atletic.ps1', 'update_fcb_youth_schedules.ps1')
+
+$UpdateScripts = @(
+  'update_barca_atletic.ps1',
+  'update_barca_atletic_sf.ps1',
+  'update_barca_news.ps1',
+  'update_u19_sofascore.ps1',
+  'update_u19_news.ps1',
+  'update_u18_news.ps1',
+  'update_u16_news.ps1',
+  'update_u18_sofascore.ps1',
+  'update_u16_sofascore.ps1',
+  'update_fcb_youth_schedules.ps1',
+  'update_fcb_news.ps1',
+  'update_sport_news.ps1',
+  'update_md_news.ps1',
+  'update_youtube.ps1',
+  'update_weekly_album.ps1'
+)
+
+# 固定存在的缓存（这些一直在仓库里，缺了就是仓库出了问题）
+$AddPaths = @(
+  'assets/js/dqd-barca-atletic-cache.js', 'assets/js/dqd-barca-atletic-sf-cache.js',
+  'assets/js/dqd-barca-atletic-sf-details-cache.js', 'assets/js/dqd-barca-news-cache.js',
+  'assets/js/dqd-u19-news-cache.js', 'assets/js/dqd-u18-news-cache.js', 'assets/js/dqd-u16-news-cache.js',
+  'assets/js/lamasia-official-news-cache.js', 'assets/js/sport-news-cache.js', 'assets/js/md-news-cache.js',
+  'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',
+  'assets/js/dqd-u19-details-cache.js', 'assets/js/dqd-u18-details-cache.js', 'assets/js/dqd-u16-details-cache.js',
+  'assets/js/dqd-videos-cache.js', 'assets/js/weekly-album-cache.js', 'assets/js/fcb-youth-schedules.js'
+)
+# 今天才生成的（首次运行或抓取失败时可能不存在，缺席不算错误）
+$GeneratedPaths = @(
+  'assets/data/status.json',
+  'assets/img/players/dqd',
+  'scripts/dqd-videos-yt-shard.js'
+)
 
 # SSH 非交互推送环境（本机 remote 已是 git@github.com）
 $env:GIT_SSH_COMMAND = "ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new"
 
-Log "======== 开始本机每日更新 ========"
+Log-Line "======== 开始本机每日更新 run=$runId ========"
 
-# ── 0. git 同步到远端最新（暂存手动改动，避免被覆盖；rebase 冲突则跳过本次） ──
-git config user.name  "lamasia-local-updater" 2>$null
-git config user.email "lamasia-local-updater@local" 2>$null
-git fetch origin 2>&1 | Out-Null
-# 记录暂存前的 stash 数量，只还原"本次新建"的 stash（避免把历史残留 stash 误 pop 回来导致卡死停更）
-$stashCountBefore = (git stash list 2>$null | Measure-Object).Count
-git stash -u 2>$null | Out-Null    # 暂存未提交的手动改动（如周报）
-$stashMade = (git stash list 2>$null | Measure-Object).Count -gt $stashCountBefore
-git rebase origin/main 2>&1 | Out-Null
-if ($LASTEXITCODE -ne 0) {
-  git rebase --abort 2>$null
-  if ($stashMade) { git stash pop 2>$null }
-  Log "✗ 与远端同步冲突，本次跳过推送（下次再试）"
-  exit 0
+# ═══ 0. 自愈上一轮残留（★ 见文件头说明，绝不能省） ═══
+Clear-StaleGitState -Root $Root -Healed $Healed
+
+# 工作区里带冲突标记的文件（按内容判定，不看索引状态）
+$cr = Get-ConflictReport $Root
+if ($cr.Generated.Count -gt 0) {
+  Log-Line "  ! 发现 $($cr.Generated.Count) 个自动生成文件带冲突标记，以远端为准消解"
+  foreach ($f in $cr.Generated) { Log-Line "      · $f" }
+  [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr.Generated))
+  [void]$Healed.Add('cache_conflict_healed')
+}
+if ($cr.Source.Count -gt 0) {
+  # 手写源码的改动绝不能丢 → 存进 stash 保留，工作区恢复干净好继续干活
+  Log-Line "  ✗ 发现 $($cr.Source.Count) 个手写源码文件带冲突标记，改动将存入 stash 保留"
+  foreach ($f in $cr.Source) { Log-Line "      · $f" }
+  $msg = "lamasia-src-$runId"
+  [void](Invoke-Git $Root (@('stash', 'push', '-u', '-m', $msg, '--') + $cr.Source))
+  $script:SourceConflict = $true
+  [void]$BlockedCodes.Add('source_conflict')
 }
 
-# ── 1. 运行全部更新脚本 ──
-& .\scripts\update_barca_atletic.ps1
-& .\scripts\update_barca_atletic_sf.ps1
-& .\scripts\update_barca_news.ps1
-& .\scripts\update_u19_sofascore.ps1
-& .\scripts\update_u19_news.ps1
-& .\scripts\update_u18_news.ps1
-& .\scripts\update_u16_news.ps1
-& .\scripts\update_u18_sofascore.ps1
-& .\scripts\update_u16_sofascore.ps1
-& .\scripts\update_fcb_youth_schedules.ps1
-& .\scripts\update_fcb_news.ps1
-& .\scripts\update_sport_news.ps1
-& .\scripts\update_md_news.ps1
-& .\scripts\update_youtube.ps1
-& .\scripts\update_weekly_album.ps1
+# 历史残留 stash：只提醒，不阻塞、不自动 apply（自动 apply 是新的自锁来源）
+$stashes = (Invoke-Git $Root @('stash', 'list')).Out
+if ($stashes) {
+  Log-Line "  ! 仓库里有 stash（不会自动还原，需要时手动处理）："
+  foreach ($l in ($stashes -split "`n")) { if ($l.Trim()) { Log-Line "      $l" } }
+}
 
-# ── 2. 提交 + 推送缓存改动 ──
-git add assets/js/dqd-barca-atletic-cache.js assets/js/dqd-barca-atletic-sf-cache.js assets/js/dqd-barca-atletic-sf-details-cache.js assets/js/dqd-barca-news-cache.js assets/js/dqd-u19-news-cache.js assets/js/dqd-u18-news-cache.js assets/js/dqd-u16-news-cache.js assets/js/lamasia-official-news-cache.js assets/js/sport-news-cache.js assets/js/md-news-cache.js assets/js/dqd-u19-cache.js assets/js/dqd-u18-cache.js assets/js/dqd-u16-cache.js assets/js/dqd-u19-details-cache.js assets/js/dqd-u18-details-cache.js assets/js/dqd-u16-details-cache.js assets/js/dqd-videos-cache.js assets/js/weekly-album-cache.js assets/js/fcb-youth-schedules.js assets/img/players/dqd scripts/dqd-videos-yt-shard.js 2>$null
-git diff --cached --quiet
-if ($LASTEXITCODE -eq 0) {
-  Log "  缓存无变化，跳过提交"
-} else {
-  git commit -m "chore: local daily update $(Get-Date -Format 'yyyy-MM-dd HH:mm')" 2>&1 | Out-Null
-  git push origin main 2>&1 | Out-Null
-  if ($LASTEXITCODE -ne 0) {
-    # 远端被移动（如运行器提交）→ 重新拉取再推
-    Start-Sleep -Seconds 5
-    git pull --rebase --autostash origin main 2>&1 | Out-Null
-    git push origin main 2>&1 | Out-Null
+# ═══ 0.5 同步远端 ═══
+[void](Invoke-Git $Root @('config', 'user.name',  'lamasia-local-updater'))
+[void](Invoke-Git $Root @('config', 'user.email', 'lamasia-local-updater@local'))
+
+$fetch = Invoke-Git $Root @('fetch', 'origin', '--prune')
+if (-not (Assert-Git "拉取远端" $fetch $Failures)) {
+  [void]$BlockedCodes.Add('fetch_failed')
+  Log-Line "  ! 拉不到远端（网络或鉴权问题），本次跳过推送"
+}
+
+# 存本轮的改动（如周报），用 message 精确寻址而不是靠计数差
+$runStash = "lamasia-run-$runId"
+[void](Invoke-Git $Root @('stash', 'push', '-u', '-m', $runStash))
+
+# rebase 到远端；冲突按类分级处理。core.editor 强制非交互 —— 默认会开编辑器，
+# 在隐藏窗口的任务里会永久挂起（这本身就是一种"进程挂死"来源）
+$rebaseOk = $false
+for ($i = 1; $i -le 8; $i++) {
+  $rb = Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', 'origin/main')
+  if ($rb.Code -eq 0) { $rebaseOk = $true; break }
+
+  $unmerged = @((Invoke-Git $Root @('diff', '--name-only', '--diff-filter=U')).Out -split "`n" | Where-Object { $_.Trim() })
+  $srcConflict = $false
+  foreach ($f in $unmerged) {
+    if (-not (Test-AutoGeneratedFile $Root $f.Trim())) { $srcConflict = $true; break }
   }
-  if ($LASTEXITCODE -eq 0) {
-    Log "  ✓ 已提交并 SSH 推送上线"
+
+  if ($srcConflict -or $unmerged.Count -eq 0) {
+    Log-Line "  ✗ rebase 与远端冲突（含手写源码改动），中止并保留本地改动"
+    [void](Invoke-Git $Root @('rebase', '--abort'))
+    $script:SourceConflict = $true
+    [void]$BlockedCodes.Add('source_conflict')
+    break
+  }
+
+  Log-Line "  ! rebase 冲突全在自动生成文件上（第 $i 轮），以远端为准消解后继续"
+  [void](Invoke-Git $Root @('checkout', 'origin/main', '--') + $unmerged)
+  [void](Invoke-Git $Root @('add', '--') + $unmerged)
+  [void]$Healed.Add('cache_conflict_healed')
+  $cont = Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', '--continue')
+  if ($cont.Code -ne 0) {
+    Log-Line "  ✗ rebase --continue 失败，中止"
+    [void](Invoke-Git $Root @('rebase', '--abort'))
+    [void]$BlockedCodes.Add('repo_error')
+    break
+  }
+}
+if (-not $rebaseOk -and -not $script:SourceConflict) {
+  Log-Line "  ✗ rebase 未能完成（超过重试上限或无进展）"
+  [void]$BlockedCodes.Add('repo_error')
+}
+
+# 还原本轮 stash，冲突同样分级处理
+$pop = Invoke-Git $Root @('stash', 'pop')
+if ($pop.Code -ne 0) {
+  $cr2 = Get-ConflictReport $Root
+  if ($cr2.Generated.Count -gt 0) {
+    [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr2.Generated))
+    Log-Line "  ! 还原改动时 $($cr2.Generated.Count) 个自动生成文件冲突，已以远端为准消解"
+    [void]$Healed.Add('cache_conflict_healed')
+  }
+  if ($cr2.Source.Count -gt 0) {
+    Log-Line "  ✗ 还原改动时手写源码冲突，改动仍在 stash 中保留"
+    $script:SourceConflict = $true
+    [void]$BlockedCodes.Add('source_conflict')
+  }
+}
+
+if ($SimulateHang) {
+  Log-Line "  (自测：模拟挂起，等待被外部杀死)"
+  Start-Sleep -Seconds 3600
+}
+
+# ═══ 1. 运行缓存更新脚本 ═══
+foreach ($s in $UpdateScripts) {
+  $full = Join-Path $Root "scripts\$s"
+  if (-not (Test-Path $full)) { continue }
+  Log-Line "  → $s"
+  $global:LASTEXITCODE = 0     # 关键：子脚本若不设退出码会残留上一轮的值
+  $err = $null
+  if ($SelfTest) {
+    $code = 0
+  } elseif ($TestFailScript -and $s -eq $TestFailScript) {
+    $code = 1; $err = "(自测注入的失败)"
   } else {
-    Log "  ✗ 推送失败（网络/权限），请手动处理；改动已在本机 commit"
+    try { & $full } catch { $err = $_.Exception.Message }
+    $code = $LASTEXITCODE
+  }
+  if ($err -or $code -ne 0) {
+    $isCore = $CoreScripts -contains $s
+    Log-Line "      ✗ $s 失败（退出码 $code）$err"
+    [void]$FailedScripts.Add($s)
+    [void]$Failures.Add("$s (exit $code)")
   }
 }
 
-# ── 3. 恢复手动改动（只 pop 本次新建的 stash；没新建就不动，防误 pop 残留 stash） ──
-if ($stashMade) {
-  git stash pop 2>&1 | Out-Null
-  if ($LASTEXITCODE -ne 0) { Log "  ! 手动改动还原冲突，改动已留在 stash，需手动 git stash list / git stash pop 处理" }
+# 产物新鲜度审计 —— 补"脚本只 Log 不 exit"的漏洞（如 update_youtube.ps1 的写入失败分支）
+# -SelfTest 会跳过全部抓取脚本，此时审计没有意义，只会产生误导性噪声
+if (-not $SelfTest) {
+  $tolerance = $t0.AddMinutes(-5)
+  foreach ($c in ($CoreCaches + $SoftCaches)) {
+    $u = Get-CacheUpdated $Root $c
+    if ($null -eq $u) { continue }               # 无 updated 字段（details 等），跳过
+    if ($u -lt $tolerance) { [void]$StaleCaches.Add($c) }
+  }
 }
 
-Log "======== 本机每日更新结束 ========"
+$staleCore = @($StaleCaches | Where-Object { $CoreCaches -contains $_ })
+if ($staleCore.Count -gt 0) {
+  Log-Line "  ✗ 核心缓存未刷新：$($staleCore -join ', ')"
+  [void]$BlockedCodes.Add('stale')
+}
+$staleSoft = @($StaleCaches | Where-Object { $SoftCaches -contains $_ })
+if ($staleSoft.Count -gt 0) { Log-Line "  · 非核心缓存未刷新：$($staleSoft -join ', ')" }
+
+$failCore = @($FailedScripts | Where-Object { $CoreScripts -contains $_ })
+if ($failCore.Count -gt 0) { [void]$BlockedCodes.Add('stale') }
+
+# ═══ 2. 提交 + 推送 ═══
+$prevStatus = Read-JsonFile $siteStatus
+$lastSuccess = if ($prevStatus -and $prevStatus.lastSuccessUtc) { $prevStatus.lastSuccessUtc } else { $startedUtc }
+$finishUtc = (Get-Date).ToUniversalTime().ToString('o')
+
+# ── 状态文件与 git add 有个先后依赖，这里按两步走 ──
+#   status.json 必须赶在 add 之前存在，否则 add 会报 pathspec 不匹配；
+#   而 add 的结果（add_failed）又必须写进 status.json。
+#   所以：先写一版 → add → 若 add 失败再补写一版并补一次 add。
+function Publish-CurrentStatus {
+  $b  = ($BlockedCodes.Count -gt 0)
+  $sc = if ($b) { 'blocked' } elseif ($Failures.Count -or $StaleCaches.Count) { 'degraded' } else { 'ok' }
+  # 与收尾处同一套语义：0 正常 / 2 降级 / 1 需人工
+  $ec = if ($b) { 1 } elseif ($Failures.Count -or $StaleCaches.Count -or $Healed.Count) { 2 } else { 0 }
+  Publish-SiteStatus -Root $Root -RunId $runId -StartedUtc $startedUtc -FinishedUtc $finishUtc `
+    -LastSuccessUtc $lastSuccess -Source 'local' `
+    -Status $sc -ExitCode $ec -ConsecutiveFailures 0 -Blocked $b -BlockedSinceUtc $null `
+    -BlockedCodes @($BlockedCodes) -FailedScripts @($FailedScripts) `
+    -StaleCaches @($StaleCaches) -Healed @($Healed)
+  return @{ Blocked = $b; StatusText = $sc; StatusExit = $ec }
+}
+
+$st = Publish-CurrentStatus
+
+# $AddPaths 里的路径必须存在，缺了就是真错误，不能静默忽略；
+# $GeneratedPaths 是「今天才生成」的，允许缺席（否则首次运行/图片未抓到就会误报 add 失败）。
+$addPaths = $AddPaths
+foreach ($p in $GeneratedPaths) {
+  if (Test-Path (Join-Path $Root $p)) { $addPaths += $p }
+}
+if ($TestBogusAdd) { $addPaths += $TestBogusAdd }
+$add = Invoke-Git $Root (@('add', '--') + $addPaths)
+if ($add.Code -ne 0) {
+  # 旧版在这里是 2>$null 吞掉错误 → 暂存区为空 → 误判"缓存无变化"→ 当天什么都不做
+  Log-Line "  ✗ git add 失败（退出码 $($add.Code)）：$($add.Out)"
+  $script:AddFailed = $true
+  [void]$BlockedCodes.Add('add_failed')
+  # 补写状态文件（带上 add_failed）并补一次 add，让它进本次提交
+  $st = Publish-CurrentStatus
+  [void](Invoke-Git $Root @('add', '--', 'assets/data/status.json'))
+}
+
+$blocked    = $st.Blocked
+$statusText = $st.StatusText
+$statusExit = $st.StatusExit
+
+$staged = (Invoke-Git $Root @('diff', '--cached', '--name-only')).Out
+if (-not $staged -and $script:AddFailed) {
+  Log-Line "  ✗ 暂存区为空且 add 已失败 —— 不是'无变化'，本次不提交也不推送"
+} else {
+  # 即使缓存没变也照常提交并推送：status.json 每轮都在更新，
+  # 且推送成功是"站点数据已落地"的判定依据（横幅过期判定靠它），不能跳过
+  if (-not $staged) { Log-Line "  缓存无变化，仅提交状态文件" }
+  $commit = Invoke-Git $Root @('commit', '--allow-empty', '-m', "chore: local daily update $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
+  if (-not (Assert-Git "提交" $commit $Failures)) { [void]$BlockedCodes.Add('repo_error') }
+
+  $pushed = $false
+  for ($i = 1; $i -le 3; $i++) {
+    $p = Invoke-Git $Root @('push', 'origin', 'main')
+    if ($p.Code -eq 0) { $pushed = $true; break }
+    Log-Line "  ! 推送失败（第 $i 次）：$($p.Out)"
+    Start-Sleep -Seconds (5 * $i)
+    [void](Invoke-Git $Root @('fetch', 'origin'))
+    # 不用 --autostash：它会把冲突留成残留，正是把仓库锁死三天的那种状态
+    $rb2 = Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', 'origin/main')
+    if ($rb2.Code -ne 0) {
+      $cr3 = Get-ConflictReport $Root
+      if ($cr3.Generated.Count -gt 0 -and $cr3.Source.Count -eq 0) {
+        [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr3.Generated))
+        [void](Invoke-Git $Root (@('add', '--') + $cr3.Generated))
+        [void](Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', '--continue'))
+      } else {
+        [void](Invoke-Git $Root @('rebase', '--abort'))
+        Log-Line "  ✗ 重推前的 rebase 冲突含手写源码，中止"
+        $script:SourceConflict = $true
+        [void]$BlockedCodes.Add('source_conflict')
+        break
+      }
+    }
+  }
+  if ($pushed) {
+    $script:PushOk = $true
+    $lastSuccess = (Get-Date).ToUniversalTime().ToString('o')
+    Log-Line "  ✓ 已提交并 SSH 推送上线"
+  } else {
+    Log-Line "  ✗ 推送失败（网络/权限），改动已在本机 commit，下次运行会自动重推"
+    [void]$BlockedCodes.Add('push_failed')
+  }
+}
+
+# ═══ 3. 收尾 ═══
+if ($script:PushOk) {
+  # 推送成功才算"站点数据已落地" → 用新时间戳重写状态文件，这是横幅过期判定的输入。
+  # 重写后必须再推一次，否则站点上留着的是推送前那份（lastSuccessUtc 是旧的）。
+  Publish-SiteStatus -Root $Root -RunId $runId -StartedUtc $startedUtc -FinishedUtc $finishUtc `
+    -LastSuccessUtc $lastSuccess -Source 'local' `
+    -Status $statusText `
+    -ExitCode $statusExit -ConsecutiveFailures 0 -Blocked $blocked -BlockedSinceUtc $null `
+    -BlockedCodes @($BlockedCodes) -FailedScripts @($FailedScripts) `
+    -StaleCaches @($StaleCaches) -Healed @($Healed)
+  [void](Invoke-Git $Root @('add', '--', 'assets/data/status.json'))
+  [void](Invoke-Git $Root @('commit', '-m', "chore: status $runId"))
+  $ps = Invoke-Git $Root @('push', 'origin', 'main')
+  if ($ps.Code -ne 0) { Log-Line "  ! 状态文件重推失败（不影响本轮数据推送）：$($ps.Out)" }
+}
+
+$okCount = $UpdateScripts.Count - $FailedScripts.Count
+$elapsed = [int]((Get-Date) - $t0).TotalSeconds
+Log-Line ("======== 汇总 run=$runId 耗时=${elapsed}s 脚本=$okCount/$($UpdateScripts.Count) ok " +
+          "缓存未刷新=$($StaleCaches.Count) 自愈=$($Healed.Count) 推送=$(if($script:PushOk){'OK'}else{'失败'}) " +
+          "状态=$(if($blocked){'需处理'}elseif($Failures.Count -or $StaleCaches.Count){'降级'}else{'OK'}) ========")
+
+$exitCode = 0
+if ($blocked) { $exitCode = 1 }
+elseif ($Failures.Count -gt 0 -or $StaleCaches.Count -gt 0 -or $Healed.Count -gt 0) { $exitCode = 2 }
+
+if ($exitCode -ne 0) {
+  $title = if ($exitCode -eq 1) { "拉玛西亚更新：需人工处理" } else { "拉玛西亚更新：降级完成" }
+  $body  = @()
+  if ($BlockedCodes.Count -gt 0) { $body += "问题：" + (($BlockedCodes | Select-Object -Unique) -join ', ') }
+  if ($FailedScripts.Count -gt 0) { $body += "失败脚本：" + ($FailedScripts -join ', ') }
+  if ($StaleCaches.Count -gt 0)  { $body += "未刷新缓存：" + ($StaleCaches.Count) + " 个" }
+  if ($Healed.Count -gt 0)       { $body += "已自愈：" + (($Healed | Select-Object -Unique) -join ', ') }
+  $body += "详见 scripts/local-daily-update.log"
+  if ($SelfTest) {
+    # 自测会反复跑，别把人的屏幕刷爆；告警链路本身另外单独验证
+    Log-Line "  (自测模式：跳过弹窗)"
+  } else {
+    Send-LamAsiaAlert -Title $title -Body ($body -join "`n") -Key (($BlockedCodes | Select-Object -Unique) -join '+')
+  }
+}
+
+# 记录结束心跳（看门狗靠"有 start 无 finish"发现被杀）
+$hb2 = Read-JsonFile $localState
+if (-not $hb2) { $hb2 = New-Object psobject }
+$hb2 | Add-Member -NotePropertyName runFinishedUtc -NotePropertyValue $finishUtc -Force
+$hb2 | Add-Member -NotePropertyName exitCode       -NotePropertyValue $exitCode -Force
+Write-JsonFile $localState $hb2
+
+exit $exitCode

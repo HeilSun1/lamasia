@@ -1,5 +1,11 @@
 # 运行日志（每日更新脚本产生，不入库）
 scripts/*.log
+# 更新脚本的本地状态（心跳/告警去重，不入库）
+# 必须是本地文件：若被跟踪，git stash -u 会把心跳一起 stash 掉，且让工作区永远"脏"
+scripts/local-run-state.json
+scripts/watchdog-state.json
+# 冲突现场备份（临时保留，确认无碍后删）
+scripts/_conflict-backup-*/
 # B站已抓但未收录记录（本地去重状态，不入库）
 scripts/bili-seen.txt
 # 临时文件
