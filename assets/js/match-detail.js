@@ -146,12 +146,16 @@
   /* ═══ 球员卡片入口（阵容/比赛进程里的巴萨球员名可点击弹卡）═══ */
   var curTier = "";   // 当前比赛的梯队（由 m.cacheRef 推出）
   var curMatch = null; // 当前比赛对象（视频/球员集锦用）
+  var curMatchKey = ""; // 当前比赛键（"sfb:{id}" / "sofascore:{id}"），查本场球员集锦用
   function sfKey(pid) {
     return (curTier && pid) ? "sf:" + curTier + ":" + pid : "";
   }
   // 若该球员在本站卡片索引中（巴萨球员），包装成可点击入口；否则返回纯文本
   function cardA(pid, name) {
-    var key = sfKey(pid);
+    return cardAKey(sfKey(pid), name);
+  }
+  // 同上，但直接给球员键（集锦条目可能挂在 local:/b: 键下，不只是 sf:）
+  function cardAKey(key, name) {
     var txt = esc(name || "");
     if (key && window.PlayerCard && window.PlayerCard.findByKey(key)) {
       return '<span class="pc-link" data-player-key="' + esc(key) + '" title="点击查看球员卡片">' + txt + "</span>";
@@ -367,8 +371,17 @@
   /* 🎥 全场集锦：直接展开显示；发布时间的逻辑校验——
      全场集锦必须在本场"开赛 ±2 天"到"赛后 14 天"内发布，否则判定为别的比赛 / 旧视频 / 直播流，不显示。
      下方 #md-player-videos 是本场球员个人集锦占位（lineups 加载后填充） */
+  /* matches 桶由爬虫按场搜索落库，难免混进球员个人集锦（见下面 classifyMatchBucket 的说明）。
+     分类要扫阵容名单，而阵容是异步到的，所以这里只做窗口过滤 + 暂存原始列表，
+     先整块渲染出来，等阵容到位再由 renderMatchVideos 就地重排。 */
+  var matchBucketStash = { key: "", list: [] };   // 带 key 是防串场：上一场的详情缓存迟到时 curMatchKey 已经变了
+  var matchBucketFull = [];                       // 分类后留在「全场集锦」里的
+
   function matchVideosHtml(key) {
-    if (!window.VideosUI) return "";
+    matchBucketStash = { key: key, list: [] };
+    matchBucketFull = [];
+    var wrappers = '<div id="md-match-videos"></div><div id="md-player-videos"></div>';
+    if (!window.VideosUI) return wrappers;
     var list = window.VideosUI.resolve("matches", key);
     var startMs = curMatch ? parseInt(curMatch.start, 10) * 1000 : 0;
     if (list.length && startMs) {
@@ -379,56 +392,216 @@
         return t >= lo && t <= hi;
       });
     }
-    var html = window.VideosUI.groupHtml(list, "🎥 全场集锦");
-    return html + '<div id="md-player-videos"></div>';
+    matchBucketStash.list = list;
+    return '<div id="md-match-videos">' + window.VideosUI.groupHtml(list, "🎥 全场集锦") + "</div>" +
+      '<div id="md-player-videos"></div>';
   }
 
-  /* 本场球员个人集锦映射：Sofascore 球员 id → { name, vids:[...] }。
-     取巴萨侧阵容球员，查其按场集锦（发布于本场 ±14 天内）。
-     先算好 → 阵容里的 🎬 徽标 与底部"本场球员个人集锦"分区共用。 */
-  var matchPlayerVids = {};
-  function computeMatchPlayerVideos(lineups) {
-    matchPlayerVids = {};
-    if (!curMatch || !window.VideosUI) return;
+  /* 本场球员个人集锦。两种取法：
+     ① 有 matchKey 标注（爬虫重跑后）：直接问 VideosUI.videosForMatch(本场键) —— 精确到比赛，
+        不依赖阵容，也不再拿发布日期猜。阵容只用来补 🎬 徽标和中文名。
+     ② 没有标注（旧缓存过渡期）：退回原逻辑，但窗口从 ±14 天收窄到 ±4 天 ——
+        实测 Aziz 那两条 08-19/08-20 的视频在 ±14 下会挂到 5 场比赛（3 场是错的），±4 下只剩正确的 1 场。
+     结果写进 matchPlayerRecs（渲染用）与 matchPlayerVids（阵容 🎬 徽标按 pid 查用）。 */
+  var matchPlayerRecs = [];        // [{ playerKey, pid, name, vids }]
+  var matchPlayerVids = {};        // pid → rec（仅能对上阵容的）
+
+  function pidOfKey(k) {
+    var m = /^sf:[a-z0-9]+:(\d+)$/.exec(k || "");
+    return m ? m[1] : "";
+  }
+  function normName(s) {
+    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+  }
+
+  /* ═══ matches 桶再分配：全场集锦 / 球员个人集锦 ═══
+     爬虫的「整场集锦」是按场搜索结果，只按队名 token + 日期 + 时长过滤，
+     没有「这条是不是球员个人集锦」的判据，所以实测混进过：
+       sfb:16741931 → 米尔扎·卡托维奇 vs UD Logrones B | … | 个人精彩集锦（B站）
+       sfb:16655584 → Hafiz Gariba 🇬🇭 vs CE Sabadell …（这条无任何标记，只能靠扫阵容名单）
+     这些视频只存在于 matches 桶（players / feed 里没有），所以只能搬过去，不能只过滤掉。
+     分类结果并回 computeMatchPlayerVideos 的 recs，走它原有的合并 / videoId 去重。 */
+
+  /* 用阵容名单扫标题：归一化后取最长的球员名子串，认不出返回 null。
+     ⚠️ k.length >= 6 这道闸必须同时卡在入表和扫描两侧：normName 会把中文等非拉丁名
+     整条抹成 ""，byName 里于是可能留下 "" 键，而 indexOf("") 恒为 0 ——
+     那样每条无标记视频都会被算到同一个人头上。 */
+  function scanLineupName(title, byName) {
+    var t = normName(title), best = null;
+    Object.keys(byName).forEach(function (k) {
+      if (k.length < 6 || t.indexOf(k) === -1) return;
+      if (!best || k.length > best.len) best = { len: k.length, rec: byName[k] };
+    });
+    return best ? best.rec : null;
+  }
+
+  /* 单条分类 → { kind:"full" } | { kind:"player", pid, name }。
+     顺序是设计的一部分：
+       ① 明确的全场标记优先 —— 「全场精彩集锦」是全场，不能被后面的「精彩集锦」抢走；
+       ② 扫阵容名单 —— 也必须在个人分支里先查一次，否则同一个人会被拆成两块：
+          sfb:16655584 的 "Hafiz Gariba 🇬🇭 vs CE Sabadell …" 无标记靠扫名字，
+          同场的 "⚽️ Hafiz Gariba's equalizer …" 命中 equalizer 标记；
+       ③ 有个人标记但认不出是谁 → 仍算个人（渲染成「其他」，不丢）；
+       ④ 兜底成全场 —— 比赛桶里认不出来，宁可按比赛级展示，也不要伪造球员归属。 */
+  function classifyMatchVideo(v, byName) {
+    var t = String((v && v.title) || "");
+    if (window.VideosUI.isFullMatchTitle(t)) return { kind: "full" };
+    var hit = scanLineupName(t, byName);
+    if (hit) return { kind: "player", pid: hit.pid, name: hit.name };
+    if (window.VideosUI.isPlayerClipTitle(t)) return { kind: "player", pid: "", name: "" };
+    return { kind: "full" };
+  }
+
+  /* matches 桶 → { full:[…], recs:[{playerKey,pid,name,videos}] }
+     recs 与 VideosUI.videosForMatch() 同形状，直接 concat 进 recs 即可。 */
+  function classifyMatchBucket(byName) {
+    var full = [], recs = [], other = [], byKey = {}, order = [];
+    matchBucketStash.list.forEach(function (v) {
+      var c = classifyMatchVideo(v, byName);
+      if (c.kind === "full") { full.push(v); return; }
+      if (!c.pid) { other.push(v); return; }
+      // 梯队未知（dqd: 场次等）时 sfKey 返回 ""，用伪键兜底，免得和下面的空键相撞
+      var key = sfKey(c.pid) || ("pid:" + c.pid);
+      if (!byKey[key]) { byKey[key] = { playerKey: key, pid: c.pid, name: c.name, videos: [] }; order.push(key); }
+      byKey[key].videos.push(v);
+    });
+    order.forEach(function (k) { recs.push(byKey[k]); });
+    // 认不出是谁的个人集锦也要能看：合成一条无键记录，排在有归属的球员之后。
+    // playerKey 为空串是诚实的（确实没有键），cardAKey("", name) 会渲染成不可点的纯文本。
+    if (other.length) recs.push({ playerKey: "", pid: "", name: "本场其他个人集锦", videos: other });
+    return { full: full, recs: recs };
+  }
+
+  /* 🎥 全场集锦就地重渲染（分类结果可能晚于 open()，要等阵容） */
+  function renderMatchVideos(body) {
+    var wrap = body && body.querySelector("#md-match-videos");
+    if (!wrap || !window.VideosUI) return;
+    wrap.innerHTML = window.VideosUI.groupHtml(matchBucketFull, "🎥 全场集锦");
+  }
+  /* 阵容球员列表。能按 TIER_TEAM 认出巴萨侧就只取巴萨侧；认不出（u18/u16 的 TIER_TEAM 为空、
+     或阵容未缓存）就把两队都收进来 —— 反正下面只按球员键/名字去对，不会错认到对手身上。 */
+  function lineupPlayers(lineups) {
     var teamId = TIER_TEAM[curTier] || "";
     var side = null;
     if (teamId && lineups) {
       if (String(curMatch.homeId) === teamId) side = lineups.home;
       else if (String(curMatch.awayId) === teamId) side = lineups.away;
     }
-    var list = (side && side.players) || null;
-    if (!list) return;
-    var startMs = parseInt(curMatch.start, 10) * 1000;
-    if (!startMs) return;
-    var lo = startMs - 14 * 864e5, hi = startMs + 14 * 864e5;
+    if (!side || !Array.isArray(side.players)) {
+      // 梯队映射缺失或阵容未缓存：主客两队都收，靠球员键/名字去对
+      var all = [];
+      [lineups && lineups.home, lineups && lineups.away].forEach(function (s) {
+        if (s && Array.isArray(s.players)) all = all.concat(s.players);
+      });
+      return all;
+    }
+    return side.players;
+  }
+
+  function computeMatchPlayerVideos(lineups) {
+    matchPlayerRecs = [];
+    matchPlayerVids = {};
+    matchBucketFull = [];
+    if (!window.VideosUI || !curMatchKey) return;
+    var list = lineupPlayers(lineups) || [];
+    var byName = {};
     list.forEach(function (x) {
       var p = (x && x.player) || {};
-      var pid = p.id;
-      var pkey = pid ? sfKey(pid) : "";
-      if (!pkey) return;
-      var vids = window.VideosUI.resolve("players", pkey).filter(function (v) {
-        var t = Date.parse(v.published + "T00:00:00Z");
-        return t >= lo && t <= hi;
+      var nk = normName(p.name);
+      // 短名 / 空名（中文等非拉丁名归一化后是 ""）不进表，见 scanLineupName 的说明
+      if (p.id && nk.length >= 6) byName[nk] = { pid: String(p.id), name: p.name || "" };
+    });
+
+    var recs;
+    if (window.VideosUI.hasMatchRefs()) {
+      recs = window.VideosUI.videosForMatch(curMatchKey);
+    } else {
+      // ── 过渡期（旧缓存）：按 ±4 天窗从 players 段取，与 matchKey 规则无关 ──
+      //    没有 start 的场次（dqd: 键）跳过这一段，但不能 return —— 下面的 matches 桶再分配还要跑
+      recs = [];
+      var startMs = parseInt(curMatch.start, 10) * 1000;
+      if (startMs) {
+        var lo = startMs - 4 * 864e5, hi = startMs + 4 * 864e5;
+        list.forEach(function (x) {
+          var p = (x && x.player) || {};
+          var pkey = p.id ? sfKey(p.id) : "";
+          if (!pkey) return;
+          var vids = window.VideosUI.resolve("players", pkey).filter(function (v) {
+            var t = Date.parse(v.published + "T00:00:00Z");
+            return t >= lo && t <= hi;
+          });
+          if (vids.length) recs.push({ playerKey: pkey, videos: vids });
+        });
+      }
+    }
+
+    // 比赛桶再分配：全场类的留在 matchBucketFull，个人集锦并进 recs 走同一套合并 / 去重。
+    // 暂存的键必须还是当前这一场，否则上一场的详情缓存迟到会把这场的分区结果冲掉。
+    if (matchBucketStash.key === curMatchKey) {
+      var cls = classifyMatchBucket(byName);
+      matchBucketFull = cls.full;
+      recs = recs.concat(cls.recs);
+    }
+
+    var merged = {}, order = [];
+    recs.forEach(function (r) {
+      // r.pid 是比赛桶再分配带出来的（伪键 pid:123 没有 pidOfKey 可解）
+      var pid = pidOfKey(r.playerKey) || String(r.pid || "");
+      var pc = (window.PlayerCard && window.PlayerCard.findByKey(r.playerKey)) || null;
+      // local:/b: 键没有 pid，但可能和阵容里的人同名 → 回连上就能点亮 🎬 徽标
+      if (!pid && pc && pc.nameEn && byName[normName(pc.nameEn)]) pid = byName[normName(pc.nameEn)].pid;
+      var name = "";
+      if (pid) {
+        list.some(function (x) {
+          var p = (x && x.player) || {};
+          if (String(p.id) === pid) { name = p.name || ""; return true; }
+          return false;
+        });
+      }
+      // r.name 给「本场其他个人集锦」这类无键记录用
+      name = (pc && (pc.nameZh || pc.nameEn)) || name || r.name || r.playerKey;
+      // 同一个人常同时挂在 sf:b:2076869 和 local:juvenil-a:hafizgariba 两个键下 ——
+      // 按规范化英文名并成一条（两个键的 nameEn 同源，不依赖阵容，阵容为空也能并）。
+      var id = (pc && pc.nameEn) ? "n" + normName(pc.nameEn) : (pid ? "p" + pid : "k" + r.playerKey);
+      if (!merged[id]) {
+        merged[id] = { playerKey: r.playerKey, pid: pid || "", name: name, vids: [] };
+        order.push(id);
+      } else {
+        if (!merged[id].pid && pid) merged[id].pid = pid;   // 补 pid（🎬 徽标要用）
+        // 球员键保留 sf: 那条（球员卡片索引里更全）
+        if (/^sf:/.test(r.playerKey) && !/^sf:/.test(merged[id].playerKey)) merged[id].playerKey = r.playerKey;
+      }
+      merged[id].vids = merged[id].vids.concat(r.videos);
+    });
+    var seenVid = {};
+    order.forEach(function (id) {
+      var rec = merged[id];
+      rec.vids = rec.vids.filter(function (v) {
+        if (!v.videoId || seenVid[v.videoId]) return false;
+        // 反向闸：全场 / 回放类不该出现在个人集锦里（爬虫侧 IsPlayerIrrelevant 想拦的就是这类，
+        // 实测现存 players / feed 共 67 条里 0 命中，这里只是防回归）
+        if (window.VideosUI.isFullMatchTitle(v.title)) return false;
+        seenVid[v.videoId] = true;
+        return true;
       });
-      if (!vids.length) return;
-      matchPlayerVids[pid] = { name: p.name || "", vids: vids };
+      if (!rec.vids.length) return;
+      matchPlayerRecs.push(rec);
+      if (rec.pid) matchPlayerVids[rec.pid] = rec;
     });
   }
 
-  /* ⭐ 本场球员个人集锦：复用 computeMatchPlayerVideos 算好的映射渲染分区（默认折叠为一条） */
+  /* ⭐ 本场球员个人集锦：按 matchPlayerRecs 渲染（阵容为空也照常出，这是关键修复点） */
   function fillMatchPlayerVideos(lineups, body) {
     var wrap = body.querySelector("#md-player-videos");
     if (!wrap) return;
-    var html = "", any = false;
-    Object.keys(matchPlayerVids).forEach(function (pid) {
-      var rec = matchPlayerVids[pid];
-      any = true;
+    var html = "";
+    matchPlayerRecs.forEach(function (rec) {
       html += '<div class="md-pv-player">' +
-        '<div class="md-pv-name">' + cardA(pid, rec.name) + "</div>" +
+        '<div class="md-pv-name">' + cardAKey(rec.playerKey, rec.name || rec.playerKey) + "</div>" +
         '<div class="vid-grid">' + rec.vids.map(window.VideosUI.videoCardHtml).join("") + "</div>" +
       "</div>";
     });
-    wrap.innerHTML = any
+    wrap.innerHTML = matchPlayerRecs.length
       ? '<section class="md-sec"><details class="md-vids-fold">' +
           "<summary>⭐ 本场球员个人集锦</summary>" +
           '<div class="md-vids-fold-body">' + html + "</div>" +
@@ -442,6 +615,7 @@
     if (!load) return;
     var l = res[0], i = res[1], s = res[2], h = res[3];
     computeMatchPlayerVideos(l);   // 先算个人集锦映射（阵容里的 🎬 徽标需要它）
+    renderMatchVideos(body);       // 🎥 全场集锦按分类结果重排（open 时只能按关键词粗分）
     var html = "", any = false;
     var lu = l ? lineupsHtml(l) : "";
     if (lu) { html += lu; any = true; }
@@ -532,6 +706,7 @@
     if (!m) return;
     curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16", DQD_BARCA_ATLETIC_SF_CACHE: "b" }[m.cacheRef] || "";
     curMatch = m;
+    curMatchKey = key;   // 本场球员集锦按此键取（与视频缓存的 matches/feed 键同一套）
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
     body.innerHTML = headerHtml(m) +
@@ -540,6 +715,12 @@
       footerHtml(m);
     modal.classList.add("open");
     modal.scrollTop = 0;   // 弹窗复用：每次打开新比赛都回到最上方，不残留上次关闭时的滚动位置
+    // 阵容还没到，先按标题关键词粗分一次：个人集锦立刻从 🎥 挪进 ⭐（扫阵容名单那一步要等详情）。
+    // 也是 dqd: / fcb: 这类永远走不到 applyDetail 的场次的唯一分区机会。
+    // 幂等：computeMatchPlayerVideos 自己重置三个模块变量，fillMatchPlayerVideos 整体换 innerHTML。
+    computeMatchPlayerVideos(null);
+    renderMatchVideos(body);
+    fillMatchPlayerVideos(null, body);
     if (m.source === "sofascore") {
       loadSofascoreDetail(m, body);
     } else if (m.source === "fcb") {

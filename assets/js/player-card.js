@@ -386,7 +386,13 @@
     u18: { cache: "DQD_U18_CACHE", details: "DQD_U18_DETAILS_CACHE", file: "dqd-u18-details-cache.js" },
     u16: { cache: "DQD_U16_CACHE", details: "DQD_U16_DETAILS_CACHE", file: "dqd-u16-details-cache.js" }
   };
-  var SF_CACHES = { b: window.DQD_BARCA_ATLETIC_SF_CACHE, u19: window.DQD_U19_CACHE, u18: window.DQD_U18_CACHE, u16: window.DQD_U16_CACHE };
+  /* ⚠️ 不要在模块求值时快照 window.DQD_*_CACHE：matches.html 与各 teams/*.html 里
+     dqd-*-cache.js 的 <script> 排在 player-card.js 之后，快照会全是 undefined，
+     playerTiers() 的跨梯队名单探测于是静默失效。一律用这里 live 读。 */
+  function sfCache(tier) {
+    var cfg = TIER_CFG[tier];
+    return cfg ? window[cfg.cache] : null;
+  }
 
   /* 比赛时间 → "MM-DD"（北京时间，与赛程显示一致） */
   function fmtMd(ts) {
@@ -404,9 +410,9 @@
      决定查哪几个梯队的数据。 */
   function playerTiers(curTier, id) {
     var tiers = [curTier];
-    Object.keys(SF_CACHES).forEach(function (t) {
+    Object.keys(TIER_CFG).forEach(function (t) {
       if (t === curTier) return;
-      var c = SF_CACHES[t];
+      var c = sfCache(t);   // live 读，不用求值期快照（见上面 sfCache 的说明）
       var inRoster = !!(c && c.players && c.players.some(function (p) { return String(p.id) === String(id); }));
       var hasVids = !!(window.VideosUI && window.VideosUI.resolve("players", "sf:" + t + ":" + id).length);
       if (inRoster || hasVids) tiers.push(t);
@@ -435,8 +441,28 @@
     var sched = window[cfg.cache];
     var matches = (sched && Array.isArray(sched.matches)) ? sched.matches : [];
     var all = window.VideosUI.resolve("players", "sf:" + tier + ":" + id);
+    var B_KEY = tier === "b" ? "sfb:" : "sofascore:";
 
-    // ① 该球员参加过的比赛（详情缓存阵容里出现过）
+    // ① 视频带爬虫标注的 matchKey → 直接认键归组（不再靠发布日期猜、也不依赖阵容）
+    var unref = [];
+    if (window.VideosUI && window.VideosUI.hasMatchRefs && window.VideosUI.hasMatchRefs()) {
+      var byKey = {}, order = [];
+      all.forEach(function (v) {
+        if (!v.matchKey) { unref.push(v); return; }
+        if (!byKey[v.matchKey]) { byKey[v.matchKey] = []; order.push(v.matchKey); }
+        byKey[v.matchKey].push(v);
+      });
+      var byMatchId = {};
+      matches.forEach(function (mt) { if (mt && mt.id != null) byMatchId[String(mt.id)] = mt; });
+      var out = order.map(function (mk) {
+        var mt = byMatchId[mk.replace(B_KEY, "")] || null;
+        // 该场不在本梯队缓存里（如转挂/缓存过期）→ 无法生成中文标签，退回只显示键
+        return { start: mt ? mt.start : "", label: mt ? matchLabel(mt) : mk, list: byKey[mk] };
+      });
+      return { groups: out, unmatched: unref };
+    }
+
+    // ① 该球员参加过的比赛（详情缓存阵容里出现过）—— 旧缓存过渡路径
     var played = [];
     matches.forEach(function (mt) {
       if (!mt || mt.id == null) return;
@@ -531,7 +557,9 @@
     }
     var id = m[2];
     var tiers = playerTiers(m[1], id);
-    Promise.all(tiers.map(loadTierDetails)).then(function (dets) {
+    // 有 matchKey 标注时 tierMatchGroups 只认键，用不到阵容详情 → 不下载那几个几百 KB 的详情缓存
+    var needDetails = !(window.VideosUI && window.VideosUI.hasMatchRefs && window.VideosUI.hasMatchRefs());
+    Promise.all(tiers.map(needDetails ? loadTierDetails : function () { return null; })).then(function (dets) {
       var groups = [], unmatched = [];
       tiers.forEach(function (t, i) {
         var res = tierMatchGroups(t, id, dets[i]);

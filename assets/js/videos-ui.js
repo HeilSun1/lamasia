@@ -46,7 +46,8 @@
         published: a.published || "",
         durationSec: a.durationSec || "",
         site: (base && base.site) || a.site || "yt",   // "yt" / "bili"
-        pic: a.pic || ""
+        pic: a.pic || "",
+        matchKey: (base && base.matchKey) || a.matchKey || ""   // 属于哪场比赛（爬虫标注），空 = 非赛程
       });
     }
     (Array.isArray(cur[key]) ? cur[key] : []).forEach(function (v) { if (v && v.videoId) push(v.videoId, v); });
@@ -77,11 +78,98 @@
           published: v.published || "",
           durationSec: v.durationSec || "",
           site: v.site || "yt",
-          pic: v.pic || ""
+          pic: v.pic || "",
+          matchKey: v.matchKey || g.matchKey || ""   // 分组级 matchKey 是爬虫算的，视频级优先
         });
       });
-      return { label: g.label || "", opp: g.opp || "", date: g.date || "", videos: list };
+      return { label: g.label || "", opp: g.opp || "", date: g.date || "", matchKey: g.matchKey || "", videos: list };
     }).filter(function (g) { return g.videos.length; });
+  }
+
+  /* ═══ 比赛 ↔ 球员集锦：按爬虫标注的 matchKey 关联 ═══
+     数据侧（update_youtube.ps1）在产出时就把「这条集锦属于哪场比赛」定下来了：
+       · players 段    → 每条视频带 matchKey
+       · feed.players 段 → 每个分组带 matchKey
+     前端只认这个键，不再拿发布日期去猜（旧做法 ±14 天窗会把同一条视频挂到好几场比赛上）。 */
+
+  /* 拉黑表按球员键组织，但同一条视频常挂多个球员键（sf:b:xxx 与 local:juvenil-a:xxx）。
+     只要它在**任一**键下被拉黑就不显示，否则人工否决会失效。 */
+  function isBlockedForAny(playerKeys, videoId) {
+    var blocked = DATA.blocked || {};
+    for (var i = 0; i < playerKeys.length; i++) {
+      var ids = blocked[playerKeys[i]];
+      if (Array.isArray(ids) && ids.indexOf(videoId) !== -1) return true;
+    }
+    return false;
+  }
+  /* 同一条视频挂在多个球员键下时归谁：Sofascore 键优先 —— 比赛详情弹窗的阵容是按
+     sf:{tier}:{pid} 查的，归给 sf: 键才能点亮 🎬 徽标。 */
+  function ownerRank(k) {
+    if (/^sf:/.test(k)) return 0;
+    if (/^b:/.test(k)) return 1;
+    if (/^local:/.test(k)) return 2;
+    return 3;
+  }
+  function pickVideo(v) {
+    return {
+      videoId: v.videoId, title: v.title || "", channel: v.channel || "",
+      published: v.published || "", durationSec: v.durationSec || "",
+      site: v.site || "yt", pic: v.pic || "", matchKey: v.matchKey || ""
+    };
+  }
+
+  var matchIndex = null;   // matchKey → { videoId → { video, keys:{球员键:true} } }
+  function buildMatchIndex() {
+    var idx = {};
+    function add(mk, pk, v) {
+      if (!mk || !v || !v.videoId) return;
+      var m = idx[mk] || (idx[mk] = {});
+      var e = m[v.videoId];
+      if (!e) { e = m[v.videoId] = { video: pickVideo(v), keys: {} }; }
+      e.keys[pk] = true;
+    }
+    var feed = (VIDEOS.feed && VIDEOS.feed.players) || {};
+    Object.keys(feed).forEach(function (pk) {
+      (feed[pk] || []).forEach(function (g) {
+        (g.videos || []).forEach(function (v) { add(g.matchKey, pk, v); });
+      });
+    });
+    Object.keys(VIDEOS.players || {}).forEach(function (pk) {
+      (VIDEOS.players[pk] || []).forEach(function (v) { add(v.matchKey, pk, v); });
+    });
+    return idx;
+  }
+
+  /* 该场比赛的球员个人集锦 → [{playerKey, videos:[…]}]，按视频条数倒序。
+     球员中文名由调用方用 PlayerCard.findByKey(playerKey) 取（这里不依赖 player-card.js）。 */
+  function videosForMatch(matchKey) {
+    if (!matchKey) return [];
+    if (!matchIndex) matchIndex = buildMatchIndex();
+    var byVid = matchIndex[matchKey];
+    if (!byVid) return [];
+    var owner = {};
+    Object.keys(byVid).forEach(function (vid) {
+      var e = byVid[vid];
+      var ks = Object.keys(e.keys).sort(function (a, b) { return ownerRank(a) - ownerRank(b); });
+      if (isBlockedForAny(ks, vid)) return;
+      (owner[ks[0]] = owner[ks[0]] || []).push(e.video);
+    });
+    return Object.keys(owner).map(function (k) {
+      return { playerKey: k, videos: owner[k] };
+    }).sort(function (a, b) { return b.videos.length - a.videos.length; });
+  }
+
+  /* 缓存里有没有 matchKey 标注（爬虫重跑前没有）→ 调用方据此决定是否走过渡期的旧逻辑 */
+  var matchRefsFlag = null;
+  function hasMatchRefs() {
+    if (matchRefsFlag !== null) return matchRefsFlag;
+    var feed = (VIDEOS.feed && VIDEOS.feed.players) || {};
+    matchRefsFlag = Object.keys(feed).some(function (pk) {
+      return (feed[pk] || []).some(function (g) { return !!g.matchKey; });
+    }) || Object.keys(VIDEOS.players || {}).some(function (pk) {
+      return (VIDEOS.players[pk] || []).some(function (v) { return !!v.matchKey; });
+    });
+    return matchRefsFlag;
   }
 
   /* 秒 → "m:ss" / "h:mm:ss" */
@@ -246,6 +334,21 @@
     "</div>";
   }
 
+  /* ═══ 标题分类：整场比赛 vs 球员个人 ═══
+     match-detail.js（比赛弹窗的分区）与 highlights.js（集锦页的兜底过滤）共用这一份，
+     避免三处各写一套正则各自漂移。纯函数，不读任何缓存，可随处调用。
+
+     两条实测反例决定了正则的边界，改之前先看一眼：
+       · 别把裸 highlights 当成全场标记 —— players 桶里有
+         "Barca Atletic 1-0 CE Europa | Highlights | Ebrima Shines | Aziz Issah" 这条球员集锦。
+       · 别把 live match 当成全场标记 —— 直播流目前按维护者的选择留在全场区。
+       · 「全触球集锦」是球员集锦（如"加里巴VS萨瓦德尔 加泰杯决赛全触球集锦"），
+         所以只认「全场」，不要放宽成 /全.集锦/ 之类。 */
+  var RX_FULL_MATCH = /全场|回放|完整|比赛录像|full ?match|full ?game|live ?stream|watch ?live|res[uú]m|all ?goals|高光/i;
+  var RX_PLAYER_CLIP = /个人|精彩集锦|个人集锦|skills|reel|debut|首秀|equalizer/i;
+  function isFullMatchTitle(t) { return RX_FULL_MATCH.test(String(t || "")); }
+  function isPlayerClipTitle(t) { return RX_PLAYER_CLIP.test(String(t || "")); }
+
   /* ═══ 本站内嵌播放器灯箱（YouTube / B站） ═══ */
   var playerEl = null;
   function embedSrc(videoId, site) {
@@ -310,8 +413,12 @@
   window.VideosUI = {
     resolve: resolve,
     feedFor: feedFor,
+    videosForMatch: videosForMatch,
+    hasMatchRefs: hasMatchRefs,
     videoCardHtml: videoCardHtml,
     groupHtml: groupHtml,
+    isFullMatchTitle: isFullMatchTitle,
+    isPlayerClipTitle: isPlayerClipTitle,
     openPlayer: openPlayer,
     closePlayer: closePlayer,
     markAllRead: vMarkAllRead,

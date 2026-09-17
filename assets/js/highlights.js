@@ -63,42 +63,52 @@
 
   // 已完赛列表（Sofascore 缓存），供赛程集锦按最近比赛分组
   var SF_CFG = { b: "DQD_BARCA_ATLETIC_SF_CACHE", u19: "DQD_U19_CACHE", u18: "DQD_U18_CACHE", u16: "DQD_U16_CACHE" };
+  var B_KEYS = { b: "sfb:", u19: "sofascore:", u18: "sofascore:", u16: "sofascore:" };
   var ended = [];
+  var endedByKey = {};   // 比赛键 → 该场分组信息（视频带 matchKey 时直接认键，不再按日期猜）
   Object.keys(SF_CFG).forEach(function (tier) {
     var c = window[SF_CFG[tier]];
     (c && Array.isArray(c.matches) ? c.matches : []).forEach(function (mt) {
       if (mt.status === "Ended" && mt.start) {
-        ended.push({ tier: tier, start: parseInt(mt.start, 10) * 1000, label: matchLabel(mt), dateStr: matchDateStr(mt.start) });
+        var em = { tier: tier, start: parseInt(mt.start, 10) * 1000, label: matchLabel(mt), dateStr: matchDateStr(mt.start) };
+        ended.push(em);
+        if (mt.id != null) endedByKey[B_KEYS[tier] + mt.id] = em;
       }
     });
   });
 
-  // 赛程相关个人视频 → 按 ±14 天内最近的已完赛分组
+  // 赛程相关个人视频 → 分组。
+  // 有 matchKey（爬虫标注）就认键；没有才退回「±14 天内最近的已完赛」的旧猜法。
   function groupSched(videos, tier) {
     var groups = [], unmatched = [];
     videos.forEach(function (v) {
-      var vd = Date.parse(v.published + "T00:00:00Z");
-      if (!vd) { unmatched.push(v); return; }
-      var best = null, bestDiff = Infinity;
-      ended.forEach(function (em) {
-        if (em.tier !== tier) return;
-        var diff = Math.abs(em.start - vd);
-        if (diff <= 14 * 864e5 && diff < bestDiff) { bestDiff = diff; best = em; }
-      });
-      if (best) {
+      var em = v.matchKey ? endedByKey[v.matchKey] : null;
+      if (!em) {
+        if (v.matchKey) { unmatched.push(v); return; }   // 标注了但该场不在缓存 → 不瞎猜
+        var vd = Date.parse(v.published + "T00:00:00Z");
+        if (!vd) { unmatched.push(v); return; }
+        var best = null, bestDiff = Infinity;
+        ended.forEach(function (e2) {
+          if (e2.tier !== tier) return;
+          var diff = Math.abs(e2.start - vd);
+          if (diff <= 14 * 864e5 && diff < bestDiff) { bestDiff = diff; best = e2; }
+        });
+        em = best;
+      }
+      if (em) {
         var hit = null;
-        for (var i = 0; i < groups.length; i++) if (groups[i].label === best.label) { hit = groups[i]; break; }
+        for (var i = 0; i < groups.length; i++) if (groups[i].label === em.label) { hit = groups[i]; break; }
         if (hit) hit.videos.push(v);
-        else groups.push({ date: best.dateStr, label: best.label, match: true, videos: [v] });
+        else groups.push({ date: em.dateStr, label: em.label, match: true, videos: [v] });
       } else unmatched.push(v);
     });
     return { groups: groups, unmatched: unmatched };
   }
 
-  // 全场/直播类不进个人集锦（数据侧已过滤，这里兜底）
+  // 全场/直播类不进个人集锦（数据侧已过滤，这里兜底）。
+  // 判据与比赛弹窗的分区共用一份，见 videos-ui.js 的 isFullMatchTitle。
   function isFullMatch(t) {
-    t = String(t || "").toLowerCase();
-    return /全场|回放|完整|比赛录像|full ?match|full ?game|live ?stream|watch ?live/.test(t);
+    return window.VideosUI.isFullMatchTitle(t);
   }
   function cleanVideos(list) {
     return (list || []).filter(function (v) { return !isFullMatch(v.title); });
