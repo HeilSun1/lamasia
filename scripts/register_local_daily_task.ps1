@@ -26,7 +26,8 @@ $triggers  = @(
   (New-ScheduledTaskTrigger -Daily -At 15:00),
   (New-ScheduledTaskTrigger -Daily -At 21:00)
 )
-$settings  = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2)
+$settings  = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2) `
+               -MultipleInstances IgnoreNew   # 防看门狗触发的补跑与定时轮次重叠
 
 try {
   Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $triggers -Settings $settings `

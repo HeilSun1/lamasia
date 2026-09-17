@@ -1,2 +1,5 @@
 # 保护 .ps1 的 UTF-8 BOM 与换行，禁止 git 做行尾转换（否则 PowerShell 可能解析失败）
 *.ps1 -text
+
+# 站点状态文件：保证字节确定、diff 只显示一行变化（core.autocrlf=true 会掺 CRLF 噪声）
+assets/data/status.json -text eol=lf

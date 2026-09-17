@@ -6,7 +6,7 @@
    · 静态资源：stale-while-revalidate（先用缓存秒开，后台拉新）
    · 更新：改下方 CACHE 版本号 → 下次打开自动换新缓存
    ============================================================= */
-var CACHE = 'lamasia-v14';
+var CACHE = 'lamasia-v15';   // PRECACHE 变了就必须升版本，否则旧客户端拿不到新文件
 var PRECACHE = [
     "404.html",
     "assets/css/style.css",
@@ -54,6 +54,8 @@ var PRECACHE = [
     "assets/js/roster.js",
     "assets/js/search.js",
     "assets/js/sport-news-cache.js",
+    "assets/js/status-banner.js",
+    "assets/data/status.json",
     "assets/js/team-tabs.js",
     "assets/js/videos-data.js",
     "assets/js/videos-ui.js",

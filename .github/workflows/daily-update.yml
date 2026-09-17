@@ -20,6 +20,11 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  # 防运行器自身重叠（本机与运行器的互斥仍靠错开时间 + 主脚本的分级 rebase）
+  group: daily-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: windows-latest          # Windows 运行器自带 Edge（Sofascore 反爬需要真浏览器指纹）
@@ -148,5 +153,46 @@ jobs:
             Write-Host "No cache changes, skip commit"
           } else {
             git commit -m "chore: daily update dongqiudi/sofascore caches"
+            git push origin main
+          }
+
+      - name: Publish runner status
+        shell: powershell
+        run: |
+          # NOTE: this whole step must stay pure ASCII. powershell.exe reads it
+          # without a BOM, and non-ASCII bytes break parsing (PS 5.1).
+          #
+          # Why: when the local machine is off, this runner still refreshes the
+          # caches. The site banner takes the NEWEST of (published status, cache
+          # timestamps), so a fresh runner keeps the site from showing a false
+          # "data is stale" warning.
+          #
+          # IMPORTANT: only update this runner's own fields. Do NOT overwrite
+          # blocked / blockedCodes -- those carry a pending source-conflict
+          # warning raised by the local machine, and wiping them would hide it.
+          $p = "assets/data/status.json"
+          if (Test-Path $p) { $s = Get-Content $p -Raw | ConvertFrom-Json } else { $s = New-Object psobject }
+          $now = (Get-Date).ToUniversalTime().ToString("o")
+          $s | Add-Member -NotePropertyName lastSuccessUtc -NotePropertyValue $now -Force
+          $s | Add-Member -NotePropertyName lastRunSource  -NotePropertyValue "runner" -Force
+          $s | Add-Member -NotePropertyName runFinishedUtc -NotePropertyValue $now -Force
+          $s | Add-Member -NotePropertyName schema         -NotePropertyValue 1 -Force
+          if (-not ($s.PSObject.Properties.Name -contains "blocked")) {
+            $s | Add-Member -NotePropertyName blocked          -NotePropertyValue $false -Force
+            $s | Add-Member -NotePropertyName blockedCodes     -NotePropertyValue @()    -Force
+            $s | Add-Member -NotePropertyName staleHours       -NotePropertyValue 36     -Force
+            $s | Add-Member -NotePropertyName hardStaleHours   -NotePropertyValue 72     -Force
+          }
+          $json = ($s | ConvertTo-Json -Depth 6) -replace "`r`n", "`n"
+          $enc = New-Object System.Text.UTF8Encoding($false)
+          [System.IO.File]::WriteAllText($p, $json + "`n", $enc)
+          git add assets/data/status.json
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "Status unchanged, nothing to publish"
+          } else {
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: runner status heartbeat"
             git push origin main
           }

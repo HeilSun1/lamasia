@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "runId": "seed",
+  "runStartedUtc": "2026-09-17T04:15:50Z",
+  "runFinishedUtc": "2026-09-17T04:15:50Z",
+  "lastSuccessUtc": "2026-09-17T04:15:50Z",
+  "lastRunSource": "seed",
+  "lastRunStatus": "ok",
+  "exitCode": 0,
+  "consecutiveFailures": 0,
+  "blocked": false,
+  "blockedSinceUtc": null,
+  "blockedCodes": [],
+  "failedScripts": [],
+  "staleCaches": [],
+  "healed": [],
+  "staleHours": 36,
+  "hardStaleHours": 72
+}

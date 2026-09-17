@@ -294,7 +294,8 @@ function Publish-SiteStatus {
     exitCode            = $ExitCode
     consecutiveFailures = $ConsecutiveFailures
     blocked             = $Blocked
-    blockedSinceUtc     = $BlockedSinceUtc
+    # ConvertTo-Json 会把 $null 写成空串，这里统一成真正的 null，免得前端拿到 "" 还要额外判断
+    blockedSinceUtc     = $(if ($BlockedSinceUtc) { $BlockedSinceUtc } else { $null })
     blockedCodes        = @($BlockedCodes)
     failedScripts       = @($FailedScripts)
     staleCaches         = @($StaleCaches)

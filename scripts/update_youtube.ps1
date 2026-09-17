@@ -29,6 +29,7 @@
 param([switch]$YouTubeOnly)
 
 $ErrorActionPreference = "Stop"
+$script:WriteFailed = $false   # 写缓存失败时置位，末尾转成非零退出码（供主脚本判别）
 
 $Root       = Split-Path -Parent $PSScriptRoot
 $LogFile    = Join-Path $Root "scripts\youtube-update.log"
@@ -1722,11 +1723,19 @@ if ($coreJson -eq $oldCoreJson) {
     Log "  ✓ 已写入：$($core.matches.Count) 场比赛、$($core.players.Count) 名球员赛程集锦、$feedCount 条非赛程集锦（本次新增搜索 $($newMatchList.Count) 场）"
   } catch {
     Log "  ✗ 写入缓存失败：$($_.Exception.Message)"
+    $script:WriteFailed = $true
   }
 }
 
 # 分片消费：已进主缓存的条目不再保留，分片消费后即空。写入与「内容无变化跳过写入」
 # 两种情况都要执行，否则内容无变化的那一轮分片会白留一天。
 if (@($shard.items).Count) { Write-Shard -Mode Consume }
+
+# 写缓存失败以前只写日志就结束，退出码仍是 0 ——
+# 主脚本的"产物新鲜度审计"是第二道防线，但这里给出退出码是第一道
+if ($script:WriteFailed) {
+  Log "YouTube 集锦更新结束（有写入失败 ✗）"
+  exit 1
+}
 
 Log "YouTube 集锦更新完成 ✔"
