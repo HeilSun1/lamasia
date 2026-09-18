@@ -1,20 +1,27 @@
 {
-    "schema": 1,
-    "runId": "20260918-192250",
-    "runStartedUtc": "2026-09-18T11:22:50.6358511Z",
-    "runFinishedUtc": "2026-09-18T11:29:36.7106452Z",
-    "lastSuccessUtc": "2026-09-18T12:40:51.331Z",
-    "lastRunSource": "local",
-    "lastRunStatus": "ok",
-    "exitCode": 0,
-    "consecutiveFailures": 0,
-    "blocked": false,
-    "blockedSinceUtc": null,
-    "blockedCodes": [],
-    "failedScripts": [],
-    "staleCaches": [],
-    "healed": [],
-    "staleHours": 36,
-    "hardStaleHours": 72,
-    "failures": []
+    "schema":  1,
+    "runId":  "20260918-210002",
+    "runStartedUtc":  "2026-09-18T13:00:02.8491397Z",
+    "runFinishedUtc":  "2026-09-18T13:08:21.4989505Z",
+    "lastSuccessUtc":  "2026-09-18T12:40:51.331Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "ok",
+    "exitCode":  0,
+    "consecutiveFailures":  0,
+    "blocked":  false,
+    "blockedSinceUtc":  null,
+    "blockedCodes":  [
+
+                     ],
+    "failedScripts":  [
+
+                      ],
+    "staleCaches":  [
+
+                    ],
+    "healed":  [
+
+               ],
+    "staleHours":  36,
+    "hardStaleHours":  72
 }

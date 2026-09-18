@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-18 19:27:11 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-18 21:04:53 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-18 19:27:11",
+    "updated":  "2026-09-18 21:04:53",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4578296", "title":  "Flick: 'We're focused on our own job'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" },
+            {
                 "id":  "4578225", "title":  "Last session before Sevilla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578225/last-session-before-sevilla", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/4116d317-ca12-4ff6-b1a9-3d8191f0f523/WhatsApp-Image-2026-09-18-at-12.43.35-1-.jpeg" },
@@ -207,10 +211,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" },
             {
-                "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -218,6 +218,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" },
             {
                 "id":  "4575846", "title":  "Equal best ever start",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575846/equal-best-ever-start-to-a-season", "time":  "",
@@ -321,11 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4573267", "title":  "Barça firepower",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573267/barca-firepower", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/04e3c7b4-9156-4b48-8921-35f2e7eabf23/_MGA5357.jpg" },
-            {
-                "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/04e3c7b4-9156-4b48-8921-35f2e7eabf23/_MGA5357.jpg" }
         ]
     }
 };

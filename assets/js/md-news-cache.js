@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-18 19:28:51 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-18 21:07:35 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-18 19:28:51",
+    "updated":  "2026-09-18 21:07:35",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "title":  "Josep Martínez, otra perla de La Masia que llama a la puerta de España",
+            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "time":  "2026-09-18 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/10/28/6900e7efea1b7.r_d.360-177-0.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "title":  "El objetivo del ‘sorpasso’",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "time":  "2026-09-18 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211794/campeon-fermin-quiere-barca.html", "title":  "Campeón Fermín: lo quiere todo con el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211794/campeon-fermin-quiere-barca.html", "time":  "2026-07-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc42c3944b.r_d.1483-1102-4171.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/horarios/futbol/20260728/1004211054/horario-canal-ver-tv-birmingham-city-barcelona-pretemporada.html", "title":  "Horario del Birmingham City - Barcelona de pretemporada: canal y dónde ver por TV el amistoso de fútbol",
-            "url":  "https://www.mundodeportivo.com/horarios/futbol/20260728/1004211054/horario-canal-ver-tv-birmingham-city-barcelona-pretemporada.html", "time":  "2026-07-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/29/6a6a4a3560872.r_d.376-341-0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc42c3944b.r_d.1483-1102-4171.jpeg" }
     ]
 };

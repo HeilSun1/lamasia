@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-18 19:29 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-18 21:08 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-18 19:29:33",
+    "updated":  "2026-09-18 21:08:18",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -572,25 +572,27 @@ window.DQD_VIDEOS_CACHE = {
                                                                                       ]
                                                                        }
                                                                    ],
+                                 "local:juvenil-b:byronmendoza":  [
+                                                                      {
+                                                                          "date":  "2026-09-18",
+                                                                          "opp":  "",
+                                                                          "label":  "09-18 · 集锦",
+                                                                          "matchKey":  "",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV1Dgem66Eoe",
+                                                                                             "title":  "拉玛西亚边锋 拜伦·门多萨 集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-09-18",
+                                                                                             "durationSec":  "278",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/6fe0e2f4da9b7fffbc9154870c2be27393f2a6d6.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      }
+                                                                  ],
                                  "local:juvenil-b:ismaelziani":  [
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
@@ -614,6 +616,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
