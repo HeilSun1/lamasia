@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-18 21:07:35 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-18 19:05:20 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-18 21:07:35",
+    "updated":  "2026-09-18 19:05:20",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "title":  "Messi, el racismo, el Madrid y la bronca de Busquets, los otros temas de Lamine con Valdano",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "time":  "2026-09-18 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/17/6aac1efa1f14f.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "title":  "Josep Martínez, otra perla de La Masia que llama a la puerta de España",
             "url":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "time":  "2026-09-18 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211796/fermin-arma-letal-flick-jugar.html", "title":  "Fermín, el arma letal de Flick que puede jugar de todo",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211796/fermin-arma-letal-flick-jugar.html", "time":  "2026-07-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc4e19abea.r_d.1500-1000-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211794/campeon-fermin-quiere-barca.html", "title":  "Campeón Fermín: lo quiere todo con el Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211794/campeon-fermin-quiere-barca.html", "time":  "2026-07-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc42c3944b.r_d.1483-1102-4171.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc4e19abea.r_d.1500-1000-4000.jpeg" }
     ]
 };

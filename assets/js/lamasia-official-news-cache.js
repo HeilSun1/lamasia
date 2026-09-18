@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-18 21:04:53 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-18 19:05:16 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-18 21:04:53",
+    "updated":  "2026-09-18 19:05:16",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4578251", "title":  "Barça players called up for international duty",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578251/fc-barcelona-players-called-up-for-international-duty", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/0d42c5e5-9fb7-41f8-a91f-a6dea21dd10b/DAG-445-_M1A4241.jpg" },
+            {
+                "id":  "4577749", "title":  "When and where to watch Sevilla v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577749/when-and-where-to-watch-sevilla-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4578296", "title":  "Flick: 'We're focused on our own job'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" },
@@ -207,10 +215,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576135/barca-quick-off-the-mark", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" },
             {
-                "id":  "4576115", "title":  "Lamine Yamal, two by two",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -218,6 +222,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4576115", "title":  "Lamine Yamal, two by two",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" },
             {
                 "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
@@ -317,15 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4573254", "title":  "Champions League preparations begin",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573254/champions-league-preparations-begin", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/4526808a-d83c-4fae-8050-10484e871fde/image00016.jpeg" },
-            {
-                "id":  "4573271", "title":  "Raphinha does it again!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573271/raphinha-on-course-for-record-goalscoring-start", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/ee084939-b3d8-4a04-ad2f-01eb22ab2df9/_MGA5369.jpg" },
-            {
-                "id":  "4573267", "title":  "Barça firepower",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573267/barca-firepower", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/04e3c7b4-9156-4b48-8921-35f2e7eabf23/_MGA5357.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/4526808a-d83c-4fae-8050-10484e871fde/image00016.jpeg" }
         ]
     }
 };

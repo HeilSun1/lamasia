@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-18 21:07:33 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-18 19:05:18 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-18 21:07:33",
+    "updated":  "2026-09-18 19:05:18",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -11,7 +11,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134275515", "title":  "Destiny se hincha a marcar goles en el torneo de Van Dijk",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-hincha-marcar-goles-torneo-134275515", "time":  "2026-09-15 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb537ca6-a7f4-4565-b852-2a8be455dbe2_16-9-discover-aspect-ratio_default_0_x640y305.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb537ca6-a7f4-4565-b852-2a8be455dbe2_16-9-discover-aspect-ratio_640w_0_x640y305.webp" },
         {
             "id":  "134248266", "title":  "Festival del Juvenil A del Barça de Pol Planas en Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/festival-juvenil-barca-pol-planas-134248266", "time":  "2026-09-13 19:29",

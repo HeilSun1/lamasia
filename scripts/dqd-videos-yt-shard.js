@@ -2,11 +2,52 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-09-17 19:48:45",
+    "updated":  "2026-09-18 19:08:30",
     "searched":  [
 
                  ],
     "items":  [
-
+                  {
+                      "at":  "2026-09-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "local:juvenil-b:byronmendoza",
+                      "v":  {
+                                "videoId":  "xRc-8SlE48c",
+                                "title":  "Byron Mendoza - La Masia\u0027s El Diablito",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-09-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-09-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u19:2446943",
+                      "v":  {
+                                "videoId":  "xRc-8SlE48c",
+                                "title":  "Byron Mendoza - La Masia\u0027s El Diablito",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-09-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-09-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u18:2446943",
+                      "v":  {
+                                "videoId":  "xRc-8SlE48c",
+                                "title":  "Byron Mendoza - La Masia\u0027s El Diablito",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-09-18",
+                                "durationSec":  ""
+                            }
+                  }
               ]
 };
