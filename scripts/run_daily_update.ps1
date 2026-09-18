@@ -216,6 +216,17 @@ if (-not (Assert-Git "拉取远端" $fetch $Failures)) {
 $runStash = "lamasia-run-$runId"
 [void](Invoke-Git $Root @('stash', 'push', '-u', '-m', $runStash))
 
+# ★ 记下本轮新建的那个 stash 的 ref 名（如 stash@{0}），后面只弹它。
+#   工作区干净时 `stash push` 什么都不建（"No local changes to save"），
+#   此时若无条件 `stash pop`，弹出来的是**历史残留 stash** —— 9/04、9/15、9/18 三次停更全是这一个根因。
+#   （注意不能用 sha：`git stash pop <sha>` 会报 "is not a stash reference"，只认 stash@{n}。）
+$runStashRef = $null
+$slOut = (Invoke-Git $Root @('stash', 'list', '--format=%gd|%s')).Out
+foreach ($l in ($slOut -split "`n")) {
+  if ($l -match '^(stash@\{\d+\})\|' -and $l.Contains($runStash)) { $runStashRef = $Matches[1]; break }
+}
+if ($runStashRef) { Log-Line "  · 本轮改动已存入 $runStashRef，稍后只还原它" }
+
 # rebase 到远端；冲突按类分级处理。core.editor 强制非交互 —— 默认会开编辑器，
 # 在隐藏窗口的任务里会永久挂起（这本身就是一种"进程挂死"来源）
 $rebaseOk = $false
@@ -260,19 +271,39 @@ if (-not $rebaseOk -and -not $script:SourceConflict) {
   [void]$BlockedCodes.Add('repo_error')
 }
 
-# 还原本轮 stash，冲突同样分级处理
-$pop = Invoke-Git $Root @('stash', 'pop')
-if ($pop.Code -ne 0) {
-  $cr2 = Get-ConflictReport $Root
-  if ($cr2.Generated.Count -gt 0) {
-    [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr2.Generated))
-    Log-Line "  ! 还原改动时 $($cr2.Generated.Count) 个自动生成文件冲突，已以远端为准消解"
-    [void]$Healed.Add('cache_conflict_healed')
+# 还原本轮 stash（只弹本轮自己建的那个），冲突同样分级处理
+if (-not $runStashRef) {
+  Log-Line "  (工作区本来就干净，本轮没有要还原的改动；不碰历史 stash)"
+} else {
+  # 弹之前再确认这个 ref 仍指向本轮那个 stash（防止中途有别的 stash 插队）
+  $stillOurs = $false
+  $slNow = (Invoke-Git $Root @('stash', 'list', '--format=%gd|%s')).Out
+  foreach ($l in ($slNow -split "`n")) {
+    if ($l.StartsWith("$runStashRef|") -and $l.Contains($runStash)) { $stillOurs = $true; break }
   }
-  if ($cr2.Source.Count -gt 0) {
-    Log-Line "  ✗ 还原改动时手写源码冲突，改动仍在 stash 中保留"
-    $script:SourceConflict = $true
-    [void]$BlockedCodes.Add('source_conflict')
+  if (-not $stillOurs) {
+    Log-Line "  ! $runStashRef 已不再指向本轮 stash（被外部改动过），跳过还原"
+  } else {
+    $pop = Invoke-Git $Root @('stash', 'pop', $runStashRef)
+    if ($pop.Code -ne 0) {
+      $cr2 = Get-ConflictReport $Root
+      if ($cr2.Generated.Count -gt 0) {
+        [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr2.Generated))
+        Log-Line "  ! 还原改动时 $($cr2.Generated.Count) 个自动生成文件冲突，已以远端为准消解"
+        [void]$Healed.Add('cache_conflict_healed')
+      }
+      if ($cr2.Source.Count -gt 0) {
+        # ★ 不能"设个标志继续跑"：冲突标记会留在工作区，本轮后面的提交必然失败，
+        #   下一轮开头又会命中同一条路径 → 自锁死（9/15 就是这么停了三天）。
+        #   pop 冲突时 stash 本身不会被 drop，改动仍在里面；把工作区还原干净后立刻收尾。
+        Log-Line "  ✗ 还原改动时手写源码冲突（改动仍保留在 $runStashRef 里），本轮提前结束"
+        foreach ($f in $cr2.Source) { Log-Line "      · $f" }
+        [void](Invoke-Git $Root (@('restore', '--source=origin/main', '--staged', '--worktree', '--') + $cr2.Source))
+        $script:SourceConflict = $true
+        [void]$BlockedCodes.Add('source_conflict')
+        Complete-Run
+      }
+    }
   }
 }
 
@@ -380,9 +411,16 @@ if (-not $staged -and $script:AddFailed) {
   # 且推送成功是"站点数据已落地"的判定依据（横幅过期判定靠它），不能跳过
   if (-not $staged) { Log-Line "  缓存无变化，仅提交状态文件" }
   $commit = Invoke-Git $Root @('commit', '--allow-empty', '-m', "chore: local daily update $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
-  if (-not (Assert-Git "提交" $commit $Failures)) { [void]$BlockedCodes.Add('repo_error') }
+  $commitOk = Assert-Git "提交" $commit $Failures
+  if (-not $commitOk) { [void]$BlockedCodes.Add('repo_error') }
 
   $pushed = $false
+  # ★ 提交失败时绝不推送：那种情况下 push 往往"成功"（本地没东西可推），
+  #   会被后面当成"数据已落地"→ 刷新 lastSuccessUtc，把横幅的过期判定骗过去，
+  #   站点数据其实没上线却显示正常（2026-09-18 事故就是这么被瞒过一轮的）。
+  if (-not $commitOk) {
+    Log-Line "  ✗ 提交失败（退出码 $($commit.Code)），本轮不推送，数据未上线"
+  } else {
   for ($i = 1; $i -le 3; $i++) {
     $p = Invoke-Git $Root @('push', 'origin', 'main')
     if ($p.Code -eq 0) { $pushed = $true; break }
@@ -405,6 +443,7 @@ if (-not $staged -and $script:AddFailed) {
         break
       }
     }
+  }
   }
   if ($pushed) {
     $script:PushOk = $true

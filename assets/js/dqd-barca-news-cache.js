@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-17 19:45:54 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-18 19:24:07 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-17 19:45:54",
+    "updated":  "2026-09-18 19:24:07",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6364762", "title":  "跟队：霍安缺席巴萨今日训练，小将伊克尔被征召进一线队",
+            "url":  "https://www.dongqiudi.com/articles/6364762.html", "time":  "2026-09-18 17:42",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/2A/280x210/crop/-/rBXRn2qtB2WARGioAACzmj-rXRQ602.jpg" },
+        {
+            "id":  "6364314", "title":  "每体：弗里克调整门将人选，霍安-加西亚膝部不适或轮休",
+            "url":  "https://www.dongqiudi.com/articles/6364314.html", "time":  "2026-09-18 15:44",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/04/280x210/crop/-/rBXRDGqs6w-AQziyAAFt2UnxkYo627.jpg" },
+        {
+            "id":  "6363308", "title":  "每体：巴萨竞技小将迪亚拉伤愈，本周末有望复出",
+            "url":  "https://www.dongqiudi.com/articles/6363308.html", "time":  "2026-09-18 10:28",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/73/F7/280x210/crop/-/rBXRn2qsXn2Af14CAAEtlZEYnj4174.jpg" },
         {
             "id":  "6361806", "title":  "世体：若霍安不出战塞维，伊克尔-罗德里格斯可能会进大名单",
             "url":  "https://www.dongqiudi.com/articles/6361806.html", "time":  "2026-09-18 00:41",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6196423", "title":  "给这组合起个名字吧，巴萨中场时隔16年再现世界杯冠军组合",
             "url":  "https://www.dongqiudi.com/articles/6196423.html", "time":  "2026-08-19 11:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/B9/280x210/crop/-/rBXRn2qFHdqAE95gAALwytqbnN8813.jpg" },
-        {
-            "id":  "6196243", "title":  "世体：拉菲尼亚周二训练时担任中锋；罗德里周三入队参加训练",
-            "url":  "https://www.dongqiudi.com/articles/6196243.html", "time":  "2026-08-19 10:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/9B/280x210/crop/-/rBXRn2qFEx2AOkNOAAE0FsGgI5M513.jpg" },
-        {
-            "id":  "6196018", "title":  "北京时间今天16:00对阵欧罗巴，布斯克茨将迎教练生涯首秀",
-            "url":  "https://www.dongqiudi.com/articles/6196018.html", "time":  "2026-08-19 09:05",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/75/280x210/crop/-/rBXRDGqFATCAe_CwAAB1FsMUFdQ594.jpg" },
-        {
-            "id":  "6195639", "title":  "普约尔：有穆里尼奥皇马可能更强；罗德里非常适合巴萨",
-            "url":  "https://www.dongqiudi.com/articles/6195639.html", "time":  "2026-08-19 07:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/14/EC/280x210/crop/-/rBXRDGqE0A-AViqoAAGIFoS3W5Q126.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/B9/280x210/crop/-/rBXRn2qFHdqAE95gAALwytqbnN8813.jpg" }
     ]
 };

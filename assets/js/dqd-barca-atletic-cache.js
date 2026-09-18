@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-17 19:45 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-18 19:23 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-17 19:45:52",
+    "updated":  "2026-09-18 19:23:13",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1449,8 +1449,8 @@ window.DQD_BARCA_ATLETIC = {
                                  "nation":  "比利时",
                                  "contract":  "2031-06-30",
                                  "foot":  "右脚",
-                                 "weight":  "",
-                                 "height":  "182",
+                                 "weight":  "69",
+                                 "height":  "185",
                                  "birth":  "2008-01-22"
                              },
                 "51210430":  {

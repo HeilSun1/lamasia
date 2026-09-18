@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-17 19:46:16 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-18 19:27:11 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-17 19:46:16",
+    "updated":  "2026-09-18 19:27:11",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4578225", "title":  "Last session before Sevilla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578225/last-session-before-sevilla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/4116d317-ca12-4ff6-b1a9-3d8191f0f523/WhatsApp-Image-2026-09-18-at-12.43.35-1-.jpeg" },
+            {
+                "id":  "4577750", "title":  "New LaLiga record for Lamine Yamal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577750/new-laliga-goalscoring-record-for-lamine-yamal", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/0b8d8b5f-3452-439a-91e0-5af6b0006045/_MGA8898.jpg" },
+            {
                 "id":  "4577816", "title":  "Spanish Super Cup venues, dates and kick-off times confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577816/spanish-super-cup-venues-dates-and-kick-off-times-confirmed", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/a77dc43a-bdbf-4a6e-bbc9-b41c5aaae699/DAG-059-_M1A2416-1-.jpg" },
@@ -203,14 +211,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" },
             {
-                "id":  "4575846", "title":  "Equal best ever start",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575846/equal-best-ever-start-to-a-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/ef348ca7-61fc-4573-b28c-57c72a91982f/_MGA7189.jpg" },
-            {
-                "id":  "4575849", "title":  "Xavi Espart opens goalscoring account",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575849/xavi-espart-scores-first-fc-barcelona-goal", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/646ba56e-2ea3-4396-a951-e0f4384ecba0/_MGA7160.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -218,6 +218,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4575846", "title":  "Equal best ever start",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575846/equal-best-ever-start-to-a-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/ef348ca7-61fc-4573-b28c-57c72a91982f/_MGA7189.jpg" },
+            {
+                "id":  "4575849", "title":  "Xavi Espart opens goalscoring account",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575849/xavi-espart-scores-first-fc-barcelona-goal", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/646ba56e-2ea3-4396-a951-e0f4384ecba0/_MGA7160.jpg" },
             {
                 "id":  "4575290", "title":  "PREVIEW | Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575290/preview-levante-ud-v-fc-barcelona", "time":  "",
@@ -317,15 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4572904", "title":  "Gabriel Jesus makes his debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572904/gabriel-jesus-makes-fc-barcelona-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" },
-            {
-                "id":  "4572837", "title":  "Valencia 0-5 Barça: High five!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572837/valencia-cf-0-5-fc-barcelona-high-five", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/bced39c1-3b8d-4fc8-950a-c5fe38fa1aa1/_MGA5352.jpg" },
-            {
-                "id":  "4572267", "title":  "PREVIEW | Valencia v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4572267/preview-valencia-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/06/7d68b2c2-5e5f-4cbd-8530-969c03ed1982/_MGA4710.jpg" }
         ]
     }
 };

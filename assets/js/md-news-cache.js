@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-17 19:46:20 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-18 19:28:51 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-17 19:46:20",
+    "updated":  "2026-09-18 19:28:51",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "title":  "El objetivo del ‘sorpasso’",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "time":  "2026-09-18 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "title":  "Sergio Canales: Me quería fichar el Barça, fui con mis padres a La Masía y quería quedarme",
             "url":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "time":  "2026-09-15 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/horarios/futbol/20260728/1004211054/horario-canal-ver-tv-birmingham-city-barcelona-pretemporada.html", "title":  "Horario del Birmingham City - Barcelona de pretemporada: canal y dónde ver por TV el amistoso de fútbol",
             "url":  "https://www.mundodeportivo.com/horarios/futbol/20260728/1004211054/horario-canal-ver-tv-birmingham-city-barcelona-pretemporada.html", "time":  "2026-07-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/29/6a6a4a3560872.r_d.376-341-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/betis/20260730/1004211548/marc-bartra-le-dijeran-mi-hermano-no-seguia-barca-golpe-tremendo.html", "title":  "Marc Bartra: Que le dijeran a mi hermano que no seguía en el Barça fue un golpe tremendo",
-            "url":  "https://www.mundodeportivo.com/futbol/betis/20260730/1004211548/marc-bartra-le-dijeran-mi-hermano-no-seguia-barca-golpe-tremendo.html", "time":  "2026-07-30 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6b01fbef998.r_d.1793-869-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/29/6a6a4a3560872.r_d.376-341-0.jpeg" }
     ]
 };
