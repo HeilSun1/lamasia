@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-19 15:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-09-19 22:39 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-09-19 15:02:08",
+    "updated":  "2026-09-19 22:39:43",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -54,21 +54,6 @@ window.DQD_U18_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2271424/image",
                         "age":  "16岁",
                         "birthday":  "2010-09-19",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Divine Ikenna Ejiofor",
-                        "id":  "2690301",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-04-01",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -150,21 +135,6 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pau Sarrià",
-                        "id":  "2533245",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2533245/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-22",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Unai Balmón",
                         "id":  "2690278",
                         "pos":  "M",
@@ -190,36 +160,6 @@ window.DQD_U18_CACHE = {
                         "age":  "16岁",
                         "birthday":  "2010-01-12",
                         "foot":  "左脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Lucas Bernal",
-                        "id":  "2447157",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447157/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-30",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Guiu Xuclà",
-                        "id":  "2447156",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-17",
-                        "foot":  "",
                         "height":  "",
                         "value":  "",
                         "injury":  null

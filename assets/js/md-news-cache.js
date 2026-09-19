@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-19 15:08:36 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-19 22:45:16 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-19 15:08:36",
+    "updated":  "2026-09-19 22:45:16",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228964/laporta-aspiramos-ganarlo.html", "title":  "Laporta aspira a ganarlo todo y envía un palo al Madrid",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228964/laporta-aspiramos-ganarlo.html", "time":  "2026-09-19 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aae6ee621cb2.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "title":  "La historia de Iker Rodríguez, el portero convocado por Flick para Sevilla",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "time":  "2026-09-19 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aad2ac09fd79.r_d.1515-1136-4000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "title":  "Messi, el racismo, el Madrid y la bronca de Busquets, los otros temas de Lamine con Valdano",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "time":  "2026-09-18 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260801/1004212229/jordi-pesquer-juvenil-b-primer-equipo-barca-apenas-cinco-meses.html", "title":  "Jordi Pesquer, del Juvenil B al primer equipo del Barça en apenas cinco meses",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260801/1004212229/jordi-pesquer-juvenil-b-primer-equipo-barca-apenas-cinco-meses.html", "time":  "2026-08-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/01/6a6dc6257a9aa.r_d.819-1057-7505.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211991/ter-stegen-eric-garcia-gavi-entrar-grupo-capitanes.html", "title":  "Sin Ter Stegen, Eric Garcia y Gavi pueden entrar en el grupo de capitanes",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211991/ter-stegen-eric-garcia-gavi-entrar-grupo-capitanes.html", "time":  "2026-07-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/31/6a6c992eeb252.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211796/fermin-arma-letal-flick-jugar.html", "title":  "Fermín, el arma letal de Flick que puede jugar de todo",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260731/1004211796/fermin-arma-letal-flick-jugar.html", "time":  "2026-07-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/30/6a6bc4e19abea.r_d.1500-1000-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/01/6a6dc6257a9aa.r_d.819-1057-7505.jpeg" }
     ]
 };

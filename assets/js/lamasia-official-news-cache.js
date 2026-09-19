@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-19 15:06:37 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-19 22:42:57 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-19 15:06:37",
+    "updated":  "2026-09-19 22:42:57",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4578389", "title":  "FC Barcelona squad for the trip to Sevilla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/871cdb54-da2d-4ee4-b0c8-9b3abf764a32/WhatsApp-Image-2026-09-18-at-12.43.36.jpeg" },
+            {
+                "id":  "4577776", "title":  "PREVIEW | Sevilla FC v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577776/preview-sevilla-fc-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4578251", "title":  "Barça players called up for international duty",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578251/fc-barcelona-players-called-up-for-international-duty", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/0d42c5e5-9fb7-41f8-a91f-a6dea21dd10b/DAG-445-_M1A4241.jpg" },
@@ -207,14 +215,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576366/when-and-where-to-watch-fc-barcelona-v-racing-santander", "time":  "",
                 "tag":  "", "img":  "" },
             {
-                "id":  "4576163", "title":  "Recovery Monday",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576163/recovery-monday", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/d8a43ac2-7fa4-4ed3-a8ce-2c90345ca152/WhatsApp-Image-2026-09-14-at-13.30.49.jpeg" },
-            {
-                "id":  "4576135", "title":  "Quick off the mark",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576135/barca-quick-off-the-mark", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -222,6 +222,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4576163", "title":  "Recovery Monday",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576163/recovery-monday", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/d8a43ac2-7fa4-4ed3-a8ce-2c90345ca152/WhatsApp-Image-2026-09-14-at-13.30.49.jpeg" },
+            {
+                "id":  "4576135", "title":  "Quick off the mark",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576135/barca-quick-off-the-mark", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" },
             {
                 "id":  "4576115", "title":  "Lamine Yamal, two by two",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
@@ -317,15 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4573711", "title":  "Hansi Flick: 'Everyone is ready'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573711/hansi-flick-everyone-is-ready", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7762876d-6e28-45b3-92df-90a1393b95b5/_MGA5298.jpg" },
-            {
-                "id":  "4573406", "title":  "When and where to watch Barça v Feyenoord",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573406/when-and-where-to-watch-fc-barcelona-v-feyenoord", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4573254", "title":  "Champions League preparations begin",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573254/champions-league-preparations-begin", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/4526808a-d83c-4fae-8050-10484e871fde/image00016.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7762876d-6e28-45b3-92df-90a1393b95b5/_MGA5298.jpg" }
         ]
     }
 };
