@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-19 22:45:16 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-19 18:39:44 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-19 22:45:16",
+    "updated":  "2026-09-19 18:39:44",
     "source":  "md",
     "count":  50,
     "news":  [
         {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228964/laporta-aspiramos-ganarlo.html", "title":  "Laporta aspira a ganarlo todo y envía un palo al Madrid",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228964/laporta-aspiramos-ganarlo.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aae6ee621cb2.jpeg" },
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "title":  "Deco argumenta la gestión del Barça Atlètic por el área deportiva profesional",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "time":  "2026-09-19 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aaea5b366873.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "title":  "La historia de Iker Rodríguez, el portero convocado por Flick para Sevilla",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "time":  "2026-09-19 12:00",

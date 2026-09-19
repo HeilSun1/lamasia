@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-19 22:38:40 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-19 18:39:19 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-19 22:38:40",
+    "updated":  "2026-09-19 18:39:19",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6372955", "title":  "德科：我们目标全力争夺每一项冠军，还要踢出高质量的足球",
+            "url":  "https://www.dongqiudi.com/articles/6372955.html", "time":  "2026-09-20 01:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/6F/280x210/crop/-/rBXRn2quw7WAYd06AACx6C_fF_U330.jpg" },
         {
             "id":  "6369564", "title":  "巴萨客战塞维大名单：拉菲、亚马尔领衔，霍安-加西亚伤缺",
             "url":  "https://www.dongqiudi.com/articles/6369564.html", "time":  "2026-09-19 16:57",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6200742", "title":  "哈姆扎：弗里克给了我极大的信任，这让我信心倍增",
             "url":  "https://www.dongqiudi.com/articles/6200742.html", "time":  "2026-08-20 06:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/18/A3/280x210/crop/-/rBXRn2qGKzeAI7yKAAG9agNUPu0598.jpg" },
-        {
-            "id":  "6200509", "title":  "弗里克：我们在寻找一名9号，我相信德科会解决的",
-            "url":  "https://www.dongqiudi.com/articles/6200509.html", "time":  "2026-08-20 05:00",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/18/7E/280x210/crop/-/rBXRDGqGGGOAVZMdAACObK41k6c325.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/18/A3/280x210/crop/-/rBXRn2qGKzeAI7yKAAG9agNUPu0598.jpg" }
     ]
 };
