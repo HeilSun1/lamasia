@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-19 09:55:10 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-19 15:01:18 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-19 09:55:10",
+    "updated":  "2026-09-19 15:01:18",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6369091", "title":  "HWG！罗马诺：巴萨签下16岁葡萄牙天才达尼-弗莱雷",
+            "url":  "https://www.dongqiudi.com/articles/6369091.html", "time":  "2026-09-19 14:12",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/52/280x210/crop/-/rBXRDGquJ8OACGAKAAh5ksGIMEI798.png" },
+        {
+            "id":  "6368963", "title":  "世体：利瓦科维奇还没适应巴萨的风格，3C将首发出战塞维",
+            "url":  "https://www.dongqiudi.com/articles/6368963.html", "time":  "2026-09-19 13:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/3E/280x210/crop/-/rBXRDGquGluAVWCRAAF-tq1vRAg943.jpg" },
         {
             "id":  "6364762", "title":  "跟队：霍安缺席巴萨今日训练，小将伊克尔被征召进一线队",
             "url":  "https://www.dongqiudi.com/articles/6364762.html", "time":  "2026-09-18 17:42",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6199374", "title":  "每体：巴萨20岁左后卫奥杜罗将离队",
             "url":  "https://www.dongqiudi.com/articles/6199374.html", "time":  "2026-08-19 23:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/17/A1/280x210/crop/-/rBXRn2qFzQGAHzXAAAFkz3qNNNc075.jpg" },
-        {
-            "id":  "6199143", "title":  "拉基蒂奇：永远不会有另一个布斯克茨，罗德里与他完全不同",
-            "url":  "https://www.dongqiudi.com/articles/6199143.html", "time":  "2026-08-19 22:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/17/97/280x210/crop/-/rBXRDGqFwn6AE4xcAAFJFYVRU6o556.jpg" },
-        {
-            "id":  "6196423", "title":  "给这组合起个名字吧，巴萨中场时隔16年再现世界杯冠军组合",
-            "url":  "https://www.dongqiudi.com/articles/6196423.html", "time":  "2026-08-19 11:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/15/B9/280x210/crop/-/rBXRn2qFHdqAE95gAALwytqbnN8813.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/17/A1/280x210/crop/-/rBXRn2qFzQGAHzXAAAFkz3qNNNc075.jpg" }
     ]
 };

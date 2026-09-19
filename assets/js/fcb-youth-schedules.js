@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-19 09:58；数据源：FC Barcelona 官网 calendario */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-19 15:06；数据源：FC Barcelona 官网 calendario */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-19 09:58:02",
+    "updated":  "2026-09-19 15:06:34",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -60,7 +60,7 @@ window.LAMASIA_SCHEDULES = {
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
                                        "round":  "2",
-                                       "start":  "1790411400",
+                                       "start":  "1790415000",
                                        "date":  "2026-09-26",
                                        "tbd":  false,
                                        "home":  "Segre A",
@@ -691,7 +691,7 @@ window.LAMASIA_SCHEDULES = {
                                          "round":  "5",
                                          "start":  "1792317600",
                                          "date":  "2026-10-18",
-                                         "tbd":  true,
+                                         "tbd":  false,
                                          "home":  "Gav脿 A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "12241",
@@ -2979,7 +2979,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "5",
                                           "start":  "1792317600",
                                           "date":  "2026-10-18",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "FC Barcelona B",
                                           "away":  "Cornell脿",
                                           "homeId":  "11110",
