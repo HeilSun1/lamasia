@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-20 10:51:51 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-20 15:04:31 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-20 10:51:51",
+    "updated":  "2026-09-20 15:04:31",
     "source":  "sport",
     "count":  50,
     "news":  [
