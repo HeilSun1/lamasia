@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-20 21:50:55 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-20 18:53:54 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-20 21:50:55",
+    "updated":  "2026-09-20 18:53:54",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4579045", "title":  "UD Barbastro 0-1 Barça Atlètic: First win away of the season",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4579045/ud-barbastro-0-1-barca-atletic-first-win-away-of-the-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/20/5cc6d940-5e63-45eb-9053-dd9bb10d8a5a/WhatsApp-Image-2026-09-20-at-17.56.06.jpeg" },
             {
                 "id":  "4575792", "title":  "Another point (0-0)",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4575792/ud-logrones-b-0-0-barca-atletic-another-point", "time":  "",
