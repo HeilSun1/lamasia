@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-19 22:38 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-20 10:48 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-19 22:38:40",
+    "updated":  "2026-09-20 10:48:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -497,21 +497,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "194",
                         "value":  "5万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Iker Rodríguez",
-                        "id":  "1926093",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-22",
-                        "foot":  "右脚",
-                        "height":  "187",
-                        "value":  "",
                         "injury":  null
                     },
                     {

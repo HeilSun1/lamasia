@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-19 18:39:41 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-20 10:51:39 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-19 18:39:41",
+    "updated":  "2026-09-20 10:51:39",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -127,6 +127,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4578870", "title":  "Winning debut for Livaković",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578870/winning-debut-for-dominik-livakovi", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/0a55b6cb-44c2-435f-af19-ae1d9f4214dd/_MGA0067.jpg" },
+            {
+                "id":  "4578857", "title":  "Sevilla 1-3 Barça: Raphinha does it again!",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578857/sevilla-1-3-fc-barcelona-raphinha-does-it-again", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/9ed90675-65b1-400c-b0d1-f972309feab9/_MGA0228.jpg" },
+            {
                 "id":  "4578389", "title":  "FC Barcelona squad for the trip to Sevilla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/871cdb54-da2d-4ee4-b0c8-9b3abf764a32/WhatsApp-Image-2026-09-18-at-12.43.36.jpeg" },
@@ -211,10 +219,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576693/last-session-before-racing", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/91ce7f02-8d2d-47d9-b124-24d8a0ede11a/WhatsApp-Image-2026-09-15-at-12.44.49.jpeg" },
             {
-                "id":  "4576366", "title":  "When and where to watch Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576366/when-and-where-to-watch-fc-barcelona-v-racing-santander", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -222,6 +226,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4576366", "title":  "When and where to watch Barça v Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576366/when-and-where-to-watch-fc-barcelona-v-racing-santander", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4576163", "title":  "Recovery Monday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576163/recovery-monday", "time":  "",
@@ -317,15 +325,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4573727", "title":  "Training session ahead of European debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573727/training-session-ahead-of-european-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/275dc1a1-4dc2-4d3f-b9d2-12dec2c21eb4/WhatsApp-Image-2026-09-08-at-14.22.16-1-.jpeg" },
-            {
-                "id":  "4573719", "title":  "'There's no greater motivation'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573719/lamine-yamal-theres-no-greater-motivation", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/c6087526-203e-4a3e-98e4-82f138826900/_MGA5365.jpg" },
-            {
-                "id":  "4573711", "title":  "Hansi Flick: 'Everyone is ready'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573711/hansi-flick-everyone-is-ready", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7762876d-6e28-45b3-92df-90a1393b95b5/_MGA5298.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/275dc1a1-4dc2-4d3f-b9d2-12dec2c21eb4/WhatsApp-Image-2026-09-08-at-14.22.16-1-.jpeg" }
         ]
     }
 };
