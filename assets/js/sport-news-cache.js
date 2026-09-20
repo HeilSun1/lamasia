@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-20 15:04:31 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-20 21:51:02 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-20 15:04:31",
+    "updated":  "2026-09-20 21:51:02",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134485864", "title":  "Iu y Nil Vicens impulsan al Juvenil A a otra goleada majestuosa",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-nil-vicens-impulsan-juvenil-134485864", "time":  "2026-09-20 12:07",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134454227", "title":  "Barbastro-Barça Atlètic: El reto de sumar el primer triunfo a domicilio",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barbastro-barca-atletic-reto-sumar-134454227", "time":  "2026-09-19 15:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134288206", "title":  "Mamadou Keita, otro extremo zurdo estilo Raphinha con alma de goleador",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 22:06",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133125250", "title":  "El Barça apuesta por el talento catalán con la incorporación de Arnau Casas",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-apuesta-talento-catalan-incorporacion-133125250", "time":  "2026-08-05 17:13",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f5532476-c3d2-437b-b7a8-c81289ed74a0_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133121332", "title":  "Joni Hernández, la sensación del Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-sensacion-barca-atletic-belletti-133121332", "time":  "2026-08-05 18:17",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f5532476-c3d2-437b-b7a8-c81289ed74a0_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
