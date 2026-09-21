@@ -203,9 +203,11 @@ if ($ti) {
   }
   if ($ti.LastRunTime -and $ti.LastRunTime.Year -gt 2000) {
     $hours = ((Get-Date) - $ti.LastRunTime).TotalHours
-    if ($hours -ge 24) {
+    # 两班制（09:00 / 21:00）间隔正好 12 小时，告警线必须留出余量，
+    # 否则每轮都踩线误报 —— 14h 起 warn（≈漏一班），26h 起 danger（≈漏两班）。
+    if ($hours -ge 26) {
       Add-Problem 'task_not_running' ("每日更新任务已 " + [int]$hours + " 小时没跑过（期望每天 2 次）") 'danger'
-    } elseif ($hours -ge 12) {
+    } elseif ($hours -ge 14) {
       Add-Problem 'task_not_running' ("每日更新任务已 " + [int]$hours + " 小时没跑过") 'warn'
     }
   }
