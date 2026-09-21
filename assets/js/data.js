@@ -1,12 +1,14 @@
 /* ═══════════════════════════════════════════════
    拉玛西亚信息站 · 共享数据
-   数据整理截至 2026-09-12（2026-27 赛季开局）
+   数据整理截至 2026-09-21（2026-27 赛季开局 · Juvenil B / Cadete A 已换 2026-27 名单）
    梯队结构依据 fcbarcelona.com 官方 2026/27 教练名单
    名单来源：
      · Cadete B(U15) / Infantil A(U14) / Infantil B(U13) / Infantil C(U13)
        —— 2026-27 名单（据俱乐部各梯队官方名单图整理，2026-09；
           低龄球员中文译名为直译仅供参考，出生年份未知一律留空）
-     · Juvenil A / Juvenil B / Cadete A(U16) —— 仍为 2025-26 赛季名单，待更新
+     · Juvenil B(U19 B) / Cadete A(U16) —— 2026-27 名单（据俱乐部两队官方名单图整理，2026-09-21；
+          Juvenil B 主体为 2025-26 赛季 Cadete A 整体升入的球员，Cadete A 主体为 2025-26 赛季 Cadete B 升入）
+     · Juvenil A —— 仍为 2025-26 赛季名单，待更新
    梯队命名（2026-09-12 核对 fcbarcelona.es «Fútbol – Formativo masculino»）：
      · 官网用 SUB+年龄 命名：SUB16(Cadete A) / SUB15(Cadete B) / SUB14(Infantil A) /
        SUB13(Infantil B) / SUB12(Alevín A) / SUB11 A(Alevín C) / SUB11 B(Alevín D) /
@@ -17,7 +19,7 @@
    仅在名单图给出时填写）；img 为本地照片路径（assets/img/players/），无照片留空（用头像占位）
    ═══════════════════════════════════════════════ */
 window.LAMASIA_DATA = {
-  updated: "2026-09-12",
+  updated: "2026-09-21",
 
   teams: [
     { id: "barca-atletic", age: "预备队",  name: "Barça Atlètic",        league: "Segunda Federación · G2",                 href: "teams/barca-atletic.html", desc: "一线储备队 · 体系顶端" },
@@ -69,59 +71,60 @@ window.LAMASIA_DATA = {
     ],
 
     "juvenil-b": [
-      { num: "—", name: "Pau Espi",            zh: "保罗·埃斯皮", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Gerard Sala",         zh: "杰拉德·萨拉", pos: "GK", nation: "西班牙", dob: "2008-01-25", note: "生于 Granollers · 合同至 2027", img: "" },
-      { num: "—", name: "Gerard Valls",        zh: "杰拉德·巴尔斯", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Pau Bergés",          zh: "保罗·贝尔赫斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Adrián Cuadrado",     zh: "阿德里安·夸德拉多", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Raul Expósito",       zh: "劳尔·埃克斯波西托", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Álvaro Gómez",        zh: "阿尔瓦罗·戈麦斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Joan Inglès",         zh: "霍安·英格莱斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Sergi Mayans",        zh: "塞尔吉·马扬斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Madou Murcia",        zh: "马杜·穆尔西亚", pos: "DF", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Jordi Pesquer",       zh: "霍尔迪·佩斯克尔", pos: "DF", nation: "西班牙", dob: "—", note: "随一线队季前", img: "" },
-      { num: "—", name: "Adam Argemí",         zh: "亚当·阿尔赫米", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Gorka Buil",          zh: "戈尔卡·布伊尔", pos: "MF", nation: "西班牙", dob: "—", note: "2026 续约", img: "" },
-      { num: "—", name: "Ibrahim Babayev",     zh: "易卜拉欣·巴巴耶夫", pos: "MF", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Xavier Miràngels",    zh: "哈维尔·米兰赫尔斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Gerard Mullol",       zh: "杰拉德·穆洛尔", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Michal Zuk",          zh: "米哈乌·茹克", pos: "MF", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Genís Clua",          zh: "赫尼斯·克卢瓦", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Alieu Drammeh",       zh: "阿利乌·德拉梅", pos: "FW", nation: "—",     dob: "—", note: "—", img: "alieu-drammeh.jpg", imgCredit: "gambiana.com", imgUrl: "https://gambiana.com/gambia-u-17-captain-alieu-drammeh-signs-professional-contract-with-fc-barcelona/" },
-      { num: "—", name: "Pol Mancheño",        zh: "波尔·曼切尼奥", pos: "FW", nation: "西班牙", dob: "—", note: "已转会黄潜 Juvenil A", img: "" },
-      { num: "—", name: "Ïu Martínez",         zh: "伊乌·马丁内斯", pos: "FW", nation: "西班牙", dob: "—", note: "冠军杯决赛被罚下", img: "" },
-      { num: "—", name: "Byron Mendoza",       zh: "拜伦·门多萨", pos: "FW", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Alejandro Pastor",    zh: "亚历杭德罗·帕斯托尔", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Ismael Ziani",        zh: "伊斯梅尔·齐亚尼", pos: "FW", nation: "—",     dob: "—", note: "—", img: "ismael-ziani.jpg", imgCredit: "al-ain.com", imgUrl: "https://al-ain.com/article/ismael-ziani-lopez-miracle-bar-a" },
-      { num: "—", name: "Genís Oya",           zh: "赫尼斯·奥亚", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" }
+      { num: "—", name: "Pau Espí",             zh: "保罗·埃斯皮", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Pablo Peña",           zh: "巴勃罗·佩尼亚", pos: "GK", nation: "西班牙", dob: "—", note: "2026 续约 · 西班牙 U15/U16", img: "" },
+      { num: "—", name: "Elyott Daussy",        zh: "埃利奥特·多西", pos: "GK", nation: "西班牙", dob: "—", note: "2026 续约", nameAlias: "Elyott Andrea Daussy", img: "" },
+      { num: "—", name: "Guiu Xuclà",           zh: "吉乌·舒克拉", pos: "DF", role: "RB", nation: "西班牙", dob: "—", note: "—", img: "guiu-xucla.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2447156/image" },
+      { num: "—", name: "Álvaro Gómez",         zh: "阿尔瓦罗·戈麦斯", pos: "DF", role: "RB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Óscar Medina",         zh: "奥斯卡·梅迪纳", pos: "DF", role: "RB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Roc Martínez",         zh: "罗克·马丁内斯", pos: "DF", role: "CB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Luca Pérez",           zh: "卢卡·佩雷斯", pos: "DF", role: "CB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Pere Villacorta",      zh: "佩雷·比利亚科塔", pos: "DF", role: "CB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Madou Murcia",         zh: "马杜·穆尔西亚", pos: "DF", role: "CB", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Ahmed Abarkane",       zh: "艾哈迈德·阿巴尔卡内", pos: "DF", role: "LB", nation: "—",      dob: "—", note: "—", img: "ahmed-abarkane.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2342525/image" },
+      { num: "—", name: "Pau Bergés",           zh: "保罗·贝尔赫斯", pos: "DF", role: "LB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Gerard Mullol",        zh: "杰拉德·穆洛尔", pos: "MF", role: "CDM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Mahdi El Maimouni",    zh: "马赫迪·埃尔·迈穆尼", pos: "MF", role: "CDM", nation: "比利时/摩洛哥", dob: "—", note: "2026 自沙勒罗瓦加盟", nameAlias: "Mahdi El Maïmouni", img: "" },
+      { num: "—", name: "Ignasi Bassas",        zh: "伊格纳西·巴萨斯", pos: "MF", role: "CM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Robert Oliveras",      zh: "罗贝尔特·奥利韦拉斯", pos: "MF", role: "CM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Arnau Casas",          zh: "阿尔瑙·卡萨斯", pos: "MF", role: "CM", nation: "西班牙", dob: "—", note: "2026 自 Cornellà 加盟", img: "" },
+      { num: "—", name: "Unai Balmón",          zh: "乌奈·巴尔蒙", pos: "MF", role: "CAM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Hugo Garcés",          zh: "乌戈·加塞斯", pos: "MF", role: "CAM", nation: "西班牙", dob: "—", note: "—", img: "hugo-garces.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2405402/image" },
+      { num: "—", name: "Genís Clua",           zh: "赫尼斯·克卢瓦", pos: "MF", role: "CAM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Erik Domínguez",       zh: "埃里克·多明格斯", pos: "FW", role: "RW", nation: "西班牙", dob: "—", note: "2026 自 Cornellà 加盟", nameAlias: "Eric Dominguez", img: "" },
+      { num: "—", name: "Byron Mendoza",        zh: "拜伦·门多萨", pos: "FW", role: "RW", nation: "—",      dob: "—", note: "—", img: "byron-mendoza.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2446943/image" },
+      { num: "—", name: "Ismael Ziani",         zh: "伊斯梅尔·齐亚尼", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "ismael-ziani.jpg", imgCredit: "al-ain.com", imgUrl: "https://al-ain.com/article/ismael-ziani-lopez-miracle-bar-a" },
+      { num: "—", name: "Artem Rybak",          zh: "阿尔乔姆·雷巴克", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "artem-rybak.jpg", imgCredit: "dynamo.kiev.ua", imgUrl: "https://dynamo.kiev.ua/en/news/695213-ukrainian-midfielder-of-barcelona-u-18-i-want-to-grow-to-the-first-team-and-win-as-many-trophies-as-possible-with-it" },
+      { num: "—", name: "Dany Freire",          zh: "达尼·弗雷雷", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Noah García",          zh: "诺亚·加西亚", pos: "FW", role: "LW", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Ruslan Mba",           zh: "鲁斯兰·姆巴", pos: "FW", role: "LW", nation: "西班牙/赤道几内亚", dob: "2010-02-27", note: "职业合同至 2029 · 人称迷你拉菲尼亚", img: "ruslan-mba.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2128111/image" },
+      { num: "—", name: "Ibrahim Babayev",      zh: "易卜拉欣·巴巴耶夫", pos: "FW", role: "LW", nation: "—",      dob: "—", note: "—", img: "" },
     ],
 
     "cadete": [
-      { num: "—", name: "Elyott Daussy",         zh: "埃利奥特·多西", pos: "GK", nation: "西班牙", dob: "—", note: "2026 续约", img: "" },
-      { num: "—", name: "Pablo Peña",            zh: "巴勃罗·佩尼亚", pos: "GK", nation: "西班牙", dob: "—", note: "2026 续约 · 西班牙 U15/U16", img: "" },
-      { num: "—", name: "Ahmed Abarkane",        zh: "艾哈迈德·阿巴尔卡内", pos: "DF", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Jude Ali Berro",        zh: "裘德·阿里·贝罗", pos: "DF", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Roc Martínez",          zh: "罗克·马丁内斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Òscar Medina",          zh: "奥斯卡·梅迪纳", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Luca Pérez",            zh: "卢卡·佩雷斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "José Alfredo Rodríguez", zh: "何塞·阿尔弗雷多·罗德里格斯", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Pere Villacorta",       zh: "佩雷·比利亚科塔", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Guiu Xuclà",            zh: "吉乌·舒克拉", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Milosz Zuk",            zh: "米沃什·茹克", pos: "DF", nation: "—",     dob: "—", note: "Michal Zuk 之弟 · 外租 CE Sabadell", img: "" },
-      { num: "—", name: "Unai Balmón",           zh: "乌奈·巴尔蒙", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Ignasi Bassas",         zh: "伊格纳西·巴萨斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Samu Borniquel",        zh: "萨穆·博尔尼克尔", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Hugo Garcés",           zh: "乌戈·加塞斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Robert Oliveras",       zh: "罗贝尔特·奥利韦拉斯", pos: "MF", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Artem Rybak",           zh: "阿尔乔姆·雷巴克", pos: "MF", nation: "—",     dob: "—", note: "—", img: "artem-rybak.jpg", imgCredit: "dynamo.kiev.ua", imgUrl: "https://dynamo.kiev.ua/en/news/695213-ukrainian-midfielder-of-barcelona-u-18-i-want-to-grow-to-the-first-team-and-win-as-many-trophies-as-possible-with-it" },
-      { num: "—", name: "Alex Arasa",            zh: "亚历克斯·阿拉萨", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Marc Armada",           zh: "马克·阿马达", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Alejandro Fernández",   zh: "亚历杭德罗·费尔南德斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Noah Garcia",           zh: "诺亚·加西亚", pos: "FW", nation: "—",     dob: "—", note: "—", img: "" },
-      { num: "—", name: "Pau Miguel Mateos",     zh: "保·米格尔·马特奥斯", pos: "FW", nation: "西班牙", dob: "—", note: "—", nameAlias: "Paumi Mateos", img: "" },
-      { num: "—", name: "Ruslan Mba",            zh: "鲁斯兰·姆巴", pos: "FW", nation: "西班牙/赤道几内亚", dob: "2010-02-27", note: "职业合同至 2029 · 人称迷你拉菲尼亚", img: "" },
-      { num: "—", name: "Héctor Néstor Asumu",   zh: "埃克托尔·内斯托尔·阿苏穆", pos: "FW", nation: "西班牙", dob: "—", note: "—", img: "" },
-      { num: "—", name: "Lucas Bernal",          zh: "卢卡斯·贝尔纳尔", pos: "DF", nation: "西班牙", dob: "—", note: "—", img: "" }
+      { num: "—", name: "Arnau Ribes",          zh: "阿尔瑙·里贝斯", pos: "GK", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Alexander Cimoscov",   zh: "亚历山大·奇莫斯科夫", pos: "GK", nation: "—",      dob: "—", note: "旧 Cadete B 名单作 Alexander Chimoscope / Aleksander Simoskov", nameAlias: "Aleksander Simoskov, Alexander Chimoscope", img: "" },
+      { num: "—", name: "Iker Nsang",           zh: "伊克尔·恩桑", pos: "DF", role: "RB", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Minguk Lee",           zh: "李民国", pos: "DF", role: "RB", nation: "韩国",   dob: "2011", note: "与李大汉为韩国双胞胎 · 2011 年生（韩媒）", img: "" },
+      { num: "—", name: "Darwin Zamora",        zh: "达尔文·萨莫拉", pos: "DF", role: "CB", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Jose Basagaña",        zh: "何塞·巴萨加尼亚", pos: "DF", role: "CB", nation: "—",      dob: "—", note: "旧 Cadete B 名单作 Jose Basaña", img: "" },
+      { num: "—", name: "Víctor Lao",           zh: "维克托·拉奥", pos: "DF", role: "CB", nation: "—",      dob: "—", note: "旧 Cadete B 名单作 Víctor Rao", img: "" },
+      { num: "—", name: "Lucas Bernal",         zh: "卢卡斯·贝尔纳尔", pos: "DF", role: "LB", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Daehan Lee",           zh: "李大汉", pos: "DF", role: "LB", nation: "韩国",   dob: "2011", note: "与李民国为韩国双胞胎 · 2011 年生（韩媒）", img: "" },
+      { num: "—", name: "Unax Hernández",       zh: "乌纳克斯·埃尔南德斯", pos: "MF", role: "CDM", nation: "西班牙", dob: "2011", note: "巴萨竞技 Unai Hernández 之弟 · 2011 年生", img: "" },
+      { num: "—", name: "Víctor Barbany",       zh: "维克托·巴尔巴尼", pos: "MF", role: "CDM", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Dragos Bivol",         zh: "德拉戈什·比沃尔", pos: "MF", role: "CM", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Jan Giral",            zh: "扬·希拉尔", pos: "MF", role: "CM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Pau Sarrià",           zh: "保·萨里亚", pos: "MF", role: "CM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Iker García",          zh: "伊克尔·加西亚", pos: "MF", role: "CM", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Johann Leiva",         zh: "约翰·莱瓦", pos: "MF", role: "CAM", nation: "—",      dob: "—", note: "旧 Cadete B 名单作 Johan Leiva", nameAlias: "Johan Leiva", img: "" },
+      { num: "—", name: "Adrián Sánchez",       zh: "阿德里安·桑切斯", pos: "MF", role: "CAM", nation: "西班牙", dob: "—", note: "—", img: "" },
+      { num: "—", name: "Víctor Santiago",      zh: "维克托·圣地亚哥", pos: "MF", role: "CAM", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Jan Rizos",            zh: "扬·里索斯", pos: "FW", role: "RW", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Karim Mendikanov",     zh: "卡里姆·门迪卡诺夫", pos: "FW", role: "RW", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Divine Ikenna",        zh: "迪瓦恩·伊肯纳", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", nameAlias: "Divine Ikenna Ejiofor, Divine Ejiofor John", img: "" },
+      { num: "—", name: "Héctor Néstor Asumu",  zh: "埃克托尔·阿苏穆", pos: "FW", role: "LW", nation: "西班牙", dob: "—", note: "—", nameAlias: "Héctor Asumu", img: "" },
+      { num: "—", name: "Mamadou Keita",        zh: "马马杜·凯塔", pos: "FW", role: "LW", nation: "—",      dob: "—", note: "—", img: "" },
     ],
 
     "infantil": [
@@ -233,16 +236,16 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Bruno Olmos",         zh: "布鲁诺·奥尔莫斯", pos: "FW", role: "LW", nation: "西班牙", dob: "—", note: "—", img: "" }
     ],
 
-    /* ── 以下为 2026-09 换名单时被移出各队、但归属尚未查明的球员（不参与渲染，留档待核） ──
-       · 旧 Cadete B（2025-26 官网快照，南木维基 2026-05-23；疑为 2026-27 Cadete A/U16 阵容）：
-         Alexander Chimoscope(GK) / Arnau Ribes(GK) / Jose Basaña / Lucas Bernal / Aritz Lairado /
-         Víctor Rao / Minguk Lee / Gerard Millan / Iker Nsang / Darwin Zamora / Dragos Bivol /
-         Quim Cárcel / Jan Giral / Unax Hernández / Johan Leiva / Adrián Sánchez / Pau Sarrià /
-         Daehan Lee / Héctor Asumu / Divine Ejiofor John / Mamadou Keita / Jan Rizos
+    /* ── 以下为换名单时被移出各队、但归属尚未查明的球员（不参与渲染，留档待核） ──
+       · 旧 Cadete A（2025-26 名单）未出现在 2026-27 Cadete A 名单图中：
+         Jude Ali Berro / José Alfredo Rodríguez / Milosz Żuk / Samu Borniquel / Alex Arasa /
+         Marc Armada / Alejandro Fernández / Pau Miguel Mateos
+         （其余 15 人已升入 Juvenil B，见上）
+       · 旧 Cadete B（2025-26 官网快照）经 2026-27 Cadete A 名单图确认即为该队阵容，已归位
        · 旧 Infantil A 未出现在新 Cadete B 名单：Pol Porta / Eric Marín / Adam Qaroual
        · 旧 Infantil B 未出现在新 Infantil A 名单：Jesús Ruescas / Enrique Villaro(Enric Vilaró)
        · 旧 Alevín A 未出现在新 Infantil C 名单：Yuk Moriya(GK, 日本)
-       待拿到 Cadete A(U16) 等其余梯队名单图后再归位。 */
+       待拿到 Juvenil A 名单图后再归位。 */
 
     "u11a": [
       { num: "—", name: "Yago Villavicencio", zh: "亚戈·比利亚维森西奥", pos: "GK", nation: "—", dob: "—", note: "—", img: "" },

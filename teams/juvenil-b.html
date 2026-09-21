@@ -39,7 +39,7 @@
       <span>🏆 联赛：<b>Liga Nacional Juvenil · G7</b></span>
       <span>🧑‍🏫 主教练：<b>Cesc Bosch</b> · 助教 <b>Jordi Poma</b></span>
       <span>🏅 2025-26：<b>G7 升级区</b></span>
-      <span>📅 名单：2025-26 赛季</span>
+      <span>📅 名单：2026-27 赛季（官方名单图）</span>
     </div>
   </div>
 
@@ -47,7 +47,7 @@
 
     <nav class="team-tabs" id="team-tabs" data-default="news"
          data-tt-news="#sec-news"
-         data-tt-roster="#sec-positions,#sec-injuries,#sec-roster"
+         data-tt-roster="#sec-positions,#sec-roster-official,#sec-injuries"
          data-tt-team="#sec-changes,#sec-schedule,#sec-teaminfo">
       <button class="tt-tab active" data-tt="news">📰 新闻</button>
       <button class="tt-tab" data-tt="roster">🎽 球员名单</button>
@@ -58,8 +58,9 @@
       <div class="page-toc__title">📑 本页导航</div>
       <a class="page-toc__link" href="#sec-positions">📊 位置分布</a>
       <a class="page-toc__link" href="#sec-changes">🔄 赛季变动</a>
+      <a class="page-toc__link" href="#sec-roster-official">📋 官方大名单</a>
       <a class="page-toc__link" href="#sec-injuries">🤕 伤病</a>
-      <a class="page-toc__link" href="#sec-roster">🎽 球员名单</a>
+      <a class="page-toc__link" href="#sec-roster">🎽 实时阵容</a>
       <a class="page-toc__link" href="#sec-schedule">📅 赛程</a>
       <a class="page-toc__link" href="#sec-teaminfo">🏟 球队信息</a>
       <a class="page-toc__link" href="#sec-news">📰 球队资讯</a>
@@ -76,13 +77,13 @@
     </div>
 
     <div class="panel" id="sec-positions">
-      <div class="panel-title-row"><h3>阵容位置分布</h3><span class="badge gray">共 24 名球员</span></div>
+      <div class="panel-title-row"><h3>阵容位置分布</h3><span class="badge gray">共 28 名球员</span></div>
       <div class="p-body">
         <div class="pos-bars">
-          <div class="pos-bar"><span class="pb-label">门将</span><div class="pb-track"><div class="pb-fill" style="width:13%;background:var(--gold-500)"></div></div><span class="pb-num">3</span></div>
-          <div class="pos-bar"><span class="pb-label">后卫</span><div class="pb-track"><div class="pb-fill" style="width:33%;background:var(--blue-600)"></div></div><span class="pb-num">8</span></div>
-          <div class="pos-bar"><span class="pb-label">中场</span><div class="pb-track"><div class="pb-fill" style="width:25%;background:var(--red-600)"></div></div><span class="pb-num">6</span></div>
-          <div class="pos-bar"><span class="pb-label">前锋</span><div class="pb-track"><div class="pb-fill" style="width:29%;background:var(--good)"></div></div><span class="pb-num">7</span></div>
+          <div class="pos-bar"><span class="pb-label">门将</span><div class="pb-track"><div class="pb-fill" style="width:11%;background:var(--gold-500)"></div></div><span class="pb-num">3</span></div>
+          <div class="pos-bar"><span class="pb-label">后卫</span><div class="pb-track"><div class="pb-fill" style="width:32%;background:var(--blue-600)"></div></div><span class="pb-num">9</span></div>
+          <div class="pos-bar"><span class="pb-label">中场</span><div class="pb-track"><div class="pb-fill" style="width:29%;background:var(--red-600)"></div></div><span class="pb-num">8</span></div>
+          <div class="pos-bar"><span class="pb-label">前锋</span><div class="pb-track"><div class="pb-fill" style="width:29%;background:var(--good)"></div></div><span class="pb-num">8</span></div>
         </div>
       </div>
     </div>
@@ -121,15 +122,13 @@
       </div>
     </div>
 
-    <div class="panel" id="sec-roster">
+    <div class="panel" id="sec-roster-official">
       <div class="panel-title-row">
-        <h3>🎽 球员名单 <span class="tag">Sofascore 实时阵容</span></h3>
-        <span class="badge blue" id="u18-count-badge">加载中…</span>
+        <h3>📋 球员大名单 <span class="tag">官方名单 · 静态维护</span></h3>
+        <span class="badge gray">2026-27 · 28 人</span>
       </div>
-      <p class="p-desc">Sofascore 当前阵容（已与官方名单合并中文名与备注）。点击照片可放大。</p>
-      <div id="u18-roster" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载 Sofascore 数据…</div>
-      </div>
+      <p class="p-desc">来源：2026-27 赛季俱乐部 Juvenil B 官方名单图。名单图同时给出细分位置（RB/CB/LB/CDM/CM/CAM/RW/ST/LW），已随球员一并显示；主体为 2025-26 赛季 Cadete A（U16）整体升入的球员。部分球员姓名存在多来源转写差异。</p>
+      <div class="p-body" id="roster-juvenil-b"></div>
     </div>
 
     <div class="panel" id="sec-schedule">
@@ -161,7 +160,7 @@
       </div>
     </div>
 
-    <div class="note-box"><span><b>名单说明：</b>本页名单为 <b>Sofascore 实时阵容</b>（已与官方 2025-26 名单合并中文名与备注），伤病与赛程每日自动更新。2026-27 完整官方名单尚未公布，请以 fcbarcelona.com 为准。</span></div>
+    <div class="note-box"><span><b>名单说明：</b>「📋 球员大名单」为 <b>2026-27 赛季俱乐部 Juvenil B 官方名单图</b>（静态维护，2026-09-21 整理）；「🎽 实时阵容」为 <b>Sofascore 当前阵容</b>（已与官方名单合并中文名与备注，伤病与赛程每日自动更新）——两者人数可能不一致，以官方名单图为准。</span></div>
   </section>
 
   <footer class="site-footer">
@@ -187,6 +186,7 @@
   <script src="../assets/js/dqd-videos-cache.js"></script>
   <script src="../assets/js/videos-ui.js"></script>
   <script src="../assets/js/roster.js"></script>
+  <script>LAMASIA_RENDER.playerList('juvenil-b', 'roster-juvenil-b', '../assets/img/players/');</script>
   <script src="../assets/js/dqd-u18-cache.js"></script>
   <script src="../assets/js/fcb-youth-schedules.js"></script>
   <script src="../assets/js/fcb-youth-render.js"></script>
