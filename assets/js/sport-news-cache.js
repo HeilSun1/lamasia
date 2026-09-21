@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-21 22:34:51 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-21 20:28:47 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-21 22:34:51",
+    "updated":  "2026-09-21 20:28:47",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134527121", "title":  "Minguk Lee, el lateral coreano que asombra en La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/minguk-lee-lateral-coreano-asombra-134527121", "time":  "2026-09-21 16:54",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d85e10a7-36af-4d49-8a2c-e5e554c00cd8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134502276", "title":  "Landry da la primera alegría a domicilio al Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-da-primera-alegria-domicilio-134502276", "time":  "2026-09-20 21:26",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134493320", "title":  "UD Barbastro - Barça Atlètic: resumen, resultado y goles del partido de la jornada 3 de la Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-barbastro-barca-atletic-directo-134493320", "time":  "2026-09-20 17:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_default_0_x418y175.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" },
         {
             "id":  "134485864", "title":  "Iu y Nil Vicens impulsan al Juvenil A a otra goleada majestuosa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-nil-vicens-impulsan-juvenil-134485864", "time":  "2026-09-20 12:07",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133249832", "title":  "Los secretos de la nueva perla canaria del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-entresijos-nueva-perla-133249832", "time":  "2026-08-11 08:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133217000", "title":  "El Barça vuelve a la carga por una joya del Racing",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-vuelve-carga-joya-racing-133217000", "time":  "2026-08-09 16:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42a43df6-5440-4682-99e6-7ee8eb4fbdf9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
