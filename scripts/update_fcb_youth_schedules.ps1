@@ -72,23 +72,34 @@ function Stop-EdgeTree([int]$TargetPid) {
 #   到点杀进程树再重试，单轮最坏 6 梯队 × 3 次 × ~98s ≈ 30 分钟（正常约 3 分钟）。
 function Get-FcbHtml([string]$url, [string]$what) {
   for ($attempt = 1; $attempt -le 3; $attempt++) {
-    $domFile = Join-Path $env:TEMP ("fcb-dom-" + [guid]::NewGuid().ToString("N") + ".html")
-    $errFile = "$domFile.err"
     $prevEAP = $ErrorActionPreference
     $proc = $null
     try {
       $ErrorActionPreference = "Continue"
-      $proc = Start-Process -FilePath $Edge -PassThru -NoNewWindow `
-        -RedirectStandardOutput $domFile -RedirectStandardError $errFile `
-        -ArgumentList @("--headless=new", "--disable-gpu", "--no-first-run", "--disable-extensions",
-                        "--disable-blink-features=AutomationControlled",
-                        "--user-data-dir=$Profile", "--virtual-time-budget=35000",
-                        "--dump-dom", $url)
+      # 不用 Start-Process -RedirectStandardOutput：PS 5.1 里它开的目标文件句柄不会
+      # 随 WaitForExit 释放，紧接着 ReadAllText 必然报「文件正由另一进程使用」
+      # （2026-09-21 21:56 实测，6 个梯队全部读不到）。直接读进程的标准输出管道。
+      $psi = New-Object System.Diagnostics.ProcessStartInfo
+      $psi.FileName               = $Edge
+      $psi.Arguments              = (@("--headless=new", "--disable-gpu", "--no-first-run",
+                                       "--disable-extensions", "--disable-blink-features=AutomationControlled",
+                                       "--user-data-dir=$Profile", "--virtual-time-budget=35000",
+                                       "--dump-dom", $url) | ForEach-Object { '"' + $_ + '"' }) -join " "
+      $psi.UseShellExecute        = $false
+      $psi.CreateNoWindow         = $true
+      $psi.RedirectStandardOutput = $true
+      $psi.RedirectStandardError  = $true
+      $psi.StandardOutputEncoding = [System.Text.Encoding]::UTF8
+      $proc = [System.Diagnostics.Process]::Start($psi)
+      # 必须异步读：管道缓冲（约 4KB）写满而无人读时，子进程会阻塞在写上，
+      # 于是 WaitForExit 永远等不到 —— 又是一次「挂死」。
+      $outTask = $proc.StandardOutput.ReadToEndAsync()
+      [void]$proc.StandardError.ReadToEndAsync()
       if (-not $proc.WaitForExit($RenderTimeoutSec * 1000)) {
         Log "  · $what 第 $attempt 次渲染超时 ${RenderTimeoutSec}s（风控挂连接），杀掉重试"
       } else {
         $html = ""
-        if (Test-Path $domFile) { $html = [System.IO.File]::ReadAllText($domFile, [System.Text.Encoding]::UTF8) }
+        try { $html = $outTask.GetAwaiter().GetResult() } catch { }
         if ($html -and $html.IndexOf("fixture-result-list__fixture") -ge 0) { return $html }
         Log "  · $what 第 $attempt 次未解析到赛程（渲染/风控），重试"
       }
@@ -96,9 +107,9 @@ function Get-FcbHtml([string]$url, [string]$what) {
       Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
     } finally {
       $ErrorActionPreference = $prevEAP
-      if ($proc -and -not $proc.HasExited) { Stop-EdgeTree $proc.Id }
-      foreach ($f in @($domFile, $errFile)) {
-        if ($f -and (Test-Path $f)) { Remove-Item $f -Force -ErrorAction SilentlyContinue }
+      if ($proc) {
+        try { if (-not $proc.HasExited) { Stop-EdgeTree $proc.Id } } catch { }
+        try { $proc.Dispose() } catch { }
       }
     }
     Start-Sleep -Seconds 8

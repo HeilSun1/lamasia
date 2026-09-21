@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-21 12:06；数据源：FC Barcelona 官网 calendario */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-21 22:19；数据源：FC Barcelona 官网 calendario */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-21 12:06:16",
+    "updated":  "2026-09-21 22:19:18",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -53,7 +53,7 @@ window.LAMASIA_SCHEDULES = {
                                        "status":  "Not started",
                                        "code":  "0",
                                        "isHome":  false,
-                                       "venue":  "Ramon Farr煤s"
+                                       "venue":  "Ramon Farrús"
                                    },
                                    {
                                        "id":  "fcb:cadete:19",
@@ -91,7 +91,7 @@ window.LAMASIA_SCHEDULES = {
                                        "status":  "Not started",
                                        "code":  "0",
                                        "isHome":  false,
-                                       "venue":  "Ciudad Deportiva San Adri谩"
+                                       "venue":  "Ciudad Deportiva San Adriá"
                                    },
                                    {
                                        "id":  "fcb:cadete:34",
@@ -102,7 +102,7 @@ window.LAMASIA_SCHEDULES = {
                                        "date":  "2026-10-17",
                                        "tbd":  false,
                                        "home":  "FC Barcelona A",
-                                       "away":  "Cornell脿 A",
+                                       "away":  "Cornellà A",
                                        "homeId":  "11111",
                                        "awayId":  "11163",
                                        "hs":  "",
@@ -273,7 +273,7 @@ window.LAMASIA_SCHEDULES = {
                                        "date":  "2027-01-09",
                                        "tbd":  true,
                                        "home":  "FC Barcelona A",
-                                       "away":  "Fundaci贸 Cornell谩 A",
+                                       "away":  "Fundació Cornellá A",
                                        "homeId":  "11111",
                                        "awayId":  "15183",
                                        "hs":  "",
@@ -386,7 +386,7 @@ window.LAMASIA_SCHEDULES = {
                                        "start":  "1803726000",
                                        "date":  "2027-02-27",
                                        "tbd":  true,
-                                       "home":  "Cornell脿 A",
+                                       "home":  "Cornellà A",
                                        "away":  "FC Barcelona A",
                                        "homeId":  "11163",
                                        "awayId":  "11111",
@@ -395,7 +395,7 @@ window.LAMASIA_SCHEDULES = {
                                        "status":  "Not started",
                                        "code":  "0",
                                        "isHome":  false,
-                                       "venue":  "Municipal de Cornell谩"
+                                       "venue":  "Municipal de Cornellá"
                                    },
                                    {
                                        "id":  "fcb:cadete:162",
@@ -557,7 +557,7 @@ window.LAMASIA_SCHEDULES = {
                                        "start":  "1809856800",
                                        "date":  "2027-05-09",
                                        "tbd":  true,
-                                       "home":  "Fundaci贸 Cornell谩 A",
+                                       "home":  "Fundació Cornellá A",
                                        "away":  "FC Barcelona A",
                                        "homeId":  "15183",
                                        "awayId":  "11111",
@@ -625,7 +625,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Ciudad Deportiva San Adri谩"
+                                         "venue":  "Ciudad Deportiva San Adriá"
                                      },
                                      {
                                          "id":  "fcb:cadete-b:26",
@@ -636,7 +636,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2026-10-10",
                                          "tbd":  false,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Cornell脿 A",
+                                         "away":  "Cornellà A",
                                          "homeId":  "11112",
                                          "awayId":  "11181",
                                          "hs":  "",
@@ -654,7 +654,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1792317600",
                                          "date":  "2026-10-18",
                                          "tbd":  false,
-                                         "home":  "Gav脿 A",
+                                         "home":  "Gavà A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "12241",
                                          "awayId":  "11112",
@@ -663,7 +663,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Can Torell贸"
+                                         "venue":  "Can Torelló"
                                      },
                                      {
                                          "id":  "fcb:cadete-b:43",
@@ -769,7 +769,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2026-11-28",
                                          "tbd":  false,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Gimn脿stic Tarragona A",
+                                         "away":  "Gimnàstic Tarragona A",
                                          "homeId":  "11112",
                                          "awayId":  "11182",
                                          "hs":  "",
@@ -825,7 +825,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1799577000",
                                          "date":  "2027-01-10",
                                          "tbd":  false,
-                                         "home":  "Fundaci贸 Cornell谩 A",
+                                         "home":  "Fundació Cornellá A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "15558",
                                          "awayId":  "11112",
@@ -920,7 +920,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1803127500",
                                          "date":  "2027-02-20",
                                          "tbd":  false,
-                                         "home":  "Cornell脿 A",
+                                         "home":  "Cornellà A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11181",
                                          "awayId":  "11112",
@@ -929,7 +929,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Municipal de Cornell谩"
+                                         "venue":  "Municipal de Cornellá"
                                      },
                                      {
                                          "id":  "fcb:cadete-b:155",
@@ -940,7 +940,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2027-02-27",
                                          "tbd":  false,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Gav脿 A",
+                                         "away":  "Gavà A",
                                          "homeId":  "11112",
                                          "awayId":  "12241",
                                          "hs":  "",
@@ -1053,7 +1053,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1807958700",
                                          "date":  "2027-04-17",
                                          "tbd":  false,
-                                         "home":  "Gimn脿stic Tarragona A",
+                                         "home":  "Gimnàstic Tarragona A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11182",
                                          "awayId":  "11112",
@@ -1111,7 +1111,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2027-05-08",
                                          "tbd":  false,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Fundaci贸 Cornell谩 A",
+                                         "away":  "Fundació Cornellá A",
                                          "homeId":  "11112",
                                          "awayId":  "15558",
                                          "hs":  "",
@@ -1189,7 +1189,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2026-10-11",
                                          "tbd":  true,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Cornell脿 A",
+                                         "away":  "Cornellà A",
                                          "homeId":  "11113",
                                          "awayId":  "11221",
                                          "hs":  "",
@@ -1292,7 +1292,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Ciudad Deportiva San Adri谩"
+                                         "venue":  "Ciudad Deportiva San Adriá"
                                      },
                                      {
                                          "id":  "fcb:infantil:77",
@@ -1321,7 +1321,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1795950000",
                                          "date":  "2026-11-29",
                                          "tbd":  true,
-                                         "home":  "Gimn脿stic Tarragona A",
+                                         "home":  "Gimnàstic Tarragona A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11193",
                                          "awayId":  "11113",
@@ -1330,7 +1330,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Instalaciones Gimn谩stic Tarragona"
+                                         "venue":  "Instalaciones Gimnástic Tarragona"
                                      },
                                      {
                                          "id":  "fcb:infantil:92",
@@ -1406,7 +1406,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Ramon Farr煤s"
+                                         "venue":  "Ramon Farrús"
                                      },
                                      {
                                          "id":  "fcb:infantil:127",
@@ -1425,7 +1425,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Municipal de L麓Hospitalet del Llobregat"
+                                         "venue":  "Municipal de L´Hospitalet del Llobregat"
                                      },
                                      {
                                          "id":  "fcb:infantil:136",
@@ -1473,7 +1473,7 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1803207600",
                                          "date":  "2027-02-21",
                                          "tbd":  true,
-                                         "home":  "Cornell脿 A",
+                                         "home":  "Cornellà A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11221",
                                          "awayId":  "11113",
@@ -1482,7 +1482,7 @@ window.LAMASIA_SCHEDULES = {
                                          "status":  "Not started",
                                          "code":  "0",
                                          "isHome":  false,
-                                         "venue":  "Municipal de Cornell谩"
+                                         "venue":  "Municipal de Cornellá"
                                      },
                                      {
                                          "id":  "fcb:infantil:159",
@@ -1607,7 +1607,7 @@ window.LAMASIA_SCHEDULES = {
                                          "date":  "2027-04-18",
                                          "tbd":  true,
                                          "home":  "FC Barcelona A",
-                                         "away":  "Gimn脿stic Tarragona A",
+                                         "away":  "Gimnàstic Tarragona A",
                                          "homeId":  "11113",
                                          "awayId":  "11193",
                                          "hs":  "",
@@ -1723,7 +1723,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2026-10-04",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Cornell脿 A",
+                                           "away":  "Cornellà A",
                                            "homeId":  "11114",
                                            "awayId":  "11192",
                                            "hs":  "",
@@ -1799,7 +1799,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2026-11-01",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Gimn脿stic Tarragona A",
+                                           "away":  "Gimnàstic Tarragona A",
                                            "homeId":  "11114",
                                            "awayId":  "11726",
                                            "hs":  "",
@@ -1826,7 +1826,7 @@ window.LAMASIA_SCHEDULES = {
                                            "status":  "Not started",
                                            "code":  "0",
                                            "isHome":  false,
-                                           "venue":  "Municipal de L麓Hospitalet del Llobregat"
+                                           "venue":  "Municipal de L´Hospitalet del Llobregat"
                                        },
                                        {
                                            "id":  "fcb:infantil-b:68",
@@ -2007,7 +2007,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1802602800",
                                            "date":  "2027-02-14",
                                            "tbd":  true,
-                                           "home":  "Cornell脿 A",
+                                           "home":  "Cornellà A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11192",
                                            "awayId":  "11114",
@@ -2016,7 +2016,7 @@ window.LAMASIA_SCHEDULES = {
                                            "status":  "Not started",
                                            "code":  "0",
                                            "isHome":  false,
-                                           "venue":  "Municipal de Cornell谩"
+                                           "venue":  "Municipal de Cornellá"
                                        },
                                        {
                                            "id":  "fcb:infantil-b:146",
@@ -2083,7 +2083,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1805022000",
                                            "date":  "2027-03-14",
                                            "tbd":  true,
-                                           "home":  "Gimn脿stic Tarragona A",
+                                           "home":  "Gimnàstic Tarragona A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11726",
                                            "awayId":  "11114",
@@ -2244,7 +2244,7 @@ window.LAMASIA_SCHEDULES = {
                                            "status":  "Not started",
                                            "code":  "0",
                                            "isHome":  false,
-                                           "venue":  "Ramon Farr煤s"
+                                           "venue":  "Ramon Farrús"
                                        }
                                    ],
                     "infantil-c":  [
@@ -2333,7 +2333,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2026-10-25",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Vila Ol铆mpica A",
+                                           "away":  "Vila Olímpica A",
                                            "homeId":  "11115",
                                            "awayId":  "11808",
                                            "hs":  "",
@@ -2371,7 +2371,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2026-11-08",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Sant Vicen莽 Horts A",
+                                           "away":  "Sant Vicenç Horts A",
                                            "homeId":  "11115",
                                            "awayId":  "14361",
                                            "hs":  "",
@@ -2409,7 +2409,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2026-11-22",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Congr猫s B",
+                                           "away":  "Congrès B",
                                            "homeId":  "11115",
                                            "awayId":  "15393",
                                            "hs":  "",
@@ -2485,7 +2485,7 @@ window.LAMASIA_SCHEDULES = {
                                            "date":  "2027-01-10",
                                            "tbd":  true,
                                            "home":  "FC Barcelona A",
-                                           "away":  "Unificaci贸n Llefia A",
+                                           "away":  "Unificación Llefia A",
                                            "homeId":  "11115",
                                            "awayId":  "11214",
                                            "hs":  "",
@@ -2617,7 +2617,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1804417200",
                                            "date":  "2027-03-07",
                                            "tbd":  true,
-                                           "home":  "Vila Ol铆mpica A",
+                                           "home":  "Vila Olímpica A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11808",
                                            "awayId":  "11115",
@@ -2655,7 +2655,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1805626800",
                                            "date":  "2027-03-21",
                                            "tbd":  true,
-                                           "home":  "Sant Vicen莽 Horts A",
+                                           "home":  "Sant Vicenç Horts A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "14361",
                                            "awayId":  "11115",
@@ -2693,7 +2693,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1807437600",
                                            "date":  "2027-04-11",
                                            "tbd":  true,
-                                           "home":  "Congr猫s B",
+                                           "home":  "Congrès B",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "15393",
                                            "awayId":  "11115",
@@ -2769,7 +2769,7 @@ window.LAMASIA_SCHEDULES = {
                                            "start":  "1809856800",
                                            "date":  "2027-05-09",
                                            "tbd":  true,
-                                           "home":  "Unificaci贸n Llefia A",
+                                           "home":  "Unificación Llefia A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11214",
                                            "awayId":  "11115",
@@ -2886,7 +2886,7 @@ window.LAMASIA_SCHEDULES = {
                                           "date":  "2026-10-18",
                                           "tbd":  false,
                                           "home":  "FC Barcelona B",
-                                          "away":  "Cornell脿",
+                                          "away":  "Cornellà",
                                           "homeId":  "11110",
                                           "awayId":  "8826",
                                           "hs":  "",
@@ -2951,7 +2951,7 @@ window.LAMASIA_SCHEDULES = {
                                           "status":  "Not started",
                                           "code":  "0",
                                           "isHome":  false,
-                                          "venue":  "Ciudad Deportiva San Adri谩"
+                                          "venue":  "Ciudad Deportiva San Adriá"
                                       },
                                       {
                                           "id":  "fcb:juvenil-b:71",
@@ -3170,7 +3170,7 @@ window.LAMASIA_SCHEDULES = {
                                           "start":  "1803812400",
                                           "date":  "2027-02-28",
                                           "tbd":  true,
-                                          "home":  "Cornell脿",
+                                          "home":  "Cornellà",
                                           "away":  "FC Barcelona B",
                                           "homeId":  "8826",
                                           "awayId":  "11110",
@@ -3179,7 +3179,7 @@ window.LAMASIA_SCHEDULES = {
                                           "status":  "Not started",
                                           "code":  "0",
                                           "isHome":  false,
-                                          "venue":  "Municipal de Cornell谩"
+                                          "venue":  "Municipal de Cornellá"
                                       },
                                       {
                                           "id":  "fcb:juvenil-b:166",
