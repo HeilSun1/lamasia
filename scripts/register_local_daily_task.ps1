@@ -1,5 +1,5 @@
 ﻿# ═══════════════════════════════════════════════════════════════
-#   注册 Windows 计划任务：每天 09:00 / 15:00 / 21:00 本机更新全部缓存 + SSH 推送
+#   注册 Windows 计划任务：每天 09:00 / 21:00 本机更新全部缓存 + SSH 推送
 #   替换旧的 LaMasia_BarcaB_Update / LaMasia_U19_Update 两个任务。
 #   删除任务：
 #     schtasks /Delete /TN "LaMasia_Local_Daily_Update" /F
@@ -21,18 +21,19 @@ foreach ($old in @("LaMasia_BarcaB_Update", "LaMasia_U19_Update")) {
 
 $action    = New-ScheduledTaskAction -Execute "powershell.exe" `
               -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$script`""
+# 每天 2 班（原为 09:00/15:00/21:00 三班）。2026-09-21 起 fcbarcelona.es 对无头
+# Edge 抓 calendario 开始风控，班次越密越容易撞上；赛程一天变一次都算多。
 $triggers  = @(
   (New-ScheduledTaskTrigger -Daily -At 09:00),
-  (New-ScheduledTaskTrigger -Daily -At 15:00),
   (New-ScheduledTaskTrigger -Daily -At 21:00)
 )
-$settings  = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2) `
-               -MultipleInstances IgnoreNew   # 防看门狗触发的补跑与定时轮次重叠
+$settings  = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 1) `
+               -MultipleInstances IgnoreNew   # 防补跑与定时轮次重叠；1h 是卡死兜底（正常一轮约 6 分钟）
 
 try {
   Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $triggers -Settings $settings `
-    -Description "每日 09:00/15:00/21:00 本机更新拉玛西亚全部缓存（B队/U19/U18/U16/新闻/视频）并 SSH 推送上线；运行器工作流兜底" -Force | Out-Null
-  Write-Host "计划任务已注册：$taskName（每天 09:00 / 15:00 / 21:00，开机错过会补跑）"
+    -Description "每日 09:00/21:00 本机更新拉玛西亚全部缓存（B队/U19/U18/U16/新闻/视频）并 SSH 推送上线；运行器工作流兜底" -Force | Out-Null
+  Write-Host "计划任务已注册：$taskName（每天 09:00 / 21:00，开机错过会补跑）"
 } catch {
   Write-Host "注册失败：$_"
   exit 1

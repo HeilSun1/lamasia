@@ -48,20 +48,58 @@ function Log([string]$msg) {
   Write-Host $line
 }
 
-# Edge 无头渲染页面 → 完整 HTML（有重试；风控/空页返回 ""）
+# 单次渲染的硬上限（秒）。--virtual-time-budget 只管页面内的虚拟时钟，
+# 管不住「官网把连接吊住不返回」——那种情况 Edge 进程会永远不退出。
+$RenderTimeoutSec = 90
+
+# 杀 Edge 进程树：先 taskkill /T 带走子进程；主进程若已先退、渲染进程变孤儿，
+# 再按 --user-data-dir 路径捞一遍，免得反复超时攒下一堆僵尸 msedge。
+function Stop-EdgeTree([int]$TargetPid) {
+  if ($TargetPid) {
+    try { & taskkill.exe /PID $TargetPid /T /F *> $null } catch { }
+  }
+  try {
+    Get-CimInstance Win32_Process -Filter "name='msedge.exe'" -ErrorAction SilentlyContinue |
+      Where-Object { $_.CommandLine -and $_.CommandLine.Contains($Profile) } |
+      ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
+  } catch { }
+}
+
+# Edge 无头渲染页面 → 完整 HTML（有重试 + 硬超时；超时/风控/空页返回 ""）
+#   为什么必须硬超时：2026-09-21 21:22 官网开始风控时，infantil-b 的渲染吊了
+#   28 分钟不返回，而 & 调用是同步阻塞的 —— 整轮就此卡死，后面的 youtube /
+#   weekly / git 提交推送全没跑。改成 Start-Process + WaitForExit(超时)，
+#   到点杀进程树再重试，单轮最坏 6 梯队 × 3 次 × ~98s ≈ 30 分钟（正常约 3 分钟）。
 function Get-FcbHtml([string]$url, [string]$what) {
   for ($attempt = 1; $attempt -le 3; $attempt++) {
+    $domFile = Join-Path $env:TEMP ("fcb-dom-" + [guid]::NewGuid().ToString("N") + ".html")
+    $errFile = "$domFile.err"
+    $prevEAP = $ErrorActionPreference
+    $proc = $null
     try {
-      $prevEAP = $ErrorActionPreference
       $ErrorActionPreference = "Continue"
-      $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
-          --disable-blink-features=AutomationControlled `
-          "--user-data-dir=$Profile" --virtual-time-budget=35000 --dump-dom $url 2>$null | Out-String)
-      $ErrorActionPreference = $prevEAP
-      if ($html -and $html.IndexOf("fixture-result-list__fixture") -ge 0) { return $html }
-      Log "  · $what 第 $attempt 次未解析到赛程（渲染/风控），重试"
+      $proc = Start-Process -FilePath $Edge -PassThru -NoNewWindow `
+        -RedirectStandardOutput $domFile -RedirectStandardError $errFile `
+        -ArgumentList @("--headless=new", "--disable-gpu", "--no-first-run", "--disable-extensions",
+                        "--disable-blink-features=AutomationControlled",
+                        "--user-data-dir=$Profile", "--virtual-time-budget=35000",
+                        "--dump-dom", $url)
+      if (-not $proc.WaitForExit($RenderTimeoutSec * 1000)) {
+        Log "  · $what 第 $attempt 次渲染超时 ${RenderTimeoutSec}s（风控挂连接），杀掉重试"
+      } else {
+        $html = ""
+        if (Test-Path $domFile) { $html = [System.IO.File]::ReadAllText($domFile, [System.Text.Encoding]::UTF8) }
+        if ($html -and $html.IndexOf("fixture-result-list__fixture") -ge 0) { return $html }
+        Log "  · $what 第 $attempt 次未解析到赛程（渲染/风控），重试"
+      }
     } catch {
       Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
+    } finally {
+      $ErrorActionPreference = $prevEAP
+      if ($proc -and -not $proc.HasExited) { Stop-EdgeTree $proc.Id }
+      foreach ($f in @($domFile, $errFile)) {
+        if ($f -and (Test-Path $f)) { Remove-Item $f -Force -ErrorAction SilentlyContinue }
+      }
     }
     Start-Sleep -Seconds 8
   }

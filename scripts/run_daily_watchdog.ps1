@@ -12,10 +12,13 @@
 #   2. 只做只读检查 + 一次有界的补跑触发，**不做任何 git 写操作**
 #      （不改 index、不 abort、不删锁 —— 写操作全部留给主脚本，职责清晰）。
 #   3. 独立计划任务 LaMasia_Local_Watchdog，每 4 小时一次，与主任务错峰。
+#   4. 弹窗默认关闭（2026-09-20 起），要弹得显式加 -Notify。
+#      计划任务注册时没带这个开关，所以线上就是静音状态。
 # ═══════════════════════════════════════════════════════════════
 param(
   [string] $RepoRoot = "",
-  [switch] $SelfTest   # 只检查+写日志，不弹窗、不触发补跑
+  [switch] $SelfTest,  # 只检查+写日志，不弹窗、不触发补跑
+  [switch] $Notify     # 恢复 Windows 通知/弹窗；不传＝静音，只写 alerts.log
 )
 
 $ErrorActionPreference = "Continue"
@@ -68,27 +71,35 @@ function Watchdog-Alert([string]$title, [string]$body, [string]$key) {
     }
   }
 
-  $shown = $false
-  try {
-    [void][Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType=WindowsRuntime]
-    [void][Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType=WindowsRuntime]
-    $tpl = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent(
-             [Windows.UI.Notifications.ToastNotificationType]::ToastText02)
-    $nodes = $tpl.GetElementsByTagName('text')
-    [void]$nodes.Item(0).AppendChild($tpl.CreateTextNode($title))
-    [void]$nodes.Item(1).AppendChild($tpl.CreateTextNode($body))
-    $toast = New-Object Windows.UI.Notifications.ToastNotification $tpl
-    [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier(
-      "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe").Show($toast)
-    $shown = $true
-    WLog "  → 已发送 Windows 通知"
-  } catch { WLog "  (WinRT 通知不可用，回退弹窗)" }
-
-  if (-not $shown) {
+  # 静音模式（默认）：只记日志，不弹窗。2026-09-20 用户要求关掉 ——
+  # 每 4 小时一轮，且相当一部分是误报（把 SCHED_S_TASK_RUNNING=267009
+  # 「任务正在运行中」当成失败读），一天能弹好几遍，吵到没人看。
+  # 检查、告警落盘、有界补跑全都不受影响，恢复弹窗＝给计划任务参数加 -Notify。
+  if ($Notify) {
+    $shown = $false
     try {
-      $shell = New-Object -ComObject WScript.Shell
-      [void]$shell.Popup($body, 15, $title, 48)   # 15 秒自动消失；0 会永久阻塞，禁用
-    } catch { WLog "  (弹窗亦不可用)" }
+      [void][Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType=WindowsRuntime]
+      [void][Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType=WindowsRuntime]
+      $tpl = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent(
+               [Windows.UI.Notifications.ToastNotificationType]::ToastText02)
+      $nodes = $tpl.GetElementsByTagName('text')
+      [void]$nodes.Item(0).AppendChild($tpl.CreateTextNode($title))
+      [void]$nodes.Item(1).AppendChild($tpl.CreateTextNode($body))
+      $toast = New-Object Windows.UI.Notifications.ToastNotification $tpl
+      [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier(
+        "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe").Show($toast)
+      $shown = $true
+      WLog "  → 已发送 Windows 通知"
+    } catch { WLog "  (WinRT 通知不可用，回退弹窗)" }
+
+    if (-not $shown) {
+      try {
+        $shell = New-Object -ComObject WScript.Shell
+        [void]$shell.Popup($body, 15, $title, 48)   # 15 秒自动消失；0 会永久阻塞，禁用
+      } catch { WLog "  (弹窗亦不可用)" }
+    }
+  } else {
+    WLog "  (静音模式：不弹窗，仅记入 alerts.log)"
   }
 
   try {
@@ -172,7 +183,9 @@ $taskState = $null
 try { $taskState = (Get-ScheduledTask -TaskName $MainTask -ErrorAction Stop).State } catch { }
 
 if ($ti) {
-  if ($ti.LastTaskResult -ne 0) {
+  # 267009 = 0x41301 = SCHED_S_TASK_RUNNING：「任务正在运行中」，不是失败。
+  # 撞上正在跑的那一轮就会读到它，2026-09-19~21 连着误报过好几次并触发多余补跑。
+  if ($ti.LastTaskResult -ne 0 -and $ti.LastTaskResult -ne 267009) {
     $meaning = switch ($ti.LastTaskResult) {
       1 { "需人工介入（源码冲突/推送失败/核心缓存未刷新）" }
       2 { "降级完成（部分数据源失败，站点仍在更新）" }
@@ -180,10 +193,18 @@ if ($ti) {
     }
     Add-Problem 'task_failed' ("每日更新任务上次退出：" + $meaning) 'danger'
   }
+  # 卡死检测：State=Running 但已跑超过 50 分钟 —— 多半是 Edge 渲染被官网吊住。
+  # 2026-09-21 那次挂了 28 分钟，LastTaskResult 一直是 267009，看门狗什么都没看出来。
+  if ($taskState -eq 'Running' -and $ti.LastRunTime -and $ti.LastRunTime.Year -gt 2000) {
+    $stuckMin = ((Get-Date) - $ti.LastRunTime).TotalMinutes
+    if ($stuckMin -ge 50) {
+      Add-Problem 'task_stuck' ("每日更新任务已跑 " + [int]$stuckMin + " 分钟仍未结束（疑似卡在 Edge 渲染），建议手动收掉") 'danger'
+    }
+  }
   if ($ti.LastRunTime -and $ti.LastRunTime.Year -gt 2000) {
     $hours = ((Get-Date) - $ti.LastRunTime).TotalHours
     if ($hours -ge 24) {
-      Add-Problem 'task_not_running' ("每日更新任务已 " + [int]$hours + " 小时没跑过（期望每天 3 次）") 'danger'
+      Add-Problem 'task_not_running' ("每日更新任务已 " + [int]$hours + " 小时没跑过（期望每天 2 次）") 'danger'
     } elseif ($hours -ge 12) {
       Add-Problem 'task_not_running' ("每日更新任务已 " + [int]$hours + " 小时没跑过") 'warn'
     }
