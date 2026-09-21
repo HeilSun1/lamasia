@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-21 12:06:25 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-21 22:09:04 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-21 12:06:25",
+    "updated":  "2026-09-21 22:09:04",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "title":  "La cláusula que tendrá Bernal en su nuevo contrato",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "time":  "2026-09-21 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/21/6ab0e2a01e970.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "title":  "Deco argumenta la gestión del Barça Atlètic por el área deportiva profesional",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "time":  "2026-09-19 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/tressesenta/20260801/1004212298/jose-elias-empresario-ficho-lealtad-talento-persona-no-conocimientos-prefiero-formarla-ngc-dct.html", "title":  "José Elías, empresario: Yo ficho por la lealtad y el talento de la persona, no por sus conocimientos. Prefiero formarla yo",
             "url":  "https://www.mundodeportivo.com/tressesenta/20260801/1004212298/jose-elias-empresario-ficho-lealtad-talento-persona-no-conocimientos-prefiero-formarla-ngc-dct.html", "time":  "2026-08-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/09/19/68cd13e5d8e19.r_d.990-360-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260801/1004212229/jordi-pesquer-juvenil-b-primer-equipo-barca-apenas-cinco-meses.html", "title":  "Jordi Pesquer, del Juvenil B al primer equipo del Barça en apenas cinco meses",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260801/1004212229/jordi-pesquer-juvenil-b-primer-equipo-barca-apenas-cinco-meses.html", "time":  "2026-08-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/01/6a6dc6257a9aa.r_d.819-1057-7505.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/09/19/68cd13e5d8e19.r_d.990-360-0.jpeg" }
     ]
 };

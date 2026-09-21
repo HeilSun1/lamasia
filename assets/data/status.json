@@ -1,23 +1,24 @@
 {
     "schema":  1,
-    "runId":  "20260921-120130",
-    "runStartedUtc":  "2026-09-21T04:01:30.4541283Z",
-    "runFinishedUtc":  "2026-09-21T04:07:03.7847326Z",
+    "runId":  "20260921-215314",
+    "runStartedUtc":  "2026-09-21T13:53:14.0249649Z",
+    "runFinishedUtc":  "2026-09-21T14:10:22.4319576Z",
     "lastSuccessUtc":  "2026-09-21T04:07:09.6220507Z",
     "lastRunSource":  "local",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "lastRunStatus":  "blocked",
+    "exitCode":  1,
     "consecutiveFailures":  0,
-    "blocked":  false,
+    "blocked":  true,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-
+                         "stale",
+                         "stale"
                      ],
     "failedScripts":  [
-
+                          "update_fcb_youth_schedules.ps1"
                       ],
     "staleCaches":  [
-
+                        "assets/js/fcb-youth-schedules.js"
                     ],
     "healed":  [
 

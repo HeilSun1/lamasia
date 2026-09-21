@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-21 12:03:01 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-21 21:55:34 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-21 12:03:01",
+    "updated":  "2026-09-21 21:55:34",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6382118", "title":  "每体：巴萨将与18岁门将伊克尔-罗德里格斯续约至2029年",
+            "url":  "https://www.dongqiudi.com/articles/6382118.html", "time":  "2026-09-21 18:40",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7C/E7/280x210/crop/-/rBXRDGqxCVeAKee8AAKL3hvN6eI409.jpg" },
         {
             "id":  "6374353", "title":  "巴萨竞技将由体育部门管理，德科解释其中原因",
             "url":  "https://www.dongqiudi.com/articles/6374353.html", "time":  "2026-09-20 07:16",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6208434", "title":  "记者：巴萨将涨薪续约哈姆扎，解约金升至1.5亿欧",
             "url":  "https://www.dongqiudi.com/articles/6208434.html", "time":  "2026-08-21 19:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/C8/280x210/crop/-/rBXRn2qIMjqAROk-AAMjCIihGLY167.jpg" },
-        {
-            "id":  "6207015", "title":  "世体：巴萨西甲战埃尔切首发初定，埃斯帕特、贝尔纳尔将先发",
-            "url":  "https://www.dongqiudi.com/articles/6207015.html", "time":  "2026-08-21 13:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/16/280x210/crop/-/rBXRDGqH5kqASohbAAB848mB2RU803.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/C8/280x210/crop/-/rBXRn2qIMjqAROk-AAMjCIihGLY167.jpg" }
     ]
 };

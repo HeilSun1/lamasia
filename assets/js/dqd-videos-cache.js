@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 12:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 22:10 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-21 12:07:00",
+    "updated":  "2026-09-21 22:10:20",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -246,42 +246,6 @@ window.DQD_VIDEOS_CACHE = {
                 },
     "feed":  {
                  "players":  {
-                                 "local:juvenil-b:ahmedabarkane":  [
-                                                                    {
-                                                                        "date":  "2026-09-12",
-                                                                        "opp":  "",
-                                                                        "label":  "09-12 · 集锦",
-                                                                        "matchKey":  "",
-                                                                        "videos":  [
-                                                                                       {
-                                                                                           "videoId":  "BV1XRYR6fEUt",
-                                                                                           "title":  "阿巴尔坎(Ahmed Abarkane)-Aqua Hotel杯集锦👀埃斯帕特接班人？",
-                                                                                           "channel":  "口菐",
-                                                                                           "channelId":  "",
-                                                                                           "published":  "2026-09-12",
-                                                                                           "durationSec":  "222",
-                                                                                           "site":  "bili",
-                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/90204a579d78de8a3737fa52d59dac9300c127e1.jpg"
-                                                                                       }
-                                                                                   ]
-                                                                    },
-                                                                    {
-                                                                        "date":  "2026-09-11",
-                                                                        "opp":  "",
-                                                                        "label":  "09-11 · 集锦",
-                                                                        "matchKey":  "",
-                                                                        "videos":  [
-                                                                                       {
-                                                                                           "videoId":  "gu-_6sAps3Q",
-                                                                                           "title":  "Ahmed Abarkane - Aqua Hotel Cup Highlights",
-                                                                                           "channel":  "ArsenKveFCB",
-                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                           "published":  "2026-09-11",
-                                                                                           "durationSec":  ""
-                                                                                       }
-                                                                                   ]
-                                                                    }
-                                                                ],
                                  "local:cadete-b:lihaoyan":  [
                                                                  {
                                                                      "date":  "2026-08-23",
@@ -449,6 +413,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                    ],
                                  "local:juvenil-a:hafizgariba":  [
                                                                      {
+                                                                         "date":  "2026-09-21",
+                                                                         "opp":  "",
+                                                                         "label":  "09-21 · 季前赛/友谊赛",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1SUhi6PEh8",
+                                                                                            "title":  "巴萨 B 队 迦纳中卫 加里巴 本场集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-21",
+                                                                                            "durationSec":  "223",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i0.hdslb.com/bfs/archive/3ed65bf5ec4fb7899e84094fb7edab8594124792.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-09-07",
                                                                          "opp":  "纳哈拉",
                                                                          "label":  "vs 纳哈拉 · 09-07",
@@ -607,6 +589,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                                       ]
                                                                        }
                                                                    ],
+                                 "local:juvenil-b:ahmedabarkane":  [
+                                                                       {
+                                                                           "date":  "2026-09-12",
+                                                                           "opp":  "",
+                                                                           "label":  "09-12 · 集锦",
+                                                                           "matchKey":  "",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "BV1XRYR6fEUt",
+                                                                                              "title":  "阿巴尔坎(Ahmed Abarkane)-Aqua Hotel杯集锦👀埃斯帕特接班人？",
+                                                                                              "channel":  "口菐",
+                                                                                              "channelId":  "",
+                                                                                              "published":  "2026-09-12",
+                                                                                              "durationSec":  "222",
+                                                                                              "site":  "bili",
+                                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/90204a579d78de8a3737fa52d59dac9300c127e1.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                                       {
+                                                                           "date":  "2026-09-11",
+                                                                           "opp":  "",
+                                                                           "label":  "09-11 · 集锦",
+                                                                           "matchKey":  "",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "gu-_6sAps3Q",
+                                                                                              "title":  "Ahmed Abarkane - Aqua Hotel Cup Highlights",
+                                                                                              "channel":  "ArsenKveFCB",
+                                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                              "published":  "2026-09-11",
+                                                                                              "durationSec":  ""
+                                                                                          }
+                                                                                      ]
+                                                                       }
+                                                                   ],
                                  "local:juvenil-b:byronmendoza":  [
                                                                       {
                                                                           "date":  "2026-09-18",
@@ -639,24 +657,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -679,13 +679,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  ""
                                                                                         }
                                                                                     ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
                                                                      }
                                                                  ],
-
-
-
-
-
                                  "sf:b:1457200":  [
                                                       {
                                                           "date":  "2026-09-07",
@@ -945,6 +958,24 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:2076869":  [
+                                                      {
+                                                          "date":  "2026-09-21",
+                                                          "opp":  "",
+                                                          "label":  "09-21 · 季前赛/友谊赛",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1SUhi6PEh8",
+                                                                             "title":  "巴萨 B 队 迦纳中卫 加里巴 本场集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-21",
+                                                                             "durationSec":  "223",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/3ed65bf5ec4fb7899e84094fb7edab8594124792.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-09-07",
                                                           "opp":  "纳哈拉",

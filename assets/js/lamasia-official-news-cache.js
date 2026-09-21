@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-21 12:06:19 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-21 22:08:30 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-21 12:06:19",
+    "updated":  "2026-09-21 22:08:30",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,6 +131,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4579409", "title":  "Flick's Barça is a goal machine",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579409/flicks-barca-is-a-goal-machine", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/658513bf-0f4e-4249-9ee8-36ff4cf82d64/_MGA7518.jpg" },
+            {
                 "id":  "4579017", "title":  "Medical update on Christensen",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579017/medical-update-on-christensen", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/20/afe5af8a-9872-472e-904d-f0812e344a7c/_MGA0199-1-.jpg" },
@@ -219,10 +223,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
                 "tag":  "", "img":  "" },
             {
-                "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/a6bb2c7c-e09e-4d6a-9745-ad8095216816/_5DS8051.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -230,6 +230,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/a6bb2c7c-e09e-4d6a-9745-ad8095216816/_5DS8051.jpg" },
             {
                 "id":  "4576708", "title":  "'I don't want to break records, I want to win matches'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576708/hansi-flick-i-dont-want-to-break-records-i-want-to-win-matches", "time":  "",
@@ -325,11 +329,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4573709", "title":  "UCL PREVIEW | Barça v Feyenoord",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573709/ucl-preview-fc-barcelona-v-feyenoord", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4573819", "title":  "Gio: 'Barça play football that everyone wants to watch'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573819/gio-van-bronckhorst-barca-play-football-that-everyone-wants-to-watch", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/7c038fbf-dde0-4e97-9e6c-764297e8011a/HRtfzoBbsAAaGSc.jpeg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };
