@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-20 21:51 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 12:07 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-20 21:51:24",
+    "updated":  "2026-09-21 12:07:00",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -12,6 +12,7 @@ window.DQD_VIDEOS_CACHE = {
                             "sfb:16897314",
                             "sofascore:16539670",
                             "sofascore:16539731",
+                            "sofascore:16539799",
                             "sofascore:16792416",
                             "sofascore:16792525",
                             "sofascore:16834498",
@@ -145,6 +146,24 @@ window.DQD_VIDEOS_CACHE = {
                                                    "channelId":  "",
                                                    "published":  "",
                                                    "durationSec":  "167"
+                                               }
+                                           ],
+                    "sofascore:16539799":  [
+                                               {
+                                                   "videoId":  "ArIatEtP5Dw",
+                                                   "title":  "En Directo | Barcelona U19 vs Gimnastic Manresa U19 | División de Honor Juvenil, Grupo 3",
+                                                   "channel":  "Bobby Tran",
+                                                   "channelId":  "",
+                                                   "published":  "",
+                                                   "durationSec":  "0"
+                                               },
+                                               {
+                                                   "videoId":  "7OXeGeMq238",
+                                                   "title":  "EN DIRECTO | Barcelona U19 vs Gimnàstic Manresa U19 | División de Honor Juvenil, G3/J3",
+                                                   "channel":  "High School Football ch2",
+                                                   "channelId":  "",
+                                                   "published":  "",
+                                                   "durationSec":  "0"
                                                }
                                            ],
                     "sofascore:16834498":  [
@@ -339,6 +358,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                     }
                                                                 ],
                                  "local:juvenil-a:babakourouma":  [
+                                                                      {
+                                                                          "date":  "2026-09-20",
+                                                                          "opp":  "Nastic Manresa",
+                                                                          "label":  "vs Nastic Manresa · 09-20",
+                                                                          "matchKey":  "",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "1-xaD3iv8tc",
+                                                                                             "title":  "Baba Kourouma vs Nastic Manresa",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-09-20",
+                                                                                             "durationSec":  ""
+                                                                                         }
+                                                                                     ]
+                                                                      },
                                                                       {
                                                                           "date":  "2026-09-10",
                                                                           "opp":  "Feyenoord U19",
@@ -604,6 +639,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -624,24 +677,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -794,6 +829,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-b:michalzuk":  [
+                                                                   {
+                                                                       "date":  "2026-09-20",
+                                                                       "opp":  "Nastic Manresa",
+                                                                       "label":  "vs Nastic Manresa · 09-20",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "W6wcLybCsAo",
+                                                                                          "title":  "Michal Zuk vs Nastic Manresa",
+                                                                                          "channel":  "ArsenKveFCB",
+                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                          "published":  "2026-09-20",
+                                                                                          "durationSec":  ""
+                                                                                      }
+                                                                                  ]
+                                                                   }
+                                                               ],
                                  "local:juvenil-b:raulexposito":  [
                                                                       {
                                                                           "date":  "2026-09-14",
@@ -960,6 +1013,22 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:1506988":  [
                                                       {
+                                                          "date":  "2026-09-20",
+                                                          "opp":  "UD Barbastro",
+                                                          "label":  "vs UD Barbastro · 09-20",
+                                                          "matchKey":  "sfb:16741801",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "R37DkwujaA8",
+                                                                             "title":  "Jesse Bisiwu vs UD Barbastro",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-20",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
                                                           "date":  "2026-09-13",
                                                           "opp":  "",
                                                           "label":  "09-13 · 集锦",
@@ -994,6 +1063,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "308",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/e24edf8ef209732b5a8047a854f936221b636ccc.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:1649171":  [
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "",
+                                                          "label":  "09-13 · 集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "feGGEKmVwok",
+                                                                             "title":  "🧤🔥 18yo Iker Rodriguez with incredible 2 saves for Barça Atlètic today. #football #lamasia",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       }

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-20 21:48 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-21 12:03 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-20 21:48:44",
+    "updated":  "2026-09-21 12:03:01",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -477,7 +477,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "team":  "Barcelona Atlètic",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2679424/image",
-                        "age":  "18岁",
+                        "age":  "19岁",
                         "birthday":  "2007-09-21",
                         "foot":  "双脚",
                         "height":  "196",
@@ -645,10 +645,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Barcelona Atlètic",
                         "homeId":  "327187",
                         "awayId":  "24343",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -1085,6 +1085,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "16742350",
+                        "comp":  "西协乙",
+                        "round":  "33",
+                        "start":  "1809270000",
+                        "home":  "Barcelona Atlètic",
+                        "away":  "CD Tudelano",
+                        "homeId":  "24343",
+                        "awayId":  "44230",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };

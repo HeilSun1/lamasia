@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-20 18:53:56 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-21 12:06:23 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-20 18:53:56",
+    "updated":  "2026-09-21 12:06:23",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134502276", "title":  "Landry da la primera alegría a domicilio al Barça Atlètic",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-da-primera-alegria-domicilio-134502276", "time":  "2026-09-20 21:26",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f57620-5da7-4728-ad67-83dea1bdb8d8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134493320", "title":  "UD Barbastro - Barça Atlètic: resumen, resultado y goles del partido de la jornada 3 de la Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-barbastro-barca-atletic-directo-134493320", "time":  "2026-09-20 17:31",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134485864", "title":  "Iu y Nil Vicens impulsan al Juvenil A a otra goleada majestuosa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-nil-vicens-impulsan-juvenil-134485864", "time":  "2026-09-20 12:07",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134454227", "title":  "Barbastro-Barça Atlètic: El reto de sumar el primer triunfo a domicilio",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barbastro-barca-atletic-reto-sumar-134454227", "time":  "2026-09-19 15:15",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133217000", "title":  "El Barça vuelve a la carga por una joya del Racing",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-vuelve-carga-joya-racing-133217000", "time":  "2026-08-09 16:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42a43df6-5440-4682-99e6-7ee8eb4fbdf9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133200522", "title":  "Gistau manda un mensaje a Flick",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cronica-barca-atletic-girona-gistau-flick-133200522", "time":  "2026-08-08 18:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/83abe0cc-a11b-49d8-a7d9-88cfbf75a0f5_16-9-discover-aspect-ratio_640w_0_x450y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42a43df6-5440-4682-99e6-7ee8eb4fbdf9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
