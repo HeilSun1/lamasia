@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 22:10 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 22:36 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-21 22:10:20",
+    "updated":  "2026-09-21 22:36:25",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -657,6 +657,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -677,24 +695,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -1077,6 +1077,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
+                                 "sf:b:2128094":  [
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-07",
+                                                          "matchKey":  "sfb:16741779",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV14dbc6REwA",
+                                                                             "title":  "乔迪·佩斯克尔 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "132",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/d8b228ccec9f228ea03be0cbccfb82cce6520aad.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
                                  "sf:u18:2342525":  [
                                                         {
                                                             "date":  "2026-09-12",
@@ -1147,6 +1167,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-09-10",
                                                                                "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2128094":  [
+                                                        {
+                                                            "date":  "2026-09-07",
+                                                            "opp":  "CD Naxara",
+                                                            "label":  "vs CD Naxara · 09-07",
+                                                            "matchKey":  "sfb:16741779",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "BV14dbc6REwA",
+                                                                               "title":  "乔迪·佩斯克尔 vs CD Naxara | 个人精彩集锦",
+                                                                               "channel":  "静静很甜美",
+                                                                               "channelId":  "",
+                                                                               "published":  "2026-09-07",
+                                                                               "durationSec":  "132",
+                                                                               "site":  "bili",
+                                                                               "pic":  "https://i0.hdslb.com/bfs/archive/d8b228ccec9f228ea03be0cbccfb82cce6520aad.jpg"
                                                                            }
                                                                        ]
                                                         }
