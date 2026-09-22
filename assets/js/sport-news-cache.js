@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-22 12:07:24 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-22 22:48:48 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-22 12:07:24",
+    "updated":  "2026-09-22 22:48:48",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134538604", "title":  "El Barça Atlètic, en cuadro y sin Bisiwu ni Orian Goren",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-bisiwu-orian-goren-belletti-filial-134538604", "time":  "2026-09-22 06:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/727b5451-0061-4619-b6c9-a1ffed395793_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134527121", "title":  "Minguk Lee, el lateral coreano que asombra en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/minguk-lee-lateral-coreano-asombra-134527121", "time":  "2026-09-21 16:54",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134502276", "title":  "Landry da la primera alegría a domicilio al Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-da-primera-alegria-domicilio-134502276", "time":  "2026-09-20 21:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f57620-5da7-4728-ad67-83dea1bdb8d8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f57620-5da7-4728-ad67-83dea1bdb8d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134493320", "title":  "UD Barbastro - Barça Atlètic: resumen, resultado y goles del partido de la jornada 3 de la Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-barbastro-barca-atletic-directo-134493320", "time":  "2026-09-20 17:31",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133256558", "title":  "Josué Caicedo ya está en Barcelona para cerrar su fichaje por el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/caicedo-barcelona-ponerse-ordenes-belletti-josue-barca-atletic-ecuador-133256558", "time":  "2026-08-11 18:05",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/316120c1-cf7c-4af8-bfcb-3aef6e980b53_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133249832", "title":  "Los secretos de la nueva perla canaria del Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-entresijos-nueva-perla-133249832", "time":  "2026-08-11 08:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/316120c1-cf7c-4af8-bfcb-3aef6e980b53_16-9-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

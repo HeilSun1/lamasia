@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-22 12:07:20 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-22 22:48:42 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-22 12:07:20",
+    "updated":  "2026-09-22 22:48:42",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,6 +131,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4579922", "title":  "The squad back to training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579922/the-squad-back-to-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/22/1ea7f490-8c5c-4335-bc90-4d6ecc0f286a/WhatsApp-Image-2026-09-22-at-13.09.42-2-.jpeg" },
+            {
+                "id":  "4579612", "title":  "Europe's most productive duo",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579612/raphinha-and-lamine-yamal-europes-most-productive-duo", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/c0918d11-2c33-46ea-8349-f12a3c02bc33/_MGA5125.jpg" },
+            {
+                "id":  "4579417", "title":  "FC Barcelona international diary",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579417/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/ffcd0d23-a8f1-4243-acc0-1347b9da0f9e/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027__mga5167.jpg" },
+            {
                 "id":  "4579409", "title":  "Flick's Barça is a goal machine",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579409/flicks-barca-is-a-goal-machine", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/658513bf-0f4e-4249-9ee8-36ff4cf82d64/_MGA7518.jpg" },
@@ -215,14 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" },
             {
-                "id":  "4577323", "title":  "The squad for Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577323/the-squad-for-barca-v-racing", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/75e74f2b-2437-487a-8146-8f2274ada03f/_MGA7255.jpg" },
-            {
-                "id":  "4576712", "title":  "PREVIEW | Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -230,6 +234,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577323", "title":  "The squad for Barça v Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577323/the-squad-for-barca-v-racing", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/75e74f2b-2437-487a-8146-8f2274ada03f/_MGA7255.jpg" },
+            {
+                "id":  "4576712", "title":  "PREVIEW | Barça v Racing",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
@@ -317,19 +329,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4574000", "title":  "Kounde matches Abidal",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574000/kounde-matches-abidal-as-the-frenchman-with-most-appearances-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
-            {
-                "id":  "4574300", "title":  "Round figures for Pedri and Joan Garcia",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574300/round-figures-for-pedri-and-joan-garcia", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/3e64478b-9e50-4fd4-85c2-ed53c3be6e1f/_MGA5786.jpg" },
-            {
-                "id":  "4573860", "title":  "Champions League squad",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573860/first-champions-league-squad-announced", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/08/5db40c71-7f51-4080-9f19-21914d8b0af0/WhatsApp-Image-2026-09-08-at-14.22.16-2-.jpeg" },
-            {
-                "id":  "4573709", "title":  "UCL PREVIEW | Barça v Feyenoord",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573709/ucl-preview-fc-barcelona-v-feyenoord", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" }
         ]
     }
 };
