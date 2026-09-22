@@ -1,10 +1,11 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-21 22:36 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-22 11:53 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-21 22:36:25",
+    "updated":  "2026-09-22 11:53:28",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
                             "sfb:16741779",
+                            "sfb:16741801",
                             "sfb:16741931",
                             "sfb:16832369",
                             "sfb:16858526",
@@ -431,6 +432,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                     ]
                                                                      },
                                                                      {
+                                                                         "date":  "2026-09-20",
+                                                                         "opp":  "UD Barbastro",
+                                                                         "label":  "vs UD Barbastro · 09-20",
+                                                                         "matchKey":  "sfb:16741801",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "tSHdzfl-wyc",
+                                                                                            "title":  "Hafiz Gariba vs UD Barbastro",
+                                                                                            "channel":  "ArsenKveFCB",
+                                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                            "published":  "2026-09-20",
+                                                                                            "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-09-07",
                                                                          "opp":  "纳哈拉",
                                                                          "label":  "vs 纳哈拉 · 09-07",
@@ -657,24 +674,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -695,6 +694,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -766,6 +783,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channel":  "ArsenKveFCB",
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-09-20",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "UD Logrones",
+                                                          "label":  "vs UD Logrones · 09-13",
+                                                          "matchKey":  "sfb:16741931",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "N3nOvdSQqNU",
+                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
+                                                                             "channel":  "Barca Nation",
+                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
+                                                                             "published":  "2026-09-13",
                                                                              "durationSec":  ""
                                                                          }
                                                                      ]
@@ -1191,6 +1224,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                        ]
                                                         }
                                                     ],
+                                 "sf:u19:2128115":  [
+                                                        {
+                                                            "date":  "2026-09-15",
+                                                            "opp":  "",
+                                                            "label":  "09-15 · 集锦",
+                                                            "matchKey":  "",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "etBQbjo0PXU",
+                                                                               "title":  "Sergi Mayans - La Masia\u0027s Most Promising Left Centre-Back",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-15",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
                                  "sf:u19:2229087":  [
                                                         {
                                                             "date":  "2026-09-13",
@@ -1277,7 +1328,59 @@ window.DQD_VIDEOS_CACHE = {
                                                                        ]
                                                         }
                                                     ],
+                                 "sf:u19:2604387":  [
+                                                        {
+                                                            "date":  "2026-09-20",
+                                                            "opp":  "UD Barbastro",
+                                                            "label":  "vs UD Barbastro · 09-20",
+                                                            "matchKey":  "sfb:16741801",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "3F3OF9AknPU",
+                                                                               "title":  "Alex Gonzalez vs UD Barbastro",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-20",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2607840":  [
+                                                        {
+                                                            "date":  "2026-09-13",
+                                                            "opp":  "UD Montecarlo",
+                                                            "label":  "vs UD Montecarlo · 09-13",
+                                                            "matchKey":  "sofascore:16539731",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "mj-QOfx0WsY",
+                                                                               "title":  "Raul Exposito vs UD Montecarlo",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-13",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
                                  "sf:u19:2679425":  [
+                                                        {
+                                                            "date":  "2026-09-20",
+                                                            "opp":  "UD Barbastro",
+                                                            "label":  "vs UD Barbastro · 09-20",
+                                                            "matchKey":  "sfb:16741801",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "BvqKCfwkyZo",
+                                                                               "title":  "Joni Hernandez vs UD Barbastro",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-20",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
                                                         {
                                                             "date":  "2026-09-10",
                                                             "opp":  "Feyenoord U19",

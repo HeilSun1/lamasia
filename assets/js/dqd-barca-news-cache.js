@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-21 20:28:23 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-22 11:51:29 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-21 20:28:23",
+    "updated":  "2026-09-22 11:51:29",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6382425", "title":  "巴萨锁定未来！18岁门神罗德里格斯续约至2029年",
+            "url":  "https://www.dongqiudi.com/articles/6382425.html", "time":  "2026-09-21 19:44",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7C/F4/280x210/crop/-/rBXRn2qxF8WAD_cvABTrML2VAk4655.png" },
         {
             "id":  "6382118", "title":  "每体：巴萨将与18岁门将伊克尔-罗德里格斯续约至2029年",
             "url":  "https://www.dongqiudi.com/articles/6382118.html", "time":  "2026-09-21 18:40",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6211100", "title":  "凯塔-巴尔德：劳塔罗很适合巴萨，他让我想起了阿圭罗",
             "url":  "https://www.dongqiudi.com/articles/6211100.html", "time":  "2026-08-22 08:05",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1F/2F/280x210/crop/-/rBXRn2qIvBmACofCAAEUAzX3iFE723.jpg" },
-        {
-            "id":  "6208434", "title":  "记者：巴萨将涨薪续约哈姆扎，解约金升至1.5亿欧",
-            "url":  "https://www.dongqiudi.com/articles/6208434.html", "time":  "2026-08-21 19:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1D/C8/280x210/crop/-/rBXRn2qIMjqAROk-AAMjCIihGLY167.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1F/2F/280x210/crop/-/rBXRn2qIvBmACofCAAEUAzX3iFE723.jpg" }
     ]
 };
