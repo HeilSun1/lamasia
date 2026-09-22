@@ -2,11 +2,25 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-09-22 11:53:28",
+    "updated":  "2026-09-22 19:49:42",
+    "probeOk":  true,
     "searched":  [
 
                  ],
     "items":  [
-
+                  {
+                      "at":  "2026-09-22",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u19:2229086",
+                      "v":  {
+                                "videoId":  "YxTizuR3QfI",
+                                "title":  "Joan Ingles - Promising Centre-Back",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-09-22",
+                                "durationSec":  ""
+                            }
+                  }
               ]
 };
