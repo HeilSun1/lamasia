@@ -191,7 +191,12 @@ function Write-Shard([string]$Mode, $Items = @(), $Searched = @()) {
     $searchedOut = @($sset.Keys | Sort-Object)
   }   # Consume：本机已折进主缓存，分片不再保留 searched
 
-  $obj = [ordered]@{ version = 1; updated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss"); searched = $searchedOut; items = @($merged) }
+  # probeOk：本轮到底摸不摸得到 YouTube。这是区分「当天真没新视频」和
+  # 「运行器那步根本抓不到」的唯一线索 —— 两种情况下分片都是空的，从外面看不出区别。
+  # Merge（运行器）写本轮真实探测结果；Consume（本机）**保留运行器上一次的值** ——
+  # 本机自己永远探不到 YouTube，若照写 $script:ytProbe 会把 false 覆盖上去变成误导。
+  $probeOut = if ($Mode -eq "Merge") { ($script:ytProbe -eq $true) } else { $old.probeOk }
+  $obj = [ordered]@{ version = 1; updated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss"); probeOk = $probeOut; searched = $searchedOut; items = @($merged) }
   $js = "/* 自动生成，请勿手动编辑 —— update_youtube.ps1 -YouTubeOnly 产出、本机全量运行时合并。" + "`r`n   运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */`r`nwindow.DQD_VIDEOS_YT_SHARD = $($obj | ConvertTo-Json -Depth 10);`r`n"
   try {
     [System.IO.File]::WriteAllText($ShardFile, $js, $UTF8)
@@ -655,7 +660,9 @@ function Test-YtProbe {
     $script:ytProbe = $true
   } catch {
     $script:ytProbe = $false
-    Log "✗ YouTube 不可达（本机需代理/TUN 模式），本次跳过视频抓取，下次自动重试。"
+    # 措辞刻意不用 ✗：本机无代理、抓不到 YouTube 是**设计如此**（YouTube 由运行器产分片），
+    # 用告警图标每天报两次会把真故障淹掉。本机 B站/微博 不受影响。
+    Log "  · YouTube 本机不可达（设计如此：本机无代理，YouTube 由运行器产分片）——跳过本机油管抓取。"
   }
   return $script:ytProbe
 }
@@ -905,8 +912,13 @@ Log "  · 已知视频 $($known.Count) 条（已收录，跳过重复抓取）"
 $shard = Read-Shard
 $shardItems = @()                 # -YouTubeOnly 时累积本轮新条目
 $todayStr = (Get-Date).ToString("yyyy-MM-dd")
-if (-not $YouTubeOnly -and @($shard.items).Count) {
-  Log "  · 待合并的分片：$(@($shard.items).Count) 条（运行器产出，本机合并后清空）"
+if (-not $YouTubeOnly -and $shard.updated) {
+  # 把「运行器当天真没抓到新视频」和「运行器那步根本摸不到 YouTube」分开：
+  # 两种情况分片都是空的，以前本机日志里看不出任何区别，排查时无从下手。
+  $probeTxt = "无探测记录（旧格式分片）"
+  if ($shard.probeOk -eq $true) { $probeTxt = "YouTube 可达" }
+  elseif ($shard.probeOk -eq $false) { $probeTxt = "✗ 抓不到 YouTube（站内油管内容不会更新）" }
+  Log "  · 运行器分片（$($shard.updated)）：$probeTxt；待合并 $(@($shard.items).Count) 条"
 }
 
 # ── 已抓过但未收录的 bvid（未配视频冷却期去重）：每行 bvid<TAB>yyyy-MM-dd ──
@@ -1651,6 +1663,14 @@ if ($YouTubeOnly) {
   Write-Shard -Mode Merge -Items $shardItems -Searched $newSearched
   Log "YouTube-only 完成：本轮新增分片 $($shardItems.Count) 条 / 新搜索 $($newSearched.Count) 场"
   Log "  ⚠️ 本模式不写 assets/js/dqd-videos-cache.js —— 运行器结构上不可能覆盖本机抓到的数据"
+  if ($script:ytProbe -ne $true) {
+    # 这个模式唯一的职责就是抓 YouTube，摸不到就是失败。以前这里静默 exit 0，
+    # 于是「当天没有新视频」和「根本抓不到」在 Actions 界面上一模一样（都是绿的），
+    # 运行器侧断供可以连续好几天没人发现。给个非零退出码让它在那步直接显红。
+    # （该步骤是 continue-on-error，后面的提交步骤照常跑，不会连累其它缓存。）
+    Log "✗ 运行器本轮摸不到 YouTube，分片无新增 —— 退出码 3，该步骤会显示失败。"
+    exit 3
+  }
   return
 }
 

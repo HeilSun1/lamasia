@@ -26,7 +26,24 @@
 
 配置（`scripts/update_youtube.ps1` 头部）：`$PlayerChannelHandles` 改 YouTube 球员集锦频道、`$BiliUids` 改 B站 UP 主 UID、`$MaxBiliVideos` 控制每 UP 取最近投稿条数。
 
-> ⚠️ 国内访问 YouTube 需代理：本机跑更新时若无代理会记日志跳过（不标记已搜、下次自动重试）；GitHub Actions 在美区运行器，是更可靠的自动路径。视频缩略图加载失败时卡片保留文字，不影响点击播放/跳转。
+> ⚠️ 国内访问 YouTube 需代理：本机跑更新时若无代理会**记一行非告警日志跳过**
+> （不标记已搜、下次自动重试；B站/微博 不受影响）。视频缩略图加载失败时卡片保留文字，
+> 不影响点击播放/跳转。
+
+**运行器 → 本机的分片通道。** 本机抓不到 YouTube，改由 GitHub Actions 在美区跑
+`update_youtube.ps1 -YouTubeOnly`，只产出中间产物 `scripts/dqd-videos-yt-shard.js`，
+本机下一次全量运行时合并并清空（`Consume`）。该分支**结构上不写主缓存**
+`dqd-videos-cache.js`，所以运行器不可能覆盖本机抓到的数据。
+
+**怎么区分「当天真没新视频」和「运行器根本没抓到」** —— 这两种情况下分片都是空的，
+以前从外面完全看不出区别，运行器侧断供可以连着好几天没人发现：
+
+- 分片自带 `probeOk` 字段（运行器本轮能不能摸到 YouTube）。本机日志会照实打出来：
+  `· 运行器分片（<时间>）：YouTube 可达` 或 `✗ 抓不到 YouTube`。旧格式分片没有该字段时
+  显示「无探测记录」。`Consume` 会**保留运行器上一次的值**——本机自己永远探不到 YouTube，
+  照写会把 `false` 覆盖上去变成误导。
+- `-YouTubeOnly` 探不到 YouTube 时**以退出码 3 结束**，Actions 里那一步会直接显红，
+  不再静默变绿（该步骤是 `continue-on-error`，后面的提交步骤照常跑，不连累其它缓存）。
 
 ## 目录
 
