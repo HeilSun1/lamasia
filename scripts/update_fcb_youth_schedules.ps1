@@ -12,12 +12,22 @@
 #
 #   由 run_daily_update.ps1 / GitHub Actions 每天调用；日志 scripts/fcb-youth-update.log
 # ═══════════════════════════════════════════════════════════════
+param(
+  [switch] $Force   # 无视抓取闸门，强制重抓一次（手工排障用）
+)
+
 $ErrorActionPreference = "Stop"
 
 $Root      = Split-Path -Parent $PSScriptRoot
 $LogFile   = Join-Path $Root "scripts\fcb-youth-update.log"
 $OutFile   = Join-Path $Root "assets\js\fcb-youth-schedules.js"
 $UTF8      = New-Object System.Text.UTF8Encoding($false)
+
+# 一天只抓一次。官网自 2026-09-21 起对无头 Edge 抓 calendario 风控，而赛程
+# 一周才变一次 —— 每天两班各抓一遍纯属把额度送给 WAF。
+# 窗口 18h 的取值依据：两班 09:00 / 21:00，09:00 距前一晚 21:00 只有 12h（跳过），
+# 21:00 已满 24h（抓）。于是自然收敛成「每天一班抓、另一班跳过」。
+$MinScrapeIntervalHours = 18
 
 # ── 配置：本站 key → 官方 slug + 赛事名（id→中文见竞争列表，未知回退英文） ──
 $Tiers = @(
@@ -181,6 +191,26 @@ function Get-TierMatches([string]$html, [hashtable]$cfg) {
   $list = @($map.Values | Sort-Object { [int64]$_.start })
   for ($i = 0; $i -lt $list.Count; $i++) { $list[$i].round = [string]($i + 1) }
   return @($list)
+}
+
+# ── 抓取闸门：产物不够旧就跳过（一天一次） ────────────────────
+# 用产物自带的 updated 时间戳判新旧，不用文件 mtime —— 切分支 / rebase /
+# checkout 都会把 mtime 刷成「现在」，那样闸门会把陈旧数据误判成刚抓过。
+# 读文件必须走 .NET ReadAllText：PS 5.1 的 Get-Content -Encoding UTF8 在
+# 无 BOM 文件上会静默吞行（本项目 2026-09 踩过这个坑）。
+# 抓失败时不写文件、时间戳不前进 → 下一班自然会重抓，闸门不会造成长期停更。
+if (-not $Force -and (Test-Path $OutFile)) {
+  $m = [regex]::Match([System.IO.File]::ReadAllText($OutFile, $UTF8),
+                      '"updated"\s*:\s*"(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"')
+  if ($m.Success) {
+    $last = [datetime]::ParseExact($m.Groups[1].Value, 'yyyy-MM-dd HH:mm:ss',
+                                   [System.Globalization.CultureInfo]::InvariantCulture)
+    $ageH = ((Get-Date) - $last).TotalHours
+    if ($ageH -lt $MinScrapeIntervalHours) {
+      Log ("跳过：赛程缓存 {0:N1} 小时前刚抓过（闸门 {1} 小时 ≈ 一天一次）；要强制重抓加 -Force。" -f $ageH, $MinScrapeIntervalHours)
+      exit 0
+    }
+  }
 }
 
 # ── 主流程 ────────────────────────────────────────────────────

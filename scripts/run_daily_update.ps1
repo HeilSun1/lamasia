@@ -66,6 +66,11 @@ $CoreCaches = @(
   'assets/js/dqd-u18-cache.js'
   'assets/js/dqd-u16-cache.js'
   'assets/js/dqd-barca-atletic-cache.js'
+)
+# 一天只抓一次的产物：不能按「本轮是否刷新」审计（一天里的第二班必然不刷新），
+# 单独给 28 小时容忍度 —— 见下面的新鲜度审计。
+# 注意：它对应的 *脚本* 仍在 $CoreScripts 里，抓取真失败照样 blocked，不受影响。
+$DailyCaches = @(
   'assets/js/fcb-youth-schedules.js'
 )
 # 非核心：允许失败/不刷新，只降级不报红
@@ -338,11 +343,13 @@ foreach ($s in $UpdateScripts) {
 # 产物新鲜度审计 —— 补"脚本只 Log 不 exit"的漏洞（如 update_youtube.ps1 的写入失败分支）
 # -SelfTest 会跳过全部抓取脚本，此时审计没有意义，只会产生误导性噪声
 if (-not $SelfTest) {
-  $tolerance = $t0.AddMinutes(-5)
-  foreach ($c in ($CoreCaches + $SoftCaches)) {
+  $tolerance      = $t0.AddMinutes(-5)
+  $dailyTolerance = (Get-Date).AddHours(-28)     # 一天一抓的产物按 28h 审
+  foreach ($c in ($CoreCaches + $SoftCaches + $DailyCaches)) {
     $u = Get-CacheUpdated $Root $c
     if ($null -eq $u) { continue }               # 无 updated 字段（details 等），跳过
-    if ($u -lt $tolerance) { [void]$StaleCaches.Add($c) }
+    $tol = if ($DailyCaches -contains $c) { $dailyTolerance } else { $tolerance }
+    if ($u -lt $tol) { [void]$StaleCaches.Add($c) }
   }
 }
 
@@ -353,6 +360,9 @@ if ($staleCore.Count -gt 0) {
 }
 $staleSoft = @($StaleCaches | Where-Object { $SoftCaches -contains $_ })
 if ($staleSoft.Count -gt 0) { Log-Line "  · 非核心缓存未刷新：$($staleSoft -join ', ')" }
+
+$staleDaily = @($StaleCaches | Where-Object { $DailyCaches -contains $_ })
+if ($staleDaily.Count -gt 0) { Log-Line "  ✗ 一天一抓的缓存已超期未刷新（>28h）：$($staleDaily -join ', ')" }
 
 $failCore = @($FailedScripts | Where-Object { $CoreScripts -contains $_ })
 if ($failCore.Count -gt 0) { [void]$BlockedCodes.Add('stale') }
