@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-22 19:47:46 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-23 21:32:05 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-22 19:47:46",
+    "updated":  "2026-09-23 21:32:05",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -11,7 +11,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134527121", "title":  "Minguk Lee, el lateral coreano que asombra en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/minguk-lee-lateral-coreano-asombra-134527121", "time":  "2026-09-21 16:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d85e10a7-36af-4d49-8a2c-e5e554c00cd8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d85e10a7-36af-4d49-8a2c-e5e554c00cd8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134502276", "title":  "Landry da la primera alegría a domicilio al Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-da-primera-alegria-domicilio-134502276", "time":  "2026-09-20 21:26",

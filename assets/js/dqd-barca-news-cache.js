@@ -1,9 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-22 19:47:19 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-23 21:24:14 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-22 19:47:19",
+    "updated":  "2026-09-23 21:24:14",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6389632", "title":  "世体：布斯克茨将参加欧足联A级证书课程，目前较少接触球员",
+            "url":  "https://www.dongqiudi.com/articles/6389632.html", "time":  "2026-09-23 18:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/6D/280x210/crop/-/rBXRn2qzq8yAKbF2AACMBepsyQE324.jpg" },
+        {
+            "id":  "6389231", "title":  "每体：加里巴闪耀巴萨竞技，进入弗利克考察视野",
+            "url":  "https://www.dongqiudi.com/articles/6389231.html", "time":  "2026-09-23 16:41",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/3B/280x210/crop/-/rBXRn2qzkKqAaxvsAAGuPTCwK2g265.jpg" },
+        {
+            "id":  "6389040", "title":  "布斯克茨开启教练生涯！目标欧足联职业级证书",
+            "url":  "https://www.dongqiudi.com/articles/6389040.html", "time":  "2026-09-23 15:31",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/1C/280x210/crop/-/rBXRn2qzf8KAVdvsAAwa88xb9N4795.png" },
+        {
+            "id":  "6387575", "title":  "每体：克里斯滕森受伤后，弗里克可能从巴萨青训提拔中卫",
+            "url":  "https://www.dongqiudi.com/articles/6387575.html", "time":  "2026-09-23 08:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/EF/280x210/crop/-/rBXRDGkPisaAG4QKAAHtZa0z_1Y435.jpg" },
         {
             "id":  "6382425", "title":  "巴萨锁定未来！18岁门神罗德里格斯续约至2029年",
             "url":  "https://www.dongqiudi.com/articles/6382425.html", "time":  "2026-09-21 19:44",
@@ -187,22 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6226983", "title":  "世体：通卡拉在巴萨竞技友谊赛脚踝受重击，预计伤缺5周",
             "url":  "https://www.dongqiudi.com/articles/6226983.html", "time":  "2026-08-24 21:07",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/34/280x210/crop/-/rBXRn2qMQgiAbWCPAACcnxFQ-6U940.jpg" },
-        {
-            "id":  "6213894", "title":  "弗里克：穆帅是我的克星？又不是要踢皇马，还是谈谈埃尔切吧",
-            "url":  "https://www.dongqiudi.com/articles/6213894.html", "time":  "2026-08-22 20:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/6B/280x210/crop/-/rBXRn2qJkRyAWiqoAAD5NVByq94426.jpg" },
-        {
-            "id":  "6213830", "title":  "官方：法乙阿讷西签下巴萨后卫大卫-奥杜罗",
-            "url":  "https://www.dongqiudi.com/articles/6213830.html", "time":  "2026-08-22 18:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/21/280x210/crop/-/rBXRn2qJeDuAe_8VAAOxP0Br60c101.jpg" },
-        {
-            "id":  "6213822", "title":  "弗里克：罗德里是出色的领袖，我们必须用胜利开启新赛季",
-            "url":  "https://www.dongqiudi.com/articles/6213822.html", "time":  "2026-08-22 18:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/21/1D/280x210/crop/-/rBXRn2qJdoCAOeWuAADoAxb60Hc636.jpg" },
-        {
-            "id":  "6211100", "title":  "凯塔-巴尔德：劳塔罗很适合巴萨，他让我想起了阿圭罗",
-            "url":  "https://www.dongqiudi.com/articles/6211100.html", "time":  "2026-08-22 08:05",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/1F/2F/280x210/crop/-/rBXRn2qIvBmACofCAAEUAzX3iFE723.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/34/280x210/crop/-/rBXRn2qMQgiAbWCPAACcnxFQ-6U940.jpg" }
     ]
 };

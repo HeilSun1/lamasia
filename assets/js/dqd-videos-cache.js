@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-22 22:49 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-23 21:32 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-22 22:49:39",
+    "updated":  "2026-09-23 21:32:58",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -670,7 +670,45 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       }
                                                                   ],
+                                 "local:juvenil-b:danyfreire":  [
+                                                                    {
+                                                                        "date":  "2026-08-28",
+                                                                        "opp":  "",
+                                                                        "label":  "08-28 · 集锦",
+                                                                        "matchKey":  "",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "BV1s6tN6bEAU",
+                                                                                           "title":  "丹尼·弗雷雷疯狂的盘带",
+                                                                                           "channel":  "静静很甜美",
+                                                                                           "channelId":  "",
+                                                                                           "published":  "2026-08-28",
+                                                                                           "durationSec":  "13",
+                                                                                           "site":  "bili",
+                                                                                           "pic":  "https://i1.hdslb.com/bfs/archive/11adb38a4fb7d71bec4761243e2b15d036ec83b7.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:juvenil-b:ismaelziani":  [
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
@@ -696,26 +734,28 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "durationSec":  ""
                                                                                         }
                                                                                     ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
                                                                      }
                                                                  ],
+                                 "local:juvenil-b:mahdielmaimouni":  [
+                                                                         {
+                                                                             "date":  "2026-08-31",
+                                                                             "opp":  "",
+                                                                             "label":  "08-31 · 个人集锦",
+                                                                             "matchKey":  "",
+                                                                             "videos":  [
+                                                                                            {
+                                                                                                "videoId":  "BV1e2th6JEY6",
+                                                                                                "title":  "板鸭U18 3：0 乌拉圭U18 | 埃尔阿尔比尔锦标赛 | 精彩集锦",
+                                                                                                "channel":  "静静很甜美",
+                                                                                                "channelId":  "",
+                                                                                                "published":  "2026-08-31",
+                                                                                                "durationSec":  "160",
+                                                                                                "site":  "bili",
+                                                                                                "pic":  "https://i2.hdslb.com/bfs/archive/12da6a42b50c0817e77d8a8cfe6b475e44531061.jpg"
+                                                                                            }
+                                                                                        ]
+                                                                         }
+                                                                     ],
                                  "sf:b:1457200":  [
                                                       {
                                                           "date":  "2026-09-07",
@@ -789,22 +829,6 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-09-13",
-                                                          "opp":  "UD Logrones",
-                                                          "label":  "vs UD Logrones · 09-13",
-                                                          "matchKey":  "sfb:16741931",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "N3nOvdSQqNU",
-                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
-                                                                             "channel":  "Barca Nation",
-                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
-                                                                             "published":  "2026-09-13",
-                                                                             "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-09-13",
                                                           "opp":  "",
                                                           "label":  "09-13 · 集锦",
                                                           "matchKey":  "",
@@ -818,6 +842,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "158",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/5f7c969e187f99ea3c8df6e6be6df852e7a90200.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-13",
+                                                          "opp":  "UD Logrones",
+                                                          "label":  "vs UD Logrones · 09-13",
+                                                          "matchKey":  "sfb:16741931",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "N3nOvdSQqNU",
+                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
+                                                                             "channel":  "Barca Nation",
+                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       }
@@ -1237,6 +1277,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channel":  "ArsenKveFCB",
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-09-15",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2229086":  [
+                                                        {
+                                                            "date":  "2026-09-22",
+                                                            "opp":  "",
+                                                            "label":  "09-22 · 集锦",
+                                                            "matchKey":  "",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "YxTizuR3QfI",
+                                                                               "title":  "Joan Ingles - Promising Centre-Back",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-22",
                                                                                "durationSec":  ""
                                                                            }
                                                                        ]

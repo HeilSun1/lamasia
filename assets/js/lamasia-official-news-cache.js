@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-22 19:47:43 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-23 21:31:03 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-22 19:47:43",
+    "updated":  "2026-09-23 21:31:03",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,6 +131,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4580549", "title":  "Training session with Barça Atlètic",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580549/training-session-with-barca-atletic", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/68eca17f-c3df-4cfc-8f47-95c8c041072b/WhatsApp-Image-2026-09-23-at-13.20.15-4-.jpeg" },
+            {
                 "id":  "4579922", "title":  "The squad back to training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579922/the-squad-back-to-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/22/1ea7f490-8c5c-4335-bc90-4d6ecc0f286a/WhatsApp-Image-2026-09-22-at-13.09.42-2-.jpeg" },
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576807/tribute-to-carles-naval-for-40-years-as-delegate", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9cfa6075-cddd-42f3-83c7-c972f12203f8/_5DS0944-2.jpg" },
             {
-                "id":  "4577460", "title":  "Barça 7-2 Racing: The perfect storm",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577460", "title":  "Barça 7-2 Racing: The perfect storm",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" },
             {
                 "id":  "4577323", "title":  "The squad for Barça v Racing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577323/the-squad-for-barca-v-racing", "time":  "",
@@ -325,11 +329,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4574356", "title":  "First goal for Gabriel Jesus",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574356/first-goal-for-gabriel-jesus-with-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/49e1a248-588b-4305-9983-f274edc1af8a/_MGA7044.jpg" },
-            {
-                "id":  "4574000", "title":  "Kounde matches Abidal",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574000/kounde-matches-abidal-as-the-frenchman-with-most-appearances-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/49e1a248-588b-4305-9983-f274edc1af8a/_MGA7044.jpg" }
         ]
     }
 };
