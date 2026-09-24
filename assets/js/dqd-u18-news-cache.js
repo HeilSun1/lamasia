@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-09-23 19:44:04 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-09-24 12:00:24 数据源：懂球帝 */
 window.DQD_U18_NEWS = {
-    "updated":  "2026-09-23 19:44:04",
+    "updated":  "2026-09-24 12:00:24",
     "source":  "dongqiudi",
-    "count":  7,
+    "count":  8,
     "news":  [
+        {
+            "id":  "6390677", "title":  "官方：巴萨签下16岁小将丹尼-弗雷雷；据悉他将为青年B队效力",
+            "url":  "https://www.dongqiudi.com/article/6390677", "time":  "2026-09-24 00:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/E8/280x210/crop/-/rBXRn2qz_nOAYMo6AAeaw9HMr_k697.jpg" },
         {
             "id":  "6200726", "title":  "巴尔德：拉玛西亚很神奇，每年都有年轻且优秀的球员升入一队",
             "url":  "https://www.dongqiudi.com/article/6200726", "time":  "2026-08-20 06:08",
