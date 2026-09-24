@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-24 12:01:10 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-24 21:07:01 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-24 12:01:10",
+    "updated":  "2026-09-24 21:07:01",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "title":  "Ebrima Tunkara, recta final",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "time":  "2026-09-24 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab4dfb806215.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "title":  "La cláusula que tendrá Bernal en su nuevo contrato",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "time":  "2026-09-21 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260803/1004212789/flick-deja-nubes-tres-canteranos-tenido-stage.html", "title":  "Flick deja por las nubes a tres canteranos que ha tenido en el stage",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260803/1004212789/flick-deja-nubes-tres-canteranos-tenido-stage.html", "time":  "2026-08-03 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/03/6a70afff438dc.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/tressesenta/20260801/1004212298/jose-elias-empresario-ficho-lealtad-talento-persona-no-conocimientos-prefiero-formarla-ngc-dct.html", "title":  "José Elías, empresario: Yo ficho por la lealtad y el talento de la persona, no por sus conocimientos. Prefiero formarla yo",
-            "url":  "https://www.mundodeportivo.com/tressesenta/20260801/1004212298/jose-elias-empresario-ficho-lealtad-talento-persona-no-conocimientos-prefiero-formarla-ngc-dct.html", "time":  "2026-08-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/09/19/68cd13e5d8e19.r_d.990-360-0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/03/6a70afff438dc.jpeg" }
     ]
 };

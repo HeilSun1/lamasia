@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-24 12:00:00 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-24 21:01:15 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-24 12:00:00",
+    "updated":  "2026-09-24 21:01:15",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6392448", "title":  "世体：通卡拉康复顺利，有望10月10日复出",
+            "url":  "https://www.dongqiudi.com/articles/6392448.html", "time":  "2026-09-24 18:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/83/BD/280x210/crop/-/rBXRDGq0-gOAIh9dAAA9h5ppAY0487.jpg" },
         {
             "id":  "6389632", "title":  "世体：布斯克茨将参加欧足联A级证书课程，目前较少接触球员",
             "url":  "https://www.dongqiudi.com/articles/6389632.html", "time":  "2026-09-23 18:37",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6227404", "title":  "巴萨B队官方：通卡拉左脚踝韧带损伤，预计缺阵六周",
             "url":  "https://www.dongqiudi.com/articles/6227404.html", "time":  "2026-08-24 22:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/69/280x210/crop/-/rBXRn2qMWGCACG7EAA02pkwdptE220.png" },
-        {
-            "id":  "6226983", "title":  "世体：通卡拉在巴萨竞技友谊赛脚踝受重击，预计伤缺5周",
-            "url":  "https://www.dongqiudi.com/articles/6226983.html", "time":  "2026-08-24 21:07",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/34/280x210/crop/-/rBXRn2qMQgiAbWCPAACcnxFQ-6U940.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/69/280x210/crop/-/rBXRn2qMWGCACG7EAA02pkwdptE220.png" }
     ]
 };

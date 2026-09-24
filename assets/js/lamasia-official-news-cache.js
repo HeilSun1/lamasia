@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-24 12:00:59 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-24 21:05:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-24 12:00:59",
+    "updated":  "2026-09-24 21:05:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,6 +131,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/af288f44-eed8-4ba8-9b55-3788aa4cec70/WhatsApp-Image-2026-09-24-at-12.32.56-1-.jpeg" },
+            {
+                "id":  "4580541", "title":  "Cancelo and Bisiwu in opening fixtures",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/d0e0391a-52f9-4319-8f52-4529341a729f/DAG-014-_M1A1117.jpg" },
+            {
+                "id":  "4580761", "title":  "A run for the record books",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/af537f53-b1ff-44bb-af56-e1511e610e37/_MGA7382.jpg" },
+            {
                 "id":  "4580732", "title":  "Four nominated for LaLiga's September awards",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580732/four-barca-players-nominated-for-laligas-september-awards", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/8a1e590b-27c1-4e9d-9c5d-eede41aac58a/DAG-144-_M1A5418.jpg" },
@@ -147,8 +159,8 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579612/raphinha-and-lamine-yamal-europes-most-productive-duo", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/c0918d11-2c33-46ea-8349-f12a3c02bc33/_MGA5125.jpg" },
             {
-                "id":  "4579417", "title":  "FC Barcelona international diary",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579417/fc-barcelona-international-diary", "time":  "",
+                "id":  "4579417", "title":  "International schedule for FC Barcelona players",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579417/international-schedule-for-fc-barcelona-players", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/ffcd0d23-a8f1-4243-acc0-1347b9da0f9e/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027__mga5167.jpg" },
             {
                 "id":  "4579409", "title":  "Flick's Barça is a goal machine",
@@ -215,6 +227,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4577513", "title":  "João Cancelo and his rocket shots",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577513/joao-cancelo-and-his-rocket-shots", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/4e6bd827-4cf3-4a10-b121-8a77e5bf1f85/2026-09-16_FCBvsRACING_032.jpg" },
@@ -226,14 +246,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4577474", "title":  "A first time for 7 from 7",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577474/a-first-time-for-7-from-7", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9e6d8a55-86b3-481b-970b-1d06fcb31d89/_MGA7343.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4576807", "title":  "Tribute to Carles Naval for 40 years as delegate",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576807/tribute-to-carles-naval-for-40-years-as-delegate", "time":  "",
@@ -317,19 +329,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575138", "title":  "Agreement for new contract for Hamza Abdelkarim",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575138/agreement-for-new-contract-for-hamza-abdelkarim", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4574625", "title":  "Five again",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574625/five-goals-in-four-out-of-five-games", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/10/d0ff9ed4-f998-4307-978d-ea22f2c251a8/_MGA7040.jpg" },
-            {
-                "id":  "4574558", "title":  "Raphinha continues to make history",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574558/raphinha-continues-to-make-history", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/542e1c61-f7a8-418d-afe6-45c4031813f2/_MGA6057.jpg" },
-            {
-                "id":  "4574250", "title":  "Barça 5-1 Feyenoord: Dancing in the rain",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4574250/fc-barcelona-5-1-feyenoord-dancing-in-the-rain", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/7cdd59f8-e876-418f-8be3-3077a83d5207/_MGA6940.jpg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };
