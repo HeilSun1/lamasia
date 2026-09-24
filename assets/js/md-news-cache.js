@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-24 21:07:01 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-24 20:02:22 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-24 21:07:01",
+    "updated":  "2026-09-24 20:02:22",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "title":  "1-2: Roberto Tomás asiste en el triunfo de España Sub-18 ante Costa de Marfil",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "time":  "2026-09-24 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab5666e94abb.r_d.442-302-13575.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "title":  "Flick exprime a un Barça en cuadro durante el parón",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "time":  "2026-09-24 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab50de8aa50f.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "title":  "Ebrima Tunkara, recta final",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "time":  "2026-09-24 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/nba/20260804/1004213116/kusturica-sale-masia-presume-barcelonismo-giannis-gran-jugador-persona.html", "title":  "Kusturica presume de barcelonismo junto a Giannis: Un gran jugador y persona",
             "url":  "https://www.mundodeportivo.com/baloncesto/nba/20260804/1004213116/kusturica-sale-masia-presume-barcelonismo-giannis-gran-jugador-persona.html", "time":  "2026-08-04 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a72030002f06.r_d.593-366-10256.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fichajes/top/20260803/1004212832/adama-traore-opcion-atractiva-gratis.html", "title":  "Adama Traoré, opción atractiva ¡y gratis!",
-            "url":  "https://www.mundodeportivo.com/futbol/fichajes/top/20260803/1004212832/adama-traore-opcion-atractiva-gratis.html", "time":  "2026-08-03 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/04/69a82d5ee102a.r_d.363-174-19608.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260803/1004212789/flick-deja-nubes-tres-canteranos-tenido-stage.html", "title":  "Flick deja por las nubes a tres canteranos que ha tenido en el stage",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260803/1004212789/flick-deja-nubes-tres-canteranos-tenido-stage.html", "time":  "2026-08-03 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/03/6a70afff438dc.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a72030002f06.r_d.593-366-10256.jpeg" }
     ]
 };
