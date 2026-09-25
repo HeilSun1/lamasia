@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-25 09:45 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-25 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-25 09:45:53",
+    "updated":  "2026-09-25 21:01:50",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -315,21 +315,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Teixidor",
-                        "id":  "1926082",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-28",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mikael Baza",
                         "id":  "2311166",
                         "pos":  "D",
@@ -341,6 +326,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-01-12",
                         "foot":  "左脚",
                         "height":  "188",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
                         "value":  "",
                         "injury":  null
                     },

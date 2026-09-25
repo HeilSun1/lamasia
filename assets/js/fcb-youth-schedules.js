@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-24 21:05；数据源：FC Barcelona 官网 calendario */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-25 21:04；数据源：FC Barcelona 官网 calendario */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-24 21:05:02",
+    "updated":  "2026-09-25 21:04:30",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -117,9 +117,9 @@ window.LAMASIA_SCHEDULES = {
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
                                        "round":  "5",
-                                       "start":  "1792836000",
+                                       "start":  "1792828800",
                                        "date":  "2026-10-24",
-                                       "tbd":  true,
+                                       "tbd":  false,
                                        "home":  "Damm A",
                                        "away":  "FC Barcelona A",
                                        "homeId":  "11174",
@@ -2882,9 +2882,9 @@ window.LAMASIA_SCHEDULES = {
                                           "comp":  "西青乙 G7",
                                           "compEn":  "Liga Nacional Grupo 7",
                                           "round":  "5",
-                                          "start":  "1792926000",
-                                          "date":  "2026-10-25",
-                                          "tbd":  true,
+                                          "start":  "1792854000",
+                                          "date":  "2026-10-24",
+                                          "tbd":  false,
                                           "home":  "Girona B",
                                           "away":  "FC Barcelona B",
                                           "homeId":  "11160",

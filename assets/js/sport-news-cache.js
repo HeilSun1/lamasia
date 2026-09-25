@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-25 09:46:30 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-25 21:05:56 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-25 09:46:30",
+    "updated":  "2026-09-25 21:05:56",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134608782", "title":  "El método Pol Planas: la gran fórmula que potencia los talentos de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/metodo-pol-planas-gran-formula-134608782", "time":  "2026-09-25 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134538604", "title":  "El Barça Atlètic, en cuadro y sin Bisiwu ni Orian Goren",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-bisiwu-orian-goren-belletti-filial-134538604", "time":  "2026-09-22 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/727b5451-0061-4619-b6c9-a1ffed395793_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/727b5451-0061-4619-b6c9-a1ffed395793_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134527121", "title":  "Minguk Lee, el lateral coreano que asombra en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/minguk-lee-lateral-coreano-asombra-134527121", "time":  "2026-09-21 16:54",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133276702", "title":  "Dany Freire, el nuevo talento de La Masia que ya ilusiona al Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/dany-freire-talento-masia-ilusiona-133276702", "time":  "2026-08-12 16:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d9374d0f-4a70-4665-b1c9-80ccffcc6627_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133256558", "title":  "Josué Caicedo ya está en Barcelona para cerrar su fichaje por el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/caicedo-barcelona-ponerse-ordenes-belletti-josue-barca-atletic-ecuador-133256558", "time":  "2026-08-11 18:05",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/316120c1-cf7c-4af8-bfcb-3aef6e980b53_16-9-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d9374d0f-4a70-4665-b1c9-80ccffcc6627_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

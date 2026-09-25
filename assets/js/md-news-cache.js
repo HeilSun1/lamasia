@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-25 09:46:32 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-25 21:06:00 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-25 09:46:32",
+    "updated":  "2026-09-25 21:06:00",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "title":  "Saviola: Cuando vi a Messi, volví a casa y le dije a mi familia estamos en manos de un niño",
+            "url":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "time":  "2026-09-25 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2007/02/27/60f3e179bc496.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "title":  "1-2: Roberto Tomás asiste en el triunfo de España Sub-18 ante Costa de Marfil",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "time":  "2026-09-24 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/internacional/20260806/1004213782/riqui-puig-paso.html", "title":  "Riqui Puig, a un paso",
             "url":  "https://www.mundodeportivo.com/futbol/internacional/20260806/1004213782/riqui-puig-paso.html", "time":  "2026-08-06 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/02/02/69808109cb5ec.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20260804/1004213116/kusturica-sale-masia-presume-barcelonismo-giannis-gran-jugador-persona.html", "title":  "Kusturica presume de barcelonismo junto a Giannis: Un gran jugador y persona",
-            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20260804/1004213116/kusturica-sale-masia-presume-barcelonismo-giannis-gran-jugador-persona.html", "time":  "2026-08-04 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a72030002f06.r_d.593-366-10256.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/02/02/69808109cb5ec.jpeg" }
     ]
 };

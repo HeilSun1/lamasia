@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-25 09:46:27 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-25 21:04:32 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-25 09:46:27",
+    "updated":  "2026-09-25 21:04:32",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,9 +131,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Wins for Cancelo and Bisiwu; draw for Adeyemi",
+                "id":  "4580541", "title":  "Draw for Raphinha with Brazil",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/d0e0391a-52f9-4319-8f52-4529341a729f/DAG-014-_M1A1117.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/b2708971-a473-4f80-8dec-de941ea4f553/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027_jc039855.jpg" },
             {
                 "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
@@ -223,10 +223,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/17f2f951-1a73-45fb-b110-108e34d69eb0/WhatsApp-Image-2026-09-17-at-13.51.04-3-.jpeg" },
             {
-                "id":  "4577721", "title":  "Seven records set by the 7-2",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +230,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577721", "title":  "Seven records set by the 7-2",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" },
             {
                 "id":  "4577513", "title":  "João Cancelo and his rocket shots",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577513/joao-cancelo-and-his-rocket-shots", "time":  "",

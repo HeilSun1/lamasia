@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-25 09:45:32 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-25 21:01:10 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-25 09:45:32",
+    "updated":  "2026-09-25 21:01:10",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
@@ -12,6 +12,10 @@ window.DQD_BARCA_NEWS = {
             "id":  "6392448", "title":  "世体：通卡拉康复顺利，有望10月10日复出",
             "url":  "https://www.dongqiudi.com/articles/6392448.html", "time":  "2026-09-24 18:37",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/83/BD/280x210/crop/-/rBXRDGq0-gOAIh9dAAA9h5ppAY0487.jpg" },
+        {
+            "id":  "6391120", "title":  "9月23日巴萨训练官方视频：一线队与巴萨竞技的联...",
+            "url":  "https://www.dongqiudi.com/articles/6391120.html", "time":  "2026-09-24 08:19",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/24/ebf30a479a640c8f359e438d8e312829PIrGE9_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6389632", "title":  "世体：布斯克茨将参加欧足联A级证书课程，目前较少接触球员",
             "url":  "https://www.dongqiudi.com/articles/6389632.html", "time":  "2026-09-23 18:37",
@@ -36,6 +40,10 @@ window.DQD_BARCA_NEWS = {
             "id":  "6382118", "title":  "每体：巴萨将与18岁门将伊克尔-罗德里格斯续约至2029年",
             "url":  "https://www.dongqiudi.com/articles/6382118.html", "time":  "2026-09-21 18:40",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7C/E7/280x210/crop/-/rBXRDGqxCVeAKee8AAKL3hvN6eI409.jpg" },
+        {
+            "id":  "6378782", "title":  "巴萨竞技战报 20260921",
+            "url":  "https://www.dongqiudi.com/articles/6378782.html", "time":  "2026-09-21 09:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7B/2F/280x210/crop/-/rBXRDGqwIAmAf-cEAAnBnhggL5o570.jpg" },
         {
             "id":  "6374353", "title":  "巴萨竞技将由体育部门管理，德科解释其中原因",
             "url":  "https://www.dongqiudi.com/articles/6374353.html", "time":  "2026-09-20 07:16",
@@ -64,6 +72,10 @@ window.DQD_BARCA_NEWS = {
             "id":  "6368963", "title":  "世体：利瓦科维奇还没适应巴萨的风格，3C将首发出战塞维",
             "url":  "https://www.dongqiudi.com/articles/6368963.html", "time":  "2026-09-19 13:15",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/3E/280x210/crop/-/rBXRDGquGluAVWCRAAF-tq1vRAg943.jpg" },
+        {
+            "id":  "6364872", "title":  "霍安受伤后，什琴斯尼、利瓦科维奇和伊克尔-罗德里...",
+            "url":  "https://www.dongqiudi.com/articles/6364872.html", "time":  "2026-09-18 18:02",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/18/3d73de23875bd51fa0d4ca9086d56155XOtfbV_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
         {
             "id":  "6364762", "title":  "跟队：霍安缺席巴萨今日训练，小将伊克尔被征召进一线队",
             "url":  "https://www.dongqiudi.com/articles/6364762.html", "time":  "2026-09-18 17:42",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6243395", "title":  "巴萨战毕包大名单：亚马尔领衔，罗德里、巴尔德入选",
             "url":  "https://www.dongqiudi.com/articles/6243395.html", "time":  "2026-08-27 19:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/33/37/280x210/crop/-/rBXRn2qQGx6AIYNiAAM8nU7pIzw545.jpg" },
-        {
-            "id":  "6237655", "title":  "普勒滕贝格：巴萨推进签下汉堡16岁小将米卡埃尔-巴扎",
-            "url":  "https://www.dongqiudi.com/articles/6237655.html", "time":  "2026-08-26 19:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/30/0A/280x210/crop/-/rBXRDGqO1A2AGPEUAACmlclhzTI177.jpg" },
-        {
-            "id":  "6236019", "title":  "世体：巴萨计划让比西武随一线队训练，同时在二队也能出场",
-            "url":  "https://www.dongqiudi.com/articles/6236019.html", "time":  "2026-08-26 14:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/2F/36/280x210/crop/-/rBXRn2qOiRyAUWkSAACQ3ksDd5Q925.jpg" },
-        {
-            "id":  "6232726", "title":  "官方：巴萨与18岁B队小将比利亚尔续约至2030年",
-            "url":  "https://www.dongqiudi.com/articles/6232726.html", "time":  "2026-08-25 21:53",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/2C/D1/280x210/crop/-/rBXRn2qNncqARqy2AAaHHPyp8Vc192.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/33/37/280x210/crop/-/rBXRn2qQGx6AIYNiAAM8nU7pIzw545.jpg" }
     ]
 };
