@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-25 21:06:00 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-25 20:04:31 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-25 21:06:00",
+    "updated":  "2026-09-25 20:04:31",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "title":  "La UEFA destaca el enorme peso de la cantera del Barça femenino",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "time":  "2026-09-25 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab448bfe8b42.r_d.1275-682-4671.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "title":  "Saviola: Cuando vi a Messi, volví a casa y le dije a mi familia estamos en manos de un niño",
             "url":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "time":  "2026-09-25 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260808/1004214339/sergi-roberto-equipo.html", "title":  "Sergi Roberto ya tiene equipo",
             "url":  "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260808/1004214339/sergi-roberto-equipo.html", "time":  "2026-08-08 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2025/08/11/6899cb5e89fd0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/internacional/20260806/1004213782/riqui-puig-paso.html", "title":  "Riqui Puig, a un paso",
-            "url":  "https://www.mundodeportivo.com/futbol/internacional/20260806/1004213782/riqui-puig-paso.html", "time":  "2026-08-06 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/02/02/69808109cb5ec.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2025/08/11/6899cb5e89fd0.jpeg" }
     ]
 };

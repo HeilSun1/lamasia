@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-25 21:04:32 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-25 20:04:27 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-25 21:04:32",
+    "updated":  "2026-09-25 20:04:27",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,9 +131,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Draw for Raphinha with Brazil",
+                "id":  "4580541", "title":  "Bernal and Espart feature for U21s",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/b2708971-a473-4f80-8dec-de941ea4f553/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027_jc039855.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/d37e3e71-aa16-4ee2-805d-e144ccdeb498/JC018686.jpg" },
             {
                 "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",

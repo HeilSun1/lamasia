@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-25 21:05:56 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-25 20:04:30 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-25 21:05:56",
+    "updated":  "2026-09-25 20:04:30",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134693225", "title":  "Jordi Roura anuncia su marcha a los Emiratos Árabes",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/jordi-roura-anuncia-marcha-emirates-134693225", "time":  "2026-09-25 18:40",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1c50fd71-405e-40ea-aa34-edb57284dd01_16-9-discover-aspect-ratio_default_0.webp" },
+        {
+            "id":  "134535572", "title":  "Iu Martínez, el extremo de La Masia \"poseído\" por Raphinha",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-martinez-extremo-masia-poseido-134535572", "time":  "2026-09-25 16:06",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134608782", "title":  "El método Pol Planas: la gran fórmula que potencia los talentos de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/metodo-pol-planas-gran-formula-134608782", "time":  "2026-09-25 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134538604", "title":  "El Barça Atlètic, en cuadro y sin Bisiwu ni Orian Goren",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-bisiwu-orian-goren-belletti-filial-134538604", "time":  "2026-09-22 06:00",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133340656", "title":  "El plan 'antilesiones' de Belletti",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/plan-antilesiones-belletti-barca-atletic-133340656", "time":  "2026-08-14 06:08",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133324089", "title":  "El Barça Atlètic presenta a su cuerpo técnico para la temporada 2026/27",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-presenta-cuerpo-tecnico-entrenador-juliano-belletti-barcelona-133324089", "time":  "2026-08-13 10:28",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d656919a-679d-4364-8b98-08a5e812a4ef_16-9-discover-aspect-ratio_640w_1496812.webp" },
-        {
-            "id":  "133276702", "title":  "Dany Freire, el nuevo talento de La Masia que ya ilusiona al Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/dany-freire-talento-masia-ilusiona-133276702", "time":  "2026-08-12 16:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d9374d0f-4a70-4665-b1c9-80ccffcc6627_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
