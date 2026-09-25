@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-24 20:02:18 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-25 09:46:27 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-24 20:02:18",
+    "updated":  "2026-09-25 09:46:27",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,13 +131,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4580541", "title":  "Wins for Cancelo and Bisiwu; draw for Adeyemi",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/d0e0391a-52f9-4319-8f52-4529341a729f/DAG-014-_M1A1117.jpg" },
+            {
                 "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/af288f44-eed8-4ba8-9b55-3788aa4cec70/WhatsApp-Image-2026-09-24-at-12.32.56-1-.jpeg" },
-            {
-                "id":  "4580541", "title":  "Cancelo, Adeyemi and Bisiwu in opening fixtures",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/d0e0391a-52f9-4319-8f52-4529341a729f/DAG-014-_M1A1117.jpg" },
             {
                 "id":  "4580761", "title":  "A run for the record books",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",

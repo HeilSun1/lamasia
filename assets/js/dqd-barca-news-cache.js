@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-24 20:01:54 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-25 09:45:32 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-24 20:01:54",
+    "updated":  "2026-09-25 09:45:32",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6395596", "title":  "9月24日巴萨训练官方视频：4名巴萨竞技球员加入...",
+            "url":  "https://www.dongqiudi.com/articles/6395596.html", "time":  "2026-09-25 09:10",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/25/93609008df6785dd4eeabee8a1996a3cAxcLsS_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6392448", "title":  "世体：通卡拉康复顺利，有望10月10日复出",
             "url":  "https://www.dongqiudi.com/articles/6392448.html", "time":  "2026-09-24 18:37",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6232726", "title":  "官方：巴萨与18岁B队小将比利亚尔续约至2030年",
             "url":  "https://www.dongqiudi.com/articles/6232726.html", "time":  "2026-08-25 21:53",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/2C/D1/280x210/crop/-/rBXRn2qNncqARqy2AAaHHPyp8Vc192.jpg" },
-        {
-            "id":  "6227404", "title":  "巴萨B队官方：通卡拉左脚踝韧带损伤，预计缺阵六周",
-            "url":  "https://www.dongqiudi.com/articles/6227404.html", "time":  "2026-08-24 22:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/29/69/280x210/crop/-/rBXRn2qMWGCACG7EAA02pkwdptE220.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/2C/D1/280x210/crop/-/rBXRn2qNncqARqy2AAaHHPyp8Vc192.jpg" }
     ]
 };

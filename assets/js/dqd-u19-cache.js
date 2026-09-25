@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-24 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-25 09:45 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-24 21:01:58",
+    "updated":  "2026-09-25 09:45:53",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -71,21 +71,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-05-13",
                         "foot":  "右脚",
                         "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Roberto Tomás",
-                        "id":  "2607839",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-02-20",
-                        "foot":  "右脚",
-                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -176,6 +161,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-08-09",
                         "foot":  "右脚",
                         "height":  "185",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Roberto Tomás",
+                        "id":  "2607839",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "右脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
