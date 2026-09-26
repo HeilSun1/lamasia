@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-26 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-26 19:15 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-26 21:00:28",
+    "updated":  "2026-09-26 19:15:49",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -510,19 +510,19 @@ window.DQD_BARCA_ATLETIC = {
                                       "team_B_name":  "佩尼亚体育",
                                       "team_A_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
                                       "team_B_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2SiAd4cVAABNfgZReU4082.png",
-                                      "fs_A":  "",
-                                      "fs_B":  "",
+                                      "fs_A":  "4",
+                                      "fs_B":  "0",
                                       "ps_A":  "",
                                       "ps_B":  "",
                                       "start_play":  "2026-09-26 17:00:00",
                                       "suretime":  "1",
-                                      "status":  "Fixture",
-                                      "playing_time":  "",
+                                      "status":  "Played",
+                                      "playing_time":  "90",
                                       "scheme":  "dongqiudi:///game/54500651",
                                       "round_name":  "",
-                                      "minute":  "",
-                                      "minute_extra":  "",
-                                      "score_color":  "",
+                                      "minute":  "90",
+                                      "minute_extra":  "7",
+                                      "score_color":  "#f12b2b",
                                       "match_title":  "西协乙 2组"
                                   },
                                   {

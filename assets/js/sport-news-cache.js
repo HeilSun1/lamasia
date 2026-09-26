@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-26 21:06:16 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-26 19:16:39 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-26 21:06:16",
+    "updated":  "2026-09-26 19:16:39",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_default_0.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_640w_0.webp" },
         {
             "id":  "134684080", "title":  "El Barça Atlètic quiere dormir líder sin Bisiwu, Orian Goren, Catovic y Caicedo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-quiere-dormir-lider-segunda-rfef-horario-donde-ver-134684080", "time":  "2026-09-26 10:23",

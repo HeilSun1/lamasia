@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-26 21:06:18 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-26 19:16:40 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-26 21:06:18",
+    "updated":  "2026-09-26 19:16:40",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "title":  "Histórica Mayssa: marca su primer gol a los 15 años",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "time":  "2026-09-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/26/6ab7de3ea3cfc.r_d.830-616-7500.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "title":  "Lamine desvela qué le dijo a Messi tras ganar el Mundial",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "time":  "2026-09-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/08/6a76c8db32a9b.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231421/barca-trabaja-renovacion-sama-nomoko.html", "title":  "El Barça trabaja la renovación de Sama Nomoko",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231421/barca-trabaja-renovacion-sama-nomoko.html", "time":  "2026-09-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/11/17/691b14c4d6e78.r_d.1464-1399-5652.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "title":  "El valiente compromiso de Brian Fariñas con el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "time":  "2026-09-26 12:00",
@@ -12,10 +24,6 @@ window.MD_NEWS = {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "title":  "La UEFA destaca el enorme peso de la cantera del Barça femenino",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "time":  "2026-09-25 12:00",
             "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab448bfe8b42.r_d.1275-682-4671.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "title":  "Saviola: Cuando vi a Messi, volví a casa y le dije a mi familia estamos en manos de un niño",
-            "url":  "https://www.mundodeportivo.com/futbol/internacional/20260925/1004231057/saviola-vi-messi-volvi-casa-le-dije-mi-familia-manos-nino.html", "time":  "2026-09-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2007/02/27/60f3e179bc496.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "title":  "1-2: Roberto Tomás asiste en el triunfo de España Sub-18 ante Costa de Marfil",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "time":  "2026-09-24 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/nba/20260812/1004215288/ee-uu-desvalija-barca-ninos-masia-han-ido.html", "title":  "EE.UU. ‘desvalija’ al Barça: los niños de La Masia que se han ido y los que se pueden ir",
             "url":  "https://www.mundodeportivo.com/baloncesto/nba/20260812/1004215288/ee-uu-desvalija-barca-ninos-masia-han-ido.html", "time":  "2026-08-12 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7beed7307d9.r_d.676-416-8869.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260810/1004214606/abiertas-dos-vacantes-capitania-barca.html", "title":  "Abiertas dos vacantes en la capitanía del Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260810/1004214606/abiertas-dos-vacantes-capitania-barca.html", "time":  "2026-08-10 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/09/6a789184c7a03.r_d.159-395-14925.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260809/1004214522/xavi-espart-brian-farinas-convencen-flick.html", "title":  "Xavi Espart y Brian Fariñas convencen a Flick",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260809/1004214522/xavi-espart-brian-farinas-convencen-flick.html", "time":  "2026-08-09 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/06/6a7466eeba593.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7beed7307d9.r_d.676-416-8869.jpeg" }
     ]
 };
