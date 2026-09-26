@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-26 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-09-26 21:02 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-09-26 09:01:53",
+    "updated":  "2026-09-26 21:02:16",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -260,12 +260,12 @@ window.DQD_U19_CACHE = {
                         "pos":  "M",
                         "shirt":  "",
                         "team":  "Barcelona U19",
-                        "nation":  "",
+                        "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2722893/image",
                         "age":  "17岁",
                         "birthday":  "2009-07-20",
-                        "foot":  "",
-                        "height":  "",
+                        "foot":  "右脚",
+                        "height":  "177",
                         "value":  "",
                         "injury":  null
                     },
@@ -429,7 +429,7 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2405426/image",
                         "age":  "17岁",
                         "birthday":  "2009-01-21",
-                        "foot":  "",
+                        "foot":  "左脚",
                         "height":  "",
                         "value":  "",
                         "injury":  null
@@ -440,7 +440,7 @@ window.DQD_U19_CACHE = {
                         "pos":  "D",
                         "shirt":  "",
                         "team":  "Barcelona U19",
-                        "nation":  "",
+                        "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2722899/image",
                         "age":  "17岁",
                         "birthday":  "2009-05-15",
@@ -459,8 +459,8 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2738837/image",
                         "age":  "18岁",
                         "birthday":  "2008-01-26",
-                        "foot":  "",
-                        "height":  "",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },

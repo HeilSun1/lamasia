@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-26 09:02:34 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-26 21:06:18 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-26 09:02:34",
+    "updated":  "2026-09-26 21:06:18",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "title":  "El valiente compromiso de Brian Fariñas con el Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "time":  "2026-09-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e80863b70.r_d.637-600-8141.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "title":  "La UEFA destaca el enorme peso de la cantera del Barça femenino",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "time":  "2026-09-25 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260809/1004214522/xavi-espart-brian-farinas-convencen-flick.html", "title":  "Xavi Espart y Brian Fariñas convencen a Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260809/1004214522/xavi-espart-brian-farinas-convencen-flick.html", "time":  "2026-08-09 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/06/6a7466eeba593.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260808/1004214339/sergi-roberto-equipo.html", "title":  "Sergi Roberto ya tiene equipo",
-            "url":  "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260808/1004214339/sergi-roberto-equipo.html", "time":  "2026-08-08 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2025/08/11/6899cb5e89fd0.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/06/6a7466eeba593.jpeg" }
     ]
 };

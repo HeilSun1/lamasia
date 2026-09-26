@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-26 09:02:32 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-26 21:06:16 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-26 09:02:32",
+    "updated":  "2026-09-26 21:06:16",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_default_0.webp" },
+        {
+            "id":  "134684080", "title":  "El Barça Atlètic quiere dormir líder sin Bisiwu, Orian Goren, Catovic y Caicedo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-quiere-dormir-lider-segunda-rfef-horario-donde-ver-134684080", "time":  "2026-09-26 10:23",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "134693225", "title":  "Jordi Roura anuncia su marcha a los Emiratos Árabes",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/jordi-roura-anuncia-marcha-emirates-134693225", "time":  "2026-09-25 18:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1c50fd71-405e-40ea-aa34-edb57284dd01_16-9-discover-aspect-ratio_default_0.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1c50fd71-405e-40ea-aa34-edb57284dd01_16-9-discover-aspect-ratio_640w_0.webp" },
         {
             "id":  "134535572", "title":  "Iu Martínez, el extremo de La Masia \"poseído\" por Raphinha",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-martinez-extremo-masia-poseido-134535572", "time":  "2026-09-25 16:06",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134608782", "title":  "El método Pol Planas: la gran fórmula que potencia los talentos de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/metodo-pol-planas-gran-formula-134608782", "time":  "2026-09-25 04:30",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133369356", "title":  "Josué Caicedo, todos los escollos superados en el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/josue-caicedo-escollos-superados-barca-133369356", "time":  "2026-08-15 10:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6203721d-2e65-4c5e-b950-7020ba0b72e1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133372432", "title":  "Shane Kluivert, Iker Rodríguez y Josué Caicedo son el centro de atención",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/josue-caicedo-iker-rodriguez-shane-kluivert-focos-atencion-barca-atletic-133372432", "time":  "2026-08-15 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/07ff1655-72a6-4fa6-be93-95e8c7f424b7_16-9-discover-aspect-ratio_640w_1497496.webp" },
-        {
-            "id":  "133340656", "title":  "El plan 'antilesiones' de Belletti",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/plan-antilesiones-belletti-barca-atletic-133340656", "time":  "2026-08-14 06:08",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/dd9d7e86-df83-4f5b-9e6a-14ba88c19151_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6203721d-2e65-4c5e-b950-7020ba0b72e1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

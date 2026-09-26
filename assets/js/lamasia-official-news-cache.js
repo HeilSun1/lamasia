@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-26 09:02:28 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-26 21:05:09 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-26 09:02:28",
+    "updated":  "2026-09-26 21:05:09",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -131,9 +131,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Bernal and Espart feature for U21s",
+                "id":  "4580541", "title":  "Games for England, Spain and Croatia",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/d37e3e71-aa16-4ee2-805d-e144ccdeb498/JC018686.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/26/459b065c-a098-4604-b80d-4a8df6b3094f/DAG-138-_M1A3397.jpg" },
+            {
+                "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/2b234519-9f5f-4b57-9d2b-5bc1ee9ce08a/_MGA7116.jpg" },
             {
                 "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
@@ -219,10 +223,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" },
             {
-                "id":  "4577770", "title":  "Recovery session with Sevilla match in mind",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/17f2f951-1a73-45fb-b110-108e34d69eb0/WhatsApp-Image-2026-09-17-at-13.51.04-3-.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -230,6 +230,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577770", "title":  "Recovery session with Sevilla match in mind",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/17f2f951-1a73-45fb-b110-108e34d69eb0/WhatsApp-Image-2026-09-17-at-13.51.04-3-.jpeg" },
             {
                 "id":  "4577721", "title":  "Seven records set by the 7-2",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
@@ -325,11 +329,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575126", "title":  "Barça preparing for Levante match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575126/barca-preparing-for-levante-match", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/dc1626c9-eb9d-4aba-9934-146ecddd1506/image00011.jpeg" },
-            {
-                "id":  "4575138", "title":  "Agreement for new contract for Hamza Abdelkarim",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575138/agreement-for-new-contract-for-hamza-abdelkarim", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/dc1626c9-eb9d-4aba-9934-146ecddd1506/image00011.jpeg" }
         ]
     }
 };

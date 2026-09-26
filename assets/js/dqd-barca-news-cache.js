@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-26 09:01:30 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-26 21:01:29 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-26 09:01:30",
+    "updated":  "2026-09-26 21:01:29",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6400757", "title":  "世体：巴萨推进萨马-诺莫科的续约，他目前正在从重伤中恢复",
+            "url":  "https://www.dongqiudi.com/articles/6400757.html", "time":  "2026-09-26 18:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/82/280x210/crop/-/rBXRDGq3m4WADhACAAE5LsBdVMk136.jpg" },
+        {
+            "id":  "6399986", "title":  "世体：巴萨竞技多人缺阵，锋线新星成关键",
+            "url":  "https://www.dongqiudi.com/articles/6399986.html", "time":  "2026-09-26 14:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/10/280x210/crop/-/rBXRn2q3Zc-ADItgAAEDaAIULCE511.jpg" },
+        {
+            "id":  "6399382", "title":  "每体：巴萨小将诺莫科已能高强度跑动，复出渐近",
+            "url":  "https://www.dongqiudi.com/articles/6399382.html", "time":  "2026-09-26 09:51",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F7/57/280x210/crop/-/rBXRDGoanDqAO2SMAAHRrIKVles571.jpg" },
         {
             "id":  "6395596", "title":  "9月24日巴萨训练官方视频：4名巴萨竞技球员加入...",
             "url":  "https://www.dongqiudi.com/articles/6395596.html", "time":  "2026-09-25 09:10",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6267810", "title":  "Here we go！罗马诺：巴萨租借签下19岁中场恰托维奇",
             "url":  "https://www.dongqiudi.com/articles/6267810.html", "time":  "2026-08-31 19:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/41/F2/280x210/crop/-/rBXRDGqVZAKALYVNABKJ5I09HHQ750.png" },
-        {
-            "id":  "6267170", "title":  "Here we go！罗马诺：巴萨签下16岁后卫米卡埃尔-巴扎",
-            "url":  "https://www.dongqiudi.com/articles/6267170.html", "time":  "2026-08-31 17:13",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/41/8F/280x210/crop/-/rBXRn2qVRYGAD4FaAAqnPoZtwcI577.jpg" },
-        {
-            "id":  "6249196", "title":  "跟队：利瓦科维奇参加巴萨训练，若及时注册可能出战巴列卡诺",
-            "url":  "https://www.dongqiudi.com/articles/6249196.html", "time":  "2026-08-28 19:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/36/B7/280x210/crop/-/rBXRDGqRasWAL5M5AAC9YuFMSMc496.jpg" },
-        {
-            "id":  "6243395", "title":  "巴萨战毕包大名单：亚马尔领衔，罗德里、巴尔德入选",
-            "url":  "https://www.dongqiudi.com/articles/6243395.html", "time":  "2026-08-27 19:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/33/37/280x210/crop/-/rBXRn2qQGx6AIYNiAAM8nU7pIzw545.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/41/F2/280x210/crop/-/rBXRDGqVZAKALYVNABKJ5I09HHQ750.png" }
     ]
 };
