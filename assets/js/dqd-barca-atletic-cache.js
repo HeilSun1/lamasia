@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-27 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-27 19:48 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-27 21:00:23",
+    "updated":  "2026-09-27 19:48:20",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1720,7 +1720,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "0"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "-"
+                                                                                        "身价(欧)":  "20万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
@@ -1983,7 +1983,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "-"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "-"
+                                                                                        "身价(欧)":  "5万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
@@ -2371,7 +2371,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "0"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "-"
+                                                                                        "身价(欧)":  "5万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
@@ -2418,7 +2418,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2FSADy_DAAALaURezqo279.png",
                                                                   "nationality_name":  "厄瓜多尔",
                                                                   "other_logo":  [
-
+                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
                                                                                  ],
                                                                   "person_en_name":  "Josué Caicedo",
                                                                   "person_id":  "51234912",

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-27 21:03；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-27 19:50；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-27 21:03:05",
+    "updated":  "2026-09-27 19:50:18",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -2927,9 +2927,9 @@ window.LAMASIA_SCHEDULES = {
                                           "away":  "FPFB Reus Deportiu A",
                                           "homeId":  "11110",
                                           "awayId":  "11154",
-                                          "hs":  "",
-                                          "as":  "",
-                                          "status":  "Not started",
+                                          "hs":  "4",
+                                          "as":  "4",
+                                          "status":  "Ended",
                                           "code":  "0",
                                           "isHome":  true,
                                           "venue":  "Ciutat Esportiva Joan Gamper"
