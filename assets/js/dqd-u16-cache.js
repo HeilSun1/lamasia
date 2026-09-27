@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-09-27 11:59 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-09-27 21:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-09-27 11:59:19",
+    "updated":  "2026-09-27 21:02:53",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -105,21 +105,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Divine Ikenna Ejiofor",
-                        "id":  "2690301",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-04-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Karim Mendikanov",
                         "id":  "2674136",
                         "pos":  "F",
@@ -131,6 +116,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2010-11-10",
                         "foot":  "左脚",
                         "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Divine Ikenna Ejiofor",
+                        "id":  "2690301",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-04-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },

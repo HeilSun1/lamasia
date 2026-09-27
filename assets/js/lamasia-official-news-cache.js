@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-27 11:59:21 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-27 21:03:09 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-27 11:59:21",
+    "updated":  "2026-09-27 21:03:09",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Lamine and Gordon on target in thriller",
+                "id":  "4580541", "title":  "Adeyemi and Cancelo in line for action",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/26/f8cae813-358b-4bee-b8da-e4a135c51c8e/_MGA7207_1-1-.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/27/18cc723a-246b-48d3-86ac-add94e8a96fc/DAG-445-_M1A4241.jpg" },
+            {
+                "id":  "4581966", "title":  "Upcoming targets for Raphinha",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" },
             {
                 "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577816/spanish-super-cup-venues-dates-and-kick-off-times-confirmed", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/a77dc43a-bdbf-4a6e-bbc9-b41c5aaae699/DAG-059-_M1A2416-1-.jpg" },
             {
-                "id":  "4577802", "title":  "Joan Garcia medical update",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577802", "title":  "Joan Garcia medical update",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" },
             {
                 "id":  "4577770", "title":  "Recovery session with Sevilla match in mind",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575083", "title":  "When and where to watch Levante UD v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575083/when-and-where-to-watch-levante-ud-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4575126", "title":  "Barça preparing for Levante match",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575126/barca-preparing-for-levante-match", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/dc1626c9-eb9d-4aba-9934-146ecddd1506/image00011.jpeg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };

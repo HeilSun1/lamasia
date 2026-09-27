@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-27 11:58:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-09-27 21:02:19 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-09-27 11:58:43",
+    "updated":  "2026-09-27 21:02:19",
     "source":  "dongqiudi",
-    "count":  32,
+    "count":  33,
     "news":  [
+        {
+            "id":  "6404361", "title":  "巴萨竞技战报 20260927",
+            "url":  "https://www.dongqiudi.com/articles/6404361.html", "time":  "2026-09-27 15:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8A/9E/280x210/crop/-/rBXRDGq4vw-AL3rNAAJs2wREJBk085.jpg" },
         {
             "id":  "6394734", "title":  "每体：青训中卫巴巴-库鲁马受到认可，巴萨希望与其续约",
             "url":  "https://www.dongqiudi.com/articles/6394734.html", "time":  "2026-09-25 06:24",

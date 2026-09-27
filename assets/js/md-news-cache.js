@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-27 11:59:54 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-27 21:04:33 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-27 11:59:54",
+    "updated":  "2026-09-27 21:04:33",
     "source":  "md",
     "count":  50,
     "news":  [
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231639/mayssa-baha-nube-feliz-orgullosa.html", "title":  "Mayssa Baha, en una nube: Estoy muy feliz y muy orgullosa",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231639/mayssa-baha-nube-feliz-orgullosa.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/26/6ab833a0e70cb.jpeg" },
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/27/6ab8ebf383f02.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "title":  "Histórica Mayssa: marca su primer gol a los 15 años",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "time":  "2026-09-26 12:00",

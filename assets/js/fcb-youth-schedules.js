@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-27 14:40；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-27 21:03；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-27 14:40:20",
+    "updated":  "2026-09-27 21:03:05",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -1207,16 +1207,16 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1790438400",
                                          "date":  "2026-09-26",
                                          "tbd":  false,
-                                         "home":  "Igualada A",
-                                         "away":  "FC Barcelona A",
-                                         "homeId":  "12939",
-                                         "awayId":  "11113",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "home":  "FC Barcelona A",
+                                         "away":  "Igualada A",
+                                         "homeId":  "11113",
+                                         "awayId":  "12939",
+                                         "hs":  "3",
+                                         "as":  "0",
+                                         "status":  "Ended",
                                          "code":  "0",
-                                         "isHome":  false,
-                                         "venue":  "Les Comes Igualada"
+                                         "isHome":  true,
+                                         "venue":  "Ciutat Esportiva Joan Gamper"
                                      },
                                      {
                                          "id":  "fcb:infantil:24",
@@ -1492,16 +1492,16 @@ window.LAMASIA_SCHEDULES = {
                                          "start":  "1801393200",
                                          "date":  "2027-01-31",
                                          "tbd":  true,
-                                         "home":  "FC Barcelona A",
-                                         "away":  "Igualada A",
-                                         "homeId":  "11113",
-                                         "awayId":  "12939",
+                                         "home":  "Igualada A",
+                                         "away":  "FC Barcelona A",
+                                         "homeId":  "12939",
+                                         "awayId":  "11113",
                                          "hs":  "",
                                          "as":  "",
                                          "status":  "Not started",
                                          "code":  "0",
-                                         "isHome":  true,
-                                         "venue":  "Ciutat Esportiva Joan Gamper"
+                                         "isHome":  false,
+                                         "venue":  "Les Comes Igualada"
                                      },
                                      {
                                          "id":  "fcb:infantil:144",
@@ -2355,9 +2355,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Can Buxeres A",
                                            "homeId":  "11115",
                                            "awayId":  "14046",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "3",
+                                           "as":  "0",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"

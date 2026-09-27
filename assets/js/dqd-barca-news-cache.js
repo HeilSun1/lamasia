@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-27 11:58:20 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-27 21:01:28 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-27 11:58:20",
+    "updated":  "2026-09-27 21:01:28",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6404361", "title":  "巴萨竞技战报 20260927",
+            "url":  "https://www.dongqiudi.com/articles/6404361.html", "time":  "2026-09-27 15:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8A/9E/280x210/crop/-/rBXRDGq4vw-AL3rNAAJs2wREJBk085.jpg" },
+        {
+            "id":  "6404242", "title":  "将门虎子！肖恩-克鲁伊维特vs佩尼亚体育个人集锦...",
+            "url":  "https://www.dongqiudi.com/articles/6404242.html", "time":  "2026-09-27 14:26",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/cf0c7d4aacb5f2082a75759f87c3e3d9U4CQPl_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6404224", "title":  "易卜拉欣-迪亚拉vs佩尼亚体育个人集锦。伤愈复出...",
+            "url":  "https://www.dongqiudi.com/articles/6404224.html", "time":  "2026-09-27 14:21",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/30dd1ce06ab50da5f59332433755b5eblQkCAM_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6400757", "title":  "世体：巴萨推进萨马-诺莫科的续约，他目前正在从重伤中恢复",
             "url":  "https://www.dongqiudi.com/articles/6400757.html", "time":  "2026-09-26 18:19",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6271154", "title":  "每体：巴萨有意引进贝蒂斯年轻中卫恩戈兰，巴列卡诺也有兴趣",
             "url":  "https://www.dongqiudi.com/articles/6271154.html", "time":  "2026-09-01 02:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/E1/280x210/crop/-/rBXRn2qVwuyAKp88AADzb0jlhl4835.jpg" },
-        {
-            "id":  "6268825", "title":  "去的有点早，世体：巴萨19岁梯队小将谢尔菲将加盟沙特迪里耶",
-            "url":  "https://www.dongqiudi.com/articles/6268825.html", "time":  "2026-08-31 22:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/70/280x210/crop/-/rBXRDGqVk_qAA3asAACKe09pliE611.jpg" },
-        {
-            "id":  "6267846", "title":  "巴萨战巴列卡诺大名单：亚马尔领衔，加维继续缺席",
-            "url":  "https://www.dongqiudi.com/articles/6267846.html", "time":  "2026-08-31 19:30",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/41/EA/280x210/crop/-/rBXRn2qVZeaAak_sABGyfFWjdlY631.png" },
-        {
-            "id":  "6267810", "title":  "Here we go！罗马诺：巴萨租借签下19岁中场恰托维奇",
-            "url":  "https://www.dongqiudi.com/articles/6267810.html", "time":  "2026-08-31 19:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/41/F2/280x210/crop/-/rBXRDGqVZAKALYVNABKJ5I09HHQ750.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/E1/280x210/crop/-/rBXRn2qVwuyAKp88AADzb0jlhl4835.jpg" }
     ]
 };
