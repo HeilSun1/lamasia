@@ -2,10 +2,10 @@
    拉玛西亚信息站 · 官方站青年梯队赛程渲染器
    ─────────────────────────────────────────────────────────────
    读取 assets/js/fcb-youth-schedules.js 的 window.LAMASIA_SCHEDULES，
-   把 cadete / cadete-b / infantil / infantil-b 四队赛程渲染成
-   与 B队/U19 一致的 dqd-group 表格（复用 style.css）。
+   把 cadete / cadete-b / infantil / infantil-b / infantil-c / juvenil-b 各队赛程
+   渲染成与 B队/U19 一致的 dqd-group 表格（复用 style.css）。
    差异点：无 Sofascore 队标、时间待定显示「待定」、FC Barcelona A 显示为「巴萨 A」。
-   数据源为官方站，无 Sofascore 阵容/统计详情 → match-detail 弹窗只显示基本信息。
+   数据源为官网赛事接口，无 Sofascore 阵容/统计详情 → match-detail 弹窗只显示基本信息。
    依赖：roster.js（可选）、match-detail.js（可选）
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -132,7 +132,7 @@
       if (st) {
         const updated = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.updated) || "";
         st.className = "note-box blue";
-        st.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（calendario 每日抓取）' +
+        st.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（赛事接口每日抓取，含赛果）' +
           (opts.fallback ? " · Sofascore 赛程暂缺，已用官方数据兜底" : "") +
           (updated ? " · 更新于 " + esc(updated) : "") + "。</span>";
       }
@@ -148,7 +148,7 @@
     const compEn = t ? t.compEn : "";
     el.innerHTML =
       '<div class="stats-row">' +
-        '<div class="stat-tile"><div class="st-label">数据源</div><div class="st-value" style="font-size:20px">FC Barcelona 官网</div><div class="st-note">calendario 每日自动抓取</div></div>' +
+        '<div class="stat-tile"><div class="st-label">数据源</div><div class="st-value" style="font-size:20px">FC Barcelona 官网</div><div class="st-note">赛事接口每日自动抓取</div></div>' +
         (comp ? '<div class="stat-tile"><div class="st-label">赛事</div><div class="st-value" style="font-size:20px">' + esc(comp) + "</div>" +
           (compEn ? '<div class="st-note">' + esc(compEn) + "</div>" : "") + "</div>" : "") +
       "</div>";

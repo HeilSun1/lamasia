@@ -113,8 +113,8 @@ jobs:
           Set-ExecutionPolicy -Scope Process Bypass -Force
           & .\scripts\update_u16_sofascore.ps1
 
-      - name: Update FCB youth schedules (cadete-a/b, infantil-a/b)
-        continue-on-error: true   # 官方站可能风控/结构变化；失败不中断，下次自动重试
+      - name: Update FCB youth schedules (U19B/U16/U15/U14/U13/U12)
+        continue-on-error: true   # 接口结构变化或网络抖动；失败不中断，下次自动重试
         shell: powershell
         run: |
           Start-Sleep -Seconds 20
