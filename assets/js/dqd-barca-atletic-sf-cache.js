@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-26 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-27 11:58 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-26 21:01:29",
+    "updated":  "2026-09-27 11:58:19",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -660,17 +660,17 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Peña Sport FC",
                         "homeId":  "24343",
                         "awayId":  "6588",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "4",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
                         "id":  "16741813",
                         "comp":  "西协乙",
                         "round":  "5",
-                        "start":  "1791126000",
+                        "start":  "1791129600",
                         "home":  "CD Tudelano",
                         "away":  "Barcelona Atlètic",
                         "homeId":  "44230",
@@ -685,7 +685,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16741973",
                         "comp":  "西协乙",
                         "round":  "6",
-                        "start":  "1791730800",
+                        "start":  "1791640800",
                         "home":  "Barcelona Atlètic",
                         "away":  "SD Logroñés",
                         "homeId":  "24343",
@@ -1100,6 +1100,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "16742201",
+                        "comp":  "西协乙",
+                        "round":  "34",
+                        "start":  "1809874800",
+                        "home":  "Utebo FC",
+                        "away":  "Barcelona Atlètic",
+                        "homeId":  "212294",
+                        "awayId":  "24343",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     }
                 ]
 };

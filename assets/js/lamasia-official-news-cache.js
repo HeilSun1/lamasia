@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-26 19:16:35 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-27 11:59:21 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-26 19:16:35",
+    "updated":  "2026-09-27 11:59:21",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4582173", "title":  "Barça Atlètic 4-0 Peña Sport: On a roll and unbeaten",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4582173/barca-atletic-4-0-pena-sport-on-a-roll-and-unbeaten", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/26/8868bd6d-2547-41bc-a6a7-31219049f324/2026-09-26_FCBATLETICvsPENYASPORT_135.jpg" },
             {
                 "id":  "4579045", "title":  "UD Barbastro 0-1 Barça Atlètic: First win away of the season",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4579045/ud-barbastro-0-1-barca-atletic-first-win-away-of-the-season", "time":  "",
@@ -131,9 +135,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Games for England, Spain and Croatia",
+                "id":  "4580541", "title":  "Lamine and Gordon on target in thriller",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/26/459b065c-a098-4604-b80d-4a8df6b3094f/DAG-138-_M1A3397.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/26/f8cae813-358b-4bee-b8da-e4a135c51c8e/_MGA7207_1-1-.jpg" },
             {
                 "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
