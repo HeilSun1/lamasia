@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-28 09:20:19 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-28 21:03:02 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-28 09:20:19",
+    "updated":  "2026-09-28 21:03:02",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Adeyemi and Cancelo in line for action",
+                "id":  "4580541", "title":  "Kounde against Belgium; Adeyemi gets some rest",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/27/18cc723a-246b-48d3-86ac-add94e8a96fc/DAG-445-_M1A4241.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/abc76bea-4aa9-40c9-acca-37adac0d2c92/_MGA6969.jpg" },
+            {
+                "id":  "4581481", "title":  "One win away from beat ever start to LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-beat-ever-start-to-laliga", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/02764d52-c3c3-48f7-bd48-8c79b643713f/DAG-078-_M1A0875.jpg" },
             {
                 "id":  "4581966", "title":  "Upcoming targets for Raphinha",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577750/new-laliga-goalscoring-record-for-lamine-yamal", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/0b8d8b5f-3452-439a-91e0-5af6b0006045/_MGA8898.jpg" },
             {
-                "id":  "4577816", "title":  "Spanish Super Cup venues, dates and kick-off times confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577816/spanish-super-cup-venues-dates-and-kick-off-times-confirmed", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/a77dc43a-bdbf-4a6e-bbc9-b41c5aaae699/DAG-059-_M1A2416-1-.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577816", "title":  "Spanish Super Cup venues, dates and kick-off times confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577816/spanish-super-cup-venues-dates-and-kick-off-times-confirmed", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/a77dc43a-bdbf-4a6e-bbc9-b41c5aaae699/DAG-059-_M1A2416-1-.jpg" },
             {
                 "id":  "4577802", "title":  "Joan Garcia medical update",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575331", "title":  "The squad for Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575331/the-squad-for-levante-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/edff0ab1-5008-468d-8fd7-a6bd2c284a6c/_MGA6312.jpg" },
-            {
-                "id":  "4575083", "title":  "When and where to watch Levante UD v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575083/when-and-where-to-watch-levante-ud-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/edff0ab1-5008-468d-8fd7-a6bd2c284a6c/_MGA6312.jpg" }
         ]
     }
 };

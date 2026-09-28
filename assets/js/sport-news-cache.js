@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-28 09:20:23 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-28 21:05:02 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-28 09:20:23",
+    "updated":  "2026-09-28 21:05:02",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134697818", "title":  "La generación inacabable de Lamine (2007): una mina de oro con talentos aún por explotar",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/generacion-inacabable-lamine-2007-mina-134697818", "time":  "2026-09-28 09:42",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133392828", "title":  "Shane Kluivert deslumbra en el primer triunfo del Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/shane-deslumbra-primer-triunfdo-barca-133392828", "time":  "2026-08-15 20:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3af58037-e24d-48ea-a6e6-b9d427a4c9ed_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133369356", "title":  "Josué Caicedo, todos los escollos superados en el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/josue-caicedo-escollos-superados-barca-133369356", "time":  "2026-08-15 10:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6203721d-2e65-4c5e-b950-7020ba0b72e1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3af58037-e24d-48ea-a6e6-b9d427a4c9ed_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
