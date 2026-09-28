@@ -1,12 +1,13 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-27 21:05 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-09-28 09:21 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-09-27 21:05:19",
+    "updated":  "2026-09-28 09:21:13",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
                             "sfb:16741779",
                             "sfb:16741801",
                             "sfb:16741931",
+                            "sfb:16741941",
                             "sfb:16832369",
                             "sfb:16858526",
                             "sfb:16866862",
@@ -414,6 +415,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                    ],
                                  "local:juvenil-a:hafizgariba":  [
                                                                      {
+                                                                         "date":  "2026-09-27",
+                                                                         "opp":  "",
+                                                                         "label":  "09-27 · 季前赛/友谊赛",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1oVaa6vE4C",
+                                                                                            "title":  "巴萨 B 队 加里巴 本场集锦",
+                                                                                            "channel":  "13站一直吞我評論",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-27",
+                                                                                            "durationSec":  "346",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i2.hdslb.com/bfs/archive/df9d608a113b4c68f0fc05fe3c1673ce981bd410.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
                                                                          "date":  "2026-09-24",
                                                                          "opp":  "",
                                                                          "label":  "09-24 · 集锦",
@@ -584,6 +603,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         ]
                                                                          }
                                                                      ],
+                                 "local:juvenil-a:landryfarre":  [
+                                                                     {
+                                                                         "date":  "2026-09-26",
+                                                                         "opp":  "Pena Sport",
+                                                                         "label":  "vs Pena Sport · 09-26",
+                                                                         "matchKey":  "sfb:16741941",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "jo14ISBLv6M",
+                                                                                            "title":  "Landry Farre vs Pena Sport",
+                                                                                            "channel":  "ArsenKveFCB",
+                                                                                            "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                            "published":  "2026-09-26",
+                                                                                            "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     }
+                                                                 ],
                                  "local:juvenil-a:nicomarcipar":  [
                                                                       {
                                                                           "date":  "2026-08-14",
@@ -712,24 +749,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -750,6 +769,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -774,6 +811,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         ]
                                                                          }
                                                                      ],
+                                 "local:juvenil-b:noahgarcia":  [
+                                                                    {
+                                                                        "date":  "2026-09-27",
+                                                                        "opp":  "Ff Reus",
+                                                                        "label":  "vs Ff Reus · 09-27",
+                                                                        "matchKey":  "",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "hGmFpjNtFgc",
+                                                                                           "title":  "Noah Garcia vs FF Reus",
+                                                                                           "channel":  "ArsenKveFCB",
+                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                           "published":  "2026-09-27",
+                                                                                           "durationSec":  ""
+                                                                                       }
+                                                                                   ]
+                                                                    }
+                                                                ],
                                  "local:juvenil-b:pablopena":  [
                                                                    {
                                                                        "date":  "2026-09-26",
@@ -795,6 +850,42 @@ window.DQD_VIDEOS_CACHE = {
                                                                                           "channel":  "Barca Nation",
                                                                                           "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
                                                                                           "published":  "2026-09-26",
+                                                                                          "durationSec":  ""
+                                                                                      }
+                                                                                  ]
+                                                                   }
+                                                               ],
+                                 "local:juvenil-b:pauberges":  [
+                                                                   {
+                                                                       "date":  "2026-09-27",
+                                                                       "opp":  "",
+                                                                       "label":  "09-27 · 季前赛/友谊赛",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "BV1fuaa6MEg3",
+                                                                                          "title":  "拉玛西亚左脚后卫 Juvenil B 保·贝尔赫斯 本场集锦",
+                                                                                          "channel":  "13站一直吞我評論",
+                                                                                          "channelId":  "",
+                                                                                          "published":  "2026-09-27",
+                                                                                          "durationSec":  "152",
+                                                                                          "site":  "bili",
+                                                                                          "pic":  "https://i0.hdslb.com/bfs/archive/b456960a5beb637e9c318faa9ac0ed730cd32791.jpg"
+                                                                                      }
+                                                                                  ]
+                                                                   },
+                                                                   {
+                                                                       "date":  "2026-09-27",
+                                                                       "opp":  "Ff Reus",
+                                                                       "label":  "vs Ff Reus · 09-27",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "Ci-nblE4MLY",
+                                                                                          "title":  "Pau Berges vs FF Reus",
+                                                                                          "channel":  "ArsenKveFCB",
+                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                          "published":  "2026-09-27",
                                                                                           "durationSec":  ""
                                                                                       }
                                                                                   ]
@@ -891,6 +982,22 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-09-13",
+                                                          "opp":  "UD Logrones",
+                                                          "label":  "vs UD Logrones · 09-13",
+                                                          "matchKey":  "sfb:16741931",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "N3nOvdSQqNU",
+                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
+                                                                             "channel":  "Barca Nation",
+                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
+                                                                             "published":  "2026-09-13",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-13",
                                                           "opp":  "",
                                                           "label":  "09-13 · 集锦",
                                                           "matchKey":  "",
@@ -906,25 +1013,25 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/5f7c969e187f99ea3c8df6e6be6df852e7a90200.jpg"
                                                                          }
                                                                      ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-09-13",
-                                                          "opp":  "UD Logrones",
-                                                          "label":  "vs UD Logrones · 09-13",
-                                                          "matchKey":  "sfb:16741931",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "N3nOvdSQqNU",
-                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
-                                                                             "channel":  "Barca Nation",
-                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
-                                                                             "published":  "2026-09-13",
-                                                                             "durationSec":  ""
-                                                                         }
-                                                                     ]
                                                       }
                                                   ],
                                  "sf:b:1542744":  [
+                                                      {
+                                                          "date":  "2026-09-26",
+                                                          "opp":  "Pena Sport",
+                                                          "label":  "vs Pena Sport · 09-26",
+                                                          "matchKey":  "sfb:16741941",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "-2g9joDUxDQ",
+                                                                             "title":  "Ibrahim Diarra vs Pena Sport",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-26",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-08-15",
                                                           "opp":  "",
@@ -963,6 +1070,22 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:1657202":  [
+                                                      {
+                                                          "date":  "2026-09-26",
+                                                          "opp":  "Pena Sport",
+                                                          "label":  "vs Pena Sport · 09-26",
+                                                          "matchKey":  "sfb:16741941",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "TMZIt81FRBc",
+                                                                             "title":  "Shane Kluivert vs Pena Sport",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-26",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-09-13",
                                                           "opp":  "UD Logroñés B",
@@ -1094,6 +1217,24 @@ window.DQD_VIDEOS_CACHE = {
                                                   ],
                                  "sf:b:2076869":  [
                                                       {
+                                                          "date":  "2026-09-27",
+                                                          "opp":  "",
+                                                          "label":  "09-27 · 季前赛/友谊赛",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1oVaa6vE4C",
+                                                                             "title":  "巴萨 B 队 加里巴 本场集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-27",
+                                                                             "durationSec":  "346",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/df9d608a113b4c68f0fc05fe3c1673ce981bd410.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
                                                           "date":  "2026-09-24",
                                                           "opp":  "",
                                                           "label":  "09-24 · 集锦",
@@ -1208,6 +1349,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "225",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/97ab3af4edc81ce58ad430e251c6b65a22d72fc4.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:2076887":  [
+                                                      {
+                                                          "date":  "2026-09-26",
+                                                          "opp":  "Pena Sport",
+                                                          "label":  "vs Pena Sport · 09-26",
+                                                          "matchKey":  "sfb:16741941",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "-v10wNvlFiE",
+                                                                             "title":  "Adam Argemi vs Pena Sport",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-09-26",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       }
@@ -1549,6 +1708,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channel":  "ArsenKveFCB",
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-09-10",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2722874":  [
+                                                        {
+                                                            "date":  "2026-09-27",
+                                                            "opp":  "Ff Reus",
+                                                            "label":  "vs Ff Reus · 09-27",
+                                                            "matchKey":  "",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "v7MZGVq50ok",
+                                                                               "title":  "Genis Clua vs FF Reus",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-09-27",
                                                                                "durationSec":  ""
                                                                            }
                                                                        ]
