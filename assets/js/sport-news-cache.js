@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-28 21:05:02 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-28 22:09:20 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-28 21:05:02",
+    "updated":  "2026-09-28 22:09:20",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134769117", "title":  "Genís Clua, el '9' que puede romper moldes en La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-9-romper-moldes-134769117", "time":  "2026-09-28 16:46",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/46900234-251c-4a6c-8360-c8799d9e6c0d_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134697818", "title":  "La generación inacabable de Lamine (2007): una mina de oro con talentos aún por explotar",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/generacion-inacabable-lamine-2007-mina-134697818", "time":  "2026-09-28 09:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133432414", "title":  "Así fichó el Barça a Jordi Pesquer cuando tenía 7 años: \"Cambió la nieve por el balón y su golpeo con la zurda ya era bestial\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ficho-barca-jordi-pesquer-tenia-133432414", "time":  "2026-08-18 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8b58b205-acde-4f85-ae60-ca005f65f515_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
-        {
-            "id":  "133412032", "title":  "Pedro Rodríguez: Sueño intacto y buena sintonía para renovar con el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-sueno-intacto-buena-133412032", "time":  "2026-08-17 08:04",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133392828", "title":  "Shane Kluivert deslumbra en el primer triunfo del Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/shane-deslumbra-primer-triunfdo-barca-133392828", "time":  "2026-08-15 20:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3af58037-e24d-48ea-a6e6-b9d427a4c9ed_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8b58b205-acde-4f85-ae60-ca005f65f515_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" }
     ]
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-28 21:03:02 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-28 22:09:17 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-28 21:03:02",
+    "updated":  "2026-09-28 22:09:17",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,12 +135,12 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Kounde against Belgium; Adeyemi gets some rest",
+                "id":  "4580541", "title":  "France win without Kounde",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/abc76bea-4aa9-40c9-acca-37adac0d2c92/_MGA6969.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/90675e92-24bf-41bc-855c-4a7bf7af8421/DAG-561-_M1A6491.jpg" },
             {
-                "id":  "4581481", "title":  "One win away from beat ever start to LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-beat-ever-start-to-laliga", "time":  "",
+                "id":  "4581481", "title":  "One win away from best ever start to LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-best-ever-start-to-laliga", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/02764d52-c3c3-48f7-bd48-8c79b643713f/DAG-078-_M1A0875.jpg" },
             {
                 "id":  "4581966", "title":  "Upcoming targets for Raphinha",
