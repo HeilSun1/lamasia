@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-29 21:05:02 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-29 20:54:38 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-29 21:05:02",
+    "updated":  "2026-09-29 20:54:38",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134814903", "title":  "El Barça Atlètic pierde a Pedro Villar y Alexander Walton por lesión",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-alexander-walton-134814903", "time":  "2026-09-29 19:37",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6b231280-4ae6-4a0b-b0ac-9a532d0a4dd9_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134769117", "title":  "Genís Clua, el '9' que puede romper moldes en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-9-romper-moldes-134769117", "time":  "2026-09-28 16:46",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/46900234-251c-4a6c-8360-c8799d9e6c0d_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/46900234-251c-4a6c-8360-c8799d9e6c0d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134697818", "title":  "La generación inacabable de Lamine (2007): una mina de oro con talentos aún por explotar",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/generacion-inacabable-lamine-2007-mina-134697818", "time":  "2026-09-28 09:42",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133464966", "title":  "Sergi Mayans, el central zurdo que ha impresionado a Belletti",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sergi-mayans-central-zurdo-impresionado-133464966", "time":  "2026-08-18 22:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0646a87b-4b3e-4c55-bb11-a404dc2858f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133432414", "title":  "Así fichó el Barça a Jordi Pesquer cuando tenía 7 años: \"Cambió la nieve por el balón y su golpeo con la zurda ya era bestial\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ficho-barca-jordi-pesquer-tenia-133432414", "time":  "2026-08-18 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8b58b205-acde-4f85-ae60-ca005f65f515_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0646a87b-4b3e-4c55-bb11-a404dc2858f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-29 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-29 20:54 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-29 21:00:25",
+    "updated":  "2026-09-29 20:54:11",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2029,7 +2029,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "0"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "-"
+                                                                                        "身价(欧)":  "50万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,

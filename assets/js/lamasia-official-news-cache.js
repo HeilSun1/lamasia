@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-29 21:03:16 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-29 20:54:36 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-29 21:03:16",
+    "updated":  "2026-09-29 20:54:36",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,6 +135,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4583548", "title":  "Flick, Liga coach of the month",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583548/hansi-flick-liga-coach-of-the-month-for-september", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/29/cb804d90-ffa2-4cdf-a2ba-56cf3c5760fe/_MGA5779_1.jpg" },
+            {
                 "id":  "4580541", "title":  "Raphinha on the scoresheet in Brazil win",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/ed5e9485-736f-4b89-8536-f52296ecf35a/_MGA7343.jpg" },
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577749/when-and-where-to-watch-sevilla-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
-                "id":  "4578296", "title":  "Flick: 'We're focused on our own job'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4578296", "title":  "Flick: 'We're focused on our own job'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" },
             {
                 "id":  "4578225", "title":  "Last session before Sevilla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578225/last-session-before-sevilla", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575290", "title":  "PREVIEW | Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575290/preview-levante-ud-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4575546", "title":  "Ready for Levante v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575546/ready-for-levante-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };
