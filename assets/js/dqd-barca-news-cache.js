@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-28 22:08:54 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-29 10:11:35 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-28 22:08:54",
+    "updated":  "2026-09-29 10:11:35",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6411814", "title":  "告别足球！29岁的前巴萨B队队长费兰-萨尔萨内达...",
+            "url":  "https://www.dongqiudi.com/articles/6411814.html", "time":  "2026-09-29 08:33",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8E/B4/280x210/crop/-/rBXRn2q7BhiAPV1tAAUAMLYfJKM895.jpg" },
+        {
+            "id":  "6410473", "title":  "优素福-福法纳：不知是米兰还是阿莫林不想要我",
+            "url":  "https://www.dongqiudi.com/articles/6410473.html", "time":  "2026-09-29 07:35",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8D/E2/280x210/crop/-/rBXRn2q6k0eAM2DtAAE5kpXyckY938.jpg" },
         {
             "id":  "6404361", "title":  "巴萨竞技战报 20260927",
             "url":  "https://www.dongqiudi.com/articles/6404361.html", "time":  "2026-09-27 15:02",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6278987", "title":  "官方：斯图加特19岁中场恰托维奇租借加盟巴萨竞技，包含买断",
             "url":  "https://www.dongqiudi.com/articles/6278987.html", "time":  "2026-09-02 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/46/9F/280x210/crop/-/rBXRn2qXb0KAYldaAAZGt_Paqyg406.jpg" },
-        {
-            "id":  "6272393", "title":  "塞尔：巴萨B队租借斯图加特18岁中场恰托维奇，含买断条款",
-            "url":  "https://www.dongqiudi.com/articles/6272393.html", "time":  "2026-09-01 09:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/43/AE/280x210/crop/-/rBXRDGqWDpeAF5yuAAGRhkktKeg649.jpg" },
-        {
-            "id":  "6271154", "title":  "每体：巴萨有意引进贝蒂斯年轻中卫恩戈兰，巴列卡诺也有兴趣",
-            "url":  "https://www.dongqiudi.com/articles/6271154.html", "time":  "2026-09-01 02:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/E1/280x210/crop/-/rBXRn2qVwuyAKp88AADzb0jlhl4835.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/46/9F/280x210/crop/-/rBXRn2qXb0KAYldaAAZGt_Paqyg406.jpg" }
     ]
 };
