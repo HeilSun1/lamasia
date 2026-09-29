@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-29 10:12:39 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-29 21:03:16 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-29 10:12:39",
+    "updated":  "2026-09-29 21:03:16",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,17 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "France win without Kounde",
+                "id":  "4580541", "title":  "Raphinha on the scoresheet in Brazil win",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/90675e92-24bf-41bc-855c-4a7bf7af8421/DAG-561-_M1A6491.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/ed5e9485-736f-4b89-8536-f52296ecf35a/_MGA7343.jpg" },
+            {
+                "id":  "4583200", "title":  "Blaugrana clash in Seville",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583200/blaugrana-clash-in-seville", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/65d60d4c-f655-41f7-8b26-b138b350fd23/_MGA0381.jpg" },
+            {
+                "id":  "4583000", "title":  "7-2 win against Racing, best moment from September",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583000/7-2-win-against-racing-best-moment-from-september", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/fec78abc-8466-416a-b5b7-d7283f854741/_MGA7382.jpg" },
             {
                 "id":  "4581481", "title":  "One win away from best ever start to LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-best-ever-start-to-laliga", "time":  "",
@@ -219,14 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" },
             {
-                "id":  "4578225", "title":  "Last session before Sevilla",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578225/last-session-before-sevilla", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/4116d317-ca12-4ff6-b1a9-3d8191f0f523/WhatsApp-Image-2026-09-18-at-12.43.35-1-.jpeg" },
-            {
-                "id":  "4577750", "title":  "New LaLiga record for Lamine Yamal",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577750/new-laliga-goalscoring-record-for-lamine-yamal", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/0b8d8b5f-3452-439a-91e0-5af6b0006045/_MGA8898.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4578225", "title":  "Last session before Sevilla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578225/last-session-before-sevilla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/4116d317-ca12-4ff6-b1a9-3d8191f0f523/WhatsApp-Image-2026-09-18-at-12.43.35-1-.jpeg" },
+            {
+                "id":  "4577750", "title":  "New LaLiga record for Lamine Yamal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577750/new-laliga-goalscoring-record-for-lamine-yamal", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/0b8d8b5f-3452-439a-91e0-5af6b0006045/_MGA8898.jpg" },
             {
                 "id":  "4577816", "title":  "Spanish Super Cup venues, dates and kick-off times confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577816/spanish-super-cup-venues-dates-and-kick-off-times-confirmed", "time":  "",
@@ -325,15 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575546", "title":  "Ready for Levante v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575546/ready-for-levante-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" },
-            {
-                "id":  "4573423", "title":  "Raphinha, LaLiga MVP for August",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4573423/raphinha-la-liga-player-of-the-month-for-august-202627", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/07/0e19a131-d633-4479-8d3e-32783319229c/_MGA5152.jpg" },
-            {
-                "id":  "4575331", "title":  "The squad for Levante v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575331/the-squad-for-levante-v-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/11/edff0ab1-5008-468d-8fd7-a6bd2c284a6c/_MGA6312.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/12/709a43e5-d45a-4629-90a1-aeee6dde4d35/WhatsApp-Image-2026-09-12-at-12.37.57.jpeg" }
         ]
     }
 };

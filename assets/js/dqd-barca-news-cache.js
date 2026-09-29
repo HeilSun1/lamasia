@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-29 10:11:35 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-29 21:01:30 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-29 10:11:35",
+    "updated":  "2026-09-29 21:01:30",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6412649", "title":  "每体：布斯克茨很可能在巴萨任重要角色，将在安道尔考教练执照",
+            "url":  "https://www.dongqiudi.com/articles/6412649.html", "time":  "2026-09-29 14:50",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/6A/280x210/crop/-/rBXRn2qzqmGAYsXtAACMBepsyQE016.jpg" },
         {
             "id":  "6411814", "title":  "告别足球！29岁的前巴萨B队队长费兰-萨尔萨内达...",
             "url":  "https://www.dongqiudi.com/articles/6411814.html", "time":  "2026-09-29 08:33",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6283711", "title":  "世体：比西武代表巴萨B队比赛时右脚踝受伤，将接受医疗检查",
             "url":  "https://www.dongqiudi.com/articles/6283711.html", "time":  "2026-09-03 02:59",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B9/280x210/crop/-/rBXRDGqYca2AcVj9AAWBL64KzS0245.jpg" },
-        {
-            "id":  "6278987", "title":  "官方：斯图加特19岁中场恰托维奇租借加盟巴萨竞技，包含买断",
-            "url":  "https://www.dongqiudi.com/articles/6278987.html", "time":  "2026-09-02 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/46/9F/280x210/crop/-/rBXRn2qXb0KAYldaAAZGt_Paqyg406.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B9/280x210/crop/-/rBXRDGqYca2AcVj9AAWBL64KzS0245.jpg" }
     ]
 };

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-29 10:12:44 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-29 21:05:05 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-29 10:12:44",
+    "updated":  "2026-09-29 21:05:05",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "title":  "Los intangibles del Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "time":  "2026-09-29 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/1970/01/01/60d5bf438d2b7.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "title":  "Pedro Villar estará varias semanas de baja",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "time":  "2026-09-28 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260814/1004215447/verano-sonado-ebrima-tunkara.html", "title":  "El verano soñado de Ebrima Tunkara",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260814/1004215447/verano-sonado-ebrima-tunkara.html", "time":  "2026-08-14 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7c92363c9f8.r_d.1498-1107-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260813/1004215596/xavi-simons-da-bienvenida-xavi-hernandez-guino-barca.html", "title":  "Xavi Simons da la bienvenida a Xavi Hernández con un guiño al Barça y una revelación",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260813/1004215596/xavi-simons-da-bienvenida-xavi-hernandez-guino-barca.html", "time":  "2026-08-13 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/13/6a7d6818abf39.r_d.474-692-9950.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7c92363c9f8.r_d.1498-1107-4000.jpeg" }
     ]
 };
