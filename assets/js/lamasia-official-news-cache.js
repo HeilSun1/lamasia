@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-29 20:54:36 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-09-30 09:56:28 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-09-29 20:54:36",
+    "updated":  "2026-09-30 09:56:28",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,13 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4580541", "title":  "Five goals for blaugranes from Tuesday's games",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/29/acac7d62-4a14-4d14-ae39-e87d35a8fe5b/_MGA0262.jpg" },
+            {
                 "id":  "4583548", "title":  "Flick, Liga coach of the month",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583548/hansi-flick-liga-coach-of-the-month-for-september", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/29/cb804d90-ffa2-4cdf-a2ba-56cf3c5760fe/_MGA5779_1.jpg" },
-            {
-                "id":  "4580541", "title":  "Raphinha on the scoresheet in Brazil win",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/ed5e9485-736f-4b89-8536-f52296ecf35a/_MGA7343.jpg" },
             {
                 "id":  "4583200", "title":  "Blaugrana clash in Seville",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583200/blaugrana-clash-in-seville", "time":  "",

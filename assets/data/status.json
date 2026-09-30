@@ -1,27 +1,29 @@
 {
-    "runId":  "20260929-210003",
-    "runStartedUtc":  "2026-09-29T13:00:03.8210328Z",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "schema":  1,
+    "runId":  "20260930-095453",
+    "runStartedUtc":  "2026-09-30T01:54:53.7224869Z",
+    "runFinishedUtc":  "2026-09-30T01:57:02.6552677Z",
+    "lastSuccessUtc":  "2026-09-29T20:56:49.6300033Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "blocked",
+    "exitCode":  1,
     "consecutiveFailures":  0,
-    "blocked":  false,
+    "blocked":  true,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-
+                         "stale"
                      ],
     "failedScripts":  [
 
                       ],
     "staleCaches":  [
-
+                        "assets/js/dqd-u19-cache.js",
+                        "assets/js/dqd-u18-cache.js",
+                        "assets/js/dqd-u16-cache.js"
                     ],
     "healed":  [
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-09-29T20:56:49.6300033Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-09-29T20:56:49.6300033Z",
-    "schema":  1
+    "hardStaleHours":  72
 }

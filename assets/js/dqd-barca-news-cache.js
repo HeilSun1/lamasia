@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-29 20:54:13 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-30 09:55:29 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-29 20:54:13",
+    "updated":  "2026-09-30 09:55:29",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6416807", "title":  "官方伤情报告：巴萨竞技中场佩德罗-比利亚尔在对阵...",
+            "url":  "https://www.dongqiudi.com/articles/6416807.html", "time":  "2026-09-30 09:12",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/91/2F/280x210/crop/-/rBXRn2q8Yd6AO9yzAALNLdHZ__E540.jpg" },
         {
             "id":  "6412649", "title":  "每体：布斯克茨很可能在巴萨任重要角色，将在安道尔考教练执照",
             "url":  "https://www.dongqiudi.com/articles/6412649.html", "time":  "2026-09-29 14:50",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6283799", "title":  "世体：巴萨B队中卫昂斯坦左腿股二头肌受伤，将缺阵6至8周",
             "url":  "https://www.dongqiudi.com/articles/6283799.html", "time":  "2026-09-03 03:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B4/280x210/crop/-/rBXRn2qYdiGAKVyUAAr-616vJZI371.jpg" },
-        {
-            "id":  "6283711", "title":  "世体：比西武代表巴萨B队比赛时右脚踝受伤，将接受医疗检查",
-            "url":  "https://www.dongqiudi.com/articles/6283711.html", "time":  "2026-09-03 02:59",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B9/280x210/crop/-/rBXRDGqYca2AcVj9AAWBL64KzS0245.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B4/280x210/crop/-/rBXRn2qYdiGAKVyUAAr-616vJZI371.jpg" }
     ]
 };
