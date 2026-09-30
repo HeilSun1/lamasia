@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-30 21:04:16 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-09-30 20:53:21 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-09-30 21:04:16",
+    "updated":  "2026-09-30 20:53:21",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "title":  "El increíble viaje de una perla onubense: de Dubai al Barça tras los pasos de Fermín",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "time":  "2026-09-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/30/6abd497060730.r_d.570-662-12500.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "title":  "Los intangibles del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "time":  "2026-09-29 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216364/fiebre-grandes-equipos-ebrima-tunkara-piensa-barca.html", "title":  "Fiebre de los grandes equipos por Ebrima Tunkara, que solo piensa en el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216364/fiebre-grandes-equipos-ebrima-tunkara-piensa-barca.html", "time":  "2026-08-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a724131addaf.r_d.1316-639-8092.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260814/1004215447/verano-sonado-ebrima-tunkara.html", "title":  "El verano soñado de Ebrima Tunkara",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260814/1004215447/verano-sonado-ebrima-tunkara.html", "time":  "2026-08-14 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7c92363c9f8.r_d.1498-1107-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a724131addaf.r_d.1316-639-8092.jpeg" }
     ]
 };

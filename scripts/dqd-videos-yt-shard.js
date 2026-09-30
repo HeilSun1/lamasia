@@ -2,7 +2,7 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-09-29 20:56:46",
+    "updated":  "2026-09-30 20:55:16",
     "probeOk":  true,
     "searched":  [
 
