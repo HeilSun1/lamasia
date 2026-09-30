@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-30 09:55 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-09-30 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-09-30 09:55:11",
+    "updated":  "2026-09-30 21:00:20",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2820,13 +2820,13 @@ window.DQD_BARCA_ATLETIC = {
                                ]
                },
     "injuries_map":  {
-                         "50817432":  {
-                                          "date_until":  "2026.02.19",
-                                          "date_from":  "2026.02.02",
-                                          "injury":  "内收肌损伤",
-                                          "days":  "19",
+                         "51038135":  {
+                                          "date_until":  "2026.04.25",
+                                          "date_from":  "2026.04.02",
+                                          "injury":  "腹股沟损伤",
+                                          "days":  "25",
                                           "status":  "ok",
-                                          "games_missed":  "1"
+                                          "games_missed":  "3"
                                       },
                          "50876730":  {
                                           "date_until":  "2026.04.20",
@@ -2865,6 +2865,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "date_from":  "2024.10.31",
                                           "injury":  "生病",
                                           "days":  "8",
+                                          "status":  "ok",
+                                          "games_missed":  "1"
+                                      },
+                         "50817432":  {
+                                          "date_until":  "2026.02.19",
+                                          "date_from":  "2026.02.02",
+                                          "injury":  "内收肌损伤",
+                                          "days":  "19",
                                           "status":  "ok",
                                           "games_missed":  "1"
                                       },

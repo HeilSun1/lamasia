@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-30 09:55:29 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-09-30 21:00:44 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-09-30 09:55:29",
+    "updated":  "2026-09-30 21:00:44",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6419102", "title":  "塞尔：巴萨将和青训小将佩德罗-罗德里格斯续约至2030年",
+            "url":  "https://www.dongqiudi.com/articles/6419102.html", "time":  "2026-09-30 20:46",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/92/69/280x210/crop/-/rBXRDGq9BJmAKygNAAeKeUdFwps671.png" },
         {
             "id":  "6416807", "title":  "官方伤情报告：巴萨竞技中场佩德罗-比利亚尔在对阵...",
             "url":  "https://www.dongqiudi.com/articles/6416807.html", "time":  "2026-09-30 09:12",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6285381", "title":  "每体：巴萨考察青年世俱杯，盯上3名巴西新星",
             "url":  "https://www.dongqiudi.com/articles/6285381.html", "time":  "2026-09-03 10:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/EF/280x210/crop/-/rBXRDGqYizKAAu3yAAFeuTNbG6w841.jpg" },
-        {
-            "id":  "6283799", "title":  "世体：巴萨B队中卫昂斯坦左腿股二头肌受伤，将缺阵6至8周",
-            "url":  "https://www.dongqiudi.com/articles/6283799.html", "time":  "2026-09-03 03:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/B4/280x210/crop/-/rBXRn2qYdiGAKVyUAAr-616vJZI371.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/48/EF/280x210/crop/-/rBXRDGqYizKAAu3yAAFeuTNbG6w841.jpg" }
     ]
 };

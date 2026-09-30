@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-30 09:56:30 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-09-30 21:04:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-09-30 09:56:30",
+    "updated":  "2026-09-30 21:04:14",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134795916", "title":  "Lamine busca heredero: el Barça viaja a Orlando a por un torneo que se resiste desde 2019",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lamine-busca-heredero-barca-viaja-134795916", "time":  "2026-09-30 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/cb4922f0-75fb-4692-b849-fd7d00515803_16-9-discover-aspect-ratio_default_0.webp" },
         {
             "id":  "134814903", "title":  "El Barça Atlètic pierde a Pedro Villar y Alexander Walton por lesión",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-alexander-walton-134814903", "time":  "2026-09-29 19:37",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134769117", "title":  "Genís Clua, el '9' que puede romper moldes en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-9-romper-moldes-134769117", "time":  "2026-09-28 16:46",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133476883", "title":  "El Barça Atlètic sigue creciendo y gana al Europa con gol de Aziz",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sigue-creciendo-gana-133476883", "time":  "2026-08-19 11:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133464966", "title":  "Sergi Mayans, el central zurdo que ha impresionado a Belletti",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sergi-mayans-central-zurdo-impresionado-133464966", "time":  "2026-08-18 22:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0646a87b-4b3e-4c55-bb11-a404dc2858f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

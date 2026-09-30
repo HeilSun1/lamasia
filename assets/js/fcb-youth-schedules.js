@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-30 09:56；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-09-30 21:01；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-09-30 09:56:25",
+    "updated":  "2026-09-30 21:01:42",
     "source":  "fcbarcelona",
     "teams":  {
                   "cadete":  {
@@ -639,7 +639,7 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "Segre A",
                                          "homeId":  "11112",
                                          "awayId":  "12926",
-                                         "hs":  "0",
+                                         "hs":  "4",
                                          "as":  "0",
                                          "status":  "Ended",
                                          "code":  "0",
@@ -651,7 +651,7 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰优选联赛 Cadete G1",
                                          "compEn":  "Preferente Catalana Cadete G.1",
                                          "round":  "3",
-                                         "start":  "1791036000",
+                                         "start":  "1791036900",
                                          "date":  "2026-10-03",
                                          "tbd":  false,
                                          "home":  "Espanyol A",
