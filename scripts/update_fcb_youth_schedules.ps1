@@ -38,6 +38,13 @@ $UTF8      = New-Object System.Text.UTF8Encoding($false)
 # teamId 即官网页面上各梯队赛程组件的 data-barcelona-team-id（长期稳定）。
 # 与抓取结果交叉验证过：U19B=11110、U16=11111、U15=11112、U14=11113、U13=11114、U12=11115。
 $Tiers = @(
+  # U19A（Juvenil A）：2026-10-01 接入。原来是走 Sofascore（teamId 90128），
+  # Sofascore 封了我们之后就断了，改从官网取赛程。
+  # teamId 8470 是用户给的官网页面 www.fcbarcelona.es/es/futbol/juvenil-a/calendario
+  # 源码里 <... data-barcelona-team-id="8470"> 读出来的，实测接口返回 34 场、
+  # 对手含 Sabadell A / Racing Club Zaragoza（西青甲），对得上。
+  # 注意：**别用 pulselive 反推的号段去猜**，我试过 11117，那是另一支队。
+  @{ id = "juvenil-a";  teamId = 8470;  slug = "juvenil-a";  comp = "西青甲 G3";               compEn = "División de Honor Juvenil G.3" },
   @{ id = "cadete";     teamId = 11111; slug = "cadete-a";   comp = "加泰荣誉联赛 Cadete";    compEn = "División de Honor Catalana Cadete" },
   @{ id = "cadete-b";   teamId = 11112; slug = "cadete-b";   comp = "加泰优选联赛 Cadete G1"; compEn = "Preferente Catalana Cadete G.1" },
   @{ id = "infantil";   teamId = 11113; slug = "infantil-a"; comp = "加泰荣誉联赛 Infantil";  compEn = "División de Honor Catalana Infantil" },
