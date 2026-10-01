@@ -61,10 +61,19 @@ $hb | Add-Member -NotePropertyName runFinishedUtc -NotePropertyValue $null      
 Write-JsonFile $localState $hb
 
 # 核心产物：这些没刷新说明主要数据源出问题了
+#
+# ⚠ 2026-10-01 起，三个青年队缓存（u19/u18/u16）**从这份审计清单里移除了**，别再放回来。
+# 原因：Sofascore 从 2026-09-30 09:55 起对**整站**（连 www 首页）返回 403，响应出自
+# CDN 边缘（Server: Varnish），请求根本没到应用层 —— 是 IP 层面的封禁，
+# 换指纹/加 header/换非无头模式都无效（都实测过）。
+# 本机出口是中国移动南京的住宅 IP，同一时间 bing/uefa/transfermarkt 全部正常，
+# 只有 sofascore 拒我们。对应的 update_u19/u18/u16_sofascore.ps1 拿到 403 后
+# **按设计保留旧缓存不覆盖**，所以这三个文件会一直停在断供那天、永远触发 stale，
+# 把整站的横幅一直挂成「需人工处理」，反而盖住了真正要看的告警。
+# 注意队徽不受影响：img.sofascore.com 实测 200，图片 CDN 没被挡。
+# 这三个文件仍留在下面的 $AddPaths 里（万一哪天通了，改动照常提交）。
+# 哪天想恢复监控：先确认真能抓到数据，再把下面三行放回来。
 $CoreCaches = @(
-  'assets/js/dqd-u19-cache.js'
-  'assets/js/dqd-u18-cache.js'
-  'assets/js/dqd-u16-cache.js'
   'assets/js/dqd-barca-atletic-cache.js'
 )
 # 一天只抓一次的产物：不能按「本轮是否刷新」审计（一天里的第二班必然不刷新），

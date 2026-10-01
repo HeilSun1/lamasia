@@ -115,7 +115,18 @@
         });
       });
     });
-    // 官方站五队（仅在 Sofascore 无「未开赛」时启用，防重复）
+    // Sofascore 缓存够不够新。2026-09-30 起 Sofascore 对无头 Edge 也返回 403，
+    // 三个青年队脚本抓不到数据就按设计保留旧缓存 —— 于是缓存会一直停在断供那天。
+    // 旧的 skipIfSf 只看「缓存里有没有未开赛」，不管缓存多旧，结果是一份几天前的
+    // 陈旧赛程把官方站（pulselive）刚拉到的真赛程压掉，已赛的比赛还挂在待赛里。
+    // 现在加一道新鲜度闸：缓存超过 48 小时就当作不可信，不再压制官方站数据。
+    function sfCacheFresh(c) {
+      var t = Date.parse(String((c || {}).updated || "").replace(/-/g, "/"));
+      if (!t) return false;
+      return (Date.now() - t) < 48 * 3600e3;
+    }
+
+    // 官方站五队（仅在 Sofascore 有**新鲜的**「未开赛」数据时跳过，防重复）
     [
       { tier: "cadete",     team: "Cadete A",   href: "teams/cadete.html",     skipIfSf: "DQD_U16_CACHE" },
       { tier: "cadete-b",   team: "Cadete B",   href: "teams/cadete-b.html" },
@@ -124,7 +135,8 @@
       { tier: "infantil-c", team: "Infantil C", href: "teams/infantil-c.html" },
       { tier: "juvenil-b",  team: "Juvenil B",  href: "teams/juvenil-b.html",  skipIfSf: "DQD_U18_CACHE" }
     ].forEach(function (cfg) {
-      if (cfg.skipIfSf && window[cfg.skipIfSf] && Array.isArray(window[cfg.skipIfSf].matches) &&
+      if (cfg.skipIfSf && window[cfg.skipIfSf] && sfCacheFresh(window[cfg.skipIfSf]) &&
+          Array.isArray(window[cfg.skipIfSf].matches) &&
           window[cfg.skipIfSf].matches.some(function (m) { return String(m.status) === "Not started"; })) return;
       var arr = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches[cfg.tier]) || [];
       if (!Array.isArray(arr)) return;
