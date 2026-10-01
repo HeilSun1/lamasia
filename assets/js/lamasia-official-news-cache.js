@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-01 21:02:56 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-01 21:06:32 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-01 21:02:56",
+    "updated":  "2026-10-01 21:06:32",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Blaugranes back in action",
+                "id":  "4580541", "title":  "Two wins as Cancelo scores stunner",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/01/1a4a2e9d-7678-49ba-bfd5-4c83a385e91c/DAG-429-_M1A3800.jpg" },
+            {
+                "id":  "4585128", "title":  "Cancelo goal against Racing, best of the month",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585128/cancelo-goal-against-racing-best-of-the-month", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/01/98f6dadb-8d7b-4229-888b-f1c94449d1eb/DAG-368-_M1A2937.jpg" },
             {
                 "id":  "4584325", "title":  "Exciting October in store",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4584325/big-games-coming-up-in-october", "time":  "",
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/871cdb54-da2d-4ee4-b0c8-9b3abf764a32/WhatsApp-Image-2026-09-18-at-12.43.36.jpeg" },
             {
-                "id":  "4577776", "title":  "PREVIEW | Sevilla FC v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577776/preview-sevilla-fc-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4577776", "title":  "PREVIEW | Sevilla FC v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577776/preview-sevilla-fc-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4578251", "title":  "Barça players called up for international duty",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578251/fc-barcelona-players-called-up-for-international-duty", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" },
-            {
-                "id":  "4575846", "title":  "Equal best ever start",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575846/equal-best-ever-start-to-a-season", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/ef348ca7-61fc-4573-b28c-57c72a91982f/_MGA7189.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" }
         ]
     }
 };
