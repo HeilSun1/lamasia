@@ -124,7 +124,10 @@
     function sfCacheFresh(c) {
       var t = Date.parse(String((c || {}).updated || "").replace(/-/g, "/"));
       if (!t) return false;
-      return (Date.now() - t) < 48 * 3600e3;
+      // 24 小时，不是 48 —— 脚本一天跑两班（09:40 / 21:00），
+      // 正常情况缓存最多 ~12 小时。阈值给到 48 会把「已经断了一天多」的缓存
+      // 仍然当新鲜的，继续压制官网数据（第一版就是 48，实测被卡住）。
+      return (Date.now() - t) < 24 * 3600e3;
     }
 
     // 官方站六队（仅在 Sofascore 有**新鲜的**「未开赛」数据时跳过，防重复）
