@@ -22,12 +22,38 @@
     return n;
   }
 
+  /* ⚠️ 懂球帝 start_play 是 **UTC 墙钟**，不是北京时间（实测与 Sofascore 的 start 精确相等），
+     当 +08:00 解析会整整差 8 小时。
+     本文件与 dqd-barca-atletic.js 各自自包含（两个页面不一定会同时加载），
+     所以这两个工具在两处各有一份 —— 改动时请同步。 */
+  function dqdStartSec(m) {
+    const t = Date.parse(String((m && m.start_play) || "").replace(" ", "T") + "Z");
+    return isNaN(t) ? 0 : Math.floor(t / 1000);
+  }
+  /* 懂球帝比赛 → Sofascore 赛事键 "sfb:{id}"（集锦缓存按 SF id 落库）。
+     对不上或有多解一律返回 "" —— 宁可没集锦，不可挂错视频。 */
+  function bridgeSfKey(m) {
+    const s  = dqdStartSec(m);
+    const sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    const ms = (sf && sf.matches) || [];
+    if (!s || !ms.length) return "";
+    let hit = "";
+    for (let i = 0; i < ms.length; i++) {
+      if (Math.abs(parseInt(ms[i].start, 10) - s) <= 3600) {
+        if (hit && hit !== String(ms[i].id)) return "";
+        hit = String(ms[i].id);
+      }
+    }
+    return hit ? "sfb:" + hit : "";
+  }
+
   function collect() {
     const out = [];
     // B队：优先 Sofascore（与 B队赛程一致，可弹详情），懂球帝兜底
     const S = window.DQD_BARCA_ATLETIC_SF_CACHE;
     const B = window.DQD_BARCA_ATLETIC;
-    if (S && Array.isArray(S.matches)) {
+    // ★ 新鲜度闸：Sofascore 断供后旧缓存永不刷新，会一直压住懂球帝兜底（阈值见 sfCacheFresh）
+    if (S && Array.isArray(S.matches) && sfCacheFresh(S)) {
       S.matches.forEach(function (m) {
         if (String(m.status) !== "Not started") return;
         const t = parseInt(m.start, 10) * 1000;
@@ -59,16 +85,20 @@
       // 懂球帝兜底
       B.schedule.data.forEach(function (m) {
         if (String(m.status) !== "Fixture") return;
-        const t = new Date(String(m.start_play || "").replace(" ", "T") + "+08:00").getTime();
+        const t = dqdStartSec(m) * 1000;
         if (!t || t < now() - 3600e3) return; // 剔除已过期
         const key = "dqd:" + m.match_id;
         if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
         if (!window.LAMASIA_MATCHES[key]) {
           window.LAMASIA_MATCHES[key] = {
             source: "dqd", match_id: m.match_id, id: m.match_id,
+            cacheRef: "DQD_BARCA_ATLETIC_CACHE",   // → dqd-barca-atletic-details-cache.js
             comp: m.competition_name || m.match_title || "", round: m.round_name || m.gameweek || "",
+            start: dqdStartSec(m),
             startText: m.start_play || "",
             home: m.team_A_name || "", away: m.team_B_name || "",
+            homeId: m.team_A_id, awayId: m.team_B_id,
+            videoKey: bridgeSfKey(m),
             homeLogo: m.team_A_logo || "", awayLogo: m.team_B_logo || "",
             hs: m.fs_A || "", as: m.fs_B || "", status: m.status
           };

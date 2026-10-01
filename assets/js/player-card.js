@@ -684,5 +684,19 @@
   });
 
   window.PC_NORM = norm;
-  window.PlayerCard = { open: open, close: close, findByKey: function (k) { buildIndex(); return INDEX[k] || null; }, INDEX: INDEX };
+  /* sfIdFor(key)：懂球帝球员 → Sofascore 球员 id 的桥接查询。
+     接受 "b:{懂球帝 person_id}"（B队名单/阵容卡片键）或裸的懂球帝数字 id。
+     映射表 dqdToSf 在 buildIndex() 里由两份名单按姓名三级匹配建起来，桥不上返回 ""。
+     用途：B队阵容改用懂球帝数据后，🎬 个人集锦徽标与球员卡仍需按 Sofascore id 查表。 */
+  window.PlayerCard = {
+    open: open,
+    close: close,
+    findByKey: function (k) { buildIndex(); return INDEX[k] || null; },
+    sfIdFor: function (key) {
+      buildIndex();
+      var m = /^b:(\d+)$/.exec(String(key || "")) || /^(\d+)$/.exec(String(key || ""));
+      return (m && dqdToSf[m[1]]) || "";
+    },
+    INDEX: INDEX
+  };
 })();

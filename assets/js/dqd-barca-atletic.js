@@ -154,6 +154,39 @@
     el.innerHTML = html;
   }
 
+  /* ⚠️ 懂球帝的 start_play 是 **UTC 墙钟**，不是北京时间（实测 7/7 与 Sofascore 的 start
+     精确相等）。把它当 +08:00 解析会整整差 8 小时。以下三个工具都基于这一条。 */
+  function dqdStartSec(m) {
+    const t = Date.parse(String((m && m.start_play) || "").replace(" ", "T") + "Z");
+    return isNaN(t) ? 0 : Math.floor(t / 1000);
+  }
+  /* 同一时刻转成北京时间显示串（与 Sofascore 分支的本地时间口径一致） */
+  function dqdStartBj(m) {
+    const s = dqdStartSec(m);
+    if (!s) return String((m && m.start_play) || "").slice(0, 16);
+    const d  = new Date((s + 8 * 3600) * 1000);
+    const pad = function (n) { return String(n).padStart(2, "0"); };
+    return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()) +
+           " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
+  }
+  /* 懂球帝比赛 → Sofascore 赛事键 "sfb:{id}"。
+     集锦缓存（dqd-videos-cache.js）全按 Sofascore id 落库，所以必须桥过去才取得到集锦。
+     按开赛时刻精确比对；对不上或有多解一律返回 "" —— 宁可没集锦，不可挂错视频。 */
+  function bridgeSfKey(m) {
+    const s  = dqdStartSec(m);
+    const sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    const ms = (sf && sf.matches) || [];
+    if (!s || !ms.length) return "";
+    let hit = "";
+    for (let i = 0; i < ms.length; i++) {
+      if (Math.abs(parseInt(ms[i].start, 10) - s) <= 3600) {
+        if (hit && hit !== String(ms[i].id)) return "";   // 有歧义不桥接
+        hit = String(ms[i].id);
+      }
+    }
+    return hit ? "sfb:" + hit : "";
+  }
+
   /* ── 赛程（未开赛 + 已完场） ── */
   function renderSchedule(sched) {
     const el = $("dqd-schedule");
@@ -189,19 +222,24 @@
           '<img class="match-logo" src="' + esc(logo || "") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
           esc(name || "") + "</span></td>";
       };
-      // 注册到比赛详情注册表，供 match-detail.js 弹窗使用（懂球帝只显示对阵+外链）
+      // 注册到比赛详情注册表，供 match-detail.js 弹窗使用。
+      // 带了 cacheRef 后，弹窗会走懂球帝详情缓存渲染完整阵容/进程/统计（不再是"只显示外链"）
       const key = "dqd:" + m.match_id;
       if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
       window.LAMASIA_MATCHES[key] = {
         source: "dqd", match_id: m.match_id, id: m.match_id,
+        cacheRef: "DQD_BARCA_ATLETIC_CACHE",       // → dqd-barca-atletic-details-cache.js
         comp: m.competition_name || m.match_title || "", round: m.round_name || m.gameweek || "",
-        startText: m.start_play || "",
+        start: dqdStartSec(m),                      // 集锦时间窗 + lineupPlayers 判断主客
+        startText: dqdStartBj(m),
         home: m.team_A_name || "", away: m.team_B_name || "",
+        homeId: m.team_A_id, awayId: m.team_B_id,
+        videoKey: bridgeSfKey(m),                   // 桥到 "sfb:{SF id}" 才取得到集锦
         homeLogo: m.team_A_logo || "", awayLogo: m.team_B_logo || "",
         hs: m.fs_A || "", as: m.fs_B || "", status: m.status
       };
       return '<tr data-match-key="' + key + '" class="match-row" title="点击查看详情">' +
-        '<td class="num">' + esc((m.start_play || "").replace(" ", " ").slice(0, 16)) + "</td>" +
+        '<td class="num">' + esc(dqdStartBj(m)) + "</td>" +
         "<td>" + comp + round + "</td>" +
         teamCell(m.team_A_name, m.team_A_logo) +
         '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
@@ -242,6 +280,11 @@
     const sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
     const matches = (sf && sf.matches) || [];
     if (!matches.length) return false;
+    // ★ 新鲜度闸：Sofascore 断供时脚本按设计保留旧缓存不覆盖，于是 matches 永远非空、
+    //   这份冻结的旧赛程会一直压住懂球帝兜底。超过 24h 就当它不可信，让位给懂球帝。
+    //   阈值 24h（脚本一天两班，正常 ≤12h）—— 与 matches-upcoming.js 的 sfCacheFresh() 同步改。
+    const sfUpdated = Date.parse(String((sf || {}).updated || "").replace(/-/g, "/"));
+    if (!sfUpdated || (Date.now() - sfUpdated) > 24 * 3600e3) return false;
 
     function fmt(ts) {
       const d = new Date(parseInt(ts, 10) * 1000);

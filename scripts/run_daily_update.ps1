@@ -118,7 +118,8 @@ $UpdateScripts = @(
 # 固定存在的缓存（这些一直在仓库里，缺了就是仓库出了问题）
 $AddPaths = @(
   'assets/js/dqd-barca-atletic-cache.js', 'assets/js/dqd-barca-atletic-sf-cache.js',
-  'assets/js/dqd-barca-atletic-sf-details-cache.js', 'assets/js/dqd-barca-news-cache.js',
+  'assets/js/dqd-barca-atletic-sf-details-cache.js', 'assets/js/dqd-barca-atletic-details-cache.js',
+  'assets/js/dqd-barca-news-cache.js',
   'assets/js/dqd-u19-news-cache.js', 'assets/js/dqd-u18-news-cache.js', 'assets/js/dqd-u16-news-cache.js',
   'assets/js/lamasia-official-news-cache.js', 'assets/js/sport-news-cache.js', 'assets/js/md-news-cache.js',
   'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',

@@ -171,19 +171,24 @@
     var bench = list.filter(function (x) { return x.substitute; });
     function item(x) {
       var p = x.player || {};
+      var pid = String(p.id || "");        // Sofascore 球员 id（懂球帝阵容需前端桥接才有）
+      var photo = p.photo || "";           // 懂球帝 CDN 头像（桥不上时用它）
       var ini = esc(initials(p.name)) || "·";
-      // 阵容头像：Sofascore 球员头像，加载失败回退首字母
-      var av = p.id
-        ? '<img src="https://img.sofascore.com/api/v1/player/' + esc(p.id) + '/image" alt="' + esc(p.name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
+      // 头像三级降级：① Sofascore id → ② 源自带 photo（懂球帝）→ ③ 首字母
+      var img = pid ? "https://img.sofascore.com/api/v1/player/" + esc(pid) + "/image" : photo;
+      var av = img
+        ? '<img src="' + esc(img) + '" alt="' + esc(p.name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
           '<span class="md-lu-ini" style="display:none">' + ini + "</span>"
         : '<span class="md-lu-ini">' + ini + "</span>";
+      // 卡片键：优先 Sofascore 键；桥不上退回懂球帝名单键 b:{dqdId}（每日更新的名单，最可靠）
+      var ck = pid ? sfKey(pid) : (p.dqdId ? "b:" + p.dqdId : "");
       return '<div class="md-lu-item">' +
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
         '<span class="md-lu-av">' + av + "</span>" +
-        '<span class="md-lu-name">' + cardA(p.id, p.name) + "</span>" +
+        '<span class="md-lu-name">' + cardAKey(ck, p.name) + "</span>" +
         // 🎬 徽标：该球员本场有个人集锦，可点击直接播放
-        (matchPlayerVids[p.id]
-          ? '<button class="md-lu-hl" type="button" data-hl-pid="' + esc(p.id) + '" title="本场有个人集锦，点击播放">🎬</button>'
+        (pid && matchPlayerVids[pid]
+          ? '<button class="md-lu-hl" type="button" data-hl-pid="' + esc(pid) + '" title="本场有个人集锦，点击播放">🎬</button>'
           : "") +
         '<span class="md-lu-pos">' + esc(posZh(x.position)) + "</span>" +
       "</div>";
@@ -228,14 +233,18 @@
       if (x.reason && REASON_ZH[x.reason] != null) why = REASON_ZH[x.reason];
       else if (x.incidentClass && GOAL_CLASS_ZH[x.incidentClass] != null) why = GOAL_CLASS_ZH[x.incidentClass];
       else if (x.reason && x.reason !== "Normal" && x.reason !== "Kick") why = String(x.reason);
-      var t = pn;
-      var sc = (x.homeScore != null && x.awayScore != null) ? " " + x.homeScore + "-" + x.awayScore : "";
-      return t + (why ? "（" + esc(why) + "）" : "") + sc;
+      // 懂球帝只有事件类型 + 比分（没有进球者）：空段一律丢掉，
+      // 否则会渲染出 " · 黄牌" / 前导空格这种半截内容
+      var parts = [];
+      if (pn) parts.push(pn);
+      if (why) parts.push("（" + esc(why) + "）");
+      if (x.homeScore != null && x.awayScore != null) parts.push(x.homeScore + "-" + x.awayScore);
+      return parts.join(" ") || "进球";
     }
     if (x.incidentType === "card") {
       var c = String(x.incidentClass || x.reason || "").toLowerCase();
       var lbl = c.indexOf("red") !== -1 ? "红牌" : "黄牌";
-      return pn + " · " + lbl;
+      return pn ? pn + " · " + lbl : lbl;
     }
     if (x.incidentType === "substitution") {
       var pin = cardA(x.playerIn && x.playerIn.id, x.playerIn && x.playerIn.name);
@@ -365,8 +374,9 @@
 
   /* ═══ 视频集锦（videos-ui.js）═══ */
 
-  /* 巴萨梯队对应的 Sofascore 团队 id（判断本场巴萨是主/客） */
-  var TIER_TEAM = { b: "24343", u19: "90128", u18: "", u16: "" };
+  /* 巴萨梯队对应的团队 id（判断本场巴萨是主/客）。
+     ⚠️ 值是数组：B队的详情可能来自 Sofascore(24343) 或懂球帝(50001839)，两套 id 都要认。 */
+  var TIER_TEAM = { b: ["24343", "50001839"], u19: ["90128"], u18: [], u16: [] };
 
   /* 🎥 全场集锦：直接展开显示；发布时间的逻辑校验——
      全场集锦必须在本场"开赛 ±2 天"到"赛后 14 天"内发布，否则判定为别的比赛 / 旧视频 / 直播流，不显示。
@@ -481,11 +491,13 @@
   /* 阵容球员列表。能按 TIER_TEAM 认出巴萨侧就只取巴萨侧；认不出（u18/u16 的 TIER_TEAM 为空、
      或阵容未缓存）就把两队都收进来 —— 反正下面只按球员键/名字去对，不会错认到对手身上。 */
   function lineupPlayers(lineups) {
-    var teamId = TIER_TEAM[curTier] || "";
+    var teamIds = TIER_TEAM[curTier] || [];
     var side = null;
-    if (teamId && lineups) {
-      if (String(curMatch.homeId) === teamId) side = lineups.home;
-      else if (String(curMatch.awayId) === teamId) side = lineups.away;
+    if (teamIds.length && lineups) {
+      var hid = String((curMatch && curMatch.homeId) || "");
+      var aid = String((curMatch && curMatch.awayId) || "");
+      if (teamIds.indexOf(hid) > -1) side = lineups.home;
+      else if (teamIds.indexOf(aid) > -1) side = lineups.away;
     }
     if (!side || !Array.isArray(side.players)) {
       // 梯队映射缺失或阵容未缓存：主客两队都收，靠球员键/名字去对
@@ -507,7 +519,8 @@
     var byName = {};
     list.forEach(function (x) {
       var p = (x && x.player) || {};
-      var nk = normName(p.name);
+      // ⚠️ 懂球帝阵容的 name 可能是中文（"阿萨雷"），归一化后是空串 → 优先用 nameEn
+      var nk = normName(p.nameEn || p.name);
       // 短名 / 空名（中文等非拉丁名归一化后是 ""）不进表，见 scanLineupName 的说明
       if (p.id && nk.length >= 6) byName[nk] = { pid: String(p.id), name: p.name || "" };
     });
@@ -701,16 +714,56 @@
     });
   }
 
+  /* 懂球帝详情：只读本地缓存，不做实时拉取（归一化在 PS 侧完成，前端不重复实现）。
+     缓存形状与 Sofascore 详情缓存一致，所以能直接走 applyDetail 的四个渲染函数。 */
+  function loadDqdDetail(m, body) {
+    var id = String(m.id || "");
+    // ⚠️ 会话缓存必须加命名空间：Sofascore event id 与懂球帝 match_id 都是纯数字，会撞车
+    var ck = "dqd:" + id;
+    if (detailCache[ck]) { applyDetail(detailCache[ck], body); return; }
+    loadDetailCache(m).then(function (dc) {
+      var d = dc ? (dc[id] || dc[m.id]) : null;
+      if (!d) { dqdEmpty(body); return; }
+      bridgeDqdLineups(d.lineups);   // 唯一一处就地改写：懂球帝 person_id → Sofascore id
+      detailCache[ck] = [d.lineups || null, d.incidents || null, d.statistics || null, d.h2h || null];
+      applyDetail(detailCache[ck], body);
+    }).catch(function () { dqdEmpty(body); });
+  }
+
+  function dqdEmpty(body) {
+    var load = body.querySelector(".md-load");
+    if (load) load.innerHTML = '<div class="note-box" style="margin-top:18px">📋 <span><b>懂球帝暂未收录该场的阵容与比赛进程。</b>可点击下方链接到懂球帝查看。</span></div>';
+  }
+
+  /* 懂球帝阵容球员 → 补上 Sofascore id（有才补，不强求）。
+     必须赶在 applyDetail 之前完成：🎬 个人集锦徽标与球员卡都按 Sofascore id 查表。
+     桥接表由 player-card.js 用两份名单按姓名三级匹配建起来（dqdToSf）；桥不上就降级，
+     头像退回懂球帝 CDN、卡片退回 b:{dqdId} 键，不会因此报错。 */
+  function bridgeDqdLineups(l) {
+    if (!l || !window.PlayerCard || !window.PlayerCard.sfIdFor) return;
+    [l.home, l.away].forEach(function (side) {
+      if (!side || !Array.isArray(side.players)) return;
+      side.players.forEach(function (x) {
+        var p = x && x.player;
+        if (!p || p.id || !p.dqdId) return;
+        var sid = window.PlayerCard.sfIdFor("b:" + p.dqdId);
+        if (sid) p.id = sid;
+      });
+    });
+  }
+
   function open(key) {
     var m = REG[key];
     if (!m) return;
-    curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16", DQD_BARCA_ATLETIC_SF_CACHE: "b" }[m.cacheRef] || "";
+    curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16",
+                DQD_BARCA_ATLETIC_SF_CACHE: "b", DQD_BARCA_ATLETIC_CACHE: "b" }[m.cacheRef] || "";
     curMatch = m;
-    curMatchKey = key;   // 本场球员集锦按此键取（与视频缓存的 matches/feed 键同一套）
+    // 本场集锦按此键取：懂球帝场次通过 videoKey 桥到 "sfb:{Sofascore id}"（视频缓存按 SF id 落库）
+    curMatchKey = m.videoKey || key;
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
     body.innerHTML = headerHtml(m) +
-      matchVideosHtml(key) +
+      matchVideosHtml(curMatchKey) +
       '<div class="md-load"><div class="md-loading">正在加载比赛详情…</div></div>' +
       footerHtml(m);
     modal.classList.add("open");
@@ -726,6 +779,9 @@
     } else if (m.source === "fcb") {
       var load = body.querySelector(".md-load");
       load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场赛程来自 FC Barcelona 官网。</b>本站未收录青年梯队逐场阵容/统计详情，请到原站查看赛程与比分。</span></div>';
+    } else if (m.source === "dqd" && m.cacheRef) {
+      // 懂球帝场次且带详情缓存引用 → 走本地缓存渲染完整详情
+      loadDqdDetail(m, body);
     } else {
       var load = body.querySelector(".md-load");
       load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场比赛详情请在懂球帝查看。</b>本站每日缓存仅含对阵、比分与时间等基本信息。</span></div>';

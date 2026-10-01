@@ -8,6 +8,13 @@
 #     4. 球队信息          GET /api/data/v1/detail/team/{teamId}
 #     5. 球员照片下载到     assets/img/players/dqd/
 #     6. 生成缓存          assets/js/dqd-barca-atletic-cache.js
+#     7. 已完场比赛详情（阵容/进程/统计/交锋）：
+#          GET /sport-data/soccer/biz/dqd/v1/match/lineup/{matchId}
+#          GET /api/data/overview/match/{matchId}
+#          GET /api/data/match/pre_analysis_v1/{matchId}
+#        归一化成与 Sofascore 详情缓存相同的形状，生成
+#          assets/js/dqd-barca-atletic-details-cache.js
+#        供 Sofascore 断供时详情弹窗兜底（Sofascore 新鲜时仍优先）。
 #
 #   由 Windows 计划任务每天调用：
 #     powershell -NoProfile -ExecutionPolicy Bypass -File "...\update_barca_atletic.ps1"
@@ -161,6 +168,252 @@ if ($roster) {
   } catch {
     Log "  ✗ 名单处理/照片/伤病出错：$($_.Exception.Message)"
   }
+}
+
+# ── 2.5 抓取已完场比赛详情（懂球帝）→ 详情弹窗兜底 ────────────────
+# 目的：Sofascore 断供时，B队比赛详情弹窗由本缓存兜底（Sofascore 新鲜时仍优先）。
+# 形状刻意做成与 Sofascore 详情缓存一致，前端四个渲染函数可直接复用：
+#   { lineups:{home,away}, incidents:{incidents:[]},
+#     statistics:{statistics:[{groups:[{groupName,statisticsItems:[{name,home,away}]}]}]},
+#     h2h:{matches:[]} }
+# ⚠️ 懂球帝 overview.events 只有事件类型 + 比分，**没有进球者姓名**（该级别数据如此）。
+# ⚠️ 懂球帝 start_play 是 UTC 墙钟（实测与 Sofascore 的 start 精确相等）；这里按 UTC
+#    解析成 epoch，前端展示给用户时要 +8h 才是北京时间。
+$DetailsFile = Join-Path $Root "assets\js\dqd-barca-atletic-details-cache.js"
+
+# 2.5a 懂球帝 person_id → 英文名
+# 集锦按姓名回连阵容时，中文名经 normName() 会变成空串，必须同时带上英文名
+$RosterEn = @{}
+if ($roster) {
+  foreach ($grp in @($roster.data.list)) {
+    foreach ($p in @($grp.data)) {
+      if ($p.person_id) { $RosterEn[[string]$p.person_id] = [string]$p.person_en_name }
+    }
+  }
+}
+Log "  · 姓名映射表 $($RosterEn.Count) 人"
+
+# "2026-09-26 17:00:00"（UTC 墙钟）→ epoch 秒
+function ConvertTo-DqdEpoch([string]$s) {
+  $dt = [datetime]::MinValue
+  $ok = [datetime]::TryParseExact($s, 'yyyy-MM-dd HH:mm:ss',
+        [System.Globalization.CultureInfo]::InvariantCulture,
+        [System.Globalization.DateTimeStyles]::None, [ref]$dt)
+  if (-not $ok) { return [int64]0 }
+  return [int64](([datetimeoffset]::new($dt, [timespan]::Zero)).ToUnixTimeSeconds())
+}
+
+# 分钟键 "45+45" / "74" → 可排序整数
+function Get-DqdMinuteKey([string]$k) {
+  $n = 0
+  [void][int]::TryParse(($k -replace '\+.*$', ''), [ref]$n)
+  return $n
+}
+
+# persons.team_X → 归一化阵容一侧（两队都查不到时返回 $null，前端整段不渲染）
+function ConvertTo-DqdLineupSide($side, $enMap) {
+  if (-not $side) { return $null }
+  $out = @()
+  foreach ($grp in @(
+      [pscustomobject]@{ list = @($side.lineups); isSub = $false },
+      [pscustomobject]@{ list = @($side.sub);     isSub = $true  })) {
+    foreach ($p in $grp.list) {
+      if (-not $p) { continue }
+      # ⚠️ 不能叫 $pid —— 那是 PS 的只读自动变量（当前进程号），赋值会抛 VariableNotWritable
+      $personId = [string]$p.person_id
+      $out += [ordered]@{
+        substitute   = [bool]$grp.isSub
+        jerseyNumber = [string]$p.shirtnumber
+        position     = [string]$p.position
+        player = [ordered]@{
+          id      = ""                       # Sofascore id：留给前端桥接填，不在这里重写模糊匹配
+          dqdId   = $personId
+          name    = [string]$p.person
+          nameEn  = $(if ($enMap.ContainsKey($personId)) { [string]$enMap[$personId] } else { "" })
+          photo   = [string]$p.logo
+          nation  = [string]$p.nationality_name
+          height  = [string]$p.height
+          captain = [bool]$p.captain
+          isMvp   = [bool]$p.is_mvp
+        }
+      }
+    }
+  }
+  if ($out.Count -eq 0) { return $null }
+  return [ordered]@{
+    teamId    = [string]$side.team_id
+    teamName  = [string]$side.team_name
+    formation = [string]$side.formation
+    coach     = [string]$side.team_coach
+    players   = $out
+  }
+}
+
+# overview.events → 归一化 incidents（只留 G/PG/YC/RC；丢弃 HT/FT）
+# team_A 在懂球帝赛程里恒为主队，故 teamAEvents 即主队事件
+function ConvertTo-DqdIncidents($events) {
+  $out = @()
+  if ($events) {
+    $keys = @($events.PSObject.Properties.Name) | Sort-Object { Get-DqdMinuteKey $_ }
+    foreach ($k in $keys) {
+      $node = $events.$k
+      if (-not $node) { continue }
+      # ⚠️ 事件对象里**没有** minute 字段：分钟就是 events 的键，形如 "74" 或 "45+45"
+      $kparts = $k -split '\+'
+      $minute = $kparts[0]
+      $added  = $(if ($kparts.Count -gt 1) { $kparts[1] } else { "" })
+      foreach ($pair in @(
+          [pscustomobject]@{ ev = @($node.teamAEvents); isHome = $true  },
+          [pscustomobject]@{ ev = @($node.teamBEvents); isHome = $false })) {
+        foreach ($e in $pair.ev) {
+          if (-not $e) { continue }
+          $code = [string]$e.code
+          if ($code -ne "G" -and $code -ne "PG" -and $code -ne "YC" -and $code -ne "RC") { continue }
+          $hs = $null; $as = $null
+          if ([string]$e.score -match '^(\d+)-(\d+)$') { $hs = [int]$Matches[1]; $as = [int]$Matches[2] }
+          $isCard = ($code -eq "YC" -or $code -eq "RC")
+          $out += [ordered]@{
+            incidentType  = $(if ($isCard) { "card" } else { $(if ($code -eq "PG") { "penalty" } else { "goal" }) })
+            incidentClass = $(if ($code -eq "RC") { "red" } elseif ($code -eq "YC") { "yellow" } elseif ($code -eq "PG") { "penalty" } else { "" })
+            reason        = ""
+            player        = [ordered]@{ id = ""; name = "" }   # 懂球帝不给进球者
+            homeScore     = $(if ($isCard) { $null } else { $hs })
+            awayScore     = $(if ($isCard) { $null } else { $as })
+            time          = $minute
+            addedTime     = $added
+            isHome        = [bool]$pair.isHome
+          }
+        }
+      }
+    }
+  }
+  return [ordered]@{ incidents = $out }
+}
+
+# statistics.list → Sofascore 形状（8 项平铺一个组）。取值必须用 value，per 是占比
+function ConvertTo-DqdStatistics($stat) {
+  $items = @()
+  if ($stat -and $stat.list) {
+    foreach ($s in @($stat.list)) {
+      if (-not $s) { continue }
+      $items += [ordered]@{
+        name = [string]$s.type
+        home = [string]$s.team_A.value
+        away = [string]$s.team_B.value
+      }
+    }
+  }
+  if ($items.Count -eq 0) { return $null }
+  return [ordered]@{ statistics = @([ordered]@{
+    groups = @([ordered]@{ groupName = "全场数据"; statisticsItems = $items })
+  }) }
+}
+
+# pre_analysis.battle_history → h2h.matches（只出列表，不出 teamDuel：中文队名对不上主客）
+function ConvertTo-DqdH2h($bh) {
+  $rows = @()
+  if ($bh -and $bh.list) {
+    foreach ($r in @($bh.list)) {
+      if (-not $r) { continue }
+      $hs = 0; $as = 0
+      if ([string]$r.score -match '^(\d+)-(\d+)$') { $hs = [int]$Matches[1]; $as = [int]$Matches[2] }
+      $rows += [ordered]@{
+        homeTeam       = [ordered]@{ name = [string]$r.team_A_name }
+        awayTeam       = [ordered]@{ name = [string]$r.team_B_name }
+        homeScore      = [ordered]@{ current = $hs }
+        awayScore      = [ordered]@{ current = $as }
+        tournament     = [ordered]@{ name = [string]$r.competition }
+        startTimestamp = ConvertTo-DqdEpoch ([string]$r.start_time)
+      }
+    }
+  }
+  if ($rows.Count -eq 0) { return $null }
+  return [ordered]@{ matches = $rows }
+}
+
+# 2.5b 读旧缓存（整体解析后合并；用 .NET 读，避免 PS 5.1 的 Get-Content 编码坑）
+$dqdDetails = [ordered]@{}
+if (Test-Path $DetailsFile) {
+  try {
+    $raw = [System.IO.File]::ReadAllText($DetailsFile, [System.Text.Encoding]::UTF8)
+    $mm = [regex]::Match($raw, '(?s)window\.DQD_BARCA_ATLETIC_DETAILS_CACHE\s*=\s*(\{.*\})\s*;')
+    if ($mm.Success) {
+      $oldObj = $mm.Groups[1].Value | ConvertFrom-Json
+      foreach ($prop in $oldObj.PSObject.Properties) {
+        if ($prop.Name -eq "updated") { continue }
+        $dqdDetails[$prop.Name] = $prop.Value
+      }
+    }
+  } catch {
+    Log "  ✗ 旧详情缓存解析失败（将重建）：$($_.Exception.Message)"
+  }
+}
+Log "  · 已有详情缓存 $($dqdDetails.Count) 场"
+
+# 2.5c 候选 = 已完场 + 未缓存 + 最近 8 场（赛程已在第 1 节过滤为 2026-06-01 起）
+$cand = @()
+if ($schedule -and $schedule.data) {
+  $cand = @($schedule.data |
+    Where-Object { [string]$_.status -eq "Played" -and -not $dqdDetails.Contains([string]$_.match_id) } |
+    Sort-Object { [string]$_.start_play } -Descending |
+    Select-Object -First 8)
+}
+Log "  · 需新抓详情 $($cand.Count) 场"
+
+# 2.5d 逐场抓三个接口并归一化
+$dqdNew = 0
+if ($cand.Count -gt 0) {
+  $i = 0
+  foreach ($m in $cand) {
+    $i++
+    $mid = [string]$m.match_id
+    Log "  · 详情 $i/$($cand.Count) 场 #$mid $($m.team_A_name) vs $($m.team_B_name)"
+    # ⚠️ 变量必须写成 ${mid}：PS 的变量名允许含 "?"，$mid?app 会被当成变量名 → URL 塌成 404
+    $lu = Get-Json "$BaseUrl/sport-data/soccer/biz/dqd/v1/match/lineup/${mid}?app=dqd&lang=zh-cn" "阵容 $mid"
+    $ov = Get-Json "$BaseUrl/api/data/overview/match/${mid}?app=dqd&lang=zh-cn"                  "进程 $mid"
+    $pa = Get-Json "$BaseUrl/api/data/match/pre_analysis_v1/${mid}?app=dqd&lang=zh-cn"           "交锋 $mid"
+    if ($i -lt $cand.Count) { Start-Sleep -Seconds 1 }
+    if (-not $lu -and -not $ov) { Log "  ✗ #$mid 三个接口全失败，跳过（下轮重试）"; continue }
+
+    $persons = $(if ($lu) { $lu.persons } else { $null })
+    $lineups = $null
+    if ($persons) {
+      $sideA = ConvertTo-DqdLineupSide $persons.team_A $RosterEn
+      $sideB = ConvertTo-DqdLineupSide $persons.team_B $RosterEn
+      if ($sideA -or $sideB) { $lineups = [ordered]@{ home = $sideA; away = $sideB } }
+    }
+    $dqdDetails[$mid] = [ordered]@{
+      meta = [ordered]@{
+        home = [string]$m.team_A_name; away = [string]$m.team_B_name
+        homeId = [string]$m.team_A_id; awayId = [string]$m.team_B_id
+        start = ConvertTo-DqdEpoch ([string]$m.start_play)
+        comp = [string]$m.competition_name; round = [string]$m.round_name
+        hs = [string]$m.fs_A; as = [string]$m.fs_B
+      }
+      lineups    = $lineups
+      incidents  = $(if ($ov) { ConvertTo-DqdIncidents $ov.events } else { $null })
+      statistics = $(if ($ov) { ConvertTo-DqdStatistics $ov.statistics } else { $null })
+      h2h        = $(if ($pa) { ConvertTo-DqdH2h $pa.battle_history } else { $null })
+    }
+    $dqdNew++
+  }
+}
+
+# 2.5e 写回（防空覆盖：本轮一场新数据都没抓到就不动旧文件）
+if ($dqdNew -gt 0) {
+  $all = [ordered]@{ updated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss") }
+  foreach ($k in $dqdDetails.Keys) { $all[$k] = $dqdDetails[$k] }
+  try {
+    $dqdJson = $all | ConvertTo-Json -Depth 12
+    $dqdJs = "/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：懂球帝 */`r`n" +
+      "window.DQD_BARCA_ATLETIC_DETAILS_CACHE = $dqdJson;`r`n"
+    [System.IO.File]::WriteAllText($DetailsFile, $dqdJs, (New-Object System.Text.UTF8Encoding($false)))
+    Log "  ✓ 详情缓存已写入（共 $($all.Count - 1) 场，本轮新增 $dqdNew 场）"
+  } catch {
+    Log "  ✗ 写详情缓存失败：$($_.Exception.Message)"
+  }
+} else {
+  Log "  · 无新完赛详情，详情缓存保持不变（已有 $($dqdDetails.Count) 场）"
 }
 
 # ── 3. 生成缓存 JS ───────────────────────────────────────────────
