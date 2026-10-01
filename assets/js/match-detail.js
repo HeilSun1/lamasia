@@ -17,7 +17,7 @@
   "use strict";
 
   var REG = (window.LAMASIA_MATCHES = window.LAMASIA_MATCHES || {});
-  var API = "https://api.sofascore.com/api/v1";
+  var API = "https://www.sofascore.com/api/v1";
   var detailCache = {};            // 会话内按 event id 缓存拉取结果，避免重复请求
   var $ = function (id) { return document.getElementById(id); };
 

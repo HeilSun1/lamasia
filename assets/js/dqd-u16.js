@@ -12,7 +12,7 @@
   "use strict";
 
   const TEAM_ID = "933329";                       // Sofascore 巴萨 U16（Cadete A）
-  const API     = "https://api.sofascore.com/api/v1";
+  const API     = "https://www.sofascore.com/api/v1";
 
   const POS_ORDER = ["F", "M", "D", "G"];
   const POS_TITLE = { G: "🧤 门将", D: "🛡 后卫", M: "⚙️ 中场", F: "🎯 前锋" };

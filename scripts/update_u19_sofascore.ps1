@@ -6,8 +6,8 @@
 #     因此用本机 Edge 的 --headless --dump-dom 来取 JSON。
 #     （配置在 scripts/sofascore-edge-path.txt，若为空自动探测）
 #
-#     ⚠️ 2026-10-01 起 api.sofascore.com 子域被封（一律 403），改走
-#        www.sofascore.com 上的同一批 /api/v1 接口。脚本内自动探活（见 $SfHosts）。
+#     ⚠️ 2026-10-01 起 api.sofascore.com 子域被封（2026-10-01 复验仍死），
+#        已从 $SfHosts 移除；改走 www.sofascore.com 上的同一批 /api/v1 接口。
 #        另注意：抓取时不能带外部 Referer（github.io / google 等一律 403）。
 #
 #     1. 球员名单 + 伤病   /api/v1/team/90128/players
@@ -176,9 +176,10 @@ function Get-Birth($dob) {
 Log "开始 U19 更新（Sofascore 团队 $TeamId）……"
 
 # ── 0. 解析可用的 Sofascore 主机 ────────────────────────────────
-# api.sofascore.com 子域自 2026-09-30 起整站 403；www.sofascore.com 上的同一批
-# /api/v1 接口实测可用。这里按顺序探活，www 不行再回退 api，并把选中的主机写进日志。
-$SfHosts = @("www.sofascore.com", "api.sofascore.com")
+# api.sofascore.com 子域自 2026-09-30 起整站 403，2026-10-01 复验仍 403
+# （curl / 无头 Edge / 浏览器 fetch 三种客户端全拒），已从列表移除，不再做无谓探活。
+# 现只探 www.sofascore.com 上的同一批 /api/v1 接口，选中后写进日志。
+$SfHosts = @("www.sofascore.com")
 $SfBase  = $null
 foreach ($h in $SfHosts) {
   $b = "https://$h/api/v1"
