@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-09-29 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-01 19:10 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-09-29 21:01:30",
+    "updated":  "2026-10-01 19:10:06",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -170,21 +170,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Jesse Bisiwu",
-                        "id":  "1506988",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Belgium",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-22",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "78万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Ebrima Tunkara",
                         "id":  "2128084",
                         "pos":  "M",
@@ -204,14 +189,14 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "1973312",
                         "pos":  "M",
                         "shirt":  "",
-                        "team":  "Barcelona U19",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Israel",
                         "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
                         "age":  "17岁",
                         "birthday":  "2009-03-15",
                         "foot":  "右脚",
                         "height":  "178",
-                        "value":  "",
+                        "value":  "54万",
                         "injury":  null
                     },
                     {
@@ -335,21 +320,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Landry Farré",
-                        "id":  "1590760",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1590760/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-01-07",
-                        "foot":  "双脚",
-                        "height":  "178",
-                        "value":  "28万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Alex Campos",
                         "id":  "1926117",
                         "pos":  "D",
@@ -365,6 +335,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Landry Farré",
+                        "id":  "1590760",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1590760/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-01-07",
+                        "foot":  "双脚",
+                        "height":  "178",
+                        "value":  "28万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Hafiz Gariba",
                         "id":  "2076869",
                         "pos":  "D",
@@ -377,21 +362,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "187",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Patricio Pacifico",
-                        "id":  "1482410",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Uruguay",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-04-08",
-                        "foot":  "左脚",
-                        "height":  "187",
-                        "value":  "68万",
                         "injury":  null
                     },
                     {
@@ -482,21 +452,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "双脚",
                         "height":  "196",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Eder Aller",
-                        "id":  "1929977",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-04-04",
-                        "foot":  "右脚",
-                        "height":  "194",
-                        "value":  "5万",
                         "injury":  null
                     },
                     {

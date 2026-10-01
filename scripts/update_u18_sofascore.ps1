@@ -6,6 +6,10 @@
 #     因此用本机 Edge 的 --headless --dump-dom 来取 JSON。
 #     （配置在 scripts/sofascore-edge-path.txt，若为空自动探测）
 #
+#     ⚠️ 2026-10-01 起 api.sofascore.com 子域被封（一律 403），改走
+#        www.sofascore.com 上的同一批 /api/v1 接口。脚本内自动探活（见 $SfHosts）。
+#        另注意：抓取时不能带外部 Referer（github.io / google 等一律 403）。
+#
 #     1. 球员名单 + 伤病   /api/v1/team/933330/players
 #     2. 历史赛程          /api/v1/team/933330/events/last/0
 #     3. 未来赛程          /api/v1/team/933330/events/next/0
@@ -179,14 +183,29 @@ function Get-Birth($dob) {
 
 Log "开始 U18 更新（Sofascore 团队 $TeamId）……"
 
+# ── 0. 解析可用的 Sofascore 主机 ────────────────────────────────
+# api.sofascore.com 子域自 2026-09-30 起整站 403；www.sofascore.com 上的同一批
+# /api/v1 接口实测可用。这里按顺序探活，www 不行再回退 api，并把选中的主机写进日志。
+$SfHosts = @("www.sofascore.com", "api.sofascore.com")
+$SfBase  = $null
+foreach ($h in $SfHosts) {
+  $b = "https://$h/api/v1"
+  if (Get-SfJson "$b/team/$TeamId" "主机探活 $h") { $SfBase = $b; break }
+}
+if (-not $SfBase) {
+  Log "  ✗ Sofascore 所有主机均不可用（403），本次更新中止，保留旧缓存。"
+  exit 1
+}
+Log "  ✓ Sofascore 主机：$SfBase"
+
 # ── 1. 抓取原始数据 ─────────────────────────────────────────────
-$players = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/players" "球员名单"
+$players = Get-SfJson "$SfBase/team/$TeamId/players" "球员名单"
 Start-Sleep -Seconds 3
-$lastEv  = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/events/last/0" "已完赛程"
+$lastEv  = Get-SfJson "$SfBase/team/$TeamId/events/last/0" "已完赛程"
 Start-Sleep -Seconds 3
-$nextEv  = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId/events/next/0" "未来赛程"
+$nextEv  = Get-SfJson "$SfBase/team/$TeamId/events/next/0" "未来赛程"
 Start-Sleep -Seconds 3
-$team    = Get-SfJson "https://api.sofascore.com/api/v1/team/$TeamId" "球队信息"
+$team    = Get-SfJson "$SfBase/team/$TeamId" "球队信息"
 
 if (-not $players -and -not $lastEv -and -not $nextEv) {
   Log "✗ 全部数据源失败，本次更新中止。"
@@ -306,10 +325,10 @@ if ($detailList.Count) {
     $i++
     $eid = [string]$dm.id
     Log "  · 详情 $i/$($detailList.Count) 场 #$eid $($dm.homeTeam.name) vs $($dm.awayTeam.name)"
-    $rawL = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/lineups" "阵容"
-    $rawC = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/incidents" "比赛进程"
-    $rawS = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/statistics" "技术统计"
-    $rawH = Get-SfRaw "https://api.sofascore.com/api/v1/event/$eid/h2h" "交锋"
+    $rawL = Get-SfRaw "$SfBase/event/$eid/lineups" "阵容"
+    $rawC = Get-SfRaw "$SfBase/event/$eid/incidents" "比赛进程"
+    $rawS = Get-SfRaw "$SfBase/event/$eid/statistics" "技术统计"
+    $rawH = Get-SfRaw "$SfBase/event/$eid/h2h" "交锋"
     $ln = if ($rawL) { $rawL } else { "null" }
     $cn = if ($rawC) { $rawC } else { "null" }
     $sn = if ($rawS) { $rawS } else { "null" }
