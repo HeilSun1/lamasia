@@ -1,25 +1,23 @@
 {
     "schema":  1,
-    "runId":  "20261001-094030",
-    "runStartedUtc":  "2026-10-01T01:40:30.6467038Z",
-    "runFinishedUtc":  "2026-10-01T01:43:05.9321577Z",
+    "runId":  "20261001-183401",
+    "runStartedUtc":  "2026-10-01T10:34:01.8543739Z",
+    "runFinishedUtc":  "2026-10-01T10:37:03.9643417Z",
     "lastSuccessUtc":  "2026-10-01T01:43:10.9329152Z",
     "lastRunSource":  "local",
-    "lastRunStatus":  "blocked",
-    "exitCode":  1,
+    "lastRunStatus":  "ok",
+    "exitCode":  0,
     "consecutiveFailures":  0,
-    "blocked":  true,
+    "blocked":  false,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-                         "stale"
+
                      ],
     "failedScripts":  [
 
                       ],
     "staleCaches":  [
-                        "assets/js/dqd-u19-cache.js",
-                        "assets/js/dqd-u18-cache.js",
-                        "assets/js/dqd-u16-cache.js"
+
                     ],
     "healed":  [
 
