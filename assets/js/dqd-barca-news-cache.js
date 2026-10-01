@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-01 11:44:26 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-01 21:01:29 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-01 11:44:26",
+    "updated":  "2026-10-01 21:01:29",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6423352", "title":  "赫拉德-马丁：亚马尔是当今最佳球员，理应赢得金球奖",
+            "url":  "https://www.dongqiudi.com/articles/6423352.html", "time":  "2026-10-01 20:27",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/94/CC/280x210/crop/-/rBXRDGq-TNiAO-msAAQLVZwT6q0465.jpg" },
         {
             "id":  "6419102", "title":  "塞尔：巴萨将和青训小将佩德罗-罗德里格斯续约至2030年",
             "url":  "https://www.dongqiudi.com/articles/6419102.html", "time":  "2026-09-30 20:46",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6287228", "title":  "每体：比西武伤势无大碍，检查结果显示仅为右脚踝撞伤",
             "url":  "https://www.dongqiudi.com/articles/6287228.html", "time":  "2026-09-03 18:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/67/280x210/crop/-/rBXRn2qZSleAZFBaAAGI8uBEZfQ728.jpg" },
-        {
-            "id":  "6286277", "title":  "官方：巴萨B队中场罗赫尔加盟卡塔尔二级联赛俱乐部马希亚",
-            "url":  "https://www.dongqiudi.com/articles/6286277.html", "time":  "2026-09-03 14:52",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/0B/280x210/crop/-/rBXRDGqZF6iAB9NxAAI-_DJAUbE900.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/67/280x210/crop/-/rBXRn2qZSleAZFBaAAGI8uBEZfQ728.jpg" }
     ]
 };
