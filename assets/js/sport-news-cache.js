@@ -1,17 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-02 09:52:42 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-02 21:03:49 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-02 09:52:42",
+    "updated":  "2026-10-02 21:03:49",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134891000", "title":  "¿A qué hora juega el Barcelona hoy en LaLiga FC Futures Internacional sub-13? Horario de los partidos y dónde ver por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-juega-barcelona-hoy-laliga-futures-internacional-horario-donde-ver-134891000", "time":  "2026-10-02 12:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe4c759a-257c-4741-ab8d-f8a5751105b5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-02 10:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/34570805-f556-493c-b412-220bc692f357_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134809787", "title":  "El sueño universal de los 'Lamines' del futuro",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sueno-universal-lamines-futuro-liga-futures-134809787", "time":  "2026-10-02 09:18",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2c10f800-37fd-4417-8a59-c0e821dfc2aa_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "134779198", "title":  "La batuta del Barça que viene se destapa",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adam-argemi-batuta-barca-atletic-134779198", "time":  "2026-10-02 08:47",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b49dae88-4cee-4f50-9ec8-f38eade644a1_16-9-discover-aspect-ratio_640w_0_x600y250.webp" },
+        {
             "id":  "134795916", "title":  "Lamine busca heredero: el Barça viaja a Orlando a por un torneo que se resiste desde 2019",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lamine-busca-heredero-barca-viaja-134795916", "time":  "2026-09-30 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/cb4922f0-75fb-4692-b849-fd7d00515803_16-9-discover-aspect-ratio_default_0.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/cb4922f0-75fb-4692-b849-fd7d00515803_16-9-discover-aspect-ratio_640w_0.webp" },
         {
             "id":  "134814903", "title":  "El Barça Atlètic pierde a Pedro Villar y Alexander Walton por lesión",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-alexander-walton-134814903", "time":  "2026-09-29 19:37",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6b231280-4ae6-4a0b-b0ac-9a532d0a4dd9_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6b231280-4ae6-4a0b-b0ac-9a532d0a4dd9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
@@ -187,22 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133622553", "title":  "El '9' del futuro impacta en Japón: Exhibición de Destiny Ejiofor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/9-futuro-impacta-japon-exhibicion-133622553", "time":  "2026-08-24 18:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133616896", "title":  "Hugo Garcés deslumbra en la Aqua Hotel Cup: MVP y campeón con el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hugo-garces-deslumbra-aqua-hotel-133616896", "time":  "2026-08-24 15:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6d3551c5-8943-4275-bec4-ec75d0579c9a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133551547", "title":  "Golazo de lujo del juvenil Genís Clua",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-golazo-genial-hugo-133551547", "time":  "2026-08-21 21:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/73e7d4da-ee44-4f66-aac2-2f6dfaa3acbf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133491055", "title":  "Oficial: Enzo Pérez, el fichaje más deslumbrante en la cantera, firma por el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-enzo-perez-fichaje-deslumbrante-133491055", "time":  "2026-08-20 09:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6e5db472-370f-43b7-80df-603cd781d338_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133476883", "title":  "El Barça Atlètic sigue creciendo y gana al Europa con gol de Aziz",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sigue-creciendo-gana-133476883", "time":  "2026-08-19 11:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

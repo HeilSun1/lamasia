@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-02 09:52:37 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-02 21:03:18 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-02 09:52:37",
+    "updated":  "2026-10-02 21:03:18",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Two wins as Cancelo scores stunner",
+                "id":  "4580541", "title":  "Classic European matchup for Kounde",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/01/1a4a2e9d-7678-49ba-bfd5-4c83a385e91c/DAG-429-_M1A3800.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
             {
                 "id":  "4585128", "title":  "Cancelo goal against Racing, best of the month",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585128/cancelo-goal-against-racing-best-of-the-month", "time":  "",
