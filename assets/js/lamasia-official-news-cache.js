@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-02 21:03:18 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-02 20:49:50 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-02 21:03:18",
+    "updated":  "2026-10-02 20:49:50",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,6 +135,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4585738", "title":  "Raphinha, Liga MVP for September",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585738/raphinha-liga-player-of-the-month-for-september", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c795debd-c96d-4daf-88b5-41a0d456335e/_MGA5369.jpg" },
+            {
                 "id":  "4580541", "title":  "Classic European matchup for Kounde",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578857/sevilla-1-3-fc-barcelona-raphinha-does-it-again", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/9ed90675-65b1-400c-b0d1-f972309feab9/_MGA0228.jpg" },
             {
-                "id":  "4578389", "title":  "FC Barcelona squad for the trip to Sevilla",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/871cdb54-da2d-4ee4-b0c8-9b3abf764a32/WhatsApp-Image-2026-09-18-at-12.43.36.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4578389", "title":  "FC Barcelona squad for the trip to Sevilla",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/871cdb54-da2d-4ee4-b0c8-9b3abf764a32/WhatsApp-Image-2026-09-18-at-12.43.36.jpeg" },
             {
                 "id":  "4577776", "title":  "PREVIEW | Sevilla FC v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577776/preview-sevilla-fc-v-fc-barcelona", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4576115", "title":  "Lamine Yamal, two by two",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" },
-            {
-                "id":  "4575841", "title":  "Levante 2-4 Barça: The wins keep coming",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4575841/levante-2-4-fc-barcelona-the-wins-keep-coming", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/13/6a15e067-fc86-4e3a-9cf8-2c969f09eaa4/_MGA7570.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" }
         ]
     }
 };

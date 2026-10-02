@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-02 21:03:49 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-02 20:49:52 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-02 21:03:49",
+    "updated":  "2026-10-02 20:49:52",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
-            "id":  "134891000", "title":  "¿A qué hora juega el Barcelona hoy en LaLiga FC Futures Internacional sub-13? Horario de los partidos y dónde ver por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-juega-barcelona-hoy-laliga-futures-internacional-horario-donde-ver-134891000", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe4c759a-257c-4741-ab8d-f8a5751105b5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "id":  "134943214", "title":  "El Barça perdonó al Betis y está al borde del KO en La Liga FC Futures",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-perdono-borde-ko-liga-futures-empate-betis-134943214", "time":  "2026-10-02 18:16",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-02 10:00",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-02 16:43",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/34570805-f556-493c-b412-220bc692f357_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134936568", "title":  "Tropezón inesperado en el debut del sub-13 del Barça en Orlando",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tropezon-inesperado-debut-sub-13-barcelona-sevilla-liga-futures-134936568", "time":  "2026-10-02 15:34",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6829fab0-458c-4199-915e-61cd711c6928_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "134891000", "title":  "¿A qué hora juega el Barcelona hoy en LaLiga FC Futures Internacional sub-13? Horario de los partidos y dónde ver por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-juega-barcelona-hoy-laliga-futures-internacional-horario-donde-ver-134891000", "time":  "2026-10-02 12:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe4c759a-257c-4741-ab8d-f8a5751105b5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134809787", "title":  "El sueño universal de los 'Lamines' del futuro",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sueno-universal-lamines-futuro-liga-futures-134809787", "time":  "2026-10-02 09:18",
@@ -20,6 +28,10 @@ window.SPORT_NEWS = {
             "id":  "134779198", "title":  "La batuta del Barça que viene se destapa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adam-argemi-batuta-barca-atletic-134779198", "time":  "2026-10-02 08:47",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b49dae88-4cee-4f50-9ec8-f38eade644a1_16-9-discover-aspect-ratio_640w_0_x600y250.webp" },
+        {
+            "id":  "134903939", "title":  "Pedro Rodríguez, ¿el próximo en dar el salto tras cerrar su renovación?",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-proximo-dar-salto-cerrar-renovacion-barcelona-134903939", "time":  "2026-10-02 15:17",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134795916", "title":  "Lamine busca heredero: el Barça viaja a Orlando a por un torneo que se resiste desde 2019",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lamine-busca-heredero-barca-viaja-134795916", "time":  "2026-09-30 04:30",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133634800", "title":  "Sin Ebrima y con Pesquer: El 1x1 de las 5 joyas blaugranas de la Sub-18",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-pesquer-1x1-5-joyas-133634800", "time":  "2026-08-25 19:13",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a473701f-9ca8-4838-b03b-47df0483f744_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133642304", "title":  "Oficial: El Barça renueva a Pedro Villar, el '6' más parecido a Rodri de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-pedro-villar-133642304", "time":  "2026-08-25 13:21",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/531e164f-4e86-4472-8150-02ffd11547f5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133624579", "title":  "Orian Goren, un regreso cantado al 'B' tras una experiencia mágica",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-regreso-cantado-b-133624579", "time":  "2026-08-25 06:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8a4c8a1b-4943-481b-88c4-a807ec1496e5_16-9-aspect-ratio_640w_1500222.webp" },
-        {
-            "id":  "133622553", "title":  "El '9' del futuro impacta en Japón: Exhibición de Destiny Ejiofor",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/9-futuro-impacta-japon-exhibicion-133622553", "time":  "2026-08-24 18:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bffe5b59-899a-495c-9eba-5dc18406a7a8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a473701f-9ca8-4838-b03b-47df0483f744_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

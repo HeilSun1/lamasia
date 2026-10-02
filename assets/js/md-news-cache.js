@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-02 21:03:52 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-02 20:49:58 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-02 21:03:52",
+    "updated":  "2026-10-02 20:49:58",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "title":  "Paloma Mikadze: El objetivo es que Barça Play sea una línea relevante de ingresos",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "time":  "2026-10-02 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/02/6abfdb9b2b63f.r_d.346-213-18809.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "title":  "Impresionan, eran chicos a los que había visto en La Masia durante mis dos años en el Barça",
+            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "time":  "2026-10-02 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/29/6abc1addb8805.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "title":  "El increíble viaje de una perla onubense: de Dubai al Barça tras los pasos de Fermín",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "time":  "2026-09-30 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "title":  "Yaakobishvili ya disfruta con el Almería, su nuevo equipo",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "time":  "2026-08-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/17/6a837e1fbcda8.r_d.968-417-10582.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216839/nueva-joya-portuguesa-masia-gana-clasicos.html", "title":  "La nueva joya portuguesa de La Masia ya gana MVPs",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216839/nueva-joya-portuguesa-masia-gana-clasicos.html", "time":  "2026-08-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/17/6a82d8a892ac4.r_d.806-550-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216364/fiebre-grandes-equipos-ebrima-tunkara-piensa-barca.html", "title":  "Fiebre de los grandes equipos por Ebrima Tunkara, que solo piensa en el Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004216364/fiebre-grandes-equipos-ebrima-tunkara-piensa-barca.html", "time":  "2026-08-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a724131addaf.r_d.1316-639-8092.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/17/6a837e1fbcda8.r_d.968-417-10582.jpeg" }
     ]
 };
