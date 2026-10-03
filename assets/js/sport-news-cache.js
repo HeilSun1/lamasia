@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-03 21:04:24 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-03 19:18:49 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-03 21:04:24",
+    "updated":  "2026-10-03 19:18:49",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-03 18:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_default_0_x450y168.webp" },
+        {
+            "id":  "134962438", "title":  "Tudelano-Barça Atlètic: El liderato en juego con un filial en cuadro",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-liderato-juego-134962438", "time":  "2026-10-03 17:02",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134964571", "title":  "Un Destiny a lo 'Ronaldo Nazario' clasifica al Barça para los cuartos de La Liga FC Futures",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-ronaldo-nazario-clasifica-barca-134964571", "time":  "2026-10-03 19:04",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/05ad3135-a3b5-46d8-8f9a-770a2ee66745_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "134962582", "title":  "Debut ilusionante de Mika Baza, el gigante alemán por el que apuesta el Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-ilusionante-mika-baza-gigante-134962582", "time":  "2026-10-03 16:25",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1e08d12e-815f-49a2-b767-f62e330f5074_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "134943214", "title":  "El Barça perdonó al Betis y está al borde del KO en La Liga FC Futures",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-perdono-borde-ko-liga-futures-empate-betis-134943214", "time":  "2026-10-02 18:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
-        {
-            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-02 16:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/34570805-f556-493c-b412-220bc692f357_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134936568", "title":  "Tropezón inesperado en el debut del sub-13 del Barça en Orlando",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tropezon-inesperado-debut-sub-13-barcelona-sevilla-liga-futures-134936568", "time":  "2026-10-02 15:34",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133835458", "title":  "Copa Catalunya: Test de exigencia superior para el Barça Atlètic frente al Sabadell",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/copa-catalunya-test-exigencia-superior-133835458", "time":  "2026-09-01 17:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f67ec55e-ed20-4a86-a3a6-6f92bb7f14f7_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133761340", "title":  "Los rivales y los horarios del FC Barcelona en la UEFA Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/rivales-horarios-fc-barcelona-uefa-133761340", "time":  "2026-08-29 13:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/627801c1-de92-42f4-94dd-a2f4f2892954_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133682605", "title":  "Golazo de crack de Bisiwu con el Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/golazo-crack-bisiwu-barca-atletic-133682605", "time":  "2026-08-26 19:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d93e625-8105-4b31-acd5-dad9ef7ca3b8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133634800", "title":  "Sin Ebrima y con Pesquer: El 1x1 de las 5 joyas blaugranas de la Sub-18",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-pesquer-1x1-5-joyas-133634800", "time":  "2026-08-25 19:13",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a473701f-9ca8-4838-b03b-47df0483f744_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f67ec55e-ed20-4a86-a3a6-6f92bb7f14f7_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
