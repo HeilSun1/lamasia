@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-03 10:46 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-03 21:02 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-03 10:46:22",
+    "updated":  "2026-10-03 21:02:21",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -590,7 +590,7 @@ window.DQD_U19_CACHE = {
                         "id":  "16539917",
                         "comp":  "西青甲 G3",
                         "round":  "5",
-                        "start":  "1791730800",
+                        "start":  "1791640800",
                         "home":  "Racing Club Zaragoza U19",
                         "away":  "Barcelona U19",
                         "homeId":  "492068",

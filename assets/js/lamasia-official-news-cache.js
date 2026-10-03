@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-03 10:47:09 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-03 21:03:10 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-03 10:47:09",
+    "updated":  "2026-10-03 21:03:10",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Kounde sits out France draw",
+                "id":  "4585817", "title":  "Final blaugrana duel of the international break",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c481eb7f-6ab2-4ff8-a522-0e0b8108660b/DAG-421-_M1A9900.jpg" },
+            {
+                "id":  "4580541", "title":  "Two more games for blaugranes",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/f6907416-c0a4-41b7-90fb-f1637f2c67d3/DAG-165-_M1A1131.jpg" },
             {
                 "id":  "4585738", "title":  "Raphinha, Liga MVP for September",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585738/raphinha-liga-player-of-the-month-for-september", "time":  "",
@@ -223,10 +227,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578870/winning-debut-for-dominik-livakovi", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/0a55b6cb-44c2-435f-af19-ae1d9f4214dd/_MGA0067.jpg" },
             {
-                "id":  "4578857", "title":  "Sevilla 1-3 Barça: Raphinha does it again!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578857/sevilla-1-3-fc-barcelona-raphinha-does-it-again", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/9ed90675-65b1-400c-b0d1-f972309feab9/_MGA0228.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -234,6 +234,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4578857", "title":  "Sevilla 1-3 Barça: Raphinha does it again!",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578857/sevilla-1-3-fc-barcelona-raphinha-does-it-again", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/9ed90675-65b1-400c-b0d1-f972309feab9/_MGA0228.jpg" },
             {
                 "id":  "4578389", "title":  "FC Barcelona squad for the trip to Sevilla",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578389/fc-barcelona-squad-for-the-trip-to-sevilla", "time":  "",
@@ -329,11 +333,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4576135", "title":  "Quick off the mark",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576135/barca-quick-off-the-mark", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" },
-            {
-                "id":  "4576115", "title":  "Lamine Yamal, two by two",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576115/lamine-yamal-two-by-two", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/6a2f8690-a285-4b29-9d82-f46d795cbd6b/_MGA7596.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" }
         ]
     }
 };
