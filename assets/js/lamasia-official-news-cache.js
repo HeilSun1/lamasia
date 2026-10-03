@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-02 20:49:50 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-03 10:47:09 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-02 20:49:50",
+    "updated":  "2026-10-03 10:47:09",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,13 +135,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4580541", "title":  "Kounde sits out France draw",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
+            {
                 "id":  "4585738", "title":  "Raphinha, Liga MVP for September",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585738/raphinha-liga-player-of-the-month-for-september", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c795debd-c96d-4daf-88b5-41a0d456335e/_MGA5369.jpg" },
-            {
-                "id":  "4580541", "title":  "Classic European matchup for Kounde",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/bb9dd885-f15f-4402-95e4-3af77d4e79d5/kounde.jpg" },
             {
                 "id":  "4585128", "title":  "Cancelo goal against Racing, best of the month",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585128/cancelo-goal-against-racing-best-of-the-month", "time":  "",
