@@ -112,10 +112,13 @@
         });
       });
     }
-    // Sofascore 两队：status === "Not started"
-    // Juvenil A 2026-10-01 挪走了 —— 走官网（pulselive）的juvenil-a 那一档，
-    // 见下面「官方站」那组。Sofascore 封了之后这里就没数据了。
+    // Sofascore 三队：status === "Not started"
+    // Juvenil A 2026-10-03 从官网（pulselive）那组挪回来了 —— 官网源对 U19A 有两个硬伤：
+    //   ① 时间多为「当日正午占位」（tbd），不是真实开球时间；
+    //   ② 只有西青甲，青年欧冠 6 场完全没有。
+    // 而 Sofascore 那份两者都全，且与下面「U19赛程」面板同源，故弃官网走这里。
     [
+      { key: "DQD_U19_CACHE", team: "Juvenil A", href: "teams/juvenil-a.html" },
       { key: "DQD_U18_CACHE", team: "Juvenil B", href: "teams/juvenil-b.html" },
       { key: "DQD_U16_CACHE", team: "Cadete A",  href: "teams/cadete.html" },
     ].forEach(function (cfg) {
@@ -161,10 +164,8 @@
     }
 
     // 官方站六队（仅在 Sofascore 有**新鲜的**「未开赛」数据时跳过，防重复）
-    // Juvenil A 只在这里出现 —— Sofascore 那条已经拿掉了，所以**不能给它 skipIfSf**，
-    // 否则会被一份过期的 Sofascore 缓存整段压掉。
+    // Juvenil A 不在这里 —— 它走上面 Sofascore 那组（2026-10-03 从官网挪回）。
     [
-      { tier: "juvenil-a",  team: "Juvenil A",  href: "teams/juvenil-a.html" },
       { tier: "cadete",     team: "Cadete A",   href: "teams/cadete.html",     skipIfSf: "DQD_U16_CACHE" },
       { tier: "cadete-b",   team: "Cadete B",   href: "teams/cadete-b.html" },
       { tier: "infantil",   team: "Infantil A", href: "teams/infantil.html" },
