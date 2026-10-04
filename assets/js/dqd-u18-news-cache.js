@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-04 10:28:22 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-04 21:02:08 数据源：懂球帝 */
 window.DQD_U18_NEWS = {
-    "updated":  "2026-10-04 10:28:22",
+    "updated":  "2026-10-04 21:02:08",
     "source":  "dongqiudi",
-    "count":  8,
+    "count":  9,
     "news":  [
+        {
+            "id":  "6434196", "title":  "还有高手！巴萨青年B队的左边后卫佩雷-比利亚科尔...",
+            "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6434196", "time":  "2026-10-04 11:41",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/04/5b13d2c250c27c58eee5c38cff8390a59NFybJ_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6390677", "title":  "官方：巴萨签下16岁小将丹尼-弗雷雷；据悉他将为青年B队效力",
             "url":  "https://www.dongqiudi.com/article/6390677", "time":  "2026-09-24 00:29",

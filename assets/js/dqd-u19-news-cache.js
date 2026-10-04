@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-04 10:28:22 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-04 21:02:08 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-04 10:28:22",
+    "updated":  "2026-10-04 21:02:08",
     "source":  "dongqiudi",
-    "count":  33,
+    "count":  34,
     "news":  [
+        {
+            "id":  "6434196", "title":  "还有高手！巴萨青年B队的左边后卫佩雷-比利亚科尔...",
+            "url":  "https://www.dongqiudi.com/articles/6434196.html", "time":  "2026-10-04 11:41",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/04/5b13d2c250c27c58eee5c38cff8390a59NFybJ_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6404361", "title":  "巴萨竞技战报 20260927",
             "url":  "https://www.dongqiudi.com/articles/6404361.html", "time":  "2026-09-27 15:02",

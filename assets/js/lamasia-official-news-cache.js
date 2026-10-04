@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-04 10:29:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-04 21:02:53 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-04 10:29:06",
+    "updated":  "2026-10-04 21:02:53",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Goals for Lamine, Rodri and Gordon",
+                "id":  "4580541", "title":  "Hamza and Cancelo back in action",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/04/f5765e09-8106-4768-a7dc-5a797d847a05/_MGA2343-1-.jpg" },
             {
                 "id":  "4585817", "title":  "Final blaugrana duel of the international break",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",
