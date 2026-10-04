@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-01 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-04 19:42 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC_DETAILS_CACHE = {
-    "updated":  "2026-10-01 21:00:25",
+    "updated":  "2026-10-04 19:42:37",
     "54500651":  {
                      "meta":  {
                                   "home":  "巴塞罗那竞技",
@@ -5410,5 +5410,67 @@ window.DQD_BARCA_ATLETIC_DETAILS_CACHE = {
                                                  }
                                              ]
                              }
+                 },
+    "54500664":  {
+                     "meta":  {
+                                  "home":  "图德拉诺",
+                                  "away":  "巴塞罗那竞技",
+                                  "homeId":  "50006777",
+                                  "awayId":  "50001839",
+                                  "start":  1791129600,
+                                  "comp":  "西协乙",
+                                  "round":  "",
+                                  "hs":  "1",
+                                  "as":  "2"
+                              },
+                     "lineups":  null,
+                     "incidents":  {
+                                       "incidents":  [
+                                                         {
+                                                             "incidentType":  "goal",
+                                                             "incidentClass":  "",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  1,
+                                                             "awayScore":  0,
+                                                             "time":  "40",
+                                                             "addedTime":  "",
+                                                             "isHome":  true
+                                                         },
+                                                         {
+                                                             "incidentType":  "goal",
+                                                             "incidentClass":  "",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  1,
+                                                             "awayScore":  1,
+                                                             "time":  "70",
+                                                             "addedTime":  "",
+                                                             "isHome":  false
+                                                         },
+                                                         {
+                                                             "incidentType":  "goal",
+                                                             "incidentClass":  "",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  1,
+                                                             "awayScore":  2,
+                                                             "time":  "81",
+                                                             "addedTime":  "",
+                                                             "isHome":  false
+                                                         }
+                                                     ]
+                                   },
+                     "statistics":  null,
+                     "h2h":  null
                  }
 };

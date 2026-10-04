@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-04 21:04:15 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-04 19:43:05 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-04 21:04:15",
+    "updated":  "2026-10-04 19:43:05",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
-            "id":  "134968148", "title":  "Eliminación injusta del Barça en La Liga FC Futures",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eliminacion-injusta-barca-liga-fc-134968148", "time":  "2026-10-03 23:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9fb1fc05-d216-46f8-b67e-fd70e6c0eae3_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "id":  "134994665", "title":  "Remontada en el barro y el Barça Atlètic sigue imparable",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/remontada-barro-barca-atletic-sigue-134994665", "time":  "2026-10-04 18:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "134994351", "title":  "La expulsión de Guerrero condena al Juvenil A del Barça en Sabadell",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/expulsion-guerrero-condena-juvenil-barca-134994351", "time":  "2026-10-04 16:19",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/67a7c63a-628f-46b3-b2b1-aa46fee71bc2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "134992999", "title":  "Tudelano - Barça Atlètic, en directo hoy: partido de la Segunda RFEF, en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-directo-hoy-134992999", "time":  "2026-10-04 18:46",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/eaefb446-fc31-4622-a038-63841569c6a3_16-9-aspect-ratio_640w_0_x990y465.webp" },
         {
             "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-03 18:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_default_0_x450y168.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 14:44",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" },
+        {
+            "id":  "134968148", "title":  "Eliminación injusta del Barça en La Liga FC Futures",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eliminacion-injusta-barca-liga-fc-134968148", "time":  "2026-10-03 23:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9fb1fc05-d216-46f8-b67e-fd70e6c0eae3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134962438", "title":  "Tudelano-Barça Atlètic: El liderato en juego con un filial en cuadro",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-liderato-juego-134962438", "time":  "2026-10-03 17:02",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133981636", "title":  "El Barça Atlètic ya tiene a sus cuatro capitanes",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cuatro-capitanes-133981636", "time":  "2026-09-05 11:47",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133877087", "title":  "A qué hora es el Barça Atlètic - Sabadell hoy y dónde ver la final de la Copa Catalunya gratis por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-barca-atletic-sabadell-hoy-donde-ver-final-copa-catalunya-133877087", "time":  "2026-09-02 19:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d74b9a85-47b4-4932-b693-cf8bdf08edec_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
-        {
-            "id":  "133872366", "title":  "Onstein, baja importante para el Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-baja-importante-barca-atletic-133872366", "time":  "2026-09-02 11:56",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6635208b-0455-4f1d-9aaa-fb5fb946b690_16-9-discover-aspect-ratio_640w_0_x1035y328.webp" },
-        {
-            "id":  "133819132", "title":  "El central revelación del Barça Atlètic se lesiona con la selección sub-18",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/central-revelacion-barca-atletic-lesiona-133819132", "time":  "2026-09-01 18:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a678acb9-9289-46b7-a5aa-8edfe343b45e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
