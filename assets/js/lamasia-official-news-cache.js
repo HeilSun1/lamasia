@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-03 19:18:47 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-04 10:29:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-03 19:18:47",
+    "updated":  "2026-10-04 10:29:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -135,9 +135,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Two more games for blaugranes",
+                "id":  "4580541", "title":  "Goals for Lamine, Rodri and Gordon",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/f6907416-c0a4-41b7-90fb-f1637f2c67d3/DAG-165-_M1A1131.jpg" },
+                "tag":  "", "img":  "" },
             {
                 "id":  "4585817", "title":  "Final blaugrana duel of the international break",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-03 19:20；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-04 10:29；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-03 19:20:22",
+    "updated":  "2026-10-04 10:29:04",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -1788,9 +1788,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "FC Barcelona A",
                                          "homeId":  "13457",
                                          "awayId":  "11113",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "1",
+                                         "as":  "1",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "Municipal de Sant Just Desvern"

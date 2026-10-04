@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-03 19:18:49 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-04 10:29:10 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-03 19:18:49",
+    "updated":  "2026-10-04 10:29:10",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134968148", "title":  "Eliminación injusta del Barça en La Liga FC Futures",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eliminacion-injusta-barca-liga-fc-134968148", "time":  "2026-10-03 23:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9fb1fc05-d216-46f8-b67e-fd70e6c0eae3_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-03 18:00",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134962438", "title":  "Tudelano-Barça Atlètic: El liderato en juego con un filial en cuadro",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-liderato-juego-134962438", "time":  "2026-10-03 17:02",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134964571", "title":  "Un Destiny a lo 'Ronaldo Nazario' clasifica al Barça para los cuartos de La Liga FC Futures",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-ronaldo-nazario-clasifica-barca-134964571", "time":  "2026-10-03 19:04",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133819132", "title":  "El central revelación del Barça Atlètic se lesiona con la selección sub-18",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/central-revelacion-barca-atletic-lesiona-133819132", "time":  "2026-09-01 18:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a678acb9-9289-46b7-a5aa-8edfe343b45e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "133835458", "title":  "Copa Catalunya: Test de exigencia superior para el Barça Atlètic frente al Sabadell",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/copa-catalunya-test-exigencia-superior-133835458", "time":  "2026-09-01 17:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f67ec55e-ed20-4a86-a3a6-6f92bb7f14f7_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a678acb9-9289-46b7-a5aa-8edfe343b45e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

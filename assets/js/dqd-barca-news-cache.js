@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-03 19:18:23 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-04 10:28:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-03 19:18:23",
+    "updated":  "2026-10-04 10:28:01",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6433144", "title":  "世体：巴萨和佩德罗-罗德里格斯完成续约，目前只待官宣",
+            "url":  "https://www.dongqiudi.com/articles/6433144.html", "time":  "2026-10-04 03:46",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9A/F5/280x210/crop/-/rBXRDGrBWxCAKmx_AAGYh3BkLq0890.jpg" },
         {
             "id":  "6423352", "title":  "赫拉德-马丁：亚马尔是当今最佳球员，理应赢得金球奖",
             "url":  "https://www.dongqiudi.com/articles/6423352.html", "time":  "2026-10-01 20:27",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6289101", "title":  "贝莱蒂谈比西武受伤：裁判应加强控制，避免类似情况再次发生",
             "url":  "https://www.dongqiudi.com/articles/6289101.html", "time":  "2026-09-04 00:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4B/1D/280x210/crop/-/rBXRDGqZo5WAGFKzAADW25zMvw8063.jpg" },
-        {
-            "id":  "6287228", "title":  "每体：比西武伤势无大碍，检查结果显示仅为右脚踝撞伤",
-            "url":  "https://www.dongqiudi.com/articles/6287228.html", "time":  "2026-09-03 18:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4A/67/280x210/crop/-/rBXRn2qZSleAZFBaAAGI8uBEZfQ728.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4B/1D/280x210/crop/-/rBXRDGqZo5WAGFKzAADW25zMvw8063.jpg" }
     ]
 };
