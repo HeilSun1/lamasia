@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-05 09:22:41 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-05 21:01:28 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-05 09:22:41",
+    "updated":  "2026-10-05 21:01:28",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6438185", "title":  "巴萨竞技客场2-1逆转战胜图德拉诺，联赛4胜1平...",
+            "url":  "https://www.dongqiudi.com/articles/6438185.html", "time":  "2026-10-05 11:15",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/05/e7890286a1324ccf80fa690ff5ecb12fTND3aT_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6433144", "title":  "世体：巴萨和佩德罗-罗德里格斯完成续约，目前只待官宣",
             "url":  "https://www.dongqiudi.com/articles/6433144.html", "time":  "2026-10-04 03:46",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6290727", "title":  "阿斯：巴萨竞技想签巴列西略，桑坦德坚持解约金",
             "url":  "https://www.dongqiudi.com/articles/6290727.html", "time":  "2026-09-04 13:43",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4C/3C/280x210/crop/-/rBXRn2qaOdiAG4BxAALX8HFE6lQ516.jpg" },
-        {
-            "id":  "6289101", "title":  "贝莱蒂谈比西武受伤：裁判应加强控制，避免类似情况再次发生",
-            "url":  "https://www.dongqiudi.com/articles/6289101.html", "time":  "2026-09-04 00:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4B/1D/280x210/crop/-/rBXRDGqZo5WAGFKzAADW25zMvw8063.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4C/3C/280x210/crop/-/rBXRn2qaOdiAG4BxAALX8HFE6lQ516.jpg" }
     ]
 };

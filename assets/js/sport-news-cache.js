@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-05 09:24:03 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-05 21:03:47 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-05 09:24:03",
+    "updated":  "2026-10-05 21:03:47",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135009174", "title":  "Efecto Alex Gonzalez en el Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/efecto-alex-gonzalez-barca-atletic-135009174", "time":  "2026-10-05 10:58",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/421687a6-5395-48d8-b339-91507660bbce_16-9-aspect-ratio_default_0_x660y247.webp" },
+        {
+            "id":  "134991575", "title":  "Los prodigios de La Masia Destiny y Hugo Galdeano deslumbran en Orlando",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/prodigios-masia-destiny-hugo-galdeano-134991575", "time":  "2026-10-05 07:33",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/af234764-4d31-4b8b-acb0-26df77ebc278_16-9-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 19:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_default_0_x450y168.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" },
         {
             "id":  "134994665", "title":  "Remontada en el barro y el Barça Atlètic sigue imparable",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/remontada-barro-barca-atletic-sigue-134994665", "time":  "2026-10-04 18:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134994351", "title":  "La expulsión de Guerrero condena al Juvenil A del Barça en Sabadell",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/expulsion-guerrero-condena-juvenil-barca-134994351", "time":  "2026-10-04 16:19",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "133985068", "title":  "El canario Joni y Nil Vicens lideran una goleada impresionante del Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/canario-joni-nil-vicens-lideran-133985068", "time":  "2026-09-05 18:05",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
-        {
-            "id":  "133983831", "title":  "Barça Atlètic-Náxara CD: Arranca la operación ascenso en el Johan Cruyff",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-naxara-cd-arranca-133983831", "time":  "2026-09-05 14:59",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" },
-        {
-            "id":  "133981636", "title":  "El Barça Atlètic ya tiene a sus cuatro capitanes",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cuatro-capitanes-133981636", "time":  "2026-09-05 11:47",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb688c4e-7a41-470e-8787-41137bd83428_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" }
     ]
 };

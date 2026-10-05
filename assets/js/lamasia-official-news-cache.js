@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-05 09:23:51 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-05 21:02:54 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-05 09:23:51",
+    "updated":  "2026-10-05 21:02:54",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,9 +139,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Cancelo scores again",
+                "id":  "4586808", "title":  "Back at work",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4586808/back-at-work", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/20c25ef5-c6da-471e-82ba-c24088fbc5ac/image00002.jpeg" },
+            {
+                "id":  "4580541", "title":  "Kounde's turn",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/04/36227dde-4fb3-41a8-ab7a-22072df81744/DAG-429-_M1A3800.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/3fde2e83-f0b1-49a2-b04f-d38be38c5a15/_MGA5737.jpg" },
             {
                 "id":  "4585817", "title":  "Final blaugrana duel of the international break",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",
@@ -227,10 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579008/raphinha-on-golden-streak", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/e53c0f61-5ace-471e-81e5-2a8f0bc01a58/_MGA0416.jpg" },
             {
-                "id":  "4578870", "title":  "Winning debut for Livaković",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578870/winning-debut-for-dominik-livakovi", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/0a55b6cb-44c2-435f-af19-ae1d9f4214dd/_MGA0067.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4578870", "title":  "Winning debut for Livaković",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578870/winning-debut-for-dominik-livakovi", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/19/0a55b6cb-44c2-435f-af19-ae1d9f4214dd/_MGA0067.jpg" },
             {
                 "id":  "4578857", "title":  "Sevilla 1-3 Barça: Raphinha does it again!",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578857/sevilla-1-3-fc-barcelona-raphinha-does-it-again", "time":  "",
@@ -333,11 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4576163", "title":  "Recovery Monday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576163/recovery-monday", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/d8a43ac2-7fa4-4ed3-a8ce-2c90345ca152/WhatsApp-Image-2026-09-14-at-13.30.49.jpeg" },
-            {
-                "id":  "4576135", "title":  "Quick off the mark",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576135/barca-quick-off-the-mark", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/1aa1de57-9a1f-4126-adb0-892179323e06/_MGA7215_1.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/14/d8a43ac2-7fa4-4ed3-a8ce-2c90345ca152/WhatsApp-Image-2026-09-14-at-13.30.49.jpeg" }
         ]
     }
 };

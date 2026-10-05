@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-05 09:24:06 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-05 21:03:48 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-05 09:24:06",
+    "updated":  "2026-10-05 21:03:48",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "title":  "Paso importante para Diego Kochen",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "time":  "2026-10-05 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37c39180f2.r_d.600-462-10256.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20261005/1004234764/partido-especial-dani-olmo-vuelve-empezo.html", "title":  "El partido más especial para Dani Olmo: vuelve donde empezó todo",
+            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20261005/1004234764/partido-especial-dani-olmo-vuelve-empezo.html", "time":  "2026-10-05 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37ca03686f.r_d.1499-1026-4000.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "title":  "Arranca la Iniesta Experience en Barcelona",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "time":  "2026-10-05 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/01/6abe511d49461.r_d.609-1103-4499.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "title":  "Paloma Mikadze: El objetivo es que Barça Play sea una línea relevante de ingresos",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "time":  "2026-10-02 12:00",
@@ -191,18 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "title":  "Flick confirma la vuelta de Balde pero le mete presión",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "time":  "2026-08-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/26/6a8ecf513e8c8.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html", "title":  "El Barça comienza siendo el mejor",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html", "time":  "2026-08-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/19/611e351c318a1.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "title":  "El Barça renueva a Pedro Villar, otro gran talento de la Masia",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219632/barca-renueva-pedro-villar-gran-talento-masia.html", "time":  "2026-08-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/25/6a8d9d614aa73.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "title":  "Yaakobishvili ya disfruta con el Almería, su nuevo equipo",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260817/1004217034/yaakobishvili-disfruta-almeria-nuevo-equipo.html", "time":  "2026-08-17 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/17/6a837e1fbcda8.r_d.968-417-10582.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/26/6a8ecf513e8c8.jpeg" }
     ]
 };

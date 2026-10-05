@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-05 09:21 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-05 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-05 09:21:47",
+    "updated":  "2026-10-05 21:00:20",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -618,7 +618,7 @@ window.DQD_BARCA_ATLETIC = {
                                       "fs_B":  "",
                                       "ps_A":  "",
                                       "ps_B":  "",
-                                      "start_play":  "2026-10-25 16:00:00",
+                                      "start_play":  "2026-10-25 16:30:00",
                                       "suretime":  "1",
                                       "status":  "Fixture",
                                       "playing_time":  "",
@@ -1786,7 +1786,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                                         "助攻":  "0"
                                                                                     },
                                                                                     {
-                                                                                        "身价(欧)":  "80万"
+                                                                                        "身价(欧)":  "800万"
                                                                                     }
                                                                                 ],
                                                                   "transfer_data":  null,
