@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-04 21:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-05 09:23 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-04 21:02:07",
+    "updated":  "2026-10-05 09:23:09",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -580,10 +580,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Barcelona U19",
                         "homeId":  "370070",
                         "awayId":  "90128",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "4",
+                        "as":  "3",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -1020,6 +1020,21 @@ window.DQD_U19_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "16541359",
+                        "comp":  "西青甲 G3",
+                        "round":  "29",
+                        "start":  "1808665200",
+                        "home":  "UD Valle de Aranguren U19",
+                        "away":  "Barcelona U19",
+                        "homeId":  "1248769",
+                        "awayId":  "90128",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     }
                 ]
 };

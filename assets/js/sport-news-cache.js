@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-04 19:43:05 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-05 09:24:03 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-04 19:43:05",
+    "updated":  "2026-10-05 09:24:03",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 19:49",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_default_0_x450y168.webp" },
         {
             "id":  "134994665", "title":  "Remontada en el barro y el Barça Atlètic sigue imparable",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/remontada-barro-barca-atletic-sigue-134994665", "time":  "2026-10-04 18:52",
@@ -16,10 +20,6 @@ window.SPORT_NEWS = {
             "id":  "134992999", "title":  "Tudelano - Barça Atlètic, en directo hoy: partido de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-directo-hoy-134992999", "time":  "2026-10-04 18:46",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/eaefb446-fc31-4622-a038-63841569c6a3_16-9-aspect-ratio_640w_0_x990y465.webp" },
-        {
-            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 14:44",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" },
         {
             "id":  "134968148", "title":  "Eliminación injusta del Barça en La Liga FC Futures",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eliminacion-injusta-barca-liga-fc-134968148", "time":  "2026-10-03 23:31",
