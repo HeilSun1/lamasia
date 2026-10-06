@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-06 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-06 21:03 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-06 21:00:22",
+    "updated":  "2026-10-06 21:03:35",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2479,7 +2479,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs3/M00/B5/98/ChOxM1xC37CADGDCAAANHjH55fo314.png"
                                                               },
                                                               {
-                                                                  "age":  "18岁",
+                                                                  "age":  "19岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7B/ChOxM1xC2N6AEWYMAAABPByVIVM465.png",
                                                                   "nationality_name":  "荷兰/苏里南",

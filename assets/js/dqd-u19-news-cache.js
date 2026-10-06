@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-06 21:02:17 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-06 21:03:58 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-06 21:02:17",
+    "updated":  "2026-10-06 21:03:58",
     "source":  "dongqiudi",
-    "count":  34,
+    "count":  35,
     "news":  [
+        {
+            "id":  "6444645", "title":  "巴萨官方：弗朗基-德容在周二参加了部分合练",
+            "url":  "https://www.dongqiudi.com/articles/6444645.html", "time":  "2026-10-06 21:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A1/65/280x210/crop/-/rBXRn2rE9zKAAM6VAAkx9yaGq0g098.jpg" },
         {
             "id":  "6434196", "title":  "还有高手！巴萨青年B队的左边后卫佩雷-比利亚科尔...",
             "url":  "https://www.dongqiudi.com/articles/6434196.html", "time":  "2026-10-04 11:41",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-06 21:04:04 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-06 21:04:05 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-06 21:04:04",
+    "updated":  "2026-10-06 21:04:05",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261006/1004235348/kochen-suena-volver-barca.html", "title":  "Kochen sueña con volver al Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261006/1004235348/kochen-suena-volver-barca.html", "time":  "2026-10-06 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/17/6aac117d87045.r_d.426-320-14458.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/20261006/1004235186/canales.html", "title":  "Fui varias veces a La Masia, el Barça me ofreció la oportunidad. No me arrepiento de haber fichado por el Real Madrid",
             "url":  "https://www.mundodeportivo.com/futbol/20261006/1004235186/canales.html", "time":  "2026-10-06 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "title":  "Un ex del Barça, refuerzo para volver a Primera",
             "url":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "time":  "2026-08-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/04/6a48f521a0bcd.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "title":  "Flick confirma la vuelta de Balde pero le mete presión",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219941/flick-confirma-vuelta-balde-le-mete-presion.html", "time":  "2026-08-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/26/6a8ecf513e8c8.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/04/6a48f521a0bcd.jpeg" }
     ]
 };

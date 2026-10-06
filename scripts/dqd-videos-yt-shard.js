@@ -2,12 +2,25 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-10-06 09:49:37",
+    "updated":  "2026-10-06 21:06:07",
     "probeOk":  true,
     "searched":  [
 
                  ],
     "items":  [
-
+                  {
+                      "at":  "2026-10-06",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u19:2722893",
+                      "v":  {
+                                "videoId":  "sh_ef7ij1YU",
+                                "title":  "Xavier Mirangels - La Masia\u0027s El Mago",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-06",
+                                "durationSec":  ""
+                            }
+                  }
               ]
 };

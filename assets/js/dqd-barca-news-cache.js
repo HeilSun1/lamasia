@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-06 21:01:37 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-06 21:03:37 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-06 21:01:37",
+    "updated":  "2026-10-06 21:03:37",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6444645", "title":  "巴萨官方：弗朗基-德容在周二参加了部分合练",
+            "url":  "https://www.dongqiudi.com/articles/6444645.html", "time":  "2026-10-06 21:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A1/65/280x210/crop/-/rBXRn2rE9zKAAM6VAAkx9yaGq0g098.jpg" },
         {
             "id":  "6442727", "title":  "世体：巴萨认为佩斯克尔需多踢比赛成长",
             "url":  "https://www.dongqiudi.com/articles/6442727.html", "time":  "2026-10-06 14:17",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6320800", "title":  "亨利：罗德里是另一个布斯克茨，他能彻底改变你的球队",
             "url":  "https://www.dongqiudi.com/articles/6320800.html", "time":  "2026-09-09 15:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/55/280x210/crop/-/rBXRn2qhC7-ANH0RAAIfzYAOYkw886.jpg" },
-        {
-            "id":  "6314677", "title":  "每体：巴萨改变出售青训球员的策略，保留回购权和二转分成",
-            "url":  "https://www.dongqiudi.com/articles/6314677.html", "time":  "2026-09-08 15:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/58/74/280x210/crop/-/rBXRDGqftmuAH-xbAAEZnl3CkBk409.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/55/280x210/crop/-/rBXRn2qhC7-ANH0RAAIfzYAOYkw886.jpg" }
     ]
 };
