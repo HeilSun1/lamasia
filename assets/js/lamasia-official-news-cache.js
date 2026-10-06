@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-06 09:48:51 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-06 21:03:04 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-06 09:48:51",
+    "updated":  "2026-10-06 21:03:04",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,9 +139,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Late comeback for France",
+                "id":  "4587299", "title":  "New faces at training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587299/new-faces-at-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/06/08ff84ca-094e-48eb-a086-290a4d436658/_MGA2102.jpg" },
+            {
+                "id":  "4580541", "title":  "Last day of internationals",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/3fde2e83-f0b1-49a2-b04f-d38be38c5a15/_MGA5737.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ae654665-d2fc-4873-b0de-f3f61a0f5d77/_MGA6025.jpg" },
             {
                 "id":  "4586995", "title":  "Cubarsí, Bernal and Espart, Golden Boy finalists",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4586995/cubarsi-bernal-and-xavi-espart-among-25-golden-boy-finalists", "time":  "",
@@ -227,10 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579409/flicks-barca-is-a-goal-machine", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/658513bf-0f4e-4249-9ee8-36ff4cf82d64/_MGA7518.jpg" },
             {
-                "id":  "4579017", "title":  "Medical update on Christensen",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579017/medical-update-on-christensen", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/20/afe5af8a-9872-472e-904d-f0812e344a7c/_MGA0199-1-.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4579017", "title":  "Medical update on Christensen",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579017/medical-update-on-christensen", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/20/afe5af8a-9872-472e-904d-f0812e344a7c/_MGA0199-1-.jpg" },
             {
                 "id":  "4579008", "title":  "Raphinha on golden streak",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579008/raphinha-on-golden-streak", "time":  "",
@@ -333,11 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4576693", "title":  "Last session before Racing",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576693/last-session-before-racing", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/91ce7f02-8d2d-47d9-b124-24d8a0ede11a/WhatsApp-Image-2026-09-15-at-12.44.49.jpeg" },
-            {
-                "id":  "4576366", "title":  "When and where to watch Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576366/when-and-where-to-watch-fc-barcelona-v-racing-santander", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/91ce7f02-8d2d-47d9-b124-24d8a0ede11a/WhatsApp-Image-2026-09-15-at-12.44.49.jpeg" }
         ]
     }
 };

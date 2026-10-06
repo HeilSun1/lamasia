@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-06 09:47:38 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-06 21:01:37 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-06 09:47:38",
+    "updated":  "2026-10-06 21:01:37",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6442727", "title":  "世体：巴萨认为佩斯克尔需多踢比赛成长",
+            "url":  "https://www.dongqiudi.com/articles/6442727.html", "time":  "2026-10-06 14:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A0/C6/280x210/crop/-/rBXRDGrEkVeAUH4OAABicEkccKU753.jpg" },
         {
             "id":  "6438185", "title":  "巴萨竞技客场2-1逆转战胜图德拉诺，联赛4胜1平...",
             "url":  "https://www.dongqiudi.com/articles/6438185.html", "time":  "2026-10-05 11:15",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6314677", "title":  "每体：巴萨改变出售青训球员的策略，保留回购权和二转分成",
             "url":  "https://www.dongqiudi.com/articles/6314677.html", "time":  "2026-09-08 15:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/58/74/280x210/crop/-/rBXRDGqftmuAH-xbAAEZnl3CkBk409.jpg" },
-        {
-            "id":  "6290727", "title":  "阿斯：巴萨竞技想签巴列西略，桑坦德坚持解约金",
-            "url":  "https://www.dongqiudi.com/articles/6290727.html", "time":  "2026-09-04 13:43",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/4C/3C/280x210/crop/-/rBXRn2qaOdiAG4BxAALX8HFE6lQ516.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/58/74/280x210/crop/-/rBXRDGqftmuAH-xbAAEZnl3CkBk409.jpg" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-06 09:48 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-06 21:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-06 09:48:41",
+    "updated":  "2026-10-06 21:02:53",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -105,21 +105,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Karim Mendikanov",
-                        "id":  "2674136",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Kazakhstan",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
-                        "age":  "15岁",
-                        "birthday":  "2010-11-10",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Divine Ikenna Ejiofor",
                         "id":  "2690301",
                         "pos":  "F",
@@ -131,6 +116,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2011-04-01",
                         "foot":  "",
                         "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Karim Mendikanov",
+                        "id":  "2674136",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Kazakhstan",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
+                        "age":  "15岁",
+                        "birthday":  "2010-11-10",
+                        "foot":  "左脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -285,21 +285,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "José Alfredo Rodríguez",
-                        "id":  "2407332",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Honduras",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-31",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Guiu Xuclà",
                         "id":  "2447156",
                         "pos":  "D",
@@ -309,6 +294,21 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
                         "age":  "16岁",
                         "birthday":  "2010-01-17",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "José Alfredo Rodríguez",
+                        "id":  "2407332",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Honduras",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-31",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

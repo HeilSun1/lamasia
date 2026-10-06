@@ -1,17 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-06 09:48:58 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-06 21:04:04 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-06 09:48:58",
+    "updated":  "2026-10-06 21:04:04",
     "source":  "md",
     "count":  50,
     "news":  [
         {
+            "id":  "https://www.mundodeportivo.com/futbol/20261006/1004235186/canales.html", "title":  "Fui varias veces a La Masia, el Barça me ofreció la oportunidad. No me arrepiento de haber fichado por el Real Madrid",
+            "url":  "https://www.mundodeportivo.com/futbol/20261006/1004235186/canales.html", "time":  "2026-10-06 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aae723394d5d.jpeg" },
+        {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "title":  "Paso importante para Diego Kochen",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "time":  "2026-10-05 12:00",
             "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37c39180f2.r_d.600-462-10256.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20261005/1004234764/partido-especial-dani-olmo-vuelve-empezo.html", "title":  "El partido más especial para Dani Olmo: vuelve donde empezó todo",
-            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20261005/1004234764/partido-especial-dani-olmo-vuelve-empezo.html", "time":  "2026-10-05 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37ca03686f.r_d.1499-1026-4000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "title":  "Arranca la Iniesta Experience en Barcelona",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "time":  "2026-10-05 12:00",
