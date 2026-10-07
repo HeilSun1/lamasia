@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-07 21:01:58 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-07 21:23:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-07 21:01:58",
+    "updated":  "2026-10-07 21:23:01",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6450129", "title":  "每体：通卡拉恢复合练，左脚踝韧带伤势康复期已满6周",
+            "url":  "https://www.dongqiudi.com/articles/6450129.html", "time":  "2026-10-07 21:48",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A3/D3/280x210/crop/-/rBXRDGrGShqAKY85AAIuwiRzdZ0118.jpg" },
         {
             "id":  "6449322", "title":  "每体：16岁的天才中场通卡拉因脚踝伤势缺席6周后...",
             "url":  "https://www.dongqiudi.com/articles/6449322.html", "time":  "2026-10-07 18:21",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6321514", "title":  "官方：巴萨小将谢尔菲加盟沙特迪里耶，保留球员部分二转分成",
             "url":  "https://www.dongqiudi.com/articles/6321514.html", "time":  "2026-09-09 19:40",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/E8/280x210/crop/-/rBXRDGqhRUuAVOOhAACbEibdhDs772.jpg" },
-        {
-            "id":  "6321324", "title":  "奥尔莫：10年的西班牙给我无数感动，如今我们也到了同样高度",
-            "url":  "https://www.dongqiudi.com/articles/6321324.html", "time":  "2026-09-09 18:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/AC/280x210/crop/-/rBXRn2qhMh-AI2aqAAzBX6x-dCI606.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/E8/280x210/crop/-/rBXRDGqhRUuAVOOhAACbEibdhDs772.jpg" }
     ]
 };

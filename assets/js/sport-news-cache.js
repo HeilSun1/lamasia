@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-07 21:05:54 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-07 21:23:33 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-07 21:05:54",
+    "updated":  "2026-10-07 21:23:33",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -10,7 +10,7 @@ window.SPORT_NEWS = {
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134999398", "title":  "Salto bestial en La Masia: el cadete Héctor Asumu debuta con el Juvenil A",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-05 13:55",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-07 15:32",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ebc397ee-ce84-44b0-843d-e968ec0eefe6_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135009174", "title":  "Efecto Alex Gonzalez en el Barça",
