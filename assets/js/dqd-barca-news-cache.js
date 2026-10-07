@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-07 09:34:58 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-07 21:01:58 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-07 09:34:58",
+    "updated":  "2026-10-07 21:01:58",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6449322", "title":  "每体：16岁的天才中场通卡拉因脚踝伤势缺席6周后...",
+            "url":  "https://www.dongqiudi.com/articles/6449322.html", "time":  "2026-10-07 18:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A3/90/280x210/crop/-/rBXRDGrGHRuAEO3FAAE82ixXrNU255.jpg" },
         {
             "id":  "6444645", "title":  "巴萨官方：弗朗基-德容在周二参加了部分合练",
             "url":  "https://www.dongqiudi.com/articles/6444645.html", "time":  "2026-10-06 21:29",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6321324", "title":  "奥尔莫：10年的西班牙给我无数感动，如今我们也到了同样高度",
             "url":  "https://www.dongqiudi.com/articles/6321324.html", "time":  "2026-09-09 18:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/AC/280x210/crop/-/rBXRn2qhMh-AI2aqAAzBX6x-dCI606.jpg" },
-        {
-            "id":  "6320800", "title":  "亨利：罗德里是另一个布斯克茨，他能彻底改变你的球队",
-            "url":  "https://www.dongqiudi.com/articles/6320800.html", "time":  "2026-09-09 15:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/55/280x210/crop/-/rBXRn2qhC7-ANH0RAAIfzYAOYkw886.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/AC/280x210/crop/-/rBXRn2qhMh-AI2aqAAzBX6x-dCI606.jpg" }
     ]
 };

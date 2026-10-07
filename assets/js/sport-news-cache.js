@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-07 09:36:43 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-07 21:05:54 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-07 09:36:43",
+    "updated":  "2026-10-07 21:05:54",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "134999398", "title":  "Salto bestial en La Masia: el cadete Héctor Asumu debuta con el Juvenil A",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-05 13:55",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "135009174", "title":  "Efecto Alex Gonzalez en el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/efecto-alex-gonzalez-barca-atletic-135009174", "time":  "2026-10-05 10:58",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/421687a6-5395-48d8-b339-91507660bbce_16-9-aspect-ratio_default_0_x660y247.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/421687a6-5395-48d8-b339-91507660bbce_16-9-aspect-ratio_640w_0_x660y247.webp" },
         {
             "id":  "134991575", "title":  "Los prodigios de La Masia Destiny y Hugo Galdeano deslumbran en Orlando",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/prodigios-masia-destiny-hugo-galdeano-134991575", "time":  "2026-10-05 07:33",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134005261", "title":  "Barça Atlètic - CD Náxara, en directo: partido de la 2ª RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-naxara-directo-134005261", "time":  "2026-09-06 18:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x430y146.webp" },
-        {
-            "id":  "134001813", "title":  "El Barça Atlètic ya tiene dorsales para la nueva temporada",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-dorsales-nueva-temporada-134001813", "time":  "2026-09-06 10:58",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a8ac08d2-eb61-444a-bb4b-17361b0fac11_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x430y146.webp" }
     ]
 };

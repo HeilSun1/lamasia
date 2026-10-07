@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-07 09:36:45 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-07 21:05:57 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-07 09:36:45",
+    "updated":  "2026-10-07 21:05:57",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261007/1004235531/pere-villacorta-juvenil-b-barcelona.html", "title":  "Pere Villacorta, el capitán que marca golazos",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261007/1004235531/pere-villacorta-juvenil-b-barcelona.html", "time":  "2026-10-07 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/06/6ac55e4901be6.r_d.363-237-16304.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261006/1004235348/kochen-suena-volver-barca.html", "title":  "Kochen sueña con volver al Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261006/1004235348/kochen-suena-volver-barca.html", "time":  "2026-10-06 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "title":  "Espart, la inteligencia al servicio del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "time":  "2026-08-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a913afa8cc2f.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "title":  "Un ex del Barça, refuerzo para volver a Primera",
-            "url":  "https://www.mundodeportivo.com/futbol/20260826/1004220049/ex-barca-refuerzo-volver-primera.html", "time":  "2026-08-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/07/04/6a48f521a0bcd.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a913afa8cc2f.jpeg" }
     ]
 };

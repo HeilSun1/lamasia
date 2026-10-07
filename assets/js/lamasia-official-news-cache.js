@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-07 09:36:18 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-07 21:03:36 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-07 09:36:18",
+    "updated":  "2026-10-07 21:03:36",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,7 +139,23 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4580541", "title":  "Final international fixtures conclude",
+                "id":  "4587927", "title":  "Pedro Rodríguez announces retirement",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587927/pedro-rodriguez-announces-retirement", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/9aa0cead-d67b-4dbc-ae9a-7f9d64e7c918/FOTOS-PEDRO-26.jpg" },
+            {
+                "id":  "4587842", "title":  "More international players return",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/92360389-ebed-489c-862b-21128f223736/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" },
+            {
+                "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4587673", "title":  "Emotional farewell for Leo Messi with Argentina",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587673/emotional-farewell-for-leo-messi-with-argentina", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4580541", "title":  "The international break as it happened",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ae654665-d2fc-4873-b0de-f3f61a0f5d77/_MGA6025.jpg" },
             {
@@ -215,6 +231,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580732/four-barca-players-nominated-for-laligas-september-awards", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/8a1e590b-27c1-4e9d-9c5d-eede41aac58a/DAG-144-_M1A5418.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4580549", "title":  "Training session with Barça Atlètic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580549/training-session-with-barca-atletic", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/68eca17f-c3df-4cfc-8f47-95c8c041072b/WhatsApp-Image-2026-09-23-at-13.20.15-4-.jpeg" },
@@ -230,14 +254,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4579417", "title":  "International schedule for FC Barcelona players",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579417/international-schedule-for-fc-barcelona-players", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/ffcd0d23-a8f1-4243-acc0-1347b9da0f9e/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027__mga5167.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4579409", "title":  "Flick's Barça is a goal machine",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579409/flicks-barca-is-a-goal-machine", "time":  "",
@@ -321,23 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577460", "title":  "Barça 7-2 Racing: The perfect storm",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" },
-            {
-                "id":  "4577323", "title":  "The squad for Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577323/the-squad-for-barca-v-racing", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/75e74f2b-2437-487a-8146-8f2274ada03f/_MGA7255.jpg" },
-            {
-                "id":  "4576712", "title":  "PREVIEW | Barça v Racing",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576712/preview-fc-barcelona-v-racing-santander", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4576802", "title":  "Abdelkarim: 'I want to write history with Barça'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576802/hamza-abdelkarim-i-want-to-write-history-with-barca", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/a6bb2c7c-e09e-4d6a-9745-ad8095216816/_5DS8051.jpg" },
-            {
-                "id":  "4576708", "title":  "'I don't want to break records, I want to win matches'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576708/hansi-flick-i-dont-want-to-break-records-i-want-to-win-matches", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/15/fd76f279-5d55-439e-9204-17e4ba5b1ba4/_MGA8231.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" }
         ]
     }
 };
