@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-07 21:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-08 09:44 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-07 21:02:43",
+    "updated":  "2026-10-08 09:44:36",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -71,21 +71,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-05-13",
                         "foot":  "右脚",
                         "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Nil Vicens Ponsati",
-                        "id":  "2014710",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-29",
-                        "foot":  "左脚",
-                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -300,21 +285,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nico Marcipar",
-                        "id":  "2076881",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Argentina",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-13",
-                        "foot":  "左脚",
-                        "height":  "183",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mikael Baza",
                         "id":  "2311166",
                         "pos":  "D",
@@ -326,21 +296,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-01-12",
                         "foot":  "左脚",
                         "height":  "188",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Nil Teixidor",
-                        "id":  "1926082",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-28",
-                        "foot":  "右脚",
-                        "height":  "177",
                         "value":  "",
                         "injury":  null
                     },

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-07 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-08 09:44 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-07 21:01:58",
+    "updated":  "2026-10-08 09:44:02",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -125,6 +125,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Nil Vicens Ponsati",
+                        "id":  "2014710",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-07-29",
+                        "foot":  "左脚",
+                        "height":  "176",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ignasi Quer",
                         "id":  "1977602",
                         "pos":  "F",
@@ -219,7 +234,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "1649171",
                         "pos":  "M",
                         "shirt":  "",
-                        "team":  "Barcelona U19",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
                         "age":  "18岁",
@@ -302,6 +317,36 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "173",
                         "value":  "22万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Hernandez Jones Jonathan",
+                        "id":  "2606521",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2606521/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Juan Ybarra San Ciriaco",
+                        "id":  "2559209",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2559209/image",
+                        "age":  "22岁",
+                        "birthday":  "2004-01-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -425,6 +470,36 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Nico Marcipar",
+                        "id":  "2076881",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Argentina",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-13",
+                        "foot":  "左脚",
+                        "height":  "183",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -451,6 +526,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-09-21",
                         "foot":  "双脚",
                         "height":  "196",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Iker Rodríguez",
+                        "id":  "1926093",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-22",
+                        "foot":  "右脚",
+                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     },
@@ -570,7 +660,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Naxara CD",
                         "homeId":  "24343",
                         "awayId":  "55779",
-                        "hs":  "5",
+                        "hs":  "4",
                         "as":  "0",
                         "status":  "Ended",
                         "code":  "100",

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-07 21:23:32 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-08 09:45:21 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-07 21:23:32",
+    "updated":  "2026-10-08 09:45:21",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -141,11 +141,11 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4587927", "title":  "Pedro Rodríguez announces retirement",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587927/pedro-rodriguez-announces-retirement", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/9aa0cead-d67b-4dbc-ae9a-7f9d64e7c918/FOTOS-PEDRO-26.jpg" },
+                "tag":  "", "img":  "" },
             {
                 "id":  "4587842", "title":  "More international players return",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/92360389-ebed-489c-862b-21128f223736/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" },
+                "tag":  "", "img":  "" },
             {
                 "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
