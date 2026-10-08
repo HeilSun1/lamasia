@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-08 09:44:03 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-08 21:01:47 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-08 09:44:03",
+    "updated":  "2026-10-08 21:01:47",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6451983", "title":  "好消息！巴萨竞技球员通卡拉、凯塞多和阿维拉伤愈回...",
+            "url":  "https://www.dongqiudi.com/articles/6451983.html", "time":  "2026-10-08 09:27",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A4/EA/280x210/crop/-/rBXRn2rG8RuAcQCWAAMG4Mw6cYU577.jpg" },
         {
             "id":  "6450129", "title":  "每体：通卡拉恢复合练，左脚踝韧带伤势康复期已满6周",
             "url":  "https://www.dongqiudi.com/articles/6450129.html", "time":  "2026-10-07 21:48",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6321645", "title":  "懂球译站 | 佩德里亲笔信：我的爷爷，是我见过最狂热的巴萨球迷",
             "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2026-09-10 16:30",
-            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/59/47/280x210/crop/-/rBXRDGqgFSGAcJfwAAF6HJ6zI1k069.jpg" },
-        {
-            "id":  "6321514", "title":  "官方：巴萨小将谢尔菲加盟沙特迪里耶，保留球员部分二转分成",
-            "url":  "https://www.dongqiudi.com/articles/6321514.html", "time":  "2026-09-09 19:40",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/5B/E8/280x210/crop/-/rBXRDGqhRUuAVOOhAACbEibdhDs772.jpg" }
+            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/59/47/280x210/crop/-/rBXRDGqgFSGAcJfwAAF6HJ6zI1k069.jpg" }
     ]
 };

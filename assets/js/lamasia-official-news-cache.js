@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-08 09:45:21 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-08 21:03:26 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-08 09:45:21",
+    "updated":  "2026-10-08 21:03:26",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,13 +139,21 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4588657", "title":  "All internationals back in training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
+            {
+                "id":  "4588143", "title":  "Five things about Barça v Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588143/five-interesting-facts-about-barca-v-getafe", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4587927", "title":  "Pedro Rodríguez announces retirement",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587927/pedro-rodriguez-announces-retirement", "time":  "",
-                "tag":  "", "img":  "" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/4ffe39b9-30e5-4735-9275-30b54cf0a92f/FOTOS-PEDRO-26.jpg" },
             {
                 "id":  "4587842", "title":  "More international players return",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
-                "tag":  "", "img":  "" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/b6302003-522f-4d2c-86e9-19339962e55a/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" },
             {
                 "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
@@ -223,14 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/af288f44-eed8-4ba8-9b55-3788aa4cec70/WhatsApp-Image-2026-09-24-at-12.32.56-1-.jpeg" },
             {
-                "id":  "4580761", "title":  "A run for the record books",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/af537f53-b1ff-44bb-af56-e1511e610e37/_MGA7382.jpg" },
-            {
-                "id":  "4580732", "title":  "Four nominated for LaLiga's September awards",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580732/four-barca-players-nominated-for-laligas-september-awards", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/8a1e590b-27c1-4e9d-9c5d-eede41aac58a/DAG-144-_M1A5418.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4580761", "title":  "A run for the record books",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/af537f53-b1ff-44bb-af56-e1511e610e37/_MGA7382.jpg" },
+            {
+                "id":  "4580732", "title":  "Four nominated for LaLiga's September awards",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580732/four-barca-players-nominated-for-laligas-september-awards", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/8a1e590b-27c1-4e9d-9c5d-eede41aac58a/DAG-144-_M1A5418.jpg" },
             {
                 "id":  "4580549", "title":  "Training session with Barça Atlètic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580549/training-session-with-barca-atletic", "time":  "",
@@ -329,15 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577474", "title":  "A first time for 7 from 7",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577474/a-first-time-for-7-from-7", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9e6d8a55-86b3-481b-970b-1d06fcb31d89/_MGA7343.jpg" },
-            {
-                "id":  "4576807", "title":  "Tribute to Carles Naval for 40 years as delegate",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4576807/tribute-to-carles-naval-for-40-years-as-delegate", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9cfa6075-cddd-42f3-83c7-c972f12203f8/_5DS0944-2.jpg" },
-            {
-                "id":  "4577460", "title":  "Barça 7-2 Racing: The perfect storm",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577460/fc-barcelona-7-2-racing-santander-the-perfect-storm", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/954546d7-f628-46b1-a47b-7033ceafa268/DAG-024-_M1A1384.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9e6d8a55-86b3-481b-970b-1d06fcb31d89/_MGA7343.jpg" }
         ]
     }
 };
