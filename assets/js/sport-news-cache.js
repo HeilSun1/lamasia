@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-08 21:05:37 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-08 21:24:09 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-08 21:05:37",
+    "updated":  "2026-10-08 21:24:09",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135148016", "title":  "Frenazo obligado para el gran diamante de La Masia: David Moreno no jugará hasta diciembre",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-obligado-gran-diamante-masia-135148016", "time":  "2026-10-08 16:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "134999398", "title":  "Salto bestial en La Masia: el cadete Héctor Asumu debuta con el Juvenil A",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-07 15:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ebc397ee-ce84-44b0-843d-e968ec0eefe6_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ebc397ee-ce84-44b0-843d-e968ec0eefe6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135009174", "title":  "Efecto Alex Gonzalez en el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/efecto-alex-gonzalez-barca-atletic-135009174", "time":  "2026-10-05 10:58",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134005269", "title":  "Debut salvaje de Ignasi Quer: Cuatro goles del '9' del Barça Atlètic en un estreno soñado",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-salvaje-ignasi-quer-cuatro-134005269", "time":  "2026-09-06 20:21",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4ad43a0c-0fc9-4abd-9c36-437608b16f06_16-9-discover-aspect-ratio_640w_0_x732y110.webp" },
-        {
-            "id":  "134005261", "title":  "Barça Atlètic - CD Náxara, en directo: partido de la 2ª RFEF, en vivo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-naxara-directo-134005261", "time":  "2026-09-06 18:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42ee723f-6ab8-4aa2-a7f4-2b534439418d_16-9-discover-aspect-ratio_640w_0_x430y146.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4ad43a0c-0fc9-4abd-9c36-437608b16f06_16-9-discover-aspect-ratio_640w_0_x732y110.webp" }
     ]
 };

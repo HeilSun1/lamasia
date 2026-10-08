@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-08 21:03:26 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-08 21:24:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-08 21:03:26",
+    "updated":  "2026-10-08 21:24:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,6 +139,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4588488", "title":  "Xavi Espart renews until 2030",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588488/xavi-espart-renews-until-2030", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/0ca960b7-9e40-4f3d-acf7-a7d012fba730/WhatsApp-Image-2026-10-08-at-10.09.14.jpeg" },
+            {
                 "id":  "4588657", "title":  "All internationals back in training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
@@ -227,10 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/2b234519-9f5f-4b57-9d2b-5bc1ee9ce08a/_MGA7116.jpg" },
             {
-                "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/af288f44-eed8-4ba8-9b55-3788aa4cec70/WhatsApp-Image-2026-09-24-at-12.32.56-1-.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/af288f44-eed8-4ba8-9b55-3788aa4cec70/WhatsApp-Image-2026-09-24-at-12.32.56-1-.jpeg" },
             {
                 "id":  "4580761", "title":  "A run for the record books",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",
@@ -333,11 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577547", "title":  "Flick: 'Always good to start well'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577547/hansi-flick-always-good-to-start-well", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/87287840-0819-489a-ab62-28089b8d050a/2026-09-16_FCBvsRACING_001.jpg" },
-            {
-                "id":  "4577474", "title":  "A first time for 7 from 7",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577474/a-first-time-for-7-from-7", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/9e6d8a55-86b3-481b-970b-1d06fcb31d89/_MGA7343.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/87287840-0819-489a-ab62-28089b8d050a/2026-09-16_FCBvsRACING_001.jpg" }
         ]
     }
 };

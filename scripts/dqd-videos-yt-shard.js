@@ -2,12 +2,25 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-10-07 21:26:08",
+    "updated":  "2026-10-08 21:26:07",
     "probeOk":  true,
     "searched":  [
 
                  ],
     "items":  [
-
+                  {
+                      "at":  "2026-10-08",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u19:2607840",
+                      "v":  {
+                                "videoId":  "GKQQwGU62EQ",
+                                "title":  "Raul Exposito - La Masia\u0027s El Capitán",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-08",
+                                "durationSec":  ""
+                            }
+                  }
               ]
 };
