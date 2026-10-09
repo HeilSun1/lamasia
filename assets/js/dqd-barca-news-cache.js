@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-08 21:23:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-09 17:19:38 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-08 21:23:43",
+    "updated":  "2026-10-09 17:19:38",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6456854", "title":  "每体：比西武于本周四结束国际比赛日归队。他没有参...",
+            "url":  "https://www.dongqiudi.com/articles/6456854.html", "time":  "2026-10-09 15:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/F3/280x210/crop/-/rBXRn2rIl7SAaro0AADTeUDxNPw407.jpg" },
+        {
+            "id":  "6456667", "title":  "每体：巴萨考察租租借小将恰托维奇，决定是否买断",
+            "url":  "https://www.dongqiudi.com/articles/6456667.html", "time":  "2026-10-09 14:38",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" },
         {
             "id":  "6451983", "title":  "好消息！巴萨竞技球员通卡拉、凯塞多和阿维拉伤愈回...",
             "url":  "https://www.dongqiudi.com/articles/6451983.html", "time":  "2026-10-08 09:27",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6330564", "title":  "每体：斯图加特租将恰托维奇完成首秀，争取让巴萨将自己买断",
             "url":  "https://www.dongqiudi.com/articles/6330564.html", "time":  "2026-09-11 21:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/FC/280x210/crop/-/rBXRDGqj-SuAKcgrAAEFY-zyukw159.jpg" },
-        {
-            "id":  "6329537", "title":  "大巴黎三将专访（二）：法比安就像布斯克茨，是“球盲过滤器”",
-            "url":  "https://www.dongqiudi.com/articles/6329537.html", "time":  "2026-09-11 16:39",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/77/280x210/crop/-/rBXRDGqjviWAREehAANO1l7lCt0928.jpg" },
-        {
-            "id":  "6321645", "title":  "懂球译站 | 佩德里亲笔信：我的爷爷，是我见过最狂热的巴萨球迷",
-            "url":  "https://www.dongqiudi.com/articles/6321645.html", "time":  "2026-09-10 16:30",
-            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/59/47/280x210/crop/-/rBXRDGqgFSGAcJfwAAF6HJ6zI1k069.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/FC/280x210/crop/-/rBXRDGqj-SuAKcgrAAEFY-zyukw159.jpg" }
     ]
 };

@@ -1,27 +1,34 @@
 {
-    "runId":  "20261008-210002",
-    "runStartedUtc":  "2026-10-08T13:00:02.9709083Z",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "schema":  1,
+    "runId":  "20261009-171916",
+    "runStartedUtc":  "2026-10-09T09:19:16.6449742Z",
+    "runFinishedUtc":  "2026-10-09T09:21:14.2448464Z",
+    "lastSuccessUtc":  "2026-10-08T21:26:09.4824272Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "blocked",
+    "exitCode":  1,
     "consecutiveFailures":  0,
-    "blocked":  false,
+    "blocked":  true,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-
+                         "stale",
+                         "stale"
                      ],
     "failedScripts":  [
-
+                          "update_barca_atletic_sf.ps1",
+                          "update_u19_sofascore.ps1",
+                          "update_u18_sofascore.ps1",
+                          "update_u16_sofascore.ps1"
                       ],
     "staleCaches":  [
-
+                        "assets/js/dqd-u19-cache.js",
+                        "assets/js/dqd-u18-cache.js",
+                        "assets/js/dqd-u16-cache.js",
+                        "assets/js/dqd-barca-atletic-sf-cache.js"
                     ],
     "healed":  [
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-10-08T21:26:09.4824272Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-10-08T21:26:09.4824272Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
