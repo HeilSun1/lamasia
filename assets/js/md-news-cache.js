@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-09 17:20:35 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-09 21:05:42 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-09 17:20:35",
+    "updated":  "2026-10-09 21:05:42",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "title":  "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia",
+            "url":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "time":  "2026-10-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/09/6ac8c2484c67c.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261007/1004235531/pere-villacorta-juvenil-b-barcelona.html", "title":  "Pere Villacorta, el capitán que marca golazos",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261007/1004235531/pere-villacorta-juvenil-b-barcelona.html", "time":  "2026-10-07 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "title":  "Ignacio Alabart, nuevo capitán del Barça de hockey patines",
             "url":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "time":  "2026-08-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a91ced9d9dbe.png" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "title":  "Espart, la inteligencia al servicio del Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220504/espart-inteligencia-servicio-barca.html", "time":  "2026-08-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a913afa8cc2f.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a91ced9d9dbe.png" }
     ]
 };

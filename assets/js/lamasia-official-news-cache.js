@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-09 17:20:23 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-09 21:03:33 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-09 17:20:23",
+    "updated":  "2026-10-09 21:03:33",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,6 +139,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4589429", "title":  "Flick: 'Raphinha not available for Getafe'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589429/hansi-flick-raphinha-not-available-for-getafe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/f6f07647-d6e1-44c6-b832-cb27a2557b1f/_MGA3443.jpg" },
+            {
+                "id":  "4589422", "title":  "Final training session ahead of Barça v Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589422/final-training-session-ahead-of-barca-v-getafe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/edb33351-f265-4772-9ee7-23118d74936f/WhatsApp-Image-2026-10-09-at-13.53.59.jpeg" },
+            {
                 "id":  "4588488", "title":  "Xavi Espart renews until 2030",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588488/xavi-espart-renews-until-2030", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/0ca960b7-9e40-4f3d-acf7-a7d012fba730/WhatsApp-Image-2026-10-08-at-10.09.14.jpeg" },
@@ -227,10 +235,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" },
             {
-                "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/2b234519-9f5f-4b57-9d2b-5bc1ee9ce08a/_MGA7116.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +242,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/2b234519-9f5f-4b57-9d2b-5bc1ee9ce08a/_MGA7116.jpg" },
             {
                 "id":  "4581019", "title":  "More work at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581019/more-work-at-the-ciutat-esportiva", "time":  "",
@@ -329,15 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577721", "title":  "Seven records set by the 7-2",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" },
-            {
-                "id":  "4577513", "title":  "João Cancelo and his rocket shots",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577513/joao-cancelo-and-his-rocket-shots", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/4e6bd827-4cf3-4a10-b121-8a77e5bf1f85/2026-09-16_FCBvsRACING_032.jpg" },
-            {
-                "id":  "4577547", "title":  "Flick: 'Always good to start well'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577547/hansi-flick-always-good-to-start-well", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/87287840-0819-489a-ab62-28089b8d050a/2026-09-16_FCBvsRACING_001.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" }
         ]
     }
 };

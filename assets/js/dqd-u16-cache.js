@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-08 21:03 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-09 21:03 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-08 21:03:08",
+    "updated":  "2026-10-09 21:03:17",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -270,6 +270,51 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Victor Barbany",
+                        "id":  "2826562",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2826562/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-03-07",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Jan Giral",
+                        "id":  "2826563",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2826563/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pau Sarria",
+                        "id":  "2826564",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2826564/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-22",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Lucas Bernal",
                         "id":  "2447157",
                         "pos":  "D",
@@ -420,6 +465,51 @@ window.DQD_U16_CACHE = {
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "17289206",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "2",
+                        "start":  "1790403564",
+                        "home":  "Segre U16",
+                        "away":  "Barcelona U16",
+                        "homeId":  "1266411",
+                        "awayId":  "933329",
+                        "hs":  "2",
+                        "as":  "4",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  false
+                    },
+                    {
+                        "id":  "17289211",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "3",
+                        "start":  "1791008364",
+                        "home":  "Barcelona U16",
+                        "away":  "CE Sabadell U16",
+                        "homeId":  "933329",
+                        "awayId":  "1266406",
+                        "hs":  "1",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "17289220",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "4",
+                        "start":  "1791657024",
+                        "home":  "Espanyol U16",
+                        "away":  "Barcelona U16",
+                        "homeId":  "1213692",
+                        "awayId":  "933329",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     }
                 ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-08 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-09 21:01 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-08 21:01:46",
+    "updated":  "2026-10-09 21:01:42",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -215,7 +215,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Abdul Aziz Issah",
+                        "name":  "Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
                         "shirt":  "",
@@ -329,21 +329,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2606521/image",
                         "age":  "18岁",
                         "birthday":  "2008-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Juan Ybarra San Ciriaco",
-                        "id":  "2559209",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2559209/image",
-                        "age":  "22岁",
-                        "birthday":  "2004-01-01",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
