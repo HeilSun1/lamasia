@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-09 21:01:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-09 21:01:04 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-09 21:01:43",
+    "updated":  "2026-10-09 21:01:04",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6459753", "title":  "官方：巴萨和青训小将佩德罗-罗德里格斯续约至2030年",
+            "url":  "https://www.dongqiudi.com/articles/6459753.html", "time":  "2026-10-10 02:57",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/1D/280x210/crop/-/rBXRn2rJOQCACTC_AASMVmQhiV8991.jpg" },
         {
             "id":  "6456854", "title":  "每体：比西武于本周四结束国际比赛日归队。他没有参...",
             "url":  "https://www.dongqiudi.com/articles/6456854.html", "time":  "2026-10-09 15:29",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6332543", "title":  "布斯克茨：希望巴萨本赛季夺得欧冠；小法未来有可能执教巴萨",
             "url":  "https://www.dongqiudi.com/articles/6332543.html", "time":  "2026-09-12 06:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/63/1C/280x210/crop/-/rBXRn2qkhVqAWC2mAADmQMIRvlo409.jpg" },
-        {
-            "id":  "6330564", "title":  "每体：斯图加特租将恰托维奇完成首秀，争取让巴萨将自己买断",
-            "url":  "https://www.dongqiudi.com/articles/6330564.html", "time":  "2026-09-11 21:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/61/FC/280x210/crop/-/rBXRDGqj-SuAKcgrAAEFY-zyukw159.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/63/1C/280x210/crop/-/rBXRn2qkhVqAWC2mAADmQMIRvlo409.jpg" }
     ]
 };

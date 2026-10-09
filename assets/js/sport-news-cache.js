@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-09 21:05:40 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-09 21:01:29 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-09 21:05:40",
+    "updated":  "2026-10-09 21:01:29",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135189355", "title":  "El plan del Barça para salvar a Isma Ziani, el '9' de La Masia castigado por las lesiones",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/plan-barca-salvar-isma-ziani-135189355", "time":  "2026-10-09 19:18",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/82cd6960-71a4-40fc-9ec9-9e65185fbd97_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135185334", "title":  "Oficial: El Barça blinda a Pedro Rodríguez, uno de los grandes cerebros de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-blinda-pedro-rodriguez-135185334", "time":  "2026-10-09 18:48",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135187090", "title":  "Barça Atlètic-SD Logroñés: Vuelve Ebrima en un duelo de contrastes en el Johan",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-vuelve-135187090", "time":  "2026-10-09 17:03",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1ffec9df-d86f-4d44-ba90-997beba3f664_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135148016", "title":  "Frenazo obligado para el gran diamante de La Masia: David Moreno no jugará hasta diciembre",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-obligado-gran-diamante-masia-135148016", "time":  "2026-10-08 16:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "134999398", "title":  "Salto bestial en La Masia: el cadete Héctor Asumu debuta con el Juvenil A",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-07 15:32",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134045648", "title":  "Òscar Gistau apunta a la Youth League: el '9' más prometedor de La Masia quiere reivindicarse a base de goles",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oscar-gistau-apunta-youth-league-134045648", "time":  "2026-09-07 18:44",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_640w_0_x1351y347.webp" },
-        {
-            "id":  "134039223", "title":  "El hijo de Pedro Rodríguez se suma al Sub-11 B del Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-pedro-rodriguez-suma-sub-134039223", "time":  "2026-09-07 16:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/221fcb56-d51c-4d5b-a7a2-43fbc980e004_16-9-discover-aspect-ratio_640w_0_x558y121.webp" },
-        {
-            "id":  "134014200", "title":  "El cambio radical de Ignasi Quer: De la Lliga Elit a anotar un póker en el Johan",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cambio-radical-ignasi-quer-lliga-134014200", "time":  "2026-09-07 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/29ca953e-0a32-488d-bc55-ff4640a5b48f_16-9-discover-aspect-ratio_640w_0_x511y127.webp" },
-        {
-            "id":  "134005269", "title":  "Debut salvaje de Ignasi Quer: Cuatro goles del '9' del Barça Atlètic en un estreno soñado",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-salvaje-ignasi-quer-cuatro-134005269", "time":  "2026-09-06 20:21",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4ad43a0c-0fc9-4abd-9c36-437608b16f06_16-9-discover-aspect-ratio_640w_0_x732y110.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_640w_0_x1351y347.webp" }
     ]
 };

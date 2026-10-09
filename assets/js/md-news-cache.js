@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-09 21:05:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-09 21:01:30 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-09 21:05:42",
+    "updated":  "2026-10-09 21:01:30",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "title":  "La brutal acción de Dabone que está dando la vuelta a las redes: No es de este planeta",
+            "url":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "time":  "2026-10-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/09/6ac920728a6ef.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "title":  "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia",
             "url":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "time":  "2026-10-09 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "title":  "Otro sabio prematuro",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "time":  "2026-08-29 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a90bd14e8991.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "title":  "Ignacio Alabart, nuevo capitán del Barça de hockey patines",
-            "url":  "https://www.mundodeportivo.com/hockey-patines/20260828/1004220764/ignacio-alabart-nuevo-capitan-barca-hockey-patines.html", "time":  "2026-08-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a91ced9d9dbe.png" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a90bd14e8991.jpeg" }
     ]
 };
