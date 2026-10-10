@@ -7,6 +7,7 @@
      3. 点击球员 → 点击槽位放置；亦可拖拽放置 / 拖动场上球员换位
      4. 随机首发、清空、复制首发文本；localStorage 自动保存
    依赖：data.js（LAMASIA_DATA）+ dqd-barca-atletic-cache.js + dqd-u19/u18/u16-cache.js
+         manual-photos-hook.js（可选：手动补的照片，见 photoFor）
    仅用于 formation.html
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -49,7 +50,8 @@
       pool[k] = {
         key: k, en: p.en || "", zh: p.zh || "", pos: p.pos || "", team: p.team || "",
         nation: p.nation || "", age: p.age || "", value: p.value || "", note: p.note || "",
-        img: p.img || "", src: p.src || ""
+        img: p.img || "", src: p.src || "",
+        mkeys: p.mkey ? [p.mkey] : []     // 各数据源对应的手动照片键（见 photoFor）
       };
     } else {
       const e = pool[k];
@@ -61,7 +63,27 @@
       if (!e.value && p.value) e.value = p.value;
       if (!e.note && p.note) e.note = p.note;
       if (!e.team && p.team) e.team = p.team;
+      // 同一球员可能同时出现在多个数据源，手动照片键一并记下（键各有各的命名空间）
+      if (p.mkey && e.mkeys.indexOf(p.mkey) === -1) e.mkeys.push(p.mkey);
     }
+  }
+
+  /* 手动补的照片：按记下的键依次查 ManualPhoto，查到就用它盖过源里的图 ——
+     这些照片本来就是补「源头没有/失效」的空位（tools/photo-tool.html 也是只给没照片的行提供入口）。
+     值的形态：data:（工具内嵌）、http(s):（贴的直链）、站点根相对路径（上线的 manual-photos.js）。 */
+  function manualSrc(v) {
+    if (/^(data:|blob:|https?:)/i.test(v)) return v;
+    return String(v).replace(/^\.\.\//, "").replace(/^\//, "");   // formation.html 就在站点根目录
+  }
+  function photoFor(p) {
+    const keys = p.mkeys || [];
+    if (window.ManualPhoto) {
+      for (let i = 0; i < keys.length; i++) {
+        const m = window.ManualPhoto(keys[i]);
+        if (m) return manualSrc(m);
+      }
+    }
+    return p.img || "";
   }
 
   // 1) 本地官方名单（优先级最高：含中文名与备注）
@@ -77,7 +99,8 @@
       addPlayer({
         en: p.name, zh: p.zh || "", pos: p.pos, team: TEAM_OF[tid],
         nation: p.nation || "", note: p.note || "",
-        img: p.img ? ("assets/img/players/" + p.img) : "", src: "data"
+        img: p.img ? ("assets/img/players/" + p.img) : "", src: "data",
+        mkey: "local:" + tid + ":" + normKey(p.name)
       });
       // 别名：Sofascore 常用昵称（如 "Paumi Mateos" → "Pau Miguel Mateos"）
       String(p.nameAlias || "").split(",").forEach(function (al) {
@@ -89,9 +112,9 @@
   // 2) Sofascore 每日缓存（U19 = U19 A，U18 = U19 B，U16 = U16）
   const SOFA_POS = { G: "GK", D: "DF", M: "MF", F: "FW" };
   [
-    { c: window.DQD_U19_CACHE, t: "U19 A" },
-    { c: window.DQD_U18_CACHE, t: "U19 B" },
-    { c: window.DQD_U16_CACHE, t: "U16" }
+    { c: window.DQD_U19_CACHE, t: "U19 A", tk: "u19" },
+    { c: window.DQD_U18_CACHE, t: "U19 B", tk: "u18" },
+    { c: window.DQD_U16_CACHE, t: "U16", tk: "u16" }
   ].forEach(function (s) {
     if (!s.c || !s.c.players) return;
     (s.c.players || []).forEach(function (p) {
@@ -100,7 +123,8 @@
       addPlayer({
         en: p.name, pos: SOFA_POS[p.pos] || "", team: s.t,
         nation: nation(p.nation), age: p.age || "", value: p.value || "",
-        img: p.photo || "", src: "sofascore"
+        img: p.photo || "", src: "sofascore",
+        mkey: p.id != null ? (s.tk + ":" + p.id) : ""
       }, k);
     });
   });
@@ -120,7 +144,8 @@
         const k = normKey(en) || ("dqd-" + (p.person_id || initials(p.person_name)));
         addPlayer({
           en: en, zh: p.person_name, pos: pos, team: "预备队",
-          nation: p.nationality_name || "", age: p.age || "", img: img, src: "barca-atletic"
+          nation: p.nationality_name || "", age: p.age || "", img: img, src: "barca-atletic",
+          mkey: p.person_id != null ? ("barca:" + p.person_id) : ""
         }, k);
       });
     });
@@ -293,9 +318,10 @@
      ───────────────────────────────────────────── */
   function avatarHtml(p, cls) {
     const ini = esc(initials(p.zh || p.en || "·"));
+    const src = photoFor(p);
     return '<span class="fb-avatar ' + (cls || "") + '">' +
-      (p.img ? '<img src="' + esc(p.img) + '" alt="" referrerpolicy="no-referrer" loading="lazy" draggable="false" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-      '<span class="fb-init" style="' + (p.img ? "display:none" : "display:grid") + '">' + ini + '</span>' +
+      (src ? '<img src="' + esc(src) + '" alt="" referrerpolicy="no-referrer" loading="lazy" draggable="false" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
+      '<span class="fb-init" style="' + (src ? "display:none" : "display:grid") + '">' + ini + '</span>' +
       '</span>';
   }
 
