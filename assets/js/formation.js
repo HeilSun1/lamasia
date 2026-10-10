@@ -316,13 +316,42 @@
   /* ─────────────────────────────────────────────
      四、渲染
      ───────────────────────────────────────────── */
-  function avatarHtml(p, cls) {
+  function avatarHtml(p, cls, zoom) {
     const ini = esc(initials(p.zh || p.en || "·"));
     const src = photoFor(p);
     return '<span class="fb-avatar ' + (cls || "") + '">' +
-      (src ? '<img src="' + esc(src) + '" alt="" referrerpolicy="no-referrer" loading="lazy" draggable="false" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
+      (src ? '<img src="' + esc(src) + '" alt=""' + (zoom ? ' title="点击看大图"' : '') + ' referrerpolicy="no-referrer" loading="lazy" draggable="false" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
       '<span class="fb-init" style="' + (src ? "display:none" : "display:grid") + '">' + ini + '</span>' +
       '</span>';
+  }
+
+  /* 头像灯箱：点球员池里的头像看大图（.lightbox 样式复用 style.css，与梯队页同一个观感）。
+     场上槽位不做 —— 那儿整块是「点击移除 / 拖动换位」，另在首发名单里有 ✕ 可移除。 */
+  function openPhoto(src, caption) {
+    if (!src) return;
+    let lb = $("fb-lightbox");
+    if (!lb) {
+      lb = document.createElement("div");
+      lb.id = "fb-lightbox";
+      lb.className = "lightbox";
+      lb.innerHTML = '<div class="lightbox-inner">' +
+        '<button class="lightbox-close" title="关闭">✕</button>' +
+        '<img alt="">' +
+        '<div class="lightbox-caption"></div>' +
+        '</div>';
+      document.body.appendChild(lb);
+      lb.addEventListener("click", function (e) {
+        if (e.target === lb || e.target.classList.contains("lightbox-close")) closePhoto();
+      });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") closePhoto(); });
+    }
+    lb.querySelector("img").src = src;
+    lb.querySelector(".lightbox-caption").textContent = caption || "";
+    lb.classList.add("open");
+  }
+  function closePhoto() {
+    const lb = $("fb-lightbox");
+    if (lb) lb.classList.remove("open");
   }
 
   function renderPitch() {
@@ -369,7 +398,7 @@
     }
     grid.innerHTML = list.map(function (p) {
       return '<button class="fb-player' + (activeKey === p.key ? " active" : "") + (uk[p.key] ? " used" : "") + '" draggable="true" data-key="' + esc(p.key) + '" title="' + esc(p.zh || p.en) + (p.note ? " · " + esc(p.note) : "") + '">' +
-        avatarHtml(p) +
+        avatarHtml(p, "", true) +
         '<span class="fb-p-name">' + esc(p.zh || p.en) + '</span>' +
         '<span class="fb-p-meta">' +
           '<span class="fb-pos ' + (POS_CLASS[p.pos] || "other") + '">' + (POS_ZH[p.pos] || p.pos || "?") + '</span>' +
@@ -455,6 +484,15 @@
   let dragKey = null;
 
   document.addEventListener("click", function (e) {
+    // 点球员池里的头像 → 看大图（点卡片其余部分仍是选中/取消，拖动不受影响）
+    const avImg = e.target.closest ? e.target.closest(".fb-player .fb-avatar img") : null;
+    if (avImg) {
+      e.preventDefault();
+      const btn = avImg.closest(".fb-player");
+      const p = btn ? pool[btn.getAttribute("data-key")] : null;
+      openPhoto(avImg.src, p ? ((p.zh || p.en) + (p.zh && p.en ? " · " + p.en : "") + (p.team ? "（" + p.team + "）" : "")) : avImg.alt);
+      return;
+    }
     const fmtTab = e.target.closest(".fb-fmt-tab");
     if (fmtTab) {
       e.preventDefault();
