@@ -1,6 +1,6 @@
-/* 手动补充的球员照片 —— 由 tools/photo-tool.html 生成，图片已压缩存到
+/* 手动补充的球员照片 —— 由 tools/photo-tool.html + tools/apply_manual_photos.py 生成，图片存在
    assets/img/players/manual/。与 manual-photos-hook.js 配合：站点读取
-   window.MANUAL_PHOTOS[key]（键形如 alumni:messi）覆盖默认照片。 */
+   window.MANUAL_PHOTOS[key]（键形如 alumni:messi / local:juvenil-b:pauespi）覆盖照片。 */
 window.MANUAL_PHOTOS = {
   "alumni:busquets": "assets/img/players/manual/busquets.jpg",
   "alumni:gavi": "assets/img/players/manual/gavi.jpg",
@@ -14,5 +14,27 @@ window.MANUAL_PHOTOS = {
   "alumni:yamal": "assets/img/players/manual/yamal.jpg",
   "barca:51050111": "assets/img/players/manual/barca-51050111.jpg",
   "barca:51210430": "assets/img/players/manual/barca-51210430.jpg",
-  "barca:51246092": "assets/img/players/manual/barca-51246092.jpg"
+  "barca:51246092": "assets/img/players/manual/barca-51246092.jpg",
+  "local:cadete-b:agusmarcet": "assets/img/players/manual/local-cadete-b-agusmarcet.jpg",
+  "local:cadete-b:alanguerra": "assets/img/players/manual/local-cadete-b-alanguerra.jpg",
+  "local:cadete-b:alexguardado": "assets/img/players/manual/local-cadete-b-alexguardado.jpg",
+  "local:cadete-b:alexpliego": "assets/img/players/manual/local-cadete-b-alexpliego.jpg",
+  "local:cadete-b:anderperez": "assets/img/players/manual/local-cadete-b-anderperez.jpg",
+  "local:cadete-b:antonioamaya": "assets/img/players/manual/local-cadete-b-antonioamaya.jpg",
+  "local:cadete-b:ayoubhilali": "assets/img/players/manual/local-cadete-b-ayoubhilali.jpg",
+  "local:cadete-b:bielchacon": "assets/img/players/manual/local-cadete-b-bielchacon.jpg",
+  "local:cadete-b:davidmoreno": "assets/img/players/manual/local-cadete-b-davidmoreno.jpg",
+  "local:cadete-b:derekpuig": "assets/img/players/manual/local-cadete-b-derekpuig.jpg",
+  "local:cadete-b:edgardoblas": "assets/img/players/manual/local-cadete-b-edgardoblas.jpg",
+  "local:cadete-b:enzoperez": "assets/img/players/manual/local-cadete-b-enzoperez.jpg",
+  "local:cadete-b:fodediallo": "assets/img/players/manual/local-cadete-b-fodediallo.jpg",
+  "local:cadete-b:gaelseijo": "assets/img/players/manual/local-cadete-b-gaelseijo.jpg",
+  "local:cadete-b:gerardmateo": "assets/img/players/manual/local-cadete-b-gerardmateo.jpg",
+  "local:cadete-b:guerauvillegas": "assets/img/players/manual/local-cadete-b-guerauvillegas.jpg",
+  "local:cadete-b:hugotomas": "assets/img/players/manual/local-cadete-b-hugotomas.jpg",
+  "local:cadete-b:janmunte": "assets/img/players/manual/local-cadete-b-janmunte.jpg",
+  "local:cadete-b:johnovie": "assets/img/players/manual/local-cadete-b-johnovie.jpg",
+  "local:cadete-b:juanfernandez": "assets/img/players/manual/local-cadete-b-juanfernandez.jpg",
+  "local:cadete-b:poljou": "assets/img/players/manual/local-cadete-b-poljou.jpg",
+  "local:cadete-b:yibrahangarcia": "assets/img/players/manual/local-cadete-b-yibrahangarcia.jpg",
 };
