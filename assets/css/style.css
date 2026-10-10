@@ -874,7 +874,8 @@ a:hover { color: #0d54b8; }
   font-size: 13px; font-weight: 800; color: var(--muted);
 }
 .fb-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.fb-player .fb-avatar img { cursor: zoom-in; }   /* 球员池头像可点开看大图 */
+.fb-player .fb-avatar img,
+.fb-slot.filled .fb-avatar img { cursor: zoom-in; }   /* 这些头像可以点开看大图 */
 .fb-avatar .fb-init { width: 100%; height: 100%; display: grid; place-items: center; font-size: 13px; font-weight: 800; color: var(--muted); }
 .fb-p-name { font-size: 12.5px; font-weight: 700; color: var(--text); text-align: center; line-height: 1.25; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fb-p-meta { display: flex; flex-direction: column; align-items: center; gap: 3px; }

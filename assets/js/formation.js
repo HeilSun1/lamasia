@@ -365,7 +365,7 @@
       const wStyle = 'width:min(64px,' + s.w.toFixed(1) + '%)';
       if (p) {
         const mismatch = p.pos !== s.pos;
-        html += '<div class="fb-slot filled' + (mismatch ? " mismatch" : "") + '" style="left:' + s.x.toFixed(1) + '%;top:' + s.y.toFixed(1) + '%;' + wStyle + '" data-idx="' + i + '" title="' + esc(s.label) + ' · ' + esc(p.zh || p.en) + '（点击移除 / 拖动换位）">' +
+        html += '<div class="fb-slot filled' + (mismatch ? " mismatch" : "") + '" style="left:' + s.x.toFixed(1) + '%;top:' + s.y.toFixed(1) + '%;' + wStyle + '" data-idx="' + i + '" title="' + esc(s.label) + ' · ' + esc(p.zh || p.en) + '（点头像看大图 / 点姓名·角标移除 / 拖动换位）">' +
           '<span class="fb-slot-badge ' + (POS_CLASS[p.pos] || "other") + '">' + (POS_ZH[p.pos] || p.pos) + '</span>' +
           '<div class="fb-slot-card" draggable="true">' + avatarHtml(p, "sm") +
             '<span class="fb-slot-name">' + esc(p.zh || p.en) + '</span>' +
@@ -484,12 +484,18 @@
   let dragKey = null;
 
   document.addEventListener("click", function (e) {
-    // 点球员池里的头像 → 看大图（点卡片其余部分仍是选中/取消，拖动不受影响）
-    const avImg = e.target.closest ? e.target.closest(".fb-player .fb-avatar img") : null;
+    // 点头像 → 看大图（球员池 + 场上槽位都支持）
+    const avImg = e.target.closest ? e.target.closest(".fb-player .fb-avatar img, .fb-slot .fb-avatar img") : null;
     if (avImg) {
       e.preventDefault();
       const btn = avImg.closest(".fb-player");
-      const p = btn ? pool[btn.getAttribute("data-key")] : null;
+      const slot = avImg.closest(".fb-slot");
+      let p = null;
+      if (btn) p = pool[btn.getAttribute("data-key")];
+      else if (slot) {
+        const i = parseInt(slot.getAttribute("data-idx"), 10);
+        if (!isNaN(i) && state.slots[i]) p = pool[state.slots[i]];
+      }
       openPhoto(avImg.src, p ? ((p.zh || p.en) + (p.zh && p.en ? " · " + p.en : "") + (p.team ? "（" + p.team + "）" : "")) : avImg.alt);
       return;
     }
