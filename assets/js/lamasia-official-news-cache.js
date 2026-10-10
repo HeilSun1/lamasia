@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-10 11:09:00 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-10 21:03:20 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-10 11:09:00",
+    "updated":  "2026-10-10 21:03:20",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -139,6 +139,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4589519", "title":  "Barça squad for visit of Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589519/the-fc-barcelona-squad-for-visit-of-getafe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/ad1e67e8-4da0-4d06-b8da-fba7c97d3449/_MGA3203.jpg" },
+            {
+                "id":  "4589547", "title":  "PREVIEW | Barça v Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589547/preview-fc-barcelona-v-getafe", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4589429", "title":  "Flick: 'Raphinha not available for Getafe'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589429/hansi-flick-raphinha-not-available-for-getafe", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/f6f07647-d6e1-44c6-b832-cb27a2557b1f/_MGA3443.jpg" },
@@ -227,14 +235,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583000/7-2-win-against-racing-best-moment-from-september", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/fec78abc-8466-416a-b5b7-d7283f854741/_MGA7382.jpg" },
             {
-                "id":  "4581481", "title":  "One win away from best ever start to LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-best-ever-start-to-laliga", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/02764d52-c3c3-48f7-bd48-8c79b643713f/DAG-078-_M1A0875.jpg" },
-            {
-                "id":  "4581966", "title":  "Upcoming targets for Raphinha",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -242,6 +242,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4581481", "title":  "One win away from best ever start to LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-best-ever-start-to-laliga", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/02764d52-c3c3-48f7-bd48-8c79b643713f/DAG-078-_M1A0875.jpg" },
+            {
+                "id":  "4581966", "title":  "Upcoming targets for Raphinha",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" },
             {
                 "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
@@ -329,15 +337,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577802", "title":  "Joan Garcia medical update",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577802/joan-garcia-medical-update", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" },
-            {
-                "id":  "4577770", "title":  "Recovery session with Sevilla match in mind",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577770/recovery-session-as-thoughts-turn-to-sevilla-match", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/17f2f951-1a73-45fb-b110-108e34d69eb0/WhatsApp-Image-2026-09-17-at-13.51.04-3-.jpeg" },
-            {
-                "id":  "4577721", "title":  "Seven records set by the 7-2",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577721/seven-records-set-by-the-7-2", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/16/f594997f-a634-49f8-900a-2e7798a0fc2f/_MGA8940.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/17/c44cec6f-56ad-4ff6-a8fb-31f00adc3f89/2026-09-16_FCBvsRACING_088.jpg" }
         ]
     }
 };

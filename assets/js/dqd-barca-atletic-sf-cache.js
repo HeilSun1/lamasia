@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-10 11:07 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-10 21:01 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-10 11:07:23",
+    "updated":  "2026-10-10 21:01:32",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -730,7 +730,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16742273",
                         "comp":  "西协乙",
                         "round":  "7",
-                        "start":  "1792335600",
+                        "start":  "1792249200",
                         "home":  "Barcelona Atlètic",
                         "away":  "Utebo FC",
                         "homeId":  "24343",

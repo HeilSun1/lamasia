@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-10 11:08；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-10 21:03；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-10 11:08:58",
+    "updated":  "2026-10-10 21:03:17",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -713,8 +713,8 @@ window.LAMASIA_SCHEDULES = {
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
                                        "round":  "6",
-                                       "start":  "1792606500",
-                                       "date":  "2026-10-21",
+                                       "start":  "1792692900",
+                                       "date":  "2026-10-22",
                                        "tbd":  false,
                                        "home":  "Damm A",
                                        "away":  "FC Barcelona A",
@@ -1247,8 +1247,8 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰优选联赛 Cadete G1",
                                          "compEn":  "Preferente Catalana Cadete G.1",
                                          "round":  "4",
-                                         "start":  "1792317600",
-                                         "date":  "2026-10-18",
+                                         "start":  "1792260000",
+                                         "date":  "2026-10-17",
                                          "tbd":  false,
                                          "home":  "Gavà A",
                                          "away":  "FC Barcelona A",
@@ -1807,9 +1807,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "Cornellà A",
                                          "homeId":  "11113",
                                          "awayId":  "11221",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "5",
+                                         "as":  "0",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  true,
                                          "venue":  "Ciutat Esportiva Joan Gamper"

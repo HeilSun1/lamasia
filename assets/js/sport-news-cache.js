@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-10 11:09:10 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-10 21:05:54 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-10 11:09:10",
+    "updated":  "2026-10-10 21:05:54",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135200720", "title":  "Bisiwu se estrena por fin en casa",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/bisiwu-estrena-casa-barcelona-johan-cruyff-135200720", "time":  "2026-10-10 11:49",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e49f309c-a995-442a-bac3-9c8ce0865974_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135151674", "title":  "La idea que se enseña en La Masia y desvela uno de sus maestros: \"Cuando tu sueltas el balón en un colegio...\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/idea-ensena-masia-desvela-maestros-135151674", "time":  "2026-10-10 06:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/84520e78-7bd5-4edd-b2a7-b6165480f472_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135189355", "title":  "El plan del Barça para salvar a Isma Ziani, el '9' de La Masia castigado por las lesiones",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/plan-barca-salvar-isma-ziani-135189355", "time":  "2026-10-09 19:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/82cd6960-71a4-40fc-9ec9-9e65185fbd97_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/82cd6960-71a4-40fc-9ec9-9e65185fbd97_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135185334", "title":  "Oficial: El Barça blinda a Pedro Rodríguez, uno de los grandes cerebros de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-blinda-pedro-rodriguez-135185334", "time":  "2026-10-09 18:48",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135187090", "title":  "Barça Atlètic-SD Logroñés: Vuelve Ebrima en un duelo de contrastes en el Johan",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-vuelve-135187090", "time":  "2026-10-09 17:03",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134131360", "title":  "Barcelona - Feyenoord, en directo: Youth League, Jornada 1 de la fase Liga, en vivo hoy",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-feyenoord-directo-youth-league-134131360", "time":  "2026-09-10 07:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
-        {
-            "id":  "134060176", "title":  "El Sub-19 del Barça inicia el camino para conquistar su cuarta Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sub-19-barca-inicia-camino-134060176", "time":  "2026-09-09 07:47",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6e71b0b3-3326-4f7a-97e4-535826afa412_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134045648", "title":  "Òscar Gistau apunta a la Youth League: el '9' más prometedor de La Masia quiere reivindicarse a base de goles",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oscar-gistau-apunta-youth-league-134045648", "time":  "2026-09-07 18:44",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1fb1031c-e558-40b3-b502-9bf64be5aa5d_16-9-discover-aspect-ratio_640w_0_x1351y347.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" }
     ]
 };
