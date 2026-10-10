@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-09 21:01:04 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-10 11:07:23 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-09 21:01:04",
+    "updated":  "2026-10-10 11:07:23",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6460911", "title":  "传奇重逢二缺一。",
+            "url":  "https://www.dongqiudi.com/articles/6460911.html", "time":  "2026-10-10 09:42",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/10/d268e8dc5880d1e4fb3cf41dde4b5d0dXvz62A_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6460866", "title":  "🔴🔵 亚马尔自曝15岁时曾被停赛！布斯克茨的一番...",
+            "url":  "https://www.dongqiudi.com/articles/6460866.html", "time":  "2026-10-10 09:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/D3/280x210/crop/-/rBXRDGrJkweAOGl0AAYakJu7Prc42.jpeg" },
+        {
+            "id":  "6460714", "title":  "巴萨为佩德罗举行了退役纪念仪式，蒂亚戈、德科、普...",
+            "url":  "https://www.dongqiudi.com/articles/6460714.html", "time":  "2026-10-10 08:36",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/BA/280x210/crop/-/rBXRDGrJhvaALrhvACU1zrKGWnw302.jpg" },
         {
             "id":  "6459753", "title":  "官方：巴萨和青训小将佩德罗-罗德里格斯续约至2030年",
             "url":  "https://www.dongqiudi.com/articles/6459753.html", "time":  "2026-10-10 02:57",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6348995", "title":  "罗德里：巴萨的训练方式让我很意外，第一天就直接上强度",
             "url":  "https://www.dongqiudi.com/articles/6348995.html", "time":  "2026-09-15 17:39",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6D/96/280x210/crop/-/rBXRn2qpEHKAVwGpAAE-jWT_v-c048.jpg" },
-        {
-            "id":  "6345449", "title":  "每体：巴萨谨慎对待16岁中场通卡拉伤情，预计10月中旬复出",
-            "url":  "https://www.dongqiudi.com/articles/6345449.html", "time":  "2026-09-14 21:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6B/30/280x210/crop/-/rBXRn2qn-CGADj5lAAIwIbOXayI645.jpg" },
-        {
-            "id":  "6342294", "title":  "巴萨竞技战报 20260914",
-            "url":  "https://www.dongqiudi.com/articles/6342294.html", "time":  "2026-09-14 09:34",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/68/E9/280x210/crop/-/rBXRn2qm-f6ADC1oAAbMTClxZKs456.jpg" },
-        {
-            "id":  "6332543", "title":  "布斯克茨：希望巴萨本赛季夺得欧冠；小法未来有可能执教巴萨",
-            "url":  "https://www.dongqiudi.com/articles/6332543.html", "time":  "2026-09-12 06:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/63/1C/280x210/crop/-/rBXRn2qkhVqAWC2mAADmQMIRvlo409.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/6D/96/280x210/crop/-/rBXRn2qpEHKAVwGpAAE-jWT_v-c048.jpg" }
     ]
 };

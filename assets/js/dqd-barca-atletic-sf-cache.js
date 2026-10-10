@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-09 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-10 11:07 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-09 21:01:42",
+    "updated":  "2026-10-10 11:07:23",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -185,6 +185,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Joni Hernández",
+                        "id":  "2606521",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2606521/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-05-23",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ebrima Tunkara",
                         "id":  "2128084",
                         "pos":  "M",
@@ -317,21 +332,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "173",
                         "value":  "22万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Hernandez Jones Jonathan",
-                        "id":  "2606521",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2606521/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
                         "injury":  null
                     },
                     {
