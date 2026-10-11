@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-10 21:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-11 10:48 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-10 21:02:10",
+    "updated":  "2026-10-11 10:48:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -143,7 +143,7 @@ window.DQD_U19_CACHE = {
                         "nation":  "Azerbaijan",
                         "photo":  "https://img.sofascore.com/api/v1/player/1990908/image",
                         "age":  "18岁",
-                        "birthday":  "2008-08-09",
+                        "birthday":  "2008-08-08",
                         "foot":  "右脚",
                         "height":  "185",
                         "value":  "",
@@ -383,7 +383,7 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2405426/image",
                         "age":  "17岁",
-                        "birthday":  "2009-01-21",
+                        "birthday":  "2009-01-20",
                         "foot":  "左脚",
                         "height":  "",
                         "value":  "",
@@ -550,10 +550,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Barcelona U19",
                         "homeId":  "492068",
                         "awayId":  "90128",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "1",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -990,6 +990,21 @@ window.DQD_U19_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "16541418",
+                        "comp":  "西青甲 G3",
+                        "round":  "30",
+                        "start":  "1809270000",
+                        "home":  "Barcelona U19",
+                        "away":  "Espanyol U19",
+                        "homeId":  "90128",
+                        "awayId":  "299636",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };

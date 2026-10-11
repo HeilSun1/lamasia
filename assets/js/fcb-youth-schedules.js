@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-10 20:12；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-11 10:49；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-10 20:12:34",
+    "updated":  "2026-10-11 10:49:12",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -682,9 +682,9 @@ window.LAMASIA_SCHEDULES = {
                                        "away":  "FC Barcelona A",
                                        "homeId":  "11162",
                                        "awayId":  "11111",
-                                       "hs":  "",
-                                       "as":  "",
-                                       "status":  "Not started",
+                                       "hs":  "3",
+                                       "as":  "1",
+                                       "status":  "Ended",
                                        "code":  "0",
                                        "isHome":  false,
                                        "venue":  "Ciudad Deportiva San Adriá"
