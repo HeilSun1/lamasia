@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-11 10:50:14 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-11 20:23:23 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-11 10:50:14",
+    "updated":  "2026-10-11 20:23:23",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135234494", "title":  "Artillería para el Barça en la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artilleria-barca-youth-league-135234494", "time":  "2026-10-11 19:40",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_default_0_x630y170.webp" },
+        {
+            "id":  "135038867", "title":  "\"No es casual que después de Messi, en La Masia haya crecido Lamine, el Barça sabe detectar el talento\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/casual-despues-messi-masia-haya-135038867", "time":  "2026-10-11 17:10",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135221437", "title":  "Belletti tiene defensa",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-defensa-barcelona-atletic-iker-landry-135221437", "time":  "2026-10-11 09:14",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/00ca00b4-7754-478e-a668-3853b611dd3e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135207914", "title":  "Ybarra firma la victoria in extremis del Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ybarra-firma-victoria-in-extremis-135207914", "time":  "2026-10-10 16:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a762af62-45a8-4a74-9e52-c5284fecab05_16-9-discover-aspect-ratio_default_0_x613y230.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a762af62-45a8-4a74-9e52-c5284fecab05_16-9-discover-aspect-ratio_640w_0_x613y230.webp" },
         {
             "id":  "135205743", "title":  "Barça Atlètic - SD Logroñés en directo: resultado y goles en vivo del partido de Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-directo-vivo-resultado-goles-segunda-rfef-135205743", "time":  "2026-10-10 13:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_default_0_x622y138.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
         {
             "id":  "135200720", "title":  "Bisiwu se estrena por fin en casa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/bisiwu-estrena-casa-barcelona-johan-cruyff-135200720", "time":  "2026-10-10 11:49",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134143674", "title":  "UD Logroñés Promesas-Barça Atlètic, en directo: Sigue el partido de la jornada 2 de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-logrones-promesas-barca-atletic-134143674", "time":  "2026-09-13 09:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
-        {
-            "id":  "134213373", "title":  "Bisiwu y Quer son las grandes atracciones",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/llego-hora-bisiwu-quer-barca-atletic-logrono-134213373", "time":  "2026-09-12 18:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c9207be2-461d-4af7-9bc3-9de4b63dd543_16-9-discover-aspect-ratio_640w_0_x926y193.webp" },
-        {
-            "id":  "134202860", "title":  "La triple dimensión de Jordi Pesquer: ¿Primer equipo, Juvenil A o Barça B ?",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-dimension-jordi-pesquer-primer-134202860", "time":  "2026-09-12 10:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2ec9fa99-821c-466c-839a-e69b2a2d5a5e_16-9-discover-aspect-ratio_640w_0_x575y207.webp" },
-        {
-            "id":  "134143125", "title":  "Nil Vicens: “Esto acaba de empezar”",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/nil-vicens-acaba-empezar-134143125", "time":  "2026-09-10 11:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" }
     ]
 };

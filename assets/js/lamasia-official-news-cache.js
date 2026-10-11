@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-11 10:49:13 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-11 20:23:21 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-11 10:49:13",
+    "updated":  "2026-10-11 20:23:21",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -143,6 +143,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4590582", "title":  "When and where to watch Galatasaray v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590582/when-and-where-to-watch-galatasaray-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4590493", "title":  "Recovery session with Galatasaray on the horizon",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590493/recovery-session-with-galatasaray-on-the-horizon", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/11/a2432c02-885e-4c29-bc18-895671dfb276/image00012.jpeg" },
+            {
+                "id":  "4590436", "title":  "Barça equal best ever league start",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590436/fc-barcelona-equal-best-start-to-league-season", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/11/7c62e302-3558-42fa-9629-12dba6a1c2df/_MGA7833.jpg" },
+            {
                 "id":  "4590143", "title":  "FC Barcelona 3-0 Getafe: Still on target",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590143/fc-barcelona-3-0-getafe-still-on-target", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/10/3520cd40-5101-4a31-a652-ac94046b8f62/_MGA7844.jpg" },
@@ -223,6 +235,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4586808/back-at-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/20c25ef5-c6da-471e-82ba-c24088fbc5ac/image00002.jpeg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4585817", "title":  "Final blaugrana duel of the international break",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c481eb7f-6ab2-4ff8-a522-0e0b8108660b/DAG-421-_M1A9900.jpg" },
@@ -234,14 +254,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4585128", "title":  "Cancelo goal against Racing, best of the month",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585128/cancelo-goal-against-racing-best-of-the-month", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/01/98f6dadb-8d7b-4229-888b-f1c94449d1eb/DAG-368-_M1A2937.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4584325", "title":  "Exciting October in store",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4584325/big-games-coming-up-in-october", "time":  "",
@@ -329,19 +341,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4577776", "title":  "PREVIEW | Sevilla FC v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577776/preview-sevilla-fc-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4578251", "title":  "Barça players called up for international duty",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578251/fc-barcelona-players-called-up-for-international-duty", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/0d42c5e5-9fb7-41f8-a91f-a6dea21dd10b/DAG-445-_M1A4241.jpg" },
-            {
-                "id":  "4577749", "title":  "When and where to watch Sevilla v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4577749/when-and-where-to-watch-sevilla-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4578296", "title":  "Flick: 'We're focused on our own job'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4578296/hansi-flick-were-focused-on-our-own-job", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/18/09173c69-fc62-4c98-b675-909d64207895/_MGA9571.jpg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };

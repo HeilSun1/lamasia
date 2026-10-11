@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-11 10:46 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-11 20:22 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-11 10:46:01",
+    "updated":  "2026-10-11 20:22:59",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2085,7 +2085,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙/冈比亚",
                                                                   "other_logo":  [
-                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
+
                                                                                  ],
                                                                   "person_en_name":  "Ebrima Tunkara",
                                                                   "person_id":  "51038125",

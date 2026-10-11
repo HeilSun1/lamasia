@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-11 10:50:16 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-11 20:23:25 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-11 10:50:16",
+    "updated":  "2026-10-11 20:23:25",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "title":  "Conte, alucinado con el Barça y su cantera",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "time":  "2026-10-11 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/01/29/697a9a89e8d78.r_d.2633-488-2920.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237401/vuelta-tunkara-golpe-efecto-belletti.html", "title":  "La vuelta de Tunkara, golpe de efecto para Belletti",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237401/vuelta-tunkara-golpe-efecto-belletti.html", "time":  "2026-10-11 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/11/6acba59b8b51c.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "title":  "La brutal acción de Dabone que está dando la vuelta a las redes: No es de este planeta",
             "url":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "time":  "2026-10-09 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "title":  "La Masia deja un pastizal en ingresos en este 2026",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "time":  "2026-08-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/21/6a886001b6900.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "title":  "El plan que Flick y el Barça le tienen reservado a Pesquer",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221185/plan-flick-barca-le-reservado-pesquer.html", "time":  "2026-08-30 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/04/6a723e2daa11a.r_d.1411-842-4181.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "title":  "Otro sabio prematuro",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220772/sabio-prematuro.html", "time":  "2026-08-29 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/28/6a90bd14e8991.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/21/6a886001b6900.jpeg" }
     ]
 };
