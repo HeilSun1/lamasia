@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-11 10:49 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-12 14:30 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-11 10:49:03",
+    "updated":  "2026-10-12 14:30:14",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -113,7 +113,7 @@ window.DQD_U16_CACHE = {
                         "nation":  "Kazakhstan",
                         "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
                         "age":  "15岁",
-                        "birthday":  "2010-11-10",
+                        "birthday":  "2010-11-09",
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "",
