@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-12 14:32:03 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-12 23:05:11 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-12 14:32:03",
+    "updated":  "2026-10-12 23:05:11",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135259950", "title":  "Pedro Rodríguez, el cerebro ideal para liderar el primer triunfo blaugrana en la Youth",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-cerebro-ideal-liderar-135259950", "time":  "2026-10-12 19:16",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135252275", "title":  "Estreno goleador de Haoyan Li, el primer jugador chino en la historia del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275", "time":  "2026-10-12 17:49",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135234494", "title":  "Artillería para el Barça en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artilleria-barca-youth-league-135234494", "time":  "2026-10-11 19:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_default_0_x630y170.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
         {
             "id":  "135038867", "title":  "\"No es casual que después de Messi, en La Masia haya crecido Lamine, el Barça sabe detectar el talento\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/casual-despues-messi-masia-haya-135038867", "time":  "2026-10-11 17:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135221437", "title":  "Belletti tiene defensa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-defensa-barcelona-atletic-iker-landry-135221437", "time":  "2026-10-11 09:14",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134248266", "title":  "Festival del Juvenil A del Barça de Pol Planas en Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/festival-juvenil-barca-pol-planas-134248266", "time":  "2026-09-13 19:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_640w_0_x596y206.webp" },
-        {
-            "id":  "134236707", "title":  "El Barça Atlètic arranca un empate con polémica en Logroño",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-arranca-empate-polemica-134236707", "time":  "2026-09-13 12:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab46de8e-aef7-496a-921f-5008472894df_16-9-discover-aspect-ratio_640w_0_x735y257.webp" },
-        {
-            "id":  "134143674", "title":  "UD Logroñés Promesas-Barça Atlètic, en directo: Sigue el partido de la jornada 2 de la Segunda RFEF, en vivo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-logrones-promesas-barca-atletic-134143674", "time":  "2026-09-13 09:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_640w_0_x596y206.webp" }
     ]
 };
