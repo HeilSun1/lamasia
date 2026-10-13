@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-13 15:17:50 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-13 21:21:02 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-13 15:17:50",
+    "updated":  "2026-10-13 21:21:02",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
@@ -20,6 +20,18 @@ window.DQD_BARCA_NEWS = {
             "id":  "6475057", "title":  "每体：波黑国家队总监到场考察恰托维奇，巴萨满意其表现",
             "url":  "https://www.dongqiudi.com/articles/6475057.html", "time":  "2026-10-12 17:35",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" },
+        {
+            "id":  "6474228", "title":  "每体：19岁的中后卫昂斯坦伤愈复出，即将代表巴萨...",
+            "url":  "https://www.dongqiudi.com/articles/6474228.html", "time":  "2026-10-12 10:41",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AF/55/280x210/crop/-/rBXRDGrMSMaAPN7lAACFPDkHDRI269.jpg" },
+        {
+            "id":  "6469356", "title":  "通卡拉更新ins：感谢上帝，我们又回来啦！接下来...",
+            "url":  "https://www.dongqiudi.com/articles/6469356.html", "time":  "2026-10-11 18:10",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AD/6E/280x210/crop/-/rBXRn2rLYE-AYslzADTdVRr3s2Y749.jpg" },
+        {
+            "id":  "6467827", "title":  "巴萨竞技在第90分钟打入绝杀进球，帮助球队巩固了...",
+            "url":  "https://www.dongqiudi.com/articles/6467827.html", "time":  "2026-10-11 10:36",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/11/ae033d9214d61c1430c2ab3547fa688fvkqhjv_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6460911", "title":  "传奇重逢二缺一。",
             "url":  "https://www.dongqiudi.com/articles/6460911.html", "time":  "2026-10-10 09:42",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6368963", "title":  "世体：利瓦科维奇还没适应巴萨的风格，3C将首发出战塞维",
             "url":  "https://www.dongqiudi.com/articles/6368963.html", "time":  "2026-09-19 13:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/3E/280x210/crop/-/rBXRDGquGluAVWCRAAF-tq1vRAg943.jpg" },
-        {
-            "id":  "6364872", "title":  "霍安受伤后，什琴斯尼、利瓦科维奇和伊克尔-罗德里...",
-            "url":  "https://www.dongqiudi.com/articles/6364872.html", "time":  "2026-09-18 18:02",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/18/3d73de23875bd51fa0d4ca9086d56155XOtfbV_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
-        {
-            "id":  "6364762", "title":  "跟队：霍安缺席巴萨今日训练，小将伊克尔被征召进一线队",
-            "url":  "https://www.dongqiudi.com/articles/6364762.html", "time":  "2026-09-18 17:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/2A/280x210/crop/-/rBXRn2qtB2WARGioAACzmj-rXRQ602.jpg" },
-        {
-            "id":  "6364314", "title":  "每体：弗里克调整门将人选，霍安-加西亚膝部不适或轮休",
-            "url":  "https://www.dongqiudi.com/articles/6364314.html", "time":  "2026-09-18 15:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/04/280x210/crop/-/rBXRDGqs6w-AQziyAAFt2UnxkYo627.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/3E/280x210/crop/-/rBXRDGquGluAVWCRAAF-tq1vRAg943.jpg" }
     ]
 };

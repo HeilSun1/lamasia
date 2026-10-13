@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-13 15:18:41 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-13 21:21:22 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-13 15:18:41",
+    "updated":  "2026-10-13 21:21:22",
     "source":  "dongqiudi",
-    "count":  35,
+    "count":  36,
     "news":  [
+        {
+            "id":  "6481015", "title":  "巴塞罗那U19 1-0加拉塔萨雷U19，佩德罗-罗德里格斯点射制胜",
+            "url":  "https://www.dongqiudi.com/articles/6481015.html", "time":  "2026-10-13 21:51",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B2/EF/280x210/crop/-/rBXRDGrOQHSAFJBSAAFyNwW5F84491.png" },
         {
             "id":  "6444645", "title":  "巴萨官方：弗朗基-德容在周二参加了部分合练",
             "url":  "https://www.dongqiudi.com/articles/6444645.html", "time":  "2026-10-06 21:29",

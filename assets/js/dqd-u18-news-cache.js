@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-13 15:18:41 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-13 21:21:24 数据源：懂球帝 */
 window.DQD_U18_NEWS = {
-    "updated":  "2026-10-13 15:18:41",
+    "updated":  "2026-10-13 21:21:24",
     "source":  "dongqiudi",
-    "count":  9,
+    "count":  10,
     "news":  [
+        {
+            "id":  "6479315", "title":  "16岁的巴萨前锋达尼-弗雷雷回到了自己的高中母校...",
+            "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6479315", "time":  "2026-10-13 15:10",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B2/2F/280x210/crop/-/rBXRn2rN2SWAOlvgAEe3HijDKPI456.png" },
         {
             "id":  "6434196", "title":  "还有高手！巴萨青年B队的左边后卫佩雷-比利亚科尔...",
             "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6434196", "time":  "2026-10-04 11:41",

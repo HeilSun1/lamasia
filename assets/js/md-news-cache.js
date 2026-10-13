@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-13 15:19:44 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-13 21:21:30 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-13 15:19:44",
+    "updated":  "2026-10-13 21:21:30",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "title":  "Pimienta hace soñar al Almería con un excanterano azulgrana",
+            "url":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "time":  "2026-10-13 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/09/6ac8c60f24c51.r_d.613-720-8000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "title":  "Conte, alucinado con el Barça y su cantera",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "time":  "2026-10-11 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "title":  "El talento alemán Mirza Catovic llegará cedido al Barça Atlètic",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "time":  "2026-08-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a955b0f9285f.r_d.850-606-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "title":  "La Masia deja un pastizal en ingresos en este 2026",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html", "time":  "2026-08-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/21/6a886001b6900.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a955b0f9285f.r_d.850-606-7500.jpeg" }
     ]
 };

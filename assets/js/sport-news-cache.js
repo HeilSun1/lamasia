@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-13 15:19:42 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-13 21:21:28 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-13 15:19:42",
+    "updated":  "2026-10-13 21:21:28",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135289451", "title":  "Pedro Rodríguez da la primera victoria al Barça en la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-da-primera-victoria-135289451", "time":  "2026-10-13 15:41",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_default_0_x450y200.webp" },
+        {
+            "id":  "135276221", "title":  "Galatasaray - FC Barcelona, en directo: Youth League, Jornada 2 de la fase liga, en vivo hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/galatasaray-fc-barcelona-directo-youth-135276221", "time":  "2026-10-13 13:01",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_default_0_x715y171.webp" },
+        {
             "id":  "135259950", "title":  "Pedro Rodríguez, el cerebro ideal para liderar el primer triunfo blaugrana en la Youth",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-cerebro-ideal-liderar-135259950", "time":  "2026-10-12 19:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135252275", "title":  "Estreno goleador de Haoyan Li, el primer jugador chino en la historia del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275", "time":  "2026-10-12 17:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135234494", "title":  "Artillería para el Barça en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artilleria-barca-youth-league-135234494", "time":  "2026-10-11 19:40",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134288206", "title":  "Mamadou Keita, otro extremo zurdo estilo Raphinha con alma de goleador",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 22:06",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f76460e1-b70c-4e3f-bfb6-1fb349f17aaf_16-9-discover-aspect-ratio_640w_0_x539y167.webp" },
-        {
-            "id":  "134275515", "title":  "Destiny se hincha a marcar goles en el torneo de Van Dijk",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-hincha-marcar-goles-torneo-134275515", "time":  "2026-09-15 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/bb537ca6-a7f4-4565-b852-2a8be455dbe2_16-9-discover-aspect-ratio_640w_0_x640y305.webp" },
-        {
-            "id":  "134248266", "title":  "Festival del Juvenil A del Barça de Pol Planas en Zaragoza",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/festival-juvenil-barca-pol-planas-134248266", "time":  "2026-09-13 19:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e7902b0-b96a-48a9-ab7b-135adceb81b3_16-9-discover-aspect-ratio_640w_0_x596y206.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f76460e1-b70c-4e3f-bfb6-1fb349f17aaf_16-9-discover-aspect-ratio_640w_0_x539y167.webp" }
     ]
 };

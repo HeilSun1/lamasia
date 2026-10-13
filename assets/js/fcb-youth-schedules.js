@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-13 15:19；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-13 21:23；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-13 15:19:33",
+    "updated":  "2026-10-13 21:23:04",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -2921,29 +2921,10 @@ window.LAMASIA_SCHEDULES = {
                                            "venue":  "Ciutat Esportiva Joan Gamper"
                                        },
                                        {
-                                           "id":  "fcb:infantil-c:23",
-                                           "comp":  "加泰优选联赛 Alevín G1",
-                                           "compEn":  "Preferente Catalana Alevín G.1",
-                                           "round":  "3",
-                                           "start":  "1791100800",
-                                           "date":  "2026-10-04",
-                                           "tbd":  false,
-                                           "home":  "Europa A",
-                                           "away":  "FC Barcelona A",
-                                           "homeId":  "8818",
-                                           "awayId":  "11115",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
-                                           "code":  "0",
-                                           "isHome":  false,
-                                           "venue":  ""
-                                       },
-                                       {
                                            "id":  "fcb:infantil-c:31",
                                            "comp":  "加泰优选联赛 Alevín G1",
                                            "compEn":  "Preferente Catalana Alevín G.1",
-                                           "round":  "4",
+                                           "round":  "3",
                                            "start":  "1791998100",
                                            "date":  "2026-10-14",
                                            "tbd":  false,
@@ -2962,13 +2943,32 @@ window.LAMASIA_SCHEDULES = {
                                            "id":  "fcb:infantil-c:38",
                                            "comp":  "加泰优选联赛 Alevín G1",
                                            "compEn":  "Preferente Catalana Alevín G.1",
-                                           "round":  "5",
+                                           "round":  "4",
                                            "start":  "1792317600",
                                            "date":  "2026-10-18",
                                            "tbd":  true,
                                            "home":  "Parets A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "15392",
+                                           "awayId":  "11115",
+                                           "hs":  "",
+                                           "as":  "",
+                                           "status":  "Not started",
+                                           "code":  "0",
+                                           "isHome":  false,
+                                           "venue":  ""
+                                       },
+                                       {
+                                           "id":  "fcb:infantil-c:23",
+                                           "comp":  "加泰优选联赛 Alevín G1",
+                                           "compEn":  "Preferente Catalana Alevín G.1",
+                                           "round":  "5",
+                                           "start":  "1792603800",
+                                           "date":  "2026-10-21",
+                                           "tbd":  false,
+                                           "home":  "Europa A",
+                                           "away":  "FC Barcelona A",
+                                           "homeId":  "8818",
                                            "awayId":  "11115",
                                            "hs":  "",
                                            "as":  "",
