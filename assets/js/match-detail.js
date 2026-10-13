@@ -217,6 +217,8 @@
     if (t === "goal" || t === "penalty") return "⚽";
     if (t === "card") {
       var c = String(x.incidentClass || x.reason || "").toLowerCase();
+      // "card" = elfutbol 的中性牌（该站不区分黄/红）→ 用灰色方块，别假装是黄牌
+      if (c === "card") return "▫";
       if (c.indexOf("red") !== -1) return c.indexOf("yellow") !== -1 ? "🟨🟥" : "🟥";
       return "🟨";
     }
@@ -243,7 +245,9 @@
     }
     if (x.incidentType === "card") {
       var c = String(x.incidentClass || x.reason || "").toLowerCase();
-      var lbl = c.indexOf("red") !== -1 ? "红牌" : "黄牌";
+      // "card" 是 elfutbol 的中性标记 —— 该站把黄/红牌都画成同一种灰块，分不出来，
+      // 所以只标「牌」，不猜颜色（Sofascore / 懂球帝的数据仍是红/黄牌）
+      var lbl = c === "card" ? "牌" : (c.indexOf("red") !== -1 ? "红牌" : "黄牌");
       return pn ? pn + " · " + lbl : lbl;
     }
     if (x.incidentType === "substitution") {
@@ -735,6 +739,26 @@
     if (load) load.innerHTML = '<div class="note-box" style="margin-top:18px">📋 <span><b>懂球帝暂未收录该场的阵容与比赛进程。</b>可点击下方链接到懂球帝查看。</span></div>';
   }
 
+  /* FC Barcelona 官网场次（目前只有 U15/cadete-b）：阵容与进球/换人/牌时间轴
+     由 scripts/update_elfutbol_details.ps1 从 elfutbol.co 抓成每日缓存。
+     缓存形状与 dqd-*-details-cache 一致 → 渲染直接复用 applyDetail，无需新代码。 */
+  function loadFcbDetail(m, body) {
+    var id = String(m.id || "");
+    var ck = "elf:" + id;   // 会话缓存加命名空间，避免与 sf:/dqd: 的纯数字 id 撞车
+    if (detailCache[ck]) { applyDetail(detailCache[ck], body); return; }
+    loadDetailCache(m).then(function (dc) {
+      var d = dc ? (dc[id] || dc[m.id]) : null;
+      if (!d) { fcbEmpty(body); return; }
+      detailCache[ck] = [d.lineups || null, d.incidents || null, d.statistics || null, d.h2h || null];
+      applyDetail(detailCache[ck], body);
+    }).catch(function () { fcbEmpty(body); });
+  }
+
+  function fcbEmpty(body) {
+    var load = body.querySelector(".md-load");
+    if (load) load.innerHTML = '<div class="note-box" style="margin-top:18px">📋 <span><b>该场暂无阵容/进球详情。</b>本站每日更新青年梯队最近若干场的阵容与比赛进程，明天刷新后即可查看；也可点击下方链接在原站查看。</span></div>';
+  }
+
   /* 懂球帝阵容球员 → 补上 Sofascore id（有才补，不强求）。
      必须赶在 applyDetail 之前完成：🎬 个人集锦徽标与球员卡都按 Sofascore id 查表。
      桥接表由 player-card.js 用两份名单按姓名三级匹配建起来（dqdToSf）；桥不上就降级，
@@ -777,8 +801,13 @@
     if (m.source === "sofascore") {
       loadSofascoreDetail(m, body);
     } else if (m.source === "fcb") {
-      var load = body.querySelector(".md-load");
-      load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场赛程来自 FC Barcelona 官网。</b>本站未收录青年梯队逐场阵容/统计详情，请到原站查看赛程与比分。</span></div>';
+      if (m.cacheRef) {
+        // U15：走 elfutbol 详情缓存（阵容 + 进球/换人/牌）
+        loadFcbDetail(m, body);
+      } else {
+        var load = body.querySelector(".md-load");
+        load.innerHTML = '<div class="note-box" style="margin-top:18px">🔗 <span><b>该场赛程来自 FC Barcelona 官网。</b>本站未收录青年梯队逐场阵容/统计详情，请到原站查看赛程与比分。</span></div>';
+      }
     } else if (m.source === "dqd" && m.cacheRef) {
       // 懂球帝场次且带详情缓存引用 → 走本地缓存渲染完整详情
       loadDqdDetail(m, body);

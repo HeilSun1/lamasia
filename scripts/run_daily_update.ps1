@@ -102,6 +102,9 @@ $SoftCaches = @(
   'assets/js/dqd-u19-news-cache.js'
   'assets/js/dqd-u18-news-cache.js'
   'assets/js/dqd-u16-news-cache.js'
+  # U15 逐场阵容/进球详情（elfutbol.co，第三方源）→ 抓不到只降级不报红：
+  # 页面会退回 match-detail 的「暂无阵容详情」提示，不会空白。
+  'assets/js/elfutbol-cadete-b-details-cache.js'
 )
 $CoreScripts = @('update_u19_sofascore.ps1', 'update_u18_sofascore.ps1', 'update_u16_sofascore.ps1',
                  'update_barca_atletic.ps1', 'update_fcb_youth_schedules.ps1')
@@ -121,7 +124,8 @@ $UpdateScripts = @(
   'update_sport_news.ps1',
   'update_md_news.ps1',
   'update_youtube.ps1',
-  'update_weekly_album.ps1'
+  'update_weekly_album.ps1',
+  'update_elfutbol_details.ps1'
 )
 
 # 固定存在的缓存（这些一直在仓库里，缺了就是仓库出了问题）
@@ -133,7 +137,8 @@ $AddPaths = @(
   'assets/js/lamasia-official-news-cache.js', 'assets/js/sport-news-cache.js', 'assets/js/md-news-cache.js',
   'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',
   'assets/js/dqd-u19-details-cache.js', 'assets/js/dqd-u18-details-cache.js', 'assets/js/dqd-u16-details-cache.js',
-  'assets/js/dqd-videos-cache.js', 'assets/js/weekly-album-cache.js', 'assets/js/fcb-youth-schedules.js'
+  'assets/js/dqd-videos-cache.js', 'assets/js/weekly-album-cache.js', 'assets/js/fcb-youth-schedules.js',
+  'assets/js/elfutbol-cadete-b-details-cache.js'
 )
 # 今天才生成的（首次运行或抓取失败时可能不存在，缺席不算错误）
 $GeneratedPaths = @(

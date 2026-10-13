@@ -71,7 +71,10 @@
     const playedNow = m.status === "Ended";
     const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
     const key = m.id;   // 缓存 id 已带 "fcb:" 前缀（如 "fcb:cadete:2"）
-    // 注册最小详情（无 Sofascore 阵容/统计 → match-detail 只显示基本信息 + 官网外链）
+    // 只有 U15（cadete-b）有 elfutbol.co 抓来的逐场阵容/进球详情；
+    // 带上 cacheRef 后 match-detail.js 会按需懒加载 elfutbol-cadete-b-details-cache.js。
+    // 其余梯队仍是最小详情（无阵容 → 只显示基本信息 + 官网外链）。
+    const dtRef = (tierSlug === "cadete-b") ? "ELFUTBOL_CADETE_B_CACHE" : "";
     if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
     if (!window.LAMASIA_MATCHES[key]) {
       window.LAMASIA_MATCHES[key] = {
@@ -80,10 +83,12 @@
         start: m.start, date: m.date || "", tbd: m.tbd,
         home: m.home || "", away: m.away || "",
         hs: m.hs || "", as: m.as || "", status: m.status, isHome: m.isHome,
-        venue: m.venue || "", homeLogo: badgeUrl(m.homeId), awayLogo: badgeUrl(m.awayId)
+        venue: m.venue || "", homeLogo: badgeUrl(m.homeId), awayLogo: badgeUrl(m.awayId),
+        cacheRef: dtRef
       };
     }
-    return '<tr data-match-key="' + key + '" class="match-row" title="点击查看（官方赛程 · 无阵容详情）">' +
+    return '<tr data-match-key="' + key + '" class="match-row" title="' +
+      (dtRef ? "点击查看（阵容 / 进球）" : "点击查看（官方赛程 · 无阵容详情）") + '">' +
       '<td class="num">' + esc(fmtKick(m)) + "</td>" +
       "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
       teamCell(m.home, m.homeId, tier) +
