@@ -96,7 +96,8 @@
     var name = home ? m.home : m.away;
     var logo = home ? m.homeLogo : m.awayLogo;
     return '<div class="md-team">' +
-      (logo ? '<img class="md-logo" src="' + esc(logo) + '" alt="' + esc(name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : "") +
+      // 队徽加载失败时回退通用徽章，而不是直接隐藏（pulselive 的对手队徽是 403 防盗链）
+      (logo ? '<img class="md-logo" src="' + esc(logo) + '" alt="' + esc(name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'https://resources.fcbarcelona.pulselive.com/badges/club/40/default.png\'">' : "") +
       '<span class="md-name">' + esc(name || "") + "</span></div>";
   }
 
@@ -147,8 +148,50 @@
   var curTier = "";   // 当前比赛的梯队（由 m.cacheRef 推出）
   var curMatch = null; // 当前比赛对象（视频/球员集锦用）
   var curMatchKey = ""; // 当前比赛键（"sfb:{id}" / "sofascore:{id}"），查本场球员集锦用
+  var curNameMap = "";  // 只有「靠姓名映射卡片」的来源才置为梯队名（见 localKeyFor）
   function sfKey(pid) {
     return (curTier && pid) ? "sf:" + curTier + ":" + pid : "";
+  }
+
+  /* ── 按姓名映射回本站球员卡（elfutbol 这样只给姓名、没有球员 id 的来源用）──
+     本站卡片键是 local:{梯队}:{归一化姓名}，而 data.js 名单是「名 + 首姓」缩写
+     （"Álex Guardado"），elfutbol 给的是全名（"Guardado Rodriguez, Alex"）
+     → 归一化后两边不会相等，故做「互为前缀」的双向匹配。 */
+  function normName(s) {
+    return String(s || "").toLowerCase().normalize("NFD")
+      .replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+  }
+  function localKeyFor(rawName) {
+    if (!curNameMap || !rawName || !window.PlayerCard || !window.PlayerCard.INDEX) return "";
+    var n = String(rawName).trim();
+    // "Surname1 Surname2, First" → "First Surname1 Surname2"
+    var m = n.match(/^(.*?),\s*(.+)$/);
+    var cands = [];
+    if (m) cands.push(normName(m[2] + " " + m[1]));
+    cands.push(normName(n));
+    var pre = "local:" + curNameMap + ":";
+    var keys = Object.keys(window.PlayerCard.INDEX);
+    for (var ci = 0; ci < cands.length; ci++) {
+      var c = cands[ci];
+      if (c.length < 6) continue;      // 太短容易误配（"Enzo" 这种）
+      for (var i = 0; i < keys.length; i++) {
+        if (keys[i].indexOf(pre) !== 0) continue;
+        var tail = keys[i].slice(pre.length);
+        if (tail.length >= 6 && (tail === c || c.indexOf(tail) === 0 || tail.indexOf(c) === 0)) return keys[i];
+      }
+    }
+    return "";
+  }
+  // 该侧是否巴萨（只有巴萨一侧才做姓名映射，免得撞上对手的姓氏）
+  function isBarcaSide(x) {
+    return !!(curMatch && x.isHome !== undefined && (!!x.isHome === !!curMatch.isHome));
+  }
+  // 比赛进程里的球员名：有 id 走原路，没有则按姓名映射（同为 elfutbol 来源）
+  function cardIp(p, x) {
+    if (!p) return "";
+    if (p.id) return cardA(p.id, p.name);
+    if (p.dqdId) return cardAKey("b:" + p.dqdId, p.name);
+    return cardAKey(isBarcaSide(x) ? localKeyFor(p.name) : "", p.name);
   }
   // 若该球员在本站卡片索引中（巴萨球员），包装成可点击入口；否则返回纯文本
   function cardA(pid, name) {
@@ -163,7 +206,7 @@
     return txt;
   }
 
-  function lineupSide(list) {
+  function lineupSide(list, isBarca) {
     // Sofascore 阵容结构：home/away 是 { players:[...] } 对象，兼容直接传数组
     if (list && !Array.isArray(list) && list.players) list = list.players;
     if (!list || !list.length) return null;
@@ -180,8 +223,9 @@
         ? '<img src="' + esc(img) + '" alt="' + esc(p.name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
           '<span class="md-lu-ini" style="display:none">' + ini + "</span>"
         : '<span class="md-lu-ini">' + ini + "</span>";
-      // 卡片键：优先 Sofascore 键；桥不上退回懂球帝名单键 b:{dqdId}（每日更新的名单，最可靠）
-      var ck = pid ? sfKey(pid) : (p.dqdId ? "b:" + p.dqdId : "");
+      // 卡片键：优先 Sofascore 键；桥不上退回懂球帝名单键 b:{dqdId}（每日更新的名单，最可靠）；
+      // 都没有则按姓名映射（elfutbol 来源）——只对巴萨一侧做，避免撞上对手同姓球员
+      var ck = pid ? sfKey(pid) : (p.dqdId ? "b:" + p.dqdId : (isBarca ? localKeyFor(p.name) : ""));
       return '<div class="md-lu-item">' +
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
         '<span class="md-lu-av">' + av + "</span>" +
@@ -200,8 +244,10 @@
   }
 
   function lineupsHtml(l) {
-    var home = lineupSide(l.home);
-    var away = lineupSide(l.away);
+    var hasMatch = !!curMatch;
+    var barcaHome = !!(curMatch && curMatch.isHome);
+    var home = lineupSide(l.home, hasMatch && barcaHome);
+    var away = lineupSide(l.away, hasMatch && !barcaHome);
     if (!home && !away) return "";
     if (!home) home = '<div class="md-lu-side md-empty">阵容未公布</div>';
     if (!away) away = '<div class="md-lu-side md-empty">阵容未公布</div>';
@@ -229,7 +275,7 @@
     return "•";
   }
   function incidentText(x) {
-    var pn = cardA(x.player && x.player.id, x.player && x.player.name);
+    var pn = cardIp(x.player, x);
     if (x.incidentType === "goal" || x.incidentType === "penalty") {
       var why = "";
       if (x.reason && REASON_ZH[x.reason] != null) why = REASON_ZH[x.reason];
@@ -251,8 +297,8 @@
       return pn ? pn + " · " + lbl : lbl;
     }
     if (x.incidentType === "substitution") {
-      var pin = cardA(x.playerIn && x.playerIn.id, x.playerIn && x.playerIn.name);
-      var pout = cardA(x.playerOut && x.playerOut.id, x.playerOut && x.playerOut.name);
+      var pin = cardIp(x.playerIn, x);
+      var pout = cardIp(x.playerOut, x);
       return (pout ? "↓ " + pout : "") + (pin ? " ↑ " + pin : "");
     }
     return pn;
@@ -780,7 +826,10 @@
     var m = REG[key];
     if (!m) return;
     curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16",
-                DQD_BARCA_ATLETIC_SF_CACHE: "b", DQD_BARCA_ATLETIC_CACHE: "b" }[m.cacheRef] || "";
+                DQD_BARCA_ATLETIC_SF_CACHE: "b", DQD_BARCA_ATLETIC_CACHE: "b",
+                ELFUTBOL_CADETE_B_CACHE: "cadete-b" }[m.cacheRef] || "";
+    // 只有 elfutbol 来源缺球员 id、需要按姓名映射；Sofascore/懂球帝本来就有 id，不启用
+    curNameMap = (m.cacheRef === "ELFUTBOL_CADETE_B_CACHE") ? "cadete-b" : "";
     curMatch = m;
     // 本场集锦按此键取：懂球帝场次通过 videoKey 桥到 "sfb:{Sofascore id}"（视频缓存按 SF id 落库）
     curMatchKey = m.videoKey || key;

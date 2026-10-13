@@ -30,6 +30,7 @@ $ErrorActionPreference = "Stop"
 $Root      = Split-Path -Parent $PSScriptRoot
 $Schedules = Join-Path $Root "assets\js\fcb-youth-schedules.js"
 $OutFile   = Join-Path $Root "assets\js\elfutbol-cadete-b-details-cache.js"
+$CrestFile = Join-Path $Root "assets\js\elfutbol-crests-cache.js"
 $LogFile   = Join-Path $Root "scripts\elfutbol-details-update.log"
 
 $TierId  = "cadete-b"
@@ -162,9 +163,9 @@ $a = $stxt.IndexOf("{"); $b = $stxt.LastIndexOf("}")
 if ($a -lt 0 -or $b -le $a) { Log "✗ 赛程文件解析失败"; exit 1 }
 $sched = $stxt.Substring($a, $b - $a + 1) | ConvertFrom-Json
 
-$ended = @($sched.matches.$TierId | Where-Object { $_.status -eq "Ended" })
-Log "  · $TierId 已完场 $($ended.Count) 场"
-if ($ended.Count -eq 0) { Log "  · 无已完场比赛，跳过"; exit 0 }
+$all   = @($sched.matches.$TierId)
+$ended = @($all | Where-Object { $_.status -eq "Ended" })
+Log "  · $TierId 共 $($all.Count) 场（已完场 $($ended.Count)）"
 
 # 旧缓存（按比赛 id 合并，已抓过的不重抓）
 $cache = [ordered]@{}
@@ -179,22 +180,53 @@ if (Test-Path $OutFile) {
   } catch { Log "  · 旧缓存解析失败，本次全量重抓" }
 }
 
-$todo = @($ended | Where-Object { $Force -or -not $cache.Contains($_.id) })
-if ($todo.Count -eq 0) { Log "  · 无需更新（已收录全部 $($ended.Count) 场）"; exit 0 }
-Log "  · 待抓 $($todo.Count) 场"
-
-# ① 队伍页：把每场映射到 /en/match/.../jN（按日期）
+# ① 队伍页：按「日期」把每场映射到 /en/match/.../jN，顺带取两队队徽
 $team = Get-Html $TeamUrl
 if (-not $team) { Log "✗ 队伍页抓取失败，保留旧缓存"; exit 1 }
-$map = @{}
+$map    = @{}   # "MM-DD" → /en/match/... 路径
+$crests = @{}   # "MM-DD" → @(主队队徽, 客队队徽)
 foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
   $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
-  if ($d.Success) { $map[($d.Groups[1].Value + "-" + $d.Groups[2].Value)] = $m.Groups[1].Value }
+  if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
+  $k = $d.Groups[1].Value + "-" + $d.Groups[2].Value
+  $map[$k] = $m.Groups[1].Value
+  $cr = @([regex]::Matches($m.Value, '<img src="(/crests/sm/[^"]+)"') | ForEach-Object { $_.Groups[1].Value })
+  if ($cr.Count -ge 2) { $crests[$k] = @($cr[0], $cr[1]) }
 }
-Log "  · 队伍页解析出 $($map.Count) 场比赛链接"
+Log "  · 队伍页解析出 $($map.Count) 场比赛链接、$($crests.Count) 组队徽"
 if ($map.Count -eq 0) { Log "✗ 队伍页结构变化（未解析到比赛行），保留旧缓存"; exit 1 }
 
-# ② 逐场抓单场页，解析阵容 + 事件
+# ── ② 队徽表：elfutbol 托管真实队徽（pulselive 的对手队徽全是 403 防盗链）。
+#    本表按本站赛程里的 pulselive 队号落键，fcb-youth-render.js 的 badgeUrl 直接查它。
+#    顺序自校正：elfutbol 行内队徽是 [主,客]；若「巴萨是否主队」对不上就交换，
+#    免得某一轮客主写反导致队徽整体串位。
+$crestOut = [ordered]@{}
+foreach ($mt in $all) {
+  $k = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)
+  $cr = $crests[$k]
+  if (-not $cr) { continue }
+  $h = $cr
+  if (([bool]$mt.isHome) -ne ($h[0] -match 'barcelona-fc')) { $h = @($cr[1], $cr[0]) }
+  $crestOut[[string]$mt.homeId] = "https://elfutbol.co" + $h[0]
+  $crestOut[[string]$mt.awayId] = "https://elfutbol.co" + $h[1]
+}
+if ($crestOut.Count -gt 0) {
+  $cjs = "/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js 的 badgeUrl 读取）；" +
+         "数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；" +
+         "更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CRESTS = " +
+         ($crestOut | ConvertTo-Json -Depth 3) + ";`r`n"
+  [System.IO.File]::WriteAllText($CrestFile, $cjs, $Utf8)
+  Log "  ✓ 已写入 $CrestFile（$($crestOut.Count) 个队徽）"
+} else {
+  Log "  · 未解析到队徽，$CrestFile 不覆盖"
+}
+
+# ── ③ 逐场详情：只补缓存里还没有的已完场 ──
+$todo = @($ended | Where-Object { $Force -or -not $cache.Contains($_.id) })
+if ($todo.Count -eq 0) { Log "  ✓ 详情无需更新（已收录全部 $($ended.Count) 场已完场）"; exit 0 }
+Log "  · 待抓详情 $($todo.Count) 场"
+
+# 逐场抓单场页，解析阵容 + 事件
 $ok = 0; $fail = 0
 foreach ($mt in $todo) {
   $dkey = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)   # 2026-10-10 → 10-10
@@ -222,7 +254,7 @@ foreach ($mt in $todo) {
 
 if ($ok -eq 0) { Log "✗ 本轮无一场解析成功，保留旧缓存不覆盖"; exit 1 }
 
-# ③ 写缓存
+# ④ 写详情缓存
 $json = $cache | ConvertTo-Json -Depth 12
 $js = "/* 自动生成，请勿手动编辑 —— U15 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CADETE_B_DETAILS_CACHE = $json;`r`n"
 [System.IO.File]::WriteAllText($OutFile, $js, $Utf8)

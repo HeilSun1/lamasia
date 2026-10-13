@@ -45,8 +45,12 @@
     return n;
   }
 
-  /* 官方队徽（resources.fcbarcelona.pulselive.com）；对手徽章常被防盗链 403 → 回退默认徽章 */
+  /* 官方队徽（resources.fcbarcelona.pulselive.com）；对手徽章常被防盗链 403 → 回退默认徽章。
+     U15 的对手队徽改走 elfutbol 托管的真队徽（elfutbol-crests-cache.js 按 pulselive 队号落键，
+     由 scripts/update_elfutbol_details.ps1 生成）；没加载该表时行为与原来一致。 */
   function badgeUrl(id) {
+    var reg = window.ELFUTBOL_CRESTS;
+    if (reg && id != null && reg[String(id)]) return reg[String(id)];
     return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : "";
   }
   function teamCell(name, id, tier) {

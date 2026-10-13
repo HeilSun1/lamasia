@@ -138,7 +138,7 @@ $AddPaths = @(
   'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',
   'assets/js/dqd-u19-details-cache.js', 'assets/js/dqd-u18-details-cache.js', 'assets/js/dqd-u16-details-cache.js',
   'assets/js/dqd-videos-cache.js', 'assets/js/weekly-album-cache.js', 'assets/js/fcb-youth-schedules.js',
-  'assets/js/elfutbol-cadete-b-details-cache.js'
+  'assets/js/elfutbol-cadete-b-details-cache.js', 'assets/js/elfutbol-crests-cache.js'
 )
 # 今天才生成的（首次运行或抓取失败时可能不存在，缺席不算错误）
 $GeneratedPaths = @(
