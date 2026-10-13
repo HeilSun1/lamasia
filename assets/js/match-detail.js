@@ -157,10 +157,7 @@
      本站卡片键是 local:{梯队}:{归一化姓名}，而 data.js 名单是「名 + 首姓」缩写
      （"Álex Guardado"），elfutbol 给的是全名（"Guardado Rodriguez, Alex"）
      → 归一化后两边不会相等，故做「互为前缀」的双向匹配。 */
-  function normName(s) {
-    return String(s || "").toLowerCase().normalize("NFD")
-      .replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
-  }
+  // 注：归一化函数 normName 复用于下方的集锦分区段（同一 IIFE 内，靠函数提升可见）
   function localKeyFor(rawName) {
     if (!curNameMap || !rawName || !window.PlayerCard || !window.PlayerCard.INDEX) return "";
     var n = String(rawName).trim();
@@ -560,6 +557,38 @@
     return side.players;
   }
 
+  /* ── U15 等「按姓名映射」的来源：集锦管道里没有本场的 matchKey ──
+     两个原因：① update_youtube.ps1 的已完赛列表只由 B队/U19/U18 构建；
+     ② 这些视频的标题里没有对手名（如「凌空抽射 李昊炎巴萨联赛首球」），
+     而分类逻辑靠标题里的对手 token 定位比赛 —— 所以解析不出 matchKey。
+     退一步：把「同梯队球员 + 发布日 = 本场日期」的视频当作本场集锦。
+     只在 curNameMap 有值时启用（目前仅 U15），不碰其它梯队。
+     宁可少挂：只认「同日」，不开 ±N 天窗口 —— 集锦基本都在当天或赛后发。 */
+  function sameDayPlayerRecs() {
+    var out = [];
+    var V = window.DQD_VIDEOS_CACHE;
+    if (!curNameMap || !curMatch || !curMatch.date || !V || !V.feed || !V.feed.players) return out;
+    var day = String(curMatch.date).slice(0, 10);
+    var pre = "local:" + curNameMap + ":";
+    Object.keys(V.feed.players).forEach(function (pk) {
+      if (pk.indexOf(pre) !== 0) return;
+      (V.feed.players[pk] || []).forEach(function (g) {
+        if (!g || g.matchKey) return;                 // 已有比赛键的走原路，别重复挂
+        if (String(g.date || "") !== day) return;     // 按分组自带的日期比对（非视频 published）
+        var vids = (g.videos || []).filter(function (v) { return v && v.videoId; });
+        if (!vids.length) return;
+        var pc = (window.PlayerCard && window.PlayerCard.INDEX) ? window.PlayerCard.INDEX[pk] : null;
+        out.push({
+          playerKey: pk,
+          pid: "",
+          name: (pc && (pc.nameZh || pc.nameEn)) || pk.slice(pre.length),
+          videos: vids
+        });
+      });
+    });
+    return out;
+  }
+
   function computeMatchPlayerVideos(lineups) {
     matchPlayerRecs = [];
     matchPlayerVids = {};
@@ -605,6 +634,9 @@
       matchBucketFull = cls.full;
       recs = recs.concat(cls.recs);
     }
+
+    // 按姓名映射的来源（U15）：管道没给本场 matchKey → 按同日补挂，见 sameDayPlayerRecs
+    if (curNameMap) recs = recs.concat(sameDayPlayerRecs());
 
     var merged = {}, order = [];
     recs.forEach(function (r) {
