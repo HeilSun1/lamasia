@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-12 23:04:45 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-13 15:17:50 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-12 23:04:45",
+    "updated":  "2026-10-13 15:17:50",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6478452", "title":  "世体：皮克、布斯克茨等球星观摩比赛，修读欧足联职业级证书",
+            "url":  "https://www.dongqiudi.com/articles/6478452.html", "time":  "2026-10-13 10:32",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/B6/280x210/crop/-/rBXRn2rNlimAMrMxAAB7do6NTls586.jpg" },
+        {
+            "id":  "6478341", "title":  "库巴西与肖恩-克鲁伊维特。",
+            "url":  "https://www.dongqiudi.com/articles/6478341.html", "time":  "2026-10-13 09:30",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/9D/280x210/crop/-/rBXRn2rNicKAC1MFAAMNzsYtOBk041.jpg" },
         {
             "id":  "6475545", "title":  "每体：波黑总监考察巴萨新星恰托维奇，球员被三国争夺",
             "url":  "https://www.dongqiudi.com/articles/6475545.html", "time":  "2026-10-12 19:09",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6364314", "title":  "每体：弗里克调整门将人选，霍安-加西亚膝部不适或轮休",
             "url":  "https://www.dongqiudi.com/articles/6364314.html", "time":  "2026-09-18 15:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/04/280x210/crop/-/rBXRDGqs6w-AQziyAAFt2UnxkYo627.jpg" },
-        {
-            "id":  "6363308", "title":  "每体：巴萨竞技小将迪亚拉伤愈，本周末有望复出",
-            "url":  "https://www.dongqiudi.com/articles/6363308.html", "time":  "2026-09-18 10:28",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/73/F7/280x210/crop/-/rBXRn2qsXn2Af14CAAEtlZEYnj4174.jpg" },
-        {
-            "id":  "6361806", "title":  "世体：若霍安不出战塞维，伊克尔-罗德里格斯可能会进大名单",
-            "url":  "https://www.dongqiudi.com/articles/6361806.html", "time":  "2026-09-18 00:41",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/73/80/280x210/crop/-/rBXRDGqsGDWAaqxLAAD99VHt61Y747.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/75/04/280x210/crop/-/rBXRDGqs6w-AQziyAAFt2UnxkYo627.jpg" }
     ]
 };

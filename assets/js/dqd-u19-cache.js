@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-12 14:29 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-13 15:18 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-12 14:29:18",
+    "updated":  "2026-10-13 15:18:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -219,8 +219,8 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2690304/image",
                         "age":  "16岁",
                         "birthday":  "2010-01-20",
-                        "foot":  "",
-                        "height":  "",
+                        "foot":  "右脚",
+                        "height":  "183",
                         "value":  "",
                         "injury":  null
                     },
@@ -605,7 +605,7 @@ window.DQD_U19_CACHE = {
                         "id":  "16540033",
                         "comp":  "西青甲 G3",
                         "round":  "7",
-                        "start":  "1792944000",
+                        "start":  "1792926000",
                         "home":  "Osasuna U19",
                         "away":  "Barcelona U19",
                         "homeId":  "252938",

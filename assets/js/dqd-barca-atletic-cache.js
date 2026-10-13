@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-12 23:04 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-13 15:16 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-12 23:04:43",
+    "updated":  "2026-10-13 15:16:30",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1599,17 +1599,7 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-                          {
-                              "person_id":  "51038125",
-                              "name":  "埃布里马-通卡拉",
-                              "en":  "Ebrima Tunkara",
-                              "photo":  "assets/img/players/dqd/51038125.jpg",
-                              "injury":  "脚踝损伤",
-                              "date_from":  "2026.08.24",
-                              "date_until":  "2026.10.12",
-                              "days":  "51",
-                              "games_missed":  "4"
-                          }
+
                       ],
     "roster":  {
                    "code":  0,
@@ -2892,7 +2882,7 @@ window.DQD_BARCA_ATLETIC = {
                                           "date_from":  "2026.08.24",
                                           "injury":  "脚踝损伤",
                                           "days":  "51",
-                                          "status":  "out",
+                                          "status":  "ok",
                                           "games_missed":  "4"
                                       },
                          "50855023":  {
