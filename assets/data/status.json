@@ -1,10 +1,6 @@
 {
-    "schema":  1,
     "runId":  "20261013-151610",
     "runStartedUtc":  "2026-10-13T07:16:10.4054745Z",
-    "runFinishedUtc":  "2026-10-13T07:20:24.8295310Z",
-    "lastSuccessUtc":  "2026-10-13T07:20:30.2237475Z",
-    "lastRunSource":  "local",
     "lastRunStatus":  "ok",
     "exitCode":  0,
     "consecutiveFailures":  0,
@@ -23,5 +19,9 @@
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72
+    "hardStaleHours":  72,
+    "lastSuccessUtc":  "2026-10-13T21:23:36.3932749Z",
+    "lastRunSource":  "runner",
+    "runFinishedUtc":  "2026-10-13T21:23:36.3932749Z",
+    "schema":  1
 }
