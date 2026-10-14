@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-13 21:21:22 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-14 20:15:37 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-13 21:21:22",
+    "updated":  "2026-10-14 20:15:37",
     "source":  "dongqiudi",
-    "count":  36,
+    "count":  37,
     "news":  [
+        {
+            "id":  "6485884", "title":  "巴萨U19梯队客场1球小胜加拉塔萨雷，迎来本赛季...",
+            "url":  "https://www.dongqiudi.com/articles/6485884.html", "time":  "2026-10-14 17:40",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/14/05fbc7d9f0059fec59dc3b071da93984acgrQD_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6481015", "title":  "巴塞罗那U19 1-0加拉塔萨雷U19，佩德罗-罗德里格斯点射制胜",
             "url":  "https://www.dongqiudi.com/articles/6481015.html", "time":  "2026-10-13 21:51",

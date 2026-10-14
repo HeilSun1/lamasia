@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-13 21:21:02 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-14 20:15:18 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-13 21:21:02",
+    "updated":  "2026-10-14 20:15:18",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6485884", "title":  "巴萨U19梯队客场1球小胜加拉塔萨雷，迎来本赛季...",
+            "url":  "https://www.dongqiudi.com/articles/6485884.html", "time":  "2026-10-14 17:40",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/14/05fbc7d9f0059fec59dc3b071da93984acgrQD_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6478452", "title":  "世体：皮克、布斯克茨等球星观摩比赛，修读欧足联职业级证书",
             "url":  "https://www.dongqiudi.com/articles/6478452.html", "time":  "2026-10-13 10:32",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6369091", "title":  "Here we go！罗马诺：巴萨签下16岁葡萄牙天才达尼-弗莱雷",
             "url":  "https://www.dongqiudi.com/articles/6369091.html", "time":  "2026-09-19 14:12",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/52/280x210/crop/-/rBXRDGquJ8OACGAKAAh5ksGIMEI798.png" },
-        {
-            "id":  "6368963", "title":  "世体：利瓦科维奇还没适应巴萨的风格，3C将首发出战塞维",
-            "url":  "https://www.dongqiudi.com/articles/6368963.html", "time":  "2026-09-19 13:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/3E/280x210/crop/-/rBXRDGquGluAVWCRAAF-tq1vRAg943.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/52/280x210/crop/-/rBXRDGquJ8OACGAKAAh5ksGIMEI798.png" }
     ]
 };

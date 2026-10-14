@@ -2,12 +2,40 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-10-13 21:23:33",
+    "updated":  "2026-10-14 20:17:44",
     "probeOk":  true,
     "searched":  [
 
                  ],
     "items":  [
+                  {
+                      "at":  "2026-10-14",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "b:50855329",
+                      "v":  {
+                                "videoId":  "1bWkKtHqNpE",
+                                "title":  "Barcelona U19 1-0 Galatasaray U19 | UEFA Youth League Match Highlights | 2026-2027 | Pedro Rodriguez",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-14",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-14",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:b:1649171",
+                      "v":  {
+                                "videoId":  "1bWkKtHqNpE",
+                                "title":  "Barcelona U19 1-0 Galatasaray U19 | UEFA Youth League Match Highlights | 2026-2027 | Pedro Rodriguez",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-14",
+                                "durationSec":  ""
+                            }
+                  },
                   {
                       "at":  "2026-10-13",
                       "src":  "yt-rss",

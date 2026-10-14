@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-13 21:21:30 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-14 20:15:46 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-13 21:21:30",
+    "updated":  "2026-10-14 20:15:46",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "title":  "Fermín, el tesoro de Flick",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "time":  "2026-10-14 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/14/6aceb28175e4a.r_d.934-684-6693.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "title":  "Pimienta hace soñar al Almería con un excanterano azulgrana",
             "url":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "time":  "2026-10-13 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "title":  "El traspaso de Marc Guiu deja un dinero extra al Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "time":  "2026-09-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a96a03f34d30.r_d.782-955-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "title":  "El talento alemán Mirza Catovic llegará cedido al Barça Atlètic",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221611/talento-aleman-mirza-catovic-llegara-cedido-barca-atletic.html", "time":  "2026-08-31 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a955b0f9285f.r_d.850-606-7500.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a96a03f34d30.r_d.782-955-7500.jpeg" }
     ]
 };

@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-13 21:21:28 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-14 20:15:43 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-13 21:21:28",
+    "updated":  "2026-10-14 20:15:43",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135292914", "title":  "Erik Domínguez, el desequilibrio más volcánico de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/erik-dominguez-desequilibrio-volcanico-masia-135292914", "time":  "2026-10-14 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135289451", "title":  "Pedro Rodríguez da la primera victoria al Barça en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-da-primera-victoria-135289451", "time":  "2026-10-13 15:41",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_default_0_x450y200.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_640w_0_x450y200.webp" },
         {
             "id":  "135276221", "title":  "Galatasaray - FC Barcelona, en directo: Youth League, Jornada 2 de la fase liga, en vivo hoy",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/galatasaray-fc-barcelona-directo-youth-135276221", "time":  "2026-10-13 13:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_default_0_x715y171.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
         {
             "id":  "135259950", "title":  "Pedro Rodríguez, el cerebro ideal para liderar el primer triunfo blaugrana en la Youth",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-cerebro-ideal-liderar-135259950", "time":  "2026-10-12 19:16",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134454227", "title":  "Barbastro-Barça Atlètic: El reto de sumar el primer triunfo a domicilio",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barbastro-barca-atletic-reto-sumar-134454227", "time":  "2026-09-19 15:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134288206", "title":  "Mamadou Keita, otro extremo zurdo estilo Raphinha con alma de goleador",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/mamadou-keita-extremo-zurdo-estilo-134288206", "time":  "2026-09-15 22:06",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f76460e1-b70c-4e3f-bfb6-1fb349f17aaf_16-9-discover-aspect-ratio_640w_0_x539y167.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

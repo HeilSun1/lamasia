@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-13 21:21:26 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-14 20:15:41 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-13 21:21:26",
+    "updated":  "2026-10-14 20:15:41",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -143,6 +143,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4592194", "title":  "Twenty comebacks",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592194/twenty-comebacks-under-flick", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/14/b5a8addd-02da-4f03-ba82-94fcf062382b/_MGA5997.jpg" },
+            {
+                "id":  "4592193", "title":  "The goal machine rolls on",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592193/the-goal-machine-rolls-on", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/14/b54619b2-2143-45bf-8cea-37bf7c862e25/_MGA8048-1-.jpg" },
+            {
                 "id":  "4591863", "title":  "Galatasaray 1-4 Barça: Heaven in hell",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591863/galatasaray-1-4-fc-barcelona-heaven-in-hell", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/edfaf46a-1bb5-4e51-a190-1b93874ee27d/_MGA8006.jpg" },
@@ -223,6 +231,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4588143", "title":  "Five things about Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588143/five-interesting-facts-about-barca-v-getafe", "time":  "",
                 "tag":  "", "img":  "" },
@@ -234,14 +250,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4587842", "title":  "More international players return",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/b6302003-522f-4d2c-86e9-19339962e55a/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
@@ -333,15 +341,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4579922", "title":  "The squad back to training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579922/the-squad-back-to-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/22/1ea7f490-8c5c-4335-bc90-4d6ecc0f286a/WhatsApp-Image-2026-09-22-at-13.09.42-2-.jpeg" },
-            {
-                "id":  "4579612", "title":  "Europe's most productive duo",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579612/raphinha-and-lamine-yamal-europes-most-productive-duo", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/c0918d11-2c33-46ea-8349-f12a3c02bc33/_MGA5125.jpg" },
-            {
-                "id":  "4579417", "title":  "International schedule for FC Barcelona players",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579417/international-schedule-for-fc-barcelona-players", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/21/ffcd0d23-a8f1-4243-acc0-1347b9da0f9e/FCBarcelonavsRayoVallecanoJ03Lliga1aDivisi20262027__mga5167.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/22/1ea7f490-8c5c-4335-bc90-4d6ecc0f286a/WhatsApp-Image-2026-09-22-at-13.09.42-2-.jpeg" }
         ]
     }
 };
