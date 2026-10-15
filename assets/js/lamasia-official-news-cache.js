@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-15 15:11:31 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-15 19:56:30 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-15 15:11:31",
+    "updated":  "2026-10-15 19:56:30",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -143,6 +143,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4592732", "title":  "Raphinha back in training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/69d69cf8-6558-4c38-9af5-6ca6a82e05f3/image00013.jpeg" },
+            {
                 "id":  "4592194", "title":  "Twenty comebacks",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592194/twenty-comebacks-under-flick", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/14/b5a8addd-02da-4f03-ba82-94fcf062382b/_MGA5997.jpg" },
@@ -227,10 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588488/xavi-espart-renews-until-2030", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/0ca960b7-9e40-4f3d-acf7-a7d012fba730/WhatsApp-Image-2026-10-08-at-10.09.14.jpeg" },
             {
-                "id":  "4588657", "title":  "All internationals back in training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4588657", "title":  "All internationals back in training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
             {
                 "id":  "4588143", "title":  "Five things about Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588143/five-interesting-facts-about-barca-v-getafe", "time":  "",
@@ -337,11 +341,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4580549", "title":  "Training session with Barça Atlètic",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580549/training-session-with-barca-atletic", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/68eca17f-c3df-4cfc-8f47-95c8c041072b/WhatsApp-Image-2026-09-23-at-13.20.15-4-.jpeg" },
-            {
-                "id":  "4579922", "title":  "The squad back to training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4579922/the-squad-back-to-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/22/1ea7f490-8c5c-4335-bc90-4d6ecc0f286a/WhatsApp-Image-2026-09-22-at-13.09.42-2-.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/68eca17f-c3df-4cfc-8f47-95c8c041072b/WhatsApp-Image-2026-09-23-at-13.20.15-4-.jpeg" }
         ]
     }
 };

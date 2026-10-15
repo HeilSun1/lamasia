@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-15 15:12:28 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-15 19:56:34 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-15 15:12:28",
+    "updated":  "2026-10-15 19:56:34",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239078/ejemplar-gael-jose-seijo-internacional-sub-15-barca-arbitro.html", "title":  "Internacional Sub-15 del Barça y árbitro",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239078/ejemplar-gael-jose-seijo-internacional-sub-15-barca-arbitro.html", "time":  "2026-10-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/15/6ad0dbf02f533.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239026/maradona-informes-masia-revelan-debate-sobre-fichaje-messi.html", "title":  "Es un Maradona, los informes de la Masia que revelan el debate sobre el fichaje de Messi",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239026/maradona-informes-masia-revelan-debate-sobre-fichaje-messi.html", "time":  "2026-10-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/15/6ad0acfd44684.r_d.777-1183-9002.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "title":  "Fermín, el tesoro de Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "time":  "2026-10-14 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "title":  "Oficial: Toni Fernández, al Venezia con una fórmula diferente",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "time":  "2026-09-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/01/6a97225a7da25.png" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222268/cifras-traspaso-guille-fernandez-mallorca.html", "title":  "Las cifras del traspaso de Guille Fernández al Mallorca",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222268/cifras-traspaso-guille-fernandez-mallorca.html", "time":  "2026-09-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a971b090358a.r_d.1285-774-8996.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "title":  "El traspaso de Marc Guiu deja un dinero extra al Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222059/traspaso-guiu-deja-dinero-extra-barca.html", "time":  "2026-09-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a96a03f34d30.r_d.782-955-7500.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/01/6a97225a7da25.png" }
     ]
 };
