@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-14 20:15 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-15 15:08 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-14 20:15:16",
+    "updated":  "2026-10-15 15:08:11",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1599,17 +1599,7 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-                          {
-                              "person_id":  "50919246",
-                              "name":  "达尼-阿维拉",
-                              "en":  "Dani Ávila",
-                              "photo":  "assets/img/players/dqd/50919246.jpg",
-                              "injury":  "膝盖受伤",
-                              "date_from":  "2026.03.02",
-                              "date_until":  "2026.10.14",
-                              "days":  "228",
-                              "games_missed":  "6"
-                          }
+
                       ],
     "roster":  {
                    "code":  0,
@@ -2964,7 +2954,7 @@ window.DQD_BARCA_ATLETIC = {
                                           "date_from":  "2026.03.02",
                                           "injury":  "膝盖受伤",
                                           "days":  "228",
-                                          "status":  "out",
+                                          "status":  "ok",
                                           "games_missed":  "6"
                                       },
                          "50818134":  {

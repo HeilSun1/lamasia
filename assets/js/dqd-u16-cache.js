@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-13 15:19 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-15 15:11 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-13 15:19:23",
+    "updated":  "2026-10-15 15:11:17",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -30,21 +30,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Héctor Néstor Asumu",
-                        "id":  "2447155",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Paumi Mateos",
                         "id":  "2272366",
                         "pos":  "F",
@@ -56,6 +41,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2010-03-29",
                         "foot":  "右脚",
                         "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Héctor Néstor Asumu",
+                        "id":  "2447155",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2447155/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -205,7 +205,7 @@ window.DQD_U16_CACHE = {
                         "age":  "16岁",
                         "birthday":  "2010-01-01",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "186",
                         "value":  "",
                         "injury":  null
                     },
@@ -219,7 +219,7 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2411487/image",
                         "age":  "16岁",
                         "birthday":  "2010-02-01",
-                        "foot":  "",
+                        "foot":  "右脚",
                         "height":  "",
                         "value":  "",
                         "injury":  null
@@ -505,10 +505,10 @@ window.DQD_U16_CACHE = {
                         "away":  "Barcelona U16",
                         "homeId":  "1213692",
                         "awayId":  "933329",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "3",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     }
                 ]

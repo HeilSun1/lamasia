@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-14 20:15:18 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-15 15:09:24 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-14 20:15:18",
+    "updated":  "2026-10-15 15:09:24",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6490070", "title":  "世体：巴萨内部正围绕哈姆扎出场时间不足的问题产生...",
+            "url":  "https://www.dongqiudi.com/articles/6490070.html", "time":  "2026-10-15 09:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B6/92/280x210/crop/-/rBXRDGrQJwKAVF69AAJQGucNqJk363.jpg" },
         {
             "id":  "6485884", "title":  "巴萨U19梯队客场1球小胜加拉塔萨雷，迎来本赛季...",
             "url":  "https://www.dongqiudi.com/articles/6485884.html", "time":  "2026-10-14 17:40",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6369564", "title":  "巴萨客战塞维大名单：拉菲、亚马尔领衔，霍安-加西亚伤缺",
             "url":  "https://www.dongqiudi.com/articles/6369564.html", "time":  "2026-09-19 16:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/84/280x210/crop/-/rBXRDGquSeiADFDBAAEwnzMFoFU514.jpg" },
-        {
-            "id":  "6369091", "title":  "Here we go！罗马诺：巴萨签下16岁葡萄牙天才达尼-弗莱雷",
-            "url":  "https://www.dongqiudi.com/articles/6369091.html", "time":  "2026-09-19 14:12",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/52/280x210/crop/-/rBXRDGquJ8OACGAKAAh5ksGIMEI798.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/77/84/280x210/crop/-/rBXRDGquSeiADFDBAAEwnzMFoFU514.jpg" }
     ]
 };

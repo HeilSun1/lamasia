@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-13 15:17 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-15 15:09 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-13 15:17:49",
+    "updated":  "2026-10-15 15:09:23",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -107,21 +107,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "177",
                         "value":  "31万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Nuhu Fofana",
-                        "id":  "2229087",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2229087/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-28",
-                        "foot":  "双脚",
-                        "height":  "184",
-                        "value":  "",
                         "injury":  null
                     },
                     {
