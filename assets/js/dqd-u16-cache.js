@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-15 15:11 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-16 20:23 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-15 15:11:17",
+    "updated":  "2026-10-16 20:23:04",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -35,7 +35,7 @@ window.DQD_U16_CACHE = {
                         "pos":  "F",
                         "shirt":  "",
                         "team":  "Barcelona U16",
-                        "nation":  "Spain",
+                        "nation":  "Venezuela",
                         "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
                         "age":  "16岁",
                         "birthday":  "2010-03-29",
@@ -173,7 +173,7 @@ window.DQD_U16_CACHE = {
                         "nation":  "Mexico",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407338/image",
                         "age":  "15岁",
-                        "birthday":  "2010-11-23",
+                        "birthday":  "2010-11-22",
                         "foot":  "右脚",
                         "height":  "",
                         "value":  "",
@@ -420,6 +420,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Aleksander Simoskov",
+                        "id":  "2533244",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Ukraine",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2533244/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-03-31",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Arnau Ribes",
                         "id":  "2533243",
                         "pos":  "G",
@@ -429,21 +444,6 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2533243/image",
                         "age":  "15岁",
                         "birthday":  "2011-04-20",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Aleksander Simoskov",
-                        "id":  "2533244",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Ukraine",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2533244/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-04-01",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

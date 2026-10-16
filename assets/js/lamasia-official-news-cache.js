@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-15 19:56:30 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-16 20:23:20 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-15 19:56:30",
+    "updated":  "2026-10-16 20:23:20",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -143,6 +143,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4591742", "title":  "When and where to watch Betis v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591742/when-and-where-to-watch-betis-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4592741", "title":  "Betis side with best ever start",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592741/fc-barcelona-travel-to-play-betis-side-with-best-ever-start", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/2ed63544-9e18-44b6-89ce-0f846cb5de55/_MGA6020-1-.jpg" },
+            {
                 "id":  "4592732", "title":  "Raphinha back in training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/69d69cf8-6558-4c38-9af5-6ca6a82e05f3/image00013.jpeg" },
@@ -223,14 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589429/hansi-flick-raphinha-not-available-for-getafe", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/f6f07647-d6e1-44c6-b832-cb27a2557b1f/_MGA3443.jpg" },
             {
-                "id":  "4589422", "title":  "Final training session ahead of Barça v Getafe",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589422/final-training-session-ahead-of-barca-v-getafe", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/edb33351-f265-4772-9ee7-23118d74936f/WhatsApp-Image-2026-10-09-at-13.53.59.jpeg" },
-            {
-                "id":  "4588488", "title":  "Xavi Espart renews until 2030",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588488/xavi-espart-renews-until-2030", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/0ca960b7-9e40-4f3d-acf7-a7d012fba730/WhatsApp-Image-2026-10-08-at-10.09.14.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4589422", "title":  "Final training session ahead of Barça v Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589422/final-training-session-ahead-of-barca-v-getafe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/edb33351-f265-4772-9ee7-23118d74936f/WhatsApp-Image-2026-10-09-at-13.53.59.jpeg" },
+            {
+                "id":  "4588488", "title":  "Xavi Espart renews until 2030",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588488/xavi-espart-renews-until-2030", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/0ca960b7-9e40-4f3d-acf7-a7d012fba730/WhatsApp-Image-2026-10-08-at-10.09.14.jpeg" },
             {
                 "id":  "4588657", "title":  "All internationals back in training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
@@ -333,15 +341,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4580761", "title":  "A run for the record books",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580761/a-run-for-the-record-books", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/af537f53-b1ff-44bb-af56-e1511e610e37/_MGA7382.jpg" },
-            {
-                "id":  "4580732", "title":  "Four nominated for LaLiga's September awards",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580732/four-barca-players-nominated-for-laligas-september-awards", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/8a1e590b-27c1-4e9d-9c5d-eede41aac58a/DAG-144-_M1A5418.jpg" },
-            {
-                "id":  "4580549", "title":  "Training session with Barça Atlètic",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580549/training-session-with-barca-atletic", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/68eca17f-c3df-4cfc-8f47-95c8c041072b/WhatsApp-Image-2026-09-23-at-13.20.15-4-.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/23/af537f53-b1ff-44bb-af56-e1511e610e37/_MGA7382.jpg" }
         ]
     }
 };

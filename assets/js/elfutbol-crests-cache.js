@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js 的 badgeUrl 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-10-15 15:13 */
+/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js 的 badgeUrl 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-10-16 20:27 */
 window.ELFUTBOL_CRESTS = {
     "15396":  "https://elfutbol.co/crests/sm/granollers-ec.webp",
     "11112":  "https://elfutbol.co/crests/sm/barcelona-fc.webp",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-15 19:56:06 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-16 20:21:09 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-15 19:56:06",
+    "updated":  "2026-10-16 20:21:09",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6495868", "title":  "老照片：2011年，瓜迪奥拉在训练场上指导巴萨竞...",
+            "url":  "https://www.dongqiudi.com/articles/6495868.html", "time":  "2026-10-16 15:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B9/89/280x210/crop/-/rBXRn2rRzNGAWQm2AALKN463VU4983.jpg" },
         {
             "id":  "6493045", "title":  "佩德罗-罗德里格斯：愿有朝一日能实现进入巴萨一线队的目标",
             "url":  "https://www.dongqiudi.com/articles/6493045.html", "time":  "2026-10-15 22:23",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6373856", "title":  "哈维：MSN是巴萨最强三叉戟；巴萨时期最强9号是苏牙和埃托奥",
             "url":  "https://www.dongqiudi.com/articles/6373856.html", "time":  "2026-09-20 04:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E0/280x210/crop/-/rBXRDGqu8YOAVFRzAAFFLMQ9-I0419.jpg" },
-        {
-            "id":  "6372955", "title":  "德科：我们目标全力争夺每一项冠军，还要踢出高质量的足球",
-            "url":  "https://www.dongqiudi.com/articles/6372955.html", "time":  "2026-09-20 01:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/6F/280x210/crop/-/rBXRn2quw7WAYd06AACx6C_fF_U330.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E0/280x210/crop/-/rBXRDGqu8YOAVFRzAAFFLMQ9-I0419.jpg" }
     ]
 };

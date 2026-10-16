@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-15 15:09 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-16 20:21 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-15 15:09:23",
+    "updated":  "2026-10-16 20:21:08",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -76,7 +76,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-02-02",
                         "foot":  "右脚",
                         "height":  "178",
-                        "value":  "",
+                        "value":  "5万",
                         "injury":  null
                     },
                     {
@@ -110,21 +110,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Vicens Ponsati",
-                        "id":  "2014710",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-29",
-                        "foot":  "左脚",
-                        "height":  "176",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Ignasi Quer",
                         "id":  "1977602",
                         "pos":  "F",
@@ -136,7 +121,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2004-06-05",
                         "foot":  "右脚",
                         "height":  "177",
-                        "value":  "",
+                        "value":  "18万",
                         "injury":  null
                     },
                     {
@@ -151,7 +136,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2008-05-22",
                         "foot":  "左脚",
                         "height":  "178",
-                        "value":  "52万",
+                        "value":  "5万",
                         "injury":  null
                     },
                     {
@@ -376,7 +361,22 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-01-09",
                         "foot":  "左脚",
                         "height":  "187",
-                        "value":  "",
+                        "value":  "4万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Patricio Pacifico",
+                        "id":  "1482410",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Uruguay",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
+                        "age":  "20岁",
+                        "birthday":  "2006-04-08",
+                        "foot":  "左脚",
+                        "height":  "187",
+                        "value":  "68万",
                         "injury":  null
                     },
                     {
@@ -440,36 +440,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nico Marcipar",
-                        "id":  "2076881",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Argentina",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-13",
-                        "foot":  "左脚",
-                        "height":  "183",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Nil Teixidor",
-                        "id":  "1926082",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-28",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -500,6 +470,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Eder Aller",
+                        "id":  "1929977",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-04-04",
+                        "foot":  "右脚",
+                        "height":  "194",
+                        "value":  "10万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Iker Rodríguez",
                         "id":  "1926093",
                         "pos":  "G",
@@ -511,7 +496,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2008-02-22",
                         "foot":  "右脚",
                         "height":  "187",
-                        "value":  "",
+                        "value":  "10万",
                         "injury":  null
                     },
                     {

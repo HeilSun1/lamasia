@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-15 15:10 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-16 20:22 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-15 15:10:11",
+    "updated":  "2026-10-16 20:22:15",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,36 +14,6 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
-                    {
-                        "name":  "Shane Kluivert",
-                        "id":  "1657202",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Netherlands",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1657202/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-09-24",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "46万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Òscar Gistau",
-                        "id":  "1539491",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-03-08",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "5万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ajay Tavares",
                         "id":  "1861694",
@@ -94,7 +64,7 @@ window.DQD_U19_CACHE = {
                         "id":  "2014710",
                         "pos":  "F",
                         "shirt":  "",
-                        "team":  "Barcelona Atlètic",
+                        "team":  "Barcelona U19",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
                         "age":  "18岁",
@@ -102,21 +72,6 @@ window.DQD_U19_CACHE = {
                         "foot":  "左脚",
                         "height":  "176",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Joni Hernández",
-                        "id":  "2679425",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2679425/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-05-22",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "52万",
                         "injury":  null
                     },
                     {
@@ -146,21 +101,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-02-20",
                         "foot":  "左脚",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pedro Rodriguez",
-                        "id":  "1649171",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-20",
-                        "foot":  "右脚",
-                        "height":  "175",
                         "value":  "",
                         "injury":  null
                     },
@@ -285,21 +225,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Genís Clua",
-                        "id":  "2722874",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2722874/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-01-02",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Jordi Pesquer",
                         "id":  "2128094",
                         "pos":  "D",
@@ -334,7 +259,7 @@ window.DQD_U19_CACHE = {
                         "id":  "2076881",
                         "pos":  "D",
                         "shirt":  "",
-                        "team":  "Barcelona Atlètic",
+                        "team":  "Barcelona U19",
                         "nation":  "Argentina",
                         "photo":  "https://img.sofascore.com/api/v1/player/2076881/image",
                         "age":  "18岁",
@@ -356,7 +281,7 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-01-12",
                         "foot":  "左脚",
                         "height":  "188",
-                        "value":  "",
+                        "value":  "45万",
                         "injury":  null
                     },
                     {
@@ -364,7 +289,7 @@ window.DQD_U19_CACHE = {
                         "id":  "1926082",
                         "pos":  "D",
                         "shirt":  "",
-                        "team":  "Barcelona Atlètic",
+                        "team":  "Barcelona U19",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
                         "age":  "18岁",
@@ -491,21 +416,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-01-26",
                         "foot":  "左脚",
                         "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Max Bonfill",
-                        "id":  "1620575",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1620575/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-03-02",
-                        "foot":  "右脚",
-                        "height":  "188",
                         "value":  "",
                         "injury":  null
                     },
