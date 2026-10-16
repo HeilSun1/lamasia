@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-16 21:01:33 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-16 19:36:33 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-16 21:01:33",
+    "updated":  "2026-10-16 19:36:33",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6498412", "title":  "世体：哈姆扎回归巴萨B队，随队冲击联赛五连胜",
+            "url":  "https://www.dongqiudi.com/articles/6498412.html", "time":  "2026-10-17 00:00",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BA/5D/280x210/crop/-/rBXRn2rSSgmAb6bgAAKDxsVUvc0625.png" },
         {
             "id":  "6495868", "title":  "老照片：2011年，瓜迪奥拉在训练场上指导巴萨竞...",
             "url":  "https://www.dongqiudi.com/articles/6495868.html", "time":  "2026-10-16 15:06",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6373922", "title":  "哈维：现役最像我的是佩德里和维蒂尼亚；亚马尔会是世界最佳",
             "url":  "https://www.dongqiudi.com/articles/6373922.html", "time":  "2026-09-20 04:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E7/280x210/crop/-/rBXRDGqu9TaATOV6AAE5_UWFh6M514.jpg" },
-        {
-            "id":  "6373856", "title":  "哈维：MSN是巴萨最强三叉戟；巴萨时期最强9号是苏牙和埃托奥",
-            "url":  "https://www.dongqiudi.com/articles/6373856.html", "time":  "2026-09-20 04:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E0/280x210/crop/-/rBXRDGqu8YOAVFRzAAFFLMQ9-I0419.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E7/280x210/crop/-/rBXRDGqu9TaATOV6AAE5_UWFh6M514.jpg" }
     ]
 };

@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-16 21:05:26 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-16 19:37:03 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-16 21:05:26",
+    "updated":  "2026-10-16 19:37:03",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135427554", "title":  "Artem Rybak: la decisión firme del Barça con la joya ucraniana de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artem-rybak-decisision-firme-barca-135427554", "time":  "2026-10-16 17:40",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135292914", "title":  "Erik Domínguez, el desequilibrio más volcánico de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/erik-dominguez-desequilibrio-volcanico-masia-135292914", "time":  "2026-10-14 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135289451", "title":  "Pedro Rodríguez da la primera victoria al Barça en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-da-primera-victoria-135289451", "time":  "2026-10-13 15:41",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134485864", "title":  "Iu y Nil Vicens impulsan al Juvenil A a otra goleada majestuosa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-nil-vicens-impulsan-juvenil-134485864", "time":  "2026-09-20 12:07",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134454227", "title":  "Barbastro-Barça Atlètic: El reto de sumar el primer triunfo a domicilio",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barbastro-barca-atletic-reto-sumar-134454227", "time":  "2026-09-19 15:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
