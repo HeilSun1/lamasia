@@ -1,17 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-17 21:06:29 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-17 18:35:16 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-17 21:06:29",
+    "updated":  "2026-10-17 18:35:16",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135448414", "title":  "Hamza y Pedro sellan una victoria corta de un Barça Atlètic más líder",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hamza-pedro-sellan-victoria-corta-135448414", "time":  "2026-10-17 17:53",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135448574", "title":  "El 1x1 del Barça contra el Betis",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/1x1-barca-betis-descanso-135448574", "time":  "2026-10-17 18:34",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6daed91e-01e4-47ec-ba63-7d5711595db5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135447274", "title":  "Ajay Tavares, con un doblete de asistencias, lidera otro triunfo brillante del Juvenil A del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ajay-tavares-doblete-asistencias-lidera-135447274", "time":  "2026-10-17 15:01",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8973d432-6dae-4115-8929-54d1b2b81bca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "135448015", "title":  "Barça Atlètic 2-1 Utebo: goles, resumen y resultado del partido",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-directo-resultado-135448015", "time":  "2026-10-17 16:53",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135405442", "title":  "Barça Atlètic-Utebo: Hamza se suma a un filial lanzado",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-hamza-suma-135405442", "time":  "2026-10-17 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
         {
             "id":  "135427554", "title":  "Artem Rybak: la decisión firme del Barça con la joya ucraniana de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artem-rybak-decisision-firme-barca-135427554", "time":  "2026-10-16 17:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135292914", "title":  "Erik Domínguez, el desequilibrio más volcánico de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/erik-dominguez-desequilibrio-volcanico-masia-135292914", "time":  "2026-10-14 04:30",
@@ -187,22 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134608782", "title":  "El método Pol Planas: la gran fórmula que potencia los talentos de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/metodo-pol-planas-gran-formula-134608782", "time":  "2026-09-25 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134538604", "title":  "El Barça Atlètic, en cuadro y sin Bisiwu ni Orian Goren",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-bisiwu-orian-goren-belletti-filial-134538604", "time":  "2026-09-22 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/727b5451-0061-4619-b6c9-a1ffed395793_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134527121", "title":  "Minguk Lee, el lateral coreano que asombra en La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/minguk-lee-lateral-coreano-asombra-134527121", "time":  "2026-09-21 16:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d85e10a7-36af-4d49-8a2c-e5e554c00cd8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134502276", "title":  "Landry da la primera alegría a domicilio al Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/landry-da-primera-alegria-domicilio-134502276", "time":  "2026-09-20 21:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f57620-5da7-4728-ad67-83dea1bdb8d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134493320", "title":  "UD Barbastro - Barça Atlètic: resumen, resultado y goles del partido de la jornada 3 de la Segunda RFEF",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-barbastro-barca-atletic-directo-134493320", "time":  "2026-09-20 17:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

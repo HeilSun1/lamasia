@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-17 21:02:40 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-17 18:35:10 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-17 21:02:40",
+    "updated":  "2026-10-17 18:35:10",
     "source":  "dongqiudi",
-    "count":  38,
+    "count":  39,
     "news":  [
+        {
+            "id":  "6505938", "title":  "巴萨竞技战报 20261018",
+            "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BC/FA/280x210/crop/-/rBXRDGrTrOKAaa3gAAUfgpEsKYs846.jpg" },
         {
             "id":  "6503137", "title":  "巴萨青年A队主场3-1战胜蒙松。上半时，塔瓦雷斯...",
             "url":  "https://www.dongqiudi.com/articles/6503137.html", "time":  "2026-10-17 20:25",

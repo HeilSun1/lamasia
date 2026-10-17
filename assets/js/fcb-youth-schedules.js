@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-17 21:04；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-17 18:36；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-17 21:04:02",
+    "updated":  "2026-10-17 18:36:52",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -701,9 +701,9 @@ window.LAMASIA_SCHEDULES = {
                                        "away":  "Cornellà A",
                                        "homeId":  "11111",
                                        "awayId":  "11163",
-                                       "hs":  "",
-                                       "as":  "",
-                                       "status":  "Not started",
+                                       "hs":  "5",
+                                       "as":  "2",
+                                       "status":  "Ended",
                                        "code":  "0",
                                        "isHome":  true,
                                        "venue":  "Ciutat Esportiva Joan Gamper"
@@ -1826,9 +1826,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "FC Barcelona A",
                                          "homeId":  "12236",
                                          "awayId":  "11113",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "2",
+                                         "as":  "4",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "El Rieral"
@@ -2379,9 +2379,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Vic Riuprimer Refo A",
                                            "homeId":  "11114",
                                            "awayId":  "15562",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "15",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"

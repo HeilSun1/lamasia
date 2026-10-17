@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-17 21:01:38 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-17 18:34:50 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-17 21:01:38",
+    "updated":  "2026-10-17 18:34:50",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6505938", "title":  "巴萨竞技战报 20261018",
+            "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BC/FA/280x210/crop/-/rBXRDGrTrOKAaa3gAAUfgpEsKYs846.jpg" },
         {
             "id":  "6498412", "title":  "世体：哈姆扎回归巴萨B队，随队冲击联赛五连胜",
             "url":  "https://www.dongqiudi.com/articles/6498412.html", "time":  "2026-10-17 00:00",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6374353", "title":  "巴萨竞技将由体育部门管理，德科解释其中原因",
             "url":  "https://www.dongqiudi.com/articles/6374353.html", "time":  "2026-09-20 07:16",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/79/1B/280x210/crop/-/rBXRn2qvFpaADl0gAAA0j8VBwOI750.jpg" },
-        {
-            "id":  "6373922", "title":  "哈维：现役最像我的是佩德里和维蒂尼亚；亚马尔会是世界最佳",
-            "url":  "https://www.dongqiudi.com/articles/6373922.html", "time":  "2026-09-20 04:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/78/E7/280x210/crop/-/rBXRDGqu9TaATOV6AAE5_UWFh6M514.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/79/1B/280x210/crop/-/rBXRn2qvFpaADl0gAAA0j8VBwOI750.jpg" }
     ]
 };

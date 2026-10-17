@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-17 21:04:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-17 18:35:13 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-17 21:04:06",
+    "updated":  "2026-10-17 18:35:13",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4593590", "title":  "Més líders (2-1)",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4593590/barca-atletic-2-1-utebo-still-at-the-top", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/e8f3d303-6802-489e-9870-e25b3fcd78f9/2026-10-17_FCBATLETICvsUTEBO_159.jpg" },
             {
                 "id":  "4590123", "title":  "Barça Atlètic 1-0 Logroñés: Last-gasp win",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4590123/barca-atletic-1-0-sd-logrones-last-gasp-win", "time":  "",
