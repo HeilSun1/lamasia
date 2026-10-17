@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-17 09:20 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-17 21:02 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-17 09:20:18",
+    "updated":  "2026-10-17 21:02:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -580,10 +580,10 @@ window.DQD_U19_CACHE = {
                         "away":  "CF Atletico de Monzon U19",
                         "homeId":  "90128",
                         "awayId":  "1248770",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "3",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {

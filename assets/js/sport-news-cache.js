@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-17 09:21:14 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-17 21:06:29 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-17 09:21:14",
+    "updated":  "2026-10-17 21:06:29",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135405442", "title":  "Barça Atlètic-Utebo: Hamza se suma a un filial lanzado",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-hamza-suma-135405442", "time":  "2026-10-17 06:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
         {
             "id":  "135427554", "title":  "Artem Rybak: la decisión firme del Barça con la joya ucraniana de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artem-rybak-decisision-firme-barca-135427554", "time":  "2026-10-16 17:40",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134493320", "title":  "UD Barbastro - Barça Atlètic: resumen, resultado y goles del partido de la jornada 3 de la Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ud-barbastro-barca-atletic-directo-134493320", "time":  "2026-09-20 17:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" },
-        {
-            "id":  "134485864", "title":  "Iu y Nil Vicens impulsan al Juvenil A a otra goleada majestuosa",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-nil-vicens-impulsan-juvenil-134485864", "time":  "2026-09-20 12:07",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3d04252d-bc2e-4d8b-bf14-da700c0e9cdf_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/42d315ba-b5fa-4bfa-ac52-c6063e949c0b_16-9-discover-aspect-ratio_640w_0_x418y175.webp" }
     ]
 };

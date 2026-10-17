@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-17 09:21:10 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-17 21:04:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-17 09:21:10",
+    "updated":  "2026-10-17 21:04:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -143,6 +143,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4593115", "title":  "PREVIEW | Betis v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593115/preview-real-betis-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4592779", "title":  "Frenkie de Jong and Raphinha back in the squad",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592779/the-squad-for-betis-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/58ea5f15-5365-4a9d-a814-536ae5b25138/_MGA6687.jpg" },
@@ -227,10 +231,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590127/a-special-build-up", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/10/827348cd-1ae8-4549-be57-ea7181a60f77/DAG-028-_C4A6181.jpg" },
             {
-                "id":  "4589519", "title":  "Barça squad for visit of Getafe",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589519/the-fc-barcelona-squad-for-visit-of-getafe", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/ad1e67e8-4da0-4d06-b8da-fba7c97d3449/_MGA3203.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -238,6 +238,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4589519", "title":  "Barça squad for visit of Getafe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589519/the-fc-barcelona-squad-for-visit-of-getafe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/09/ad1e67e8-4da0-4d06-b8da-fba7c97d3449/_MGA3203.jpg" },
             {
                 "id":  "4589547", "title":  "PREVIEW | Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589547/preview-fc-barcelona-v-getafe", "time":  "",
@@ -337,11 +341,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4581966", "title":  "Upcoming targets for Raphinha",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" },
-            {
-                "id":  "4581826", "title":  "Blaugrana face-off at Wembley",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581826/blaugrana-face-off-at-wembley", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/2b234519-9f5f-4b57-9d2b-5bc1ee9ce08a/_MGA7116.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" }
         ]
     }
 };
