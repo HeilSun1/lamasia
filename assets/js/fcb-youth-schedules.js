@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-17 18:36；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-18 18:44；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-17 18:36:52",
+    "updated":  "2026-10-18 18:44:42",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -1254,9 +1254,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "FC Barcelona A",
                                          "homeId":  "12241",
                                          "awayId":  "11112",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "0",
+                                         "as":  "10",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "Can Torelló"
@@ -2932,9 +2932,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Sant Cugat A",
                                            "homeId":  "11115",
                                            "awayId":  "15192",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "4",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"
@@ -2951,9 +2951,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "FC Barcelona A",
                                            "homeId":  "15392",
                                            "awayId":  "11115",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "1",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  false,
                                            "venue":  ""
@@ -3542,9 +3542,9 @@ window.LAMASIA_SCHEDULES = {
                                           "away":  "Cornellà",
                                           "homeId":  "11110",
                                           "awayId":  "8826",
-                                          "hs":  "",
-                                          "as":  "",
-                                          "status":  "Not started",
+                                          "hs":  "1",
+                                          "as":  "2",
+                                          "status":  "Ended",
                                           "code":  "0",
                                           "isHome":  true,
                                           "venue":  "Ciutat Esportiva Joan Gamper"

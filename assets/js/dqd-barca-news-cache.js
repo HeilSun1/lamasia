@@ -1,9 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-17 18:34:50 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-18 18:42:43 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-17 18:34:50",
+    "updated":  "2026-10-18 18:42:43",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6508757", "title":  "沃顿：希望能像布斯克茨那样踢球，但我的水平还差得很远",
+            "url":  "https://www.dongqiudi.com/articles/6508757.html", "time":  "2026-10-18 12:35",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BE/2A/280x210/crop/-/rBXRn2rUTIKAQOPsAAVc0MwjWZo282.png" },
+        {
+            "id":  "6508579", "title":  "齐头并进！本赛季截至目前，巴萨男、女足都保持了各...",
+            "url":  "https://www.dongqiudi.com/articles/6508579.html", "time":  "2026-10-18 11:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BE/0E/280x210/crop/-/rBXRn2rUPPiAXhh1AADaLsHI4nY426.jpg" },
+        {
+            "id":  "6508303", "title":  "恰托维奇vs乌特伯个人集锦。恰托维奇此役踢了58...",
+            "url":  "https://www.dongqiudi.com/articles/6508303.html", "time":  "2026-10-18 09:57",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/f66e08aa457821e87b70105e33382955cTApPd_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6508270", "title":  "比西武vs乌特伯个人集锦。比西武此役首发踢了64...",
+            "url":  "https://www.dongqiudi.com/articles/6508270.html", "time":  "2026-10-18 09:45",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/c83f3f2038c454bf98a3184984248216kbsgN7_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6508233", "title":  "哈姆扎vs乌特伯个人集锦。哈姆扎身穿19号球衣完...",
+            "url":  "https://www.dongqiudi.com/articles/6508233.html", "time":  "2026-10-18 09:36",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/74d9ac22905aee31d2318752fe6803ded19FdF_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6506999", "title":  "出任巴萨竞技助教，布斯克茨：管理球队同样是一项重要挑战",
+            "url":  "https://www.dongqiudi.com/articles/6506999.html", "time":  "2026-10-18 07:48",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" },
         {
             "id":  "6505938", "title":  "巴萨竞技战报 20261018",
             "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
@@ -179,30 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6389231", "title":  "每体：加里巴闪耀巴萨竞技，进入弗利克考察视野",
             "url":  "https://www.dongqiudi.com/articles/6389231.html", "time":  "2026-09-23 16:41",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/3B/280x210/crop/-/rBXRn2qzkKqAaxvsAAGuPTCwK2g265.jpg" },
-        {
-            "id":  "6389040", "title":  "布斯克茨开启教练生涯！目标欧足联职业级证书",
-            "url":  "https://www.dongqiudi.com/articles/6389040.html", "time":  "2026-09-23 15:31",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/1C/280x210/crop/-/rBXRn2qzf8KAVdvsAAwa88xb9N4795.png" },
-        {
-            "id":  "6387575", "title":  "每体：克里斯滕森受伤后，弗里克可能从巴萨青训提拔中卫",
-            "url":  "https://www.dongqiudi.com/articles/6387575.html", "time":  "2026-09-23 08:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/42/EF/280x210/crop/-/rBXRDGkPisaAG4QKAAHtZa0z_1Y435.jpg" },
-        {
-            "id":  "6382425", "title":  "巴萨锁定未来！18岁门神罗德里格斯续约至2029年",
-            "url":  "https://www.dongqiudi.com/articles/6382425.html", "time":  "2026-09-21 19:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7C/F4/280x210/crop/-/rBXRn2qxF8WAD_cvABTrML2VAk4655.png" },
-        {
-            "id":  "6382118", "title":  "每体：巴萨将与18岁门将伊克尔-罗德里格斯续约至2029年",
-            "url":  "https://www.dongqiudi.com/articles/6382118.html", "time":  "2026-09-21 18:40",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7C/E7/280x210/crop/-/rBXRDGqxCVeAKee8AAKL3hvN6eI409.jpg" },
-        {
-            "id":  "6378782", "title":  "巴萨竞技战报 20260921",
-            "url":  "https://www.dongqiudi.com/articles/6378782.html", "time":  "2026-09-21 09:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/7B/2F/280x210/crop/-/rBXRDGqwIAmAf-cEAAnBnhggL5o570.jpg" },
-        {
-            "id":  "6374353", "title":  "巴萨竞技将由体育部门管理，德科解释其中原因",
-            "url":  "https://www.dongqiudi.com/articles/6374353.html", "time":  "2026-09-20 07:16",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/79/1B/280x210/crop/-/rBXRn2qvFpaADl0gAAA0j8VBwOI750.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/3B/280x210/crop/-/rBXRn2qzkKqAaxvsAAGuPTCwK2g265.jpg" }
     ]
 };

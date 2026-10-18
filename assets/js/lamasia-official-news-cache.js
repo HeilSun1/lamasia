@@ -1,11 +1,11 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-17 18:35:13 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-18 18:43:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-17 18:35:13",
+    "updated":  "2026-10-18 18:43:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
             {
-                "id":  "4593590", "title":  "Més líders (2-1)",
+                "id":  "4593590", "title":  "Barça Atlètic 2-1 Utebo: Still at the top",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4593590/barca-atletic-2-1-utebo-still-at-the-top", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/e8f3d303-6802-489e-9870-e25b3fcd78f9/2026-10-17_FCBATLETICvsUTEBO_159.jpg" },
             {
@@ -147,6 +147,30 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4594024", "title":  "Medical updates on Eric and Kounde",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594024/medical-updates-on-eric-and-kounde", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/e36ba3ed-db2b-4ea6-8143-64fedb19306b/_MGA7641.jpg" },
+            {
+                "id":  "4593865", "title":  "13 different scorers a record in Europe",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593865/13-different-scorers-a-record-in-europe", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/13f1619e-6305-4a26-ac11-b9f4c5bfa73e/_MGA8155.jpg" },
+            {
+                "id":  "4593754", "title":  "Flick matches his best run of wins",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593754/hansi-flick-equals-his-best-run-of-wins-with-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/4e26dd94-d03c-4c41-b101-038ceb369fec/_MGA7637-1-.jpg" },
+            {
+                "id":  "4588635", "title":  "Raphinha comes back to draw level with Neymar",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588635/raphinha-comes-back-to-draw-level-with-neymar", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/4093d0d4-b93e-4ad8-bc2c-5ca208588cb6/_MGA7954.jpg" },
+            {
+                "id":  "4593638", "title":  "Betis 2-5 Barça: The dream start continues",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593638/betis-2-5-fc-barcelona-the-dream-start-continues", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/b3d659b6-fc31-4554-a1e0-1a8321390af8/_MGA8159.jpg" },
+            {
+                "id":  "4593710", "title":  "Hansi Flick's Barça equal record for best league start",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593710/fc-barcelona-equal-record-for-best-league-start", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/13022a09-2e60-4c2a-b6e6-ce9248a79a95/_MGA8129.jpg" },
+            {
                 "id":  "4593115", "title":  "PREVIEW | Betis v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593115/preview-real-betis-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
@@ -211,6 +235,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590582/when-and-where-to-watch-galatasaray-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4590493", "title":  "Recovery session with Galatasaray on the horizon",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590493/recovery-session-with-galatasaray-on-the-horizon", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/11/a2432c02-885e-4c29-bc18-895671dfb276/image00012.jpeg" },
@@ -234,14 +266,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4590127", "title":  "A special build-up",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590127/a-special-build-up", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/10/827348cd-1ae8-4549-be57-ea7181a60f77/DAG-028-_C4A6181.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4589519", "title":  "Barça squad for visit of Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4589519/the-fc-barcelona-squad-for-visit-of-getafe", "time":  "",
@@ -321,31 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4584325", "title":  "Exciting October in store",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4584325/big-games-coming-up-in-october", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/30/1eb598f0-7cd2-46d4-b341-b17a5745abc1/3200X2000_Calendar-OCT-ENG.jpg" },
-            {
-                "id":  "4584279", "title":  "Spectacular September",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4584279/spectacular-september-for-lamine-yamal", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ae654665-d2fc-4873-b0de-f3f61a0f5d77/_MGA6025.jpg" },
-            {
-                "id":  "4583548", "title":  "Flick, Liga coach of the month",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583548/hansi-flick-liga-coach-of-the-month-for-september", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/29/cb804d90-ffa2-4cdf-a2ba-56cf3c5760fe/_MGA5779_1.jpg" },
-            {
-                "id":  "4583200", "title":  "Blaugrana clash in Seville",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583200/blaugrana-clash-in-seville", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/65d60d4c-f655-41f7-8b26-b138b350fd23/_MGA0381.jpg" },
-            {
-                "id":  "4583000", "title":  "7-2 win against Racing, best moment from September",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4583000/7-2-win-against-racing-best-moment-from-september", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/28/fec78abc-8466-416a-b5b7-d7283f854741/_MGA7382.jpg" },
-            {
-                "id":  "4581481", "title":  "One win away from best ever start to LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581481/one-win-away-from-best-ever-start-to-laliga", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/24/02764d52-c3c3-48f7-bd48-8c79b643713f/DAG-078-_M1A0875.jpg" },
-            {
-                "id":  "4581966", "title":  "Upcoming targets for Raphinha",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4581966/upcoming-targets-for-raphinha", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/25/4d9533d0-642a-48ad-a0e9-d4d30268979d/_MGA7332.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/30/1eb598f0-7cd2-46d4-b341-b17a5745abc1/3200X2000_Calendar-OCT-ENG.jpg" }
         ]
     }
 };

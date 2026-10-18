@@ -2,12 +2,166 @@
    运行器 → 本机的中间产物，不要在任何 HTML 中引用。 */
 window.DQD_VIDEOS_YT_SHARD = {
     "version":  1,
-    "updated":  "2026-10-17 18:37:23",
+    "updated":  "2026-10-18 18:45:10",
     "probeOk":  true,
     "searched":  [
                      "sofascore:16539977"
                  ],
     "items":  [
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:u16:2128111",
+                      "v":  {
+                                "videoId":  "BnlZWW9rsKQ",
+                                "title":  "Ruslan Mba vs UE Cornella",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "local:juvenil-b:ruslanmba",
+                      "v":  {
+                                "videoId":  "BnlZWW9rsKQ",
+                                "title":  "Ruslan Mba vs UE Cornella",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "local:juvenil-b:erikdominguez",
+                      "v":  {
+                                "videoId":  "sW5FtYUGA1g",
+                                "title":  "Erik Dominguez vs UE Cornella",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "local:juvenil-b:noahgarcia",
+                      "v":  {
+                                "videoId":  "n3GrKDC2dhw",
+                                "title":  "Noah Garcia vs UE Cornella",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-18",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "b:50855329",
+                      "v":  {
+                                "videoId":  "VSpkODvTG50",
+                                "title":  "Pedro Rodriguez vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "sf:b:1649171",
+                      "v":  {
+                                "videoId":  "VSpkODvTG50",
+                                "title":  "Pedro Rodriguez vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "match",
+                      "k":  "sofascore:16539977",
+                      "v":  {
+                                "videoId":  "E5V4U6SLWAM",
+                                "title":  "Hamza Abdelkarim Barça Atlètic Official Debut vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "player",
+                      "k":  "b:51126194",
+                      "v":  {
+                                "videoId":  "E5V4U6SLWAM",
+                                "title":  "Hamza Abdelkarim Barça Atlètic Official Debut vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "player",
+                      "k":  "local:juvenil-a:hamzaabdelkarim",
+                      "v":  {
+                                "videoId":  "E5V4U6SLWAM",
+                                "title":  "Hamza Abdelkarim Barça Atlètic Official Debut vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "feed",
+                      "k":  "b:50892327",
+                      "v":  {
+                                "videoId":  "zLwv0c2zoAg",
+                                "title":  "Jesse Bisiwu vs Utebo FC",
+                                "channel":  "ArsenKveFCB",
+                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                "published":  "2026-10-17",
+                                "durationSec":  ""
+                            }
+                  },
+                  {
+                      "at":  "2026-10-18",
+                      "src":  "yt-rss",
+                      "t":  "match",
+                      "k":  "sofascore:16539977",
+                      "v":  {
+                                "videoId":  "-Biqq5vTIvw",
+                                "title":  "🔴Live: Barca Juvenil B vs UE Cornella",
+                                "channel":  "Barca Nation",
+                                "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
+                                "published":  "2026-10-18",
+                                "durationSec":  ""
+                            }
+                  },
                   {
                       "at":  "2026-10-17",
                       "src":  "yt-search",

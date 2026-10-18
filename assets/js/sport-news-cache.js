@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-17 18:35:16 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-18 18:43:08 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-17 18:35:16",
+    "updated":  "2026-10-18 18:43:08",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135432923", "title":  "El diamante que viene en la defensa del Barça: \"Nunca vi algo así\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hafiz-gariba-diamante-valdra-30-135432923", "time":  "2026-10-18 15:34",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c56c49b-3729-4997-b81a-2eeae8efcc56_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135448414", "title":  "Hamza y Pedro sellan una victoria corta de un Barça Atlètic más líder",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hamza-pedro-sellan-victoria-corta-135448414", "time":  "2026-10-17 17:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135448574", "title":  "El 1x1 del Barça contra el Betis",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/1x1-barca-betis-descanso-135448574", "time":  "2026-10-17 18:34",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6daed91e-01e4-47ec-ba63-7d5711595db5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/1x1-barca-betis-descanso-135448574", "time":  "2026-10-17 19:35",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6daed91e-01e4-47ec-ba63-7d5711595db5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135447274", "title":  "Ajay Tavares, con un doblete de asistencias, lidera otro triunfo brillante del Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ajay-tavares-doblete-asistencias-lidera-135447274", "time":  "2026-10-17 15:01",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134535572", "title":  "Iu Martínez, el extremo de La Masia \"poseído\" por Raphinha",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-martinez-extremo-masia-poseido-134535572", "time":  "2026-09-25 16:06",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134608782", "title":  "El método Pol Planas: la gran fórmula que potencia los talentos de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/metodo-pol-planas-gran-formula-134608782", "time":  "2026-09-25 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b2a86f2a-19e1-491c-91e1-005ad4a60aca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
