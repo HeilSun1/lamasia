@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-18 18:43:04 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-10-19 21:09:58 数据源：懂球帝 */
 window.DQD_U18_NEWS = {
-    "updated":  "2026-10-18 18:43:04",
+    "updated":  "2026-10-19 21:09:58",
     "source":  "dongqiudi",
-    "count":  10,
+    "count":  11,
     "news":  [
+        {
+            "id":  "6516438", "title":  "坎波斯2024-25赛季个人集锦。18岁的阿莱士...",
+            "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6516438", "time":  "2026-10-19 16:23",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/19/2a3a8d2d1f56b02e85061b60ebc06e0f83lhpW.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6479315", "title":  "16岁的巴萨前锋达尼-弗雷雷回到了自己的高中母校...",
             "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6479315", "time":  "2026-10-13 15:10",

@@ -1,9 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-18 18:42:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-19 21:09:36 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-18 18:42:43",
+    "updated":  "2026-10-19 21:09:36",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6518516", "title":  "弗里克：不想谈论居莱尔肘击对手的事；拉菲尼亚明天能首发",
+            "url":  "https://www.dongqiudi.com/articles/6518516.html", "time":  "2026-10-20 02:42",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/DC/280x210/crop/-/rBXRDGrWYqeALpkNAADr0Rp5pNg890.jpg" },
+        {
+            "id":  "6518341", "title":  "每体：西协乙分组调整利好加泰罗尼亚，七支加泰球队跻身赛区前九",
+            "url":  "https://www.dongqiudi.com/articles/6518341.html", "time":  "2026-10-20 00:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/97/280x210/crop/-/rBXRn2rWQUCAJ7spAAE77N9ihSI746.jpg" },
+        {
+            "id":  "6516687", "title":  "世体介绍阿莱士-坎波斯：擅长争顶下脚果断，脚下技术同样不错",
+            "url":  "https://www.dongqiudi.com/articles/6516687.html", "time":  "2026-10-19 17:52",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/17/280x210/crop/-/rBXRn2rV6HWAAQwAAACqrfvLH0Y894.jpg" },
+        {
+            "id":  "6516438", "title":  "坎波斯2024-25赛季个人集锦。18岁的阿莱士...",
+            "url":  "https://www.dongqiudi.com/articles/6516438.html", "time":  "2026-10-19 16:23",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/19/2a3a8d2d1f56b02e85061b60ebc06e0f83lhpW.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6516369", "title":  "巴萨欧冠战巴黎大名单：亚马尔、拉菲尼亚领衔，孔德缺席",
+            "url":  "https://www.dongqiudi.com/articles/6516369.html", "time":  "2026-10-19 16:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C0/F6/280x210/crop/-/rBXRDGrV0CmAZgs-ABRdFbM4t0o216.png" },
+        {
+            "id":  "6516286", "title":  "每体：巴萨竞技中后卫坎波斯将跟随一线队出征巴黎。...",
+            "url":  "https://www.dongqiudi.com/articles/6516286.html", "time":  "2026-10-19 15:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C0/DE/280x210/crop/-/rBXRn2rVxseAfRPrAAHssbwsFY0006.jpg" },
         {
             "id":  "6508757", "title":  "沃顿：希望能像布斯克茨那样踢球，但我的水平还差得很远",
             "url":  "https://www.dongqiudi.com/articles/6508757.html", "time":  "2026-10-18 12:35",
@@ -179,30 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6399986", "title":  "世体：巴萨竞技多人缺阵，锋线新星成关键",
             "url":  "https://www.dongqiudi.com/articles/6399986.html", "time":  "2026-09-26 14:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/10/280x210/crop/-/rBXRn2q3Zc-ADItgAAEDaAIULCE511.jpg" },
-        {
-            "id":  "6399382", "title":  "每体：巴萨小将诺莫科已能高强度跑动，复出渐近",
-            "url":  "https://www.dongqiudi.com/articles/6399382.html", "time":  "2026-09-26 09:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F7/57/280x210/crop/-/rBXRDGoanDqAO2SMAAHRrIKVles571.jpg" },
-        {
-            "id":  "6395596", "title":  "9月24日巴萨训练官方视频：4名巴萨竞技球员加入...",
-            "url":  "https://www.dongqiudi.com/articles/6395596.html", "time":  "2026-09-25 09:10",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/25/93609008df6785dd4eeabee8a1996a3cAxcLsS_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6392448", "title":  "世体：通卡拉康复顺利，有望10月10日复出",
-            "url":  "https://www.dongqiudi.com/articles/6392448.html", "time":  "2026-09-24 18:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/83/BD/280x210/crop/-/rBXRDGq0-gOAIh9dAAA9h5ppAY0487.jpg" },
-        {
-            "id":  "6391120", "title":  "9月23日巴萨训练官方视频：一线队与巴萨竞技的联...",
-            "url":  "https://www.dongqiudi.com/articles/6391120.html", "time":  "2026-09-24 08:19",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/24/ebf30a479a640c8f359e438d8e312829PIrGE9_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6389632", "title":  "世体：布斯克茨将参加欧足联A级证书课程，目前较少接触球员",
-            "url":  "https://www.dongqiudi.com/articles/6389632.html", "time":  "2026-09-23 18:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/6D/280x210/crop/-/rBXRn2qzq8yAKbF2AACMBepsyQE324.jpg" },
-        {
-            "id":  "6389231", "title":  "每体：加里巴闪耀巴萨竞技，进入弗利克考察视野",
-            "url":  "https://www.dongqiudi.com/articles/6389231.html", "time":  "2026-09-23 16:41",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/3B/280x210/crop/-/rBXRn2qzkKqAaxvsAAGuPTCwK2g265.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/10/280x210/crop/-/rBXRn2q3Zc-ADItgAAEDaAIULCE511.jpg" }
     ]
 };

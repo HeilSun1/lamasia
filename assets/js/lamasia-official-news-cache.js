@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-18 18:43:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-19 21:10:00 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-18 18:43:06",
+    "updated":  "2026-10-19 21:10:00",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -147,6 +147,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4594810", "title":  "First contact with Parc des Princes",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594810/first-contact-with-parc-des-princes", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/23b2650d-4e88-4fb8-be4d-79834f58eae4/_MGA8540.jpg" },
+            {
+                "id":  "4594778", "title":  "Hansi Flick: 'We're ready'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594778/hansi-flick-were-ready", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/b07991b3-1af2-4d67-8423-179c50283dc1/_MGA8390.jpg" },
+            {
+                "id":  "4591743", "title":  "When and where to watch PSG v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591743/when-and-where-to-watch-paris-saint-germain-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4594106", "title":  "Barça squad for PSG game",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594106/fc-barcelona-squad-for-the-trip-to-psg", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/96e974d9-6ffb-4dea-80b8-e635df12ea1b/_MGA7720.jpg" },
+            {
                 "id":  "4594024", "title":  "Medical updates on Eric and Kounde",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594024/medical-updates-on-eric-and-kounde", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/e36ba3ed-db2b-4ea6-8143-64fedb19306b/_MGA7641.jpg" },
@@ -219,6 +235,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591186/first-contact-with-ali-sami-yen", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/7262d11c-2775-4785-b37f-d36f3739e7d7/_MGA5255.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4591110", "title":  "'We need to be careful'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591110/pau-cubarsi-we-need-to-be-careful", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/568cb987-fb38-4c91-9d8d-6b415872ddc5/_MGA5123.jpg" },
@@ -234,14 +258,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4590582", "title":  "When and where to watch Galatasaray v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590582/when-and-where-to-watch-galatasaray-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4590493", "title":  "Recovery session with Galatasaray on the horizon",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590493/recovery-session-with-galatasaray-on-the-horizon", "time":  "",
@@ -329,23 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4586808", "title":  "Back at work",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4586808/back-at-work", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/20c25ef5-c6da-471e-82ba-c24088fbc5ac/image00002.jpeg" },
-            {
-                "id":  "4585817", "title":  "Final blaugrana duel of the international break",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585817/final-blaugrana-duel-of-the-international-break", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c481eb7f-6ab2-4ff8-a522-0e0b8108660b/DAG-421-_M1A9900.jpg" },
-            {
-                "id":  "4585738", "title":  "Raphinha, Liga MVP for September",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585738/raphinha-liga-player-of-the-month-for-september", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/02/c795debd-c96d-4daf-88b5-41a0d456335e/_MGA5369.jpg" },
-            {
-                "id":  "4585128", "title":  "Cancelo goal against Racing, best of the month",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4585128/cancelo-goal-against-racing-best-of-the-month", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/01/98f6dadb-8d7b-4229-888b-f1c94449d1eb/DAG-368-_M1A2937.jpg" },
-            {
-                "id":  "4584325", "title":  "Exciting October in store",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4584325/big-games-coming-up-in-october", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/30/1eb598f0-7cd2-46d4-b341-b17a5745abc1/3200X2000_Calendar-OCT-ENG.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/20c25ef5-c6da-471e-82ba-c24088fbc5ac/image00002.jpeg" }
         ]
     }
 };

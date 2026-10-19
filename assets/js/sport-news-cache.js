@@ -1,13 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-18 18:43:08 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-19 21:10:03 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-18 18:43:08",
+    "updated":  "2026-10-19 21:10:03",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135508387", "title":  "Joni Hernández, un puñal para asaltar el campo del líder de la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-punal-asaltar-campo-135508387", "time":  "2026-10-19 20:56",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_default_0_x630y170.webp" },
+        {
+            "id":  "135505865", "title":  "PSG - Barcelona: horario y dónde ver el partido de la Youth League por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-barcelona-horario-ver-partido-135505865", "time":  "2026-10-19 15:08",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
+        {
+            "id":  "135473569", "title":  "Los hermanos Ejiofor se salen en La Masia: Destiny y Divine se hinchan a marcar goles",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hermanos-ejiofor-salen-masia-destiny-135473569", "time":  "2026-10-19 04:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b3790dd2-b010-4264-87db-b90bbac82f40_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135432923", "title":  "El diamante que viene en la defensa del Barça: \"Nunca vi algo así\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hafiz-gariba-diamante-valdra-30-135432923", "time":  "2026-10-18 15:34",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c56c49b-3729-4997-b81a-2eeae8efcc56_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c56c49b-3729-4997-b81a-2eeae8efcc56_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135448414", "title":  "Hamza y Pedro sellan una victoria corta de un Barça Atlètic más líder",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hamza-pedro-sellan-victoria-corta-135448414", "time":  "2026-10-17 17:53",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_640w_0.webp" },
-        {
-            "id":  "134684080", "title":  "El Barça Atlètic quiere dormir líder sin Bisiwu, Orian Goren, Catovic y Caicedo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-quiere-dormir-lider-segunda-rfef-horario-donde-ver-134684080", "time":  "2026-09-26 10:23",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134693225", "title":  "Jordi Roura anuncia su marcha a los Emiratos Árabes",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/jordi-roura-anuncia-marcha-emirates-134693225", "time":  "2026-09-25 18:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1c50fd71-405e-40ea-aa34-edb57284dd01_16-9-discover-aspect-ratio_640w_0.webp" },
-        {
-            "id":  "134535572", "title":  "Iu Martínez, el extremo de La Masia \"poseído\" por Raphinha",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iu-martinez-extremo-masia-poseido-134535572", "time":  "2026-09-25 16:06",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a0133214-37f3-4ff8-b998-06e0baa59d2e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_640w_0.webp" }
     ]
 };
