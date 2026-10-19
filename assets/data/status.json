@@ -20,8 +20,8 @@
                ],
     "staleHours":  36,
     "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-10-18T18:45:13.1185255Z",
+    "lastSuccessUtc":  "2026-10-19T21:12:13.0924785Z",
     "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-10-18T18:45:13.1185255Z",
+    "runFinishedUtc":  "2026-10-19T21:12:13.0924785Z",
     "schema":  1
 }
