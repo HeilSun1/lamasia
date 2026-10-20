@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-20 14:27:21 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-20 21:00:59 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-20 14:27:21",
+    "updated":  "2026-10-20 21:00:59",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6521330", "title":  "首次进入一线队大名单随队前往巴黎的坎波斯。",
+            "url":  "https://www.dongqiudi.com/articles/6521330.html", "time":  "2026-10-20 15:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FD/280x210/crop/-/rBXRn2rXFamASpvJAALQMYTyuSE309.jpg" },
+        {
+            "id":  "6521187", "title":  "世体：马丁昨天参加了训练但仍有不适，罗德里或德容可能客串",
+            "url":  "https://www.dongqiudi.com/articles/6521187.html", "time":  "2026-10-20 14:44",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FC/280x210/crop/-/rBXRDGrXDdGAKBTXAAFnWNr6GH4531.jpg" },
         {
             "id":  "6518516", "title":  "弗里克：不想谈论居莱尔肘击对手的事；拉菲尼亚明天能首发",
             "url":  "https://www.dongqiudi.com/articles/6518516.html", "time":  "2026-10-20 02:42",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6404224", "title":  "易卜拉欣-迪亚拉vs佩尼亚体育个人集锦。伤愈复出...",
             "url":  "https://www.dongqiudi.com/articles/6404224.html", "time":  "2026-09-27 14:21",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/30dd1ce06ab50da5f59332433755b5eblQkCAM_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6400757", "title":  "世体：巴萨推进萨马-诺莫科的续约，他目前正在从重伤中恢复",
-            "url":  "https://www.dongqiudi.com/articles/6400757.html", "time":  "2026-09-26 18:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/82/280x210/crop/-/rBXRDGq3m4WADhACAAE5LsBdVMk136.jpg" },
-        {
-            "id":  "6399986", "title":  "世体：巴萨竞技多人缺阵，锋线新星成关键",
-            "url":  "https://www.dongqiudi.com/articles/6399986.html", "time":  "2026-09-26 14:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/88/10/280x210/crop/-/rBXRn2q3Zc-ADItgAAEDaAIULCE511.jpg" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/30dd1ce06ab50da5f59332433755b5eblQkCAM_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
     ]
 };

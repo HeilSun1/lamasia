@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-20 14:29:59 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-20 21:05:36 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-20 14:29:59",
+    "updated":  "2026-10-20 21:05:36",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135505865", "title":  "A qué hora juega el Barcelona contra el PSG: dónde y cómo ver el partido de la Youth League por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-barcelona-horario-como-ver-partido-youth-league-135505865", "time":  "2026-10-20 11:42",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+        {
+            "id":  "135533759", "title":  "PSG - FC Barcelona, en directo: Youth League, Jornada 3 de la fase liga, en vivo hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-fc-barcelona-directo-youth-135533759", "time":  "2026-10-20 11:57",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/619928ea-0c41-40d9-a621-18e87e1f4ee1_16-9-discover-aspect-ratio_default_0.webp" },
+        {
             "id":  "135508387", "title":  "Joni Hernández, un puñal para asaltar el campo del líder de la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-punal-asaltar-campo-135508387", "time":  "2026-10-19 20:56",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_default_0_x630y170.webp" },
-        {
-            "id":  "135505865", "title":  "PSG - Barcelona: horario y dónde ver el partido de la Youth League por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-barcelona-horario-ver-partido-135505865", "time":  "2026-10-19 15:08",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
         {
             "id":  "135473569", "title":  "Los hermanos Ejiofor se salen en La Masia: Destiny y Divine se hinchan a marcar goles",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hermanos-ejiofor-salen-masia-destiny-135473569", "time":  "2026-10-19 04:30",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134697818", "title":  "La generación inacabable de Lamine (2007): una mina de oro con talentos aún por explotar",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/generacion-inacabable-lamine-2007-mina-134697818", "time":  "2026-09-28 09:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134690658", "title":  "\"Con Adama Traoré hablaba de filosofía, ciencia y del sentido de la vida\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adama-traore-hablaba-filosofia-ciencia-134690658", "time":  "2026-09-26 08:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2e17f6dd-f519-49ca-b8be-9567ffbebb55_16-9-discover-aspect-ratio_640w_0.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
