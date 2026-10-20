@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-20 21:05:40 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-20 20:02:39 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-20 21:05:40",
+    "updated":  "2026-10-20 20:02:39",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/real-sociedad/20261020/1004241040/nueva-conexion-vista-fort-kubo-entienden-primera-vez.html", "title":  "Nueva conexión a la vista: Fort y Kubo se entienden bien en su primera vez juntos",
+            "url":  "https://www.mundodeportivo.com/futbol/real-sociedad/20261020/1004241040/nueva-conexion-vista-fort-kubo-entienden-primera-vez.html", "time":  "2026-10-20 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/18/6ad500540b754.r_d.450-300-0.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239078/ejemplar-gael-jose-seijo-internacional-sub-15-barca-arbitro.html", "title":  "Internacional Sub-15 del Barça y árbitro",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261015/1004239078/ejemplar-gael-jose-seijo-internacional-sub-15-barca-arbitro.html", "time":  "2026-10-15 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "title":  "Cómo ha convencido Fariñas a Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "time":  "2026-09-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a985e661ab4a.r_d.370-132-12658.webp" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "title":  "Oficial: Toni Fernández, al Venezia con una fórmula diferente",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222286/oficial-toni-fernandez-venecia-diferencias-comunicados.html", "time":  "2026-09-01 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/01/6a97225a7da25.png" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a985e661ab4a.r_d.370-132-12658.webp" }
     ]
 };

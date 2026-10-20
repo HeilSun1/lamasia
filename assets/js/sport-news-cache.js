@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-20 21:05:36 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-20 20:02:37 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-20 21:05:36",
+    "updated":  "2026-10-20 20:02:37",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135546843", "title":  "Pedro Rodríguez salva un punto para el Barça ante el PSG en la UEFA Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-salva-punto-barca-135546843", "time":  "2026-10-20 14:53",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/47fa2af9-8776-433d-8228-5ba11ce6d0d5_16-9-discover-aspect-ratio_default_1520703.webp" },
+        {
+            "id":  "135546765", "title":  "Así está la clasificación de la Youth League 2026/27 tras el empate del Barcelona contra el PSG",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/clasificacion-youth-league-empate-barcelona-135546765", "time":  "2026-10-20 14:11",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/98518b8e-e509-4f99-8cfc-227fcb364de3_16-9-discover-aspect-ratio_640w_1520674.webp" },
+        {
             "id":  "135505865", "title":  "A qué hora juega el Barcelona contra el PSG: dónde y cómo ver el partido de la Youth League por TV y en directo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-barcelona-horario-como-ver-partido-youth-league-135505865", "time":  "2026-10-20 11:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
         {
             "id":  "135533759", "title":  "PSG - FC Barcelona, en directo: Youth League, Jornada 3 de la fase liga, en vivo hoy",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-fc-barcelona-directo-youth-135533759", "time":  "2026-10-20 11:57",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/619928ea-0c41-40d9-a621-18e87e1f4ee1_16-9-discover-aspect-ratio_default_0.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-fc-barcelona-directo-youth-135533759", "time":  "2026-10-20 14:36",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135508387", "title":  "Joni Hernández, un puñal para asaltar el campo del líder de la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-punal-asaltar-campo-135508387", "time":  "2026-10-19 20:56",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134769117", "title":  "Genís Clua, el '9' que puede romper moldes en La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/genis-clua-9-romper-moldes-134769117", "time":  "2026-09-28 16:46",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/46900234-251c-4a6c-8360-c8799d9e6c0d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134697818", "title":  "La generación inacabable de Lamine (2007): una mina de oro con talentos aún por explotar",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/generacion-inacabable-lamine-2007-mina-134697818", "time":  "2026-09-28 09:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96e2bf91-36c3-49af-b0ea-c20e47a192ae_16-9-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-20 21:01:56 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-20 20:02:31 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-20 21:01:56",
+    "updated":  "2026-10-20 20:02:31",
     "source":  "dongqiudi",
-    "count":  39,
+    "count":  41,
     "news":  [
+        {
+            "id":  "6523128", "title":  "U19青年欧冠战报：巴黎圣日耳曼1-1巴塞罗那",
+            "url":  "https://www.dongqiudi.com/articles/6523128.html", "time":  "2026-10-20 21:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C3/94/280x210/crop/-/rBXRDGrXbWiAJtiPAAulmRu2R1U929.png" },
+        {
+            "id":  "6523125", "title":  "巴黎圣日耳曼U19 1-1巴塞罗那U19，莫拉-尼亚卡特首开记录，佩德罗-罗德里格斯扳平",
+            "url":  "https://www.dongqiudi.com/articles/6523125.html", "time":  "2026-10-20 21:52",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C3/9F/280x210/crop/-/rBXRn2rXfUuAD6xnAAGlyz90r3I714.png" },
         {
             "id":  "6505938", "title":  "巴萨竞技战报 20261018",
             "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
