@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-19 21:11；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-20 14:29；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-19 21:11:38",
+    "updated":  "2026-10-20 14:29:17",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -728,29 +728,10 @@ window.LAMASIA_SCHEDULES = {
                                        "venue":  "Horta"
                                    },
                                    {
-                                       "id":  "fcb:cadete:50",
-                                       "comp":  "加泰荣誉联赛 Cadete",
-                                       "compEn":  "División de Honor Catalana Cadete",
-                                       "round":  "7",
-                                       "start":  "1793455200",
-                                       "date":  "2026-10-31",
-                                       "tbd":  false,
-                                       "home":  "Girona A",
-                                       "away":  "FC Barcelona A",
-                                       "homeId":  "11173",
-                                       "awayId":  "11111",
-                                       "hs":  "",
-                                       "as":  "",
-                                       "status":  "Not started",
-                                       "code":  "0",
-                                       "isHome":  false,
-                                       "venue":  "Torres de Palau"
-                                   },
-                                   {
                                        "id":  "fcb:cadete:60",
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
-                                       "round":  "8",
+                                       "round":  "7",
                                        "start":  "1794051000",
                                        "date":  "2026-11-07",
                                        "tbd":  false,
@@ -769,7 +750,7 @@ window.LAMASIA_SCHEDULES = {
                                        "id":  "fcb:cadete:71",
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
-                                       "round":  "9",
+                                       "round":  "8",
                                        "start":  "1794749400",
                                        "date":  "2026-11-15",
                                        "tbd":  false,
@@ -783,6 +764,25 @@ window.LAMASIA_SCHEDULES = {
                                        "code":  "0",
                                        "isHome":  false,
                                        "venue":  "Nou Sardenya"
+                                   },
+                                   {
+                                       "id":  "fcb:cadete:50",
+                                       "comp":  "加泰荣誉联赛 Cadete",
+                                       "compEn":  "División de Honor Catalana Cadete",
+                                       "round":  "9",
+                                       "start":  "1795021200",
+                                       "date":  "2026-11-18",
+                                       "tbd":  false,
+                                       "home":  "Girona A",
+                                       "away":  "FC Barcelona A",
+                                       "homeId":  "11173",
+                                       "awayId":  "11111",
+                                       "hs":  "",
+                                       "as":  "",
+                                       "status":  "Not started",
+                                       "code":  "0",
+                                       "isHome":  false,
+                                       "venue":  "Torres de Palau"
                                    },
                                    {
                                        "id":  "fcb:cadete:76",

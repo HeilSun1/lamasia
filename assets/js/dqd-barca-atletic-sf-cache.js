@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-17 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-20 14:27 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-17 21:01:37",
+    "updated":  "2026-10-20 14:27:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -14,6 +14,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/796414/image"
               },
     "players":  [
+                    {
+                        "name":  "Hamza Abdelkarim",
+                        "id":  "1961596",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Egypt",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-01",
+                        "foot":  "双脚",
+                        "height":  "182",
+                        "value":  "820万",
+                        "injury":  null
+                    },
                     {
                         "name":  "Ibrahim Diarra",
                         "id":  "1542744",
@@ -170,6 +185,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Jesse Bisiwu",
+                        "id":  "1506988",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Belgium",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-22",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "780万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ebrima Tunkara",
                         "id":  "2128084",
                         "pos":  "M",
@@ -215,21 +245,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pedro Rodriguez",
-                        "id":  "1649171",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-20",
-                        "foot":  "右脚",
-                        "height":  "175",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mirza Ćatović",
                         "id":  "1937274",
                         "pos":  "M",
@@ -242,6 +257,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "190",
                         "value":  "360万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pedro Rodriguez",
+                        "id":  "1649171",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -615,7 +645,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Naxara CD",
                         "homeId":  "24343",
                         "awayId":  "55779",
-                        "hs":  "4",
+                        "hs":  "5",
                         "as":  "0",
                         "status":  "Ended",
                         "code":  "100",
@@ -705,10 +735,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Utebo FC",
                         "homeId":  "24343",
                         "awayId":  "212294",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "2",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
@@ -730,7 +760,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16742219",
                         "comp":  "西协乙",
                         "round":  "9",
-                        "start":  "1793548800",
+                        "start":  "1793466000",
                         "home":  "Barcelona Atlètic",
                         "away":  "CD Arnedo",
                         "homeId":  "24343",
@@ -745,7 +775,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16741983",
                         "comp":  "西协乙",
                         "round":  "10",
-                        "start":  "1794153600",
+                        "start":  "1794157200",
                         "home":  "CE Manresa",
                         "away":  "Barcelona Atlètic",
                         "homeId":  "327214",
