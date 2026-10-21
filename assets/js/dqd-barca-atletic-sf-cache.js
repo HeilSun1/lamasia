@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-20 14:27 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-21 12:43 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-20 14:27:18",
+    "updated":  "2026-10-21 12:43:05",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -14,21 +14,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/796414/image"
               },
     "players":  [
-                    {
-                        "name":  "Hamza Abdelkarim",
-                        "id":  "1961596",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Egypt",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "双脚",
-                        "height":  "182",
-                        "value":  "820万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ibrahim Diarra",
                         "id":  "1542744",
@@ -155,21 +140,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Jonathan Hernández",
-                        "id":  "2580333",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2580333/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-05-22",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "52万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Joni Hernández",
                         "id":  "2606521",
                         "pos":  "F",
@@ -182,6 +152,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Jonathan Hernández",
+                        "id":  "2580333",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2580333/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-05-22",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "52万",
                         "injury":  null
                     },
                     {

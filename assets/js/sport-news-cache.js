@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-20 20:02:37 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-21 12:45:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-20 20:02:37",
+    "updated":  "2026-10-21 12:45:14",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "135546843", "title":  "Pedro Rodríguez salva un punto para el Barça ante el PSG en la UEFA Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-salva-punto-barca-135546843", "time":  "2026-10-20 14:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/47fa2af9-8776-433d-8228-5ba11ce6d0d5_16-9-discover-aspect-ratio_default_1520703.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/47fa2af9-8776-433d-8228-5ba11ce6d0d5_16-9-discover-aspect-ratio_640w_1520703.webp" },
         {
             "id":  "135546765", "title":  "Así está la clasificación de la Youth League 2026/27 tras el empate del Barcelona contra el PSG",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/clasificacion-youth-league-empate-barcelona-135546765", "time":  "2026-10-20 14:11",

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-20 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-21 12:44 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-20 21:01:55",
+    "updated":  "2026-10-21 12:44:09",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -640,10 +640,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Barcelona U19",
                         "homeId":  "90138",
                         "awayId":  "90128",
-                        "hs":  "0",
-                        "as":  "0",
-                        "status":  "Halftime",
-                        "code":  "31",
+                        "hs":  "1",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {

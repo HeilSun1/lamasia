@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-20 20:02:34 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 12:45:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-20 20:02:34",
+    "updated":  "2026-10-21 12:45:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -147,6 +147,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4596285", "title":  "PSG 4-2 Barça: First defeat",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596285/paris-saint-germain-4-2-fc-barcelona-first-defeat", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/20/fadfac3c-6d87-4551-9710-0f672dc2de34/_MGA9746.jpg" },
+            {
                 "id":  "4594863", "title":  "PREVIEW | PSG v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594863/preview-paris-saint-germain-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/a2e17dfd-5c16-4214-9eec-1c29fde3fea0/WhatsApp-Image-2026-10-19-at-23.32.47.jpeg" },
@@ -231,10 +235,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591897/10-out-of-10-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/bda4bb13-2aa9-4fe3-98c9-de27538ed850/_MGA7997.jpg" },
             {
-                "id":  "4590935", "title":  "PREVIEW | Galatasaray v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590935/preview-galatasaray-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -242,6 +242,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4590935", "title":  "PREVIEW | Galatasaray v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590935/preview-galatasaray-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4591186", "title":  "First contact with Ali Sami Yen",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591186/first-contact-with-ali-sami-yen", "time":  "",
@@ -341,11 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4587299", "title":  "New faces at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587299/new-faces-at-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/06/44e60327-a62c-438b-b918-128893490106/_MGA2102.jpg" },
-            {
-                "id":  "4586995", "title":  "Cubarsí, Bernal and Espart, Golden Boy finalists",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4586995/cubarsi-bernal-and-xavi-espart-among-25-golden-boy-finalists", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/05/1e26df66-8a49-4642-b9cc-ebf7cd93a2c0/DAG-170-_M1A2500.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/06/44e60327-a62c-438b-b918-128893490106/_MGA2102.jpg" }
         ]
     }
 };

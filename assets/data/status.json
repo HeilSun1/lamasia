@@ -1,6 +1,10 @@
 {
-    "runId":  "20261020-210002",
-    "runStartedUtc":  "2026-10-20T13:00:02.9417953Z",
+    "schema":  1,
+    "runId":  "20261021-124124",
+    "runStartedUtc":  "2026-10-21T04:41:24.6772216Z",
+    "runFinishedUtc":  "2026-10-21T04:47:34.1518349Z",
+    "lastSuccessUtc":  "2026-10-20T20:04:41.5482504Z",
+    "lastRunSource":  "local",
     "lastRunStatus":  "degraded",
     "exitCode":  2,
     "consecutiveFailures":  0,
@@ -10,19 +14,14 @@
 
                      ],
     "failedScripts":  [
-                          "update_barca_atletic_sf.ps1",
                           "update_elfutbol_details.ps1"
                       ],
     "staleCaches":  [
-                        "assets/js/dqd-barca-atletic-sf-cache.js"
+
                     ],
     "healed":  [
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-10-20T20:04:41.5482504Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-10-20T20:04:41.5482504Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
