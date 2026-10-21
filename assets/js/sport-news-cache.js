@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-21 13:09:13 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-21 20:15:12 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-21 13:09:13",
+    "updated":  "2026-10-21 20:15:12",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135590822", "title":  "Pedro Rodríguez está en racha y su juego enamora: \"Es un medio con gol, muy completo e inteligente\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-racha-juego-enamora-135590822", "time":  "2026-10-21 18:20",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d8a1bd1b-5729-475e-860f-7f5b298c0a66_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135546843", "title":  "Pedro Rodríguez salva un punto para el Barça ante el PSG en la UEFA Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-salva-punto-barca-135546843", "time":  "2026-10-20 14:53",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134814903", "title":  "El Barça Atlètic pierde a Pedro Villar y Alexander Walton por lesión",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-alexander-walton-134814903", "time":  "2026-09-29 19:37",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6b231280-4ae6-4a0b-b0ac-9a532d0a4dd9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134167465", "title":  "Los equipos de la Liga apuestan por la mejor cantera: La Masia barre a La Fábrica",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/equipos-liga-apuestan-mejor-cantera-134167465", "time":  "2026-09-28 17:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8c2467a-dd45-4624-95e2-b8163ab30e95_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6b231280-4ae6-4a0b-b0ac-9a532d0a4dd9_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
