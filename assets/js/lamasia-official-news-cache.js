@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 13:08:21 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 21:03:59 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-21 13:08:21",
+    "updated":  "2026-10-21 21:03:59",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -147,6 +147,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4596701", "title":  "Dani Olmo injury news",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596701/dani-olmo-injury-news", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/3b6dded9-85fd-4486-8cb8-557894c66cec/_MGA9412-1-.jpg" },
+            {
+                "id":  "4596667", "title":  "Recovery session after PSG game",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596667/recovery-session-after-psg-game", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4e42512a-2d4d-4fd0-9e1e-ad6d80ea1910/WhatsApp-Image-2026-10-21-at-13.37.38.jpeg" },
+            {
+                "id":  "4596623", "title":  "Lamine Yamal's double digits",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596623/lamine-yamals-double-digits", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4a065205-b723-4e65-8730-cb4b0ea17c86/_MGA9503.jpg" },
+            {
+                "id":  "4596588", "title":  "Xavi Espart comes of age",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596588/xavi-espart-comes-of-age-against-paris-saint-germain", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/b41724ca-0f00-4d87-8c8c-f730d06a0424/_MGA9688.jpg" },
+            {
                 "id":  "4596285", "title":  "PSG 4-2 Barça: First defeat",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596285/paris-saint-germain-4-2-fc-barcelona-first-defeat", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/20/fadfac3c-6d87-4551-9710-0f672dc2de34/_MGA9746.jpg" },
@@ -219,6 +235,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/69d69cf8-6558-4c38-9af5-6ca6a82e05f3/image00013.jpeg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4592194", "title":  "Twenty comebacks",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592194/twenty-comebacks-under-flick", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/14/b5a8addd-02da-4f03-ba82-94fcf062382b/_MGA5997.jpg" },
@@ -234,14 +258,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4591897", "title":  "10 out of 10",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591897/10-out-of-10-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/bda4bb13-2aa9-4fe3-98c9-de27538ed850/_MGA7997.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4590935", "title":  "PREVIEW | Galatasaray v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590935/preview-galatasaray-v-fc-barcelona", "time":  "",
@@ -329,23 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4587673", "title":  "Emotional farewell for Leo Messi with Argentina",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587673/emotional-farewell-for-leo-messi-with-argentina", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4580541", "title":  "The international break as it happened",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4580541/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/09/ae654665-d2fc-4873-b0de-f3f61a0f5d77/_MGA6025.jpg" },
-            {
-                "id":  "4587439", "title":  "'I bring a winning mindset'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587439/gabriel-jesus-i-bring-directness-and-a-winning-mindset-to-the-team", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/06/d9c648af-a556-4b06-8ea0-595d2ffe6739/_MGA2291.jpg" },
-            {
-                "id":  "4587299", "title":  "New faces at training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587299/new-faces-at-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/06/44e60327-a62c-438b-b918-128893490106/_MGA2102.jpg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };

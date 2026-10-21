@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-21 13:08 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-21 21:03 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-21 13:08:10",
+    "updated":  "2026-10-21 21:03:43",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -180,21 +180,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Miłosz Żuk",
-                        "id":  "2411452",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Poland",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2411452/image",
-                        "age":  "15岁",
-                        "birthday":  "2010-11-01",
-                        "foot":  "右脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Samu Borniquel",
                         "id":  "2407333",
                         "pos":  "M",
@@ -206,6 +191,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2010-01-20",
                         "foot":  "右脚",
                         "height":  "186",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Miłosz Żuk",
+                        "id":  "2411452",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Poland",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2411452/image",
+                        "age":  "15岁",
+                        "birthday":  "2010-11-01",
+                        "foot":  "右脚",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -330,21 +330,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "José Alfredo Rodríguez",
-                        "id":  "2407332",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Honduras",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-31",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Guiu Xuclà",
                         "id":  "2447156",
                         "pos":  "D",
@@ -354,6 +339,21 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2447156/image",
                         "age":  "16岁",
                         "birthday":  "2010-01-17",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "José Alfredo Rodríguez",
+                        "id":  "2407332",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Honduras",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2407332/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-31",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
