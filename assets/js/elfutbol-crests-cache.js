@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-10-21 12:55 */
+/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-10-21 13:03 */
 window.ELFUTBOL_CRESTS = {
     "8470":  "https://elfutbol.co/crests/sm/barcelona-fc.webp",
     "12915":  "https://elfutbol.co/crests/sm/gimnastic-manresa-cf.webp",
@@ -107,4 +107,31 @@ window.ELFUTBOL_CRESTS = {
     "9862":  "https://elfutbol.co/_crest/sd-huesca-sad.png",
     "8808":  "https://elfutbol.co/_crest/ud-montecarlo.png",
     "11808":  "https://elfutbol.co/_crest/vila-olimpica-club-esp.png"
+};
+/* 抓取尝试记录：哪些对手抓过但 elfutbol 没给（省流闸门用，前端不读） */
+window.ELFUTBOL_CRESTS_META = {
+    "attempted":  {
+                      "juvenil-a":  {
+                                        "at":  "2026-10-21",
+                                        "ids":  [
+                                                    "10840",
+                                                    "12530",
+                                                    "12915",
+                                                    "14759",
+                                                    "15492",
+                                                    "15493",
+                                                    "7647",
+                                                    "7649",
+                                                    "8470",
+                                                    "8472",
+                                                    "8807",
+                                                    "8808",
+                                                    "8817",
+                                                    "8827",
+                                                    "8828",
+                                                    "9862"
+                                                ]
+                                    }
+                  },
+    "updated":  "2026-10-21 13:03"
 };

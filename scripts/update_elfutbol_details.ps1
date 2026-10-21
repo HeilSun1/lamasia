@@ -257,65 +257,7 @@ if ($cache.Contains("__pendingReports")) {
 }
 $RetryDays = 3
 
-# ① U15 队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用）
-$team = Get-Html $TeamUrl
-$map  = @{}   # "DD-MM" → /en/match/... 路径
-if ($team) {
-  foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
-    $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
-    if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
-    $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
-  }
-  Log "  · U15 队伍页解析出 $($map.Count) 场比赛链接"
-} else {
-  Log "  ✗ U15 队伍页抓取失败：本轮跳过 U15 详情，其他梯队队徽照常更新"
-}
-
-# ── ② 队徽表：elfutbol 托管真实队徽（pulselive 的对手队徽全是 403 防盗链）。
-#    按本站赛程里的 pulselive 队号落键，fcb-youth-render.js / matches-upcoming.js 直接查它。
-#    先读旧表、再逐队覆盖：某个梯队抓取失败时保留它上一次的队徽，不整体清空。
-$crestOut = [ordered]@{}
-if (Test-Path $CrestFile) {
-  try {
-    $ctxt = [System.IO.File]::ReadAllText($CrestFile, $Utf8)
-    $x = $ctxt.IndexOf("{"); $y = $ctxt.LastIndexOf("}")
-    if ($x -ge 0 -and $y -gt $x) {
-      $old = $ctxt.Substring($x, $y - $x + 1) | ConvertFrom-Json
-      foreach ($p in $old.PSObject.Properties) { $crestOut[$p.Name] = $p.Value }
-    }
-  } catch { Log "  · 旧队徽表解析失败，本轮按全量重建" }
-}
-$crestMapped = 0
-foreach ($tier in $CrestTiers.Keys) {
-  $page = $null
-  if ($tier -eq $TierId -and $team) { $page = $team }
-  else { $page = Get-Html $CrestTiers[$tier] }
-  if (-not $page) { Log "    ✗ $tier 队伍页抓取失败，沿用旧队徽"; continue }
-  $byDate = Get-CrestRows $page
-  $days   = @($byDate.Keys).Count
-  if ($days -eq 0) { Log "    ✗ $tier 未解析到比赛行，沿用旧队徽"; continue }
-  $n = Add-CrestsForTier $tier $byDate @($sched.matches.$tier)
-  $crestMapped += $n
-  Log "    · $tier：$days 个比赛日 → 映射 $n 场"
-}
-
-if ($crestMapped -gt 0) {
-  $cjs = "/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；" +
-         "数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；" +
-         "更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CRESTS = " +
-         ($crestOut | ConvertTo-Json -Depth 3) + ";`r`n"
-  [System.IO.File]::WriteAllText($CrestFile, $cjs, $Utf8)
-  Log "  ✓ 已写入 $CrestFile（共 $($crestOut.Count) 个队徽，本轮映射 $crestMapped 场）"
-} else {
-  Log "  · 本轮未解析到队徽，$CrestFile 不覆盖"
-}
-
-# ── ③ 逐场详情：只补缓存里还没有的已完场 ──
-if (-not $team -or $map.Count -eq 0) {
-  Log "  · U15 队伍页不可用，跳过详情更新（队徽已在上面单独更新）"
-  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
-  exit 0
-}
+# ① 先算本轮是否真的要抓网络（只依赖缓存和退避，不依赖网络）
 $todo = @($ended | Where-Object {
   if (-not $Force -and $cache.Contains($_.id)) { return $false }
   if (-not $Force) {
@@ -339,8 +281,155 @@ foreach ($mt in $ended) {
     if ($d -and ((Get-Date).Date - $d.Date).TotalDays -lt $RetryDays) { $waitCount++ }
   }
 }
+$needDetails = $todo.Count -gt 0
+
+# ② 队徽表：elfutbol 托管真实队徽（pulselive 的对手队徽全是 403 防盗链）。
+#    按本站赛程里的 pulselive 队号落键，fcb-youth-render.js / matches-upcoming.js 直接查它。
+#    先读旧表、再逐队覆盖：某个梯队抓取失败时保留它上一次的队徽，不整体清空。
+$crestOut = [ordered]@{}
+$attempted = @{}   # 梯队 → @{ at = "yyyy-MM-dd"; ids = 已尝试过的对手 id 数组 }
+if (Test-Path $CrestFile) {
+  try {
+    $ctxt = [System.IO.File]::ReadAllText($CrestFile, $Utf8)
+    # 队徽表和「抓过但没拿到」的尝试记录在同一个文件里，分别按全局名定位
+    $ci = $ctxt.IndexOf("window.ELFUTBOL_CRESTS = ")
+    if ($ci -ge 0) {
+      $x = $ctxt.IndexOf("{", $ci); $y = $ctxt.IndexOf("};", $x)
+      if ($x -ge 0 -and $y -gt $x) {
+        $old = $ctxt.Substring($x, $y - $x + 1) | ConvertFrom-Json
+        foreach ($p in $old.PSObject.Properties) { $crestOut[$p.Name] = $p.Value }
+      }
+    }
+    $mi = $ctxt.IndexOf("window.ELFUTBOL_CRESTS_META = ")
+    if ($mi -ge 0) {
+      $x2 = $ctxt.IndexOf("{", $mi); $y2 = $ctxt.IndexOf("};", $x2)
+      if ($x2 -ge 0 -and $y2 -gt $x2) {
+        $meta = $ctxt.Substring($x2, $y2 - $x2 + 1) | ConvertFrom-Json
+        foreach ($p in $meta.attempted.PSObject.Properties) {
+          $attempted[$p.Name] = [pscustomobject]@{
+            at  = [string]$p.Value.at
+            ids = @($p.Value.ids | ForEach-Object { [string]$_ })
+          }
+        }
+      }
+    }
+  } catch {
+    Log "  · 旧队徽表解析失败，本轮按全量重建"
+    $crestOut = [ordered]@{}
+    $attempted = @{}
+  }
+}
+
+# ★ 省流闸门：赛程里出现、但队徽表里没有的对手才需要抓；对手 id 没变就整轮不碰 elfutbol。
+#   以前每天固定抓 7 个梯队页（约 50s），其实一周才可能多出 1-2 个新对手。
+$needIds = @{}
+foreach ($tier in $CrestTiers.Keys) {
+  $ids = New-Object System.Collections.Generic.HashSet[string]
+  foreach ($m in @($sched.matches.$tier)) {
+    if ($null -ne $m.homeId -and "$($m.homeId)" -ne "") { [void]$ids.Add([string]$m.homeId) }
+    if ($null -ne $m.awayId -and "$($m.awayId)" -ne "") { [void]$ids.Add([string]$m.awayId) }
+  }
+  $needIds[$tier] = $ids
+}
+$missingTiers = @()
+$CrestRetryDays = 14   # 抓过但 elfutbol 没给的对手，14 天后重试一次（它补数据时能接上）
+foreach ($tier in $CrestTiers.Keys) {
+  $miss = @($needIds[$tier] | Where-Object { -not $crestOut.Contains($_) })
+  if ($Force) { $missingTiers += $tier; continue }
+  if ($miss.Count -eq 0) { continue }
+  $a = $attempted[$tier]
+  # 只抓「新出现的对手」或超过重试期的；上次就抓不到的不再每天重抓
+  $newMiss = if ($a) { @($miss | Where-Object { -not ($a.ids -contains $_) }) } else { $miss }
+  $stale = $true
+  if ($a -and $a.at) {
+    $d = $null
+    try { $d = [datetime]::ParseExact($a.at, 'yyyy-MM-dd', $Inv) } catch { }
+    if ($d -and ((Get-Date).Date - $d.Date).TotalDays -lt $CrestRetryDays) { $stale = $false }
+  }
+  if ($newMiss.Count -gt 0 -or $stale) { $missingTiers += $tier }
+}
+$needCrest = $missingTiers.Count -gt 0
+
 if ($waitCount -gt 0) { Log "  · $waitCount 场等足协报告（$RetryDays 天内不重抓）" }
-if ($todo.Count -eq 0) { Log "  ✓ 详情无需更新（已收录 $($ended.Count - $waitCount) 场已完场）"; exit 0 }
+if (-not $needCrest -and -not $needDetails) {
+  Log "  · 队徽表 $($crestOut.Count) 个、无新增对手，详情无新场次，本轮跳过抓取"
+  Log "U15 阵容/进球详情更新完成（无变化）✔"
+  exit 0
+}
+if ($needCrest) { Log "  · 需补队徽的梯队：$($missingTiers -join ', ')" }
+
+# ③ U15 队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用；cadete-b 缺队徽时也复用它）
+$team = $null
+$map  = @{}   # "DD-MM" → /en/match/... 路径
+if ($needDetails -or ($missingTiers -contains $TierId)) {
+  $team = Get-Html $TeamUrl
+  if ($team) {
+    foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
+      $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
+      if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
+      $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
+    }
+    Log "  · U15 队伍页解析出 $($map.Count) 场比赛链接"
+  } else {
+    Log "  ✗ U15 队伍页抓取失败：本轮跳过 U15 详情（缺队徽的梯队稍后单独重试）"
+  }
+}
+
+# ── ④ 队徽表：只抓需要补的梯队（已覆盖的跳过）
+$crestMapped = 0
+$crestTouched = $false
+foreach ($tier in $CrestTiers.Keys) {
+  if (-not ($Force -or ($missingTiers -contains $tier))) { continue }
+  $page = $null
+  if ($tier -eq $TierId -and $team) { $page = $team }
+  else { $page = Get-Html $CrestTiers[$tier] }
+  if (-not $page) { Log "    ✗ $tier 队伍页抓取失败，沿用旧队徽"; continue }
+  $byDate = Get-CrestRows $page
+  $days   = @($byDate.Keys).Count
+  if ($days -eq 0) { Log "    ✗ $tier 未解析到比赛行，沿用旧队徽"; continue }
+  $n = Add-CrestsForTier $tier $byDate @($sched.matches.$tier)
+  $crestMapped += $n
+  $crestTouched = $true
+  # 记下「这个梯队本轮试过哪些对手」：抓不到的不再每天重试
+  $attempted[$tier] = [pscustomobject]@{
+    at  = (Get-Date -Format 'yyyy-MM-dd')
+    ids = @($needIds[$tier] | Sort-Object)
+  }
+  Log "    · $tier：$days 个比赛日 → 映射 $n 场"
+}
+
+if ($crestMapped -gt 0 -or $crestTouched) {
+  # META 记录各梯队「什么时候、试过哪些对手」，供下一轮省流闸门判断是否值得再抓
+  $metaObj = [ordered]@{ attempted = [ordered]@{}; updated = (Get-Date -Format 'yyyy-MM-dd HH:mm') }
+  foreach ($k in ($attempted.Keys | Sort-Object)) {
+    $metaObj.attempted[$k] = [ordered]@{
+      at  = [string]$attempted[$k].at
+      ids = @($attempted[$k].ids | Sort-Object)
+    }
+  }
+  $cjs = "/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；" +
+         "数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；" +
+         "更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CRESTS = " +
+         ($crestOut | ConvertTo-Json -Depth 3) + ";`r`n" +
+         "/* 抓取尝试记录：哪些对手抓过但 elfutbol 没给（省流闸门用，前端不读） */`r`n" +
+         "window.ELFUTBOL_CRESTS_META = " + ($metaObj | ConvertTo-Json -Depth 5) + ";`r`n"
+  [System.IO.File]::WriteAllText($CrestFile, $cjs, $Utf8)
+  Log "  ✓ 已写入 $CrestFile（共 $($crestOut.Count) 个队徽，本轮映射 $crestMapped 场）"
+} else {
+  Log "  · 本轮未解析到队徽，$CrestFile 不覆盖"
+}
+
+# ── ⑤ 逐场详情：只补缓存里还没有的已完场 ──
+if ($todo.Count -eq 0) {
+  Log "  ✓ 详情无需更新（已收录 $($ended.Count - $waitCount) 场已完场）"
+  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
+  exit 0
+}
+if (-not $team -or $map.Count -eq 0) {
+  Log "  · U15 队伍页不可用，跳过详情更新（队徽已在上面单独更新）"
+  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
+  exit 0
+}
 Log "  · 待抓详情 $($todo.Count) 场"
 
 # 逐场抓单场页，解析阵容 + 事件
