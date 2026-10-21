@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 12:45:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 13:08:21 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-21 12:45:06",
+    "updated":  "2026-10-21 13:08:21",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
