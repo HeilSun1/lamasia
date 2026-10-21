@@ -47,14 +47,32 @@ function Parse-SportTime([string]$t) {
 
 Log "开始抓取 Sport.es 足球基地新闻……"
 
+# 用 curl 而不是 WebClient：WebClient 默认 100s 超时、sport.es 偶尔要 140s+ 才返回，
+# 会白白拖长整轮。curl -m 25 + 一次重试，最坏约 53s，且失败能明确报出来。
+# （PS 5.1 里裸 curl 是 Invoke-WebRequest 的别名，必须写 curl.exe 的完整路径）
+$CurlExe = Join-Path $env:SystemRoot "System32\curl.exe"
+if (-not (Test-Path $CurlExe)) { $CurlExe = "curl.exe" }
+
 $html = ""
-try {
-  $wc = New-Object System.Net.WebClient
-  $wc.Headers.Add("User-Agent", $UserAgent)
-  $wc.Encoding = [System.Text.Encoding]::UTF8
-  $html = $wc.DownloadString($PageUrl)
-} catch {
-  Log "✗ 页面获取失败：$($_.Exception.Message)"
+for ($attempt = 1; $attempt -le 2; $attempt++) {
+  $tmp = Join-Path $env:TEMP ("sport-news-" + [guid]::NewGuid().ToString("N") + ".html")
+  try {
+    & $CurlExe -s -L -m 25 -A $UserAgent -o $tmp $PageUrl 2>$null
+    $code = $LASTEXITCODE
+    if ($code -eq 0 -and (Test-Path $tmp) -and (Get-Item $tmp).Length -gt 5000) {
+      $html = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
+      break
+    }
+    Log "  ! 第 $attempt 次抓取失败（curl 退出码 $code）"
+  } catch {
+    Log "  ! 第 $attempt 次抓取异常：$($_.Exception.Message)"
+  } finally {
+    if (Test-Path $tmp) { Remove-Item $tmp -Force -ErrorAction SilentlyContinue }
+  }
+  if ($attempt -lt 2) { Start-Sleep -Seconds 3 }
+}
+if (-not $html) {
+  Log "✗ 页面获取失败（两次均超时或出错），保留旧缓存。"
   exit 1
 }
 
