@@ -157,7 +157,12 @@
       var local = findZh(p.name, zhMap);
       add("sf:" + s.k + ":" + p.id, {
         tier: s.k,
-        photo: manualPhoto(s.k + ":" + p.id) || photoUrl(p.photo),
+        // 照片：先查梯队键（u18:/u16:），再按姓名查 data.js 官方名单的 local 键。
+        // 低龄球员的 Sofascore 头像大量 404，photo-tool 补图写的是 local:{梯队}:{英文名}，
+        // 只查 u18:{id} 会永远读不到手动补的照片。
+        photo: manualPhoto(s.k + ":" + p.id) ||
+               manualPhoto("local:" + s.dt + ":" + norm((local && local.name) || p.name)) ||
+               photoUrl(p.photo),
         nameZh: (local && local.zh) || "",
         nameEn: p.name || "",
         nation: p.nation || "",
@@ -256,7 +261,9 @@
         if (!p.name) return;
         add("local:" + tier + ":" + norm(p.name), {
           tier: tier,
-          photo: photoUrl(p.img ? "assets/img/players/" + p.img : ""),
+          // 手动补图优先（photo-tool.html 的 local:{梯队}:{英文名} 键；此前卡片漏查了这层）
+          photo: manualPhoto("local:" + tier + ":" + norm(p.name)) ||
+                 photoUrl(p.img ? "assets/img/players/" + p.img : ""),
           nameZh: p.zh || "",
           nameEn: p.name || "",
           nation: p.nation || "",

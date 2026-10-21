@@ -100,6 +100,17 @@
       .replace(/[^a-z0-9]+/g, "");
   }
 
+  /* 手动补图：先查 u16:{id}（伤病名单键），再查 data.js 官方名单的 local:cadete:{英文名}。
+     photo-tool 给 U16 写的是 local 键；只查 u16:{id} 会导致手动补的头像在 Sofascore 名单/阵容里不显示。 */
+  const PHOTO_BASE = /\/teams\//.test(window.location.pathname) ? "../" : "";
+  function manualPhoto(p) {
+    if (!window.ManualPhoto || !p) return "";
+    const m = window.ManualPhoto("u16:" + p.id) ||
+              window.ManualPhoto("local:cadete:" + normKey(p.name)) || "";
+    if (!m) return "";
+    return /^(https?:|data:|blob:)/.test(m) ? m : PHOTO_BASE + m.replace(/^\.\.\//, "");
+  }
+
   /* 姓名分词：转小写、去变音符，按非字母数字拆成词（"Pedro Rodríguez Iglesias" → ["pedro","rodriguez","iglesias"]） */
   function nameTokens(s) {
     return String(s || "").toLowerCase()
@@ -164,7 +175,7 @@
         name: pr.name, id: id, pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
         nation: pr.country ? pr.country.name : "",
-        photo: (window.ManualPhoto && window.ManualPhoto("u16:" + id)) || "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
+        photo: manualPhoto({ id: id, name: pr.name }) || "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
         age: calcAge(pr.dateOfBirth),
         value: valueZh(pr.proposedMarketValue),
         injury: injury
@@ -235,7 +246,7 @@
     injured.forEach(function (p) {
       const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
-      if (window.ManualPhoto) { const m = window.ManualPhoto("u16:" + p.id); if (m) p.photo = m; }
+      const manual = manualPhoto(p); if (manual) p.photo = manual;
       const ini = esc(initials(p.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
         (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
@@ -304,7 +315,7 @@
       ps.forEach(function (p) {
         const zh = lookupZh(p.name, zhMap) || {};
         const display = zh.zh || p.name || "";          // 优先官方名单的中文名
-        if (window.ManualPhoto) { const m = window.ManualPhoto("u16:" + p.id); if (m) p.photo = m; }
+        const manual = manualPhoto(p); if (manual) p.photo = manual;
         const ini  = esc(initials(p.name)) || "·";
         const injBadge = (p.injury && p.injury.status === "out")
           ? '<span class="pl-inj" title="伤病：' + esc(p.injury.reason) +

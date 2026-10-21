@@ -46,15 +46,15 @@
   }
 
   /* 官方队徽（resources.fcbarcelona.pulselive.com）；对手徽章常被防盗链 403 → 回退默认徽章。
-     U15 的对手队徽改走 elfutbol 托管的真队徽（elfutbol-crests-cache.js 按 pulselive 队号落键，
+     各梯队的对手队徽优先走 elfutbol 托管的真队徽（elfutbol-crests-cache.js 按 pulselive 队号落键，
      由 scripts/update_elfutbol_details.ps1 生成）；没加载该表时行为与原来一致。 */
   function badgeUrl(id) {
     var reg = window.ELFUTBOL_CRESTS;
     if (reg && id != null && reg[String(id)]) return reg[String(id)];
     return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : "";
   }
-  function teamCell(name, id, tier) {
-    const b = badgeUrl(id);
+  function teamCell(name, id, tier, logoOverride) {
+    const b = logoOverride || badgeUrl(id);
     return '<td><span class="match-team">' +
       (b ? '<img class="match-logo" src="' + esc(b) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'https://resources.fcbarcelona.pulselive.com/badges/club/40/default.png\'">' : "") +
       esc(disp(name, tier)) + "</span></td>";
@@ -74,11 +74,11 @@
   function row(m, tier, tierSlug) {
     const playedNow = m.status === "Ended";
     const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
-    const key = m.id;   // 缓存 id 已带 "fcb:" 前缀（如 "fcb:cadete:2"）
+    const key = m.key || m.id;   // 官方缓存 id 已带 "fcb:" 前缀；external 场次自带 key
     // 只有 U15（cadete-b）有 elfutbol.co 抓来的逐场阵容/进球详情；
     // 带上 cacheRef 后 match-detail.js 会按需懒加载 elfutbol-cadete-b-details-cache.js。
     // 其余梯队仍是最小详情（无阵容 → 只显示基本信息 + 官网外链）。
-    const dtRef = (tierSlug === "cadete-b") ? "ELFUTBOL_CADETE_B_CACHE" : "";
+    const dtRef = m.detailRef || ((tierSlug === "cadete-b") ? "ELFUTBOL_CADETE_B_CACHE" : "");
     if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
     if (!window.LAMASIA_MATCHES[key]) {
       window.LAMASIA_MATCHES[key] = {
@@ -95,9 +95,9 @@
       (dtRef ? "点击查看（阵容 / 进球）" : "点击查看（官方赛程 · 无阵容详情）") + '">' +
       '<td class="num">' + esc(fmtKick(m)) + "</td>" +
       "<td>" + esc(m.comp || "") + (m.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(m.round) + "</span>" : "") + "</td>" +
-      teamCell(m.home, m.homeId, tier) +
+      teamCell(m.home, m.homeId, tier, m.homeLogo) +
       '<td class="num" style="text-align:center;width:72px">' + score + "</td>" +
-      teamCell(m.away, m.awayId, tier) +
+      teamCell(m.away, m.awayId, tier, m.awayLogo) +
       "<td>" + pill(m) + "</td>" +
       "</tr>";
   }
@@ -126,7 +126,11 @@
       el.innerHTML = '<div class="match-list-empty">暂无赛程数据（运行每日脚本后生成）</div>';
       return;
     }
+    // extraPlayed：外部来源（如 U19B 的 Sofascore 八月热身赛）并进同一个「已完场」分组，
+    // 避免页面上出现两个「已完场」标题。
+    const extra = (opts && opts.extraPlayed) || [];
     const played   = matches.filter(function (m) { return m.status !== "Not started"; })
+                            .concat(extra)
                             .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
     const upcoming = matches.filter(function (m) { return m.status === "Not started"; })
                             .sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });

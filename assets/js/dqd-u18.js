@@ -100,6 +100,17 @@
       .replace(/[^a-z0-9]+/g, "");
   }
 
+  /* 手动补图：先查 u18:{id}（伤病名单键），再查 data.js 官方名单的 local:juvenil-b:{英文名}。
+     photo-tool 给 U18 写的是 local 键；只查 u18:{id} 会导致手动补的头像在 Sofascore 名单/阵容里不显示。 */
+  const PHOTO_BASE = /\/teams\//.test(window.location.pathname) ? "../" : "";
+  function manualPhoto(p) {
+    if (!window.ManualPhoto || !p) return "";
+    const m = window.ManualPhoto("u18:" + p.id) ||
+              window.ManualPhoto("local:juvenil-b:" + normKey(p.name)) || "";
+    if (!m) return "";
+    return /^(https?:|data:|blob:)/.test(m) ? m : PHOTO_BASE + m.replace(/^\.\.\//, "");
+  }
+
   /* 姓名分词：转小写、去变音符，按非字母数字拆成词（"Pedro Rodríguez Iglesias" → ["pedro","rodriguez","iglesias"]） */
   function nameTokens(s) {
     return String(s || "").toLowerCase()
@@ -164,7 +175,7 @@
         name: pr.name, id: id, pos: pr.position || "",
         shirt: p.shirtNumber || "", team: pr.team ? pr.team.name : "",
         nation: pr.country ? pr.country.name : "",
-        photo: (window.ManualPhoto && window.ManualPhoto("u18:" + id)) || "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
+        photo: manualPhoto({ id: id, name: pr.name }) || "https://img.sofascore.com/api/v1/player/" + pr.id + "/image",
         age: calcAge(pr.dateOfBirth),
         value: valueZh(pr.proposedMarketValue),
         injury: injury
@@ -235,7 +246,7 @@
     injured.forEach(function (p) {
       const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
-      if (window.ManualPhoto) { const m = window.ManualPhoto("u18:" + p.id); if (m) p.photo = m; }
+      const manual = manualPhoto(p); if (manual) p.photo = manual;
       const ini = esc(initials(p.name)) || "·";
       const avatar = '<span class="pl-avatar">' +
         (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
@@ -304,7 +315,7 @@
       ps.forEach(function (p) {
         const zh = lookupZh(p.name, zhMap) || {};
         const display = zh.zh || p.name || "";          // 优先官方名单的中文名
-        if (window.ManualPhoto) { const m = window.ManualPhoto("u18:" + p.id); if (m) p.photo = m; }
+        const manual = manualPhoto(p); if (manual) p.photo = manual;
         const ini  = esc(initials(p.name)) || "·";
         const injBadge = (p.injury && p.injury.status === "out")
           ? '<span class="pl-inj" title="伤病：' + esc(p.injury.reason) +
@@ -345,17 +356,36 @@
       const local = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches['juvenil-b']) || [];
       if (local.length && window.LAMASIA_SCHEDULE_RENDER) {
         scheduleFellBack = true;
-        // 已完场：Sofascore 的友谊赛保留显示（group/row 为函数声明，此处可用）
-        const played = matches.filter(function (m) { return m.status !== "Not started"; })
-                              .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
-        let html = "";
-        if (played.length) html += group("🏁 已完场", played, true, "结果");
-        // 未开赛：官方站 Juvenil B 联赛（fcb-youth-render 渲染）
+        // Sofascore 的已完场（八月 BEST Cup）并进官方赛程的「已完场」分组，
+        // 否则同一个面板里会出现两个「已完场」标题（2026-10-20 用户反馈）。
+        const extra = matches.filter(function (m) { return m.status !== "Not started"; })
+                             .map(function (m) {
+          const key = "sofascore:" + m.id;
+          if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+          if (!window.LAMASIA_MATCHES[key]) {
+            window.LAMASIA_MATCHES[key] = {
+              source: "sofascore", cacheRef: "DQD_U18_CACHE", id: m.id, comp: m.comp, round: m.round, start: m.start,
+              home: m.home, away: m.away, homeId: m.homeId, awayId: m.awayId,
+              hs: m.hs, as: m.as, status: m.status, isHome: m.isHome,
+              homeLogo: "https://img.sofascore.com/api/v1/team/" + m.homeId + "/image",
+              awayLogo: "https://img.sofascore.com/api/v1/team/" + m.awayId + "/image"
+            };
+          }
+          return {
+            key: key, detailRef: "DQD_U18_CACHE",
+            comp: m.comp || "", round: m.round || "", start: m.start,
+            home: m.home || "", away: m.away || "", hs: m.hs || "", as: m.as || "",
+            status: m.status, isHome: m.isHome, homeId: m.homeId, awayId: m.awayId,
+            homeLogo: "https://img.sofascore.com/api/v1/team/" + m.homeId + "/image",
+            awayLogo: "https://img.sofascore.com/api/v1/team/" + m.awayId + "/image"
+          };
+        });
+        // 官方站 Juvenil B 联赛（fcb-youth-render 渲染），extraPlayed 合并已完场
         const tmp = document.createElement('div');
         tmp.id = 'u18-fb-tmp';
         el.appendChild(tmp);   // 挂到 DOM 后 render 才能 getElementById
-        window.LAMASIA_SCHEDULE_RENDER.render('juvenil-b', tmp.id, {});
-        html += tmp.innerHTML;
+        window.LAMASIA_SCHEDULE_RENDER.render('juvenil-b', tmp.id, { extraPlayed: extra });
+        const html = tmp.innerHTML;
         tmp.remove();
         el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
         return;

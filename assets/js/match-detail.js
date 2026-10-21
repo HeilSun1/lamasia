@@ -149,6 +149,41 @@
   var curMatch = null; // 当前比赛对象（视频/球员集锦用）
   var curMatchKey = ""; // 当前比赛键（"sfb:{id}" / "sofascore:{id}"），查本场球员集锦用
   var curNameMap = "";  // 只有「靠姓名映射卡片」的来源才置为梯队名（见 localKeyFor）
+  /* 低龄梯队：Sofascore 卡键 → data.js 梯队名（手动补图的 local 键用） */
+  var LOCAL_TIER = { u19: "juvenil-a", u18: "juvenil-b", u16: "cadete",
+                     "cadete-b": "cadete-b", infantil: "infantil",
+                     "infantil-b": "infantil-b", "infantil-c": "infantil-c" };
+  var PHOTO_BASE = /\/teams\//.test(window.location.pathname) ? "../" : "";
+  // 手动补的照片（photo-tool.html 写入的 local:{梯队}:{英文名归一化} 键）。
+  // 必须排在上游头像前面：Sofascore 的低龄球员头像大量 404，手动补图就是用来盖掉它的。
+  function localPhotoUrl(src) {
+    if (!src) return "";
+    return /^(https?:|data:|blob:)/.test(src) ? src : PHOTO_BASE + src.replace(/^\.\.\//, "");
+  }
+  function manualPhotoFor(p, isBarca) {
+    if (!isBarca || !p || !p.name) return "";
+    var t = LOCAL_TIER[curTier];
+    if (!t) return "";
+    // elfutbol 的姓名是 "Guardado Rodriguez, Alex"，data.js 是 "Álex Guardado"，
+    // 不能拿原名直接归一化当键，必须走 localKeyFor 的双向前缀匹配。
+    var lk = localKeyFor(p.name, t);
+    var keys = [];
+    if (p.id && curTier) keys.push(curTier + ":" + p.id);   // u18:{id} / u16:{id}
+    if (lk) keys.push(lk);
+    keys.push("local:" + t + ":" + normName(p.name));
+    if (window.ManualPhoto) {
+      for (var i = 0; i < keys.length; i++) {
+        var src = window.ManualPhoto(keys[i]);
+        if (src) return localPhotoUrl(src);
+      }
+    }
+    // 没有手动补图 → 用 data.js 官方名单里现成的本地头像（p.img，如 U15 名单图）
+    if (lk && window.PlayerCard) {
+      var rec = window.PlayerCard.findByKey(lk);
+      if (rec && rec.photo) return rec.photo;
+    }
+    return "";
+  }
   function sfKey(pid) {
     return (curTier && pid) ? "sf:" + curTier + ":" + pid : "";
   }
@@ -158,15 +193,16 @@
      （"Álex Guardado"），elfutbol 给的是全名（"Guardado Rodriguez, Alex"）
      → 归一化后两边不会相等，故做「互为前缀」的双向匹配。 */
   // 注：归一化函数 normName 复用于下方的集锦分区段（同一 IIFE 内，靠函数提升可见）
-  function localKeyFor(rawName) {
-    if (!curNameMap || !rawName || !window.PlayerCard || !window.PlayerCard.INDEX) return "";
+  function localKeyFor(rawName, tierOverride) {
+    var tier = tierOverride || curNameMap;
+    if (!tier || !rawName || !window.PlayerCard || !window.PlayerCard.INDEX) return "";
     var n = String(rawName).trim();
     // "Surname1 Surname2, First" → "First Surname1 Surname2"
     var m = n.match(/^(.*?),\s*(.+)$/);
     var cands = [];
     if (m) cands.push(normName(m[2] + " " + m[1]));
     cands.push(normName(n));
-    var pre = "local:" + curNameMap + ":";
+    var pre = "local:" + tier + ":";
     var keys = Object.keys(window.PlayerCard.INDEX);
     for (var ci = 0; ci < cands.length; ci++) {
       var c = cands[ci];
@@ -176,6 +212,21 @@
         var tail = keys[i].slice(pre.length);
         if (tail.length >= 6 && (tail === c || c.indexOf(tail) === 0 || tail.indexOf(c) === 0)) return keys[i];
       }
+    }
+    // 兜底：按词匹配（容忍中间名）。elfutbol 写作 "Seijo Rigueira, Gael José"，
+    // data.js 是 "Gael Seijo" —— 前缀法对不上，但 data.js 的两个词都在全名里。
+    var rawToks = nameTokenList(n);
+    if (m) rawToks = rawToks.concat(nameTokenList(m[1]), nameTokenList(m[2]));
+    for (var k = 0; k < keys.length; k++) {
+      if (keys[k].indexOf(pre) !== 0) continue;
+      var rec = window.PlayerCard.INDEX[keys[k]];
+      var lt = nameTokenList(rec && rec.nameEn);
+      if (lt.length < 2) continue;
+      var allIn = true;
+      for (var ti = 0; ti < lt.length; ti++) {
+        if (rawToks.indexOf(lt[ti]) === -1) { allIn = false; break; }
+      }
+      if (allIn) return keys[k];
     }
     return "";
   }
@@ -214,8 +265,9 @@
       var pid = String(p.id || "");        // Sofascore 球员 id（懂球帝阵容需前端桥接才有）
       var photo = p.photo || "";           // 懂球帝 CDN 头像（桥不上时用它）
       var ini = esc(initials(p.name)) || "·";
-      // 头像三级降级：① Sofascore id → ② 源自带 photo（懂球帝）→ ③ 首字母
-      var img = pid ? "https://img.sofascore.com/api/v1/player/" + esc(pid) + "/image" : photo;
+      // 头像四级降级：⓪ 手动补图 → ① Sofascore id → ② 源自带 photo（懂球帝）→ ③ 首字母
+      var manual = manualPhotoFor(p, isBarca);
+      var img = manual || (pid ? "https://img.sofascore.com/api/v1/player/" + esc(pid) + "/image" : photo);
       var av = img
         ? '<img src="' + esc(img) + '" alt="' + esc(p.name || "") + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
           '<span class="md-lu-ini" style="display:none">' + ini + "</span>"
@@ -223,6 +275,11 @@
       // 卡片键：优先 Sofascore 键；桥不上退回懂球帝名单键 b:{dqdId}（每日更新的名单，最可靠）；
       // 都没有则按姓名映射（elfutbol 来源）——只对巴萨一侧做，避免撞上对手同姓球员
       var ck = pid ? sfKey(pid) : (p.dqdId ? "b:" + p.dqdId : (isBarca ? localKeyFor(p.name) : ""));
+      // Sofascore 名单里没有该球员（青年队名单变动频繁）→ 回退到 data.js 官方名单的 local 键，
+      // 否则阵容里点名字没反应，手动补的头像也永远看不到。
+      if (isBarca && (!ck || !(window.PlayerCard && window.PlayerCard.findByKey(ck)))) {
+        ck = localKeyFor(p.name, LOCAL_TIER[curTier]) || ck;
+      }
       return '<div class="md-lu-item">' +
         '<span class="md-lu-num">' + esc(x.jerseyNumber || "") + "</span>" +
         '<span class="md-lu-av">' + av + "</span>" +
@@ -469,6 +526,10 @@
   }
   function normName(s) {
     return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+  }
+  function nameTokenList(s) {
+    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .split(/[^a-z0-9]+/).filter(function (w) { return w.length >= 3; });
   }
 
   /* ═══ matches 桶再分配：全场集锦 / 球员个人集锦 ═══

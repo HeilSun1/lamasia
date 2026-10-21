@@ -12,8 +12,15 @@
     return pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()) + " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
   }
   function now() { return Date.now(); }
-  // 官方队徽（本地梯队用）；对手徽章常被防盗链 403 → 失败由 img onerror 隐藏
-  function fcbBadge(id) { return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : ""; }
+  // 官方队徽（本地梯队用）。pulselive 的对手队徽常被防盗链 403，
+  // 所以优先查 elfutbol 真队徽表（elfutbol-crests-cache.js，按 pulselive 队号落键），
+  // 表里没有（如非加泰球队）再退回 pulselive；加载失败时回退通用徽章。
+  var FCB_BADGE_FALLBACK = "https://resources.fcbarcelona.pulselive.com/badges/club/40/default.png";
+  function fcbBadge(id) {
+    var reg = window.ELFUTBOL_CRESTS;
+    if (reg && id != null && reg[String(id)]) return reg[String(id)];
+    return id ? "https://resources.fcbarcelona.pulselive.com/badges/fby/40/t" + id + ".png" : "";
+  }
   /* 官方站本队名 "FC Barcelona A/B" → 按梯队显示「巴萨 U16/U15…」（与赛程区一致） */
   var FCB_U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "infantil-c": "U12", "juvenil-b": "U19B" };
   function dispFcb(name, tier) {
@@ -195,7 +202,8 @@
         }
         out.push({ team: cfg.team, href: cfg.href, key: key, start: t,
           comp: m.comp || "", round: m.round || "", home: homeD, away: awayD,
-          homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId), tbd: m.tbd, date: m.date || "" });
+          homeLogo: fcbBadge(m.homeId), awayLogo: fcbBadge(m.awayId),
+          logoFallback: FCB_BADGE_FALLBACK, tbd: m.tbd, date: m.date || "" });
       });
     });
     out.sort(function (a, b) { return a.start - b.start; });
@@ -205,9 +213,10 @@
   function teamBadge(x) {
     return '<a href="' + esc(x.href) + '" style="white-space:nowrap;color:var(--primary);font-weight:600;text-decoration:none">' + esc(x.team) + "</a>";
   }
-  function teamCell(name, logo) {
+  function teamCell(name, logo, fallback) {
+    const onerr = fallback ? "this.onerror=null;this.src='" + esc(fallback) + "'" : "this.style.display='none'";
     return '<td><span class="match-team">' +
-      '<img class="match-logo" src="' + esc(logo || "") + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' +
+      (logo ? '<img class="match-logo" src="' + esc(logo) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="' + onerr + '">' : '') +
       esc(name || "") + "</span></td>";
   }
   function row(x) {
@@ -215,9 +224,9 @@
       '<td class="num">' + esc(x.tbd ? (x.date + " 待定") : bj(x.start)) + "</td>" +
       "<td>" + teamBadge(x) + "</td>" +
       "<td>" + esc(x.comp || "") + (x.round ? ' <span style="color:var(--faint);font-size:12px">R' + esc(x.round) + "</span>" : "") + "</td>" +
-      teamCell(x.home, x.homeLogo) +
+      teamCell(x.home, x.homeLogo, x.logoFallback) +
       '<td class="num" style="text-align:center;width:48px">vs</td>' +
-      teamCell(x.away, x.awayLogo) +
+      teamCell(x.away, x.awayLogo, x.logoFallback) +
       "</tr>";
   }
 
