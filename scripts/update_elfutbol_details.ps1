@@ -36,6 +36,25 @@ $LogFile   = Join-Path $Root "scripts\elfutbol-details-update.log"
 $TierId  = "cadete-b"
 $TeamUrl = "https://elfutbol.co/en/team/barcelona-fc-cadet-s15-a?season=2627&tab=resultados"
 
+# 各梯队队徽来源。键与 assets/js/fcb-youth-schedules.js 的 tier 一致。
+# U15 复用上面已抓的队伍页；其余梯队用 elfutbol 的 comp 页（同一支队在不同年龄组有独立 comp）。
+# 2026-10-20 起由「只抓 U15」扩到全部官方站梯队 —— pulselive 的对手队徽全是 403，
+# 不补这层，比赛信息页「即将到来」只有巴萨自己的队徽。
+$CrestTiers = [ordered]@{
+  "juvenil-a"  = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-juvenil&group=grup-3&season=2627&tab=resultados"
+  "cadete"     = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-cadet-s16&group=grup-1&season=2627&tab=resultados"
+  "cadete-b"   = $TeamUrl
+  "infantil"   = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-infantil-s14&group=grup-1&season=2627&tab=resultados"
+  # ⚠️ 站点 tier 名与 elfutbol 年龄组并不一一对应（pulselive 的标签有一档偏移）：
+  #   infantil-b 的数据实际是 DH Infantil S13（Barça A）
+  #   infantil-c 的数据实际是 Preferent Infantil S13（Barça B）
+  # 用错组会「每个日期都能匹配上、但对手全错」，所以以对手名单为准，别按名称猜。
+  "infantil-b" = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-infantil-s13&group=grup-1&season=2627&tab=resultados"
+  "infantil-c" = "https://elfutbol.co/en/team/barcelona-f-c-b?comp=preferent-infantil-s13&group=grup-2&season=2627&tab=resultados"
+  "juvenil-b"  = "https://elfutbol.co/en/team/barcelona-f-c-b?comp=lliga-nacional-juvenil&group=grup-7&season=2627&tab=resultados"
+}
+$Inv = [Globalization.CultureInfo]::InvariantCulture
+
 # 一律不带 BOM：产物是 .js，BOM 会让前端多出三个不可见字符
 $Utf8 = New-Object System.Text.UTF8Encoding($false)
 
@@ -154,6 +173,53 @@ function Parse-Events([string]$page) {
   return ,$out
 }
 
+# ── 队徽解析 ────────────────────────────────────────────────────
+# 从 elfutbol 队伍页抽「比赛日 → @(主队队徽, 客队队徽)」。
+# 日期文本是 DD-MM（西班牙本地日期），同一日期可能有多场（联赛/杯赛），按日期聚合成数组。
+function Get-CrestRows([string]$page) {
+  $out = @{}
+  $rx = '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>'
+  foreach ($m in [regex]::Matches($page, $rx)) {
+    $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
+    if (-not $d.Success) { continue }
+    # 两种队徽路径并存：老的是 /crests/sm/<slug>.webp，部分新队用 /_crest/<slug>.png
+    $cr = @([regex]::Matches($m.Value, '<img src="(/(?:crests/sm|_crest)/[^"]+)"') | ForEach-Object { $_.Groups[1].Value })
+    if ($cr.Count -lt 2) { continue }
+    $k = $d.Groups[1].Value + '-' + $d.Groups[2].Value
+    if (-not $out.ContainsKey($k)) { $out[$k] = @() }
+    $out[$k] = @($out[$k]) + ,$cr
+  }
+  return $out
+}
+
+# 把某梯队的 elfutbol 行映射到站点赛程的 pulselive 队号，写进 $script:crestOut。
+# 日期以我们的赛程为准，但 pulselive 的「待定」场次常把日期放成周末占位，可能差一天，
+# 所以依次试 同日 / 前一日 / 后一日；同一天有多行时优先「巴萨是否主队」方向一致的那行。
+function Add-CrestsForTier([string]$tier, [hashtable]$byDate, $schedMatches) {
+  $n = 0
+  foreach ($mt in $schedMatches) {
+    $base = [datetime]::ParseExact([string]$mt.date.Substring(0, 10), 'yyyy-MM-dd', $Inv)
+    $keys = @($base.ToString('dd-MM'), $base.AddDays(-1).ToString('dd-MM'), $base.AddDays(1).ToString('dd-MM'))
+    $picked = $null
+    foreach ($k in $keys) {
+      if (-not $byDate.ContainsKey($k)) { continue }
+      $list = @($byDate[$k])
+      foreach ($cr in $list) {
+        if (([bool]$mt.isHome) -eq ($cr[0] -match 'barcelona-fc')) { $picked = $cr; break }
+      }
+      if (-not $picked) { $picked = $list[0] }
+      break
+    }
+    if (-not $picked) { continue }   # 未排期 / elfutbol 没覆盖的场次
+    $h = $picked
+    if (([bool]$mt.isHome) -ne ($h[0] -match 'barcelona-fc')) { $h = @($picked[1], $picked[0]) }
+    $script:crestOut[[string]$mt.homeId] = "https://elfutbol.co" + $h[0]
+    $script:crestOut[[string]$mt.awayId] = "https://elfutbol.co" + $h[1]
+    $n++
+  }
+  return $n
+}
+
 # ── 主流程 ──────────────────────────────────────────────────────
 Log "开始 U15 阵容/进球详情更新（数据源 elfutbol.co）……"
 
@@ -180,54 +246,105 @@ if (Test-Path $OutFile) {
   } catch { Log "  · 旧缓存解析失败，本次全量重抓" }
 }
 
-# ① 队伍页：按「日期」把每场映射到 /en/match/.../jN，顺带取两队队徽
-$team = Get-Html $TeamUrl
-if (-not $team) { Log "✗ 队伍页抓取失败，保留旧缓存"; exit 1 }
-$map    = @{}   # "MM-DD" → /en/match/... 路径
-$crests = @{}   # "MM-DD" → @(主队队徽, 客队队徽)
-foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
-  $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
-  if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
-  $k = $d.Groups[1].Value + "-" + $d.Groups[2].Value
-  $map[$k] = $m.Groups[1].Value
-  $cr = @([regex]::Matches($m.Value, '<img src="(/crests/sm/[^"]+)"') | ForEach-Object { $_.Groups[1].Value })
-  if ($cr.Count -ge 2) { $crests[$k] = @($cr[0], $cr[1]) }
+# 「足协还没发比赛报告」的场次记在这里（比赛 id → 最后一次尝试的日期）。
+# 标记跟着缓存文件一起上线；N 天内不再重复抓，免得每天对同一场空跑。
+$pendingReports = @{}
+if ($cache.Contains("__pendingReports")) {
+  try {
+    foreach ($p in $cache["__pendingReports"].PSObject.Properties) { $pendingReports[$p.Name] = [string]$p.Value }
+  } catch { }
+  $cache.Remove("__pendingReports")
 }
-Log "  · 队伍页解析出 $($map.Count) 场比赛链接、$($crests.Count) 组队徽"
-if ($map.Count -eq 0) { Log "✗ 队伍页结构变化（未解析到比赛行），保留旧缓存"; exit 1 }
+$RetryDays = 3
+
+# ① U15 队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用）
+$team = Get-Html $TeamUrl
+$map  = @{}   # "DD-MM" → /en/match/... 路径
+if ($team) {
+  foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
+    $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
+    if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
+    $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
+  }
+  Log "  · U15 队伍页解析出 $($map.Count) 场比赛链接"
+} else {
+  Log "  ✗ U15 队伍页抓取失败：本轮跳过 U15 详情，其他梯队队徽照常更新"
+}
 
 # ── ② 队徽表：elfutbol 托管真实队徽（pulselive 的对手队徽全是 403 防盗链）。
-#    本表按本站赛程里的 pulselive 队号落键，fcb-youth-render.js 的 badgeUrl 直接查它。
-#    顺序自校正：elfutbol 行内队徽是 [主,客]；若「巴萨是否主队」对不上就交换，
-#    免得某一轮客主写反导致队徽整体串位。
+#    按本站赛程里的 pulselive 队号落键，fcb-youth-render.js / matches-upcoming.js 直接查它。
+#    先读旧表、再逐队覆盖：某个梯队抓取失败时保留它上一次的队徽，不整体清空。
 $crestOut = [ordered]@{}
-foreach ($mt in $all) {
-  $k = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)
-  $cr = $crests[$k]
-  if (-not $cr) { continue }
-  $h = $cr
-  if (([bool]$mt.isHome) -ne ($h[0] -match 'barcelona-fc')) { $h = @($cr[1], $cr[0]) }
-  $crestOut[[string]$mt.homeId] = "https://elfutbol.co" + $h[0]
-  $crestOut[[string]$mt.awayId] = "https://elfutbol.co" + $h[1]
+if (Test-Path $CrestFile) {
+  try {
+    $ctxt = [System.IO.File]::ReadAllText($CrestFile, $Utf8)
+    $x = $ctxt.IndexOf("{"); $y = $ctxt.LastIndexOf("}")
+    if ($x -ge 0 -and $y -gt $x) {
+      $old = $ctxt.Substring($x, $y - $x + 1) | ConvertFrom-Json
+      foreach ($p in $old.PSObject.Properties) { $crestOut[$p.Name] = $p.Value }
+    }
+  } catch { Log "  · 旧队徽表解析失败，本轮按全量重建" }
 }
-if ($crestOut.Count -gt 0) {
-  $cjs = "/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js 的 badgeUrl 读取）；" +
+$crestMapped = 0
+foreach ($tier in $CrestTiers.Keys) {
+  $page = $null
+  if ($tier -eq $TierId -and $team) { $page = $team }
+  else { $page = Get-Html $CrestTiers[$tier] }
+  if (-not $page) { Log "    ✗ $tier 队伍页抓取失败，沿用旧队徽"; continue }
+  $byDate = Get-CrestRows $page
+  $days   = @($byDate.Keys).Count
+  if ($days -eq 0) { Log "    ✗ $tier 未解析到比赛行，沿用旧队徽"; continue }
+  $n = Add-CrestsForTier $tier $byDate @($sched.matches.$tier)
+  $crestMapped += $n
+  Log "    · $tier：$days 个比赛日 → 映射 $n 场"
+}
+
+if ($crestMapped -gt 0) {
+  $cjs = "/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；" +
          "数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；" +
          "更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CRESTS = " +
          ($crestOut | ConvertTo-Json -Depth 3) + ";`r`n"
   [System.IO.File]::WriteAllText($CrestFile, $cjs, $Utf8)
-  Log "  ✓ 已写入 $CrestFile（$($crestOut.Count) 个队徽）"
+  Log "  ✓ 已写入 $CrestFile（共 $($crestOut.Count) 个队徽，本轮映射 $crestMapped 场）"
 } else {
-  Log "  · 未解析到队徽，$CrestFile 不覆盖"
+  Log "  · 本轮未解析到队徽，$CrestFile 不覆盖"
 }
 
 # ── ③ 逐场详情：只补缓存里还没有的已完场 ──
-$todo = @($ended | Where-Object { $Force -or -not $cache.Contains($_.id) })
-if ($todo.Count -eq 0) { Log "  ✓ 详情无需更新（已收录全部 $($ended.Count) 场已完场）"; exit 0 }
+if (-not $team -or $map.Count -eq 0) {
+  Log "  · U15 队伍页不可用，跳过详情更新（队徽已在上面单独更新）"
+  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
+  exit 0
+}
+$todo = @($ended | Where-Object {
+  if (-not $Force -and $cache.Contains($_.id)) { return $false }
+  if (-not $Force) {
+    $last = $pendingReports[[string]$_.id]
+    if ($last) {
+      $d = $null
+      try { $d = [datetime]::ParseExact($last, 'yyyy-MM-dd', $Inv) } catch { }
+      # 未到重试日：跳过，不重新抓
+      if ($d -and ((Get-Date).Date - $d.Date).TotalDays -lt $RetryDays) { return $false }
+    }
+  }
+  return $true
+})
+$waitCount = 0
+foreach ($mt in $ended) {
+  if ($cache.Contains($mt.id)) { continue }
+  $last = $pendingReports[[string]$mt.id]
+  if ($last) {
+    $d = $null
+    try { $d = [datetime]::ParseExact($last, 'yyyy-MM-dd', $Inv) } catch { }
+    if ($d -and ((Get-Date).Date - $d.Date).TotalDays -lt $RetryDays) { $waitCount++ }
+  }
+}
+if ($waitCount -gt 0) { Log "  · $waitCount 场等足协报告（$RetryDays 天内不重抓）" }
+if ($todo.Count -eq 0) { Log "  ✓ 详情无需更新（已收录 $($ended.Count - $waitCount) 场已完场）"; exit 0 }
 Log "  · 待抓详情 $($todo.Count) 场"
 
 # 逐场抓单场页，解析阵容 + 事件
-$ok = 0; $fail = 0
+$ok = 0; $fail = 0; $pendingReport = 0
 foreach ($mt in $todo) {
   $dkey = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)   # 2026-10-10 → 10-10
   $href = $map[$dkey]
@@ -236,7 +353,19 @@ foreach ($mt in $todo) {
   if (-not $page) { Log "    ✗ $($mt.date) 单场页抓取失败"; $fail++; continue }
   $lineups = Parse-Lineups $page
   $incs    = Parse-Events  $page
-  if (-not $lineups -and $incs.Count -eq 0) { Log "    ✗ $($mt.date) 解析为空（页面结构可能变了）"; $fail++; continue }
+  if (-not $lineups -and $incs.Count -eq 0) {
+    # 有些场次足协只上传了比分、没上传比赛报告，elfutbol 页面会明说：
+    #   "No match report for this game … there are no line-ups, goals or cards"
+    #   "Line-ups are not out yet …"
+    # 这不是解析失败，也不该让整轮标降级 —— 记成「待报告」，下轮报告发布后自动补上。
+    if ($page -match 'No match report for this game|Line-ups are not out yet|the federation has not published a match report') {
+      Log "    ⏳ $($mt.date) 足协尚未发布比赛报告，$RetryDays 天后再试"
+      $pendingReports[[string]$mt.id] = (Get-Date -Format 'yyyy-MM-dd')
+      $pendingReport++
+      continue
+    }
+    Log "    ✗ $($mt.date) 解析为空（页面结构可能变了）"; $fail++; continue
+  }
 
   $luObj = $null
   $luDesc = "阵容 0"
@@ -248,15 +377,26 @@ foreach ($mt in $todo) {
     lineups   = $luObj
     incidents = [ordered]@{ incidents = @($incs) }
   }
+  [void]$pendingReports.Remove([string]$mt.id)
   $ok++
   Log "    ✓ $($mt.date) $luDesc、事件 $($incs.Count) 条"
 }
 
-if ($ok -eq 0) { Log "✗ 本轮无一场解析成功，保留旧缓存不覆盖"; exit 1 }
+if ($ok -eq 0 -and $fail -gt 0) { Log "✗ 本轮无一场解析成功，保留旧缓存不覆盖"; exit 1 }
+if ($ok -eq 0) { Log "  ✓ 本轮 $pendingReport 场等待足协报告，无详情可更新（不算失败）" }
+
+# 「等报告」标记写回缓存文件；报告发布后抓到数据会顺手删掉对应标记
+if ($pendingReports.Count -gt 0) {
+  $pm = [ordered]@{}
+  foreach ($k in $pendingReports.Keys) { $pm[$k] = $pendingReports[$k] }
+  $cache["__pendingReports"] = $pm
+}
+$detailCount = $cache.Count
+if ($cache.Contains("__pendingReports")) { $detailCount-- }
 
 # ④ 写详情缓存
 $json = $cache | ConvertTo-Json -Depth 12
 $js = "/* 自动生成，请勿手动编辑 —— U15 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CADETE_B_DETAILS_CACHE = $json;`r`n"
 [System.IO.File]::WriteAllText($OutFile, $js, $Utf8)
-Log "  ✓ 已写入 $OutFile（本轮新增 $ok 场、失败 $fail 场、共 $($cache.Count) 场）"
+Log "  ✓ 已写入 $OutFile（本轮新增 $ok 场、失败 $fail 场、待报告 $pendingReport 场、共 $detailCount 场）"
 Log "U15 阵容/进球详情更新完成 ✔"
