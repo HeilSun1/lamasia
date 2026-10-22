@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-21 20:15:14 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-22 20:13:13 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-21 20:15:14",
+    "updated":  "2026-10-22 20:13:13",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "title":  "Espart, de un año a otro: gol al PSG en la Youth y en la Champions",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "time":  "2026-10-22 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2025/10/01/68dd5cdaaace8.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/real-sociedad/20261020/1004241040/nueva-conexion-vista-fort-kubo-entienden-primera-vez.html", "title":  "Nueva conexión a la vista: Fort y Kubo se entienden bien en su primera vez juntos",
             "url":  "https://www.mundodeportivo.com/futbol/real-sociedad/20261020/1004241040/nueva-conexion-vista-fort-kubo-entienden-primera-vez.html", "time":  "2026-10-20 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "title":  "El adiós de los primos Fernández",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "time":  "2026-09-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a981cc0351ab.r_d.521-780-10195.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "title":  "Cómo ha convencido Fariñas a Flick",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222461/convencido-farinas-flick.html", "time":  "2026-09-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a985e661ab4a.r_d.370-132-12658.webp" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a981cc0351ab.r_d.521-780-10195.jpeg" }
     ]
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-21 20:15:10 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-22 20:13:08 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-21 20:15:10",
+    "updated":  "2026-10-22 20:13:08",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -147,6 +147,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4596876", "title":  "Flick and Mou, head-to-head",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596876/clasico-brings-second-head-to-head-between-flick-and-mourinho", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/1193739b-ffc7-483d-a9fb-de5a56f19f0c/_MGA6966_1.jpg" },
+            {
                 "id":  "4596701", "title":  "Dani Olmo injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596701/dani-olmo-injury-news", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/3b6dded9-85fd-4486-8cb8-557894c66cec/_MGA9412-1-.jpg" },
@@ -231,10 +235,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592741/fc-barcelona-travel-to-play-betis-side-with-best-ever-start", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/2ed63544-9e18-44b6-89ce-0f846cb5de55/_MGA6020-1-.jpg" },
             {
-                "id":  "4592732", "title":  "Raphinha back in training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/69d69cf8-6558-4c38-9af5-6ca6a82e05f3/image00013.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -242,6 +242,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4592732", "title":  "Raphinha back in training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/69d69cf8-6558-4c38-9af5-6ca6a82e05f3/image00013.jpeg" },
             {
                 "id":  "4592194", "title":  "Twenty comebacks",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592194/twenty-comebacks-under-flick", "time":  "",
@@ -341,11 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4587842", "title":  "More international players return",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/b6302003-522f-4d2c-86e9-19339962e55a/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" },
-            {
-                "id":  "4587851", "title":  "When and where to watch Barça v Getafe",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587851/when-and-where-to-watch-fc-barcelona-v-getafe", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/b6302003-522f-4d2c-86e9-19339962e55a/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" }
         ]
     }
 };

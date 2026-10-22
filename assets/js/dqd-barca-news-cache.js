@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-21 20:14:47 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-22 20:12:44 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-21 20:14:47",
+    "updated":  "2026-10-22 20:12:44",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6530532", "title":  "巴黎旧将：维蒂尼亚、若昂-内维斯、法比安能比肩哈白布",
+            "url":  "https://www.dongqiudi.com/articles/6530532.html", "time":  "2026-10-22 04:32",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/53/280x210/crop/-/rBXRn2rZIWCAN-VjAAl6z3x34Qw958.png" },
         {
             "id":  "6521330", "title":  "首次进入一线队大名单随队前往巴黎的坎波斯。",
             "url":  "https://www.dongqiudi.com/articles/6521330.html", "time":  "2026-10-20 15:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6404242", "title":  "将门虎子！肖恩-克鲁伊维特vs佩尼亚体育个人集锦...",
             "url":  "https://www.dongqiudi.com/articles/6404242.html", "time":  "2026-09-27 14:26",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/cf0c7d4aacb5f2082a75759f87c3e3d9U4CQPl_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6404224", "title":  "易卜拉欣-迪亚拉vs佩尼亚体育个人集锦。伤愈复出...",
-            "url":  "https://www.dongqiudi.com/articles/6404224.html", "time":  "2026-09-27 14:21",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/30dd1ce06ab50da5f59332433755b5eblQkCAM_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/cf0c7d4aacb5f2082a75759f87c3e3d9U4CQPl_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
     ]
 };
