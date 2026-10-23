@@ -71,10 +71,13 @@
     el = document.createElement("div");
     el.id = "lamasia-match-detail";
     el.className = "match-detail";
+    // 结构：固定头部 + 可滚动正文 + 固定底部外链（正文超出时可滚，卡片本身不出视口）
     el.innerHTML =
       '<div class="match-detail-inner">' +
         '<button class="match-detail-close" title="关闭">✕</button>' +
+        '<div class="md-head-slot"></div>' +
         '<div class="md-body"></div>' +
+        '<div class="md-foot-slot"></div>' +
       "</div>";
     document.body.appendChild(el);
     el.addEventListener("click", function (e) {
@@ -259,6 +262,7 @@
     if (list && !Array.isArray(list) && list.players) list = list.players;
     if (!list || !list.length) return null;
     var starters = list.filter(function (x) { return !x.substitute; });
+    // 替补默认折叠：11 人首发 + 7 人替补竖排会把弹窗撑高，替补几乎没人第一眼看
     var bench = list.filter(function (x) { return x.substitute; });
     function item(x) {
       var p = x.player || {};
@@ -293,7 +297,9 @@
     }
     return '<div class="md-lu-side">' +
       (starters.length ? '<div class="md-lu-label">首发 · ' + starters.length + "</div>" + starters.map(item).join("") : "") +
-      (bench.length ? '<div class="md-lu-label">替补 · ' + bench.length + "</div>" + bench.map(item).join("") : "") +
+      (bench.length
+        ? '<details class="md-lu-bench"><summary>替补 · ' + bench.length + "</summary>" + bench.map(item).join("") + "</details>"
+        : "") +
       "</div>";
   }
 
@@ -432,10 +438,12 @@
           '<td class="md-st-n">' + esc(STATS_ZH[st.name] || st.name) + "</td>" +
           '<td class="md-st-v">' + esc(st.away == null ? "-" : st.away) + "</td></tr>";
       }).join("");
-      return (gname ? '<div class="md-st-group">' + esc(gname) + "</div>" : "") +
-        '<table class="md-st"><tbody>' + rows + "</tbody></table>";
+      // 分组头 + 表格包成一个块，CSS 分两栏时不会把表头切到另一栏
+      return '<div class="md-st-block">' +
+        (gname ? '<div class="md-st-group">' + esc(gname) + "</div>" : "") +
+        '<table class="md-st"><tbody>' + rows + "</tbody></table></div>";
     }).join("");
-    return sections ? '<section class="md-sec"><h4>📊 技术统计</h4>' + sections + "</section>" : "";
+    return sections ? '<section class="md-sec"><h4>📊 技术统计</h4><div class="md-st-cols">' + sections + "</div></section>" : "";
   }
 
   /* ═══ 近期交锋 ═══ */
@@ -491,6 +499,16 @@
   var matchBucketStash = { key: "", list: [] };   // 带 key 是防串场：上一场的详情缓存迟到时 curMatchKey 已经变了
   var matchBucketFull = [];                       // 分类后留在「全场集锦」里的
 
+  /* 🎥 全场集锦：默认折叠成一条，展开才出视频卡片（与 ⭐ 球员个人集锦同一套折叠块） */
+  function fullVideosFoldHtml(list) {
+    if (!list || !list.length || !window.VideosUI) return "";
+    return '<details class="md-vids-fold md-full-fold">' +
+      '<summary>🎥 全场集锦 <span class="vid-count">' + list.length + "</span></summary>" +
+      '<div class="md-vids-fold-body"><div class="vid-grid">' +
+        list.map(function (v) { return window.VideosUI.videoCardHtml(v); }).join("") +
+      "</div></div></details>";
+  }
+
   function matchVideosHtml(key) {
     matchBucketStash = { key: key, list: [] };
     matchBucketFull = [];
@@ -507,7 +525,7 @@
       });
     }
     matchBucketStash.list = list;
-    return '<div id="md-match-videos">' + window.VideosUI.groupHtml(list, "🎥 全场集锦") + "</div>" +
+    return '<div id="md-match-videos">' + fullVideosFoldHtml(list) + "</div>" +
       '<div id="md-player-videos"></div>';
   }
 
@@ -590,11 +608,17 @@
     return { full: full, recs: recs };
   }
 
-  /* 🎥 全场集锦就地重渲染（分类结果可能晚于 open()，要等阵容） */
+  /* 🎥 全场集锦就地重渲染（分类结果可能晚于 open()，要等阵容）。
+     重渲染会换掉 details，用户若已展开则保留展开状态。 */
   function renderMatchVideos(body) {
     var wrap = body && body.querySelector("#md-match-videos");
     if (!wrap || !window.VideosUI) return;
-    wrap.innerHTML = window.VideosUI.groupHtml(matchBucketFull, "🎥 全场集锦");
+    var wasOpen = !!wrap.querySelector("details[open]");
+    wrap.innerHTML = fullVideosFoldHtml(matchBucketFull);
+    if (wasOpen) {
+      var d = wrap.querySelector("details");
+      if (d) d.open = true;
+    }
   }
   /* 阵容球员列表。能按 TIER_TEAM 认出巴萨侧就只取巴萨侧；认不出（u18/u16 的 TIER_TEAM 为空、
      或阵容未缓存）就把两队都收进来 —— 反正下面只按球员键/名字去对，不会错认到对手身上。 */
@@ -985,12 +1009,13 @@
     curMatchKey = m.videoKey || key;
     var modal = ensureModal();
     var body = modal.querySelector(".md-body");
-    body.innerHTML = headerHtml(m) +
-      matchVideosHtml(curMatchKey) +
-      '<div class="md-load"><div class="md-loading">正在加载比赛详情…</div></div>' +
-      footerHtml(m);
+    // 头部固定在卡片顶，只有正文（集锦折叠条 + 页签分区）滚动；外链固定在卡片底
+    modal.querySelector(".md-head-slot").innerHTML = headerHtml(m);
+    modal.querySelector(".md-foot-slot").innerHTML = footerHtml(m);
+    body.innerHTML = matchVideosHtml(curMatchKey) +
+      '<div class="md-load"><div class="md-loading">正在加载比赛详情…</div></div>';
     modal.classList.add("open");
-    modal.scrollTop = 0;   // 弹窗复用：每次打开新比赛都回到最上方，不残留上次关闭时的滚动位置
+    body.scrollTop = 0;   // 弹窗复用：每次打开新比赛都回到最上方，不残留上次关闭时的滚动位置
     // 阵容还没到，先按标题关键词粗分一次：个人集锦立刻从 🎥 挪进 ⭐（扫阵容名单那一步要等详情）。
     // 也是 dqd: / fcb: 这类永远走不到 applyDetail 的场次的唯一分区机会。
     // 幂等：computeMatchPlayerVideos 自己重置三个模块变量，fillMatchPlayerVideos 整体换 innerHTML。
@@ -1045,9 +1070,10 @@
     Array.prototype.forEach.call(load.querySelectorAll(".md-pane"), function (p) {
       p.classList.toggle("is-active", p.getAttribute("data-pane") === key);
     });
-    // 换分区后回到顶部，别停在上一个分区的高度上
+    // 换分区后正文回到顶部，别停在上一个分区的高度上
     var modal = btn.closest(".match-detail");
-    if (modal && modal.scrollTop > 0) modal.scrollTo({ top: 0, behavior: "smooth" });
+    var scroller = modal && modal.querySelector(".md-body");
+    if (scroller && scroller.scrollTop > 0) scroller.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   /* 🎬 阵容里的个人集锦徽标点击 → 直接播放该球员本场第一条集锦 */

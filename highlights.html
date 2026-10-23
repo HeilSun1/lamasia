@@ -43,18 +43,24 @@
   </div>
 
   <section class="container" style="padding-top:0">
-    <div class="panel">
-      <div class="panel-title-row">
-        <h3>🎥 球员集锦</h3>
-        <span class="badge gray" id="hl-count"></span>
+
+    <!-- 与「比赛信息」页同一套 deck 交互：顶部吸顶页签，一次只显示一张卡片 -->
+    <div class="schedule-deck hl-deck" id="hl-deck">
+      <div class="deck-bar">
+        <div class="deck-tabs" id="hl-deck-tabs" role="tablist" aria-label="切换梯队集锦"><!-- highlights.js 渲染 --></div>
+        <div class="deck-tools">
+          <button type="button" class="deck-arrow" id="hl-deck-prev" aria-label="上一个梯队" title="上一个梯队">‹</button>
+          <span class="deck-pos" id="hl-deck-pos">1 / 1</span>
+          <button type="button" class="deck-arrow" id="hl-deck-next" aria-label="下一个梯队" title="下一个梯队">›</button>
+          <button type="button" class="deck-top" id="hl-deck-top" aria-label="回到顶部" title="回到顶部">⬆</button>
+        </div>
       </div>
-      <div class="p-body" style="margin-top:12px">
-        <div id="hl-list"></div>
-        <div id="hl-empty" class="match-list-empty" style="display:none">暂无人集锦，等每日频道扫描更新后再来看看。</div>
-      </div>
+      <div class="deck-stage" id="hl-deck-stage"><!-- highlights.js 渲染 --></div>
     </div>
 
-    <div class="note-box">📌 <span><b>说明：</b>这里汇总每位球员的<b>个人集锦</b>——既包括<b>赛程相关的</b>（自动归类到对应已完赛，如 08-19 vs 开罗国民），也包括<b>非赛程的</b>（友谊赛 / 个人精彩等），来源为站点配置的 YouTube 频道与 B站 UP 主，每日自动抓取并按比赛归类；点击视频卡片即可在本站播放。若某条视频匹配错误，可在 <code>assets/js/videos-data.js</code> 的 blocked 里拉黑。</span></div>
+    <div id="hl-empty" class="match-list-empty" style="display:none">暂无人集锦，等每日频道扫描更新后再来看看。</div>
+
+    <div class="note-box">📌 <span><b>说明：</b>这里汇总每位球员的<b>个人集锦</b>——既包括<b>赛程相关的</b>（自动归类到对应已完赛，如 08-19 vs 开罗国民），也包括<b>非赛程的</b>（友谊赛 / 个人精彩等），来源为站点配置的 YouTube 频道与 B站 UP 主，每日自动抓取并按比赛归类；点击球员行展开比赛分组，再点分组展开视频卡片即可在本站播放。若某条视频匹配错误，可在 <code>assets/js/videos-data.js</code> 的 blocked 里拉黑。</span></div>
   </section>
 
   <footer class="site-footer">

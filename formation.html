@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 
 </head>
-<body>
+<body class="fb-page">
 
   <header class="site-nav">
     <div class="container nav-inner">
@@ -43,17 +43,20 @@
     </div>
   </div>
 
-  <section class="container" style="padding-top:20px">
+  <section class="container" style="padding-top:12px">
 
-    <!-- 阵型与操作 -->
-    <div class="panel">
-      <div class="panel-title-row"><h3>🧭 选择阵型</h3><span class="badge gray" id="fb-count">已放 0/11</span></div>
-      <div class="fb-formation-tabs" id="fb-formation-tabs"><!-- formation.js 渲染 --></div>
-      <div class="fb-actions">
-        <button id="fb-random" class="btn">🎲 随机首发</button>
-        <button id="fb-clear" class="btn ghost">🗑 清空</button>
-        <button id="fb-copy" class="btn ghost">📋 复制首发</button>
-        <span id="fb-copy-msg"></span>
+    <!-- 阵型与操作（单行：标签 / 阵型页签 / 计数 / 操作按钮） -->
+    <div class="panel fb-setup">
+      <div class="fb-setup-row">
+        <span class="fb-setup-label">🧭 选择阵型</span>
+        <div class="fb-formation-tabs" id="fb-formation-tabs"><!-- formation.js 渲染 --></div>
+        <span class="badge gray" id="fb-count">已放 0/11</span>
+        <div class="fb-actions">
+          <button id="fb-random" class="btn">🎲 随机首发</button>
+          <button id="fb-clear" class="btn ghost">🗑 清空</button>
+          <button id="fb-copy" class="btn ghost">📋 复制首发</button>
+          <span id="fb-copy-msg"></span>
+        </div>
       </div>
     </div>
 
@@ -64,26 +67,31 @@
         <div class="panel-title-row"><h3>🎽 球员池</h3><span class="badge gray" id="fb-pool-count">…</span></div>
         <div class="fb-filter">
           <input id="fb-search" type="search" placeholder="🔍 搜索球员 / 队名…" autocomplete="off">
-          <div class="fb-team-tabs" id="fb-team-tabs"><!-- formation.js 渲染 --></div>
-          <div class="fb-pos-chips" id="fb-pos-chips"><!-- formation.js 渲染 --></div>
+          <div class="fb-filter-group">
+            <span class="fb-filter-label">队伍</span>
+            <div class="fb-team-tabs" id="fb-team-tabs"><!-- formation.js 渲染 --></div>
+          </div>
+          <div class="fb-filter-group">
+            <span class="fb-filter-label">位置</span>
+            <div class="fb-pos-chips" id="fb-pos-chips"><!-- formation.js 渲染 --></div>
+          </div>
         </div>
         <div class="fb-players" id="fb-players"><!-- formation.js 渲染 --></div>
       </div>
 
-      <!-- 球场与首发 -->
-      <div class="fb-pitch-col">
-        <div class="panel fb-pitch-panel">
-          <div class="panel-title-row"><h3>🟢 阵型图</h3><span class="badge gray">点击槽位可移除</span></div>
-          <div class="fb-pitch-wrap">
-            <div class="fb-pitch" id="fb-pitch"><!-- formation.js 渲染 --></div>
-          </div>
-          <div class="fb-active" id="fb-active" hidden></div>
+      <!-- 球场 -->
+      <div class="panel fb-pitch-panel">
+        <div class="panel-title-row"><h3>🟢 阵型图</h3><span class="badge gray">点击槽位可移除</span></div>
+        <div class="fb-pitch-wrap">
+          <div class="fb-pitch" id="fb-pitch"><!-- formation.js 渲染 --></div>
         </div>
+        <div class="fb-active" id="fb-active" hidden></div>
+      </div>
 
-        <div class="panel">
-          <div class="panel-title-row"><h3>📋 首发名单</h3><span class="badge gray">点击 ✕ 移除</span></div>
-          <div class="fb-lineup" id="fb-lineup"><!-- formation.js 渲染 --></div>
-        </div>
+      <!-- 首发名单（宽屏放球场右边，不再压在球场下面） -->
+      <div class="panel fb-lineup-panel">
+        <div class="panel-title-row"><h3>📋 首发名单</h3><span class="badge gray">点击 ✕ 移除</span></div>
+        <div class="fb-lineup" id="fb-lineup"><!-- formation.js 渲染 --></div>
       </div>
 
     </div>

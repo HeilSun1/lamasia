@@ -240,16 +240,23 @@
       dot.remove();
     }
   }
-  /* 该球员名下还有未读新视频吗 → 刷新球员名字红点（点掉视频/一键已读后调用） */
+  /* 该球员名下还有未读新视频吗 → 刷新球员名字红点（点掉视频/一键已读后调用）。
+     集锦页现在是表格行（.hl-prow + 下一行的 .hl-prow-detail），旧的 .hl-player 折叠块保留兼容。 */
   function refreshPlayerDots(container) {
     if (!container) return;
     var players = [];
-    if (container.classList && container.classList.contains("hl-player")) players.push(container);
-    Array.prototype.forEach.call(container.querySelectorAll(".hl-player"), function (p) { players.push(p); });
+    if (container.classList && (container.classList.contains("hl-player") || container.classList.contains("hl-prow"))) players.push(container);
+    Array.prototype.forEach.call(container.querySelectorAll(".hl-player, .hl-prow"), function (p) { players.push(p); });
     players.forEach(function (player) {
+      var scope = player;
+      if (player.classList && player.classList.contains("hl-prow")) {
+        var det = player.nextElementSibling;
+        if (!det || !det.classList.contains("hl-prow-detail")) return;
+        scope = det;
+      }
       var btn = player.querySelector(".hl-name-btn");
       if (!btn) return;
-      var stillNew = !!player.querySelector(".vid-dot");
+      var stillNew = !!scope.querySelector(".vid-dot");
       if (stillNew) {
         if (!btn.classList.contains("hl-new")) {
           btn.classList.add("hl-new");
@@ -272,7 +279,8 @@
     if (!el) return;
     if (el.classList && el.classList.contains("vid-card")) {
       refreshGroupDot(el.closest ? el.closest(".md-vids-fold") : null);
-      refreshPlayerDots(el.closest ? el.closest(".hl-player") : null);
+      var det = el.closest ? el.closest(".hl-prow-detail") : null;
+      refreshPlayerDots(det ? det.previousElementSibling : (el.closest ? el.closest(".hl-player") : null));
       return;
     }
     Array.prototype.forEach.call(el.querySelectorAll(".md-vids-fold"), refreshGroupDot);

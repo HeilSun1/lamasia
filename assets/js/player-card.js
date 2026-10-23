@@ -30,6 +30,17 @@
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
+
+  /* 中文名补漏表由 data.js 提供（window.LAMASIA_NAME_ZH，键已归一化）：
+     Juvenil A 的 data.js 仍是 2025-26 名单，2026-27 新面孔匹配不到中文；
+     懂球帝名单偶尔也只给英文名（如 Adam Argemí）。球员卡片、集锦页、
+     比赛弹窗与首页滚动条统一读这份表。 */
+  var NAME_ZH = window.LAMASIA_NAME_ZH || {};
+  /* nameZh 为空、或仍是拉丁文（懂球帝未译）时，按英文名查补漏表 */
+  function zhName(nameEn, nameZh) {
+    if (nameZh && /[一-鿿]/.test(nameZh)) return nameZh;
+    return NAME_ZH[norm(nameEn)] || nameZh || "";
+  }
   // 位置 → 中文（兼容 Sofascore 单字母 / 懂球帝英文类型）
   function posZh(pos) {
     var m = {
@@ -116,7 +127,7 @@
         add("b:" + id, {
           tier: "b",
           photo: manualPhoto("barca:" + id) || photoUrl(p.person_logo),
-          nameZh: p.person_name || "",
+          nameZh: zhName(p.person_en_name || p.person_name, p.person_name || ""),
           nameEn: p.person_en_name || "",
           nation: bio.nation || p.nationality_name || "",
           birth: bio.birth || "",
@@ -147,8 +158,13 @@
       zhMap = {};
       Object.keys(LAMASIA_DATA.players).forEach(function (t) {
         LAMASIA_DATA.players[t].forEach(function (lp) {
-          var lk = norm(lp.name);
-          if (lk && !zhMap[lk]) zhMap[lk] = lp;
+          // 主名 + nameAlias（逗号分隔）都进表：同一球员在不同数据源拼写不同
+          //（Elyott Daussy ↔ Elyott Andrea Daussy、Alexander Cimoscov ↔ Aleksander Simoskov）
+          String(lp.name || "").split(",").concat(String(lp.nameAlias || "").split(","))
+            .forEach(function (nm) {
+              var lk = norm(nm);
+              if (lk && !zhMap[lk]) zhMap[lk] = lp;
+            });
         });
       });
     }
@@ -163,7 +179,7 @@
         photo: manualPhoto(s.k + ":" + p.id) ||
                manualPhoto("local:" + s.dt + ":" + norm((local && local.name) || p.name)) ||
                photoUrl(p.photo),
-        nameZh: (local && local.zh) || "",
+        nameZh: zhName(p.name, (local && local.zh) || ""),
         nameEn: p.name || "",
         nation: p.nation || "",
         birth: p.birthday || "",
@@ -236,7 +252,7 @@
       add("sf:b:" + p.id, {
         tier: "b",
         photo: photoUrl(p.photo),
-        nameZh: (local && local.zh) || "",
+        nameZh: zhName(p.name, (local && local.zh) || ""),
         nameEn: p.name || "",
         nation: p.nation || "",
         birth: p.birthday || "",
@@ -264,7 +280,7 @@
           // 手动补图优先（photo-tool.html 的 local:{梯队}:{英文名} 键；此前卡片漏查了这层）
           photo: manualPhoto("local:" + tier + ":" + norm(p.name)) ||
                  photoUrl(p.img ? "assets/img/players/" + p.img : ""),
-          nameZh: p.zh || "",
+          nameZh: zhName(p.name, p.zh || ""),
           nameEn: p.name || "",
           nation: p.nation || "",
           birth: p.dob || "",

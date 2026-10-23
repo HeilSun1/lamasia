@@ -31,8 +31,10 @@
     return (mt.comp ? mt.comp + " · " : "") + fmtMd(mt.start) + " · " + (mt.home || "") + sc + " " + (mt.away || "");
   }
 
-  var wrap = document.getElementById("hl-list");
-  if (!wrap || !window.DQD_VIDEOS_CACHE || !window.VideosUI) return;
+  var deckEl = document.getElementById("hl-deck");
+  var tabsWrap = document.getElementById("hl-deck-tabs");
+  var stage = document.getElementById("hl-deck-stage");
+  if (!deckEl || !tabsWrap || !stage || !window.DQD_VIDEOS_CACHE || !window.VideosUI) return;
   var CACHE = window.DQD_VIDEOS_CACHE;
   var feed = (CACHE.feed && CACHE.feed.players) || {};
   var schedPlayers = CACHE.players || {};
@@ -214,56 +216,213 @@
     (byTier[p.tier] = byTier[p.tier] || []).push(p);
   });
 
-  // ⑤ 渲染
+  // ⑤ 渲染：与「比赛信息」页同一套 deck 交互。
+  //    顶部吸顶页签（全部 + 各梯队），同一时间只显示一张卡片；
+  //    卡片内用表格式行展示球员，点行展开该球员的比赛分组，再点分组出视频。
+  var TIER_CHIP = { b: "B队", u19: "U19", u18: "U18", u16: "U16", u15: "U15", u14: "U14", other: "其他" };
+  var TIER_ICO = { b: "🟡🔵", u19: "🎓", u18: "🎓", u16: "🎓", u15: "🎓", u14: "🎓", other: "⚽" };
   var tierNames = Object.keys(TIER_ORDER).filter(function (t) { return byTier[t]; });
-  var totalP = 0, totalV = 0, html = "";
+  var totalP = 0, totalV = 0;
   tierNames.forEach(function (t) {
-    var players = byTier[t].sort(function (a, b) { return b.count - a.count; });
-    totalP += players.length;
-    html += '<div class="hl-tier-section"><div class="hl-tier-title">' + esc(TIER_LABEL[t]) + "</div>";
-    players.forEach(function (p) {
-      totalV += p.count;
-      // 该球员名下是否有未读新集锦 → 名字旁弹红点
-      var hasNew = p.groups.some(function (g) {
-        return g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
-      });
-      html += '<details class="dqd-group hl-player"' + (hasNew ? ' data-new="1"' : "") + ">" +
-        "<summary>" +
-          '<span class="hl-left">' +
-            '<button class="hl-name-btn' + (hasNew ? " hl-new" : "") + '" type="button" data-pc-open="' + esc(p.key) + '">' +
-              esc(p.name) + (hasNew ? '<span class="hl-dot" aria-label="有新集锦"></span>' : "") +
-            "</button>" +
-            (p.teams.length ? '<span class="hl-tier">' + esc(p.teams.join(" · ")) + "</span>" : "") +
-          "</span>" +
-          '<span class="dqd-side"><span class="dqd-count">' + p.count + ' 条</span><span class="dqd-state"></span></span>' +
-        "</summary>" +
-        '<div class="dqd-body">' +
-          p.groups.map(function (g) {
-            var pre = g.label.indexOf("📹") === 0 ? "" : "⚽ ";
-            // 分组里含未读新视频 → 分组标题弹红点，展开即知是哪天的
-            var gNew = g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
-            return '<details class="md-vids-fold hl-match"' + (gNew ? ' data-gnew="1"' : "") + ">" +
-              "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + pre + esc(g.label) + ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
-              '<div class="md-vids-fold-body"><div class="vid-grid">' + g.videos.map(window.VideosUI.videoCardHtml).join("") + "</div></div></details>";
-          }).join("") +
-        "</div>" +
-      "</details>";
-    });
-    html += "</div>";
+    totalP += byTier[t].length;
+    byTier[t].forEach(function (p) { totalV += p.count; });
   });
 
-  var empty = document.getElementById("hl-empty");
-  var countEl = document.getElementById("hl-count");
-  if (totalP) {
-    wrap.innerHTML = html;
-    if (window.VideosUI && window.VideosUI.attachReadAll) window.VideosUI.attachReadAll(wrap);
-    if (empty) empty.style.display = "none";
-    if (countEl) countEl.textContent = totalP + " 名球员 · " + totalV + " 条视频";
-  } else if (empty) {
-    empty.style.display = "";
+  function tierVideos(t) {
+    return byTier[t].reduce(function (s, p) { return s + p.count; }, 0);
+  }
+  function hasNewVideos(p) {
+    return p.groups.some(function (g) {
+      return g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
+    });
+  }
+  function initialsOf(name) {
+    var s = String(name || "");
+    if (/[一-鿿]/.test(s)) return s.charAt(0);
+    return s.split(/\s+/).filter(Boolean).slice(0, 2)
+      .map(function (w) { return w.charAt(0); }).join("").toUpperCase();
+  }
+  // 球员行下的比赛分组（沿用原来的折叠样式）
+  function groupFoldsHtml(p) {
+    return p.groups.map(function (g) {
+      var pre = g.label.indexOf("📹") === 0 ? "" : "⚽ ";
+      var gNew = g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
+      return '<details class="md-vids-fold hl-match"' + (gNew ? ' data-gnew="1"' : "") + ">" +
+        "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + pre + esc(g.label) +
+          ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
+        '<div class="md-vids-fold-body"><div class="vid-grid">' +
+          g.videos.map(window.VideosUI.videoCardHtml).join("") +
+        "</div></div></details>";
+    }).join("");
+  }
+  function playerRowsHtml(players) {
+    return players.map(function (p) {
+      var rec = (window.PlayerCard && window.PlayerCard.findByKey(p.key)) || null;
+      var ph = rec && rec.photo;
+      var ini = esc(initialsOf(p.name));
+      var av = ph
+        ? '<span class="hl-p-av"><img src="' + esc(ph) + '" alt="" loading="lazy" referrerpolicy="no-referrer" ' +
+          'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
+          '<span class="hl-p-ini" style="display:none">' + ini + "</span></span>"
+        : '<span class="hl-p-av"><span class="hl-p-ini">' + ini + "</span></span>";
+      var hasNew = hasNewVideos(p);
+      return '<tr class="hl-prow">' +
+        '<td class="hl-c-player"><span class="hl-p-main">' + av +
+          '<button class="hl-name-btn' + (hasNew ? " hl-new" : "") + '" type="button" data-pc-open="' + esc(p.key) + '" title="点击查看球员卡片">' +
+            esc(p.name) + (hasNew ? '<span class="hl-dot" aria-label="有新集锦"></span>' : "") +
+          "</button></span></td>" +
+        '<td class="hl-c-team">' + esc(p.teams.join(" · ")) + "</td>" +
+        '<td class="hl-c-count"><b>' + p.count + "</b> 条</td>" +
+        '<td class="hl-c-toggle"><span class="hl-caret">▸</span></td>' +
+      "</tr>" +
+      '<tr class="hl-prow-detail" hidden><td colspan="4"><div class="hl-groups">' + groupFoldsHtml(p) + "</div></td></tr>";
+    }).join("");
+  }
+  function tierCardHtml(t) {
+    var players = byTier[t].slice().sort(function (a, b) { return b.count - a.count; });
+    return '<section class="panel deck-card" id="hl-sec-' + esc(t) + '" role="tabpanel">' +
+      '<div class="panel-title-row"><h3>' + (TIER_ICO[t] || "🎓") + " " + esc(TIER_LABEL[t]) +
+        ' <span class="tag">球员集锦</span></h3>' +
+        '<span class="badge blue">' + players.length + " 名球员 · " + tierVideos(t) + " 条集锦</span></div>" +
+      '<div class="p-body" style="margin-top:10px"><div class="table-wrap"><table class="hl-table">' +
+        "<thead><tr><th>球员</th><th>梯队</th><th>集锦</th><th></th></tr></thead><tbody>" +
+        playerRowsHtml(players) + "</tbody></table></div></div></section>";
   }
 
-  // ⑥ 点球员名 → 弹球员卡片（阻止 details 折叠切换）
+  var summaryRows = tierNames.map(function (t) {
+    return '<tr class="hl-tier-row" data-target="hl-sec-' + esc(t) + '">' +
+      '<td class="hl-c-tier"><span class="hl-tier-ico">' + (TIER_ICO[t] || "🎓") + "</span><b>" + esc(TIER_LABEL[t]) + "</b></td>" +
+      '<td class="hl-c-count"><b>' + byTier[t].length + "</b> 名</td>" +
+      '<td class="hl-c-count"><b>' + tierVideos(t) + "</b> 条</td>" +
+      '<td class="hl-c-toggle">查看 →</td></tr>';
+  }).join("");
+
+  tabsWrap.innerHTML = [{ id: "all", ico: "🎥", label: "全部", n: totalP }]
+    .concat(tierNames.map(function (t) {
+      return { id: t, ico: TIER_ICO[t] || "🎓", label: TIER_CHIP[t] || t, n: byTier[t].length };
+    }))
+    .map(function (d, i) {
+      return '<button type="button" class="deck-tab' + (i === 0 ? " is-active" : "") + '" role="tab" aria-selected="' + (i === 0) +
+        '" data-target="hl-sec-' + esc(d.id) + '"><span class="dt-ico">' + d.ico + "</span>" + esc(d.label) +
+        ' <span class="hl-tab-n">' + d.n + "</span></button>";
+    }).join("");
+
+  stage.innerHTML =
+    '<section class="panel deck-card is-active" id="hl-sec-all" role="tabpanel">' +
+      '<div class="panel-title-row"><h3>🎥 全部梯队 <span class="tag">点梯队查看球员集锦</span></h3>' +
+        '<span class="badge gray">' + totalP + " 名球员 · " + totalV + " 条集锦</span></div>" +
+      '<div class="p-body" style="margin-top:10px"><div class="table-wrap"><table class="hl-table hl-summary">' +
+        "<thead><tr><th>梯队</th><th>球员</th><th>集锦</th><th></th></tr></thead><tbody>" +
+        summaryRows + "</tbody></table></div></div></section>" +
+    tierNames.map(tierCardHtml).join("");
+
+  var empty = document.getElementById("hl-empty");
+  if (!totalP) {
+    deckEl.style.display = "none";
+    if (empty) empty.style.display = "";
+    return;
+  }
+  if (empty) empty.style.display = "none";
+  deckEl.classList.add("is-ready");
+  if (window.VideosUI.attachReadAll) window.VideosUI.attachReadAll(stage);
+
+  /* ── deck 切换 / 行展开 ── */
+  var cards = Array.prototype.slice.call(stage.querySelectorAll(".deck-card"));
+  var tabs = Array.prototype.slice.call(tabsWrap.querySelectorAll(".deck-tab"));
+  var posEl = document.getElementById("hl-deck-pos");
+  var prevBtn = document.getElementById("hl-deck-prev");
+  var nextBtn = document.getElementById("hl-deck-next");
+  var topBtn = document.getElementById("hl-deck-top");
+  var current = 0;
+
+  function indexOfCard(id) {
+    for (var i = 0; i < cards.length; i++) if (cards[i].id === id) return i;
+    return -1;
+  }
+  function syncTabs(i) {
+    tabs.forEach(function (tab) {
+      var on = indexOfCard(tab.getAttribute("data-target")) === i;
+      tab.classList.toggle("is-active", on);
+      tab.setAttribute("aria-selected", on ? "true" : "false");
+      tab.tabIndex = on ? 0 : -1;
+      if (on) {
+        // 页签条横向滚到可见（不触发整页纵向滚动）
+        var left = tab.offsetLeft, right = left + tab.offsetWidth;
+        if (left < tabsWrap.scrollLeft) tabsWrap.scrollTo({ left: Math.max(0, left - 8), behavior: "smooth" });
+        else if (right > tabsWrap.scrollLeft + tabsWrap.clientWidth) {
+          tabsWrap.scrollTo({ left: right - tabsWrap.clientWidth + 8, behavior: "smooth" });
+        }
+      }
+    });
+  }
+  function show(i, dir) {
+    i = Math.max(0, Math.min(cards.length - 1, i));
+    var next = cards[i];
+    if (i !== current) {
+      next.classList.remove("is-active", "from-left", "from-right");
+      void next.offsetWidth;
+      next.classList.add(dir < 0 ? "from-left" : "from-right");
+    }
+    cards.forEach(function (c, n) {
+      c.classList.toggle("is-active", n === i);
+      c.setAttribute("aria-hidden", n === i ? "false" : "true");
+    });
+    current = i;
+    syncTabs(i);
+    if (posEl) posEl.textContent = (i + 1) + " / " + cards.length;
+    if (prevBtn) prevBtn.disabled = i === 0;
+    if (nextBtn) nextBtn.disabled = i === cards.length - 1;
+  }
+  function userShow(i, dir) {
+    show(i, dir);
+    var navH = window.innerWidth <= 680 ? 48 : 60;
+    var top = deckEl.getBoundingClientRect().top;
+    if (top < navH) window.scrollTo({ top: Math.max(0, window.pageYOffset + top - navH - 8), behavior: "smooth" });
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var i = indexOfCard(tab.getAttribute("data-target"));
+      if (i >= 0) userShow(i, i > current ? 1 : -1);
+    });
+  });
+  if (prevBtn) prevBtn.addEventListener("click", function () { userShow(current - 1, -1); });
+  if (nextBtn) nextBtn.addEventListener("click", function () { userShow(current + 1, 1); });
+  if (topBtn) topBtn.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  // 键盘 ←→（输入框里打字时不抢键）
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && t.closest && t.closest("input, textarea, select, [contenteditable='true']")) return;
+    e.preventDefault();
+    if (e.key === "ArrowLeft") userShow(current - 1, -1);
+    else userShow(current + 1, 1);
+  });
+
+  // 点摘要行 → 切到对应梯队卡；点球员行 → 展开/收起比赛分组；点名字 → 弹球员卡（交给下方全局处理）
+  stage.addEventListener("click", function (e) {
+    if (!e.target || !e.target.closest) return;
+    if (e.target.closest(".hl-name-btn")) return;
+    var tierRow = e.target.closest(".hl-tier-row");
+    if (tierRow) {
+      var ti = indexOfCard(tierRow.getAttribute("data-target"));
+      if (ti >= 0) userShow(ti, ti > current ? 1 : -1);
+      return;
+    }
+    var row = e.target.closest(".hl-prow");
+    if (!row) return;
+    var det = row.nextElementSibling;
+    if (!det || !det.classList.contains("hl-prow-detail")) return;
+    var open = det.hidden;
+    det.hidden = !open;
+    row.classList.toggle("is-open", open);
+  });
+
+  show(0, 0);
+
+  // ⑥ 点球员名 → 弹球员卡片（阻止该行展开/收起）
   document.addEventListener("click", function (e) {
     var btn = e.target && e.target.closest ? e.target.closest(".hl-name-btn") : null;
     if (!btn) return;

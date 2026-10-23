@@ -256,6 +256,9 @@
         const list = window.LAMASIA_DATA && window.LAMASIA_DATA.players && window.LAMASIA_DATA.players[key];
         if (list) list.forEach(function (p) { if (p.zh) map[normKey(p.name)] = p.zh; });
       });
+      // data.js 末尾的补漏表（2026-27 新面孔 / 懂球帝英文名）
+      const extra = window.LAMASIA_NAME_ZH || {};
+      Object.keys(extra).forEach(function (k) { if (!map[k]) map[k] = extra[k]; });
       return map;
     }
     const zhMap = buildZhMap();

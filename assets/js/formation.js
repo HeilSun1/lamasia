@@ -354,6 +354,17 @@
     if (lb) lb.classList.remove("open");
   }
 
+  /* 球场卡槽很窄（最多 64px），只显示姓氏，避免 "亚历克斯·普列戈" 被截成省略号；
+     完整姓名仍在悬停 title 和右侧首发名单里 */
+  function shortName(p) {
+    const n = String((p && (p.zh || p.en)) || "").trim();
+    if (!n) return "";
+    const parts = n.split("·");
+    if (parts.length > 1) return parts[parts.length - 1].trim();
+    const w = n.split(/\s+/);
+    return w.length > 1 ? w[w.length - 1] : n;
+  }
+
   function renderPitch() {
     const wrap = $("fb-pitch");
     if (!wrap) return;
@@ -368,7 +379,7 @@
         html += '<div class="fb-slot filled' + (mismatch ? " mismatch" : "") + '" style="left:' + s.x.toFixed(1) + '%;top:' + s.y.toFixed(1) + '%;' + wStyle + '" data-idx="' + i + '" title="' + esc(s.label) + ' · ' + esc(p.zh || p.en) + '（点头像看大图 / 点姓名·角标移除 / 拖动换位）">' +
           '<span class="fb-slot-badge ' + (POS_CLASS[p.pos] || "other") + '">' + (POS_ZH[p.pos] || p.pos) + '</span>' +
           '<div class="fb-slot-card" draggable="true">' + avatarHtml(p, "sm") +
-            '<span class="fb-slot-name">' + esc(p.zh || p.en) + '</span>' +
+            '<span class="fb-slot-name">' + esc(shortName(p)) + '</span>' +
           '</div>' +
         '</div>';
       } else {

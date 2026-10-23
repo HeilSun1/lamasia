@@ -387,3 +387,52 @@ window.LAMASIA_DATA = {
     "Mongolia": "蒙古"
   }
 };
+
+/* ═══ 球员中文名补漏（全站共用）═══
+   键写原始英文名，载入时统一归一化（小写、去重音、只留 a-z0-9）。
+   用于 data.js 官方名单里没有的 2026-27 新面孔、以及懂球帝只给英文名的球员；
+   球员卡片（player-card.js）、集锦页与首页滚动条都读这份表。 */
+(function () {
+  var raw = {
+    "Adam Argemí": "亚当·阿尔赫米",
+    "Ïu Martínez": "伊乌·马丁内斯",
+    "Raúl Expósito": "劳尔·埃斯波西托",
+    "Joni Hernández": "乔尼·埃尔南德斯",
+    "Jonathan Hernández": "乔纳森·埃尔南德斯",
+    "Gerard Valls": "赫拉德·瓦尔斯",
+    "Gerard Sala": "赫拉德·萨拉",
+    "Sergi Mayans": "塞尔吉·马扬斯",
+    "Joan Inglés": "乔安·因格莱斯",
+    "Gorka Buil": "戈尔卡·布伊尔",
+    "Mikael Baza": "米卡埃尔·巴萨",
+    "Xavi Miràngels": "哈维·米兰赫尔斯",
+    "Alejandro Fernández": "亚历杭德罗·费尔南德斯",
+    "Alexander Walton": "亚历山大·沃尔顿",
+    "Alex Walton": "亚历山大·沃尔顿",
+    "Daniel da Lima": "丹尼尔·达利马",
+    "Jordi Pesquer": "乔尔迪·佩斯克尔",
+    "José Alfredo Rodríguez": "何塞·阿尔弗雷多·罗德里格斯",
+    "Jude Ali Berro": "裘德·阿里·贝罗",
+    "Marc Armada": "马克·阿尔马达",
+    "Alex Arasa": "亚历克斯·阿拉萨",
+    "Michał Żuk": "米哈乌·茹克",
+    "Miłosz Żuk": "米沃什·茹克",
+    "Milosz Żuk": "米沃什·茹克",
+    "Milosz Zuk": "米沃什·茹克",
+    "Pau Miguel Mateos Ruido": "保·米格尔·马特奥斯",
+    "Pau Miguel Mateos": "保·米格尔·马特奥斯",
+    "Paumi Mateos": "保米·马特奥斯",
+    "Samu Borniquel": "萨穆·博尔尼克尔"
+  };
+  function norm(s) {
+    return String(s || "").toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-z0-9]+/g, "");
+  }
+  var map = {};
+  Object.keys(raw).forEach(function (k) {
+    var nk = norm(k);
+    if (nk && !map[nk]) map[nk] = raw[k];
+  });
+  window.LAMASIA_NAME_ZH = map;
+})();
