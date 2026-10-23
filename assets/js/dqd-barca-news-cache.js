@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-23 21:00:51 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-23 19:59:27 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-23 21:00:51",
+    "updated":  "2026-10-23 19:59:27",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6540702", "title":  "每体：18岁伊克尔门前沉着，巴萨竞技7轮仅丢2球",
+            "url":  "https://www.dongqiudi.com/articles/6540702.html", "time":  "2026-10-23 23:58",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CA/4D/280x210/crop/-/rBXRDGrbggKAN5cAAADm6ltjkAE593.jpg" },
         {
             "id":  "6539163", "title":  "世体：孔德继续单独恢复，弗里克补招两小将备战国家德比",
             "url":  "https://www.dongqiudi.com/articles/6539163.html", "time":  "2026-10-23 18:24",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6412649", "title":  "每体：布斯克茨很可能在巴萨任重要角色，将在安道尔考教练执照",
             "url":  "https://www.dongqiudi.com/articles/6412649.html", "time":  "2026-09-29 14:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/6A/280x210/crop/-/rBXRn2qzqmGAYsXtAACMBepsyQE016.jpg" },
-        {
-            "id":  "6411814", "title":  "告别足球！29岁的前巴萨B队队长费兰-萨尔萨内达...",
-            "url":  "https://www.dongqiudi.com/articles/6411814.html", "time":  "2026-09-29 08:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8E/B4/280x210/crop/-/rBXRn2q7BhiAPV1tAAUAMLYfJKM895.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/81/6A/280x210/crop/-/rBXRn2qzqmGAYsXtAACMBepsyQE016.jpg" }
     ]
 };

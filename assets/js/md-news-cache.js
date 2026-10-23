@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-23 21:02:54 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-23 19:59:54 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-23 21:02:54",
+    "updated":  "2026-10-23 19:59:54",
     "source":  "md",
     "count":  50,
     "news":  [
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261023/1004242220/kounde-sigue-margen-flick-llama-goren-tunkara-dos-dias-clasico.html", "title":  "Koundé sigue al margen y Flick llama a Goren y Tunkara a dos días del Clásico",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261023/1004242220/kounde-sigue-margen-flick-llama-goren-tunkara-dos-dias-clasico.html", "time":  "2026-10-23 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/24/6a8c3b00acfb8.jpeg" },
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/23/6adb636c8ea06.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "title":  "Espart, de un año a otro: gol al PSG en la Youth y en la Champions",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "time":  "2026-10-22 12:00",
