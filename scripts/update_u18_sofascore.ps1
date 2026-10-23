@@ -289,9 +289,11 @@ $oldParts = @{}
 if (Test-Path $DetailsFile) {
   $oldTxt = Get-Content $DetailsFile -Raw -ErrorAction SilentlyContinue
   if ($oldTxt) {
-    foreach ($m in [regex]::Matches($oldTxt, '(?m)^\s{2}("(\d+)":\s*\{.*)$')) {
+    foreach ($m in [regex]::Matches($oldTxt, '(?m)^[ \t]*("(\d+)":\s*\{.*)$')) {
       $id   = $m.Groups[2].Value
-      $line = $m.Groups[1].Value.TrimEnd().TrimEnd(',')
+      # 缩进必须容错：写回去的旧条目没有前导空格，写死 ^\s{2} 会让它们
+      # 每轮都认不出来 → 已抓过的比赛被反复重抓（U19/U16/B队实测如此）
+      $line = '  ' + $m.Groups[1].Value.TrimEnd().TrimEnd(',')
       $oldParts[$id] = $line
     }
   }
