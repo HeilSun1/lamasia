@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-23 09:37:16 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-23 21:00:51 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-23 09:37:16",
+    "updated":  "2026-10-23 21:00:51",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6539163", "title":  "世体：孔德继续单独恢复，弗里克补招两小将备战国家德比",
+            "url":  "https://www.dongqiudi.com/articles/6539163.html", "time":  "2026-10-23 18:24",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C9/CF/280x210/crop/-/rBXRn2rbNVSAL985AAD4fWMezGE067.jpg" },
+        {
+            "id":  "6537971", "title":  "每体：巴萨将法布雷加斯视为弗里克接班人",
+            "url":  "https://www.dongqiudi.com/articles/6537971.html", "time":  "2026-10-23 14:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" },
+        {
+            "id":  "6537978", "title":  "每体：巴萨关注法布雷加斯，视其为弗里克离任后接班人选",
+            "url":  "https://www.dongqiudi.com/articles/6537978.html", "time":  "2026-10-23 14:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" },
         {
             "id":  "6530532", "title":  "巴黎旧将：维蒂尼亚、若昂-内维斯、法比安能比肩哈白布",
             "url":  "https://www.dongqiudi.com/articles/6530532.html", "time":  "2026-10-22 04:32",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6411814", "title":  "告别足球！29岁的前巴萨B队队长费兰-萨尔萨内达...",
             "url":  "https://www.dongqiudi.com/articles/6411814.html", "time":  "2026-09-29 08:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8E/B4/280x210/crop/-/rBXRn2q7BhiAPV1tAAUAMLYfJKM895.jpg" },
-        {
-            "id":  "6410473", "title":  "优素福-福法纳：不知是米兰还是阿莫林不想要我",
-            "url":  "https://www.dongqiudi.com/articles/6410473.html", "time":  "2026-09-29 07:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8D/E2/280x210/crop/-/rBXRn2q6k0eAM2DtAAE5kpXyckY938.jpg" },
-        {
-            "id":  "6404361", "title":  "巴萨竞技战报 20260927",
-            "url":  "https://www.dongqiudi.com/articles/6404361.html", "time":  "2026-09-27 15:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8A/9E/280x210/crop/-/rBXRDGq4vw-AL3rNAAJs2wREJBk085.jpg" },
-        {
-            "id":  "6404242", "title":  "将门虎子！肖恩-克鲁伊维特vs佩尼亚体育个人集锦...",
-            "url":  "https://www.dongqiudi.com/articles/6404242.html", "time":  "2026-09-27 14:26",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/09/27/cf0c7d4aacb5f2082a75759f87c3e3d9U4CQPl_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/8E/B4/280x210/crop/-/rBXRn2q7BhiAPV1tAAUAMLYfJKM895.jpg" }
     ]
 };

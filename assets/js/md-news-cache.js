@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-23 09:38:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-23 21:02:54 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-23 09:38:42",
+    "updated":  "2026-10-23 21:02:54",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261023/1004242220/kounde-sigue-margen-flick-llama-goren-tunkara-dos-dias-clasico.html", "title":  "Koundé sigue al margen y Flick llama a Goren y Tunkara a dos días del Clásico",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261023/1004242220/kounde-sigue-margen-flick-llama-goren-tunkara-dos-dias-clasico.html", "time":  "2026-10-23 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/24/6a8c3b00acfb8.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "title":  "Espart, de un año a otro: gol al PSG en la Youth y en la Champions",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241520/espart-ano-gol-psg-youth-champions.html", "time":  "2026-10-22 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "title":  "Entradas a la venta para la exposición Iniesta Experience: (El Juego Interior)",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html", "time":  "2026-09-03 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/03/6a998ee626f71.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "title":  "El adiós de los primos Fernández",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222528/adios-primos-fernandez.html", "time":  "2026-09-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a981cc0351ab.r_d.521-780-10195.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/03/6a998ee626f71.jpeg" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-23 09:37 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-23 21:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-23 09:37:16",
+    "updated":  "2026-10-23 21:00:50",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -395,21 +395,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Juwensley Onstein",
-                        "id":  "1798716",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Netherlands",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1798716/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-10-07",
-                        "foot":  "左脚",
-                        "height":  "188",
-                        "value":  "18万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Josue Caicedo",
                         "id":  "2219071",
                         "pos":  "D",
@@ -422,6 +407,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "176",
                         "value":  "28万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Juwensley Onstein",
+                        "id":  "1798716",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Netherlands",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1798716/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-10-07",
+                        "foot":  "左脚",
+                        "height":  "188",
+                        "value":  "18万",
                         "injury":  null
                     },
                     {

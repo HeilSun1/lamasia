@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-23 09:38:35 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-23 21:01:58 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-23 09:38:35",
+    "updated":  "2026-10-23 21:01:58",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -147,6 +147,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4597765", "title":  "Penultimate session ahead of the Clásico",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4597765/penultimate-session-ahead-of-the-clasico", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/23/4ac81740-907c-4f15-921f-9639518e1dfe/image00022.jpeg" },
+            {
+                "id":  "4597145", "title":  "When and where to watch El Clásico",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4597145/when-and-where-to-watch-fc-barcelona-v-real-madrid", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4597462", "title":  "A Clásico with many new faces",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4597462/a-clasico-with-many-new-faces", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/22/37cfff3c-8c71-4251-98f4-152dd33c7ee7/_C4A5977-1-.jpg" },
+            {
                 "id":  "4596876", "title":  "Flick and Mou, head-to-head",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596876/clasico-brings-second-head-to-head-between-flick-and-mourinho", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/1193739b-ffc7-483d-a9fb-de5a56f19f0c/_MGA6966_1.jpg" },
@@ -219,6 +231,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593115/preview-real-betis-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4592779", "title":  "Frenkie de Jong and Raphinha back in the squad",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592779/the-squad-for-betis-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/58ea5f15-5365-4a9d-a814-536ae5b25138/_MGA6687.jpg" },
@@ -234,14 +254,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4592741", "title":  "Betis side with best ever start",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592741/fc-barcelona-travel-to-play-betis-side-with-best-ever-start", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/15/2ed63544-9e18-44b6-89ce-0f846cb5de55/_MGA6020-1-.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4592732", "title":  "Raphinha back in training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4592732/raphinha-back-in-training", "time":  "",
@@ -333,19 +345,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4588657", "title":  "All internationals back in training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588657/all-internationals-back-in-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" },
-            {
-                "id":  "4588143", "title":  "Five things about Barça v Getafe",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588143/five-interesting-facts-about-barca-v-getafe", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4587927", "title":  "Pedro Rodríguez announces retirement",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587927/pedro-rodriguez-announces-retirement", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/4ffe39b9-30e5-4735-9275-30b54cf0a92f/FOTOS-PEDRO-26.jpg" },
-            {
-                "id":  "4587842", "title":  "More international players return",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4587842/more-international-players-return", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/07/b6302003-522f-4d2c-86e9-19339962e55a/WhatsApp-Image-2026-10-07-at-12.54.28-1-.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/08/73ff8caa-b118-4258-95a2-89188254db17/WhatsApp-Image-2026-10-08-at-12.51.06.jpeg" }
         ]
     }
 };

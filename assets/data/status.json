@@ -1,12 +1,12 @@
 {
     "schema":  1,
-    "runId":  "20261023-093629",
-    "runStartedUtc":  "2026-10-23T01:36:29.7274140Z",
-    "runFinishedUtc":  "2026-10-23T01:39:35.2170927Z",
+    "runId":  "20261023-210003",
+    "runStartedUtc":  "2026-10-23T13:00:03.1112678Z",
+    "runFinishedUtc":  "2026-10-23T13:03:33.3040465Z",
     "lastSuccessUtc":  "2026-10-23T01:39:41.4788124Z",
     "lastRunSource":  "local",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "lastRunStatus":  "degraded",
+    "exitCode":  2,
     "consecutiveFailures":  0,
     "blocked":  false,
     "blockedSinceUtc":  null,
@@ -14,10 +14,10 @@
 
                      ],
     "failedScripts":  [
-
+                          "update_sport_news.ps1"
                       ],
     "staleCaches":  [
-
+                        "assets/js/sport-news-cache.js"
                     ],
     "healed":  [
 
