@@ -1022,6 +1022,27 @@ body.fb-dragging .fb-slot.empty { pointer-events: auto; }
 .md-sec h4 { font-size: 15px; margin-bottom: 10px; color: var(--text); }
 .md-empty { padding: 14px; color: var(--faint); font-size: 13px; text-align: center; }
 
+/* 详情内页签：阵容 / 进程 / 数据（一次只显示一个分区，别再竖成一条长条） */
+.md-pane-tabs {
+  position: sticky; top: 10px; z-index: 6;   /* 阵容滚动时页签跟着走，随时能换分区 */
+  display: flex; gap: 4px; margin-top: 16px; padding: 4px;
+  background: var(--surface-2); border: 1px solid var(--border-soft);
+  border-radius: 12px; box-shadow: 0 4px 14px rgba(20, 27, 40, 0.08);
+}
+.md-pane-tab {
+  flex: 1; appearance: none; -webkit-appearance: none;
+  border: 1px solid transparent; background: transparent;
+  font-family: inherit; font-size: 13px; font-weight: 700; color: var(--text-2);
+  padding: 8px 6px; border-radius: 9px; cursor: pointer; white-space: nowrap;
+  transition: var(--transition); -webkit-tap-highlight-color: transparent;
+}
+.md-pane-tab:hover { background: var(--surface); color: var(--text); }
+.md-pane-tab.is-active { background: var(--barca-blue); color: #fff; box-shadow: 0 2px 8px rgba(0, 77, 152, 0.28); }
+.md-pane { display: none; }
+.md-pane.is-active { display: block; }
+.md-pane > .md-sec { margin-top: 16px; }
+@media (max-width: 680px) { .md-pane-tab { font-size: 12.5px; padding: 9px 4px; } }
+
 /* 阵容两列 */
 .md-lu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .md-lu-side { border: 1px solid var(--border-soft); border-radius: var(--radius); overflow: hidden; }
@@ -1582,3 +1603,110 @@ tr.match-row:hover { background: var(--surface-3); }
 .nf-btn.active { background: var(--barca-blue); color: #fff; border-color: var(--barca-blue); }
 .nf-btn:not(.active):active { background: var(--surface-3); }
 @media (max-width: 680px) { .nf-btn { padding: 6px 14px; font-size: 12.5px; } }
+
+/* ══════════════════════════════════════════════════════════════
+   比赛信息页 · 左右切换的赛程卡片（deck）
+   页签 / 箭头 / 键盘 ←→ / 触屏滑动切换；同一时间只显示一张卡。
+   ══════════════════════════════════════════════════════════════ */
+.schedule-deck { margin-bottom: 18px; }
+
+.deck-bar {
+  position: sticky; top: 60px; z-index: 90;
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px; margin-bottom: 14px;
+  background: rgba(243, 245, 249, 0.94);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border: 1px solid var(--border-soft); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.deck-tabs {
+  display: flex; align-items: center; gap: 6px;
+  flex: 1 1 auto; min-width: 0; overflow-x: auto;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.deck-tabs::-webkit-scrollbar { display: none; }
+.deck-tab {
+  appearance: none; -webkit-appearance: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid transparent; background: transparent;
+  color: var(--muted); font-family: inherit; font-size: 13px; font-weight: 700;
+  padding: 7px 13px; border-radius: 999px; white-space: nowrap; cursor: pointer;
+  transition: var(--transition); -webkit-tap-highlight-color: transparent;
+}
+.deck-tab:hover { background: var(--surface); color: var(--text); border-color: var(--border-soft); }
+.deck-tab.is-active {
+  background: var(--barca-blue); color: #fff; border-color: var(--barca-blue);
+  box-shadow: 0 2px 8px rgba(0, 77, 152, 0.28);
+}
+.deck-tab .dt-ico { font-size: 12px; line-height: 1; }
+
+.deck-tools { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.deck-arrow, .deck-top {
+  appearance: none; -webkit-appearance: none;
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-2);
+  font-family: inherit; font-size: 17px; line-height: 1; cursor: pointer;
+  display: grid; place-items: center; transition: var(--transition);
+}
+.deck-arrow:hover, .deck-top:hover { background: var(--barca-blue); border-color: var(--barca-blue); color: #fff; }
+.deck-arrow:disabled { opacity: 0.35; cursor: default; background: var(--surface); border-color: var(--border); color: var(--text-2); }
+.deck-pos { font-size: 12px; font-weight: 700; color: var(--muted); min-width: 40px; text-align: center; font-variant-numeric: tabular-nums; }
+
+.deck-stage { position: relative; }
+.deck-card.panel { margin-bottom: 0; }
+.deck-card.is-active { animation: deck-in-right 0.22s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.deck-card.is-active.from-left { animation-name: deck-in-left; }
+@keyframes deck-in-right {
+  from { opacity: 0; transform: translateX(26px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes deck-in-left {
+  from { opacity: 0; transform: translateX(-26px); }
+  to   { opacity: 1; transform: none; }
+}
+/* is-ready 由 schedule-deck.js 添加：没脚本时所有卡片照常依次铺开 */
+.schedule-deck.is-ready .deck-card { display: none; }
+.schedule-deck.is-ready .deck-card.is-active { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  .deck-card.is-active { animation: none; }
+}
+
+@media (max-width: 680px) {
+  .deck-bar { top: 48px; padding: 6px 8px; gap: 6px; margin-bottom: 10px; }
+  .deck-tab { font-size: 12.5px; padding: 6px 10px; }
+  .deck-arrow, .deck-top { width: 28px; height: 28px; font-size: 15px; }
+  .deck-pos { min-width: 34px; font-size: 11px; }
+  .deck-top { display: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   「🏁 已完场」默认只显示最近 5 场（schedule-more.js）
+   ══════════════════════════════════════════════════════════════ */
+table.roster-table tbody:not(.is-expanded) > tr.is-extra { display: none !important; }
+.schedule-more-row > td {
+  padding: 10px 8px 4px; border-bottom: 0; text-align: center;
+}
+.schedule-more-row:hover { background: transparent !important; }
+.schedule-more-btn {
+  appearance: none; -webkit-appearance: none;
+  border: 1px dashed var(--border); background: var(--surface-2);
+  color: var(--blue-600); font-family: inherit; font-size: 12.5px; font-weight: 700;
+  padding: 7px 18px; border-radius: 999px; cursor: pointer;
+  transition: var(--transition); -webkit-tap-highlight-color: transparent;
+}
+.schedule-more-btn:hover {
+  background: var(--surface-3); color: var(--barca-blue); border-color: var(--barca-blue);
+}
+@media (max-width: 680px) {
+  .dqd-body .roster-table tr.schedule-more-row {
+    display: block !important; padding: 4px 2px 2px; border-bottom: 0;
+  }
+  .dqd-body .roster-table tr.schedule-more-row > td {
+    display: block !important; padding: 0; text-align: center;
+  }
+  .schedule-more-btn { width: 100%; padding: 8px 0; font-size: 12px; }
+}
+
+/* 赛程时间列：.num 的 44px 固定宽会把 "2026-10-20 20:00" 挤成三行，撑高每一行 */
+.dqd-body .roster-table td.num,
+#upcoming-list .roster-table td.num { width: auto; min-width: 86px; white-space: nowrap; }

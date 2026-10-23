@@ -765,6 +765,24 @@
       : "";
   }
 
+  /* 详情内页签：阵容 / 进程 / 数据。
+     以前四个分区竖着叠（阵容 880px + 进程 550px + 统计 640px…），
+     弹窗一开就是一条 2500px 的长条；现在一次只看一个分区。 */
+  function panesHtml(panes) {
+    if (panes.length === 1) {
+      return '<div class="md-pane is-active" data-pane="' + panes[0].key + '">' + panes[0].html + "</div>";
+    }
+    var tabs = panes.map(function (p, idx) {
+      return '<button type="button" class="md-pane-tab' + (idx === 0 ? " is-active" : "") + '" role="tab" ' +
+        'aria-selected="' + (idx === 0) + '" data-pane="' + p.key + '">' + p.label + "</button>";
+    }).join("");
+    var bodies = panes.map(function (p, idx) {
+      return '<div class="md-pane' + (idx === 0 ? " is-active" : "") + '" data-pane="' + p.key + '" role="tabpanel">' +
+        p.html + "</div>";
+    }).join("");
+    return '<div class="md-pane-tabs" role="tablist">' + tabs + "</div>" + bodies;
+  }
+
   /* 拉取结果 → 填充 #md-load；无任何分区时显示友好提示 */
   function applyDetail(res, body) {
     var load = body.querySelector(".md-load");
@@ -772,17 +790,16 @@
     var l = res[0], i = res[1], s = res[2], h = res[3];
     computeMatchPlayerVideos(l);   // 先算个人集锦映射（阵容里的 🎬 徽标需要它）
     renderMatchVideos(body);       // 🎥 全场集锦按分类结果重排（open 时只能按关键词粗分）
-    var html = "", any = false;
+    var panes = [];
     var lu = l ? lineupsHtml(l) : "";
-    if (lu) { html += lu; any = true; }
+    if (lu) panes.push({ key: "lineups", label: "🧑‍🤝‍🧑 阵容", html: lu });
     var inc = i ? incidentsHtml(i) : "";
-    if (inc) { html += inc; any = true; }
-    var st = s ? statsHtml(s) : "";
-    if (st) { html += st; any = true; }
-    var hh = h ? h2hHtml(h) : "";
-    if (hh) { html += hh; any = true; }
-    load.innerHTML = any
-      ? html
+    if (inc) panes.push({ key: "incidents", label: "🎬 进程", html: inc });
+    // 统计与交锋都是「数字」类，合进同一个页签，少一个页签也更省高度
+    var data = (s ? statsHtml(s) : "") + (h ? h2hHtml(h) : "");
+    if (data) panes.push({ key: "stats", label: "📊 数据", html: data });
+    load.innerHTML = panes.length
+      ? panesHtml(panes)
       : '<div class="note-box" style="margin-top:18px">📋 <span><b>该场详情暂不可用。</b>当前仅显示对阵信息。每日自动更新最近若干场的阵容与比赛进程，明天刷新后即可查看；也可点击下方链接在原站查看。</span></div>';
     fillMatchPlayerVideos(res[0], body);   // ⭐ 本场球员个人集锦（依赖阵容数据）
   }
@@ -857,6 +874,30 @@
     });
   }
 
+  /* 懂球帝场次 → Sofascore 事件 id（开球时间 ±1 小时内唯一匹配）。
+     B队赛程回退懂球帝后详情的「比赛进程」没有进球者姓名 —— 懂球帝 overview
+     接口对西协乙这类比赛 person/person_id 直接返回空值（不是前端漏读）。
+     Sofascore 详情缓存里有姓名，按时间对上同一场时借过来用。 */
+  function bridgeSfEventId(m) {
+    var sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    var ms = (sf && sf.matches) || [];
+    var s = parseInt(m && m.start, 10);
+    if (!s || !ms.length) return "";
+    var hit = null;
+    for (var i = 0; i < ms.length; i++) {
+      var x = ms[i];
+      if (!x || Math.abs(parseInt(x.start, 10) - s) > 3600) continue;
+      if (hit && String(hit.id) !== String(x.id)) return "";   // 时间窗内不止一场 → 宁缺毋错
+      hit = x;
+    }
+    if (!hit) return "";
+    // 比分做最后一道校验：两边都完场且比分不同，说明不是同一场
+    var finished = /Ended|Awarded|Played/i.test(String(m.status || ""));
+    if (finished && m.hs != null && m.as != null && hit.hs != null && hit.as != null &&
+        (String(m.hs) !== String(hit.hs) || String(m.as) !== String(hit.as))) return "";
+    return String(hit.id);
+  }
+
   /* 懂球帝详情：只读本地缓存，不做实时拉取（归一化在 PS 侧完成，前端不重复实现）。
      缓存形状与 Sofascore 详情缓存一致，所以能直接走 applyDetail 的四个渲染函数。 */
   function loadDqdDetail(m, body) {
@@ -864,12 +905,28 @@
     // ⚠️ 会话缓存必须加命名空间：Sofascore event id 与懂球帝 match_id 都是纯数字，会撞车
     var ck = "dqd:" + id;
     if (detailCache[ck]) { applyDetail(detailCache[ck], body); return; }
+    var sfId = bridgeSfEventId(m);
     loadDetailCache(m).then(function (dc) {
       var d = dc ? (dc[id] || dc[m.id]) : null;
       if (!d) { dqdEmpty(body); return; }
       bridgeDqdLineups(d.lineups);   // 唯一一处就地改写：懂球帝 person_id → Sofascore id
-      detailCache[ck] = [d.lineups || null, d.incidents || null, d.statistics || null, d.h2h || null];
-      applyDetail(detailCache[ck], body);
+      var res = [d.lineups || null, d.incidents || null, d.statistics || null, d.h2h || null];
+      if (!sfId) { detailCache[ck] = res; applyDetail(res, body); return; }
+      // 借 Sofascore 的「比赛进程」补进球者姓名；懂球帝缺失的其它分区也顺手补上
+      loadDetailCache({ cacheRef: "DQD_BARCA_ATLETIC_SF_CACHE" }).then(function (sfc) {
+        var sd = sfc ? sfc[sfId] : null;
+        if (sd) {
+          if (sd.incidents) res[1] = sd.incidents;
+          if (!res[0] && sd.lineups) res[0] = sd.lineups;
+          if (!res[2] && sd.statistics) res[2] = sd.statistics;
+          if (!res[3] && sd.h2h) res[3] = sd.h2h;
+        }
+        detailCache[ck] = res;
+        applyDetail(res, body);
+      }).catch(function () {
+        detailCache[ck] = res;
+        applyDetail(res, body);
+      });
     }).catch(function () { dqdEmpty(body); });
   }
 
@@ -970,6 +1027,27 @@
       e.preventDefault();
       open(key);
     }
+  });
+
+  /* 详情内页签：阵容 / 进程 / 数据（一次只显示一个分区） */
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest(".md-pane-tab") : null;
+    if (!btn) return;
+    var load = btn.closest(".md-load");
+    if (!load) return;
+    e.preventDefault();
+    var key = btn.getAttribute("data-pane");
+    Array.prototype.forEach.call(load.querySelectorAll(".md-pane-tab"), function (t) {
+      var on = t === btn;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    Array.prototype.forEach.call(load.querySelectorAll(".md-pane"), function (p) {
+      p.classList.toggle("is-active", p.getAttribute("data-pane") === key);
+    });
+    // 换分区后回到顶部，别停在上一个分区的高度上
+    var modal = btn.closest(".match-detail");
+    if (modal && modal.scrollTop > 0) modal.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   /* 🎬 阵容里的个人集锦徽标点击 → 直接播放该球员本场第一条集锦 */
