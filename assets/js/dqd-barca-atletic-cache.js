@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-23 19:59 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-24 09:35 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-23 19:59:25",
+    "updated":  "2026-10-24 09:35:36",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {

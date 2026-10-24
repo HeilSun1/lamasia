@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U15 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-21 12:54 */
+/* 自动生成，请勿手动编辑 —— U15（Cadete B） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-24 09:38 */
 window.ELFUTBOL_CADETE_B_DETAILS_CACHE = {
     "fcb:cadete-b:7":  {
                            "lineups":  {
@@ -1132,6 +1132,6 @@ window.ELFUTBOL_CADETE_B_DETAILS_CACHE = {
                                           }
                         },
     "__pendingReports":  {
-                             "fcb:cadete-b:39":  "2026-10-21"
+                             "fcb:cadete-b:39":  "2026-10-24"
                          }
 };

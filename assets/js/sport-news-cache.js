@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-23 19:59:51 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-24 09:37:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-23 19:59:51",
+    "updated":  "2026-10-24 09:37:14",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -10,7 +10,7 @@ window.SPORT_NEWS = {
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/033733d3-6c2f-48fe-939b-5b3ad688544f_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
         {
             "id":  "135651318", "title":  "El Barça destroza el relato del Madrid",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 18:21",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 20:11",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135645855", "title":  "Las cifras de récord del colosal portero del Barça Atlètic: La Masia está cocinando un fenómeno bajo los palos",

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-23 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-24 09:36 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-23 21:01:45",
+    "updated":  "2026-10-24 09:36:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -120,7 +120,7 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Divine Ikenna Ejiofor",
+                        "name":  "Divine Ikenna",
                         "id":  "2690301",
                         "pos":  "F",
                         "shirt":  "",
@@ -510,6 +510,51 @@ window.DQD_U16_CACHE = {
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "17399078",
+                        "comp":  "U16 梅西杯, Group B",
+                        "round":  "1",
+                        "start":  "1792958400",
+                        "home":  "Barcelona U16",
+                        "away":  "Palmeiras U16",
+                        "homeId":  "933329",
+                        "awayId":  "511116",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "17399107",
+                        "comp":  "U16 梅西杯, Group B",
+                        "round":  "2",
+                        "start":  "1793050200",
+                        "home":  "Barcelona U16",
+                        "away":  "Arsenal U16",
+                        "homeId":  "933329",
+                        "awayId":  "1095620",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "17399136",
+                        "comp":  "U16 梅西杯, Group B",
+                        "round":  "3",
+                        "start":  "1793131200",
+                        "home":  "Barcelona U16",
+                        "away":  "Newell\u0027s Old Boys U16",
+                        "homeId":  "933329",
+                        "awayId":  "1153508",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };
