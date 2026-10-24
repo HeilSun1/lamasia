@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-24 21:00:49 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-24 18:51:34 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-24 21:00:49",
+    "updated":  "2026-10-24 18:51:34",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6546981", "title":  "阿隆索：是西班牙青训造就了罗德里、布斯克茨这些中场",
+            "url":  "https://www.dongqiudi.com/articles/6546981.html", "time":  "2026-10-24 21:46",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CC/77/280x210/crop/-/rBXRDGrcsc-AbBY9AADhXmgdDUw707.jpg" },
         {
             "id":  "6544996", "title":  "每体：巴萨教练组认为格伦很像佩德里，他有望进国家德比名单",
             "url":  "https://www.dongqiudi.com/articles/6544996.html", "time":  "2026-10-24 18:08",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6419102", "title":  "塞尔：巴萨将和青训小将佩德罗-罗德里格斯续约至2030年",
             "url":  "https://www.dongqiudi.com/articles/6419102.html", "time":  "2026-09-30 20:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/92/69/280x210/crop/-/rBXRDGq9BJmAKygNAAeKeUdFwps671.png" },
-        {
-            "id":  "6416850", "title":  "官方伤情报告：巴萨竞技后卫亚历山大-沃尔顿在对阵...",
-            "url":  "https://www.dongqiudi.com/articles/6416850.html", "time":  "2026-09-30 09:28",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/91/36/280x210/crop/-/rBXRn2q8ZaqAPdH8AAIyKU6Yxi4413.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/92/69/280x210/crop/-/rBXRDGq9BJmAKygNAAeKeUdFwps671.png" }
     ]
 };
