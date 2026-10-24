@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-10-24 09:36 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u18_sofascore.ps1 每日更新于 2026-10-24 21:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-10-24 09:36:40",
+    "updated":  "2026-10-24 21:01:30",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -14,6 +14,21 @@ window.DQD_U18_CACHE = {
                   "photo":  ""
               },
     "players":  [
+                    {
+                        "name":  "Daniel Freire",
+                        "id":  "2151704",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Portugal",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2151704/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-09-19",
+                        "foot":  "右脚",
+                        "height":  "176",
+                        "value":  "",
+                        "injury":  null
+                    },
                     {
                         "name":  "Byron Mendoza",
                         "id":  "2446943",

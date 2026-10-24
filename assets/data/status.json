@@ -1,8 +1,8 @@
 {
     "schema":  1,
-    "runId":  "20261024-093514",
-    "runStartedUtc":  "2026-10-24T01:35:14.9080266Z",
-    "runFinishedUtc":  "2026-10-24T01:38:11.9227032Z",
+    "runId":  "20261024-210002",
+    "runStartedUtc":  "2026-10-24T13:00:02.6952558Z",
+    "runFinishedUtc":  "2026-10-24T13:04:18.3588196Z",
     "lastSuccessUtc":  "2026-10-24T01:38:17.0748338Z",
     "lastRunSource":  "local",
     "lastRunStatus":  "degraded",
@@ -14,10 +14,11 @@
 
                      ],
     "failedScripts":  [
-
+                          "update_sport_news.ps1",
+                          "update_elfutbol_details.ps1"
                       ],
     "staleCaches":  [
-
+                        "assets/js/sport-news-cache.js"
                     ],
     "healed":  [
 
