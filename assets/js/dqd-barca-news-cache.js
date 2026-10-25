@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-25 09:42:55 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-25 21:00:46 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-25 09:42:55",
+    "updated":  "2026-10-25 21:00:46",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6553975", "title":  "巴萨公布国家德比大名单：亚马尔领衔，佩德里、德容在列",
+            "url":  "https://www.dongqiudi.com/articles/6553975.html", "time":  "2026-10-25 20:34",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/A9/280x210/crop/-/rBXRDGrd95KAZqF1AAQ8Rp04ThE178.png" },
         {
             "id":  "6546981", "title":  "阿隆索：是西班牙青训造就了罗德里、布斯克茨这些中场",
             "url":  "https://www.dongqiudi.com/articles/6546981.html", "time":  "2026-10-24 21:46",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6423352", "title":  "赫拉德-马丁：亚马尔是当今最佳球员，理应赢得金球奖",
             "url":  "https://www.dongqiudi.com/articles/6423352.html", "time":  "2026-10-01 20:27",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/94/CC/280x210/crop/-/rBXRDGq-TNiAO-msAAQLVZwT6q0465.jpg" },
-        {
-            "id":  "6419102", "title":  "塞尔：巴萨将和青训小将佩德罗-罗德里格斯续约至2030年",
-            "url":  "https://www.dongqiudi.com/articles/6419102.html", "time":  "2026-09-30 20:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/92/69/280x210/crop/-/rBXRDGq9BJmAKygNAAeKeUdFwps671.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/94/CC/280x210/crop/-/rBXRDGq-TNiAO-msAAQLVZwT6q0465.jpg" }
     ]
 };

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-25 09:52:42 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-25 21:02:27 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-25 09:52:42",
+    "updated":  "2026-10-25 21:02:27",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135720568", "title":  "Ebrima Tunkara sigue dando pasos de gigante en el Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-sigue-dando-pasos-gigante-barcelona-135720568", "time":  "2026-10-25 07:01",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a99b9f95-6cfc-4bf6-95dd-3dc9a59a0452_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135689423", "title":  "Malas noticias para el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/malas-noticias-barca-atletic-eder-aller-cuatro-meses-baja-135689423", "time":  "2026-10-23 18:27",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "135651318", "title":  "El Barça destroza el relato del Madrid",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 20:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135645855", "title":  "Las cifras de récord del colosal portero del Barça Atlètic: La Masia está cocinando un fenómeno bajo los palos",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cifras-record-colosal-portero-barca-135645855", "time":  "2026-10-23 08:27",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134809787", "title":  "El sueño universal de los 'Lamines' del futuro",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sueno-universal-lamines-futuro-liga-futures-134809787", "time":  "2026-10-02 09:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2c10f800-37fd-4417-8a59-c0e821dfc2aa_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134779198", "title":  "La batuta del Barça que viene se destapa",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/adam-argemi-batuta-barca-atletic-134779198", "time":  "2026-10-02 08:47",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b49dae88-4cee-4f50-9ec8-f38eade644a1_16-9-discover-aspect-ratio_640w_0_x600y250.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2c10f800-37fd-4417-8a59-c0e821dfc2aa_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
