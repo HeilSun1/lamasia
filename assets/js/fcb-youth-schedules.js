@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-25 21:01；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-25 19:09；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-25 21:01:56",
+    "updated":  "2026-10-25 19:09:18",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -167,9 +167,9 @@ window.LAMASIA_SCHEDULES = {
                                           "away":  "FC Barcelona",
                                           "homeId":  "7649",
                                           "awayId":  "8470",
-                                          "hs":  "",
-                                          "as":  "",
-                                          "status":  "Not started",
+                                          "hs":  "0",
+                                          "as":  "6",
+                                          "status":  "Ended",
                                           "code":  "0",
                                           "isHome":  false,
                                           "venue":  "Instalaciones de Tajonar"
@@ -2417,9 +2417,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Cornellà A",
                                            "homeId":  "11114",
                                            "awayId":  "11192",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "5",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"
@@ -2429,16 +2429,16 @@ window.LAMASIA_SCHEDULES = {
                                            "comp":  "加泰优选联赛 Infantil G1",
                                            "compEn":  "Preferente Catalana Infantil G.1",
                                            "round":  "6",
-                                           "start":  "1792941300",
-                                           "date":  "2026-10-25",
+                                           "start":  "1792851300",
+                                           "date":  "2026-10-24",
                                            "tbd":  false,
                                            "home":  "Gimnastic Manresa A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "15187",
                                            "awayId":  "11114",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "1",
+                                           "as":  "0",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  false,
                                            "venue":  ""

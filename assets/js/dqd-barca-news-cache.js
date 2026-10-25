@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-25 21:00:46 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-25 19:07:23 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-25 21:00:46",
+    "updated":  "2026-10-25 19:07:23",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6554605", "title":  "巴萨官方：肖恩-克鲁伊维特左腿股二头肌受伤，预计缺阵八周",
+            "url":  "https://www.dongqiudi.com/articles/6554605.html", "time":  "2026-10-25 22:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/D1/280x210/crop/-/rBXRDGreDumAabMmAAXeZMfe98c073.png" },
         {
             "id":  "6553975", "title":  "巴萨公布国家德比大名单：亚马尔领衔，佩德里、德容在列",
             "url":  "https://www.dongqiudi.com/articles/6553975.html", "time":  "2026-10-25 20:34",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6433144", "title":  "世体：巴萨和佩德罗-罗德里格斯完成续约，目前只待官宣",
             "url":  "https://www.dongqiudi.com/articles/6433144.html", "time":  "2026-10-04 03:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9A/F5/280x210/crop/-/rBXRDGrBWxCAKmx_AAGYh3BkLq0890.jpg" },
-        {
-            "id":  "6423352", "title":  "赫拉德-马丁：亚马尔是当今最佳球员，理应赢得金球奖",
-            "url":  "https://www.dongqiudi.com/articles/6423352.html", "time":  "2026-10-01 20:27",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/94/CC/280x210/crop/-/rBXRDGq-TNiAO-msAAQLVZwT6q0465.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9A/F5/280x210/crop/-/rBXRDGrBWxCAKmx_AAGYh3BkLq0890.jpg" }
     ]
 };

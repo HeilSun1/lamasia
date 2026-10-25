@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-25 21:01:58 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-25 19:07:44 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-25 21:01:58",
+    "updated":  "2026-10-25 19:07:44",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4598544", "title":  "UE Olot 2-0 Barça Atlètic: First defeat",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4598544/ue-olot-2-0-barca-atletic-first-defeat", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/532d782b-42a3-4ae0-839d-2b084b97bd33/WhatsApp-Image-2026-10-25-at-17.57.39.jpeg" },
             {
                 "id":  "4593590", "title":  "Barça Atlètic 2-1 Utebo: Still at the top",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4593590/barca-atletic-2-1-utebo-still-at-the-top", "time":  "",
@@ -147,13 +151,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4598175", "title":  "Countdown to the Clásico",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598175/countdown-to-the-clasico", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/52948e07-c4b6-4d05-9463-c659085edb0c/_MGA0608.jpg" },
+            {
                 "id":  "4598192", "title":  "PREVIEW | Barça v Real Madrid",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598192/preview-fc-barcelona-v-real-madrid", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/c67f4408-308c-4e71-8738-93432e6e5920/WhatsApp-Image-2026-10-25-at-09.37.00.jpeg" },
-            {
-                "id":  "4598175", "title":  "Countdown to the Clásico",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598175/countdown-to-the-clasico", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/24/07880911-d884-4d77-9617-4c8df3b40682/_MGA5049-1-.jpg" },
             {
                 "id":  "4598231", "title":  "The squad for the Clásico",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598231/the-squad-for-the-clasico", "time":  "",

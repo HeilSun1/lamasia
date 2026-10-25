@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-25 21:02:27 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-25 19:07:47 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-25 21:02:27",
+    "updated":  "2026-10-25 19:07:47",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135718776", "title":  "UE Olot - Barça Atlètic en directo: resultado y goles en vivo del partido de Segunda RFEF",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ue-olot-barca-atletic-directo-135718776", "time":  "2026-10-25 16:41",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/48e368cf-a54f-4921-864e-7d9ec390f333_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
         {
             "id":  "135720568", "title":  "Ebrima Tunkara sigue dando pasos de gigante en el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-sigue-dando-pasos-gigante-barcelona-135720568", "time":  "2026-10-25 07:01",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "135689423", "title":  "Malas noticias para el Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/malas-noticias-barca-atletic-eder-aller-cuatro-meses-baja-135689423", "time":  "2026-10-23 18:27",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/033733d3-6c2f-48fe-939b-5b3ad688544f_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/033733d3-6c2f-48fe-939b-5b3ad688544f_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
         {
             "id":  "135651318", "title":  "El Barça destroza el relato del Madrid",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 20:11",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134891000", "title":  "¿A qué hora juega el Barcelona hoy en LaLiga FC Futures Internacional sub-13? Horario de los partidos y dónde ver por TV y en directo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hora-juega-barcelona-hoy-laliga-futures-internacional-horario-donde-ver-134891000", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe4c759a-257c-4741-ab8d-f8a5751105b5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134809787", "title":  "El sueño universal de los 'Lamines' del futuro",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sueno-universal-lamines-futuro-liga-futures-134809787", "time":  "2026-10-02 09:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2c10f800-37fd-4417-8a59-c0e821dfc2aa_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe4c759a-257c-4741-ab8d-f8a5751105b5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
