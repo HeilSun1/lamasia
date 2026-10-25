@@ -47,8 +47,10 @@ function Parse-SportTime([string]$t) {
 
 Log "开始抓取 Sport.es 足球基地新闻……"
 
-# 用 curl 而不是 WebClient：WebClient 默认 100s 超时、sport.es 偶尔要 140s+ 才返回，
-# 会白白拖长整轮。curl -m 25 + 一次重试，最坏约 53s，且失败能明确报出来。
+# 用 curl 而不是 WebClient：WebClient 默认 100s 超时、sport.es 偶尔很慢，
+# 会白白拖长整轮。curl -m 40 + 一次重试，最坏约 83s，且失败能明确报出来。
+# ★ --compressed 不能省：2026-10 起该页约 800KB，不压缩在本机 25s 都下不完
+#   （curl 退出码 28，每轮都超时）；gzip 后约 180KB、2-3s 抓完。
 # （PS 5.1 里裸 curl 是 Invoke-WebRequest 的别名，必须写 curl.exe 的完整路径）
 $CurlExe = Join-Path $env:SystemRoot "System32\curl.exe"
 if (-not (Test-Path $CurlExe)) { $CurlExe = "curl.exe" }
@@ -57,7 +59,7 @@ $html = ""
 for ($attempt = 1; $attempt -le 2; $attempt++) {
   $tmp = Join-Path $env:TEMP ("sport-news-" + [guid]::NewGuid().ToString("N") + ".html")
   try {
-    & $CurlExe -s -L -m 25 -A $UserAgent -o $tmp $PageUrl 2>$null
+    & $CurlExe -s -L --compressed -m 40 -A $UserAgent -o $tmp $PageUrl 2>$null
     $code = $LASTEXITCODE
     if ($code -eq 0 -and (Test-Path $tmp) -and (Get-Item $tmp).Length -gt 5000) {
       $html = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)

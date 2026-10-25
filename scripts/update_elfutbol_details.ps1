@@ -1,5 +1,7 @@
 ﻿# ═══════════════════════════════════════════════════════════════
-#   拉玛西亚信息站 · U15（cadete-b）逐场阵容 / 进球详情缓存
+#   拉玛西亚信息站 · 青年梯队逐场阵容 / 进球详情缓存
+#   支持：U15（cadete-b，默认）/ U19B（juvenil-b）/ U16（cadete）/
+#         U14（infantil）/ U13（infantil-b）/ U12（infantil-c），用 -Tier 指定
 #
 #   为什么有这条链路：
 #     青年梯队赛程走 pulselive 接口，只有比分、没有阵容和事件，
@@ -7,13 +9,13 @@
 #     elfutbol.co 的逐场页有阵容 + 进球/换人/牌时间轴，故补这一层。
 #
 #   抓取链路：
-#     1) 读 assets/js/fcb-youth-schedules.js，取 cadete-b 已完场的比赛
+#     1) 读 assets/js/fcb-youth-schedules.js，取指定梯队（-Tier，默认 cadete-b）已完场的比赛
 #     2) 抓 elfutbol 队伍页，按「日期」把每场映射到 /en/match/.../jN
 #        （日期对同一支队唯一，比用轮次稳 —— pulselive 会漏掉未排期的轮次，
 #          导致我们的 round 号与 elfutbol 的 J 号错位）
 #     3) 抓每个单场页，解析阵容 + 事件
-#     4) 写 assets/js/elfutbol-cadete-b-details-cache.js
-#        window.ELFUTBOL_CADETE_B_DETAILS_CACHE（形状与 dqd-*-details-cache 一致，
+#     4) 写各梯队对应的 assets/js/elfutbol-<tier>-details-cache.js
+#        window.ELFUTBOL_<TIER>_DETAILS_CACHE（形状与 dqd-*-details-cache 一致，
 #        直接复用 match-detail.js 的 applyDetail 渲染，无需新前端代码）
 #
 #   ⚠️ elfutbol 无 CORS 头 → 浏览器不能直取，只能由本脚本服务端抓成缓存。
@@ -23,35 +25,81 @@
 #   ⚠️ elfutbol 的牌只有一种灰色块，不区分黄/红 → 标成中性的「牌」，不猜颜色。
 # ═══════════════════════════════════════════════════════════════
 param(
-  [switch] $Force        # 忽略已有缓存，全部重抓
+  [ValidateSet("cadete-b", "juvenil-b", "cadete", "infantil", "infantil-b", "infantil-c")]
+  [string] $TierKey = "cadete-b",   # 站内梯队键（与 fcb-youth-schedules.js 的 tier 一致）
+  [switch] $Force                 # 忽略已有缓存，全部重抓
 )
 
 $ErrorActionPreference = "Stop"
 $Root      = Split-Path -Parent $PSScriptRoot
 $Schedules = Join-Path $Root "assets\js\fcb-youth-schedules.js"
-$OutFile   = Join-Path $Root "assets\js\elfutbol-cadete-b-details-cache.js"
 $CrestFile = Join-Path $Root "assets\js\elfutbol-crests-cache.js"
 $LogFile   = Join-Path $Root "scripts\elfutbol-details-update.log"
 
-$TierId  = "cadete-b"
-$TeamUrl = "https://elfutbol.co/en/team/barcelona-fc-cadet-s15-a?season=2627&tab=resultados"
+# 逐场详情支持的梯队：站内 tier → elfutbol 队伍页 + 产物文件/全局名。
+# elfutbol 的队伍页 slug 用官方 SUB 命名（S14 = 站内 U14），与站内 U13/U14 的叫法差一档，别按名字猜。
+$TierCfg = @{
+  "cadete-b" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-cadet-s15-a?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-cadete-b-details-cache.js"
+    Global = "ELFUTBOL_CADETE_B_DETAILS_CACHE"
+    Label = "U15（Cadete B）"
+  }
+  "juvenil-b" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-juvenil-b?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-juvenil-b-details-cache.js"
+    Global = "ELFUTBOL_JUVENIL_B_DETAILS_CACHE"
+    Label = "U19B（Juvenil B）"
+  }
+  "cadete" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-cadet-s16-a?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-cadete-details-cache.js"
+    Global = "ELFUTBOL_CADETE_DETAILS_CACHE"
+    Label = "U16（Cadete A）"
+  }
+  "infantil" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-infantil-s14-a?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-infantil-details-cache.js"
+    Global = "ELFUTBOL_INFANTIL_DETAILS_CACHE"
+    Label = "U14（Infantil A）"
+  }
+  "infantil-b" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-infantil-s13-a?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-infantil-b-details-cache.js"
+    Global = "ELFUTBOL_INFANTIL_B_DETAILS_CACHE"
+    Label = "U13（Infantil B）"
+  }
+  "infantil-c" = @{
+    Url = "https://elfutbol.co/en/team/barcelona-fc-infantil-s13-b?season=2627&tab=resultados"
+    File = "assets\js\elfutbol-infantil-c-details-cache.js"
+    Global = "ELFUTBOL_INFANTIL_C_DETAILS_CACHE"
+    Label = "U12（Infantil C）"
+  }
+}
+$Cfg = $TierCfg[$TierKey]
+if (-not $Cfg) { throw "未知梯队：$TierKey" }
+
+$TierId  = $TierKey
+$TeamUrl = $Cfg.Url
+$OutFile = Join-Path $Root $Cfg.File
+$Label   = $Cfg.Label
 
 # 各梯队队徽来源。键与 assets/js/fcb-youth-schedules.js 的 tier 一致。
-# U15 复用上面已抓的队伍页；其余梯队用 elfutbol 的 comp 页（同一支队在不同年龄组有独立 comp）。
+# 当前梯队（-Tier）复用详情抓取时已抓的队伍页；其余梯队用各自的队伍页。
 # 2026-10-20 起由「只抓 U15」扩到全部官方站梯队 —— pulselive 的对手队徽全是 403，
 # 不补这层，比赛信息页「即将到来」只有巴萨自己的队徽。
 $CrestTiers = [ordered]@{
   "juvenil-a"  = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-juvenil&group=grup-3&season=2627&tab=resultados"
-  "cadete"     = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-cadet-s16&group=grup-1&season=2627&tab=resultados"
-  "cadete-b"   = $TeamUrl
-  "infantil"   = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-infantil-s14&group=grup-1&season=2627&tab=resultados"
+  "cadete"     = "https://elfutbol.co/en/team/barcelona-fc-cadet-s16-a?season=2627&tab=resultados"
+  "cadete-b"   = "https://elfutbol.co/en/team/barcelona-fc-cadet-s15-a?season=2627&tab=resultados"
+  "infantil"   = "https://elfutbol.co/en/team/barcelona-fc-infantil-s14-a?season=2627&tab=resultados"
   # ⚠️ 站点 tier 名与 elfutbol 年龄组并不一一对应（pulselive 的标签有一档偏移）：
   #   infantil-b 的数据实际是 DH Infantil S13（Barça A）
   #   infantil-c 的数据实际是 Preferent Infantil S13（Barça B）
   # 用错组会「每个日期都能匹配上、但对手全错」，所以以对手名单为准，别按名称猜。
-  "infantil-b" = "https://elfutbol.co/en/team/barcelona-f-c-a?comp=divisio-honor-infantil-s13&group=grup-1&season=2627&tab=resultados"
-  "infantil-c" = "https://elfutbol.co/en/team/barcelona-f-c-b?comp=preferent-infantil-s13&group=grup-2&season=2627&tab=resultados"
-  "juvenil-b"  = "https://elfutbol.co/en/team/barcelona-f-c-b?comp=lliga-nacional-juvenil&group=grup-7&season=2627&tab=resultados"
+  "infantil-b" = "https://elfutbol.co/en/team/barcelona-fc-infantil-s13-a?season=2627&tab=resultados"
+  "infantil-c" = "https://elfutbol.co/en/team/barcelona-fc-infantil-s13-b?season=2627&tab=resultados"
+  "juvenil-b"  = "https://elfutbol.co/en/team/barcelona-fc-juvenil-b?season=2627&tab=resultados"
 }
 $Inv = [Globalization.CultureInfo]::InvariantCulture
 
@@ -221,7 +269,7 @@ function Add-CrestsForTier([string]$tier, [hashtable]$byDate, $schedMatches) {
 }
 
 # ── 主流程 ──────────────────────────────────────────────────────
-Log "开始 U15 阵容/进球详情更新（数据源 elfutbol.co）……"
+Log "开始 $Label 阵容/进球详情更新（数据源 elfutbol.co）……"
 
 if (-not (Test-Path $Schedules)) { Log "✗ 赛程文件不存在：$Schedules"; exit 1 }
 $stxt = [System.IO.File]::ReadAllText($Schedules, $Utf8)
@@ -353,12 +401,12 @@ $needCrest = $missingTiers.Count -gt 0
 if ($waitCount -gt 0) { Log "  · $waitCount 场等足协报告（$RetryDays 天内不重抓）" }
 if (-not $needCrest -and -not $needDetails) {
   Log "  · 队徽表 $($crestOut.Count) 个、无新增对手，详情无新场次，本轮跳过抓取"
-  Log "U15 阵容/进球详情更新完成（无变化）✔"
+  Log "$Label 阵容/进球详情更新完成（无变化）✔"
   exit 0
 }
 if ($needCrest) { Log "  · 需补队徽的梯队：$($missingTiers -join ', ')" }
 
-# ③ U15 队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用；cadete-b 缺队徽时也复用它）
+# ③ 当前梯队队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用；该梯队缺队徽时也复用它）
 $team = $null
 $map  = @{}   # "DD-MM" → /en/match/... 路径
 if ($needDetails -or ($missingTiers -contains $TierId)) {
@@ -366,12 +414,12 @@ if ($needDetails -or ($missingTiers -contains $TierId)) {
   if ($team) {
     foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
       $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
-      if (-not $d.Success) { continue }   # 未排期的轮次（如 U15 的 MD3）没有日期，跳过
+      if (-not $d.Success) { continue }   # 未排期的轮次没有日期，跳过
       $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
     }
-    Log "  · U15 队伍页解析出 $($map.Count) 场比赛链接"
+    Log "  · $Label 队伍页解析出 $($map.Count) 场比赛链接"
   } else {
-    Log "  ✗ U15 队伍页抓取失败：本轮跳过 U15 详情（缺队徽的梯队稍后单独重试）"
+    Log "  ✗ $Label 队伍页抓取失败：本轮跳过 $Label 详情（缺队徽的梯队稍后单独重试）"
   }
 }
 
@@ -422,12 +470,12 @@ if ($crestMapped -gt 0 -or $crestTouched) {
 # ── ⑤ 逐场详情：只补缓存里还没有的已完场 ──
 if ($todo.Count -eq 0) {
   Log "  ✓ 详情无需更新（已收录 $($ended.Count - $waitCount) 场已完场）"
-  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
+  Log "$Label 阵容/进球详情更新完成（无详情可抓）✔"
   exit 0
 }
 if (-not $team -or $map.Count -eq 0) {
-  Log "  · U15 队伍页不可用，跳过详情更新（队徽已在上面单独更新）"
-  Log "U15 阵容/进球详情更新完成（无详情可抓）✔"
+  Log "  · $Label 队伍页不可用，跳过详情更新（队徽已在上面单独更新）"
+  Log "$Label 阵容/进球详情更新完成（无详情可抓）✔"
   exit 0
 }
 Log "  · 待抓详情 $($todo.Count) 场"
@@ -437,7 +485,39 @@ $ok = 0; $fail = 0; $pendingReport = 0
 foreach ($mt in $todo) {
   $dkey = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)   # 2026-10-10 → 10-10
   $href = $map[$dkey]
-  if (-not $href) { Log "    ✗ $($mt.date) 队伍页里找不到该日期的比赛"; $fail++; continue }
+  if (-not $href) {
+    # 官方站偶有日期差一天（待定场次排期占位），依次试前后一天
+    $base = $null
+    try { $base = [datetime]::ParseExact([string]$mt.date.Substring(0, 10), 'yyyy-MM-dd', $Inv) } catch { }
+    if ($base) {
+      foreach ($off in @(-1, 1)) {
+        $k2 = $base.AddDays($off).ToString('dd-MM')
+        if ($map.ContainsKey($k2)) {
+          $href = $map[$k2]
+          Log "    · $($mt.date) 前后一天匹配到 $k2"
+          break
+        }
+      }
+    }
+  }
+  if (-not $href) {
+    # 比分已出、比赛报告还没发时，elfutbol 队伍页连这一场的链接都不生成
+    # （内嵌 JSON 里 status = AWAITING_RESULT，所以按 data-match-row 抓不到）。
+    # 近 RetryDays 天的场次按「等报告」处理，不算失败；超过重试期还缺链接，
+    # 才说明真的对不上（赛程与队伍页不一致），继续报错让人看。
+    $rec = $false
+    try {
+      $md = [datetime]::ParseExact([string]$mt.date.Substring(0, 10), 'yyyy-MM-dd', $Inv)
+      $rec = ((Get-Date).Date - $md.Date).TotalDays -le $RetryDays
+    } catch { }
+    if ($rec) {
+      Log "    ⏳ $($mt.date) 队伍页还没有这场（比分已出、报告未发），$RetryDays 天后再试"
+      $pendingReports[[string]$mt.id] = (Get-Date -Format 'yyyy-MM-dd')
+      $pendingReport++
+      continue
+    }
+    Log "    ✗ $($mt.date) 队伍页里找不到该日期的比赛"; $fail++; continue
+  }
   $page = Get-Html ("https://elfutbol.co" + $href)
   if (-not $page) { Log "    ✗ $($mt.date) 单场页抓取失败"; $fail++; continue }
   $lineups = Parse-Lineups $page
@@ -485,7 +565,7 @@ if ($cache.Contains("__pendingReports")) { $detailCount-- }
 
 # ④ 写详情缓存
 $json = $cache | ConvertTo-Json -Depth 12
-$js = "/* 自动生成，请勿手动编辑 —— U15 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.ELFUTBOL_CADETE_B_DETAILS_CACHE = $json;`r`n"
+$js = "/* 自动生成，请勿手动编辑 —— $Label 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.$($Cfg.Global) = $json;`r`n"
 [System.IO.File]::WriteAllText($OutFile, $js, $Utf8)
 Log "  ✓ 已写入 $OutFile（本轮新增 $ok 场、失败 $fail 场、待报告 $pendingReport 场、共 $detailCount 场）"
-Log "U15 阵容/进球详情更新完成 ✔"
+Log "$Label 阵容/进球详情更新完成 ✔"

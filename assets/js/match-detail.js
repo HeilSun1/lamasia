@@ -155,7 +155,8 @@
   /* 低龄梯队：Sofascore 卡键 → data.js 梯队名（手动补图的 local 键用） */
   var LOCAL_TIER = { u19: "juvenil-a", u18: "juvenil-b", u16: "cadete",
                      "cadete-b": "cadete-b", infantil: "infantil",
-                     "infantil-b": "infantil-b", "infantil-c": "infantil-c" };
+                     "infantil-b": "infantil-b", "infantil-c": "infantil-c",
+                     "juvenil-b": "juvenil-b", cadete: "cadete" };
   var PHOTO_BASE = /\/teams\//.test(window.location.pathname) ? "../" : "";
   // 手动补的照片（photo-tool.html 写入的 local:{梯队}:{英文名归一化} 键）。
   // 必须排在上游头像前面：Sofascore 的低龄球员头像大量 404，手动补图就是用来盖掉它的。
@@ -1001,9 +1002,14 @@
     if (!m) return;
     curTier = { DQD_U19_CACHE: "u19", DQD_U18_CACHE: "u18", DQD_U16_CACHE: "u16",
                 DQD_BARCA_ATLETIC_SF_CACHE: "b", DQD_BARCA_ATLETIC_CACHE: "b",
-                ELFUTBOL_CADETE_B_CACHE: "cadete-b" }[m.cacheRef] || "";
-    // 只有 elfutbol 来源缺球员 id、需要按姓名映射；Sofascore/懂球帝本来就有 id，不启用
-    curNameMap = (m.cacheRef === "ELFUTBOL_CADETE_B_CACHE") ? "cadete-b" : "";
+                ELFUTBOL_CADETE_B_CACHE: "cadete-b",
+                ELFUTBOL_JUVENIL_B_CACHE: "juvenil-b",
+                ELFUTBOL_CADETE_CACHE: "cadete",
+                ELFUTBOL_INFANTIL_CACHE: "infantil",
+                ELFUTBOL_INFANTIL_B_CACHE: "infantil-b",
+                ELFUTBOL_INFANTIL_C_CACHE: "infantil-c" }[m.cacheRef] || "";
+    // elfutbol 来源缺球员 id、需要按姓名映射到站内名单；Sofascore/懂球帝有 id，不启用
+    curNameMap = /^ELFUTBOL_/.test(m.cacheRef || "") ? curTier : "";
     curMatch = m;
     // 本场集锦按此键取：懂球帝场次通过 videoKey 桥到 "sfb:{Sofascore id}"（视频缓存按 SF id 落库）
     curMatchKey = m.videoKey || key;

@@ -102,9 +102,14 @@ $SoftCaches = @(
   'assets/js/dqd-u19-news-cache.js'
   'assets/js/dqd-u18-news-cache.js'
   'assets/js/dqd-u16-news-cache.js'
-  # U15 逐场阵容/进球详情（elfutbol.co，第三方源）→ 抓不到只降级不报红：
+  # 青年梯队逐场阵容/进球详情（elfutbol.co，第三方源）→ 抓不到只降级不报红：
   # 页面会退回 match-detail 的「暂无阵容详情」提示，不会空白。
   'assets/js/elfutbol-cadete-b-details-cache.js'
+  'assets/js/elfutbol-juvenil-b-details-cache.js'
+  'assets/js/elfutbol-cadete-details-cache.js'
+  'assets/js/elfutbol-infantil-details-cache.js'
+  'assets/js/elfutbol-infantil-b-details-cache.js'
+  'assets/js/elfutbol-infantil-c-details-cache.js'
 )
 $CoreScripts = @('update_u19_sofascore.ps1', 'update_u18_sofascore.ps1', 'update_u16_sofascore.ps1',
                  'update_barca_atletic.ps1', 'update_fcb_youth_schedules.ps1')
@@ -138,7 +143,10 @@ $AddPaths = @(
   'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',
   'assets/js/dqd-u19-details-cache.js', 'assets/js/dqd-u18-details-cache.js', 'assets/js/dqd-u16-details-cache.js',
   'assets/js/dqd-videos-cache.js', 'assets/js/weekly-album-cache.js', 'assets/js/fcb-youth-schedules.js',
-  'assets/js/elfutbol-cadete-b-details-cache.js', 'assets/js/elfutbol-crests-cache.js'
+  'assets/js/elfutbol-cadete-b-details-cache.js', 'assets/js/elfutbol-crests-cache.js',
+  'assets/js/elfutbol-juvenil-b-details-cache.js', 'assets/js/elfutbol-cadete-details-cache.js',
+  'assets/js/elfutbol-infantil-details-cache.js', 'assets/js/elfutbol-infantil-b-details-cache.js',
+  'assets/js/elfutbol-infantil-c-details-cache.js'
 )
 # 今天才生成的（首次运行或抓取失败时可能不存在，缺席不算错误）
 $GeneratedPaths = @(
@@ -361,6 +369,25 @@ foreach ($s in $UpdateScripts) {
     Log-Line "      ✗ $s 失败（退出码 $code）$err"
     [void]$FailedScripts.Add($s)
     [void]$Failures.Add("$s (exit $code)")
+  }
+}
+
+# elfutbol 逐场详情：主脚本默认只跑 U15；其余梯队用同一脚本按 -Tier 再跑。
+# 第三方源，失败只降级不阻断。
+if (-not $SelfTest) {
+  $elfScript = Join-Path $Root "scripts\update_elfutbol_details.ps1"
+  if (Test-Path $elfScript) {
+    foreach ($elfTier in @('juvenil-b', 'cadete', 'infantil', 'infantil-b', 'infantil-c')) {
+      Log-Line "  → update_elfutbol_details.ps1 -Tier $elfTier"
+      $global:LASTEXITCODE = 0
+      $elfErr = $null
+      try { & $elfScript -Tier $elfTier } catch { $elfErr = $_.Exception.Message }
+      $elfCode = $LASTEXITCODE
+      if ($elfErr -or $elfCode -ne 0) {
+        Log-Line "      ✗ update_elfutbol_details.ps1 -Tier $elfTier 失败（退出码 $elfCode）$elfErr"
+        [void]$Failures.Add("update_elfutbol_details.ps1 -Tier $elfTier (exit $elfCode)")
+      }
+    }
   }
 }
 

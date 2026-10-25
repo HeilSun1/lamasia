@@ -349,11 +349,15 @@
     const el = $("u16-schedule");
     if (!el) return;
     const matches = (data && data.matches) || [];
-    if (!matches.length) {
-      // Sofascore 尚未加载新赛季赛程 → 回退到官方站数据（fcb-youth-schedules.js）
+    // Sofascore 只有几场已完场、没有未开赛时，同样回退到官方站完整赛程：
+    // 官方赛程含全部赛果 + 未开赛，且 U16 现在有 elfutbol 逐场阵容/进球缓存。
+    const hasUpcoming = matches.some(function (m) { return String(m.status) === "Not started"; });
+    if (!matches.length || !hasUpcoming) {
       if (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches.cadete && window.LAMASIA_SCHEDULE_RENDER) {
         scheduleFellBack = true;
-        window.LAMASIA_SCHEDULE_RENDER.render("cadete", "u16-schedule", { tierSlug: "cadete-a" });
+        window.LAMASIA_SCHEDULE_RENDER.render("cadete", "u16-schedule", {
+          tierSlug: "cadete-a", statusEl: "u16-status", fallback: true
+        });
         return;
       }
       scheduleFellBack = false;

@@ -38,6 +38,17 @@
   /* 各梯队 U 年龄段（对应 fcb-youth-schedules 的 tier 键） */
   var U_AGE = { cadete: "U16", "cadete-b": "U15", infantil: "U14", "infantil-b": "U13", "infantil-c": "U12", "juvenil-b": "U19B" };
 
+  /* 有 elfutbol 逐场阵容/进球缓存的梯队（scripts/update_elfutbol_details.ps1 -Tier 生成）。
+     cacheRef 名字按 match-detail.js 的规则就能推出缓存文件与全局名。 */
+  var DETAIL_REF = {
+    "cadete-b": "ELFUTBOL_CADETE_B_CACHE",
+    "cadete": "ELFUTBOL_CADETE_CACHE",
+    "juvenil-b": "ELFUTBOL_JUVENIL_B_CACHE",
+    "infantil": "ELFUTBOL_INFANTIL_CACHE",
+    "infantil-b": "ELFUTBOL_INFANTIL_B_CACHE",
+    "infantil-c": "ELFUTBOL_INFANTIL_C_CACHE"
+  };
+
   /* 显示层队名：官方站本队写作 "FC Barcelona A"，按梯队显示「巴萨 U16/U15…」（与 U19 命名一致） */
   function disp(name, tier) {
     const n = String(name || "").trim();
@@ -75,10 +86,10 @@
     const playedNow = m.status === "Ended";
     const score = playedNow ? (esc(m.hs || "0") + " : " + esc(m.as || "0")) : "vs";
     const key = m.key || m.id;   // 官方缓存 id 已带 "fcb:" 前缀；external 场次自带 key
-    // 只有 U15（cadete-b）有 elfutbol.co 抓来的逐场阵容/进球详情；
-    // 带上 cacheRef 后 match-detail.js 会按需懒加载 elfutbol-cadete-b-details-cache.js。
+    // 有 elfutbol.co 逐场阵容/进球缓存的梯队（U15/U19B/U16/U14）带上 cacheRef，
+    // match-detail.js 会按需懒加载对应 elfutbol-*-details-cache.js；
     // 其余梯队仍是最小详情（无阵容 → 只显示基本信息 + 官网外链）。
-    const dtRef = m.detailRef || ((tierSlug === "cadete-b") ? "ELFUTBOL_CADETE_B_CACHE" : "");
+    const dtRef = m.detailRef || DETAIL_REF[tier] || "";
     if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
     if (!window.LAMASIA_MATCHES[key]) {
       window.LAMASIA_MATCHES[key] = {
