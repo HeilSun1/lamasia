@@ -151,13 +151,15 @@
   var byName = {};
   entries.forEach(function (e) {
     var nm = normKey(e.nameEn);
-    if (!byName[nm]) byName[nm] = { zh: "", en: "", order: 9, key: "", teams: {}, groups: [] };
+    if (!byName[nm]) byName[nm] = { zh: "", en: "", order: 9, key: "", teams: {}, keys: {}, names: {}, groups: [] };
     var o = byName[nm];
     if (!o.zh && e.nameZh) o.zh = e.nameZh;
     if (!o.en) o.en = e.nameEn;
     var ord = TIER_ORDER[e.tier] != null ? TIER_ORDER[e.tier] : 9;
     if (ord < o.order) { o.order = ord; o.key = e.key; }   // 主梯队 = 最高级
     if (e.team) o.teams[e.team] = true;
+    o.keys[e.key] = true;
+    if (e.nameEn) o.names[e.nameEn] = true;
     o.groups = o.groups.concat(e.groups);
   });
 
@@ -208,6 +210,9 @@
     var p = {
       name: o.zh || o.en,
       key: o.key,
+      nameEn: o.en,
+      keys: Object.keys(o.keys),
+      names: Object.keys(o.names),
       tier: tier,
       teams: Object.keys(o.teams),
       groups: groups,
@@ -257,12 +262,16 @@
   }
   function playerRowsHtml(players) {
     return players.map(function (p) {
-      var rec = (window.PlayerCard && window.PlayerCard.findByKey(p.key)) || null;
-      var ph = rec && rec.photo;
+      // 主键可能没有照片（或 Sofascore 图 404），而该球员的名单键/别名键有照片：
+      // 收集全部候选，src 用第一张，其余交给 PC_IMG_FALLBACK 逐张重试。
+      var ph = (window.PlayerCard && window.PlayerCard.photosFor)
+        ? window.PlayerCard.photosFor(p.key, p.names, p.keys)
+        : [];
       var ini = esc(initialsOf(p.name));
-      var av = ph
-        ? '<span class="hl-p-av"><img src="' + esc(ph) + '" alt="" loading="lazy" referrerpolicy="no-referrer" ' +
-          'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
+      var av = ph.length
+        ? '<span class="hl-p-av"><img src="' + esc(ph[0]) + '" alt="" loading="lazy" referrerpolicy="no-referrer"' +
+          (ph.length > 1 ? ' data-alt="' + esc(ph.slice(1).join("|")) + '"' : "") +
+          ' onerror="window.PC_IMG_FALLBACK(this)">' +
           '<span class="hl-p-ini" style="display:none">' + ini + "</span></span>"
         : '<span class="hl-p-av"><span class="hl-p-ini">' + ini + "</span></span>";
       var hasNew = hasNewVideos(p);

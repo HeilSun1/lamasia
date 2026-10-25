@@ -95,7 +95,7 @@ window.LAMASIA_DATA = {
       { num: "—", name: "Byron Mendoza",        zh: "拜伦·门多萨", pos: "FW", role: "RW", nation: "—",      dob: "—", note: "—", img: "byron-mendoza.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2446943/image" },
       { num: "—", name: "Ismael Ziani",         zh: "伊斯梅尔·齐亚尼", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "ismael-ziani.jpg", imgCredit: "al-ain.com", imgUrl: "https://al-ain.com/article/ismael-ziani-lopez-miracle-bar-a" },
       { num: "—", name: "Artem Rybak",          zh: "阿尔乔姆·雷巴克", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "artem-rybak.jpg", imgCredit: "dynamo.kiev.ua", imgUrl: "https://dynamo.kiev.ua/en/news/695213-ukrainian-midfielder-of-barcelona-u-18-i-want-to-grow-to-the-first-team-and-win-as-many-trophies-as-possible-with-it" },
-      { num: "—", name: "Dany Freire",          zh: "达尼·弗雷雷", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", img: "" },
+      { num: "—", name: "Dany Freire",          zh: "达尼·弗雷雷", pos: "FW", role: "ST", nation: "—",      dob: "—", note: "—", nameAlias: "Daniel Freire", img: "" },
       { num: "—", name: "Noah García",          zh: "诺亚·加西亚", pos: "FW", role: "LW", nation: "—",      dob: "—", note: "—", img: "" },
       { num: "—", name: "Ruslan Mba",           zh: "鲁斯兰·姆巴", pos: "FW", role: "LW", nation: "西班牙/赤道几内亚", dob: "2010-02-27", note: "职业合同至 2029 · 人称迷你拉菲尼亚", img: "ruslan-mba.jpg", imgCredit: "Sofascore", imgUrl: "https://img.sofascore.com/api/v1/player/2128111/image" },
       { num: "—", name: "Ibrahim Babayev",      zh: "易卜拉欣·巴巴耶夫", pos: "FW", role: "LW", nation: "—",      dob: "—", note: "—", img: "" },

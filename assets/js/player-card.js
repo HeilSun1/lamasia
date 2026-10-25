@@ -101,6 +101,7 @@
   }
 
   var INDEX = {};   // key -> 球员卡片记录
+  var ALIAS = {};   // 归一化别名 -> 归一化主名（data.js 的 nameAlias，如 Daniel Freire → Dany Freire）
   var built = false;
   var curKey = "";  // 当前打开的卡片键（个人集锦查询用）
   var dqdToSf = {}; // B队 懂球帝 person_id → Sofascore id（名单页键 b:，视频键 sf:b:）
@@ -296,7 +297,88 @@
       });
     });
   }
+
+  /* ── 4) 姓名索引 + 别名（照片回退用） ──
+     集锦页会把同一球员的名单键（local:/b:）和视频键（sf:）合并成一个主键。
+     主键记录的 photo 可能为空或 Sofascore 图已 404，而另一个键有可用的照片，
+     所以按姓名把所有同人记录的候选图收集起来，交给渲染端逐张回退。 */
+  ALIAS = {};
+  if (window.LAMASIA_DATA && LAMASIA_DATA.players) {
+    Object.keys(LAMASIA_DATA.players).forEach(function (tier) {
+      LAMASIA_DATA.players[tier].forEach(function (p) {
+        if (!p.name) return;
+        var main = norm(p.name);
+        String(p.nameAlias || "").split(",").forEach(function (a) {
+          var ak = norm(a);
+          if (ak && ak !== main) ALIAS[ak] = main;
+        });
+      });
+    });
+  }
   }   // buildIndex 结束
+
+  /* 同一球员的候选照片（按优先级去重）：
+     ① 主键记录本身的照片（保持各页面现有显示不变）
+     ② 其他键（local: 官方名单 > b: 懂球帝 > sf: Sofascore）
+     ③ 同姓名/别名的其他记录（跨梯队合并、昵称如 Dany ↔ Daniel）
+     渲染端把 ① 作为 src，其余塞进 data-alt，图片 404 时由 PC_IMG_FALLBACK 依次重试。 */
+  function keyRank(k) {
+    if (/^local:/.test(k)) return 0;
+    if (/^b:/.test(k)) return 1;
+    if (/^sf:b:/.test(k)) return 2;
+    if (/^sf:/.test(k)) return 3;
+    return 4;
+  }
+  function nameFamily(names) {
+    var fam = {};
+    (names || []).forEach(function (n) {
+      var nk = norm(n);
+      if (!nk) return;
+      fam[nk] = 1;
+      if (ALIAS[nk]) fam[ALIAS[nk]] = 1;
+    });
+    Object.keys(ALIAS).forEach(function (a) {
+      if (fam[ALIAS[a]]) fam[a] = 1;
+    });
+    return fam;
+  }
+  function photosFor(primaryKey, names, keys) {
+    buildIndex();
+    var out = [];
+    function push(v) { if (v && out.indexOf(v) === -1) out.push(v); }
+    var pr = INDEX[primaryKey];
+    if (pr) push(pr.photo);
+    (keys || []).slice().sort(function (a, b) { return keyRank(a) - keyRank(b); }).forEach(function (k) {
+      if (INDEX[k]) push(INDEX[k].photo);
+    });
+    var fam = nameFamily([(pr && pr.nameEn)].concat(names || []));
+    var cand = [];
+    Object.keys(INDEX).forEach(function (k) {
+      var r = INDEX[k];
+      if (!r || !r.photo) return;
+      var nk = norm(r.nameEn);
+      if (nk && fam[nk]) cand.push({ k: k, photo: r.photo });
+    });
+    cand.sort(function (a, b) { return keyRank(a.k) - keyRank(b.k); });
+    cand.forEach(function (x) { push(x.photo); });
+    return out;
+  }
+  /* 图片加载失败的统一回退：先试 data-alt 里的备选图（| 分隔），全部失败再显示首字母头像。 */
+  function imgFallback(img) {
+    try {
+      var rest = img.getAttribute("data-alt") || "";
+      if (rest) {
+        var list = rest.split("|");
+        img.setAttribute("data-alt", list.slice(1).join("|"));
+        img.src = list[0];
+        return;
+      }
+    } catch (e) {}
+    img.style.display = "none";
+    var sib = img.nextElementSibling;
+    if (sib) sib.style.display = "grid";
+  }
+  window.PC_IMG_FALLBACK = imgFallback;
 
   // 所有缓存脚本就绪后构建索引（player-card.js 加载早于各梯队缓存）
   if (document.readyState === "loading") {
@@ -346,9 +428,11 @@
 
   function renderCard(r) {
     var ini = initials(r.nameEn || r.nameZh || "?");
-    document.getElementById("pc-avatar").innerHTML = r.photo
-      ? '<img src="' + esc(r.photo) + '" alt="' + esc(r.nameZh || r.nameEn) + '" data-zh="' + esc(r.nameZh || r.nameEn) + '" title="点击查看大图" loading="lazy" referrerpolicy="no-referrer" ' +
-        'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' +
+    var pics = photosFor(curKey, [r.nameEn]);
+    document.getElementById("pc-avatar").innerHTML = pics.length
+      ? '<img src="' + esc(pics[0]) + '" alt="' + esc(r.nameZh || r.nameEn) + '" data-zh="' + esc(r.nameZh || r.nameEn) + '"' +
+        (pics.length > 1 ? ' data-alt="' + esc(pics.slice(1).join("|")) + '"' : "") +
+        ' title="点击查看大图" loading="lazy" referrerpolicy="no-referrer" onerror="window.PC_IMG_FALLBACK(this)">' +
         '<span class="pc-init" style="display:none">' + esc(ini) + "</span>"
       : '<span class="pc-init">' + esc(ini) + "</span>";
     // 无中文名时只显示一次英文（大字），避免重复
@@ -715,6 +799,7 @@
     open: open,
     close: close,
     findByKey: function (k) { buildIndex(); return INDEX[k] || null; },
+    photosFor: photosFor,
     sfIdFor: function (key) {
       buildIndex();
       var m = /^b:(\d+)$/.exec(String(key || "")) || /^(\d+)$/.exec(String(key || ""));
