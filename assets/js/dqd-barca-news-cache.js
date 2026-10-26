@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-26 11:38:18 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-26 21:05:45 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-26 11:38:18",
+    "updated":  "2026-10-26 21:05:45",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6561439", "title":  "世体：埃斯帕特伤缺近两个月，弗里克启用青训应急",
+            "url":  "https://www.dongqiudi.com/articles/6561439.html", "time":  "2026-10-27 01:50",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D1/77/280x210/crop/-/rBXRn2rfkSmAAkrYAAA63kGIjTw917.jpg" },
+        {
+            "id":  "6561361", "title":  "每体：巴萨右后卫告急，弗里克将征召吉列姆-维克托",
+            "url":  "https://www.dongqiudi.com/articles/6561361.html", "time":  "2026-10-27 01:28",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/0A/280x210/crop/-/rBXRDGrY9qWAVSOBAAGEbrEJMwk125.jpg" },
+        {
+            "id":  "6558892", "title":  "每体：弗里克盼巴萨休整充电，依靠拉玛西亚补防线",
+            "url":  "https://www.dongqiudi.com/articles/6558892.html", "time":  "2026-10-26 16:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D0/8A/280x210/crop/-/rBXRn2rfAN6ALUIJAAFLHKR-UEo808.jpg" },
         {
             "id":  "6556508", "title":  "巴萨竞技战报 20261026",
             "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6449322", "title":  "每体：16岁的天才中场通卡拉因脚踝伤势缺席6周后...",
             "url":  "https://www.dongqiudi.com/articles/6449322.html", "time":  "2026-10-07 18:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A3/90/280x210/crop/-/rBXRDGrGHRuAEO3FAAE82ixXrNU255.jpg" },
-        {
-            "id":  "6444645", "title":  "巴萨官方：弗朗基-德容在周二参加了部分合练",
-            "url":  "https://www.dongqiudi.com/articles/6444645.html", "time":  "2026-10-06 21:29",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A1/65/280x210/crop/-/rBXRn2rE9zKAAM6VAAkx9yaGq0g098.jpg" },
-        {
-            "id":  "6442727", "title":  "世体：巴萨认为佩斯克尔需多踢比赛成长",
-            "url":  "https://www.dongqiudi.com/articles/6442727.html", "time":  "2026-10-06 14:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A0/C6/280x210/crop/-/rBXRDGrEkVeAUH4OAABicEkccKU753.jpg" },
-        {
-            "id":  "6438185", "title":  "巴萨竞技客场2-1逆转战胜图德拉诺，联赛4胜1平...",
-            "url":  "https://www.dongqiudi.com/articles/6438185.html", "time":  "2026-10-05 11:15",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/05/e7890286a1324ccf80fa690ff5ecb12fTND3aT_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A3/90/280x210/crop/-/rBXRDGrGHRuAEO3FAAE82ixXrNU255.jpg" }
     ]
 };

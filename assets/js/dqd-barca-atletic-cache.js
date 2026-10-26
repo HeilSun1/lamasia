@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-26 11:37 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-26 21:05 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-26 11:37:50",
+    "updated":  "2026-10-26 21:05:43",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1607,7 +1607,17 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-
+                          {
+                              "person_id":  "50919246",
+                              "name":  "达尼-阿维拉",
+                              "en":  "Dani Ávila",
+                              "photo":  "assets/img/players/dqd/50919246.jpg",
+                              "injury":  "膝盖受伤",
+                              "date_from":  "2026.03.02",
+                              "date_until":  "2026.10.26",
+                              "days":  "240",
+                              "games_missed":  "7"
+                          }
                       ],
     "roster":  {
                    "code":  0,
@@ -1651,7 +1661,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/05/26/rBUC6GhaSlyAQ18XAAAdtAld1pY387.jpg"
                                                               },
                                                               {
-                                                                  "age":  "48岁",
+                                                                  "age":  "49岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
@@ -1816,7 +1826,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7B/ChOxM1xC2N6AEWYMAAABPByVIVM465.png",
                                                                   "nationality_name":  "荷兰",
                                                                   "other_logo":  [
-
+                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
                                                                                  ],
                                                                   "person_en_name":  "Shane Kluivert",
                                                                   "person_id":  "50924320",
@@ -2991,12 +3001,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "2"
                                       },
                          "50919246":  {
-                                          "date_until":  "2024.10.04",
-                                          "date_from":  "2024.04.08",
-                                          "injury":  "腘绳肌损伤",
-                                          "days":  "181",
-                                          "status":  "ok",
-                                          "games_missed":  ""
+                                          "date_until":  "2026.10.26",
+                                          "date_from":  "2026.03.02",
+                                          "injury":  "膝盖受伤",
+                                          "days":  "240",
+                                          "status":  "out",
+                                          "games_missed":  "7"
                                       },
                          "50934675":  {
                                           "date_until":  "2026.02.18",

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-26 11:40:04 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-26 21:06:10 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-26 11:40:04",
+    "updated":  "2026-10-26 21:06:10",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004243326/mensajes-motivadores-fermin-gavi-confiad-equipo-vuelve.html", "title":  "Mensajes motivadores de Fermín y Gavi: Confiad en el equipo, todo vuelve",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004243326/mensajes-motivadores-fermin-gavi-confiad-equipo-vuelve.html", "time":  "2026-10-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/25/6ade751613174.r_d.598-964-4090.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261025/1004242686/premio-orian-goren.html", "title":  "Premio para Orian Goren",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261025/1004242686/premio-orian-goren.html", "time":  "2026-10-25 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "title":  "Galifardeu y otras palabras que hablan catalán en el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "time":  "2026-09-07 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9ea652e013b.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "title":  "Pau Víctor y Tommy Marqués dan buen resultado al Braga",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004223891/pau-victor-tommy-marques-dan-buen-resultado-braga.html", "time":  "2026-09-06 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/09/6a78f39362bd1.r_d.1157-701-5376.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9ea652e013b.jpeg" }
     ]
 };
