@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-25 19:07:23 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-26 11:38:18 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-25 19:07:23",
+    "updated":  "2026-10-26 11:38:18",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6556508", "title":  "巴萨竞技战报 20261026",
+            "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CF/57/280x210/crop/-/rBXRDGreTiGAVPvWAAUn731Y74s457.jpg" },
         {
             "id":  "6554605", "title":  "巴萨官方：肖恩-克鲁伊维特左腿股二头肌受伤，预计缺阵八周",
             "url":  "https://www.dongqiudi.com/articles/6554605.html", "time":  "2026-10-25 22:15",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6438185", "title":  "巴萨竞技客场2-1逆转战胜图德拉诺，联赛4胜1平...",
             "url":  "https://www.dongqiudi.com/articles/6438185.html", "time":  "2026-10-05 11:15",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/05/e7890286a1324ccf80fa690ff5ecb12fTND3aT_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6433144", "title":  "世体：巴萨和佩德罗-罗德里格斯完成续约，目前只待官宣",
-            "url":  "https://www.dongqiudi.com/articles/6433144.html", "time":  "2026-10-04 03:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9A/F5/280x210/crop/-/rBXRDGrBWxCAKmx_AAGYh3BkLq0890.jpg" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/05/e7890286a1324ccf80fa690ff5ecb12fTND3aT_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
     ]
 };

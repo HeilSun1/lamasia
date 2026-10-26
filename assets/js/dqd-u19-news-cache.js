@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-25 19:07:41 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-26 11:38:45 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-25 19:07:41",
+    "updated":  "2026-10-26 11:38:45",
     "source":  "dongqiudi",
-    "count":  42,
+    "count":  43,
     "news":  [
+        {
+            "id":  "6556508", "title":  "巴萨竞技战报 20261026",
+            "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CF/57/280x210/crop/-/rBXRDGreTiGAVPvWAAUn731Y74s457.jpg" },
         {
             "id":  "6527036", "title":  "似曾相识！埃斯帕特曾在去年10月份面对巴黎U19...",
             "url":  "https://www.dongqiudi.com/articles/6527036.html", "time":  "2026-10-21 15:05",

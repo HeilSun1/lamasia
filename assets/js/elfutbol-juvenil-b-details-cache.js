@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U19B（Juvenil B） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-23 21:50 */
+/* 自动生成，请勿手动编辑 —— U19B（Juvenil B） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-26 11:41 */
 window.ELFUTBOL_JUVENIL_B_DETAILS_CACHE = {
     "fcb:juvenil-b:3":  {
                             "lineups":  {
@@ -1988,6 +1988,7 @@ window.ELFUTBOL_JUVENIL_B_DETAILS_CACHE = {
                                            }
                          },
     "__pendingReports":  {
-                             "fcb:juvenil-b:37":  "2026-10-23"
+                             "fcb:juvenil-b:42":  "2026-10-26",
+                             "fcb:juvenil-b:37":  "2026-10-26"
                          }
 };

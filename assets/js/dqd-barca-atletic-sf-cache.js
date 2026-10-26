@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-25 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-26 11:38 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-25 21:00:46",
+    "updated":  "2026-10-26 11:38:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -200,21 +200,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Orian Goren",
-                        "id":  "1973312",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Israel",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-03-15",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "54万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
@@ -332,21 +317,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "183",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Alex Campos",
-                        "id":  "1926117",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926117/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-02",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "46万",
                         "injury":  null
                     },
                     {
@@ -735,10 +705,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Barcelona Atlètic",
                         "homeId":  "115059",
                         "awayId":  "24343",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "2",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {

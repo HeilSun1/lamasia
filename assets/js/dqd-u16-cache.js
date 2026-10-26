@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-25 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-26 11:39 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-25 21:01:43",
+    "updated":  "2026-10-26 11:39:48",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -129,6 +129,21 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
                         "age":  "15岁",
                         "birthday":  "2011-04-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Divine Ejiofor",
+                        "id":  "2533246",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U15",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2533246/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -512,6 +527,36 @@ window.DQD_U16_CACHE = {
                         "isHome":  false
                     },
                     {
+                        "id":  "17413776",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "5",
+                        "start":  "1792232364",
+                        "home":  "Barcelona U16",
+                        "away":  "UE Cornellà U16",
+                        "homeId":  "933329",
+                        "awayId":  "1266410",
+                        "hs":  "5",
+                        "as":  "2",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  true
+                    },
+                    {
+                        "id":  "17413793",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "6",
+                        "start":  "1792664364",
+                        "home":  "CF Damn U16",
+                        "away":  "Barcelona U16",
+                        "homeId":  "1266407",
+                        "awayId":  "933329",
+                        "hs":  "1",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
+                        "isHome":  false
+                    },
+                    {
                         "id":  "17399078",
                         "comp":  "U16 梅西杯, Group B",
                         "round":  "1",
@@ -520,17 +565,17 @@ window.DQD_U16_CACHE = {
                         "away":  "Palmeiras U16",
                         "homeId":  "933329",
                         "awayId":  "511116",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "2",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
                         "id":  "17399107",
                         "comp":  "U16 梅西杯, Group B",
                         "round":  "2",
-                        "start":  "1793050200",
+                        "start":  "1793046600",
                         "home":  "Barcelona U16",
                         "away":  "Arsenal U16",
                         "homeId":  "933329",
