@@ -53,6 +53,8 @@
   function disp(name, tier) {
     const n = String(name || "").trim();
     if (/^FC Barcelona/.test(n)) return "巴萨 " + (U_AGE[tier] || "A");
+    // Sofascore 的本队写作 "Barcelona U16"
+    if (/^Barcelona U\d+$/.test(n)) return "巴萨 " + n.replace(/^Barcelona /, "");
     return n;
   }
 
@@ -127,6 +129,42 @@
     return (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches) || null;
   }
 
+  /* U16（Cadete A）补充：梅西杯等杯赛只出现在 Sofascore 缓存里。
+     官网赛事接口按设计只留本赛季联赛（见 update_fcb_youth_schedules.ps1 的过滤逻辑），
+     所以「比赛信息」页 U16 卡片、以及 U16 专属页的回退渲染都会漏掉杯赛。
+     这里把 DQD_U16_CACHE 里的非联赛场次并进同一张表，避免
+     「近期比赛里有、U16 自己的赛程里没有」。 */
+  var U16_LEAGUE_RE = /Divisi[óo] d'Honor Catalana|加泰荣誉联赛 Cadete/i;
+  function u16SofascoreExtras() {
+    var out = { played: [], upcoming: [] };
+    var cache = window.DQD_U16_CACHE;
+    if (!cache || !cache.matches) return out;
+    cache.matches.forEach(function (m) {
+      if (U16_LEAGUE_RE.test(m.comp || "")) return;   // 联赛场次官方表里已有，不重复加
+      var key = "sofascore:" + m.id;
+      var homeLogo = "https://img.sofascore.com/api/v1/team/" + m.homeId + "/image";
+      var awayLogo = "https://img.sofascore.com/api/v1/team/" + m.awayId + "/image";
+      // 注册到 match-detail 注册表（点行弹窗要看阵容/进程）
+      if (!window.LAMASIA_MATCHES) window.LAMASIA_MATCHES = {};
+      if (!window.LAMASIA_MATCHES[key]) {
+        window.LAMASIA_MATCHES[key] = {
+          source: "sofascore", cacheRef: "DQD_U16_CACHE", id: m.id, comp: m.comp, round: m.round,
+          start: m.start, home: m.home, away: m.away, homeId: m.homeId, awayId: m.awayId,
+          hs: m.hs, as: m.as, status: m.status, isHome: m.isHome,
+          homeLogo: homeLogo, awayLogo: awayLogo
+        };
+      }
+      (m.status === "Not started" ? out.upcoming : out.played).push({
+        key: key, detailRef: "DQD_U16_CACHE",
+        comp: m.comp || "", round: m.round || "", start: m.start,
+        home: m.home || "", away: m.away || "", hs: m.hs || "", as: m.as || "",
+        status: m.status, isHome: m.isHome, homeId: m.homeId, awayId: m.awayId,
+        homeLogo: homeLogo, awayLogo: awayLogo
+      });
+    });
+    return out;
+  }
+
   /* 渲染赛程到容器 elId */
   function render(tier, elId, opts) {
     opts = opts || {};
@@ -137,13 +175,17 @@
       el.innerHTML = '<div class="match-list-empty">暂无赛程数据（运行每日脚本后生成）</div>';
       return;
     }
-    // extraPlayed：外部来源（如 U19B 的 Sofascore 八月热身赛）并进同一个「已完场」分组，
-    // 避免页面上出现两个「已完场」标题。
-    const extra = (opts && opts.extraPlayed) || [];
+    // extraPlayed / extraUpcoming：外部来源（如 U19B 的 Sofascore 八月热身赛）并进同一个
+    // 「已完场 / 未开赛」分组，避免页面上出现两个同名标题。
+    const extraP = (opts && opts.extraPlayed) || [];
+    const extraU = (opts && opts.extraUpcoming) || [];
+    // U16 的杯赛（梅西杯等）官网表里没有，自动从 Sofascore 缓存补进来
+    const auto = (tier === "cadete" && !opts.noSofascoreExtras) ? u16SofascoreExtras() : { played: [], upcoming: [] };
     const played   = matches.filter(function (m) { return m.status !== "Not started"; })
-                            .concat(extra)
+                            .concat(extraP, auto.played)
                             .sort(function (a, b) { return parseInt(b.start, 10) - parseInt(a.start, 10); });
     const upcoming = matches.filter(function (m) { return m.status === "Not started"; })
+                            .concat(extraU, auto.upcoming)
                             .sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });
     const tierSlug = (opts && opts.tierSlug) || tier;
     let html = "";
