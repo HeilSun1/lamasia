@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-27 21:02:25 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-27 20:48:07 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-27 21:02:25",
+    "updated":  "2026-10-27 20:48:07",
     "source":  "md",
     "count":  50,
     "news":  [
         {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243712/masia-fabrica-balones-oro-son-14.html", "title":  "La Masia, fábrica de Balones de Oro: ya son 14",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243712/masia-fabrica-balones-oro-son-14.html", "time":  "2026-10-27 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/26/6adfda7fd2a18.jpeg" },
+            "id":  "https://www.mundodeportivo.com/elrecomendador/deportes/20261027/1004240890/pasion-barca-moneda-asi-coleccion-cule-querra-tener-casa-mkt-moci.html", "title":  "La pasión por el Barça cabe en una moneda: así es la colección que todo buen culé querrá tener en casa",
+            "url":  "https://www.mundodeportivo.com/elrecomendador/deportes/20261027/1004240890/pasion-barca-moneda-asi-coleccion-cule-querra-tener-casa-mkt-moci.html", "time":  "2026-10-27 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/26/6adf16c941893.png" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243549/carta-emergencia-flick-lateral-derecho.html", "title":  "La carta de emergencia de Flick para cubrir la baja de Espart",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243549/carta-emergencia-flick-lateral-derecho.html", "time":  "2026-10-27 12:00",
