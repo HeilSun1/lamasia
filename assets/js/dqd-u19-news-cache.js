@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-27 09:41:59 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-10-27 21:01:15 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-10-27 09:41:59",
+    "updated":  "2026-10-27 21:01:15",
     "source":  "dongqiudi",
-    "count":  43,
+    "count":  44,
     "news":  [
+        {
+            "id":  "6562981", "title":  "17岁的祖克在巴萨U19本轮的联赛中打入了一记精...",
+            "url":  "https://www.dongqiudi.com/articles/6562981.html", "time":  "2026-10-27 08:15",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/27/a1090d348c6c2a553381e108e01262ccb1icq2_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6556508", "title":  "巴萨竞技战报 20261026",
             "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",

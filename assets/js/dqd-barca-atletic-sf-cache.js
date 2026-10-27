@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-27 09:41 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-27 21:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-27 09:41:40",
+    "updated":  "2026-10-27 21:00:44",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -137,21 +137,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "5万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Joni Hernández",
-                        "id":  "2606521",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2606521/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-05-23",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "",
                         "injury":  null
                     },
                     {

@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-27 09:43:02 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-27 21:02:25 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-27 09:43:02",
+    "updated":  "2026-10-27 21:02:25",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243712/masia-fabrica-balones-oro-son-14.html", "title":  "La Masia, fábrica de Balones de Oro: ya son 14",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243712/masia-fabrica-balones-oro-son-14.html", "time":  "2026-10-27 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/26/6adfda7fd2a18.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243549/carta-emergencia-flick-lateral-derecho.html", "title":  "La carta de emergencia de Flick para cubrir la baja de Espart",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243549/carta-emergencia-flick-lateral-derecho.html", "time":  "2026-10-27 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e7cae3149.r_d.865-610-6873.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243565/hay.html", "title":  "Es lo que hay",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243565/hay.html", "time":  "2026-10-27 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243394/barca-masia-reyes-aun-balon-oro.html", "title":  "El Barça y La Masia, más reyes aún en el Balón de Oro",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243394/barca-masia-reyes-aun-balon-oro.html", "time":  "2026-10-27 12:00",
@@ -191,18 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225765/cesc-fabregas-johan-cruyff-barca.html", "title":  "Cesc Fàbregas es para nosotros lo que Johan Cruyff fue para el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225765/cesc-fabregas-johan-cruyff-barca.html", "time":  "2026-09-10 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/10/6aa306c9891e1.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "title":  "El Real Zaragoza blinda a su cantera",
-            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260910/1004225535/real-zaragoza-blinda-cantera.html", "time":  "2026-09-10 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/10/6aa26f4e77091.r_d.557-862-11111.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "title":  "El Como de Cesc Fàbregas se cita con la historia",
-            "url":  "https://www.mundodeportivo.com/futbol/champions-league/20260910/1004225338/cesc-fabregas-cita-historia.html", "time":  "2026-09-10 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/05/10/6a0071941ed4f.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "title":  "Xavi I de Holanda",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "time":  "2026-09-08 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/10/6aa306c9891e1.jpeg" }
     ]
 };

@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-27 09:43:00 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-27 21:02:21 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-27 09:43:00",
+    "updated":  "2026-10-27 21:02:21",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135775112", "title":  "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/aran-aparicio-zurda-estetica-masia-135775112", "time":  "2026-10-27 11:15",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7e6ebda-b4d1-4a6e-89a0-0b245a0ecb74_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135746577", "title":  "Primer pinchazo del Barça Atlètic frente a un Olot mejor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/primer-pinchazo-barca-atletic-frente-135746577", "time":  "2026-10-25 19:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8e68cf14-6099-458c-b78b-8b9f89b60cb3_16-9-discover-aspect-ratio_default_0_x340y127.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8e68cf14-6099-458c-b78b-8b9f89b60cb3_16-9-discover-aspect-ratio_640w_0_x340y127.webp" },
         {
             "id":  "135718776", "title":  "UE Olot - Barça Atlètic en directo: resultado y goles en vivo del partido de Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ue-olot-barca-atletic-directo-135718776", "time":  "2026-10-25 19:31",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134943214", "title":  "El Barça perdonó al Betis y está al borde del KO en La Liga FC Futures",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-perdono-borde-ko-liga-futures-empate-betis-134943214", "time":  "2026-10-02 18:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134936568", "title":  "Tropezón inesperado en el debut del sub-13 del Barça en Orlando",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tropezon-inesperado-debut-sub-13-barcelona-sevilla-liga-futures-134936568", "time":  "2026-10-02 15:34",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6829fab0-458c-4199-915e-61cd711c6928_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
