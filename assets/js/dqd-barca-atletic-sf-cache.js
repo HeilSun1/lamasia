@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-26 11:38 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-27 09:41 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-26 11:38:18",
+    "updated":  "2026-10-27 09:41:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -425,21 +425,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Sergi Mayans",
-                        "id":  "2128115",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-01-30",
-                        "foot":  "左脚",
-                        "height":  "184",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Javi Castro",
                         "id":  "2679424",
                         "pos":  "D",
@@ -451,6 +436,36 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-09-21",
                         "foot":  "双脚",
                         "height":  "196",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Sergi Mayans",
+                        "id":  "2128115",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-01-30",
+                        "foot":  "左脚",
+                        "height":  "184",
                         "value":  "",
                         "injury":  null
                     },

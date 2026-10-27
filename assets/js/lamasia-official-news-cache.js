@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-26 21:06:08 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-27 09:42:57 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-26 21:06:08",
+    "updated":  "2026-10-27 09:42:57",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -151,9 +151,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4599205", "title":  "Lamine Yamal, Young Talent of the Year",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599205/lamine-yamal-wins-young-talent-of-the-year-for-third-year-in-a-row", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/9b6d9576-9a87-4f78-a382-d8603937762e/_MGA5205.jpg" },
+                "id":  "4599205", "title":  "Lamine Yamal, Young Talent of the Year and top 3",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599205/lamine-yamal-young-talent-of-the-year-and-third-in-ballon-dor-rankings", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/e71483da-05e6-412a-8148-473d8052b94f/_MGA1565-1-.jpg" },
             {
                 "id":  "4599042", "title":  "Xavi Espart injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599042/xavi-espart-injury-news", "time":  "",

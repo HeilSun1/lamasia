@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-26 21:06:10 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-27 09:43:02 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-26 21:06:10",
+    "updated":  "2026-10-27 09:43:02",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243394/barca-masia-reyes-aun-balon-oro.html", "title":  "El Barça y La Masia, más reyes aún en el Balón de Oro",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243394/barca-masia-reyes-aun-balon-oro.html", "time":  "2026-10-27 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/26/6adfda7fd2a18.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004241161/palmares-trofeo-kopa-mejor-sub-21-copado-barca-masculino-femenino.html", "title":  "El palmarés del Mejor Joven Talento, copado por el Barça masculino y femenino",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004241161/palmares-trofeo-kopa-mejor-sub-21-copado-barca-masculino-femenino.html", "time":  "2026-10-26 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/09/22/68d1a600189c4.r_d.802-586-0.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004243326/mensajes-motivadores-fermin-gavi-confiad-equipo-vuelve.html", "title":  "Mensajes motivadores de Fermín y Gavi: Confiad en el equipo, todo vuelve",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261026/1004243326/mensajes-motivadores-fermin-gavi-confiad-equipo-vuelve.html", "time":  "2026-10-26 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "title":  "Xavi I de Holanda",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224427/xavi-i-holanda.html", "time":  "2026-09-08 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224495/pere-romeu-celebra-suss-100-partidos-frente-barca-femenino-club-mi-vida.html", "title":  "Pere Romeu celebra sus 100 partidos al frente del Barça femenino: Es el club de mi vida",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224495/pere-romeu-celebra-suss-100-partidos-frente-barca-femenino-club-mi-vida.html", "time":  "2026-09-07 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9f116e26f92.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "title":  "Galifardeu y otras palabras que hablan catalán en el Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260907/1004224289/barca-vuelca-lengua-catalana.html", "time":  "2026-09-07 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/07/6a9ea652e013b.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" }
     ]
 };
