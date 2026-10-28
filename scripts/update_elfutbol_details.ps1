@@ -240,6 +240,14 @@ function Get-CrestRows([string]$page) {
   return $out
 }
 
+# 队徽路径 → slug（/crests/sm/fundacio-futbol-badalona.webp → fundacio-futbol-badalona）。
+# 用来把「队伍页上等待结果的行」按对手对到我们赛程里的某一场。
+function Get-CrestSlug([string]$path) {
+  if (-not $path) { return "" }
+  $f = ($path -split '/')[-1]
+  return ($f -replace '\.[a-z0-9]+$', '').ToLower()
+}
+
 # 把某梯队的 elfutbol 行映射到站点赛程的 pulselive 队号，写进 $script:crestOut。
 # 日期以我们的赛程为准，但 pulselive 的「待定」场次常把日期放成周末占位，可能差一天，
 # 所以依次试 同日 / 前一日 / 后一日；同一天有多行时优先「巴萨是否主队」方向一致的那行。
@@ -409,15 +417,32 @@ if ($needCrest) { Log "  · 需补队徽的梯队：$($missingTiers -join ', ')"
 # ③ 当前梯队队伍页：按「日期」把每场映射到 /en/match/.../jN（详情用；该梯队缺队徽时也复用它）
 $team = $null
 $map  = @{}   # "DD-MM" → /en/match/... 路径
+$awaitingRows = @()   # 已过时间、但 elfutbol 还没从足协拿到结果的行（无日期，只能按队徽对号）
 if ($needDetails -or ($missingTiers -contains $TierId)) {
   $team = Get-Html $TeamUrl
   if ($team) {
     foreach ($m in [regex]::Matches($team, '(?s)<a[^>]*data-match-row="true"[^>]*href="(/en/match/[^"]+)".*?</a>')) {
-      $d = [regex]::Match($m.Value, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
-      if (-not $d.Success) { continue }   # 未排期的轮次没有日期，跳过
-      $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
+      $row = $m.Value
+      $d = [regex]::Match($row, 'text-\[10px\] font-medium text-outline">(\d{2})-(\d{2})</span>')
+      if ($d.Success) {
+        $map[$d.Groups[1].Value + "-" + $d.Groups[2].Value] = $m.Groups[1].Value
+        continue
+      }
+      # 没有日期 = 这场还没出结果（elfutbol 渲染成只显示开球时间和「–」的占位行，
+      # data-match-state="awaiting-result"）。按日期永远对不上，先记下队徽备用。
+      $state = [regex]::Match($row, 'data-match-state="([^"]+)"')
+      if (-not $state.Success) { continue }
+      $crs = @([regex]::Matches($row, '<img src="(/(?:crests/sm|_crest)/[^"]+)"') | ForEach-Object { $_.Groups[1].Value })
+      if ($crs.Count -lt 2) { continue }
+      $awaitingRows += [pscustomobject]@{
+        state = $state.Groups[1].Value
+        href  = $m.Groups[1].Value
+        home  = $crs[0]
+        away  = $crs[1]
+      }
     }
-    Log "  · $Label 队伍页解析出 $($map.Count) 场比赛链接"
+    $extra = if ($awaitingRows.Count -gt 0) { "（另有 $($awaitingRows.Count) 场等待结果同步）" } else { "" }
+    Log "  · $Label 队伍页解析出 $($map.Count) 场比赛链接$extra"
   } else {
     Log "  ✗ $Label 队伍页抓取失败：本轮跳过 $Label 详情（缺队徽的梯队稍后单独重试）"
   }
@@ -481,7 +506,7 @@ if (-not $team -or $map.Count -eq 0) {
 Log "  · 待抓详情 $($todo.Count) 场"
 
 # 逐场抓单场页，解析阵容 + 事件
-$ok = 0; $fail = 0; $pendingReport = 0
+$ok = 0; $fail = 0; $pendingReport = 0; $awaitingCount = 0
 foreach ($mt in $todo) {
   $dkey = $mt.date.Substring(8, 2) + "-" + $mt.date.Substring(5, 2)   # 2026-10-10 → 10-10
   $href = $map[$dkey]
@@ -501,6 +526,25 @@ foreach ($mt in $todo) {
     }
   }
   if (-not $href) {
+    # elfutbol 队伍页对「时间已过、足协还没同步比分」的场次会渲染成无日期的占位行
+    # （data-match-state="awaiting-result"，只有开球时间和「–」）。我们赛程里已是
+    # Ended，但对方还没拿到结果 —— 等它同步即可，不算解析失败。按方向 + 对手队徽对号。
+    $oppId = [string]$(if ($mt.isHome) { $mt.awayId } else { $mt.homeId })
+    $oppSlug = ""
+    if ($oppId -and $crestOut.Contains($oppId)) { $oppSlug = Get-CrestSlug ([string]$crestOut[$oppId]) }
+    $hit = $null
+    if ($oppSlug) {
+      foreach ($ar in $awaitingRows) {
+        if (([bool]$mt.isHome) -ne ($ar.home -match 'barcelona-fc')) { continue }
+        $arOpp = if ($mt.isHome) { $ar.away } else { $ar.home }
+        if ((Get-CrestSlug $arOpp) -eq $oppSlug) { $hit = $ar; break }
+      }
+    }
+    if ($hit) {
+      Log "    ⏳ $($mt.date) elfutbol 尚未同步比分（队伍页仍是 awaiting-result），下轮再试"
+      $awaitingCount++
+      continue
+    }
     # 比分已出、比赛报告还没发时，elfutbol 队伍页连这一场的链接都不生成
     # （内嵌 JSON 里 status = AWAITING_RESULT，所以按 data-match-row 抓不到）。
     # 近 RetryDays 天的场次按「等报告」处理，不算失败；超过重试期还缺链接，
@@ -552,7 +596,7 @@ foreach ($mt in $todo) {
 }
 
 if ($ok -eq 0 -and $fail -gt 0) { Log "✗ 本轮无一场解析成功，保留旧缓存不覆盖"; exit 1 }
-if ($ok -eq 0) { Log "  ✓ 本轮 $pendingReport 场等待足协报告，无详情可更新（不算失败）" }
+if ($ok -eq 0) { Log "  ✓ 本轮等待来源补数据：$pendingReport 场待足协报告、$awaitingCount 场待 elfutbol 同步比分（不算失败）" }
 
 # 「等报告」标记写回缓存文件；报告发布后抓到数据会顺手删掉对应标记
 if ($pendingReports.Count -gt 0) {
@@ -567,5 +611,5 @@ if ($cache.Contains("__pendingReports")) { $detailCount-- }
 $json = $cache | ConvertTo-Json -Depth 12
 $js = "/* 自动生成，请勿手动编辑 —— $Label 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') */`r`nwindow.$($Cfg.Global) = $json;`r`n"
 [System.IO.File]::WriteAllText($OutFile, $js, $Utf8)
-Log "  ✓ 已写入 $OutFile（本轮新增 $ok 场、失败 $fail 场、待报告 $pendingReport 场、共 $detailCount 场）"
+Log "  ✓ 已写入 $OutFile（本轮新增 $ok 场、失败 $fail 场、待报告 $pendingReport 场、待同步 $awaitingCount 场、共 $detailCount 场）"
 Log "$Label 阵容/进球详情更新完成 ✔"
