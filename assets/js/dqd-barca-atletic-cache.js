@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-28 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-28 21:10 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-28 21:00:24",
+    "updated":  "2026-10-28 21:10:52",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1607,7 +1607,17 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-
+                          {
+                              "person_id":  "50855023",
+                              "name":  "尤文斯利-昂斯坦",
+                              "en":  "Juwensley Onstein",
+                              "photo":  "assets/img/players/dqd/50855023.jpg",
+                              "injury":  "肌肉损伤",
+                              "date_from":  "2026.09.03",
+                              "date_until":  "2026.10.28",
+                              "days":  "57",
+                              "games_missed":  "8"
+                          }
                       ],
     "roster":  {
                    "code":  0,
@@ -2927,12 +2937,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "4"
                                       },
                          "50855023":  {
-                                          "date_until":  "2026.04.18",
-                                          "date_from":  "2026.02.19",
-                                          "injury":  "肌肉问题",
-                                          "days":  "60",
-                                          "status":  "ok",
-                                          "games_missed":  ""
+                                          "date_until":  "2026.10.28",
+                                          "date_from":  "2026.09.03",
+                                          "injury":  "肌肉损伤",
+                                          "days":  "57",
+                                          "status":  "out",
+                                          "games_missed":  "8"
                                       },
                          "51004660":  {
                                           "date_until":  "2026.05.01",

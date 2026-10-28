@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-28 21:02:43 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-28 21:11:17 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-28 21:02:43",
+    "updated":  "2026-10-28 21:11:17",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "135775112", "title":  "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/aran-aparicio-zurda-estetica-masia-135775112", "time":  "2026-10-27 11:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7e6ebda-b4d1-4a6e-89a0-0b245a0ecb74_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7e6ebda-b4d1-4a6e-89a0-0b245a0ecb74_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135746577", "title":  "Primer pinchazo del Barça Atlètic frente a un Olot mejor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/primer-pinchazo-barca-atletic-frente-135746577", "time":  "2026-10-25 19:40",

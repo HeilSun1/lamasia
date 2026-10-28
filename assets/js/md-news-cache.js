@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-28 21:02:48 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-28 21:11:19 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-28 21:02:48",
+    "updated":  "2026-10-28 21:11:19",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004244328/ebrima-tunkara-llamada-especial-comida-sorpresa.html", "title":  "Ebrima Tunkara: una llamada especial y una comida sorpresa",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004244328/ebrima-tunkara-llamada-especial-comida-sorpresa.html", "time":  "2026-10-28 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/28/6ae2253c4c476.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004243911/lamine-vicky-lopez-talento-amistad-forjada-residencia-masia.html", "title":  "La Masia forja talento y amistades",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004243911/lamine-vicky-lopez-talento-amistad-forjada-residencia-masia.html", "time":  "2026-10-28 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2023/04/30/644ea6d4397a6.r_d.1521-855-4000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243973/cubarsi-recogera-golden-boy-14-diciembre.html", "title":  "Cubarsí recogerá el Golden Boy el 14 de diciembre",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261027/1004243973/cubarsi-recogera-golden-boy-14-diciembre.html", "time":  "2026-10-27 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "title":  "Preparen las palomitas",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "time":  "2026-09-12 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "title":  "Espectacular estreno goleador en Champions de la perla eslovena que descartó al Barça",
-            "url":  "https://www.mundodeportivo.com/balonmano/20260911/1004225887/espectacular-estreno-goleador-champions-perla-eslovena-descarto-barca.html", "time":  "2026-09-11 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/07/20/6a5e99cb1cd3f.r_d.1486-653-6424.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "title":  "El héroe del Gol Norte",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225662/heroe-gol-norte.html", "time":  "2026-09-11 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" }
     ]
 };
