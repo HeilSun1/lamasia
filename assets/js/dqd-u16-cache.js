@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-27 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-28 09:42 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-27 21:01:56",
+    "updated":  "2026-10-28 09:42:23",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -800,15 +800,15 @@ window.DQD_U16_CACHE = {
                         "id":  "17399136",
                         "comp":  "U16 梅西杯, Group B",
                         "round":  "3",
-                        "start":  "1793131200",
+                        "start":  "1793127600",
                         "home":  "Barcelona U16",
                         "away":  "Newell\u0027s Old Boys U16",
                         "homeId":  "933329",
                         "awayId":  "1153508",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "2",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
