@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u16_news.ps1 每日更新于 2026-10-28 11:54:47 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u16_news.ps1 每日更新于 2026-10-28 21:01:30 数据源：懂球帝 */
 window.DQD_U16_NEWS = {
-    "updated":  "2026-10-28 11:54:47",
+    "updated":  "2026-10-28 21:01:30",
     "source":  "dongqiudi",
-    "count":  13,
+    "count":  14,
     "news":  [
+        {
+            "id":  "6568742", "title":  "李昊炎替补出战，梅西杯巴萨U16队2-0击败纽维尔老男孩U16",
+            "url":  "https://www.dongqiudi.com/article/6568742", "time":  "2026-10-28 12:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D4/E7/280x210/crop/-/rBXRn2rhdAqAb0G8AA-pdTnRGiY676.png" },
         {
             "id":  "6558541", "title":  "李昊炎跨级替补出战梅西杯，巴萨U16队0-2不敌帕尔梅拉斯U16",
             "url":  "https://www.dongqiudi.com/article/6558541", "time":  "2026-10-26 12:21",

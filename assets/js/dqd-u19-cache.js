@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-28 11:54 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-28 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-28 11:54:47",
+    "updated":  "2026-10-28 21:01:29",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -130,6 +130,21 @@ window.DQD_U19_CACHE = {
                         "age":  "17岁",
                         "birthday":  "2009-02-20",
                         "foot":  "左脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Erik Domínguez Martos",
+                        "id":  "2866767",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2866767/image",
+                        "age":  "",
+                        "birthday":  "",
+                        "foot":  "",
                         "height":  "",
                         "value":  "",
                         "injury":  null
@@ -431,6 +446,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-01-26",
                         "foot":  "左脚",
                         "height":  "185",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Gerard Mullol",
+                        "id":  "2866762",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2866762/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-10-11",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },

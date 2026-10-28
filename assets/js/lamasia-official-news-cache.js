@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-28 11:55:34 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-28 21:02:34 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-28 11:55:34",
+    "updated":  "2026-10-28 21:02:34",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -151,6 +151,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4600150", "title":  "Return to work",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600150/return-to-work", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/28/9dd2467f-2857-4069-a8fb-f7e5e86f9970/WhatsApp-Image-2026-10-28-at-12.49.49.jpeg" },
+            {
+                "id":  "4599503", "title":  "When and where to watch Barça v Alavés",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599503/when-and-where-to-watch-fc-barcelona-v-alaves", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/27/38439501-c539-46c0-a902-b2219e6f1ed2/3200x2000_Horarios-ALAVES_31_10-2.jpeg" },
+            {
                 "id":  "4599205", "title":  "Lamine Yamal, Young Talent of the Year and top 3",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599205/lamine-yamal-young-talent-of-the-year-and-third-in-ballon-dor-rankings", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/e71483da-05e6-412a-8148-473d8052b94f/_MGA1565-1-.jpg" },
@@ -231,10 +239,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596588/xavi-espart-comes-of-age-against-paris-saint-germain", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/b41724ca-0f00-4d87-8c8c-f730d06a0424/_MGA9688.jpg" },
             {
-                "id":  "4596285", "title":  "PSG 4-2 Barça: First defeat",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596285/paris-saint-germain-4-2-fc-barcelona-first-defeat", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/20/fadfac3c-6d87-4551-9710-0f672dc2de34/_MGA9746.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -242,6 +246,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4596285", "title":  "PSG 4-2 Barça: First defeat",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596285/paris-saint-germain-4-2-fc-barcelona-first-defeat", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/20/fadfac3c-6d87-4551-9710-0f672dc2de34/_MGA9746.jpg" },
             {
                 "id":  "4594863", "title":  "PREVIEW | PSG v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594863/preview-paris-saint-germain-v-fc-barcelona", "time":  "",
@@ -341,15 +349,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4591109", "title":  "'One of the best atmospheres'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591109/hansi-flick-one-of-the-best-atmospheres", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/6f4ece61-d99d-477e-b9f1-ce7780ff1cd5/_MGA5197.jpg" },
-            {
-                "id":  "4590653", "title":  "Squad for trip to Istanbul",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590653/the-fc-barcelona-squad-for-the-game-against-galatasaray", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/11/ce7a6e86-f1dc-4342-b61c-11bb6ccf6051/image00011.jpeg" },
-            {
-                "id":  "4590582", "title":  "When and where to watch Galatasaray v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590582/when-and-where-to-watch-galatasaray-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/6f4ece61-d99d-477e-b9f1-ce7780ff1cd5/_MGA5197.jpg" }
         ]
     }
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-28 11:55 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-28 21:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-28 11:55:22",
+    "updated":  "2026-10-28 21:02:17",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -30,21 +30,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Paumi Mateos",
-                        "id":  "2272366",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Venezuela",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-29",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Héctor Asumu",
                         "id":  "2447155",
                         "pos":  "F",
@@ -56,6 +41,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2011-02-18",
                         "foot":  "左脚",
                         "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Paumi Mateos",
+                        "id":  "2272366",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Venezuela",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-29",
+                        "foot":  "右脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -135,6 +135,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Mamadou Keita",
+                        "id":  "2542153",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U15",
+                        "nation":  "Senegal",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2542153/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-04-18",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Divine Ejiofor",
                         "id":  "2533246",
                         "pos":  "F",
@@ -159,21 +174,6 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2768916/image",
                         "age":  "16岁",
                         "birthday":  "2010-07-29",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Mamadou Keita",
-                        "id":  "2542153",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U15",
-                        "nation":  "Senegal",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2542153/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-04-18",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -330,6 +330,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Johann Leiva",
+                        "id":  "2864272",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864272/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Jan Giral",
                         "id":  "2826563",
                         "pos":  "M",
@@ -412,21 +427,6 @@ window.DQD_U16_CACHE = {
                         "team":  "Barcelona U16",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2864212/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Johann Leiva",
-                        "id":  "2864272",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864272/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
                         "foot":  "",
@@ -630,21 +630,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Elyott Andrea Daussy",
-                        "id":  "2690247",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690247/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-13",
-                        "foot":  "左脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Aleksander Simoskov",
                         "id":  "2533244",
                         "pos":  "G",
@@ -810,6 +795,21 @@ window.DQD_U16_CACHE = {
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "17429679",
+                        "comp":  "U16 梅西杯, Copa Oro",
+                        "round":  "27",
+                        "start":  "1793201400",
+                        "home":  "Atlético Madrid U16",
+                        "away":  "Barcelona U16",
+                        "homeId":  "1153506",
+                        "awayId":  "933329",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     },
                     {
                         "id":  "17417351",
