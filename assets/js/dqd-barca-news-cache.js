@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-29 21:00:53 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-29 21:14:19 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-29 21:00:53",
+    "updated":  "2026-10-29 21:14:19",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6575433", "title":  "每体：巴萨边后卫位置因伤致人员不足，召吉列姆-维克托补训",
+            "url":  "https://www.dongqiudi.com/articles/6575433.html", "time":  "2026-10-29 22:49",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/F0/280x210/crop/-/rBXRDGrjWG-AeuF4AACuqMf2jBk539.jpg" },
+        {
+            "id":  "6575168", "title":  "每体：18岁门将伊克尔明日续约巴萨，合同至2029年",
+            "url":  "https://www.dongqiudi.com/articles/6575168.html", "time":  "2026-10-29 21:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/DA/280x210/crop/-/rBXRDGrjRrKAER67AADm330mAlM736.jpg" },
         {
             "id":  "6574083", "title":  "阿斯：巴萨中卫伤病潮严重，拉玛西亚难立刻补人",
             "url":  "https://www.dongqiudi.com/articles/6574083.html", "time":  "2026-10-29 17:34",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6460714", "title":  "巴萨为佩德罗举行了退役纪念仪式，蒂亚戈、德科、普...",
             "url":  "https://www.dongqiudi.com/articles/6460714.html", "time":  "2026-10-10 08:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/BA/280x210/crop/-/rBXRDGrJhvaALrhvACU1zrKGWnw302.jpg" },
-        {
-            "id":  "6459753", "title":  "官方：巴萨和青训小将佩德罗-罗德里格斯续约至2030年",
-            "url":  "https://www.dongqiudi.com/articles/6459753.html", "time":  "2026-10-10 02:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/1D/280x210/crop/-/rBXRn2rJOQCACTC_AASMVmQhiV8991.jpg" },
-        {
-            "id":  "6456854", "title":  "每体：比西武于本周四结束国际比赛日归队。他没有参...",
-            "url":  "https://www.dongqiudi.com/articles/6456854.html", "time":  "2026-10-09 15:29",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/F3/280x210/crop/-/rBXRn2rIl7SAaro0AADTeUDxNPw407.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/BA/280x210/crop/-/rBXRDGrJhvaALrhvACU1zrKGWnw302.jpg" }
     ]
 };

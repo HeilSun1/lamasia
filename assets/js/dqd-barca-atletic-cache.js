@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-29 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-29 21:14 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-29 21:00:23",
+    "updated":  "2026-10-29 21:14:17",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2191,7 +2191,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
                                                                   "other_logo":  [
-
+                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
                                                                                  ],
                                                                   "person_en_name":  "Dani Ávila",
                                                                   "person_id":  "50919246",
@@ -2991,12 +2991,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "2"
                                       },
                          "50919246":  {
-                                          "date_until":  "2026.10.26",
-                                          "date_from":  "2026.03.02",
-                                          "injury":  "膝盖受伤",
-                                          "days":  "240",
+                                          "date_until":  "2024.10.04",
+                                          "date_from":  "2024.04.08",
+                                          "injury":  "腘绳肌损伤",
+                                          "days":  "181",
                                           "status":  "ok",
-                                          "games_missed":  "7"
+                                          "games_missed":  ""
                                       },
                          "50934675":  {
                                           "date_until":  "2026.02.18",
