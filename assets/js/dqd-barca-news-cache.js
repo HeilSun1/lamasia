@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-28 21:10:54 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-29 09:47:43 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-28 21:10:54",
+    "updated":  "2026-10-29 09:47:43",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6573074", "title":  "布斯克茨与15岁的边锋门迪卡诺夫。",
+            "url":  "https://www.dongqiudi.com/articles/6573074.html", "time":  "2026-10-29 09:08",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D6/C4/280x210/crop/-/rBXRn2rinIGAM9vKAAVC7Bzjzjc046.jpg" },
         {
             "id":  "6571030", "title":  "每体：通卡拉再次跟随巴萨一线队训练，争取战阿拉维斯",
             "url":  "https://www.dongqiudi.com/articles/6571030.html", "time":  "2026-10-29 00:27",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6456667", "title":  "每体：巴萨考察租租借小将恰托维奇，决定是否买断",
             "url":  "https://www.dongqiudi.com/articles/6456667.html", "time":  "2026-10-09 14:38",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" },
-        {
-            "id":  "6451983", "title":  "好消息！巴萨竞技球员通卡拉、凯塞多和阿维拉伤愈回...",
-            "url":  "https://www.dongqiudi.com/articles/6451983.html", "time":  "2026-10-08 09:27",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A4/EA/280x210/crop/-/rBXRn2rG8RuAcQCWAAMG4Mw6cYU577.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" }
     ]
 };
