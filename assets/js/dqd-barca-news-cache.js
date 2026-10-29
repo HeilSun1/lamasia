@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-29 09:47:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-29 21:00:53 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-29 09:47:43",
+    "updated":  "2026-10-29 21:00:53",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6574083", "title":  "阿斯：巴萨中卫伤病潮严重，拉玛西亚难立刻补人",
+            "url":  "https://www.dongqiudi.com/articles/6574083.html", "time":  "2026-10-29 17:34",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/85/280x210/crop/-/rBXRDGrjDbuAV3RwAAMbhHxaqHo110.jpg" },
         {
             "id":  "6573074", "title":  "布斯克茨与15岁的边锋门迪卡诺夫。",
             "url":  "https://www.dongqiudi.com/articles/6573074.html", "time":  "2026-10-29 09:08",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6456854", "title":  "每体：比西武于本周四结束国际比赛日归队。他没有参...",
             "url":  "https://www.dongqiudi.com/articles/6456854.html", "time":  "2026-10-09 15:29",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/F3/280x210/crop/-/rBXRn2rIl7SAaro0AADTeUDxNPw407.jpg" },
-        {
-            "id":  "6456667", "title":  "每体：巴萨考察租租借小将恰托维奇，决定是否买断",
-            "url":  "https://www.dongqiudi.com/articles/6456667.html", "time":  "2026-10-09 14:38",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/F3/280x210/crop/-/rBXRn2rIl7SAaro0AADTeUDxNPw407.jpg" }
     ]
 };

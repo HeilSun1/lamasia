@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-29 09:49:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-29 21:02:17 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-29 09:49:06",
+    "updated":  "2026-10-29 21:02:17",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -151,6 +151,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4600710", "title":  "Minute's silence at first team training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600710/training-session-with-minutes-silence-for-the-victims-of-the-rail-accident-between-los-yebenes-and-urda", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/a00d1cff-82d5-46e0-a799-19d180b338a3/_MGA2068.jpg" },
+            {
+                "id":  "4600661", "title":  "Five things ahead of Barça v Alavés",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600661/five-things-ahead-of-barca-v-alaves", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/f78d1a7a-7cfe-4c0a-8a49-be3b166c94be/_MGA4925.jpg" },
+            {
                 "id":  "4600150", "title":  "Return to work",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600150/return-to-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/28/9dd2467f-2857-4069-a8fb-f7e5e86f9970/WhatsApp-Image-2026-10-28-at-12.49.49.jpeg" },
@@ -231,14 +239,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596667/recovery-session-after-psg-game", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4e42512a-2d4d-4fd0-9e1e-ad6d80ea1910/WhatsApp-Image-2026-10-21-at-13.37.38.jpeg" },
             {
-                "id":  "4596623", "title":  "Lamine Yamal's double digits",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596623/lamine-yamals-double-digits", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4a065205-b723-4e65-8730-cb4b0ea17c86/_MGA9503.jpg" },
-            {
-                "id":  "4596588", "title":  "Xavi Espart comes of age",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596588/xavi-espart-comes-of-age-against-paris-saint-germain", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/b41724ca-0f00-4d87-8c8c-f730d06a0424/_MGA9688.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -246,6 +246,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4596623", "title":  "Lamine Yamal's double digits",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596623/lamine-yamals-double-digits", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4a065205-b723-4e65-8730-cb4b0ea17c86/_MGA9503.jpg" },
+            {
+                "id":  "4596588", "title":  "Xavi Espart comes of age",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596588/xavi-espart-comes-of-age-against-paris-saint-germain", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/b41724ca-0f00-4d87-8c8c-f730d06a0424/_MGA9688.jpg" },
             {
                 "id":  "4596285", "title":  "PSG 4-2 Barça: First defeat",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596285/paris-saint-germain-4-2-fc-barcelona-first-defeat", "time":  "",
@@ -341,15 +349,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4591186", "title":  "First contact with Ali Sami Yen",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591186/first-contact-with-ali-sami-yen", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/7262d11c-2775-4785-b37f-d36f3739e7d7/_MGA5255.jpg" },
-            {
-                "id":  "4591110", "title":  "'We need to be careful'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591110/pau-cubarsi-we-need-to-be-careful", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/568cb987-fb38-4c91-9d8d-6b415872ddc5/_MGA5123.jpg" },
-            {
-                "id":  "4591109", "title":  "'One of the best atmospheres'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591109/hansi-flick-one-of-the-best-atmospheres", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/6f4ece61-d99d-477e-b9f1-ce7780ff1cd5/_MGA5197.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/7262d11c-2775-4785-b37f-d36f3739e7d7/_MGA5255.jpg" }
         ]
     }
 };

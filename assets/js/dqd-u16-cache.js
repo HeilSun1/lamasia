@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-29 09:48 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-29 21:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-29 09:48:54",
+    "updated":  "2026-10-29 21:02:01",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -60,6 +60,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Karim Mendikanov",
+                        "id":  "2674136",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Kazakhstan",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
+                        "age":  "15岁",
+                        "birthday":  "2010-11-08",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Alex Arasa",
                         "id":  "2410977",
                         "pos":  "F",
@@ -86,21 +101,6 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2010-01-09",
                         "foot":  "",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Karim Mendikanov",
-                        "id":  "2674136",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Kazakhstan",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
-                        "age":  "15岁",
-                        "birthday":  "2010-11-08",
-                        "foot":  "左脚",
-                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -300,6 +300,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Haoyan Li",
+                        "id":  "2864275",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "China",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864275/image",
+                        "age":  "14岁",
+                        "birthday":  "2012-01-28",
+                        "foot":  "左脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Victor Barbany",
                         "id":  "2826562",
                         "pos":  "M",
@@ -370,21 +385,6 @@ window.DQD_U16_CACHE = {
                         "age":  "15岁",
                         "birthday":  "2011-01-22",
                         "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Haoyan Li",
-                        "id":  "2864275",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "China",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864275/image",
-                        "age":  "14岁",
-                        "birthday":  "2012-01-28",
-                        "foot":  "左脚",
                         "height":  "",
                         "value":  "",
                         "injury":  null
@@ -585,21 +585,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "José Basagaña",
-                        "id":  "2864204",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864204/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Dae-han Lee",
                         "id":  "2864206",
                         "pos":  "D",
@@ -610,6 +595,21 @@ window.DQD_U16_CACHE = {
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
                         "foot":  "左脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "José Basagaña",
+                        "id":  "2864204",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864204/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
                         "height":  "",
                         "value":  "",
                         "injury":  null

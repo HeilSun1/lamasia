@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-29 09:47 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-29 21:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-29 09:47:42",
+    "updated":  "2026-10-29 21:00:52",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -200,21 +200,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pedro Rodriguez",
-                        "id":  "1649171",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-20",
-                        "foot":  "右脚",
-                        "height":  "175",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mirza Ćatović",
                         "id":  "1937274",
                         "pos":  "M",
@@ -227,6 +212,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "190",
                         "value":  "360万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pedro Rodriguez",
+                        "id":  "1649171",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
+                        "value":  "",
                         "injury":  null
                     },
                     {

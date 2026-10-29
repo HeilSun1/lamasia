@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-29 09:47 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-10-29 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-10-29 09:47:22",
+    "updated":  "2026-10-29 21:00:23",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2927,12 +2927,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "4"
                                       },
                          "50855023":  {
-                                          "date_until":  "2026.10.28",
-                                          "date_from":  "2026.09.03",
-                                          "injury":  "肌肉损伤",
-                                          "days":  "57",
+                                          "date_until":  "2026.04.18",
+                                          "date_from":  "2026.02.19",
+                                          "injury":  "肌肉问题",
+                                          "days":  "60",
                                           "status":  "ok",
-                                          "games_missed":  "8"
+                                          "games_missed":  ""
                                       },
                          "51004660":  {
                                           "date_until":  "2026.05.01",
