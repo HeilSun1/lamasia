@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-30 09:42 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-30 21:02 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-30 09:42:26",
+    "updated":  "2026-10-30 21:02:01",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -420,13 +420,13 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Adrián Sánchez",
-                        "id":  "2864212",
+                        "name":  "Dragos Bivol",
+                        "id":  "2864210",
                         "pos":  "M",
                         "shirt":  "",
                         "team":  "Barcelona U16",
                         "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864212/image",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864210/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
                         "foot":  "",
@@ -435,13 +435,13 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Dragos Bivol",
-                        "id":  "2864210",
+                        "name":  "Adrián Sánchez",
+                        "id":  "2864212",
                         "pos":  "M",
                         "shirt":  "",
                         "team":  "Barcelona U16",
                         "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864210/image",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864212/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
                         "foot":  "",

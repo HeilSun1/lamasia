@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-30 09:42:37 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-30 21:02:19 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-30 09:42:37",
+    "updated":  "2026-10-30 21:02:19",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -151,6 +151,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4601420", "title":  "Last session before Alavés",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601420/last-session-before-alaves", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2419ce97-233d-4906-8ba9-aeab05b46aaa/WhatsApp-Image-2026-10-30-at-12.56.31.jpeg" },
+            {
+                "id":  "4601455", "title":  "Flick: 'We want show our best'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-show-our-best", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/981338f5-89bd-42f0-a79e-e36ea01a8a78/_MGA2517.jpg" },
+            {
+                "id":  "4601412", "title":  "Dani Olmo celebrates 100 games",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601412/dani-olmo-reaches-100-games-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/e22c3352-b5d6-4626-9fa5-cb27d635a9aa/_MGA8346-1.jpg" },
+            {
                 "id":  "4600710", "title":  "Minute's silence at first team training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600710/training-session-with-minutes-silence-for-the-victims-of-the-rail-accident-between-los-yebenes-and-urda", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/a00d1cff-82d5-46e0-a799-19d180b338a3/_MGA2068.jpg" },
@@ -227,6 +239,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4597462/a-clasico-with-many-new-faces", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/22/37cfff3c-8c71-4251-98f4-152dd33c7ee7/_C4A5977-1-.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4596876", "title":  "Flick and Mou, head-to-head",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596876/clasico-brings-second-head-to-head-between-flick-and-mourinho", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/1193739b-ffc7-483d-a9fb-de5a56f19f0c/_MGA6966_1.jpg" },
@@ -238,14 +258,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4596667", "title":  "Recovery session after PSG game",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596667/recovery-session-after-psg-game", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4e42512a-2d4d-4fd0-9e1e-ad6d80ea1910/WhatsApp-Image-2026-10-21-at-13.37.38.jpeg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4596623", "title":  "Lamine Yamal's double digits",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596623/lamine-yamals-double-digits", "time":  "",
@@ -337,19 +349,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4591863", "title":  "Galatasaray 1-4 Barça: Heaven in hell",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591863/galatasaray-1-4-fc-barcelona-heaven-in-hell", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/edfaf46a-1bb5-4e51-a190-1b93874ee27d/_MGA8006.jpg" },
-            {
-                "id":  "4591897", "title":  "10 out of 10",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591897/10-out-of-10-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/bda4bb13-2aa9-4fe3-98c9-de27538ed850/_MGA7997.jpg" },
-            {
-                "id":  "4590935", "title":  "PREVIEW | Galatasaray v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4590935/preview-galatasaray-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4591186", "title":  "First contact with Ali Sami Yen",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591186/first-contact-with-ali-sami-yen", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/12/7262d11c-2775-4785-b37f-d36f3739e7d7/_MGA5255.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/13/edfaf46a-1bb5-4e51-a190-1b93874ee27d/_MGA8006.jpg" }
         ]
     }
 };

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-30 09:41:26 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-30 21:01:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-30 09:41:26",
+    "updated":  "2026-10-30 21:01:01",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6579464", "title":  "世体：孔德因伤缺席训练，弗里克补招二队吉列姆和坎波斯",
+            "url":  "https://www.dongqiudi.com/articles/6579464.html", "time":  "2026-10-30 21:00",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D9/D0/280x210/crop/-/rBXRDGrkhbaAduS3AAHfh03Wmm0290.jpg" },
         {
             "id":  "6575433", "title":  "每体：巴萨边后卫位置因伤致人员不足，召吉列姆-维克托补训",
             "url":  "https://www.dongqiudi.com/articles/6575433.html", "time":  "2026-10-29 22:49",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6460866", "title":  "🔴🔵 亚马尔自曝15岁时曾被停赛！布斯克茨的一番...",
             "url":  "https://www.dongqiudi.com/articles/6460866.html", "time":  "2026-10-10 09:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/D3/280x210/crop/-/rBXRDGrJkweAOGl0AAYakJu7Prc42.jpeg" },
-        {
-            "id":  "6460714", "title":  "巴萨为佩德罗举行了退役纪念仪式，蒂亚戈、德科、普...",
-            "url":  "https://www.dongqiudi.com/articles/6460714.html", "time":  "2026-10-10 08:36",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/BA/280x210/crop/-/rBXRDGrJhvaALrhvACU1zrKGWnw302.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/D3/280x210/crop/-/rBXRDGrJkweAOGl0AAYakJu7Prc42.jpeg" }
     ]
 };

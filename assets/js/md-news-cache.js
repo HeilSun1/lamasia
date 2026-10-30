@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-30 09:42:43 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-30 21:02:42 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-30 09:42:43",
+    "updated":  "2026-10-30 21:02:42",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "title":  "Los niños criados por el Barça, camino de conquistar la NBA: ¡uno hasta cobra más que LeBron James!",
+            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "time":  "2026-10-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/30/6ae40c1651de8.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004244328/ebrima-tunkara-llamada-especial-comida-sorpresa.html", "title":  "Ebrima Tunkara: una llamada especial y una comida sorpresa",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261028/1004244328/ebrima-tunkara-llamada-especial-comida-sorpresa.html", "time":  "2026-10-28 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "title":  "Observatori Blaugrana: notable de los socios a la junta del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "time":  "2026-09-12 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/16/69b742d65a68b.r_d.809-541-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "title":  "Preparen las palomitas",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226029/momento-dulce.html", "time":  "2026-09-12 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/16/69b742d65a68b.r_d.809-541-7500.jpeg" }
     ]
 };

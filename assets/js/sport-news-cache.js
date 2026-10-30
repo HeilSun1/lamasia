@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-30 09:42:41 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-30 21:02:38 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-30 09:42:41",
+    "updated":  "2026-10-30 21:02:38",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "135922627", "title":  "El hijo de Juan Carlos Unzué da el salto al Barça Atlètic como entrenador de porteros",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-juan-carlos-unzue-da-135922627", "time":  "2026-10-30 11:54",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7f45ba2-2e57-4ef0-b9f9-d257848a8d9f_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "135775112", "title":  "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/aran-aparicio-zurda-estetica-masia-135775112", "time":  "2026-10-27 11:15",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134962582", "title":  "Debut ilusionante de Mika Baza, el gigante alemán por el que apuesta el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-ilusionante-mika-baza-gigante-134962582", "time":  "2026-10-03 16:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1e08d12e-815f-49a2-b767-f62e330f5074_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134943214", "title":  "El Barça perdonó al Betis y está al borde del KO en La Liga FC Futures",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-perdono-borde-ko-liga-futures-empate-betis-134943214", "time":  "2026-10-02 18:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f85f045-e7fa-4dff-bcd0-0d49a164bde3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1e08d12e-815f-49a2-b767-f62e330f5074_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
