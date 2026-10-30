@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-30 21:02:42 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-30 20:54:26 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-30 21:02:42",
+    "updated":  "2026-10-30 20:54:26",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245075/guillem-victor-decada-cule-sueno-cumplir.html", "title":  "Guillem Víctor, una década como culé y un sueño a punto de cumplirse",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245075/guillem-victor-decada-cule-sueno-cumplir.html", "time":  "2026-10-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/30/6ae4afe2e553b.r_d.995-543-6250.png" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245041/flick-ve-farinas-titular-deja-aire-presencia-balde.html", "title":  "Flick ve a Fariñas de lateral y deja en el aire la presencia de Balde",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245041/flick-ve-farinas-titular-deja-aire-presencia-balde.html", "time":  "2026-10-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e67eeb876.r_d.1398-1011-4378.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245027/salen-luz-imagenes-conjura-jugadores-barca.html", "title":  "Salen a la luz imágenes de la conjura de los jugadores del Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245027/salen-luz-imagenes-conjura-jugadores-barca.html", "time":  "2026-10-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/30/6ae482f0bd0b5.r_d.907-400-10772.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "title":  "Los niños criados por el Barça, camino de conquistar la NBA: ¡uno hasta cobra más que LeBron James!",
             "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "time":  "2026-10-30 12:00",
@@ -191,18 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "title":  "Sergio Canales: Me quería fichar el Barça, fui con mis padres a La Masía y quería quedarme",
             "url":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "time":  "2026-09-15 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c6075972e9.r_d.1470-830-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227271/reclamo-yamal.html", "title":  "El reclamo de Yamal",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227271/reclamo-yamal.html", "time":  "2026-09-15 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/16/611a997f67b35.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "title":  "Un mago en el Real Zaragoza: la primera exhibición de Jaume Jardí",
-            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20260914/1004227175/mago-real-zaragoza-primera-exhibicion-jaume-jardi.html", "time":  "2026-09-14 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa80fead4663.r_d.594-685-10152.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "title":  "Observatori Blaugrana: notable de los socios a la junta del Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226212/observatori-blaugrana-notable-socios-junta-barca.html", "time":  "2026-09-12 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/16/69b742d65a68b.r_d.809-541-7500.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c6075972e9.r_d.1470-830-4000.jpeg" }
     ]
 };

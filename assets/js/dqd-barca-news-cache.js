@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-30 21:01:01 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-30 20:54:00 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-30 21:01:01",
+    "updated":  "2026-10-30 20:54:00",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6580924", "title":  "官方：巴萨与青训门将伊克尔-罗德里格斯续约至2029年",
+            "url":  "https://www.dongqiudi.com/articles/6580924.html", "time":  "2026-10-31 01:51",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/2C/280x210/crop/-/rBXRn2rk2LeAOqfXAAG97NVT51A268.jpg" },
+        {
+            "id":  "6579560", "title":  "弗里克：凯恩配得上拿金球，亚马尔的水平也足以获奖",
+            "url":  "https://www.dongqiudi.com/articles/6579560.html", "time":  "2026-10-30 22:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D9/F4/280x210/crop/-/rBXRDGrkoIqAGvw3AAFIc7VCwFg792.jpg" },
         {
             "id":  "6579464", "title":  "世体：孔德因伤缺席训练，弗里克补招二队吉列姆和坎波斯",
             "url":  "https://www.dongqiudi.com/articles/6579464.html", "time":  "2026-10-30 21:00",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6467827", "title":  "巴萨竞技在第90分钟打入绝杀进球，帮助球队巩固了...",
             "url":  "https://www.dongqiudi.com/articles/6467827.html", "time":  "2026-10-11 10:36",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/11/ae033d9214d61c1430c2ab3547fa688fvkqhjv_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6460911", "title":  "传奇重逢二缺一。",
-            "url":  "https://www.dongqiudi.com/articles/6460911.html", "time":  "2026-10-10 09:42",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/10/d268e8dc5880d1e4fb3cf41dde4b5d0dXvz62A_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6460866", "title":  "🔴🔵 亚马尔自曝15岁时曾被停赛！布斯克茨的一番...",
-            "url":  "https://www.dongqiudi.com/articles/6460866.html", "time":  "2026-10-10 09:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A9/D3/280x210/crop/-/rBXRDGrJkweAOGl0AAYakJu7Prc42.jpeg" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/11/ae033d9214d61c1430c2ab3547fa688fvkqhjv_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
     ]
 };

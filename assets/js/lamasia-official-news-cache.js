@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-30 21:02:19 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-10-30 20:54:23 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-10-30 21:02:19",
+    "updated":  "2026-10-30 20:54:23",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4601665", "title":  "Iker Rodríguez, blaugrana until 2029",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4601665/iker-rodriguez-blaugrana-until-2029", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2351d71a-bc34-46fa-9230-bc4d5d472d9b/2610_FUT_ATL_Web_Fitxes_Jugadors_Web_Hero_3200x2000_01_CAT_Iker.jpg" },
             {
                 "id":  "4598544", "title":  "UE Olot 2-0 Barça Atlètic: First defeat",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4598544/ue-olot-2-0-barca-atletic-first-defeat", "time":  "",
@@ -155,9 +159,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601420/last-session-before-alaves", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2419ce97-233d-4906-8ba9-aeab05b46aaa/WhatsApp-Image-2026-10-30-at-12.56.31.jpeg" },
             {
-                "id":  "4601455", "title":  "Flick: 'We want show our best'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-show-our-best", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/981338f5-89bd-42f0-a79e-e36ea01a8a78/_MGA2517.jpg" },
+                "id":  "4601455", "title":  "Flick: 'We want to show our best'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-to-show-our-best", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/29986bc5-0e42-4710-ab69-09b901a2a320/_MGA0513-2-.jpg" },
             {
                 "id":  "4601412", "title":  "Dani Olmo celebrates 100 games",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601412/dani-olmo-reaches-100-games-for-fc-barcelona", "time":  "",

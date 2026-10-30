@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-30 21:02:38 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-30 20:54:24 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-30 21:02:38",
+    "updated":  "2026-10-30 20:54:24",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135938003", "title":  "Orian Goren se suma al Barça Atlètic para recibir al Arnedo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-suma-barca-atletic-135938003", "time":  "2026-10-30 18:43",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135938284", "title":  "El Barça renueva al nuevo Víctor Valdés",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-nuevo-victor-135938284", "time":  "2026-10-30 19:38",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135922627", "title":  "El hijo de Juan Carlos Unzué da el salto al Barça Atlètic como entrenador de porteros",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-juan-carlos-unzue-da-135922627", "time":  "2026-10-30 11:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7f45ba2-2e57-4ef0-b9f9-d257848a8d9f_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7f45ba2-2e57-4ef0-b9f9-d257848a8d9f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135775112", "title":  "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/aran-aparicio-zurda-estetica-masia-135775112", "time":  "2026-10-27 11:15",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134962438", "title":  "Tudelano-Barça Atlètic: El liderato en juego con un filial en cuadro",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-liderato-juego-134962438", "time":  "2026-10-03 17:02",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134964571", "title":  "Un Destiny a lo 'Ronaldo Nazario' clasifica al Barça para los cuartos de La Liga FC Futures",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/destiny-ronaldo-nazario-clasifica-barca-134964571", "time":  "2026-10-03 19:04",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/05ad3135-a3b5-46d8-8f9a-770a2ee66745_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134962582", "title":  "Debut ilusionante de Mika Baza, el gigante alemán por el que apuesta el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/debut-ilusionante-mika-baza-gigante-134962582", "time":  "2026-10-03 16:25",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1e08d12e-815f-49a2-b767-f62e330f5074_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
