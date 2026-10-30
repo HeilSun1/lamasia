@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U13（Infantil B） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-29 21:05 */
+/* 自动生成，请勿手动编辑 —— U13（Infantil B） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-10-30 09:45 */
 window.ELFUTBOL_INFANTIL_B_DETAILS_CACHE = {
     "fcb:infantil-b:1":  {
                              "lineups":  {
