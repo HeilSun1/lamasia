@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-31 09:02:21 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-10-31 20:06:16 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-10-31 09:02:21",
+    "updated":  "2026-10-31 20:06:16",
     "source":  "md",
     "count":  50,
     "news":  [
@@ -16,6 +16,10 @@ window.MD_NEWS = {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245027/salen-luz-imagenes-conjura-jugadores-barca.html", "title":  "Salen a la luz imágenes de la conjura de los jugadores del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245027/salen-luz-imagenes-conjura-jugadores-barca.html", "time":  "2026-10-30 12:00",
             "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/30/6ae482f0bd0b5.r_d.907-400-10772.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004244897/pere-romeu-100-victorias-barca.html", "title":  "Pere Romeu, 100 victorias con el Barça",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004244897/pere-romeu-100-victorias-barca.html", "time":  "2026-10-30 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/26/6adf94a482e74.r_d.1609-1100-4000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "title":  "Los niños criados por el Barça, camino de conquistar la NBA: ¡uno hasta cobra más que LeBron James!",
             "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261030/1004244878/ninos-prodigio-barca-camino-invadir-nba-encima-lebron-james.html", "time":  "2026-10-30 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "title":  "El objetivo del ‘sorpasso’",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "time":  "2026-09-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "title":  "Sergio Canales: Me quería fichar el Barça, fui con mis padres a La Masía y quería quedarme",
-            "url":  "https://www.mundodeportivo.com/futbol/20260915/1004227370/sergio-canales-me-queria-fichar-barca-mis-padres-masia-queria-quedarme.html", "time":  "2026-09-15 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c6075972e9.r_d.1470-830-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" }
     ]
 };

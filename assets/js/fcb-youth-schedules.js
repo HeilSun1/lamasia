@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-31 09:02；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-10-31 20:07；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-10-31 09:02:11",
+    "updated":  "2026-10-31 20:07:48",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -186,9 +186,9 @@ window.LAMASIA_SCHEDULES = {
                                           "away":  "Zaragoza",
                                           "homeId":  "8470",
                                           "awayId":  "7647",
-                                          "hs":  "",
-                                          "as":  "",
-                                          "status":  "Not started",
+                                          "hs":  "1",
+                                          "as":  "1",
+                                          "status":  "Ended",
                                           "code":  "0",
                                           "isHome":  true,
                                           "venue":  "Ciutat Esportiva Joan Gamper"
@@ -1304,7 +1304,7 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰优选联赛 Cadete G1",
                                          "compEn":  "Preferente Catalana Cadete G.1",
                                          "round":  "7",
-                                         "start":  "1794063600",
+                                         "start":  "1794075300",
                                          "date":  "2026-11-07",
                                          "tbd":  false,
                                          "home":  "FPFB Reus Deportiu A",
@@ -1883,9 +1883,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11714",
                                          "awayId":  "11113",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "0",
+                                         "as":  "0",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "Gimnastic Parc"
@@ -2455,9 +2455,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Gimnàstic Tarragona A",
                                            "homeId":  "11114",
                                            "awayId":  "11726",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "6",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"
@@ -3027,9 +3027,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "FC Barcelona A",
                                            "homeId":  "14872",
                                            "awayId":  "11115",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "1",
+                                           "as":  "0",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  false,
                                            "venue":  ""
@@ -3670,7 +3670,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "11",
                                           "start":  "1795950000",
                                           "date":  "2026-11-29",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "FC Barcelona B",
                                           "away":  "Castelldefels A",
                                           "homeId":  "11110",

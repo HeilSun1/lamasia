@@ -1,17 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-31 09:02:17 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-31 20:06:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-31 09:02:17",
+    "updated":  "2026-10-31 20:06:14",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135957154", "title":  "Pinchazo inmerecido del Juvenil A contra el Zaragoza",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pinchazo-inmerecido-juvenil-zaragoza-135957154", "time":  "2026-10-31 16:50",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135957070", "title":  "Barça Atlètic - CD Arnedo, en directo hoy: partido de la Segunda RFEF, en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-arnedo-directo-135957070", "time":  "2026-10-31 16:33",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "135953008", "title":  "Onstein vuelve a escena en el Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-vuelve-escena-barca-atletic-135953008", "time":  "2026-10-31 13:42",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c4766930-8fbe-40d6-90d3-b08b51eee60c_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "135942468", "title":  "¿Quiénes son los tres jugadores del Barça campeones del mundo sub-15?",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/son-tres-jugadores-barca-campeones-135942468", "time":  "2026-10-31 07:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c41c689-4179-4755-abf8-5dd98c3d8d8b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135938003", "title":  "Orian Goren se suma al Barça Atlètic para recibir al Arnedo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-suma-barca-atletic-135938003", "time":  "2026-10-30 18:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135938284", "title":  "El Barça renueva al nuevo Víctor Valdés",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-nuevo-victor-135938284", "time":  "2026-10-30 19:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135922627", "title":  "El hijo de Juan Carlos Unzué da el salto al Barça Atlètic como entrenador de porteros",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-juan-carlos-unzue-da-135922627", "time":  "2026-10-30 11:54",
@@ -187,22 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134994665", "title":  "Remontada en el barro y el Barça Atlètic sigue imparable",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/remontada-barro-barca-atletic-sigue-134994665", "time":  "2026-10-04 18:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134994351", "title":  "La expulsión de Guerrero condena al Juvenil A del Barça en Sabadell",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/expulsion-guerrero-condena-juvenil-barca-134994351", "time":  "2026-10-04 16:19",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/67a7c63a-628f-46b3-b2b1-aa46fee71bc2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134992999", "title":  "Tudelano - Barça Atlètic, en directo hoy: partido de la Segunda RFEF, en vivo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-directo-hoy-134992999", "time":  "2026-10-04 18:46",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/eaefb446-fc31-4622-a038-63841569c6a3_16-9-aspect-ratio_640w_0_x990y465.webp" },
-        {
-            "id":  "134968148", "title":  "Eliminación injusta del Barça en La Liga FC Futures",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eliminacion-injusta-barca-liga-fc-134968148", "time":  "2026-10-03 23:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9fb1fc05-d216-46f8-b67e-fd70e6c0eae3_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134962438", "title":  "Tudelano-Barça Atlètic: El liderato en juego con un filial en cuadro",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/tudelano-barca-atletic-liderato-juego-134962438", "time":  "2026-10-03 17:02",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/41f92fa4-e9a3-454b-ae05-22f220cb68e4_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-31 09:00:53 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-31 20:05:46 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-31 09:00:53",
+    "updated":  "2026-10-31 20:05:46",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6586338", "title":  "每体：奥恩斯泰因、阿维拉复出，入选巴萨竞技名单",
+            "url":  "https://www.dongqiudi.com/articles/6586338.html", "time":  "2026-11-01 01:07",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/49/280x210/crop/-/rBXRn2rmHOiALN2hAAEKBIfLaRc673.jpg" },
+        {
+            "id":  "6584618", "title":  "巴萨对阵阿拉维斯大名单：亚马尔、拉菲尼亚在列，孔德缺阵",
+            "url":  "https://www.dongqiudi.com/articles/6584618.html", "time":  "2026-10-31 20:45",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DB/EF/280x210/crop/-/rBXRDGrl4sWAI_EcAAyJ49BVJ74203.jpg" },
+        {
+            "id":  "6583703", "title":  "阿斯：马竞也在密切关注利桑德罗-马丁内斯",
+            "url":  "https://www.dongqiudi.com/articles/6583703.html", "time":  "2026-10-31 17:48",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DB/97/280x210/crop/-/rBXRDGrlqlSABOz3AAGDVhw9OGs200.jpg" },
         {
             "id":  "6580924", "title":  "官方：巴萨与青训门将伊克尔-罗德里格斯续约至2029年",
             "url":  "https://www.dongqiudi.com/articles/6580924.html", "time":  "2026-10-31 01:51",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6475057", "title":  "每体：波黑国家队总监到场考察恰托维奇，巴萨满意其表现",
             "url":  "https://www.dongqiudi.com/articles/6475057.html", "time":  "2026-10-12 17:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" },
-        {
-            "id":  "6474228", "title":  "每体：19岁的中后卫昂斯坦伤愈复出，即将代表巴萨...",
-            "url":  "https://www.dongqiudi.com/articles/6474228.html", "time":  "2026-10-12 10:41",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AF/55/280x210/crop/-/rBXRDGrMSMaAPN7lAACFPDkHDRI269.jpg" },
-        {
-            "id":  "6469356", "title":  "通卡拉更新ins：感谢上帝，我们又回来啦！接下来...",
-            "url":  "https://www.dongqiudi.com/articles/6469356.html", "time":  "2026-10-11 18:10",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AD/6E/280x210/crop/-/rBXRn2rLYE-AYslzADTdVRr3s2Y749.jpg" },
-        {
-            "id":  "6467827", "title":  "巴萨竞技在第90分钟打入绝杀进球，帮助球队巩固了...",
-            "url":  "https://www.dongqiudi.com/articles/6467827.html", "time":  "2026-10-11 10:36",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/11/ae033d9214d61c1430c2ab3547fa688fvkqhjv_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" }
     ]
 };
