@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-01 21:57:12 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-01 20:37:13 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-01 21:57:12",
+    "updated":  "2026-11-01 20:37:13",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135981125", "title":  "Sergi Mayans, el central zurdo más poderoso de La Masia, encandila a Belletti y apunta a Flick",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sergi-mayans-central-zurdo-poderoso-135981125", "time":  "2026-11-01 19:14",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/aa49c550-503f-4a92-8c2a-50919f56259b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135957854", "title":  "El Barça Atlètic se agarra a Àlex González y a Iker Rodríguez para ganar al colista y seguir líder",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-agarra-alex-gonzalez-135957854", "time":  "2026-10-31 20:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a6c5f3f-53d5-4788-9837-a27b54d795c2_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a6c5f3f-53d5-4788-9837-a27b54d795c2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135957154", "title":  "Pinchazo inmerecido del Juvenil A contra el Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pinchazo-inmerecido-juvenil-zaragoza-135957154", "time":  "2026-10-31 16:50",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134991575", "title":  "Los prodigios de La Masia Destiny y Hugo Galdeano deslumbran en Orlando",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/prodigios-masia-destiny-hugo-galdeano-134991575", "time":  "2026-10-05 07:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/af234764-4d31-4b8b-acb0-26df77ebc278_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 19:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/af234764-4d31-4b8b-acb0-26df77ebc278_16-9-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

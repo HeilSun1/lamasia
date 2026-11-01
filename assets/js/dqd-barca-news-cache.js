@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-01 21:55:37 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-01 20:36:47 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-01 21:55:37",
+    "updated":  "2026-11-01 20:36:47",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6591541", "title":  "每体：克里斯滕森回归合练，但本周欧冠复出渺茫",
+            "url":  "https://www.dongqiudi.com/articles/6591541.html", "time":  "2026-11-01 22:25",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C3/0B/280x210/crop/-/rBXRDGrXF8SAZHsyAANum8eiva0688.jpg" },
         {
             "id":  "6588656", "title":  "【球星采访系列】哈维：布斯克茨最佳",
             "url":  "https://www.dongqiudi.com/articles/6588656.html", "time":  "2026-11-01 07:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6478452", "title":  "世体：皮克、布斯克茨等球星观摩比赛，修读欧足联职业级证书",
             "url":  "https://www.dongqiudi.com/articles/6478452.html", "time":  "2026-10-13 10:32",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/B6/280x210/crop/-/rBXRn2rNlimAMrMxAAB7do6NTls586.jpg" },
-        {
-            "id":  "6478341", "title":  "库巴西与肖恩-克鲁伊维特。",
-            "url":  "https://www.dongqiudi.com/articles/6478341.html", "time":  "2026-10-13 09:30",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/9D/280x210/crop/-/rBXRn2rNicKAC1MFAAMNzsYtOBk041.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/B6/280x210/crop/-/rBXRn2rNlimAMrMxAAB7do6NTls586.jpg" }
     ]
 };
