@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-01 09:50 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-01 21:56 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-01 09:50:14",
+    "updated":  "2026-11-01 21:56:39",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -825,6 +825,21 @@ window.DQD_U16_CACHE = {
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "17465519",
+                        "comp":  "U16 梅西杯, Copa Oro, 5th-8th Place Playoffs",
+                        "round":  "50",
+                        "start":  "1793552400",
+                        "home":  "Barcelona U16",
+                        "away":  "Benfica U16",
+                        "homeId":  "933329",
+                        "awayId":  "1160136",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     },
                     {
                         "id":  "17417351",
