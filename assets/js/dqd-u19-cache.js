@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-10-31 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-01 09:49 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-10-31 09:01:12",
+    "updated":  "2026-11-01 09:49:34",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -71,6 +71,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-05-13",
                         "foot":  "右脚",
                         "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Roberto Tomás",
+                        "id":  "2607839",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "右脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -191,21 +206,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-08-08",
                         "foot":  "右脚",
                         "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Roberto Tomás",
-                        "id":  "2607839",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-02-20",
-                        "foot":  "右脚",
-                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -465,6 +465,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Alex Cami",
+                        "id":  "2875349",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2875349/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-02",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Max Bonfill",
                         "id":  "1620575",
                         "pos":  "G",
@@ -519,6 +534,21 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2604387/image",
                         "age":  "",
                         "birthday":  "",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Guillem Victor Delgado",
+                        "id":  "2875346",
+                        "pos":  "",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2875346/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-05-03",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -685,10 +715,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Real Zaragoza U19",
                         "homeId":  "90128",
                         "awayId":  "285861",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "1",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {

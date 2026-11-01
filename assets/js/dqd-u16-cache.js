@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-10-31 09:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-01 09:50 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-10-31 09:02:00",
+    "updated":  "2026-11-01 09:50:14",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -75,21 +75,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Alex Arasa",
-                        "id":  "2410977",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2410977/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-10",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Alejandro Fernández",
                         "id":  "2410987",
                         "pos":  "F",
@@ -99,6 +84,21 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2410987/image",
                         "age":  "16岁",
                         "birthday":  "2010-01-09",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Alex Arasa",
+                        "id":  "2410977",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2410977/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-10",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -128,7 +128,7 @@ window.DQD_U16_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2690301/image",
                         "age":  "15岁",
-                        "birthday":  "2011-04-01",
+                        "birthday":  "2011-03-31",
                         "foot":  "",
                         "height":  "",
                         "value":  "",
@@ -247,7 +247,7 @@ window.DQD_U16_CACHE = {
                         "team":  "Barcelona U16",
                         "nation":  "Poland",
                         "photo":  "https://img.sofascore.com/api/v1/player/2411452/image",
-                        "age":  "15岁",
+                        "age":  "16岁",
                         "birthday":  "2010-11-01",
                         "foot":  "右脚",
                         "height":  "",
@@ -820,8 +820,8 @@ window.DQD_U16_CACHE = {
                         "away":  "Barcelona U16",
                         "homeId":  "511108",
                         "awayId":  "933329",
-                        "hs":  "11",
-                        "as":  "0",
+                        "hs":  "6",
+                        "as":  "1",
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  false

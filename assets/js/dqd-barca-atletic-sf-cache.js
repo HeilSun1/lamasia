@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-10-31 09:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-01 09:49 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-10-31 09:00:52",
+    "updated":  "2026-11-01 09:49:05",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -155,36 +155,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Jesse Bisiwu",
-                        "id":  "1506988",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Belgium",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-22",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "780万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Ebrima Tunkara",
-                        "id":  "2128084",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-10",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "520万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Aziz Issah",
                         "id":  "1457200",
                         "pos":  "M",
@@ -335,21 +305,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Patricio Pacifico",
-                        "id":  "1482410",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Uruguay",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
-                        "age":  "20岁",
-                        "birthday":  "2006-04-08",
-                        "foot":  "左脚",
-                        "height":  "187",
-                        "value":  "68万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Josue Caicedo",
                         "id":  "2219071",
                         "pos":  "D",
@@ -395,21 +350,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Guillem Víctor",
-                        "id":  "1590920",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1590920/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-05-03",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "54万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Javi Castro",
                         "id":  "2679424",
                         "pos":  "D",
@@ -452,36 +392,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "184",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Eder Aller",
-                        "id":  "1929977",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-04-04",
-                        "foot":  "右脚",
-                        "height":  "194",
-                        "value":  "10万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Iker Rodríguez",
-                        "id":  "1926093",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-22",
-                        "foot":  "右脚",
-                        "height":  "187",
-                        "value":  "10万",
                         "injury":  null
                     },
                     {
@@ -720,10 +630,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "CD Arnedo",
                         "homeId":  "24343",
                         "awayId":  "263589",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "2",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
@@ -745,7 +655,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16742262",
                         "comp":  "西协乙",
                         "round":  "11",
-                        "start":  "1794758400",
+                        "start":  "1794675600",
                         "home":  "Barcelona Atlètic",
                         "away":  "Girona B",
                         "homeId":  "24343",

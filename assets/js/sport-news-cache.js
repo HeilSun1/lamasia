@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-10-31 20:06:14 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-01 09:50:29 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-10-31 20:06:14",
+    "updated":  "2026-11-01 09:50:29",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135957854", "title":  "El Barça Atlètic se agarra a Àlex González y a Iker Rodríguez para ganar al colista y seguir líder",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-agarra-alex-gonzalez-135957854", "time":  "2026-10-31 20:24",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a6c5f3f-53d5-4788-9837-a27b54d795c2_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135957154", "title":  "Pinchazo inmerecido del Juvenil A contra el Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pinchazo-inmerecido-juvenil-zaragoza-135957154", "time":  "2026-10-31 16:50",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135957070", "title":  "Barça Atlètic - CD Arnedo, en directo hoy: partido de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-arnedo-directo-135957070", "time":  "2026-10-31 16:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135953008", "title":  "Onstein vuelve a escena en el Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-vuelve-escena-barca-atletic-135953008", "time":  "2026-10-31 13:42",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "134878291", "title":  "Horarios y resultados de LaLiga FC Futures Internacional Sub-13: fechas del torneo y dónde ver los partidos hoy en directo y por TV",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horarios-resultados-laliga-fc-futures-internacional-fechas-donde-ver-directo-tv-134878291", "time":  "2026-10-04 19:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" },
-        {
-            "id":  "134994665", "title":  "Remontada en el barro y el Barça Atlètic sigue imparable",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/remontada-barro-barca-atletic-sigue-134994665", "time":  "2026-10-04 18:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ba363b0a-1743-45ba-af6e-78ef75e9808a_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/862bf708-39ad-46df-9f0e-85f3b598a60f_16-9-discover-aspect-ratio_640w_0_x450y168.webp" }
     ]
 };

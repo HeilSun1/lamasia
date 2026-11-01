@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-10-31 09:03 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-11-01 09:51 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-10-31 09:03:12",
+    "updated":  "2026-11-01 09:51:09",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -429,52 +429,22 @@ window.DQD_VIDEOS_CACHE = {
                 },
     "feed":  {
                  "players":  {
-                                 "b:50855329":  [
+                                 "b:50892327":  [
                                                     {
-                                                        "date":  "2026-10-20",
-                                                        "opp":  "Psg",
-                                                        "label":  "vs Psg · 10-20",
+                                                        "date":  "2026-11-01",
+                                                        "opp":  "",
+                                                        "label":  "11-01 · 季前赛/友谊赛",
                                                         "matchKey":  "",
                                                         "videos":  [
                                                                        {
-                                                                           "videoId":  "9Z_b04pdYHA",
-                                                                           "title":  "Pedro Rodriguez vs PSG U19",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-10-20",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-10-17",
-                                                        "opp":  "Utebo FC",
-                                                        "label":  "vs Utebo FC · 10-17",
-                                                        "matchKey":  "sfb:16742273",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "VSpkODvTG50",
-                                                                           "title":  "Pedro Rodriguez vs Utebo FC",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-10-17",
-                                                                           "durationSec":  ""
-                                                                       }
-                                                                   ]
-                                                    },
-                                                    {
-                                                        "date":  "2026-10-14",
-                                                        "opp":  "Galatasaray U19",
-                                                        "label":  "10-14 · 集锦",
-                                                        "matchKey":  "",
-                                                        "videos":  [
-                                                                       {
-                                                                           "videoId":  "1bWkKtHqNpE",
-                                                                           "title":  "Barcelona U19 1-0 Galatasaray U19 | UEFA Youth League Match Highlights | 2026-2027 | Pedro Rodriguez",
-                                                                           "channel":  "ArsenKveFCB",
-                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                           "published":  "2026-10-14",
-                                                                           "durationSec":  ""
+                                                                           "videoId":  "BV1XqxW6xEyx",
+                                                                           "title":  "巴萨 B 队 比利时边锋 比西武 本场集锦",
+                                                                           "channel":  "13站一直吞我評論",
+                                                                           "channelId":  "",
+                                                                           "published":  "2026-11-01",
+                                                                           "durationSec":  "183",
+                                                                           "site":  "bili",
+                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/7c1ef860adbff2e390c1424b678912cad5d3f389.jpg"
                                                                        }
                                                                    ]
                                                     }
@@ -666,6 +636,22 @@ window.DQD_VIDEOS_CACHE = {
                                  "local:juvenil-a:babakourouma":  [
                                                                       {
                                                                           "date":  "2026-10-11",
+                                                                          "opp":  "Racing Club Zaragoza",
+                                                                          "label":  "vs Racing Club Zaragoza · 10-11",
+                                                                          "matchKey":  "sofascore:16539917",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "5y9EcbDUetY",
+                                                                                             "title":  "Baba Kourouma vs Racing Club Zaragoza",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-10-11",
+                                                                                             "durationSec":  ""
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-10-11",
                                                                           "opp":  "",
                                                                           "label":  "10-11 · 季前赛/友谊赛",
                                                                           "matchKey":  "",
@@ -679,22 +665,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "durationSec":  "154",
                                                                                              "site":  "bili",
                                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/fb4c0969cc812ba5b7149e150036c1d0cbaa6f23.jpg"
-                                                                                         }
-                                                                                     ]
-                                                                      },
-                                                                      {
-                                                                          "date":  "2026-10-11",
-                                                                          "opp":  "Racing Club Zaragoza",
-                                                                          "label":  "vs Racing Club Zaragoza · 10-11",
-                                                                          "matchKey":  "sofascore:16539917",
-                                                                          "videos":  [
-                                                                                         {
-                                                                                             "videoId":  "5y9EcbDUetY",
-                                                                                             "title":  "Baba Kourouma vs Racing Club Zaragoza",
-                                                                                             "channel":  "ArsenKveFCB",
-                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                             "published":  "2026-10-11",
-                                                                                             "durationSec":  ""
                                                                                          }
                                                                                      ]
                                                                       },
@@ -768,22 +738,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                        },
                                                                        {
                                                                            "date":  "2026-10-10",
-                                                                           "opp":  "SD Logroñés",
-                                                                           "label":  "vs SD Logroñés · 10-10",
-                                                                           "matchKey":  "sfb:16741973",
-                                                                           "videos":  [
-                                                                                          {
-                                                                                              "videoId":  "AsLEVTTADHk",
-                                                                                              "title":  "Ebrima Tunkara vs SD Logroñés",
-                                                                                              "channel":  "ArsenKveFCB",
-                                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                              "published":  "2026-10-10",
-                                                                                              "durationSec":  ""
-                                                                                          }
-                                                                                      ]
-                                                                       },
-                                                                       {
-                                                                           "date":  "2026-10-10",
                                                                            "opp":  "",
                                                                            "label":  "10-10 · 集锦",
                                                                            "matchKey":  "",
@@ -797,6 +751,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                               "durationSec":  "32",
                                                                                               "site":  "bili",
                                                                                               "pic":  "https://i2.hdslb.com/bfs/archive/facc32c48aa76f22ff09d30be0982773231a72b0.jpg"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                                       {
+                                                                           "date":  "2026-10-10",
+                                                                           "opp":  "SD Logroñés",
+                                                                           "label":  "vs SD Logroñés · 10-10",
+                                                                           "matchKey":  "sfb:16741973",
+                                                                           "videos":  [
+                                                                                          {
+                                                                                              "videoId":  "AsLEVTTADHk",
+                                                                                              "title":  "Ebrima Tunkara vs SD Logroñés",
+                                                                                              "channel":  "ArsenKveFCB",
+                                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                              "published":  "2026-10-10",
+                                                                                              "durationSec":  ""
                                                                                           }
                                                                                       ]
                                                                        },
@@ -1381,6 +1351,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -1401,24 +1389,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -1462,22 +1432,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                     },
                                                                     {
                                                                         "date":  "2026-10-03",
-                                                                        "opp":  "UE Olot",
-                                                                        "label":  "vs UE Olot · 10-03",
-                                                                        "matchKey":  "",
-                                                                        "videos":  [
-                                                                                       {
-                                                                                           "videoId":  "7muT5baINFU",
-                                                                                           "title":  "Noah Garcia vs UE Olot",
-                                                                                           "channel":  "ArsenKveFCB",
-                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                           "published":  "2026-10-03",
-                                                                                           "durationSec":  ""
-                                                                                       }
-                                                                                   ]
-                                                                    },
-                                                                    {
-                                                                        "date":  "2026-10-03",
                                                                         "opp":  "",
                                                                         "label":  "10-03 · 季前赛/友谊赛",
                                                                         "matchKey":  "",
@@ -1491,6 +1445,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                            "durationSec":  "151",
                                                                                            "site":  "bili",
                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/e9cee9dc83bfe9faec28653ebea4ec9879389a6b.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                                    {
+                                                                        "date":  "2026-10-03",
+                                                                        "opp":  "UE Olot",
+                                                                        "label":  "vs UE Olot · 10-03",
+                                                                        "matchKey":  "",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "7muT5baINFU",
+                                                                                           "title":  "Noah Garcia vs UE Olot",
+                                                                                           "channel":  "ArsenKveFCB",
+                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                           "published":  "2026-10-03",
+                                                                                           "durationSec":  ""
                                                                                        }
                                                                                    ]
                                                                     },
@@ -1556,6 +1526,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                    },
                                                                    {
                                                                        "date":  "2026-09-27",
+                                                                       "opp":  "Ff Reus",
+                                                                       "label":  "vs Ff Reus · 09-27",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "Ci-nblE4MLY",
+                                                                                          "title":  "Pau Berges vs FF Reus",
+                                                                                          "channel":  "ArsenKveFCB",
+                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                          "published":  "2026-09-27",
+                                                                                          "durationSec":  ""
+                                                                                      }
+                                                                                  ]
+                                                                   },
+                                                                   {
+                                                                       "date":  "2026-09-27",
                                                                        "opp":  "",
                                                                        "label":  "09-27 · 季前赛/友谊赛",
                                                                        "matchKey":  "",
@@ -1569,22 +1555,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                           "durationSec":  "152",
                                                                                           "site":  "bili",
                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/b456960a5beb637e9c318faa9ac0ed730cd32791.jpg"
-                                                                                      }
-                                                                                  ]
-                                                                   },
-                                                                   {
-                                                                       "date":  "2026-09-27",
-                                                                       "opp":  "Ff Reus",
-                                                                       "label":  "vs Ff Reus · 09-27",
-                                                                       "matchKey":  "",
-                                                                       "videos":  [
-                                                                                      {
-                                                                                          "videoId":  "Ci-nblE4MLY",
-                                                                                          "title":  "Pau Berges vs FF Reus",
-                                                                                          "channel":  "ArsenKveFCB",
-                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                          "published":  "2026-09-27",
-                                                                                          "durationSec":  ""
                                                                                       }
                                                                                   ]
                                                                    }
@@ -1677,84 +1647,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "222",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/a13cea8d1bbeacaafd1182ff9918e6e278138351.jpg"
-                                                                         }
-                                                                     ]
-                                                      }
-                                                  ],
-                                 "sf:b:1506988":  [
-                                                      {
-                                                          "date":  "2026-10-26",
-                                                          "opp":  "Olot",
-                                                          "label":  "vs Olot · 10-26",
-                                                          "matchKey":  "sfb:16741974",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "16D7kquYbQ0",
-                                                                             "title":  "Jesse Bisiwu vs Olot",
-                                                                             "channel":  "ArsenKveFCB",
-                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                             "published":  "2026-10-26",
-                                                                             "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-10-17",
-                                                          "opp":  "",
-                                                          "label":  "10-17 · 集锦",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1GLJB6LEbV",
-                                                                             "title":  "比西武突破造点 哈姆扎一蹴而就",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-10-17",
-                                                                             "durationSec":  "97",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/532fa3f424a2f3994ba1489fb882c95042e6ea2e.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-10-17",
-                                                          "opp":  "Utebo FC",
-                                                          "label":  "vs Utebo FC · 10-17",
-                                                          "matchKey":  "sfb:16742273",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1GJJ66nEpL",
-                                                                             "title":  "比西武 vs Utebo FC",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-10-17",
-                                                                             "durationSec":  "157",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/51f40f71d85592be8dc224f5189848dab75df61d.jpg"
-                                                                         },
-                                                                         {
-                                                                             "videoId":  "zLwv0c2zoAg",
-                                                                             "title":  "Jesse Bisiwu vs Utebo FC",
-                                                                             "channel":  "ArsenKveFCB",
-                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                             "published":  "2026-10-17",
-                                                                             "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-09-13",
-                                                          "opp":  "UD Logrones",
-                                                          "label":  "vs UD Logrones · 09-13",
-                                                          "matchKey":  "sfb:16741931",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "N3nOvdSQqNU",
-                                                                             "title":  "Jesse Bisiwu Barca Atletic debut vs UD Logroñés 🔥",
-                                                                             "channel":  "Barca Nation",
-                                                                             "channelId":  "UCvg-GHlxcwO5RATWPdhHGIA",
-                                                                             "published":  "2026-09-13",
-                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       }
@@ -2177,61 +2069,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
-                                 "sf:b:2128084":  [
+                                 "sf:b:2128094":  [
                                                       {
-                                                          "date":  "2026-10-27",
-                                                          "opp":  "奥洛特",
-                                                          "label":  "vs 奥洛特 · 10-27",
+                                                          "date":  "2026-10-20",
+                                                          "opp":  "Psg",
+                                                          "label":  "vs Psg · 10-20",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
-                                                                             "videoId":  "BV1dyxT61EeW",
-                                                                             "title":  "通卡拉VS奥洛特",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-10-27",
-                                                                             "durationSec":  "133",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/697e62d325307d11b77930fda5456a4910a89a80.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-10-10",
-                                                          "opp":  "",
-                                                          "label":  "10-10 · 集锦",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1gZp36kEjX",
-                                                                             "title":  "通卡拉复出 送绝杀助攻",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-10-10",
-                                                                             "durationSec":  "32",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/facc32c48aa76f22ff09d30be0982773231a72b0.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-08-08",
-                                                          "opp":  "Udinese",
-                                                          "label":  "vs Udinese · 08-08",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "9eOLL88phHU",
-                                                                             "title":  "Ebrima Tunkara vs Udinese | 08/08/2026 | 2026-2027",
+                                                                             "videoId":  "epBWiewTy4U",
+                                                                             "title":  "Jordi Pesqeur vs PSG U19",
                                                                              "channel":  "ArsenKveFCB",
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                             "published":  "2026-08-08",
+                                                                             "published":  "2026-10-20",
                                                                              "durationSec":  ""
                                                                          }
                                                                      ]
-                                                      }
-                                                  ],
-                                 "sf:b:2128094":  [
+                                                      },
                                                       {
                                                           "date":  "2026-10-20",
                                                           "opp":  "",
@@ -2247,22 +2101,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "153",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/88a9e1d6b14de90176ace70d64ae27e03c766d49.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-10-20",
-                                                          "opp":  "Psg",
-                                                          "label":  "vs Psg · 10-20",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "epBWiewTy4U",
-                                                                             "title":  "Jordi Pesqeur vs PSG U19",
-                                                                             "channel":  "ArsenKveFCB",
-                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                             "published":  "2026-10-20",
-                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       },
@@ -2525,6 +2363,22 @@ window.DQD_VIDEOS_CACHE = {
                                                     ],
                                  "sf:u19:2229087":  [
                                                         {
+                                                            "date":  "2026-10-31",
+                                                            "opp":  "Real Zaragoza",
+                                                            "label":  "vs Real Zaragoza · 10-31",
+                                                            "matchKey":  "sofascore:16540104",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "Z38YEupWmGM",
+                                                                               "title":  "Nuhu Fofana vs Real Zaragoza",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-10-31",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
                                                             "date":  "2026-10-17",
                                                             "opp":  "",
                                                             "label":  "10-17 · 集锦",
@@ -2558,6 +2412,22 @@ window.DQD_VIDEOS_CACHE = {
                                                         }
                                                     ],
                                  "sf:u19:2272317":  [
+                                                        {
+                                                            "date":  "2026-10-31",
+                                                            "opp":  "Real Zaragoza",
+                                                            "label":  "vs Real Zaragoza · 10-31",
+                                                            "matchKey":  "sofascore:16540104",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "gpbzEOAtzW8",
+                                                                               "title":  "Gorka Buil vs Real Zaragoza",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-10-31",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
                                                         {
                                                             "date":  "2026-08-12",
                                                             "opp":  "",
@@ -2594,6 +2464,22 @@ window.DQD_VIDEOS_CACHE = {
                                                         }
                                                     ],
                                  "sf:u19:2405472":  [
+                                                        {
+                                                            "date":  "2026-10-31",
+                                                            "opp":  "Real Zaragoza",
+                                                            "label":  "vs Real Zaragoza · 10-31",
+                                                            "matchKey":  "sofascore:16540104",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "kz-G8XCMQGI",
+                                                                               "title":  "Iu Martinez vs Real Zaragoza",
+                                                                               "channel":  "ArsenKveFCB",
+                                                                               "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                               "published":  "2026-10-31",
+                                                                               "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        },
                                                         {
                                                             "date":  "2026-10-20",
                                                             "opp":  "Psg",

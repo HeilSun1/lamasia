@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-10-31 20:05:46 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-01 09:49:05 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-10-31 20:05:46",
+    "updated":  "2026-11-01 09:49:05",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6588656", "title":  "【球星采访系列】哈维：布斯克茨最佳",
+            "url":  "https://www.dongqiudi.com/articles/6588656.html", "time":  "2026-11-01 07:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DD/15/280x210/crop/-/rBXRDGrmdyyAAmZdAAvEbmcNEbE703.png" },
+        {
+            "id":  "6587650", "title":  "巴萨竞技战报 20261101",
+            "url":  "https://www.dongqiudi.com/articles/6587650.html", "time":  "2026-11-01 04:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/AA/280x210/crop/-/rBXRn2rmSLSAfQ8KAAVDnTQ50iI512.jpg" },
         {
             "id":  "6586338", "title":  "每体：奥恩斯泰因、阿维拉复出，入选巴萨竞技名单",
             "url":  "https://www.dongqiudi.com/articles/6586338.html", "time":  "2026-11-01 01:07",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6478341", "title":  "库巴西与肖恩-克鲁伊维特。",
             "url":  "https://www.dongqiudi.com/articles/6478341.html", "time":  "2026-10-13 09:30",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/9D/280x210/crop/-/rBXRn2rNicKAC1MFAAMNzsYtOBk041.jpg" },
-        {
-            "id":  "6475545", "title":  "每体：波黑总监考察巴萨新星恰托维奇，球员被三国争夺",
-            "url":  "https://www.dongqiudi.com/articles/6475545.html", "time":  "2026-10-12 19:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B0/3A/280x210/crop/-/rBXRDGrMv_2AQwj4AADfZJD6dJ4910.jpg" },
-        {
-            "id":  "6475057", "title":  "每体：波黑国家队总监到场考察恰托维奇，巴萨满意其表现",
-            "url":  "https://www.dongqiudi.com/articles/6475057.html", "time":  "2026-10-12 17:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/E2/280x210/crop/-/rBXRDGrIiViAZV-FAAEB3vfg3g0838.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B1/9D/280x210/crop/-/rBXRn2rNicKAC1MFAAMNzsYtOBk041.jpg" }
     ]
 };
