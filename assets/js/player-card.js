@@ -285,6 +285,8 @@
           nameEn: p.name || "",
           nation: p.nation || "",
           birth: p.dob || "",
+          foot: p.foot || "",
+          height: p.height || "",
           pos: p.pos || "",
           posZh: posZh(p.pos),
           shirt: p.num || "",
