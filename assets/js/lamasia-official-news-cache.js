@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-02 09:36:34 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-02 23:38:10 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-02 09:36:34",
+    "updated":  "2026-11-02 23:38:10",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -159,6 +159,22 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4603213", "title":  "Four candidates for men's FIFPRO World XI",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603213/cubarsi-rodrigo-pedri-and-lamine-yamal-candidates-for-fifpro-world-xi", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/639a0ef0-723b-4801-8cc9-f0e292c682f9/DAG-604-_M1A6902.jpg" },
+            {
+                "id":  "4603044", "title":  "Flick aiming for top eight",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603044/hansi-flick-aiming-for-top-eight", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/d280bda7-baf2-42ac-bfc9-5b098e58e96b/_MGA3554.jpg" },
+            {
+                "id":  "4603029", "title":  "Ready for Villa",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603029/ready-for-aston-villa", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/0baaa163-41f0-4611-a00d-aaed21934aa1/WhatsApp-Image-2026-11-02-at-12.41.24.jpeg" },
+            {
+                "id":  "4602874", "title":  "When and where to watch Barça v Aston Villa",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602874/when-and-where-to-watch-fc-barcelona-v-aston-villa", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4602437", "title":  "Fariñas: 'Every boy dreams of this'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602437/brian-farinas-every-boy-dreams-of-this", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/01/d4bed2cb-461f-4bc2-9eff-93ef7101d071/WhatsApp-Image-2026-11-01-at-14.14.33-1-.jpeg" },
@@ -231,6 +247,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598953/raphinha-scores-again", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/9c2a7088-5942-4884-87cc-3fc6455bb33a/2026-10-25_FCBvsRMADRID_158.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4598708", "title":  "'We weren't fresh enough'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598708/hansi-flick-we-werent-fresh-enough", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/2cae08b1-18bc-4255-81dd-cfb55945e54f/_MGA0921.jpg" },
@@ -246,14 +270,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4598175", "title":  "Countdown to the Clásico",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598175/countdown-to-the-clasico", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/52948e07-c4b6-4d05-9463-c659085edb0c/_MGA0608.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4598192", "title":  "PREVIEW | Barça v Real Madrid",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598192/preview-fc-barcelona-v-real-madrid", "time":  "",
@@ -341,23 +357,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4593754", "title":  "Flick matches his best run of wins",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593754/hansi-flick-equals-his-best-run-of-wins-with-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/4e26dd94-d03c-4c41-b101-038ceb369fec/_MGA7637-1-.jpg" },
-            {
-                "id":  "4588635", "title":  "Raphinha comes back to draw level with Neymar",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4588635/raphinha-comes-back-to-draw-level-with-neymar", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/4093d0d4-b93e-4ad8-bc2c-5ca208588cb6/_MGA7954.jpg" },
-            {
-                "id":  "4593638", "title":  "Betis 2-5 Barça: The dream start continues",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593638/betis-2-5-fc-barcelona-the-dream-start-continues", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/b3d659b6-fc31-4554-a1e0-1a8321390af8/_MGA8159.jpg" },
-            {
-                "id":  "4593710", "title":  "Hansi Flick's Barça equal record for best league start",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593710/fc-barcelona-equal-record-for-best-league-start", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/13022a09-2e60-4c2a-b6e6-ce9248a79a95/_MGA8129.jpg" },
-            {
-                "id":  "4593115", "title":  "PREVIEW | Betis v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4593115/preview-real-betis-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/17/4e26dd94-d03c-4c41-b101-038ceb369fec/_MGA7637-1-.jpg" }
         ]
     }
 };

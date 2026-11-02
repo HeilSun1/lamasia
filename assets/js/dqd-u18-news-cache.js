@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-11-02 09:22:50 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u18_news.ps1 每日更新于 2026-11-02 23:38:07 数据源：懂球帝 */
 window.DQD_U18_NEWS = {
-    "updated":  "2026-11-02 09:22:50",
+    "updated":  "2026-11-02 23:38:07",
     "source":  "dongqiudi",
-    "count":  11,
+    "count":  12,
     "news":  [
+        {
+            "id":  "6595116", "title":  "每体赞巴萨小将雷巴克：兼具技术和大局观，有望成世界级球星",
+            "url":  "https://www.dongqiudi.com/article/6595116", "time":  "2026-11-02 15:47",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DF/F9/280x210/crop/-/rBXRn2roPmiAUIcrAAFgFQjscbk495.jpg" },
         {
             "id":  "6516438", "title":  "坎波斯2024-25赛季个人集锦。18岁的阿莱士...",
             "url":  "https://n.dongqiudi.com/webapp/tops.html?id=6516438", "time":  "2026-10-19 16:23",

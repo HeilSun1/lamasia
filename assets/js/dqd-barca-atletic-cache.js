@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-02 09:21 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-02 23:37 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-02 09:21:46",
+    "updated":  "2026-11-02 23:37:41",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1607,7 +1607,28 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-
+                          {
+                              "person_id":  "50919246",
+                              "name":  "达尼-阿维拉",
+                              "en":  "Dani Ávila",
+                              "photo":  "assets/img/players/dqd/50919246.jpg",
+                              "injury":  "膝盖受伤",
+                              "date_from":  "2026.03.02",
+                              "date_until":  "2026.11.02",
+                              "days":  "247",
+                              "games_missed":  "8"
+                          },
+                          {
+                              "person_id":  "50855023",
+                              "name":  "尤文斯利-昂斯坦",
+                              "en":  "Juwensley Onstein",
+                              "photo":  "assets/img/players/dqd/50855023.jpg",
+                              "injury":  "肌肉损伤",
+                              "date_from":  "2026.09.03",
+                              "date_until":  "2026.11.02",
+                              "days":  "62",
+                              "games_missed":  "8"
+                          }
                       ],
     "roster":  {
                    "code":  0,
@@ -2927,12 +2948,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "4"
                                       },
                          "50855023":  {
-                                          "date_until":  "2026.04.18",
-                                          "date_from":  "2026.02.19",
-                                          "injury":  "肌肉问题",
-                                          "days":  "60",
-                                          "status":  "ok",
-                                          "games_missed":  ""
+                                          "date_until":  "2026.11.02",
+                                          "date_from":  "2026.09.03",
+                                          "injury":  "肌肉损伤",
+                                          "days":  "62",
+                                          "status":  "out",
+                                          "games_missed":  "8"
                                       },
                          "51004660":  {
                                           "date_until":  "2026.05.01",
@@ -2991,12 +3012,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "2"
                                       },
                          "50919246":  {
-                                          "date_until":  "2024.10.04",
-                                          "date_from":  "2024.04.08",
-                                          "injury":  "腘绳肌损伤",
-                                          "days":  "181",
-                                          "status":  "ok",
-                                          "games_missed":  ""
+                                          "date_until":  "2026.11.02",
+                                          "date_from":  "2026.03.02",
+                                          "injury":  "膝盖受伤",
+                                          "days":  "247",
+                                          "status":  "out",
+                                          "games_missed":  "8"
                                       },
                          "50934675":  {
                                           "date_until":  "2026.02.18",

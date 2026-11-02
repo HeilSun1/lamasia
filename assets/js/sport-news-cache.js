@@ -1,13 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-02 09:36:39 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-02 23:38:12 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-02 09:36:39",
+    "updated":  "2026-11-02 23:38:12",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "135993961", "title":  "Seis refuerzos de lujo para vencer al Aston Villa en la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pesquer-gistau-bonfill-joni-refuerzos-135993961", "time":  "2026-11-02 20:37",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136005612", "title":  "Barcelona - Aston Villa: horario y dónde ver el partido de la Youth League por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-aston-villa-horario-ver-youth-league-136005612", "time":  "2026-11-02 16:44",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/73c12a4f-02fd-4868-9b50-148c7c96195c_16-9-discover-aspect-ratio_640w_1526409.webp" },
+        {
+            "id":  "135983393", "title":  "Un pequeño genio anda suelto en La Masia: Artem Rybak pide paso con otro recital",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pequeno-genio-anda-suelto-masia-135983393", "time":  "2026-11-02 08:51",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/66ce2726-8fbd-478e-8528-5b74173605f2_16-9-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135981125", "title":  "Sergi Mayans, el central zurdo más poderoso de La Masia, encandila a Belletti y apunta a Flick",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sergi-mayans-central-zurdo-poderoso-135981125", "time":  "2026-11-01 19:14",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/aa49c550-503f-4a92-8c2a-50919f56259b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/aa49c550-503f-4a92-8c2a-50919f56259b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135957854", "title":  "El Barça Atlètic se agarra a Àlex González y a Iker Rodríguez para ganar al colista y seguir líder",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-agarra-alex-gonzalez-135957854", "time":  "2026-10-31 20:24",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "134999398", "title":  "Salto bestial en La Masia: el cadete Héctor Asumu debuta con el Juvenil A",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/salto-bestial-masia-cadete-hector-134999398", "time":  "2026-10-07 15:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ebc397ee-ce84-44b0-843d-e968ec0eefe6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135009174", "title":  "Efecto Alex Gonzalez en el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/efecto-alex-gonzalez-barca-atletic-135009174", "time":  "2026-10-05 10:58",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/421687a6-5395-48d8-b339-91507660bbce_16-9-aspect-ratio_640w_0_x660y247.webp" },
-        {
-            "id":  "134991575", "title":  "Los prodigios de La Masia Destiny y Hugo Galdeano deslumbran en Orlando",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/prodigios-masia-destiny-hugo-galdeano-134991575", "time":  "2026-10-05 07:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/af234764-4d31-4b8b-acb0-26df77ebc278_16-9-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
