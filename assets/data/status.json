@@ -1,38 +1,27 @@
 {
     "schema":  1,
-    "runId":  "20261102-092109",
-    "runStartedUtc":  "2026-11-02T01:21:09.8320520Z",
-    "runFinishedUtc":  "2026-11-02T01:28:54.2164637Z",
-    "lastSuccessUtc":  "2026-11-01T13:59:47.2886909Z",
+    "runId":  "20261102-093543",
+    "runStartedUtc":  "2026-11-02T01:35:43.0146611Z",
+    "runFinishedUtc":  "2026-11-02T01:35:46.7439506Z",
+    "lastSuccessUtc":  "2026-11-01T20:39:26.7734683Z",
     "lastRunSource":  "local",
-    "lastRunStatus":  "blocked",
-    "exitCode":  1,
+    "lastRunStatus":  "ok",
+    "exitCode":  0,
     "consecutiveFailures":  0,
-    "blocked":  true,
+    "blocked":  false,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-                         "repo_error",
-                         "repo_error",
-                         "stale"
+
                      ],
     "failedScripts":  [
-                          "update_fcb_youth_schedules.ps1",
-                          "update_fcb_news.ps1",
-                          "update_sport_news.ps1",
-                          "update_md_news.ps1"
+
                       ],
     "staleCaches":  [
-                        "assets/js/sport-news-cache.js",
-                        "assets/js/md-news-cache.js",
-                        "assets/js/lamasia-official-news-cache.js"
+
                     ],
     "healed":  [
-                   "cache_conflict_healed"
+
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-11-01T20:39:26.7734683Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-11-01T20:39:26.7734683Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
