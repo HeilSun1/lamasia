@@ -297,7 +297,8 @@ for ($i = 1; $i -le 8; $i++) {
   [void]$Healed.Add('cache_conflict_healed')
   $cont = Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', '--continue')
   if ($cont.Code -ne 0) {
-    Log-Line "  ✗ rebase --continue 失败，中止"
+    Log-Line "  ✗ rebase --continue 失败（退出码 $($cont.Code)，$i 轮），中止"
+    if ($cont.Out) { Log-Line "      $($cont.Out)" }
     [void](Invoke-Git $Root @('rebase', '--abort'))
     [void]$BlockedCodes.Add('repo_error')
     break
@@ -495,7 +496,10 @@ if (-not $staged -and $script:AddFailed) {
       if ($cr3.Generated.Count -gt 0 -and $cr3.Source.Count -eq 0) {
         [void](Invoke-Git $Root (@('checkout', 'origin/main', '--') + $cr3.Generated))
         [void](Invoke-Git $Root (@('add', '--') + $cr3.Generated))
-        [void](Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', '--continue'))
+        $cont2 = Invoke-Git $Root @('-c', 'core.editor=true', 'rebase', '--continue')
+        if ($cont2.Code -ne 0) {
+          Log-Line "  ✗ 重推前 rebase --continue 失败（退出码 $($cont2.Code)）：$($cont2.Out)"
+        }
       } else {
         [void](Invoke-Git $Root @('rebase', '--abort'))
         Log-Line "  ✗ 重推前的 rebase 冲突含手写源码，中止"
