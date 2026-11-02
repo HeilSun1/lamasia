@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-01 21:55 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-02 09:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-01 21:55:58",
+    "updated":  "2026-11-02 09:01:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -465,21 +465,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Alex Cami",
-                        "id":  "2875349",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2875349/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-02",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Max Bonfill",
                         "id":  "1620575",
                         "pos":  "G",
@@ -534,21 +519,6 @@ window.DQD_U19_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2604387/image",
                         "age":  "",
                         "birthday":  "",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Guillem Victor Delgado",
-                        "id":  "2875346",
-                        "pos":  "",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2875346/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-05-03",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

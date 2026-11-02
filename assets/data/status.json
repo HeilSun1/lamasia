@@ -1,13 +1,17 @@
 {
-    "runId":  "20261101-215450",
-    "runStartedUtc":  "2026-11-01T13:54:50.4091023Z",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "schema":  1,
+    "runId":  "20261102-090003",
+    "runStartedUtc":  "2026-11-02T01:00:03.0305219Z",
+    "runFinishedUtc":  "2026-11-02T01:08:21.7216331Z",
+    "lastSuccessUtc":  "2026-11-01T13:59:47.2886909Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "blocked",
+    "exitCode":  1,
     "consecutiveFailures":  0,
-    "blocked":  false,
+    "blocked":  true,
     "blockedSinceUtc":  null,
     "blockedCodes":  [
-
+                         "fetch_failed"
                      ],
     "failedScripts":  [
 

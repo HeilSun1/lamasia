@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-01 20:37:12 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-02 09:03:42 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-01 20:37:12",
+    "updated":  "2026-11-02 09:03:42",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -169,7 +169,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4602385", "title":  "Challenging November ahead",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602385/challenging-november-ahead", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/01/ecf32466-5a90-4a92-b25d-81c8fd7b66c1/_MGA2792.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/01/068487e3-982a-4e02-8bab-c92168b3bb07/3200X2000-Calendar-1equip-NOV-v2-CAT.jpg" },
             {
                 "id":  "4601449", "title":  "Hansi Flick: Record-breaking 100 wins",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins", "time":  "",
