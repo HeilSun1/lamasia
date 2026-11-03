@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-03 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-03 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-03 09:01:10",
+    "updated":  "2026-11-03 21:01:07",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,6 +14,21 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
+                    {
+                        "name":  "Shane Kluivert",
+                        "id":  "1657202",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Netherlands",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1657202/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-09-24",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "46万",
+                        "injury":  null
+                    },
                     {
                         "name":  "Òscar Gistau",
                         "id":  "1539491",
@@ -330,6 +345,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -462,6 +492,21 @@ window.DQD_U19_CACHE = {
                         "foot":  "",
                         "height":  "",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Eder Aller",
+                        "id":  "1929977",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-04-04",
+                        "foot":  "右脚",
+                        "height":  "194",
+                        "value":  "10万",
                         "injury":  null
                     },
                     {

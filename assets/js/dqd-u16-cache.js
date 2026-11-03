@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-03 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-03 21:01 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-03 09:01:53",
+    "updated":  "2026-11-03 21:01:44",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -45,21 +45,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Paumi Mateos",
-                        "id":  "2272366",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Venezuela",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-29",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Karim Mendikanov",
                         "id":  "2674136",
                         "pos":  "F",
@@ -70,6 +55,21 @@ window.DQD_U16_CACHE = {
                         "age":  "15岁",
                         "birthday":  "2010-11-07",
                         "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Paumi Mateos",
+                        "id":  "2272366",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Venezuela",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2272366/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-29",
+                        "foot":  "右脚",
                         "height":  "178",
                         "value":  "",
                         "injury":  null

@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-03 09:02:16 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-03 21:02:20 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-03 09:02:16",
+    "updated":  "2026-11-03 21:02:20",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246509/kusturica-genio-precoz-barca-cobrar-lebron-james-ee-uu-17-anos.html", "title":  "Kusturica, de genio precoz en el Barça a cobrar más que LeBron James en EE.UU. con sólo 17 años",
+            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246509/kusturica-genio-precoz-barca-cobrar-lebron-james-ee-uu-17-anos.html", "time":  "2026-11-03 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/03/6ae98eea763f3.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246488/barca-merece-le-den-gracias-han-liado-crios-masia-ee-uu.html", "title":  "El Barça merece que le den las gracias: ¡la que han liado estos críos de La Masia en EE.UU.!",
+            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246488/barca-merece-le-den-gracias-han-liado-crios-masia-ee-uu.html", "time":  "2026-11-03 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7beed7307d9.r_d.676-416-8869.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245075/guillem-victor-decada-cule-sueno-cumplir.html", "title":  "Guillem Víctor, una década como culé y un sueño a punto de cumplirse",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261030/1004245075/guillem-victor-decada-cule-sueno-cumplir.html", "time":  "2026-10-30 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "title":  "Messi, el racismo, el Madrid y la bronca de Busquets, los otros temas de Lamine con Valdano",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "time":  "2026-09-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/17/6aac1efa1f14f.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "title":  "Josep Martínez, otra perla de La Masia que llama a la puerta de España",
-            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20260918/1004228666/josep-martinez-perla-masia-llama-puerta-espana.html", "time":  "2026-09-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/10/28/6900e7efea1b7.r_d.360-177-0.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "title":  "El objetivo del ‘sorpasso’",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228319/objetivo-sorpasso.html", "time":  "2026-09-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/08/20/611fd0e0109fb.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/17/6aac1efa1f14f.jpeg" }
     ]
 };

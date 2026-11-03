@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-03 09:02:12 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-03 21:02:19 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-03 09:02:12",
+    "updated":  "2026-11-03 21:02:19",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136028858", "title":  "Frenazo para Nico Marcipar: el central del Juvenil A, internacional con Argentina, pasa por quirófano hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-nico-marcipar-central-juvenil-136028858", "time":  "2026-11-03 11:43",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/aa3d9623-7648-41c0-9a3e-3bf389674a66_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "135993961", "title":  "Seis refuerzos de lujo para vencer al Aston Villa en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pesquer-gistau-bonfill-joni-refuerzos-135993961", "time":  "2026-11-02 20:37",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136005612", "title":  "Barcelona - Aston Villa: horario y dónde ver el partido de la Youth League por TV y en directo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-aston-villa-horario-ver-youth-league-136005612", "time":  "2026-11-02 16:44",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135148016", "title":  "Frenazo obligado para el gran diamante de La Masia: David Moreno no jugará hasta diciembre",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-obligado-gran-diamante-masia-135148016", "time":  "2026-10-08 16:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
