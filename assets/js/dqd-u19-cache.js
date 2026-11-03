@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-02 09:22 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-03 08:27 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-02 09:22:49",
+    "updated":  "2026-11-03 08:27:07",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -330,21 +330,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pol Bernabéu",
-                        "id":  "2076871",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-05",
-                        "foot":  "左脚",
-                        "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -356,6 +341,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-01-30",
                         "foot":  "左脚",
                         "height":  "184",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pol Bernabéu",
+                        "id":  "2076871",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-05",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },

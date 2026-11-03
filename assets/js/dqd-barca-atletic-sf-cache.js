@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-02 09:22 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-03 08:26 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-02 09:22:11",
+    "updated":  "2026-11-03 08:26:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -152,6 +152,36 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "52万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Jesse Bisiwu",
+                        "id":  "1506988",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Belgium",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-22",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "780万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Orian Goren",
+                        "id":  "1973312",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Israel",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1973312/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-03-15",
+                        "foot":  "右脚",
+                        "height":  "178",
+                        "value":  "54万",
                         "injury":  null
                     },
                     {
@@ -392,6 +422,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "184",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Iker Rodríguez",
+                        "id":  "1926093",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926093/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-22",
+                        "foot":  "右脚",
+                        "height":  "187",
+                        "value":  "10万",
                         "injury":  null
                     },
                     {
