@@ -1,17 +1,29 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-03 09:02:12 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-03 21:51:54 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-03 09:02:12",
+    "updated":  "2026-11-03 21:51:54",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136044182", "title":  "Un colosal Iu Martínez salva un punto para un Barça superior y lastrado por el arbitraje",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/colosal-iu-martinez-salva-punto-136044182", "time":  "2026-11-03 17:51",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5877ff70-ca32-475c-bd77-6fe427ae1d78_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "136005612", "title":  "Barcelona - Aston Villa: horario y dónde ver hoy el partido de la Youth League por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-aston-villa-horario-ver-youth-league-136005612", "time":  "2026-11-03 16:26",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/73c12a4f-02fd-4868-9b50-148c7c96195c_16-9-discover-aspect-ratio_640w_1526409.webp" },
+        {
+            "id":  "136039255", "title":  "Barcelona - Aston Villa, en directo hoy: partido de la Youth League, en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-aston-villa-directo-hoy-youth-league-136039255", "time":  "2026-11-03 14:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
+        {
+            "id":  "136028858", "title":  "Frenazo para Nico Marcipar: el central del Juvenil A, internacional con Argentina, pasa por quirófano hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-nico-marcipar-central-juvenil-136028858", "time":  "2026-11-03 11:43",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/aa3d9623-7648-41c0-9a3e-3bf389674a66_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "135993961", "title":  "Seis refuerzos de lujo para vencer al Aston Villa en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pesquer-gistau-bonfill-joni-refuerzos-135993961", "time":  "2026-11-02 20:37",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
-        {
-            "id":  "136005612", "title":  "Barcelona - Aston Villa: horario y dónde ver el partido de la Youth League por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barcelona-aston-villa-horario-ver-youth-league-136005612", "time":  "2026-11-02 16:44",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/73c12a4f-02fd-4868-9b50-148c7c96195c_16-9-discover-aspect-ratio_640w_1526409.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6bcad5bb-e607-4f3c-a4a1-ea88e97d5b53_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "135983393", "title":  "Un pequeño genio anda suelto en La Masia: Artem Rybak pide paso con otro recital",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pequeno-genio-anda-suelto-masia-135983393", "time":  "2026-11-02 08:51",
@@ -191,18 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135185334", "title":  "Oficial: El Barça blinda a Pedro Rodríguez, uno de los grandes cerebros de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-blinda-pedro-rodriguez-135185334", "time":  "2026-10-09 18:48",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135187090", "title":  "Barça Atlètic-SD Logroñés: Vuelve Ebrima en un duelo de contrastes en el Johan",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-vuelve-135187090", "time":  "2026-10-09 17:03",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1ffec9df-d86f-4d44-ba90-997beba3f664_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135148016", "title":  "Frenazo obligado para el gran diamante de La Masia: David Moreno no jugará hasta diciembre",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/frenazo-obligado-gran-diamante-masia-135148016", "time":  "2026-10-08 16:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/537f989f-20fa-4f6d-9e85-bdbd595f91d6_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135098326", "title":  "Vuelve el mejor socio de Lamine en La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/triple-buena-noticia-belletti-barca-135098326", "time":  "2026-10-07 12:32",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/80dfa1da-b313-4679-b056-6a2b6807d640_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
