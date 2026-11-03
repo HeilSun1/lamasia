@@ -21,6 +21,7 @@
 # ═══════════════════════════════════════════════════════════════
 param(
   [string] $RepoRoot = "",
+  [switch] $Force,           # 手动强制运行：忽略"距上次成功更新不足 2 小时"的防重复跳过
   [switch] $SelfTest,        # 跳过抓取脚本，只跑 git 全流程（秒级，供自测）
   [switch] $SimulateHang,    # 同步后挂起，供看门狗场景测试
   [string] $TestFailScript = "",   # 指定脚本名视作失败，注入用
@@ -42,6 +43,25 @@ $t0          = Get-Date
 $startedUtc  = (Get-Date).ToUniversalTime().ToString('o')
 $localState  = Join-Path $Root "scripts\local-run-state.json"
 $siteStatus  = Join-Path $Root "assets\data\status.json"
+
+# ── 防重复班次：距上次成功更新不足 2 小时则跳过 ──
+# 场景：机器关机错过 21:00 班次，StartWhenAvailable 在开机后补跑；
+# 若补跑离 09:00 正常班次太近，会连跑两次。以 status.json 的
+# lastSuccessUtc 为准（只有成功推送才前进），失败那轮不会被算作成功。
+$recentSuccessHours = 2
+if (-not $Force -and -not $SelfTest -and -not $SimulateHang -and -not $TestFailScript -and -not $TestBogusAdd) {
+  $stGuard = Read-JsonFile $siteStatus
+  if ($stGuard -and $stGuard.lastSuccessUtc) {
+    try {
+      $lastOk = [datetimeoffset]::Parse($stGuard.lastSuccessUtc).UtcDateTime
+      $ageMin = ([datetime]::UtcNow - $lastOk).TotalMinutes
+      if ($ageMin -ge 0 -and $ageMin -lt ($recentSuccessHours * 60)) {
+        Log-Line ("跳过本轮：距上次成功更新仅 {0:N0} 分钟（< {1} 小时），避免补跑撞正常班次" -f $ageMin, $recentSuccessHours)
+        exit 0
+      }
+    } catch { }
+  }
+}
 
 $Healed          = New-Object System.Collections.ArrayList
 $Failures        = New-Object System.Collections.ArrayList
