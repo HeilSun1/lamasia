@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-02 23:37:43 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-03 09:00:50 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-02 23:37:43",
+    "updated":  "2026-11-03 09:00:50",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6598680", "title":  "每体：巴萨非常重视对阵阿斯顿维拉的青年欧冠，哈姆...",
+            "url":  "https://www.dongqiudi.com/articles/6598680.html", "time":  "2026-11-03 08:33",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/60/280x210/crop/-/rBXRn2rpK6WAWePuAAVZK5O0on8867.png" },
         {
             "id":  "6594453", "title":  "上点强度！凯塞多在巴萨竞技的比赛中贡献了一次凶狠...",
             "url":  "https://www.dongqiudi.com/articles/6594453.html", "time":  "2026-11-02 10:29",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6493045", "title":  "佩德罗-罗德里格斯：愿有朝一日能实现进入巴萨一线队的目标",
             "url":  "https://www.dongqiudi.com/articles/6493045.html", "time":  "2026-10-15 22:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B7/E0/280x210/crop/-/rBXRDGrQ4cGAZyV0AAB2b9swkhM853.jpg" },
-        {
-            "id":  "6490070", "title":  "世体：巴萨内部正围绕哈姆扎出场时间不足的问题产生...",
-            "url":  "https://www.dongqiudi.com/articles/6490070.html", "time":  "2026-10-15 09:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B6/92/280x210/crop/-/rBXRDGrQJwKAVF69AAJQGucNqJk363.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B7/E0/280x210/crop/-/rBXRDGrQ4cGAZyV0AAB2b9swkhM853.jpg" }
     ]
 };

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-02 23:38:05 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-03 09:01:10 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-02 23:38:05",
+    "updated":  "2026-11-03 09:01:10",
     "source":  "dongqiudi",
-    "count":  45,
+    "count":  46,
     "news":  [
+        {
+            "id":  "6598680", "title":  "每体：巴萨非常重视对阵阿斯顿维拉的青年欧冠，哈姆...",
+            "url":  "https://www.dongqiudi.com/articles/6598680.html", "time":  "2026-11-03 08:33",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/60/280x210/crop/-/rBXRn2rpK6WAWePuAAVZK5O0on8867.png" },
         {
             "id":  "6587650", "title":  "巴萨竞技战报 20261101",
             "url":  "https://www.dongqiudi.com/articles/6587650.html", "time":  "2026-11-01 04:02",

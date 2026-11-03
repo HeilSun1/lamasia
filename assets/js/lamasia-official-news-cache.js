@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-02 23:38:10 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-03 09:02:10 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-02 23:38:10",
+    "updated":  "2026-11-03 09:02:10",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -191,13 +191,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/07a1c6b5-5467-434f-a13a-ee3594f28bbe/_MGA2877.jpg" },
             {
-                "id":  "4602177", "title":  "Barça 6-1 Alavés: That's more like it!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/e6c56dfb-0242-4696-9375-d969621748cc/_MGA8416.jpg" },
-            {
                 "id":  "4602134", "title":  "Brian Fariñas makes debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602134/brian-farinas-makes-fc-barcelona-first-team-debut", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/93f8c849-311e-40d0-88b7-2a2e26c5ec6b/_MGA2796.jpg" },
+            {
+                "id":  "4602177", "title":  "Barça 6-1 Alavés: That's more like it!",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/e6c56dfb-0242-4696-9375-d969621748cc/_MGA8416.jpg" },
             {
                 "id":  "4601620", "title":  "The squad for Barça v Alavés",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601620/the-squad-for-barca-v-alaves", "time":  "",
