@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-04 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-04 21:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-04 09:01:09",
+    "updated":  "2026-11-04 21:00:47",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -110,21 +110,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Ignasi Quer",
-                        "id":  "1977602",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1977602/image",
-                        "age":  "22岁",
-                        "birthday":  "2004-06-05",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "18万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Joni Hernández",
                         "id":  "2679425",
                         "pos":  "F",
@@ -137,6 +122,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "5万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Ignasi Quer",
+                        "id":  "1977602",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1977602/image",
+                        "age":  "22岁",
+                        "birthday":  "2004-06-05",
+                        "foot":  "右脚",
+                        "height":  "177",
+                        "value":  "18万",
                         "injury":  null
                     },
                     {

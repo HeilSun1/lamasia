@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-04 09:01:40 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-04 21:01:09 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-04 09:01:40",
+    "updated":  "2026-11-04 21:01:09",
     "source":  "dongqiudi",
-    "count":  48,
+    "count":  50,
     "news":  [
+        {
+            "id":  "6604376", "title":  "传射建功！通卡拉vs阿斯顿维拉U19个人集锦",
+            "url":  "https://www.dongqiudi.com/articles/6604376.html", "time":  "2026-11-04 10:12",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/04/e7890c9041b4921dec6ca5f0c87e48d9sHue81_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6604302", "title":  "全场录像（英文解说）：青年欧冠第4轮巴萨vs阿斯顿维拉",
+            "url":  "https://www.dongqiudi.com/articles/6604302.html", "time":  "2026-11-04 09:40",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/04/c6af6caa047bb857fee084e30d5481b8YNall4_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6601995", "title":  "巴塞罗那U19 3-3阿斯顿维拉U19，埃布里马-通卡拉破僵，伊乌-马丁内斯救主",
             "url":  "https://www.dongqiudi.com/articles/6601995.html", "time":  "2026-11-04 00:50",

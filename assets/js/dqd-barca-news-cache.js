@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-04 09:01:09 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-04 21:00:48 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-04 09:01:09",
+    "updated":  "2026-11-04 21:00:48",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6604376", "title":  "传射建功！通卡拉vs阿斯顿维拉U19个人集锦",
+            "url":  "https://www.dongqiudi.com/articles/6604376.html", "time":  "2026-11-04 10:12",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/04/e7890c9041b4921dec6ca5f0c87e48d9sHue81_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6599503", "title":  "世体：伤兵满营无人可回，弗里克只能拼凑防线战维拉",
             "url":  "https://www.dongqiudi.com/articles/6599503.html", "time":  "2026-11-03 14:39",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6498412", "title":  "世体：哈姆扎回归巴萨B队，随队冲击联赛五连胜",
             "url":  "https://www.dongqiudi.com/articles/6498412.html", "time":  "2026-10-17 00:00",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BA/5D/280x210/crop/-/rBXRn2rSSgmAb6bgAAKDxsVUvc0625.png" },
-        {
-            "id":  "6495868", "title":  "老照片：2011年，瓜迪奥拉在训练场上指导巴萨竞...",
-            "url":  "https://www.dongqiudi.com/articles/6495868.html", "time":  "2026-10-16 15:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/B9/89/280x210/crop/-/rBXRn2rRzNGAWQm2AALKN463VU4983.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BA/5D/280x210/crop/-/rBXRn2rSSgmAb6bgAAKDxsVUvc0625.png" }
     ]
 };
