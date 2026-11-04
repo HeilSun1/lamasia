@@ -267,6 +267,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600150/return-to-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/28/9dd2467f-2857-4069-a8fb-f7e5e86f9970/WhatsApp-Image-2026-10-28-at-12.49.49.jpeg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4599503", "title":  "When and where to watch Barça v Alavés",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599503/when-and-where-to-watch-fc-barcelona-v-alaves", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/27/38439501-c539-46c0-a902-b2219e6f1ed2/3200x2000_Horarios-ALAVES_31_10-2.jpeg" },
