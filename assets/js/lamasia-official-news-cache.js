@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-03 21:02:06 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-04 09:03:37 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-03 21:02:06",
+    "updated":  "2026-11-04 09:03:37",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -159,6 +159,26 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4604029", "title":  "Hansi Flick: 'It was important to defend as a unit'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604029/hansi-flick-it-was-important-to-defend-as-a-unit", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/6c3ef9e4-dd26-4f23-95e0-bc73f7c2e659/2026-11-03_FCBvsASTONVILLA_101.jpg" },
+            {
+                "id":  "4603860", "title":  "Barça 3-0 Aston Villa: Three goals, three points",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603860/fc-barcelona-3-0-aston-villa-three-goals-three-points", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/1d016ca8-1cd3-4a59-94e0-fdcc37db4812/_MGA4003.jpg" },
+            {
+                "id":  "4603628", "title":  "De Jong makes 300th appearance",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603628/frenkie-de-jong-reaches-300-appearances-for-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/20993fe1-2517-47d4-b1b3-af7fa663db0a/_MGA4173-1-.jpg" },
+            {
+                "id":  "4603853", "title":  "New record in Europe for Lamine Yamal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603853/lamine-yamal-top-champions-league-scorer-under-20-years-of-age", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/6589b605-bdc6-4738-bc62-2c720631b9f4/_MGA8550.jpg" },
+            {
+                "id":  "4603599", "title":  "Emotional minute's silence",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603599/emotional-minutes-silence", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" },
+            {
                 "id":  "4603075", "title":  "The squad for the Aston Villa match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603075/the-squad-for-the-aston-villa-match", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/6b963f3a-6004-4af6-92a3-1923274bac3f/WhatsApp-Image-2026-11-02-at-12.41.25.jpeg" },
@@ -223,6 +243,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-to-show-our-best", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/29986bc5-0e42-4710-ab69-09b901a2a320/_MGA0513-2-.jpg" },
             {
+                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
+            {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
                 "id":  "4601412", "title":  "Dani Olmo celebrates 100 games",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601412/dani-olmo-reaches-100-games-for-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/e22c3352-b5d6-4626-9fa5-cb27d635a9aa/_MGA8346-1.jpg" },
@@ -246,14 +274,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4599205", "title":  "Lamine Yamal, Young Talent of the Year and top 3",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599205/lamine-yamal-young-talent-of-the-year-and-third-in-ballon-dor-rankings", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/e71483da-05e6-412a-8148-473d8052b94f/_MGA1565-1-.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4599042", "title":  "Xavi Espart injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4599042/xavi-espart-injury-news", "time":  "",
@@ -337,27 +357,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4594863", "title":  "PREVIEW | PSG v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594863/preview-paris-saint-germain-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/a2e17dfd-5c16-4214-9eec-1c29fde3fea0/WhatsApp-Image-2026-10-19-at-23.32.47.jpeg" },
-            {
-                "id":  "4594810", "title":  "First contact with Parc des Princes",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594810/first-contact-with-parc-des-princes", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/23b2650d-4e88-4fb8-be4d-79834f58eae4/_MGA8540.jpg" },
-            {
-                "id":  "4594778", "title":  "Hansi Flick: 'We're ready'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594778/hansi-flick-were-ready", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/b07991b3-1af2-4d67-8423-179c50283dc1/_MGA8390.jpg" },
-            {
-                "id":  "4591743", "title":  "When and where to watch PSG v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4591743/when-and-where-to-watch-paris-saint-germain-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4594106", "title":  "Barça squad for PSG game",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594106/fc-barcelona-squad-for-the-trip-to-psg", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/96e974d9-6ffb-4dea-80b8-e635df12ea1b/_MGA7720.jpg" },
-            {
-                "id":  "4594024", "title":  "Medical updates on Eric and Kounde",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4594024/medical-updates-on-eric-and-kounde", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/18/e36ba3ed-db2b-4ea6-8143-64fedb19306b/_MGA7641.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/19/a2e17dfd-5c16-4214-9eec-1c29fde3fea0/WhatsApp-Image-2026-10-19-at-23.32.47.jpeg" }
         ]
     }
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-03 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-04 09:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-03 21:01:07",
+    "updated":  "2026-11-04 09:01:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,6 +14,21 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
+                    {
+                        "name":  "Hamza Abdelkarim",
+                        "id":  "1961596",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Egypt",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-01",
+                        "foot":  "双脚",
+                        "height":  "182",
+                        "value":  "820万",
+                        "injury":  null
+                    },
                     {
                         "name":  "Shane Kluivert",
                         "id":  "1657202",
@@ -177,6 +192,21 @@ window.DQD_U19_CACHE = {
                         "foot":  "",
                         "height":  "",
                         "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Ebrima Tunkara",
+                        "id":  "2128084",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-03-10",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "520万",
                         "injury":  null
                     },
                     {
@@ -400,7 +430,7 @@ window.DQD_U19_CACHE = {
                         "age":  "17岁",
                         "birthday":  "2009-04-09",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "182",
                         "value":  "",
                         "injury":  null
                     },
@@ -745,10 +775,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Aston Villa U19",
                         "homeId":  "90128",
                         "awayId":  "90122",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "3",
+                        "as":  "3",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {

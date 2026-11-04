@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-03 21:01:07 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-04 09:01:40 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-03 21:01:07",
+    "updated":  "2026-11-04 09:01:40",
     "source":  "dongqiudi",
-    "count":  46,
+    "count":  48,
     "news":  [
+        {
+            "id":  "6601995", "title":  "巴塞罗那U19 3-3阿斯顿维拉U19，埃布里马-通卡拉破僵，伊乌-马丁内斯救主",
+            "url":  "https://www.dongqiudi.com/articles/6601995.html", "time":  "2026-11-04 00:50",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E2/A3/280x210/crop/-/rBXRn2rqEMCAd77rAAGbpfhTda8687.png" },
+        {
+            "id":  "6601233", "title":  "每体：哈姆扎同一天分别入选巴萨欧冠和青年欧冠比赛名单",
+            "url":  "https://www.dongqiudi.com/articles/6601233.html", "time":  "2026-11-03 22:00",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E2/66/280x210/crop/-/rBXRn2rp3-OAXWd3AAHviTPJrwI400.jpg" },
         {
             "id":  "6598680", "title":  "每体：巴萨非常重视对阵阿斯顿维拉的青年欧冠，哈姆...",
             "url":  "https://www.dongqiudi.com/articles/6598680.html", "time":  "2026-11-03 08:33",

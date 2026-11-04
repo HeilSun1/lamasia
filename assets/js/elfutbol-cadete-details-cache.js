@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U16（Cadete A） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-03 09:03 */
+/* 自动生成，请勿手动编辑 —— U16（Cadete A） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-04 09:07 */
 window.ELFUTBOL_CADETE_DETAILS_CACHE = {
     "fcb:cadete:2":  {
                          "lineups":  {
@@ -1551,7 +1551,7 @@ window.ELFUTBOL_CADETE_DETAILS_CACHE = {
                                         }
                       },
     "__pendingReports":  {
-                             "fcb:cadete:34":  "2026-11-01",
+                             "fcb:cadete:34":  "2026-11-04",
                              "fcb:cadete:41":  "2026-10-25"
                          }
 };

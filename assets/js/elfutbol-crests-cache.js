@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-10-21 13:03 */
+/* 自动生成，请勿手动编辑 —— 青训赛场对手队徽（fcb-youth-render.js / matches-upcoming.js 读取）；数据源：elfutbol.co（pulselive 的对手队徽 403 防盗链，故换用它托管的真队徽）；更新于 2026-11-04 09:07 */
 window.ELFUTBOL_CRESTS = {
     "8470":  "https://elfutbol.co/crests/sm/barcelona-fc.webp",
     "12915":  "https://elfutbol.co/crests/sm/gimnastic-manresa-cf.webp",
@@ -112,7 +112,7 @@ window.ELFUTBOL_CRESTS = {
 window.ELFUTBOL_CRESTS_META = {
     "attempted":  {
                       "juvenil-a":  {
-                                        "at":  "2026-10-21",
+                                        "at":  "2026-11-04",
                                         "ids":  [
                                                     "10840",
                                                     "12530",
@@ -133,5 +133,5 @@ window.ELFUTBOL_CRESTS_META = {
                                                 ]
                                     }
                   },
-    "updated":  "2026-10-21 13:03"
+    "updated":  "2026-11-04 09:07"
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-03 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-04 09:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-03 21:00:29",
+    "updated":  "2026-11-04 09:00:42",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1487,7 +1487,7 @@ window.DQD_BARCA_ATLETIC = {
                              },
                 "50855328":  {
                                  "nation":  "西班牙",
-                                 "contract":  "2027-06-30",
+                                 "contract":  "2029-06-30",
                                  "foot":  "右脚",
                                  "weight":  "",
                                  "height":  "187",
@@ -2094,7 +2094,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "other_logo":  [
 
                                                                                  ],
-                                                                  "person_en_name":  "Mirza Catovic",
+                                                                  "person_en_name":  "Mirza Ćatović",
                                                                   "person_id":  "51009730",
                                                                   "person_logo":  "assets/img/players/dqd/51009730.jpg",
                                                                   "person_name":  "恰托维奇",
@@ -2436,7 +2436,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "other_logo":  [
 
                                                                                  ],
-                                                                  "person_en_name":  "Álex Campos",
+                                                                  "person_en_name":  "Àlex Campos",
                                                                   "person_id":  "51017492",
                                                                   "person_logo":  "assets/img/players/dqd/51017492.jpg",
                                                                   "person_name":  "阿莱士-坎波斯",
