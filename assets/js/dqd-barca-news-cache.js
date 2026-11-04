@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-04 21:00:48 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-04 21:58:33 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-04 21:00:48",
+    "updated":  "2026-11-04 21:58:33",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6606278", "title":  "巴萨官方：球队今日恢复训练，欧冠首发球员进行了健身房训练",
+            "url":  "https://www.dongqiudi.com/articles/6606278.html", "time":  "2026-11-04 21:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E4/5E/280x210/crop/-/rBXRDGrrId6AD0SjAAD3iL96nKs597.jpg" },
         {
             "id":  "6604376", "title":  "传射建功！通卡拉vs阿斯顿维拉U19个人集锦",
             "url":  "https://www.dongqiudi.com/articles/6604376.html", "time":  "2026-11-04 10:12",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6505938", "title":  "巴萨竞技战报 20261018",
             "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BC/FA/280x210/crop/-/rBXRDGrTrOKAaa3gAAUfgpEsKYs846.jpg" },
-        {
-            "id":  "6498412", "title":  "世体：哈姆扎回归巴萨B队，随队冲击联赛五连胜",
-            "url":  "https://www.dongqiudi.com/articles/6498412.html", "time":  "2026-10-17 00:00",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BA/5D/280x210/crop/-/rBXRn2rSSgmAb6bgAAKDxsVUvc0625.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BC/FA/280x210/crop/-/rBXRDGrTrOKAaa3gAAUfgpEsKYs846.jpg" }
     ]
 };

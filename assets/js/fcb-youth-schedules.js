@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-04 21:01；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-04 22:00；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-04 21:01:59",
+    "updated":  "2026-11-04 22:00:38",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -1895,9 +1895,9 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰荣誉联赛 Infantil",
                                          "compEn":  "División de Honor Catalana Infantil",
                                          "round":  "8",
-                                         "start":  "1794135600",
-                                         "date":  "2026-11-08",
-                                         "tbd":  true,
+                                         "start":  "1794043800",
+                                         "date":  "2026-11-07",
+                                         "tbd":  false,
                                          "home":  "FC Barcelona A",
                                          "away":  "Sant Cugat A",
                                          "homeId":  "11113",
@@ -2467,9 +2467,9 @@ window.LAMASIA_SCHEDULES = {
                                            "comp":  "加泰优选联赛 Infantil G1",
                                            "compEn":  "Preferente Catalana Infantil G.1",
                                            "round":  "8",
-                                           "start":  "1794135600",
-                                           "date":  "2026-11-08",
-                                           "tbd":  true,
+                                           "start":  "1794049200",
+                                           "date":  "2026-11-07",
+                                           "tbd":  false,
                                            "home":  "L\u0027Hospitalet A",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11195",
@@ -3039,9 +3039,9 @@ window.LAMASIA_SCHEDULES = {
                                            "comp":  "加泰优选联赛 Alevín G1",
                                            "compEn":  "Preferente Catalana Alevín G.1",
                                            "round":  "8",
-                                           "start":  "1794135600",
+                                           "start":  "1794130200",
                                            "date":  "2026-11-08",
-                                           "tbd":  true,
+                                           "tbd":  false,
                                            "home":  "FC Barcelona A",
                                            "away":  "Sant Vicenç Horts A",
                                            "homeId":  "11115",
