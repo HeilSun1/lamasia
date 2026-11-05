@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-04 21:58:33 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-05 09:44:56 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-04 21:58:33",
+    "updated":  "2026-11-05 09:44:56",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6609089", "title":  "卡普德维拉（每体）：伊克尔-罗德里格斯、坎波斯、...",
+            "url":  "https://www.dongqiudi.com/articles/6609089.html", "time":  "2026-11-05 08:22",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E5/5B/280x210/crop/-/rBXRDGrry-GAX4MLAAJ1GDCz2jU994.jpg" },
         {
             "id":  "6606278", "title":  "巴萨官方：球队今日恢复训练，欧冠首发球员进行了健身房训练",
             "url":  "https://www.dongqiudi.com/articles/6606278.html", "time":  "2026-11-04 21:06",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6506999", "title":  "出任巴萨竞技助教，布斯克茨：管理球队同样是一项重要挑战",
             "url":  "https://www.dongqiudi.com/articles/6506999.html", "time":  "2026-10-18 07:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" },
-        {
-            "id":  "6505938", "title":  "巴萨竞技战报 20261018",
-            "url":  "https://www.dongqiudi.com/articles/6505938.html", "time":  "2026-10-18 01:25",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BC/FA/280x210/crop/-/rBXRDGrTrOKAaa3gAAUfgpEsKYs846.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" }
     ]
 };
