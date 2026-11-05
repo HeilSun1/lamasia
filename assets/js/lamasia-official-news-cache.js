@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-05 21:02:09 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-05 22:07:15 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-05 21:02:09",
+    "updated":  "2026-11-05 22:07:15",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -161,7 +161,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4604888", "title":  "Raphinha staying until 2030",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604888/raphinha-staying-at-fc-barcelona-until-2030", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/05/5347228a-89c6-4e62-abaa-a0f5d5d351c2/3x2_Raphinha_Renewal.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/05/e05e54a6-6c66-4b58-a1c4-03c5a37bd70e/_GP12847.jpg" },
             {
                 "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
