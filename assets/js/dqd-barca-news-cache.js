@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-05 09:44:56 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-05 21:00:53 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-05 09:44:56",
+    "updated":  "2026-11-05 21:00:53",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6610982", "title":  "足球非洲：巴萨准备续约19岁加纳中卫哈菲兹-加里巴至2031年",
+            "url":  "https://www.dongqiudi.com/articles/6610982.html", "time":  "2026-11-05 20:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/56/280x210/crop/-/rBXRn2rWENOAcO9yAAEmKTQEs7k176.jpg" },
         {
             "id":  "6609089", "title":  "卡普德维拉（每体）：伊克尔-罗德里格斯、坎波斯、...",
             "url":  "https://www.dongqiudi.com/articles/6609089.html", "time":  "2026-11-05 08:22",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6508233", "title":  "哈姆扎vs乌特伯个人集锦。哈姆扎身穿19号球衣完...",
             "url":  "https://www.dongqiudi.com/articles/6508233.html", "time":  "2026-10-18 09:36",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/74d9ac22905aee31d2318752fe6803ded19FdF_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6506999", "title":  "出任巴萨竞技助教，布斯克茨：管理球队同样是一项重要挑战",
-            "url":  "https://www.dongqiudi.com/articles/6506999.html", "time":  "2026-10-18 07:48",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/74d9ac22905aee31d2318752fe6803ded19FdF_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
     ]
 };

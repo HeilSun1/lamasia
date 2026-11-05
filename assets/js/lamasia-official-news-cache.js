@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-05 09:46:27 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-05 21:02:09 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-05 09:46:27",
+    "updated":  "2026-11-05 21:02:09",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -159,6 +159,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4604888", "title":  "Raphinha staying until 2030",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604888/raphinha-staying-at-fc-barcelona-until-2030", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/05/5347228a-89c6-4e62-abaa-a0f5d5d351c2/3x2_Raphinha_Renewal.jpg" },
+            {
+                "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" },
+            {
                 "id":  "4604460", "title":  "Raphinha to renew this Thursday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" },
@@ -235,14 +243,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/07a1c6b5-5467-434f-a13a-ee3594f28bbe/_MGA2877.jpg" },
             {
-                "id":  "4602177", "title":  "Barça 6-1 Alavés: That's more like it!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/e6c56dfb-0242-4696-9375-d969621748cc/_MGA8416.jpg" },
-            {
-                "id":  "4602134", "title":  "Brian Fariñas makes debut",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602134/brian-farinas-makes-fc-barcelona-first-team-debut", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/93f8c849-311e-40d0-88b7-2a2e26c5ec6b/_MGA2796.jpg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -250,6 +250,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4602177", "title":  "Barça 6-1 Alavés: That's more like it!",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/e6c56dfb-0242-4696-9375-d969621748cc/_MGA8416.jpg" },
+            {
+                "id":  "4602134", "title":  "Brian Fariñas makes debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602134/brian-farinas-makes-fc-barcelona-first-team-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/93f8c849-311e-40d0-88b7-2a2e26c5ec6b/_MGA2796.jpg" },
             {
                 "id":  "4601620", "title":  "The squad for Barça v Alavés",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601620/the-squad-for-barca-v-alaves", "time":  "",
@@ -349,15 +357,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4596876", "title":  "Flick and Mou, head-to-head",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596876/clasico-brings-second-head-to-head-between-flick-and-mourinho", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/1193739b-ffc7-483d-a9fb-de5a56f19f0c/_MGA6966_1.jpg" },
-            {
-                "id":  "4596701", "title":  "Dani Olmo injury news",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596701/dani-olmo-injury-news", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/3b6dded9-85fd-4486-8cb8-557894c66cec/_MGA9412-1-.jpg" },
-            {
-                "id":  "4596667", "title":  "Recovery session after PSG game",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4596667/recovery-session-after-psg-game", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/4e42512a-2d4d-4fd0-9e1e-ad6d80ea1910/WhatsApp-Image-2026-10-21-at-13.37.38.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/21/1193739b-ffc7-483d-a9fb-de5a56f19f0c/_MGA6966_1.jpg" }
         ]
     }
 };

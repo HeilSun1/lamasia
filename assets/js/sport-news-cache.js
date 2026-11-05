@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-05 09:46:32 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-05 21:02:19 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-05 09:46:32",
+    "updated":  "2026-11-05 21:02:19",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136106479", "title":  "El Barça Atlètic pierde a cuatro jugadores importantes por la convocatoria de España Sub-19",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-cuatro-jugadores-136106479", "time":  "2026-11-05 10:38",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136097325", "title":  "Ebrima Tunkara, en tres frentes: talento de megacrack y humildad por bandera",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-tres-frentes-talento-136097325", "time":  "2026-11-05 05:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ec032e17-0895-4051-9a5e-ad35a3006a33_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136044182", "title":  "Un colosal Iu Martínez salva un punto para un Barça superior y lastrado por el arbitraje",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/colosal-iu-martinez-salva-punto-136044182", "time":  "2026-11-03 17:51",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135151674", "title":  "La idea que se enseña en La Masia y desvela uno de sus maestros: \"Cuando tu sueltas el balón en un colegio...\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/idea-ensena-masia-desvela-maestros-135151674", "time":  "2026-10-10 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/84520e78-7bd5-4edd-b2a7-b6165480f472_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135189355", "title":  "El plan del Barça para salvar a Isma Ziani, el '9' de La Masia castigado por las lesiones",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/plan-barca-salvar-isma-ziani-135189355", "time":  "2026-10-09 19:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/82cd6960-71a4-40fc-9ec9-9e65185fbd97_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135185334", "title":  "Oficial: El Barça blinda a Pedro Rodríguez, uno de los grandes cerebros de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-blinda-pedro-rodriguez-135185334", "time":  "2026-10-09 18:48",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96692026-e1d9-43fe-a86c-dbba859d7474_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/84520e78-7bd5-4edd-b2a7-b6165480f472_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
