@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-06 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-06 21:37 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-06 21:00:26",
+    "updated":  "2026-11-06 21:37:21",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1607,7 +1607,17 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-
+                          {
+                              "person_id":  "51004660",
+                              "name":  "亚历山大-沃尔顿",
+                              "en":  "Alex Walton",
+                              "photo":  "assets/img/players/dqd/51004660.jpg",
+                              "injury":  "肌肉损伤",
+                              "date_from":  "2026.09.28",
+                              "date_until":  "2026.11.06",
+                              "days":  "41",
+                              "games_missed":  "5"
+                          }
                       ],
     "roster":  {
                    "code":  0,
@@ -2935,12 +2945,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "8"
                                       },
                          "51004660":  {
-                                          "date_until":  "2026.05.01",
-                                          "date_from":  "2026.04.24",
-                                          "injury":  "肌肉拉伤",
-                                          "days":  "9",
-                                          "status":  "ok",
-                                          "games_missed":  "1"
+                                          "date_until":  "2026.11.06",
+                                          "date_from":  "2026.09.28",
+                                          "injury":  "肌肉损伤",
+                                          "days":  "41",
+                                          "status":  "out",
+                                          "games_missed":  "5"
                                       },
                          "50936240":  {
                                           "date_until":  "2026.04.03",

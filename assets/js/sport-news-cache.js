@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-06 21:03:59 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-06 21:38:05 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-06 21:03:59",
+    "updated":  "2026-11-06 21:38:05",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136171341", "title":  "¿Quién sustituirá a Pol Planas? Los candidatos a entrenar al Juvenil A del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sustituira-pol-planas-candidatos-entrenar-136171341", "time":  "2026-11-06 17:40",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/66d1e496-a464-4ba0-a817-9c89c2f31fdd_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136149919", "title":  "Pol Planas deja el Juvenil del Barça para entrenar al Dinamo de Zagreb",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-deja-juvenil-barca-136149919", "time":  "2026-11-06 09:37",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136106479", "title":  "El Barça Atlètic pierde a cuatro jugadores importantes por la convocatoria de España Sub-19",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-cuatro-jugadores-136106479", "time":  "2026-11-05 10:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136097325", "title":  "Ebrima Tunkara, en tres frentes: talento de megacrack y humildad por bandera",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-tres-frentes-talento-136097325", "time":  "2026-11-05 05:30",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135205743", "title":  "Barça Atlètic - SD Logroñés en directo: resultado y goles en vivo del partido de Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-directo-vivo-resultado-goles-segunda-rfef-135205743", "time":  "2026-10-10 13:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" },
-        {
-            "id":  "135200720", "title":  "Bisiwu se estrena por fin en casa",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/bisiwu-estrena-casa-barcelona-johan-cruyff-135200720", "time":  "2026-10-10 11:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e49f309c-a995-442a-bac3-9c8ce0865974_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" }
     ]
 };
