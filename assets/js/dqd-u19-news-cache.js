@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-06 09:01:53 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-06 21:02:22 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-06 09:01:53",
+    "updated":  "2026-11-06 21:02:22",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6616511", "title":  "每体：巴萨U19梯队主帅普拉纳斯即将离队，他将成...",
+            "url":  "https://www.dongqiudi.com/articles/6616511.html", "time":  "2026-11-06 19:59",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E8/71/280x210/crop/-/rBXRDGrtwRSARR-FAATNYARD5_M627.jpg" },
+        {
+            "id":  "6614264", "title":  "西班牙U17世界杯名单：通卡拉、佩斯克尔领衔，恩佐-阿尔维斯在列",
+            "url":  "https://www.dongqiudi.com/articles/6614264.html", "time":  "2026-11-06 10:50",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E7/A4/280x210/crop/-/rBXRDGrtOQKAAc3fAAHbvmQwlaQ847.jpg" },
         {
             "id":  "6604376", "title":  "传射建功！通卡拉vs阿斯顿维拉U19个人集锦",
             "url":  "https://www.dongqiudi.com/articles/6604376.html", "time":  "2026-11-04 10:12",
@@ -195,14 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6042208", "title":  "每体：18岁门将伊克尔被召入巴萨一线队训练，将顶替特狮",
             "url":  "https://www.dongqiudi.com/articles/6042208.html", "time":  "2026-07-16 23:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9F/43/280x210/crop/-/rBXRn2pY8eyAHdtbAAFJj5UtXgA494.jpg" },
-        {
-            "id":  "6040886", "title":  "世体：弗里克将评估多名青训小将，确定他们能否暂时顶替德容",
-            "url":  "https://www.dongqiudi.com/articles/6040886.html", "time":  "2026-07-16 14:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9D/E7/280x210/crop/-/rBXRn2pYe7uAdzGZAACcLJzA54w560.jpg" },
-        {
-            "id":  "6030473", "title":  "每体：弗里克征召16岁通卡拉，梦想成巴萨队史首位冈比亚球员",
-            "url":  "https://www.dongqiudi.com/articles/6030473.html", "time":  "2026-07-13 10:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/91/AA/280x210/crop/-/rBXRn2pUSMSAUs-rAAGcd5gTMQQ541.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9F/43/280x210/crop/-/rBXRn2pY8eyAHdtbAAFJj5UtXgA494.jpg" }
     ]
 };

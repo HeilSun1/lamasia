@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-06 09:02:47 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-06 21:03:59 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-06 09:02:47",
+    "updated":  "2026-11-06 21:03:59",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136149919", "title":  "Pol Planas deja el Juvenil del Barça para entrenar al Dinamo de Zagreb",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-deja-juvenil-barca-136149919", "time":  "2026-11-06 09:37",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d1d08001-1794-42f9-bd0d-d9198f0bea93_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136106479", "title":  "El Barça Atlètic pierde a cuatro jugadores importantes por la convocatoria de España Sub-19",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-cuatro-jugadores-136106479", "time":  "2026-11-05 10:38",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136097325", "title":  "Ebrima Tunkara, en tres frentes: talento de megacrack y humildad por bandera",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-tres-frentes-talento-136097325", "time":  "2026-11-05 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ec032e17-0895-4051-9a5e-ad35a3006a33_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ec032e17-0895-4051-9a5e-ad35a3006a33_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136044182", "title":  "Un colosal Iu Martínez salva un punto para un Barça superior y lastrado por el arbitraje",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/colosal-iu-martinez-salva-punto-136044182", "time":  "2026-11-03 17:51",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135200720", "title":  "Bisiwu se estrena por fin en casa",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/bisiwu-estrena-casa-barcelona-johan-cruyff-135200720", "time":  "2026-10-10 11:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e49f309c-a995-442a-bac3-9c8ce0865974_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135151674", "title":  "La idea que se enseña en La Masia y desvela uno de sus maestros: \"Cuando tu sueltas el balón en un colegio...\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/idea-ensena-masia-desvela-maestros-135151674", "time":  "2026-10-10 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/84520e78-7bd5-4edd-b2a7-b6165480f472_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e49f309c-a995-442a-bac3-9c8ce0865974_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

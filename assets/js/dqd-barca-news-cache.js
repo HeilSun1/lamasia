@@ -1,9 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-06 09:01:32 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-06 21:01:42 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-06 09:01:32",
+    "updated":  "2026-11-06 21:01:42",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6616503", "title":  "通卡拉更新ins：虽然结果不尽如人意，但我对我们...",
+            "url":  "https://www.dongqiudi.com/articles/6616503.html", "time":  "2026-11-06 19:55",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E8/47/280x210/crop/-/rBXRDGrto6eABw_1AA6Ge-e8D60471.jpg" },
+        {
+            "id":  "6616018", "title":  "每体：布斯克茨打造商业帝国，投资植物蛋白公司",
+            "url":  "https://www.dongqiudi.com/articles/6616018.html", "time":  "2026-11-06 18:23",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" },
+        {
+            "id":  "6614264", "title":  "西班牙U17世界杯名单：通卡拉、佩斯克尔领衔，恩佐-阿尔维斯在列",
+            "url":  "https://www.dongqiudi.com/articles/6614264.html", "time":  "2026-11-06 10:50",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E7/A4/280x210/crop/-/rBXRDGrtOQKAAc3fAAHbvmQwlaQ847.jpg" },
+        {
+            "id":  "6614117", "title":  "世体：巴萨竞技球员帕西菲科在重伤康复的路上迈出关...",
+            "url":  "https://www.dongqiudi.com/articles/6614117.html", "time":  "2026-11-06 09:14",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E7/8B/280x210/crop/-/rBXRDGrtKfqATySnAAI_JZe9bk0646.jpg" },
         {
             "id":  "6610982", "title":  "足球非洲：巴萨准备续约19岁加纳中卫哈菲兹-加里巴至2031年",
             "url":  "https://www.dongqiudi.com/articles/6610982.html", "time":  "2026-11-05 20:19",
@@ -187,22 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6508757", "title":  "沃顿：希望能像布斯克茨那样踢球，但我的水平还差得很远",
             "url":  "https://www.dongqiudi.com/articles/6508757.html", "time":  "2026-10-18 12:35",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BE/2A/280x210/crop/-/rBXRn2rUTIKAQOPsAAVc0MwjWZo282.png" },
-        {
-            "id":  "6508579", "title":  "齐头并进！本赛季截至目前，巴萨男、女足都保持了各...",
-            "url":  "https://www.dongqiudi.com/articles/6508579.html", "time":  "2026-10-18 11:29",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BE/0E/280x210/crop/-/rBXRn2rUPPiAXhh1AADaLsHI4nY426.jpg" },
-        {
-            "id":  "6508303", "title":  "恰托维奇vs乌特伯个人集锦。恰托维奇此役踢了58...",
-            "url":  "https://www.dongqiudi.com/articles/6508303.html", "time":  "2026-10-18 09:57",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/f66e08aa457821e87b70105e33382955cTApPd_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6508270", "title":  "比西武vs乌特伯个人集锦。比西武此役首发踢了64...",
-            "url":  "https://www.dongqiudi.com/articles/6508270.html", "time":  "2026-10-18 09:45",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/c83f3f2038c454bf98a3184984248216kbsgN7_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6508233", "title":  "哈姆扎vs乌特伯个人集锦。哈姆扎身穿19号球衣完...",
-            "url":  "https://www.dongqiudi.com/articles/6508233.html", "time":  "2026-10-18 09:36",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/18/74d9ac22905aee31d2318752fe6803ded19FdF_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BE/2A/280x210/crop/-/rBXRn2rUTIKAQOPsAAVc0MwjWZo282.png" }
     ]
 };
