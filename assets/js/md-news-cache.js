@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-07 21:03:25 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-07 20:19:17 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-07 21:03:25",
+    "updated":  "2026-11-07 20:19:17",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248341/premier-league-pone-ojos-ebrima-tunkara.html", "title":  "La Premier League pone sus ojos en Ebrima Tunkara",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248341/premier-league-pone-ojos-ebrima-tunkara.html", "time":  "2026-11-07 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/07/6aef1d3491187.r_d.1341-1078-4483.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "title":  "Mentalidad Fermín",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "time":  "2026-11-07 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "title":  "Deco argumenta la gestión del Barça Atlètic por el área deportiva profesional",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aaea5b366873.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "title":  "La historia de Iker Rodríguez, el portero convocado por Flick para Sevilla",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aad2ac09fd79.r_d.1515-1136-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aaea5b366873.jpeg" }
     ]
 };

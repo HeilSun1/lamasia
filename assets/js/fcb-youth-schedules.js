@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-07 21:02；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-07 20:20；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-07 21:02:14",
+    "updated":  "2026-11-07 20:20:51",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -739,9 +739,9 @@ window.LAMASIA_SCHEDULES = {
                                        "away":  "Mercantil A",
                                        "homeId":  "11111",
                                        "awayId":  "11169",
-                                       "hs":  "",
-                                       "as":  "",
-                                       "status":  "Not started",
+                                       "hs":  "4",
+                                       "as":  "0",
+                                       "status":  "Ended",
                                        "code":  "0",
                                        "isHome":  true,
                                        "venue":  "Ciutat Esportiva Joan Gamper"
@@ -1902,9 +1902,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "Sant Cugat A",
                                          "homeId":  "11113",
                                          "awayId":  "11219",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "1",
+                                         "as":  "0",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  true,
                                          "venue":  "Ciutat Esportiva Joan Gamper"
@@ -2474,9 +2474,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "FC Barcelona A",
                                            "homeId":  "11195",
                                            "awayId":  "11114",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "0",
+                                           "as":  "2",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  false,
                                            "venue":  "Municipal de L´Hospitalet del Llobregat"
