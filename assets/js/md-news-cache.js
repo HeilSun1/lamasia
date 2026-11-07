@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-07 09:45:20 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-07 21:03:25 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-07 09:45:20",
+    "updated":  "2026-11-07 21:03:25",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "title":  "Mentalidad Fermín",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "time":  "2026-11-07 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2021/11/26/61a10e9469831.png" },
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246509/kusturica-genio-precoz-barca-cobrar-lebron-james-ee-uu-17-anos.html", "title":  "Kusturica, de genio precoz en el Barça a cobrar más que LeBron James en EE.UU. con sólo 17 años",
             "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261103/1004246509/kusturica-genio-precoz-barca-cobrar-lebron-james-ee-uu-17-anos.html", "time":  "2026-11-03 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "title":  "La historia de Iker Rodríguez, el portero convocado por Flick para Sevilla",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aad2ac09fd79.r_d.1515-1136-4000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "title":  "Messi, el racismo, el Madrid y la bronca de Busquets, los otros temas de Lamine con Valdano",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228739/messi-racismo-madrid-bronca-busquets-otros-temas-lamine-valdano.html", "time":  "2026-09-18 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/17/6aac1efa1f14f.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aad2ac09fd79.r_d.1515-1136-4000.jpeg" }
     ]
 };

@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-07 09:45:17 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-07 21:03:22 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-07 09:45:17",
+    "updated":  "2026-11-07 21:03:22",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136193353", "title":  "El Barça ya tiene entrenador para el Juvenil A",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/albert-peris-sustituto-pol-planas-136193353", "time":  "2026-11-07 10:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/58d8a787-4eae-4015-977b-723f57885278_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136171341", "title":  "¿Quién sustituirá a Pol Planas? Los candidatos a entrenar al Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sustituira-pol-planas-candidatos-entrenar-136171341", "time":  "2026-11-06 17:40",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136149919", "title":  "Pol Planas deja el Juvenil del Barça para entrenar al Dinamo de Zagreb",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-deja-juvenil-barca-136149919", "time":  "2026-11-06 09:37",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d1d08001-1794-42f9-bd0d-d9198f0bea93_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d1d08001-1794-42f9-bd0d-d9198f0bea93_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136106479", "title":  "El Barça Atlètic pierde a cuatro jugadores importantes por la convocatoria de España Sub-19",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-pierde-cuatro-jugadores-136106479", "time":  "2026-11-05 10:38",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135207914", "title":  "Ybarra firma la victoria in extremis del Barça Atlètic",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ybarra-firma-victoria-in-extremis-135207914", "time":  "2026-10-10 16:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a762af62-45a8-4a74-9e52-c5284fecab05_16-9-discover-aspect-ratio_640w_0_x613y230.webp" },
-        {
-            "id":  "135205743", "title":  "Barça Atlètic - SD Logroñés en directo: resultado y goles en vivo del partido de Segunda RFEF",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-sd-logrones-directo-vivo-resultado-goles-segunda-rfef-135205743", "time":  "2026-10-10 13:18",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/551a81e9-cde3-4bab-966d-02810cf34db2_16-9-discover-aspect-ratio_640w_0_x622y138.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a762af62-45a8-4a74-9e52-c5284fecab05_16-9-discover-aspect-ratio_640w_0_x613y230.webp" }
     ]
 };
