@@ -1,8 +1,12 @@
 {
-    "runId":  "20261106-210003",
-    "runStartedUtc":  "2026-11-06T13:00:03.3536045Z",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "schema":  1,
+    "runId":  "20261107-094245",
+    "runStartedUtc":  "2026-11-07T01:42:45.5486975Z",
+    "runFinishedUtc":  "2026-11-07T01:47:16.3436249Z",
+    "lastSuccessUtc":  "2026-11-06T21:40:03.6351682Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "degraded",
+    "exitCode":  2,
     "consecutiveFailures":  0,
     "blocked":  false,
     "blockedSinceUtc":  null,
@@ -19,9 +23,5 @@
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-11-06T21:40:03.6351682Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-11-06T21:40:03.6351682Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
