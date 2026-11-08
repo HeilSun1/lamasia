@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-08 21:02:11 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-08 20:37:38 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-08 21:02:11",
+    "updated":  "2026-11-08 20:37:38",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136228877", "title":  "El Barça Atlètic arrolla con Orian Goren y Gariba estelares",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-liquida-manresa-orian-136228877", "time":  "2026-11-08 20:23",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c5da8031-2c78-48b3-bff9-468720c2a23b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136209458", "title":  "Sigue en directo el Manresa-Barça Atlètic del Grupo 2 de Segunda RFEF",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sigue-directo-manresa-barca-atletic-136209458", "time":  "2026-11-08 16:07",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a37aaa43-1ed1-45f2-ad3c-9cb52d93be49_16-9-discover-aspect-ratio_640w_0_x819y682.webp" },
+        {
             "id":  "136201551", "title":  "El Barça Atlètic, a por el Manresa con Orian Goren y Joni Hernández lanzados",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horario-ver-manresa-barca-atletic-136201551", "time":  "2026-11-08 10:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/13effd48-715e-41c3-83f7-6fa775a82bca_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/13effd48-715e-41c3-83f7-6fa775a82bca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136179616", "title":  "\"Pol Planas dará mucho que hablar en Europa. Contagia el ADN Barça a los jugadores, sus equipos atacan muy bien y es un gran gestor\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-dara-hablar-europa-136179616", "time":  "2026-11-08 07:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f5c5e3-aaff-4692-be3f-85818df8524b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f5c5e3-aaff-4692-be3f-85818df8524b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136193353", "title":  "El Barça ya tiene entrenador para el Juvenil A",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/albert-peris-sustituto-pol-planas-136193353", "time":  "2026-11-07 10:52",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135252275", "title":  "Estreno goleador de Haoyan Li, el primer jugador chino en la historia del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275", "time":  "2026-10-12 17:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135234494", "title":  "Artillería para el Barça en la Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artilleria-barca-youth-league-135234494", "time":  "2026-10-11 19:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
-        {
-            "id":  "135038867", "title":  "\"No es casual que después de Messi, en La Masia haya crecido Lamine, el Barça sabe detectar el talento\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/casual-despues-messi-masia-haya-135038867", "time":  "2026-10-11 17:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
