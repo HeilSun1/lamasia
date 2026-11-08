@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-08 09:29:08 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-08 21:01:56 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-08 09:29:08",
+    "updated":  "2026-11-08 21:01:56",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -159,6 +159,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4606030", "title":  "The squad for Atlético v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606030/the-squad-for-atletico-madrid-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/6df6d430-9c8e-40ae-b186-6bbcc36feabf/_MGA4451.jpg" },
+            {
+                "id":  "4605936", "title":  "PREVIEW | Atlético v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605936/preview-atletico-madrid-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4605960", "title":  "'Eric and Christensen will be in the squad'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605960/hansi-flick-eric-and-christensen-will-be-in-the-squad", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/3fe5c4c4-ca3f-42fd-8fe4-352d2b45daf7/_MGA4660.jpg" },
@@ -235,14 +243,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603213/cubarsi-rodrigo-pedri-and-lamine-yamal-candidates-for-fifpro-world-xi", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/639a0ef0-723b-4801-8cc9-f0e292c682f9/DAG-604-_M1A6902.jpg" },
             {
-                "id":  "4603044", "title":  "Flick aiming for top eight",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603044/hansi-flick-aiming-for-top-eight", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/d280bda7-baf2-42ac-bfc9-5b098e58e96b/_MGA3554.jpg" },
-            {
-                "id":  "4603029", "title":  "Ready for Villa",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603029/ready-for-aston-villa", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/0baaa163-41f0-4611-a00d-aaed21934aa1/WhatsApp-Image-2026-11-02-at-12.41.24.jpeg" },
-            {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
@@ -250,6 +250,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4603044", "title":  "Flick aiming for top eight",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603044/hansi-flick-aiming-for-top-eight", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/d280bda7-baf2-42ac-bfc9-5b098e58e96b/_MGA3554.jpg" },
+            {
+                "id":  "4603029", "title":  "Ready for Villa",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603029/ready-for-aston-villa", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/0baaa163-41f0-4611-a00d-aaed21934aa1/WhatsApp-Image-2026-11-02-at-12.41.24.jpeg" },
             {
                 "id":  "4602874", "title":  "When and where to watch Barça v Aston Villa",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602874/when-and-where-to-watch-fc-barcelona-v-aston-villa", "time":  "",
@@ -349,15 +357,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4598231", "title":  "The squad for the Clásico",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598231/the-squad-for-the-clasico", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/24/a0076b15-6e2e-4a19-babf-7e78e53f4fa6/_MGA0267.jpg" },
-            {
-                "id":  "4598180", "title":  "Ready for El Clásico",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598180/ready-for-el-clasico", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/24/8c35c17b-97ed-49a2-ba04-a185d1355541/_MGA0259.jpg" },
-            {
-                "id":  "4598196", "title":  "'Much more than three points'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598196/hansi-flick-clasico-much-more-than-three-points", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/24/5783612d-d4fb-4e07-881a-66fccb7c407d/_MGA0510.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/24/a0076b15-6e2e-4a19-babf-7e78e53f4fa6/_MGA0267.jpg" }
         ]
     }
 };

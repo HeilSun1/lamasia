@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-08 09:28 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u16_sofascore.ps1 每日更新于 2026-11-08 21:01 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-08 09:28:56",
+    "updated":  "2026-11-08 21:01:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -345,21 +345,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Iker  García",
-                        "id":  "2768921",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2768921/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-05-01",
-                        "foot":  "右脚",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Pau Sarria",
                         "id":  "2826564",
                         "pos":  "M",
@@ -370,6 +355,21 @@ window.DQD_U16_CACHE = {
                         "age":  "15岁",
                         "birthday":  "2011-01-22",
                         "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Iker  García",
+                        "id":  "2768921",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2768921/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-05-01",
+                        "foot":  "右脚",
                         "height":  "",
                         "value":  "",
                         "injury":  null

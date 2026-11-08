@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-08 09:28:01 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-08 21:00:46 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-08 09:28:01",
+    "updated":  "2026-11-08 21:00:46",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6627388", "title":  "巴萨客战马竞大名单：埃里克-加西亚、克里斯滕森伤愈回归",
+            "url":  "https://www.dongqiudi.com/articles/6627388.html", "time":  "2026-11-08 17:42",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EC/63/280x210/crop/-/rBXRDGrwRAaANXEBAA8snThktiI225.png" },
+        {
+            "id":  "6626516", "title":  "格里马尔多将代表马竞出战老东家巴萨，每体回顾其成长经历",
+            "url":  "https://www.dongqiudi.com/articles/6626516.html", "time":  "2026-11-08 15:51",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EC/19/280x210/crop/-/rBXRDGrwIGqAMszmAAKu9DnnzcM489.jpg" },
         {
             "id":  "6620693", "title":  "阿斯：巴萨马竞修复关系，周日高层共进午餐",
             "url":  "https://www.dongqiudi.com/articles/6620693.html", "time":  "2026-11-07 16:44",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6516687", "title":  "世体介绍阿莱士-坎波斯：擅长争顶下脚果断，脚下技术同样不错",
             "url":  "https://www.dongqiudi.com/articles/6516687.html", "time":  "2026-10-19 17:52",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/17/280x210/crop/-/rBXRn2rV6HWAAQwAAACqrfvLH0Y894.jpg" },
-        {
-            "id":  "6516438", "title":  "坎波斯2024-25赛季个人集锦。18岁的阿莱士...",
-            "url":  "https://www.dongqiudi.com/articles/6516438.html", "time":  "2026-10-19 16:23",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/10/19/2a3a8d2d1f56b02e85061b60ebc06e0f83lhpW.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6516369", "title":  "巴萨欧冠战巴黎大名单：亚马尔、拉菲尼亚领衔，孔德缺席",
-            "url":  "https://www.dongqiudi.com/articles/6516369.html", "time":  "2026-10-19 16:09",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C0/F6/280x210/crop/-/rBXRDGrV0CmAZgs-ABRdFbM4t0o216.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/17/280x210/crop/-/rBXRn2rV6HWAAQwAAACqrfvLH0Y894.jpg" }
     ]
 };

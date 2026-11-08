@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-08 09:29:11 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-08 21:02:11 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-08 09:29:11",
+    "updated":  "2026-11-08 21:02:11",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136201551", "title":  "El Barça Atlètic, a por el Manresa con Orian Goren y Joni Hernández lanzados",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/horario-ver-manresa-barca-atletic-136201551", "time":  "2026-11-08 10:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/13effd48-715e-41c3-83f7-6fa775a82bca_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136179616", "title":  "\"Pol Planas dará mucho que hablar en Europa. Contagia el ADN Barça a los jugadores, sus equipos atacan muy bien y es un gran gestor\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-dara-hablar-europa-136179616", "time":  "2026-11-08 07:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/96f5c5e3-aaff-4692-be3f-85818df8524b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136193353", "title":  "El Barça ya tiene entrenador para el Juvenil A",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/albert-peris-sustituto-pol-planas-136193353", "time":  "2026-11-07 10:52",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/58d8a787-4eae-4015-977b-723f57885278_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/58d8a787-4eae-4015-977b-723f57885278_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136171341", "title":  "¿Quién sustituirá a Pol Planas? Los candidatos a entrenar al Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sustituira-pol-planas-candidatos-entrenar-136171341", "time":  "2026-11-06 17:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/66d1e496-a464-4ba0-a817-9c89c2f31fdd_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/66d1e496-a464-4ba0-a817-9c89c2f31fdd_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136149919", "title":  "Pol Planas deja el Juvenil del Barça para entrenar al Dinamo de Zagreb",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pol-planas-deja-juvenil-barca-136149919", "time":  "2026-11-06 09:37",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135038867", "title":  "\"No es casual que después de Messi, en La Masia haya crecido Lamine, el Barça sabe detectar el talento\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/casual-despues-messi-masia-haya-135038867", "time":  "2026-10-11 17:10",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135221437", "title":  "Belletti tiene defensa",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-defensa-barcelona-atletic-iker-landry-135221437", "time":  "2026-10-11 09:14",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/00ca00b4-7754-478e-a668-3853b611dd3e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135207914", "title":  "Ybarra firma la victoria in extremis del Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ybarra-firma-victoria-in-extremis-135207914", "time":  "2026-10-10 16:29",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a762af62-45a8-4a74-9e52-c5284fecab05_16-9-discover-aspect-ratio_640w_0_x613y230.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/69f40ea9-ee16-42b7-a340-0f5424a1b38d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
