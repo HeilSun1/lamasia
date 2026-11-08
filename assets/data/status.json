@@ -1,8 +1,12 @@
 {
-    "runId":  "20261107-210002",
-    "runStartedUtc":  "2026-11-07T13:00:02.5803004Z",
-    "lastRunStatus":  "ok",
-    "exitCode":  0,
+    "schema":  1,
+    "runId":  "20261108-092712",
+    "runStartedUtc":  "2026-11-08T01:27:12.0358097Z",
+    "runFinishedUtc":  "2026-11-08T01:30:32.1986911Z",
+    "lastSuccessUtc":  "2026-11-07T20:21:19.7359375Z",
+    "lastRunSource":  "local",
+    "lastRunStatus":  "degraded",
+    "exitCode":  2,
     "consecutiveFailures":  0,
     "blocked":  false,
     "blockedSinceUtc":  null,
@@ -10,7 +14,7 @@
 
                      ],
     "failedScripts":  [
-
+                          "update_elfutbol_details.ps1"
                       ],
     "staleCaches":  [
 
@@ -19,9 +23,5 @@
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-11-07T20:21:19.7359375Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-11-07T20:21:19.7359375Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
