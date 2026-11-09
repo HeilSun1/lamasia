@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-09 09:20:57 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-09 21:01:06 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-09 09:20:57",
+    "updated":  "2026-11-09 21:01:06",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6630772", "title":  "巴萨竞技战报 20261109",
+            "url":  "https://www.dongqiudi.com/articles/6630772.html", "time":  "2026-11-09 03:10",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/ED/72/280x210/crop/-/rBXRDGrwyJKAHSAwAAf7Jc_ZjJc004.jpg" },
         {
             "id":  "6616511", "title":  "每体：巴萨U19梯队主帅普拉纳斯即将离队，他将成...",
             "url":  "https://www.dongqiudi.com/articles/6616511.html", "time":  "2026-11-06 19:59",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6047492", "title":  "德拉富恩特所说的被梅西击败是04年5月，巴萨U19淘汰塞维U19",
             "url":  "https://www.dongqiudi.com/articles/6047492.html", "time":  "2026-07-18 15:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A5/E6/280x210/crop/-/rBXRDGpbMECAKOUdAAChnp5we2c771.jpg" },
-        {
-            "id":  "6042208", "title":  "每体：18岁门将伊克尔被召入巴萨一线队训练，将顶替特狮",
-            "url":  "https://www.dongqiudi.com/articles/6042208.html", "time":  "2026-07-16 23:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/9F/43/280x210/crop/-/rBXRn2pY8eyAHdtbAAFJj5UtXgA494.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A5/E6/280x210/crop/-/rBXRDGpbMECAKOUdAAChnp5we2c771.jpg" }
     ]
 };

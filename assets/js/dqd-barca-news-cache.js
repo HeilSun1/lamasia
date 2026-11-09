@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-09 09:20:34 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-09 21:00:46 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-09 09:20:34",
+    "updated":  "2026-11-09 21:00:46",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6630772", "title":  "巴萨竞技战报 20261109",
+            "url":  "https://www.dongqiudi.com/articles/6630772.html", "time":  "2026-11-09 03:10",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/ED/72/280x210/crop/-/rBXRDGrwyJKAHSAwAAf7Jc_ZjJc004.jpg" },
         {
             "id":  "6627388", "title":  "巴萨客战马竞大名单：埃里克-加西亚、克里斯滕森伤愈回归",
             "url":  "https://www.dongqiudi.com/articles/6627388.html", "time":  "2026-11-08 17:42",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6518341", "title":  "每体：西协乙分组调整利好加泰罗尼亚，七支加泰球队跻身赛区前九",
             "url":  "https://www.dongqiudi.com/articles/6518341.html", "time":  "2026-10-20 00:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/97/280x210/crop/-/rBXRn2rWQUCAJ7spAAE77N9ihSI746.jpg" },
-        {
-            "id":  "6516687", "title":  "世体介绍阿莱士-坎波斯：擅长争顶下脚果断，脚下技术同样不错",
-            "url":  "https://www.dongqiudi.com/articles/6516687.html", "time":  "2026-10-19 17:52",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/17/280x210/crop/-/rBXRn2rV6HWAAQwAAACqrfvLH0Y894.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/97/280x210/crop/-/rBXRn2rWQUCAJ7spAAE77N9ihSI746.jpg" }
     ]
 };

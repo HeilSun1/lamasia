@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-09 09:21:42 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-09 21:01:55 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-09 09:21:42",
+    "updated":  "2026-11-09 21:01:55",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,6 +163,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4606828", "title":  "Hansi Flick's Barça pull off another comeback",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606828/hansi-flicks-barca-pull-off-another-comeback", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/2cf2899f-78c5-446f-bed8-f48df5713122/_MGA5360.jpg" },
+            {
                 "id":  "4606585", "title":  "Hansi Flick: \"I believe in this team\"",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606585/hansi-flick-i-believe-in-this-team", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/b812ed4f-c1d5-48b7-9cf1-b4da53eea9b8/_MGA5042.jpg" },
@@ -247,10 +251,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603853/lamine-yamal-top-champions-league-scorer-under-20-years-of-age", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/6589b605-bdc6-4738-bc62-2c720631b9f4/_MGA8550.jpg" },
             {
-                "id":  "4603599", "title":  "Emotional minute's silence",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603599/emotional-minutes-silence", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -258,6 +258,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4603599", "title":  "Emotional minute's silence",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603599/emotional-minutes-silence", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" },
             {
                 "id":  "4603075", "title":  "The squad for the Aston Villa match",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603075/the-squad-for-the-aston-villa-match", "time":  "",
@@ -357,11 +361,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4598953", "title":  "Raphinha scores again",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598953/raphinha-scores-again", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/9c2a7088-5942-4884-87cc-3fc6455bb33a/2026-10-25_FCBvsRMADRID_158.jpg" },
-            {
-                "id":  "4598708", "title":  "'We weren't fresh enough'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4598708/hansi-flick-we-werent-fresh-enough", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/25/2cae08b1-18bc-4255-81dd-cfb55945e54f/_MGA0921.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/26/9c2a7088-5942-4884-87cc-3fc6455bb33a/2026-10-25_FCBvsRMADRID_158.jpg" }
         ]
     }
 };

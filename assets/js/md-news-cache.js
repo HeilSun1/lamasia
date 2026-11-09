@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-09 09:21:46 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-09 21:02:10 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-09 09:21:46",
+    "updated":  "2026-11-09 21:02:10",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249028/acuerdo-cooperacion-barca-sfera-fc-formacion-talentos-brasilenos.html", "title":  "Acuerdo de cooperación Barça-Sfera FC para la formación de talentos brasileños",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249028/acuerdo-cooperacion-barca-sfera-fc-formacion-talentos-brasilenos.html", "time":  "2026-11-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/09/6af1b3bb747fb.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261109/1004248902/primer-numero-1-draft-nba-barca-predicando-valores-masia-no-oyes.html", "title":  "Puede ser el primer número 1 del draft de la NBA del Barça y predicando los valores de La Masia: Es algo que no oyes",
+            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261109/1004248902/primer-numero-1-draft-nba-barca-predicando-valores-masia-no-oyes.html", "time":  "2026-11-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/09/6af15d0a114c8.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "title":  "Mentalidad Fermín",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261107/1004248116/mentalidad-fermin.html", "time":  "2026-11-07 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "title":  "La cláusula que tendrá Bernal en su nuevo contrato",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "time":  "2026-09-21 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/21/6ab0e2a01e970.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "title":  "Deco argumenta la gestión del Barça Atlètic por el área deportiva profesional",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004229108/deco-argumenta-gestion-barca-atletic-area-deportiva-profesional.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/19/6aaea5b366873.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "title":  "La historia de Iker Rodríguez, el portero convocado por Flick para Sevilla",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228709/historia-iker-rodriguez-portero-llamado-flick-sevilla.html", "time":  "2026-09-19 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aad2ac09fd79.r_d.1515-1136-4000.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/21/6ab0e2a01e970.jpeg" }
     ]
 };

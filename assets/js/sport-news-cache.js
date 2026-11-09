@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-09 09:21:44 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-09 21:02:08 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-09 09:21:44",
+    "updated":  "2026-11-09 21:02:08",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "136228877", "title":  "El Barça Atlètic arrolla con Orian Goren y Gariba estelares",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-liquida-manresa-orian-136228877", "time":  "2026-11-08 20:23",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c5da8031-2c78-48b3-bff9-468720c2a23b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c5da8031-2c78-48b3-bff9-468720c2a23b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136209458", "title":  "Sigue en directo el Manresa-Barça Atlètic del Grupo 2 de Segunda RFEF",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sigue-directo-manresa-barca-atletic-136209458", "time":  "2026-11-08 16:07",
