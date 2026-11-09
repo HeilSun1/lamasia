@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-08 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-09 09:20 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-08 21:01:05",
+    "updated":  "2026-11-09 09:20:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -398,7 +398,7 @@ window.DQD_U19_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128115/image",
                         "age":  "17岁",
-                        "birthday":  "2009-01-30",
+                        "birthday":  "2009-01-29",
                         "foot":  "左脚",
                         "height":  "184",
                         "value":  "",
@@ -790,10 +790,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Barcelona U19",
                         "homeId":  "1269154",
                         "awayId":  "90128",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "1",
+                        "as":  "3",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
