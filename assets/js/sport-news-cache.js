@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-10 19:35:40 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-10 21:51:26 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-10 19:35:40",
+    "updated":  "2026-11-10 21:51:26",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -11,7 +11,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136262568", "title":  "Oficial: Pol Planas se desvincula del Barça y Albert Peris lo sustituye",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-pol-planas-desvincula-barca-136262568", "time":  "2026-11-09 19:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fdf5833b-00ee-459a-b115-84e90b775d9b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fdf5833b-00ee-459a-b115-84e90b775d9b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136255936", "title":  "El show de Hugo Garcés tumba al Espanyol: exhibición de ADN Barça del Juvenil B",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/show-hugo-garces-tumba-espanyol-136255936", "time":  "2026-11-09 17:42",

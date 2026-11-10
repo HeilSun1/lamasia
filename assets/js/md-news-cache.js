@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-10 19:35:57 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-10 21:51:27 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-10 19:35:57",
+    "updated":  "2026-11-10 21:51:27",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249618/descanso-eterno-spotify-camp-nou-posible.html", "title":  "El descanso eterno en el Spotify Camp Nou ya es posible",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249618/descanso-eterno-spotify-camp-nou-posible.html", "time":  "2026-11-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/10/6af3774c17762.webp" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249564/tuttosport-encumbra-cubarsi-legendaria-masia.html", "title":  "Tuttosport ensalza a Cubarsí y a la legendaria Masia",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249564/tuttosport-encumbra-cubarsi-legendaria-masia.html", "time":  "2026-11-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/31/6a95deceb604a.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249153/cubarsi-segundo-central-logra-golden-boy.html", "title":  "Cubarsí, el segundo central que logra el Golden Boy",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249153/cubarsi-segundo-central-logra-golden-boy.html", "time":  "2026-11-10 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "title":  "El valiente compromiso de Brian Fariñas con el Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e80863b70.r_d.637-600-8141.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "title":  "La UEFA destaca el enorme peso de la cantera del Barça femenino",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260925/1004231174/uefa-destaca-papel-canteranas-barca.html", "time":  "2026-09-25 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab448bfe8b42.r_d.1275-682-4671.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "title":  "1-2: Roberto Tomás asiste en el triunfo de España Sub-18 ante Costa de Marfil",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "time":  "2026-09-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab5666e94abb.r_d.442-302-13575.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e80863b70.r_d.637-600-8141.jpeg" }
     ]
 };
