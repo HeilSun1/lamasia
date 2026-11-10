@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U12（Infantil C） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-09 21:03 */
+/* 自动生成，请勿手动编辑 —— U12（Infantil C） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-10 09:37 */
 window.ELFUTBOL_INFANTIL_C_DETAILS_CACHE = {
     "fcb:infantil-c:16":  {
                               "lineups":  {
@@ -743,7 +743,7 @@ window.ELFUTBOL_INFANTIL_C_DETAILS_CACHE = {
                                            }
                          },
     "__pendingReports":  {
-                             "fcb:infantil-c:31":  "2026-11-07",
-                             "fcb:infantil-c:38":  "2026-11-07"
+                             "fcb:infantil-c:31":  "2026-11-10",
+                             "fcb:infantil-c:38":  "2026-11-10"
                          }
 };
