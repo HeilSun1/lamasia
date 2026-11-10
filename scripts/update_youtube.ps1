@@ -1760,3 +1760,8 @@ if ($script:WriteFailed) {
 }
 
 Log "YouTube 集锦更新完成 ✔"
+
+# 显式退出码：脚本内 curl/Edge 这类原生命令即使失败已被处理，也会把非零值留在 $LASTEXITCODE 里
+# （例如 curl 超时返回 28）。上层 run_daily_update.ps1 通过 $LASTEXITCODE 判定子脚本成败，
+# 所以成功路径必须显式归零，否则会出现「缓存写成功却标降级」的幽灵失败。
+exit 0
