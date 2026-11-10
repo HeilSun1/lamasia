@@ -1024,9 +1024,10 @@ function Find-Opponent([string]$titleNorm, $oppPool) {
   }
   if ($best) { return $best }
   # 标题「vs/VS 对手」提取（支持中文对手与无空格，如 哈姆扎VS开罗国民 → 开罗国民）
-  $m = [regex]::Match($titleNorm, '(?<![a-z0-9])vs\.?\s*([一-鿿]+|[a-z0-9]+(?:\s+[a-z0-9]+)*)')
+  $m = [regex]::Match($titleNorm, '(?<![a-z0-9])vs\.?\s*([一-鿿a-z0-9][一-鿿a-z0-9 .\-]*)')
   if ($m.Success) {
     $raw = $m.Groups[1].Value.Trim()
+    $raw = $raw -replace '\s*[-–—|:]\s*.*$', ''            # 分隔符后的描述（- UEFA Youth League）
     $raw = $raw -replace '\s+\d{1,4}(/\d{1,4})*$', ''        # 尾部日期/年份
     $raw = $raw -replace '\s+u\d+$', ''                      # 尾部年龄组
     $raw = $raw -replace '\s+(full|highlights|match|game|goals|1st|2nd)$', ''

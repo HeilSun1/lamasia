@@ -1189,15 +1189,15 @@ tr.match-row:hover { background: var(--surface-3); }
 .hl-c-player { width: 46%; }
 .hl-p-main { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
 .hl-p-av {
-  width: 24px; height: 24px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
-  background: linear-gradient(135deg, var(--surface-3), var(--surface-2));
+  width: 32px; height: 32px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+  background: var(--surface-3);
   border: 1px solid var(--border); display: grid; place-items: center;
 }
 .hl-p-av img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hl-p-ini { font-size: 10.5px; font-weight: 800; color: var(--muted); }
-.hl-c-team { font-size: 11.5px; color: var(--muted); max-width: 230px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hl-p-ini { font-size: 12px; font-weight: 800; color: var(--muted); }
+.hl-c-team { font-size: 12px; color: var(--muted); max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hl-c-count { width: 66px; white-space: nowrap; color: var(--muted); font-size: 12px; }
-.hl-c-count b { font-size: 13px; color: var(--text); font-weight: 800; }
+.hl-c-count b { font-size: 15px; color: var(--text); font-weight: 800; }
 .hl-c-toggle { width: 42px; color: var(--faint); font-size: 12px; white-space: nowrap; }
 .hl-caret { display: inline-block; transition: transform .15s ease; }
 .hl-prow.is-open .hl-caret { transform: rotate(90deg); }
@@ -1211,21 +1211,21 @@ tr.match-row:hover { background: var(--surface-3); }
 .hl-summary td { padding: 9px 10px; }
 .hl-tier-row { cursor: pointer; }
 .hl-tier-row:hover { background: var(--surface-3); }
-.hl-c-tier { font-size: 13px; }
+.hl-c-tier { font-size: 15px; }
 .hl-c-tier b { font-weight: 800; color: var(--text); }
 .hl-tier-ico { display: inline-block; width: 22px; }
 
 @media (max-width: 680px) {
   .hl-table th, .hl-table td { padding: 6px 6px; }
   .hl-c-player { width: auto; }
-  .hl-c-team { max-width: 110px; font-size: 11px; }
-  .hl-name-btn { font-size: 12.5px; }
+  .hl-c-team { max-width: 120px; font-size: 12px; }
+  .hl-name-btn { font-size: 15px; }
   .hl-tab-n { display: none; }
 }
 /* 球员名按钮：点击弹球员卡片 */
 .hl-name-btn {
   border: 0; background: none; padding: 0; cursor: pointer;
-  font-size: 13.5px; font-weight: 800; color: var(--text); text-align: left;
+  font-size: 15px; font-weight: 800; color: var(--text); text-align: left;
 }
 .hl-name-btn:hover { color: var(--accent, #a50044); text-decoration: underline; }
 .vid-grid {

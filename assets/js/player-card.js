@@ -54,11 +54,11 @@
   function teamLabel(tier) {
     var m = {
       b: "预备队 · Barça Atlètic",
-      u19: "U19 · Juvenil A", u18: "U18 · Juvenil B", u16: "U16 · Cadete A",
-      "juvenil-a": "U19 A · Juvenil A", "juvenil-b": "U19 B · Juvenil B", cadete: "U16 · Cadete A",
-      "cadete-b": "U15 · Cadete B", infantil: "U14 · Infantil A", "infantil-b": "U13 · Infantil B",
-      "infantil-c": "U12 · Infantil C", u11a: "SUB11 A · Alevín C", u11b: "SUB11 B · Alevín D",
-      u10a: "U10A · Benjamín A", u10b: "U10B · Benjamín B", u9a: "U9A · Benjamín C", u9b: "U9B · Benjamín D"
+      u19: "U19 A · Juvenil A", u18: "U19 B · Juvenil B", u16: "SUB16 · Cadete A",
+      "juvenil-a": "U19 A · Juvenil A", "juvenil-b": "U19 B · Juvenil B", cadete: "SUB16 · Cadete A",
+      "cadete-b": "SUB15 · Cadete B", infantil: "SUB14 · Infantil A", "infantil-b": "SUB13 · Infantil B",
+      "infantil-c": "SUB12 · Infantil C", u11a: "SUB11 A · Alevín C", u11b: "SUB11 B · Alevín D",
+      u10a: "SUB10 A · Benjamín A", u10b: "SUB10 B · Benjamín B", u9a: "SUB9 A · Benjamín C", u9b: "SUB9 B · Benjamín D"
     };
     return m[tier] || tier || "";
   }

@@ -42,11 +42,11 @@
   var TIER_ORDER = { b: 0, u19: 1, u18: 2, u16: 3, u15: 4, u14: 5, other: 9 };
   var TIER_LABEL = {
     b: "预备队 · Barça Atlètic",
-    u19: "U19 · Juvenil A",
-    u18: "U18 · Juvenil B",
-    u16: "U16 · Cadete A",
-    u15: "U15 · Cadete B",
-    u14: "U14–U13 · Infantil A/B/C",
+    u19: "U19 A · Juvenil A",
+    u18: "U19 B · Juvenil B",
+    u16: "SUB16 · Cadete A",
+    u15: "SUB15 · Cadete B",
+    u14: "SUB14–SUB12 · Infantil A/B/C",
     other: "其他"
   };
   var LOCAL_TIER = {
@@ -101,7 +101,7 @@
         var hit = null;
         for (var i = 0; i < groups.length; i++) if (groups[i].label === em.label) { hit = groups[i]; break; }
         if (hit) hit.videos.push(v);
-        else groups.push({ date: em.dateStr, label: em.label, match: true, videos: [v] });
+        else groups.push({ date: em.dateStr, label: em.label, match: true, key: v.matchKey || "", videos: [v] });
       } else unmatched.push(v);
     });
     return { groups: groups, unmatched: unmatched };
@@ -125,13 +125,13 @@
     var groups = [];
     window.VideosUI.feedFor(k).forEach(function (g) {
       var list = cleanVideos(g.videos);
-      if (list.length) groups.push({ date: g.date, label: g.label, match: !!g.opp, videos: list });
+      if (list.length) groups.push({ date: g.date, label: g.label, match: !!g.opp, key: g.matchKey || "", videos: list });
     });
     var m = /^sf:([a-z0-9]+):(\d+)$/.exec(k);
     if (m) {
       var sg = groupSched(cleanVideos(window.VideosUI.resolve("players", k)), m[1]);
       groups = groups.concat(sg.groups);
-      if (sg.unmatched.length) groups.push({ date: "", label: "📹 其他 / 未匹配到赛程", match: false, videos: sg.unmatched });
+      if (sg.unmatched.length) groups.push({ date: "", label: "其他 / 未匹配到赛程", match: false, videos: sg.unmatched });
     }
     if (!groups.length) return;
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
@@ -156,7 +156,7 @@
     if (!o.zh && e.nameZh) o.zh = e.nameZh;
     if (!o.en) o.en = e.nameEn;
     var ord = TIER_ORDER[e.tier] != null ? TIER_ORDER[e.tier] : 9;
-    if (ord < o.order) { o.order = ord; o.key = e.key; }   // 主梯队 = 最高级
+    if (ord < o.order) { o.order = ord; o.key = e.key; o.teamFirst = e.team; }   // 主梯队 = 最高级
     if (e.team) o.teams[e.team] = true;
     o.keys[e.key] = true;
     if (e.nameEn) o.names[e.nameEn] = true;
@@ -174,29 +174,56 @@
         list.push(v);
       });
       if (!list.length) return;
-      var hit = null;
-      for (var i = 0; i < out.length; i++) {
-        if (out[i].label === g.label) { hit = out[i]; break; }
-      }
-      if (hit) hit.videos = hit.videos.concat(list);
-      else out.push({ date: g.date || "", label: g.label, match: !!g.match, videos: list });
+      out.push({ date: g.date || "", label: g.label, match: !!g.match, key: g.key || "", videos: list });
     });
-    // 同日比赛组合并（中文/英文同场：开罗国民 与 Al Ahly 归一组）
-    var merged = [];
+    // ① 同一场比赛（matchKey 相同）先合：同一场的中/英文标题只差一个标签
+    var keyed = [], rest = [];
     out.forEach(function (g) {
-      var hit = null;
-      if (g.match) {
-        for (var i = 0; i < merged.length; i++) {
-          if (merged[i].match && merged[i].date === g.date) { hit = merged[i]; break; }
+      if (!g.key) { rest.push(g); return; }
+      for (var i = 0; i < keyed.length; i++) {
+        if (keyed[i].key !== g.key) continue;
+        if (g.videos.length > keyed[i].videos.length) keyed[i].label = g.label;
+        keyed[i].date = keyed[i].date || g.date;
+        keyed[i].match = keyed[i].match || g.match;
+        keyed[i].videos = keyed[i].videos.concat(g.videos);
+        return;
+      }
+      keyed.push(g);
+    });
+    // ② 标签完全相同再合
+    var merged = [];
+    keyed.concat(rest).forEach(function (g) {
+      for (var i = 0; i < merged.length; i++) {
+        if (merged[i].label === g.label) {
+          merged[i].videos = merged[i].videos.concat(g.videos);
+          merged[i].match = merged[i].match || g.match;
+          return;
         }
       }
-      if (hit) {
-        if (g.videos.length > hit.videos.length) hit.label = g.label;   // 标签用视频多的那组
-        hit.videos = hit.videos.concat(g.videos);
-      } else merged.push(g);
+      merged.push(g);
     });
-    merged.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
-    return merged;
+    // ③ 日期合并：同一天必合（比赛组并掉当天没标对手的「集锦」组），
+    //    相差一天只在两边都是比赛时合（中英文标题跨时区，如 奥洛特 10-27 / Olot 10-26）
+    function dayOf(d) { var t = Date.parse((d || "") + "T00:00:00Z"); return isNaN(t) ? null : t; }
+    var byDay = [];
+    merged.forEach(function (g) {
+      var t = dayOf(g.date);
+      for (var i = 0; i < byDay.length && t != null; i++) {
+        var h = byDay[i], ht = dayOf(h.date);
+        if (ht == null) continue;
+        var diff = Math.abs(ht - t);
+        if (diff > 864e5) continue;
+        if (diff > 0 && !(g.match && h.match)) continue;
+        if (g.videos.length > h.videos.length && g.match) { h.label = g.label; h.date = g.date; }
+        h.match = h.match || g.match;
+        h.key = h.key || g.key;
+        h.videos = h.videos.concat(g.videos);
+        return;
+      }
+      byDay.push(g);
+    });
+    byDay.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+    return byDay;
   }
 
   // ④ 按主梯队分组
@@ -214,7 +241,7 @@
       keys: Object.keys(o.keys),
       names: Object.keys(o.names),
       tier: tier,
-      teams: Object.keys(o.teams),
+      teams: (o.teamFirst ? [o.teamFirst] : []).concat(Object.keys(o.teams).filter(function (t) { return t && t !== o.teamFirst; })),
       groups: groups,
       count: groups.reduce(function (s, g) { return s + g.videos.length; }, 0)
     };
@@ -224,8 +251,7 @@
   // ⑤ 渲染：与「比赛信息」页同一套 deck 交互。
   //    顶部吸顶页签（全部 + 各梯队），同一时间只显示一张卡片；
   //    卡片内用表格式行展示球员，点行展开该球员的比赛分组，再点分组出视频。
-  var TIER_CHIP = { b: "B队", u19: "U19", u18: "U18", u16: "U16", u15: "U15", u14: "U14", other: "其他" };
-  var TIER_ICO = { b: "🟡🔵", u19: "🎓", u18: "🎓", u16: "🎓", u15: "🎓", u14: "🎓", other: "⚽" };
+  var TIER_CHIP = { b: "B队", u19: "U19 A", u18: "U19 B", u16: "SUB16", u15: "SUB15", u14: "SUB14", other: "其他" };
   var tierNames = Object.keys(TIER_ORDER).filter(function (t) { return byTier[t]; });
   var totalP = 0, totalV = 0;
   tierNames.forEach(function (t) {
@@ -250,10 +276,9 @@
   // 球员行下的比赛分组（沿用原来的折叠样式）
   function groupFoldsHtml(p) {
     return p.groups.map(function (g) {
-      var pre = g.label.indexOf("📹") === 0 ? "" : "⚽ ";
       var gNew = g.videos.some(function (v) { return window.VideosUI && window.VideosUI.vidIsNew(v.published, v.videoId); });
       return '<details class="md-vids-fold hl-match"' + (gNew ? ' data-gnew="1"' : "") + ">" +
-        "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + pre + esc(g.label) +
+        "<summary>" + (gNew ? '<span class="vg-dot" aria-label="有新集锦"></span>' : "") + esc(g.label) +
           ' <span class="vid-count">' + g.videos.length + "</span></summary>" +
         '<div class="md-vids-fold-body"><div class="vid-grid">' +
           g.videos.map(window.VideosUI.videoCardHtml).join("") +
@@ -269,7 +294,7 @@
         : [];
       var ini = esc(initialsOf(p.name));
       var av = ph.length
-        ? '<span class="hl-p-av"><img src="' + esc(ph[0]) + '" alt="" loading="lazy" referrerpolicy="no-referrer"' +
+        ? '<span class="hl-p-av"><img src="' + esc(ph[0]) + '" alt="' + esc(p.name) + '" loading="lazy" referrerpolicy="no-referrer"' +
           (ph.length > 1 ? ' data-alt="' + esc(ph.slice(1).join("|")) + '"' : "") +
           ' onerror="window.PC_IMG_FALLBACK(this)">' +
           '<span class="hl-p-ini" style="display:none">' + ini + "</span></span>"
@@ -290,7 +315,7 @@
   function tierCardHtml(t) {
     var players = byTier[t].slice().sort(function (a, b) { return b.count - a.count; });
     return '<section class="panel deck-card" id="hl-sec-' + esc(t) + '" role="tabpanel">' +
-      '<div class="panel-title-row"><h3>' + (TIER_ICO[t] || "🎓") + " " + esc(TIER_LABEL[t]) +
+      '<div class="panel-title-row"><h3>' + esc(TIER_LABEL[t]) +
         ' <span class="tag">球员集锦</span></h3>' +
         '<span class="badge blue">' + players.length + " 名球员 · " + tierVideos(t) + " 条集锦</span></div>" +
       '<div class="p-body" style="margin-top:10px"><div class="table-wrap"><table class="hl-table">' +
@@ -300,25 +325,25 @@
 
   var summaryRows = tierNames.map(function (t) {
     return '<tr class="hl-tier-row" data-target="hl-sec-' + esc(t) + '">' +
-      '<td class="hl-c-tier"><span class="hl-tier-ico">' + (TIER_ICO[t] || "🎓") + "</span><b>" + esc(TIER_LABEL[t]) + "</b></td>" +
+      '<td class="hl-c-tier"><b>' + esc(TIER_LABEL[t]) + "</b></td>" +
       '<td class="hl-c-count"><b>' + byTier[t].length + "</b> 名</td>" +
       '<td class="hl-c-count"><b>' + tierVideos(t) + "</b> 条</td>" +
       '<td class="hl-c-toggle">查看 →</td></tr>';
   }).join("");
 
-  tabsWrap.innerHTML = [{ id: "all", ico: "🎥", label: "全部", n: totalP }]
+  tabsWrap.innerHTML = [{ id: "all", label: "全部", n: totalP }]
     .concat(tierNames.map(function (t) {
-      return { id: t, ico: TIER_ICO[t] || "🎓", label: TIER_CHIP[t] || t, n: byTier[t].length };
+      return { id: t, label: TIER_CHIP[t] || t, n: byTier[t].length };
     }))
     .map(function (d, i) {
       return '<button type="button" class="deck-tab' + (i === 0 ? " is-active" : "") + '" role="tab" aria-selected="' + (i === 0) +
-        '" data-target="hl-sec-' + esc(d.id) + '"><span class="dt-ico">' + d.ico + "</span>" + esc(d.label) +
+        '" data-target="hl-sec-' + esc(d.id) + '">' + esc(d.label) +
         ' <span class="hl-tab-n">' + d.n + "</span></button>";
     }).join("");
 
   stage.innerHTML =
     '<section class="panel deck-card is-active" id="hl-sec-all" role="tabpanel">' +
-      '<div class="panel-title-row"><h3>🎥 全部梯队 <span class="tag">点梯队查看球员集锦</span></h3>' +
+      '<div class="panel-title-row"><h3>全部梯队 <span class="tag">点梯队查看球员集锦</span></h3>' +
         '<span class="badge gray">' + totalP + " 名球员 · " + totalV + " 条集锦</span></div>" +
       '<div class="p-body" style="margin-top:10px"><div class="table-wrap"><table class="hl-table hl-summary">' +
         "<thead><tr><th>梯队</th><th>球员</th><th>集锦</th><th></th></tr></thead><tbody>" +

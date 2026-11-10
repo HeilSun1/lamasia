@@ -1021,8 +1021,8 @@ window.DQD_VIDEOS_CACHE = {
                                                                      },
                                                                      {
                                                                          "date":  "2026-10-11",
-                                                                         "opp":  "SD",
-                                                                         "label":  "vs SD · 10-11",
+                                                                         "opp":  "SD朗洛尼斯",
+                                                                         "label":  "vs SD朗洛尼斯 · 10-11",
                                                                          "matchKey":  "",
                                                                          "videos":  [
                                                                                         {
@@ -1891,8 +1891,8 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-11-01",
-                                                          "opp":  "CD",
-                                                          "label":  "vs CD · 11-01",
+                                                          "opp":  "CD阿拉比",
+                                                          "label":  "vs CD阿拉比 · 11-01",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
@@ -2205,8 +2205,8 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-10-11",
-                                                          "opp":  "SD",
-                                                          "label":  "vs SD · 10-11",
+                                                          "opp":  "SD朗洛尼斯",
+                                                          "label":  "vs SD朗洛尼斯 · 10-11",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
@@ -2481,8 +2481,8 @@ window.DQD_VIDEOS_CACHE = {
                                  "sf:b:2219071":  [
                                                       {
                                                           "date":  "2026-11-08",
-                                                          "opp":  "CE",
-                                                          "label":  "vs CE · 11-08",
+                                                          "opp":  "CE曼雷萨",
+                                                          "label":  "vs CE曼雷萨 · 11-08",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
