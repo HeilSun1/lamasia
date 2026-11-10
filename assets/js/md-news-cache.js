@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-10 09:34:47 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-10 19:18:14 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-10 09:34:47",
+    "updated":  "2026-11-10 19:18:14",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249153/cubarsi-segundo-central-logra-golden-boy.html", "title":  "Cubarsí, el segundo central que logra el Golden Boy",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249153/cubarsi-segundo-central-logra-golden-boy.html", "time":  "2026-11-10 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/09/6af2064add48c.r_d.958-623-6205.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249131/fermin-exhibio-madrid-virtudes-destaco-mundo-deportivo.html", "title":  "Fermín exhibió en Madrid las virtudes que destacó en Mundo Deportivo",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249131/fermin-exhibio-madrid-virtudes-destaco-mundo-deportivo.html", "time":  "2026-11-09 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "title":  "1-2: Roberto Tomás asiste en el triunfo de España Sub-18 ante Costa de Marfil",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230898/1-2-roberto-tomas-asiste-triunfo-espana-sub-18-costa-marfil.html", "time":  "2026-09-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab5666e94abb.r_d.442-302-13575.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "title":  "Flick exprime a un Barça en cuadro durante el parón",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "time":  "2026-09-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab50de8aa50f.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab5666e94abb.r_d.442-302-13575.jpeg" }
     ]
 };

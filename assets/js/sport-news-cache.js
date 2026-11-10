@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-10 09:34:46 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-10 19:18:12 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-10 09:34:46",
+    "updated":  "2026-11-10 19:18:12",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136263436", "title":  "Las líneas maestras de Albert Peris, el nuevo entrenador del Juvenil A del Barça: \"Formar y competir son las dos caras de la misma moneda\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lineas-maestras-albert-peris-nuevo-136263436", "time":  "2026-11-10 05:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3aab97a4-8d0b-4f3a-b165-4131e8ef9723_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136262568", "title":  "Oficial: Pol Planas se desvincula del Barça y Albert Peris lo sustituye",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-pol-planas-desvincula-barca-136262568", "time":  "2026-11-09 19:31",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135289451", "title":  "Pedro Rodríguez da la primera victoria al Barça en la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-da-primera-victoria-135289451", "time":  "2026-10-13 15:41",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_640w_0_x450y200.webp" },
-        {
-            "id":  "135276221", "title":  "Galatasaray - FC Barcelona, en directo: Youth League, Jornada 2 de la fase liga, en vivo hoy",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/galatasaray-fc-barcelona-directo-youth-135276221", "time":  "2026-10-13 13:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_640w_0_x450y200.webp" }
     ]
 };

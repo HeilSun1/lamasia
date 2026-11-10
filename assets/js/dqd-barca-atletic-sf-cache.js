@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-10 09:33 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-10 19:16 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-10 09:33:28",
+    "updated":  "2026-11-10 19:16:39",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -414,7 +414,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "1590920",
                         "pos":  "D",
                         "shirt":  "",
-                        "team":  "FC Barcelona",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1590920/image",
                         "age":  "19岁",

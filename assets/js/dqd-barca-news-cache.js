@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-10 09:33:28 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-10 19:16:40 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-10 09:33:28",
+    "updated":  "2026-11-10 19:16:40",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6637204", "title":  "每体：巴萨满意恰托维奇，保留买断条款",
+            "url":  "https://www.dongqiudi.com/articles/6637204.html", "time":  "2026-11-10 17:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AA/60/280x210/crop/-/rBXRn2rJ4P2AMkWoAADJOS_XmII874.jpg" },
         {
             "id":  "6634083", "title":  "巴萨官方：今日球队恢复训练，竞技队门将邦菲尔随队合练",
             "url":  "https://www.dongqiudi.com/articles/6634083.html", "time":  "2026-11-09 22:38",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6521187", "title":  "世体：马丁昨天参加了训练但仍有不适，罗德里或德容可能客串",
             "url":  "https://www.dongqiudi.com/articles/6521187.html", "time":  "2026-10-20 14:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FC/280x210/crop/-/rBXRDGrXDdGAKBTXAAFnWNr6GH4531.jpg" },
-        {
-            "id":  "6518516", "title":  "弗里克：不想谈论居莱尔肘击对手的事；拉菲尼亚明天能首发",
-            "url":  "https://www.dongqiudi.com/articles/6518516.html", "time":  "2026-10-20 02:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/DC/280x210/crop/-/rBXRDGrWYqeALpkNAADr0Rp5pNg890.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FC/280x210/crop/-/rBXRDGrXDdGAKBTXAAFnWNr6GH4531.jpg" }
     ]
 };
