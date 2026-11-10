@@ -189,8 +189,8 @@
                             .sort(function (a, b) { return parseInt(a.start, 10) - parseInt(b.start, 10); });
     const tierSlug = (opts && opts.tierSlug) || tier;
     let html = "";
-    if (played.length)   html += group("🏁 已完场", played, true, "结果", tier, tierSlug);
-    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态", tier, tierSlug);
+    if (played.length)   html += group("已完场", played, true, "结果", tier, tierSlug);
+    if (upcoming.length) html += group("未开赛", upcoming, false, "状态", tier, tierSlug);
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
 
     if (opts.statusEl) {
@@ -198,7 +198,7 @@
       if (st) {
         const updated = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.updated) || "";
         st.className = "note-box blue";
-        st.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（赛事接口每日抓取，含赛果）' +
+        st.innerHTML = '<span><b>数据来源：FC Barcelona 官网</b>（赛事接口每日抓取，含赛果）' +
           (opts.fallback ? " · Sofascore 赛程暂缺，已用官方数据兜底" : "") +
           (updated ? " · 更新于 " + esc(updated) : "") + "。</span>";
       }

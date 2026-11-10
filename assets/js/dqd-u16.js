@@ -15,7 +15,7 @@
   const API     = "https://www.sofascore.com/api/v1";
 
   const POS_ORDER = ["F", "M", "D", "G"];
-  const POS_TITLE = { G: "🧤 门将", D: "🛡 后卫", M: "⚙️ 中场", F: "🎯 前锋" };
+  const POS_TITLE = { G: "门将", D: "后卫", M: "中场", F: "前锋" };
   const POS_CLASS = { G: "gk", D: "df", M: "mf", F: "fw" };
   const POS_ZH    = { G: "门将", D: "后卫", M: "中场", F: "前锋" };
 
@@ -242,7 +242,7 @@
       return;
     }
 
-    let html = '<div class="pl-group">🤕 伤病名单 · ' + injured.length + " 人</div>";
+    let html = '<div class="pl-group">伤病名单 · ' + injured.length + " 人</div>";
     injured.forEach(function (p) {
       const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
@@ -295,7 +295,7 @@
           ' data-zh="' + esc(c.name) + '" data-credit="Sofascore" data-src-url="' + esc(c.photo) + '"' +
           ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
         '<span class="pl-init" style="' + (c.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
-      html += '<div class="pl-group">🧑‍🏫 教练组 <span style="opacity:.55;font-weight:600">· 1 人</span></div>' +
+      html += '<div class="pl-group">教练组 <span style="opacity:.55;font-weight:600">· 1 人</span></div>' +
         '<div class="pl-row">' +
           '<span class="pl-num">—</span>' + avatar +
           '<span class="pl-name"><span class="zh">' + esc(c.name) + '</span><span class="en">主教练 · Head Coach</span></span>' +
@@ -421,8 +421,8 @@
     }
 
     let html = "";
-    if (played.length)   html += group("🏁 已完场", played, true, "结果");
-    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态");
+    if (played.length)   html += group("已完场", played, true, "结果");
+    if (upcoming.length) html += group("未开赛", upcoming, false, "状态");
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
   }
 
@@ -433,17 +433,17 @@
     if (scheduleFellBack) {
       // Sofascore 赛程暂缺、已用官方站数据兜底
       el.className = "note-box blue";
-      el.innerHTML = '<span>📡 <b>数据来源：FC Barcelona 官网</b>（Sofascore 赛程暂缺，已用官方数据兜底' +
+      el.innerHTML = '<span><b>数据来源：FC Barcelona 官网</b>（Sofascore 赛程暂缺，已用官方数据兜底' +
         ((window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.updated) ? " · 更新于 " + esc(window.LAMASIA_SCHEDULES.updated) : "") +
         "）。</span>";
       return;
     }
     if (mode === "live") {
       el.className = "note-box blue";
-      el.innerHTML = '<span>📡 <b>数据来源：Sofascore</b>（实时拉取）· 更新于 ' + esc(updated) + "。</span>";
+      el.innerHTML = '<span><b>数据来源：Sofascore</b>（实时拉取）· 更新于 ' + esc(updated) + "。</span>";
     } else if (mode === "cache") {
       el.className = "note-box";
-      el.innerHTML = '<span>💾 <b>当前显示本地缓存</b>（Sofascore · 更新于 ' + esc(updated || "未知") +
+      el.innerHTML = '<span><b>当前显示本地缓存</b>（Sofascore · 更新于 ' + esc(updated || "未知") +
         "）——联网后刷新会自动切换实时数据。</span>";
     } else {
       el.className = "note-box";

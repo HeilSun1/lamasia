@@ -69,7 +69,7 @@
   items.sort(function (a, b) { return String(b.time).localeCompare(String(a.time)); });
 
   if (statusEl) {
-    statusEl.innerHTML = '<span>💾 <b>动态聚合</b>：懂球帝 B队/U19/U18/U16 + 官方站 + Sport.es + Mundo Deportivo 每日更新 + 公众号周报。点击标题跳转原文。</span>';
+    statusEl.innerHTML = '<span><b>动态聚合</b>：懂球帝 B队/U19/U18/U16 + 官方站 + Sport.es + Mundo Deportivo 每日更新 + 公众号周报。点击标题跳转原文。</span>';
     statusEl.style.display = "block";
   }
 
@@ -117,7 +117,7 @@
     html +=
       '<a class="weekly-album" data-key="weekly" href="' + esc(album.url) + '" rel="noopener">' +
         (albumNew ? '<span class="weekly-album__dot" aria-label="新更新"></span>' : "") +
-        '<span class="weekly-album__icon">📚</span>' +
+        
         '<span class="weekly-album__body">' +
           '<span class="weekly-album__title">' + esc(album.title) + '</span>' +
           '<span class="weekly-album__note">' + esc(album.note || "点击进入合集 · 返回按浏览器返回键") + '</span>' +

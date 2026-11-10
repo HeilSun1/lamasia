@@ -5,10 +5,10 @@
    ═══════════════════════════════════════════════ */
 (function () {
   const POS_ORDER = [
-    ["FW", "🎯 前锋"],
-    ["MF", "⚙️ 中场"],
-    ["DF", "🛡 后卫"],
-    ["GK", "🧤 门将"]
+    ["FW", "前锋"],
+    ["MF", "中场"],
+    ["DF", "后卫"],
+    ["GK", "门将"]
   ];
   const POS_CLASS = { GK: "gk", DF: "df", MF: "mf", FW: "fw" };
   const POS_ZH = { GK: "门将", DF: "后卫", MF: "中场", FW: "前锋" };
@@ -82,7 +82,7 @@
     // 照片来源标注（版权合规：为每张照片注明出处链接）
     const withPhoto = squad.filter(p => p.img && p.imgCredit);
     if (withPhoto.length) {
-      html += `<div class="pl-credits">📷 <b>照片来源：</b>` +
+      html += `<div class="pl-credits"><b>照片来源：</b>` +
         withPhoto.map(p =>
           `<a href="${esc(p.imgUrl)}" target="_blank" rel="noopener">${esc(p.zh || p.name)}（${esc(p.imgCredit)}）</a>`
         ).join("、") +

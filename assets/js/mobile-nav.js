@@ -6,12 +6,12 @@
   var inTeams = /\/teams\//.test(location.pathname);   // 是否在 teams/ 子目录（决定 ../ 前缀）
   var p = inTeams ? '../' : '';
   var tabs = [
-    { href: p + 'index.html',               ico: '🏠', label: '首页',   test: /(^|\/)index\.html$/ },
-    { href: p + 'weekly.html',              ico: '📰', label: '新闻',   test: /\/weekly\.html$/ },
-    { href: (inTeams ? '' : 'teams/') + 'index.html', ico: '⚽', label: '梯队', test: /\/teams\// },
-    { href: p + 'matches.html',             ico: '📅', label: '比赛',   test: /\/matches\.html$/ },
-    { href: p + 'highlights.html',          ico: '🎥', label: '集锦',   test: /\/highlights\.html$/ },
-    { href: p + 'search.html',              ico: '🔍', label: '搜索',   test: /\/search\.html$/ }
+    { href: p + 'index.html',               label: '首页',   test: /(^|\/)index\.html$/ },
+    { href: p + 'weekly.html',              label: '新闻',   test: /\/weekly\.html$/ },
+    { href: (inTeams ? '' : 'teams/') + 'index.html', label: '梯队', test: /\/teams\// },
+    { href: p + 'matches.html',             label: '比赛',   test: /\/matches\.html$/ },
+    { href: p + 'highlights.html',          label: '集锦',   test: /\/highlights\.html$/ },
+    { href: p + 'search.html',              label: '搜索',   test: /\/search\.html$/ }
   ];
 
   var nav = document.createElement('nav');
@@ -21,7 +21,7 @@
     var a = document.createElement('a');
     a.className = 'mb-link' + (t.test.test(location.pathname) ? ' active' : '');
     a.href = t.href;
-    a.innerHTML = '<span class="mb-ico">' + t.ico + '</span><span class="mb-label">' + t.label + '</span>';
+    a.innerHTML = '<span class="mb-label">' + t.label + '</span>';
     nav.appendChild(a);
   });
   document.body.appendChild(nav);

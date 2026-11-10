@@ -17,7 +17,7 @@
   const IMG_BASE = "../assets/img/players/dqd/"; // 本地照片目录（相对本页面所在 teams/ 目录）
 
   const POS_ORDER = ["coach", "attacker", "midfielder", "defender", "goalkeeper"];
-  const POS_TITLE = { goalkeeper: "🧤 门将", defender: "🛡 后卫", midfielder: "⚙️ 中场", attacker: "🎯 前锋", coach: "🧑‍🏫 教练组" };
+  const POS_TITLE = { goalkeeper: "门将", defender: "后卫", midfielder: "中场", attacker: "前锋", coach: "教练组" };
   const POS_CLASS = { goalkeeper: "gk", defender: "df", midfielder: "mf", attacker: "fw", coach: "other" };
   const POS_ZH    = { goalkeeper: "门将", defender: "后卫", midfielder: "中场", attacker: "前锋", coach: "教练" };
 
@@ -130,7 +130,7 @@
       return;
     }
 
-    let html = '<div class="pl-group">🤕 伤病名单 · ' + list.length + ' 人' +
+    let html = '<div class="pl-group">伤病名单 · ' + list.length + ' 人' +
       (updated ? ' <span style="opacity:.55;font-weight:600">（每日更新 · ' + esc(updated) + '）</span>' : '') +
       '</div>';
     list.forEach(function (p) {
@@ -265,8 +265,8 @@
 
     let html = "";
     // 已完场（含结果）置顶、默认展开；未开赛默认收起，点击展开
-    if (played.length)   html += group("🏁 已完场", played, true, "结果");
-    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态");
+    if (played.length)   html += group("已完场", played, true, "结果");
+    if (upcoming.length) html += group("未开赛", upcoming, false, "状态");
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
   }
 
@@ -350,8 +350,8 @@
         "<tbody>" + rows.map(row).join("") + "</tbody></table></div></div></details>";
     }
     let html = "";
-    if (played.length)   html += group("🏁 已完场", played, true, "结果");
-    if (upcoming.length) html += group("📅 未开赛", upcoming, false, "状态");
+    if (played.length)   html += group("已完场", played, true, "结果");
+    if (upcoming.length) html += group("未开赛", upcoming, false, "状态");
     el.innerHTML = html || '<div class="match-list-empty">暂无赛程数据</div>';
     return true;
   }
@@ -400,11 +400,11 @@
     if (!el) return;
     if (mode === "live") {
       el.className = "note-box blue";
-      el.innerHTML = '<span>📡 <b>数据来源：懂球帝</b>（实时拉取）· 更新于 ' + esc(updated) +
+      el.innerHTML = '<span><b>数据来源：懂球帝</b>（实时拉取）· 更新于 ' + esc(updated) +
                      "。联网时每次打开页面均为最新数据。</span>";
     } else if (mode === "cache") {
       el.className = "note-box";
-      el.innerHTML = '<span>💾 <b>当前显示本地缓存</b>（懂球帝 · 更新于 ' + esc(updated || "未知") +
+      el.innerHTML = '<span><b>当前显示本地缓存</b>（懂球帝 · 更新于 ' + esc(updated || "未知") +
                      "）——联网后刷新会自动切换到实时数据。</span>";
     } else {
       el.className = "note-box";

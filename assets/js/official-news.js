@@ -24,7 +24,7 @@
   }
 
   if (statusEl) {
-    statusEl.innerHTML = '<span>💾 <b>' + label + '新闻来自官方站</b>' +
+    statusEl.innerHTML = '<span><b>' + label + '新闻来自官方站</b>' +
       (updated ? '（每日更新 · ' + esc(updated) + '）' : '') +
       '。点击标题跳转官网原文。</span>';
     statusEl.style.display = "block";

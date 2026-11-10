@@ -43,7 +43,7 @@
   const updated = (data && data.updated) || "";
 
   if (statusEl) {
-    statusEl.innerHTML = '<span>💾 <b>球队资讯来自懂球帝</b>' +
+    statusEl.innerHTML = '<span><b>球队资讯来自懂球帝</b>' +
       (updated ? '（每日更新 · ' + esc(updated) + '）' : '') +
       '。点击标题跳转懂球帝原文。</span>';
     statusEl.style.display = "block";

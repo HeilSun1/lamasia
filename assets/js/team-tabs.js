@@ -3,7 +3,7 @@
               data-tt-news="#sec-news"
               data-tt-roster="#sec-injuries,#sec-roster"
               data-tt-team="#sec-schedule,#sec-teaminfo">
-         <button class="tt-tab active" data-tt="news">📰 新闻</button> ...
+         <button class="tt-tab active" data-tt="news">新闻</button> ...
          </nav>
    引用的 #sec-* 容器随页签切换显示；未引用区块（页头/概览）始终显示。
    存在页签时隐藏右侧 page-toc（由 CSS 处理）。 */
