@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-09 21:00:46 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-10 00:19:08 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-09 21:00:46",
+    "updated":  "2026-11-10 00:19:08",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6634083", "title":  "巴萨官方：今日球队恢复训练，竞技队门将邦菲尔随队合练",
+            "url":  "https://www.dongqiudi.com/articles/6634083.html", "time":  "2026-11-09 22:38",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EF/15/280x210/crop/-/rBXRDGrxyPKAP_9tAADiI3moI2c170.jpg" },
         {
             "id":  "6630772", "title":  "巴萨竞技战报 20261109",
             "url":  "https://www.dongqiudi.com/articles/6630772.html", "time":  "2026-11-09 03:10",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6518516", "title":  "弗里克：不想谈论居莱尔肘击对手的事；拉菲尼亚明天能首发",
             "url":  "https://www.dongqiudi.com/articles/6518516.html", "time":  "2026-10-20 02:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/DC/280x210/crop/-/rBXRDGrWYqeALpkNAADr0Rp5pNg890.jpg" },
-        {
-            "id":  "6518341", "title":  "每体：西协乙分组调整利好加泰罗尼亚，七支加泰球队跻身赛区前九",
-            "url":  "https://www.dongqiudi.com/articles/6518341.html", "time":  "2026-10-20 00:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/97/280x210/crop/-/rBXRn2rWQUCAJ7spAAE77N9ihSI746.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/DC/280x210/crop/-/rBXRDGrWYqeALpkNAADr0Rp5pNg890.jpg" }
     ]
 };

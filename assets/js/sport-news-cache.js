@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-09 21:02:08 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-10 00:19:35 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-09 21:02:08",
+    "updated":  "2026-11-10 00:19:35",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136262568", "title":  "Oficial: Pol Planas se desvincula del Barça y Albert Peris lo sustituye",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-pol-planas-desvincula-barca-136262568", "time":  "2026-11-09 19:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fdf5833b-00ee-459a-b115-84e90b775d9b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136255936", "title":  "El show de Hugo Garcés tumba al Espanyol: exhibición de ADN Barça del Juvenil B",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/show-hugo-garces-tumba-espanyol-136255936", "time":  "2026-11-09 17:42",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7605130a-e136-425c-861b-21c71f561648_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136228877", "title":  "El Barça Atlètic arrolla con Orian Goren y Gariba estelares",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-liquida-manresa-orian-136228877", "time":  "2026-11-08 20:23",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135276221", "title":  "Galatasaray - FC Barcelona, en directo: Youth League, Jornada 2 de la fase liga, en vivo hoy",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/galatasaray-fc-barcelona-directo-youth-135276221", "time":  "2026-10-13 13:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
-        {
-            "id":  "135259950", "title":  "Pedro Rodríguez, el cerebro ideal para liderar el primer triunfo blaugrana en la Youth",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-cerebro-ideal-liderar-135259950", "time":  "2026-10-12 19:16",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6f0e1135-08f5-4588-afd8-51894c5ee8f1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135252275", "title":  "Estreno goleador de Haoyan Li, el primer jugador chino en la historia del Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275", "time":  "2026-10-12 17:49",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7e2f5c0e-7628-479d-9ce0-2f697df46fc5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" }
     ]
 };

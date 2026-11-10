@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-09 21:02:10 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-10 00:19:36 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-09 21:02:10",
+    "updated":  "2026-11-10 00:19:36",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249131/fermin-exhibio-madrid-virtudes-destaco-mundo-deportivo.html", "title":  "Fermín exhibió en Madrid las virtudes que destacó en Mundo Deportivo",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249131/fermin-exhibio-madrid-virtudes-destaco-mundo-deportivo.html", "time":  "2026-11-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/09/6af1739586d1d.r_d.484-290-12384.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249123/joan-laporta-elegido-mejor-presidente.html", "title":  "Joan Laporta, elegido mejor presidente",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249123/joan-laporta-elegido-mejor-presidente.html", "time":  "2026-11-09 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/08/6af0e909a9a77.r_d.1415-918-6440.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249028/acuerdo-cooperacion-barca-sfera-fc-formacion-talentos-brasilenos.html", "title":  "Acuerdo de cooperación Barça-Sfera FC para la formación de talentos brasileños",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261109/1004249028/acuerdo-cooperacion-barca-sfera-fc-formacion-talentos-brasilenos.html", "time":  "2026-11-09 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "title":  "Flick exprime a un Barça en cuadro durante el parón",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230774/flick-exprime-barca-cuadro-paron.html", "time":  "2026-09-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab50de8aa50f.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "title":  "Ebrima Tunkara, recta final",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230699/ebrima-tunkara-recta-final.html", "time":  "2026-09-24 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab4dfb806215.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "title":  "La cláusula que tendrá Bernal en su nuevo contrato",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229578/clausula-tendra-bernal-nuevo-contrato.html", "time":  "2026-09-21 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/21/6ab0e2a01e970.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/24/6ab50de8aa50f.jpeg" }
     ]
 };
