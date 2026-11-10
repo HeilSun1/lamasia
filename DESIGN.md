@@ -65,6 +65,7 @@
 - 别用正则批量重排 HTML（`[^<>]` 会跨行吃掉缩进，一次能改出 2400 行 diff）
 - 别在 PowerShell 命令行里直接写中文/emoji 做字符串替换：命令行走的是 ANSI 代码页，会把 pattern 编坏，把 `<` 之类替换成别的字符。要替换中文，写成 `.ps1` 文件再用 `Get-Content -Raw -Encoding UTF8 | Invoke-Expression` 跑
 - 改完必须截图复核：桌面 1440、手机 390、内页各一页
+- 脚本与计划任务的坑（.ps1 要带 BOM、更新脚本必须 exit 0）见 [AGENTS.md](AGENTS.md)
 
 ## 九、数据侧的规矩（集锦页）
 
