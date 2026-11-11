@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-11 10:31:20 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-11 21:00:52 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-11 10:31:20",
+    "updated":  "2026-11-11 21:00:52",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6641371", "title":  "每体：奥尔莫、孔德继续恢复，弗里克征召二队小将冈萨雷斯",
+            "url":  "https://www.dongqiudi.com/articles/6641371.html", "time":  "2026-11-11 16:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F2/70/280x210/crop/-/rBXRDGr0F6yANYYWAAIgIQpHfWY042.jpg" },
         {
             "id":  "6640308", "title":  "官方伤情报告：巴萨竞技球员朗德里-法雷在对阵曼雷...",
             "url":  "https://www.dongqiudi.com/articles/6640308.html", "time":  "2026-11-11 08:37",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6537971", "title":  "每体：巴萨将法布雷加斯视为弗里克接班人",
             "url":  "https://www.dongqiudi.com/articles/6537971.html", "time":  "2026-10-23 14:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" },
-        {
-            "id":  "6537978", "title":  "每体：巴萨关注法布雷加斯，视其为弗里克离任后接班人选",
-            "url":  "https://www.dongqiudi.com/articles/6537978.html", "time":  "2026-10-23 14:29",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" }
     ]
 };

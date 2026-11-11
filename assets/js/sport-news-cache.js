@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-11 10:32:36 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-11 21:02:12 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-11 10:32:36",
+    "updated":  "2026-11-11 21:02:12",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136300084", "title":  "Iban Cuadrado, ex de La Masia, pone rumbo al fútbol catarí",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iban-cuadrado-ex-masia-pone-136300084", "time":  "2026-11-11 05:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c0a8bc44-92ec-4ccc-aac8-279e42b412ac_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136263436", "title":  "Las líneas maestras de Albert Peris, el nuevo entrenador del Juvenil A del Barça: \"Formar y competir son las dos caras de la misma moneda\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lineas-maestras-albert-peris-nuevo-136263436", "time":  "2026-11-10 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3aab97a4-8d0b-4f3a-b165-4131e8ef9723_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3aab97a4-8d0b-4f3a-b165-4131e8ef9723_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136262568", "title":  "Oficial: Pol Planas se desvincula del Barça y Albert Peris lo sustituye",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-pol-planas-desvincula-barca-136262568", "time":  "2026-11-09 19:31",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135292914", "title":  "Erik Domínguez, el desequilibrio más volcánico de La Masia",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/erik-dominguez-desequilibrio-volcanico-masia-135292914", "time":  "2026-10-14 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135289451", "title":  "Pedro Rodríguez da la primera victoria al Barça en la Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-da-primera-victoria-135289451", "time":  "2026-10-13 15:41",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1d8d8867-597c-44b5-85fb-6ad88cee36af_16-9-discover-aspect-ratio_640w_0_x450y200.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
