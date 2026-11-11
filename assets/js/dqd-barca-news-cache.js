@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-10 21:51:02 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-11 10:31:20 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-10 21:51:02",
+    "updated":  "2026-11-11 10:31:20",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6640308", "title":  "官方伤情报告：巴萨竞技球员朗德里-法雷在对阵曼雷...",
+            "url":  "https://www.dongqiudi.com/articles/6640308.html", "time":  "2026-11-11 08:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/E1/280x210/crop/-/rBXRDGrzuLmACgXrAALlYxfay_E531.jpg" },
+        {
+            "id":  "6640283", "title":  "官方伤情报告：巴萨竞技球员吉列姆-维克托，在对阵...",
+            "url":  "https://www.dongqiudi.com/articles/6640283.html", "time":  "2026-11-11 08:26",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/DC/280x210/crop/-/rBXRDGrztg6AS2eUAAHDqAwvl4w856.jpg" },
+        {
+            "id":  "6640266", "title":  "世体：巴萨竞技22人缺席，申请推迟对针赫罗纳B队的比赛",
+            "url":  "https://www.dongqiudi.com/articles/6640266.html", "time":  "2026-11-11 08:21",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BF/36/280x210/crop/-/rBXRn2rU4RWAbXaGAALfqyhyg_8203.jpg" },
         {
             "id":  "6637204", "title":  "每体：巴萨满意恰托维奇，保留买断条款",
             "url":  "https://www.dongqiudi.com/articles/6637204.html", "time":  "2026-11-10 17:17",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6537978", "title":  "每体：巴萨关注法布雷加斯，视其为弗里克离任后接班人选",
             "url":  "https://www.dongqiudi.com/articles/6537978.html", "time":  "2026-10-23 14:29",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" },
-        {
-            "id":  "6530532", "title":  "巴黎旧将：维蒂尼亚、若昂-内维斯、法比安能比肩哈白布",
-            "url":  "https://www.dongqiudi.com/articles/6530532.html", "time":  "2026-10-22 04:32",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/53/280x210/crop/-/rBXRn2rZIWCAN-VjAAl6z3x34Qw958.png" },
-        {
-            "id":  "6521330", "title":  "首次进入一线队大名单随队前往巴黎的坎波斯。",
-            "url":  "https://www.dongqiudi.com/articles/6521330.html", "time":  "2026-10-20 15:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FD/280x210/crop/-/rBXRn2rXFamASpvJAALQMYTyuSE309.jpg" },
-        {
-            "id":  "6521187", "title":  "世体：马丁昨天参加了训练但仍有不适，罗德里或德容可能客串",
-            "url":  "https://www.dongqiudi.com/articles/6521187.html", "time":  "2026-10-20 14:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C2/FC/280x210/crop/-/rBXRDGrXDdGAKBTXAAFnWNr6GH4531.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" }
     ]
 };
