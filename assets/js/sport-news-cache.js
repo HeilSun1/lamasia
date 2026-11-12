@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-12 21:02:28 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-12 22:18:21 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-12 21:02:28",
+    "updated":  "2026-11-12 22:18:21",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136385497", "title":  "Sorpresa mayúscula en el Barça: sin noticias de la suspensión",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sorpresa-mayuscula-barca-noticia-suspension-filial-136385497", "time":  "2026-11-12 19:13",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136381583", "title":  "El diamante de La Masia se sale con Ucrania y desata grandes elogios: \"Obra maestra de Artem que marcó un gol de lujo\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diamante-masia-sale-ucrania-desata-136381583", "time":  "2026-11-12 18:13",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136300084", "title":  "Iban Cuadrado, ex de La Masia, pone rumbo al fútbol catarí",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iban-cuadrado-ex-masia-pone-136300084", "time":  "2026-11-11 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c0a8bc44-92ec-4ccc-aac8-279e42b412ac_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c0a8bc44-92ec-4ccc-aac8-279e42b412ac_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136263436", "title":  "Las líneas maestras de Albert Peris, el nuevo entrenador del Juvenil A del Barça: \"Formar y competir son las dos caras de la misma moneda\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lineas-maestras-albert-peris-nuevo-136263436", "time":  "2026-11-10 05:30",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135405442", "title":  "Barça Atlètic-Utebo: Hamza se suma a un filial lanzado",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-hamza-suma-135405442", "time":  "2026-10-17 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
-        {
-            "id":  "135427554", "title":  "Artem Rybak: la decisión firme del Barça con la joya ucraniana de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/artem-rybak-decisision-firme-barca-135427554", "time":  "2026-10-16 17:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135292914", "title":  "Erik Domínguez, el desequilibrio más volcánico de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/erik-dominguez-desequilibrio-volcanico-masia-135292914", "time":  "2026-10-14 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/11206bfe-fdf8-4f90-9d3d-0af0cc9a26d8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" }
     ]
 };
