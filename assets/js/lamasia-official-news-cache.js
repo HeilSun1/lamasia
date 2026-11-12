@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-12 09:37:13 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-12 21:02:17 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-12 09:37:13",
+    "updated":  "2026-11-12 21:02:17",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,8 +163,12 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607335", "title":  "FC Barcelona international diary",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607335/fc-barcelona-international-diary", "time":  "",
+                "id":  "4607914", "title":  "Spain, England and Croatia in action",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/11/564970b3-0519-44d2-8221-7be44347d707/_MGA4341.jpg" },
+            {
+                "id":  "4607335", "title":  "FC Barcelona international schedule",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607335/fc-barcelona-international-schedule", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/10/017f538e-1458-46a7-9344-615ec93a805d/_MGA0933.jpg" },
             {
                 "id":  "4607323", "title":  "Work continues at the Ciutat Esportiva",
@@ -247,10 +251,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604300/recovery-session-after-win-over-villa", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/7d110003-5ec6-478c-be3a-9e234e2f89c4/image00008.jpeg" },
             {
-                "id":  "4604306", "title":  "Rodri injury news",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604306/rodri-injury-news", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/d062d159-31ba-48df-b5fd-141087be9ece/_MGA3884.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -258,6 +258,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4604306", "title":  "Rodri injury news",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604306/rodri-injury-news", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/d062d159-31ba-48df-b5fd-141087be9ece/_MGA3884.jpg" },
             {
                 "id":  "4603997", "title":  "Raphinha rises in three rankings",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603997/raphinha-rises-in-three-rankings", "time":  "",
@@ -357,11 +361,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4600710", "title":  "Minute's silence at first team training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600710/training-session-with-minutes-silence-for-the-victims-of-the-rail-accident-between-los-yebenes-and-urda", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/a00d1cff-82d5-46e0-a799-19d180b338a3/_MGA2068.jpg" },
-            {
-                "id":  "4600661", "title":  "Five things ahead of Barça v Alavés",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600661/five-things-ahead-of-barca-v-alaves", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/f78d1a7a-7cfe-4c0a-8a49-be3b166c94be/_MGA4925.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/a00d1cff-82d5-46e0-a799-19d180b338a3/_MGA2068.jpg" }
         ]
     }
 };

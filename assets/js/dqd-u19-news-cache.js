@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-12 09:36:23 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-12 21:01:14 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-12 09:36:23",
+    "updated":  "2026-11-12 21:01:14",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6645160", "title":  "通卡拉和巴巴-库鲁马备战U17世界杯🌟🇪🇸",
+            "url":  "https://www.dongqiudi.com/articles/6645160.html", "time":  "2026-11-12 10:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/D3/280x210/crop/-/rBXRn2r1Ib6Acy6VAANcT0ly80s126.jpg" },
         {
             "id":  "6630772", "title":  "巴萨竞技战报 20261109",
             "url":  "https://www.dongqiudi.com/articles/6630772.html", "time":  "2026-11-09 03:10",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6049420", "title":  "世体：门将雅各比什维利在巴萨得不到机会，他将再次外租离队",
             "url":  "https://www.dongqiudi.com/articles/6049420.html", "time":  "2026-07-18 22:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/0D/280x210/crop/-/rBXRn2pbkXCAMTDMAACEEs1e2UQ810.jpg" },
-        {
-            "id":  "6047492", "title":  "德拉富恩特所说的被梅西击败是04年5月，巴萨U19淘汰塞维U19",
-            "url":  "https://www.dongqiudi.com/articles/6047492.html", "time":  "2026-07-18 15:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A5/E6/280x210/crop/-/rBXRDGpbMECAKOUdAAChnp5we2c771.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/0D/280x210/crop/-/rBXRn2pbkXCAMTDMAACEEs1e2UQ810.jpg" }
     ]
 };

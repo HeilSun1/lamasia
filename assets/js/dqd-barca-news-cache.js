@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-12 09:36:03 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-12 21:00:52 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-12 09:36:03",
+    "updated":  "2026-11-12 21:00:52",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6645160", "title":  "通卡拉和巴巴-库鲁马备战U17世界杯🌟🇪🇸",
+            "url":  "https://www.dongqiudi.com/articles/6645160.html", "time":  "2026-11-12 10:18",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/D3/280x210/crop/-/rBXRn2r1Ib6Acy6VAANcT0ly80s126.jpg" },
+        {
+            "id":  "6645094", "title":  "世体：胡安-埃尔南德斯已经回到训练场进行有球训练...",
+            "url":  "https://www.dongqiudi.com/articles/6645094.html", "time":  "2026-11-12 09:57",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/E0/280x210/crop/-/rBXRDGr1HPOAN-gUAAD2ZNyRPq4235.jpg" },
         {
             "id":  "6641371", "title":  "每体：奥尔莫、孔德继续恢复，弗里克征召二队小将冈萨雷斯",
             "url":  "https://www.dongqiudi.com/articles/6641371.html", "time":  "2026-11-11 16:19",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6540702", "title":  "每体：18岁伊克尔门前沉着，巴萨竞技7轮仅丢2球",
             "url":  "https://www.dongqiudi.com/articles/6540702.html", "time":  "2026-10-23 23:58",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CA/4D/280x210/crop/-/rBXRDGrbggKAN5cAAADm6ltjkAE593.jpg" },
-        {
-            "id":  "6539163", "title":  "世体：孔德继续单独恢复，弗里克补招两小将备战国家德比",
-            "url":  "https://www.dongqiudi.com/articles/6539163.html", "time":  "2026-10-23 18:24",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C9/CF/280x210/crop/-/rBXRn2rbNVSAL985AAD4fWMezGE067.jpg" },
-        {
-            "id":  "6537971", "title":  "每体：巴萨将法布雷加斯视为弗里克接班人",
-            "url":  "https://www.dongqiudi.com/articles/6537971.html", "time":  "2026-10-23 14:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/64/A4/280x210/crop/-/rBXRn2qlL_-APLutAAEF1Ll9uX8419.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CA/4D/280x210/crop/-/rBXRDGrbggKAN5cAAADm6ltjkAE593.jpg" }
     ]
 };

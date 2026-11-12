@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-12 09:36 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-12 21:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-12 09:36:03",
+    "updated":  "2026-11-12 21:00:51",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -230,21 +230,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Dani Ávila",
-                        "id":  "1542727",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-03-22",
-                        "foot":  "右脚",
-                        "height":  "180",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Pedro Villar",
                         "id":  "2076883",
                         "pos":  "M",
@@ -257,6 +242,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "178",
                         "value":  "9万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Dani Ávila",
+                        "id":  "1542727",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-03-22",
+                        "foot":  "右脚",
+                        "height":  "180",
+                        "value":  "",
                         "injury":  null
                     },
                     {
