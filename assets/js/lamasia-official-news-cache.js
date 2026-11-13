@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-13 09:48:31 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-13 21:02:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-13 09:48:31",
+    "updated":  "2026-11-13 21:02:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,9 +163,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "Wins for Spain and England",
+                "id":  "4607914", "title":  "African Cup of Nations and Nations League action",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/11/564970b3-0519-44d2-8221-7be44347d707/_MGA4341.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/13/e51ac118-b1fd-4412-a09f-de6f3326355e/_MGA4039.jpg" },
             {
                 "id":  "4607335", "title":  "FC Barcelona international schedule",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607335/fc-barcelona-international-schedule", "time":  "",

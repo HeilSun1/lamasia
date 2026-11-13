@@ -1,4 +1,4 @@
-/* 自动生成，请勿手动编辑 —— U14（Infantil A） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-12 09:38 */
+/* 自动生成，请勿手动编辑 —— U14（Infantil A） 阵容/进球详情缓存（match-detail.js 读取）；数据源：elfutbol.co；更新于 2026-11-13 21:04 */
 window.ELFUTBOL_INFANTIL_DETAILS_CACHE = {
     "fcb:infantil:16":  {
                             "lineups":  {
@@ -1477,6 +1477,6 @@ window.ELFUTBOL_INFANTIL_DETAILS_CACHE = {
                        },
     "__pendingReports":  {
                              "fcb:infantil:47":  "2026-10-27",
-                             "fcb:infantil:39":  "2026-11-10"
+                             "fcb:infantil:39":  "2026-11-13"
                          }
 };
