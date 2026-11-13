@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-13 21:00:51 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-13 22:02:00 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-13 21:00:51",
+    "updated":  "2026-11-13 22:02:00",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6649868", "title":  "世体：前巴萨B队教练证实裁判报告有用，内格雷拉案接近审判",
+            "url":  "https://www.dongqiudi.com/articles/6649868.html", "time":  "2026-11-13 21:30",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F6/A0/280x210/crop/-/rBXRn2r3EHSASrtvAABEw9KmLsE125.jpg" },
         {
             "id":  "6645160", "title":  "通卡拉和巴巴-库鲁马备战U17世界杯🌟🇪🇸",
             "url":  "https://www.dongqiudi.com/articles/6645160.html", "time":  "2026-11-12 10:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6544516", "title":  "每体：巴萨竞技17岁小将戈伦有望出战国家德比",
             "url":  "https://www.dongqiudi.com/articles/6544516.html", "time":  "2026-10-24 15:53",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CB/D5/280x210/crop/-/rBXRDGrcY6-Abm2yAALKdm0X_q4086.jpg" },
-        {
-            "id":  "6540702", "title":  "每体：18岁伊克尔门前沉着，巴萨竞技7轮仅丢2球",
-            "url":  "https://www.dongqiudi.com/articles/6540702.html", "time":  "2026-10-23 23:58",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CA/4D/280x210/crop/-/rBXRDGrbggKAN5cAAADm6ltjkAE593.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CB/D5/280x210/crop/-/rBXRDGrcY6-Abm2yAALKdm0X_q4086.jpg" }
     ]
 };
