@@ -1,17 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-14 09:56:58 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-14 21:02:14 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-14 09:56:58",
+    "updated":  "2026-11-14 21:02:14",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136434173", "title":  "Se confirma la cacicada: el juez único obliga al Barça Atlètic a jugar con solo 10 fichas de filial",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/confirma-cacicada-rfef-obliga-barca-136434173", "time":  "2026-11-14 12:19",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0fb2a8c9-4f51-407e-bf2f-1af9e873d884_16-9-discover-aspect-ratio_default_0_x960y360.webp" },
+        {
+            "id":  "136421857", "title":  "\"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diferente-barca-deberia-explotar-merchandising-136421857", "time":  "2026-11-14 07:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ac878526-fb44-44bc-b79a-1e26a106537f_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136385497", "title":  "Sorpresa mayúscula en el Barça: sin noticias de la suspensión",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sorpresa-mayuscula-barca-noticia-suspension-filial-136385497", "time":  "2026-11-12 19:13",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3071a42c-5d21-401a-9aba-6cdf7de9b369_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136381583", "title":  "El diamante de La Masia se sale con Ucrania y desata grandes elogios: \"Obra maestra de Artem que marcó un gol de lujo\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diamante-masia-sale-ucrania-desata-136381583", "time":  "2026-11-12 18:13",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/813011a7-5ecb-47dc-a6a9-b1b30cb14c79_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136300084", "title":  "Iban Cuadrado, ex de La Masia, pone rumbo al fútbol catarí",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/iban-cuadrado-ex-masia-pone-136300084", "time":  "2026-11-11 05:30",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135447274", "title":  "Ajay Tavares, con un doblete de asistencias, lidera otro triunfo brillante del Juvenil A del Barça",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ajay-tavares-doblete-asistencias-lidera-135447274", "time":  "2026-10-17 15:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8973d432-6dae-4115-8929-54d1b2b81bca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135448015", "title":  "Barça Atlètic 2-1 Utebo: goles, resumen y resultado del partido",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-directo-resultado-135448015", "time":  "2026-10-17 16:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135405442", "title":  "Barça Atlètic-Utebo: Hamza se suma a un filial lanzado",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-utebo-hamza-suma-135405442", "time":  "2026-10-17 06:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d949d321-b21f-4200-a398-955770c16e1e_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8973d432-6dae-4115-8929-54d1b2b81bca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

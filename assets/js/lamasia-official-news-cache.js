@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 09:56:56 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 21:01:59 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-14 09:56:56",
+    "updated":  "2026-11-14 21:01:59",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,9 +163,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "Three wins out of three on Friday",
+                "id":  "4607914", "title":  "Raphinha captains Brazil against Japan",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/13/e51ac118-b1fd-4412-a09f-de6f3326355e/_MGA4039.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/14/0be4be8d-ba48-4b2f-994d-a79eb5b901d2/2026-11-03_FCBvsASTONVILLA_116.jpg" },
+            {
+                "id":  "4608811", "title":  "Five games at Spotify Camp Nou before the end of the year",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4608811/five-games-at-spotify-camp-nou-before-the-end-of-the-year", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/13/6d4e7c07-964f-4555-9f91-d44b1df6c676/_MGA8572.jpg" },
             {
                 "id":  "4607335", "title":  "FC Barcelona international schedule",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607335/fc-barcelona-international-schedule", "time":  "",
@@ -247,10 +251,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" },
             {
-                "id":  "4604300", "title":  "Recovery session after win over Villa",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604300/recovery-session-after-win-over-villa", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/7d110003-5ec6-478c-be3a-9e234e2f89c4/image00008.jpeg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -258,6 +258,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4604300", "title":  "Recovery session after win over Villa",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604300/recovery-session-after-win-over-villa", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/7d110003-5ec6-478c-be3a-9e234e2f89c4/image00008.jpeg" },
             {
                 "id":  "4604306", "title":  "Rodri injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604306/rodri-injury-news", "time":  "",
@@ -357,11 +361,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4601412", "title":  "Dani Olmo celebrates 100 games",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601412/dani-olmo-reaches-100-games-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/e22c3352-b5d6-4626-9fa5-cb27d635a9aa/_MGA8346-1.jpg" },
-            {
-                "id":  "4600710", "title":  "Minute's silence at first team training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4600710/training-session-with-minutes-silence-for-the-victims-of-the-rail-accident-between-los-yebenes-and-urda", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/29/a00d1cff-82d5-46e0-a799-19d180b338a3/_MGA2068.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/e22c3352-b5d6-4626-9fa5-cb27d635a9aa/_MGA8346-1.jpg" }
         ]
     }
 };

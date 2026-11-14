@@ -1,6 +1,7 @@
 /* 自动生成，请勿手改 —— 由 scripts/translate_news_titles.ps1 生成
    key = 原始标题，value = 中文标题；前端取不到就显示原文。 */
 window.NEWS_ZH = {
+  "\"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"": "“这就是巴萨与众不同的地方，应该更多地加以利用。为什么我们的商店里没有拉玛西亚的周边产品？”",
   "\"Pol Planas dará mucho que hablar en Europa. Contagia el ADN Barça a los jugadores, sus equipos atacan muy bien y es un gran gestor\"": "“波尔·普拉纳斯将在欧洲引起轰动。他将巴萨的DNA传递给球员，他的球队进攻非常出色，他是一位出色的教练。”",
   "¿Quién sustituirá a Pol Planas? Los candidatos a entrenar al Juvenil A del Barça": "谁将接替波尔·普拉纳斯？巴萨的青年A队主教练候选人",
   "¿Quiénes son los tres jugadores del Barça campeones del mundo sub-15?": "谁是巴萨 15 岁以下世界冠军的 3 名球员？",
@@ -88,7 +89,9 @@ window.NEWS_ZH = {
   "FC Barcelona international schedule": "巴塞罗那足球俱乐部国际赛事赛程",
   "Fermín exhibió en Madrid las virtudes que destacó en Mundo Deportivo": "费尔明在马德里展现了他曾在《世界体育报》中大放异彩的实力。",
   "Fermín, el tesoro de Flick": "费尔明，弗利克的宝藏",
+  "Fichar en invierno no es una opción": "冬季转会不是一个选项",
   "First preseason victory (1-2)": "季前赛首胜（1-2）",
+  "Five games at Spotify Camp Nou before the end of the year": "年底前在 Spotify 诺坎普球场举行的五场比赛",
   "Five players who are leaving Barça Atlètic": "五名即将离开预备队的球员",
   "Flick aiming for top eight": "弗里克的目标是前八名",
   "Flick ve a Fariñas de lateral y deja en el aire la presencia de Balde": "弗里克将法里尼亚斯安排在边后卫位置，巴尔德的上场与否仍未可知",
@@ -122,6 +125,7 @@ window.NEWS_ZH = {
   "La vuelta de Tunkara, golpe de efecto para Belletti": "通卡拉的回归，对贝莱蒂来说是一个惊喜。",
   "Lamine , Cubarsí and Rodri in FIFPRO World XI": "拉明、库巴尔西和罗德里入选 FIFPRO 世界最佳阵容",
   "Lamine desvela qué le dijo a Messi tras ganar el Mundial": "拉明透露了他在赢得世界杯后对梅西说的话。",
+  "Lamine Yamal es un genio y lo que lo hace más especial es su madurez": "拉明·亚马尔是个天才，而他的成熟更是让他与众不同。",
   "Lamine Yamal wins Goal of the Month": "拉明·亚马尔荣膺月度最佳进球",
   "Las cifras de récord del colosal portero del Barça Atlètic: La Masia está cocinando un fenómeno bajo los palos": "预备队这位身材魁梧的守门员创下了纪录：拉玛西亚正在门前酝酿着一种现象",
   "Las líneas maestras de Albert Peris, el nuevo entrenador del Juvenil A del Barça: \"Formar y competir son las dos caras de la misma moneda\"": "巴萨的青年A队新任主教练阿尔伯特·佩里斯（Albert Peris）的指导方针：“训练和比赛是同一枚硬币的两面。”",
@@ -161,6 +165,7 @@ window.NEWS_ZH = {
   "PSG - FC Barcelona, en directo: Youth League, Jornada 3 de la fase liga, en vivo hoy": "巴黎圣日耳曼 - 巴塞罗那足球俱乐部，直播：青年欧冠，西甲阶段第 3 轮，今日直播",
   "Puede ser el primer número 1 del draft de la NBA del Barça y predicando los valores de La Masia: Es algo que no oyes": "他可能是巴萨年NBA选秀的状元，并宣扬拉玛西亚的价值观：这是您从未听过的消息。",
   "Quer joins Barça Atlètic": "您想加入预备队吗？",
+  "Raphinha captains Brazil against Japan": "拉菲尼亚将担任巴西对阵日本的队长",
   "Raphinha rises in three rankings": "拉菲尼亚在三项排名中均有上升",
   "Raphinha staying until 2030": "拉菲尼亚将留队至 2030 年",
   "Raphinha to renew this Thursday": "拉菲尼亚将于本周四续约",
@@ -169,6 +174,7 @@ window.NEWS_ZH = {
   "Recovery session with Aston Villa on the horizon": "即将迎来与阿斯顿维拉的恢复性比赛",
   "Rodri injury news": "罗德里受伤消息",
   "Salen a la luz imágenes de la conjura de los jugadores del Barça": "巴萨球员串通赌球的图片曝光",
+  "Se confirma la cacicada: el juez único obliga al Barça Atlètic a jugar con solo 10 fichas de filial": "滥用职权行为得到确认：独任法官迫使预备队仅使用 10 名预备队球员参赛",
   "Seis refuerzos de lujo para vencer al Aston Villa en la Youth League": "六名顶级强援助阵，力克阿斯顿维拉，夺得青年欧冠冠军。",
   "Sergi Mayans, el central zurdo más poderoso de La Masia, encandila a Belletti y apunta a Flick": "塞尔吉·马扬斯，拉玛西亚最强的左脚中卫，让贝莱蒂眼前一亮，并引起了弗里克的注意。",
   "Sigue en directo el Manresa-Barça Atlètic del Grupo 2 de Segunda RFEF": "观看西班牙皇家足球乙级联赛第 2 组曼雷萨队-预备队的直播",

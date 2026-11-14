@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-14 09:57:00 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-14 21:02:17 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-14 09:57:00",
+    "updated":  "2026-11-14 21:02:17",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250870/lamine-yamal-genio-le-especial-madurez.html", "title":  "Lamine Yamal es un genio y lo que lo hace más especial es su madurez",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250870/lamine-yamal-genio-le-especial-madurez.html", "time":  "2026-11-14 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/03/19/69bbe6020f3af.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250661/fichar-invierno.html", "title":  "Fichar en invierno no es una opción",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250661/fichar-invierno.html", "time":  "2026-11-14 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/2025/01/10/678101b2927b6.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249618/descanso-eterno-spotify-camp-nou-posible.html", "title":  "El descanso eterno en el Spotify Camp Nou ya es posible",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261110/1004249618/descanso-eterno-spotify-camp-nou-posible.html", "time":  "2026-11-10 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "title":  "Lamine desvela qué le dijo a Messi tras ganar el Mundial",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/08/6a76c8db32a9b.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231421/barca-trabaja-renovacion-sama-nomoko.html", "title":  "El Barça trabaja la renovación de Sama Nomoko",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231421/barca-trabaja-renovacion-sama-nomoko.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/11/17/691b14c4d6e78.r_d.1464-1399-5652.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "title":  "El valiente compromiso de Brian Fariñas con el Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231406/valiente-compromiso-brian-farinas-barca.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a97e80863b70.r_d.637-600-8141.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/08/6a76c8db32a9b.jpeg" }
     ]
 };

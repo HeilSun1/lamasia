@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-14 09:56；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-14 21:01；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-14 09:56:55",
+    "updated":  "2026-11-14 21:01:56",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -238,7 +238,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "11",
                                           "start":  "1795950000",
                                           "date":  "2026-11-29",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "Oberena",
                                           "away":  "FC Barcelona",
                                           "homeId":  "8807",
@@ -789,8 +789,8 @@ window.LAMASIA_SCHEDULES = {
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
                                        "round":  "10",
-                                       "start":  "1795260600",
-                                       "date":  "2026-11-21",
+                                       "start":  "1795347000",
+                                       "date":  "2026-11-22",
                                        "tbd":  false,
                                        "home":  "FC Barcelona A",
                                        "away":  "Vic Riuprimer Refo A",
@@ -1342,8 +1342,8 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰优选联赛 Cadete G1",
                                          "compEn":  "Preferente Catalana Cadete G.1",
                                          "round":  "9",
-                                         "start":  "1795269600",
-                                         "date":  "2026-11-21",
+                                         "start":  "1795352400",
+                                         "date":  "2026-11-22",
                                          "tbd":  false,
                                          "home":  "Girona A",
                                          "away":  "FC Barcelona A",
@@ -3687,9 +3687,9 @@ window.LAMASIA_SCHEDULES = {
                                           "comp":  "西青乙 G7",
                                           "compEn":  "Liga Nacional Grupo 7",
                                           "round":  "12",
-                                          "start":  "1797159600",
+                                          "start":  "1797174900",
                                           "date":  "2026-12-13",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "Mercantil A",
                                           "away":  "FC Barcelona B",
                                           "homeId":  "11681",
