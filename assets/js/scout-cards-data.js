@@ -196,6 +196,20 @@ window.SCOUT_CARDS = [
   "num": ""
  },
  {
+  "slug": "jesse-bisiwu",
+  "key": "b:50892327",
+  "en": "Jesse Bisiwu",
+  "zh": "比西武",
+  "team": "barca-atletic",
+  "teamLabel": "预备队 · Barça Atlètic",
+  "teamShort": "预备队",
+  "pos": "FW",
+  "dob": "2008-01-22",
+  "img": "assets/img/players/dqd/50892327.jpg",
+  "sf": "",
+  "num": ""
+ },
+ {
   "slug": "adam-argemi",
   "key": "sf:b:2076887",
   "en": "Adam Argemí",
@@ -560,6 +574,20 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "michal-zuk",
+  "key": "sf:u19:2128103",
+  "en": "Michał Żuk",
+  "zh": "米哈乌·祖克",
+  "team": "juvenil-a",
+  "teamLabel": "U19 A · Juvenil A",
+  "teamShort": "U19 A",
+  "pos": "M",
+  "dob": "2009-01-01",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2128103/image",
+  "num": ""
+ },
+ {
   "slug": "baba-kourouma",
   "key": "local:juvenil-a:babakourouma",
   "en": "Baba Kourouma",
@@ -572,6 +600,21 @@ window.SCOUT_CARDS = [
   "img": "assets/img/players/baba-kourouma.jpg",
   "sf": "",
   "num": "—"
+ },
+ {
+  "slug": "adrian-cuadrado",
+  "key": "",
+  "en": "Adrián Cuadrado",
+  "zh": "阿德里安·夸德拉多",
+  "team": "juvenil-a",
+  "teamLabel": "U19 A · Juvenil A",
+  "teamShort": "U19 A",
+  "pos": "DF",
+  "dob": "2009-03-10",
+  "img": "",
+  "sf": "",
+  "num": "",
+  "note": "外租 CE Sabadell U19"
  },
  {
   "slug": "orian-goren",
@@ -952,6 +995,20 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "hector-asumu",
+  "key": "local:cadete:hectornestorasumu",
+  "en": "Héctor Néstor Asumu",
+  "zh": "埃克托尔·阿苏穆",
+  "team": "cadete",
+  "teamLabel": "SUB16 · Cadete A",
+  "teamShort": "SUB16",
+  "pos": "FW",
+  "dob": "2011",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
   "slug": "lucas-bernal",
   "key": "local:cadete:lucasbernal",
   "en": "Lucas Bernal",
@@ -1050,20 +1107,6 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
-  "slug": "hector-asumu",
-  "key": "sf:u16:2447155",
-  "en": "Héctor Asumu",
-  "zh": "埃克托·阿苏穆",
-  "team": "cadete",
-  "teamLabel": "SUB16 · Cadete A",
-  "teamShort": "SUB16",
-  "pos": "F",
-  "dob": "2011-02-18",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/2447155/image",
-  "num": ""
- },
- {
   "slug": "mamadou-keita",
   "key": "local:cadete:mamadoukeita",
   "en": "Mamadou Keita",
@@ -1076,20 +1119,6 @@ window.SCOUT_CARDS = [
   "img": "",
   "sf": "",
   "num": "—"
- },
- {
-  "slug": "haoyan-li",
-  "key": "sf:u16:2864275",
-  "en": "Haoyan Li",
-  "zh": "李昊炎",
-  "team": "cadete",
-  "teamLabel": "SUB16 · Cadete A",
-  "teamShort": "SUB16",
-  "pos": "M",
-  "dob": "2012-01-28",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/2864275/image",
-  "num": ""
  },
  {
   "slug": "agus-marcet",
@@ -1180,6 +1209,34 @@ window.SCOUT_CARDS = [
   "key": "local:cadete-b:gaelseijo",
   "en": "Gael Seijo",
   "zh": "加埃尔·塞伊霍",
+  "team": "cadete-b",
+  "teamLabel": "SUB15 · Cadete B",
+  "teamShort": "SUB15",
+  "pos": "DF",
+  "dob": "2012",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "haoyan-li",
+  "key": "local:cadete-b:lihaoyan",
+  "en": "Li Haoyan",
+  "zh": "李昊炎",
+  "team": "cadete-b",
+  "teamLabel": "SUB15 · Cadete B",
+  "teamShort": "SUB15",
+  "pos": "FW",
+  "dob": "2012",
+  "img": "assets/img/players/li-haoyan.jpg",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "john-adams",
+  "key": "local:cadete-b:johnovie",
+  "en": "John Ovie",
+  "zh": "约翰·奥维",
   "team": "cadete-b",
   "teamLabel": "SUB15 · Cadete B",
   "teamShort": "SUB15",
@@ -1283,6 +1340,20 @@ window.SCOUT_CARDS = [
   "teamShort": "SUB14",
   "pos": "FW",
   "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "destiny-ejiofor",
+  "key": "local:infantil-b:destinykosio",
+  "en": "Destiny Kosio",
+  "zh": "德斯蒂尼·科西奥",
+  "team": "infantil-b",
+  "teamLabel": "SUB13 · Infantil B",
+  "teamShort": "SUB13",
+  "pos": "FW",
+  "dob": "2014",
   "img": "",
   "sf": "",
   "num": "—"
@@ -1669,5 +1740,5 @@ window.SCOUT_CARDS = [
 window.SCOUT_CARDS_META = {
  "source": "https://mesgazette.com/scout-cards/",
  "built": "2026-11-14",
- "total": 119
+ "total": 124
 };

@@ -71,3 +71,20 @@
 **页签**：`U19 A · Juvenil A 24` 这种 12 字符标签在 15px 下会把一行撑满，显得很重；梯队后缀与卡片里的信息重复，所以页签只留 `U19 A` + 灰字人数，卡片第三行仍显示 `U19 A · 后卫 · 2007`。
 
 **卡片尺码**：回到初版（44px 头像 / 15px 中文名 / 12px 英文名与元信息 / 内距 14px），用户明确说这一版更好看。
+
+## D8 收录口径修正：124/124 全收（2026-11-14）
+
+上一版说「站内没有这 5 个人」，**是错的**，原因在匹配链路，不在数据：
+
+1. **没用 `data.js` 早就有的 `nameAlias` 字段**。例如 `John Ovie` 的 `nameAlias` 与注释都写着「旧名单作 John Ovie Adams」，我没读。
+2. **只扫了 4 个 Sofascore 缓存的 `players` 数组**，漏了 `dqd-barca-atletic-cache.js` 的 `roster.data.list[].data[]`（含 `person_en_name` + `person_name` 中文名 + `person_id`，是 B 队唯一同时有英文名和 id 的来源）与 `elfutbol-*-details-cache.js` 的比赛名单（`"Adams Silva, John Ovie"` 这种「姓, 名」写法）。
+3. **`norm()` 没处理没有 Unicode 分解形式的字母**：`ł ø đ ß` 在 `NFD` 之后仍是原字符，导致 `michał zuk ≠ michal zuk`，`Michał Żuk`（`dqd-u19-cache.js` 里有，id 2128103）被误判为站内没有。
+
+修完的结果：**124 张 = 对方页面列出的全部**，编号 0 未匹配；中文名、生日、位置 100% 齐全。
+- `jesse-bisiwu` → 比西武（`b:50892327`，本地图 `assets/img/players/dqd/50892327.jpg`）
+- `john-adams` → 约翰·奥维（`local:cadete-b:johnovie`，SUB15）
+- `michal-zuk` → 米哈乌·祖克（`sf:u19:2128103`，U19 A）
+- `destiny-ejiofor` → 德斯蒂尼·科西奥（`local:infantil-b:destinykosio`，SUB13，与哥哥 Divine 不同人，站内两个都有）
+- `adrian-cuadrado` → 阿德里安·夸德拉多（**站内确实没有**：他 2026-27 外租在 CE Sabadell U19，不在巴萨名册里；作为唯一例外手工补进 `EXTRA`，`key` 为空，头像不可点）
+
+**规矩**：以后再加人，先查 `data.js` 的 `nameAlias`、再查 DQD roster，最后才用模糊匹配；模糊匹配前必须先跑 `SPECIAL` 字符映射，否则带 `ł/ø/đ/ß` 的名字会静默漏掉。

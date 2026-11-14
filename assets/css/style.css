@@ -1795,6 +1795,7 @@ body.sc-lock { overflow: hidden; }
 }
 /* 球探卡：卡片结构与字号对齐站内名单（.pl-row 的 13.5 / 11.5 / 12） */
 .sc-card { align-items: center; gap: 12px; padding: 14px; }
+.sc-av-btn--off { cursor: default; }
 .sc-av-btn { flex: 0 0 auto; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; line-height: 0; }
 .sc-av-btn:hover .sc-av, .sc-av-btn:focus-visible .sc-av { outline: 2px solid var(--ink-900); outline-offset: 2px; }
 .sc-av { width: 44px; height: 44px; }

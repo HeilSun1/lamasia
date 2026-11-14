@@ -88,10 +88,11 @@
   }
 
   function cardHtml(c) {
-    return '<div class="sc-card">' +
-      '<button class="sc-av-btn" type="button" data-key="' + esc(c.key) + '" title="查看 ' + esc(c.zh) + ' 的球员卡">' +
-        avatar(c) +
-      "</button>" +
+    // 站内没有档案的人（c.key 为空）头像不可点，只作图示
+    var av = c.key
+      ? '<button class="sc-av-btn" type="button" data-key="' + esc(c.key) + '" title="查看 ' + esc(c.zh) + ' 的球员卡">' + avatar(c) + "</button>"
+      : '<span class="sc-av-btn sc-av-btn--off">' + avatar(c) + "</span>";
+    return '<div class="sc-card">' + av +
       '<button class="sc-main" type="button" data-slug="' + esc(c.slug) + '">' +
         '<span class="sc-name">' + esc(c.zh) + "</span>" +
         '<span class="sc-en">' + esc(c.en) + "</span>" +
