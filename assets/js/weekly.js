@@ -114,17 +114,23 @@
 
   // 合集入口（常驻顶部）；当前页打开，返回键即可回站
   if (album && album.url) {
+    var acache = window.WEEKLY_ALBUM_CACHE || {};
+    var aIssue = acache.issue ? String(acache.issue) : "";
+    var aWhen = acache.checked || album.updated || "";
+    var aTitle = String(acache.title || album.title || "").replace(/^【[^】]*】\s*/, "");
     html +=
       '<a class="weekly-album" data-key="weekly" href="' + esc(album.url) + '" rel="noopener">' +
-        (albumNew ? '<span class="weekly-album__dot" aria-label="新更新"></span>' : "") +
-        
         '<span class="weekly-album__body">' +
-          '<span class="weekly-album__title">' + esc(album.title) + '</span>' +
-          '<span class="weekly-album__note">' + esc(album.note || "点击进入合集 · 返回按浏览器返回键") + '</span>' +
+          '<span class="weekly-album__meta">' +
+            (albumNew ? '<span class="weekly-album__dot" aria-label="新一期"></span>' : "") +
+            (aIssue ? '<span class="weekly-album__issue">第 ' + esc(aIssue) + ' 期</span>' : "") +
+            (aWhen ? '<span class="weekly-album__when">' + esc(aWhen) + ' 更新</span>' : "") +
+          '</span>' +
+          '<span class="weekly-album__title">' + esc(aTitle) + '</span>' +
+          '<span class="weekly-album__note">「飞翔的拉杆箱」每周整合拉玛西亚新闻 · 点开看合集</span>' +
         '</span>' +
       '</a>';
   }
-
   if (!items.length) {
     html += '<div class="match-list-empty">暂无动态，稍后自动更新。</div>';
     el.innerHTML = html;
