@@ -60,3 +60,14 @@
 **卡片结构**：`<div class="sc-card">` 里放两个兄弟按钮——`.sc-av-btn`（点头像开站内球员卡）与 `.sc-main`（点文字开球探报告）。不要嵌套按钮（HTML 不允许，点击事件也会互相吞）。
 
 **尺码**对齐站内名单行（`.pl-row`）：头像 32px、中文名 13.5px/700、英文名 11.5px、元信息 12px，卡片内距 10px 12px（手机 9px 10px）。
+## D7 收录口径放宽与页签短名（2026-11-14）
+
+**结论**：名片收录从「姓名完全相等」放宽为「末词精确 + 其余词前缀匹配」，并允许一张人工别名表（`ALIAS`）；页签只显示短梯队名（`预备队 / U19 A / U19 B / SUB16 …`），数量用 11px 灰字跟在后面。
+
+**理由**：原来只做全名相等，`Pedro Rodríguez Iglesias` 对不上 `pedro-rodriguez`、`Ïu Martínez` 的分音符、`Samu` 对 `Samuel` 全部漏收，124 张卡只收了 87 张。放宽后收到 **119 张**（`预备队 18 / U19 A 33 / U19 B 15 / SUB16 12 / SUB15 8 / SUB14 6 / SUB13 3 / SUB11 A 12 / SUB11 B 12`），另有 5 张明确不收：`adrian-cuadrado / jesse-bisiwu / john-adams / michal-zuk` 站内没有这个人，`destiny-ejiofor` 与站内 `Divine Ejiofor` 不是同一人（生日 2014 对不上 U16）。
+
+**别名表**（逐条核对生日 + 位置 + 梯队才写进去）：`alex-walton → Alexander Walton`（生日 2006-04-12 完全一致）、`pedrito-juarez → Pedro Juárez`（2014 · 中场 · Infantil A）、`amadou-diakite → Amadou Diakate`（2014 · Aleví A(U12) ↔ u11a）。
+
+**页签**：`U19 A · Juvenil A 24` 这种 12 字符标签在 15px 下会把一行撑满，显得很重；梯队后缀与卡片里的信息重复，所以页签只留 `U19 A` + 灰字人数，卡片第三行仍显示 `U19 A · 后卫 · 2007`。
+
+**卡片尺码**：回到初版（44px 头像 / 15px 中文名 / 12px 英文名与元信息 / 内距 14px），用户明确说这一版更好看。

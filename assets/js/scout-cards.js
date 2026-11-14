@@ -4,7 +4,7 @@
   var CARDS = window.SCOUT_CARDS || [];
   var META = window.SCOUT_CARDS_META || {};
   var BASE = "https://mesgazette.com/scout-cards/";
-  var POS = { GK: "门将", DF: "后卫", MF: "中场", FW: "前锋" };
+  var POS = { GK: "门将", DF: "后卫", MF: "中场", FW: "前锋", G: "门将", D: "后卫", M: "中场", F: "前锋" };
 
   var grid = document.getElementById("sc-grid");
   var tabs = document.getElementById("sc-tabs");
@@ -81,7 +81,7 @@
   }
 
   function metaLine(c) {
-    var bits = [c.teamLabel, posZh(c.pos)];
+    var bits = [c.teamShort || c.teamLabel, posZh(c.pos)];
     var y = year(c.dob);
     if (y) bits.push(y);
     return bits.filter(Boolean).join(" · ");
@@ -105,13 +105,13 @@
   var qCount = null;
 
   function matches(c) {
-    if (activeTeam && c.teamLabel !== activeTeam) return false;
+    if (activeTeam && (c.teamShort || c.teamLabel) !== activeTeam) return false;
     if (!query) return true;
     var q = query.toLowerCase();
     return (c.zh || "").toLowerCase().indexOf(q) >= 0 ||
       (c.en || "").toLowerCase().indexOf(q) >= 0 ||
       (c.slug || "").toLowerCase().indexOf(q) >= 0 ||
-      (c.teamLabel || "").toLowerCase().indexOf(q) >= 0;
+      ((c.teamShort || "") + " " + (c.teamLabel || "")).toLowerCase().indexOf(q) >= 0;
   }
 
   function render() {
@@ -132,11 +132,12 @@
   function buildTabs() {
     var teams = [];
     CARDS.forEach(function (c) {
-      if (teams.indexOf(c.teamLabel) < 0) teams.push(c.teamLabel);
+      var t = c.teamShort || c.teamLabel;
+      if (teams.indexOf(t) < 0) teams.push(t);
     });
     var html = '<button class="tt-tab active" type="button" data-team="">全部 <b>' + CARDS.length + "</b></button>";
     teams.forEach(function (t) {
-      var n = CARDS.filter(function (c) { return c.teamLabel === t; }).length;
+      var n = CARDS.filter(function (c) { return (c.teamShort || c.teamLabel) === t; }).length;
       html += '<button class="tt-tab" type="button" data-team="' + esc(t) + '">' + esc(t) + " <b>" + n + "</b></button>";
     });
     tabs.innerHTML = html;

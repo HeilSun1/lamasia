@@ -1725,7 +1725,7 @@ table.roster-table tbody:not(.is-expanded) > tr.is-extra { display: none !import
 
 /* ===== 球探卡（scout-cards.html） ===== */
 #sc-tabs { flex-wrap: wrap; row-gap: 2px; }
-#sc-tabs .tt-tab b { font-weight: 600; color: var(--muted); font-size: 12px; margin-left: 2px; }
+#sc-tabs .tt-tab b { font-weight: 400; color: var(--muted); font-size: 11px; margin-left: 3px; }
 .sc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 4px 0 28px; }
 .sc-card { display: flex; align-items: center; gap: 12px; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-align: left; cursor: pointer; font: inherit; color: inherit; transition: border-color .15s ease; }
 .sc-card:hover { border-color: #b9bfc9; }
@@ -1794,16 +1794,16 @@ body.sc-lock { overflow: hidden; }
   .sc-name { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.35; }
 }
 /* 球探卡：卡片结构与字号对齐站内名单（.pl-row 的 13.5 / 11.5 / 12） */
-.sc-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; }
+.sc-card { align-items: center; gap: 12px; padding: 14px; }
 .sc-av-btn { flex: 0 0 auto; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; line-height: 0; }
 .sc-av-btn:hover .sc-av, .sc-av-btn:focus-visible .sc-av { outline: 2px solid var(--ink-900); outline-offset: 2px; }
-.sc-av { width: 32px; height: 32px; }
-.sc-av-ini { font-size: 13px; }
-.sc-main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 1px; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; }
-.sc-name { font-size: 13.5px; line-height: 1.3; }
-.sc-en { font-size: 11.5px; line-height: 1.35; }
+.sc-av { width: 44px; height: 44px; }
+.sc-av-ini { font-size: 15px; }
+.sc-main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; }
+.sc-name { font-size: 15px; line-height: 1.3; }
+.sc-en { font-size: 12px; line-height: 1.35; }
 .sc-meta { font-size: 12px; line-height: 1.4; }
 @media (max-width: 760px) {
-  .sc-card { padding: 9px 10px; gap: 8px; }
-  .sc-name { font-size: 13.5px; }
+  .sc-card { padding: 12px; gap: 10px; }
+  .sc-name { font-size: 15px; }
 }
