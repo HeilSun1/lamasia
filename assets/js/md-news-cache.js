@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-14 21:02:17 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-14 20:48:28 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-14 21:02:17",
+    "updated":  "2026-11-14 20:48:28",
     "source":  "md",
     "count":  50,
     "news":  [
         {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250870/lamine-yamal-genio-le-especial-madurez.html", "title":  "Lamine Yamal es un genio y lo que lo hace más especial es su madurez",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250870/lamine-yamal-genio-le-especial-madurez.html", "time":  "2026-11-14 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/03/19/69bbe6020f3af.jpeg" },
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250910/mano-derecha-flick-salido-masia-da-receta-hay-educar-gestion-emocional.html", "title":  "La mano derecha de Flick salida de La Masia da su receta: Hay que educar en la gestión emocional",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250910/mano-derecha-flick-salido-masia-da-receta-hay-educar-gestion-emocional.html", "time":  "2026-11-14 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/22/6ab2a09ba8c0d.r_d.650-327-13857.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250661/fichar-invierno.html", "title":  "Fichar en invierno no es una opción",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250661/fichar-invierno.html", "time":  "2026-11-14 12:00",

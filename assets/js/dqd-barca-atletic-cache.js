@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-14 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-14 20:48 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-14 21:00:23",
+    "updated":  "2026-11-14 20:48:01",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -692,19 +692,19 @@ window.DQD_BARCA_ATLETIC = {
                                       "team_B_name":  "赫罗纳B队",
                                       "team_A_logo":  "https://sd.qunliao.info/fastdfs7/M00/66/E2/rBUBsmYmBYWAHCF1AABF6P632AI376.png",
                                       "team_B_logo":  "https://sd.qunliao.info/fastdfs6/M00/BA/23/rBUCgGLNFA-ATjAKAAB0PmbXnGU040.png",
-                                      "fs_A":  "",
-                                      "fs_B":  "",
+                                      "fs_A":  "0",
+                                      "fs_B":  "1",
                                       "ps_A":  "",
                                       "ps_B":  "",
                                       "start_play":  "2026-11-14 17:00:00",
                                       "suretime":  "1",
-                                      "status":  "Fixture",
-                                      "playing_time":  "",
+                                      "status":  "Played",
+                                      "playing_time":  "90",
                                       "scheme":  "dongqiudi:///game/54500712",
                                       "round_name":  "",
-                                      "minute":  "",
-                                      "minute_extra":  "",
-                                      "score_color":  "",
+                                      "minute":  "90",
+                                      "minute_extra":  "7",
+                                      "score_color":  "#1d9ff9",
                                       "match_title":  "西协乙 2组"
                                   },
                                   {
@@ -1712,6 +1712,39 @@ window.DQD_BARCA_ATLETIC = {
                                              {
                                                  "data":  [
                                                               {
+                                                                  "age":  "20岁",
+                                                                  "captain_logo":  "",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2JGASs2QAAAEP6RcnSU543.png",
+                                                                  "nationality_name":  "加纳",
+                                                                  "other_logo":  [
+
+                                                                                 ],
+                                                                  "person_en_name":  "Aziz Issah",
+                                                                  "person_id":  "50818134",
+                                                                  "person_logo":  "assets/img/players/dqd/50818134.jpg",
+                                                                  "person_name":  "阿齐兹-伊萨",
+                                                                  "scheme":  "dongqiudi:///player/50818134",
+                                                                  "shirtnumber":  "7",
+                                                                  "statistic":  [
+                                                                                    {
+                                                                                        "出场":  "8"
+                                                                                    },
+                                                                                    {
+                                                                                        "进球":  "0"
+                                                                                    },
+                                                                                    {
+                                                                                        "助攻":  "0"
+                                                                                    },
+                                                                                    {
+                                                                                        "身价(欧)":  "10万"
+                                                                                    }
+                                                                                ],
+                                                                  "transfer_data":  null,
+                                                                  "type":  "attacker",
+                                                                  "weekly_salary":  "",
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/AA/E8/rBUBsmbYOH2AE_YqAAAazc9KhIM387.jpg"
+                                                              },
+                                                              {
                                                                   "age":  "22岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
@@ -1745,39 +1778,6 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs3/M00/B5/98/ChOxM1xC37CADGDCAAANHjH55fo314.png"
                                                               },
                                                               {
-                                                                  "age":  "20岁",
-                                                                  "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2JGASs2QAAAEP6RcnSU543.png",
-                                                                  "nationality_name":  "加纳",
-                                                                  "other_logo":  [
-
-                                                                                 ],
-                                                                  "person_en_name":  "Aziz Issah",
-                                                                  "person_id":  "50818134",
-                                                                  "person_logo":  "assets/img/players/dqd/50818134.jpg",
-                                                                  "person_name":  "阿齐兹-伊萨",
-                                                                  "scheme":  "dongqiudi:///player/50818134",
-                                                                  "shirtnumber":  "7",
-                                                                  "statistic":  [
-                                                                                    {
-                                                                                        "出场":  "7"
-                                                                                    },
-                                                                                    {
-                                                                                        "进球":  "0"
-                                                                                    },
-                                                                                    {
-                                                                                        "助攻":  "0"
-                                                                                    },
-                                                                                    {
-                                                                                        "身价(欧)":  "10万"
-                                                                                    }
-                                                                                ],
-                                                                  "transfer_data":  null,
-                                                                  "type":  "attacker",
-                                                                  "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/AA/E8/rBUBsmbYOH2AE_YqAAAazc9KhIM387.jpg"
-                                                              },
-                                                              {
                                                                   "age":  "18岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/72/ChOxM1xC2CKAJTG3AAAAypTh1A8948.png",
@@ -1793,7 +1793,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "24",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "6"
+                                                                                        "出场":  "7"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "0"
@@ -2069,7 +2069,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "28",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "6"
+                                                                                        "出场":  "7"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "1"
@@ -2102,7 +2102,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "8",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "2"
+                                                                                        "出场":  "3"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "1"
@@ -2135,7 +2135,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "12",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "5"
+                                                                                        "出场":  "6"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "0"
@@ -2378,7 +2378,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "2",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "9"
+                                                                                        "出场":  "10"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "0"
@@ -2411,7 +2411,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "18",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "9"
+                                                                                        "出场":  "10"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "0"
@@ -2427,6 +2427,39 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "type":  "defender",
                                                                   "weekly_salary":  "",
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/E4/9E/rBUC6GkuxPaAGtzcAAAZKCl7RFU105.jpg"
+                                                              },
+                                                              {
+                                                                  "age":  "19岁",
+                                                                  "captain_logo":  "",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
+                                                                  "nationality_name":  "西班牙",
+                                                                  "other_logo":  [
+
+                                                                                 ],
+                                                                  "person_en_name":  "Guillem Víctor",
+                                                                  "person_id":  "50991083",
+                                                                  "person_logo":  "assets/img/players/dqd/50991083.jpg",
+                                                                  "person_name":  "吉列姆-维克托",
+                                                                  "scheme":  "dongqiudi:///player/50991083",
+                                                                  "shirtnumber":  "21",
+                                                                  "statistic":  [
+                                                                                    {
+                                                                                        "出场":  "8"
+                                                                                    },
+                                                                                    {
+                                                                                        "进球":  "0"
+                                                                                    },
+                                                                                    {
+                                                                                        "助攻":  "0"
+                                                                                    },
+                                                                                    {
+                                                                                        "身价(欧)":  "50万"
+                                                                                    }
+                                                                                ],
+                                                                  "transfer_data":  null,
+                                                                  "type":  "defender",
+                                                                  "weekly_salary":  "",
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/E5/5A/rBUC6GlBNC2AZhceAAAc4VQE8yM661.jpg"
                                                               },
                                                               {
                                                                   "age":  "18岁",
@@ -2464,39 +2497,6 @@ window.DQD_BARCA_ATLETIC = {
                                                               {
                                                                   "age":  "19岁",
                                                                   "captain_logo":  "",
-                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
-                                                                  "nationality_name":  "西班牙",
-                                                                  "other_logo":  [
-
-                                                                                 ],
-                                                                  "person_en_name":  "Guillem Víctor",
-                                                                  "person_id":  "50991083",
-                                                                  "person_logo":  "assets/img/players/dqd/50991083.jpg",
-                                                                  "person_name":  "吉列姆-维克托",
-                                                                  "scheme":  "dongqiudi:///player/50991083",
-                                                                  "shirtnumber":  "21",
-                                                                  "statistic":  [
-                                                                                    {
-                                                                                        "出场":  "7"
-                                                                                    },
-                                                                                    {
-                                                                                        "进球":  "0"
-                                                                                    },
-                                                                                    {
-                                                                                        "助攻":  "0"
-                                                                                    },
-                                                                                    {
-                                                                                        "身价(欧)":  "50万"
-                                                                                    }
-                                                                                ],
-                                                                  "transfer_data":  null,
-                                                                  "type":  "defender",
-                                                                  "weekly_salary":  "",
-                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/E5/5A/rBUC6GlBNC2AZhceAAAc4VQE8yM661.jpg"
-                                                              },
-                                                              {
-                                                                  "age":  "19岁",
-                                                                  "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2FSADy_DAAALaURezqo279.png",
                                                                   "nationality_name":  "厄瓜多尔",
                                                                   "other_logo":  [
@@ -2510,7 +2510,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "5",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "3"
+                                                                                        "出场":  "4"
                                                                                     },
                                                                                     {
                                                                                         "进球":  "0"
@@ -2720,13 +2720,13 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "shirtnumber":  "25",
                                                                   "statistic":  [
                                                                                     {
-                                                                                        "出场":  "9"
+                                                                                        "出场":  "10"
                                                                                     },
                                                                                     {
-                                                                                        "扑救":  "14"
+                                                                                        "扑救":  "16"
                                                                                     },
                                                                                     {
-                                                                                        "解围":  "10"
+                                                                                        "解围":  "13"
                                                                                     },
                                                                                     {
                                                                                         "身价(欧)":  "10万"

@@ -1,17 +1,37 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-14 21:02:14 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-14 20:48:27 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-14 21:02:14",
+    "updated":  "2026-11-14 20:48:27",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136448657", "title":  "Rajada monumental de Belletti",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-estalla-derrota-barca-atletic-136448657", "time":  "2026-11-14 19:59",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0fb2a8c9-4f51-407e-bf2f-1af9e873d884_16-9-discover-aspect-ratio_640w_0_x960y360.webp" },
+        {
+            "id":  "136446586", "title":  "El Barça Atlètic se viene abajo: ¡le obligan a jugar y pierde a tres futbolistas!",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-viene-abajo-le-136446586", "time":  "2026-11-14 19:07",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b8a08f33-bf24-483c-b12c-68317f26fc0d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "136447078", "title":  "La explicación del Juez Único que obligó al Barça Atlètic a jugar ante el Girona B",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/explicacion-juez-unico-obligo-barca-136447078", "time":  "2026-11-14 18:58",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5e8f021e-4457-422e-81b2-5a42f77b0c53_16-9-discover-aspect-ratio_640w_0_x640y284.webp" },
+        {
+            "id":  "136390874", "title":  "\"La Masia no se hizo en dos días\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hugo-garcia-bayon-director-academia-136390874", "time":  "2026-11-14 16:41",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/1a3e7c30-c3ec-4a14-b591-fa6c14660ac4_16-9-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "136444130", "title":  "Barça Atlètic - Girona B en directo: el partido de la Segunda RFEF, hoy en vivo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-girona-b-directo-vivo-hoy-segunda-rfef-suspension-136444130", "time":  "2026-11-14 16:57",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e48181a8-e559-438b-b1c5-8e05dc35ccd0_16-9-aspect-ratio_640w_0_x541y151.webp" },
+        {
             "id":  "136434173", "title":  "Se confirma la cacicada: el juez único obliga al Barça Atlètic a jugar con solo 10 fichas de filial",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/confirma-cacicada-rfef-obliga-barca-136434173", "time":  "2026-11-14 12:19",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0fb2a8c9-4f51-407e-bf2f-1af9e873d884_16-9-discover-aspect-ratio_default_0_x960y360.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/confirma-cacicada-rfef-obliga-barca-136434173", "time":  "2026-11-14 13:52",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0fb2a8c9-4f51-407e-bf2f-1af9e873d884_16-9-discover-aspect-ratio_640w_0_x960y360.webp" },
         {
             "id":  "136421857", "title":  "\"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diferente-barca-deberia-explotar-merchandising-136421857", "time":  "2026-11-14 07:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ac878526-fb44-44bc-b79a-1e26a106537f_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ac878526-fb44-44bc-b79a-1e26a106537f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136385497", "title":  "Sorpresa mayúscula en el Barça: sin noticias de la suspensión",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sorpresa-mayuscula-barca-noticia-suspension-filial-136385497", "time":  "2026-11-12 19:13",
@@ -183,26 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135508387", "title":  "Joni Hernández, un puñal para asaltar el campo del líder de la Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/joni-hernandez-punal-asaltar-campo-135508387", "time":  "2026-10-19 20:56",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" },
-        {
-            "id":  "135473569", "title":  "Los hermanos Ejiofor se salen en La Masia: Destiny y Divine se hinchan a marcar goles",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hermanos-ejiofor-salen-masia-destiny-135473569", "time":  "2026-10-19 04:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/b3790dd2-b010-4264-87db-b90bbac82f40_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135432923", "title":  "El diamante que viene en la defensa del Barça: \"Nunca vi algo así\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hafiz-gariba-diamante-valdra-30-135432923", "time":  "2026-10-18 15:34",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c56c49b-3729-4997-b81a-2eeae8efcc56_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135448414", "title":  "Hamza y Pedro sellan una victoria corta de un Barça Atlètic más líder",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hamza-pedro-sellan-victoria-corta-135448414", "time":  "2026-10-17 17:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/756f801d-bce5-4589-ba81-b6f0ace9d343_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135448574", "title":  "El 1x1 del Barça contra el Betis",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/1x1-barca-betis-descanso-135448574", "time":  "2026-10-17 19:35",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6daed91e-01e4-47ec-ba63-7d5711595db5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135447274", "title":  "Ajay Tavares, con un doblete de asistencias, lidera otro triunfo brillante del Juvenil A del Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ajay-tavares-doblete-asistencias-lidera-135447274", "time":  "2026-10-17 15:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8973d432-6dae-4115-8929-54d1b2b81bca_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/91d6fc6c-cb3f-4172-8826-313190f817d1_16-9-discover-aspect-ratio_640w_0_x630y170.webp" }
     ]
 };

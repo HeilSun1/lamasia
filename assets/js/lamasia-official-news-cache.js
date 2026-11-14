@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 21:01:59 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 20:48:25 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-14 21:01:59",
+    "updated":  "2026-11-14 20:48:25",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,7 +163,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "Raphinha captains Brazil against Japan",
+                "id":  "4607914", "title":  "Raphinha starts and sees red against Japan",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/14/0be4be8d-ba48-4b2f-994d-a79eb5b901d2/2026-11-03_FCBvsASTONVILLA_116.jpg" },
             {
