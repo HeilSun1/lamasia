@@ -40,29 +40,44 @@
     return s.slice(0, 1);
   }
 
-  // 头像来源优先级：手动照片（manual-photos.js / 本地工具）> data.js 的本地图 > Sofascore CDN
-  // 手动照片用 key（如 local:cadete-b:pauespi）在运行期查询，所以以后在工具里给某人补图，
-  // 这一页不用重新生成数据也会自动更新。
-  function photoOf(c) {
+  // 头像直接问 player-card.js 的 photosFor()，跟梯队页/球员卡用同一套优先级
+  // （local 名单键 > 懂球帝 > Sofascore，同人多键按姓名族合并），
+  // 所以同一名球员在球探卡、梯队页、集锦页、球员卡里显示的是同一张图。
+  function photoChain(c) {
+    var out = [];
     try {
-      if (window.ManualPhoto && c.key) {
-        var m = window.ManualPhoto(c.key);
-        if (m) return m;
+      if (window.PlayerCard && window.PlayerCard.photosFor) {
+        out = window.PlayerCard.photosFor(c.key, [c.en, c.zh], []) || [];
       }
-    } catch (e) {}
-    if (c.img) return c.img;
-    if (c.sf) return c.sf;
-    return "";
+    } catch (e) { out = []; }
+    if (!out.length) {
+      var m = "";
+      try { if (window.ManualPhoto && c.key) m = window.ManualPhoto(c.key); } catch (e) {}
+      out = [m, c.img, c.sf].filter(Boolean);
+    }
+    return out;
   }
 
-  function avatar(c) {
-    var src = photoOf(c);
-    if (src) {
-      return '<img class="sc-av" src="' + esc(src) + '" alt="" loading="lazy" referrerpolicy="no-referrer" ' +
-        'onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'sc-av sc-av-ini\',textContent:\'' +
-        esc(initialOf(c)) + '\'}))">';
+  // 逐张回退，全部失败才落到首字母
+  window.scImgFail = function (img) {
+    var rest = String(img.getAttribute("data-alt") || "").split("|").filter(Boolean);
+    if (rest.length) {
+      img.setAttribute("data-alt", rest.slice(1).join("|"));
+      img.src = rest[0];
+      return;
     }
-    return '<span class="sc-av sc-av-ini">' + esc(initialOf(c)) + "</span>";
+    var span = document.createElement("span");
+    span.className = "sc-av sc-av-ini";
+    span.textContent = img.getAttribute("data-ini") || "?";
+    img.replaceWith(span);
+  };
+
+  function avatar(c) {
+    var list = photoChain(c);
+    if (!list.length) return '<span class="sc-av sc-av-ini">' + esc(initialOf(c)) + "</span>";
+    return '<img class="sc-av" src="' + esc(list[0]) + '" data-alt="' + esc(list.slice(1).join("|")) + '"' +
+      ' data-ini="' + esc(initialOf(c)) + '" alt="" loading="lazy" referrerpolicy="no-referrer"' +
+      ' onerror="window.scImgFail(this)">';
   }
 
   function metaLine(c) {
@@ -73,14 +88,16 @@
   }
 
   function cardHtml(c) {
-    return '<button class="sc-card" type="button" data-slug="' + esc(c.slug) + '">' +
-      avatar(c) +
-      '<span class="sc-body">' +
+    return '<div class="sc-card">' +
+      '<button class="sc-av-btn" type="button" data-key="' + esc(c.key) + '" title="查看 ' + esc(c.zh) + ' 的球员卡">' +
+        avatar(c) +
+      "</button>" +
+      '<button class="sc-main" type="button" data-slug="' + esc(c.slug) + '">' +
         '<span class="sc-name">' + esc(c.zh) + "</span>" +
         '<span class="sc-en">' + esc(c.en) + "</span>" +
         '<span class="sc-meta">' + esc(metaLine(c)) + "</span>" +
-      "</span>" +
-      "</button>";
+      "</button>" +
+      "</div>";
   }
 
   var activeTeam = "";
@@ -204,7 +221,14 @@
   }
 
   grid.addEventListener("click", function (e) {
-    var b = e.target.closest(".sc-card");
+    // 点头像 → 站内球员卡（和梯队页点名字一样）
+    var av = e.target.closest(".sc-av-btn");
+    if (av) {
+      var k = av.getAttribute("data-key");
+      if (k && window.PlayerCard) { window.PlayerCard.open(k); return; }
+    }
+    // 点名字/信息 → 球探报告
+    var b = e.target.closest(".sc-main");
     if (!b) return;
     var slug = b.getAttribute("data-slug");
     var c = CARDS.filter(function (x) { return x.slug === slug; })[0];

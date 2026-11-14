@@ -1,31 +1,5 @@
 window.SCOUT_CARDS = [
  {
-  "slug": "eder-aller",
-  "key": "local:juvenil-a:ederaller",
-  "en": "Eder Aller",
-  "zh": "埃德尔·阿莱尔",
-  "team": "juvenil-a",
-  "teamLabel": "U19 A · Juvenil A",
-  "pos": "GK",
-  "dob": "—",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/1929977/image",
-  "num": "—"
- },
- {
-  "slug": "oscar-gistau",
-  "key": "local:juvenil-a:oscargistau",
-  "en": "Òscar Gistau",
-  "zh": "奥斯卡·吉斯陶",
-  "team": "juvenil-a",
-  "teamLabel": "U19 A · Juvenil A",
-  "pos": "FW",
-  "dob": "—",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/1539491/image",
-  "num": "—"
- },
- {
   "slug": "landry-farre",
   "key": "local:juvenil-a:landryfarre",
   "en": "Landry Farré",
@@ -75,6 +49,19 @@ window.SCOUT_CARDS = [
   "dob": "2007-03-22",
   "img": "",
   "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "eder-aller",
+  "key": "local:juvenil-a:ederaller",
+  "en": "Eder Aller",
+  "zh": "埃德尔·阿莱尔",
+  "team": "juvenil-a",
+  "teamLabel": "U19 A · Juvenil A",
+  "pos": "GK",
+  "dob": "2007-04-04",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1929977/image",
   "num": "—"
  },
  {
@@ -208,6 +195,19 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "oscar-gistau",
+  "key": "local:juvenil-a:oscargistau",
+  "en": "Òscar Gistau",
+  "zh": "奥斯卡·吉斯陶",
+  "team": "juvenil-a",
+  "teamLabel": "U19 A · Juvenil A",
+  "pos": "FW",
+  "dob": "2008-03-08",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1539491/image",
+  "num": "—"
+ },
+ {
   "slug": "lorenzo-oertli",
   "key": "local:juvenil-a:lorenzooertli",
   "en": "Lorenzo Oertli",
@@ -309,19 +309,6 @@ window.SCOUT_CARDS = [
   "dob": "2010-03-10",
   "img": "assets/img/players/ebrima-tunkara.jpg",
   "sf": "https://img.sofascore.com/api/v1/player/2128084/image",
-  "num": "—"
- },
- {
-  "slug": "luca-perez",
-  "key": "local:juvenil-b:lucaperez",
-  "en": "Luca Pérez",
-  "zh": "卢卡·佩雷斯",
-  "team": "juvenil-b",
-  "teamLabel": "U19 B · Juvenil B",
-  "pos": "DF",
-  "dob": "—",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/2412372/image",
   "num": "—"
  },
  {
@@ -481,6 +468,19 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "luca-perez",
+  "key": "local:juvenil-b:lucaperez",
+  "en": "Luca Pérez",
+  "zh": "卢卡·佩雷斯",
+  "team": "juvenil-b",
+  "teamLabel": "U19 B · Juvenil B",
+  "pos": "DF",
+  "dob": "2010-01-10",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2412372/image",
+  "num": "—"
+ },
+ {
   "slug": "ruslan-mba",
   "key": "local:juvenil-b:ruslanmba",
   "en": "Ruslan Mba",
@@ -491,32 +491,6 @@ window.SCOUT_CARDS = [
   "dob": "2010-02-27",
   "img": "assets/img/players/ruslan-mba.jpg",
   "sf": "https://img.sofascore.com/api/v1/player/2128111/image",
-  "num": "—"
- },
- {
-  "slug": "mamadou-keita",
-  "key": "local:cadete:mamadoukeita",
-  "en": "Mamadou Keita",
-  "zh": "马马杜·凯塔",
-  "team": "cadete",
-  "teamLabel": "SUB16 · Cadete A",
-  "pos": "FW",
-  "dob": "—",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/2542153/image",
-  "num": "—"
- },
- {
-  "slug": "pau-sarria",
-  "key": "local:cadete:pausarria",
-  "en": "Pau Sarrià",
-  "zh": "保·萨里亚",
-  "team": "cadete",
-  "teamLabel": "SUB16 · Cadete A",
-  "pos": "MF",
-  "dob": "—",
-  "img": "",
-  "sf": "https://img.sofascore.com/api/v1/player/2533245/image",
   "num": "—"
  },
  {
@@ -624,6 +598,32 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "pau-sarria",
+  "key": "local:cadete:pausarria",
+  "en": "Pau Sarrià",
+  "zh": "保·萨里亚",
+  "team": "cadete",
+  "teamLabel": "SUB16 · Cadete A",
+  "pos": "MF",
+  "dob": "2011-01-22",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2533245/image",
+  "num": "—"
+ },
+ {
+  "slug": "mamadou-keita",
+  "key": "local:cadete:mamadoukeita",
+  "en": "Mamadou Keita",
+  "zh": "马马杜·凯塔",
+  "team": "cadete",
+  "teamLabel": "SUB16 · Cadete A",
+  "pos": "FW",
+  "dob": "2011-04-17",
+  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2542153/image",
+  "num": "—"
+ },
+ {
   "slug": "agus-marcet",
   "key": "local:cadete-b:agusmarcet",
   "en": "Agus Marcet",
@@ -631,33 +631,7 @@ window.SCOUT_CARDS = [
   "team": "cadete-b",
   "teamLabel": "SUB15 · Cadete B",
   "pos": "MF",
-  "dob": "—",
-  "img": "",
-  "sf": "",
-  "num": "—"
- },
- {
-  "slug": "antonio-amaya",
-  "key": "local:cadete-b:antonioamaya",
-  "en": "Antonio Amaya",
-  "zh": "安东尼奥·阿马亚",
-  "team": "cadete-b",
-  "teamLabel": "SUB15 · Cadete B",
-  "pos": "MF",
-  "dob": "—",
-  "img": "",
-  "sf": "",
-  "num": "—"
- },
- {
-  "slug": "gael-seijo",
-  "key": "local:cadete-b:gaelseijo",
-  "en": "Gael Seijo",
-  "zh": "加埃尔·塞伊霍",
-  "team": "cadete-b",
-  "teamLabel": "SUB15 · Cadete B",
-  "pos": "DF",
-  "dob": "—",
+  "dob": "2012",
   "img": "",
   "sf": "",
   "num": "—"
@@ -670,6 +644,19 @@ window.SCOUT_CARDS = [
   "team": "cadete-b",
   "teamLabel": "SUB15 · Cadete B",
   "pos": "DF",
+  "dob": "2012",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "antonio-amaya",
+  "key": "local:cadete-b:antonioamaya",
+  "en": "Antonio Amaya",
+  "zh": "安东尼奥·阿马亚",
+  "team": "cadete-b",
+  "teamLabel": "SUB15 · Cadete B",
+  "pos": "MF",
   "dob": "2012",
   "img": "",
   "sf": "",
@@ -715,6 +702,19 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
+  "slug": "gael-seijo",
+  "key": "local:cadete-b:gaelseijo",
+  "en": "Gael Seijo",
+  "zh": "加埃尔·塞伊霍",
+  "team": "cadete-b",
+  "teamLabel": "SUB15 · Cadete B",
+  "pos": "DF",
+  "dob": "2012",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
   "slug": "fode-diallo",
   "key": "local:cadete-b:fodediallo",
   "en": "Fode Diallo",
@@ -723,32 +723,6 @@ window.SCOUT_CARDS = [
   "teamLabel": "SUB15 · Cadete B",
   "pos": "FW",
   "dob": "2012-06-03",
-  "img": "",
-  "sf": "",
-  "num": "—"
- },
- {
-  "slug": "jaume-casanovas",
-  "key": "local:infantil:jaumecasanovas",
-  "en": "Jaume Casanovas",
-  "zh": "豪梅·卡萨诺瓦",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "DF",
-  "dob": "—",
-  "img": "",
-  "sf": "",
-  "num": "—"
- },
- {
-  "slug": "mario-franco",
-  "key": "local:infantil:mariofranco",
-  "en": "Mario Franco",
-  "zh": "马里奥·佛朗哥",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "MF",
-  "dob": "—",
   "img": "",
   "sf": "",
   "num": "—"
@@ -771,6 +745,32 @@ window.SCOUT_CARDS = [
   "key": "local:infantil:guillembalcells",
   "en": "Guillem Balcells",
   "zh": "吉列姆·巴尔塞尔斯",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "MF",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "jaume-casanovas",
+  "key": "local:infantil:jaumecasanovas",
+  "en": "Jaume Casanovas",
+  "zh": "豪梅·卡萨诺瓦",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "DF",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "mario-franco",
+  "key": "local:infantil:mariofranco",
+  "en": "Mario Franco",
+  "zh": "马里奥·佛朗哥",
   "team": "infantil",
   "teamLabel": "SUB14 · Infantil A",
   "pos": "MF",
@@ -806,19 +806,6 @@ window.SCOUT_CARDS = [
   "num": "—"
  },
  {
-  "slug": "barka-seif",
-  "key": "local:infantil-b:barkaseif",
-  "en": "Barka Seif",
-  "zh": "巴尔卡·塞夫",
-  "team": "infantil-b",
-  "teamLabel": "SUB13 · Infantil B",
-  "pos": "FW",
-  "dob": "—",
-  "img": "",
-  "sf": "",
-  "num": "—"
- },
- {
   "slug": "hugo-galdeano",
   "key": "local:infantil-b:hugogaldeano",
   "en": "Hugo Galdeano",
@@ -827,6 +814,19 @@ window.SCOUT_CARDS = [
   "teamLabel": "SUB13 · Infantil B",
   "pos": "MF",
   "dob": "2014",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "barka-seif",
+  "key": "local:infantil-b:barkaseif",
+  "en": "Barka Seif",
+  "zh": "巴尔卡·塞夫",
+  "team": "infantil-b",
+  "teamLabel": "SUB13 · Infantil B",
+  "pos": "FW",
+  "dob": "2014-06-19",
   "img": "",
   "sf": "",
   "num": "—"
