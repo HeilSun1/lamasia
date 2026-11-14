@@ -1,6 +1,7 @@
 window.SCOUT_CARDS = [
  {
   "slug": "eder-aller",
+  "key": "local:juvenil-a:ederaller",
   "en": "Eder Aller",
   "zh": "埃德尔·阿莱尔",
   "team": "juvenil-a",
@@ -8,10 +9,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "—",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1929977/image",
   "num": "—"
  },
  {
   "slug": "oscar-gistau",
+  "key": "local:juvenil-a:oscargistau",
   "en": "Òscar Gistau",
   "zh": "奥斯卡·吉斯陶",
   "team": "juvenil-a",
@@ -19,10 +22,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "—",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1539491/image",
   "num": "—"
  },
  {
   "slug": "landry-farre",
+  "key": "local:juvenil-a:landryfarre",
   "en": "Landry Farré",
   "zh": "兰德里·法雷",
   "team": "juvenil-a",
@@ -30,10 +35,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2007",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "hafiz-gariba",
+  "key": "local:juvenil-a:hafizgariba",
   "en": "Hafiz Gariba",
   "zh": "哈菲兹·加里巴",
   "team": "juvenil-a",
@@ -41,10 +48,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2007-01-09",
   "img": "",
+  "sf": "",
   "num": "3/4"
  },
  {
   "slug": "max-bonfill",
+  "key": "local:juvenil-a:maxbonfill",
   "en": "Max Bonfill",
   "zh": "马克斯·邦菲尔",
   "team": "juvenil-a",
@@ -52,10 +61,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2007-03-02",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1620575/image",
   "num": "30"
  },
  {
   "slug": "dani-avila",
+  "key": "local:juvenil-a:daniavila",
   "en": "Dani Ávila",
   "zh": "达尼·阿维拉",
   "team": "juvenil-a",
@@ -63,10 +74,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2007-03-22",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "guillem-victor",
+  "key": "local:juvenil-a:guillemvictor",
   "en": "Guillem Víctor",
   "zh": "吉列姆·维克托",
   "team": "juvenil-a",
@@ -74,21 +87,25 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2007-05-03",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "shane-kluivert",
+  "key": "local:juvenil-a:shanekluivert",
   "en": "Shane Kluivert",
   "zh": "肖恩·克鲁伊维特",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "FW",
   "dob": "2007-09-24",
-  "img": "shane-kluivert.jpg",
+  "img": "assets/img/players/shane-kluivert.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/1657202/image",
   "num": "—"
  },
  {
   "slug": "ibrahim-babayev",
+  "key": "local:juvenil-a:ibrahimbabayev",
   "en": "Ibrahim Babayev",
   "zh": "易卜拉欣·巴巴耶夫",
   "team": "juvenil-a",
@@ -96,10 +113,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2008",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1990908/image",
   "num": "—"
  },
  {
   "slug": "madou-murcia",
+  "key": "local:juvenil-a:madoumurcia",
   "en": "Madou Murcia",
   "zh": "马杜·穆尔西亚",
   "team": "juvenil-a",
@@ -107,21 +126,25 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2738837/image",
   "num": "—"
  },
  {
   "slug": "hamza-abdelkarim",
+  "key": "local:juvenil-a:hamzaabdelkarim",
   "en": "Hamza Abdelkarim",
   "zh": "哈姆扎·阿卜杜勒卡里姆",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "FW",
   "dob": "2008-01-01",
-  "img": "hamza-abdelkarim.jpg",
+  "img": "assets/img/players/hamza-abdelkarim.jpg",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "pol-bernabeu",
+  "key": "local:juvenil-a:polbernabeu",
   "en": "Pol Bernabeu",
   "zh": "波尔·贝尔纳乌",
   "team": "juvenil-a",
@@ -129,10 +152,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008-01-05",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2076871/image",
   "num": "—"
  },
  {
   "slug": "alex-campos",
+  "key": "local:juvenil-a:alexcampos",
   "en": "Alex Campos",
   "zh": "亚历克斯·坎波斯",
   "team": "juvenil-a",
@@ -140,10 +165,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008-02-02",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "nico-marcipar",
+  "key": "local:juvenil-a:nicomarcipar",
   "en": "Nico Marcipar",
   "zh": "尼科·马西帕",
   "team": "juvenil-a",
@@ -151,21 +178,25 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008-02-13",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2076881/image",
   "num": "—"
  },
  {
   "slug": "iker-rodriguez",
+  "key": "local:juvenil-a:ikerrodriguez",
   "en": "Iker Rodríguez",
   "zh": "伊克尔·罗德里格斯",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "GK",
   "dob": "2008-02-22",
-  "img": "iker-rodriguez.jpg",
+  "img": "assets/img/players/iker-rodriguez.jpg",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "nil-teixidor",
+  "key": "local:juvenil-a:nilteixidor",
   "en": "Nil Teixidor",
   "zh": "尼尔·特西多尔",
   "team": "juvenil-a",
@@ -173,10 +204,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008-02-28",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/1926082/image",
   "num": "—"
  },
  {
   "slug": "lorenzo-oertli",
+  "key": "local:juvenil-a:lorenzooertli",
   "en": "Lorenzo Oertli",
   "zh": "洛伦佐·厄特利",
   "team": "juvenil-a",
@@ -184,10 +217,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2008-03-26",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2229084/image",
   "num": "—"
  },
  {
   "slug": "adrian-guerrero",
+  "key": "local:juvenil-a:adrianguerrero",
   "en": "Adrián Guerrero",
   "zh": "阿德里安·格雷罗",
   "team": "juvenil-a",
@@ -195,10 +230,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2008-05-13",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2048405/image",
   "num": "—"
  },
  {
   "slug": "nuhu-fofana",
+  "key": "local:juvenil-a:nuhufofana",
   "en": "Nuhu Fofana",
   "zh": "努胡·福法纳",
   "team": "juvenil-a",
@@ -206,10 +243,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2008-07-28",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2229087/image",
   "num": "—"
  },
  {
   "slug": "roberto-tomas",
+  "key": "local:juvenil-a:robertotomas",
   "en": "Roberto Tomás",
   "zh": "罗伯托·托马斯",
   "team": "juvenil-a",
@@ -217,21 +256,25 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2009",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2607839/image",
   "num": "—"
  },
  {
   "slug": "baba-kourouma",
+  "key": "local:juvenil-a:babakourouma",
   "en": "Baba Kourouma",
   "zh": "巴巴·库鲁马",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "DF",
   "dob": "2009-02-23",
-  "img": "baba-kourouma.jpg",
+  "img": "assets/img/players/baba-kourouma.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2076894/image",
   "num": "—"
  },
  {
   "slug": "orian-goren",
+  "key": "local:juvenil-a:oriangoren",
   "en": "Orian Goren",
   "zh": "奥里安·戈伦",
   "team": "juvenil-a",
@@ -239,32 +282,38 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2009-03-15",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "ajay-tavares",
+  "key": "local:juvenil-a:ajaytavares",
   "en": "Ajay Tavares",
   "zh": "阿杰伊·塔瓦雷斯",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "FW",
   "dob": "2009-12-28",
-  "img": "ajay-tavares.jpg",
+  "img": "assets/img/players/ajay-tavares.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/1861694/image",
   "num": "—"
  },
  {
   "slug": "ebrima-tunkara",
+  "key": "local:juvenil-a:ebrimatunkara",
   "en": "Ebrima Tunkara",
   "zh": "埃布里马·通卡拉",
   "team": "juvenil-a",
   "teamLabel": "U19 A · Juvenil A",
   "pos": "MF",
   "dob": "2010-03-10",
-  "img": "ebrima-tunkara.jpg",
+  "img": "assets/img/players/ebrima-tunkara.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2128084/image",
   "num": "—"
  },
  {
   "slug": "luca-perez",
+  "key": "local:juvenil-b:lucaperez",
   "en": "Luca Pérez",
   "zh": "卢卡·佩雷斯",
   "team": "juvenil-b",
@@ -272,21 +321,25 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "—",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2412372/image",
   "num": "—"
  },
  {
   "slug": "byron-mendoza",
+  "key": "local:juvenil-b:byronmendoza",
   "en": "Byron Mendoza",
   "zh": "拜伦·门多萨",
   "team": "juvenil-b",
   "teamLabel": "U19 B · Juvenil B",
   "pos": "FW",
   "dob": "2009",
-  "img": "byron-mendoza.jpg",
+  "img": "assets/img/players/byron-mendoza.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2446943/image",
   "num": "—"
  },
  {
   "slug": "genis-clua",
+  "key": "local:juvenil-b:genisclua",
   "en": "Genís Clua",
   "zh": "赫尼斯·克卢瓦",
   "team": "juvenil-b",
@@ -294,32 +347,38 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2009",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "ahmed-abarkane",
+  "key": "local:juvenil-b:ahmedabarkane",
   "en": "Ahmed Abarkane",
   "zh": "艾哈迈德·阿巴尔卡内",
   "team": "juvenil-b",
   "teamLabel": "U19 B · Juvenil B",
   "pos": "DF",
   "dob": "2010",
-  "img": "ahmed-abarkane.jpg",
+  "img": "assets/img/players/ahmed-abarkane.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2342525/image",
   "num": "—"
  },
  {
   "slug": "artem-rybak",
+  "key": "local:juvenil-b:artemrybak",
   "en": "Artem Rybak",
   "zh": "阿尔乔姆·雷巴克",
   "team": "juvenil-b",
   "teamLabel": "U19 B · Juvenil B",
   "pos": "FW",
   "dob": "2010",
-  "img": "artem-rybak.jpg",
+  "img": "assets/img/players/artem-rybak.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2080974/image",
   "num": "—"
  },
  {
   "slug": "dany-freire",
+  "key": "local:juvenil-b:danyfreire",
   "en": "Dany Freire",
   "zh": "达尼·弗雷雷",
   "team": "juvenil-b",
@@ -327,10 +386,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2010",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "elyott-daussy",
+  "key": "local:juvenil-b:elyottdaussy",
   "en": "Elyott Daussy",
   "zh": "埃利奥特·多西",
   "team": "juvenil-b",
@@ -338,10 +399,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2010",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "erik-dominguez",
+  "key": "local:juvenil-b:erikdominguez",
   "en": "Erik Domínguez",
   "zh": "埃里克·多明格斯",
   "team": "juvenil-b",
@@ -349,21 +412,25 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2010",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "hugo-garces",
+  "key": "local:juvenil-b:hugogarces",
   "en": "Hugo Garcés",
   "zh": "乌戈·加塞斯",
   "team": "juvenil-b",
   "teamLabel": "U19 B · Juvenil B",
   "pos": "MF",
   "dob": "2010",
-  "img": "hugo-garces.jpg",
+  "img": "assets/img/players/hugo-garces.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2405402/image",
   "num": "—"
  },
  {
   "slug": "ignasi-bassas",
+  "key": "local:juvenil-b:ignasibassas",
   "en": "Ignasi Bassas",
   "zh": "伊格纳西·巴萨斯",
   "team": "juvenil-b",
@@ -371,10 +438,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2010",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2410976/image",
   "num": "—"
  },
  {
   "slug": "pablo-pena",
+  "key": "local:juvenil-b:pablopena",
   "en": "Pablo Peña",
   "zh": "巴勃罗·佩尼亚",
   "team": "juvenil-b",
@@ -382,10 +451,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2010",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2229083/image",
   "num": "—"
  },
  {
   "slug": "pere-villacorta",
+  "key": "local:juvenil-b:perevillacorta",
   "en": "Pere Villacorta",
   "zh": "佩雷·比利亚科塔",
   "team": "juvenil-b",
@@ -393,10 +464,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2010",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2410975/image",
   "num": "—"
  },
  {
   "slug": "unai-balmon",
+  "key": "local:juvenil-b:unaibalmon",
   "en": "Unai Balmón",
   "zh": "乌奈·巴尔蒙",
   "team": "juvenil-b",
@@ -404,21 +477,25 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2010",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2690278/image",
   "num": "—"
  },
  {
   "slug": "ruslan-mba",
+  "key": "local:juvenil-b:ruslanmba",
   "en": "Ruslan Mba",
   "zh": "鲁斯兰·姆巴",
   "team": "juvenil-b",
   "teamLabel": "U19 B · Juvenil B",
   "pos": "FW",
   "dob": "2010-02-27",
-  "img": "ruslan-mba.jpg",
+  "img": "assets/img/players/ruslan-mba.jpg",
+  "sf": "https://img.sofascore.com/api/v1/player/2128111/image",
   "num": "—"
  },
  {
   "slug": "mamadou-keita",
+  "key": "local:cadete:mamadoukeita",
   "en": "Mamadou Keita",
   "zh": "马马杜·凯塔",
   "team": "cadete",
@@ -426,10 +503,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "—",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2542153/image",
   "num": "—"
  },
  {
   "slug": "pau-sarria",
+  "key": "local:cadete:pausarria",
   "en": "Pau Sarrià",
   "zh": "保·萨里亚",
   "team": "cadete",
@@ -437,10 +516,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "—",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2533245/image",
   "num": "—"
  },
  {
   "slug": "daehan-lee",
+  "key": "local:cadete:daehanlee",
   "en": "Daehan Lee",
   "zh": "李大汉",
   "team": "cadete",
@@ -448,10 +529,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2011",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "divine-ikenna",
+  "key": "local:cadete:divineikenna",
   "en": "Divine Ikenna",
   "zh": "迪瓦恩·伊肯纳",
   "team": "cadete",
@@ -459,10 +542,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2011",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2690301/image",
   "num": "—"
  },
  {
   "slug": "lucas-bernal",
+  "key": "local:cadete:lucasbernal",
   "en": "Lucas Bernal",
   "zh": "卢卡斯·贝尔纳尔",
   "team": "cadete",
@@ -470,10 +555,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2011",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2447157/image",
   "num": "—"
  },
  {
   "slug": "minguk-lee",
+  "key": "local:cadete:minguklee",
   "en": "Minguk Lee",
   "zh": "李民国",
   "team": "cadete",
@@ -481,10 +568,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2011",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "unax-hernandez",
+  "key": "local:cadete:unaxhernandez",
   "en": "Unax Hernández",
   "zh": "乌纳克斯·埃尔南德斯",
   "team": "cadete",
@@ -492,10 +581,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2011",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2864208/image",
   "num": "—"
  },
  {
   "slug": "victor-barbany",
+  "key": "local:cadete:victorbarbany",
   "en": "Víctor Barbany",
   "zh": "维克托·巴尔巴尼",
   "team": "cadete",
@@ -503,10 +594,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2011",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2826562/image",
   "num": "—"
  },
  {
   "slug": "victor-lao",
+  "key": "local:cadete:victorlao",
   "en": "Víctor Lao",
   "zh": "维克托·拉奥",
   "team": "cadete",
@@ -514,10 +607,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2011",
   "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2690244/image",
   "num": "—"
  },
  {
   "slug": "victor-santiago",
+  "key": "local:cadete:victorsantiago",
   "en": "Víctor Santiago",
   "zh": "维克托·圣地亚哥",
   "team": "cadete",
@@ -525,76 +620,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2011",
   "img": "",
-  "num": "—"
- },
- {
-  "slug": "jaume-casanovas",
-  "en": "Jaume Casanovas",
-  "zh": "豪梅·卡萨诺瓦",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "DF",
-  "dob": "—",
-  "img": "",
-  "num": "—"
- },
- {
-  "slug": "mario-franco",
-  "en": "Mario Franco",
-  "zh": "马里奥·佛朗哥",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "MF",
-  "dob": "—",
-  "img": "",
-  "num": "—"
- },
- {
-  "slug": "aran-aparicio",
-  "en": "Aran Aparicio",
-  "zh": "阿兰·阿帕里西奥",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "FW",
-  "dob": "2013",
-  "img": "",
-  "num": "—"
- },
- {
-  "slug": "guillem-balcells",
-  "en": "Guillem Balcells",
-  "zh": "吉列姆·巴尔塞尔斯",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "MF",
-  "dob": "2013",
-  "img": "",
-  "num": "—"
- },
- {
-  "slug": "mounirou-kande",
-  "en": "Mounirou Kande",
-  "zh": "穆尼鲁·坎德",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "FW",
-  "dob": "2013",
-  "img": "",
-  "num": "—"
- },
- {
-  "slug": "pep-farres",
-  "en": "Pep Farrés",
-  "zh": "佩普·法雷斯",
-  "team": "infantil",
-  "teamLabel": "SUB14 · Infantil A",
-  "pos": "FW",
-  "dob": "2013",
-  "img": "",
+  "sf": "https://img.sofascore.com/api/v1/player/2864209/image",
   "num": "—"
  },
  {
   "slug": "agus-marcet",
+  "key": "local:cadete-b:agusmarcet",
   "en": "Agus Marcet",
   "zh": "阿古斯·马塞特",
   "team": "cadete-b",
@@ -602,10 +633,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "—",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "antonio-amaya",
+  "key": "local:cadete-b:antonioamaya",
   "en": "Antonio Amaya",
   "zh": "安东尼奥·阿马亚",
   "team": "cadete-b",
@@ -613,10 +646,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "—",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "gael-seijo",
+  "key": "local:cadete-b:gaelseijo",
   "en": "Gael Seijo",
   "zh": "加埃尔·塞伊霍",
   "team": "cadete-b",
@@ -624,10 +659,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "—",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "alan-guerra",
+  "key": "local:cadete-b:alanguerra",
   "en": "Alan Guerra",
   "zh": "阿兰·格拉",
   "team": "cadete-b",
@@ -635,10 +672,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2012",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "ayoub-hilali",
+  "key": "local:cadete-b:ayoubhilali",
   "en": "Ayoub Hilali",
   "zh": "阿尤布·希拉利",
   "team": "cadete-b",
@@ -646,10 +685,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2012",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "david-moreno",
+  "key": "local:cadete-b:davidmoreno",
   "en": "David Moreno",
   "zh": "大卫·莫雷诺",
   "team": "cadete-b",
@@ -657,10 +698,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2012",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "enzo-perez",
+  "key": "local:cadete-b:enzoperez",
   "en": "Enzo Pérez",
   "zh": "恩佐·佩雷斯",
   "team": "cadete-b",
@@ -668,10 +711,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2012",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "fode-diallo",
+  "key": "local:cadete-b:fodediallo",
   "en": "Fode Diallo",
   "zh": "福德·迪亚洛",
   "team": "cadete-b",
@@ -679,10 +724,90 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2012-06-03",
   "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "jaume-casanovas",
+  "key": "local:infantil:jaumecasanovas",
+  "en": "Jaume Casanovas",
+  "zh": "豪梅·卡萨诺瓦",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "DF",
+  "dob": "—",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "mario-franco",
+  "key": "local:infantil:mariofranco",
+  "en": "Mario Franco",
+  "zh": "马里奥·佛朗哥",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "MF",
+  "dob": "—",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "aran-aparicio",
+  "key": "local:infantil:aranaparicio",
+  "en": "Aran Aparicio",
+  "zh": "阿兰·阿帕里西奥",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "FW",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "guillem-balcells",
+  "key": "local:infantil:guillembalcells",
+  "en": "Guillem Balcells",
+  "zh": "吉列姆·巴尔塞尔斯",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "MF",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "mounirou-kande",
+  "key": "local:infantil:mouniroukande",
+  "en": "Mounirou Kande",
+  "zh": "穆尼鲁·坎德",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "FW",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
+  "num": "—"
+ },
+ {
+  "slug": "pep-farres",
+  "key": "local:infantil:pepfarres",
+  "en": "Pep Farrés",
+  "zh": "佩普·法雷斯",
+  "team": "infantil",
+  "teamLabel": "SUB14 · Infantil A",
+  "pos": "FW",
+  "dob": "2013",
+  "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "barka-seif",
+  "key": "local:infantil-b:barkaseif",
   "en": "Barka Seif",
   "zh": "巴尔卡·塞夫",
   "team": "infantil-b",
@@ -690,10 +815,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "—",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "hugo-galdeano",
+  "key": "local:infantil-b:hugogaldeano",
   "en": "Hugo Galdeano",
   "zh": "乌戈·加尔德亚诺",
   "team": "infantil-b",
@@ -701,10 +828,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "edwar-encarnacion",
+  "key": "local:u11a:edwarencarnacion",
   "en": "Edwar Encarnación",
   "zh": "爱德华·恩卡纳西翁",
   "team": "u11a",
@@ -712,10 +841,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "hoossam-bnihich",
+  "key": "local:u11a:hoossambnihich",
   "en": "Hoossam Bnihich",
   "zh": "胡萨姆·布尼希",
   "team": "u11a",
@@ -723,10 +854,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "izan-rodriguez",
+  "key": "local:u11a:izanrodriguez",
   "en": "Izan Rodríguez",
   "zh": "伊桑·罗德里格斯",
   "team": "u11a",
@@ -734,10 +867,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "luca-yakunin",
+  "key": "local:u11a:lucayakunin",
   "en": "Luca Yakunin",
   "zh": "卢卡·亚库宁",
   "team": "u11a",
@@ -745,10 +880,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "marti-prat",
+  "key": "local:u11a:martiprat",
   "en": "Martí Prat",
   "zh": "马尔蒂·普拉特",
   "team": "u11a",
@@ -756,10 +893,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "sekou-bayo",
+  "key": "local:u11a:sekoubayo",
   "en": "Sekou Bayo",
   "zh": "塞库·巴约",
   "team": "u11a",
@@ -767,10 +906,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "soulaimane-l-khamal",
+  "key": "local:u11a:soulaimanelkhamal",
   "en": "Soulaimane L'Khamal",
   "zh": "苏莱曼·哈马尔",
   "team": "u11a",
@@ -778,10 +919,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "thiago-claverias",
+  "key": "local:u11a:thiagoclaverias",
   "en": "Thiago Claverías",
   "zh": "蒂亚戈·克拉韦里亚斯",
   "team": "u11a",
@@ -789,10 +932,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "yago-villavicencio",
+  "key": "local:u11a:yagovillavicencio",
   "en": "Yago Villavicencio",
   "zh": "亚戈·比利亚维森西奥",
   "team": "u11a",
@@ -800,10 +945,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "yarei-cortes",
+  "key": "local:u11a:yareicortes",
   "en": "Yarei Cortés",
   "zh": "亚雷·科尔特斯",
   "team": "u11a",
@@ -811,10 +958,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "youssef-el-mir",
+  "key": "local:u11a:youssefelmir",
   "en": "Youssef El Mir",
   "zh": "优素福·埃尔米尔",
   "team": "u11a",
@@ -822,10 +971,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2014",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "adonai-patilla",
+  "key": "local:u11b:adonaipatilla",
   "en": "Adonai Patilla",
   "zh": "阿多奈·帕蒂利亚",
   "team": "u11b",
@@ -833,10 +984,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "bruno-lopez",
+  "key": "local:u11b:brunolopez",
   "en": "Bruno López",
   "zh": "布鲁诺·洛佩斯",
   "team": "u11b",
@@ -844,10 +997,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "daniel-ezzeddine",
+  "key": "local:u11b:danielezzeddine",
   "en": "Daniel Ezzeddine",
   "zh": "丹尼尔·埃泽丁",
   "team": "u11b",
@@ -855,10 +1010,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "edgar-guerri",
+  "key": "local:u11b:edgarguerri",
   "en": "Edgar Guerri",
   "zh": "埃德加·格里",
   "team": "u11b",
@@ -866,10 +1023,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "leo-rizo",
+  "key": "local:u11b:leorizo",
   "en": "Leo Rizo",
   "zh": "莱奥·里索",
   "team": "u11b",
@@ -877,10 +1036,12 @@ window.SCOUT_CARDS = [
   "pos": "MF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "mamadi-diallo",
+  "key": "local:u11b:mamadidiallo",
   "en": "Mamadi Diallo",
   "zh": "马马迪·迪亚洛",
   "team": "u11b",
@@ -888,10 +1049,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "marti-giral",
+  "key": "local:u11b:martigiral",
   "en": "Martí Giral",
   "zh": "马尔蒂·希拉尔",
   "team": "u11b",
@@ -899,10 +1062,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "martin-guarnido",
+  "key": "local:u11b:martinguarnido",
   "en": "Martín Guarnido",
   "zh": "马丁·瓜尔尼多",
   "team": "u11b",
@@ -910,10 +1075,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "marti-sanchez",
+  "key": "local:u11b:martisanchez",
   "en": "Martí Sánchez",
   "zh": "马尔蒂·桑切斯",
   "team": "u11b",
@@ -921,10 +1088,12 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "noah-chima",
+  "key": "local:u11b:noahchima",
   "en": "Noah Chima",
   "zh": "诺亚·奇马",
   "team": "u11b",
@@ -932,10 +1101,12 @@ window.SCOUT_CARDS = [
   "pos": "FW",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "quim-anglada",
+  "key": "local:u11b:quimanglada",
   "en": "Quim Anglada",
   "zh": "基姆·安格拉达",
   "team": "u11b",
@@ -943,10 +1114,12 @@ window.SCOUT_CARDS = [
   "pos": "GK",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  },
  {
   "slug": "youssef-el-abaal",
+  "key": "local:u11b:youssefelabaal",
   "en": "Youssef El Abaal",
   "zh": "优素福·埃尔阿巴勒",
   "team": "u11b",
@@ -954,6 +1127,7 @@ window.SCOUT_CARDS = [
   "pos": "DF",
   "dob": "2015",
   "img": "",
+  "sf": "",
   "num": "—"
  }
 ];

@@ -40,9 +40,25 @@
     return s.slice(0, 1);
   }
 
+  // 头像来源优先级：手动照片（manual-photos.js / 本地工具）> data.js 的本地图 > Sofascore CDN
+  // 手动照片用 key（如 local:cadete-b:pauespi）在运行期查询，所以以后在工具里给某人补图，
+  // 这一页不用重新生成数据也会自动更新。
+  function photoOf(c) {
+    try {
+      if (window.ManualPhoto && c.key) {
+        var m = window.ManualPhoto(c.key);
+        if (m) return m;
+      }
+    } catch (e) {}
+    if (c.img) return c.img;
+    if (c.sf) return c.sf;
+    return "";
+  }
+
   function avatar(c) {
-    if (c.img) {
-      return '<img class="sc-av" src="' + esc(c.img) + '" alt="" loading="lazy" ' +
+    var src = photoOf(c);
+    if (src) {
+      return '<img class="sc-av" src="' + esc(src) + '" alt="" loading="lazy" referrerpolicy="no-referrer" ' +
         'onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'sc-av sc-av-ini\',textContent:\'' +
         esc(initialOf(c)) + '\'}))">';
     }
@@ -68,12 +84,32 @@
   }
 
   var activeTeam = "";
+  var query = "";
+  var qCount = null;
+
+  function matches(c) {
+    if (activeTeam && c.teamLabel !== activeTeam) return false;
+    if (!query) return true;
+    var q = query.toLowerCase();
+    return (c.zh || "").toLowerCase().indexOf(q) >= 0 ||
+      (c.en || "").toLowerCase().indexOf(q) >= 0 ||
+      (c.slug || "").toLowerCase().indexOf(q) >= 0 ||
+      (c.teamLabel || "").toLowerCase().indexOf(q) >= 0;
+  }
+
   function render() {
-    var list = CARDS.filter(function (c) { return !activeTeam || c.teamLabel === activeTeam; });
-    grid.innerHTML = list.map(cardHtml).join("");
+    var list = CARDS.filter(matches);
+    grid.innerHTML = list.length
+      ? list.map(cardHtml).join("")
+      : '<p class="sc-empty">没有匹配的球员，换个名字或点「全部」。</p>';
     Array.prototype.forEach.call(tabs.querySelectorAll(".tt-tab"), function (b) {
       b.classList.toggle("active", (b.getAttribute("data-team") || "") === activeTeam);
     });
+    if (qCount) {
+      qCount.textContent = query || activeTeam
+        ? "显示 " + list.length + " / " + CARDS.length
+        : "共 " + CARDS.length + " 名";
+    }
   }
 
   function buildTabs() {
@@ -112,7 +148,7 @@
       h += "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>";
     });
     h += "</dl>";
-    h += '<p class="sc-fact-note">报告正文、四维评分与里程碑由 mesgazette 撰写；原文在右侧（手机上为下方/新标签）展示。</p>';
+    h += '<p class="sc-fact-note">报告正文、四维评分与里程碑由 mesgazette 撰写，原文为英文。看不懂时点右上角「打开原文」，在新标签里用浏览器翻译整页。</p>';
     return h;
   }
 
@@ -210,6 +246,26 @@
   });
 
   buildTabs();
+
+  // 搜索框（纯前端过滤，只搜这一页的球员）
+  (function () {
+    var box = document.createElement("div");
+    box.className = "sc-search";
+    box.innerHTML = '<input id="sc-q" type="search" autocomplete="off" spellcheck="false" ' +
+      'placeholder="搜索球员：中文名 / 英文名 / 梯队" aria-label="搜索球员">' +
+      '<span class="sc-qcount" id="sc-qcount"></span>';
+    tabs.parentNode.insertBefore(box, tabs);
+    var input = box.querySelector("#sc-q");
+    qCount = box.querySelector("#sc-qcount");
+    input.addEventListener("input", function () {
+      query = input.value.trim();
+      render();
+    });
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { input.value = ""; query = ""; render(); }
+    });
+  })();
+
   render();
   if (countEl) countEl.textContent = CARDS.length + " 名球员 · " + (META.built ? META.built + " 收录" : "球探报告");
   if (noteCount) noteCount.textContent = String(CARDS.length);

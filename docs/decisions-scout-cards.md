@@ -37,3 +37,14 @@
 - 里程碑（首秀/首球/第 N 场）：现有缓存没有出场名单与进球者，需新增 Sofascore `player/{id}/statistics` 与 `event/{id}/lineups`，属独立工程。
 - 职业路径：青训梯队转会史只有 Transfermarkt 有，Sofascore 没有；暂以原文链接代替。
 - B 队 37 人：需要英文名对照表。
+
+## D6 · 头像只从一个地方来（2026-11-14）
+
+**结论**：球探卡头像按 `manual-photos.js` 的手动照片 → `data.js` 的本地图 → Sofascore CDN 三级解析，且解析发生在**运行期**（`scout-cards.js` 的 `photoOf()` 每次渲染时查 `ManualPhoto(key)`）。
+**理由**：站内已经有一层手动照片机制（`manual-photos.js` + `manual-photos-hook.js` + `tools/photo-tool.html`，键形如 `local:cadete-b:pauespi`）。球探卡复用同一套键，以后在工具里给某个球员补一张图，名单页、集锦页、球探卡页同时生效，不需要重新生成 `scout-cards-data.js`。
+**实测覆盖**：87 张卡里 44 张有真实头像（手动照片 8 + 本地文件 11 + Sofascore 25），其余 43 张（以 SUB14 及以下为主）站内没有任何照片来源，保留首字母灰圈。不使用 mesgazette 的卡片图（那是他们的合成图，且会断链）。
+
+## D7 · 排序与搜索（2026-11-14）
+
+**结论**：页签按 `SUB16 → SUB15 → SUB14 → SUB13 → SUB12 → SUB11 A → SUB11 B` 的年龄顺序排列（此前 `infantil` 排在 `cadete-b` 前面，导致 SUB14 跑到 SUB15 之前）；搜索框只过滤本页 87 人，匹配中文名、英文名、slug 与梯队名。
+**理由**：搜索一旦跨到全站 247 人，命中的球员大多没有球探卡，用户点进去会发现「搜到了但没有内容」，比搜不到更困惑。
