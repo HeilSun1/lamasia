@@ -1,0 +1,442 @@
+﻿# ═══════════════════════════════════════════════════════════════
+#   拉玛西亚信息站 · Sofascore 数据采集（U19 / U18 / U16 / B队 共用）
+#
+#   用法：  powershell -File scripts\update_sofascore.ps1 -Tier u18
+#   梯队：  u19 = 青年A队(90128)   u18 = 青年B队(933330)
+#           u16 = SUB16(933329)    b   = 巴萨竞技(24343)
+#
+#   每天用 Edge 无头模式抓取 Sofascore 数据，生成两组缓存：
+#     Sofascore 有 TLS 指纹反爬（curl 一律 403），但真浏览器指纹可通过，
+#     因此用本机 Edge 的 --headless --dump-dom 来取 JSON。
+#     （Edge 路径配置在 scripts/sofascore-edge-path.txt，若为空自动探测）
+#
+#     ⚠️ 2026-10-01 起 api.sofascore.com 子域被封，已从 $SfHosts 移除；
+#        改走 www.sofascore.com 上的同一批 /api/v1 接口。
+#        另注意：抓取时不能带外部 Referer（github.io / google 等一律 403）。
+#
+#     1. 球员名单 + 伤病   /api/v1/team/<id>/players
+#     2. 历史赛程          /api/v1/team/<id>/events/last/0
+#     3. 未来赛程          /api/v1/team/<id>/events/next/0
+#     4. 球队信息          /api/v1/team/<id>
+#     生成缓存 assets/js/<各梯队缓存>.js 与 assets/js/<各梯队详情缓存>.js
+#     只保留 2026 年及以后的赛程，2026 年以前的归档赛程不再写入缓存
+#
+#   四个旧脚本（update_{u19,u18,u16}_sofascore.ps1、update_barca_atletic_sf.ps1）
+#   已降级为两行转发器，调用方（run_daily_update.ps1 与计划任务）无需改动。
+#
+#   ⚠️ 数据来自 Sofascore 非官方接口，仅供个人学习使用，可能随时变动。
+# ═══════════════════════════════════════════════════════════════
+param(
+  [ValidateSet('b', 'u19', 'u18', 'u16')]
+  [string]$Tier = 'u18'
+)
+
+$ErrorActionPreference = "Stop"
+
+switch ($Tier) {
+  'b'   { $TeamId = '24343';  $TierLabel = 'B队'; $CacheName = 'dqd-barca-atletic-sf-cache.js'; $CacheGlobal = 'DQD_BARCA_ATLETIC_SF_CACHE'; $DetailsName = 'dqd-barca-atletic-sf-details-cache.js'; $DetailsGlobal = 'DQD_BARCA_ATLETIC_SF_DETAILS_CACHE'; $LogName = 'barca-atletic-sf-update.log'; $DefaultTeamName = 'Barcelona Atlètic';   $CoachFallback = $null }
+  'u19' { $TeamId = '90128';  $TierLabel = 'U19';              $CacheName = 'dqd-u19-cache.js';              $CacheGlobal = 'DQD_U19_CACHE';              $DetailsName = 'dqd-u19-details-cache.js';              $DetailsGlobal = 'DQD_U19_DETAILS_CACHE';              $LogName = 'u19-update.log';              $DefaultTeamName = 'FC Barcelona U19';    $CoachFallback = $null }
+  'u18' { $TeamId = '933330'; $TierLabel = 'U18';              $CacheName = 'dqd-u18-cache.js';              $CacheGlobal = 'DQD_U18_CACHE';              $DetailsName = 'dqd-u18-details-cache.js';              $DetailsGlobal = 'DQD_U18_DETAILS_CACHE';              $LogName = 'u18-update.log';              $DefaultTeamName = 'FC Barcelona U18';    $CoachFallback = 'Cesc Bosch' }
+  'u16' { $TeamId = '933329'; $TierLabel = 'U16';              $CacheName = 'dqd-u16-cache.js';              $CacheGlobal = 'DQD_U16_CACHE';              $DetailsName = 'dqd-u16-details-cache.js';              $DetailsGlobal = 'DQD_U16_DETAILS_CACHE';              $LogName = 'u16-update.log';              $DefaultTeamName = 'FC Barcelona U16';    $CoachFallback = 'Àlex Fernández' }
+}
+$Root        = Split-Path -Parent $PSScriptRoot
+$CacheFile   = Join-Path $Root "assets\js\$CacheName"
+$DetailsFile = Join-Path $Root "assets\js\$DetailsName"
+$LogFile     = Join-Path $Root "scripts\$LogName"
+$EdgeCfg    = Join-Path $PSScriptRoot "sofascore-edge-path.txt"
+
+# ── 定位 Edge（优先配置文件，其次常见路径） ──────────────────────
+$Edge = ""
+if (Test-Path $EdgeCfg) { $Edge = (Get-Content $EdgeCfg -Raw -ErrorAction SilentlyContinue).Trim() }
+if (-not $Edge -or -not (Test-Path $Edge)) {
+  foreach ($p in @(
+    "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    "C:\Program Files\Microsoft\Edge\Application\msedge.exe"
+  )) { if (Test-Path $p) { $Edge = $p; break } }
+}
+if (-not (Test-Path $Edge)) { Write-Host "找不到 Edge！请把 msedge.exe 路径写入 $EdgeCfg"; exit 1 }
+
+$Profile = Join-Path $env:TEMP "sofascore-headless-profile"
+
+function Log([string]$msg) {
+  $line = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  $msg"
+  Add-Content -Path $LogFile -Value $line -Encoding UTF8
+  Write-Host $line
+}
+
+# 用 Edge 无头抓 JSON：返回 ConvertFrom-Json 的对象，失败返回 $null。
+# Sofascore 对高频请求有限流，失败时自动重试（最多 3 次，间隔 6 秒）。
+function Get-SfJson([string]$url, [string]$what) {
+  for ($attempt = 1; $attempt -le 3; $attempt++) {
+    try {
+      $tmp = Join-Path $env:TEMP ("sf_" + [guid]::NewGuid().ToString("N") + ".html")
+      # 脚本全局是 ErrorActionPreference=Stop，而 Edge 无头会往 stderr 写一堆无害警告，
+      # 在 PS 5.1 下会被当成终止错误抛出。这里在函数作用域内临时改为 Continue。
+      $prevEAP = $ErrorActionPreference
+      $ErrorActionPreference = "Continue"
+      $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
+          "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
+      $ErrorActionPreference = $prevEAP
+      [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
+      $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
+      Remove-Item $tmp -Force -ErrorAction SilentlyContinue
+      $m = [regex]::Match($txt, '<pre>(.*)</pre>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+      if ($m.Success -and $m.Groups[1].Value.Trim() -like '{*') {
+        return ($m.Groups[1].Value | ConvertFrom-Json)
+      }
+      Log "  ✗ $what 第 $attempt 次返回非 JSON（可能被风控或结构变化）"
+    } catch {
+      Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
+    }
+    if ($attempt -lt 3) { Start-Sleep -Seconds 6 }
+  }
+  return $null
+}
+
+# 同 Get-SfJson（带重试），但返回原始 JSON 文本（比赛详情直接嵌入缓存，避免 ConvertTo-Json 深嵌套序列化问题）
+function Get-SfRaw([string]$url, [string]$what) {
+  for ($attempt = 1; $attempt -le 3; $attempt++) {
+    try {
+      $tmp = Join-Path $env:TEMP ("sf_" + [guid]::NewGuid().ToString("N") + ".html")
+      $prevEAP = $ErrorActionPreference
+      $ErrorActionPreference = "Continue"
+      $html = (& $Edge --headless=new --disable-gpu --no-first-run --disable-extensions `
+          "--user-data-dir=$Profile" --dump-dom $url 2>$null | Out-String)
+      $ErrorActionPreference = $prevEAP
+      [System.IO.File]::WriteAllText($tmp, $html, [System.Text.Encoding]::UTF8)
+      $txt = [System.IO.File]::ReadAllText($tmp, [System.Text.Encoding]::UTF8)
+      Remove-Item $tmp -Force -ErrorAction SilentlyContinue
+      $m = [regex]::Match($txt, '<pre>(.*)</pre>', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+      if ($m.Success -and $m.Groups[1].Value.Trim() -like '{*') {
+        return $m.Groups[1].Value.Trim()
+      }
+      Log "  ✗ $what 第 $attempt 次返回非 JSON（可能被风控或结构变化）"
+    } catch {
+      Log "  ✗ $what 第 $attempt 次抓取失败：$($_.Exception.Message)"
+    }
+    if ($attempt -lt 3) { Start-Sleep -Seconds 6 }
+  }
+  return $null
+}
+
+# 常见伤病英文 → 中文
+function Get-InjuryZh([string]$en) {
+  $map = @{
+    "Thigh Injury"      = "大腿伤势"
+    "Knee Injury"       = "膝盖伤势"
+    "Muscle Injury"     = "肌肉损伤"
+    "Hamstring Injury"  = "腘绳肌损伤"
+    "Ankle Injury"      = "脚踝伤势"
+    "Sprained Ankle"    = "脚踝扭伤"
+    "Groin Injury"      = "腹股沟伤势"
+    "Calf Injury"       = "小腿伤势"
+    "Shoulder Injury"   = "肩部伤势"
+    "Adductor Injury"   = "内收肌损伤"
+    "Ligament Injury"   = "韧带损伤"
+    "Meniscus Injury"   = "半月板损伤"
+  }
+  if ($map.ContainsKey($en)) { return $map[$en] }
+  return $en
+}
+
+# 赛事英文 → 中文（长名缩短）
+function Get-CompZh([string]$en) {
+  if ($Tier -eq 'b') {
+    # B 队踢西协乙，兼顾杯赛与友谊赛
+    if ($en -match 'Segunda Federaci[oó]n') { return "西协乙" }
+    if ($en -match 'Primera Federaci[oó]n') { return "西协甲" }
+    if ($en -match 'Copa del Rey')          { return "国王杯" }
+    if ($en -match 'Copa Federaci[oó]n')    { return "西协杯" }
+    if ($en -match 'Copa de Catalunya')     { return "加泰罗尼亚杯" }
+    if ($en -match 'Friendly')              { return "友谊赛" }
+    return $en
+  }
+  $map = @{
+    "División de Honor Juvenil, Group 3" = "西青甲 G3"
+    "UEFA Youth League"                  = "青年欧冠"
+    "UEFA Youth League, Knockout stage"  = "青年欧冠 · 淘汰赛"
+    "Spain U19 Cup"                      = "西班牙青年杯"
+    "Copa Campeones de Division de Honor Juvenil" = "青年冠军杯"
+  }
+  if ($map.ContainsKey($en)) { return $map[$en] }
+  # 青年欧冠小组赛 "UEFA Youth League, Group X"
+  if ($en -match '^UEFA Youth League, (Group [A-Z]|Group stage)') { return "青年欧冠 · " + $Matches[1] }
+  if ($Tier -eq 'u18' -and $en -match '^U18 Club World Cup') { return $en.Replace("U18 Club World Cup", "U18 世俱杯") }
+  if ($Tier -eq 'u16') {
+    if ($en -match '^U16 Messi Cup')           { return $en.Replace("U16 Messi Cup", "U16 梅西杯") }
+    if ($en -match '^Alkass International Cup') { return $en.Replace("Alkass International Cup", "阿尔卡斯国际杯") }
+    if ($en -match '^U16 MICFootball')         { return $en.Replace("U16 MICFootball", "U16 MIC 杯") }
+  }
+  return $en
+}
+
+# 出生日期 → 年龄（如 "2008-06-18T00:00:00+00:00" → "18岁"）。
+# ConvertFrom-Json 可能把 ISO 日期解析成 [datetime]，这里两种都兼容。
+function Get-Age($dob) {
+  if ($null -eq $dob) { return "" }
+  if ($dob -is [datetime]) {
+    $y = $dob.Year; $m = $dob.Month; $d = $dob.Day
+  } elseif ([string]$dob -match '^(\d{4})-(\d{2})-(\d{2})') {
+    $y = [int]$Matches[1]; $m = [int]$Matches[2]; $d = [int]$Matches[3]
+  } else { return "" }
+  $now = Get-Date
+  $age = $now.Year - $y
+  if ($now.Month -lt $m -or ($now.Month -eq $m -and $now.Day -lt $d)) { $age-- }
+  return "$($age)岁"
+}
+
+# 身价（欧元）→ 中文缩写（如 3300000 → "330万"，3亿+ → "X.X亿"）
+function Get-ValueZh($v) {
+  if ($null -eq $v) { return "" }
+  try { $n = [double]$v } catch { return "" }
+  if ($n -le 0) { return "" }
+  if ($n -ge 100000000) { return ("{0}亿" -f [math]::Round($n / 100000000, 1)) }
+  return ("{0}万" -f [math]::Round($n / 10000, 0))
+}
+
+# 惯用脚英文 → 中文（Right/Left/Both）
+function Get-FootZh([string]$en) {
+  switch ($en) {
+    "Right" { return "右脚" }
+    "Left"  { return "左脚" }
+    "Both"  { return "双脚" }
+    default { return $en }
+  }
+}
+
+# 出生日期 → "YYYY-MM-DD"（dateOfBirth 可能是 [datetime] 或 ISO 字符串）
+function Get-Birth($dob) {
+  if ($null -eq $dob) { return "" }
+  if ($dob -is [datetime]) { return $dob.ToString("yyyy-MM-dd") }
+  if ([string]$dob -match '^(\d{4})-(\d{2})-(\d{2})') { return $Matches[0] }
+  return ""
+}
+
+Log "开始 $TierLabel 更新（Sofascore 团队 $TeamId）……"
+
+# ── 0. 解析可用的 Sofascore 主机 ────────────────────────────────
+# api.sofascore.com 子域自 2026-09-30 起整站 403，2026-10-01 复验仍 403
+# （curl / 无头 Edge / 浏览器 fetch 三种客户端全拒），已从列表移除，不再做无谓探活。
+# 现只探 www.sofascore.com 上的同一批 /api/v1 接口，选中后写进日志。
+$SfHosts = @("www.sofascore.com")
+$SfBase  = $null
+foreach ($h in $SfHosts) {
+  $b = "https://$h/api/v1"
+  if (Get-SfJson "$b/team/$TeamId" "主机探活 $h") { $SfBase = $b; break }
+}
+if (-not $SfBase) {
+  Log "  ✗ Sofascore 所有主机均不可用（403），本次更新中止，保留旧缓存。"
+  exit 1
+}
+Log "  ✓ Sofascore 主机：$SfBase"
+
+# ── 1. 抓取原始数据 ─────────────────────────────────────────────
+$players = Get-SfJson "$SfBase/team/$TeamId/players" "球员名单"
+Start-Sleep -Seconds 3
+$lastEv  = Get-SfJson "$SfBase/team/$TeamId/events/last/0" "已完赛程"
+Start-Sleep -Seconds 3
+$nextEv  = Get-SfJson "$SfBase/team/$TeamId/events/next/0" "未来赛程"
+Start-Sleep -Seconds 3
+$team    = Get-SfJson "$SfBase/team/$TeamId" "球队信息"
+
+if (-not $players -and -not $lastEv -and -not $nextEv) {
+  Log "✗ 全部数据源失败，本次更新中止。"
+  exit 1
+}
+
+# ── 2. 归一化球员（名单 + 照片 + 伤病 + 身价） ────────────────
+$playersOut = @()
+if ($players -and $players.players) {
+  foreach ($p in @($players.players)) {
+    $pr = $p.player
+    $playerId = [string]$pr.id
+    $inj = $null
+    if ($pr.injury) {
+      $inj = [pscustomobject]@{
+        reason   = Get-InjuryZh ([string]$pr.injury.reason)
+        reasonEn = [string]$pr.injury.reason
+        status   = [string]$pr.injury.status
+        expected = if ($pr.injury.expectedReturnDateData) {
+          ("{0}年{1}月" -f $pr.injury.expectedReturnDateData.year, $pr.injury.expectedReturnDateData.month)
+        } else { "" }
+      }
+    }
+    $playersOut += [pscustomobject]@{
+      name    = [string]$pr.name
+      id      = $playerId
+      pos     = [string]$pr.position
+      shirt   = [string]$p.shirtNumber
+      team    = [string]$pr.team.name
+      nation  = if ($pr.country) { [string]$pr.country.name } else { "" }
+      photo    = "https://img.sofascore.com/api/v1/player/$($pr.id)/image"
+      age      = Get-Age $pr.dateOfBirth
+      birthday = Get-Birth $pr.dateOfBirth
+      foot     = Get-FootZh ([string]$pr.preferredFoot)
+      height   = [string]$pr.height
+      value    = Get-ValueZh $pr.proposedMarketValue
+      injury  = $inj
+    }
+  }
+}
+
+# ── 3. 归一化赛程 ───────────────────────────────────────────────
+$matchList = @()
+foreach ($src in @($lastEv, $nextEv)) {
+  if (-not $src -or -not $src.events) { continue }
+  foreach ($e in @($src.events)) {
+    $isHome = ([string]$e.homeTeam.id -eq $TeamId)
+    $matchList += [pscustomobject]@{
+      id     = [string]$e.id
+      comp   = Get-CompZh ([string]$e.tournament.name)
+      round  = if ($e.roundInfo -and $e.roundInfo.round) { [string]$e.roundInfo.round } else { "" }
+      start  = [string]$e.startTimestamp
+      home   = [string]$e.homeTeam.name
+      away   = [string]$e.awayTeam.name
+      homeId = [string]$e.homeTeam.id
+      awayId = [string]$e.awayTeam.id
+      hs     = [string]$e.homeScore.current
+      as     = [string]$e.awayScore.current
+      status = [string]$e.status.description
+      code   = [string]$e.status.code
+      isHome = $isHome
+    }
+  }
+}
+# 只保留 2026-06-01 起的赛程（2026-06-01 00:00 东八区 = 1780243200；旧赛季归档不展示）
+$CutoffUnix = 1780243200
+# 已完场按时间倒序、未开赛按时间正序（页面渲染时也处理，这里只合并）
+$matchList = @($matchList | Where-Object { [int64]$_.start -ge $CutoffUnix } | Sort-Object { [int64]$_.start })
+
+# ── 3.5 抓取最近 8 场已完场的比赛详情（阵容/进程/技术统计/交锋） ──
+# 详情弹窗（match-detail.js）优先读独立的详情缓存文件；线上 GitHub Pages 域直连 Sofascore 会被反爬拦截，
+# 因此详情必须在每日抓取阶段一并入库。
+# 详情以原始 JSON 文本直接嵌入缓存（不用 ConvertTo-Json 处理深层嵌套，绕开 PS5.1 序列化 bug）。
+# 只抓「未缓存过」且 2026-06-01 起的详情：已完赛详情是静态的，以前每天重抓同一批旧赛季比赛，
+# 曾把每日更新拖慢到 ~15 分钟；现在抓过的就跳过，旧赛季比赛也不再碰。
+  # 详情缓存路径已在顶部配置块定义
+
+# 3.5a 读已有详情缓存，按事件 ID 保留旧条目（每条详情以行首缩进 + "id": { 开头）
+$oldParts = @{}
+if (Test-Path $DetailsFile) {
+  $oldTxt = Get-Content $DetailsFile -Raw -ErrorAction SilentlyContinue
+  if ($oldTxt) {
+    foreach ($m in [regex]::Matches($oldTxt, '(?m)^[ \t]*("(\d+)":\s*\{.*)$')) {
+      $id   = $m.Groups[2].Value
+      # 缩进必须容错：写回去的旧条目没有前导空格，写死 ^\s{2} 会让它们
+      # 每轮都认不出来 → 已抓过的比赛被反复重抓（U19/U16/B队实测如此）
+      $line = '  ' + $m.Groups[1].Value.TrimEnd().TrimEnd(',')
+      $oldParts[$id] = $line
+    }
+  }
+}
+
+# 3.5b 旧条目只保留当前展示赛程内的（不在赛程里的旧赛季详情不保留，避免缓存膨胀）
+$dirty = $false
+if ($matchList.Count) {
+  $keep = @{}
+  foreach ($m in $matchList) { $keep[[string]$m.id] = $true }
+  foreach ($k in @($oldParts.Keys)) {
+    if (-not $keep.ContainsKey($k)) { $oldParts.Remove($k); $dirty = $true }
+  }
+}
+
+# 3.5c 新抓候选 = 已完场 + 未缓存 + 2026-06-01 起
+$detailList = @()
+if ($lastEv -and $lastEv.events) {
+  $detailList = @($lastEv.events | Where-Object {
+      $_.status.description -match '^(Ended|AP)' -and
+      -not $oldParts.ContainsKey([string]$_.id) -and
+      [int64]$_.startTimestamp -ge $CutoffUnix
+    } |
+    Sort-Object { [int64]$_.startTimestamp } -Descending | Select-Object -First 8)
+}
+
+# 3.5d 抓新 + 合并旧条目写回
+if ($detailList.Count) {
+  Log "  · 已缓存 $($oldParts.Count) 场，需新抓详情 $($detailList.Count) 场"
+  $i = 0
+  foreach ($dm in $detailList) {
+    $i++
+    $eid = [string]$dm.id
+    Log "  · 详情 $i/$($detailList.Count) 场 #$eid $($dm.homeTeam.name) vs $($dm.awayTeam.name)"
+    $rawL = Get-SfRaw "$SfBase/event/$eid/lineups" "阵容"
+    $rawC = Get-SfRaw "$SfBase/event/$eid/incidents" "比赛进程"
+    $rawS = Get-SfRaw "$SfBase/event/$eid/statistics" "技术统计"
+    $rawH = Get-SfRaw "$SfBase/event/$eid/h2h" "交锋"
+    $ln = if ($rawL) { $rawL } else { "null" }
+    $cn = if ($rawC) { $rawC } else { "null" }
+    $sn = if ($rawS) { $rawS } else { "null" }
+    $hn = if ($rawH) { $rawH } else { "null" }
+    $oldParts[$eid] = ('  "' + $eid + '": {' +
+      '"lineups": ' + $ln + ', ' +
+      '"incidents": ' + $cn + ', ' +
+      '"statistics": ' + $sn + ', ' +
+      '"h2h": ' + $hn + '}')
+    if ($i -lt $detailList.Count) { Start-Sleep -Seconds 2 }   # 错峰，降低风控
+  }
+  $dirty = $true
+}
+
+if ($dirty) {
+  $detailsParts = @($oldParts.Values)
+  $detailsJs = "/* 自动生成，请勿手动编辑 —— 比赛详情缓存（match-detail.js 读取） */`r`n" +
+    "window.$DetailsGlobal = {`r`n" +
+    ($detailsParts -join ",`r`n") + "`r`n};`r`n"
+  $utf8 = New-Object System.Text.UTF8Encoding($false)
+  try {
+    [System.IO.File]::WriteAllText($DetailsFile, $detailsJs, $utf8)
+    Log "  ✓ 已写入 $($detailsParts.Count) 场比赛详情"
+  } catch {
+    Log "  ✗ 写入详情缓存失败：$($_.Exception.Message)"
+  }
+} else {
+  Log "  · 无新完赛详情，缓存保持不变（已缓存 $($oldParts.Count) 场）"
+}
+
+# ── 4. 生成缓存 ─────────────────────────────────────────────────
+$cache = [ordered]@{
+  updated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
+  source  = "sofascore"
+  team    = [pscustomobject]@{
+    name    = if ($team -and $team.team) { [string]$team.team.name } else { $DefaultTeamName }
+    id      = $TeamId
+    country = if ($team -and $team.team -and $team.team.country) { [string]$team.team.country.name } else { "" }
+    logo    = "https://img.sofascore.com/api/v1/team/$TeamId/image"
+  }
+  coach   = if ($team -and $team.team -and $team.team.manager) {
+    [pscustomobject]@{
+      name  = [string]$team.team.manager.name
+      id    = [string]$team.team.manager.id
+      photo = "https://img.sofascore.com/api/v1/manager/$($team.team.manager.id)/image"
+    }
+  } elseif ($CoachFallback) {
+    # Sofascore 未收录该队主教练，用本站已知信息兜底
+    [pscustomobject]@{ name = $CoachFallback; id = ""; photo = "" }
+  } else { $null }
+  players = $playersOut
+  matches = $matchList
+}
+
+# 防空覆盖：Sofascore 抓取失败时球员/赛程为空，用空数据覆盖旧缓存会导致页面空白
+if ($playersOut.Count -eq 0 -and $matchList.Count -eq 0) {
+  Log "  ✗ 本次未抓到球员和赛程（Sofascore 限流/被风控），保留旧缓存不覆盖。"
+  exit 0
+}
+
+try {
+  $json = $cache | ConvertTo-Json -Depth 10
+  $js   = "/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 $(Get-Date -Format 'yyyy-MM-dd HH:mm') 数据源：Sofascore */`r`nwindow.$CacheGlobal = $json;`r`n"
+  $utf8 = New-Object System.Text.UTF8Encoding($false)
+  [System.IO.File]::WriteAllText($CacheFile, $js, $utf8)
+  Log "  ✓ 球员 $($playersOut.Count) 人，赛程 $($matchList.Count) 场，缓存已写入 $CacheFile"
+} catch {
+  Log "  ✗ 写入缓存失败：$($_.Exception.Message)"
+  exit 1
+}
+
+Log "$TierLabel 更新完成 ✔"
+
+# 显式退出码：脚本内 curl/Edge 这类原生命令即使失败已被处理，也会把非零值留在 $LASTEXITCODE 里
+# （例如 curl 超时返回 28）。上层 run_daily_update.ps1 通过 $LASTEXITCODE 判定子脚本成败，
+# 所以成功路径必须显式归零，否则会出现「缓存写成功却标降级」的幽灵失败。
+exit 0

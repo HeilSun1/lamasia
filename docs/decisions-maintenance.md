@@ -87,3 +87,16 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "…
 - 站点是「希望被搜到」还是「自己看 + 少数人知道」？（决定 robots/noindex、仓库公开面、脚本要不要挪出发布目录）
 - 数据新鲜度的真实目标是什么？（决定 09:00/21:00 两班是否够，以及要不要改成赛后触发）
 - 降级/失败时，谁应该在多长时间内知道？现在的两条通道（Windows 通知、站点横幅）都依赖「人恰好在线/恰好打开站点」。
+
+## 附：Sofascore 四个脚本合并（已完成）
+
+`update_u19_sofascore.ps1` / `update_u18_sofascore.ps1` / `update_u16_sofascore.ps1` / `update_barca_atletic_sf.ps1`
+四份 385–411 行的脚本，除配置外是同一套逻辑，已合并为 `scripts/update_sofascore.ps1 -Tier u19|u18|u16|b`。
+
+- 各梯队的 TeamId、缓存文件名、`window.DQD_*` 全局名、日志文件、默认队名、主教练兜底、赛事名映射
+  全部收进顶部的一个 `switch ($Tier)` 配置块，其余 ~340 行共用一份。
+- 抓取重试（3 次、间隔 6 秒）用 U18/U16 的新版实现，U19 与 B 队一并获得重试保护。
+- 四个旧文件降级为 5 行转发器（`& update_sofascore.ps1 -Tier u18` + `exit $LASTEXITCODE`），
+  调用方 `run_daily_update.ps1` 与计划任务**零改动**，随时可回滚。
+- 验收方式：跑转发器，比对缓存文件——除 `updated` 时间戳与生成注释里的脚本名外逐行一致。
+  U18（15 名球员 / 4 场赛程）、B 队（32 名球员 / 40 场赛程）实测通过，退出码均为 0。
