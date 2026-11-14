@@ -53,7 +53,7 @@
         '</a>';
     });
     el.innerHTML = html;
-  var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');
+    var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');
   }
 
   renderItems(news.slice(0, INITIAL));
