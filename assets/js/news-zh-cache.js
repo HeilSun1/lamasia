@@ -71,7 +71,7 @@ window.NEWS_ZH = {
   "El Barça y La Masia, más reyes aún en el Balón de Oro": "巴萨和拉玛西亚，金球奖的更多王者",
   "El Barça ya tiene entrenador para el Juvenil A": "巴萨已有青年A队教练。",
   "El descanso eterno en el Spotify Camp Nou ya es posible": "在 Spotify 诺坎普球场安息已成为可能",
-  "El diamante de La Masia se sale con Ucrania y desata grandes elogios: \"Obra maestra de Artem que marcó un gol de lujo\"": "拉玛西亚的“钻石”在乌克兰队中大放异彩，赢得了广泛赞誉：“阿尔特姆的杰作，他打入了一粒精彩绝伦的进球。”",
+  "El diamante de La Masia se sale con Ucrania y desata grandes elogios: \"Obra maestra de Artem que marcó un gol de lujo\"": "拉玛西亚的钻石球员与乌克兰搭档，赢得了广泛赞誉：“阿尔乔姆的杰作，他打入了一粒精彩绝伦的进球。”",
   "El diamante que viene en la defensa del Barça: \"Nunca vi algo así\"": "巴萨的后防线上的钻石球员：“我从未见过这样的情况。”",
   "El hijo de Juan Carlos Unzué da el salto al Barça Atlètic como entrenador de porteros": "胡安·卡洛斯·恩苏埃的儿子将出任预备队的守门员教练",
   "El increíble viaje de una perla onubense: de Dubai al Barça tras los pasos de Fermín": "一颗翁布埃拉珍珠的非凡旅程：从迪拜到巴萨，追随费尔明的脚步",
