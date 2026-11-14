@@ -7,7 +7,7 @@
 | 层 | 方式 | 说明 |
 |---|---|---|
 | **实时** | 页面打开时浏览器直接请求懂球帝/Sofascore 接口 | 每个访问者看到的都是最新数据，无需服务器 |
-| **每日缓存** | GitHub Actions 每天 01:07 UTC 运行 `scripts/update_barca_atletic.ps1` + `scripts/update_u19_sofascore.ps1`，更新 `assets/js/*-cache.js` 并提交 | 作为接口失效/离线时的兜底，提交后 Netlify 自动重新部署 |
+| **每日缓存** | GitHub Actions 每天 16:23 UTC（北京 00:23）运行 `scripts/run_daily_update.ps1`；Sofascore 部分走 `scripts/update_sofascore.ps1 -Tier u19|u18|u16|b`，更新 `assets/js/*-cache.js` 并提交 | 作为接口失效/离线时的兜底，提交后 GitHub Pages 自动重新部署 |
 
 > 注意：Sofascore 有 TLS 指纹反爬（curl 一律 403），所以 U19 脚本用本机/运行器上自带的 Edge `--headless --dump-dom` 取 JSON；GitHub Actions 的 `windows-latest` 自带 Edge，可直接跑这两个 PowerShell 脚本。
 
@@ -58,7 +58,12 @@ scripts/            每日更新脚本（PowerShell，仅部署端/本机运行�
 _redirects          阻止公开访问 scripts/
 ```
 
-## 部署到 Netlify
+## 部署
+
+> **当前线上地址**：https://heilsun1.github.io/lamasia/ —— 由 GitHub Pages 直接从 `main` 分支构建，
+> 推送到 `main` 后自动发布。下面的 Netlify 流程是历史方案，仅作备选保留。
+
+## 部署到 Netlify（备选方案）
 
 **方式 A：即时上线（Netlify Drop）**
 1. 打开 https://app.netlify.com/drop
@@ -90,7 +95,7 @@ git push
 
 ## 自动更新出问题时会怎样
 
-本机任务每天 09:00 / 15:00 / 21:00 跑一轮。脚本自己会处理常见的「卡死」情况，
+本机计划任务每天 09:00 / 21:00 各跑一轮（GitHub Actions 另有 16:23 UTC 一班）。脚本自己会处理常见的「卡死」情况，
 处理不了或需要你介入的会主动通知。
 
 **能自动修好的**（不需要你管）：

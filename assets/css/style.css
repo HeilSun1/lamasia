@@ -479,6 +479,10 @@ a:hover { color: #0d54b8; }
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .news-item:hover .news-item__title { color: var(--blue-600); }
+/* 首条新闻做成头条：图更大、标题升一档（15px 已在字号档位内） */
+.news-item--lead { padding: 10px 0 12px; gap: 12px; }
+.news-item--lead .news-item__img { width: 96px; height: 68px; }
+.news-item--lead .news-item__title { font-size: 15px; line-height: 1.45; }
 .news-item__meta { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--faint); }
 .news-item__tag { color: var(--gold-500); font-weight: 700; }
 
@@ -1489,7 +1493,7 @@ tr.match-row:hover { background: var(--surface-3); }
   display: none;
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
   background: var(--surface); border-top: 1px solid var(--border);
-  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: column; grid-auto-columns: 1fr; grid-template-columns: none;
   padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
   box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
 }
@@ -1717,3 +1721,59 @@ table.roster-table tbody:not(.is-expanded) > tr.is-extra { display: none !import
 /* 赛程时间列：.num 的 44px 固定宽会把 "2026-10-20 20:00" 挤成三行，撑高每一行 */
 .dqd-body .roster-table td.num,
 #upcoming-list .roster-table td.num { width: auto; min-width: 86px; white-space: nowrap; }
+
+
+/* ===== 球探卡（scout-cards.html） ===== */
+#sc-tabs { flex-wrap: wrap; row-gap: 2px; }
+#sc-tabs .tt-tab b { font-weight: 600; color: var(--muted); font-size: 12px; margin-left: 2px; }
+.sc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 4px 0 28px; }
+.sc-card { display: flex; align-items: center; gap: 12px; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-align: left; cursor: pointer; font: inherit; color: inherit; transition: border-color .15s ease; }
+.sc-card:hover { border-color: #b9bfc9; }
+.sc-card:focus-visible { outline: 2px solid var(--barca-blue); outline-offset: 2px; }
+.sc-av { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex: 0 0 auto; background: var(--surface-3); }
+.sc-av-ini { display: grid; place-items: center; font-size: 15px; font-weight: 600; color: var(--muted); }
+.sc-body { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.sc-name { font-size: 15px; font-weight: 700; color: var(--ink-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-en { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-meta { font-size: 12px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-out[hidden] { display: none; }
+.sc-out { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(8, 16, 34, .72); }
+.sc-panel { width: min(1120px, 96vw); height: min(88vh, 920px); display: flex; flex-direction: column; background: var(--surface); border-radius: 10px; overflow: hidden; }
+.sc-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.sc-panel-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sc-panel-name { font-size: 15px; font-weight: 700; color: var(--ink-900); }
+.sc-panel-meta { font-size: 12px; color: var(--muted); }
+.sc-panel-act { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+.sc-open { font-size: 12px; color: var(--ink-900); text-decoration: none; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; }
+.sc-open:hover { border-color: #b9bfc9; }
+.sc-close { width: 28px; height: 28px; font-size: 15px; line-height: 1; border: 0; background: transparent; color: var(--muted); cursor: pointer; border-radius: 6px; }
+.sc-close:hover { background: var(--surface-2); color: var(--ink-900); }
+.sc-panel-body { flex: 1; display: flex; min-height: 0; }
+.sc-facts { width: 280px; flex: 0 0 auto; padding: 16px; overflow: auto; border-right: 1px solid var(--border); }
+.sc-fact-title { font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+.sc-dl { display: grid; grid-template-columns: 56px 1fr; gap: 8px 10px; margin: 0; font-size: 13px; }
+.sc-dl dt { color: var(--muted); }
+.sc-dl dd { margin: 0; color: var(--ink-900); word-break: break-word; }
+.sc-fact-note { margin: 18px 0 0; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.sc-frame { flex: 1; position: relative; background: var(--bg); min-width: 0; overflow: hidden; }
+.sc-iframe { width: 100%; height: 100%; border: 0; display: block; }
+.sc-frame-hint { position: absolute; inset: 0; margin: 0; padding: 24px; display: grid; place-items: center; text-align: center; font-size: 12px; line-height: 1.8; color: var(--muted); }
+body.sc-lock { overflow: hidden; }
+@media (max-width: 760px) {
+  .sc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .sc-card { padding: 12px; gap: 10px; }
+  .sc-av { width: 36px; height: 36px; }
+  .sc-name { font-size: 15px; }
+  .sc-panel { width: 100vw; height: 92vh; border-radius: 10px 10px 0 0; align-self: flex-end; }
+  .sc-out { padding: 0; align-items: flex-end; }
+  .sc-panel-body { flex-direction: column; }
+  .sc-facts { width: auto; border-right: 0; border-bottom: 1px solid var(--border); max-height: 34%; }
+  .sc-dl { grid-template-columns: 48px 1fr; gap: 6px 8px; font-size: 12px; }
+  .sc-fact-note { display: none; }
+  .sc-meta { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+}
+.sc-fallback { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 14px; padding: 28px; }
+.sc-fallback p { margin: 0; font-size: 13px; line-height: 1.8; color: var(--muted); }
+.sc-fallback-btn { display: inline-block; padding: 10px 16px; background: var(--ink-900); color: #fff; border-radius: 6px; font-size: 15px; font-weight: 600; text-decoration: none; }
+.sc-fallback-btn:hover { background: #123; }
+.sc-fallback-note { font-size: 12px !important; }

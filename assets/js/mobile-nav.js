@@ -11,6 +11,7 @@
     { href: (inTeams ? '' : 'teams/') + 'index.html', label: '梯队', test: /\/teams\// },
     { href: p + 'matches.html',             label: '比赛',   test: /\/matches\.html$/ },
     { href: p + 'highlights.html',          label: '集锦',   test: /\/highlights\.html$/ },
+  { href: p + 'scout-cards.html',         label: '球探', test: /\/scout-cards\.html$/ },
     { href: p + 'search.html',              label: '搜索',   test: /\/search\.html$/ }
   ];
 

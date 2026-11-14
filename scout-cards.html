@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>球探卡 — 拉玛西亚 · La Masia</title>
+  <meta name="description" content="拉玛西亚球员球探卡：按梯队浏览，点开可查看 mesgazette 的原文球探报告。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#004d98">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        
+        <span>拉玛西亚<small>LA MASIA · FC BARCELONA</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="weekly.html">新闻</a>
+        <a href="teams/index.html">梯队</a>
+        <a href="matches.html">比赛信息</a>
+        <a href="formation.html">排兵布阵</a>
+        <a href="highlights.html">集锦</a>
+        <a class="active" href="scout-cards.html">球探卡</a>
+        <a href="search.html">搜索</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container"><div class="crumbs"><a href="index.html">首页</a><span class="sep">/</span><span>球探卡</span></div></div>
+
+  <div class="page-head container">
+    <h1>球探卡</h1>
+    <div class="ph-meta">
+      <span>按梯队浏览球员档案，点开可读 <b>mesgazette</b> 的球探报告原文</span>
+      <span id="sc-count">球员档案</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="team-tabs" id="sc-tabs"></div>
+    <div class="sc-grid" id="sc-grid"></div>
+  </div>
+
+  <div class="container">
+    <div class="note-box">
+      说明：卡片上的姓名、梯队、位置、生日来自本站球员名录；报告正文与评分由 <b>mesgazette.com</b> 撰写，本站以嵌入方式展示原文（不复制内容），版权归原作者所有。若原站打不开，可点弹窗右上角的「打开原文」。当前收录 <span id="sc-note-count">87</span> 份对应报告。
+    </div>
+  </div>
+
+  <div class="sc-out" id="sc-out" hidden>
+    <div class="sc-panel" role="dialog" aria-modal="true" aria-labelledby="sc-out-title">
+      <div class="sc-panel-head">
+        <div class="sc-panel-id">
+          <span class="sc-panel-name" id="sc-out-title">球员</span>
+          <span class="sc-panel-meta" id="sc-out-meta"></span>
+        </div>
+        <div class="sc-panel-act">
+          <a class="sc-open" id="sc-out-link" href="#" target="_blank" rel="noopener noreferrer">打开原文</a>
+          <button class="sc-close" id="sc-out-close" type="button" aria-label="关闭">✕</button>
+        </div>
+      </div>
+      <div class="sc-panel-body">
+        <div class="sc-facts" id="sc-out-facts"></div>
+        <div class="sc-frame" id="sc-frame">
+          <p class="sc-frame-hint">正在载入原文…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-brand">
+        <span>拉玛西亚 · La Masia 信息站</span>
+      </div>
+      <p>非官方球迷资料站。FC Barcelona、La Masia、巴塞罗那徽章均为 FC Barcelona 所有。本站仅用于球迷信息整理与学习用途。</p>
+      <p class="foot-fine">版权与合规声明：球员球探报告由 mesgazette.com 撰写并发布，本站以 iframe 嵌入方式引用其公开页面，不存储、不转述正文，内容版权归原作者所有。若原作者不希望被嵌入，请通过站点联系，我们将立即移除。</p>
+      <div class="foot-links">
+        <a href="index.html">首页</a>
+        <a href="weekly.html">新闻</a>
+        <a href="teams/index.html">梯队</a>
+        <a href="matches.html">比赛信息</a>
+        <a href="formation.html">排兵布阵</a>
+        <a href="highlights.html">集锦</a>
+        <a href="scout-cards.html">球探卡</a>
+        <a href="search.html">搜索</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/mobile-nav.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/scout-cards-data.js"></script>
+  <script src="assets/js/scout-cards.js"></script>
+</body>
+</html>
