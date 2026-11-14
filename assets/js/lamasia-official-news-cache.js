@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-13 22:02:27 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 09:56:56 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-13 22:02:27",
+    "updated":  "2026-11-14 09:56:56",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -163,7 +163,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "African Cup of Nations and Nations League action",
+                "id":  "4607914", "title":  "Three wins out of three on Friday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/13/e51ac118-b1fd-4412-a09f-de6f3326355e/_MGA4039.jpg" },
             {

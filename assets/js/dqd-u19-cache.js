@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-13 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_u19_sofascore.ps1 每日更新于 2026-11-14 09:56 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-13 21:01:11",
+    "updated":  "2026-11-14 09:56:09",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,21 +14,6 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
-                    {
-                        "name":  "Hamza Abdelkarim",
-                        "id":  "1961596",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Egypt",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "双脚",
-                        "height":  "182",
-                        "value":  "820万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Shane Kluivert",
                         "id":  "1657202",

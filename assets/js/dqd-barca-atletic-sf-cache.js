@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-13 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic_sf.ps1 每日更新于 2026-11-14 09:55 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-13 21:00:51",
+    "updated":  "2026-11-14 09:55:51",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -14,21 +14,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/796414/image"
               },
     "players":  [
-                    {
-                        "name":  "Hamza Abdelkarim",
-                        "id":  "1961596",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Egypt",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "双脚",
-                        "height":  "182",
-                        "value":  "820万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ibrahim Diarra",
                         "id":  "1542744",
