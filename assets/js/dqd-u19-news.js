@@ -36,6 +36,7 @@
         '</a>';
     });
     el.innerHTML = html;
+  var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');
   }
 
   const data = window.DQD_U19_NEWS;

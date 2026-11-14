@@ -134,6 +134,7 @@
   if (!items.length) {
     html += '<div class="match-list-empty">暂无动态，稍后自动更新。</div>';
     el.innerHTML = html;
+  var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');
     return;
   }
 
@@ -158,6 +159,7 @@
 
   function render() {
     el.innerHTML = html;
+  var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');
     if (window.NewsRead) {
       NewsRead.visit(el, items.map(function (n) { return { key: n.id || n.url, time: n.time }; }));
       NewsRead.attachReadAll(el.closest(".panel"), el, items.map(function (n) { return n.id || n.url; }));

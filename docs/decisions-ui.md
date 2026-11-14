@@ -55,3 +55,19 @@
 
 **踩坑**：`.ps1` 在 `.gitattributes` 里标成 `-text`，git 不做行尾转换，所以改完必须把行尾还原成 LF，
 否则整文件进 diff（1200 行假改动）。
+
+## D3 新闻列表的首条做成头条
+
+**结论**：列表里第一条新闻单独放大——缩略图 76×54 → 96×68，标题 13.5 → 15px，上下留白多一点；
+其余条目完全不动。用显式类 `.news-item--lead` 标记，不用 `:first-of-type`。
+
+**理由**：8 条新闻长得一模一样，读者扫不出主次。头条 + 七条紧凑行是最省事的层级手段，
+也不用动数据结构（摘要 dek 那档要改 4 个抓取脚本，先不做）。
+
+**踩坑**：最初写 `.news-item:first-of-type`，在周报页整条规则失效——因为列表容器里第一个 `<a>`
+是公众号合集卡 `.weekly-album`，新闻条目的首个 `<a>` 算不上 `:first-of-type`（`assets/js/weekly.js:122`）。
+改成六个渲染器统一在 `el.innerHTML = html` 之后给第一个 `.news-item` 打类：
+`var _lead = el.querySelector('.news-item'); if (_lead) _lead.classList.add('news-item--lead');`
+涉及 `weekly.js`、`official-news.js`、`dqd-barca-news.js`、`dqd-u19-news.js`、`dqd-u18-news.js`、`dqd-u16-news.js`。
+
+**未做**：C 档（每条加一行 dek 摘要）——数据里没有 `summary` 字段，要改抓取脚本。
