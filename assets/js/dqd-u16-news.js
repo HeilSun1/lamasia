@@ -27,7 +27,7 @@
         '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
           (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +
           '<span class="news-item__body">' +
-            '<span class="news-item__title">' + esc(n.title) + '</span>' +
+            '<span class="news-item__title" title="' + esc(n.title) + '">' + esc((window.NEWS_ZH && window.NEWS_ZH[n.title]) || n.title) + '</span>' +
             '<span class="news-item__meta">' +
               (n.tag ? '<span class="news-item__tag">' + esc(n.tag) + '</span>' : '') +
               '<span class="news-item__time">' + esc(n.time) + '</span>' +

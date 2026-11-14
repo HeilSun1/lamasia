@@ -36,3 +36,22 @@
 - 新闻列表层级：是否加「首条头条」（16:9 大图 + 28px 标题）。
 - 新闻摘要：`news-item` 无 `summary` 字段，要加必须改抓取脚本。
 - 西语标题翻译：方案与显示方式未定。
+
+## D5 西语标题显示中文，原文放 hover
+
+**结论**：新闻标题统一走 `window.NEWS_ZH[原标题]` 取中文，取不到就显示原文；原标题写进 `title` 属性（鼠标悬停可见）。
+翻译在每日更新里**抓完之后、提交之前**跑一次 `scripts/translate_news_titles.ps1`，只翻新增条目，结果写进独立文件
+`assets/js/news-zh-cache.js`（本机通道和 GitHub Actions 都写这个文件，互不覆盖）。
+
+**接口**：MyMemory（免注册免 key，带 `de` 邮箱参数把每日额度提到 5 万字符）。
+实测本机：Google 免费端点 8.3 秒超时（被墙）、DeepL 403（要 key）、腾讯云 111ms（要 key）、MyMemory 965ms 可用。
+
+**术语保护**：译前把队名/球员名替换成 `{{T1}}` 占位符，译完还原。词表 267 条，来自
+懂球帝缓存的 `name`/`nameEn` 成对字段 + `data.js` 的 `LAMASIA_NAME_ZH` + 手工队名表
+（`Barça Atlètic`→预备队、`Juvenil A`→青年A队、`Cadete A`→SUB16…）。
+没有这一步时 `Juvenil A` 会被翻成"A青年队"、`Barça Atlètic` 变"巴萨竞技队"，和站内写法冲突。
+
+**理由**：用户只读中文，但偶尔要核原文；列表密度保持不变（不额外加一行）。
+
+**踩坑**：`.ps1` 在 `.gitattributes` 里标成 `-text`，git 不做行尾转换，所以改完必须把行尾还原成 LF，
+否则整文件进 diff（1200 行假改动）。

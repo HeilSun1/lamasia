@@ -157,7 +157,7 @@ $UpdateScripts = @(
 $AddPaths = @(
   'assets/js/dqd-barca-atletic-cache.js', 'assets/js/dqd-barca-atletic-sf-cache.js',
   'assets/js/dqd-barca-atletic-sf-details-cache.js', 'assets/js/dqd-barca-atletic-details-cache.js',
-  'assets/js/dqd-barca-news-cache.js',
+  'assets/js/dqd-barca-news-cache.js', 'assets/js/news-zh-cache.js',
   'assets/js/dqd-u19-news-cache.js', 'assets/js/dqd-u18-news-cache.js', 'assets/js/dqd-u16-news-cache.js',
   'assets/js/lamasia-official-news-cache.js', 'assets/js/sport-news-cache.js', 'assets/js/md-news-cache.js',
   'assets/js/dqd-u19-cache.js', 'assets/js/dqd-u18-cache.js', 'assets/js/dqd-u16-cache.js',
@@ -425,6 +425,17 @@ if (-not $SelfTest) {
   }
 }
 
+# 新标题翻译（只翻新增；失败不影响本轮结果，翻译缓存单独入库）
+if (-not $SelfTest) {
+  $trans = Join-Path $PSScriptRoot 'translate_news_titles.ps1'
+  if (Test-Path $trans) {
+    try {
+      $trOut = & $trans -RepoRoot $Root 2>&1
+      $trLine = @($trOut | Where-Object { "$_" -match '^完成：' } | Select-Object -Last 1)
+      if ($trLine.Count) { Log-Line ("  标题翻译 " + $trLine[0]) } else { Log-Line "  标题翻译 已执行" }
+    } catch { Log-Line ("  ! 标题翻译失败：" + $_.Exception.Message) }
+  }
+}
 $staleCore = @($StaleCaches | Where-Object { $CoreCaches -contains $_ })
 if ($staleCore.Count -gt 0) {
   Log-Line "  ✗ 核心缓存未刷新：$($staleCore -join ', ')"
