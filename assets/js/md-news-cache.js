@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-15 21:03:37 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-15 21:06:39 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-15 21:03:37",
+    "updated":  "2026-11-15 21:06:39",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "title":  "Álex Valle: Me encanta Flick como entrenador",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "time":  "2026-11-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/08/28/68af93996d781.r_d.1605-890-0.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/acb/20261115/1004251301/barca-debutar-kone-proyectos-masia.html", "title":  "El Barça hace debutar a Kone, uno de los proyectos de La Masia",
+            "url":  "https://www.mundodeportivo.com/baloncesto/acb/20261115/1004251301/barca-debutar-kone-proyectos-masia.html", "time":  "2026-11-15 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/15/6af9fba8cc2b9.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250910/mano-derecha-flick-salido-masia-da-receta-hay-educar-gestion-emocional.html", "title":  "La mano derecha de Flick salida de La Masia da su receta: Hay que educar en la gestión emocional",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261114/1004250910/mano-derecha-flick-salido-masia-da-receta-hay-educar-gestion-emocional.html", "time":  "2026-11-14 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "title":  "Pedro Villar estará varias semanas de baja",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "time":  "2026-09-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/26/6ab81748ece98.r_d.1230-1369-4998.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "title":  "Histórica Mayssa: marca su primer gol a los 15 años",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231497/historica-mayssa-marca-primer-gol-15-anos.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/26/6ab7de3ea3cfc.r_d.830-616-7500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "title":  "Lamine desvela qué le dijo a Messi tras ganar el Mundial",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260926/1004231472/lamine-desvela-le-dijo-messi-ganar-mundial.html", "time":  "2026-09-26 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/08/08/6a76c8db32a9b.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/26/6ab81748ece98.r_d.1230-1369-4998.jpeg" }
     ]
 };

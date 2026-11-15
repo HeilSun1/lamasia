@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-15 21:00:52 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-15 21:06:15 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-15 21:00:52",
+    "updated":  "2026-11-15 21:06:15",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6657222", "title":  "贝莱蒂：我们出战时有二十多名球员缺阵，按理说应该比赛延期",
+            "url":  "https://www.dongqiudi.com/articles/6657222.html", "time":  "2026-11-15 21:53",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/CD/280x210/crop/-/rBXRn2r4jz2ATM6KAAC7J2M6-_4591.jpg" },
         {
             "id":  "6655339", "title":  "每体：巴萨竞技延期申请被驳回，同法官曾批准皇马卡斯蒂亚延期",
             "url":  "https://www.dongqiudi.com/articles/6655339.html", "time":  "2026-11-15 06:45",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6556508", "title":  "巴萨竞技战报 20261026",
             "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CF/57/280x210/crop/-/rBXRDGreTiGAVPvWAAUn731Y74s457.jpg" },
-        {
-            "id":  "6554605", "title":  "巴萨官方：肖恩-克鲁伊维特左腿股二头肌受伤，预计缺阵八周",
-            "url":  "https://www.dongqiudi.com/articles/6554605.html", "time":  "2026-10-25 22:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/D1/280x210/crop/-/rBXRDGreDumAabMmAAXeZMfe98c073.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CF/57/280x210/crop/-/rBXRDGreTiGAVPvWAAUn731Y74s457.jpg" }
     ]
 };
