@@ -69,12 +69,18 @@ function Log([string]$msg) {
 # 取某梯队某状态的赛程。$MatchStatus 为 U（未开赛）或 C（已完场）。
 # $CompSeasonId > 0 时交给服务端过滤，减少无关数据。
 function Get-Fixtures([int]$TeamId, [string]$MatchStatus, [int]$CompSeasonId) {
+  $script:FetchFailed = $false
   $url = $ApiBase + "?teamId=$TeamId&pageSize=100&order=OLDEST_FIRST&matchStatuses=$MatchStatus"
   if ($CompSeasonId -gt 0) { $url += "&compSeasonId=$CompSeasonId" }
   $tmp = Join-Path $env:TEMP ("fcb-youth-" + [guid]::NewGuid().ToString("N") + ".json")
   try {
-    & $CurlExe -s -m 40 -A $Ua -H "Origin: https://www.fcbarcelona.es" -o $tmp $url 2>$null
-    if (-not (Test-Path $tmp)) { return @() }
+    for ($try = 1; $try -le 3; $try++) {
+      & $CurlExe -s -m 40 -A $Ua -H "Origin: https://www.fcbarcelona.es" -o $tmp $url 2>$null
+      $ok = ($LASTEXITCODE -eq 0) -and (Test-Path $tmp) -and ((Get-Item $tmp).Length -gt 0)
+      if ($ok) { break }
+      Start-Sleep -Seconds (2 * $try)
+    }
+    if (-not $ok) { $script:FetchFailed = $true; return @() }
     $txt = [System.IO.File]::ReadAllText($tmp, $UTF8)   # 必须显式 UTF8，否则重音队名变乱码
     if (-not $txt) { return @() }
     return @(($txt | ConvertFrom-Json).content)
@@ -131,8 +137,9 @@ foreach ($tier in $Tiers) {
   $up  = @($up | Where-Object { "$($_.competitionId)/$($_.compSeasonId)" -eq $key })
   $season = [int]($key -split '/')[1]
 
-  $done = @(Get-Fixtures $tier.teamId "C" $season |
-            Where-Object { "$($_.competitionId)/$($_.compSeasonId)" -eq $key })
+  $doneRaw = Get-Fixtures $tier.teamId "C" $season
+  $doneFailed = $script:FetchFailed
+  $done = @($doneRaw | Where-Object { "$($_.competitionId)/$($_.compSeasonId)" -eq $key })
 
   # 未开赛 + 已完场，按开球时间排序后编号轮次
   $staged = @()
@@ -166,6 +173,26 @@ foreach ($tier in $Tiers) {
     }
   }
 
+  # 已完场抓取失败、或本次比上一版少（接口抖动 / 赛季切换）→ 用旧缓存补齐已完赛场次，
+  # 避免一次 curl 超时就把整段「已完赛」从该梯队页面上抹掉。
+  $prevDone = @()
+  if ($prev) {
+    $pp = $prev.matches.PSObject.Properties[$tier.id]
+    if ($pp) { $prevDone = @($pp.Value | Where-Object { "$($_.hs)" -ne "" -and "$($_.comp)" -eq $tier.comp }) }
+  }
+  if ($prevDone.Count -gt $done.Count) {
+    $have = @{}
+    foreach ($m in $list) { $have[[string]$m.id] = $true }
+    $added = 0
+    foreach ($pm in $prevDone) {
+      if (-not $have.ContainsKey([string]$pm.id)) { $list += $pm; $added++ }
+    }
+    if ($added -gt 0) {
+      $list = @($list | Sort-Object { [int64]$_.start })
+      for ($k = 0; $k -lt $list.Count; $k++) { $list[$k].round = [string]($k + 1) }
+      Log "  ! $($tier.id) 已完场只抓到 $($done.Count) 场（上一版 $($prevDone.Count) 场，失败=$doneFailed），从旧缓存补回 $added 场"
+    }
+  }
   $allMatches[$tier.id] = $list
   $teamMeta[$tier.id]   = [ordered]@{ comp = $tier.comp; compEn = $tier.compEn; slug = $tier.slug }
   $anyOk = $true

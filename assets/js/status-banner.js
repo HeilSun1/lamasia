@@ -28,7 +28,8 @@
     if (!s || typeof s !== 'string') return null;
     var m = s.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?/);
     if (m) {
-      return Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0));
+      /* 缓存里的 updated 是北京时间墙钟，转成真实 epoch 需减去 8 小时 */
+      return Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0)) - 8 * 3600 * 1000;
     }
     var t = Date.parse(s);
     return isNaN(t) ? null : t;
@@ -121,11 +122,12 @@
     return '本站数据已 ' + age + ' 没有更新，可能略有过时。';
   }
 
+  /* 一律按北京时间显示，与服务器无关 */
   function fmtDate(ms) {
-    var d = new Date(ms);
+    var d = new Date(ms + 8 * 3600 * 1000);
     function p(n) { return (n < 10 ? '0' : '') + n; }
-    return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) +
-           ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+    return d.getUTCFullYear() + '-' + p(d.getUTCMonth() + 1) + '-' + p(d.getUTCDate()) +
+           ' ' + p(d.getUTCHours()) + ':' + p(d.getUTCMinutes());
   }
 
   var api = {
