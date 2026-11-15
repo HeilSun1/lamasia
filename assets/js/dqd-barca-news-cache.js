@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-14 20:48:02 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-15 13:27:10 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-14 20:48:02",
+    "updated":  "2026-11-15 13:27:10",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6655339", "title":  "每体：巴萨竞技延期申请被驳回，同法官曾批准皇马卡斯蒂亚延期",
+            "url":  "https://www.dongqiudi.com/articles/6655339.html", "time":  "2026-11-15 06:45",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/0C/280x210/crop/-/rBXRn2r4sbeAVbRzAAFam8zYy5U387.jpg" },
+        {
+            "id":  "6655320", "title":  "博扬：在培养阶段不应限制球员；必须观察他们如何适应变化",
+            "url":  "https://www.dongqiudi.com/articles/6655320.html", "time":  "2026-11-15 06:37",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/E2/280x210/crop/-/rBXRDGr4jo2AZps-AABxbt5ewcU670.jpg" },
+        {
+            "id":  "6654728", "title":  "巴萨竞技战报 20261115",
+            "url":  "https://www.dongqiudi.com/articles/6654728.html", "time":  "2026-11-15 03:03",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/1F/280x210/crop/-/rBXRDGr4r_6AfmWaAApZaX08kss136.jpg" },
         {
             "id":  "6651630", "title":  "每体：加纳中卫加里巴已成B队关键一员，在巴萨前景非常光明",
             "url":  "https://www.dongqiudi.com/articles/6651630.html", "time":  "2026-11-14 07:55",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6554605", "title":  "巴萨官方：肖恩-克鲁伊维特左腿股二头肌受伤，预计缺阵八周",
             "url":  "https://www.dongqiudi.com/articles/6554605.html", "time":  "2026-10-25 22:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/D1/280x210/crop/-/rBXRDGreDumAabMmAAXeZMfe98c073.png" },
-        {
-            "id":  "6553975", "title":  "巴萨公布国家德比大名单：亚马尔领衔，佩德里、德容在列",
-            "url":  "https://www.dongqiudi.com/articles/6553975.html", "time":  "2026-10-25 20:34",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/A9/280x210/crop/-/rBXRDGrd95KAZqF1AAQ8Rp04ThE178.png" },
-        {
-            "id":  "6546981", "title":  "阿隆索：是西班牙青训造就了罗德里、布斯克茨这些中场",
-            "url":  "https://www.dongqiudi.com/articles/6546981.html", "time":  "2026-10-24 21:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CC/77/280x210/crop/-/rBXRDGrcsc-AbBY9AADhXmgdDUw707.jpg" },
-        {
-            "id":  "6544996", "title":  "每体：巴萨教练组认为格伦很像佩德里，他有望进国家德比名单",
-            "url":  "https://www.dongqiudi.com/articles/6544996.html", "time":  "2026-10-24 18:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CB/E0/280x210/crop/-/rBXRn2rcbrKAEnqTAADKNAF54rc598.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CE/D1/280x210/crop/-/rBXRDGreDumAabMmAAXeZMfe98c073.png" }
     ]
 };

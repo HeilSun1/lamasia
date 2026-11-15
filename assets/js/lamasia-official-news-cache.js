@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-14 20:48:25 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-15 13:28:27 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-14 20:48:25",
+    "updated":  "2026-11-15 13:28:27",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4609122", "title":  "Barça Atlètic 0-1 Girona B: First home defeat",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4609122/barca-atletic-0-1-girona-b-first-home-defeat", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/14/6d74f7aa-7d62-43d5-969e-e121ac9db258/2026-11-14_FCBATLETICvsGIRONAB_093.jpg" },
             {
                 "id":  "4606352", "title":  "Manresa 0-3 Barça Atlètic: Solid leaders",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4606352/ce-manresa-0-3-barca-atletic-solid-leaders", "time":  "",

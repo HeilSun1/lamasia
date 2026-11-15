@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-14 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-15 13:27 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-14 21:00:44",
+    "updated":  "2026-11-15 13:27:09",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -750,10 +750,10 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "away":  "Girona B",
                         "homeId":  "24343",
                         "awayId":  "368693",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "1",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {

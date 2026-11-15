@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-14 20:48:21 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-15 13:27:32 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-14 20:48:21",
+    "updated":  "2026-11-15 13:27:32",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6654728", "title":  "巴萨竞技战报 20261115",
+            "url":  "https://www.dongqiudi.com/articles/6654728.html", "time":  "2026-11-15 03:03",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/1F/280x210/crop/-/rBXRDGr4r_6AfmWaAApZaX08kss136.jpg" },
         {
             "id":  "6645160", "title":  "通卡拉和巴巴-库鲁马备战U17世界杯🌟🇪🇸",
             "url":  "https://www.dongqiudi.com/articles/6645160.html", "time":  "2026-11-12 10:18",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6049495", "title":  "世体：巴萨和两名梯队小将续约遭到阻碍，担心德罗案例重演",
             "url":  "https://www.dongqiudi.com/articles/6049495.html", "time":  "2026-07-18 23:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/16/280x210/crop/-/rBXRn2pblMWATf-lAADM0qkbGjk683.jpg" },
-        {
-            "id":  "6049420", "title":  "世体：门将雅各比什维利在巴萨得不到机会，他将再次外租离队",
-            "url":  "https://www.dongqiudi.com/articles/6049420.html", "time":  "2026-07-18 22:46",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/0D/280x210/crop/-/rBXRn2pbkXCAMTDMAACEEs1e2UQ810.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/16/280x210/crop/-/rBXRn2pblMWATf-lAADM0qkbGjk683.jpg" }
     ]
 };
