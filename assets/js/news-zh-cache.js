@@ -20,6 +20,7 @@ window.NEWS_ZH = {
   "Arranca la Iniesta Experience en Barcelona": "伊涅斯塔体验在巴塞罗那启动",
   "Así está la clasificación de la Youth League 2026/27 tras el empate del Barcelona contra el PSG": "这是巴塞罗那与巴黎圣日耳曼战平后的 2026/27 赛季青年欧冠排名情况。",
   "Atlético 1-2 Barça: Comeback to stay top": "马德里竞技 1-2 巴萨：逆转取胜，稳居榜首",
+  "Back at the Metropolitano": "重返万达大都会球场",
   "Back at training": "回到训练中",
   "Barça 3-0 Aston Villa: Three goals, three points": "巴萨 3-0 阿斯顿维拉：三粒进球，三分到手",
   "Barça 6-1 Alavés: That\u0027s more like it!": "巴萨 6-1 阿拉维斯：这才是我们想要的！",
@@ -187,6 +188,7 @@ window.NEWS_ZH = {
   "Sergi Mayans, el central zurdo más poderoso de La Masia, encandila a Belletti y apunta a Flick": "塞尔吉·马扬斯，拉玛西亚最强的左脚中卫，让贝莱蒂眼前一亮，并引起了弗里克的注意。",
   "Sigue en directo el Manresa-Barça Atlètic del Grupo 2 de Segunda RFEF": "观看西班牙皇家足球乙级联赛第 2 组曼雷萨队-预备队的直播",
   "Sorpresa mayúscula en el Barça: sin noticias de la suspensión": "巴萨大爆冷门：没有关于停赛的消息",
+  "Spain, England and Croatia in action": "西班牙、英格兰和克罗地亚正在进行中",
   "The squad for Atlético v Barça": "马德里竞技对阵巴萨的球队阵容",
   "The squad for Barça v Alavés": "巴萨对阵阿拉维斯的出场阵容",
   "The squad for the Aston Villa match": "阿斯顿维拉比赛的球队阵容",
@@ -203,5 +205,6 @@ window.NEWS_ZH = {
   "When and where to watch Atlético v Barça": "观看马德里竞技对阵巴萨的比赛时间和地点",
   "When and where to watch Barça v Aston Villa": "巴萨对阵阿斯顿维拉的比赛观看时间和地点",
   "Work continues at the Ciutat Esportiva": "俱乐部体育城工程仍在继续",
-  "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia": "哈维·埃尔南德斯：我生来就是巴萨人，我想帮助巴萨谱写更辉煌的历史。"
+  "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia": "哈维·埃尔南德斯：我生来就是巴萨人，我想帮助巴萨谱写更辉煌的历史。",
+  "Xavi Martín, exdirector de la Masia: \"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"": "拉玛西亚前总监哈维·马丁 (Xavi Martín) 表示：“这就是巴萨与众不同的地方，应该更多地加以利用。为什么我们的商店里没有拉玛西亚的周边产品？”"
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-15 13:28:27 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-15 21:03:23 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-15 13:28:27",
+    "updated":  "2026-11-15 21:03:23",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -15,7 +15,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4602098", "title":  "Barça Atlètic 2-1 Arnedo: Last-gasp win",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4602098/barca-atletic-2-1-arnedo-last-gasp-win", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/c48f1f04-ae82-4f82-a0bd-bd7eddc05278/BARC-A-B_ARNEDO-86.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/58d6f081-d5bf-4fdc-a368-da993c925e44/BARC-A-B_ARNEDO-86.jpg" },
             {
                 "id":  "4601665", "title":  "Iker Rodríguez, blaugrana until 2029",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4601665/iker-rodriguez-blaugrana-until-2029", "time":  "",
@@ -167,9 +167,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "Raphinha starts and sees red against Japan",
+                "id":  "4607914", "title":  "Spain, England and Croatia in action",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/14/0be4be8d-ba48-4b2f-994d-a79eb5b901d2/2026-11-03_FCBvsASTONVILLA_116.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/437db205-47c5-4ba0-b335-59a6cfc42673/_MGA5132.jpg" },
+            {
+                "id":  "4609338", "title":  "Back at the Metropolitano",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/c97f77b8-3ea2-4478-a0b4-b1ceed356bbd/_MGA5074.jpg" },
             {
                 "id":  "4608811", "title":  "Five games at Spotify Camp Nou before the end of the year",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4608811/five-games-at-spotify-camp-nou-before-the-end-of-the-year", "time":  "",
@@ -251,10 +255,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" },
             {
-                "id":  "4604460", "title":  "Raphinha to renew this Thursday",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -262,6 +262,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4604460", "title":  "Raphinha to renew this Thursday",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" },
             {
                 "id":  "4604300", "title":  "Recovery session after win over Villa",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604300/recovery-session-after-win-over-villa", "time":  "",
@@ -361,11 +365,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4601455", "title":  "Flick: 'We want to show our best'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-to-show-our-best", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/29986bc5-0e42-4710-ab69-09b901a2a320/_MGA0513-2-.jpg" },
-            {
-                "id":  "4601412", "title":  "Dani Olmo celebrates 100 games",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601412/dani-olmo-reaches-100-games-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/e22c3352-b5d6-4626-9fa5-cb27d635a9aa/_MGA8346-1.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/29986bc5-0e42-4710-ab69-09b901a2a320/_MGA0513-2-.jpg" }
         ]
     }
 };

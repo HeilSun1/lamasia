@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-15 13:28:33 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-15 21:03:35 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-15 13:28:33",
+    "updated":  "2026-11-15 21:03:35",
     "source":  "sport",
     "count":  50,
     "news":  [
@@ -29,8 +29,8 @@ window.SPORT_NEWS = {
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/confirma-cacicada-rfef-obliga-barca-136434173", "time":  "2026-11-14 13:52",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/0fb2a8c9-4f51-407e-bf2f-1af9e873d884_16-9-discover-aspect-ratio_640w_0_x960y360.webp" },
         {
-            "id":  "136421857", "title":  "\"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diferente-barca-deberia-explotar-merchandising-136421857", "time":  "2026-11-14 07:00",
+            "id":  "136421857", "title":  "Xavi Martín, exdirector de la Masia: \"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/diferente-barca-deberia-explotar-merchandising-136421857", "time":  "2026-11-15 12:28",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ac878526-fb44-44bc-b79a-1e26a106537f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136385497", "title":  "Sorpresa mayúscula en el Barça: sin noticias de la suspensión",

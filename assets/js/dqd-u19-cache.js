@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-15 13:27 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-15 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-15 13:27:32",
+    "updated":  "2026-11-15 21:01:12",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -14,6 +14,21 @@ window.DQD_U19_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
               },
     "players":  [
+                    {
+                        "name":  "Hamza Abdelkarim",
+                        "id":  "1961596",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "FC Barcelona",
+                        "nation":  "Egypt",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-01",
+                        "foot":  "双脚",
+                        "height":  "182",
+                        "value":  "820万",
+                        "injury":  null
+                    },
                     {
                         "name":  "Shane Kluivert",
                         "id":  "1657202",
@@ -120,6 +135,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Joni Hernández",
+                        "id":  "2679425",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2679425/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-05-22",
+                        "foot":  "左脚",
+                        "height":  "178",
+                        "value":  "5万",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Ïu Martínez",
                         "id":  "2405472",
                         "pos":  "F",
@@ -177,6 +207,21 @@ window.DQD_U19_CACHE = {
                         "foot":  "左脚",
                         "height":  "178",
                         "value":  "520万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pedro Rodriguez",
+                        "id":  "1649171",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
+                        "value":  "",
                         "injury":  null
                     },
                     {
