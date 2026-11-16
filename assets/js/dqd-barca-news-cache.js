@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-16 09:42:08 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-16 21:00:50 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-16 09:42:08",
+    "updated":  "2026-11-16 21:00:50",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6659954", "title":  "巴萨官方：一线队休整5天后恢复训练，奥尔莫随队开练",
+            "url":  "https://www.dongqiudi.com/articles/6659954.html", "time":  "2026-11-16 20:59",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/92/280x210/crop/-/rBXRn2r69LCARMDpAAC9_35oBVM210.jpg" },
+        {
+            "id":  "6659596", "title":  "每体：巴萨竞技后卫加里巴在周末联赛中受伤，他在赛...",
+            "url":  "https://www.dongqiudi.com/articles/6659596.html", "time":  "2026-11-16 17:00",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/5D/280x210/crop/-/rBXRDGr6xhSAD4MIAAEEe1xAMZ4758.jpg" },
+        {
+            "id":  "6659461", "title":  "世体：巴萨竞技前锋诺莫科恢复有球训练，球队预计他1月复出",
+            "url":  "https://www.dongqiudi.com/articles/6659461.html", "time":  "2026-11-16 16:06",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/39/280x210/crop/-/rBXRDGr6rMSAKAw0AABZg2kSZ_U961.jpg" },
         {
             "id":  "6657222", "title":  "贝莱蒂：我们出战时有二十多名球员缺阵，按理说应该比赛延期",
             "url":  "https://www.dongqiudi.com/articles/6657222.html", "time":  "2026-11-15 21:53",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6561439", "title":  "世体：埃斯帕特伤缺近两个月，弗里克启用青训应急",
             "url":  "https://www.dongqiudi.com/articles/6561439.html", "time":  "2026-10-27 01:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D1/77/280x210/crop/-/rBXRn2rfkSmAAkrYAAA63kGIjTw917.jpg" },
-        {
-            "id":  "6561361", "title":  "每体：巴萨右后卫告急，弗里克将征召吉列姆-维克托",
-            "url":  "https://www.dongqiudi.com/articles/6561361.html", "time":  "2026-10-27 01:28",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/0A/280x210/crop/-/rBXRDGrY9qWAVSOBAAGEbrEJMwk125.jpg" },
-        {
-            "id":  "6558892", "title":  "每体：弗里克盼巴萨休整充电，依靠拉玛西亚补防线",
-            "url":  "https://www.dongqiudi.com/articles/6558892.html", "time":  "2026-10-26 16:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D0/8A/280x210/crop/-/rBXRn2rfAN6ALUIJAAFLHKR-UEo808.jpg" },
-        {
-            "id":  "6556508", "title":  "巴萨竞技战报 20261026",
-            "url":  "https://www.dongqiudi.com/articles/6556508.html", "time":  "2026-10-26 02:53",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/CF/57/280x210/crop/-/rBXRDGreTiGAVPvWAAUn731Y74s457.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D1/77/280x210/crop/-/rBXRn2rfkSmAAkrYAAA63kGIjTw917.jpg" }
     ]
 };

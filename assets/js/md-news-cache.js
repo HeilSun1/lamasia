@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-16 09:43:23 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-16 21:02:19 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-16 09:43:23",
+    "updated":  "2026-11-16 21:02:19",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/acb/20261116/1004251520/abdu-kone-debutante-barca-he-visto-mis-companeros-celebraban-me-hecho-ilusion.html", "title":  "Abdu Kone, debutante con el Barça: Cuando he visto que mis compañeros lo celebraban, me ha hecho mucha ilusión",
+            "url":  "https://www.mundodeportivo.com/baloncesto/acb/20261116/1004251520/abdu-kone-debutante-barca-he-visto-mis-companeros-celebraban-me-hecho-ilusion.html", "time":  "2026-11-16 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/15/6af9fef57ae5f.r_d.1345-1032-5299.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "title":  "Álex Valle: Me encanta Flick como entrenador",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "time":  "2026-11-15 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "title":  "Los intangibles del Barça",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "time":  "2026-09-29 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/1970/01/01/60d5bf438d2b7.png" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "title":  "Pedro Villar estará varias semanas de baja",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260928/1004232024/pedro-villar-xx-semanas-baja.html", "time":  "2026-09-28 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/26/6ab81748ece98.r_d.1230-1369-4998.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/1970/01/01/60d5bf438d2b7.png" }
     ]
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-16 09:41 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-16 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-16 09:41:47",
+    "updated":  "2026-11-16 21:00:30",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1349,6 +1349,14 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "177",
                                  "birth":  "2007-05-03"
                              },
+                "51122738":  {
+                                 "nation":  "西班牙",
+                                 "contract":  "",
+                                 "foot":  "",
+                                 "weight":  "",
+                                 "height":  "",
+                                 "birth":  "1993-12-25"
+                             },
                 "50043882":  {
                                  "nation":  "西班牙",
                                  "contract":  "",
@@ -1357,13 +1365,13 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "189",
                                  "birth":  "1988-07-16"
                              },
-                "51096555":  {
-                                 "nation":  "加纳",
-                                 "contract":  "2027-06-30",
-                                 "foot":  "左脚",
-                                 "weight":  "",
-                                 "height":  "187",
-                                 "birth":  "2007-01-09"
+                "50002741":  {
+                                 "nation":  "巴西",
+                                 "contract":  "",
+                                 "foot":  "右脚",
+                                 "weight":  "76",
+                                 "height":  "179",
+                                 "birth":  "1976-06-20"
                              },
                 "50817432":  {
                                  "nation":  "乌拉圭",
@@ -1372,6 +1380,14 @@ window.DQD_BARCA_ATLETIC = {
                                  "weight":  "",
                                  "height":  "187",
                                  "birth":  "2006-04-08"
+                             },
+                "51096555":  {
+                                 "nation":  "加纳",
+                                 "contract":  "2027-06-30",
+                                 "foot":  "左脚",
+                                 "weight":  "",
+                                 "height":  "187",
+                                 "birth":  "2007-01-09"
                              },
                 "51003962":  {
                                  "nation":  "西班牙",
@@ -1573,14 +1589,6 @@ window.DQD_BARCA_ATLETIC = {
                                  "height":  "183",
                                  "birth":  "2009-01-26"
                              },
-                "50002741":  {
-                                 "nation":  "巴西",
-                                 "contract":  "",
-                                 "foot":  "右脚",
-                                 "weight":  "76",
-                                 "height":  "179",
-                                 "birth":  "1976-06-20"
-                             },
                 "51199202":  {
                                  "nation":  "西班牙",
                                  "contract":  "",
@@ -1666,6 +1674,23 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "type":  "助理教练",
                                                                   "weekly_salary":  "",
                                                                   "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/AF/55/rBUC6GbZH1GAIN19AAAZCDptxJg411.jpg"
+                                                              },
+                                                              {
+                                                                  "age":  "32岁",
+                                                                  "captain_logo":  "",
+                                                                  "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
+                                                                  "nationality_name":  "西班牙",
+                                                                  "other_logo":  [
+
+                                                                                 ],
+                                                                  "person_id":  "51122738",
+                                                                  "person_logo":  "assets/img/players/dqd/51122738.jpg",
+                                                                  "person_name":  "赫苏斯-温苏埃",
+                                                                  "scheme":  "dongqiudi:///coach/51122738",
+                                                                  "transfer_data":  null,
+                                                                  "type":  "守门员教练",
+                                                                  "weekly_salary":  "",
+                                                                  "person_logo_url":  "https://sd.qunliao.info/fastdfs7/M00/51/61/rBUBsmkuuqyAGdYoAAAZF0Ik4bk496.jpg"
                                                               },
                                                               {
                                                                   "age":  "48岁",

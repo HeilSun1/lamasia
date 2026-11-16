@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-16 09:43:16 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-16 21:02:01 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-16 09:43:16",
+    "updated":  "2026-11-16 21:02:01",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -167,6 +167,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4609818", "title":  "Olmo, part of session with squad",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/93dbaf99-beaa-4466-b34a-822f6fc1a2c5/WhatsApp-Image-2026-11-16-at-12.56.56-3-.jpeg" },
+            {
                 "id":  "4607914", "title":  "Gordon wins battle of Culers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/b966d63e-4d0f-40b1-99f3-a039b39d297b/_MGA5167.jpg" },
@@ -251,10 +255,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604888/raphinha-staying-at-fc-barcelona-until-2030", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/05/e05e54a6-6c66-4b58-a1c4-03c5a37bd70e/_GP12847.jpg" },
             {
-                "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -262,6 +262,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" },
             {
                 "id":  "4604460", "title":  "Raphinha to renew this Thursday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
@@ -361,11 +365,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4601420", "title":  "Last session before Alavés",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601420/last-session-before-alaves", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2419ce97-233d-4906-8ba9-aeab05b46aaa/WhatsApp-Image-2026-10-30-at-12.56.31.jpeg" },
-            {
-                "id":  "4601455", "title":  "Flick: 'We want to show our best'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601455/hansi-flick-we-want-to-show-our-best", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/29986bc5-0e42-4710-ab69-09b901a2a320/_MGA0513-2-.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2419ce97-233d-4906-8ba9-aeab05b46aaa/WhatsApp-Image-2026-10-30-at-12.56.31.jpeg" }
         ]
     }
 };
