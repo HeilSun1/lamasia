@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-15 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-16 09:42 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-15 21:00:51",
+    "updated":  "2026-11-16 09:42:08",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -122,6 +122,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "177",
                         "value":  "31万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Vicens Ponsati",
+                        "id":  "2014710",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-07-29",
+                        "foot":  "左脚",
+                        "height":  "176",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -485,6 +500,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Pol Bernabéu",
+                        "id":  "2076871",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-05",
+                        "foot":  "左脚",
+                        "height":  "185",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Eder Aller",
                         "id":  "1929977",
                         "pos":  "G",
@@ -526,6 +556,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-03-02",
                         "foot":  "右脚",
                         "height":  "188",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Gerard Sala",
+                        "id":  "2229916",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-25",
+                        "foot":  "右脚",
+                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     }

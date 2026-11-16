@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-15 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-16 09:42 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-15 21:01:12",
+    "updated":  "2026-11-16 09:42:27",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -115,21 +115,6 @@ window.DQD_U19_CACHE = {
                         "age":  "17岁",
                         "birthday":  "2009-02-20",
                         "foot":  "右脚",
-                        "height":  "176",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Nil Vicens Ponsati",
-                        "id":  "2014710",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-29",
-                        "foot":  "左脚",
                         "height":  "176",
                         "value":  "",
                         "injury":  null
@@ -405,21 +390,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Pol Bernabéu",
-                        "id":  "2076871",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-05",
-                        "foot":  "左脚",
-                        "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Joan Inglés",
                         "id":  "2229086",
                         "pos":  "D",
@@ -551,21 +521,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2007-03-02",
                         "foot":  "右脚",
                         "height":  "188",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Gerard Sala",
-                        "id":  "2229916",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-25",
-                        "foot":  "右脚",
-                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     },

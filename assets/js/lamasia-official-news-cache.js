@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-15 21:06:36 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-16 09:43:16 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-15 21:06:36",
+    "updated":  "2026-11-16 09:43:16",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -167,9 +167,9 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4607914", "title":  "Spain, England and Croatia in action",
+                "id":  "4607914", "title":  "Gordon wins battle of Culers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/437db205-47c5-4ba0-b335-59a6cfc42673/_MGA5132.jpg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/b966d63e-4d0f-40b1-99f3-a039b39d297b/_MGA5167.jpg" },
             {
                 "id":  "4609338", "title":  "Back at the Metropolitano",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
