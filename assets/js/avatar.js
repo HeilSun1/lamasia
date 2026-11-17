@@ -211,7 +211,21 @@
   }
   window.AvatarSfByName = function (name) {
     var k = norm(name);
-    return k ? (sfIndex()[k] || "") : "";
+    if (!k) return "";
+    var idx = sfIndex();
+    if (idx[k]) return idx[k];
+    /* 缓存里常见全名/简称不一致（Erik Domínguez vs Erik Domínguez Martos），
+       用包含关系兜底：只有一个候选时才采用，避免张冠李戴。 */
+    if (k.length < 8) return "";
+    var hit = "", dup = false;
+    for (var key in idx) {
+      if (!Object.prototype.hasOwnProperty.call(idx, key)) continue;
+      if (key.indexOf(k) === 0 || k.indexOf(key) === 0) {
+        if (hit && hit !== idx[key]) { dup = true; break; }
+        hit = idx[key];
+      }
+    }
+    return dup ? "" : hit;
   };
   window.AvatarChain = chain;
   window.AvatarHtml = html;
