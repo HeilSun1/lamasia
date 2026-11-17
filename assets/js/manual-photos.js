@@ -37,4 +37,6 @@ window.MANUAL_PHOTOS = {
   "local:cadete-b:juanfernandez": "assets/img/players/manual/local-cadete-b-juanfernandez.jpg",
   "local:cadete-b:poljou": "assets/img/players/manual/local-cadete-b-poljou.jpg",
   "local:cadete-b:yibrahangarcia": "assets/img/players/manual/local-cadete-b-yibrahangarcia.jpg",
+  "local:juvenil-a:samuborniquel": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg",
+  "sf:u19:2407333": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg"
 };
