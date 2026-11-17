@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-17 09:49；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-17 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-17 09:49:53",
+    "updated":  "2026-11-17 21:02:17",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -1376,29 +1376,10 @@ window.LAMASIA_SCHEDULES = {
                                          "venue":  "Ciudad Deportiva San Adriá"
                                      },
                                      {
-                                         "id":  "fcb:cadete-b:82",
-                                         "comp":  "加泰优选联赛 Cadete G1",
-                                         "compEn":  "Preferente Catalana Cadete G.1",
-                                         "round":  "11",
-                                         "start":  "1795865400",
-                                         "date":  "2026-11-28",
-                                         "tbd":  false,
-                                         "home":  "FC Barcelona A",
-                                         "away":  "Gimnàstic Tarragona A",
-                                         "homeId":  "11112",
-                                         "awayId":  "11182",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
-                                         "code":  "0",
-                                         "isHome":  true,
-                                         "venue":  "Ciutat Esportiva Joan Gamper"
-                                     },
-                                     {
                                          "id":  "fcb:cadete-b:89",
                                          "comp":  "加泰优选联赛 Cadete G1",
                                          "compEn":  "Preferente Catalana Cadete G.1",
-                                         "round":  "12",
+                                         "round":  "11",
                                          "start":  "1797073200",
                                          "date":  "2026-12-12",
                                          "tbd":  false,
@@ -1412,6 +1393,25 @@ window.LAMASIA_SCHEDULES = {
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "Gimnastic Parc"
+                                     },
+                                     {
+                                         "id":  "fcb:cadete-b:82",
+                                         "comp":  "加泰优选联赛 Cadete G1",
+                                         "compEn":  "Preferente Catalana Cadete G.1",
+                                         "round":  "12",
+                                         "start":  "1797445800",
+                                         "date":  "2026-12-16",
+                                         "tbd":  false,
+                                         "home":  "FC Barcelona A",
+                                         "away":  "Gimnàstic Tarragona A",
+                                         "homeId":  "11112",
+                                         "awayId":  "11182",
+                                         "hs":  "",
+                                         "as":  "",
+                                         "status":  "Not started",
+                                         "code":  "0",
+                                         "isHome":  true,
+                                         "venue":  "Ciutat Esportiva Joan Gamper"
                                      },
                                      {
                                          "id":  "fcb:cadete-b:97",
