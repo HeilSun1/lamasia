@@ -108,12 +108,12 @@
   }
 
   // 1) 本地官方名单（优先级最高：含中文名与备注）
-  const TEAM_OF = {
-    "juvenil-a": "U19 A", "juvenil-b": "U19 B", "cadete": "U16",
-    "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13",
-    "infantil-c": "U12", "u11a": "U11 A", "u11b": "U11 B",
-    "u10a": "U10 A", "u10b": "U10 B", "u9a": "U9 A", "u9b": "U9 B"
-  };
+  /* 梯队显示名统一取自 assets/js/teams.js（DESIGN.md：只用一套 SUB 体系） */
+  const TEAM_OF = {};
+  ["juvenil-a", "juvenil-b", "cadete", "cadete-b", "infantil", "infantil-b",
+   "infantil-c", "u11a", "u11b", "u10a", "u10b", "u9a", "u9b"].forEach(function (tid) {
+    TEAM_OF[tid] = window.Teams ? window.Teams.num(tid) : tid;
+  });
   const local = (window.LAMASIA_DATA && window.LAMASIA_DATA.players) || {};
   Object.keys(TEAM_OF).forEach(function (tid) {
     (local[tid] || []).forEach(function (p) {
@@ -200,7 +200,7 @@
      以前 addPlayer 只合并不删除，导致 U19 A 池子里混进 21 个已离队球员（2026-11 用户反馈）。
      现在：这些梯队里只保留实时源出现过的人，本地名单退化为「补中文名/备注/手补图」的字典。 */
   (function dropDeparted() {
-    const LIVE_TEAMS = { "预备队": 1, "U19 A": 1, "U19 B": 1, "U16": 1 };
+    const LIVE_TEAMS = { "预备队": 1, "U19 A": 1, "U19 B": 1, "SUB16": 1 };
     Object.keys(pool).forEach(function (k) {
       const e = pool[k];
       if (!e.live && LIVE_TEAMS[e.team]) delete pool[k];
@@ -217,7 +217,8 @@
   })();
 
   // 转数组并排序（梯队顺序 → 姓名）
-  const TEAM_ORDER = ["预备队", "U19 A", "U19 B", "U16", "U15", "U14", "U13", "U12", "U11 A", "U11 B", "U10 A", "U10 B", "U9 A", "U9 B"];
+  const TEAM_ORDER = window.Teams ? window.Teams.nums()
+    : ["预备队", "U19 A", "U19 B", "SUB16", "SUB15", "SUB14", "SUB13", "SUB12", "SUB11 A", "SUB11 B", "SUB10 A", "SUB10 B", "SUB9 A", "SUB9 B"];
   const players = Object.keys(pool).map(function (k) { return pool[k]; });
   players.sort(function (a, b) {
     const ti = TEAM_ORDER.indexOf(a.team), tj = TEAM_ORDER.indexOf(b.team);

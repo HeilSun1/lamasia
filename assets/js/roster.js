@@ -25,14 +25,54 @@
   /* 头像与「手动补图」都在 assets/js/avatar.js 里统一处理，
      本文件只负责行结构与灯箱。 */
 
+  /* 梯队 → Sofascore 实时缓存（含 players 数组）。
+     data.js 是 2025-26 快照，没有「已升队/已离队」字段，只能靠实时名单对一遍。 */
+  const LIVE_CACHE = {
+    "juvenil-a": "DQD_U19_CACHE",
+    "juvenil-b": "DQD_U18_CACHE",
+    "cadete": "DQD_U16_CACHE"
+  };
+
+  /* 本地名单与实时名单的重合情况。返回 null 表示不该过滤（没有缓存、或重合度够高）。 */
+  function filterByLive(teamId, squad) {
+    const key = LIVE_CACHE[teamId];
+    if (!key) return null;
+    const cache = window[key];
+    const live = (cache && cache.players) || [];
+    if (!live.length) return null;
+    const liveNorm = live.map(function (p) { return normKey(p.name); });
+    const kept = squad.filter(function (p) {
+      const n = normKey(p.name);
+      if (!n) return true;
+      if (liveNorm.indexOf(n) >= 0) return true;
+      // 全名/简称写得不一样时，退一步用「一方包含另一方」兜底
+      return liveNorm.some(function (l) {
+        return l && (l.indexOf(n) >= 0 || n.indexOf(l) >= 0) && Math.min(l.length, n.length) >= 6;
+      });
+    });
+    const missRatio = (squad.length - kept.length) / squad.length;
+    // 只有本地名单明显过期（超过四分之一对不上）才过滤，避免把「官方名单里的边缘球员」误删
+    if (!kept.length || missRatio < 0.25) return null;
+    return kept;
+  }
+
   function render(teamId, elId, imgBase) {
     const base = imgBase || "assets/img/players/";
     const el = document.getElementById(elId);
+    /* 缓存脚本排在 roster.js 后面，首帧可能还没加载；等 DOMContentLoaded 再渲染一次 */
+    const _lk = LIVE_CACHE[teamId];
+    if (el && _lk && !window[_lk] && !el.getAttribute("data-live-wait")) {
+      el.setAttribute("data-live-wait", "1");
+      document.addEventListener("DOMContentLoaded", function () { render(teamId, elId, imgBase); });
+      return;
+    }
     if (!el || !window.LAMASIA_DATA || !LAMASIA_DATA.players || !LAMASIA_DATA.players[teamId]) {
       if (el) el.innerHTML = '<div class="match-list-empty">暂无名单数据</div>';
       return;
     }
-    const squad = LAMASIA_DATA.players[teamId];
+    let squad = LAMASIA_DATA.players[teamId];
+    const filtered = filterByLive(teamId, squad);
+    if (filtered) squad = filtered;
     let html = "";
     for (const [code, title] of POS_ORDER) {
       const ps = squad.filter(p => p.pos === code);
@@ -71,7 +111,51 @@
         ).join("、") +
         `。图片版权归原出处/摄影师所有，如需移除请联系本站。`;
     }
+    applyPositions(squad);
     el.innerHTML = html;
+    /* 过滤生效时，把这一块的抬头一起改成「实时名单」，否则标题还写着「官方名单 · 28 人」，
+       和下面的行数对不上（同一块数据的两处文字也必须同源）。 */
+    if (filtered) {
+      const panel = el.closest ? el.closest(".panel") : null;
+      if (panel) {
+        const tag = panel.querySelector("h3 .tag");
+        if (tag) tag.textContent = "Sofascore 实时名单 · 每日更新";
+        const badge = panel.querySelector(".badge");
+        if (badge) badge.textContent = "实时 · " + squad.length + " 人";
+        const desc = panel.querySelector(".p-desc");
+        if (desc) desc.textContent = "名单与 Sofascore 实时数据同步：升队或离队的球员不再列出，个别姓名写法与官方名单图存在差异。低龄梯队的名单仍来自本站手工收录。";
+      }
+    }
+  }
+
+  /* 阵容位置分布面板（各队页顶部那个横条）以前是手写死数据，改名单就不同步。
+     现在由调用方把名单交进来，条数与百分比一律重算。 */
+  const POS_ZH2CODE = { "门将": "GK", "后卫": "DF", "中场": "MF", "前锋": "FW" };
+  /* 位置码有两套：data.js 用 GK/DF/MF/FW，Sofascore 缓存用 G/D/M/F，统一归一 */
+  const POS_NORM = { GK: "GK", DF: "DF", MF: "MF", FW: "FW", G: "GK", D: "DF", M: "MF", F: "FW" };
+  function applyPositions(squad) {
+    const panel = document.getElementById("sec-positions");
+    if (!panel || !squad || !squad.length) return;
+    const counts = { GK: 0, DF: 0, MF: 0, FW: 0 };
+    squad.forEach(function (p) {
+      const c = POS_NORM[p.pos];
+      if (c) counts[c]++;
+    });
+    const total = counts.GK + counts.DF + counts.MF + counts.FW;
+    if (!total) return;
+    const badge = panel.querySelector(".badge");
+    if (badge) badge.textContent = "共 " + total + " 名球员";
+    Array.prototype.forEach.call(panel.querySelectorAll(".pos-bar"), function (bar) {
+      const lab = bar.querySelector(".pb-label");
+      const num = bar.querySelector(".pb-num");
+      const fill = bar.querySelector(".pb-fill");
+      if (!lab) return;
+      const code = POS_ZH2CODE[lab.textContent.trim()];
+      if (!code) return;
+      const n = counts[code];
+      if (num) num.textContent = n;
+      if (fill) fill.style.width = (total ? Math.round(n / total * 100) : 0) + "%";
+    });
   }
 
   /* ── 照片灯箱：点击球员照片放大查看 ── */
@@ -162,5 +246,9 @@
     if (!to || !(to.closest ? to.closest(".pl-row") : null)) tipEl.style.display = "none";
   });
 
-  window.LAMASIA_RENDER = { playerList: render, lightbox: { open: openLightbox, close: closeLightbox } };
+  window.LAMASIA_RENDER = {
+    playerList: render,
+    positions: applyPositions,
+    lightbox: { open: openLightbox, close: closeLightbox }
+  };
 })();

@@ -91,7 +91,7 @@
   }
 
   function metaLine(c) {
-    var bits = [c.teamShort || c.teamLabel, posZh(c.pos)];
+    var bits = [(window.Teams ? window.Teams.num(c.team) : "") || c.teamShort || c.teamLabel, posZh(c.pos)];
     var y = year(c.dob);
     if (y) bits.push(y);
     return bits.filter(Boolean).join(" · ");
@@ -166,7 +166,7 @@
     var rows = [
       ["姓名", c.zh],
       ["英文名", c.en],
-      ["梯队", c.teamLabel],
+      ["梯队", (window.Teams ? window.Teams.label(c.team) : c.teamLabel)],
       ["位置", posZh(c.pos)],
       ["出生", c.dob && c.dob !== "—" ? c.dob : "—"],
       ["号码", c.num && c.num !== "—" ? c.num : "—"]

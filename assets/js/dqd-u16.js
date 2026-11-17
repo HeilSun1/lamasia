@@ -344,6 +344,7 @@
     });
     el.innerHTML = html || '<div class="match-list-empty">暂无名单数据</div>';
     if (badge) badge.textContent = total + " 人";
+    if (window.LAMASIA_RENDER && window.LAMASIA_RENDER.positions) window.LAMASIA_RENDER.positions(players);
   }
 
   /* ── 赛程（已完场置顶 + 可折叠） ── */

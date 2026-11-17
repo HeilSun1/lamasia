@@ -52,6 +52,7 @@
     return m[pos] || pos || "";
   }
   function teamLabel(tier) {
+    if (window.Teams) return window.Teams.label(tier);
     var m = {
       b: "预备队 · Barça Atlètic",
       u19: "U19 A · Juvenil A", u18: "U19 B · Juvenil B", u16: "SUB16 · Cadete A",

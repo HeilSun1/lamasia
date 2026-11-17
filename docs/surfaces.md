@@ -88,3 +88,16 @@
 
 - **梯队标签**：`formation.js` 的 `TEAM_OF`、`dqd-u19/u18/u16.js` 的队伍名字面量、`scout-cards-data.js` 的 `teamLabel` 三处各写一遍，改一个要改三个。
 - **名单权威源**：`data.js` 是 2025-26 手工快照，`formation.js` 已按实时源过滤，但 `roster.js`（梯队页名单）仍可能列出已离队球员——同一条「谁在队里」的判断还有第二处。
+## 2026-11-17 补记：两处重复已收敛
+
+- **梯队标签**：唯一出口 `assets/js/teams.js`（`window.Teams.label/num/page`）。
+  消费方：`formation.js`（筛选按钮与 `TEAM_OF`）、`player-card.js`（卡片抬头）、
+  `search.js`（结果里的队伍名与链接）、`scout-cards.js`（卡片副标题与「梯队」字段）。
+  验证页：`formation.html`（按钮应为 预备队 / U19 A / U19 B / SUB16…）、`scout-cards.html`、
+  `search.html`、任一梯队页（点开球员卡看抬头）。
+- **「谁在队里」**：梯形页的「球员大名单」由 `roster.js` 渲染时按 Sofascore 实时缓存过滤
+  （`LIVE_CACHE`：juvenil-a→`DQD_U19_CACHE`、juvenil-b→`DQD_U18_CACHE`、cadete→`DQD_U16_CACHE`）；
+  只有本地名单与实时名单重合度低于 75% 才过滤，避免误删官方名单里的边缘球员。
+  过滤生效时，同一块的抬头、人数徽标、说明文字、上方「阵容位置分布」会一起改写成实时数据
+  （`roster.js` 的 `applyPositions()` 也由 `dqd-u19/u18/u16.js` 在渲染名单后调用）。
+  验证页：`teams/juvenil-a.html`、`teams/juvenil-b.html`（两者的位置分布总数应与名单人数一致）。

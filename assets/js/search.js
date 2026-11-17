@@ -13,21 +13,12 @@
   "use strict";
 
   // 队伍键 → 标签 + 页面链接（相对站点根）
-  var TEAM = {
-    "juvenil-a":  { t: "U19 · Juvenil A",  u: "teams/juvenil-a.html#sec-roster" },
-    "juvenil-b":  { t: "U19 B · Juvenil B", u: "teams/juvenil-b.html" },
-    "cadete":     { t: "U16 · Cadete A",   u: "teams/cadete.html" },
-    "cadete-b":   { t: "U15 · Cadete B",   u: "teams/cadete-b.html#roster-cadete-b" },
-    "infantil":   { t: "U14 · Infantil A", u: "teams/infantil.html#roster-infantil" },
-    "infantil-b": { t: "U13 · Infantil B", u: "teams/infantil-b.html#roster-infantil-b" },
-    "infantil-c": { t: "U12 · Infantil C", u: "teams/infantil-c.html#roster-infantil-c" },
-    "u11a":       { t: "SUB11 A · Alevín C", u: "teams/seven-a-side.html#sec-roster-u11a" },
-    "u11b":       { t: "SUB11 B · Alevín D", u: "teams/seven-a-side.html#sec-roster-u11b" },
-    "u10a":       { t: "U10A · Benjamín A",u: "teams/seven-a-side.html#sec-roster-u10a" },
-    "u10b":       { t: "U10B · Benjamín B",u: "teams/seven-a-side.html#sec-roster-u10b" },
-    "u9a":        { t: "U9A · Benjamín C", u: "teams/seven-a-side.html#sec-roster-u9a" },
-    "u9b":        { t: "U9B · Benjamín D", u: "teams/seven-a-side.html#sec-roster-u9b" }
-  };
+  /* 标签与链接都来自 assets/js/teams.js，这里不再各写一份 */
+  var TEAM = {};
+  ["juvenil-a", "juvenil-b", "cadete", "cadete-b", "infantil", "infantil-b",
+   "infantil-c", "u11a", "u11b", "u10a", "u10b", "u9a", "u9b"].forEach(function (k) {
+    if (window.Teams) TEAM[k] = { t: window.Teams.label(k), u: window.Teams.page(k) };
+  });
 
   var pool = [];   // { en, zh, pos, team, url }
   var seen = {};   // 按小写英文去重
