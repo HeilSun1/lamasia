@@ -275,7 +275,10 @@
       keys: Object.keys(o.keys),
       names: Object.keys(o.names),
       tier: tier,
-      teams: (o.teamFirst ? [o.teamFirst] : []).concat(Object.keys(o.teams).filter(function (t) { return t && t !== o.teamFirst; })),
+      teams: (function () {
+      var first = o.teamFirst || (window.Teams ? window.Teams.label(tierOf(o.key)) : "");
+      return (first ? [first] : []).concat(Object.keys(o.teams).filter(function (t) { return t && t !== first; }));
+    })(),
       groups: groups,
       count: groups.reduce(function (s, g) { return s + g.videos.length; }, 0)
     };
