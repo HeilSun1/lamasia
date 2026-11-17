@@ -195,15 +195,18 @@
     });
   })();
 
-  /* 3.6) 有实时名单的梯队以实时名单为准。
-     本地 data.js 是 2025-26 赛季开始时的快照，里面的人可能已经离队或升队；
-     以前 addPlayer 只合并不删除，导致 U19 A 池子里混进 21 个已离队球员（2026-11 用户反馈）。
-     现在：这些梯队里只保留实时源出现过的人，本地名单退化为「补中文名/备注/手补图」的字典。 */
+  /* 3.6) 只删「本地备注明写了已经离队/升队、且实时源里也查不到」的人。
+     不能用「Sofascore 名单里没有」来判断：Sofascore 的青年队名单本身残缺
+     （U18 一个门将都没有，静态度假名单里的门将两个在任何缓存里都查不到），
+     拿它当权威会把人删光（2026-11 踩过，见 docs/decisions-avatars.md D9）。
+     data.js 的 note 是人工核实过的，含「已升」「已转会」这类字样的才算走了；
+     但「已升巴萨竞技」的人现在还在预备队名单里（实时源能查到），所以必须同时满足
+     「实时源查不到」才删，否则会把升队的球员一起删掉。 */
   (function dropDeparted() {
-    const LIVE_TEAMS = { "预备队": 1, "U19 A": 1, "U19 B": 1, "SUB16": 1 };
+    const GONE = /已升|已转会|已离队|已租借|转会离队/;
     Object.keys(pool).forEach(function (k) {
       const e = pool[k];
-      if (!e.live && LIVE_TEAMS[e.team]) delete pool[k];
+      if (!e.live && GONE.test(e.note || "")) delete pool[k];
     });
   })();
 

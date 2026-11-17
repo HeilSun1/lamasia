@@ -66,9 +66,9 @@
 
   // ── 3) Sofascore 缓存（U19/U18/U16，补 data.js 没有的球员） ──
   [
-    { c: window.DQD_U19_CACHE, t: "U19 · Juvenil A", u: "teams/juvenil-a.html#sec-roster", k: "u19" },
-    { c: window.DQD_U18_CACHE, t: "U18 · Juvenil B", u: "teams/juvenil-b.html", k: "u18" },
-    { c: window.DQD_U16_CACHE, t: "U16 · Cadete A",  u: "teams/cadete.html", k: "u16" }
+    { c: window.DQD_U19_CACHE, t: window.Teams ? window.Teams.label("juvenil-a") : "U19 A", u: "teams/juvenil-a.html#sec-roster", k: "u19" },
+    { c: window.DQD_U18_CACHE, t: window.Teams ? window.Teams.label("juvenil-b") : "U19 B", u: "teams/juvenil-b.html", k: "u18" },
+    { c: window.DQD_U16_CACHE, t: window.Teams ? window.Teams.label("cadete") : "U16", u: "teams/cadete.html", k: "u16" }
   ].forEach(function (s) {
     if (!s.c || !s.c.players) return;
     s.c.players.forEach(function (p) {
