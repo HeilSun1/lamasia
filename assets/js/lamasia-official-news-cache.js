@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-17 21:02:20 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-17 23:34:27 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-17 21:02:20",
+    "updated":  "2026-11-17 23:34:27",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -167,13 +167,13 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4607914", "title":  "Victory and 90 minutes for Cancelo",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/e595ca72-4531-495a-8358-03c8240b2862/DAG-230-_M1A7951.jpg" },
+            {
                 "id":  "4610334", "title":  "Second session of the week",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610334/second-session-of-the-week", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/26e2aa42-6e9e-4a24-98de-273a64f642e7/image00010.jpeg" },
-            {
-                "id":  "4607914", "title":  "Barça internationals back in action",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/e595ca72-4531-495a-8358-03c8240b2862/DAG-230-_M1A7951.jpg" },
             {
                 "id":  "4609902", "title":  "Cubarsí and De Jong injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609902/cubarsi-and-de-jong-injury-news", "time":  "",

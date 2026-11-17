@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-17 21:00:55 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-17 23:34:03 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-17 21:00:55",
+    "updated":  "2026-11-17 23:34:03",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6664219", "title":  "将对话布斯克茨，每体：乌姆蒂蒂将推出新的电视节目",
+            "url":  "https://www.dongqiudi.com/articles/6664219.html", "time":  "2026-11-18 04:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FE/DA/280x210/crop/-/rBXRn2r8bkOAfwpaAAEufJkH0MY829.jpg" },
         {
             "id":  "6660526", "title":  "每体：巴萨小将迪亚拉腿筋伤势复发，预计缺阵3至4周",
             "url":  "https://www.dongqiudi.com/articles/6660526.html", "time":  "2026-11-17 02:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6575168", "title":  "每体：18岁门将伊克尔明日续约巴萨，合同至2029年",
             "url":  "https://www.dongqiudi.com/articles/6575168.html", "time":  "2026-10-29 21:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/DA/280x210/crop/-/rBXRDGrjRrKAER67AADm330mAlM736.jpg" },
-        {
-            "id":  "6574083", "title":  "阿斯：巴萨中卫伤病潮严重，拉玛西亚难立刻补人",
-            "url":  "https://www.dongqiudi.com/articles/6574083.html", "time":  "2026-10-29 17:34",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/85/280x210/crop/-/rBXRDGrjDbuAV3RwAAMbhHxaqHo110.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/DA/280x210/crop/-/rBXRDGrjRrKAER67AADm330mAlM736.jpg" }
     ]
 };

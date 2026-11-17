@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-17 21:02:37 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-17 23:34:29 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-17 21:02:37",
+    "updated":  "2026-11-17 23:34:29",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136549178", "title":  "El Barça se mueve para renovar al extremo más diferencial de La Masia: \"Es un animal y técnicamente muy bueno\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-mueve-renovar-extremo-diferencial-136549178", "time":  "2026-11-17 18:15",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/14c9b7d9-448b-4e54-b20c-ac17a8c2d410_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "136535420", "title":  "Triple comunicado médico del Barça Atlètic: Ávila, Diarra y Onstein, baja hasta 2027",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/lesiones-dani-avila-ibrahim-diarra-136535420", "time":  "2026-11-17 12:22",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9c3127da-544b-4067-9732-9cbf341252a0_16-9-discover-aspect-ratio_default_1532281.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9c3127da-544b-4067-9732-9cbf341252a0_16-9-discover-aspect-ratio_640w_1532281.webp" },
         {
             "id":  "136503899", "title":  "Impacto Destiny: el gran proyecto de '9' de La Masia marca un hat-trick al Espanyol y ya suma 16 goles en Liga",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/impacto-destiny-gran-proyecto-9-136503899", "time":  "2026-11-17 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6614c604-765b-4af1-8bfe-e27f533296d1_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/impacto-destiny-gran-proyecto-9-136503899", "time":  "2026-11-17 22:46",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6614c604-765b-4af1-8bfe-e27f533296d1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136448657", "title":  "Rajada monumental de Belletti",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/belletti-estalla-derrota-barca-atletic-136448657", "time":  "2026-11-14 19:59",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135546765", "title":  "Así está la clasificación de la Youth League 2026/27 tras el empate del Barcelona contra el PSG",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/clasificacion-youth-league-empate-barcelona-135546765", "time":  "2026-10-20 14:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/98518b8e-e509-4f99-8cfc-227fcb364de3_16-9-discover-aspect-ratio_640w_1520674.webp" },
-        {
-            "id":  "135505865", "title":  "A qué hora juega el Barcelona contra el PSG: dónde y cómo ver el partido de la Youth League por TV y en directo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/psg-barcelona-horario-como-ver-partido-youth-league-135505865", "time":  "2026-10-20 11:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9043f493-25f7-4301-b850-7068a23d1681_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/98518b8e-e509-4f99-8cfc-227fcb364de3_16-9-discover-aspect-ratio_640w_1520674.webp" }
     ]
 };
