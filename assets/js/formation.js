@@ -50,13 +50,14 @@
       pool[k] = {
         key: k, en: p.en || "", zh: p.zh || "", pos: p.pos || "", team: p.team || "",
         nation: p.nation || "", age: p.age || "", value: p.value || "", note: p.note || "",
-        img: p.img || "", src: p.src || "",
+        img: p.img || "", sf: (p.src === "sofascore" ? (p.img || "") : ""), src: p.src || "",
         mkeys: p.mkey ? [p.mkey] : []     // 各数据源对应的手动照片键（见 photoFor）
       };
     } else {
       const e = pool[k];
       if (!e.zh && p.zh) e.zh = p.zh;
       if (!e.img && p.img) e.img = p.img;
+      if (p.src === "sofascore" && p.img && !e.sf) e.sf = p.img;
       if (!e.en && p.en) e.en = p.en;
       if (!e.nation && p.nation) e.nation = p.nation;
       if (!e.age && p.age) e.age = p.age;
@@ -76,6 +77,20 @@
     return String(v).replace(/^\.\.\//, "").replace(/^\//, "");   // formation.html 就在站点根目录
   }
   function photoFor(p) {
+    /* 统一走 avatar.js 的链路（Sofascore 优先，手动图兜底/定点覆盖） */
+    if (window.AvatarChain) {
+      try {
+        const list = window.AvatarChain({
+          key: (p.mkeys && p.mkeys[0]) || "",
+          keys: p.mkeys || [],
+          en: p.en, zh: p.zh,
+          sf: p.sf || "",
+          img: p.img || "",
+          base: ""
+        });
+        if (list && list.length) return list[0];
+      } catch (e) {}
+    }
     const keys = p.mkeys || [];
     if (window.ManualPhoto) {
       for (let i = 0; i < keys.length; i++) {
@@ -151,6 +166,28 @@
     });
   }
 
+  /* 3.5) 预备队补齐 Sofascore 图：懂球帝名单里没有 sf id，但 sf 缓存里有同一个人，
+     按英文名对齐（与梯队页/球探卡保持同一张脸）。 */
+  (function fillSofascorePhotos() {
+    const caches = [
+      window.DQD_BARCA_ATLETIC_SF_CACHE, window.DQD_U19_CACHE,
+      window.DQD_U18_CACHE, window.DQD_U16_CACHE
+    ];
+    const byName = {};
+    caches.forEach(function (c) {
+      ((c && c.players) || []).forEach(function (p) {
+        const k = normKey(p.name || "");
+        if (!k || byName[k]) return;
+        byName[k] = p.photo || (p.id != null ? ("https://img.sofascore.com/api/v1/player/" + p.id + "/image") : "");
+      });
+    });
+    Object.keys(pool).forEach(function (k) {
+      const e = pool[k];
+      if (e.sf) return;
+      const hit = byName[normKey(e.en || "")] || byName[k];
+      if (hit) e.sf = hit;
+    });
+  })();
   // 转数组并排序（梯队顺序 → 姓名）
   const TEAM_ORDER = ["预备队", "U19 A", "U19 B", "U16", "U15", "U14", "U13", "U12", "U11 A", "U11 B", "U10 A", "U10 B", "U9 A", "U9 B"];
   const players = Object.keys(pool).map(function (k) { return pool[k]; });

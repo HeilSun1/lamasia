@@ -30,7 +30,12 @@
     "51246752.png": 1
   };
 
-  var DEFAULT_BASE = "../assets/img/players/";
+  /* 站点根相对路径需要补几层 ../：梯队页在 teams/ 下，其余页面都在根目录。
+     以前靠「base 里有没有 ../」猜，formation.html（根目录）传空 base 时就会算错。 */
+  var UP = (function () {
+    try { return /\/teams\//.test(location.pathname) ? "../" : ""; } catch (e) { return ""; }
+  })();
+  var DEFAULT_BASE = UP + "assets/img/players/";
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -77,8 +82,8 @@
     var s = String(u).trim();
     if (!s) return "";
     if (/^(data:|blob:|https?:)/i.test(s)) return s;
-    var up = /^\.\.\//.test(base) ? "../" : "";
-    if (s.indexOf("assets/img/players/") === 0) return up + s;
+    if (s.indexOf("assets/img/players/") === 0) return UP + s;
+    if (s.indexOf("assets/") === 0) return UP + s;
     return base + s.replace(/^\.\//, "").replace(/^\//, "");
   }
 
@@ -102,7 +107,8 @@
 
   function chain(p) {
     p = p || {};
-    var base = p.base || DEFAULT_BASE;
+    /* 显式传 base:"" 表示「路径已经是相对站点根」，不要回落成默认前缀 */
+    var base = (p.base === undefined || p.base === null) ? DEFAULT_BASE : p.base;
     var out = [];
     var seen = {};
 
@@ -113,11 +119,18 @@
       out.push(v);
     }
 
-    if (window.ManualPhoto) {
-      manualKeys(p).forEach(function (k) {
+    /* 顺序：Sofascore 优先；手动图只在没有 Sofascore 图、或该键被显式登记为
+       「Sofascore 这张是错的」时才生效（MANUAL_OVERRIDE，见 manual-photos.js）。 */
+    var overrideKeys = window.MANUAL_OVERRIDE || {};
+    var mKeys = manualKeys(p);
+    function pushManual(want) {
+      if (!window.ManualPhoto) return;
+      mKeys.forEach(function (k) {
+        if (want && !want(k)) return;
         try { push(window.ManualPhoto(k)); } catch (e) {}
       });
     }
+    pushManual(function (k) { return !!overrideKeys[k]; });
     push(p.sf);
     push(p.photo);
     if (p.key && window.PlayerCard && window.PlayerCard.photosFor) {
@@ -129,6 +142,7 @@
         ).forEach(push);
       } catch (e) {}
     }
+    pushManual(null);
     push(p.img);
     push(p.local);
     push(p.person_logo);

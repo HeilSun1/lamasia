@@ -76,3 +76,35 @@ local:<梯队>:<拼音>       例：local:juvenil-a:gorkabuil
   `dqd-barca-atletic.js` 用英文名把懂球帝名单对齐到 Sofascore 记录（`sfPhoto()`）。
 - 覆盖率（2026-11-17 实测）：B 队 38 人 → Sofascore 29 张；U19 A 33 人 33 张；
   U19 B 15 人 15 张；SUB16 42 人 42 张。
+---
+
+## D6 · Sofascore 有图就用手动图（2026-11-17 补，D2 的顺序被推翻）
+
+**结论**：链路改成 **Sofascore → 手动补图 → 本地图 → 首字母**。手动图不再是第一顺位，
+只在两种情况下生效：(a) 该球员没有 Sofascore 图；(b) 他的键被登记进
+`window.MANUAL_OVERRIDE`（`assets/js/manual-photos.js` 末尾），表示「Sofascore 这张是错的」。
+目前名单里只有 Samu Borniquel（`sf:u19:2407333`，Sofascore 挂的是 Gorka Buil 的脸）。
+
+**理由**：用户原话「以后 Sofascore 有头像的你就不要使用手动添加的头像了」。手动图里混着
+新闻图、三人合影、举旗全身照、老东家球衣照（见 D3 提到的六张），和 Sofascore 的正脸
+摆在一起反而不一致；Sofascore 缺图时手动图仍然兜底，不会掉到首字母。
+
+## D7 · 五个界面必须同时生效
+
+**结论**：头像出现在五处，改顺序要一起验证：梯队名单（`roster.js` / `dqd-*.js`）、
+球探卡（`scout-cards.js`）、集锦球员行（`highlights.js`）、球员卡弹窗
+（`player-card.js` 的 `renderCard()`，走 `AvatarChain` 而不是 `photosFor`）、
+排兵布阵（`formation.js` 的 `photoFor()`）。
+
+**理由**：2026-11-17 第一次改只动了名单和球探卡，用户立刻发现「点开球员卡片」和
+「排兵布阵」还是老样子——因为这两处各自有独立实现。`player-card.js` 的 `keyRank()`
+也一并改成 `sf:` 排第一，否则 `photosFor()` 的候选顺序会把手动图顶到前面。
+
+## D8 · 相对路径按页面层数推算
+
+**结论**：`avatar.js` 用 `location.pathname` 判断是否在 `teams/` 下，决定补不补 `../`，
+写进 `UP` 常量；`DEFAULT_BASE = UP + "assets/img/players/"`。调用方传 `base` 不再影响
+`assets/` 开头的路径。
+
+**理由**：`formation.html` 在站点根目录，之前传空 `base` 会回落到默认的 `../assets/...`，
+排兵布阵里所有头像都 404，变成首字母——这就是「排兵布阵的头像没变」的真正原因。

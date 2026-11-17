@@ -40,3 +40,9 @@ window.MANUAL_PHOTOS = {
   "local:juvenil-a:samuborniquel": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg",
   "sf:u19:2407333": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg"
 };
+/* 定点覆盖：这些键的手动图排在 Sofascore 之前（因为 Sofascore 那张是错的）。
+   新增时把对应键填进来即可，例如 "sf:u19:2407333": 1。 */
+window.MANUAL_OVERRIDE = {
+  "sf:u19:2407333": 1,
+  "local:juvenil-a:samuborniquel": 1
+};

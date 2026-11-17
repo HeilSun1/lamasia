@@ -324,12 +324,12 @@
      ② 其他键（local: 官方名单 > b: 懂球帝 > sf: Sofascore）
      ③ 同姓名/别名的其他记录（跨梯队合并、昵称如 Dany ↔ Daniel）
      渲染端把 ① 作为 src，其余塞进 data-alt，图片 404 时由 PC_IMG_FALLBACK 依次重试。 */
+  /* 2026-11-17：Sofascore 图优先，本地图（懂球帝镜像）退居兜底 */
   function keyRank(k) {
-    if (/^local:/.test(k)) return 0;
+    if (/^sf:/.test(k)) return 0;
     if (/^b:/.test(k)) return 1;
-    if (/^sf:b:/.test(k)) return 2;
-    if (/^sf:/.test(k)) return 3;
-    return 4;
+    if (/^local:/.test(k)) return 2;
+    return 3;
   }
   function nameFamily(names) {
     var fam = {};
@@ -430,7 +430,13 @@
 
   function renderCard(r) {
     var ini = initials(r.nameEn || r.nameZh || "?");
-    var pics = photosFor(curKey, [r.nameEn]);
+    var pics = [];
+    if (window.AvatarChain) {
+      try {
+        pics = window.AvatarChain({ key: curKey, en: r.nameEn, zh: r.nameZh, base: "assets/" }) || [];
+      } catch (e) { pics = []; }
+    }
+    if (!pics.length) pics = photosFor(curKey, [r.nameEn]);
     document.getElementById("pc-avatar").innerHTML = pics.length
       ? '<img src="' + esc(pics[0]) + '" alt="' + esc(r.nameZh || r.nameEn) + '" data-zh="' + esc(r.nameZh || r.nameEn) + '"' +
         (pics.length > 1 ? ' data-alt="' + esc(pics.slice(1).join("|")) + '"' : "") +
