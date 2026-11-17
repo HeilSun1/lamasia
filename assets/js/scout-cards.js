@@ -44,6 +44,16 @@
   // （local 名单键 > 懂球帝 > Sofascore，同人多键按姓名族合并），
   // 所以同一名球员在球探卡、梯队页、集锦页、球员卡里显示的是同一张图。
   function photoChain(c) {
+    // 先走全站统一链路（手动图 → Sofascore → 本地图），保证四个界面同一张脸
+    if (window.AvatarChain) {
+      try {
+        var chain = window.AvatarChain({
+          name: c.en, en: c.en, zh: c.zh, key: c.key,
+          sf: c.sf, img: c.img, base: "assets/img/players/"
+        });
+        if (chain && chain.length) return chain;
+      } catch (e) {}
+    }
     var out = [];
     try {
       if (window.PlayerCard && window.PlayerCard.photosFor) {

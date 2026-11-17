@@ -13,9 +13,6 @@
   const POS_CLASS = { GK: "gk", DF: "df", MF: "mf", FW: "fw" };
   const POS_ZH = { GK: "门将", DF: "后卫", MF: "中场", FW: "前锋" };
 
-  function initials(name) {
-    return name.split(/[\s.]+/).filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join("");
-  }
   // 球员卡片索引键（与 player-card.js 的 norm 一致）
   function normKey(s) {
     return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
@@ -25,20 +22,8 @@
     return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  /* 手动补的照片（tools/photo-tool.html 写入 localStorage / 上线的 manual-photos.js）。
-     键与上面的 data-player-key 一致：local:<teamId>:<normKey(name)>，所以工具里按官方名单
-     补的照片能直接落到这一行。只在官方名单本来没有照片时补空位，不动已收录的照片与来源标注。
-     值可能是 data:（工具内嵌）、http(s):（贴的直链）或站点根相对路径（上线文件）。 */
-  function manualPhoto(teamId, p) {
-    if (p.img || !window.ManualPhoto || !p.name) return "";
-    try { return window.ManualPhoto("local:" + teamId + ":" + normKey(p.name)) || ""; }
-    catch (e) { return ""; }
-  }
-  function manualSrc(v, base) {
-    if (/^(data:|blob:|https?:)/i.test(v)) return v;
-    const lead = /^\.\.\//.test(base) ? "../" : "";              // 页面在 teams/ 下，回退一级
-    return lead + String(v).replace(/^\.\.\//, "").replace(/^\//, "");
-  }
+  /* 头像与「手动补图」都在 assets/js/avatar.js 里统一处理，
+     本文件只负责行结构与灯箱。 */
 
   function render(teamId, elId, imgBase) {
     const base = imgBase || "assets/img/players/";
@@ -54,16 +39,14 @@
       if (!ps.length) continue;
       html += `<div class="pl-group">${title} <span style="opacity:.55;font-weight:600">· ${ps.length} 人</span></div>`;
       for (const p of ps) {
-        const manual = manualPhoto(teamId, p);                    // 手动补的空位（官方名单没有照片时）
-        const credit = (!manual && p.imgCredit) ? `（图片来源：${esc(p.imgCredit)}）` : "";
-        const src = manual ? manualSrc(manual, base) : (p.img ? `${base}${p.img}` : "");
-        const ini = esc(initials(p.name));
-        // 图片不存在/加载失败时自动回退为首字母头像；点击照片可放大查看
-        const avatar = `
-          <span class="pl-avatar">
-            ${src ? `<img src="${esc(src)}" alt="${esc(p.zh || p.name)}${credit}" title="点击查看大图" loading="lazy" data-zh="${esc(p.zh || p.name)}" data-credit="${manual ? "" : esc(p.imgCredit || "")}" data-src-url="${manual ? "" : esc(p.imgUrl || "")}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">` : ""}
-            <span class="pl-init" style="${src ? "display:none" : "display:grid"}">${ini}</span>
-          </span>`;
+        const credit = p.imgCredit ? `（图片来源：${p.imgCredit}）` : "";
+        // 头像统一走 avatar.js：手动图 → Sofascore → 本地图 → 首字母
+        const avatar = window.AvatarHtml({
+          name: p.name, en: p.name, zh: p.zh, img: p.img, tier: teamId, base: base,
+          alt: `${p.zh || p.name}${credit}`
+        }, {
+          attrs: `title="点击查看大图" data-zh="${esc(p.zh || p.name)}" data-credit="${esc(p.imgCredit || "")}" data-src-url="${esc(p.imgUrl || "")}"`
+        });
         html += `
           <div class="pl-row">
             <span class="pl-num">${esc(p.num || "—")}</span>

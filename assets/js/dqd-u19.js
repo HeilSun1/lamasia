@@ -232,12 +232,10 @@
     injured.forEach(function (p) {
       const zh = lookupZh(p.name, zhMap) || {};
       const display = zh.zh || p.name || "";
-      if (window.ManualPhoto) { const m = window.ManualPhoto("u19:" + p.id); if (m) p.photo = m; }
-      const ini = esc(initials(p.name)) || "·";
-      const avatar = '<span class="pl-avatar">' +
-        (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
-          ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-        '<span class="pl-init" style="' + (p.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
+      const avatar = window.AvatarHtml({
+        name: p.name, en: p.name, zh: display, id: p.id, photo: p.photo, tier: "juvenil-a",
+        base: "../assets/img/players/"
+      });
       html +=
         '<div class="dqd-inj-row">' + avatar +
         '<div class="dqd-inj-info">' +
@@ -274,13 +272,12 @@
     const coach = (data && data.coach) || (window.DQD_U19_CACHE && window.DQD_U19_CACHE.coach) || null;
     if (coach && coach.name) {
       const c = coach;
-      if (window.ManualPhoto) { const m = window.ManualPhoto("u19:coach-" + c.id); if (m) c.photo = m; }
-      const ini = esc(initials(c.name)) || "·";
-      const avatar = '<span class="pl-avatar">' +
-        (c.photo ? '<img src="' + esc(c.photo) + '" alt="' + esc(c.name) + '" loading="lazy" referrerpolicy="no-referrer"' +
-          ' data-zh="' + esc(c.name) + '" data-credit="Sofascore" data-src-url="' + esc(c.photo) + '"' +
-          ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-        '<span class="pl-init" style="' + (c.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
+      const avatar = window.AvatarHtml({
+        name: c.name, en: c.name, id: "coach-" + c.id, photo: c.photo, tier: "juvenil-a",
+        base: "../assets/img/players/"
+      }, {
+        attrs: 'data-zh="' + esc(c.name) + '" data-credit="Sofascore" data-src-url="' + esc(c.photo || "") + '"'
+      });
       html += '<div class="pl-group">教练组 <span style="opacity:.55;font-weight:600">· 1 人</span></div>' +
         '<div class="pl-row">' +
           '<span class="pl-num">—</span>' + avatar +
@@ -301,18 +298,18 @@
       ps.forEach(function (p) {
         const zh = lookupZh(p.name, zhMap) || {};
         const display = zh.zh || p.name || "";          // 优先官方名单的中文名
-        if (window.ManualPhoto) { const m = window.ManualPhoto("u19:" + p.id); if (m) p.photo = m; }
-        const ini  = esc(initials(p.name)) || "·";
+
         const injBadge = (p.injury && p.injury.status === "out")
           ? '<span class="pl-inj" title="伤病：' + esc(p.injury.reason) +
             (p.injury.expected ? "，预计 " + esc(p.injury.expected) + " 复出" : "") + '">伤</span>' : "";
         const teamTag = p.team && p.team !== "Barcelona U19"
           ? '<span class="u19-team-tag" title="Sofascore 当前所属球队">' + esc(p.team.replace("Barcelona ", "巴萨")) + "</span>" : "";
-        const avatar = '<span class="pl-avatar">' +
-          (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(display) + '" loading="lazy" referrerpolicy="no-referrer"' +
-            ' data-zh="' + esc(display) + '" data-credit="Sofascore" data-src-url="' + esc(p.photo) + '"' +
-            ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-          '<span class="pl-init" style="' + (p.photo ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
+        const avatar = window.AvatarHtml({
+          name: p.name, en: p.name, zh: display, id: p.id, key: "sf:u19:" + p.id,
+          photo: p.photo, tier: "juvenil-a", base: "../assets/img/players/"
+        }, {
+          attrs: 'data-zh="' + esc(display) + '" data-credit="Sofascore" data-src-url="' + esc(p.photo || "") + '"'
+        });
         html +=
           '<div class="pl-row">' +
             '<span class="pl-num">' + esc(p.shirt || "—") + "</span>" +

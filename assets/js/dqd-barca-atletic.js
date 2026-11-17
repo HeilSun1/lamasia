@@ -55,6 +55,27 @@
     return pl;
   }
 
+  /* Sofascore 头像映射：懂球帝名单只有懂球帝 id，按英文名对齐到 Sofascore 缓存
+     （D5 决策：B 队页也以 Sofascore 为主，本地镜像兜底）。 */
+  function normName(s) {
+    return String(s || "").toLowerCase().normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
+  }
+  let SF_MAP = null;
+  let SF_STAMP = "";
+  function sfPhoto(name) {
+    const c = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    const stamp = (c && c.updated) || "";
+    if (!SF_MAP || stamp !== SF_STAMP) {
+      SF_MAP = {};
+      SF_STAMP = stamp;
+      ((c && c.players) || []).forEach(function (p) {
+        if (p && p.name && p.photo) SF_MAP[normName(p.name)] = p.photo;
+      });
+    }
+    return SF_MAP[normName(name)] || "";
+  }
+
   /* ── 球员名单（按位置分组） ── */
   function renderRoster(data) {
     const el = $("dqd-roster");
@@ -82,9 +103,8 @@
         const name   = p.person_name || "";
         const en     = p.person_en_name || "";
         const num    = p.shirtnumber || "—";
-        const src    = photoSrc(p);
-        const srcUrl = p.person_logo_url || src;       // 版权来源（CDN 原地址）
-        const ini    = esc(initials(en || name)) || "·";
+        const srcUrl = p.person_logo_url || photoSrc(p);   // 版权来源（CDN 原地址）
+        const sfPic  = sfPhoto(en || name);
         // 伤病标记（数据来自每日缓存，按 person_id 匹配）
         const inj = (window.DQD_BARCA_ATLETIC && window.DQD_BARCA_ATLETIC.injuries_map)
           ? window.DQD_BARCA_ATLETIC.injuries_map[p.person_id] : null;
@@ -92,13 +112,14 @@
           ? '<span class="pl-inj" title="伤病：' + esc(inj.injury || "") +
             '（' + esc(inj.date_from || "") + ' ~ ' + esc(inj.date_until || "归期未定") + '）">伤</span>'
           : "";
-        const avatar =
-          '<span class="pl-avatar">' +
-            (src ? '<img src="' + esc(src) + '" alt="' + esc(name) + '" loading="lazy"' +
-              ' data-zh="' + esc(name) + '" data-credit="懂球帝 Dongqiudi" data-src-url="' + esc(srcUrl) + '"' +
-              ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-            '<span class="pl-init" style="' + (src ? "display:none" : "display:grid") + '">' + ini + '</span>' +
-          '</span>';
+        const avatar = window.AvatarHtml({
+          name: name, en: en || name, zh: name, id: p.person_id,
+          person_logo: p.person_logo, sf: sfPic, tier: "barca-atletic",
+          base: "../assets/img/players/"
+        }, {
+          attrs: 'data-zh="' + esc(name) + '" data-credit="' + (sfPic ? "Sofascore" : "懂球帝 Dongqiudi") +
+            '" data-src-url="' + esc(sfPic || srcUrl) + '"'
+        });
         html +=
           '<div class="pl-row">' +
             '<span class="pl-num">' + esc(num) + '</span>' +
@@ -134,13 +155,11 @@
       (updated ? ' <span style="opacity:.55;font-weight:600">（每日更新 · ' + esc(updated) + '）</span>' : '') +
       '</div>';
     list.forEach(function (p) {
-      const src    = p.photo || "";
-      const ini    = esc(initials(p.en || p.name)) || "·";
-      const avatar = '<span class="pl-avatar">' +
-        (src ? '<img src="' + esc(photoSrc({ person_logo: src })) + '" alt="' + esc(p.name) + '" loading="lazy"' +
-          ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-        '<span class="pl-init" style="' + (src ? "display:none" : "display:grid") + '">' + ini + '</span>' +
-        '</span>';
+      const avatar = window.AvatarHtml({
+        name: p.name, en: p.en || p.name, zh: p.name, id: p.person_id,
+        photo: p.photo, sf: sfPhoto(p.en || p.name), tier: "barca-atletic",
+        base: "../assets/img/players/"
+      });
       html +=
         '<div class="dqd-inj-row">' + avatar +
         '<div class="dqd-inj-info">' +
