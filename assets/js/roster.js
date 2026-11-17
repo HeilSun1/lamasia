@@ -33,46 +33,15 @@
     "cadete": "DQD_U16_CACHE"
   };
 
-  /* 本地名单与实时名单的重合情况。返回 null 表示不该过滤（没有缓存、或重合度够高）。 */
-  function filterByLive(teamId, squad) {
-    const key = LIVE_CACHE[teamId];
-    if (!key) return null;
-    const cache = window[key];
-    const live = (cache && cache.players) || [];
-    if (!live.length) return null;
-    const liveNorm = live.map(function (p) { return normKey(p.name); });
-    const kept = squad.filter(function (p) {
-      const n = normKey(p.name);
-      if (!n) return true;
-      if (liveNorm.indexOf(n) >= 0) return true;
-      // 全名/简称写得不一样时，退一步用「一方包含另一方」兜底
-      return liveNorm.some(function (l) {
-        return l && (l.indexOf(n) >= 0 || n.indexOf(l) >= 0) && Math.min(l.length, n.length) >= 6;
-      });
-    });
-    const missRatio = (squad.length - kept.length) / squad.length;
-    // 只有本地名单明显过期（超过四分之一对不上）才过滤，避免把「官方名单里的边缘球员」误删
-    if (!kept.length || missRatio < 0.25) return null;
-    return kept;
-  }
-
   function render(teamId, elId, imgBase) {
     const base = imgBase || "assets/img/players/";
     const el = document.getElementById(elId);
-    /* 缓存脚本排在 roster.js 后面，首帧可能还没加载；等 DOMContentLoaded 再渲染一次 */
-    const _lk = LIVE_CACHE[teamId];
-    if (el && _lk && !window[_lk] && !el.getAttribute("data-live-wait")) {
-      el.setAttribute("data-live-wait", "1");
-      document.addEventListener("DOMContentLoaded", function () { render(teamId, elId, imgBase); });
-      return;
-    }
+
     if (!el || !window.LAMASIA_DATA || !LAMASIA_DATA.players || !LAMASIA_DATA.players[teamId]) {
       if (el) el.innerHTML = '<div class="match-list-empty">暂无名单数据</div>';
       return;
     }
-    let squad = LAMASIA_DATA.players[teamId];
-    const filtered = filterByLive(teamId, squad);
-    if (filtered) squad = filtered;
+    const squad = LAMASIA_DATA.players[teamId];
     let html = "";
     for (const [code, title] of POS_ORDER) {
       const ps = squad.filter(p => p.pos === code);
@@ -113,18 +82,13 @@
     }
     applyPositions(squad);
     el.innerHTML = html;
-    /* 过滤生效时，把这一块的抬头一起改成「实时名单」，否则标题还写着「官方名单 · 28 人」，
-       和下面的行数对不上（同一块数据的两处文字也必须同源）。 */
-    if (filtered) {
-      const panel = el.closest ? el.closest(".panel") : null;
-      if (panel) {
-        const tag = panel.querySelector("h3 .tag");
-        if (tag) tag.textContent = "Sofascore 实时名单 · 每日更新";
-        const badge = panel.querySelector(".badge");
-        if (badge) badge.textContent = "实时 · " + squad.length + " 人";
-        const desc = panel.querySelector(".p-desc");
-        if (desc) desc.textContent = "名单与 Sofascore 实时数据同步：升队或离队的球员不再列出，个别姓名写法与官方名单图存在差异。低龄梯队的名单仍来自本站手工收录。";
-      }
+    /* 徽标人数以前是手写死的（juvenil-b 写 28 人、实际 26 行），这里按真实行数改一次 */
+    const badgeEl = el.parentNode ? el.parentNode.querySelector(".badge") : null;
+    if (badgeEl) {
+      const txt = badgeEl.textContent.trim();
+      badgeEl.textContent = /·\s*\d+\s*人$/.test(txt)
+        ? txt.replace(/·\s*\d+\s*人$/, "· " + squad.length + " 人")
+        : squad.length + " 人";
     }
   }
 
