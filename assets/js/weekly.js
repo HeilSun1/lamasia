@@ -141,20 +141,9 @@
   // 单条渲染
   var SRC_CLASS = { "B队": "b", "U19": "u", "U18": "u18", "U16": "u16", "官方·B队": "f", "官方·一队": "f", "Sport": "s", "MD": "m", "周报": "w" };
   function itemHtml(n) {
-    var srcClass = SRC_CLASS[n.source] || "w";
-    var nkey = n.id || n.url;
-    return '<a class="news-item" data-key="' + esc(nkey) + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">' +
-      (n.img ? '<img class="news-item__img" src="' + esc(n.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\'">' : '') +
-      '<span class="news-item__body">' +
-        '<span class="news-item__title" title="' + esc(n.title) + '">' + esc((window.NEWS_ZH && window.NEWS_ZH[n.title]) || n.title) + '</span>' +
-        '<span class="news-item__meta">' +
-          '<span class="news-item__src news-item__src--' + srcClass + '">' + esc(n.source) + '</span>' +
-          (n.issue ? '<span class="news-item__tag">第 ' + esc(n.issue) + ' 期</span>' : '') +
-          (n.tag && n.tag !== "足球" ? '<span class="news-item__tag">' + esc(n.tag) + '</span>' : '') +
-          '<span class="news-item__time">' + esc(n.time) + '</span>' +
-        '</span>' +
-      '</span>' +
-    '</a>';
+    return window.NewsItem.html(n, {
+      src: n.source, srcClass: SRC_CLASS[n.source] || "w", skipTag: "足球"
+    });
   }
 
   function render() {

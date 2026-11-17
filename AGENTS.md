@@ -62,3 +62,13 @@ $t = [System.IO.File]::ReadAllText($p, [System.Text.Encoding]::UTF8)
 - 数据更新由任务自己 commit + push（`ssh.github.com:443`，直连 github.com 在本机不通）
 - 别用 `git add -A`：`work/`、`scripts/dqd_sched.json` 这类临时物会被扫进提交，只 `git add` 具体文件
 - `work/` 是排障用的临时目录，不属于站点内容
+## 六、改跨页面数据前，先查 `docs/surfaces.md`
+
+**规则**：任何会影响多个页面的数据（头像、中文名、新闻标题、梯队标签、赛程、伤病、集锦分组）在动手前，
+先打开 `docs/surfaces.md` 找到该主题的「消费方」列表，把这次要同时改的文件写出来；改完按「验证页」逐页截图。
+
+**为什么**：这个站点把同一条数据复制了好几份实现（头像曾有 3 套、新闻条目曾有 6 个渲染器、中文名曾有 3 张表）。
+只改离报错最近的那一处，用户会立刻在另一处看到不一致——2026-11 连着踩了三次。
+
+**已经收敛的**：头像走 `assets/js/avatar.js`，中文名走 `assets/js/name-zh.js`，新闻条目走 `assets/js/news-item.js`。
+新增页面/渲染器时，把新出口补进 `docs/surfaces.md`，不要另写一份。
