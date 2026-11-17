@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-16 21:00:50 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-17 00:19:12 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-16 21:00:50",
+    "updated":  "2026-11-17 00:19:12",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6660526", "title":  "每体：巴萨小将迪亚拉腿筋伤势复发，预计缺阵3至4周",
+            "url":  "https://www.dongqiudi.com/articles/6660526.html", "time":  "2026-11-17 02:18",
+            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/FB/280x210/crop/-/rBXRDGr7KdaAJU9aAAGoTC4N0bU247.jpg" },
+        {
+            "id":  "6660184", "title":  "每体：加里巴经检查后发现仅轻微肌肉负荷过重，伤情无大碍",
+            "url":  "https://www.dongqiudi.com/articles/6660184.html", "time":  "2026-11-16 23:17",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/64/280x210/crop/-/rBXRDGr6yeOAT4s0AAEB2Calj6o063.jpg" },
         {
             "id":  "6659954", "title":  "巴萨官方：一线队休整5天后恢复训练，奥尔莫随队开练",
             "url":  "https://www.dongqiudi.com/articles/6659954.html", "time":  "2026-11-16 20:59",
@@ -12,6 +20,10 @@ window.DQD_BARCA_NEWS = {
             "id":  "6659596", "title":  "每体：巴萨竞技后卫加里巴在周末联赛中受伤，他在赛...",
             "url":  "https://www.dongqiudi.com/articles/6659596.html", "time":  "2026-11-16 17:00",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FC/5D/280x210/crop/-/rBXRDGr6xhSAD4MIAAEEe1xAMZ4758.jpg" },
+        {
+            "id":  "6659469", "title":  "昂斯坦vs赫罗纳B队个人集锦。此前一直因伤病未能...",
+            "url":  "https://www.dongqiudi.com/articles/6659469.html", "time":  "2026-11-16 16:07",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/16/2e885d1d2a184c6e93cf24103e40174ecP89Me_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6659461", "title":  "世体：巴萨竞技前锋诺莫科恢复有球训练，球队预计他1月复出",
             "url":  "https://www.dongqiudi.com/articles/6659461.html", "time":  "2026-11-16 16:06",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6573074", "title":  "布斯克茨与15岁的边锋门迪卡诺夫。",
             "url":  "https://www.dongqiudi.com/articles/6573074.html", "time":  "2026-10-29 09:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D6/C4/280x210/crop/-/rBXRn2rinIGAM9vKAAVC7Bzjzjc046.jpg" },
-        {
-            "id":  "6571030", "title":  "每体：通卡拉再次跟随巴萨一线队训练，争取战阿拉维斯",
-            "url":  "https://www.dongqiudi.com/articles/6571030.html", "time":  "2026-10-29 00:27",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D5/E0/280x210/crop/-/rBXRDGriGfGAPbloAADmJV7r-a8190.jpg" },
-        {
-            "id":  "6570363", "title":  "巴萨官方：休整后球队已恢复训练，通卡拉和哈姆扎加入训练",
-            "url":  "https://www.dongqiudi.com/articles/6570363.html", "time":  "2026-10-28 21:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D5/8F/280x210/crop/-/rBXRn2rh5xOAdnDIAAEY1pQSn_c994.jpg" },
-        {
-            "id":  "6561439", "title":  "世体：埃斯帕特伤缺近两个月，弗里克启用青训应急",
-            "url":  "https://www.dongqiudi.com/articles/6561439.html", "time":  "2026-10-27 01:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D1/77/280x210/crop/-/rBXRn2rfkSmAAkrYAAA63kGIjTw917.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D6/C4/280x210/crop/-/rBXRn2rinIGAM9vKAAVC7Bzjzjc046.jpg" }
     ]
 };

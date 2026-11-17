@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-16 21:02:01 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-17 00:19:36 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-16 21:02:01",
+    "updated":  "2026-11-17 00:19:36",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -167,13 +167,17 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
-                "id":  "4609818", "title":  "Olmo, part of session with squad",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/93dbaf99-beaa-4466-b34a-822f6fc1a2c5/WhatsApp-Image-2026-11-16-at-12.56.56-3-.jpeg" },
-            {
                 "id":  "4607914", "title":  "Gordon wins battle of Culers",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/b966d63e-4d0f-40b1-99f3-a039b39d297b/_MGA5167.jpg" },
+            {
+                "id":  "4609902", "title":  "Cubarsí and De Jong injury news",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609902/cubarsi-and-de-jong-injury-news", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/06311fe7-cf8a-47d2-b650-50196b24f427/2026-10-31_FCBvsALAVES_064.jpg" },
+            {
+                "id":  "4609818", "title":  "Olmo, part of session with squad",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/93dbaf99-beaa-4466-b34a-822f6fc1a2c5/WhatsApp-Image-2026-11-16-at-12.56.56-3-.jpeg" },
             {
                 "id":  "4609338", "title":  "Back at the Metropolitano",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
@@ -361,11 +365,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4601684", "title":  "PREVIEW | Barça v Alavés",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601684/preview-fc-barcelona-v-alaves", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4601420", "title":  "Last session before Alavés",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601420/last-session-before-alaves", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/30/2419ce97-233d-4906-8ba9-aeab05b46aaa/WhatsApp-Image-2026-10-30-at-12.56.31.jpeg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };

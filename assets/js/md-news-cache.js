@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-16 21:02:19 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-17 00:19:39 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-16 21:02:19",
+    "updated":  "2026-11-17 00:19:39",
     "source":  "md",
     "count":  50,
     "news":  [
         {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251830/pol-planas-posa-entrenador-dinamo-zagreb-b.html", "title":  "Pol Planas ya posa como entrenador del Dinamo de Zagreb B",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251830/pol-planas-posa-entrenador-dinamo-zagreb-b.html", "time":  "2026-11-16 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/16/6afb61fe4f179.r_d.866-410-9259.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251671/ebrima-calidad-pocos-jugadores-le-he-visto.html", "title":  "Ebrima tiene una calidad que he visto en pocos jugadores",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251671/ebrima-calidad-pocos-jugadores-le-he-visto.html", "time":  "2026-11-16 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/27/6ae11df78c7c8.r_d.1498-813-4000.jpeg" },
+        {
             "id":  "https://www.mundodeportivo.com/baloncesto/acb/20261116/1004251520/abdu-kone-debutante-barca-he-visto-mis-companeros-celebraban-me-hecho-ilusion.html", "title":  "Abdu Kone, debutante con el Barça: Cuando he visto que mis compañeros lo celebraban, me ha hecho mucha ilusión",
             "url":  "https://www.mundodeportivo.com/baloncesto/acb/20261116/1004251520/abdu-kone-debutante-barca-he-visto-mis-companeros-celebraban-me-hecho-ilusion.html", "time":  "2026-11-16 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/15/6af9fef57ae5f.r_d.1345-1032-5299.jpeg" },
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/16/6afb0eaf08ea3.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "title":  "Álex Valle: Me encanta Flick como entrenador",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251332/alex-valle-me-encanta-flick-entrenador.html", "time":  "2026-11-15 12:00",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "title":  "Impresionan, eran chicos a los que había visto en La Masia durante mis dos años en el Barça",
             "url":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/29/6abc1addb8805.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "title":  "El increíble viaje de una perla onubense: de Dubai al Barça tras los pasos de Fermín",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004233090/viaje-talento-onubense-jose-antonio-ahumada-dubai-barca-pasos-fermin.html", "time":  "2026-09-30 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/30/6abd497060730.r_d.570-662-12500.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "title":  "Los intangibles del Barça",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20260929/1004232284/intangibles-barca.html", "time":  "2026-09-29 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/author_twitter_meta/uploads/1970/01/01/60d5bf438d2b7.png" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/29/6abc1addb8805.jpeg" }
     ]
 };
