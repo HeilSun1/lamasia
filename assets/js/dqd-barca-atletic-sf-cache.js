@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-16 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-17 09:48 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-16 21:00:49",
+    "updated":  "2026-11-17 09:48:45",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -14,21 +14,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                   "photo":  "https://img.sofascore.com/api/v1/manager/796414/image"
               },
     "players":  [
-                    {
-                        "name":  "Hamza Abdelkarim",
-                        "id":  "1961596",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Egypt",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "双脚",
-                        "height":  "182",
-                        "value":  "820万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ibrahim Diarra",
                         "id":  "1542744",
@@ -125,21 +110,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Vicens Ponsati",
-                        "id":  "2014710",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-29",
-                        "foot":  "左脚",
-                        "height":  "176",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Joni Hernández",
                         "id":  "2679425",
                         "pos":  "F",
@@ -167,21 +137,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "177",
                         "value":  "18万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Jesse Bisiwu",
-                        "id":  "1506988",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Belgium",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-22",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "780万",
                         "injury":  null
                     },
                     {
@@ -470,21 +425,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Teixidor",
-                        "id":  "1926082",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-28",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Sergi Mayans",
                         "id":  "2128115",
                         "pos":  "D",
@@ -519,7 +459,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "1929977",
                         "pos":  "G",
                         "shirt":  "",
-                        "team":  "FC Barcelona",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
                         "age":  "19岁",
@@ -556,21 +496,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2007-03-02",
                         "foot":  "右脚",
                         "height":  "188",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Gerard Sala",
-                        "id":  "2229916",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-25",
-                        "foot":  "右脚",
-                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     }

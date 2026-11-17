@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-16 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-17 09:49 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-16 21:01:09",
+    "updated":  "2026-11-17 09:49:04",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -8,57 +8,8 @@ window.DQD_U19_CACHE = {
                  "country":  "Spain",
                  "logo":  "https://img.sofascore.com/api/v1/team/90128/image"
              },
-    "coach":  {
-                  "name":  "Pol Planas",
-                  "id":  "813788",
-                  "photo":  "https://img.sofascore.com/api/v1/manager/813788/image"
-              },
+    "coach":  null,
     "players":  [
-                    {
-                        "name":  "Hamza Abdelkarim",
-                        "id":  "1961596",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Egypt",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1961596/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-01",
-                        "foot":  "双脚",
-                        "height":  "182",
-                        "value":  "820万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Shane Kluivert",
-                        "id":  "1657202",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Netherlands",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1657202/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-09-24",
-                        "foot":  "右脚",
-                        "height":  "178",
-                        "value":  "46万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Òscar Gistau",
-                        "id":  "1539491",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1539491/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-03-08",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "5万",
-                        "injury":  null
-                    },
                     {
                         "name":  "Ajay Tavares",
                         "id":  "1861694",
@@ -105,33 +56,18 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Roberto Tomás",
-                        "id":  "2607839",
+                        "name":  "Nil Vicens Ponsati",
+                        "id":  "2014710",
                         "pos":  "F",
                         "shirt":  "",
                         "team":  "Barcelona U19",
                         "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-02-20",
-                        "foot":  "右脚",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-07-29",
+                        "foot":  "左脚",
                         "height":  "176",
                         "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Joni Hernández",
-                        "id":  "2679425",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2679425/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-05-22",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "5万",
                         "injury":  null
                     },
                     {
@@ -236,6 +172,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-08-08",
                         "foot":  "右脚",
                         "height":  "185",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Roberto Tomás",
+                        "id":  "2607839",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2607839/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-02-20",
+                        "foot":  "右脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -349,7 +300,7 @@ window.DQD_U19_CACHE = {
                         "id":  "1926082",
                         "pos":  "D",
                         "shirt":  "",
-                        "team":  "Barcelona Atlètic",
+                        "team":  "Barcelona U19",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
                         "age":  "18岁",
@@ -495,21 +446,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Eder Aller",
-                        "id":  "1929977",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1929977/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-04-04",
-                        "foot":  "右脚",
-                        "height":  "194",
-                        "value":  "10万",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Max Bonfill",
                         "id":  "1620575",
                         "pos":  "G",
@@ -521,6 +457,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2007-03-02",
                         "foot":  "右脚",
                         "height":  "188",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Gerard Sala",
+                        "id":  "2229916",
+                        "pos":  "G",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2229916/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-25",
+                        "foot":  "右脚",
+                        "height":  "187",
                         "value":  "",
                         "injury":  null
                     },

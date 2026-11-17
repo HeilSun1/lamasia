@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-17 00:19:12 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-17 09:48:46 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-17 00:19:12",
+    "updated":  "2026-11-17 09:48:46",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6661087", "title":  "每体：欧冠联赛阶段结束后，巴萨可在2月4日前注册...",
+            "url":  "https://www.dongqiudi.com/articles/6661087.html", "time":  "2026-11-17 08:28",
+            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FD/C1/280x210/crop/-/rBXRDGr7n5qAC53VAEWMkI5UfNM247.jpg" },
         {
             "id":  "6660526", "title":  "每体：巴萨小将迪亚拉腿筋伤势复发，预计缺阵3至4周",
             "url":  "https://www.dongqiudi.com/articles/6660526.html", "time":  "2026-11-17 02:18",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6574083", "title":  "阿斯：巴萨中卫伤病潮严重，拉玛西亚难立刻补人",
             "url":  "https://www.dongqiudi.com/articles/6574083.html", "time":  "2026-10-29 17:34",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/85/280x210/crop/-/rBXRDGrjDbuAV3RwAAMbhHxaqHo110.jpg" },
-        {
-            "id":  "6573074", "title":  "布斯克茨与15岁的边锋门迪卡诺夫。",
-            "url":  "https://www.dongqiudi.com/articles/6573074.html", "time":  "2026-10-29 09:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D6/C4/280x210/crop/-/rBXRn2rinIGAM9vKAAVC7Bzjzjc046.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/85/280x210/crop/-/rBXRDGrjDbuAV3RwAAMbhHxaqHo110.jpg" }
     ]
 };
