@@ -61,8 +61,10 @@
       if (p.src === "sofascore" && p.img && !e.sf) e.sf = p.img;
       if (p.src === "sofascore" || p.src === "barca-atletic") {
         e.live = true;
-        /* 本地快照里的队伍标签已经过期（球员已升队），以实时名单为准 */
-        if (e.src === "data") { e.team = p.team || e.team; e.src = p.src; }
+        /* 只有「升入预备队」改队伍标签：那是有明确名单依据的升队。
+           Sofascore 会把人同时挂在两个梯队（跨级），拿它改标签会把
+           静态名单里的人挪走（U19 B 因此从 26 掉到 15），所以不改。 */
+        if (p.src === "barca-atletic" && e.src === "data") { e.team = p.team || e.team; e.src = p.src; }
       }
       if (!e.en && p.en) e.en = p.en;
       if (!e.nation && p.nation) e.nation = p.nation;
@@ -131,16 +133,26 @@
   });
 
   // 2) Sofascore 每日缓存（U19 = U19 A，U18 = U19 B，U16 = U16）
+  /* U19 B 特殊：Sofascore 的 U18 名单残缺（没有门将），名单只认静态度假名单，
+     这里只用它补齐已有球员的照片和位置，不新增人、不改队伍标签。 */
   const SOFA_POS = { G: "GK", D: "DF", M: "MF", F: "FW" };
   [
-    { c: window.DQD_U19_CACHE, t: "U19 A", tk: "u19" },
-    { c: window.DQD_U18_CACHE, t: "U19 B", tk: "u18" },
-    { c: window.DQD_U16_CACHE, t: "U16", tk: "u16" }
+    { c: window.DQD_U19_CACHE, t: "U19 A", tk: "u19", rosterOnly: false },
+    { c: window.DQD_U18_CACHE, t: "U19 B", tk: "u18", rosterOnly: true },
+    { c: window.DQD_U16_CACHE, t: "U16", tk: "u16", rosterOnly: false }
   ].forEach(function (s) {
     if (!s.c || !s.c.players) return;
     (s.c.players || []).forEach(function (p) {
       let k = normKey(p.name);
       if (aliasMap[k]) k = aliasMap[k];
+      if (s.rosterOnly) {
+        const e = pool[k];
+        if (!e) return;                       // 静态名单里没有这个人 → 不加
+        if (p.photo && !e.sf) e.sf = p.photo; // 只补照片
+        if (!e.pos) e.pos = SOFA_POS[p.pos] || "";
+        if (!e.value && p.value) e.value = p.value;
+        return;                               // 不动 team
+      }
       addPlayer({
         en: p.name, pos: SOFA_POS[p.pos] || "", team: s.t,
         nation: nation(p.nation), age: p.age || "", value: p.value || "",
