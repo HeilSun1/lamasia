@@ -42,7 +42,20 @@
   /* 4) 手工补充：以上来源都没有的球员 */
   var manual = {
     "Erik Domínguez Martos": "埃里克·多明格斯·马托斯",
-    "Gerard Valls": "杰拉德·巴尔斯"
+    "Gerard Valls": "杰拉德·巴尔斯",
+    "Daniel Freire": "丹尼尔·弗雷雷",
+    "Pau Miguel Mateos Ruido": "保罗·米格尔·马特奥斯·鲁伊多",
+    "Paumi Mateos": "保米·马特奥斯",
+    "Héctor Asumu": "埃克托尔·阿苏穆",
+    "Alejandro Fernández": "亚历杭德罗·费尔南德斯",
+    "Alex Arasa": "亚历克斯·阿拉萨",
+    "Marc Armada": "马克·阿马达",
+    "Divine Ejiofor": "迪维内·埃吉奥福",
+    "Miłosz Żuk": "米沃什·祖克",
+    "Jude Ali Berro": "祖德·阿里·贝罗",
+    "Haoyan Li": "李昊炎",
+    "José Alfredo Rodríguez": "何塞·阿尔弗雷多·罗德里格斯",
+    "Aleksander Simoskov": "亚历山大·西莫斯科夫"
   };
   Object.keys(manual).forEach(function (k) { add(k, manual[k]); });
 

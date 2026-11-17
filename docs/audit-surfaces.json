@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "total": 274,
+    "pool": 260,
+    "scout": 124,
+    "inAll": 97
+  },
+  "missingZh": [],
+  "avDiff": [
+    {
+      "en": "Samu Borniquel",
+      "zh": "萨穆·博尔尼克尔",
+      "urls": [
+        "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg",
+        "https://img.sofascore.com/api/v1/player/2407333/image"
+      ],
+      "kinds": [
+        "手动",
+        "Sofascore"
+      ]
+    },
+    {
+      "en": "Álex González",
+      "zh": "亚历克斯·冈萨雷斯",
+      "urls": [
+        "https://img.sofascore.com/api/v1/player/2268815/image",
+        "https://img.sofascore.com/api/v1/player/2604387/image"
+      ],
+      "kinds": [
+        "Sofascore"
+      ]
+    }
+  ],
+  "scoutNotInStatic": [
+    "Ïu Martínez -> U19 A · Juvenil A",
+    "Pedro Rodriguez -> 预备队 · Barça Atlètic",
+    "Michał Żuk -> U19 A · Juvenil A",
+    "Adam Argemí -> 预备队 · Barça Atlètic",
+    "Gorka Buil -> U19 A · Juvenil A",
+    "Samu Borniquel -> U19 A · Juvenil A",
+    "Xavi Miràngels -> U19 A · Juvenil A",
+    "Jordi Pesquer -> 预备队 · Barça Atlètic",
+    "Mikael Baza -> U19 A · Juvenil A",
+    "Sergi Mayans -> 预备队 · Barça Atlètic",
+    "Joan Inglés -> U19 A · Juvenil A",
+    "Raúl Expósito -> U19 A · Juvenil A",
+    "Gerard Sala -> U19 A · Juvenil A",
+    "Álex González -> 预备队 · Barça Atlètic"
+  ],
+  "scoutTeamDiff": [],
+  "poolNotInStatic": []
+}

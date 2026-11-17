@@ -133,6 +133,7 @@
     pushManual(function (k) { return !!overrideKeys[k]; });
     push(p.sf);
     push(p.photo);
+    push(window.AvatarSfByName(p.en || p.name || ""));
     if (p.key && window.PlayerCard && window.PlayerCard.photosFor) {
       try {
         window.PlayerCard.photosFor(
@@ -182,6 +183,36 @@
       (img ? "display:none" : "display:grid") + '">' + ini + "</span></span>";
   }
 
+  /* Sofascore 照片按姓名索引：名单页 / 球探卡 / 排兵布阵各自手里只有名字，
+     统一在这里查一次，保证同一名球员在任何界面都拿到同一张 Sofascore 图。 */
+  var SF_INDEX = null;
+  function sfPhotos(items) {
+    (items || []).forEach(function (p) {
+      if (!p) return;
+      var name = p.name || p.person_name || "";
+      var photo = p.photo || p.person_logo || "";
+      var k = norm(name);
+      if (k && photo && !SF_INDEX[k]) SF_INDEX[k] = photo;
+    });
+  }
+  function sfIndex() {
+    if (SF_INDEX) return SF_INDEX;
+    SF_INDEX = {};
+    sfPhotos((window.DQD_U19_CACHE || {}).players);
+    sfPhotos((window.DQD_U18_CACHE || {}).players);
+    sfPhotos((window.DQD_U16_CACHE || {}).players);
+    sfPhotos((window.DQD_BARCA_ATLETIC_SF_CACHE || {}).players);
+    try {
+      var b = window.DQD_BARCA_ATLETIC;
+      var list = b && b.roster && b.roster.data && b.roster.data.list;
+      if (list) list.forEach(function (g) { sfPhotos(g && g.data); });
+    } catch (e) { /* 缓存没加载就算了 */ }
+    return SF_INDEX;
+  }
+  window.AvatarSfByName = function (name) {
+    var k = norm(name);
+    return k ? (sfIndex()[k] || "") : "";
+  };
   window.AvatarChain = chain;
   window.AvatarHtml = html;
   window.AvatarInitial = initial;

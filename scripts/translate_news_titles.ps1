@@ -6,7 +6,8 @@ param(
   [int]$Limit = 400,
   [int]$DelayMs = 1200,
   [string]$Email = "heilsun1@users.noreply.github.com",
-  [switch]$Rebuild
+  [switch]$Rebuild,
+  [switch]$Prune
 )
 
 $ErrorActionPreference = "Stop"
@@ -167,6 +168,14 @@ foreach ($f in Get-ChildItem $jsDir -Filter "*.js") {
     if ($s.Length -gt 3 -and -not (Has-Cjk $s) -and -not $titles.Contains($s)) { $titles.Add($s) }
   }
 }
+# 清理：译文对应的原标题已经不在任何缓存里（新闻轮换出列表）→ 删掉，避免缓存无限长
+if ($Prune) {
+  $alive = @{}
+  foreach ($s in $titles) { $alive[$s] = 1 }
+  $stale = @($map.Keys | Where-Object { -not $alive.ContainsKey($_) })
+  foreach ($k in $stale) { $map.Remove($k) }
+  if ($stale.Count) { "清理失效译文 $($stale.Count) 条" }
+}
 $todo = @($titles | Where-Object { -not $map.ContainsKey($_) })
 if ($Limit -gt 0 -and $todo.Count -gt $Limit) { $todo = $todo[0..($Limit - 1)] }
 "标题 $($titles.Count) 条，已译 $(@($titles | Where-Object { $map.ContainsKey($_) }).Count) 条，本次翻 $($todo.Count) 条"
@@ -188,6 +197,15 @@ foreach ($s in $todo) {
           if ($zh -match '\{\{T\d+\}\}') { $raw2++; continue }
           $map[$s] = $zh
           $done++; $ok = $true
+        } elseif ($zh -eq $q -and $q -match '"') {
+          # MyMemory 对整句原样返回时，去掉英文引号再试一次（带引号的标题十有八九卡在这）
+          $q2 = $q -replace '"', ' '
+          $u2 = "https://api.mymemory.translated.net/get?q=" + [uri]::EscapeDataString($q2) + "&langpair=es|zh-CN&de=" + [uri]::EscapeDataString($Email)
+          $r2 = Invoke-RestMethod -Uri $u2 -TimeoutSec 25
+          if ($r2.responseStatus -eq 200 -and $r2.responseData.translatedText -and $r2.responseData.translatedText -ne $q2) {
+            $z2 = Restore ([string]$r2.responseData.translatedText) $p.saved
+            if ($z2 -and $z2 -notmatch '\{\{T\d+\}\}') { $map[$s] = $z2; $done++; $ok = $true }
+          }
         }
       }
     } catch { Start-Sleep -Milliseconds 2500 }
