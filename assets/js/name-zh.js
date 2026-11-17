@@ -55,7 +55,7 @@
     "Jude Ali Berro": "祖德·阿里·贝罗",
     "Haoyan Li": "李昊炎",
     "José Alfredo Rodríguez": "何塞·阿尔弗雷多·罗德里格斯",
-    "Aleksander Simoskov": "亚历山大·西莫斯科夫"
+    "Aleksander Simoskov": "亚历山大·西莫斯科夫", "Alex Gonzalez": "亚历克斯·冈萨雷斯", "Nil Vicens Ponsati": "尼尔·维森斯", "Álex González": "亚历克斯·冈萨雷斯"
   };
   Object.keys(manual).forEach(function (k) { add(k, manual[k]); });
 

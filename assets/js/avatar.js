@@ -36,6 +36,8 @@
     try { return /\/teams\//.test(location.pathname) ? "../" : ""; } catch (e) { return ""; }
   })();
   var DEFAULT_BASE = UP + "assets/img/players/";
+  /* 同一个球员在缓存里出现过两个 Sofascore 编号，旧的那个 404（Álex González） */
+  var SF_FIX = { "2604387": "2268815" };
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -113,7 +115,9 @@
     var seen = {};
 
     function push(u) {
-      var v = fixPath(u, base);
+      var s0 = u ? String(u) : "";
+      for (var bad in SF_FIX) { if (s0.indexOf("/player/" + bad + "/image") !== -1) s0 = s0.replace("/player/" + bad + "/image", "/player/" + SF_FIX[bad] + "/image"); }
+      var v = fixPath(s0, base);
       if (!v || isPlaceholder(v) || seen[v]) return;
       seen[v] = 1;
       out.push(v);

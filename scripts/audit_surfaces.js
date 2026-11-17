@@ -146,11 +146,14 @@ const missingZh = [];
 const avDiff = [];
 const scoutNotInStatic = [];
 const scoutTeamDiff = [];
+const scoutBTeam = [];
+/* 已知的同一人两种写法：左=名单写法，右=球探卡写法（都经 norm） */
+const ALIAS = { nilvicensponsati: "nilvicens" };
 const poolNotInStatic = [];
 
 Object.keys(stat).forEach(function (k) {
   const s = stat[k];
-  const scout = SCOUT[k];
+  const scout = SCOUT[ALIAS[k] || k];
   const inPool = !!pool[k];
   const staticRec = s.statics[0] || null;
   const zhStatic = staticRec ? (staticRec.zh || "") : "";
@@ -164,7 +167,9 @@ Object.keys(stat).forEach(function (k) {
 
   if (!zhBest) missingZh.push(s.en + (scout ? "（球探卡）" : "") + (staticRec ? "（" + staticRec.tier + "）" : ""));
 
-  if (scout && !staticRec) scoutNotInStatic.push(scout.en + " -> " + (scout.teamLabel || scout.team || ""));
+  /* 预备队走懂球帝名单（中文名），data.js 里没有，单列出来不算「名单里没有」 */
+  if (scout && !staticRec && scout.team === "barca-atletic") scoutBTeam.push(scout.en);
+  else if (scout && !staticRec) scoutNotInStatic.push(scout.en + " -> " + (scout.teamLabel || scout.team || ""));
 
   if (scout && staticRec) {
     const want = win.Teams ? win.Teams.label(staticRec.tier) : staticRec.tier;
@@ -219,6 +224,7 @@ lines.push("");
 lines.push("## 4. 球探卡的梯队标签与静态名单不符｜" + scoutTeamDiff.length + " 人");
 lines.push(scoutTeamDiff.length ? scoutTeamDiff.slice(0, 40).map(function (s) { return "- " + s; }).join("\n") : "- 无");
 lines.push("");
+lines.push("### 预备队球探卡（走懂球帝名单，未逐条核对）｜" + scoutBTeam.length + " 人"); lines.push(""); lines.push(scoutBTeam.length ? scoutBTeam.map(function (s) { return "- " + s; }).join("\n") : "- 无"); lines.push("");
 lines.push("## 5. 排兵布阵里、静态名单没有、也不是 Sofascore 新增｜" + poolNotInStatic.length + " 人");
 lines.push(poolNotInStatic.length ? poolNotInStatic.map(function (s) { return "- " + s; }).join("\n") : "- 无");
 

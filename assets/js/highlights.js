@@ -116,6 +116,38 @@
     return (list || []).filter(function (v) { return !isFullMatch(v.title); });
   }
 
+  /* 名单里已经没有这个人时（升级/转会/重建名单后），别把键名直接甩到界面上。
+     依次查：全站 data.js 各梯队 → Sofascore 缓存的英文名 → 球探卡 → 梯队页兜底。 */
+  function personFromKey(k) {
+    var m = /^local:([a-z0-9-]+):([a-z0-9]+)$/.exec(k);
+    if (!m) return null;
+    var slug = m[2];
+    var all = (window.LAMASIA_DATA && window.LAMASIA_DATA.players) || {};
+    for (var t in all) {
+      if (!Object.prototype.hasOwnProperty.call(all, t)) continue;
+      var arr = all[t] || [];
+      for (var i = 0; i < arr.length; i++) {
+        var p = arr[i];
+        if (p && p.name && normKey(p.name) === slug) return { nameZh: p.zh || "", nameEn: p.name, team: "" };
+      }
+    }
+    var caches = [window.DQD_U19_CACHE, window.DQD_U18_CACHE, window.DQD_U16_CACHE, window.DQD_BARCA_ATLETIC_SF_CACHE];
+    for (var c = 0; c < caches.length; c++) {
+      var ps = (caches[c] && caches[c].players) || [];
+      for (var j = 0; j < ps.length; j++) {
+        if (ps[j] && ps[j].name && normKey(ps[j].name) === slug) {
+          var z = window.NameZh ? window.NameZh(ps[j].name) : "";
+          return { nameZh: z || "", nameEn: ps[j].name, team: "" };
+        }
+      }
+    }
+    var sc = window.SCOUT_CARDS || [];
+    for (var s = 0; s < sc.length; s++) {
+      if (sc[s] && sc[s].en && normKey(sc[s].en) === slug) return { nameZh: sc[s].zh || "", nameEn: sc[s].en, team: "" };
+    }
+    return null;
+  }
+
   // ① 收集条目（feed 段 + players 段）
   var entries = [];
   var seenKey = {};
@@ -135,6 +167,8 @@
     }
     if (!groups.length) return;
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
+    if (!rec) rec = personFromKey(k);
+    if (rec && !rec.nameZh && rec.nameEn && window.NameZh) rec.nameZh = window.NameZh(rec.nameEn) || "";
     entries.push({
       key: k,
       tier: tierOf(k),
