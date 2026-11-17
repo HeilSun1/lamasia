@@ -51,6 +51,7 @@
         key: k, en: p.en || "", zh: p.zh || "", pos: p.pos || "", team: p.team || "",
         nation: p.nation || "", age: p.age || "", value: p.value || "", note: p.note || "",
         img: p.img || "", sf: (p.src === "sofascore" ? (p.img || "") : ""), src: p.src || "",
+        live: (p.src === "sofascore" || p.src === "barca-atletic"),
         mkeys: p.mkey ? [p.mkey] : []     // 各数据源对应的手动照片键（见 photoFor）
       };
     } else {
@@ -58,6 +59,11 @@
       if (!e.zh && p.zh) e.zh = p.zh;
       if (!e.img && p.img) e.img = p.img;
       if (p.src === "sofascore" && p.img && !e.sf) e.sf = p.img;
+      if (p.src === "sofascore" || p.src === "barca-atletic") {
+        e.live = true;
+        /* 本地快照里的队伍标签已经过期（球员已升队），以实时名单为准 */
+        if (e.src === "data") { e.team = p.team || e.team; e.src = p.src; }
+      }
       if (!e.en && p.en) e.en = p.en;
       if (!e.nation && p.nation) e.nation = p.nation;
       if (!e.age && p.age) e.age = p.age;
@@ -104,8 +110,8 @@
   // 1) 本地官方名单（优先级最高：含中文名与备注）
   const TEAM_OF = {
     "juvenil-a": "U19 A", "juvenil-b": "U19 B", "cadete": "U16",
-    "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13 B",
-    "infantil-c": "U13 C", "u11a": "U11 A", "u11b": "U11 B",
+    "infantil": "U14", "cadete-b": "U15", "infantil-b": "U13",
+    "infantil-c": "U12", "u11a": "U11 A", "u11b": "U11 B",
     "u10a": "U10 A", "u10b": "U10 B", "u9a": "U9 A", "u9b": "U9 B"
   };
   const local = (window.LAMASIA_DATA && window.LAMASIA_DATA.players) || {};
@@ -188,6 +194,28 @@
       if (hit) e.sf = hit;
     });
   })();
+
+  /* 3.6) 有实时名单的梯队以实时名单为准。
+     本地 data.js 是 2025-26 赛季开始时的快照，里面的人可能已经离队或升队；
+     以前 addPlayer 只合并不删除，导致 U19 A 池子里混进 21 个已离队球员（2026-11 用户反馈）。
+     现在：这些梯队里只保留实时源出现过的人，本地名单退化为「补中文名/备注/手补图」的字典。 */
+  (function dropDeparted() {
+    const LIVE_TEAMS = { "预备队": 1, "U19 A": 1, "U19 B": 1, "U16": 1 };
+    Object.keys(pool).forEach(function (k) {
+      const e = pool[k];
+      if (!e.live && LIVE_TEAMS[e.team]) delete pool[k];
+    });
+  })();
+
+  /* 3.7) 中文名兜底：data.js 没这个人时，从全站中文名表取（球探卡/NAME_ZH/手工补充） */
+  (function fillZh() {
+    if (!window.NameZh) return;
+    Object.keys(pool).forEach(function (k) {
+      const e = pool[k];
+      if (!e.zh) { const z = window.NameZh(e.en); if (z) e.zh = z; }
+    });
+  })();
+
   // 转数组并排序（梯队顺序 → 姓名）
   const TEAM_ORDER = ["预备队", "U19 A", "U19 B", "U16", "U15", "U14", "U13", "U12", "U11 A", "U11 B", "U10 A", "U10 B", "U9 A", "U9 B"];
   const players = Object.keys(pool).map(function (k) { return pool[k]; });

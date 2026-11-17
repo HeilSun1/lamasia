@@ -140,6 +140,11 @@
       if (a.length <= b.length && a.join(" ") === b.slice(0, a.length).join(" ")) return map[key];
       if (b.length <= a.length && b.join(" ") === a.slice(0, b.length).join(" ")) return map[key];
     }
+    // 本地名单里没有这个新人时，退回全站中文名表（assets/js/name-zh.js）
+    if (window.NameZh) {
+      const z = window.NameZh(name);
+      if (z) return { zh: z, note: "", toks: a };
+    }
     return null;
   }
 
