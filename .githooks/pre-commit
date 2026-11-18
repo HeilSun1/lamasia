@@ -1,0 +1,54 @@
+#!/bin/sh
+# 文件大小棘轮：把「越来越大的文件」显式摊在每次提交里。
+#
+# 默认只警告，不拦提交 —— 这个仓库有每日自动更新（计划任务 + GitHub Actions），
+# 拦截会让数据刷新失败。要硬拦时：TIDY_STRICT=1 git commit ...
+#
+# 用法：git config core.hooksPath .githooks
+# 登记/更新基线：把文件路径和当前字节数写进 .githooks/size-allow
+
+LIMIT=20000
+ALLOW="$(git rev-parse --show-toplevel)/.githooks/size-allow"
+STRICT="${TIDY_STRICT:-0}"
+
+fail=0
+
+git diff --cached --name-only --diff-filter=ACMR | while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  case "$f" in
+    # 生成物：抓取脚本写出来的缓存，每天刷新，不参与棘轮
+    *-cache.js|*-details-cache.js|*schedules.js|*videos-data.js) continue ;;
+  esac
+  case "$f" in
+    *.png|*.jpg|*.jpeg|*.webp|*.gif|*.ico|*.woff|*.woff2|*.ttf) continue ;;
+    *.ps1|*.html|*.css|*.js|*.md|*.json|*.yml|*.sh) ;;
+    *) continue ;;
+  esac
+  size=$(wc -c < "$f" | tr -d ' ')
+  [ "$size" -gt "$LIMIT" ] || continue
+  base=0
+  if [ -f "$ALLOW" ]; then
+    base=$(awk -v p="$f" '$2 == p { print $1 }' "$ALLOW")
+    [ -n "$base" ] || base=0
+  fi
+  if [ "$base" -eq 0 ]; then
+    printf '⚠  %s  %s 字节，超过 %s 且未登记在 .githooks/size-allow\n' "$f" "$size" "$LIMIT"
+    echo "   要么拆小，要么把当前大小登记为基线（格式：字节数 路径）"
+    touch "$(git rev-parse --show-toplevel)/.git/.tidy-fail"
+  elif [ "$size" -gt "$base" ]; then
+    printf '⚠  %s  %s → %s 字节，比基线大 %s\n' "$f" "$base" "$size" "$((size - base))"
+    echo "   确认这次变大是必要的，再把新基线写回 .githooks/size-allow"
+    touch "$(git rev-parse --show-toplevel)/.git/.tidy-fail"
+  fi
+done
+
+if [ -f "$(git rev-parse --show-toplevel)/.git/.tidy-fail" ]; then
+  rm -f "$(git rev-parse --show-toplevel)/.git/.tidy-fail"
+  if [ "$STRICT" = "1" ]; then
+    echo "✗ TIDY_STRICT=1，已阻止提交"
+    exit 1
+  fi
+  echo "（仅警告，未阻止提交；硬拦请加 TIDY_STRICT=1）"
+fi
+
+exit 0
