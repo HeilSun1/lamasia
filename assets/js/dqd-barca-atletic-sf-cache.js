@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-17 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 09:54 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-17 21:00:54",
+    "updated":  "2026-11-18 09:54:55",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -436,21 +436,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2009-01-29",
                         "foot":  "左脚",
                         "height":  "184",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pol Bernabéu",
-                        "id":  "2076871",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-05",
-                        "foot":  "左脚",
-                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },
