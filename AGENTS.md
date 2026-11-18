@@ -2,7 +2,7 @@
 
 静态站（GitHub Pages）+ PowerShell 抓取脚本，每日自动更新数据。
 
-**改样式之前先读 [DESIGN.md](DESIGN.md)**（四档字号、无渐变、无 emoji、无投影、页签用下划线……）。维护方式的决策记录在 [docs/decisions-maintenance.md](docs/decisions-maintenance.md)。
+**改样式之前先读 [DESIGN.md](DESIGN.md)**（四档字号、无渐变、无 emoji、无投影、页签用下划线……）。维护方式的决策记录在 [docs/decisions.md](docs/decisions.md)（维护与更新一节）。
 
 ## 一、文件编码（这个仓库最容易踩的坑）
 
