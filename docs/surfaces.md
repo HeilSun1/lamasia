@@ -54,7 +54,7 @@
 
 | | |
 |---|---|
-| 数据 | `assets/js/dqd-u19-cache.js` / `dqd-u18-cache.js` / `dqd-u16-cache.js` / `dqd-barca-atletic-cache.js` |
+| 数据 | `assets/js/dqd-u19-cache.js` / `dqd-u18-cache.js` / `dqd-u16-cache.js` / `dqd-barca-atletic-cache.js`<br>⚠️ 名字带 `dqd`，但**前三份装的是 Sofascore 数据**（由 `scripts/update_sofascore.ps1` 写）；只有 `dqd-barca-atletic-cache.js` 是懂球帝。改文件名要动 14 个文件 33 处引用，所以暂时靠这条说明。 |
 | 渲染 | `dqd-u19.js`、`dqd-u18.js`、`dqd-u16.js`、`dqd-barca-atletic.js` |
 | 验证页 | 四个梯队页的「球队信息」与名单页签 |
 
