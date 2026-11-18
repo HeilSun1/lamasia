@@ -3,3 +3,6 @@
 
 # 站点状态文件：保证字节确定、diff 只显示一行变化（core.autocrlf=true 会掺 CRLF 噪声）
 assets/data/status.json -text eol=lf
+
+# git 钩子脚本必须用 LF，否则 /bin/sh 报 bad interpreter
+.githooks/* text eol=lf
