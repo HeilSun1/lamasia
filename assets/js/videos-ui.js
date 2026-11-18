@@ -21,18 +21,42 @@
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
+  /* ── 键分组：同一球员的视频可能同时挂在不同键下 ──
+     local:<梯队>:<拼音> 是名单/球探卡打开卡片用的键；
+     sf:<梯队>:<编号> 是爬虫按 Sofascore 编号存的键。
+     只查其中一个就会出现「明明有集锦，卡片却说暂无」。
+     registerGroup([k1, k2, ...]) 后，resolve/feedFor 会对整组求并集并按 videoId 去重。 */
+  var GROUPS = {};      // 任意键 → 该组的全部键
+  function registerGroup(keys) {
+    var list = (keys || []).filter(function (k) { return !!k; });
+    if (list.length < 2) return;
+    list.forEach(function (k) { GROUPS[k] = list; });
+  }
+  function keysFor(key) {
+    return GROUPS[key] || [key];
+  }
+
   /* 解析某键的视频列表：人工 pin 在前（优先生效），自动候选随后，拉黑的不显示 */
   function resolve(kind, key) {
     if (!kind || !key) return [];
     var auto = VIDEOS[kind] || {};
     var cur = DATA[kind] || {};
-    var blocked = (DATA.blocked || {})[key] || [];
+    var keys = keysFor(key);
     var blockedSet = {};
-    blocked.forEach(function (id) { blockedSet[id] = true; });
+    keys.forEach(function (k) {
+      ((DATA.blocked || {})[k] || []).forEach(function (id) { blockedSet[id] = true; });
+    });
 
-    var autoList = Array.isArray(auto[key]) ? auto[key] : [];
+    var autoList = [];
     var autoById = {};
-    autoList.forEach(function (v) { if (v && v.videoId) autoById[v.videoId] = v; });
+    keys.forEach(function (k) {
+      var list = Array.isArray(auto[k]) ? auto[k] : [];
+      list.forEach(function (v) {
+        if (!v || !v.videoId) return;
+        autoList.push(v);
+        autoById[v.videoId] = v;
+      });
+    });
 
     var out = [], seen = {};
     function push(id, base) {
@@ -50,7 +74,9 @@
         matchKey: (base && base.matchKey) || a.matchKey || ""   // 属于哪场比赛（爬虫标注），空 = 非赛程
       });
     }
-    (Array.isArray(cur[key]) ? cur[key] : []).forEach(function (v) { if (v && v.videoId) push(v.videoId, v); });
+    keys.forEach(function (k) {
+      (Array.isArray(cur[k]) ? cur[k] : []).forEach(function (v) { if (v && v.videoId) push(v.videoId, v); });
+    });
     autoList.forEach(function (v) { if (v && v.videoId) push(v.videoId, null); });
     // 国内直连可播放（B站/微博）排在 YouTube 前
     var domFirst = function (s) { return (s === "bili" || s === "weibo") ? 0 : 1; };
@@ -62,11 +88,15 @@
      返回 [{label, opp, date, videos:[…]}]，空组过滤。 */
   function feedFor(key) {
     if (!key) return [];
-    var feed = (VIDEOS.feed && VIDEOS.feed.players) ? (VIDEOS.feed.players[key] || []) : [];
+    var src = (VIDEOS.feed && VIDEOS.feed.players) ? VIDEOS.feed.players : {};
+    var keys = keysFor(key);
+    var feed = [];
+    keys.forEach(function (k) { feed = feed.concat(src[k] || []); });
     if (!feed.length) return [];
-    var blocked = (DATA.blocked || {})[key] || [];
     var blockedSet = {};
-    blocked.forEach(function (id) { blockedSet[id] = true; });
+    keys.forEach(function (k) {
+      ((DATA.blocked || {})[k] || []).forEach(function (id) { blockedSet[id] = true; });
+    });
     return feed.map(function (g) {
       var list = [];
       (g.videos || []).forEach(function (v) {
@@ -427,6 +457,7 @@
     groupHtml: groupHtml,
     isFullMatchTitle: isFullMatchTitle,
     isPlayerClipTitle: isPlayerClipTitle,
+    registerGroup: registerGroup,
     openPlayer: openPlayer,
     closePlayer: closePlayer,
     markAllRead: vMarkAllRead,

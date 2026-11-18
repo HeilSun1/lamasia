@@ -614,7 +614,33 @@
   }
 
   /* B队名单键 b:{懂球帝id} → 视频用的 sf:b:{Sofascore id}（名单页点开的卡片能读到集锦） */
+  /* 视频键分组：同一球员的「名单键」与「Sofascore 键」注册成一组，
+     VideosUI.resolve/feedFor 才会把两边视频并起来（否则卡片显示暂无集锦）。
+     只在真正用到时登记一次，避免和 videos-ui.js 的加载顺序绑死。 */
+  var _vgDone = false;
+  function ensureVideoGroups() {
+    if (_vgDone) return;
+    if (!window.VideosUI || !window.VideosUI.registerGroup) return;
+    if (!window.LAMASIA_DATA || !LAMASIA_DATA.players) return;
+    Object.keys(LAMASIA_DATA.players).forEach(function (tier) {
+      var code = (window.Teams && window.Teams.code) ? window.Teams.code(tier) : "";
+      LAMASIA_DATA.players[tier].forEach(function (p) {
+        if (!p || !p.sfId) return;
+        var lk = "local:" + tier + ":" + norm(p.name);
+        /* 同一名球员的视频可能挂在别的梯队的 sf: 键下（人在 U19、视频按 B 队收录），
+           所以把 6 种梯队写法全部登记成同一组，取视频时求并集。 */
+        var group = [lk];
+        ["b", "u19", "u18", "u16", "u15", "u14"].forEach(function (c) {
+          group.push("sf:" + c + ":" + p.sfId);
+        });
+        window.VideosUI.registerGroup(group);
+      });
+    });
+    _vgDone = true;
+  }
+
   function videoKeyFor(key) {
+    ensureVideoGroups();
     var m = /^b:(\d+)$/.exec(key);
     if (m && dqdToSf[m[1]]) return "sf:b:" + dqdToSf[m[1]];
     return key;
