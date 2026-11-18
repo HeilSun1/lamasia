@@ -65,6 +65,7 @@ if (-not $Force -and -not $SelfTest -and -not $SimulateHang -and -not $TestFailS
 
 $Healed          = New-Object System.Collections.ArrayList
 $Failures        = New-Object System.Collections.ArrayList
+$Warnings        = New-Object System.Collections.ArrayList
 $FailedScripts   = New-Object System.Collections.ArrayList
 $StaleCaches     = New-Object System.Collections.ArrayList
 $BlockedCodes    = New-Object System.Collections.ArrayList
@@ -400,13 +401,25 @@ if (-not $SelfTest) {
   if (Test-Path $elfScript) {
     foreach ($elfTier in @('juvenil-b', 'cadete', 'infantil', 'infantil-b', 'infantil-c')) {
       Log-Line "  → update_elfutbol_details.ps1 -Tier $elfTier"
-      $global:LASTEXITCODE = 0
+      # 第三方增强源（逐场阵容/进球）。历史失败都是网络超时，先重试一次；
+      # 两次都失败只记警告——它挂了不影响名单/赛程/新闻这些主干数据。
+      $elfCode = 1
       $elfErr = $null
-      try { & $elfScript -Tier $elfTier } catch { $elfErr = $_.Exception.Message }
-      $elfCode = $LASTEXITCODE
-      if ($elfErr -or $elfCode -ne 0) {
-        Log-Line "      ✗ update_elfutbol_details.ps1 -Tier $elfTier 失败（退出码 $elfCode）$elfErr"
-        [void]$Failures.Add("update_elfutbol_details.ps1 -Tier $elfTier (exit $elfCode)")
+      $elfDone = $false
+      for ($elfTry = 1; $elfTry -le 2; $elfTry++) {
+        $global:LASTEXITCODE = 0
+        $elfErr = $null
+        try { & $elfScript -Tier $elfTier } catch { $elfErr = $_.Exception.Message }
+        $elfCode = $LASTEXITCODE
+        if (-not $elfErr -and $elfCode -eq 0) { $elfDone = $true; break }
+        if ($elfTry -eq 1) {
+          Log-Line "      … 第 1 次失败（退出码 $elfCode），10 秒后重试"
+          Start-Sleep -Seconds 10
+        }
+      }
+      if (-not $elfDone) {
+        Log-Line "      ! update_elfutbol_details.ps1 -Tier $elfTier 两次都失败（退出码 $elfCode）$elfErr —— 第三方详情源，只记警告"
+        [void]$Warnings.Add("elfutbol $elfTier (exit $elfCode)")
       }
     }
   }
@@ -569,7 +582,7 @@ if ($script:PushOk) {
 
 $okCount = $UpdateScripts.Count - $FailedScripts.Count
 $elapsed = [int]((Get-Date) - $t0).TotalSeconds
-Log-Line ("======== 汇总 run=$runId 耗时=${elapsed}s 脚本=$okCount/$($UpdateScripts.Count) ok " +
+Log-Line ("======== 汇总 run=$runId 耗时=${elapsed}s 脚本=$okCount/$($UpdateScripts.Count) ok 警告=$($Warnings.Count) " +
           "缓存未刷新=$($StaleCaches.Count) 自愈=$($Healed.Count) 推送=$(if($script:PushOk){'OK'}else{'失败'}) " +
           "状态=$(if($blocked){'需处理'}elseif($Failures.Count -or $StaleCaches.Count){'降级'}else{'OK'}) ========")
 

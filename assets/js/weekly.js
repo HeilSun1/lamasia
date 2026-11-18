@@ -124,7 +124,7 @@
           '<span class="weekly-album__meta">' +
             (albumNew ? '<span class="weekly-album__dot" aria-label="新一期"></span>' : "") +
             (aIssue ? '<span class="weekly-album__issue">第 ' + esc(aIssue) + ' 期</span>' : "") +
-            (aWhen ? '<span class="weekly-album__when">' + esc(aWhen) + ' 更新</span>' : "") +
+            (aWhen ? '<span class="weekly-album__when">' + esc(aWhen) + ' 发布</span>' : "") +
           '</span>' +
           '<span class="weekly-album__title">' + esc(aTitle) + '</span>' +
           '<span class="weekly-album__note">「飞翔的拉杆箱」每周整合拉玛西亚新闻 · 点开看合集</span>' +
