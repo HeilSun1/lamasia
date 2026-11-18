@@ -59,8 +59,9 @@
     // B队：优先 Sofascore（与 B队赛程一致，可弹详情），懂球帝兜底
     const S = window.DQD_BARCA_ATLETIC_SF_CACHE;
     const B = window.DQD_BARCA_ATLETIC;
-    // ★ 新鲜度闸：Sofascore 断供后旧缓存永不刷新，会一直压住懂球帝兜底（阈值见 sfCacheFresh）
-    if (S && Array.isArray(S.matches) && sfCacheFresh(S)) {
+    // 有 Sofascore 赛程就用它（旧缓存也比没有强；新鲜度只影响页面上那句「更新于」）。
+    // 2026-11 之前这里卡 24 小时，导致数据明明在、页面却退回懂球帝口径。
+    if (S && Array.isArray(S.matches) && S.matches.length) {
       S.matches.forEach(function (m) {
         if (String(m.status) !== "Not started") return;
         const t = parseInt(m.start, 10) * 1000;
@@ -158,17 +159,6 @@
     });
     // Sofascore 缓存够不够新。2026-09-30 起 Sofascore 对无头 Edge 也返回 403，
     // 三个青年队脚本抓不到数据就按设计保留旧缓存 —— 于是缓存会一直停在断供那天。
-    // 旧的 skipIfSf 只看「缓存里有没有未开赛」，不管缓存多旧，结果是一份几天前的
-    // 陈旧赛程把官方站（pulselive）刚拉到的真赛程压掉，已赛的比赛还挂在待赛里。
-    // 现在加一道新鲜度闸：缓存超过 48 小时就当作不可信，不再压制官方站数据。
-    function sfCacheFresh(c) {
-      var t = Date.parse(String((c || {}).updated || "").replace(/-/g, "/"));
-      if (!t) return false;
-      // 24 小时，不是 48 —— 脚本一天跑两班（09:40 / 21:00），
-      // 正常情况缓存最多 ~12 小时。阈值给到 48 会把「已经断了一天多」的缓存
-      // 仍然当新鲜的，继续压制官网数据（第一版就是 48，实测被卡住）。
-      return (Date.now() - t) < 24 * 3600e3;
-    }
 
     // 官方站六队（仅在 Sofascore 有**新鲜的**「未开赛」数据时跳过，防重复）
     // Juvenil A 不在这里 —— 它走上面 Sofascore 那组（2026-10-03 从官网挪回）。
@@ -180,7 +170,7 @@
       { tier: "infantil-c", team: "Infantil C", href: "teams/infantil-c.html" },
       { tier: "juvenil-b",  team: "Juvenil B",  href: "teams/juvenil-b.html",  skipIfSf: "DQD_U18_CACHE" }
     ].forEach(function (cfg) {
-      if (cfg.skipIfSf && window[cfg.skipIfSf] && sfCacheFresh(window[cfg.skipIfSf]) &&
+      if (cfg.skipIfSf && window[cfg.skipIfSf] &&
           Array.isArray(window[cfg.skipIfSf].matches) &&
           window[cfg.skipIfSf].matches.some(function (m) { return String(m.status) === "Not started"; })) return;
       var arr = (window.LAMASIA_SCHEDULES && window.LAMASIA_SCHEDULES.matches && window.LAMASIA_SCHEDULES.matches[cfg.tier]) || [];
