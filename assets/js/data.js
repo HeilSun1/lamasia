@@ -414,11 +414,8 @@ window.LAMASIA_DATA = {
     "Paumi Mateos": "保米·马特奥斯",
     "Samu Borniquel": "萨穆·博尔尼克尔"
   };
-  function norm(s) {
-    return String(s || "").toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.norm;
   var map = {};
   Object.keys(raw).forEach(function (k) {
     var nk = norm(k);

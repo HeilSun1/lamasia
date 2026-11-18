@@ -20,9 +20,8 @@
   }
 
   /* 姓名归一化（去变音符、统一小写）用于跨数据源去重 */
-  function normKey(s) {
-    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var normKey = window.People.norm;
 
   /* 头像占位首字母：中文取前两字，西文取前两个词首字母 */
   function initials(name) {
@@ -215,7 +214,7 @@
      但「已升巴萨竞技」的人现在还在预备队名单里（实时源能查到），所以必须同时满足
      「实时源查不到」才删，否则会把升队的球员一起删掉。 */
   (function dropDeparted() {
-    const GONE = /已升|已转会|已离队|已租借|转会离队/;
+    const GONE = window.People.GONE;   /* 见 assets/js/people.js */
     Object.keys(pool).forEach(function (k) {
       const e = pool[k];
       if (!e.live && GONE.test(e.note || "")) delete pool[k];

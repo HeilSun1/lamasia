@@ -94,11 +94,8 @@
   }
 
   /* 姓名归一化（去变音符、统一小写）用于和官方名单匹配中文名 */
-  function normKey(s) {
-    return String(s || "").toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var normKey = window.People.norm;
 
   /* 手动补图：先查 u18:{id}（伤病名单键），再查 data.js 官方名单的 local:juvenil-b:{英文名}。
      photo-tool 给 U18 写的是 local 键；只查 u18:{id} 会导致手动补的头像在 Sofascore 名单/阵容里不显示。 */

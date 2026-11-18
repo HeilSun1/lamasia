@@ -7,13 +7,8 @@
 
   var map = {};
 
-  function norm(s) {
-    return String(s || "")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/[^a-z0-9]/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.norm;
 
   function add(en, zh) {
     if (!en || !zh) return;

@@ -24,11 +24,8 @@
   var seen = {};   // 按小写英文去重
 
   // 小写 + 去重音符 + 压缩（用于英文匹配）
-  function norm(s) {
-    return String(s || "").toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.norm;
 
   function add(en, zh, pos, team, url, key) {
     var k = norm(en);

@@ -56,13 +56,8 @@
   }
 
   /* 与 roster.js / player-card.js 的 normKey 保持一致 */
-  function norm(s) {
-    return String(s || "")
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.norm;
 
   /* 首字母：中文取第一个汉字，英文取前两个词的首字母 */
   function initial(p) {

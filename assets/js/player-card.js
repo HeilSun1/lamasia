@@ -15,11 +15,8 @@
   var BASE = /\/teams\//.test(window.location.pathname) ? "../" : "";
 
   // 小写 + 去重音 + 压缩（用于英文匹配 / 索引键）
-  function norm(s) {
-    return String(s || "").toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.norm;
   // 名字拆词（去重音后按非字母切分），用于昵称/全名差异的桥接匹配
   function nameTokens(s) {
     var t = String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-z]+/);

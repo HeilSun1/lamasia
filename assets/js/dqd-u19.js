@@ -91,11 +91,8 @@
   }
 
   /* 姓名归一化（去变音符、统一小写）用于和官方名单匹配中文名 */
-  function normKey(s) {
-    return String(s || "").toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var normKey = window.People.norm;
 
   /* 姓名分词：转小写、去变音符，按非字母数字拆成词（"Pedro Rodríguez Iglesias" → ["pedro","rodriguez","iglesias"]） */
   function nameTokens(s) {

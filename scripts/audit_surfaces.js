@@ -31,15 +31,13 @@ function load(f) {
   return true;
 }
 
-["teams.js", "name-zh.js", "data.js", "manual-photos.js", "avatar.js",
+["people.js", "teams.js", "name-zh.js", "data.js", "manual-photos.js", "avatar.js",
  "scout-cards-data.js", "dqd-u19-cache.js", "dqd-u18-cache.js", "dqd-u16-cache.js",
  "dqd-barca-atletic-cache.js"].forEach(load);
 
 win.ManualPhoto = function (k) { return (win.MANUAL_PHOTOS && win.MANUAL_PHOTOS[k]) || ""; };
 
-function norm(s) {
-  return String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "");
-}
+const norm = win.People.norm;
 function zhName(en, fallback) {
   const t = win.NameZh ? win.NameZh(en) : "";
   return t || fallback || "";
@@ -96,7 +94,7 @@ const TEAM_OF = {};
  "u11a", "u11b", "u10a", "u10b", "u9a", "u9b"].forEach(function (t) {
   TEAM_OF[t] = win.Teams ? win.Teams.num(t) : t;
 });
-const GONE = /已升|已转会|已离队|已租借|转会离队/;
+const GONE = win.People.GONE;
 const pool = {};
 Object.keys(TEAM_OF).forEach(function (tid) {
   (DATA[tid] || []).forEach(function (p) {

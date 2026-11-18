@@ -14,9 +14,8 @@
   const POS_ZH = { GK: "门将", DF: "后卫", MF: "中场", FW: "前锋" };
 
   // 球员卡片索引键（与 player-card.js 的 norm 一致）
-  function normKey(s) {
-    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var normKey = window.People.norm;
 
   function esc(s) {
     return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

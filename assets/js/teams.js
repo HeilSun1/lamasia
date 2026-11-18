@@ -56,13 +56,8 @@
     t.alias.forEach(function (a) { byKey[a] = t; });
   });
 
-  function norm(s) {
-    return String(s == null ? "" : s)
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "");
-  }
+  /* 归一规则见 assets/js/people.js（全站唯一一份） */
+  var norm = window.People.normLabel;
 
   var byNorm = {};
   LIST.forEach(function (t) {
