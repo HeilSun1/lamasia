@@ -8,7 +8,7 @@
 32585 scripts/dqd_sched.json
 31837 docs/decisions.md
 31305 scripts/update_elfutbol_details.ps1
-31206 scripts/run_daily_update.ps1
+31877 scripts/run_daily_update.ps1
 26728 assets/js/dqd-u18.js
 24976 assets/js/dqd-barca-atletic.js
 24928 assets/js/highlights.js
