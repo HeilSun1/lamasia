@@ -41,7 +41,10 @@
     var lm = /^local:([a-z0-9-]+):([a-z0-9]+)$/.exec(s);
     var slug = lm ? lm[2] : "";
     var wantId = idm ? idm[1] : "";
-    var tier = lm ? lm[1] : (idm ? (/^sf:b:|^b:/.test(s) ? "barca-atletic" : s.split(":")[1]) : "");
+    /* 视频键里的梯队是简写（u19/u18/u16/b），站内梯队 id 是 juvenil-a/juvenil-b/cadete/barca-atletic */
+    var TIER_ALIAS = { u19: "juvenil-a", u18: "juvenil-b", u16: "cadete", b: "barca-atletic" };
+    var raw = lm ? lm[1] : (idm ? s.replace(/^sf:/, "").split(":")[0] : "");
+    var tier = TIER_ALIAS[raw] || raw;
 
     function zhOf(en) {
       if (!en) return "";

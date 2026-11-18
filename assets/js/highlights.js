@@ -171,7 +171,10 @@
     if (rec && !rec.nameZh && rec.nameEn && window.NameZh) rec.nameZh = window.NameZh(rec.nameEn) || "";
     entries.push({
       key: k,
-      tier: (rec && rec.tier) || tierOf(k),
+      /* 分组用视频键的短码（b/u19/u18…，与 TIER_CHIP 一致）；
+         行内展示的「现属梯队」另存 teamTier，避免两套词汇互相打架。 */
+      tier: tierOf(k),
+      teamTier: (rec && rec.tier) || "",
       groups: groups,
       nameZh: (rec && rec.nameZh) || "",
       nameEn: (rec && rec.nameEn) || k,
@@ -190,7 +193,7 @@
     if (!o.zh && e.nameZh) o.zh = e.nameZh;
     if (!o.en) o.en = e.nameEn;
     var ord = TIER_ORDER[e.tier] != null ? TIER_ORDER[e.tier] : 9;
-    if (ord < o.order) { o.order = ord; o.key = e.key; o.teamFirst = e.team; }   // 主梯队 = 最高级
+    if (ord < o.order) { o.order = ord; o.key = e.key; o.teamFirst = e.team; o.teamTier = e.teamTier || o.teamTier; }   // 主梯队 = 最高级
     if (e.team) o.teams[e.team] = true;
     o.keys[e.key] = true;
     if (e.nameEn) o.names[e.nameEn] = true;
@@ -276,7 +279,9 @@
       names: Object.keys(o.names),
       tier: tier,
       teams: (function () {
-      var first = o.teamFirst || (window.Teams ? window.Teams.label(tierOf(o.key)) : "");
+      /* 优先用名单里的现属梯队（升队/降队后会变），其次才是视频键推出来的老梯队 */
+      var first = (o.teamTier && window.Teams ? window.Teams.label(o.teamTier) : "")
+        || o.teamFirst || (window.Teams ? window.Teams.label(tierOf(o.key)) : "");
       return (first ? [first] : []).concat(Object.keys(o.teams).filter(function (t) { return t && t !== first; }));
     })(),
       groups: groups,
