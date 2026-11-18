@@ -2,9 +2,9 @@
 
 静态站（GitHub Pages）+ PowerShell 抓取脚本，每日自动更新数据。
 
-- 样式规则：[DESIGN.md](DESIGN.md)（四档字号、无渐变、无 emoji、无投影、页签用下划线）
+- 样式规则：[DESIGN.md](DESIGN.md)（四档字号、无渐变、无 emoji、无投影、页签下划线）
 - 决策与理由：[docs/decisions.md](docs/decisions.md)（按主题分组）
-- 数据出口清单：[docs/surfaces.md](docs/surfaces.md)｜名单缺口：[docs/roster-gaps.md](docs/roster-gaps.md)
+- 数据出口：[docs/surfaces.md](docs/surfaces.md)｜名单缺口：[docs/roster-gaps.md](docs/roster-gaps.md)
 
 ## 一、数据口径（最常改错的地方）
 
@@ -18,14 +18,12 @@
 | `.html` `.css` `.js` `.md` | UTF-8 **无 BOM** | CRLF |
 | `.ps1` | UTF-8 **带 BOM** | CRLF |
 
-`.ps1` 少了 BOM，Windows PowerShell 5.1 会按 GBK 解码，脚本里的中文路径变成 `D:\瑙嗛绱犳潗\...`，随后报 `Could not find a part of the path`，或者一行都没执行、退出码还是 0。2026-11 切换计划任务时连续三次「提权执行成功但没效果」就是这个原因。
+`.ps1` 少了 BOM，Windows PowerShell 5.1 会按 GBK 解码，脚本里的中文路径变成 `D:\瑙嗛绱犳潗\...`，随后报 `Could not find a part of the path`，或者一行都没执行、退出码还是 0（2026-11 切换计划任务时连续三次「提权成功但没效果」就是这个原因）。临时脚本写成纯 ASCII 也能绕开。
 
 ```powershell
 Set-Content -Path $path -Value $scriptText -Encoding UTF8          # 新建
 [System.IO.File]::WriteAllText($p, $t, (New-Object System.Text.UTF8Encoding($true)))  # 改写
 ```
-
-临时脚本写纯 ASCII（注释、日志全英文）也能绕开。
 
 ## 三、`update_*.ps1` 必须以 `exit 0` 结尾
 
@@ -35,8 +33,7 @@ Set-Content -Path $path -Value $scriptText -Encoding UTF8          # 新建
 
 - 本机：计划任务 `LaMasia_Local_Daily_Update`，09:00 / 21:00，`LogonType=S4U`（session 0，无窗口），跑 16 个脚本约 340–430 秒，末尾自己 commit + SSH 推送。
 - 运行器：`.github/workflows/daily-update.yml`，`cron: 23 16 * * *`（北京 00:23），YouTube 走 `-YouTubeOnly`。
-- 回滚用 `LaMasia_Local_Daily_Update_Backup`（原 `InteractiveToken` 定义，已禁用）；原始 XML 在 `work/s4u/current-task.xml`。
-- `schtasks /create /xml` **只认 UTF-16**；改写/删除任务要管理员（`Start-Process -Verb RunAs`），新建自己的任务不用。
+- `schtasks /create /xml` 只认 **UTF-16**；改/删任务要管理员，新建自己的任务不用。回滚用 `LaMasia_Local_Daily_Update_Backup`（已禁用），原始 XML 在 `work/s4u/current-task.xml`。
 - `run_daily_update.ps1` 有 2 小时防重复，补跑加 `-Force`；另有 `-SelfTest`（只跑 git 流程）、`-SimulateHang`。
 - 两个通道都写 `assets/data/status.json` 和同一个 git 仓库，别让它们同时跑。
 
@@ -51,8 +48,8 @@ Set-Content -Path $path -Value $scriptText -Encoding UTF8          # 新建
 ## 六、提交
 
 - 数据更新由任务自己 commit + push（`ssh.github.com:443`，直连 github.com 在本机不通）。
-- 别用 `git add -A`：`work/`、`scripts/dqd_sched.json` 会被扫进提交，只 `git add` 具体文件。
-- `work/` 是排障用的临时目录，不入库。
+- 别用 `git add -A`：`work/`（排障临时目录）、`scripts/dqd_sched.json` 会被扫进提交，只 `git add` 具体文件。
+- 提交前 `git diff --stat` 复核规模，中文提交信息放在 `-m` 里即可。
 
 ## 七、三问自检
 
