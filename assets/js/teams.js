@@ -79,6 +79,21 @@
   function fromEn(name) { return byNorm[norm(name)] || null; }
   function nums() { return LIST.map(function (t) { return t.num; }); }
 
+  /* 集锦页签用的短码。只有页签上真有那一格的梯队才给码，其余归 other。
+     这样「一个人算哪个队」只有一处判定：People.fromKey → Teams.code。 */
+  var CODE = {
+    "barca-atletic": "b",
+    "juvenil-a": "u19",
+    "juvenil-b": "u18",
+    cadete: "u16",
+    "cadete-b": "u15",
+    infantil: "u14"
+  };
+  function code(k) {
+    var t = get(k);
+    return (t && CODE[t.key]) || "other";
+  }
+
   window.Teams = {
     list: LIST,
     get: get,
@@ -87,6 +102,7 @@
     page: page,
     en: en,
     fromEn: fromEn,
-    nums: nums
+    nums: nums,
+    code: code
   };
 })();

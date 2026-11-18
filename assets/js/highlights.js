@@ -52,6 +52,21 @@
     "juvenil-a": "u19", "juvenil-b": "u18", cadete: "u16",
     "cadete-b": "u15", infantil: "u14", "infantil-b": "u14", "infantil-c": "u14"
   };
+  /* 分组：先问「这个人现在属于哪个梯队」（People.fromKey → data.js 官方名单），
+     查不到才退回视频键的历史前缀。以前只看键，导致已升预备队的人还挂在 U19 A 底下。 */
+  function tierOfOfficial(k) {
+    try {
+      if (window.People && window.People.fromKey && window.Teams && window.Teams.code) {
+        var r = window.People.fromKey(k);
+        if (r && r.tier) {
+          var c = window.Teams.code(r.tier);
+          if (c && c !== "other") return c;
+        }
+      }
+    } catch (e) {}
+    return tierOf(k);
+  }
+
   /* 键 → 展示梯队：sf:{tier}:{id} / b:{id} / local:{tier}:{name} */
   function tierOf(k) {
     var m = /^sf:([a-z0-9]+):\d+$/.exec(k);
@@ -173,7 +188,7 @@
       key: k,
       /* 分组用视频键的短码（b/u19/u18…，与 TIER_CHIP 一致）；
          行内展示的「现属梯队」另存 teamTier，避免两套词汇互相打架。 */
-      tier: tierOf(k),
+      tier: tierOfOfficial(k),
       teamTier: (rec && rec.tier) || "",
       groups: groups,
       nameZh: (rec && rec.nameZh) || "",

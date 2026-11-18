@@ -31,8 +31,24 @@
     return m ? m[0] : "";
   }
 
-  function posZh(p) {
-    return POS[p] || p || "";
+  /* 位置以 data.js 官方名单为准（球探卡自带 pos 是旧的、且用单字母 G/D/M/F），
+     名单里没有的人才退回卡片字段。 */
+  var DATA_POS = (function () {
+    var m = {};
+    var d = window.LAMASIA_DATA && window.LAMASIA_DATA.players;
+    if (!d || !window.People) return m;
+    Object.keys(d).forEach(function (t) {
+      (d[t] || []).forEach(function (p) {
+        var k = window.People.norm(p.name || "");
+        if (k && p.pos) m[k] = p.pos;
+      });
+    });
+    return m;
+  })();
+  function posZh(p, c) {
+    var k = c && window.People ? window.People.norm(c.en || c.zh || "") : "";
+    var fromData = k ? DATA_POS[k] : "";
+    return POS[fromData] || POS[p] || p || "";
   }
 
   function initialOf(c) {
@@ -91,7 +107,7 @@
   }
 
   function metaLine(c) {
-    var bits = [(window.Teams ? window.Teams.num(c.team) : "") || c.teamShort || c.teamLabel, posZh(c.pos)];
+    var bits = [(window.Teams ? window.Teams.num(c.team) : "") || c.teamShort || c.teamLabel, posZh(c.pos, c)];
     var y = year(c.dob);
     if (y) bits.push(y);
     return bits.filter(Boolean).join(" · ");
@@ -167,7 +183,7 @@
       ["姓名", c.zh],
       ["英文名", c.en],
       ["梯队", (window.Teams ? window.Teams.label(c.team) : c.teamLabel)],
-      ["位置", posZh(c.pos)],
+      ["位置", posZh(c.pos, c)],
       ["出生", c.dob && c.dob !== "—" ? c.dob : "—"],
       ["号码", c.num && c.num !== "—" ? c.num : "—"]
     ];
