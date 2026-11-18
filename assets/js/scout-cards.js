@@ -132,13 +132,13 @@
   var qCount = null;
 
   function matches(c) {
-    if (activeTeam && (c.teamShort || c.teamLabel) !== activeTeam) return false;
+    if (activeTeam && tabLabelOf(c) !== activeTeam) return false;
     if (!query) return true;
     var q = query.toLowerCase();
     return (c.zh || "").toLowerCase().indexOf(q) >= 0 ||
       (c.en || "").toLowerCase().indexOf(q) >= 0 ||
       (c.slug || "").toLowerCase().indexOf(q) >= 0 ||
-      ((c.teamShort || "") + " " + (c.teamLabel || "")).toLowerCase().indexOf(q) >= 0;
+      (tabLabelOf(c) + " " + (c.teamLabel || "")).toLowerCase().indexOf(q) >= 0;
   }
 
   function render() {
@@ -156,16 +156,33 @@
     }
   }
 
+  /* 页签顺序 = Teams.list 官方顺序（预备队 → U19 A → U19 B → SUB16 …），
+     只列出真有卡的梯队；没有 Teams 时才退回卡片自带文案。 */
+  function tabLabelOf(c) {
+    if (window.Teams && c.team) return window.Teams.num(c.team);
+    return c.teamShort || c.teamLabel || "";
+  }
   function buildTabs() {
-    var teams = [];
+    var order = window.Teams ? window.Teams.list.map(function (t) { return t.key; }) : null;
+    var byTeam = {};
     CARDS.forEach(function (c) {
-      var t = c.teamShort || c.teamLabel;
-      if (teams.indexOf(t) < 0) teams.push(t);
+      var label = tabLabelOf(c);
+      if (!label) return;
+      byTeam[label] = (byTeam[label] || 0) + 1;
+    });
+    var labels = [];
+    if (order) {
+      order.forEach(function (key) {
+        var label = window.Teams.num(key);
+        if (byTeam[label]) labels.push(label);
+      });
+    }
+    Object.keys(byTeam).forEach(function (l) {
+      if (labels.indexOf(l) < 0) labels.push(l);
     });
     var html = '<button class="tt-tab active" type="button" data-team="">全部 <b>' + CARDS.length + "</b></button>";
-    teams.forEach(function (t) {
-      var n = CARDS.filter(function (c) { return (c.teamShort || c.teamLabel) === t; }).length;
-      html += '<button class="tt-tab" type="button" data-team="' + esc(t) + '">' + esc(t) + " <b>" + n + "</b></button>";
+    labels.forEach(function (t) {
+      html += '<button class="tt-tab" type="button" data-team="' + esc(t) + '">' + esc(t) + " <b>" + byTeam[t] + "</b></button>";
     });
     tabs.innerHTML = html;
     tabs.addEventListener("click", function (e) {

@@ -60,7 +60,10 @@
       for (var i = 0; i < arr.length; i++) {
         var p = arr[i];
         if (!p) continue;
-        if ((wantId && String(p.sfId || "") === wantId) || (slug && p.name && norm(p.name) === slug)) {
+        if (
+          (wantId && (String(p.sfId || "") === wantId || String(p.dqdId || "") === wantId)) ||
+          (slug && p.name && norm(p.name) === slug)
+        ) {
           return { nameZh: p.zh || zhOf(p.name), nameEn: p.name || "", team: t, tier: t, source: "data" };
         }
       }
@@ -86,6 +89,27 @@
       if (!c2) continue;
       if (slug && c2.en && norm(c2.en) === slug) {
         return { nameZh: c2.zh || zhOf(c2.en), nameEn: c2.en, team: c2.team || "", tier: tier, source: "scout" };
+      }
+    }
+    /* 4) 懂球帝 B 队缓存兜底：视频键 b:<person_id> 指向的人不在官方名单里
+       （例如已离队或只在懂球帝名单里），至少把中文名与梯队给出来，别把键名甩到界面。 */
+    var dq = root.DQD_BARCA_ATLETIC;
+    var groupsD = (dq && dq.roster && dq.roster.data && dq.roster.data.list) || [];
+    for (var g = 0; g < groupsD.length; g++) {
+      var ppl = (groupsD[g] && groupsD[g].data) || [];
+      for (var n = 0; n < ppl.length; n++) {
+        var r = ppl[n];
+        if (!r) continue;
+        if (wantId && String(r.person_id || "") === wantId) {
+          return {
+            nameZh: r.person_name || "",
+            nameEn: "",
+            team: "barca-atletic",
+            tier: "barca-atletic",
+            source: "dqd",
+            img: r.person_logo || ""
+          };
+        }
       }
     }
     return null;
