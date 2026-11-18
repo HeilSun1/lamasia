@@ -184,6 +184,14 @@
 
   /* Sofascore 照片按姓名索引：名单页 / 球探卡 / 排兵布阵各自手里只有名字，
      统一在这里查一次，保证同一名球员在任何界面都拿到同一张 Sofascore 图。 */
+  /* data.js 里写简称、Sofascore 缓存里写全名，归一化后仍不同名 → 显式别名。
+     只登记「同一 Sofascore 编号已经在 data.js 里」的对应关系，不靠相似度猜。 */
+  var SF_ALIAS = {
+    alexwalton: "alexanderwalton",
+    nilvicens: "nilvicensponsati",
+    erikdominguez: "erikdominguezmartos",
+    danyfreire: "danielfreire"
+  };
   var SF_INDEX = null;
   function sfPhotos(items) {
     (items || []).forEach(function (p) {
@@ -213,6 +221,8 @@
     if (!k) return "";
     var idx = sfIndex();
     if (idx[k]) return idx[k];
+    var alias = SF_ALIAS[k];
+    if (alias && idx[alias]) return idx[alias];
     /* 缓存里常见全名/简称不一致（Erik Domínguez vs Erik Domínguez Martos），
        用包含关系兜底：只有一个候选时才采用，避免张冠李戴。 */
     if (k.length < 8) return "";

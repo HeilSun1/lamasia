@@ -38,6 +38,8 @@ window.MANUAL_PHOTOS = {
   "local:cadete-b:poljou": "assets/img/players/manual/local-cadete-b-poljou.jpg",
   "local:cadete-b:yibrahangarcia": "assets/img/players/manual/local-cadete-b-yibrahangarcia.jpg",
   "local:juvenil-a:samuborniquel": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg",
+  "local:barca-atletic:hamzaabdelkarim": "assets/img/players/hamza-abdelkarim.jpg",
+  "b:51126194": "assets/img/players/hamza-abdelkarim.jpg",
   "sf:u19:2407333": "assets/img/players/manual/local-juvenil-a-samuborniquel.jpg"
 };
 /* 定点覆盖：这些键的手动图排在 Sofascore 之前（因为 Sofascore 那张是错的）。
