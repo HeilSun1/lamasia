@@ -184,16 +184,19 @@
     if (!rec && window.People && window.People.fromKey) rec = window.People.fromKey(k);
     if (!rec) rec = personFromKey(k);
     if (rec && !rec.nameZh && rec.nameEn && window.NameZh) rec.nameZh = window.NameZh(rec.nameEn) || "";
+    /* 归属只认官方名单：视频键是当年抓取时的梯队（有人已升队），
+       这里再问一次 People.fromKey，拿官方名单里的现属梯队。 */
+    var ppl = (window.People && window.People.fromKey) ? window.People.fromKey(k) : null;
     entries.push({
       key: k,
       /* 分组用视频键的短码（b/u19/u18…，与 TIER_CHIP 一致）；
          行内展示的「现属梯队」另存 teamTier，避免两套词汇互相打架。 */
       tier: tierOfOfficial(k),
-      teamTier: (rec && rec.tier) || "",
+      teamTier: (ppl && ppl.tier) || (rec && rec.tier) || "",
       groups: groups,
       nameZh: (rec && rec.nameZh) || "",
       nameEn: (rec && rec.nameEn) || k,
-      team: (rec && rec.team) || ""
+      team: (ppl && ppl.team && window.Teams && window.Teams.label(ppl.team)) || (rec && rec.team) || ""
     });
   }
   Object.keys(feed).forEach(addEntry);
@@ -346,16 +349,13 @@
     return players.map(function (p) {
       // 主键可能没有照片（或 Sofascore 图 404），而该球员的名单键/别名键有照片：
       // 收集全部候选，src 用第一张，其余交给 PC_IMG_FALLBACK 逐张重试。
-      var ph = (window.PlayerCard && window.PlayerCard.photosFor)
-        ? window.PlayerCard.photosFor(p.key, p.names, p.keys)
-        : [];
-      var ini = esc(initialsOf(p.name));
-      var av = ph.length
-        ? '<span class="hl-p-av"><img src="' + esc(ph[0]) + '" alt="' + esc(p.name) + '" loading="lazy" referrerpolicy="no-referrer"' +
-          (ph.length > 1 ? ' data-alt="' + esc(ph.slice(1).join("|")) + '"' : "") +
-          ' onerror="window.PC_IMG_FALLBACK(this)">' +
-          '<span class="hl-p-ini" style="display:none">' + ini + "</span></span>"
-        : '<span class="hl-p-av"><span class="hl-p-ini">' + ini + "</span></span>";
+      // 头像统一由 avatar.js 产出（它在内部会把 PlayerCard 的候选图一起收进来）
+      var av = window.AvatarHtml
+        ? window.AvatarHtml(
+            { key: p.key, keys: p.keys || [], name: p.name, names: p.names || [], en: (p.names || [])[0] || "", zh: p.name, base: "" },
+            { cls: "hl-p-av", iniCls: "hl-p-ini", alt: p.name }
+          )
+        : '<span class="hl-p-av"><span class="hl-p-ini">' + esc(initialsOf(p.name)) + "</span></span>";
       var hasNew = hasNewVideos(p);
       return '<tr class="hl-prow">' +
         '<td class="hl-c-player"><span class="hl-p-main">' + av +

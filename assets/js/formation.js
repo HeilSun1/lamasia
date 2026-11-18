@@ -396,13 +396,26 @@
   /* ─────────────────────────────────────────────
      四、渲染
      ───────────────────────────────────────────── */
+  /* 头像 DOM 统一由 assets/js/avatar.js 产出（选图顺序、失败回退、首字母都在那儿）。
+     这里只负责给排兵布阵的 class 和灯箱提示。 */
   function avatarHtml(p, cls, zoom) {
-    const ini = esc(initials(p.zh || p.en || "·"));
-    const src = photoFor(p);
-    return '<span class="fb-avatar ' + (cls || "") + '">' +
-      (src ? '<img src="' + esc(src) + '" alt=""' + (zoom ? ' title="点击看大图"' : '') + ' referrerpolicy="no-referrer" loading="lazy" draggable="false" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">' : "") +
-      '<span class="fb-init" style="' + (src ? "display:none" : "display:grid") + '">' + ini + '</span>' +
-      '</span>';
+    if (!window.AvatarHtml) return '<span class="fb-avatar ' + (cls || "") + '"><span class="fb-init">' + esc(initials(p.zh || p.en || "·")) + "</span></span>";
+    return window.AvatarHtml(
+      {
+        key: (p.mkeys && p.mkeys[0]) || "",
+        keys: p.mkeys || [],
+        en: p.en, zh: p.zh,
+        sf: p.sf || "",
+        img: p.img || "",
+        base: ""
+      },
+      {
+        cls: "fb-avatar" + (cls ? " " + cls : ""),
+        iniCls: "fb-init",
+        alt: p.zh || p.en || "",
+        attrs: 'draggable="false"' + (zoom ? ' title="点击看大图"' : "")
+      }
+    );
   }
 
   /* 头像灯箱：点球员池里的头像看大图（.lightbox 样式复用 style.css，与梯队页同一个观感）。
