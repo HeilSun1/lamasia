@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-18 21:02:45 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-18 22:59:17 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-18 21:02:45",
+    "updated":  "2026-11-18 22:59:17",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4610930", "title":  "Can Vidalet 2-1 Barça Atlètic: Out of the Copa Catalunya",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4610930/can-vidalet-2-1-barca-atletic-out-of-the-copa-catalunya", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/18/86d6be88-d388-4e08-b980-760f357a0efd/WhatsApp-Image-2026-11-18-at-20.00.09.jpeg" },
             {
                 "id":  "4609122", "title":  "Barça Atlètic 0-1 Girona B: First home defeat",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4609122/barca-atletic-0-1-girona-b-first-home-defeat", "time":  "",
@@ -255,16 +259,16 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605954/last-workout-before-the-metropolitano", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" },
             {
-                "id":  "4604218", "title":  "When and where to watch Atlético v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604218/when-and-where-to-watch-atletico-madrid-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4604218", "title":  "When and where to watch Atlético v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604218/when-and-where-to-watch-atletico-madrid-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
             {
                 "id":  "4605545", "title":  "Back at training",

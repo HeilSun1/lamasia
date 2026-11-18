@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-18 21:02:52 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-18 22:59:19 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-18 21:02:52",
+    "updated":  "2026-11-18 22:59:19",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136593390", "title":  "Un combinado experimental del Barça cae en la Copa Catalunya contra el Can Vidalet",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/combinado-experimental-barca-cae-copa-136593390", "time":  "2026-11-18 21:26",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/246b69bc-63a2-4b1a-829b-56afd2260b2b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136590746", "title":  "Can Vidalet-Barça Atlètic: Directo Copa Catalunya",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/can-vidalet-barca-atletic-directo-136590746", "time":  "2026-11-18 20:17",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/db8c6b0a-cc43-4696-9c4f-603a5b92a512_16-9-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136549178", "title":  "El Barça se mueve para renovar al extremo más diferencial de La Masia: \"Es un animal y técnicamente muy bueno\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-mueve-renovar-extremo-diferencial-136549178", "time":  "2026-11-17 18:15",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135590822", "title":  "Pedro Rodríguez está en racha y su juego enamora: \"Es un medio con gol, muy completo e inteligente\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-racha-juego-enamora-135590822", "time":  "2026-10-21 18:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d8a1bd1b-5729-475e-860f-7f5b298c0a66_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135546843", "title":  "Pedro Rodríguez salva un punto para el Barça ante el PSG en la UEFA Youth League",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-salva-punto-barca-135546843", "time":  "2026-10-20 14:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/47fa2af9-8776-433d-8228-5ba11ce6d0d5_16-9-discover-aspect-ratio_640w_1520703.webp" },
-        {
-            "id":  "135546765", "title":  "Así está la clasificación de la Youth League 2026/27 tras el empate del Barcelona contra el PSG",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/clasificacion-youth-league-empate-barcelona-135546765", "time":  "2026-10-20 14:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/98518b8e-e509-4f99-8cfc-227fcb364de3_16-9-discover-aspect-ratio_640w_1520674.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d8a1bd1b-5729-475e-860f-7f5b298c0a66_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

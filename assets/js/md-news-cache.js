@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-18 21:02:58 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-18 22:59:21 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-18 21:02:58",
+    "updated":  "2026-11-18 22:59:21",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261118/1004252554/jaume-jardi-quiero-dejar-huella-real-zaragoza.html", "title":  "Jaume Jardí: Quiero dejar huella en el Real Zaragoza",
+            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261118/1004252554/jaume-jardi-quiero-dejar-huella-real-zaragoza.html", "time":  "2026-11-18 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/18/6afd8bf21c0f1.r_d.661-455-9070.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261118/1004252247/belletti-he-estudiado-psicoanalisis.html", "title":  "Belletti: He estudiado mucho psicoanálisis",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261118/1004252247/belletti-he-estudiado-psicoanalisis.html", "time":  "2026-11-18 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "title":  "Arranca la Iniesta Experience en Barcelona",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "time":  "2026-10-05 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/01/6abe511d49461.r_d.609-1103-4499.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "title":  "Paloma Mikadze: El objetivo es que Barça Play sea una línea relevante de ingresos",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/02/6abfdb9b2b63f.r_d.346-213-18809.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/01/6abe511d49461.r_d.609-1103-4499.jpeg" }
     ]
 };
