@@ -299,11 +299,9 @@
     const sf = window.DQD_BARCA_ATLETIC_SF_CACHE;
     const matches = (sf && sf.matches) || [];
     if (!matches.length) return false;
-    // ★ 新鲜度闸：Sofascore 断供时脚本按设计保留旧缓存不覆盖，于是 matches 永远非空、
-    //   这份冻结的旧赛程会一直压住懂球帝兜底。超过 24h 就当它不可信，让位给懂球帝。
-    //   阈值 24h（脚本一天两班，正常 ≤12h）—— 与 matches-upcoming.js 的 sfCacheFresh() 同步改。
-    const sfUpdated = Date.parse(String((sf || {}).updated || "").replace(/-/g, "/"));
-    if (!sfUpdated || (Date.now() - sfUpdated) > 24 * 3600e3) return false;
+    // 这里不再按 updated 判断新鲜度：Sofascore 断供时脚本会保留旧缓存不覆盖，
+    // 那份缓存仍然是站内最准的赛程，展示层没有理由把它扔掉。
+    // 新鲜度是展示问题（下面用 updated 标出来），不是选源问题。
 
     function fmt(ts) {
       const d = new Date(parseInt(ts, 10) * 1000);
@@ -438,13 +436,17 @@
   }
 
   async function load() {
+    /* Sofascore 缓存里有赛程时就不请求懂球帝的赛程接口；断联或为空时才去抓。 */
+    const sfCache = window.DQD_BARCA_ATLETIC_SF_CACHE;
+    const needDqdSchedule = !(sfCache && (sfCache.matches || []).length);
     const urls = [
       API + "/sport-data/soccer/biz/dqd/v1/team/member_v2/" + TEAM_ID + "?app=dqd&lang=zh-cn",
-      API + "/sport-data/soccer/biz/dqd/team/schedule/" + TEAM_ID + "?app=dqd&lang=zh-cn",
+      needDqdSchedule ? API + "/sport-data/soccer/biz/dqd/team/schedule/" + TEAM_ID + "?app=dqd&lang=zh-cn" : null,
       API + "/api/data/v1/detail/team/" + TEAM_ID + "?app=dqd&lang=zh-cn"
     ];
     try {
       const results = await Promise.all(urls.map(function (u) {
+        if (!u) return Promise.resolve(null);
         return fetch(u, { credentials: "omit" }).then(function (res) {
           if (!res.ok) throw new Error("HTTP " + res.status);
           return res.json();
@@ -452,7 +454,7 @@
       }));
       renderRoster(results[0].data);
       renderInjuries();
-      if (!renderScheduleSf()) renderSchedule(results[1]);
+      if (!renderScheduleSf() && results[1]) renderSchedule(results[1]);
       renderTeamInfo(results[2]);
       setStatus("live", stamp(new Date()));
     } catch (err) {
