@@ -13,3 +13,5 @@ scripts/bili-seen.txt
 desktop-backup/
 # 本地工具（周报录入等，仅本机使用，不部署）
 tools/
+# 本地一次性脚本与备份，不入库
+work/
