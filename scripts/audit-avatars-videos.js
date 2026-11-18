@@ -62,6 +62,29 @@ function isPlaceholder(src) {
 
 /* ── Sofascore 姓名索引（复刻 avatar.js 的 sfIndex） ── */
 const SF = {};
+/* 与 avatar.js 的 SF_ALIAS 保持一致 */
+const SF_ALIAS = {
+  alexwalton: 'alexanderwalton',
+  nilvicens: 'nilvicensponsati',
+  erikdominguez: 'erikdominguezmartos',
+  danyfreire: 'danielfreire',
+};
+function sfLookup(name) {
+  const k = norm(name);
+  if (!k) return '';
+  if (SF[k]) return SF[k];
+  const al = SF_ALIAS[k];
+  if (al && SF[al]) return SF[al];
+  if (k.length < 8) return '';
+  let hit = '', dup = false;
+  for (const key of Object.keys(SF)) {
+    if (key.indexOf(k) === 0 || key.indexOf(key) === 0) {
+      if (hit && hit !== SF[key]) { dup = true; break; }
+      hit = SF[key];
+    }
+  }
+  return dup ? '' : hit;
+}
 [
   ctx.DQD_BARCA_ATLETIC_SF_CACHE,
   ctx.DQD_U19_CACHE,
@@ -105,7 +128,7 @@ function avatarOf(tier, p) {
   /* 复刻当前 avatar.js 的链路（球探卡本地图**还没接进去**，单独作为诊断列） */
   const tries = [
     ["手动补图", manualFor(tier, p)],
-    ["Sofascore", SF[k]],
+    ["Sofascore", sfLookup(p.name)],
     ["data.js img", p.img],
     ["本地镜像", p.person_logo],
   ];
@@ -116,7 +139,31 @@ function avatarOf(tier, p) {
 }
 
 /* ── 视频链（复刻 videos-ui.js 的 resolve + feedFor） ── */
-function videoCount(key) {
+const GROUPS = {};
+function registerGroup(keys) {
+  const list = (keys || []).filter(Boolean);
+  if (list.length < 2) return;
+  list.forEach((k) => { GROUPS[k] = list; });
+}
+function keysFor(key) { return GROUPS[key] || [key]; }
+function videoIds(oneKey) {
+  const out = new Set();
+  if (!oneKey) return out;
+  const keys = keysFor(oneKey);
+  const bs = new Set();
+  keys.forEach((k) => ((VDATA.blocked || {})[k] || []).forEach((id) => bs.add(id)));
+  keys.forEach((k) => {
+    ((VDATA.players || {})[k] || []).forEach((v) => { if (v && v.videoId && !bs.has(v.videoId)) out.add(v.videoId); });
+    ((VIDEOS.players || {})[k] || []).forEach((v) => { if (v && v.videoId && !bs.has(v.videoId)) out.add(v.videoId); });
+    ((((VIDEOS.feed || {}).players || {})[k]) || []).forEach((g) => (g.videos || []).forEach((v) => {
+      if (v && v.videoId && !bs.has(v.videoId)) out.add(v.videoId);
+    }));
+  });
+  return out;
+}
+function videoCount(key) { return videoIds(key).size; }
+
+function videoCountOld(key) {
   if (!key) return 0;
   const blocked = ((VDATA.blocked || {})[key] || []);
   const bs = new Set(blocked);
@@ -148,6 +195,17 @@ function videosOf(tier, p) {
   }
   return { byCard, bySf };
 }
+
+/* 按 data.js 登记视频键分组（与 player-card.js 的 ensureVideoGroups 同口径） */
+Object.keys(DATA.players).forEach((tier) => {
+  const code = (ctx.Teams && ctx.Teams.code) ? ctx.Teams.code(tier) : '';
+  (DATA.players[tier] || []).forEach((p) => {
+    if (!p || !p.sfId) return;
+    const g = ['local:' + tier + ':' + norm(p.name)];
+    ['b', 'u19', 'u18', 'u16', 'u15', 'u14'].forEach((c) => g.push('sf:' + c + ':' + p.sfId));
+    registerGroup(g);
+  });
+});
 
 /* ── 逐人核算 ── */
 const rows = [];
