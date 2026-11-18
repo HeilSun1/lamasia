@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-18 09:56:39 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-18 21:02:58 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-18 09:56:39",
+    "updated":  "2026-11-18 21:02:58",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261118/1004252247/belletti-he-estudiado-psicoanalisis.html", "title":  "Belletti: He estudiado mucho psicoanálisis",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261118/1004252247/belletti-he-estudiado-psicoanalisis.html", "time":  "2026-11-18 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/17/6afcd050c9c57.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251830/pol-planas-posa-entrenador-dinamo-zagreb-b.html", "title":  "Pol Planas ya posa como entrenador del Dinamo de Zagreb B",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261116/1004251830/pol-planas-posa-entrenador-dinamo-zagreb-b.html", "time":  "2026-11-16 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "title":  "Paloma Mikadze: El objetivo es que Barça Play sea una línea relevante de ingresos",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233835/paloma.html", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/02/6abfdb9b2b63f.r_d.346-213-18809.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "title":  "Impresionan, eran chicos a los que había visto en La Masia durante mis dos años en el Barça",
-            "url":  "https://www.mundodeportivo.com/seleccion-espanola/20261002/1004233712/chicos-habia-visto-masia-mis-dos-anos-barca-impresionan.html", "time":  "2026-10-02 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/09/29/6abc1addb8805.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/02/6abfdb9b2b63f.r_d.346-213-18809.jpeg" }
     ]
 };

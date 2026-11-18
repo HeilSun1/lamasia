@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 09:55 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-18 09:55:15",
+    "updated":  "2026-11-18 21:01:25",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -112,36 +112,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "",
                         "foot":  "",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Ebrima Tunkara",
-                        "id":  "2128084",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-03-10",
-                        "foot":  "左脚",
-                        "height":  "178",
-                        "value":  "520万",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pedro Rodriguez",
-                        "id":  "1649171",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-01-20",
-                        "foot":  "右脚",
-                        "height":  "175",
                         "value":  "",
                         "injury":  null
                     },
@@ -457,21 +427,6 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-10-11",
                         "foot":  "",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Max Bonfill",
-                        "id":  "1620575",
-                        "pos":  "G",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1620575/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-03-02",
-                        "foot":  "右脚",
-                        "height":  "188",
                         "value":  "",
                         "injury":  null
                     },

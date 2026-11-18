@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-18 09:54:56 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-18 21:01:00 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-18 09:54:56",
+    "updated":  "2026-11-18 21:01:00",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6665149", "title":  "官方伤情报告：巴萨竞技球员阿维拉、易卜拉欣-迪亚...",
+            "url":  "https://www.dongqiudi.com/articles/6665149.html", "time":  "2026-11-18 10:12",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/FF/DA/280x210/crop/-/rBXRn2r9CXGAC8HFAAHza8txckA489.jpg" },
         {
             "id":  "6664219", "title":  "将对话布斯克茨，每体：乌姆蒂蒂将推出新的电视节目",
             "url":  "https://www.dongqiudi.com/articles/6664219.html", "time":  "2026-11-18 04:02",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6575433", "title":  "每体：巴萨边后卫位置因伤致人员不足，召吉列姆-维克托补训",
             "url":  "https://www.dongqiudi.com/articles/6575433.html", "time":  "2026-10-29 22:49",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/F0/280x210/crop/-/rBXRDGrjWG-AeuF4AACuqMf2jBk539.jpg" },
-        {
-            "id":  "6575168", "title":  "每体：18岁门将伊克尔明日续约巴萨，合同至2029年",
-            "url":  "https://www.dongqiudi.com/articles/6575168.html", "time":  "2026-10-29 21:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/DA/280x210/crop/-/rBXRDGrjRrKAER67AADm330mAlM736.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D7/F0/280x210/crop/-/rBXRDGrjWG-AeuF4AACuqMf2jBk539.jpg" }
     ]
 };

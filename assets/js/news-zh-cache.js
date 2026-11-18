@@ -42,6 +42,7 @@ window.NEWS_ZH = {
   "Barcelona - Aston Villa, en directo hoy: partido de la Youth League, en vivo": "巴塞罗那 - 阿斯顿维拉，今日直播：青年欧冠比赛，直播",
   "Barcelona - Aston Villa: horario y dónde ver hoy el partido de la Youth League por TV y en directo": "巴塞罗那 - 阿斯顿维拉：今日青年欧冠比赛的开球时间和观看直播的平台",
   "Belletti to remain Barça Atlètic coach": "贝莱蒂将继续担任预备队教练",
+  "Belletti: He estudiado mucho psicoanálisis": "贝莱蒂：我学了很多精神分析学。",
   "Bisiwu injury update": "比西乌伤情最新消息",
   "Brian Fariñas makes debut": "布莱恩·法里尼亚斯首次亮相",
   "Caicedo, blaugrana for a season": "凯塞多，效力巴萨一个赛季",
@@ -137,6 +138,7 @@ window.NEWS_ZH = {
   "Mentalidad Fermín": "费尔明的心态",
   "Mirza Catovic, new Barça Atlètic player": "恰托维奇，新预备队球员",
   "New record in Europe for Lamine Yamal": "拉明·亚马尔创欧洲新纪录",
+  "Nine games in a month": "一个月内九场比赛",
   "Nueva conexión a la vista: Fort y Kubo se entienden bien en su primera vez juntos": "新的默契即将出现：福特和库博在第一次见面时就相处融洽。",
   "Nuhu Fofana, blaugrana until 2030": "努胡·福法纳，至 2030 年效力巴萨",
   "Oficial: Pol Planas se desvincula del Barça y Albert Peris lo sustituye": "官方消息：波尔·普拉纳斯（Pol Planas）离开巴萨，阿尔贝特·佩里斯（Albert Peris）接替其职位",
@@ -194,6 +196,7 @@ window.NEWS_ZH = {
   "Victory and 90 minutes for Cancelo": "胜利，坎塞洛踢满 90 分钟",
   "When and where to watch Atlético v Barça": "观看马德里竞技对阵巴萨的比赛时间和地点",
   "When and where to watch Barça v Aston Villa": "巴萨对阵阿斯顿维拉的比赛观看时间和地点",
+  "When and where to watch Barça v Villarreal": "巴萨对阵比利亚雷亚尔的比赛观看时间和地点",
   "Work continues at the Ciutat Esportiva": "俱乐部体育城工程仍在继续",
   "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia": "哈维·埃尔南德斯：我生来就是巴萨人，我想帮助巴萨谱写更辉煌的历史。",
   "Xavi Martín, exdirector de la Masia: \"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"": "拉玛西亚前总监哈维·马丁 (Xavi Martín) 表示：“这就是巴萨与众不同的地方，应该更多地加以利用。为什么我们的商店里没有拉玛西亚的周边产品？”"

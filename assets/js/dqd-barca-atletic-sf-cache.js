@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 09:54 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 21:01 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-18 09:54:55",
+    "updated":  "2026-11-18 21:01:00",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -144,7 +144,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "2128084",
                         "pos":  "M",
                         "shirt":  "",
-                        "team":  "FC Barcelona",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2128084/image",
                         "age":  "16岁",
@@ -215,21 +215,6 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Dani Ávila",
-                        "id":  "1542727",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona Atlètic",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
-                        "age":  "19岁",
-                        "birthday":  "2007-03-22",
-                        "foot":  "右脚",
-                        "height":  "180",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Pedro Villar",
                         "id":  "2076883",
                         "pos":  "M",
@@ -242,6 +227,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "178",
                         "value":  "9万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Dani Ávila",
+                        "id":  "1542727",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1542727/image",
+                        "age":  "19岁",
+                        "birthday":  "2007-03-22",
+                        "foot":  "右脚",
+                        "height":  "180",
+                        "value":  "",
                         "injury":  null
                     },
                     {
@@ -339,7 +339,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "1482410",
                         "pos":  "D",
                         "shirt":  "",
-                        "team":  "Defensor Sporting",
+                        "team":  "Barcelona Atlètic",
                         "nation":  "Uruguay",
                         "photo":  "https://img.sofascore.com/api/v1/player/1482410/image",
                         "age":  "20岁",
@@ -740,6 +740,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "status":  "Ended",
                         "code":  "100",
                         "isHome":  true
+                    },
+                    {
+                        "id":  "17584385",
+                        "comp":  "加泰罗尼亚杯",
+                        "round":  "6",
+                        "start":  "1795024800",
+                        "home":  "CF Can Vidalet",
+                        "away":  "Barcelona Atlètic",
+                        "homeId":  "379471",
+                        "awayId":  "24343",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  false
                     },
                     {
                         "id":  "16742389",
