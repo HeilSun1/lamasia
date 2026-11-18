@@ -1,0 +1,248 @@
+[
+ {
+  "who": "易卜拉欣·迪亚拉",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1542744/image",
+  "hash": "de29141036f8f016"
+ },
+ {
+  "who": "伊格纳西·凯尔",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1977602/image",
+  "hash": "d2cf68c07a7e5706"
+ },
+ {
+  "who": "帕特里西奥·帕西菲科",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1482410/image",
+  "hash": "2c6e2495b35c7a1a"
+ },
+ {
+  "who": "亚历山大·沃尔顿",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1939135/image",
+  "hash": "2e5c3a436544ec16"
+ },
+ {
+  "who": "米尔扎·查托维奇",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1937274/image",
+  "hash": "53ed206c2da2ada1"
+ },
+ {
+  "who": "亚历克斯·冈萨雷斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2268815/image",
+  "hash": "823ce2affe51c59f"
+ },
+ {
+  "who": "胡安·伊瓦拉",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2488625/image",
+  "hash": "85a4a3a4a13a935f"
+ },
+ {
+  "who": "哈维·卡斯特罗",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2679424/image",
+  "hash": "ec7908307d2ed21c"
+ },
+ {
+  "who": "佩德罗·罗德里格斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1649171/image",
+  "hash": "f6eae25acfd5f0fc"
+ },
+ {
+  "who": "比西武",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\dqd\\50892327.jpg",
+  "hash": "ad3a4fad5f6d34ec"
+ },
+ {
+  "who": "尤文斯利·翁斯泰因",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1798716/image",
+  "hash": "19ed7e153e1bdab2"
+ },
+ {
+  "who": "佩德罗·比利亚尔",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2076883/image",
+  "hash": "39a311f4f77417af"
+ },
+ {
+  "who": "亚当·阿尔赫米",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2076887/image",
+  "hash": "301c66122410a68d"
+ },
+ {
+  "who": "乔尼·埃尔南德斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2679425/image",
+  "hash": "0ca7eb0675de64bc"
+ },
+ {
+  "who": "肖恩·克鲁伊维特",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\shane-kluivert.jpg",
+  "hash": "f0dcd4fba90e584b"
+ },
+ {
+  "who": "哈姆扎·阿卜杜勒卡里姆",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\hamza-abdelkarim.jpg",
+  "hash": "60a281dbe41e9482"
+ },
+ {
+  "who": "何塞·凯塞多",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2219071/image",
+  "hash": "0d6e7bb6f0f8ace4"
+ },
+ {
+  "who": "伊克尔·罗德里格斯",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\iker-rodriguez.jpg",
+  "hash": "48967226bdced039"
+ },
+ {
+  "who": "阿齐兹·伊萨",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1457200/image",
+  "hash": "9f1b81e54cfde504"
+ },
+ {
+  "who": "巴巴·库鲁马",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\baba-kourouma.jpg",
+  "hash": "dacbc14936c23129"
+ },
+ {
+  "who": "赫拉德·萨拉",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2229916/image",
+  "hash": "dd957c0b0b923676"
+ },
+ {
+  "who": "米哈乌·祖克",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2128103/image",
+  "hash": "9dab7de9efe3ba0b"
+ },
+ {
+  "who": "劳尔·埃斯波西托",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2607840/image",
+  "hash": "c0a2ad04ca6cd359"
+ },
+ {
+  "who": "伊乌·马丁内斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2405472/image",
+  "hash": "76a57ad9c8a365bc"
+ },
+ {
+  "who": "阿杰伊·塔瓦雷斯",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\ajay-tavares.jpg",
+  "hash": "3d951d2176d4f35b"
+ },
+ {
+  "who": "若安·因格莱斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2229086/image",
+  "hash": "82ade356555e1c89"
+ },
+ {
+  "who": "哈维·米兰赫尔斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2722893/image",
+  "hash": "86fe7db90c65cca0"
+ },
+ {
+  "who": "埃布里马·通卡拉",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\ebrima-tunkara.jpg",
+  "hash": "7585669b0a667e92"
+ },
+ {
+  "who": "塞尔吉·马扬斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2128115/image",
+  "hash": "6d05c91c43b6042e"
+ },
+ {
+  "who": "拜伦·门多萨",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\byron-mendoza.jpg",
+  "hash": "1950b5d2bec8bb32"
+ },
+ {
+  "who": "伊斯梅尔·齐亚尼",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\ismael-ziani.jpg",
+  "hash": "811813e01f33e5bb"
+ },
+ {
+  "who": "艾哈迈德·阿巴尔卡内",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\ahmed-abarkane.jpg",
+  "hash": "be8808506b45812c"
+ },
+ {
+  "who": "阿尔乔姆·雷巴克",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\artem-rybak.jpg",
+  "hash": "0a0ce0a314c6d468"
+ },
+ {
+  "who": "乌戈·加塞斯",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\hugo-garces.jpg",
+  "hash": "6b6fa9e19e4e0ee9"
+ },
+ {
+  "who": "鲁斯兰·姆巴",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\ruslan-mba.jpg",
+  "hash": "2bade8356778b10e"
+ },
+ {
+  "who": "李昊炎",
+  "kind": "local",
+  "url": "file://D:\\视频素材\\Claude\\barca-lamasia\\assets\\img\\players\\li-haoyan.jpg",
+  "hash": "7f5c56929f42ac54"
+ },
+ {
+  "who": "萨穆·博尔尼克尔",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2407333/image",
+  "hash": "9f94f6b7249c1b13"
+ },
+ {
+  "who": "霍迪·佩斯克尔",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2128094/image",
+  "hash": "830313e28511d9fd"
+ },
+ {
+  "who": "米卡埃尔·巴萨",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2311166/image",
+  "hash": "HTTP404"
+ },
+ {
+  "who": "戈尔卡·布伊尔",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/2272317/image",
+  "hash": "d68f000da7085673"
+ },
+ {
+  "who": "胡安·埃尔南德斯",
+  "kind": "sf",
+  "url": "https://img.sofascore.com/api/v1/player/1493491/image",
+  "hash": "ab78a22e8f6c5d76"
+ }
+]

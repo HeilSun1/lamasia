@@ -61,7 +61,7 @@
     <div class="panel">
       <div class="stats-row">
         <div class="stat-tile"><div class="st-label">联赛级别</div><div class="st-value accent">第 4 级</div><div class="st-note">Segunda Federación · 2026-27 在 G2</div></div>
-        <div class="stat-tile"><div class="st-label">阵容规模</div><div class="st-value">25–26 人</div><div class="st-note">平均年龄约 18.8 岁</div></div>
+        <div class="stat-tile"><div class="st-label">注册名单</div><div class="st-value">30 人</div><div class="st-note">2026-27 官方注册（含 3 名门将）</div></div>
         <div class="stat-tile"><div class="st-label">2025-26 首季</div><div class="st-value accent">42 人启用</div><div class="st-note">21 人上演处子秀</div></div>
         <div class="stat-tile"><div class="st-label">主教练</div><div class="st-value" style="font-size:20px">Belletti</div><div class="st-note">2026-27 执教第二季 · 官方续约</div></div>
       </div>
@@ -108,12 +108,11 @@
 
     <div class="panel" id="sec-roster">
       <div class="panel-title-row">
-        <h3>球员名单 <span class="tag">懂球帝数据源 · 自动更新</span></h3>
-        <span class="badge blue" id="dqd-count-badge">加载中…</span>
+        <h3>球员大名单 <span class="tag">官方名单 · 静态维护</span></h3>
+        <span class="badge gray">2026-27 · 30 人</span>
       </div>
-      <div id="dqd-roster" class="p-body" style="margin-top:10px">
-        <div class="match-list-empty">正在加载懂球帝数据…</div>
-      </div>
+      <p class="p-desc">来源：2026-27 赛季 Barça Atlètic 官方注册名单图（GK / DEF / MID / ATT）。懂球帝与 Sofascore 只提供赛程、伤病与照片，不再决定谁在队里。</p>
+      <div class="p-body" id="roster-barca-atletic"></div>
     </div>
 
     <div class="panel" id="sec-schedule">
@@ -191,6 +190,7 @@
   <script src="../assets/js/manual-photos.js"></script>
     <script src="../assets/js/name-zh.js"></script>
   <script src="../assets/js/dqd-barca-atletic.js"></script>
+<script>if (window.LAMASIA_RENDER) { LAMASIA_RENDER.playerList('barca-atletic', 'roster-barca-atletic', '../assets/img/players/'); }</script>
   <script src="../assets/js/dqd-barca-news-cache.js"></script>
   <script src="../assets/js/news-read.js"></script>
     <script src="../assets/js/news-item.js"></script>
