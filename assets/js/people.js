@@ -31,7 +31,63 @@
     return POS[String(code == null ? "" : code).toUpperCase().trim()] || "";
   }
 
-  var api = { norm: norm, normLabel: normLabel, GONE: GONE, pos: pos, POS: POS };
+  /* 视频键 → 人。集锦的键有三种写法：local:<tier>:<拼音>（data.js 名单算出来的）、
+     sf:b:<id> / b:<id>（Sofascore 编号）、sf:<u19|u18|u16|b>:<id>。
+     以前每处渲染各自解析，查不到就把键名甩到界面上（2026-11 踩过）。
+     统一在这里按「id 优先、名字次之」查一遍：data.js 名单 → Sofascore 缓存 → 球探卡。 */
+  function fromKey(k) {
+    var s = String(k == null ? "" : k);
+    var idm = /^(?:sf:)?(?:b|u19|u18|u16):(\d+)$/.exec(s);
+    var lm = /^local:([a-z0-9-]+):([a-z0-9]+)$/.exec(s);
+    var slug = lm ? lm[2] : "";
+    var wantId = idm ? idm[1] : "";
+    var tier = lm ? lm[1] : (idm ? (/^sf:b:|^b:/.test(s) ? "barca-atletic" : s.split(":")[1]) : "");
+
+    function zhOf(en) {
+      if (!en) return "";
+      if (root.NameZh) { var z = root.NameZh(en); if (z) return z; }
+      return "";
+    }
+
+    /* 1) data.js 官方名单（最可信，带中文名与梯队） */
+    var all = (root.LAMASIA_DATA && root.LAMASIA_DATA.players) || {};
+    for (var t in all) {
+      if (!Object.prototype.hasOwnProperty.call(all, t)) continue;
+      var arr = all[t] || [];
+      for (var i = 0; i < arr.length; i++) {
+        var p = arr[i];
+        if (!p) continue;
+        if ((wantId && String(p.sfId || "") === wantId) || (slug && p.name && norm(p.name) === slug)) {
+          return { nameZh: p.zh || zhOf(p.name), nameEn: p.name || "", team: t, tier: t, source: "data" };
+        }
+      }
+    }
+
+    /* 2) Sofascore 缓存（按编号，其次按名字） */
+    var caches = [root.DQD_BARCA_ATLETIC_SF_CACHE, root.DQD_U19_CACHE, root.DQD_U18_CACHE, root.DQD_U16_CACHE];
+    for (var c = 0; c < caches.length; c++) {
+      var ps = (caches[c] && caches[c].players) || [];
+      for (var j = 0; j < ps.length; j++) {
+        var q = ps[j];
+        if (!q) continue;
+        if ((wantId && String(q.id || "") === wantId) || (slug && q.name && norm(q.name) === slug)) {
+          return { nameZh: zhOf(q.name), nameEn: q.name || "", team: "", tier: tier, source: "sofascore", sf: q.photo || "" };
+        }
+      }
+    }
+
+    /* 3) 球探卡 */
+    var sc = root.SCOUT_CARDS || [];
+    for (var s2 = 0; s2 < sc.length; s2++) {
+      var c2 = sc[s2];
+      if (!c2) continue;
+      if (slug && c2.en && norm(c2.en) === slug) {
+        return { nameZh: c2.zh || zhOf(c2.en), nameEn: c2.en, team: c2.team || "", tier: tier, source: "scout" };
+      }
+    }
+    return null;
+  }
+  var api = { norm: norm, fromKey: fromKey, normLabel: normLabel, GONE: GONE, pos: pos, POS: POS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.People = api;
 })(typeof window !== "undefined" ? window : globalThis);

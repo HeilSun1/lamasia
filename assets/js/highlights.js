@@ -166,11 +166,12 @@
     }
     if (!groups.length) return;
     var rec = (window.PlayerCard && window.PlayerCard.findByKey(k)) || null;
+    if (!rec && window.People && window.People.fromKey) rec = window.People.fromKey(k);
     if (!rec) rec = personFromKey(k);
     if (rec && !rec.nameZh && rec.nameEn && window.NameZh) rec.nameZh = window.NameZh(rec.nameEn) || "";
     entries.push({
       key: k,
-      tier: tierOf(k),
+      tier: (rec && rec.tier) || tierOf(k),
       groups: groups,
       nameZh: (rec && rec.nameZh) || "",
       nameEn: (rec && rec.nameEn) || k,
