@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-18 21:02 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-19 10:06 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-18 21:02:26",
+    "updated":  "2026-11-19 10:06:51",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -850,10 +850,10 @@ window.DQD_U16_CACHE = {
                         "away":  "Barcelona U16",
                         "homeId":  "1266405",
                         "awayId":  "933329",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "2",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {
@@ -870,6 +870,21 @@ window.DQD_U16_CACHE = {
                         "status":  "Not started",
                         "code":  "0",
                         "isHome":  false
+                    },
+                    {
+                        "id":  "17588472",
+                        "comp":  "U16 Divisió d\u0027Honor Catalana Cadet ",
+                        "round":  "10",
+                        "start":  "1795347024",
+                        "home":  "Barcelona U16",
+                        "away":  "Vic Riuprimer Refo FC U16",
+                        "homeId":  "933329",
+                        "awayId":  "1213760",
+                        "hs":  "",
+                        "as":  "",
+                        "status":  "Not started",
+                        "code":  "0",
+                        "isHome":  true
                     }
                 ]
 };
