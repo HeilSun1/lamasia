@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-19 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-19 23:06 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-19 21:00:24",
+    "updated":  "2026-11-19 23:06:44",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -1763,7 +1763,7 @@ window.DQD_BARCA_ATLETIC = {
                                              {
                                                  "data":  [
                                                               {
-                                                                  "age":  "20岁",
+                                                                  "age":  "21岁",
                                                                   "captain_logo":  "",
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2JGASs2QAAAEP6RcnSU543.png",
                                                                   "nationality_name":  "加纳",
@@ -2110,7 +2110,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/78/ChOxM1xC2KqAeVL1AAAEUuiLh5o352.png",
                                                                   "nationality_name":  "以色列/捷克",
                                                                   "other_logo":  [
-
+                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
                                                                                  ],
                                                                   "person_en_name":  "Orian Goren",
                                                                   "person_id":  "51022515",
@@ -2419,7 +2419,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙/科特迪瓦",
                                                                   "other_logo":  [
-                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
+
                                                                                  ],
                                                                   "person_en_name":  "Landry Farré",
                                                                   "person_id":  "50936240",
