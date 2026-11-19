@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-19 10:07:03 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-19 21:02:06 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-19 10:07:03",
+    "updated":  "2026-11-19 21:02:06",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -171,6 +171,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4610816", "title":  "A traditionally difficult fixture",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610816/villarreal-a-traditionally-difficult-opponent", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/ce1a33ee-5bbe-4c54-9463-db4055fe7534/JUCA0397.jpg" },
+            {
                 "id":  "4610002", "title":  "When and where to watch Barça v Villarreal",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610002/when-and-where-to-watch-fc-barcelona-v-villarreal-cf", "time":  "",
                 "tag":  "", "img":  "" },
@@ -255,10 +259,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605960/hansi-flick-eric-and-christensen-will-be-in-the-squad", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/3fe5c4c4-ca3f-42fd-8fe4-352d2b45daf7/_MGA4660.jpg" },
             {
-                "id":  "4605954", "title":  "Eric and Christensen are back",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605954/last-workout-before-the-metropolitano", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -266,6 +266,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4605954", "title":  "Eric and Christensen are back",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605954/last-workout-before-the-metropolitano", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" },
             {
                 "id":  "4604218", "title":  "When and where to watch Atlético v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604218/when-and-where-to-watch-atletico-madrid-v-fc-barcelona", "time":  "",
@@ -365,11 +369,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4601449", "title":  "Hansi Flick: Record-breaking 100 wins",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/07a1c6b5-5467-434f-a13a-ee3594f28bbe/_MGA2877.jpg" },
-            {
-                "id":  "4602177", "title":  "Barça 6-1 Alavés: That's more like it!",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/e6c56dfb-0242-4696-9375-d969621748cc/_MGA8416.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/10/31/07a1c6b5-5467-434f-a13a-ee3594f28bbe/_MGA2877.jpg" }
         ]
     }
 };

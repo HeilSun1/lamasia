@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-19 10:07:10 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-19 21:02:28 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-19 10:07:10",
+    "updated":  "2026-11-19 21:02:28",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261119/1004252543/dejar-masia-duro-barca-me-real-madrid.html", "title":  "Dejar La Masia fue muy duro. Soy del Barça y me fui al Real Madrid",
+            "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261119/1004252543/dejar-masia-duro-barca-me-real-madrid.html", "time":  "2026-11-19 12:00",
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/19/6afeb8c066682.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261118/1004252554/jaume-jardi-quiero-dejar-huella-real-zaragoza.html", "title":  "Jaume Jardí: Quiero dejar huella en el Real Zaragoza",
             "url":  "https://www.mundodeportivo.com/futbol/futbol-catala/20261118/1004252554/jaume-jardi-quiero-dejar-huella-real-zaragoza.html", "time":  "2026-11-18 12:00",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "title":  "Paso importante para Diego Kochen",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004234753/paso-importante-diego-kochen.html", "time":  "2026-10-05 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37c39180f2.r_d.600-462-10256.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "title":  "Arranca la Iniesta Experience en Barcelona",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261005/1004233380/marcha-iniesta-experience-barcelona.html", "time":  "2026-10-05 12:00",
-            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/01/6abe511d49461.r_d.609-1103-4499.jpeg" }
+            "tag":  "", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac37c39180f2.r_d.600-462-10256.jpeg" }
     ]
 };

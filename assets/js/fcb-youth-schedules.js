@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-19 10:07；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-19 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-19 10:07:02",
+    "updated":  "2026-11-19 21:02:02",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -3668,8 +3668,8 @@ window.LAMASIA_SCHEDULES = {
                                           "comp":  "西青乙 G7",
                                           "compEn":  "Liga Nacional Grupo 7",
                                           "round":  "11",
-                                          "start":  "1795950000",
-                                          "date":  "2026-11-29",
+                                          "start":  "1795860000",
+                                          "date":  "2026-11-28",
                                           "tbd":  false,
                                           "home":  "FC Barcelona B",
                                           "away":  "Castelldefels A",

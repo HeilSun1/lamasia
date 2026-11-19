@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-19 10:05:51 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-19 21:00:47 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-19 10:05:51",
+    "updated":  "2026-11-19 21:00:47",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6668225", "title":  "博扬：哈姆扎将成为世界最佳9号之一",
+            "url":  "https://www.dongqiudi.com/articles/6668225.html", "time":  "2026-11-19 12:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E4/25/280x210/crop/-/rBXRDGrq-jCAFK3bAAGg0f-KzUM724.jpg" },
         {
             "id":  "6667584", "title":  "每体：贝莱蒂迎国脚回归，巴萨竞技三名伤员有望复出",
             "url":  "https://www.dongqiudi.com/articles/6667584.html", "time":  "2026-11-19 07:05",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6580924", "title":  "官方：巴萨与青训门将伊克尔-罗德里格斯续约至2029年",
             "url":  "https://www.dongqiudi.com/articles/6580924.html", "time":  "2026-10-31 01:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/2C/280x210/crop/-/rBXRn2rk2LeAOqfXAAG97NVT51A268.jpg" },
-        {
-            "id":  "6579560", "title":  "弗里克：凯恩配得上拿金球，亚马尔的水平也足以获奖",
-            "url":  "https://www.dongqiudi.com/articles/6579560.html", "time":  "2026-10-30 22:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/D9/F4/280x210/crop/-/rBXRDGrkoIqAGvw3AAFIc7VCwFg792.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DA/2C/280x210/crop/-/rBXRn2rk2LeAOqfXAAG97NVT51A268.jpg" }
     ]
 };
