@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-20 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-20 22:42 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-20 21:00:23",
+    "updated":  "2026-11-20 22:42:30",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -800,7 +800,7 @@ window.DQD_BARCA_ATLETIC = {
                                       "fs_B":  "",
                                       "ps_A":  "",
                                       "ps_B":  "",
-                                      "start_play":  "2026-12-06 16:00:00",
+                                      "start_play":  "2026-12-05 15:00:00",
                                       "suretime":  "1",
                                       "status":  "Fixture",
                                       "playing_time":  "",
@@ -1641,7 +1641,17 @@ window.DQD_BARCA_ATLETIC = {
                              }
             },
     "injuries_list":  [
-
+                          {
+                              "person_id":  "50936240",
+                              "name":  "朗德里-法雷",
+                              "en":  "Landry Farré",
+                              "photo":  "assets/img/players/dqd/50936240.jpg",
+                              "injury":  "膝关节发炎",
+                              "date_from":  "2026.11.10",
+                              "date_until":  "2026.11.20",
+                              "days":  "12",
+                              "games_missed":  "1"
+                          }
                       ],
     "roster":  {
                    "code":  0,
@@ -2994,11 +3004,11 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  "5"
                                       },
                          "50936240":  {
-                                          "date_until":  "2026.06.30",
-                                          "date_from":  "2026.05.02",
-                                          "injury":  "膝盖受伤",
-                                          "days":  "61",
-                                          "status":  "ok",
+                                          "date_until":  "2026.11.20",
+                                          "date_from":  "2026.11.10",
+                                          "injury":  "膝关节发炎",
+                                          "days":  "12",
+                                          "status":  "out",
                                           "games_missed":  "1"
                                       },
                          "50855328":  {

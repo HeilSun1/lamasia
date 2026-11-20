@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-20 21:00:42 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-20 22:42:33 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-20 21:00:42",
+    "updated":  "2026-11-20 22:42:33",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6674103", "title":  "恩里克：曾差点放弃执教巴萨B队，凌晨想不干了八点又改主意",
+            "url":  "https://www.dongqiudi.com/articles/6674103.html", "time":  "2026-11-21 03:05",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/04/F3/280x210/crop/-/rBXRn2sAeR6AP77eAAICR-s8TsI460.jpg" },
+        {
+            "id":  "6673775", "title":  "任意球破门并非即兴发挥，通卡拉：花了两三天时间练习任意球",
+            "url":  "https://www.dongqiudi.com/articles/6673775.html", "time":  "2026-11-21 01:36",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/05/18/280x210/crop/-/rBXRDGsAhAKAN8dEAAMa4vAQLEE854.jpg" },
+        {
+            "id":  "6673621", "title":  "西班牙U17主帅库比洛：首战总是艰难的，中国队是亚洲亚军",
+            "url":  "https://www.dongqiudi.com/articles/6673621.html", "time":  "2026-11-21 00:55",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/05/07/280x210/crop/-/rBXRDGsAeZCAe5hXAAJilBabbFQ419.jpg" },
         {
             "id":  "6671427", "title":  "西班牙U17全队4人德转身价过百万欧，小将多明戈斯估值达800万欧",
             "url":  "https://www.dongqiudi.com/articles/6671427.html", "time":  "2026-11-20 14:49",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6594453", "title":  "上点强度！凯塞多在巴萨竞技的比赛中贡献了一次凶狠...",
             "url":  "https://www.dongqiudi.com/articles/6594453.html", "time":  "2026-11-02 10:29",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/02/8ab78483084a831ccb3b83d31e80b840WjoEtr_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
-        {
-            "id":  "6594426", "title":  "马扬斯vs阿内多个人集锦。17岁的左脚中后卫马扬...",
-            "url":  "https://www.dongqiudi.com/articles/6594426.html", "time":  "2026-11-02 10:18",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/02/9931ea1273ab78ee3d15892d7223d006jNl6WP_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
-        {
-            "id":  "6591541", "title":  "每体：克里斯滕森回归合练，但本周欧冠复出渺茫",
-            "url":  "https://www.dongqiudi.com/articles/6591541.html", "time":  "2026-11-01 22:25",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C3/0B/280x210/crop/-/rBXRDGrXF8SAZHsyAANum8eiva0688.jpg" },
-        {
-            "id":  "6588656", "title":  "【球星采访系列】哈维：布斯克茨最佳",
-            "url":  "https://www.dongqiudi.com/articles/6588656.html", "time":  "2026-11-01 07:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DD/15/280x210/crop/-/rBXRDGrmdyyAAmZdAAvEbmcNEbE703.png" }
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/02/8ab78483084a831ccb3b83d31e80b840WjoEtr_smart.mp4?vframe/jpg/offset/1/w/300/h/400" }
     ]
 };
