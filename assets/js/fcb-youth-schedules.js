@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-20 09:59；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-20 21:01；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-20 09:59:50",
+    "updated":  "2026-11-20 21:01:50",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -276,7 +276,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "13",
                                           "start":  "1797159600",
                                           "date":  "2026-12-13",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "Girona",
                                           "away":  "FC Barcelona",
                                           "homeId":  "8827",

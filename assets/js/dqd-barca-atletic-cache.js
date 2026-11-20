@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-20 09:58 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-20 21:00 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-20 09:58:29",
+    "updated":  "2026-11-20 21:00:23",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2720,7 +2720,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "person_en_name":  "Jordi Pesquer",
                                                                   "person_id":  "51038109",
                                                                   "person_logo":  "assets/img/players/dqd/51038109.jpg",
-                                                                  "person_name":  "佩斯克尔",
+                                                                  "person_name":  "乔迪-佩斯克尔",
                                                                   "scheme":  "dongqiudi:///player/51038109",
                                                                   "shirtnumber":  "35",
                                                                   "statistic":  [

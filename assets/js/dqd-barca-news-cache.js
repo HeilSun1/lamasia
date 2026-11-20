@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-20 09:58:48 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-20 21:00:42 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-20 09:58:48",
+    "updated":  "2026-11-20 21:00:42",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6671427", "title":  "西班牙U17全队4人德转身价过百万欧，小将多明戈斯估值达800万欧",
+            "url":  "https://www.dongqiudi.com/articles/6671427.html", "time":  "2026-11-20 14:49",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/04/29/280x210/crop/-/rBXRn2r_7ViAKSE_AAHLjgf5c1U624.jpg" },
+        {
+            "id":  "6670749", "title":  "李家润：时隔21年重返世界杯舞台很自豪，面对西班牙不会胆怯",
+            "url":  "https://www.dongqiudi.com/articles/6670749.html", "time":  "2026-11-20 10:26",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/03/CC/280x210/crop/-/rBXRn2r_rTyAT8kWAAERdIMxqn8328.jpg" },
         {
             "id":  "6670351", "title":  "雅各-法尔克回忆离开巴萨青训：瓜帅认为我没能力为B队踢球",
             "url":  "https://www.dongqiudi.com/articles/6670351.html", "time":  "2026-11-20 07:13",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6588656", "title":  "【球星采访系列】哈维：布斯克茨最佳",
             "url":  "https://www.dongqiudi.com/articles/6588656.html", "time":  "2026-11-01 07:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DD/15/280x210/crop/-/rBXRDGrmdyyAAmZdAAvEbmcNEbE703.png" },
-        {
-            "id":  "6587650", "title":  "巴萨竞技战报 20261101",
-            "url":  "https://www.dongqiudi.com/articles/6587650.html", "time":  "2026-11-01 04:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/AA/280x210/crop/-/rBXRn2rmSLSAfQ8KAAVDnTQ50iI512.jpg" },
-        {
-            "id":  "6586338", "title":  "每体：奥恩斯泰因、阿维拉复出，入选巴萨竞技名单",
-            "url":  "https://www.dongqiudi.com/articles/6586338.html", "time":  "2026-11-01 01:07",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/49/280x210/crop/-/rBXRn2rmHOiALN2hAAEKBIfLaRc673.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DD/15/280x210/crop/-/rBXRDGrmdyyAAmZdAAvEbmcNEbE703.png" }
     ]
 };
