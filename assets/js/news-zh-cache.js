@@ -142,6 +142,7 @@ window.NEWS_ZH = {
   "Mensajes motivadores de Fermín y Gavi: Confiad en el equipo, todo vuelve": "费尔明和加维的鼓舞人心的话语：相信球队，一切都会好起来的",
   "Mentalidad Fermín": "费尔明的心态",
   "Mirza Catovic, new Barça Atlètic player": "恰托维奇，新预备队球员",
+  "New faces at training": "培训中的新面孔",
   "New record in Europe for Lamine Yamal": "拉明·亚马尔创欧洲新纪录",
   "Nine games in a month": "一个月内九场比赛",
   "Nueva conexión a la vista: Fort y Kubo se entienden bien en su primera vez juntos": "新的默契即将出现：福特和库博在第一次见面时就相处融洽。",

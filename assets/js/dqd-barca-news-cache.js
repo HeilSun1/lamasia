@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-19 23:06:46 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-20 09:58:48 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-19 23:06:46",
+    "updated":  "2026-11-20 09:58:48",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6670351", "title":  "雅各-法尔克回忆离开巴萨青训：瓜帅认为我没能力为B队踢球",
+            "url":  "https://www.dongqiudi.com/articles/6670351.html", "time":  "2026-11-20 07:13",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/02/A7/280x210/crop/-/rBXRn2r-7F6AQyAuAAGQBx0E4SM772.jpg" },
         {
             "id":  "6668159", "title":  "西班牙U17大名单盘点：4名西乙球员，3人身价超500万欧",
             "url":  "https://www.dongqiudi.com/articles/6668159.html", "time":  "2026-11-20 00:59",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6586338", "title":  "每体：奥恩斯泰因、阿维拉复出，入选巴萨竞技名单",
             "url":  "https://www.dongqiudi.com/articles/6586338.html", "time":  "2026-11-01 01:07",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/49/280x210/crop/-/rBXRn2rmHOiALN2hAAEKBIfLaRc673.jpg" },
-        {
-            "id":  "6584618", "title":  "巴萨对阵阿拉维斯大名单：亚马尔、拉菲尼亚在列，孔德缺阵",
-            "url":  "https://www.dongqiudi.com/articles/6584618.html", "time":  "2026-10-31 20:45",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DB/EF/280x210/crop/-/rBXRDGrl4sWAI_EcAAyJ49BVJ74203.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/DC/49/280x210/crop/-/rBXRn2rmHOiALN2hAAEKBIfLaRc673.jpg" }
     ]
 };
