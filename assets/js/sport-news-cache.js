@@ -1,17 +1,33 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-21 21:02:34 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-21 21:43:29 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-21 21:02:34",
+    "updated":  "2026-11-21 21:43:29",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136702143", "title":  "Un Orian Goren imperial no basta en un miniderbi accidentado e imprevisible",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-imperial-basta-miniderbi-136702143", "time":  "2026-11-21 20:01",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e0ecc22d-3994-47de-ba32-ab63cf974341_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136701333", "title":  "El Barça Atlètic deja escapar una oportunidad de oro ante un Espanyol B con nueve",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/espanyol-barca-atletic-directo-partido-136701333", "time":  "2026-11-21 18:55",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/6dad66ac-7a94-4a43-9a3f-cf7ace57f2ec_16-9-discover-aspect-ratio_640w_0_x640y284.webp" },
+        {
+            "id":  "136698377", "title":  "Un eléctrico Ajay Tavares endulza el debut de Albert Peris en el Juvenil A del Barça",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/electrico-ajay-tavares-endulza-debut-136698377", "time":  "2026-11-21 14:41",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4a49ce89-2940-4bfb-9340-9d36451c687e_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "136696117", "title":  "Hafiz Gariba y Caicedo se caen en el Barça Atlètic",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hafiz-gariba-caicedo-caen-barca-136696117", "time":  "2026-11-21 13:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/48e368cf-a54f-4921-864e-7d9ec390f333_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
+        {
             "id":  "136695544", "title":  "Noticias tranquilizadoras sobre Rodri",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/noticias-tranquilizadoras-rodri-136695544", "time":  "2026-11-21 12:53",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/52412df4-d4af-4a0d-9c32-39a31240271a_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/52412df4-d4af-4a0d-9c32-39a31240271a_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
         {
             "id":  "136684214", "title":  "Hamza Abdelkarim se apunta a un derbi de filiales de altos vuelos",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/espanyol-b-barca-atletic-hamza-abdelkarim-derbi-filiales-segunda-rfef-136684214", "time":  "2026-11-21 07:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2a193341-61c7-442c-b8f9-88622fd209f5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2a193341-61c7-442c-b8f9-88622fd209f5_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136593390", "title":  "Un combinado experimental del Barça cae en la Copa Catalunya contra el Can Vidalet",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/combinado-experimental-barca-cae-copa-136593390", "time":  "2026-11-18 21:26",
@@ -187,22 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135746577", "title":  "Primer pinchazo del Barça Atlètic frente a un Olot mejor",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/primer-pinchazo-barca-atletic-frente-135746577", "time":  "2026-10-25 19:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8e68cf14-6099-458c-b78b-8b9f89b60cb3_16-9-discover-aspect-ratio_640w_0_x340y127.webp" },
-        {
-            "id":  "135718776", "title":  "UE Olot - Barça Atlètic en directo: resultado y goles en vivo del partido de Segunda RFEF",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ue-olot-barca-atletic-directo-135718776", "time":  "2026-10-25 19:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/48e368cf-a54f-4921-864e-7d9ec390f333_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
-        {
-            "id":  "135720568", "title":  "Ebrima Tunkara sigue dando pasos de gigante en el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ebrima-tunkara-sigue-dando-pasos-gigante-barcelona-135720568", "time":  "2026-10-25 07:01",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/a99b9f95-6cfc-4bf6-95dd-3dc9a59a0452_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135689423", "title":  "Malas noticias para el Barça Atlètic",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/malas-noticias-barca-atletic-eder-aller-cuatro-meses-baja-135689423", "time":  "2026-10-23 18:27",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/033733d3-6c2f-48fe-939b-5b3ad688544f_16-9-discover-aspect-ratio_640w_0_x1000y444.webp" },
-        {
-            "id":  "135651318", "title":  "El Barça destroza el relato del Madrid",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 20:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8e68cf14-6099-458c-b78b-8b9f89b60cb3_16-9-discover-aspect-ratio_640w_0_x340y127.webp" }
     ]
 };

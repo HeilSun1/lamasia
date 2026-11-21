@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-21 21:00:53 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-21 21:43:03 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-21 21:00:53",
+    "updated":  "2026-11-21 21:43:03",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6679518", "title":  "西班牙人B队0-0巴塞罗那竞技，两队破门乏术遭西协乙3连平",
+            "url":  "https://www.dongqiudi.com/articles/6679518.html", "time":  "2026-11-22 02:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/5A/280x210/crop/-/rBXRn2sB9fOAAL6mAAF_mRdgDUI011.png" },
         {
             "id":  "6677377", "title":  "每体：哈姆扎将增援巴萨预备队，而坎波斯将因防线缺人留一队",
             "url":  "https://www.dongqiudi.com/articles/6677377.html", "time":  "2026-11-21 19:20",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6599503", "title":  "世体：伤兵满营无人可回，弗里克只能拼凑防线战维拉",
             "url":  "https://www.dongqiudi.com/articles/6599503.html", "time":  "2026-11-03 14:39",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/E2/280x210/crop/-/rBXRn2rpgRuAKjpmAAGmlgwjoys478.jpg" },
-        {
-            "id":  "6598680", "title":  "每体：巴萨非常重视对阵阿斯顿维拉的青年欧冠，哈姆...",
-            "url":  "https://www.dongqiudi.com/articles/6598680.html", "time":  "2026-11-03 08:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/60/280x210/crop/-/rBXRn2rpK6WAWePuAAVZK5O0on8867.png" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/E2/280x210/crop/-/rBXRn2rpgRuAKjpmAAGmlgwjoys478.jpg" }
     ]
 };

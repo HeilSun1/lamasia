@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-18 22:58 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-21 21:43 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC_DETAILS_CACHE = {
-    "updated":  "2026-11-18 22:58:50",
+    "updated":  "2026-11-21 21:43:01",
     "54500651":  {
                      "meta":  {
                                   "home":  "巴塞罗那竞技",
@@ -6946,5 +6946,406 @@ window.DQD_BARCA_ATLETIC_DETAILS_CACHE = {
                                                        ]
                                     },
                      "h2h":  null
+                 },
+    "54500720":  {
+                     "meta":  {
+                                  "home":  "西班牙人B队",
+                                  "away":  "巴塞罗那竞技",
+                                  "homeId":  "50001843",
+                                  "awayId":  "50001839",
+                                  "start":  1795280400,
+                                  "comp":  "西协乙",
+                                  "round":  "",
+                                  "hs":  "0",
+                                  "as":  "0"
+                              },
+                     "lineups":  null,
+                     "incidents":  {
+                                       "incidents":  [
+                                                         {
+                                                             "incidentType":  "card",
+                                                             "incidentClass":  "yellow",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  null,
+                                                             "awayScore":  null,
+                                                             "time":  "15",
+                                                             "addedTime":  "",
+                                                             "isHome":  false
+                                                         },
+                                                         {
+                                                             "incidentType":  "card",
+                                                             "incidentClass":  "yellow",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  null,
+                                                             "awayScore":  null,
+                                                             "time":  "54",
+                                                             "addedTime":  "",
+                                                             "isHome":  true
+                                                         },
+                                                         {
+                                                             "incidentType":  "card",
+                                                             "incidentClass":  "red",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  null,
+                                                             "awayScore":  null,
+                                                             "time":  "70",
+                                                             "addedTime":  "",
+                                                             "isHome":  true
+                                                         },
+                                                         {
+                                                             "incidentType":  "card",
+                                                             "incidentClass":  "yellow",
+                                                             "reason":  "",
+                                                             "player":  {
+                                                                            "id":  "",
+                                                                            "name":  ""
+                                                                        },
+                                                             "homeScore":  null,
+                                                             "awayScore":  null,
+                                                             "time":  "78",
+                                                             "addedTime":  "",
+                                                             "isHome":  false
+                                                         }
+                                                     ]
+                                   },
+                     "statistics":  {
+                                        "statistics":  [
+                                                           {
+                                                               "groups":  [
+                                                                              {
+                                                                                  "groupName":  "全场数据",
+                                                                                  "statisticsItems":  [
+                                                                                                          {
+                                                                                                              "name":  "控球率",
+                                                                                                              "home":  "51",
+                                                                                                              "away":  "49"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "角球",
+                                                                                                              "home":  "3",
+                                                                                                              "away":  "3"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "射门",
+                                                                                                              "home":  "8",
+                                                                                                              "away":  "10"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "射正",
+                                                                                                              "home":  "5",
+                                                                                                              "away":  "2"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "进攻",
+                                                                                                              "home":  "40",
+                                                                                                              "away":  "44"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "危险进攻",
+                                                                                                              "home":  "19",
+                                                                                                              "away":  "28"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "黄牌",
+                                                                                                              "home":  "1",
+                                                                                                              "away":  "2"
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "红牌",
+                                                                                                              "home":  "1",
+                                                                                                              "away":  "0"
+                                                                                                          }
+                                                                                                      ]
+                                                                              }
+                                                                          ]
+                                                           }
+                                                       ]
+                                    },
+                     "h2h":  {
+                                 "matches":  [
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  3
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1775988000
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1763308800
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1615719600
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1607878800
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1578157200
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1552755600
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1540751400
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1494152100
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1481389200
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1453572000
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  3
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1441468800
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1269795600
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1257681600
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  2
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  0
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1174780800
+                                                 },
+                                                 {
+                                                     "homeTeam":  {
+                                                                      "name":  "西班牙人B队"
+                                                                  },
+                                                     "awayTeam":  {
+                                                                      "name":  "巴塞罗那竞技"
+                                                                  },
+                                                     "homeScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "awayScore":  {
+                                                                       "current":  1
+                                                                   },
+                                                     "tournament":  {
+                                                                        "name":  "西协乙"
+                                                                    },
+                                                     "startTimestamp":  1108166400
+                                                 }
+                                             ]
+                             }
                  }
 };

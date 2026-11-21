@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-21 21:02:16 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-21 21:43:27 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-21 21:02:16",
+    "updated":  "2026-11-21 21:43:27",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -171,6 +171,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4612353", "title":  "'We are in a good moment'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612353/hansi-flick-we-are-in-a-good-moment", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/21/6f04b2dd-8cd6-482d-b213-2671df91fa04/_MGA7449.jpg" },
+            {
+                "id":  "4612344", "title":  "Last session before Villarreal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612344/last-session-before-villarreal", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/21/27db87c9-a490-4aa0-a8ff-5a2cda346094/WhatsApp-Image-2026-11-21-at-12.54.46.jpeg" },
+            {
                 "id":  "4611957", "title":  "Andreas Christensen doubtful",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611957/andreas-christensen-doubtful", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/45360742-79d1-4435-88a4-dac0d4670888/_MGA8577.jpg" },
@@ -255,14 +263,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606585/hansi-flick-i-believe-in-this-team", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/b812ed4f-c1d5-48b7-9cf1-b4da53eea9b8/_MGA5042.jpg" },
             {
-                "id":  "4606581", "title":  "100 league games and a brace for Fermín",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606581/100-league-games-and-a-brace-for-fermin", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/419cb440-82a9-4947-b108-14f8b774ebe2/_MGA8632.jpg" },
-            {
-                "id":  "4606439", "title":  "Atlético 1-2 Barça: Comeback to stay top",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606439/atletico-madrid-1-2-fc-barcelona-comeback-to-stay-top", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/d606760f-3bf4-4f76-acad-eca4f28e8259/_MGA8636.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -270,6 +270,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4606581", "title":  "100 league games and a brace for Fermín",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606581/100-league-games-and-a-brace-for-fermin", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/419cb440-82a9-4947-b108-14f8b774ebe2/_MGA8632.jpg" },
+            {
+                "id":  "4606439", "title":  "Atlético 1-2 Barça: Comeback to stay top",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606439/atletico-madrid-1-2-fc-barcelona-comeback-to-stay-top", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/d606760f-3bf4-4f76-acad-eca4f28e8259/_MGA8636.jpg" },
             {
                 "id":  "4606427", "title":  "Day marked by tributes to Jesús de Miguel",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606427/day-marked-by-tributes-to-jesus-de-miguel", "time":  "",
@@ -361,15 +369,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" },
-            {
-                "id":  "4603044", "title":  "Flick aiming for top eight",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603044/hansi-flick-aiming-for-top-eight", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/d280bda7-baf2-42ac-bfc9-5b098e58e96b/_MGA3554.jpg" },
-            {
-                "id":  "4603029", "title":  "Ready for Villa",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603029/ready-for-aston-villa", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/0baaa163-41f0-4611-a00d-aaed21934aa1/WhatsApp-Image-2026-11-02-at-12.41.24.jpeg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" }
         ]
     }
 };
