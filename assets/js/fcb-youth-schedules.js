@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-21 11:18；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-21 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-21 11:18:31",
+    "updated":  "2026-11-21 21:02:12",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -808,8 +808,8 @@ window.LAMASIA_SCHEDULES = {
                                        "comp":  "加泰荣誉联赛 Cadete",
                                        "compEn":  "División de Honor Catalana Cadete",
                                        "round":  "11",
-                                       "start":  "1795892400",
-                                       "date":  "2026-11-28",
+                                       "start":  "1795971600",
+                                       "date":  "2026-11-29",
                                        "tbd":  false,
                                        "home":  "Badalona A",
                                        "away":  "FC Barcelona A",
@@ -1940,9 +1940,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "Masnou A",
                                          "homeId":  "11113",
                                          "awayId":  "15561",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "3",
+                                         "as":  "0",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  true,
                                          "venue":  "Ciutat Esportiva Joan Gamper"
@@ -3708,7 +3708,7 @@ window.LAMASIA_SCHEDULES = {
                                           "round":  "13",
                                           "start":  "1797764400",
                                           "date":  "2026-12-20",
-                                          "tbd":  true,
+                                          "tbd":  false,
                                           "home":  "FC Barcelona B",
                                           "away":  "Sabadell B",
                                           "homeId":  "11110",

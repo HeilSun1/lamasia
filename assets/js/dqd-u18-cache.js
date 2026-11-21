@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 11:18 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 21:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-11-21 11:18:00",
+    "updated":  "2026-11-21 21:01:37",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -86,21 +86,6 @@ window.DQD_U18_CACHE = {
                         "birthday":  "2010-04-17",
                         "foot":  "左脚",
                         "height":  "164",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Samu Borniquel",
-                        "id":  "2407333",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2407333/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-20",
-                        "foot":  "右脚",
-                        "height":  "186",
                         "value":  "",
                         "injury":  null
                     },

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 11:18 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 21:01 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-21 11:18:18",
+    "updated":  "2026-11-21 21:01:57",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -210,21 +210,6 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Samu Borniquel",
-                        "id":  "2407333",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2407333/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-20",
-                        "foot":  "右脚",
-                        "height":  "186",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Róbert Oliveras",
                         "id":  "2407338",
                         "pos":  "M",
@@ -405,6 +390,21 @@ window.DQD_U16_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Iker Nsang",
+                        "id":  "2864256",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2864256/image",
+                        "age":  "15岁",
+                        "birthday":  "2011-01-01",
+                        "foot":  "",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Víctor Santiago",
                         "id":  "2864209",
                         "pos":  "M",
@@ -442,21 +442,6 @@ window.DQD_U16_CACHE = {
                         "team":  "Barcelona U16",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2864212/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Iker Nsang",
-                        "id":  "2864256",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2864256/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
                         "foot":  "",

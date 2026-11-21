@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-21 11:17:22 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-21 21:00:53 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-21 11:17:22",
+    "updated":  "2026-11-21 21:00:53",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6677377", "title":  "每体：哈姆扎将增援巴萨预备队，而坎波斯将因防线缺人留一队",
+            "url":  "https://www.dongqiudi.com/articles/6677377.html", "time":  "2026-11-21 19:20",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/06/48/280x210/crop/-/rBXRn2sBTmSAJMLyAACuVSrcQno748.jpg" },
         {
             "id":  "6674103", "title":  "恩里克：曾差点放弃执教巴萨B队，凌晨想不干了八点又改主意",
             "url":  "https://www.dongqiudi.com/articles/6674103.html", "time":  "2026-11-21 03:05",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6598680", "title":  "每体：巴萨非常重视对阵阿斯顿维拉的青年欧冠，哈姆...",
             "url":  "https://www.dongqiudi.com/articles/6598680.html", "time":  "2026-11-03 08:33",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/60/280x210/crop/-/rBXRn2rpK6WAWePuAAVZK5O0on8867.png" },
-        {
-            "id":  "6594453", "title":  "上点强度！凯塞多在巴萨竞技的比赛中贡献了一次凶狠...",
-            "url":  "https://www.dongqiudi.com/articles/6594453.html", "time":  "2026-11-02 10:29",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/02/8ab78483084a831ccb3b83d31e80b840WjoEtr_smart.mp4?vframe/jpg/offset/1/w/300/h/400" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E1/60/280x210/crop/-/rBXRn2rpK6WAWePuAAVZK5O0on8867.png" }
     ]
 };

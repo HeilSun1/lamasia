@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-21 11:18:53 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-21 21:02:34 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-21 11:18:53",
+    "updated":  "2026-11-21 21:02:34",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136695544", "title":  "Noticias tranquilizadoras sobre Rodri",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/noticias-tranquilizadoras-rodri-136695544", "time":  "2026-11-21 12:53",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/52412df4-d4af-4a0d-9c32-39a31240271a_16-9-discover-aspect-ratio_default_0_x1000y444.webp" },
+        {
+            "id":  "136684214", "title":  "Hamza Abdelkarim se apunta a un derbi de filiales de altos vuelos",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/espanyol-b-barca-atletic-hamza-abdelkarim-derbi-filiales-segunda-rfef-136684214", "time":  "2026-11-21 07:01",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/2a193341-61c7-442c-b8f9-88622fd209f5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136593390", "title":  "Un combinado experimental del Barça cae en la Copa Catalunya contra el Can Vidalet",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/combinado-experimental-barca-cae-copa-136593390", "time":  "2026-11-18 21:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/246b69bc-63a2-4b1a-829b-56afd2260b2b_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/246b69bc-63a2-4b1a-829b-56afd2260b2b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136590746", "title":  "Can Vidalet-Barça Atlètic: Directo Copa Catalunya",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/can-vidalet-barca-atletic-directo-136590746", "time":  "2026-11-18 20:17",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135651318", "title":  "El Barça destroza el relato del Madrid",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/masia-aplasta-fabrica-cantera-blaugrana-135651318", "time":  "2026-10-23 20:11",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135645855", "title":  "Las cifras de récord del colosal portero del Barça Atlètic: La Masia está cocinando un fenómeno bajo los palos",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/cifras-record-colosal-portero-barca-135645855", "time":  "2026-10-23 08:27",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3bc0d8e0-29b5-46de-b3ea-526f38c6cf6d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135590822", "title":  "Pedro Rodríguez está en racha y su juego enamora: \"Es un medio con gol, muy completo e inteligente\"",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pedro-rodriguez-racha-juego-enamora-135590822", "time":  "2026-10-21 18:20",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/d8a1bd1b-5729-475e-860f-7f5b298c0a66_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/9d7383be-9fb5-47cb-b92f-a6fb685e30cd_16-9-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

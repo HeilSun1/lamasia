@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 11:17 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-21 11:17:41",
+    "updated":  "2026-11-21 21:01:18",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -195,7 +195,7 @@ window.DQD_U19_CACHE = {
                         "id":  "2407333",
                         "pos":  "M",
                         "shirt":  "",
-                        "team":  "Barcelona U16",
+                        "team":  "Barcelona U19",
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2407333/image",
                         "age":  "16岁",
@@ -266,21 +266,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Teixidor",
-                        "id":  "1926082",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-02-28",
-                        "foot":  "右脚",
-                        "height":  "177",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Mikael Baza",
                         "id":  "2311166",
                         "pos":  "D",
@@ -307,6 +292,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-01-30",
                         "foot":  "左脚",
                         "height":  "184",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
                         "value":  "",
                         "injury":  null
                     },
@@ -681,10 +681,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Badalona U19",
                         "homeId":  "90128",
                         "awayId":  "456359",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "3",
+                        "as":  "0",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  true
                     },
                     {
