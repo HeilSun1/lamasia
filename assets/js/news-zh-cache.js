@@ -15,6 +15,7 @@ window.NEWS_ZH = {
   "Agreement with RCD Mallorca for the transfer of Guille Fernández": "与皇家马略卡足球俱乐部就吉列·费尔南德斯转会事宜达成协议",
   "Álex Valle: Me encanta Flick como entrenador": "亚历克斯·巴列：我非常喜欢弗里克这位教练。",
   "Alexis Olmedo leaves for Celta": "亚历克西斯·奥尔梅多将加盟塞尔塔队",
+  "Andreas Christensen doubtful": "安德烈亚斯·克里斯滕森（Andreas Christensen）出场成疑",
   "Another point (0-0)": "另一分（0-0）",
   "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas": "阿兰·阿帕里西奥，拉玛西亚最赏心悦目的左脚球员，以其神奇的助攻大放异彩。",
   "Aron Yaakobishvili loaned to Almeria": "亚龙·亚科比什维利（Aron Yaakobishvili）租借至阿尔梅里亚队",
@@ -45,6 +46,7 @@ window.NEWS_ZH = {
   "Belletti to remain Barça Atlètic coach": "贝莱蒂将继续担任预备队教练",
   "Belletti: He estudiado mucho psicoanálisis": "贝莱蒂：我学了很多精神分析学。",
   "Bisiwu injury update": "比西乌伤情最新消息",
+  "Blaugrana battles in Nations League": "巴萨在欧足联国家联赛中的征战",
   "Brian Fariñas makes debut": "布莱恩·法里尼亚斯首次亮相",
   "Caicedo, blaugrana for a season": "凯塞多，效力巴萨一个赛季",
   "Can Vidalet 2-1 Barça Atlètic: Out of the Copa Catalunya": "坎·维达莱特 2-1 预备队：加泰罗尼亚杯出局",
@@ -164,6 +166,7 @@ window.NEWS_ZH = {
   "Pol Planas deja el Juvenil del Barça para entrenar al Dinamo de Zagreb": "波尔·普拉纳斯离开巴萨青年队，执教萨格勒布迪纳摩队",
   "Pol Planas ya posa como entrenador del Dinamo de Zagreb B": "波尔·普拉纳斯（Pol Planas）已成为萨格勒布迪纳摩B队的主教练。",
   "Premio para Orian Goren": "奥里安-格伦的奖金",
+  "Preparations continue": "筹备工作仍在进行中",
   "PREVIEW | Atlético v Barça": "前瞻 | 马德里竞技对阵巴萨",
   "PREVIEW | Barça v Alavés": "前瞻 | 巴萨 对阵阿拉维斯",
   "PREVIEW | Barça v Aston Villa": "前瞻 | 巴萨对阵阿斯顿维拉",
@@ -205,6 +208,7 @@ window.NEWS_ZH = {
   "When and where to watch Barça v Aston Villa": "巴萨对阵阿斯顿维拉的比赛观看时间和地点",
   "When and where to watch Barça v Villarreal": "巴萨对阵比利亚雷亚尔的比赛观看时间和地点",
   "Work continues at the Ciutat Esportiva": "俱乐部体育城工程仍在继续",
+  "Xavi Espart signs contract to 2030": "哈维·埃斯帕特与俱乐部签约至 2030 年",
   "Xavi Espart: Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia": "哈维·埃尔南德斯：我生来就是巴萨人，我想帮助巴萨谱写更辉煌的历史。",
   "Xavi Martín, exdirector de la Masia: \"Es lo que hace diferente al Barça y se debería explotar más. ¿Por qué no tenemos merchandising de La Masia en la botiga?\"": "拉玛西亚前总监哈维·马丁 (Xavi Martín) 表示：“这就是巴萨与众不同的地方，应该更多地加以利用。为什么我们的商店里没有拉玛西亚的周边产品？”"
 };

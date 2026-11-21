@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-20 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 11:17 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-20 21:01:00",
+    "updated":  "2026-11-21 11:17:41",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -736,7 +736,7 @@ window.DQD_U19_CACHE = {
                         "id":  "17063031",
                         "comp":  "青年欧冠",
                         "round":  "6",
-                        "start":  "1796742000",
+                        "start":  "1796727600",
                         "home":  "Barcelona U19",
                         "away":  "Manchester City U19",
                         "homeId":  "90128",
