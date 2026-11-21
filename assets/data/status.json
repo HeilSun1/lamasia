@@ -3,7 +3,7 @@
     "runId":  "20261121-210002",
     "runStartedUtc":  "2026-11-21T13:00:02.1886779Z",
     "runFinishedUtc":  "2026-11-21T13:04:27.4012425Z",
-    "lastSuccessUtc":  "2026-11-21T03:20:55.7545923Z",
+    "lastSuccessUtc":  "2026-11-21T13:04:34.9687853Z",
     "lastRunSource":  "local",
     "lastRunStatus":  "degraded",
     "exitCode":  2,
