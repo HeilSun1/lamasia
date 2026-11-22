@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-22 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-22 21:54 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-22 21:00:31",
+    "updated":  "2026-11-22 21:54:48",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2209,7 +2209,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
                                                                   "other_logo":  [
-                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
+
                                                                                  ],
                                                                   "person_en_name":  "Pedro Villar",
                                                                   "person_id":  "51038135",
@@ -2961,6 +2961,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "status":  "ok",
                                           "games_missed":  "1"
                                       },
+                         "51234912":  {
+                                          "date_until":  "2026.10.07",
+                                          "date_from":  "2026.09.08",
+                                          "injury":  "肌肉损伤",
+                                          "days":  "31",
+                                          "status":  "ok",
+                                          "games_missed":  "4"
+                                      },
                          "50936243":  {
                                           "date_until":  "2026.05.07",
                                           "date_from":  "2026.02.13",
@@ -2969,14 +2977,6 @@ window.DQD_BARCA_ATLETIC = {
                                           "status":  "ok",
                                           "games_missed":  ""
                                       },
-                         "51038125":  {
-                                          "date_until":  "2026.10.12",
-                                          "date_from":  "2026.08.24",
-                                          "injury":  "脚踝损伤",
-                                          "days":  "51",
-                                          "status":  "ok",
-                                          "games_missed":  "4"
-                                      },
                          "50855023":  {
                                           "date_until":  "2026.10.27",
                                           "date_from":  "2026.09.03",
@@ -2984,6 +2984,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "days":  "56",
                                           "status":  "ok",
                                           "games_missed":  "8"
+                                      },
+                         "50855329":  {
+                                          "date_until":  "2025.10.20",
+                                          "date_from":  "2025.10.07",
+                                          "injury":  "肌肉损伤",
+                                          "days":  "15",
+                                          "status":  "ok",
+                                          "games_missed":  "2"
                                       },
                          "51004660":  {
                                           "date_until":  "2026.11.06",
@@ -3033,14 +3041,6 @@ window.DQD_BARCA_ATLETIC = {
                                           "status":  "ok",
                                           "games_missed":  "1"
                                       },
-                         "50855329":  {
-                                          "date_until":  "2025.10.20",
-                                          "date_from":  "2025.10.07",
-                                          "injury":  "肌肉损伤",
-                                          "days":  "15",
-                                          "status":  "ok",
-                                          "games_missed":  "2"
-                                      },
                          "50919246":  {
                                           "date_until":  "2026.10.31",
                                           "date_from":  "2026.03.02",
@@ -3056,6 +3056,14 @@ window.DQD_BARCA_ATLETIC = {
                                           "days":  "26",
                                           "status":  "ok",
                                           "games_missed":  "10"
+                                      },
+                         "51038125":  {
+                                          "date_until":  "2026.10.12",
+                                          "date_from":  "2026.08.24",
+                                          "injury":  "脚踝损伤",
+                                          "days":  "51",
+                                          "status":  "ok",
+                                          "games_missed":  "4"
                                       },
                          "50818134":  {
                                           "date_until":  "2026.03.01",

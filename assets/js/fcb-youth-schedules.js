@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-22 21:02；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-22 21:56；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-22 21:02:13",
+    "updated":  "2026-11-22 21:56:51",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -796,9 +796,9 @@ window.LAMASIA_SCHEDULES = {
                                        "away":  "Vic Riuprimer Refo A",
                                        "homeId":  "11111",
                                        "awayId":  "14540",
-                                       "hs":  "",
-                                       "as":  "",
-                                       "status":  "Not started",
+                                       "hs":  "8",
+                                       "as":  "1",
+                                       "status":  "Ended",
                                        "code":  "0",
                                        "isHome":  true,
                                        "venue":  "Ciutat Esportiva Joan Gamper"
@@ -1349,9 +1349,9 @@ window.LAMASIA_SCHEDULES = {
                                          "away":  "FC Barcelona A",
                                          "homeId":  "15398",
                                          "awayId":  "11112",
-                                         "hs":  "",
-                                         "as":  "",
-                                         "status":  "Not started",
+                                         "hs":  "2",
+                                         "as":  "3",
+                                         "status":  "Ended",
                                          "code":  "0",
                                          "isHome":  false,
                                          "venue":  "Torres de Palau"
@@ -2512,9 +2512,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "FC Barcelona A",
                                            "homeId":  "14053",
                                            "awayId":  "11114",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "1",
+                                           "as":  "3",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  false,
                                            "venue":  "Aiss"

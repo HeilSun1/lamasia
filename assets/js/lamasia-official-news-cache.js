@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-22 21:02:16 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-22 21:55:14 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-22 21:02:16",
+    "updated":  "2026-11-22 21:55:14",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -175,6 +175,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4612760", "title":  "Flick: 'An incredible reaction'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612760/hansi-flick-an-incredible-reaction", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/22/833247ff-159d-409f-8e77-47babd170645/_MGA7662.jpg" },
+            {
+                "id":  "4612769", "title":  "An almost unheard of comeback",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612769/an-almost-unheard-of-comeback", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4612696", "title":  "Barça 3-2 Villarreal: Heroic response",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612696/barca-3-2-villarreal-heroic-response", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/22/426bcc6a-50ac-45ed-8e59-ad3009bf37c7/DAG-084-_M1A5453.jpg" },
+            {
                 "id":  "4611861", "title":  "PREVIEW | Barça v Villarreal",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611861/preview-fc-barcelona-v-villarreal-cf", "time":  "",
                 "tag":  "", "img":  "" },
@@ -251,6 +263,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607323/work-continues-at-the-ciutat-esportiva", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/10/1d4a5667-fc13-417a-a122-f6dc26299b28/image00007.jpeg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4606953", "title":  "Lamine , Cubarsí and Rodri in FIFPRO World XI",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606953/lamine-yamal-cubarsi-and-rodri-named-in-the-2026-fifpro-world-xi", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/8a530304-f301-41e8-8ce4-e35258e859f9/MAS_FIFPRO-2-.jpg" },
@@ -262,14 +282,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4606860", "title":  "Training session without the international players",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606860/training-session-without-the-international-players", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/bc6b066e-a8fa-4051-ab8e-0d0e40710ba0/WhatsApp-Image-2026-11-09-at-13.34.57-1-.jpeg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4606828", "title":  "Hansi Flick's Barça pull off another comeback",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606828/hansi-flicks-barca-pull-off-another-comeback", "time":  "",
@@ -361,19 +373,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4603599", "title":  "Emotional minute's silence",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603599/emotional-minutes-silence", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" },
-            {
-                "id":  "4603075", "title":  "The squad for the Aston Villa match",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603075/the-squad-for-the-aston-villa-match", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/6b963f3a-6004-4af6-92a3-1923274bac3f/WhatsApp-Image-2026-11-02-at-12.41.25.jpeg" },
-            {
-                "id":  "4603354", "title":  "PREVIEW | Barça v Aston Villa",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603354/preview-fc-barcelona-v-aston-villa", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/c8752aea-7e8d-459c-93f7-30fb49b07313/WhatsApp-Image-2026-11-02-at-23.09.09.jpeg" },
-            {
-                "id":  "4603213", "title":  "Four candidates for men's FIFPRO World XI",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603213/cubarsi-rodrigo-pedri-and-lamine-yamal-candidates-for-fifpro-world-xi", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/639a0ef0-723b-4801-8cc9-f0e292c682f9/DAG-604-_M1A6902.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" }
         ]
     }
 };
