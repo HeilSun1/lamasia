@@ -1,13 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-22 10:26:25 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-22 21:01:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-22 10:26:25",
+    "updated":  "2026-11-22 21:01:01",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
         {
+            "id":  "6682155", "title":  "每体：巴萨小将哈姆扎因轻微不适，缺席周末的两场比赛",
+            "url":  "https://www.dongqiudi.com/articles/6682155.html", "time":  "2026-11-22 17:15",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/08/90/280x210/crop/-/rBXRDGsCsquAV8isAACmqw9_JHw098.jpg" },
+        {
+            "id":  "6681160", "title":  "伤病猛如虎！巴萨竞技球员恰托维奇在客场对阵西班牙...",
+            "url":  "https://www.dongqiudi.com/articles/6681160.html", "time":  "2026-11-22 11:26",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/22/ba77a9058bb07a582c675a1bf6ac6ac8JDnojA_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
+        {
             "id":  "6680358", "title":  "巴萨竞技主帅：埃布里马才16岁，我们对他的培养非常从容",
             "url":  "https://www.dongqiudi.com/articles/6680358.html", "time":  "2026-11-22 07:52",
             "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/08/280x210/crop/-/rBXRn2sBzqKAUc-kAAFYy1fkCMA513.jpg" },
+        {
+            "id":  "6679570", "title":  "巴萨竞技战报 20261122",
+            "url":  "https://www.dongqiudi.com/articles/6679570.html", "time":  "2026-11-22 03:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/5A/280x210/crop/-/rBXRDGsB68qACA8BAAMR3S2ObCw644.jpg" },
         {
             "id":  "6679518", "title":  "西班牙人B队0-0巴塞罗那竞技，两队破门乏术遭西协乙3连平",
             "url":  "https://www.dongqiudi.com/articles/6679518.html", "time":  "2026-11-22 02:54",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6610982", "title":  "足球非洲：巴萨准备续约19岁加纳中卫哈菲兹-加里巴至2031年",
             "url":  "https://www.dongqiudi.com/articles/6610982.html", "time":  "2026-11-05 20:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/56/280x210/crop/-/rBXRn2rWENOAcO9yAAEmKTQEs7k176.jpg" },
-        {
-            "id":  "6609089", "title":  "卡普德维拉（每体）：伊克尔-罗德里格斯、坎波斯、...",
-            "url":  "https://www.dongqiudi.com/articles/6609089.html", "time":  "2026-11-05 08:22",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E5/5B/280x210/crop/-/rBXRDGrry-GAX4MLAAJ1GDCz2jU994.jpg" },
-        {
-            "id":  "6606278", "title":  "巴萨官方：球队今日恢复训练，欧冠首发球员进行了健身房训练",
-            "url":  "https://www.dongqiudi.com/articles/6606278.html", "time":  "2026-11-04 21:06",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E4/5E/280x210/crop/-/rBXRDGrrId6AD0SjAAD3iL96nKs597.jpg" },
-        {
-            "id":  "6604376", "title":  "传射建功！通卡拉vs阿斯顿维拉U19个人集锦",
-            "url":  "https://www.dongqiudi.com/articles/6604376.html", "time":  "2026-11-04 10:12",
-            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/04/e7890c9041b4921dec6ca5f0c87e48d9sHue81_smart.mp4?vframe/jpg/offset/1/w/400/h/300" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C1/56/280x210/crop/-/rBXRn2rWENOAcO9yAAEmKTQEs7k176.jpg" }
     ]
 };

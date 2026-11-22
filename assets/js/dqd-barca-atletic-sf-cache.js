@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-22 10:26 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-22 21:01 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-22 10:26:25",
+    "updated":  "2026-11-22 21:01:00",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -137,6 +137,21 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "右脚",
                         "height":  "177",
                         "value":  "18万",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Jesse Bisiwu",
+                        "id":  "1506988",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Belgium",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1506988/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-22",
+                        "foot":  "右脚",
+                        "height":  "185",
+                        "value":  "780万",
                         "injury":  null
                     },
                     {
@@ -436,6 +451,36 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "birthday":  "2009-01-30",
                         "foot":  "左脚",
                         "height":  "184",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Teixidor",
+                        "id":  "1926082",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1926082/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-02-28",
+                        "foot":  "右脚",
+                        "height":  "177",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Pol Bernabéu",
+                        "id":  "2076871",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2076871/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-05",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },

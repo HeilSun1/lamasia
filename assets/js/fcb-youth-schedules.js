@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-22 10:27；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-22 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-22 10:27:31",
+    "updated":  "2026-11-22 21:02:13",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -3084,9 +3084,9 @@ window.LAMASIA_SCHEDULES = {
                                            "away":  "Congrès B",
                                            "homeId":  "11115",
                                            "awayId":  "15393",
-                                           "hs":  "",
-                                           "as":  "",
-                                           "status":  "Not started",
+                                           "hs":  "8",
+                                           "as":  "1",
+                                           "status":  "Ended",
                                            "code":  "0",
                                            "isHome":  true,
                                            "venue":  "Ciutat Esportiva Joan Gamper"

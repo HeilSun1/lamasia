@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-22 10:27:38 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-22 21:02:46 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-22 10:27:38",
+    "updated":  "2026-11-22 21:02:46",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136699803", "title":  "El libro que cambió a Luis Enrique... y del que renegó cuando le tocó ser resultadista",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/libro-cambio-luis-enrique-renego-136699803", "time":  "2026-11-22 07:00",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8fd138d2-4a13-4abb-8fe7-f26f238fbc31_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136702143", "title":  "Un Orian Goren imperial no basta en un miniderbi accidentado e imprevisible",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-imperial-basta-miniderbi-136702143", "time":  "2026-11-21 20:01",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135775112", "title":  "Aran Aparicio, la zurda más estética de La Masia brilla con sus asistencias mágicas",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/aran-aparicio-zurda-estetica-masia-135775112", "time":  "2026-10-27 11:15",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7e6ebda-b4d1-4a6e-89a0-0b245a0ecb74_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135746577", "title":  "Primer pinchazo del Barça Atlètic frente a un Olot mejor",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/primer-pinchazo-barca-atletic-frente-135746577", "time":  "2026-10-25 19:40",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8e68cf14-6099-458c-b78b-8b9f89b60cb3_16-9-discover-aspect-ratio_640w_0_x340y127.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7e6ebda-b4d1-4a6e-89a0-0b245a0ecb74_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

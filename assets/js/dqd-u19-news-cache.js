@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-22 10:26:45 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-22 21:01:21 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-22 10:26:45",
+    "updated":  "2026-11-22 21:01:21",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6679570", "title":  "巴萨竞技战报 20261122",
+            "url":  "https://www.dongqiudi.com/articles/6679570.html", "time":  "2026-11-22 03:09",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/07/5A/280x210/crop/-/rBXRDGsB68qACA8BAAMR3S2ObCw644.jpg" },
         {
             "id":  "6654728", "title":  "巴萨竞技战报 20261115",
             "url":  "https://www.dongqiudi.com/articles/6654728.html", "time":  "2026-11-15 03:03",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6052634", "title":  "世体：弗里克将改变对三门伊克尔使用方式，避免其错失出场时间",
             "url":  "https://www.dongqiudi.com/articles/6052634.html", "time":  "2026-07-19 17:00",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AA/14/280x210/crop/-/rBXRn2pckiqAH6exAAD99VHt61Y096.jpg" },
-        {
-            "id":  "6049495", "title":  "世体：巴萨和两名梯队小将续约遭到阻碍，担心德罗案例重演",
-            "url":  "https://www.dongqiudi.com/articles/6049495.html", "time":  "2026-07-18 23:02",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/A7/16/280x210/crop/-/rBXRn2pblMWATf-lAADM0qkbGjk683.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AA/14/280x210/crop/-/rBXRn2pckiqAH6exAAD99VHt61Y096.jpg" }
     ]
 };

@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-22 10:27:33 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-22 21:02:16 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-22 10:27:33",
+    "updated":  "2026-11-22 21:02:16",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -175,6 +175,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4611861", "title":  "PREVIEW | Barça v Villarreal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611861/preview-fc-barcelona-v-villarreal-cf", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4612353", "title":  "'We are in a good moment'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612353/hansi-flick-we-are-in-a-good-moment", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/21/6f04b2dd-8cd6-482d-b213-2671df91fa04/_MGA7449.jpg" },
@@ -259,14 +263,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606860/training-session-without-the-international-players", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/bc6b066e-a8fa-4051-ab8e-0d0e40710ba0/WhatsApp-Image-2026-11-09-at-13.34.57-1-.jpeg" },
             {
-                "id":  "4606828", "title":  "Hansi Flick's Barça pull off another comeback",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606828/hansi-flicks-barca-pull-off-another-comeback", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/2cf2899f-78c5-446f-bed8-f48df5713122/_MGA5360.jpg" },
-            {
-                "id":  "4606585", "title":  "Hansi Flick: 'I believe in this team'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606585/hansi-flick-i-believe-in-this-team", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/b812ed4f-c1d5-48b7-9cf1-b4da53eea9b8/_MGA5042.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -274,6 +270,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4606828", "title":  "Hansi Flick's Barça pull off another comeback",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606828/hansi-flicks-barca-pull-off-another-comeback", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/09/2cf2899f-78c5-446f-bed8-f48df5713122/_MGA5360.jpg" },
+            {
+                "id":  "4606585", "title":  "Hansi Flick: 'I believe in this team'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606585/hansi-flick-i-believe-in-this-team", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/08/b812ed4f-c1d5-48b7-9cf1-b4da53eea9b8/_MGA5042.jpg" },
             {
                 "id":  "4606581", "title":  "100 league games and a brace for Fermín",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606581/100-league-games-and-a-brace-for-fermin", "time":  "",
@@ -369,11 +373,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4603213", "title":  "Four candidates for men's FIFPRO World XI",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603213/cubarsi-rodrigo-pedri-and-lamine-yamal-candidates-for-fifpro-world-xi", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/639a0ef0-723b-4801-8cc9-f0e292c682f9/DAG-604-_M1A6902.jpg" },
-            {
-                "id":  "4570226", "title":  "Date and kick-off time of LaLiga Clásico at the Spotify Camp Nou confirmed",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/09/01/cf32ae40-6359-4e15-be91-3d69232f7e51/_M1A1120-1-.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/02/639a0ef0-723b-4801-8cc9-f0e292c682f9/DAG-604-_M1A6902.jpg" }
         ]
     }
 };
