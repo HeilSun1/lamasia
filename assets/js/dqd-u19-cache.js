@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-21 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-22 10:26 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-21 21:01:18",
+    "updated":  "2026-11-22 10:26:44",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -367,6 +367,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-04-26",
                         "foot":  "右脚",
                         "height":  "174",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Ahmed Abarkane",
+                        "id":  "2342525",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2342525/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-12",
+                        "foot":  "左脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },

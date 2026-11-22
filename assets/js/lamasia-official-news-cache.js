@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-21 21:43:27 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-22 10:27:33 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-21 21:43:27",
+    "updated":  "2026-11-22 10:27:33",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4612440", "title":  "Espanyol B 0-0 Barça Atlètic: Stalemate in the derby",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4612440/espanyol-b-0-0-barca-atletic-stalemate-in-the-derby", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/21/82ccf82f-5b1e-44ce-b104-11adf3dea276/WhatsApp-Image-2026-11-21-at-19.35.17.jpeg" },
             {
                 "id":  "4610930", "title":  "Can Vidalet 2-1 Barça Atlètic: Out of the Copa Catalunya",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4610930/can-vidalet-2-1-barca-atletic-out-of-the-copa-catalunya", "time":  "",

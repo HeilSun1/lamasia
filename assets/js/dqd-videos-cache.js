@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-11-21 21:03 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-11-22 10:28 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-11-21 21:03:12",
+    "updated":  "2026-11-22 10:28:32",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -29,6 +29,7 @@ window.DQD_VIDEOS_CACHE = {
                             "sofascore:16540033",
                             "sofascore:16540104",
                             "sofascore:16540161",
+                            "sofascore:16540220",
                             "sofascore:16792416",
                             "sofascore:16792525",
                             "sofascore:16834498",
@@ -620,6 +621,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                  {
                                                                      "date":  "2026-11-14",
                                                                      "opp":  "",
+                                                                     "label":  "11-14 · 个人集锦",
+                                                                     "matchKey":  "",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "1034:5365253890834466",
+                                                                                        "title":  "昊炎一条龙破门！本赛季个人第5粒进球来了！巴萨上半场1:0领先！ 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-11-14",
+                                                                                        "durationSec":  "0:40",
+                                                                                        "site":  "weibo"
+                                                                                    }
+                                                                                ]
+                                                                 },
+                                                                 {
+                                                                     "date":  "2026-11-14",
+                                                                     "opp":  "",
                                                                      "label":  "11-14 · 集锦",
                                                                      "matchKey":  "",
                                                                      "videos":  [
@@ -632,23 +650,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         "durationSec":  "26",
                                                                                         "site":  "bili",
                                                                                         "pic":  "https://i2.hdslb.com/bfs/archive/a193c695b620da1c179369acc686df66423a887a.jpg"
-                                                                                    }
-                                                                                ]
-                                                                 },
-                                                                 {
-                                                                     "date":  "2026-11-14",
-                                                                     "opp":  "",
-                                                                     "label":  "11-14 · 个人集锦",
-                                                                     "matchKey":  "",
-                                                                     "videos":  [
-                                                                                    {
-                                                                                        "videoId":  "1034:5365253890834466",
-                                                                                        "title":  "昊炎一条龙破门！本赛季个人第5粒进球来了！巴萨上半场1:0领先！ 董路的微博视频",
-                                                                                        "channel":  "董路微博",
-                                                                                        "channelId":  "",
-                                                                                        "published":  "2026-11-14",
-                                                                                        "durationSec":  "0:40",
-                                                                                        "site":  "weibo"
                                                                                     }
                                                                                 ]
                                                                  },
@@ -812,24 +813,6 @@ window.DQD_VIDEOS_CACHE = {
                                  "local:juvenil-a:babakourouma":  [
                                                                       {
                                                                           "date":  "2026-11-03",
-                                                                          "opp":  "",
-                                                                          "label":  "11-03 · 季前赛/友谊赛",
-                                                                          "matchKey":  "",
-                                                                          "videos":  [
-                                                                                         {
-                                                                                             "videoId":  "BV1Z8x26bEwB",
-                                                                                             "title":  "巴巴 UYL 本场集锦",
-                                                                                             "channel":  "13站一直吞我評論",
-                                                                                             "channelId":  "",
-                                                                                             "published":  "2026-11-03",
-                                                                                             "durationSec":  "273",
-                                                                                             "site":  "bili",
-                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/39b7e052662e4e4d97367256134993dcfa03c6da.jpg"
-                                                                                         }
-                                                                                     ]
-                                                                      },
-                                                                      {
-                                                                          "date":  "2026-11-03",
                                                                           "opp":  "Aston Villa U19",
                                                                           "label":  "vs Aston Villa U19 · 11-03",
                                                                           "matchKey":  "sofascore:17063030",
@@ -845,18 +828,20 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       },
                                                                       {
-                                                                          "date":  "2026-10-11",
-                                                                          "opp":  "Racing Club Zaragoza",
-                                                                          "label":  "vs Racing Club Zaragoza · 10-11",
-                                                                          "matchKey":  "sofascore:16539917",
+                                                                          "date":  "2026-11-03",
+                                                                          "opp":  "",
+                                                                          "label":  "11-03 · 季前赛/友谊赛",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
-                                                                                             "videoId":  "5y9EcbDUetY",
-                                                                                             "title":  "Baba Kourouma vs Racing Club Zaragoza",
-                                                                                             "channel":  "ArsenKveFCB",
-                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                             "published":  "2026-10-11",
-                                                                                             "durationSec":  ""
+                                                                                             "videoId":  "BV1Z8x26bEwB",
+                                                                                             "title":  "巴巴 UYL 本场集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-11-03",
+                                                                                             "durationSec":  "273",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/39b7e052662e4e4d97367256134993dcfa03c6da.jpg"
                                                                                          }
                                                                                      ]
                                                                       },
@@ -875,6 +860,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "durationSec":  "154",
                                                                                              "site":  "bili",
                                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/fb4c0969cc812ba5b7149e150036c1d0cbaa6f23.jpg"
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-10-11",
+                                                                          "opp":  "Racing Club Zaragoza",
+                                                                          "label":  "vs Racing Club Zaragoza · 10-11",
+                                                                          "matchKey":  "sofascore:16539917",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "5y9EcbDUetY",
+                                                                                             "title":  "Baba Kourouma vs Racing Club Zaragoza",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-10-11",
+                                                                                             "durationSec":  ""
                                                                                          }
                                                                                      ]
                                                                       },
@@ -1361,6 +1362,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -1381,24 +1400,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -1442,22 +1443,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                     },
                                                                     {
                                                                         "date":  "2026-10-03",
-                                                                        "opp":  "UE Olot",
-                                                                        "label":  "vs UE Olot · 10-03",
-                                                                        "matchKey":  "",
-                                                                        "videos":  [
-                                                                                       {
-                                                                                           "videoId":  "7muT5baINFU",
-                                                                                           "title":  "Noah Garcia vs UE Olot",
-                                                                                           "channel":  "ArsenKveFCB",
-                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                           "published":  "2026-10-03",
-                                                                                           "durationSec":  ""
-                                                                                       }
-                                                                                   ]
-                                                                    },
-                                                                    {
-                                                                        "date":  "2026-10-03",
                                                                         "opp":  "",
                                                                         "label":  "10-03 · 季前赛/友谊赛",
                                                                         "matchKey":  "",
@@ -1471,6 +1456,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                            "durationSec":  "151",
                                                                                            "site":  "bili",
                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/e9cee9dc83bfe9faec28653ebea4ec9879389a6b.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                                    {
+                                                                        "date":  "2026-10-03",
+                                                                        "opp":  "UE Olot",
+                                                                        "label":  "vs UE Olot · 10-03",
+                                                                        "matchKey":  "",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "7muT5baINFU",
+                                                                                           "title":  "Noah Garcia vs UE Olot",
+                                                                                           "channel":  "ArsenKveFCB",
+                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                           "published":  "2026-10-03",
+                                                                                           "durationSec":  ""
                                                                                        }
                                                                                    ]
                                                                     },
@@ -1536,6 +1537,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                    },
                                                                    {
                                                                        "date":  "2026-09-27",
+                                                                       "opp":  "Ff Reus",
+                                                                       "label":  "vs Ff Reus · 09-27",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "Ci-nblE4MLY",
+                                                                                          "title":  "Pau Berges vs FF Reus",
+                                                                                          "channel":  "ArsenKveFCB",
+                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                          "published":  "2026-09-27",
+                                                                                          "durationSec":  ""
+                                                                                      }
+                                                                                  ]
+                                                                   },
+                                                                   {
+                                                                       "date":  "2026-09-27",
                                                                        "opp":  "",
                                                                        "label":  "09-27 · 季前赛/友谊赛",
                                                                        "matchKey":  "",
@@ -1549,22 +1566,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                           "durationSec":  "152",
                                                                                           "site":  "bili",
                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/b456960a5beb637e9c318faa9ac0ed730cd32791.jpg"
-                                                                                      }
-                                                                                  ]
-                                                                   },
-                                                                   {
-                                                                       "date":  "2026-09-27",
-                                                                       "opp":  "Ff Reus",
-                                                                       "label":  "vs Ff Reus · 09-27",
-                                                                       "matchKey":  "",
-                                                                       "videos":  [
-                                                                                      {
-                                                                                          "videoId":  "Ci-nblE4MLY",
-                                                                                          "title":  "Pau Berges vs FF Reus",
-                                                                                          "channel":  "ArsenKveFCB",
-                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                          "published":  "2026-09-27",
-                                                                                          "durationSec":  ""
                                                                                       }
                                                                                   ]
                                                                    }
@@ -1677,6 +1678,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
+                                 "sf:b:1590920":  [
+                                                      {
+                                                          "date":  "2026-11-21",
+                                                          "opp":  "Espanyol B",
+                                                          "label":  "vs Espanyol B · 11-21",
+                                                          "matchKey":  "sfb:16742389",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "i860OgBjaz0",
+                                                                             "title":  "Guillem Victor vs Espanyol B",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-11-21",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
                                  "sf:b:1657202":  [
                                                       {
                                                           "date":  "2026-10-04",
@@ -1766,6 +1785,22 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:1926117":  [
+                                                      {
+                                                          "date":  "2026-11-21",
+                                                          "opp":  "Espanyol B",
+                                                          "label":  "vs Espanyol B · 11-21",
+                                                          "matchKey":  "sfb:16742389",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "H70MUIyhqpA",
+                                                                             "title":  "Alex Campos vs Espanyol B",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-11-21",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-10-27",
                                                           "opp":  "",
@@ -1920,6 +1955,22 @@ window.DQD_VIDEOS_CACHE = {
                                                       }
                                                   ],
                                  "sf:b:1973312":  [
+                                                      {
+                                                          "date":  "2026-11-21",
+                                                          "opp":  "Espanyol B",
+                                                          "label":  "vs Espanyol B · 11-21",
+                                                          "matchKey":  "sfb:16742389",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "CwF3Qr563Ps",
+                                                                             "title":  "Orian Goren vs Espanyol B",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-11-21",
+                                                                             "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
                                                       {
                                                           "date":  "2026-11-08",
                                                           "opp":  "CE Manresa",
@@ -2212,24 +2263,6 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-11-20",
-                                                          "opp":  "中国u17 个人集锦",
-                                                          "label":  "vs 中国u17 个人集锦 · 11-20",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1oFyszsEM1",
-                                                                             "title":  "野兽派技术流 拉玛西亚赤木刚宪 通卡拉VS中国U17 个人集锦",
-                                                                             "channel":  "口菐",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-11-20",
-                                                                             "durationSec":  "242",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/538393d42410463bbeac112b58368065246cdb41.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-11-20",
                                                           "opp":  "",
                                                           "label":  "11-20 · 集锦",
                                                           "matchKey":  "",
@@ -2247,20 +2280,20 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       },
                                                       {
-                                                          "date":  "2026-11-03",
-                                                          "opp":  "阿斯顿维拉u19",
-                                                          "label":  "vs 阿斯顿维拉u19 · 11-03",
+                                                          "date":  "2026-11-20",
+                                                          "opp":  "中国u17 个人集锦",
+                                                          "label":  "vs 中国u17 个人集锦 · 11-20",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
-                                                                             "videoId":  "BV1xdx26rEgS",
-                                                                             "title":  "传射建功 通卡拉VS阿斯顿维拉U19",
+                                                                             "videoId":  "BV1oFyszsEM1",
+                                                                             "title":  "野兽派技术流 拉玛西亚赤木刚宪 通卡拉VS中国U17 个人集锦",
                                                                              "channel":  "口菐",
                                                                              "channelId":  "",
-                                                                             "published":  "2026-11-03",
-                                                                             "durationSec":  "152",
+                                                                             "published":  "2026-11-20",
+                                                                             "durationSec":  "242",
                                                                              "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/0bd65e31974890988b5d1e4afcc489c011ad7956.jpg"
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/538393d42410463bbeac112b58368065246cdb41.jpg"
                                                                          }
                                                                      ]
                                                       },
@@ -2279,6 +2312,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "24",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i1.hdslb.com/bfs/archive/95fb791c2a09996ae71579f1622931750ef708da.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-03",
+                                                          "opp":  "阿斯顿维拉u19",
+                                                          "label":  "vs 阿斯顿维拉u19 · 11-03",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1xdx26rEgS",
+                                                                             "title":  "传射建功 通卡拉VS阿斯顿维拉U19",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-03",
+                                                                             "durationSec":  "152",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/0bd65e31974890988b5d1e4afcc489c011ad7956.jpg"
                                                                          }
                                                                      ]
                                                       },
@@ -2320,22 +2371,6 @@ window.DQD_VIDEOS_CACHE = {
                                                       },
                                                       {
                                                           "date":  "2026-10-20",
-                                                          "opp":  "Psg",
-                                                          "label":  "vs Psg · 10-20",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "epBWiewTy4U",
-                                                                             "title":  "Jordi Pesqeur vs PSG U19",
-                                                                             "channel":  "ArsenKveFCB",
-                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                             "published":  "2026-10-20",
-                                                                             "durationSec":  ""
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-10-20",
                                                           "opp":  "",
                                                           "label":  "10-20 · 季前赛/友谊赛",
                                                           "matchKey":  "",
@@ -2349,6 +2384,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "153",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/88a9e1d6b14de90176ace70d64ae27e03c766d49.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-20",
+                                                          "opp":  "Psg",
+                                                          "label":  "vs Psg · 10-20",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "epBWiewTy4U",
+                                                                             "title":  "Jordi Pesqeur vs PSG U19",
+                                                                             "channel":  "ArsenKveFCB",
+                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                             "published":  "2026-10-20",
+                                                                             "durationSec":  ""
                                                                          }
                                                                      ]
                                                       },
@@ -2429,6 +2480,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-11-08",
                                                                              "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
+                                 "sf:b:2268815":  [
+                                                      {
+                                                          "date":  "2026-11-15",
+                                                          "opp":  "",
+                                                          "label":  "11-15 · 季前赛/友谊赛",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1fMsn69EBg",
+                                                                             "title":  "巴萨 B 队 冈萨雷斯 本场集锦",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-15",
+                                                                             "durationSec":  "260",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/bd5fc58c5a4eaade1f212e5a1e62c064780db8b0.jpg"
                                                                          }
                                                                      ]
                                                       }
@@ -2800,6 +2871,24 @@ window.DQD_VIDEOS_CACHE = {
                                                         }
                                                     ],
                                  "sf:u19:2604387":  [
+                                                        {
+                                                            "date":  "2026-11-15",
+                                                            "opp":  "",
+                                                            "label":  "11-15 · 季前赛/友谊赛",
+                                                            "matchKey":  "",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "BV1fMsn69EBg",
+                                                                               "title":  "巴萨 B 队 冈萨雷斯 本场集锦",
+                                                                               "channel":  "13站一直吞我評論",
+                                                                               "channelId":  "",
+                                                                               "published":  "2026-11-15",
+                                                                               "durationSec":  "260",
+                                                                               "site":  "bili",
+                                                                               "pic":  "https://i2.hdslb.com/bfs/archive/bd5fc58c5a4eaade1f212e5a1e62c064780db8b0.jpg"
+                                                                           }
+                                                                       ]
+                                                        },
                                                         {
                                                             "date":  "2026-11-14",
                                                             "opp":  "Girona B",

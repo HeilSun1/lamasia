@@ -1,6 +1,10 @@
 {
-    "runId":  "20261121-210002",
-    "runStartedUtc":  "2026-11-21T13:00:02.1886779Z",
+    "schema":  1,
+    "runId":  "20261122-102532",
+    "runStartedUtc":  "2026-11-22T02:25:32.5719322Z",
+    "runFinishedUtc":  "2026-11-22T02:29:14.9362865Z",
+    "lastSuccessUtc":  "2026-11-21T21:45:35.6961749Z",
+    "lastRunSource":  "local",
     "lastRunStatus":  "degraded",
     "exitCode":  2,
     "consecutiveFailures":  0,
@@ -10,8 +14,7 @@
 
                      ],
     "failedScripts":  [
-                          "update_md_news.ps1",
-                          "update_elfutbol_details.ps1"
+                          "update_md_news.ps1"
                       ],
     "staleCaches":  [
                         "assets/js/md-news-cache.js"
@@ -20,9 +23,5 @@
 
                ],
     "staleHours":  36,
-    "hardStaleHours":  72,
-    "lastSuccessUtc":  "2026-11-21T21:45:35.6961749Z",
-    "lastRunSource":  "runner",
-    "runFinishedUtc":  "2026-11-21T21:45:35.6961749Z",
-    "schema":  1
+    "hardStaleHours":  72
 }
