@@ -154,6 +154,12 @@ $UpdateScripts = @(
   'update_elfutbol_details.ps1'
 )
 
+# 第三方抓取，失败只记警告、不阻断整轮（页面改版是常态，不该让站点的
+# 核心数据跟着降级，也不该每轮弹一次 Windows 通知）
+$SoftScripts = @(
+  'update_md_news.ps1'
+)
+
 # 固定存在的缓存（这些一直在仓库里，缺了就是仓库出了问题）
 $AddPaths = @(
   'assets/js/dqd-barca-atletic-cache.js', 'assets/js/dqd-barca-atletic-sf-cache.js',
@@ -388,9 +394,14 @@ foreach ($s in $UpdateScripts) {
   }
   if ($err -or $code -ne 0) {
     $isCore = $CoreScripts -contains $s
-    Log-Line "      ✗ $s 失败（退出码 $code）$err"
-    [void]$FailedScripts.Add($s)
-    [void]$Failures.Add("$s (exit $code)")
+    if ($SoftScripts -contains $s) {
+      Log-Line "      ⚠ $s 失败（退出码 $code）$err —— 第三方源，仅记警告"
+      [void]$Warnings.Add("$s (exit $code)")
+    } else {
+      Log-Line "      ✗ $s 失败（退出码 $code）$err"
+      [void]$FailedScripts.Add($s)
+      [void]$Failures.Add("$s (exit $code)")
+    }
   }
 }
 

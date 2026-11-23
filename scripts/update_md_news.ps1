@@ -51,15 +51,28 @@ foreach ($pg in $Pages) {
     Log "✗ 页面获取失败：$($_.Exception.Message)"
     continue
   }
-  $itemRe = '<article class=result>.*?</article>'
-  $items = [regex]::Matches($html, $itemRe, $opt)
+  # 2026-11-20 起 MD 改版：列表项从 <article class=result> 变成 <article class="story …">
+  $items = [regex]::Matches($html, '<article class="story[\s\S]*?</article>', $opt)
+  $legacy = $false
+  if ($items.Count -eq 0) {
+    $items = [regex]::Matches($html, '<article class=result>.*?</article>', $opt)
+    $legacy = $true
+  }
   foreach ($m in $items) {
     $block = $m.Value
-    $link = [regex]::Match($block, 'href="(https://www\.mundodeportivo\.com/[^"]+)"[^>]*title="([^"]*)"')
-    if (-not $link.Success) { continue }
-    $url = $link.Groups[1].Value
+    $tag = ""
+    if ($legacy) {
+      $link = [regex]::Match($block, 'href="(https://www\.mundodeportivo\.com/[^"]+)"[^>]*title="([^"]*)"')
+      if (-not $link.Success) { continue }
+      $url = $link.Groups[1].Value
+      $title = [System.Net.WebUtility]::HtmlDecode($link.Groups[2].Value.Trim())
+    } else {
+      $link = [regex]::Match($block, '<h2 class="story__title"><a href="(https://www\.mundodeportivo\.com/[^"]+)"[^>]*>([\s\S]*?)</a>')
+      if (-not $link.Success) { continue }
+      $url = $link.Groups[1].Value
+      $title = [System.Net.WebUtility]::HtmlDecode(([regex]::Replace($link.Groups[2].Value, '<[^>]+>', '')).Trim())
+    }
     if (-not $seen.Add($url)) { continue }
-    $title = [System.Net.WebUtility]::HtmlDecode($link.Groups[2].Value.Trim())
     $idm = [regex]::Match($url, '/(\d{8})/')
     $time = ""
     if ($idm.Success) {
@@ -67,14 +80,27 @@ foreach ($pg in $Pages) {
       $time = "$y-$mo-$d 12:00"
     }
     $img = ""
-    $t = [regex]::Match($block, 'src="(https://imagenes2\.mundodeportivo\.com/[^"]+)"')
+    # 优先取正文大图（og_thumbnail），再退任何 data-src，最后才是 src
+    # （直接取第一个 img 会抓到作者头像 files/author_tw…）
+    $t = [regex]::Match($block, 'data-src="(https://imagenes2\.mundodeportivo\.com/files/og_thumbnail/[^"]+)"')
+    if (-not $t.Success) { $t = [regex]::Match($block, 'data-src="(https://imagenes2\.mundodeportivo\.com/files/(?!author_)[^"]+)"') }
+    if (-not $t.Success) { $t = [regex]::Match($block, 'src="(https://imagenes2\.mundodeportivo\.com/files/(?!author_)[^"]+)"') }
     if ($t.Success) { $img = $t.Groups[1].Value }
+    if (-not $legacy) {
+      # 新结构的 kicker（栏目标签）与 time（真实发布时间，含时区）
+      $tk = [regex]::Match($block, '<p class="story__kicker">([\s\S]*?)</p>')
+      if ($tk.Success) { $tag = [System.Net.WebUtility]::HtmlDecode(([regex]::Replace($tk.Groups[1].Value, '<[^>]+>', '')).Trim()) }
+      $td = [regex]::Match($block, '<time datetime="([^"]+)"')
+      if ($td.Success) {
+        try { $time = ([datetimeoffset]::Parse($td.Groups[1].Value)).ToLocalTime().ToString('yyyy-MM-dd HH:mm') } catch { }
+      }
+    }
     $rows += [ordered]@{
       id    = $url
       title = $title
       url   = $url
       time  = $time
-      tag   = ""
+      tag   = $tag
       img   = $img
     }
   }

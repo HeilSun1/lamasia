@@ -14,6 +14,7 @@ param(
   [string]$Until = "2026-06-01",
   [int]$DelayMs  = 3000,
   [int]$MaxPages = 40,
+  [int]$GuardMinutes = 30,
   [switch]$Write
 )
 
@@ -23,10 +24,21 @@ $WorkDir   = Join-Path $Root "work"
 if (-not (Test-Path $WorkDir)) { New-Item -ItemType Directory -Path $WorkDir | Out-Null }
 
 $untilDate = [datetime]::ParseExact($Until, "yyyy-MM-dd", $null)
+# ── 启动保护：避开每日 09:00 / 21:00 的定时更新 ──────────────────
+$now = Get-Date
+foreach ($h in 9, 21) {
+  $slot = $now.Date.AddHours($h)
+  $diff = [math]::Abs(($now - $slot).TotalMinutes)
+  if ($diff -lt $GuardMinutes) {
+    Write-Host ("拒绝执行：距每日 {0:00}:00 的定时更新只剩 {1:N0} 分钟（保护窗 {2} 分钟）。" -f $h, $diff, $GuardMinutes)
+    Write-Host "回填是一次性的，换个时间再跑，别撞上自动更新。"
+    exit 2
+  }
+}
 
 function Get-Page([string]$mid, [int]$pn) {
   $url = "https://api.bilibili.com/x/space/arc/search?mid=$mid&ps=30&pn=$pn&order=pubdate"
-  for ($try = 1; $try -le 3; $try++) {
+  for ($try = 1; $try -le 2; $try++) {
     $raw = & curl.exe -s -m 25 `
       -H "Referer: https://space.bilibili.com/$mid" `
       -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0" `
@@ -36,7 +48,8 @@ function Get-Page([string]$mid, [int]$pn) {
     if ($o -and $o.code -eq 0) { return $o }
     $code = if ($o) { $o.code } else { "非JSON" }
     Write-Host ("    第 {0} 页 第 {1} 次失败（code={2}），60 秒后重试" -f $pn, $try, $code)
-    if ($try -lt 3) { Start-Sleep -Seconds 60 }
+    if ($code -eq -799 -or $code -eq -352) { Write-Host "    → 被限流，本轮直接停止（不再重试，避免连累每日更新）"; return $null }
+    if ($try -lt 2) { Start-Sleep -Seconds 60 }
   }
   return $null
 }
