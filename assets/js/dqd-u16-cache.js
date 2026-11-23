@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-23 09:44 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-23 21:01 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-23 09:44:34",
+    "updated":  "2026-11-23 21:01:45",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -26,6 +26,21 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2010-02-27",
                         "foot":  "左脚",
                         "height":  "165",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Karim Mendikanov",
+                        "id":  "2674136",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Kazakhstan",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-11-06",
+                        "foot":  "左脚",
+                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },
@@ -56,21 +71,6 @@ window.DQD_U16_CACHE = {
                         "birthday":  "2011-02-18",
                         "foot":  "左脚",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Karim Mendikanov",
-                        "id":  "2674136",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Kazakhstan",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2674136/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-11-06",
-                        "foot":  "左脚",
-                        "height":  "178",
                         "value":  "",
                         "injury":  null
                     },

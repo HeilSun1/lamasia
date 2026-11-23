@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-23 09:44:46 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-23 21:02:00 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-23 09:44:46",
+    "updated":  "2026-11-23 21:02:00",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -175,6 +175,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4613109", "title":  "Squad for the trip to Baku",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613109/squad-for-the-trip-to-baku", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/23/4df354b3-2062-4b2d-9e93-5e50f4f690bd/_MGA6722.jpg" },
+            {
+                "id":  "4610386", "title":  "Longest-ever European trip",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610386/baku-fc-barcelonas-longest-ever-trip-in-european-competition", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/c9304e13-2177-4d26-bd9d-d4d49305c963/WhatsApp-Image-2026-11-17-at-13.20.30.jpeg" },
+            {
+                "id":  "4613043", "title":  "Lamine Yamal availability news",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613043/lamine-yamal-availability-news", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/23/7809b6bb-1de7-428d-bd37-4892311257de/_MGA7812.jpg" },
+            {
                 "id":  "4612760", "title":  "Flick: 'An incredible reaction'",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4612760/hansi-flick-an-incredible-reaction", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/22/833247ff-159d-409f-8e77-47babd170645/_MGA7662.jpg" },
@@ -251,6 +263,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/c97f77b8-3ea2-4478-a0b4-b1ceed356bbd/_MGA5074.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4608811", "title":  "Five games at Spotify Camp Nou before the end of the year",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4608811/five-games-at-spotify-camp-nou-before-the-end-of-the-year", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/13/6d4e7c07-964f-4555-9f91-d44b1df6c676/_MGA8572.jpg" },
@@ -262,14 +282,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4607323", "title":  "Work continues at the Ciutat Esportiva",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607323/work-continues-at-the-ciutat-esportiva", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/10/1d4a5667-fc13-417a-a122-f6dc26299b28/image00007.jpeg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4606953", "title":  "Lamine , Cubarsí and Rodri in FIFPRO World XI",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4606953/lamine-yamal-cubarsi-and-rodri-named-in-the-2026-fifpro-world-xi", "time":  "",
@@ -361,19 +373,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4603860", "title":  "Barça 3-0 Aston Villa: Three goals, three points",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603860/fc-barcelona-3-0-aston-villa-three-goals-three-points", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/1d016ca8-1cd3-4a59-94e0-fdcc37db4812/_MGA4003.jpg" },
-            {
-                "id":  "4603628", "title":  "De Jong makes 300th appearance",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603628/frenkie-de-jong-reaches-300-appearances-for-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/20993fe1-2517-47d4-b1b3-af7fa663db0a/_MGA4173-1-.jpg" },
-            {
-                "id":  "4603853", "title":  "New record in Europe for Lamine Yamal",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603853/lamine-yamal-top-champions-league-scorer-under-20-years-of-age", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/6589b605-bdc6-4738-bc62-2c720631b9f4/_MGA8550.jpg" },
-            {
-                "id":  "4603599", "title":  "Emotional minute's silence",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603599/emotional-minutes-silence", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/76fa1559-b674-41c1-8cbf-daa15286f0b5/2303367409.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/1d016ca8-1cd3-4a59-94e0-fdcc37db4812/_MGA4003.jpg" }
         ]
     }
 };
