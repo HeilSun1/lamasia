@@ -49,13 +49,15 @@ $ShardKeepDays = 14   # 分片条目按写入日期保留 N 天（本机长期�
 $YouthPat = 'u1[5-9]|u-1[5-9]|youth|juvenil|academy|青年|青训|cadete|infantil|alevin'
 
 # ── 配置 ────────────────────────────────────────────────────────
-$PlayerChannelHandles = @("ArsenKveFCB", "barcanationyt", "bcnbest786")   # 常规球员集锦频道（可改/可加；非赛程集锦全频道扫描）
+$PlayerChannelHandles = @("ArsenKveFCB")   # 常规球员集锦频道（可改/可加；非赛程集锦全频道扫描）
+# 2026-11-23：删 barcanationyt（Barca Nation，10-20 后无更新）、bcnbest786（BCNBEST，08-18 后无更新）
 $OneTimeChannelHandles = @()   # 一次性频道（已并入常规；未来如有个别一次性频道再加）
 $FeedScanAll          = $true  # 非赛程集锦：YouTube 可达即全频道扫描，不依赖「有新赛程」
 $OneTimeDoneFile = Join-Path $Root "scripts\one-time-channels.txt"   # 已抓记录（拉完写进去，下次不再抓）
 $OneTimeDumpFile = Join-Path $Root "scripts\one-time-dump.txt"       # 一次性频道抓到的原始条目（诊断用，随 Actions 提交回来）
-# B站 UP主（4 个，全部每轮都扫，没有"一次性"概念）：口菐 / 13站一直吞我評論 / 静静很甜美 / 飞翔的拉杆箱
-$BiliUids             = @("470189", "1515150312", "473683296", "1946872922")
+# B站 UP主（4 个，全部每轮都扫，没有"一次性"概念）：口菐 / 13站一直吞我評論 / 静静很甜美 / Leo-Sana
+# 2026-11-23：删 1946872922（飞翔的拉杆箱／显示名 HeilSun，四个月只有 1 条）、加 175618531（Leo-Sana，525 条个人集锦）
+$BiliUids             = @("470189", "1515150312", "473683296", "175618531")
 $MaxBiliVideos        = 40                 # 每 UP 取最近 N 个 bvid（主页 DOM 只渲染最近 ~40 条，此处为防御性上限）
 $BiliSeenFile  = Join-Path $PSScriptRoot "bili-seen.txt"   # 已抓过但未收录的 bvid 记录（未配的也记，冷却期后重试）
 $BiliSeenDays  = 7                                          # 未收录投稿冷却天数：期间不再重复抓取
@@ -76,7 +78,7 @@ $CutoffUnix           = 1780243200         # 只收 2026-06-01 起（与站点�
 # ── 微博视频集锦源 ────────────────────────────────────────────
 # 无登录只能渲染账号主页最近一页（约 8-12 条），本机每日更新每天抓一次、按球员关键词积累；
 # 关键球员（如李昊炎）的视频通常在最新几条内出现。加账号改这里即可。
-$WeiboUids           = @("1189615035")   # 微博账号 UID：董路（中国足球小将）—— 仅抓此账号
+$WeiboUids           = @()               # 微博账号 UID（2026-11-23：删董路 1189615035，改由 B站/YouTube 覆盖）
 $WeiboChannelLabel   = "董路微博"         # 视频 channel 显示名
 $WeiboPostsPerRun    = 15                # 每账号取最近 N 条视频帖（实际由微博渲染页数决定）
 
@@ -1251,9 +1253,17 @@ foreach ($cfg in @(
   }
 }
 # A1. YouTube 整场集锦搜索（探测不可达则跳过，B站 不受影响）
-$ytOk = Test-YtProbe
+if ($YouTubeOnly) {
+  $ytOk = Test-YtProbe
+} else {
+  # 本机长期直连不到 YouTube（日志里「YouTube 不可达」累计 468 次）。
+  # 统一交给 GitHub Actions 的 -YouTubeOnly 抓，本机只合并它产出的分片，省掉每轮的超时等待。
+  $ytOk = $false
+  Log "  · 本机跳过 YouTube 抓取（由 GitHub Actions 每日 -YouTubeOnly 产出分片）"
+}
 if ($newMatchList.Count -and -not $ytOk) {
-  Log "  · 有 $($newMatchList.Count) 场新比赛，但 YouTube 不可达：仅做 B站 匹配。"
+  if ($YouTubeOnly) { Log "  · 有 $($newMatchList.Count) 场新比赛，但 YouTube 不可达：仅做 B站 匹配。" }
+  else { Log "  · 有 $($newMatchList.Count) 场新比赛待 YouTube：本机跳过，等 Actions 分片补。" }
 }
 if ($newMatchList.Count -and $ytOk) {
   foreach ($nm in $newMatchList) {
