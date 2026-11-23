@@ -95,7 +95,13 @@ if ($items.Count) {
 }
 
 $out = Join-Path $WorkDir ("bili-backfill-{0}.json" -f $Uid)
-$payload = [ordered]@{ uid = $Uid; until = $Until; total = $total; fetched = $items.Count; stopped = $stopped; items = @($items) }
-($payload | ConvertTo-Json -Depth 6) | Set-Content -Path $out -Encoding UTF8
-Write-Host ("  明细已写入 {0}" -f $out)
+# 抓取失败/被限流时不要用空结果覆盖上一次的明细（2026-11-23 踩过：一次 -799 把
+# 30 条样例冲成 0 条）。只有真的抓到东西才写文件。
+if ($items.Count -eq 0) {
+  Write-Host ("  本次 0 条（{0}），保留已有的 {1}" -f $stopped, $out)
+} else {
+  $payload = [ordered]@{ uid = $Uid; until = $Until; total = $total; fetched = $items.Count; stopped = $stopped; items = @($items) }
+  ($payload | ConvertTo-Json -Depth 6) | Set-Content -Path $out -Encoding UTF8
+  Write-Host ("  明细已写入 {0}（{1} 条）" -f $out, $items.Count)
+}
 if (-not $Write) { Write-Host "  （只读模式：未改动任何缓存）" }
