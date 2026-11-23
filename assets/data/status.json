@@ -1,12 +1,12 @@
 {
     "schema":  1,
-    "runId":  "20261123-094240",
-    "runStartedUtc":  "2026-11-23T01:42:40.9451871Z",
-    "runFinishedUtc":  "2026-11-23T01:46:14.9262922Z",
+    "runId":  "20261123-124240",
+    "runStartedUtc":  "2026-11-23T04:42:40.7245537Z",
+    "runFinishedUtc":  "2026-11-23T04:42:49.5177024Z",
     "lastSuccessUtc":  "2026-11-23T01:46:27.5157196Z",
     "lastRunSource":  "local",
-    "lastRunStatus":  "degraded",
-    "exitCode":  2,
+    "lastRunStatus":  "ok",
+    "exitCode":  0,
     "consecutiveFailures":  0,
     "blocked":  false,
     "blockedSinceUtc":  null,
@@ -14,10 +14,10 @@
 
                      ],
     "failedScripts":  [
-                          "update_md_news.ps1"
+
                       ],
     "staleCaches":  [
-                        "assets/js/md-news-cache.js"
+
                     ],
     "healed":  [
 
