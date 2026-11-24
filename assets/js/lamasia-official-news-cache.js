@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-23 21:02:00 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-24 09:58:35 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-23 21:02:00",
+    "updated":  "2026-11-24 09:58:35",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
+            {
+                "id":  "4613292", "title":  "Mirza Catovic injury news",
+                "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4613292/mirza-catovic-injury-news", "time":  "",
+                "tag":  "", "img":  "" },
             {
                 "id":  "4612440", "title":  "Espanyol B 0-0 Barça Atlètic: Stalemate in the derby",
                 "url":  "https://www.fcbarcelona.com/en/football/barca-b/news/4612440/espanyol-b-0-0-barca-atletic-stalemate-in-the-derby", "time":  "",
@@ -181,7 +185,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4610386", "title":  "Longest-ever European trip",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610386/baku-fc-barcelonas-longest-ever-trip-in-european-competition", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/c9304e13-2177-4d26-bd9d-d4d49305c963/WhatsApp-Image-2026-11-17-at-13.20.30.jpeg" },
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/23/e2a5a0a9-8b31-4a7c-9ed6-ec27b945b8dd/_MGA8172.jpg" },
             {
                 "id":  "4613043", "title":  "Lamine Yamal availability news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613043/lamine-yamal-availability-news", "time":  "",

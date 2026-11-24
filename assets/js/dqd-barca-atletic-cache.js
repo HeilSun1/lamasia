@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-23 21:00 数据源：懂球帝 */
+/* 自动生成，请勿手动编辑 —— 由 update_barca_atletic.ps1 每日更新于 2026-11-24 09:57 数据源：懂球帝 */
 window.DQD_BARCA_ATLETIC = {
-    "updated":  "2026-11-23 21:00:24",
+    "updated":  "2026-11-24 09:57:11",
     "source":  "dongqiudi",
     "teamInfo":  {
                      "base_info":  {
@@ -2485,7 +2485,7 @@ window.DQD_BARCA_ATLETIC = {
                                                                   "nationality_logo":  "https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2TCAWMemAAAJsy8Pgbg246.png",
                                                                   "nationality_name":  "西班牙",
                                                                   "other_logo":  [
-                                                                                     "https://sd.qunliao.info/fastdfs6/M00/B1/2B/rBUESWKwGj6AXpU0AAAEWGmgflk890.png"
+
                                                                                  ],
                                                                   "person_en_name":  "Guillem Víctor",
                                                                   "person_id":  "50991083",
@@ -3018,12 +3018,12 @@ window.DQD_BARCA_ATLETIC = {
                                           "games_missed":  ""
                                       },
                          "51038135":  {
-                                          "date_until":  "2026.04.25",
-                                          "date_from":  "2026.04.02",
-                                          "injury":  "腹股沟损伤",
-                                          "days":  "25",
+                                          "date_until":  "2026.11.23",
+                                          "date_from":  "2026.09.27",
+                                          "injury":  "腘绳肌损伤",
+                                          "days":  "59",
                                           "status":  "ok",
-                                          "games_missed":  "3"
+                                          "games_missed":  "7"
                                       },
                          "50876730":  {
                                           "date_until":  "2026.11.02",

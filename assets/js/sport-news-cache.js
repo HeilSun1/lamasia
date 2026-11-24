@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-23 21:02:14 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-24 09:58:38 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-23 21:02:14",
+    "updated":  "2026-11-24 09:58:38",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136726521", "title":  "Enzo Pérez desata la locura. Tres goles del '6' más prometedor de La Masia contra su exequipo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/enzo-perez-desata-locura-tres-136726521", "time":  "2026-11-23 16:26",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7214ea6d-a388-42aa-b0f2-4f9f03a480ce_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136727278", "title":  "Àlex Campos: El doble rol de un central que encandila a Belletti y convence a Flick",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-23 05:30",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136699803", "title":  "El libro que cambió a Luis Enrique... y del que renegó cuando le tocó ser resultadista",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/libro-cambio-luis-enrique-renego-136699803", "time":  "2026-11-22 07:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8fd138d2-4a13-4abb-8fe7-f26f238fbc31_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8fd138d2-4a13-4abb-8fe7-f26f238fbc31_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136702143", "title":  "Un Orian Goren imperial no basta en un miniderbi accidentado e imprevisible",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-imperial-basta-miniderbi-136702143", "time":  "2026-11-21 20:01",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135938284", "title":  "El Barça renueva al nuevo Víctor Valdés",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-nuevo-victor-135938284", "time":  "2026-10-30 19:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135922627", "title":  "El hijo de Juan Carlos Unzué da el salto al Barça Atlètic como entrenador de porteros",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/hijo-juan-carlos-unzue-da-135922627", "time":  "2026-10-30 11:54",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/e7f45ba2-2e57-4ef0-b9f9-d257848a8d9f_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

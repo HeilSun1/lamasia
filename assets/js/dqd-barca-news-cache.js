@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-23 21:00:46 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-24 09:57:30 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-23 21:00:46",
+    "updated":  "2026-11-24 09:57:30",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6688478", "title":  "巴萨官方：B队前锋恰托维奇左腓骨骨折，周二将接受手术",
+            "url":  "https://www.dongqiudi.com/articles/6688478.html", "time":  "2026-11-24 03:19",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0B/45/280x210/crop/-/rBXRn2sEjNKAV5_pAAJApR1BUto996.jpg" },
+        {
+            "id":  "6687584", "title":  "每体：比西武入选欧冠名单是重要一步，但能否出场仍有待观察",
+            "url":  "https://www.dongqiudi.com/articles/6687584.html", "time":  "2026-11-23 22:29",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/93/08/280x210/crop/-/rBXRDGq9ZgOAfItBAAFREAIJXrU760.jpg" },
         {
             "id":  "6687097", "title":  "巴萨欧冠大名单：拉菲尼亚领衔，亚马尔、罗德里等人缺阵",
             "url":  "https://www.dongqiudi.com/articles/6687097.html", "time":  "2026-11-23 20:01",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6616018", "title":  "每体：布斯克茨打造商业帝国，投资植物蛋白公司",
             "url":  "https://www.dongqiudi.com/articles/6616018.html", "time":  "2026-11-06 18:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" },
-        {
-            "id":  "6614264", "title":  "西班牙U17世界杯名单：通卡拉、佩斯克尔领衔，恩佐-阿尔维斯在列",
-            "url":  "https://www.dongqiudi.com/articles/6614264.html", "time":  "2026-11-06 10:50",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E7/A4/280x210/crop/-/rBXRDGrtOQKAAc3fAAHbvmQwlaQ847.jpg" },
-        {
-            "id":  "6614117", "title":  "世体：巴萨竞技球员帕西菲科在重伤康复的路上迈出关...",
-            "url":  "https://www.dongqiudi.com/articles/6614117.html", "time":  "2026-11-06 09:14",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E7/8B/280x210/crop/-/rBXRDGrtKfqATySnAAI_JZe9bk0646.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" }
     ]
 };
