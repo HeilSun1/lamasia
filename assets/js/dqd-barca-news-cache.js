@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-24 02:57:52 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-24 21:00:45 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-24 02:57:52",
+    "updated":  "2026-11-24 21:00:45",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6690308", "title":  "马斯切拉诺：在巴萨改踢中卫是最好的决定，否则我待不了多久",
+            "url":  "https://www.dongqiudi.com/articles/6690308.html", "time":  "2026-11-24 15:13",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0B/88/280x210/crop/-/rBXRDGsEqbmAJQm7AAEFA_PTDIk551.jpg" },
         {
             "id":  "6688478", "title":  "巴萨官方：B队前锋恰托维奇左腓骨骨折，周二将接受手术",
             "url":  "https://www.dongqiudi.com/articles/6688478.html", "time":  "2026-11-24 03:19",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6616503", "title":  "通卡拉更新ins：虽然结果不尽如人意，但我对我们...",
             "url":  "https://www.dongqiudi.com/articles/6616503.html", "time":  "2026-11-06 19:55",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E8/47/280x210/crop/-/rBXRDGrto6eABw_1AA6Ge-e8D60471.jpg" },
-        {
-            "id":  "6616018", "title":  "每体：布斯克茨打造商业帝国，投资植物蛋白公司",
-            "url":  "https://www.dongqiudi.com/articles/6616018.html", "time":  "2026-11-06 18:23",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BD/38/280x210/crop/-/rBXRDGrTxvWAIo0IAADi55PQ-Oo009.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E8/47/280x210/crop/-/rBXRDGrto6eABw_1AA6Ge-e8D60471.jpg" }
     ]
 };

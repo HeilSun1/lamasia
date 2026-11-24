@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-24 02:58:18 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-24 21:02:21 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-24 02:58:18",
+    "updated":  "2026-11-24 21:02:21",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4613291", "title":  "Sabah v Barça: Did you know?",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613291/sabah-fc-v-fc-barcelona-did-you-knowx", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/d941856e-85b9-472a-a51f-d56666c23ede/JC019111.jpg" },
+            {
+                "id":  "4610008", "title":  "When and where to watch Sabah v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610008/when-and-where-to-watch-sabah-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4613109", "title":  "Squad for the trip to Baku",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613109/squad-for-the-trip-to-baku", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/23/4df354b3-2062-4b2d-9e93-5e50f4f690bd/_MGA6722.jpg" },
@@ -259,14 +267,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609902/cubarsi-and-de-jong-injury-news", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/06311fe7-cf8a-47d2-b650-50196b24f427/2026-10-31_FCBvsALAVES_064.jpg" },
             {
-                "id":  "4609818", "title":  "Olmo, part of session with squad",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/93dbaf99-beaa-4466-b34a-822f6fc1a2c5/WhatsApp-Image-2026-11-16-at-12.56.56-3-.jpeg" },
-            {
-                "id":  "4609338", "title":  "Back at the Metropolitano",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/c97f77b8-3ea2-4478-a0b4-b1ceed356bbd/_MGA5074.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -274,6 +274,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4609818", "title":  "Olmo, part of session with squad",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/93dbaf99-beaa-4466-b34a-822f6fc1a2c5/WhatsApp-Image-2026-11-16-at-12.56.56-3-.jpeg" },
+            {
+                "id":  "4609338", "title":  "Back at the Metropolitano",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609338/blaugrana-return-to-the-metropolitano", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/15/c97f77b8-3ea2-4478-a0b4-b1ceed356bbd/_MGA5074.jpg" },
             {
                 "id":  "4608811", "title":  "Five games at Spotify Camp Nou before the end of the year",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4608811/five-games-at-spotify-camp-nou-before-the-end-of-the-year", "time":  "",
@@ -369,15 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4603997", "title":  "Raphinha rises in three rankings",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603997/raphinha-rises-in-three-rankings", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/a9e4ef1f-052e-4590-a151-646e2149d204/_MGA4009-1-.jpg" },
-            {
-                "id":  "4604029", "title":  "Hansi Flick: 'It was important to defend as a unit'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604029/hansi-flick-it-was-important-to-defend-as-a-unit", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/6c3ef9e4-dd26-4f23-95e0-bc73f7c2e659/2026-11-03_FCBvsASTONVILLA_101.jpg" },
-            {
-                "id":  "4603860", "title":  "Barça 3-0 Aston Villa: Three goals, three points",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603860/fc-barcelona-3-0-aston-villa-three-goals-three-points", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/03/1d016ca8-1cd3-4a59-94e0-fdcc37db4812/_MGA4003.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/a9e4ef1f-052e-4590-a151-646e2149d204/_MGA4009-1-.jpg" }
         ]
     }
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-24 09:57 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-24 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-24 09:57:48",
+    "updated":  "2026-11-24 21:01:24",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -8,7 +8,11 @@ window.DQD_U19_CACHE = {
                  "country":  "Spain",
                  "logo":  "https://img.sofascore.com/api/v1/team/90128/image"
              },
-    "coach":  null,
+    "coach":  {
+                  "name":  "Albert Peris",
+                  "id":  "833020",
+                  "photo":  "https://img.sofascore.com/api/v1/manager/833020/image"
+              },
     "players":  [
                     {
                         "name":  "Ajay Tavares",

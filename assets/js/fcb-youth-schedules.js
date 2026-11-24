@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-24 02:59；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-24 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-24 02:59:57",
+    "updated":  "2026-11-24 21:02:19",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -255,9 +255,9 @@ window.LAMASIA_SCHEDULES = {
                                           "comp":  "西青甲 G3",
                                           "compEn":  "División de Honor Juvenil G.3",
                                           "round":  "12",
-                                          "start":  "1796554800",
-                                          "date":  "2026-12-06",
-                                          "tbd":  true,
+                                          "start":  "1796468400",
+                                          "date":  "2026-12-05",
+                                          "tbd":  false,
                                           "home":  "FC Barcelona",
                                           "away":  "Damm A",
                                           "homeId":  "8470",

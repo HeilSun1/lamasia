@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-24 02:58:21 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-24 21:02:35 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-24 02:58:21",
+    "updated":  "2026-11-24 21:02:35",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136597934", "title":  "Marc Pedraza, exjugador de La Masia: \"Messi era una locura, y Take Kubo es lo más parecido a él que he visto\"",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/marc-pedraza-exjugador-masia-messi-136597934", "time":  "2026-11-24 10:31",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d00ee4a-55e9-4414-ad2f-15498837ad32_16-9-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136726521", "title":  "Enzo Pérez desata la locura. Tres goles del '6' más prometedor de La Masia contra su exequipo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/enzo-perez-desata-locura-tres-136726521", "time":  "2026-11-23 16:26",
@@ -11,7 +15,7 @@ window.SPORT_NEWS = {
         {
             "id":  "136727278", "title":  "Àlex Campos: El doble rol de un central que encandila a Belletti y convence a Flick",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-23 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f4c90a69-33c8-4298-a528-6f2a1fa8c0fb_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f4c90a69-33c8-4298-a528-6f2a1fa8c0fb_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136699803", "title":  "El libro que cambió a Luis Enrique... y del que renegó cuando le tocó ser resultadista",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/libro-cambio-luis-enrique-renego-136699803", "time":  "2026-11-22 07:00",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135938003", "title":  "Orian Goren se suma al Barça Atlètic para recibir al Arnedo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-suma-barca-atletic-135938003", "time":  "2026-10-30 18:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135938284", "title":  "El Barça renueva al nuevo Víctor Valdés",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/oficial-barca-renueva-nuevo-victor-135938284", "time":  "2026-10-30 19:38",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/ab0430bc-140e-4623-9f9c-55fdf2074972_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
