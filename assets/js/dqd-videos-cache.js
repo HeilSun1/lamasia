@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-11-24 21:03 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
+/* 自动生成，请勿手动编辑 —— 由 update_youtube.ps1 更新于 2026-11-25 10:12 数据源：YouTube 搜索/RSS + B站 UP 空间 + 微博 */
 window.DQD_VIDEOS_CACHE = {
-    "updated":  "2026-11-24 21:03:02",
+    "updated":  "2026-11-25 10:12:54",
     "searchedMatches":  [
                             "sfb:16655584",
                             "sfb:16696837",
@@ -630,6 +630,23 @@ window.DQD_VIDEOS_CACHE = {
                                                                  {
                                                                      "date":  "2026-11-14",
                                                                      "opp":  "",
+                                                                     "label":  "11-14 · 个人集锦",
+                                                                     "matchKey":  "",
+                                                                     "videos":  [
+                                                                                    {
+                                                                                        "videoId":  "1034:5365253890834466",
+                                                                                        "title":  "昊炎一条龙破门！本赛季个人第5粒进球来了！巴萨上半场1:0领先！ 董路的微博视频",
+                                                                                        "channel":  "董路微博",
+                                                                                        "channelId":  "",
+                                                                                        "published":  "2026-11-14",
+                                                                                        "durationSec":  "0:40",
+                                                                                        "site":  "weibo"
+                                                                                    }
+                                                                                ]
+                                                                 },
+                                                                 {
+                                                                     "date":  "2026-11-14",
+                                                                     "opp":  "",
                                                                      "label":  "11-14 · 集锦",
                                                                      "matchKey":  "",
                                                                      "videos":  [
@@ -642,23 +659,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                         "durationSec":  "26",
                                                                                         "site":  "bili",
                                                                                         "pic":  "https://i2.hdslb.com/bfs/archive/a193c695b620da1c179369acc686df66423a887a.jpg"
-                                                                                    }
-                                                                                ]
-                                                                 },
-                                                                 {
-                                                                     "date":  "2026-11-14",
-                                                                     "opp":  "",
-                                                                     "label":  "11-14 · 个人集锦",
-                                                                     "matchKey":  "",
-                                                                     "videos":  [
-                                                                                    {
-                                                                                        "videoId":  "1034:5365253890834466",
-                                                                                        "title":  "昊炎一条龙破门！本赛季个人第5粒进球来了！巴萨上半场1:0领先！ 董路的微博视频",
-                                                                                        "channel":  "董路微博",
-                                                                                        "channelId":  "",
-                                                                                        "published":  "2026-11-14",
-                                                                                        "durationSec":  "0:40",
-                                                                                        "site":  "weibo"
                                                                                     }
                                                                                 ]
                                                                  },
@@ -822,24 +822,6 @@ window.DQD_VIDEOS_CACHE = {
                                  "local:juvenil-a:babakourouma":  [
                                                                       {
                                                                           "date":  "2026-11-24",
-                                                                          "opp":  "",
-                                                                          "label":  "11-24 · 个人集锦",
-                                                                          "matchKey":  "",
-                                                                          "videos":  [
-                                                                                         {
-                                                                                             "videoId":  "BV1tvyZz6EbX",
-                                                                                             "title":  "巴巴库鲁马对阵斐济U17个人集锦",
-                                                                                             "channel":  "Leo-Sana",
-                                                                                             "channelId":  "",
-                                                                                             "published":  "2026-11-24",
-                                                                                             "durationSec":  "147",
-                                                                                             "site":  "bili",
-                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/86ea55bae629f2451ddd98c0319b2c382bb21782.jpg"
-                                                                                         }
-                                                                                     ]
-                                                                      },
-                                                                      {
-                                                                          "date":  "2026-11-24",
                                                                           "opp":  "斐济u17",
                                                                           "label":  "vs 斐济u17 · 11-24",
                                                                           "matchKey":  "",
@@ -857,18 +839,20 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       },
                                                                       {
-                                                                          "date":  "2026-11-03",
-                                                                          "opp":  "Aston Villa U19",
-                                                                          "label":  "vs Aston Villa U19 · 11-03",
-                                                                          "matchKey":  "sofascore:17063030",
+                                                                          "date":  "2026-11-24",
+                                                                          "opp":  "",
+                                                                          "label":  "11-24 · 个人集锦",
+                                                                          "matchKey":  "",
                                                                           "videos":  [
                                                                                          {
-                                                                                             "videoId":  "NkPSPWf5dyE",
-                                                                                             "title":  "Baba Kourouma vs Aston Villa U19",
-                                                                                             "channel":  "ArsenKveFCB",
-                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                             "published":  "2026-11-03",
-                                                                                             "durationSec":  ""
+                                                                                             "videoId":  "BV1tvyZz6EbX",
+                                                                                             "title":  "巴巴库鲁马对阵斐济U17个人集锦",
+                                                                                             "channel":  "Leo-Sana",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-11-24",
+                                                                                             "durationSec":  "147",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/86ea55bae629f2451ddd98c0319b2c382bb21782.jpg"
                                                                                          }
                                                                                      ]
                                                                       },
@@ -891,20 +875,18 @@ window.DQD_VIDEOS_CACHE = {
                                                                                      ]
                                                                       },
                                                                       {
-                                                                          "date":  "2026-10-11",
-                                                                          "opp":  "",
-                                                                          "label":  "10-11 · 季前赛/友谊赛",
-                                                                          "matchKey":  "",
+                                                                          "date":  "2026-11-03",
+                                                                          "opp":  "Aston Villa U19",
+                                                                          "label":  "vs Aston Villa U19 · 11-03",
+                                                                          "matchKey":  "sofascore:17063030",
                                                                           "videos":  [
                                                                                          {
-                                                                                             "videoId":  "BV18hpJ6AEvG",
-                                                                                             "title":  "拉玛西亚左中卫 Juvenil A 巴巴 本场集锦",
-                                                                                             "channel":  "13站一直吞我評論",
-                                                                                             "channelId":  "",
-                                                                                             "published":  "2026-10-11",
-                                                                                             "durationSec":  "154",
-                                                                                             "site":  "bili",
-                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/fb4c0969cc812ba5b7149e150036c1d0cbaa6f23.jpg"
+                                                                                             "videoId":  "NkPSPWf5dyE",
+                                                                                             "title":  "Baba Kourouma vs Aston Villa U19",
+                                                                                             "channel":  "ArsenKveFCB",
+                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                             "published":  "2026-11-03",
+                                                                                             "durationSec":  ""
                                                                                          }
                                                                                      ]
                                                                       },
@@ -921,6 +903,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                              "published":  "2026-10-11",
                                                                                              "durationSec":  ""
+                                                                                         }
+                                                                                     ]
+                                                                      },
+                                                                      {
+                                                                          "date":  "2026-10-11",
+                                                                          "opp":  "",
+                                                                          "label":  "10-11 · 季前赛/友谊赛",
+                                                                          "matchKey":  "",
+                                                                          "videos":  [
+                                                                                         {
+                                                                                             "videoId":  "BV18hpJ6AEvG",
+                                                                                             "title":  "拉玛西亚左中卫 Juvenil A 巴巴 本场集锦",
+                                                                                             "channel":  "13站一直吞我評論",
+                                                                                             "channelId":  "",
+                                                                                             "published":  "2026-10-11",
+                                                                                             "durationSec":  "154",
+                                                                                             "site":  "bili",
+                                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/fb4c0969cc812ba5b7149e150036c1d0cbaa6f23.jpg"
                                                                                          }
                                                                                      ]
                                                                       },
@@ -1445,6 +1445,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                      {
                                                                          "date":  "2026-09-08",
                                                                          "opp":  "",
+                                                                         "label":  "09-08 · 个人集锦",
+                                                                         "matchKey":  "",
+                                                                         "videos":  [
+                                                                                        {
+                                                                                            "videoId":  "BV1yKYJ61EJN",
+                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
+                                                                                            "channel":  "静静很甜美",
+                                                                                            "channelId":  "",
+                                                                                            "published":  "2026-09-08",
+                                                                                            "durationSec":  "355",
+                                                                                            "site":  "bili",
+                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
+                                                                                        }
+                                                                                    ]
+                                                                     },
+                                                                     {
+                                                                         "date":  "2026-09-08",
+                                                                         "opp":  "",
                                                                          "label":  "09-08 · 集锦",
                                                                          "matchKey":  "",
                                                                          "videos":  [
@@ -1465,24 +1483,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                             "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                             "published":  "2026-09-08",
                                                                                             "durationSec":  ""
-                                                                                        }
-                                                                                    ]
-                                                                     },
-                                                                     {
-                                                                         "date":  "2026-09-08",
-                                                                         "opp":  "",
-                                                                         "label":  "09-08 · 个人集锦",
-                                                                         "matchKey":  "",
-                                                                         "videos":  [
-                                                                                        {
-                                                                                            "videoId":  "BV1yKYJ61EJN",
-                                                                                            "title":  "伊斯梅尔·齐亚尼 | Juvenil A | 个人精彩集锦",
-                                                                                            "channel":  "静静很甜美",
-                                                                                            "channelId":  "",
-                                                                                            "published":  "2026-09-08",
-                                                                                            "durationSec":  "355",
-                                                                                            "site":  "bili",
-                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/dcaf4254764cce405cd6a15c7df694f6d76bec4b.jpg"
                                                                                         }
                                                                                     ]
                                                                      }
@@ -1526,22 +1526,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                     },
                                                                     {
                                                                         "date":  "2026-10-03",
-                                                                        "opp":  "UE Olot",
-                                                                        "label":  "vs UE Olot · 10-03",
-                                                                        "matchKey":  "",
-                                                                        "videos":  [
-                                                                                       {
-                                                                                           "videoId":  "7muT5baINFU",
-                                                                                           "title":  "Noah Garcia vs UE Olot",
-                                                                                           "channel":  "ArsenKveFCB",
-                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                           "published":  "2026-10-03",
-                                                                                           "durationSec":  ""
-                                                                                       }
-                                                                                   ]
-                                                                    },
-                                                                    {
-                                                                        "date":  "2026-10-03",
                                                                         "opp":  "",
                                                                         "label":  "10-03 · 季前赛/友谊赛",
                                                                         "matchKey":  "",
@@ -1555,6 +1539,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                                            "durationSec":  "151",
                                                                                            "site":  "bili",
                                                                                            "pic":  "https://i1.hdslb.com/bfs/archive/e9cee9dc83bfe9faec28653ebea4ec9879389a6b.jpg"
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                                    {
+                                                                        "date":  "2026-10-03",
+                                                                        "opp":  "UE Olot",
+                                                                        "label":  "vs UE Olot · 10-03",
+                                                                        "matchKey":  "",
+                                                                        "videos":  [
+                                                                                       {
+                                                                                           "videoId":  "7muT5baINFU",
+                                                                                           "title":  "Noah Garcia vs UE Olot",
+                                                                                           "channel":  "ArsenKveFCB",
+                                                                                           "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                           "published":  "2026-10-03",
+                                                                                           "durationSec":  ""
                                                                                        }
                                                                                    ]
                                                                     },
@@ -1620,6 +1620,22 @@ window.DQD_VIDEOS_CACHE = {
                                                                    },
                                                                    {
                                                                        "date":  "2026-09-27",
+                                                                       "opp":  "Ff Reus",
+                                                                       "label":  "vs Ff Reus · 09-27",
+                                                                       "matchKey":  "",
+                                                                       "videos":  [
+                                                                                      {
+                                                                                          "videoId":  "Ci-nblE4MLY",
+                                                                                          "title":  "Pau Berges vs FF Reus",
+                                                                                          "channel":  "ArsenKveFCB",
+                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
+                                                                                          "published":  "2026-09-27",
+                                                                                          "durationSec":  ""
+                                                                                      }
+                                                                                  ]
+                                                                   },
+                                                                   {
+                                                                       "date":  "2026-09-27",
                                                                        "opp":  "",
                                                                        "label":  "09-27 · 季前赛/友谊赛",
                                                                        "matchKey":  "",
@@ -1633,22 +1649,6 @@ window.DQD_VIDEOS_CACHE = {
                                                                                           "durationSec":  "152",
                                                                                           "site":  "bili",
                                                                                           "pic":  "https://i0.hdslb.com/bfs/archive/b456960a5beb637e9c318faa9ac0ed730cd32791.jpg"
-                                                                                      }
-                                                                                  ]
-                                                                   },
-                                                                   {
-                                                                       "date":  "2026-09-27",
-                                                                       "opp":  "Ff Reus",
-                                                                       "label":  "vs Ff Reus · 09-27",
-                                                                       "matchKey":  "",
-                                                                       "videos":  [
-                                                                                      {
-                                                                                          "videoId":  "Ci-nblE4MLY",
-                                                                                          "title":  "Pau Berges vs FF Reus",
-                                                                                          "channel":  "ArsenKveFCB",
-                                                                                          "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
-                                                                                          "published":  "2026-09-27",
-                                                                                          "durationSec":  ""
                                                                                       }
                                                                                   ]
                                                                    }
@@ -1881,27 +1881,27 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  ""
                                                                          }
                                                                      ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-07",
+                                                          "matchKey":  "sfb:16741779",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV14dbc6REtB",
+                                                                             "title":  "肖恩·克鲁伊维特 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "372",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/740422f8ede26952fafe74ab91fd2ade6d8a3ca8.jpg"
+                                                                         }
+                                                                     ]
                                                       }
                                                   ],
                                  "sf:b:1798716":  [
-                                                      {
-                                                          "date":  "2026-11-15",
-                                                          "opp":  "",
-                                                          "label":  "11-15 · 集锦",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1Bnss6AEiB",
-                                                                             "title":  "昂斯坦在巴萨竞技的首秀",
-                                                                             "channel":  "Leo-Sana",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-11-15",
-                                                                             "durationSec":  "209",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/770c4c94aa3dcee3d82b8b58807387942d62b612.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
                                                       {
                                                           "date":  "2026-11-15",
                                                           "opp":  "赫罗纳b队",
@@ -1919,27 +1919,27 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "pic":  "https://i2.hdslb.com/bfs/archive/ca608bfc8eef6ab7a4a1abc134dd46c01fba1868.jpg"
                                                                          }
                                                                      ]
-                                                      }
-                                                  ],
-                                 "sf:b:1926117":  [
+                                                      },
                                                       {
-                                                          "date":  "2026-11-22",
+                                                          "date":  "2026-11-15",
                                                           "opp":  "",
-                                                          "label":  "11-22 · 个人集锦",
+                                                          "label":  "11-15 · 集锦",
                                                           "matchKey":  "",
                                                           "videos":  [
                                                                          {
-                                                                             "videoId":  "BV1Qky3zEECK",
-                                                                             "title":  "坎波斯对阵西班牙人B队个人集锦",
+                                                                             "videoId":  "BV1Bnss6AEiB",
+                                                                             "title":  "昂斯坦在巴萨竞技的首秀",
                                                                              "channel":  "Leo-Sana",
                                                                              "channelId":  "",
-                                                                             "published":  "2026-11-22",
-                                                                             "durationSec":  "284",
+                                                                             "published":  "2026-11-15",
+                                                                             "durationSec":  "209",
                                                                              "site":  "bili",
-                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/2b0b9b2e7b824364c024adab8e08690851f24d22.jpg"
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/770c4c94aa3dcee3d82b8b58807387942d62b612.jpg"
                                                                          }
                                                                      ]
-                                                      },
+                                                      }
+                                                  ],
+                                 "sf:b:1926117":  [
                                                       {
                                                           "date":  "2026-11-22",
                                                           "opp":  "",
@@ -1955,6 +1955,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "durationSec":  "284",
                                                                              "site":  "bili",
                                                                              "pic":  "https://i0.hdslb.com/bfs/archive/05ded53712badfa517468f48862b6862381ec954.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-22",
+                                                          "opp":  "",
+                                                          "label":  "11-22 · 个人集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1Qky3zEECK",
+                                                                             "title":  "坎波斯对阵西班牙人B队个人集锦",
+                                                                             "channel":  "Leo-Sana",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-22",
+                                                                             "durationSec":  "284",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/2b0b9b2e7b824364c024adab8e08690851f24d22.jpg"
                                                                          }
                                                                      ]
                                                       },
@@ -2220,24 +2238,6 @@ window.DQD_VIDEOS_CACHE = {
                                  "sf:b:2076869":  [
                                                       {
                                                           "date":  "2026-11-15",
-                                                          "opp":  "",
-                                                          "label":  "11-15 · 个人集锦",
-                                                          "matchKey":  "",
-                                                          "videos":  [
-                                                                         {
-                                                                             "videoId":  "BV1fEss6YEn5",
-                                                                             "title":  "又是一场个人表现非常好的比赛，加里巴对阵赫罗纳个人集锦",
-                                                                             "channel":  "Leo-Sana",
-                                                                             "channelId":  "",
-                                                                             "published":  "2026-11-15",
-                                                                             "durationSec":  "293",
-                                                                             "site":  "bili",
-                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/1312abe814a31265962d0edee9cae07f6de6d95c.jpg"
-                                                                         }
-                                                                     ]
-                                                      },
-                                                      {
-                                                          "date":  "2026-11-15",
                                                           "opp":  "赫罗纳b队",
                                                           "label":  "vs 赫罗纳b队 · 11-15",
                                                           "matchKey":  "sfb:16742262",
@@ -2259,6 +2259,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-11-15",
                                                                              "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-15",
+                                                          "opp":  "",
+                                                          "label":  "11-15 · 个人集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1fEss6YEn5",
+                                                                             "title":  "又是一场个人表现非常好的比赛，加里巴对阵赫罗纳个人集锦",
+                                                                             "channel":  "Leo-Sana",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-15",
+                                                                             "durationSec":  "293",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/1312abe814a31265962d0edee9cae07f6de6d95c.jpg"
                                                                          }
                                                                      ]
                                                       },
@@ -2451,6 +2469,98 @@ window.DQD_VIDEOS_CACHE = {
                                                                      ]
                                                       }
                                                   ],
+                                 "sf:b:2128084":  [
+                                                      {
+                                                          "date":  "2026-11-21",
+                                                          "opp":  "",
+                                                          "label":  "11-21 · 集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1SKyazeE19",
+                                                                             "title":  "慢动作-通卡拉任意球破门",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-21",
+                                                                             "durationSec":  "36",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i2.hdslb.com/bfs/archive/2d2fdd3298a98ba4df8d89388a34e66b163ae24b.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-20",
+                                                          "opp":  "",
+                                                          "label":  "11-20 · 个人集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1aQy4ztEHR",
+                                                                             "title":  "通卡拉对阵中国U17个人集锦",
+                                                                             "channel":  "Leo-Sana",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-20",
+                                                                             "durationSec":  "242",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/ad48bb705eb97167a89d74e2183693f857d4fcfa.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-20",
+                                                          "opp":  "",
+                                                          "label":  "11-20 · 集锦",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1rhyszPEBw",
+                                                                             "title":  "通卡拉游龙",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-20",
+                                                                             "durationSec":  "26",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/5db317f7c9b05f2c974d57edd835eaedb77f0787.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-11-20",
+                                                          "opp":  "中国u17 个人集锦",
+                                                          "label":  "vs 中国u17 个人集锦 · 11-20",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1oFyszsEM1",
+                                                                             "title":  "野兽派技术流 拉玛西亚赤木刚宪 通卡拉VS中国U17 个人集锦",
+                                                                             "channel":  "口菐",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-11-20",
+                                                                             "durationSec":  "242",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i1.hdslb.com/bfs/archive/538393d42410463bbeac112b58368065246cdb41.jpg"
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-08-03",
+                                                          "opp":  "",
+                                                          "label":  "08-03 · 训练",
+                                                          "matchKey":  "",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV1YKMX6tEEn",
+                                                                             "title":  "通卡拉训练赛踢伪9",
+                                                                             "channel":  "13站一直吞我評論",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-08-03",
+                                                                             "durationSec":  "30",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/6710c51698ec2c518156b1a7f78ea98c6757e490.jpg"
+                                                                         }
+                                                                     ]
+                                                      }
+                                                  ],
                                  "sf:b:2128094":  [
                                                       {
                                                           "date":  "2026-11-03",
@@ -2497,6 +2607,24 @@ window.DQD_VIDEOS_CACHE = {
                                                                              "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                              "published":  "2026-10-11",
                                                                              "durationSec":  ""
+                                                                         }
+                                                                     ]
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-07",
+                                                          "opp":  "CD Naxara",
+                                                          "label":  "vs CD Naxara · 09-07",
+                                                          "matchKey":  "sfb:16741779",
+                                                          "videos":  [
+                                                                         {
+                                                                             "videoId":  "BV14dbc6REwA",
+                                                                             "title":  "乔迪·佩斯克尔 vs CD Naxara | 个人精彩集锦",
+                                                                             "channel":  "静静很甜美",
+                                                                             "channelId":  "",
+                                                                             "published":  "2026-09-07",
+                                                                             "durationSec":  "132",
+                                                                             "site":  "bili",
+                                                                             "pic":  "https://i0.hdslb.com/bfs/archive/d8b228ccec9f228ea03be0cbccfb82cce6520aad.jpg"
                                                                          }
                                                                      ]
                                                       }
@@ -2655,6 +2783,26 @@ window.DQD_VIDEOS_CACHE = {
                                                                                "channelId":  "UCr2uNP7zoEGQmiOaQ-ebNXQ",
                                                                                "published":  "2026-08-14",
                                                                                "durationSec":  ""
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                 "sf:u19:2128094":  [
+                                                        {
+                                                            "date":  "2026-09-07",
+                                                            "opp":  "CD Naxara",
+                                                            "label":  "vs CD Naxara · 09-07",
+                                                            "matchKey":  "sfb:16741779",
+                                                            "videos":  [
+                                                                           {
+                                                                               "videoId":  "BV14dbc6REwA",
+                                                                               "title":  "乔迪·佩斯克尔 vs CD Naxara | 个人精彩集锦",
+                                                                               "channel":  "静静很甜美",
+                                                                               "channelId":  "",
+                                                                               "published":  "2026-09-07",
+                                                                               "durationSec":  "132",
+                                                                               "site":  "bili",
+                                                                               "pic":  "https://i0.hdslb.com/bfs/archive/d8b228ccec9f228ea03be0cbccfb82cce6520aad.jpg"
                                                                            }
                                                                        ]
                                                         }
