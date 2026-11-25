@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-25 10:12:00 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-25 21:02:04 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-25 10:12:00",
+    "updated":  "2026-11-25 21:02:04",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4613170", "title":  "PREVIEW | Sabah v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613170/preview-sabah-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4613944", "title":  "Training at Baku Olympic Stadium",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613944/training-at-baku-olympic-stadium", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/ab5ceb86-e04e-439d-8749-dbf74df3448c/WhatsApp-Image-2026-11-24-at-18.24.16.jpeg" },
@@ -263,10 +267,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610002/when-and-where-to-watch-fc-barcelona-v-villarreal-cf", "time":  "",
                 "tag":  "", "img":  "" },
             {
-                "id":  "4609868", "title":  "Nine games in a month",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609868/nine-games-in-a-month-to-round-off-2026", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/3d749a48-a915-4b5b-8036-15af396a70fd/_MGA4000.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -274,6 +274,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4609868", "title":  "Nine games in a month",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609868/nine-games-in-a-month-to-round-off-2026", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/3d749a48-a915-4b5b-8036-15af396a70fd/_MGA4000.jpg" },
             {
                 "id":  "4607914", "title":  "Victory and 90 minutes for Cancelo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
@@ -373,11 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" },
-            {
-                "id":  "4604460", "title":  "Raphinha to renew this Thursday",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" }
         ]
     }
 };

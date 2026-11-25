@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-25 10:11:11 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-25 21:01:09 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-25 10:11:11",
+    "updated":  "2026-11-25 21:01:09",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6695637", "title":  "巴塞罗那U19 7-0血洗沙巴巴库U19，奥斯卡-希斯陶双响，迪亚拉苏巴建功",
+            "url":  "https://www.dongqiudi.com/articles/6695637.html", "time":  "2026-11-25 20:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/DC/280x210/crop/-/rBXRDGsG2--AU5NYAAGYTFoi468429.png" },
         {
             "id":  "6679570", "title":  "巴萨竞技战报 20261122",
             "url":  "https://www.dongqiudi.com/articles/6679570.html", "time":  "2026-11-22 03:09",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6084797", "title":  "每体：特狮加盟贾府的税务障碍已解决，球员预计本周抵达荷兰",
             "url":  "https://www.dongqiudi.com/articles/6084797.html", "time":  "2026-07-27 04:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/7E/280x210/crop/-/rBXRDGpmZ7SAYiOUAAEDMKdP8pI560.jpg" },
-        {
-            "id":  "6052634", "title":  "世体：弗里克将改变对三门伊克尔使用方式，避免其错失出场时间",
-            "url":  "https://www.dongqiudi.com/articles/6052634.html", "time":  "2026-07-19 17:00",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AA/14/280x210/crop/-/rBXRn2pckiqAH6exAAD99VHt61Y096.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/7E/280x210/crop/-/rBXRDGpmZ7SAYiOUAAEDMKdP8pI560.jpg" }
     ]
 };

@@ -1,9 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-25 10:10:52 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-25 21:00:44 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-25 10:10:52",
+    "updated":  "2026-11-25 21:00:44",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6695542", "title":  "布斯克茨：现代足球更机械化，很多球队只想着不输球",
+            "url":  "https://www.dongqiudi.com/articles/6695542.html", "time":  "2026-11-25 20:12",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/B9/280x210/crop/-/rBXRn2sG0LCAcjCiAAHJmrW7yIw446.jpg" },
+        {
+            "id":  "6695492", "title":  "西班牙U17主帅：或许第一场比赛是最艰难的，对阵中国有难度",
+            "url":  "https://www.dongqiudi.com/articles/6695492.html", "time":  "2026-11-25 19:56",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/AC/280x210/crop/-/rBXRn2sGxsmAJ4n9AACQONJ0GLI417.jpg" },
+        {
+            "id":  "6695187", "title":  "巴萨官方：B队中场恰托维奇成功接受手术，将缺阵约4个月",
+            "url":  "https://www.dongqiudi.com/articles/6695187.html", "time":  "2026-11-25 18:27",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/95/280x210/crop/-/rBXRn2sGt6qAdOQUAAMge4_pHnA717.jpg" },
         {
             "id":  "6692006", "title":  "每体：恩里克15年后与巴萨B队昔日弟子重聚，并回忆执教时光",
             "url":  "https://www.dongqiudi.com/articles/6692006.html", "time":  "2026-11-24 23:36",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6627388", "title":  "巴萨客战马竞大名单：埃里克-加西亚、克里斯滕森伤愈回归",
             "url":  "https://www.dongqiudi.com/articles/6627388.html", "time":  "2026-11-08 17:42",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EC/63/280x210/crop/-/rBXRDGrwRAaANXEBAA8snThktiI225.png" },
-        {
-            "id":  "6626516", "title":  "格里马尔多将代表马竞出战老东家巴萨，每体回顾其成长经历",
-            "url":  "https://www.dongqiudi.com/articles/6626516.html", "time":  "2026-11-08 15:51",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EC/19/280x210/crop/-/rBXRDGrwIGqAMszmAAKu9DnnzcM489.jpg" },
-        {
-            "id":  "6620693", "title":  "阿斯：巴萨马竞修复关系，周日高层共进午餐",
-            "url":  "https://www.dongqiudi.com/articles/6620693.html", "time":  "2026-11-07 16:44",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EA/0C/280x210/crop/-/rBXRDGru3C2AWDlZAAJ-35kCF5A027.jpg" },
-        {
-            "id":  "6619976", "title":  "每体：萨马-诺莫科正处于重伤膝伤康复的最后阶段，...",
-            "url":  "https://www.dongqiudi.com/articles/6619976.html", "time":  "2026-11-07 12:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/D5/280x210/crop/-/rBXRDGrursuADNpPAANdxHdswgQ934.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EC/63/280x210/crop/-/rBXRDGrwRAaANXEBAA8snThktiI225.png" }
     ]
 };

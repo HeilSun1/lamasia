@@ -1,13 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-25 10:12:02 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-25 21:02:10 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-25 10:12:02",
+    "updated":  "2026-11-25 21:02:10",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136828254", "title":  "Sabah - FC Barcelona, en directo: Youth League, Jornada 5 de la fase liga, en vivo hoy",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sabah-fc-barcelona-directo-youth-136828254", "time":  "2026-11-25 11:58",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
+        {
+            "id":  "136825963", "title":  "Dónde ver el Sabah - FC Barcelona de la Youth League por TV y en directo",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/ver-sabah-fc-barcelona-youth-136825963", "time":  "2026-11-25 10:43",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4dc53a0c-3284-42c8-ab1c-210832c00cc8_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
             "id":  "136804486", "title":  "Pedro, Gistau y Joni, las armas del Barça en el estreno de Albert Peris en Youth League",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sabah-fc-barcelona-horario-ver-136804486", "time":  "2026-11-24 20:50",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3638dbb6-3a91-43ac-9e52-13449924c753_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3638dbb6-3a91-43ac-9e52-13449924c753_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136597934", "title":  "Marc Pedraza, exjugador de La Masia: \"Messi era una locura, y Take Kubo es lo más parecido a él que he visto\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/marc-pedraza-exjugador-masia-messi-136597934", "time":  "2026-11-24 10:31",
@@ -195,14 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135957070", "title":  "Barça Atlètic - CD Arnedo, en directo hoy: partido de la Segunda RFEF, en vivo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-arnedo-directo-135957070", "time":  "2026-10-31 16:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135953008", "title":  "Onstein vuelve a escena en el Barça",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/onstein-vuelve-escena-barca-atletic-135953008", "time":  "2026-10-31 13:42",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/c4766930-8fbe-40d6-90d3-b08b51eee60c_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135942468", "title":  "¿Quiénes son los tres jugadores del Barça campeones del mundo sub-15?",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/son-tres-jugadores-barca-campeones-135942468", "time":  "2026-10-31 07:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c41c689-4179-4755-abf8-5dd98c3d8d8b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

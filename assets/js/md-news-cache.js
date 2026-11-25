@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-25 10:12:04 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-25 21:02:11 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-25 10:12:04",
+    "updated":  "2026-11-25 21:02:11",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261125/1004255004/juvenil-barca-juega-youth-league-sabah.html", "title":  "El Juvenil A del Barça se la juega en Youth League ante el Sabah",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261125/1004255004/juvenil-barca-juega-youth-league-sabah.html", "time":  "2026-11-25 14:00",
+            "tag":  "Previo decisivo", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/24/6b05c8c7d357a.r_d.876-1173-8000.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261124/1004255028/albert-peris-nuevo-entrenador-juvenil-ojos-microscopicos.html", "title":  "Albert Peris, el nuevo entrenador del Juvenil A que tiene \"ojos microscópicos\"",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261124/1004255028/albert-peris-nuevo-entrenador-juvenil-ojos-microscopicos.html", "time":  "2026-11-25 03:01",
@@ -199,10 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "title":  "La brutal acción de Dabone que está dando la vuelta a las redes: \"No es de este planeta\"",
             "url":  "https://www.mundodeportivo.com/baloncesto/liga-u/20261009/1004236730/brutal-accion-dabone-dando-vuelta-redes-no-planeta.html", "time":  "2026-10-10 01:13",
-            "tag":  "Liga U", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/09/6ac920728a6ef.png" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "title":  "Xavi Espart: \"Nací siendo culé, quiero ayudar al Barça a hacer más grande su historia\"",
-            "url":  "https://www.mundodeportivo.com/futbol/20261009/1004236494/xavi-espart-quiero-ayudar-barca-grande-historia.html", "time":  "2026-10-09 17:21",
-            "tag":  "Carrerón en el Barça", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/09/6ac8c2484c67c.jpeg" }
+            "tag":  "Liga U", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/09/6ac920728a6ef.png" }
     ]
 };

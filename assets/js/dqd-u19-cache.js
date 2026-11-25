@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-25 10:11 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-25 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-25 10:11:11",
+    "updated":  "2026-11-25 21:01:08",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -90,6 +90,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Ruslan Mba",
+                        "id":  "2128111",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U16",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2128111/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-02-27",
+                        "foot":  "左脚",
+                        "height":  "165",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Byron Mendoza",
                         "id":  "2446943",
                         "pos":  "F",
@@ -120,6 +135,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Pedro Rodriguez",
+                        "id":  "1649171",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "Barcelona Atlètic",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1649171/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-01-20",
+                        "foot":  "右脚",
+                        "height":  "175",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Michał Żuk",
                         "id":  "2128103",
                         "pos":  "M",
@@ -135,21 +165,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Ibrahim Babayev",
-                        "id":  "1990908",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Azerbaijan",
-                        "photo":  "https://img.sofascore.com/api/v1/player/1990908/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-08-08",
-                        "foot":  "右脚",
-                        "height":  "185",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Roberto Tomás",
                         "id":  "2607839",
                         "pos":  "M",
@@ -161,6 +176,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-02-20",
                         "foot":  "右脚",
                         "height":  "176",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Ibrahim Babayev",
+                        "id":  "1990908",
+                        "pos":  "M",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Azerbaijan",
+                        "photo":  "https://img.sofascore.com/api/v1/player/1990908/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-08-08",
+                        "foot":  "右脚",
+                        "height":  "185",
                         "value":  "",
                         "injury":  null
                     },
@@ -370,7 +400,7 @@ window.DQD_U19_CACHE = {
                         "age":  "17岁",
                         "birthday":  "2009-01-20",
                         "foot":  "左脚",
-                        "height":  "",
+                        "height":  "191",
                         "value":  "",
                         "injury":  null
                     },
@@ -390,6 +420,21 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Luca Pérez",
+                        "id":  "2412372",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-10",
+                        "foot":  "右脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Madou Murcia",
                         "id":  "2738837",
                         "pos":  "D",
@@ -401,6 +446,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2008-01-26",
                         "foot":  "左脚",
                         "height":  "185",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Óscar Medina",
+                        "id":  "2690246",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690246/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-16",
+                        "foot":  "",
+                        "height":  "",
                         "value":  "",
                         "injury":  null
                     },
@@ -685,10 +745,10 @@ window.DQD_U19_CACHE = {
                         "away":  "Barcelona U19",
                         "homeId":  "931005",
                         "awayId":  "90128",
-                        "hs":  "",
-                        "as":  "",
-                        "status":  "Not started",
-                        "code":  "0",
+                        "hs":  "0",
+                        "as":  "7",
+                        "status":  "Ended",
+                        "code":  "100",
                         "isHome":  false
                     },
                     {

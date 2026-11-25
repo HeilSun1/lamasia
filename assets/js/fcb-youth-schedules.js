@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-25 10:11；数据源：FC Barcelona 官网赛事接口 */
+/* 自动生成，请勿手动编辑 —— 由 scripts/update_fcb_youth_schedules.ps1 更新于 2026-11-25 21:02；数据源：FC Barcelona 官网赛事接口 */
 window.LAMASIA_SCHEDULES = {
-    "updated":  "2026-11-25 10:11:58",
+    "updated":  "2026-11-25 21:02:00",
     "source":  "fcbarcelona",
     "teams":  {
                   "juvenil-a":  {
@@ -1952,9 +1952,9 @@ window.LAMASIA_SCHEDULES = {
                                          "comp":  "加泰荣誉联赛 Infantil",
                                          "compEn":  "División de Honor Catalana Infantil",
                                          "round":  "11",
-                                         "start":  "1795950000",
-                                         "date":  "2026-11-29",
-                                         "tbd":  true,
+                                         "start":  "1796409000",
+                                         "date":  "2026-12-04",
+                                         "tbd":  false,
                                          "home":  "Gimnàstic Tarragona A",
                                          "away":  "FC Barcelona A",
                                          "homeId":  "11193",
@@ -2524,9 +2524,9 @@ window.LAMASIA_SCHEDULES = {
                                            "comp":  "加泰优选联赛 Infantil G1",
                                            "compEn":  "Preferente Catalana Infantil G.1",
                                            "round":  "11",
-                                           "start":  "1795950000",
-                                           "date":  "2026-11-29",
-                                           "tbd":  true,
+                                           "start":  "1795858200",
+                                           "date":  "2026-11-28",
+                                           "tbd":  false,
                                            "home":  "FC Barcelona A",
                                            "away":  "Damm A",
                                            "homeId":  "11114",
@@ -3096,9 +3096,9 @@ window.LAMASIA_SCHEDULES = {
                                            "comp":  "加泰优选联赛 Alevín G1",
                                            "compEn":  "Preferente Catalana Alevín G.1",
                                            "round":  "11",
-                                           "start":  "1795950000",
-                                           "date":  "2026-11-29",
-                                           "tbd":  true,
+                                           "start":  "1795876200",
+                                           "date":  "2026-11-28",
+                                           "tbd":  false,
                                            "home":  "Espanyol B",
                                            "away":  "FC Barcelona A",
                                            "homeId":  "15060",
