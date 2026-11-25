@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-24 21:02:21 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-25 00:54:23 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-24 21:02:21",
+    "updated":  "2026-11-25 00:54:23",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,18 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4613944", "title":  "Training at Baku Olympic Stadium",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613944/training-at-baku-olympic-stadium", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/ab5ceb86-e04e-439d-8749-dbf74df3448c/WhatsApp-Image-2026-11-24-at-18.24.16.jpeg" },
+            {
+                "id":  "4613908", "title":  "'We have to go out with the right attitude'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613908/hansi-flick-we-have-to-go-out-with-the-right-attitude", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/008cdbb9-5cff-4733-a515-c1816bc6d653/_MGA8472.jpg" },
+            {
+                "id":  "4613906", "title":  "'I'm focused on giving my best'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613906/frenkie-de-jong-im-focused-on-giving-my-best", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/c2c01c7b-734c-4bf3-bd88-b52c3e167697/_MGA8428.jpg" },
+            {
                 "id":  "4613291", "title":  "Sabah v Barça: Did you know?",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613291/sabah-fc-v-fc-barcelona-did-you-knowx", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/24/d941856e-85b9-472a-a51f-d56666c23ede/JC019111.jpg" },
@@ -255,6 +267,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609868/nine-games-in-a-month-to-round-off-2026", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/3d749a48-a915-4b5b-8036-15af396a70fd/_MGA4000.jpg" },
             {
+                "id":  "4561492", "title":  "10 things about Rodri",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
+            {
+                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4607914", "title":  "Victory and 90 minutes for Cancelo",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4607914/fc-barcelona-international-diary", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/17/e595ca72-4531-495a-8358-03c8240b2862/DAG-230-_M1A7951.jpg" },
@@ -266,14 +286,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4609902", "title":  "Cubarsí and De Jong injury news",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609902/cubarsi-and-de-jong-injury-news", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/16/06311fe7-cf8a-47d2-b650-50196b24f427/2026-10-31_FCBvsALAVES_064.jpg" },
-            {
-                "id":  "4561492", "title":  "10 things about Rodri",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
-            {
-                "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
-                "tag":  "", "img":  "" },
             {
                 "id":  "4609818", "title":  "Olmo, part of session with squad",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4609818/dani-olmo-completes-part-of-the-session-with-the-squad", "time":  "",
@@ -365,19 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4604460", "title":  "Raphinha to renew this Thursday",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604460/raphinha-to-sign-renewal-with-president-laporta-this-thursday", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" },
-            {
-                "id":  "4604300", "title":  "Recovery session after win over Villa",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604300/recovery-session-after-win-over-villa", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/7d110003-5ec6-478c-be3a-9e234e2f89c4/image00008.jpeg" },
-            {
-                "id":  "4604306", "title":  "Rodri injury news",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604306/rodri-injury-news", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/d062d159-31ba-48df-b5fd-141087be9ece/_MGA3884.jpg" },
-            {
-                "id":  "4603997", "title":  "Raphinha rises in three rankings",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4603997/raphinha-rises-in-three-rankings", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/a9e4ef1f-052e-4590-a151-646e2149d204/_MGA4009-1-.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/ac3dc30f-134d-41e3-b909-917dd42f17f6/_MGA4672.jpg" }
         ]
     }
 };

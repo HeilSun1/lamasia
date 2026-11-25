@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-24 21:00:45 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-25 00:53:56 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-24 21:00:45",
+    "updated":  "2026-11-25 00:53:56",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6692006", "title":  "每体：恩里克15年后与巴萨B队昔日弟子重聚，并回忆执教时光",
+            "url":  "https://www.dongqiudi.com/articles/6692006.html", "time":  "2026-11-24 23:36",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0C/C2/280x210/crop/-/rBXRDGsFdq-AQL2aAADnMCBbq0k555.jpg" },
         {
             "id":  "6690308", "title":  "马斯切拉诺：在巴萨改踢中卫是最好的决定，否则我待不了多久",
             "url":  "https://www.dongqiudi.com/articles/6690308.html", "time":  "2026-11-24 15:13",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6619976", "title":  "每体：萨马-诺莫科正处于重伤膝伤康复的最后阶段，...",
             "url":  "https://www.dongqiudi.com/articles/6619976.html", "time":  "2026-11-07 12:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/D5/280x210/crop/-/rBXRDGrursuADNpPAANdxHdswgQ934.jpg" },
-        {
-            "id":  "6616503", "title":  "通卡拉更新ins：虽然结果不尽如人意，但我对我们...",
-            "url":  "https://www.dongqiudi.com/articles/6616503.html", "time":  "2026-11-06 19:55",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E8/47/280x210/crop/-/rBXRDGrto6eABw_1AA6Ge-e8D60471.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/E9/D5/280x210/crop/-/rBXRDGrursuADNpPAANdxHdswgQ934.jpg" }
     ]
 };

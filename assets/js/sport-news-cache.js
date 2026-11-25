@@ -1,17 +1,21 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-24 21:02:35 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-25 00:54:25 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-24 21:02:35",
+    "updated":  "2026-11-25 00:54:25",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
+            "id":  "136804486", "title":  "Pedro, Gistau y Joni, las armas del Barça en el estreno de Albert Peris en Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sabah-fc-barcelona-horario-ver-136804486", "time":  "2026-11-24 20:50",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/3638dbb6-3a91-43ac-9e52-13449924c753_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
             "id":  "136597934", "title":  "Marc Pedraza, exjugador de La Masia: \"Messi era una locura, y Take Kubo es lo más parecido a él que he visto\"",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/marc-pedraza-exjugador-masia-messi-136597934", "time":  "2026-11-24 10:31",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d00ee4a-55e9-4414-ad2f-15498837ad32_16-9-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8d00ee4a-55e9-4414-ad2f-15498837ad32_16-9-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136726521", "title":  "Enzo Pérez desata la locura. Tres goles del '6' más prometedor de La Masia contra su exequipo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/enzo-perez-desata-locura-tres-136726521", "time":  "2026-11-23 16:26",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7214ea6d-a388-42aa-b0f2-4f9f03a480ce_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7214ea6d-a388-42aa-b0f2-4f9f03a480ce_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136727278", "title":  "Àlex Campos: El doble rol de un central que encandila a Belletti y convence a Flick",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-23 05:30",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135942468", "title":  "¿Quiénes son los tres jugadores del Barça campeones del mundo sub-15?",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/son-tres-jugadores-barca-campeones-135942468", "time":  "2026-10-31 07:00",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c41c689-4179-4755-abf8-5dd98c3d8d8b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135938003", "title":  "Orian Goren se suma al Barça Atlètic para recibir al Arnedo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/orian-goren-suma-barca-atletic-135938003", "time":  "2026-10-30 18:43",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f546d6f9-1736-472f-9026-77d443f8a804_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7c41c689-4179-4755-abf8-5dd98c3d8d8b_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
