@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-26 09:01:47 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-26 21:02:19 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-26 09:01:47",
+    "updated":  "2026-11-26 21:02:19",
     "source":  "sport",
     "count":  50,
     "news":  [
+        {
+            "id":  "136850108", "title":  "La elección de Ahmed Abarkane, el lateral izquierdo más moderno de La Masia",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eleccion-ahmed-abarkane-lateral-izquierdo-136850108", "time":  "2026-11-26 05:30",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/48a8c254-ae5b-437b-89b7-6d447d3556d5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136727278", "title":  "¿Quién es Àlex Campos? El doble rol de un central que encandila a Belletti y convence a Flick",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-25 19:17",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135957854", "title":  "El Barça Atlètic se agarra a Àlex González y a Iker Rodríguez para ganar al colista y seguir líder",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-agarra-alex-gonzalez-135957854", "time":  "2026-10-31 20:24",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a6c5f3f-53d5-4788-9837-a27b54d795c2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135957154", "title":  "Pinchazo inmerecido del Juvenil A contra el Zaragoza",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pinchazo-inmerecido-juvenil-zaragoza-135957154", "time":  "2026-10-31 16:50",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/5a6c5f3f-53d5-4788-9837-a27b54d795c2_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };

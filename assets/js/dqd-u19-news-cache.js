@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-26 09:00:58 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-26 21:01:03 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-26 09:00:58",
+    "updated":  "2026-11-26 21:01:03",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库。对手上半时有球...",
+            "url":  "https://www.dongqiudi.com/articles/6697817.html", "time":  "2026-11-26 08:49",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6696122", "title":  "巴萨U19青年欧冠客场7-0大胜沙巴巴库，末轮赢曼城即可出线",
             "url":  "https://www.dongqiudi.com/articles/6696122.html", "time":  "2026-11-25 23:25",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6086990", "title":  "巴萨英格兰集训大名单：特狮、德容、费尔明、阿德耶米在列",
             "url":  "https://www.dongqiudi.com/articles/6086990.html", "time":  "2026-07-27 18:24",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C8/79/280x210/crop/-/rBXRn2pnMEKAeA61AAt0oZ2R7SI973.jpg" },
-        {
-            "id":  "6086506", "title":  "世体：巴萨新赛季的三门是雅各比什维利或者埃德-阿耶",
-            "url":  "https://www.dongqiudi.com/articles/6086506.html", "time":  "2026-07-27 16:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C8/4D/280x210/crop/-/rBXRDGpnE6SALgVmAAKj8M9sv_k445.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C8/79/280x210/crop/-/rBXRn2pnMEKAeA61AAt0oZ2R7SI973.jpg" }
     ]
 };

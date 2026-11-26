@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 21:01 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-26 09:01:32",
+    "updated":  "2026-11-26 21:01:38",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -324,21 +324,6 @@ window.DQD_U16_CACHE = {
                         "photo":  "https://img.sofascore.com/api/v1/player/2864272/image",
                         "age":  "15岁",
                         "birthday":  "2011-01-01",
-                        "foot":  "",
-                        "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Pau Sarria",
-                        "id":  "2826564",
-                        "pos":  "M",
-                        "shirt":  "",
-                        "team":  "Barcelona U16",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2826564/image",
-                        "age":  "15岁",
-                        "birthday":  "2011-01-22",
                         "foot":  "",
                         "height":  "",
                         "value":  "",

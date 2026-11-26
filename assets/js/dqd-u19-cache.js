@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 09:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 21:01 数据源：Sofascore */
 window.DQD_U19_CACHE = {
-    "updated":  "2026-11-26 09:00:57",
+    "updated":  "2026-11-26 21:01:02",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U19",
@@ -60,21 +60,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Nil Vicens Ponsati",
-                        "id":  "2014710",
-                        "pos":  "F",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
-                        "age":  "18岁",
-                        "birthday":  "2008-07-29",
-                        "foot":  "左脚",
-                        "height":  "176",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Ïu Martínez",
                         "id":  "2405472",
                         "pos":  "F",
@@ -86,6 +71,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2009-04-27",
                         "foot":  "右脚",
                         "height":  "173",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Nil Vicens Ponsati",
+                        "id":  "2014710",
+                        "pos":  "F",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2014710/image",
+                        "age":  "18岁",
+                        "birthday":  "2008-07-29",
+                        "foot":  "左脚",
+                        "height":  "176",
                         "value":  "",
                         "injury":  null
                     },
@@ -405,21 +405,6 @@ window.DQD_U19_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Álvaro Gómez",
-                        "id":  "2722899",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "Barcelona U19",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2722899/image",
-                        "age":  "17岁",
-                        "birthday":  "2009-05-15",
-                        "foot":  "右脚",
-                        "height":  "173",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
                         "name":  "Luca Pérez",
                         "id":  "2412372",
                         "pos":  "D",
@@ -431,6 +416,21 @@ window.DQD_U19_CACHE = {
                         "birthday":  "2010-01-10",
                         "foot":  "右脚",
                         "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
+                        "name":  "Álvaro Gómez",
+                        "id":  "2722899",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "Barcelona U19",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2722899/image",
+                        "age":  "17岁",
+                        "birthday":  "2009-05-15",
+                        "foot":  "右脚",
+                        "height":  "173",
                         "value":  "",
                         "injury":  null
                     },

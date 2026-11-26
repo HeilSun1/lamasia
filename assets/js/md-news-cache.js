@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-26 09:01:49 数据源：Mundo Deportivo */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_md_news.ps1 每日更新于 2026-11-26 21:02:22 数据源：Mundo Deportivo */
 window.MD_NEWS = {
-    "updated":  "2026-11-26 09:01:49",
+    "updated":  "2026-11-26 21:02:22",
     "source":  "md",
     "count":  50,
     "news":  [
+        {
+            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261126/1004255745/gerard-lopez-espina-clavada-barca-no-rendi-valencia.html", "title":  "Gerard López y su espina clavada en el Barça: \"No rendí como en Valencia\"",
+            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261126/1004255745/gerard-lopez-espina-clavada-barca-no-rendi-valencia.html", "time":  "2026-11-26 20:08",
+            "tag":  "Fútbol y medios", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/26/6b082110b8928.jpeg" },
+        {
+            "id":  "https://www.mundodeportivo.com/baloncesto/nba/20261126/1004255664/justin-robinson-estrella-barca-llama-atencion-nba-me-gusta.html", "title":  "Justin Robinson, la estrella del Barça que llama la atención en la NBA: “Me gusta mucho”",
+            "url":  "https://www.mundodeportivo.com/baloncesto/nba/20261126/1004255664/justin-robinson-estrella-barca-llama-atencion-nba-me-gusta.html", "time":  "2026-11-26 13:30",
+            "tag":  "Pasión por el básquet", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/17/6afcc4db0e70a.r_d.1639-833-5409.jpeg" },
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261125/1004255555/alex-campos-trabajare-titular.html", "title":  "Àlex Campos: \"Trabajaré para ser titular\"",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261125/1004255555/alex-campos-trabajare-titular.html", "time":  "2026-11-26 05:59",
@@ -195,14 +203,6 @@ window.MD_NEWS = {
         {
             "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "title":  "Fermín, el tesoro de Flick",
             "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261014/1004238815/fermin-tesoro-flick.html", "time":  "2026-10-15 02:01",
-            "tag":  "Tesoro del Barça", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/14/6aceb28175e4a.r_d.934-684-6693.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "title":  "Pimienta hace soñar al Almería con un excanterano azulgrana",
-            "url":  "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261013/1004238279/pimienta-sonar-almeria.html", "time":  "2026-10-13 23:20",
-            "tag":  "Nueva era", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/09/6ac8c60f24c51.r_d.613-720-8000.jpeg" },
-        {
-            "id":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "title":  "Conte, alucinado con el Barça y su cantera",
-            "url":  "https://www.mundodeportivo.com/futbol/fc-barcelona/20261011/1004237514/conte-alucinado-barca-cantera.html", "time":  "2026-10-12 01:14",
-            "tag":  "Elogios a La Masia", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/01/29/697a9a89e8d78.r_d.2633-488-2920.jpeg" }
+            "tag":  "Tesoro del Barça", "img":  "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/14/6aceb28175e4a.r_d.934-684-6693.jpeg" }
     ]
 };

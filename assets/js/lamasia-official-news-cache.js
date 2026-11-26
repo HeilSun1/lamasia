@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-26 09:01:44 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-26 21:01:55 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-26 09:01:44",
+    "updated":  "2026-11-26 21:01:55",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4614985", "title":  "Gordon rules in Baku",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4614985/gordon-rules-in-baku", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/26/cad9e5aa-dba6-4931-bcf1-2ca98382b644/_MGA9625.jpg" },
+            {
                 "id":  "4614680", "title":  "Àlex Campos makes his Barça first team debut",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4614680/alex-campos-makes-his-fc-barcelona-first-team-debut", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/25/f31b60ff-bc97-4c2c-81b7-ec5245747af5/_MGA9635.jpg" },
@@ -267,10 +271,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611329/new-faces-at-training", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/bee435ee-da8c-48bb-bb43-a0eb4acfd63b/WhatsApp-Image-2026-11-19-at-13.09.22-4-.jpeg" },
             {
-                "id":  "4610816", "title":  "A traditionally difficult fixture",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610816/villarreal-a-traditionally-difficult-opponent", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/ce1a33ee-5bbe-4c54-9463-db4055fe7534/JUCA0397.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -278,6 +278,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4610816", "title":  "A traditionally difficult fixture",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610816/villarreal-a-traditionally-difficult-opponent", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/ce1a33ee-5bbe-4c54-9463-db4055fe7534/JUCA0397.jpg" },
             {
                 "id":  "4610002", "title":  "When and where to watch Barça v Villarreal",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610002/when-and-where-to-watch-fc-barcelona-v-villarreal-cf", "time":  "",
@@ -373,11 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4605545", "title":  "Back at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605545/back-at-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/f19c6c91-202a-445a-b24e-50926d0718f7/_MGA4324.jpg" },
-            {
-                "id":  "4605559", "title":  "Barça players called up for international duty",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605559/large-number-of-fc-barcelona-players-called-up-for-international-duty", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/1205528d-e14b-4a72-9edd-adf1df1ff053/_MGA5356.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/f19c6c91-202a-445a-b24e-50926d0718f7/_MGA4324.jpg" }
         ]
     }
 };

@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 09:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 21:01 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-11-26 09:01:15",
+    "updated":  "2026-11-26 21:01:21",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -150,6 +150,21 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
+                        "name":  "Luca Pérez",
+                        "id":  "2412372",
+                        "pos":  "D",
+                        "shirt":  "",
+                        "team":  "FC Barcelona U18",
+                        "nation":  "Spain",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "age":  "16岁",
+                        "birthday":  "2010-01-10",
+                        "foot":  "右脚",
+                        "height":  "",
+                        "value":  "",
+                        "injury":  null
+                    },
+                    {
                         "name":  "Pere Villacorta",
                         "id":  "2410975",
                         "pos":  "D",
@@ -180,17 +195,17 @@ window.DQD_U18_CACHE = {
                         "injury":  null
                     },
                     {
-                        "name":  "Luca Pérez",
-                        "id":  "2412372",
+                        "name":  "Óscar Medina",
+                        "id":  "2690246",
                         "pos":  "D",
                         "shirt":  "",
                         "team":  "FC Barcelona U18",
                         "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
+                        "photo":  "https://img.sofascore.com/api/v1/player/2690246/image",
                         "age":  "16岁",
-                        "birthday":  "2010-01-10",
+                        "birthday":  "2010-01-16",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "192",
                         "value":  "",
                         "injury":  null
                     },
@@ -206,21 +221,6 @@ window.DQD_U18_CACHE = {
                         "birthday":  "2011-08-08",
                         "foot":  "",
                         "height":  "",
-                        "value":  "",
-                        "injury":  null
-                    },
-                    {
-                        "name":  "Óscar Medina",
-                        "id":  "2690246",
-                        "pos":  "D",
-                        "shirt":  "",
-                        "team":  "FC Barcelona U18",
-                        "nation":  "Spain",
-                        "photo":  "https://img.sofascore.com/api/v1/player/2690246/image",
-                        "age":  "16岁",
-                        "birthday":  "2010-01-16",
-                        "foot":  "右脚",
-                        "height":  "192",
                         "value":  "",
                         "injury":  null
                     }

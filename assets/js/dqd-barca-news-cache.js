@@ -1,9 +1,25 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-26 09:00:40 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-26 21:00:42 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-26 09:00:40",
+    "updated":  "2026-11-26 21:00:42",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6698947", "title":  "每体：巴萨中卫引援或可内部挖潜，小将坎波斯已做好准备",
+            "url":  "https://www.dongqiudi.com/articles/6698947.html", "time":  "2026-11-26 17:14",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/10/7A/280x210/crop/-/rBXRn2sH6j-AHqeDAADt4tmaXBM301.jpg" },
+        {
+            "id":  "6698479", "title":  "每体：弗里克巩固前8且轮换做得好，巴尔德等人踢出正名之战",
+            "url":  "https://www.dongqiudi.com/articles/6698479.html", "time":  "2026-11-26 13:59",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0F/AA/280x210/crop/-/rBXRDGsHXt2AZCBcAAG7Z8W8MfE494.jpg" },
+        {
+            "id":  "6698057", "title":  "坎波斯vs沙巴巴库个人集锦。18岁的坎波斯在巴萨...",
+            "url":  "https://www.dongqiudi.com/articles/6698057.html", "time":  "2026-11-26 10:12",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/50d00bcbd8843aa154853d99c914e239ZF1p4S_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+        {
+            "id":  "6697890", "title":  "完成一线队首秀的坎波斯在赛后对着镜头发表感言：萨...",
+            "url":  "https://www.dongqiudi.com/articles/6697890.html", "time":  "2026-11-26 09:12",
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/eb952c10398f372340d920100e7126edDqcrXI_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
         {
             "id":  "6697126", "title":  "战沙巴巴库替补登场，阿莱士-坎波斯完成巴萨一线队首秀",
             "url":  "https://www.dongqiudi.com/articles/6697126.html", "time":  "2026-11-26 04:53",
@@ -187,22 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6640308", "title":  "官方伤情报告：巴萨竞技球员朗德里-法雷在对阵曼雷...",
             "url":  "https://www.dongqiudi.com/articles/6640308.html", "time":  "2026-11-11 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/E1/280x210/crop/-/rBXRDGrzuLmACgXrAALlYxfay_E531.jpg" },
-        {
-            "id":  "6640283", "title":  "官方伤情报告：巴萨竞技球员吉列姆-维克托，在对阵...",
-            "url":  "https://www.dongqiudi.com/articles/6640283.html", "time":  "2026-11-11 08:26",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/DC/280x210/crop/-/rBXRDGrztg6AS2eUAAHDqAwvl4w856.jpg" },
-        {
-            "id":  "6640266", "title":  "世体：巴萨竞技22人缺席，申请推迟对针赫罗纳B队的比赛",
-            "url":  "https://www.dongqiudi.com/articles/6640266.html", "time":  "2026-11-11 08:21",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/BF/36/280x210/crop/-/rBXRn2rU4RWAbXaGAALfqyhyg_8203.jpg" },
-        {
-            "id":  "6637204", "title":  "每体：巴萨满意恰托维奇，保留买断条款",
-            "url":  "https://www.dongqiudi.com/articles/6637204.html", "time":  "2026-11-10 17:17",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/AA/60/280x210/crop/-/rBXRn2rJ4P2AMkWoAADJOS_XmII874.jpg" },
-        {
-            "id":  "6634083", "title":  "巴萨官方：今日球队恢复训练，竞技队门将邦菲尔随队合练",
-            "url":  "https://www.dongqiudi.com/articles/6634083.html", "time":  "2026-11-09 22:38",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/EF/15/280x210/crop/-/rBXRDGrxyPKAP_9tAADiI3moI2c170.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/E1/280x210/crop/-/rBXRDGrzuLmACgXrAALlYxfay_E531.jpg" }
     ]
 };
