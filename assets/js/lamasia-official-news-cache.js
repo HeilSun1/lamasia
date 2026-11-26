@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-25 21:02:04 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-26 00:32:13 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-25 21:02:04",
+    "updated":  "2026-11-26 00:32:13",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4614680", "title":  "Àlex Campos makes his Barça first team debut",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4614680/alex-campos-makes-his-fc-barcelona-first-team-debut", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/25/f31b60ff-bc97-4c2c-81b7-ec5245747af5/_MGA9635.jpg" },
+            {
+                "id":  "4614625", "title":  "Sabah 1-4 Barça: Gordon strikes again in Baku",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4614625/sabah-1-4-fc-barcelona-gordon-strikes-again-in-baku", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/25/48094ae9-0b3b-4390-8ada-b4dd7d9f9f28/_MGA9458.jpg" },
+            {
                 "id":  "4613170", "title":  "PREVIEW | Sabah v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4613170/preview-sabah-v-fc-barcelona", "time":  "",
                 "tag":  "", "img":  "" },
@@ -263,16 +271,16 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610816/villarreal-a-traditionally-difficult-opponent", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/ce1a33ee-5bbe-4c54-9463-db4055fe7534/JUCA0397.jpg" },
             {
-                "id":  "4610002", "title":  "When and where to watch Barça v Villarreal",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610002/when-and-where-to-watch-fc-barcelona-v-villarreal-cf", "time":  "",
-                "tag":  "", "img":  "" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
             {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
+                "tag":  "", "img":  "" },
+            {
+                "id":  "4610002", "title":  "When and where to watch Barça v Villarreal",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610002/when-and-where-to-watch-fc-barcelona-v-villarreal-cf", "time":  "",
                 "tag":  "", "img":  "" },
             {
                 "id":  "4609868", "title":  "Nine games in a month",
@@ -369,15 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4605559", "title":  "Barça players called up for international duty",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605559/large-number-of-fc-barcelona-players-called-up-for-international-duty", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/1205528d-e14b-4a72-9edd-adf1df1ff053/_MGA5356.jpg" },
-            {
-                "id":  "4604888", "title":  "Raphinha staying until 2030",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604888/raphinha-staying-at-fc-barcelona-until-2030", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/05/e05e54a6-6c66-4b58-a1c4-03c5a37bd70e/_GP12847.jpg" },
-            {
-                "id":  "4604635", "title":  "Highest goalscoring Barça side in a century",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604635/highest-goalscoring-barca-side-in-a-century", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/04/74793851-cf31-4454-8127-f9c155a6528e/_MGA8557.jpg" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/1205528d-e14b-4a72-9edd-adf1df1ff053/_MGA5356.jpg" }
         ]
     }
 };

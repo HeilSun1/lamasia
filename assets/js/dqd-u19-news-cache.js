@@ -1,13 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-25 21:01:09 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-26 00:32:10 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-25 21:01:09",
+    "updated":  "2026-11-26 00:32:10",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
         {
-            "id":  "6695637", "title":  "巴塞罗那U19 7-0血洗沙巴巴库U19，奥斯卡-希斯陶双响，迪亚拉苏巴建功",
+            "id":  "6696122", "title":  "巴萨U19青年欧冠客场7-0大胜沙巴巴库，末轮赢曼城即可出线",
+            "url":  "https://www.dongqiudi.com/articles/6696122.html", "time":  "2026-11-25 23:25",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/DC/280x210/crop/-/rBXRn2sG7HOABnt8AAEv_2DdsXE463.jpg" },
+        {
+            "id":  "6695637", "title":  "巴塞罗那U19 7-0横扫沙巴巴库U19，奥斯卡-希斯陶两球，迪亚拉苏巴1射1传",
             "url":  "https://www.dongqiudi.com/articles/6695637.html", "time":  "2026-11-25 20:54",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/DC/280x210/crop/-/rBXRDGsG2--AU5NYAAGYTFoi468429.png" },
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/0E/E8/280x210/crop/-/rBXRDGsG5TuAfDTLAAGYTFoi468820.png" },
         {
             "id":  "6679570", "title":  "巴萨竞技战报 20261122",
             "url":  "https://www.dongqiudi.com/articles/6679570.html", "time":  "2026-11-22 03:09",
@@ -199,10 +203,6 @@ window.DQD_U19_NEWS = {
         {
             "id":  "6086506", "title":  "世体：巴萨新赛季的三门是雅各比什维利或者埃德-阿耶",
             "url":  "https://www.dongqiudi.com/articles/6086506.html", "time":  "2026-07-27 16:15",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C8/4D/280x210/crop/-/rBXRDGpnE6SALgVmAAKj8M9sv_k445.jpg" },
-        {
-            "id":  "6084797", "title":  "每体：特狮加盟贾府的税务障碍已解决，球员预计本周抵达荷兰",
-            "url":  "https://www.dongqiudi.com/articles/6084797.html", "time":  "2026-07-27 04:08",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C6/7E/280x210/crop/-/rBXRDGpmZ7SAYiOUAAEDMKdP8pI560.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/C8/4D/280x210/crop/-/rBXRDGpnE6SALgVmAAKj8M9sv_k445.jpg" }
     ]
 };

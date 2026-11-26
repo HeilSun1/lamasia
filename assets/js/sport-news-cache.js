@@ -1,12 +1,20 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-25 21:02:10 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-26 00:32:15 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-25 21:02:10",
+    "updated":  "2026-11-26 00:32:15",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
-            "id":  "136828254", "title":  "Sabah - FC Barcelona, en directo: Youth League, Jornada 5 de la fase liga, en vivo hoy",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sabah-fc-barcelona-directo-youth-136828254", "time":  "2026-11-25 11:58",
+            "id":  "136727278", "title":  "¿Quién es Àlex Campos? El doble rol de un central que encandila a Belletti y convence a Flick",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-25 19:17",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f4c90a69-33c8-4298-a528-6f2a1fa8c0fb_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
+        {
+            "id":  "136839319", "title":  "El Barça pasa del atasco al festival",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-pasa-atasco-festival-baku-136839319", "time":  "2026-11-25 18:14",
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/4114ec36-73f4-400c-9bcc-2c431f4db69d_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
+        {
+            "id":  "136828254", "title":  "Así ha sido el Sabah - FC Barcelona de la jornada 5 de la fase de liga de la Youth League",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/sabah-fc-barcelona-directo-youth-136828254", "time":  "2026-11-25 13:02",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7f47f7b3-c45e-45d6-b0bb-d3689c19ee77_16-9-discover-aspect-ratio_640w_0_x715y171.webp" },
         {
             "id":  "136825963", "title":  "Dónde ver el Sabah - FC Barcelona de la Youth League por TV y en directo",
@@ -24,10 +32,6 @@ window.SPORT_NEWS = {
             "id":  "136726521", "title":  "Enzo Pérez desata la locura. Tres goles del '6' más prometedor de La Masia contra su exequipo",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/enzo-perez-desata-locura-tres-136726521", "time":  "2026-11-23 16:26",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/7214ea6d-a388-42aa-b0f2-4f9f03a480ce_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "136727278", "title":  "Àlex Campos: El doble rol de un central que encandila a Belletti y convence a Flick",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/alex-campos-doble-rol-central-136727278", "time":  "2026-11-23 05:30",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/f4c90a69-33c8-4298-a528-6f2a1fa8c0fb_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
         {
             "id":  "136699803", "title":  "El libro que cambió a Luis Enrique... y del que renegó cuando le tocó ser resultadista",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/libro-cambio-luis-enrique-renego-136699803", "time":  "2026-11-22 07:00",
@@ -199,10 +203,6 @@ window.SPORT_NEWS = {
         {
             "id":  "135957154", "title":  "Pinchazo inmerecido del Juvenil A contra el Zaragoza",
             "url":  "https://www.sport.es/es/noticias/barca/futbol-base/pinchazo-inmerecido-juvenil-zaragoza-135957154", "time":  "2026-10-31 16:50",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" },
-        {
-            "id":  "135957070", "title":  "Barça Atlètic - CD Arnedo, en directo hoy: partido de la Segunda RFEF, en vivo",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/barca-atletic-cd-arnedo-directo-135957070", "time":  "2026-10-31 16:33",
-            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/fe449684-ee88-4b61-baab-7f3b6732ed35_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
+            "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/8418f6a4-ea7c-444f-b6cf-d7d90a6d09a1_16-9-discover-aspect-ratio_640w_0_x600y225.webp" }
     ]
 };
