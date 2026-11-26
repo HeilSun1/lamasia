@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-25 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 09:00 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-25 21:00:44",
+    "updated":  "2026-11-26 09:00:40",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -212,7 +212,12 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "foot":  "左脚",
                         "height":  "190",
                         "value":  "360万",
-                        "injury":  null
+                        "injury":  {
+                                       "reason":  "Broken Leg",
+                                       "reasonEn":  "Broken Leg",
+                                       "status":  "out",
+                                       "expected":  "2027年4月"
+                                   }
                     },
                     {
                         "name":  "Pedro Rodriguez",
