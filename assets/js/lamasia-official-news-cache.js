@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-26 21:01:55 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-27 00:40:59 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-26 21:01:55",
+    "updated":  "2026-11-27 00:40:59",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4615012", "title":  "Medical update on Balde",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615012/medical-update-on-balde", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/26/7902cb12-be3e-4806-8e6a-e42cda51e169/_MGA9355.jpg" },
+            {
                 "id":  "4614985", "title":  "Gordon rules in Baku",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4614985/gordon-rules-in-baku", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/26/cad9e5aa-dba6-4931-bcf1-2ca98382b644/_MGA9625.jpg" },
@@ -267,10 +271,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611882/double-blaugrana-clash-in-the-nations-league-quarter-finals", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/02d690c7-a73b-4e0a-ad40-8c0d148e6955/_MGA4356.jpg" },
             {
-                "id":  "4611329", "title":  "New faces at training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611329/new-faces-at-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/bee435ee-da8c-48bb-bb43-a0eb4acfd63b/WhatsApp-Image-2026-11-19-at-13.09.22-4-.jpeg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -278,6 +278,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4611329", "title":  "New faces at training",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611329/new-faces-at-training", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/19/bee435ee-da8c-48bb-bb43-a0eb4acfd63b/WhatsApp-Image-2026-11-19-at-13.09.22-4-.jpeg" },
             {
                 "id":  "4610816", "title":  "A traditionally difficult fixture",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4610816/villarreal-a-traditionally-difficult-opponent", "time":  "",
@@ -373,11 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4604218", "title":  "When and where to watch Atlético v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604218/when-and-where-to-watch-atletico-madrid-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4605545", "title":  "Back at training",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605545/back-at-training", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/06/f19c6c91-202a-445a-b24e-50926d0718f7/_MGA4324.jpg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };

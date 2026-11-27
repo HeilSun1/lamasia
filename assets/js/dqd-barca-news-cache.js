@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-26 21:00:42 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-27 00:40:38 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-26 21:00:42",
+    "updated":  "2026-11-27 00:40:38",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6700611", "title":  "西班牙U17以2-0胜摩洛哥U17头名出线，巴萨新星通卡拉破门",
+            "url":  "https://www.dongqiudi.com/articles/6700611.html", "time":  "2026-11-27 01:53",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/11/44/280x210/crop/-/rBXRn2sIcNiAJJHoAABKoKv6JW0466.jpg" },
+        {
+            "id":  "6700198", "title":  "世体：16岁的通卡拉天赋异禀，U17世界杯表现抢眼",
+            "url":  "https://www.dongqiudi.com/articles/6700198.html", "time":  "2026-11-27 00:01",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/11/29/280x210/crop/-/rBXRDGsIVkuABbegAAB2e2l2Ahs033.jpg" },
         {
             "id":  "6698947", "title":  "每体：巴萨中卫引援或可内部挖潜，小将坎波斯已做好准备",
             "url":  "https://www.dongqiudi.com/articles/6698947.html", "time":  "2026-11-26 17:14",
@@ -20,6 +28,10 @@ window.DQD_BARCA_NEWS = {
             "id":  "6697890", "title":  "完成一线队首秀的坎波斯在赛后对着镜头发表感言：萨...",
             "url":  "https://www.dongqiudi.com/articles/6697890.html", "time":  "2026-11-26 09:12",
             "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/eb952c10398f372340d920100e7126edDqcrXI_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
+        {
+            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库。对手上半时有球...",
+            "url":  "https://www.dongqiudi.com/articles/6697817.html", "time":  "2026-11-26 08:49",
+            "tag":  "", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6697126", "title":  "战沙巴巴库替补登场，阿莱士-坎波斯完成巴萨一线队首秀",
             "url":  "https://www.dongqiudi.com/articles/6697126.html", "time":  "2026-11-26 04:53",
@@ -191,18 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6645160", "title":  "通卡拉和巴巴-库鲁马备战U17世界杯🌟🇪🇸",
             "url":  "https://www.dongqiudi.com/articles/6645160.html", "time":  "2026-11-12 10:18",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/D3/280x210/crop/-/rBXRn2r1Ib6Acy6VAANcT0ly80s126.jpg" },
-        {
-            "id":  "6645094", "title":  "世体：胡安-埃尔南德斯已经回到训练场进行有球训练...",
-            "url":  "https://www.dongqiudi.com/articles/6645094.html", "time":  "2026-11-12 09:57",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/E0/280x210/crop/-/rBXRDGr1HPOAN-gUAAD2ZNyRPq4235.jpg" },
-        {
-            "id":  "6641371", "title":  "每体：奥尔莫、孔德继续恢复，弗里克征召二队小将冈萨雷斯",
-            "url":  "https://www.dongqiudi.com/articles/6641371.html", "time":  "2026-11-11 16:19",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F2/70/280x210/crop/-/rBXRDGr0F6yANYYWAAIgIQpHfWY042.jpg" },
-        {
-            "id":  "6640308", "title":  "官方伤情报告：巴萨竞技球员朗德里-法雷在对阵曼雷...",
-            "url":  "https://www.dongqiudi.com/articles/6640308.html", "time":  "2026-11-11 08:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F1/E1/280x210/crop/-/rBXRDGrzuLmACgXrAALlYxfay_E531.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F3/D3/280x210/crop/-/rBXRn2r1Ib6Acy6VAANcT0ly80s126.jpg" }
     ]
 };
