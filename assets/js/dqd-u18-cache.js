@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-27 09:47 数据源：Sofascore */
 window.DQD_U18_CACHE = {
-    "updated":  "2026-11-26 21:01:21",
+    "updated":  "2026-11-27 09:47:39",
     "source":  "sofascore",
     "team":  {
                  "name":  "FC Barcelona U18",
@@ -38,7 +38,7 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2446943/image",
                         "age":  "17岁",
-                        "birthday":  "2009-02-20",
+                        "birthday":  "2009-02-19",
                         "foot":  "左脚",
                         "height":  "",
                         "value":  "",
@@ -70,7 +70,7 @@ window.DQD_U18_CACHE = {
                         "age":  "16岁",
                         "birthday":  "2010-01-11",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "172",
                         "value":  "",
                         "injury":  null
                     },
@@ -158,7 +158,7 @@ window.DQD_U18_CACHE = {
                         "nation":  "Spain",
                         "photo":  "https://img.sofascore.com/api/v1/player/2412372/image",
                         "age":  "16岁",
-                        "birthday":  "2010-01-10",
+                        "birthday":  "2010-01-09",
                         "foot":  "右脚",
                         "height":  "",
                         "value":  "",

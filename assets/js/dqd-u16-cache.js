@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-26 21:01 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-27 09:47 数据源：Sofascore */
 window.DQD_U16_CACHE = {
-    "updated":  "2026-11-26 21:01:38",
+    "updated":  "2026-11-27 09:47:56",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona U16",
@@ -205,7 +205,7 @@ window.DQD_U16_CACHE = {
                         "age":  "16岁",
                         "birthday":  "2010-01-11",
                         "foot":  "右脚",
-                        "height":  "",
+                        "height":  "172",
                         "value":  "",
                         "injury":  null
                     },

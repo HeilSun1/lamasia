@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-27 00:40:38 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-27 09:47:01 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-27 00:40:38",
+    "updated":  "2026-11-27 09:47:01",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
@@ -29,9 +29,9 @@ window.DQD_BARCA_NEWS = {
             "url":  "https://www.dongqiudi.com/articles/6697890.html", "time":  "2026-11-26 09:12",
             "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/eb952c10398f372340d920100e7126edDqcrXI_smart.mp4?vframe/jpg/offset/1/w/300/h/400" },
         {
-            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库。对手上半时有球...",
+            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库",
             "url":  "https://www.dongqiudi.com/articles/6697817.html", "time":  "2026-11-26 08:49",
-            "tag":  "", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6697126", "title":  "战沙巴巴库替补登场，阿莱士-坎波斯完成巴萨一线队首秀",
             "url":  "https://www.dongqiudi.com/articles/6697126.html", "time":  "2026-11-26 04:53",

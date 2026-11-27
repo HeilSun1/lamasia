@@ -1,13 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-27 00:40:56 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_u19_news.ps1 每日更新于 2026-11-27 09:47:20 数据源：懂球帝 */
 window.DQD_U19_NEWS = {
-    "updated":  "2026-11-27 00:40:56",
+    "updated":  "2026-11-27 09:47:20",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
         {
-            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库。对手上半时有球...",
+            "id":  "6697817", "title":  "巴萨U19客场7-0大胜沙巴巴库",
             "url":  "https://www.dongqiudi.com/articles/6697817.html", "time":  "2026-11-26 08:49",
-            "tag":  "", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
+            "tag":  "足球", "img":  "https://img.qunliao.info/2026/11/26/597100f9cdc7c991c01093a0a3ea65fcyrOouz_smart.mp4?vframe/jpg/offset/1/w/400/h/300" },
         {
             "id":  "6696122", "title":  "巴萨U19青年欧冠客场7-0大胜沙巴巴库，末轮赢曼城即可出线",
             "url":  "https://www.dongqiudi.com/articles/6696122.html", "time":  "2026-11-25 23:25",
