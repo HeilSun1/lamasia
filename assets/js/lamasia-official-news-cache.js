@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-27 09:48:08 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-27 21:02:08 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-27 09:48:08",
+    "updated":  "2026-11-27 21:02:08",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4615404", "title":  "Back to work as Rodri returns",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615404/rodri-back-with-the-group-as-barca-return-to-work", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/27/a40855ec-35a1-4fd0-a072-2cce3df95017/WhatsApp-Image-2026-11-27-at-13.23.16-1-.jpeg" },
+            {
                 "id":  "4615012", "title":  "Medical update on Balde",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615012/medical-update-on-balde", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/26/7902cb12-be3e-4806-8e6a-e42cda51e169/_MGA9355.jpg" },
@@ -267,10 +271,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611885/xavi-espart-signs-contract-to-2030", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/31f9ae7b-621e-4829-82de-3a523631518b/_MGA7022.jpg" },
             {
-                "id":  "4611882", "title":  "Blaugrana battles in Nations League",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611882/double-blaugrana-clash-in-the-nations-league-quarter-finals", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/02d690c7-a73b-4e0a-ad40-8c0d148e6955/_MGA4356.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -278,6 +278,10 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4611882", "title":  "Blaugrana battles in Nations League",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611882/double-blaugrana-clash-in-the-nations-league-quarter-finals", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/02d690c7-a73b-4e0a-ad40-8c0d148e6955/_MGA4356.jpg" },
             {
                 "id":  "4611329", "title":  "New faces at training",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611329/new-faces-at-training", "time":  "",
@@ -373,11 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4605954", "title":  "Eric and Christensen are back",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605954/last-workout-before-the-metropolitano", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" },
-            {
-                "id":  "4604218", "title":  "When and where to watch Atlético v Barça",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4604218/when-and-where-to-watch-atletico-madrid-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" }
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" }
         ]
     }
 };
