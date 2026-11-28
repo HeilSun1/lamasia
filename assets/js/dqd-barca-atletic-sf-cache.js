@@ -1,6 +1,6 @@
-/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-27 21:00 数据源：Sofascore */
+/* 自动生成，请勿手动编辑 —— 由 update_sofascore.ps1 每日更新于 2026-11-28 10:10 数据源：Sofascore */
 window.DQD_BARCA_ATLETIC_SF_CACHE = {
-    "updated":  "2026-11-27 21:00:49",
+    "updated":  "2026-11-28 10:10:22",
     "source":  "sofascore",
     "team":  {
                  "name":  "Barcelona Atlètic",
@@ -855,7 +855,7 @@ window.DQD_BARCA_ATLETIC_SF_CACHE = {
                         "id":  "16742177",
                         "comp":  "西协乙",
                         "round":  "15",
-                        "start":  "1797177600",
+                        "start":  "1797181200",
                         "home":  "Barcelona Atlètic",
                         "away":  "Reus FC Reddis",
                         "homeId":  "24343",

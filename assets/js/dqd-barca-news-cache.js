@@ -1,9 +1,13 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-28 00:06:41 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-28 10:10:23 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-28 00:06:41",
+    "updated":  "2026-11-28 10:10:23",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6705732", "title":  "每体：巴萨客战拉科克里斯滕森预计缺席，库巴西将复出",
+            "url":  "https://www.dongqiudi.com/articles/6705732.html", "time":  "2026-11-28 08:34",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/08/AB/280x210/crop/-/rBXRDGsCxY-AW7mBAAHWn29S-Hk637.jpg" },
         {
             "id":  "6704190", "title":  "坎波斯：很高兴儿时梦想成真，巴萨非常信任拉玛西亚",
             "url":  "https://www.dongqiudi.com/articles/6704190.html", "time":  "2026-11-27 23:54",
@@ -199,10 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6655320", "title":  "博扬：在培养阶段不应限制球员；必须观察他们如何适应变化",
             "url":  "https://www.dongqiudi.com/articles/6655320.html", "time":  "2026-11-15 06:37",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/E2/280x210/crop/-/rBXRDGr4jo2AZps-AABxbt5ewcU670.jpg" },
-        {
-            "id":  "6654728", "title":  "巴萨竞技战报 20261115",
-            "url":  "https://www.dongqiudi.com/articles/6654728.html", "time":  "2026-11-15 03:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/1F/280x210/crop/-/rBXRDGr4r_6AfmWaAApZaX08kss136.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F8/E2/280x210/crop/-/rBXRDGr4jo2AZps-AABxbt5ewcU670.jpg" }
     ]
 };
