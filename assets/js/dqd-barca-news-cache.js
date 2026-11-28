@@ -1,9 +1,17 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-27 21:00:50 数据源：懂球帝 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_barca_news.ps1 每日更新于 2026-11-28 00:06:41 数据源：懂球帝 */
 window.DQD_BARCA_NEWS = {
-    "updated":  "2026-11-27 21:00:50",
+    "updated":  "2026-11-28 00:06:41",
     "source":  "dongqiudi",
     "count":  50,
     "news":  [
+        {
+            "id":  "6704190", "title":  "坎波斯：很高兴儿时梦想成真，巴萨非常信任拉玛西亚",
+            "url":  "https://www.dongqiudi.com/articles/6704190.html", "time":  "2026-11-27 23:54",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs7/M00/E6/AF/280x210/crop/-/rBUC6GsJpdKAXCpOAAIjqNSbNIk327.jpg" },
+        {
+            "id":  "6703558", "title":  "巴萨官方：罗德里今日恢复部分合练",
+            "url":  "https://www.dongqiudi.com/articles/6703558.html", "time":  "2026-11-27 21:02",
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/12/FF/280x210/crop/-/rBXRDGsJfzqAWBEDAAFd__7SoSU638.jpg" },
         {
             "id":  "6701849", "title":  "巴萨竞技中场恰托维奇顺利完成了左腿腓骨骨折修复手...",
             "url":  "https://www.dongqiudi.com/articles/6701849.html", "time":  "2026-11-27 10:01",
@@ -195,14 +203,6 @@ window.DQD_BARCA_NEWS = {
         {
             "id":  "6654728", "title":  "巴萨竞技战报 20261115",
             "url":  "https://www.dongqiudi.com/articles/6654728.html", "time":  "2026-11-15 03:03",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/1F/280x210/crop/-/rBXRDGr4r_6AfmWaAApZaX08kss136.jpg" },
-        {
-            "id":  "6651630", "title":  "每体：加纳中卫加里巴已成B队关键一员，在巴萨前景非常光明",
-            "url":  "https://www.dongqiudi.com/articles/6651630.html", "time":  "2026-11-14 07:55",
-            "tag":  "", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F7/8F/280x210/crop/-/rBXRDGr3o1eAW1R7AAZWx2rlOok155.jpg" },
-        {
-            "id":  "6649868", "title":  "世体：前巴萨B队教练证实裁判报告有用，内格雷拉案接近审判",
-            "url":  "https://www.dongqiudi.com/articles/6649868.html", "time":  "2026-11-13 21:30",
-            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F6/A0/280x210/crop/-/rBXRn2r3EHSASrtvAABEw9KmLsE125.jpg" }
+            "tag":  "足球", "img":  "https://bdimg7.qunliao.info/fastdfs8/M00/F9/1F/280x210/crop/-/rBXRDGr4r_6AfmWaAApZaX08kss136.jpg" }
     ]
 };

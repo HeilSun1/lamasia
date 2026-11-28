@@ -1,12 +1,12 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-27 21:02:21 数据源：Sport.es */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_sport_news.ps1 每日更新于 2026-11-28 00:07:04 数据源：Sport.es */
 window.SPORT_NEWS = {
-    "updated":  "2026-11-27 21:02:21",
+    "updated":  "2026-11-28 00:07:04",
     "source":  "sport",
     "count":  50,
     "news":  [
         {
             "id":  "136850108", "title":  "La elección de Ahmed Abarkane, el lateral izquierdo más moderno de La Masia",
-            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eleccion-ahmed-abarkane-lateral-izquierdo-136850108", "time":  "2026-11-26 05:30",
+            "url":  "https://www.sport.es/es/noticias/barca/futbol-base/eleccion-ahmed-abarkane-lateral-izquierdo-136850108", "time":  "2026-11-27 19:12",
             "tag":  "", "img":  "https://estaticos-cdn.prensaiberica.es/clip/48a8c254-ae5b-437b-89b7-6d447d3556d5_16-9-discover-aspect-ratio_default_0_x600y225.webp" },
         {
             "id":  "136727278", "title":  "¿Quién es Àlex Campos? El doble rol de un central que encandila a Belletti y convence a Flick",

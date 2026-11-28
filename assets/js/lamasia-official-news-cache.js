@@ -1,6 +1,6 @@
-﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-27 21:02:08 数据源：FC Barcelona 官方站 */
+﻿/* 自动生成，请勿手动编辑 —— 由 update_fcb_news.ps1 每日更新于 2026-11-28 00:07:02 数据源：FC Barcelona 官方站 */
 window.LAMASIA_OFFICIAL_NEWS = {
-    "updated":  "2026-11-27 21:02:08",
+    "updated":  "2026-11-28 00:07:02",
     "source":  "fcbarcelona",
     "news":  {
         "b":  [
@@ -179,6 +179,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
         ],
         "first":  [
             {
+                "id":  "4615398", "title":  "Àlex Campos: 'My childhood dream has come true'",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615398/alex-campos-my-childhood-dream-has-come-true", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/27/99bcf717-d5cd-4367-ae4d-af8c938f667e/image00005.jpeg" },
+            {
+                "id":  "4615039", "title":  "When and where to watch Deportivo v Barça",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615039/when-and-where-to-watch-deportivo-de-a-coruna-v-fc-barcelona", "time":  "",
+                "tag":  "", "img":  "" },
+            {
                 "id":  "4615404", "title":  "Back to work as Rodri returns",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4615404/rodri-back-with-the-group-as-barca-return-to-work", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/27/a40855ec-35a1-4fd0-a072-2cce3df95017/WhatsApp-Image-2026-11-27-at-13.23.16-1-.jpeg" },
@@ -263,14 +271,6 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611957/andreas-christensen-doubtful", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/45360742-79d1-4435-88a4-dac0d4670888/_MGA8577.jpg" },
             {
-                "id":  "4611903", "title":  "Preparations continue",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611903/villarreal-match-now-the-focus", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/89c45a7a-0dee-4207-81ee-e8965041710e/WhatsApp-Image-2026-11-20-at-14.50.17.jpeg" },
-            {
-                "id":  "4611885", "title":  "Xavi Espart signs contract to 2030",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611885/xavi-espart-signs-contract-to-2030", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/31f9ae7b-621e-4829-82de-3a523631518b/_MGA7022.jpg" },
-            {
                 "id":  "4561492", "title":  "10 things about Rodri",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4561492/10-things-about-rodri/featured", "time":  "",
                 "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/08/17/085c24c8-a892-461b-aa70-62a034199f8e/Vila-real0-FCBarcelona2MiguelRuiz_pic_2017-12-10villarreal-barcelona22.jpg" },
@@ -278,6 +278,14 @@ window.LAMASIA_OFFICIAL_NEWS = {
                 "id":  "4528913", "title":  "Barça v Athletic to begin LaLiga",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4528913/barca-begin-laliga-2627-against-athletic-club-at-spotify-camp-nou/featured", "time":  "",
                 "tag":  "", "img":  "" },
+            {
+                "id":  "4611903", "title":  "Preparations continue",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611903/villarreal-match-now-the-focus", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/89c45a7a-0dee-4207-81ee-e8965041710e/WhatsApp-Image-2026-11-20-at-14.50.17.jpeg" },
+            {
+                "id":  "4611885", "title":  "Xavi Espart signs contract to 2030",
+                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611885/xavi-espart-signs-contract-to-2030", "time":  "",
+                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/20/31f9ae7b-621e-4829-82de-3a523631518b/_MGA7022.jpg" },
             {
                 "id":  "4611882", "title":  "Blaugrana battles in Nations League",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4611882/double-blaugrana-clash-in-the-nations-league-quarter-finals", "time":  "",
@@ -369,15 +377,7 @@ window.LAMASIA_OFFICIAL_NEWS = {
             {
                 "id":  "4605936", "title":  "PREVIEW | Atlético v Barça",
                 "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605936/preview-atletico-madrid-v-fc-barcelona", "time":  "",
-                "tag":  "", "img":  "" },
-            {
-                "id":  "4605960", "title":  "'Eric and Christensen will be in the squad'",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605960/hansi-flick-eric-and-christensen-will-be-in-the-squad", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/3fe5c4c4-ca3f-42fd-8fe4-352d2b45daf7/_MGA4660.jpg" },
-            {
-                "id":  "4605954", "title":  "Eric and Christensen are back",
-                "url":  "https://www.fcbarcelona.com/en/football/first-team/news/4605954/last-workout-before-the-metropolitano", "time":  "",
-                "tag":  "", "img":  "https://www.fcbarcelona.com/photo-resources/2026/11/07/7969c273-3c56-46e7-826d-4aa716473e5d/WhatsApp-Image-2026-11-07-at-12.53.37-1-.jpeg" }
+                "tag":  "", "img":  "" }
         ]
     }
 };
